@@ -6,6 +6,16 @@ the current research priorities, task-selection procedure, overlap rules and
 bounded stopping criteria. Explicit user tasks take precedence over that default
 assignment; do not reroll an already assigned task.
 
+Before substantial research, read the
+[discussion-board start here](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163)
+and check [active discussions](https://github.com/CrocSwap/integer-mult-bounds/discussions)
+alongside open PRs for overlap. Use the
+[handoff thread](https://github.com/CrocSwap/integer-mult-bounds/discussions/1166)
+for concrete requests and the
+[mechanism-proposals thread](https://github.com/CrocSwap/integer-mult-bounds/discussions/1167)
+for early ideas. Follow the claim/update conventions in `autoresearch.md`;
+claims are advisory and discussion posts are provisional evidence.
+
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before making changes. Resolve the current
 result, review, source manifest and reproduction command through
 `certificates/selected-result.json`. Historical research notes may use “current”

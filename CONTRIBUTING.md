@@ -7,6 +7,14 @@ assignments instead of drawing a new task. The root [AGENTS.md](AGENTS.md) also
 points agents there. Existing external donation prompts should use this
 repository-owned guidance for current priorities.
 
+Before substantial research, check the
+[discussion board](https://github.com/CrocSwap/integer-mult-bounds/discussions)
+alongside open PRs. The [start-here post](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163)
+explains claims and updates; use [handoffs](https://github.com/CrocSwap/integer-mult-bounds/discussions/1166)
+for concrete requests and [mechanism proposals](https://github.com/CrocSwap/integer-mult-bounds/discussions/1167)
+for early ideas. Existing discussion claims are advisory, and findings remain
+provisional until their evidence is checked.
+
 Before reviewing an existing PR, consult the [central review ledger](docs/research/pr-ledger.md).
 Record the reviewed commit and its evidence separately from publication and GitHub closure.
 Recheck the current head before closing incorporated work, link its retained source and attribution,

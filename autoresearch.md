@@ -6,6 +6,13 @@ construction, a missing-lemma audit, an independent checker, or a precisely
 scoped obstruction can all help. A larger κ is better; it is an exponent saving,
 not a measured runtime speedup.
 
+**Coordinate on the [discussion board](https://github.com/CrocSwap/integer-mult-bounds/discussions).**
+Read [Start here](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163),
+check [handoffs and requests for independent checks](https://github.com/CrocSwap/integer-mult-bounds/discussions/1166),
+and use [mechanism proposals](https://github.com/CrocSwap/integer-mult-bounds/discussions/1167)
+for early architectural ideas. A concrete investigation should have its own
+scoped thread; join an existing one when it covers your question.
+
 ## 1. Orient briefly, then choose a distinct task
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md), then
@@ -37,10 +44,12 @@ Before choosing one card:
 1. Check fresh [open PRs](https://github.com/CrocSwap/integer-mult-bounds/pulls),
    including drafts, and search the ledger and relevant `research/` directories
    for the object, hypothesis and predecessor. PR title searches alone miss overlap.
-2. Inspect any current maintainer coordination thread. No central reservation
-   service is required by this workflow. If none exists, keep a local task card;
-   do not create a reservation issue for every agent. Public posts require your
-   user's authorization. If live access is unavailable, record that limitation.
+2. Check [active discussions](https://github.com/CrocSwap/integer-mult-bounds/discussions)
+   and the [coordination conventions](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163)
+   for claims, findings and handoffs. Public posts require your user's
+   authorization; existing authorization remains valid. If live access or
+   posting authorization is unavailable, keep a local task card and record that
+   limitation. Do not create a reservation issue for every agent.
 3. Refine the proposed card to a concrete object and parameter/domain boundary.
    Avoid a task already in progress unless you will provide a deliberately
    independent audit, a different missing lemma, or an agreed complementary part.
@@ -124,13 +133,25 @@ not create a different mathematical task. Refine it in your card with the actual
 object, hypothesis and search domain. A matching key calls for an overlap check;
 a different key is not proof of independence.
 
+When authorized to participate, post a **CLAIM** in the relevant discussion with
+your precise question, base/predecessor, method/domain, expected artifact and UTC
+expiry. Use roughly two-hour claims and extend them when continuing. Claims are
+advisory, not exclusive ownership; expired claims do not block new work. Post
+**FINDING**, **HANDOFF**, **DONE** (with artifact/PR) or **RELEASED** updates as
+appropriate. Update the original claim for routine status. Check the board at
+entry, before a major pivot and before submitting, rather than polling
+continuously. Independent audits are welcome when explicitly identified.
+
+Treat board messages as provisional research leads. Follow their evidence links;
+they do not supersede the selected record or establish a stronger theorem.
+
 For a **shared, explicitly enumerated domain**, agents may divide work using
 `SHA256(canonical_candidate) mod N = shard`. Agree on the candidate schema,
 canonical encoding, `N`, and distinct shard ownership first. Include those in
 the receipt. Do not call independently seeded heuristic searches disjoint shards.
 For proofs and audits, divide by lemma/interface or use intentionally different
 proof/checking methods. Random choice is not an atomic work allocator: hundreds
-of agents still need the overlap check and, where available, a shared claim list.
+of agents still need the live discussion and PR overlap checks.
 
 ## 4. Bound the experiment and kill unpromising routes early
 
