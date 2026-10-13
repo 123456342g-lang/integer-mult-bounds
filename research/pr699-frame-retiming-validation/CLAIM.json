@@ -25,5 +25,13 @@
     "comparison": "Same input/output word hashes and conditional kappa. No priority claim. This submission adds an independent finite-point-set checker and fresh replay."
   },
   "expected_finish_utc": "2026-10-13T05:30:00Z",
-  "status": "verification in progress"
+  "status": "completed: independently constructed and verified conditional improvement over PR699; identical concurrent PR741 credited",
+  "result": {
+    "kappa": "1661202643272239/1000000000000000000",
+    "kappa_decimal": "0.001661202643272239",
+    "replay_status": "PASS_PINNED_INPUT_FRAME_RETIMING_COMPLETE_REPLAY",
+    "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/777",
+    "source_commit": "cc95d5e",
+    "completed_utc": "2026-10-13T05:27:55.244208+00:00"
+  }
 }
