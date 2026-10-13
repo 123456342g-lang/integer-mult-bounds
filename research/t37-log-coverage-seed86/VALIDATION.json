@@ -3,7 +3,7 @@
   "base_commit": "2921874911956718fcaaaf9396fe8267b3cfa9f0",
   "pre_submission_upstream": "abdc6a7002abdbcd9e21bfc5e1a795784deacfdf",
   "pre_submission_consumed_and_context_pins": "All 12 remain byte-identical on refreshed main",
-  "pre_submission_overlap": "736 open PR bodies checked through #1069 at 17:38 UTC; no matching T37 log-coverage scope. Neither codex nor codex-automation label exists.",
+  "pre_submission_overlap": "739 open PR bodies checked through #1072 at 17:41 UTC, plus recent coordination comments; no matching T37 log-coverage scope. Neither codex nor codex-automation label exists.",
   "platform": "macOS 26.5.2 arm64",
   "runtimes": [
     "CPython 3.11.15, Clang 22.1.3",
