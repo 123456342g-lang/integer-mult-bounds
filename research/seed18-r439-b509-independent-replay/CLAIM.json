@@ -7,6 +7,13 @@
   "method": "Use a direct row-bitset interpreter for the local Boolean map and integer coefficient vectors for the local before/after maps, independent of the proposal's verifier and native checker.",
   "expected_deliverable": "Small reproducible verifier, source pins, exact result receipt, and focused controls in this directory; scoped independent verification only.",
   "expected_finish_utc": "2026-10-13T23:20:00Z",
+  "result": {
+    "status": "submitted for review as an independent finite verification; no new circuit or kappa",
+    "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/1344",
+    "commit": "4d7463c6f3d2ee1b33603c6180ed71f50819cbe7",
+    "finding": "The 21-ADD PR973 and 20-ADD PR1221 local blocks have equal GF(2) maps on 11 registers; their integer map difference is exactly 2 e_468 e_33^T. The selected/predecessor/candidate whole-word ADD invoices are 24305/24285/24283, with 661 unchanged ordered frame paths.",
+    "checks": "Independent verifier and three controls pass; the exact PR1221 verifier, ten tests, and Linux C++ native suite also pass."
+  },
   "candidate_tasks": [
     {
       "task": "R439 frame-509 PR #1221: independent whole-word GF(2) and local integer-map replay",
