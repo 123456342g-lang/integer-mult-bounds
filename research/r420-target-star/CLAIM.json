@@ -1,0 +1,24 @@
+{
+  "track": "bit supplier",
+  "assignment_seed": 0,
+  "randomness": "Python secrets.randbelow(100), OS entropy, drawn once before task selection",
+  "base_commit": "66849e1475c930fd7732b1a0067ffee7e1e95f60",
+  "claimed_at_utc": "2026-10-13T04:32:22.523809+00:00",
+  "expected_finish_utc": "2026-10-13T05:07:56Z",
+  "coordination": "No pinned issues returned by GitHub pinnedIssues; local claim as instructed. No separate reservation issue opened.",
+  "object": "PR543 R420 frame-zero D compensation, target 0 (register 120) as one fixed donor",
+  "method": "A single involutory target-star basis: pre-add donor to each chosen target, replace receiver helper rows by symmetric differences, post-add donor. Enumerate all 119 receiver choices independently; include each strictly positive net saving after both restoration XORs. Seed 0 selects donor target 0.",
+  "expected_deliverable": "Exact finite circuit with arbitrary dirty-target restoration, source pins, complete native cost/frame/prefix replay, scoped proof and rejection controls; no new kappa.",
+  "candidates_considered": [
+    "Phase-B 12-register block resynthesis: overlaps #670/#674/#688.",
+    "Phase-A decoder-total joint synthesis: would need a broader changed retained-total interface.",
+    "Target-star D compensation: selected; changes target rows, while #686/#694 factor helper columns."
+  ],
+  "prior_work": [
+    "#476/#478 already use reversible target-interval factoring on older R715 B words; the elementary identity is credited, not claimed new.",
+    "#661 closes fixed-order R420 phase-B frame changes, not D circuit changes.",
+    "#686/#694 change D by restoring a helper basis; no code or recipe imported."
+  ],
+  "initial_overlap_max_pr": 704,
+  "result": null
+}
