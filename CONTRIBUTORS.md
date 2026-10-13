@@ -4,6 +4,23 @@
 See the [current review](docs/research/community-batch952-review.md) and
 [circuit integration](docs/research/community-circuits681-review.md) for scope.
 
+## Verification checkpoint in the forty-PR batch
+
+[Scopes and execution evidence](docs/research/community-batch970-review.md).
+The selected exponent is unchanged.
+
+- **yssite (#959):** closes selected-source inventory symlink acceptance gaps.
+- **Aaron Wang / navinor (#957):** historical T21 endpoint, outer-reduction and surcharge-assumption audit.
+- **David Breslauer / davidNbreslauer (#960):** independently implemented binomial enclosure of the T21 complex moment brackets.
+- **MrPink604 (#819/#818):** complete native-payload gzip portability and exact R420 RREF acceleration, building on Aman's #367 kernel.
+- **ToikY (#900):** exact spectator-orbit reduction of the historical sparse-fusion screen.
+- **Chinmay Arvind / chinmayarvind23 (#834):** expression-level R420 Lean-source correspondence, building on James Chang's formalization.
+- **WeberChen8128 (#893):** independent recorded-source and axiom-evidence audit of James Chang's PR236.
+- **woklerx (#970):** closes historical bit-compression provenance coverage and independently checks its finite arithmetic.
+
+Original construction and verification authors retain attribution in each package.
+These contributions are scoped audits/tooling, not new κ or full theorem proofs.
+
 ## T37, circuit and scoped-bound batch
 
 [Individual scope, evidence and adaptations](docs/research/community-batch952-review.md).
