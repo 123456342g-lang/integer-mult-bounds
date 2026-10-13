@@ -11,7 +11,8 @@ The original checker was preserved in commit
 `d55bcd62ceb8f322bcf311a5a66e94c3ac7724f0` by Douglas R. Colkitt.
 `SOURCE.json` pins the original checker/certificate and the unchanged imported
 dependencies. Only the historical certificate's checker-source hash changes;
-`upstream/` and the selected #626/#543 frontier remain unchanged.
+`upstream/` and selected-frontier records remain unchanged. The selected
+frontier at this original base was #626/#543.
 
 ## Object, method, and exactness argument
 
@@ -88,16 +89,44 @@ process RSS**; `tracemalloc` is disabled in all timing samples. One memory run
 per mode measures the complete certificate, not just a synthetic key array.
 No timing threshold is imposed, and other environments may differ.
 
+The additional same-host Windows matrix targets the Python versions used by
+upstream CI. Each row has its own seven alternating before/after process pairs
+and separately traced memory runs; it is not a comparison between versions.
+
+| CPython | Original process median | Packed process median | Speedup | Allocation peak reduction |
+|---|---:|---:|---:|---:|
+| 3.11.16 | 3.436026 s | 2.553110 s | 1.346x | 38.59% |
+| 3.13.15 | 3.628811 s | 2.902232 s | 1.250x | 38.61% |
+| 3.14.7 | 3.842965 s | 3.198651 s | 1.201x | 42.42% |
+
+`RESULT-python311.json`, `RESULT-python313.json`, and `RESULT-python314.json`
+retain every sample. The Python 3.14 timings vary more; none were discarded.
+Together with the two original 3.12 series, all 80 complete certificate receipts
+agree. The measured benefit depends on the interpreter and environment; the
+original 1.413x result is not a universal speedup guarantee.
+
+`VALIDATION-MATRIX.json` retains source hashes and complete command output for
+all 14 tests under 3.11.16, 3.13.15 and 3.14.7, plus all 14 under 3.14.7 `-O`.
+These runs use the full depth-seven independent oracle. Reproduce with the two
+test commands above under each interpreter, adding `-O` before `-m` for the
+optimized-mode check; run the benchmark under each interpreter with a distinct
+output filename. The matrix uses the standard library only, and does not alter
+project dependencies or CI settings.
+
 The new independent oracle uses dense F2 rows and literal sets of permutation
 tuples, rather than either implementation's packed state or routing masks.
-It compares every receipt field at each cap 0–7 for two/three roles and 0–4 for
-four roles. Full depth-seven receipts are also compared with the original
-committed certificate. A deliberately incorrect scalar-only merge still finds
-no survivor, but loses states and changes frontier digests; the negative
+It compares every receipt field at every cap 0–7 for all three widths, including
+an independent replay of all 529,066 four-role states. Full depth-seven receipts
+are also compared with the original committed certificate. A deliberately
+incorrect scalar-only merge still finds no survivor, but loses states and
+changes frontier digests; the negative
 control detects this loss. Other tests distinguish a depth cutoff from closure
 and retain width/depth input rejections. The original finite-contract tests
 independently enumerate short raw XOR words and exercise malformed circuits,
 terminal obligations, routing failures, and budget exhaustion.
+The oracle independently implements the state representation and transitions;
+it shares the documented joint-state reduction and saturation rule, and does
+not independently prove those reductions or the routing theorem.
 
 Preliminary measurements are retained in `EXPLORATION.json`; profiled timings
 are not used to claim the speedup. `INITIAL-RESULT.json` retains the first
@@ -109,6 +138,15 @@ minimal offline replay in a path containing spaces and source-drift/output
 reuse rejection controls.
 
 ## Scope, prior work, and attribution
+
+Upstream advanced to `7ee02b7c96d85f22b38d28bd7ed49bb8c1aeb261` during the
+follow-up and selected #741. The compatibility record in
+`VALIDATION-MATRIX.json` compares actual file bytes at that immutable main
+commit: all 14 pinned dependencies, the original checker/certificate, the
+finite-contract tests, the isolated test runner and general CI workflow are
+unchanged (19 files). This preserves the original experiment's input basis;
+it is not a replay or endorsement of the new selected construction. No frontier
+record is edited or rebased into this contribution.
 
 The [original routing note](../../docs/research/cyclic-topology-audit.md) supplies
 the finite-state reduction and the edge-disjoint-routing rank argument. The
@@ -139,5 +177,6 @@ human peer review. Apache-2.0, as in the parent project.
 
 Full `make verify`, the selected supplier cold replay, Lean, and remote Linux
 CI have not been run for this isolated historical-verifier change. The local
-environment lacks `make` and a C++ compiler. Their status must not be inferred
-from the finite checks or benchmark receipts.
+environment lacks `make` and a C++ compiler. At the follow-up check, upstream
+Actions returned `action_required`, awaiting maintainer approval. The Windows
+version matrix does not establish Linux CI success or a full theorem audit.

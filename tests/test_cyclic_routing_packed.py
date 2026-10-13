@@ -85,7 +85,7 @@ class CyclicRoutingPackedTest(unittest.TestCase):
                 self.assertEqual(routing_state_search(expected['W'], 7), expected)
 
     def test_dense_scalar_and_literal_routing_oracle(self):
-        for width, cap in [(2, 7), (3, 7), (4, 4)]:
+        for width, cap in [(2, 7), (3, 7), (4, 7)]:
             for depth in range(cap + 1):
                 with self.subTest(width=width, depth=depth):
                     expected = literal_search(width, depth)
