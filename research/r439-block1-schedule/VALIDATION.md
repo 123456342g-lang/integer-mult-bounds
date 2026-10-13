@@ -65,5 +65,9 @@ analytic obligations. No unrestricted circuit minimum or improved kappa.
 
 Metadata was refreshed through PR874, including concurrent PR873's distinct
 frame-508 block. Main was still the exact base. GitHub denied fork creation
-with HTTP 403 `Resource not accessible by integration`; the contribution is
-handed off as a local commit and patch, with no PR or hosted-CI claim.
+with HTTP 403 `Resource not accessible by integration`; the first handoff was
+a local commit and patch. The contributor subsequently created the fork, and
+the verified branch was pushed successfully. Upstream PR creation through both
+the CLI and connected app still returned HTTP 403; no PR or hosted-CI success
+is claimed. Publication-time overlap was refreshed through PR876 without a
+matching block-1 contribution; main remained the exact base.

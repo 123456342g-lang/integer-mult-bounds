@@ -62,8 +62,12 @@ Final overlap refresh through #874 found navinor's #873 at
 frame 508. It is credited in the README; no priority or composition is claimed.
 PR844 and PR857 still concern frames 520 and 523. Main remains the exact base.
 
-GitHub fork creation was attempted for submission, but the connected credential
-returned HTTP 403, `Resource not accessible by integration`; upstream reports
-no push permission. No PR was created. The finished local branch is
-`research/r439-block1-schedule-seed8`; the handoff includes a format-patch file
-outside the checkout. Validation details are in [VALIDATION.md](VALIDATION.md).
+Initial GitHub fork creation returned HTTP 403, `Resource not accessible by
+integration`, so the first handoff was a local commit and verified patch.
+After the contributor created the fork, the finished branch was successfully
+[pushed to Deftsalt-debug/integer-mult-bounds](https://github.com/Deftsalt-debug/integer-mult-bounds/tree/research/r439-block1-schedule-seed8).
+A publication-time overlap refresh through PR876 found no matching block-1
+contribution; main remained the exact base. Both CLI and connected-app attempts
+to create the upstream PR returned HTTP 403. No PR was created. The contributor
+can [open the prepared comparison](https://github.com/CrocSwap/integer-mult-bounds/compare/main...Deftsalt-debug:research/r439-block1-schedule-seed8?expand=1).
+Validation details are in [VALIDATION.md](VALIDATION.md).
