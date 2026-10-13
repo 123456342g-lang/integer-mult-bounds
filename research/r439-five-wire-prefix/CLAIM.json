@@ -13,6 +13,20 @@
     "Dirty-target compensation: excluded because PR915/926 cover it",
     "Five-wire phase-A prefix resynthesis: selected, outside PR904 GL(2..4,2) scope"
   ],
-  "status": "claimed",
-  "dependency_head": "883a0bdf7792693e57c16be660824b57aacfbe05"
+  "status": "completed and submitted",
+  "dependency_head": "883a0bdf7792693e57c16be660824b57aacfbe05",
+  "result": {
+    "kind": "finite bit construction; no new kappa",
+    "rewrites": 88,
+    "saved_A": 170,
+    "saved_cleanup": 170,
+    "total_adds_before": 24051,
+    "total_adds_after": 23711,
+    "verification": "full package replay, independent local checks, source H1-H5, native 5/9/11 stages, 17 local controls and 96 omitted bridges",
+    "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/936",
+    "implementation_commit": "214488bb15e70c94ba7316c923fd8afc7208b499",
+    "integration_base": "47481c89fd30a43f8f882eb4b391e89c29273fd0",
+    "finished_at": "2026-10-14T00:38:41+11:00",
+    "overlap_refresh": "No pinned coordination issue; final PR refresh through #934. PR933 paid-moment transport/reframing is distinct. PR904 baseline remains pinned."
+  }
 }
