@@ -11,3 +11,11 @@
 - Selected result at base: conditional kappa `1661960547713947/1000000000000000000`, PR #942 T37 with PR #589 on #555. The selected certificate was followed to `docs/research/community-batch952-review.md`, the source manifest and `research/complex-t37-owners/README.md`.
 
 Prepared for Sagar Thakrar / @thakrarsagar with substantial OpenAI Codex assistance. Apache-2.0. This claim does not reserve work against other contributors.
+
+## Completed result, 2026-10-13 16:05 UTC
+
+Submitted as [PR #990](https://github.com/CrocSwap/integer-mult-bounds/pull/990). The exact rank-three fixture uses eight complete native queries and 30 XOR scans, compared with twelve queries and 36 scans for the best separately completed rank-factor schedule. All 5,376 minimum-query excursion schedules were checked by two enumeration formulations; 232 attain the minimum. The complete paid recurrence and limited optimization class are in README.md. No new kappa is claimed.
+
+Normal, optimized and relocated verification passed, including 7,290 full-domain input columns and their inverse, eight built-in negative controls, a paid neutral pair and four actual-certificate corruptions. All nine source hashes, selected-record integrity and 17 selected-result tests passed. Existing files and upstream/ are unchanged. Full supplier replay, repository-wide make verify, hosted CI and Lean were not run.
+
+Construction finished before the final verification/packaging phase, which began by 15:57 UTC. The submission refresh covered all 694 then-open PRs through #984 and the latest metadata immediately before posting through #989. No pinned coordination issue existed. Related concurrent #982 is credited for its different output-borrowed contract. Main advanced to `55645f9d4d806d67875c1c8b9840b0b039ece22e`, retaining the same selected kappa and with no package-path overlap. The original investigation base remains the commit above.
