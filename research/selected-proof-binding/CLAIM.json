@@ -22,5 +22,13 @@
   ],
   "coordination": "Only open issue650 asks to enable Discussions; no pinned sprint coordination issue found. Claim local; no reservation issue opened.",
   "finish": "During this synchronous session; no deferred work.",
-  "scope": "Provenance regression/repair, no new kappa, no mathematics audit, no change to selection or upstream."
+  "scope": "Provenance regression/repair, no new kappa, no mathematics audit, no change to selection or upstream.",
+  "result": {
+    "status": "Completed tooling/provenance contribution; upstream PR creation rejected by integration permissions (HTTP403).",
+    "branch": "https://github.com/mihir-s-05/integer-mult-bounds/tree/research/selected-proof-binding-seed96",
+    "tested_code_commit": "04ce51f1fdb0366c848ba9d3c22fe65eaaab70a8",
+    "evidence": "11 baseline false acceptances, 11 repaired rejections, 6 positive cases and 12 regression tests; normal and optimized Python pass.",
+    "handoff": "Clean patch and reproducible source bundle supplied; no PR was created, merged or closed.",
+    "refreshed_main": "f567884aeb8851b6e794af1184119a3bfbe1e631"
+  }
 }
