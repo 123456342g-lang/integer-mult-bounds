@@ -1,5 +1,5 @@
 {
-  "status": "PUBLISHED_FIFTEEN_MERGED_INTEGRATION_LINUX_PENDING",
+  "status": "PUBLISHED_FIFTEEN_MERGED_INTEGRATION_LINUX_PASSED",
   "selected_kappa": "1661634653669567/1000000000000000000",
   "selected_decimal": "0.001661634653669567",
   "reviewed_heads": {
@@ -21,7 +21,12 @@
   },
   "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
   "linux_ci": {
-    "frontier799": "Published; exact integration Linux run is pending. Local full X4 replay passed with source-bound fresh ancestry."
+    "frontier799": "success",
+    "tooling_and_scoped_audits": "success",
+    "tested_commit": "f567884aeb8851b6e794af1184119a3bfbe1e631",
+    "frontier799_run_url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38358662484",
+    "tooling_run_url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38358586534",
+    "earlier_attempt": "The initial 2e26ca83 CI stopped because broad log ignore rules omitted evidence files. f567884a includes the complete evidence; both corrected runs passed."
   },
   "receipts": {
     "research/community-frontier799-audit/pr799-replay.tar.gz": "4dff69f3509ca81ab768ebf4b39bb6313b331995e4b2a412729b541a39c8459a",
