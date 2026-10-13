@@ -41,3 +41,31 @@
 
 Prepared for @CubeJerry with substantial OpenAI Codex assistance. No subagents.
 Apache-2.0, retaining the supplier lineage's attribution.
+
+## Result update
+
+Completed one finite bit-circuit construction: frame 522 falls from 43 to
+33 ADDs; with literal reverse cleanup, the complete local word falls from
+24,305 to 24,285 ADDs. The integer block map, all 661 frame paths, nine copies
+and paid mass 5,129 are preserved. Full reverse positive bound falls to
+1,045,786; payload remains 93 bits. No new kappa is claimed.
+
+The 12,000-trial search completed (492 identity factorizations, seven with
+33 ADDs). Exact Python, optimized/relocated replay, eleven mathematical and
+six package controls, fresh native legality/5/9/11-stage checks on both words,
+96 omitted-bridge controls, receipt regeneration and selected-record checks
+pass. Reproduce with `python3 -I -B research/r439-block522-factor/verify.py`.
+
+Final overlap inspection through PR904 found its one-ADD replacement of the
+four-register B[380:384] subinterval. This contribution's ten-ADD whole-block
+replacement is distinct. Its certificate is unchanged at refreshed head
+`883a0bdf7792693e57c16be660824b57aacfbe05`; attribution and non-composition are
+recorded in README.md. A later successful `git fetch upstream main` confirms
+the same exact base `f567884aeb8851b6e794af1184119a3bfbe1e631`.
+
+[Published contribution branch](https://github.com/CubeJerry/integer-mult-bounds/tree/research/r439-block522-seed17-112112/research/r439-block522-factor).
+Upstream PR creation was denied with HTTP 403 / "Resource not accessible by
+integration" through both the GitHub connector's REST call and the existing
+authenticated CLI's GraphQL call. No PR was created. The clean patch and
+prepared PR description are provided in the local handoff; the published
+branch is ready for review/submission. No coordination issue exists to update.

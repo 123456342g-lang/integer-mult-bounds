@@ -36,6 +36,12 @@ Completed initial checks:
   arrivals through PR904 were inspected. Its certificate's single frame-522
   replacement saves one B ADD; the distinct whole-block ten-ADD reduction
   here and the absence of a combined replay are recorded in README.md.
+- The published fork tree `504b4f3243158e6f2ba37f2e37807946726cc836`
+  exactly matches the tested local tree before this claim/validation handoff
+  update. A subsequent Git fetch of both upstream main and the published
+  branch confirms the base and the published content. PR904's refreshed head
+  `883a0bdf7792693e57c16be660824b57aacfbe05` has the identical inspected
+  certificate. Publication metadata is separate from the finite checks.
 
 `EXPECTED.json` and `NATIVE.json` are deterministic mathematical receipts,
 excluding run times and temporary paths. The native programs retain their
