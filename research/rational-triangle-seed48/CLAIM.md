@@ -45,3 +45,24 @@ frontier promotion, global regeneration or full multiplication theorem claim.
 
 Contributor: Sagar Thakrar (@thakrarsagar), with substantial OpenAI Codex
 assistance in mathematics, implementation and writing. Apache-2.0.
+
+## Result, 2026-10-13 21:44 UTC
+
+Completed: [PR1284](https://github.com/CrocSwap/integer-mult-bounds/pull/1284),
+research note / scoped information theorem, no new kappa. Exact deletion
+threshold is five at p=3 and 6p-12 for every p>=4 over characteristic other
+than two. The p=3 improvement requires all six raw vertex observations.
+The priced scalar echoes cost 88 and 42 instructions and give no speedup
+over direct target access.
+
+Verification passes: 840,693 assignments, all 512 retained p=3 graphs, 62
+dirty/source/output basis columns, 35 edge-restoration controls, 18 omitted
+observation controls, 172 instruction omissions, six SHA256/Git-blob pins,
+three external receipt corruptions, optimized execution and selected-record
+integrity. Final overlap refresh at 21:42 UTC covered 870 open PRs, 30
+discussion records and 325 local records, with complete pagination. The
+specific search found only this package; broader prior searches identified
+the credited binary predecessors. No pinned issue exists. Full supplier
+replay, physical geometry, hosting, precision admission and hosted Linux CI
+were not run or claimed. The mathematical work stopped before packaging;
+the remaining session was reserved for checks and submission.
