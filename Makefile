@@ -604,3 +604,10 @@ frontier890-verify: selected-record-check
 frontier942-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier942.XXXXXX"); \
 	python3 -B scripts/verify_frontier942.py --work "$$work/replay"
+
+# Independent verification: code-disjoint T37 moment endpoints and kappa reduction (no new kappa).
+.PHONY: t37-endpoints-independent-verify
+t37-endpoints-independent-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-t37-endpoints.XXXXXX"); \
+	python3 -B research/t37-endpoints-independent/verify.py --work "$$work/replay" && \
+	python3 -B -m unittest discover -s research/t37-endpoints-independent -p test_package.py
