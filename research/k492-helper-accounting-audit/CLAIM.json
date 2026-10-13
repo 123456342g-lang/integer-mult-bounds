@@ -39,5 +39,33 @@
     "open_pr_max": 720,
     "overlap": "Read relevant open PR metadata and central ledger; #675 covers owner timing/bridge omission, #706 covers independent moment bounds. Neither supplies the documented source-reversion controls. #626 is incorporated at selected pin; no existing PR will be modified."
   },
-  "status": "claimed"
+  "status": "completed and submitted",
+  "handoff": {
+    "completed_at_utc": "2026-10-13T05:19:07.318337+00:00",
+    "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/766",
+    "branch": "audit/k492-helper-accounting-seed73",
+    "result": "All 14 documented assembly source reversions replayed: 13 intended assertion rejections and 1 full-receipt-identical parent-bank control. Additional independent native width/role/program recount, two source controls and eight harness/recount controls pass. No current implementation defect or new kappa claimed.",
+    "verification_started_by_utc": "2026-10-13T05:15:00Z",
+    "verification": [
+      "Deterministic audit receipt match",
+      "All 114 existing production assembly admission controls",
+      "make selected-record-check",
+      "Minimal 23-input export from unrelated working directory",
+      "Corrupt source and expected-receipt exports rejected",
+      "Optimized Python explicitly refused",
+      "git diff --cached --check"
+    ],
+    "final_overlap_snapshot": {
+      "open_pr_count": 582,
+      "highest_pr_number": 763,
+      "concurrent_pr": 724,
+      "concurrent_head": "624ccfe44b1c5816f0279481d91cca6a5a2290ab",
+      "additional_coverage": "Compared PR724 source: it replays an AST-selected invoice/finite-guard slice with 7 source rejections and 1 equivalent control. This result replays all 14 documented assembly sites, including earlier provider/width/column/index checks, executes the entire assembly, and counts operations from all four local programs. Matching invoice deltas are credited corroboration, not priority."
+    },
+    "unresolved": [
+      "Original other 18 scratch sites and R=504 fixture not reproduced",
+      "Parent idle count, archived local algebra/restoration/phase admission and all-size/physical/analytic obligations remain inherited",
+      "No full make verify, cold supplier reconstruction, remote CI or formal theorem verification claimed"
+    ]
+  }
 }
