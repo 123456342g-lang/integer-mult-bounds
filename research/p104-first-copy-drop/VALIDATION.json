@@ -11,6 +11,11 @@
     "PASS_P104_FIRST_COPY_DROP frames=896 decoders=7168 terms=28672 extra_punctures=22 total_punctures=38 span_only=20 copies=55 ports=82 no_new_kappa",
     "PASS_P104_FIRST_COPY_DROP_PACKAGE regeneration=PASS relocation=PASS controls=4"
   ],
+  "publication": {
+    "construction_commit": "911169ab6b302adc514f818a4e9789365d733f1d",
+    "handoff_changes": "Publication metadata only; submitted mathematics, code, certificate and all source inputs unchanged",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1187"
+  },
   "receipt": {
     "all_pairs_coefficients": 6724,
     "baseline_copy_ratio": "7/13",
