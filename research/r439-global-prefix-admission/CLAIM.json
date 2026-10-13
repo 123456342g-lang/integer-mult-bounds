@@ -1,5 +1,5 @@
 {
-  "status": "claimed",
+  "status": "submitted",
   "assignment": {
     "pass_number": 15,
     "seed": 3,
@@ -40,5 +40,13 @@
   ],
   "coordination": "Only open non-PR issues 650 and 913; no pinned sprint issue. Local claim after refresh through966.",
   "claimed_at_utc": "2026-10-13T15:16:10.146379+00:00",
-  "expected_finish_utc": "2026-10-13T16:00:00Z"
+  "expected_finish_utc": "2026-10-13T16:00:00Z",
+  "pr": 980,
+  "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/980",
+  "mathematical_head": "0ab24dabc9549ef2b3f001bedef141f20f686a12",
+  "submitted_at_utc": "2026-10-13T15:46:21.455913+00:00",
+  "result": "Same-input strict menu admits zero; full-word admission accepts 42 blocks, saving 240 further ADDs. Complete 23,433 ADDs, 872 below selected PR589; F=35,655, B=692,438, 91/172 local/nine-stage bits. Original H1-H5 and paid profile retained; no new kappa.",
+  "validation": "Full receipts identical on CPython 3.14.4 and isolated optimized read-only 3.12.3. All 42 complete trial words independently replayed, three words at native 5/9/11 stages, 144 bridge controls, 16 local controls and seven package tests pass. Eighteen exact source-object pins, selected record and staged whitespace pass.",
+  "upstream_refresh": "bbc600db2fc15007b7c914f4f2b2ed55fa909c87; all 18 runtime inputs unchanged; selected PR942 still uses PR589 for bits.",
+  "overlap_refresh": "Checked open queue through PR978 immediately before submission. PR967 changes D helper stars; PR973 changes B frame509; PR978 is a historical R420 construction. No composition or priority for full-prefix admission claimed."
 }
