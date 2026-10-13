@@ -115,6 +115,14 @@ class Controls(unittest.TestCase):
                              result['after']['complex_primitives'], 1094)
             self.assertLessEqual(result['after']['prefix_bits'], 68)
 
+    def test_10_wrapped_witness_is_inside_wrapper_domain(self):
+        for orientation, events in self.programs.items():
+            result = self.receipt['wrapped_example'][orientation]
+            self.assertEqual((result['helper'], result['delta'], result['wrapped_helpers_checked']),
+                             (652, -36, 240))
+            self.assertIn(652, {e[2] for e in events if e[0] == 'residual_adapter'})
+            self.assertEqual(result['before']['paid_profile'], result['after']['paid_profile'])
+
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

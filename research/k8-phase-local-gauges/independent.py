@@ -154,7 +154,7 @@ def main():
     word, programs, _, _ = lib.load()
     cert = json.loads((HERE / 'CERTIFICATE.json').read_text())
     total_vertices, rows_checked, primitives = 0, 0, 0
-    for scenario in ('orientations', 'on_pr1214'):
+    for scenario in ('orientations', 'on_pr1214', 'wrapped_example'):
         for orientation, original in programs.items():
             events = original
             if scenario == 'on_pr1214':

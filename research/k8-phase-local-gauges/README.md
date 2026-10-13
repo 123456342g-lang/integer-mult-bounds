@@ -17,6 +17,11 @@ complex call**: its unrestricted saving 344 becomes 340. L427 likewise pays 4,
 while L359 pays zero. [BOUNDARY-COMPARISON.json](BOUNDARY-COMPARISON.json) records
 the full 16-helper comparison and four corruption/coverage controls.
 
+Among the **240 wrapped helpers**, the exact best reset schedule is L652, saving
+**72 primitives per complex call**. Its complete forward/backward words are also
+materialized, literally replayed and admitted by the retained local frame/wrapper
+checker. This demonstrates a helper interface excluded by PR1259's unwrapped domain.
+
 On the source-bound PR1094/PR1042 k8 word, the exact best single-helper schedule
 is L427, with 22 new SCALE macros in each orientation. It saves **522 real scalar
 primitives per complex call** (261 per real/imaginary component), compared with
@@ -52,6 +57,9 @@ gauge class differ: the latter may remain nonzero across non-scalar events.
 
 The composed claim fixes PR1214's two-helper witness and optimizes **one extra
 phase-local helper**. It is not a global three-helper or all-helper optimum.
+In this comparison, the added gauge is zero at each boundary **relative to the
+fixed PR1214 word**; PR1214's two constant gauges and their inherited transfer
+assumptions remain. It does not make those predecessor gauges zero at boundaries.
 No native C++ compiler, complete hosting/invoice, outer moment, selected cold
 replay, CI or Lean result is claimed. The unchanged emitted Python frame/wrapper
 checker is a local check, distinct from those obligations. All-size/compiler,
@@ -59,15 +67,15 @@ realization, hosting, precision/tape, analytic and bit assumptions remain.
 
 - Main DP: 95,490 vertices per orientation on the selected word; 94,261 on PR1214.
 - Separate distance-transform DP uses literal PR696 lowerer lengths on a padded
-  domain: **1,908 helper minima**, **758,270 vertices**, all agree exactly.
+  domain: all **1,908** census minima, plus both wrapped-witness minima, agree exactly.
 - Independently reconstructed unrestricted minima agree with all **32** values
   in the pinned PR1259 certificate; exact boundary premiums distinguish the classes.
-- Literal lowered replay: **296,404 primitives** across four candidate words,
+- Literal lowered replay: **445,342 primitives** across six candidate words,
   all **713** initial columns, including initially dirty coefficient work.
 - Original macro replay separately checks all 712 data/helper/center columns.
-- Unchanged source-pinned frame/wrapper checker: both versions, both orientations,
+- Unchanged source-pinned frame/wrapper checker: three versions, both orientations,
   all **25 inherited mutation controls** rejected for each version.
-- Nine package test groups include 258 exhaustive tiny shortest-path instances,
+- Ten package test groups include 258 exhaustive tiny shortest-path instances,
   unit-discount, domain-expansion, missing-scale, wrong-orientation pricing,
   nonzero-boundary and source-corruption controls. Checks also pass with `-O`.
 
@@ -95,7 +103,7 @@ python3 -I -B research/k8-phase-local-gauges/frame_replay.py
 ```
 
 Expected markers: `PASS_K8_PHASE_LOCAL_GAUGES`,
-`PASS_INDEPENDENT_PHASE_GAUGES`, nine tests `OK`, and two
+`PASS_INDEPENDENT_PHASE_GAUGES`, ten tests `OK`, and three
 `PASS_INDEPENDENT_LOCAL_SCALAR_FRAME_AND_WRAPPER_REPLAY` receipts with 25 controls.
 The source-pinned historical frame checker uses assertions; its subprocess always
 runs without `-O`, even if the driver is invoked with `-O`.

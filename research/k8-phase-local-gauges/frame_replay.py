@@ -20,7 +20,7 @@ def main():
     lib = v.engine()
     with tarfile.open(v.ROOT / lib.ARCHIVE) as archive:
         word = archive.extractfile('slots/local/CANONICAL-WORD.json.gz').read()
-    for prefix in ('', 'pr1214_'):
+    for prefix in ('', 'pr1214_', 'wrapped_'):
         programs = {orientation: witnesses[prefix + orientation]
                     for orientation in ('forward', 'backward')}
         with tempfile.TemporaryDirectory(prefix='k8-phase-gauges-') as directory:

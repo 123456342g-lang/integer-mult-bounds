@@ -75,6 +75,10 @@ This proves the declared one-helper optimum, conditional on the source-bound
 finite input and retained primitive cost model. It does not prove an all-circuit
 or all-helper bound. The same argument applies after fixing PR1214's fully priced
 two-helper word; only one new phase-local helper is optimized in that comparison.
+The identity boundary in that composition is relative to the fixed PR1214 word;
+its existing two constant gauges and their transfer assumptions are inherited.
+The wrapped L652 witness instead applies the zero-boundary rule directly to the
+selected original word, including both residual-wrapper boundaries.
 
 ## Separate checks and limits
 

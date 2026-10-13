@@ -154,7 +154,7 @@ def compute():
     helpers, excluded = lib.domain(word, programs)
     receipt = {'base': BASE, 'seed': 26, 'status': 'PASS_K8_PHASE_LOCAL_GAUGES',
                'scope': 'one helper, all integer exponents, reset at every non-scalar event',
-               'excluded_helpers': excluded, 'orientations': {}, 'on_pr1214': {}}
+               'excluded_helpers': excluded, 'orientations': {}, 'on_pr1214': {}, 'wrapped_example': {}}
     witnesses = {}
     for orientation, events in programs.items():
         result = census(lib, events, helpers)
@@ -171,6 +171,29 @@ def compute():
         result['inserted_scales'] = len(candidate) - len(events)
         receipt['orientations'][orientation] = result
         witnesses[orientation] = candidate
+        wrapped = {event[2] for event in events if event[0] == 'residual_adapter'}
+        wrapped_rows = [row for row in result['rows'] if row[0] in wrapped]
+        need(len(wrapped_rows) == 240, 'wrapped helper domain')
+        best_wrapped = min(wrapped_rows, key=lambda row: (row[1], row[0]))
+        h = best_wrapped[0]
+        stream = terms(lib, events, [h])[h]
+        plan = []
+        for run, rs in sorted(stream.items()):
+            answer = solve_run(rs)
+            if any(answer['path']):
+                plan.append({'run': run, 'terms': rs, **answer})
+        wrapped_word = construct(lib, events, h, plan)
+        wrapped_price = lib.invoice(wrapped_word, 'copy-init')
+        need(wrapped_price['real_primitives'] - before['real_primitives'] == best_wrapped[1],
+             'wrapped candidate full invoice')
+        need(wrapped_price['paid_profile'] == before['paid_profile'], 'wrapped profile')
+        receipt['wrapped_example'][orientation] = {
+            'helper': h, 'delta': best_wrapped[1], 'rows': [best_wrapped], 'schedule': plan,
+            'wrapped_helpers_checked': 240, 'before': before, 'after': wrapped_price,
+            'candidate_endpoint': lib.replay(wrapped_word, orientation),
+            'candidate_sha256': sha(canonical(wrapped_word)),
+            'inserted_scales': len(wrapped_word) - len(events)}
+        witnesses['wrapped_' + orientation] = wrapped_word
         # Retain the predecessor's fixed two-helper witness, independently
         # reconstruct and price it; do not inherit its optimum as a new claim.
         pair_info = json.loads((HERE / 'vendor/pr1214/CERTIFICATE.json').read_text())
@@ -215,6 +238,8 @@ def main():
     for orientation, result in receipt['on_pr1214'].items():
         print('on_pr1214', orientation, 'helper', result['helper'], 'extra per-component saving',
               -result['delta'], 'complete complex invoice', result['after']['complex_primitives'])
+    for orientation, result in receipt['wrapped_example'].items():
+        print('wrapped', orientation, 'helper', result['helper'], 'per-component saving', -result['delta'])
 
 
 if __name__ == '__main__':
