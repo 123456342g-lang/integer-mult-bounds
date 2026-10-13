@@ -22,6 +22,10 @@ Executed 2026-10-13. No wall-time speedup or Linux/hosted-CI pass is claimed.
   kappa `1661634653669567/10^18` unchanged.
 - `python -B -m unittest discover -s tests -p test_selected_result.py -v`:
   all five existing tests pass.
+- `git diff --cached --check`: passes. The only changed paths are the seven
+  files in this research package; the selected record and `upstream/` have
+  no diff. Remote main was rechecked before submission and still equals
+  the exact base above.
 
 The scientific receipt contains 646 coprime pairs, 112,672 exact single-step
 checks, 9,460 longer/supplemental path checks, and 3,296 parameter-count

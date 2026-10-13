@@ -11,3 +11,19 @@
 - Overlap: current open PR titles through #898; targeted all-state searches for selected-bit, signed packing, resampling, Neumann and correction powers. #5 supplies the original potential; #684 audits chirp windows and explicitly excludes Neumann evaluation. No duplicate endpoint-power refinement found in these searches. This is a bounded metadata inspection, not an exhaustive review of every PR's source.
 - Coordination: the open-issue query returned only #650, a request to enable Discussions, not a pinned sprint issue. Claim recorded locally; no reservation issue opened.
 - Budget: scope now frozen; reserve the final quarter of implementation/verification effort for adversarial checks and handoff.
+
+## Result (single completion update)
+
+Completed: the combined endpoint potential removes the additive `1/2` from
+the old burn-in exponent and gives the exact odd/even denominator refinement.
+The same-decay term count improves on 1,876 of 3,296 declared parameter cases.
+Eight new test groups pass normally and under optimized Python; isolated
+reproduction and the existing selected-record checks pass. No new kappa.
+
+Review: https://github.com/CrocSwap/integer-mult-bounds/pull/902
+
+The final overlap refresh covered arrivals through #901 and the targeted
+Gaussian/potential search. The remote main still equals the recorded base.
+The base ledger records #5 as partially reviewed and #371 as unreviewed;
+these wider predecessor reviews are not completed by this narrow audit.
+All scientific changes are confined to this package; see VALIDATION.md.
