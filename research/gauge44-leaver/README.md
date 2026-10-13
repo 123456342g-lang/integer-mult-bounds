@@ -121,7 +121,7 @@ python -B research/gauge44-leaver/construction/sw4/reproduce_sw4.py \
 python -B research/gauge44-leaver/construction/frames/reproduce_frames.py \
   --main . --pr635 /tmp/gauge44-pr635 --sw4-dir /tmp/sw4 --out /tmp/frames
 python -B research/gauge44-leaver/construction/jx/reproduce_jx.py \
-  --main . --pr635 /tmp/gauge44-pr635 --frames-dir /tmp/frames --out /tmp/x4
+  --main . --pr635 /tmp/gauge44-pr635 --sw4-dir /tmp/sw4 --out /tmp/x4
 python -B research/gauge44-leaver/construction/leaver/reproduce_leaver.py \
   --main . --pr635 /tmp/gauge44-pr635 --word-dir /tmp/notri-base --id k5 --out /tmp/lv --word-only
 python -B research/gauge44-leaver/construction/leaver/reproduce_leaver_chain.py \
