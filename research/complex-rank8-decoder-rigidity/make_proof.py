@@ -18,14 +18,21 @@ import verify as V  # noqa: E402
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--live', default='P112', choices=['P112', 'P120'])
+    ap.add_argument('--live', default='P112', help='P112, P120, or an extension unit name (P111, P104-44, P104-2222, P104-11111111)')
     ap.add_argument('--out', required=True)
     ap.add_argument('--solver', default='g4', help='pysat solver name with proof support (g4 = Glucose 4.1)')
     ap.add_argument('--families', default=None, help='comma-separated clause families (default all: two,four,diag,trans)')
     args = ap.parse_args()
     from pysat.solvers import Solver
-    live = V.P112 if args.live == 'P112' else V.P120
-    F = V.choose_pivot(live)
+    if args.live in ('P112', 'P120'):
+        live = V.P112 if args.live == 'P112' else V.P120
+        F = V.choose_pivot(live)
+    else:
+        units = V.extension_units()[0]
+        live, F, _desc = units[args.live]
+        F = list(F)
+        if args.families is None:
+            args.families = ','.join(V.EXPECTED['EXT']['units'][args.live]['families'])
     rel = V.blocks_relative(F, live)
     fams = None if args.families is None else set(args.families.split(','))
     cnf, zvars, stats = V.build_zero_cnf(live, F, rel, options=fams)

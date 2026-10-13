@@ -324,11 +324,10 @@ classification of the hyperplane flats of the E8 arrangement into eight W(E8)-ty
   supports or costs follows; when `rank K >= 9`, Section 1 fails at the first step. PR717's mixed-β problem
   for n >= 9 is therefore untouched; in the E-graph model its locus is the rank >= 9 solutions of the same
   system together with the factorisations of the rank-8 solutions `D (2G) D^{-1}` into nine or more terms.
-- **Live sets.** P112 (the complement of any frame, by W(E8)-transitivity) and P120. For other punctures the
-  finite inputs — a live pivot frame, complete classes, the zero-exclusion refutation and the witnesses of
-  Sections 5–6 — must be re-established; the functions of `verify.py` are parametrised by the live set and
-  could be adapted, but only P112 and P120 are implemented and nothing else is claimed. For the PR717/PR968
-  P104 unit (two punctured frames) only numerical evidence exists (README, "Numerical probes").
+- **Live sets.** P112 (the complement of any frame, by W(E8)-transitivity), P120, and — by Section 10 — the
+  336 P104 units of type (2,2,2,2). For P111, the 28 type-(4,4) P104 units and the 896 admissible P104 units
+  (PR717's among them) Section 10 establishes zero exclusion and records exactly which further input of the
+  proof is missing; rigidity there is not claimed (numerical evidence only).
 - **Coefficients.** Stated for real coefficients, as in PR717 and PR968. The argument of Sections 1–7 is
   algebraic and uses only that the coefficients lie in a field of characteristic zero (division by 2 and 4,
   `y^2 = Y^2 => Y = +-y`, zero patterns, ranks), so Theorem 1 holds verbatim over C; Corollary 2 over C would
@@ -340,3 +339,58 @@ classification of the hyperplane flats of the E8 arrangement into eight W(E8)-ty
   hypothesis and the rank-8 hypothesis here are incomparable (the solutions `D(2G)D^{-1}` of Theorem 1 have
   factors `DRA`, `D^{-1}RB` that are in general not root-linear), and the two results together leave open,
   on P112, exactly the E-graph decoders of rank >= 9 with both factors off the root code.
+
+## 10. Beyond one frame: what transfers to P111 and to the P104 units
+
+The written proof uses four finite inputs about a live set L with a live pivot frame F: (I1) every live
+non-pivot line lies in a complete class (Lemmas 3, 5); (I2) zero exclusion (Lemma 4); (I3) the group witnesses
+of Lemma 5 Step 1; (I4) every block has a complete live class (Lemma 6). Section G of `verify.py` re-establishes
+whichever of these hold on representative units beyond P112, with the pivot chosen (deterministically) to
+minimise the number of incomplete classes, and transports the conclusions by symmetry.
+
+**Transport.** The line permutations induced by the root reflections and by products of two root reflections
+that map FRAME0 to itself (204 of them) generate a subgroup of the stabiliser of FRAME0 in W(E8). It acts
+transitively on the 112 lines of P112, so all 112 single-line punctures P111 are equivalent, and it has
+exactly three orbits on the 1260 frames inside P112, of sizes 28, 336 and 896, distinguished by how the frame
+meets the classes relative to FRAME0 — types (4,4), (2,2,2,2) and (1,…,1) **[check: G.stabiliser-generators,
+G.line-orbits, G.frame-orbits]**; PR968's 364 inadmissible frames are the first two orbits and its 896
+admissible frames (PR717's P104 among them) the third **[check: G.pr717-p104-orbit]**. Since each such
+permutation preserves orthogonality, N, the rank condition and the torus orbits (Section 0), every statement
+below proved for a representative unit with pivot F holds for every unit of its orbit with the transported
+pivot.
+
+**Lemma 8 (zero exclusion beyond one frame).** With the pivots listed by `verify.py`, no entry of a_i or b_i
+vanishes on its block for any rank-8 solution of (E) on P111, nor on any of the 1260 P104 units: for P111 and
+for the types (2,2,2,2) and (1,…,1) the two-term and diagonal conditions alone refute "some entry is zero"; for
+the type (4,4) those two families admit a zero pattern and the refutation uses all four families, i.e. Lemma 3
+**[check: G.P111.zero-exclusion, G.P104-44.zero-exclusion, G.P104-2222.zero-exclusion,
+G.P104-11111111.zero-exclusion]**.
+
+**Theorem 1′ (the 336 units of type (2,2,2,2)).** For the representative unit `P112 minus {2,3,18,19,40,41,52,53}`
+with pivot `{12,13,22,23,30,31,36,37}` all 24 live classes are complete, zero exclusion holds, every complete
+class has its live group witnesses and every block has a complete live class
+**[check: G.P104-2222.unit, G.P104-2222.class-witnesses, G.P104-2222.theorem-transfers]**. The proof of
+Sections 1–7 therefore applies verbatim: every rank-≤8 solution of (E) on such a unit is `D (2G_L) D^{-1}`.
+Corollary 2 follows as in Section 8 with PR968's floor at p = 16: every decoder with exactly eight costly terms
+in the E-graph model on these 336 P104 units has cst ≥ 56.
+
+**What does not transfer (recorded by the same checks).**
+
+- *Type (4,4), 28 units.* The pivot that makes every live class complete is the third 4-frame of the two D4
+  blocks spanned by the two punctured frames, so those two blocks have no live line at all and only 12 of the
+  14 blocks carry a complete live class **[check: G.P104-44.unit]**. Lemma 6's cocycle step has no witness for
+  triples inside those two blocks, so rigidity is not established there (numerically: 8 of 8 random starts
+  converge to gauge-equivalent solutions, seed 5; *recorded*). Other pivots give all 14 blocks a live class but
+  leave eight classes incomplete.
+- *Type (1,…,1), 896 units (PR717's P104 among them).* Zero exclusion and the witnesses hold, but four classes
+  keep only two live rows **[check: G.P104-11111111.unit]**; for a two-row class the group relations of Lemma
+  5 constrain only one column pairing, leaving a one-parameter family inside the class, so Lemma 5 does not
+  apply. (Numerically rigid: README, "Numerical probes".)
+- *P111, 112 units.* Zero exclusion and the witnesses hold; one class keeps three live rows and its block has
+  no complete class **[check: G.P111.unit]**. For a three-row class the relations of the three pairings still
+  force the two cases of Lemma 5 Step 3 (with `z_1 = ±z` in place of the four-row computation), and case (ii)
+  is excluded because the 3 × 4 class matrix has rank 3; writing out that variant and the gluing with a
+  three-row class is the smallest next step, not done here.
+
+The pivots, class profiles, CNF digests and proof hashes of all four units are pinned in `verify.py` and
+written to the certificate.

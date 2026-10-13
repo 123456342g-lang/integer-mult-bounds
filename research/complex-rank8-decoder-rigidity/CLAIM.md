@@ -27,7 +27,10 @@
 - Delivered as `research/complex-rank8-decoder-rigidity/` (research note / scoped structural result, no κ claim).
 - Theorem: on P112 and P120 every rank-≤8 solution of the E-graph system is D(2G)D^{-1}. Corollary: eight
   costly terms in the E-graph model have PR968 normal-form supports, hence cst ≥ 64 (P112) / 72 (P120).
-- Reproduce: `python3 -I -B research/complex-rank8-decoder-rigidity/verify.py` (and `--live P120`), about 10 s CPU (up to ~30 s wall) each.
+- Extension (same PR, second commit batch): the theorem transfers to the 336 P104 units of type (2,2,2,2)
+  (cst ≥ 56); zero exclusion holds on P111 and all 1260 P104 units; the missing proof input for the other
+  P104 types and P111 is recorded.
+- Reproduce: `python3 -I -B research/complex-rank8-decoder-rigidity/verify.py` (and `--live P120`), about 10 s CPU (up to ~30 s wall) each; 61 checks on P112, 41 on P120.
 - Overlap re-checked against the PR list (through #1210) and the discussion board before submission; the concurrent
   #1191 (one-sided mask rigidity, any term count) and #1180 (all-pairs, both factors root-linear) are complementary,
   not duplicates; see README.
