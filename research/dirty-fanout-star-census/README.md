@@ -79,7 +79,8 @@ some of these failures.
 
 ## Pins, attribution and scope
 
-Base: `91a2094f2e022930069e8cfdc810a3ea1b81cd09`.
+Original base: `91a2094f2e022930069e8cfdc810a3ea1b81cd09`.
+Refreshed submission base: `47481c89fd30a43f8f882eb4b391e89c29273fd0`.
 Subject: PR889 at `e2021d1c9e06948528cbc0a8fd7079b671da981d`.
 [SOURCES.json](SOURCES.json) pins all three verbatim source/reference files by
 SHA256 and Git blob identity; their original paths and notice are retained.
@@ -99,8 +100,10 @@ Prepared for **Ross Richardson (@RossRichardson)** with substantial OpenAI Codex
 assistance, including a separate delegated proof derivation and code review.
 No independent human review is claimed. See [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE).
 
-Selected conditional κ remains `1661634653669567/10^18`. This package changes
-no selected certificate or upstream source. The abstract query contract,
+The original base selected conditional κ=`1661634653669567/10^18`. During
+verification, upstream selected PR890 at `1661957774647029/10^18`; refreshed
+main was incorporated and its selected-record checks passed. This package
+changes no selected certificate or upstream source. The abstract query contract,
 all-size address/compiler correspondence, native source access and hosting,
 precision/tape realization and analytic transfer remain separate obligations.
 There is no new supplier, cost saving, unrestricted optimum, or multiplication

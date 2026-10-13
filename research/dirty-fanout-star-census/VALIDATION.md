@@ -2,7 +2,8 @@
 
 Validation date: 2026-10-14, Australia/Melbourne (2026-10-13 UTC).
 Environment: macOS arm64, CPython 3.14.6; standard library only.
-Base: `91a2094f2e022930069e8cfdc810a3ea1b81cd09`.
+Original base: `91a2094f2e022930069e8cfdc810a3ea1b81cd09`.
+Refreshed submission base: `47481c89fd30a43f8f882eb4b391e89c29273fd0`.
 Subject PR889: `e2021d1c9e06948528cbc0a8fd7079b671da981d`.
 
 ## Completed checks
@@ -21,8 +22,9 @@ Normal and optimized verifier output and the deterministic certificate agree:
 five complete shortest-word censuses, 60 free-algebra emitter cases with
 literal inverse checks, five strict star-admission cases, six built-in controls.
 Both package-test modes pass all ten tests. The selected-record check and all
-five existing selected-result tests pass. The package is the only changed
-path; `upstream/` and the selected record remain unchanged.
+five existing selected-result tests pass, both on the original base and after
+incorporating refreshed main. The package is the only changed path relative
+to refreshed main; `upstream/` and the selected record match that base.
 
 The ten package tests cover loss of labelled-word multiplicities, a positive
 output relabelling, dirty-connector leakage, a wrong integer sign invisible
@@ -56,7 +58,9 @@ are the relevant validation performed; no full-suite success is implied.
 
 No full PR889 invoice, physical layout, rounding analysis, all-size compiler,
 supplier integration or complete multiplication theorem was revalidated.
-The accepted conditional κ remains `1661634653669567/10^18`.
+The original-base accepted conditional κ was `1661634653669567/10^18`.
+Upstream advanced during verification and selected PR890 at
+`1661957774647029/10^18`; this contribution does not change either result.
 
 ## Concurrency review
 
