@@ -61,3 +61,14 @@ failures are retained as historical corroboration, not claimed as new.
 
 Contributor: thakrarsagar; substantial OpenAI Codex assistance in research,
 implementation, checking and writing.
+
+## Completed handoff
+
+Submitted [PR #1014](https://github.com/CrocSwap/integer-mult-bounds/pull/1014)
+on 2026-10-13 at 16:37 UTC. The exact result is 200 failed minimum-frame
+edges, including 80 completed-radical targets. Exhausting every dimension
+for those 80 proves 30 absolute endpoint-pair obstructions and supplies
+50 exact one-dimension local repairs. Ten built-in checks, four corruption
+trials, four historical tests and selected-record consistency pass. Final
+verification and packaging began at 16:31 UTC; the contribution finished
+ahead of the 40-minute bound. No new kappa or complete supplier is claimed.
