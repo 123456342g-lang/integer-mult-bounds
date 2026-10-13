@@ -1,0 +1,37 @@
+{
+  "track": "adversarial mathematical audit",
+  "assignment_seed": 73,
+  "seed_command": "python3 -c 'import secrets; print(secrets.randbelow(100))'",
+  "base_commit": "66849e1475c930fd7732b1a0067ffee7e1e95f60",
+  "started_utc": "2026-10-13T05:05:03Z",
+  "claimed_utc": "2026-10-13T05:09:38Z",
+  "expected_finish_utc": "2026-10-13T05:35:00Z",
+  "verification_reserved_from_utc": "2026-10-13T05:27:30Z",
+  "coordination": "GitHub pinnedIssues is empty; only open issue is #650 (Discussions request). Local claim per sprint instructions.",
+  "candidates": [
+    "#621 uniform cyclic-inverse norm bound: already has multiple arithmetic audits and rounded follow-ups",
+    "#387 finite bootstrap: universal five-round ceiling with independently variable per-level slack",
+    "#479 streamed chirp residues: exact carry and periodicity obligations"
+  ],
+  "selection": "73 modulo 3 = 1 selects the second candidate; scope differs from supplier/resultant audits and the broad #657 assembly wall.",
+  "object": "PR387 at d9fb9410b1ae6f6ada376a1e7fd12bc176e476ea: PROOF.md fixed-depth recurrence, five-round limitation, and retained outer margin.",
+  "hypothesis": "The published final grid point needs at least six recurrence levels even with independent choices of positive slack at every level and any coarse saving below the certified upper endpoint.",
+  "method": "Monotone recurrence envelope plus exact rational cross-products at depths 0 through 6; compare the six-round published witness; adversarial altered-input controls.",
+  "deliverable": "Scoped mathematical audit, source-pinned independent standard-library verifier and deterministic exact receipt; no new kappa.",
+  "stopping_rule": "One recurrence family and the pinned root interval only; no supplier search or global theorem claim.",
+  "overlap_snapshot": {
+    "open_prs": 567,
+    "latest_pr": 748,
+    "relevant": [
+      387,
+      657,
+      621,
+      628,
+      666,
+      668,
+      736,
+      479,
+      684
+    ]
+  }
+}
