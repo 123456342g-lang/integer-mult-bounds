@@ -35,3 +35,23 @@ and incorrect transpose semantics.
 Prepared for Sagar Thakrar (@thakrarsagar) with substantial OpenAI Codex
 assistance. Apache-2.0; independent implementation is not independent human
 peer review.
+
+## Completed result and one scope pivot
+
+Submitted [PR762](https://github.com/CrocSwap/integer-mult-bounds/pull/762).
+The result is ten optimal nonadaptive dirty-input tests for compensation-row
+errors of weight at most three, with an executable four-error blind witness.
+The primary command passes 129 rejection controls. The separate support-set
+and Boolean checker confirms the fixed baseline, all ten probes and malformed
+suite rejection. See README.md and VALIDATION.md for exact scope and checks.
+
+The initial queue scan ended at PR725. A later refresh discovered Joshua
+Snider's PR731 at `cf5ff54a358b400a7e69abe941d1d0ad0944b25e`, which had
+submitted the same adjoint/rank work with additional kernel evidence. The
+planned rank certificate was removed and the scope pivoted once to the
+optimal ten-test suite. This credits PR731 and adds a distinct result on the
+test matrix, not another claim about its compensation kernel.
+
+The pre-submission refresh covered 578 open PRs through PR759. No pinned
+coordination issue existed, so this is the single local completion update.
+No pending code was imported. Only this seven-file package was added.
