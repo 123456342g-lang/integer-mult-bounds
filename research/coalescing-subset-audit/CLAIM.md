@@ -46,3 +46,20 @@ interactions and an independent finite-vector-space representation.
 
 Contributor: Adam Gall (@adamgall), with substantial OpenAI Codex assistance
 for research, implementation, verification and writing. Apache-2.0.
+
+## Result update
+
+Completed and submitted as [PR #1114](https://github.com/CrocSwap/integer-mult-bounds/pull/1114).
+All 64 subsets and 192 directed marginals have the claimed additive profile.
+The bounded experiment also enumerated all 255 containing planes per site
+(1,530 total): exactly the nominated plane is admissible at each site.
+The recorded neighbour frames prove that the original line and that plane
+are the only choices of any dimension with the other frames fixed.
+All 18 semantic controls passed. The cold reproducible command passed in
+129.61 seconds on Linux/Python 3.14.4; see `VALIDATION.json`.
+
+This is corroboration and a scoped finite-class exclusion, not a new kappa
+or a counterexample. Broader frame-search #815 was checked for overlap and
+credited; its different source words and LP/CP-SAT scope are distinguished
+in the README. Final PR metadata was refreshed through #1111 before filing.
+The selected frontier and upstream sources remain unchanged.
