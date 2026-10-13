@@ -1,5 +1,5 @@
 {
-  "status": "COMPLETE_SCOPED_REVIEW_PENDING_PUBLICATION",
+  "status": "PUBLISHED_FIFTEEN_MERGED_INTEGRATION_LINUX_PENDING",
   "selected_kappa": "1661634653669567/1000000000000000000",
   "selected_decimal": "0.001661634653669567",
   "reviewed_heads": {
@@ -19,9 +19,9 @@
     "721": "0038fa9051bcbf52ccea8e29272840b13126e539",
     "727": "71ba94c981477b3527ef21dd0f8140e795a7664d"
   },
-  "publication_commit": null,
+  "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
   "linux_ci": {
-    "frontier799": "Not yet published or run; local integrated wrapper passed with source-bound fresh ancestry reuse."
+    "frontier799": "Published; exact integration Linux run is pending. Local full X4 replay passed with source-bound fresh ancestry."
   },
   "receipts": {
     "research/community-frontier799-audit/pr799-replay.tar.gz": "4dff69f3509ca81ab768ebf4b39bb6313b331995e4b2a412729b541a39c8459a",
@@ -99,6 +99,7 @@
     "research/community-frontier799-audit/logs/frontier799-reconciliation.log": "84ea54377818d9193f9dd852984ef66b93d8f4a3b0895e121a16e90abf74b933",
     "research/community-frontier799-audit/logs/frontier799-selected-tests.log": "cd548e381669943bf024ab96f5ded8a0e094d92b19450e6da3ac7358cdb748c8",
     "research/community-frontier799-audit/logs/frontier799-ledger-tests.log": "4f4cc986c68bcbe3ee7e4d50e4b061a199c6d5e07aa51e7dc622563b98b63948",
-    "research/community-frontier799-audit/logs/pr721-integrated-benchmark.json": "b5d51408b8ea801968cba502b8dedc7e4ac7047d407fb19dbc674d60b7331cfc"
+    "research/community-frontier799-audit/logs/pr721-integrated-benchmark.json": "b5d51408b8ea801968cba502b8dedc7e4ac7047d407fb19dbc674d60b7331cfc",
+    "research/community-frontier799-audit/PUBLICATION.json": "361befd077b4deee18da6d344f4d3979c781907b5158051cd4254a7ce91c6e50"
   }
 }

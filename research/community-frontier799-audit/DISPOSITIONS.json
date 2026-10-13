@@ -1,5 +1,5 @@
 {
-  "status": "ALL_SCOPED_REVIEWS_COMPLETE_PENDING_PUBLICATION",
+  "status": "PUBLISHED_FIFTEEN_REVIEWED_HEADS_MERGED",
   "pull_requests": [
     {
       "number": 799,
@@ -20,19 +20,26 @@
       },
       "reviewed_head": "80e6463157cfc80b85af09e7e2f14748fe2dac60",
       "current_head": "80e6463157cfc80b85af09e7e2f14748fe2dac60",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/gauge44-frames-x"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "80e6463157cfc80b85af09e7e2f14748fe2dac60",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:44:20Z",
+        "integration_commit": "3a4cc4459fb530d69199e9011f31a310bc75bf58",
+        "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/2e26ca8375805c054c78f2b0fb4a8b3f36a4731f/docs/research/community-frontier799-review.md"
+      },
       "scope": "Explicit conditional X4 finite witness; exhaustive-search/optimality claims remain contributor reports.",
-      "unresolved_question": "Reviewed and tested; publication and exact-head closure pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier799-review.md"
@@ -57,21 +64,28 @@
       },
       "reviewed_head": "56b626800c85026b10dada646c80c6b58179b427",
       "current_head": "56b626800c85026b10dada646c80c6b58179b427",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-frontier799-audit/submitted-workflows/795/sw4-owner-optimality.yml",
         "research/sw4-owner-optimality-validation",
         "research/sw4-owner-optimality"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "56b626800c85026b10dada646c80c6b58179b427",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:44:20Z",
+        "integration_commit": "75d45125af2072ce8a1a4d0b5e11584847d12627",
+        "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/2e26ca8375805c054c78f2b0fb4a8b3f36a4731f/docs/research/community-frontier799-review.md"
+      },
       "scope": "Fixed-word, width-inventory and capacity owner-profile optimum; no new kappa.",
-      "unresolved_question": "Reviewed and tested; publication and exact-head closure pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier799-review.md"
@@ -96,20 +110,27 @@
       },
       "reviewed_head": "eca5c317d8176401a1f71a5ea1e81384c2eab1e0",
       "current_head": "eca5c317d8176401a1f71a5ea1e81384c2eab1e0",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/pr699-frame-retiming-validation",
         "research/pr699-frame-retiming"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "eca5c317d8176401a1f71a5ea1e81384c2eab1e0",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:44:21Z",
+        "integration_commit": "a45436d3878a11f6b3d7360bd9e56240a873af24",
+        "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/2e26ca8375805c054c78f2b0fb4a8b3f36a4731f/docs/research/community-frontier799-review.md"
+      },
       "scope": "Complete incremental parallel frame reconstruction and independent point-set/owner/price verification.",
-      "unresolved_question": "Reviewed and tested; publication and exact-head closure pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier799-review.md"
@@ -134,19 +155,26 @@
       },
       "reviewed_head": "4189f39ec022b7d1f8adb6c394f80b2c31a3f9c5",
       "current_head": "4189f39ec022b7d1f8adb6c394f80b2c31a3f9c5",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/pr695-digest-audit"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "4189f39ec022b7d1f8adb6c394f80b2c31a3f9c5",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:44:20Z",
+        "integration_commit": "2272fcc6fc322eaf4960d71734c09740a6d35410",
+        "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/2e26ca8375805c054c78f2b0fb4a8b3f36a4731f/docs/research/community-frontier799-review.md"
+      },
       "scope": "Hash-substitution diagnostic with corrected scope and demonstrated non-timing blind spot; unavailable CI payloads remain unverified.",
-      "unresolved_question": "Reviewed and tested; publication and exact-head closure pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier799-review.md"
@@ -171,19 +199,26 @@
       },
       "reviewed_head": "bb05c40c3e6319aa8c131b06a105e3648ac6c95b",
       "current_head": "bb05c40c3e6319aa8c131b06a105e3648ac6c95b",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r420-two-block-composition"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "bb05c40c3e6319aa8c131b06a105e3648ac6c95b",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:44:21Z",
+        "integration_commit": "b0dfb9af89d6d2a4cd0e7376849bfc4a6523fdb6",
+        "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/2e26ca8375805c054c78f2b0fb4a8b3f36a4731f/docs/research/community-frontier799-review.md"
+      },
       "scope": "Historical two-block circuit and hosted replay.",
-      "unresolved_question": "Reviewed and tested; publication and exact-head closure pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier799-review.md"
@@ -208,19 +243,26 @@
       },
       "reviewed_head": "ee6b9175fe006c11871802866c487b5ecc1a93a4",
       "current_head": "ee6b9175fe006c11871802866c487b5ecc1a93a4",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r420-quad13"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "ee6b9175fe006c11871802866c487b5ecc1a93a4",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:44:21Z",
+        "integration_commit": "bc69e61c6f4141a402e45b877d1df01f6f42ae32",
+        "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/2e26ca8375805c054c78f2b0fb4a8b3f36a4731f/docs/research/community-frontier799-review.md"
+      },
       "scope": "Historical quad13 circuit and bounded deterministic nomination.",
-      "unresolved_question": "Reviewed and tested; publication and exact-head closure pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier799-review.md"
@@ -245,20 +287,27 @@
       },
       "reviewed_head": "9732ac127dd4bef98a846aaa904c20b5a84e72c1",
       "current_head": "9732ac127dd4bef98a846aaa904c20b5a84e72c1",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-frontier799-audit/submitted-workflows/694/r420-compensation-basis.yml",
         "research/r420-compensation-basis"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "9732ac127dd4bef98a846aaa904c20b5a84e72c1",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:44:21Z",
+        "integration_commit": "a5a37c270cd5ac3ae6f0acceeb66016b294b9a37",
+        "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/2e26ca8375805c054c78f2b0fb4a8b3f36a4731f/docs/research/community-frontier799-review.md"
+      },
       "scope": "Historical restored helper basis and native replay.",
-      "unresolved_question": "Reviewed and tested; publication and exact-head closure pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier799-review.md"
@@ -283,19 +332,26 @@
       },
       "reviewed_head": "5a3f983715027c4fd83f50bc9001d4b18463bed1",
       "current_head": "5a3f983715027c4fd83f50bc9001d4b18463bed1",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/complex-dyadic-lowering"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "5a3f983715027c4fd83f50bc9001d4b18463bed1",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:44:21Z",
+        "integration_commit": "9e6049deb81c109fc71ce5cf343a5afd4f5bc839",
+        "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/2e26ca8375805c054c78f2b0fb4a8b3f36a4731f/docs/research/community-frontier799-review.md"
+      },
       "scope": "Historical dyadic macro lowering.",
-      "unresolved_question": "Reviewed and tested; publication and exact-head closure pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier799-review.md"
@@ -320,19 +376,26 @@
       },
       "reviewed_head": "2ec522a466ec448f148d4355dc43b51c0ef1e0b5",
       "current_head": "2ec522a466ec448f148d4355dc43b51c0ef1e0b5",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r420-decoder-sharing"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "2ec522a466ec448f148d4355dc43b51c0ef1e0b5",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:44:21Z",
+        "integration_commit": "8d1fbdad492d0a2d57efa656f41d39bab0ebedb4",
+        "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/2e26ca8375805c054c78f2b0fb4a8b3f36a4731f/docs/research/community-frontier799-review.md"
+      },
       "scope": "Historical decoder sharing and native replay.",
-      "unresolved_question": "Reviewed and tested; publication and exact-head closure pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier799-review.md"
@@ -357,20 +420,27 @@
       },
       "reviewed_head": "1a19af5c5ddb6de9797a6d085e5df0b90ed6d58b",
       "current_head": "1a19af5c5ddb6de9797a6d085e5df0b90ed6d58b",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-frontier799-audit/submitted-workflows/713/r420-target-basis.yml",
         "research/r420-target-basis"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "1a19af5c5ddb6de9797a6d085e5df0b90ed6d58b",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:44:21Z",
+        "integration_commit": "5ee28ba6c03005a70f839a8af7da3ab36ff98e61",
+        "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/2e26ca8375805c054c78f2b0fb4a8b3f36a4731f/docs/research/community-frontier799-review.md"
+      },
       "scope": "Historical restored target basis and native replay.",
-      "unresolved_question": "Reviewed and tested; publication and exact-head closure pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier799-review.md"
@@ -395,20 +465,27 @@
       },
       "reviewed_head": "458744109003e0958798f27c1f04be78f03663ce",
       "current_head": "458744109003e0958798f27c1f04be78f03663ce",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-frontier799-audit/submitted-workflows/662/clifford-state-performance.yml",
         "research/clifford-state-performance"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "458744109003e0958798f27c1f04be78f03663ce",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:44:21Z",
+        "integration_commit": "9d924d1482aa04fe4a342b03daf98919d6f50a02",
+        "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/2e26ca8375805c054c78f2b0fb4a8b3f36a4731f/docs/research/community-frontier799-review.md"
+      },
       "scope": "Opt-in exact Clifford state accelerator.",
-      "unresolved_question": "Reviewed and tested; publication and exact-head closure pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier799-review.md"
@@ -433,20 +510,27 @@
       },
       "reviewed_head": "098bdbe5e554bb94a4ffe14b4f80758c80884bc5",
       "current_head": "098bdbe5e554bb94a4ffe14b4f80758c80884bc5",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-frontier799-audit/submitted-workflows/707/gram-prefix-performance.yml",
         "research/gram-prefix-performance"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "098bdbe5e554bb94a4ffe14b4f80758c80884bc5",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:44:21Z",
+        "integration_commit": "921b089da2207553ea8dda8f21c2dd11250e8dac",
+        "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/2e26ca8375805c054c78f2b0fb4a8b3f36a4731f/docs/research/community-frontier799-review.md"
+      },
       "scope": "Opt-in exact Gram prefix determinant cache.",
-      "unresolved_question": "Reviewed and tested; publication and exact-head closure pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier799-review.md"
@@ -471,19 +555,26 @@
       },
       "reviewed_head": "98310d032c67786190c1e9928f81cf7aaff27564",
       "current_head": "98310d032c67786190c1e9928f81cf7aaff27564",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r420-geometry-cache"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "98310d032c67786190c1e9928f81cf7aaff27564",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:44:20Z",
+        "integration_commit": "dabf86ab4148b2d9ee0964f97ac6dfbff6eb8013",
+        "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/2e26ca8375805c054c78f2b0fb4a8b3f36a4731f/docs/research/community-frontier799-review.md"
+      },
       "scope": "Opt-in bounded geometry cache.",
-      "unresolved_question": "Reviewed and tested; publication and exact-head closure pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier799-review.md"
@@ -508,21 +599,28 @@
       },
       "reviewed_head": "0038fa9051bcbf52ccea8e29272840b13126e539",
       "current_head": "0038fa9051bcbf52ccea8e29272840b13126e539",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/streamed-reconciliation",
         "scripts/verify_pr_reconciliation.py",
         "tests/test_reconciliation_archive.py"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "0038fa9051bcbf52ccea8e29272840b13126e539",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:44:21Z",
+        "integration_commit": "fdb59a7d9eda3136923f7086c213d3079cee08c4",
+        "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/2e26ca8375805c054c78f2b0fb4a8b3f36a4731f/docs/research/community-frontier799-review.md"
+      },
       "scope": "Streaming reconciliation ZIP verification, preserving current ledger hardening.",
-      "unresolved_question": "Reviewed and tested; publication and exact-head closure pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier799-review.md"
@@ -547,19 +645,26 @@
       },
       "reviewed_head": "71ba94c981477b3527ef21dd0f8140e795a7664d",
       "current_head": "71ba94c981477b3527ef21dd0f8140e795a7664d",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/owner-footprint-bitsets"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "71ba94c981477b3527ef21dd0f8140e795a7664d",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:44:20Z",
+        "integration_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
+        "publication_commit": "2e26ca8375805c054c78f2b0fb4a8b3f36a4731f",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/2e26ca8375805c054c78f2b0fb4a8b3f36a4731f/docs/research/community-frontier799-review.md"
+      },
       "scope": "Opt-in exact owner-footprint masks.",
-      "unresolved_question": "Reviewed and tested; publication and exact-head closure pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier799-review.md"
