@@ -1,5 +1,5 @@
 {
-  "status": "claimed",
+  "status": "submitted",
   "assignment": {
     "pass_number": 13,
     "assignment_seed": 19,
@@ -37,5 +37,12 @@
   "coordination": "No pinned sprint coordination issue: non-PR issues are 650 (Discussions) and 913 (prose quality). Local claim used.",
   "expected_deliverable": "Exact candidate or bounded negative census with independently checked local maps, full original interface replay, complete costs and native stage evidence for any construction.",
   "expected_finish_utc": "2026-10-13T15:00:00Z",
-  "claimed_at_utc": "2026-10-13T14:09:38.019451+00:00"
+  "claimed_at_utc": "2026-10-13T14:09:38.019451+00:00",
+  "completed_at_utc": "2026-10-13T14:27:59.103198+00:00",
+  "pr_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/952",
+  "mathematical_head": "2b1f30ade78ad5e9b8b8fb9bca80879ba5c7ba07",
+  "publication_base": "007664306fff84fbb1c9a1b4053b69f439764034",
+  "result": "Seven complete six-wire A blocks save 19 ADDs plus 19 required cleanup ADDs beyond PR936: 23,711 to 23,673, total saving 632 versus selected PR589. Five positive integer maps change; Boolean maps, both positive guards, frame paths, original H1-H5 and paid profile preserved.",
+  "validation": "Full receipt identical on ordinary CPython 3.14.4 and isolated optimized read-only CPython 3.12.3; all three complete words and native 5/9/11 stages pass. 144 bridge controls, 12 local controls, seven package tests. Selected-record and source-object checks pass.",
+  "overlap_refresh": "Through PR951; pinned PR936 head unchanged, no duplicate whole-six-wire result. New PR950 is historical central-factor tooling and PR951 is a recursive cyclic-inverse construction."
 }
