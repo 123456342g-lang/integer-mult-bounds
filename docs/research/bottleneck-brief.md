@@ -22,6 +22,12 @@ limiting conversion `κ = a/(1+a)`, κ > .01 needs both effective primitive budg
 above approximately `1/99`, with strict margins and all transfer obligations.
 This describes the current construction, not a lower bound for multiplication.
 
+**Revision 3 update (pending review of #1240/#1264).** On the binding complex side, packing any
+screened local word is capped within about 0.9% of the record. The 64-per-call centre path uses about
+64% of the raw deficit, and the effective child rank is about 3.9. See the lever budgets in
+[the packing ceiling](../../research/complex-local-word-ceiling/README.md) and the
+[priority log](research-priority-log.md).
+
 ## What a successful change must affect
 
 The construction recursively replaces work of width `m` with children of ranks
