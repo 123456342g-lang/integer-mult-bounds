@@ -15,7 +15,7 @@ recipes. Every edge and adapter is an independent, pure computation with the pin
 `clifford_exact.py`.
 
 `phases_parallel.py` is an opt-in drop-in. It takes the same arguments (`OUT_DIR CLIFFORD_DIR`)
-plus `--jobs`:
+plus `--jobs` and `--engine`:
 
 - The frame loop runs in the parent with all of its assertions, unchanged.
 - Each edge and each adapter is computed in a worker process by the unchanged pinned functions,
@@ -28,13 +28,23 @@ plus `--jobs`:
 
 The pinned `phases_full.py` stays the reference. No pinned file is modified.
 
+`--engine reference` (the default) runs the pinned `clifford_exact.py` exactly as it is.
+`--engine dense662` also installs Charles Bethin's merged PR662 exact state evaluator
+(`research/clifford-state-performance/fast_state.py`, pinned by digest) as `Op.zero_state` in every
+process, the same substitution PR662's own `run.py` makes. The parallel layer composes with any
+per-edge evaluator.
+
 ## Benchmark (same input, same machine)
 
 | Runner | Wall time | Speedup |
 |---|---:|---:|
-| pinned serial `phases_full.py` via `run_portable.py` | 95.1 s (harness run), 92.7 s (separate run) | 1× |
-| `phases_parallel.py --jobs 4` | 33.0 s | 2.8× |
-| `phases_parallel.py --jobs 10` | 20.7 s (harness run), 19.9 s (separate run) | **4.6×** |
+| pinned serial `phases_full.py` via `run_portable.py` | 92.2 s | 1× |
+| `phases_parallel.py --jobs 4`, reference engine | 33.0 s (separate run) | 2.8× |
+| `phases_parallel.py --jobs 10`, reference engine | 16.2 s | **5.7×** |
+| `--jobs 1 --engine dense662` (the PR662 evaluator alone) | 12.3 s | 7.5× |
+| `--jobs 10 --engine dense662` | 3.2 s | **28.8×** |
+
+Every run produced the pinned bytes. Rows without a note come from one harness run.
 
 Machine: macOS 26.5.2 on arm64 with 10 cores (4 performance, 6 efficiency) and Python 3.14.8.
 The harness receipt is [`BENCHMARK-macos-arm64.json`](BENCHMARK-macos-arm64.json). These are
@@ -50,8 +60,8 @@ speedup depends on core count.
 - **Failure detection, shown by controls.**
   - C1: a corrupted frame fails the parent's frame rank assertion, and no output is written.
   - C2: an edge between two different frames of equal rank fails the per-edge rank assertion
-    inside a worker. The run then exits non-zero without writing recipes, and the pinned serial
-    script rejects the same input at the same assertion.
+    inside a worker, under both engines. The run then exits non-zero without writing recipes, and
+    the pinned serial script rejects the same input at the same assertion.
 
 ## Using it in the selected replay (opt-in, not wired)
 
@@ -59,7 +69,7 @@ speedup depends on core count.
 stage with `--skip-phases`, then run
 
 ```sh
-python3 -B research/phase-recipes-parallel/phases_parallel.py <native>/local research/complex-k492-owner-repair/vendor/multicold/vendor/pr558/vendor/pr552/complex-global/vendor531/vendor/clifford --jobs N
+python3 -B research/phase-recipes-parallel/phases_parallel.py <native>/local research/complex-k492-owner-repair/vendor/multicold/vendor/pr558/vendor/pr552/complex-global/vendor531/vendor/clifford --jobs N [--engine dense662]
 ```
 
 It then checks the recipe digest against `LOCAL-PINS-barch-U8.json`, the same assertion
@@ -76,6 +86,18 @@ make phase-recipes-parallel-benchmark   # also times the pinned serial reference
 The expected last line is `PASS_PHASE_RECIPES_PARALLEL`. Both use standard-library Python 3.10+
 and no network. The input canonical word is read in memory from the pinned selected T37 archive,
 and the payload digest `24db880b…` is checked against PR870's pin.
+
+## Relation to concurrent work
+
+aliromman's open PR1029 attacks the same step with a new sparse exact state evaluator. It reports
+16.4× against the original and 2.2× against PR662 on a different machine. This package is
+complementary and differs in two ways:
+
+- **Equivalence by construction.** The default engine runs only unchanged pinned functions, so
+  only scheduling changes and no new evaluator proof is needed.
+- **Composition.** Process-level parallelism multiplies the speed of whatever per-edge evaluator
+  is installed. With the already-merged PR662 evaluator it reaches 28.8× here. A sparse evaluator,
+  if accepted, could be installed the same way.
 
 ## Scope
 

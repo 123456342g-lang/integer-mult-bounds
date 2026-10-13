@@ -4,7 +4,7 @@
 Usage: python3 -B research/phase-recipes-parallel/verify.py --work NEW_EMPTY_DIR [--jobs N] [--serial]
 
 1. Extracts the pinned U8 canonical word from the selected T37 archive (in memory).
-2. Runs phases_parallel.py and requires CLIFFORD-RECIPES.json to have the digest pinned in
+2. Runs phases_parallel.py with both engines (reference and the merged PR662 evaluator) and requires CLIFFORD-RECIPES.json to have the digest pinned in
    PR870's LOCAL-PINS-barch-U8.json (also the template's exact_local_clifford_recipe_sha256),
    and CLIFFORD-REVIEW.json to equal the archived review apart from elapsed seconds.
 3. With --serial, also runs the pinned phases_full.py through its portable wrapper on a
@@ -106,20 +106,32 @@ def main():
     runner = HERE / 'phases_parallel.py'
     receipt = dict(platform=platform.platform(), python=platform.python_version(), cpu_count=os.cpu_count(), jobs=a.jobs)
 
-    par = word_dir(work, 'parallel')
-    rc, secs = run([sys.executable, '-B', str(runner), str(par), str(clifford), '--jobs', str(a.jobs)], work / 'parallel.log')
-    require(rc == 0, 'parallel run failed')
-    raw = (par / 'CLIFFORD-RECIPES.json').read_bytes()
-    require(sha(raw) == PINS['recipes_sha256'], 'parallel recipes digest differs from the pin')
-    require(review_equal(par / 'CLIFFORD-REVIEW.json'), 'parallel review differs from the archived review')
-    receipt['parallel_seconds'] = round(secs, 1)
+    raw = None
+    for engine in ('reference', 'dense662'):
+        par = word_dir(work, 'parallel-' + engine)
+        rc, secs = run([sys.executable, '-B', str(runner), str(par), str(clifford), '--jobs', str(a.jobs),
+                        '--engine', engine], work / f'parallel-{engine}.log')
+        require(rc == 0, f'parallel run failed ({engine})')
+        out = (par / 'CLIFFORD-RECIPES.json').read_bytes()
+        require(sha(out) == PINS['recipes_sha256'], f'parallel recipes digest differs from the pin ({engine})')
+        require(review_equal(par / 'CLIFFORD-REVIEW.json'), f'parallel review differs from the archived review ({engine})')
+        require(raw is None or out == raw, 'engines disagree')
+        raw = out
+        receipt[f'parallel_{engine}_seconds'] = round(secs, 1)
     if a.serial:
+        one = word_dir(work, 'dense662-one-job')
+        rc, secs = run([sys.executable, '-B', str(runner), str(one), str(clifford), '--jobs', '1', '--engine', 'dense662'],
+                       work / 'dense662-one-job.log')
+        require(rc == 0 and (one / 'CLIFFORD-RECIPES.json').read_bytes() == raw, 'one-job dense662 run differs')
+        receipt['dense662_one_job_seconds'] = round(secs, 1)
         ser = word_dir(work, 'serial')
         rc, secs = run([sys.executable, '-B', str(wrapper), str(serial_script), str(ser), str(clifford)], work / 'serial.log')
         require(rc == 0, 'serial reference failed')
         require((ser / 'CLIFFORD-RECIPES.json').read_bytes() == raw, 'serial and parallel recipes differ')
         receipt['serial_seconds'] = round(secs, 1)
-        receipt['speedup'] = round(receipt['serial_seconds'] / receipt['parallel_seconds'], 2)
+        receipt['speedup_reference_parallel'] = round(receipt['serial_seconds'] / receipt['parallel_reference_seconds'], 2)
+        receipt['speedup_dense662_parallel'] = round(receipt['serial_seconds'] / receipt['parallel_dense662_seconds'], 2)
+    par = work / 'parallel-reference'
 
     # Controls. C1: a frame that no longer has full-rank Lagrangian data fails in the parent.
     def break_frame(c):
@@ -135,15 +147,18 @@ def main():
             by_rank.setdefault(len(U), []).append(i)
         a2, b2 = next(v[:2] for r, v in sorted(by_rank.items()) if 0 < r and len(v) > 1)
         c['edges'] = [[a2, b2]]
-    d2 = mutated_word(par, work, 'C2', bad_edge)
-    rc, _ = run([sys.executable, '-B', str(runner), str(d2), str(clifford), '--jobs', str(a.jobs)], work / 'C2.log')
-    log2 = (work / 'C2.log').read_text()
-    require(rc != 0 and 'AssertionError' in log2 and not (d2 / 'CLIFFORD-RECIPES.json').exists(),
-            'C2 worker failure not propagated')
+    for engine in ('reference', 'dense662'):
+        d2 = mutated_word(par, work, 'C2-' + engine, bad_edge)
+        rc, _ = run([sys.executable, '-B', str(runner), str(d2), str(clifford), '--jobs', str(a.jobs), '--engine', engine],
+                    work / f'C2-{engine}.log')
+        log2 = (work / f'C2-{engine}.log').read_text()
+        require(rc != 0 and 'AssertionError' in log2 and not (d2 / 'CLIFFORD-RECIPES.json').exists(),
+                f'C2 worker failure not propagated ({engine})')
     d3 = mutated_word(par, work, 'C2-serial', bad_edge)
     rc, _ = run([sys.executable, '-B', str(wrapper), str(serial_script), str(d3), str(clifford)], work / 'C2-serial.log')
     require(rc != 0 and 'AssertionError' in (work / 'C2-serial.log').read_text(), 'C2 not rejected by the serial reference')
-    receipt['controls'] = ['C1_frame_rank_failure_in_parent', 'C2_edge_rank_failure_in_worker', 'C2_same_failure_in_serial_reference']
+    receipt['controls'] = ['C1_frame_rank_failure_in_parent', 'C2_edge_rank_failure_in_worker_reference',
+                           'C2_edge_rank_failure_in_worker_dense662', 'C2_same_failure_in_serial_reference']
     (work / 'RECEIPT.json').write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(receipt, indent=2))
     print('PASS_PHASE_RECIPES_PARALLEL')
