@@ -34,4 +34,3 @@ Completed 2026-10-13 06:16 UTC: submitted one research-note PR, [#814](https://g
 - Upstream advanced to `7ee02b7c96d85f22b38d28bd7ed49bb8c1aeb261` and selected #741 at kappa 1661202643272239/1000000000000000000. Its review was read. All pinned base geometry files remain byte-identical. The contribution retains its exact starting base and changes no selected or upstream file.
 
 Reproduce (Python 3.10+): `python3 -B research/eisenstein-message-copy-bound/verify.py`. Expected prefix: `PASS_EISENSTEIN_MESSAGE_BOUND`. Prepared by Michael Fischler (@shiftybitshiftr) with substantial OpenAI Codex assistance; Apache-2.0.
-
