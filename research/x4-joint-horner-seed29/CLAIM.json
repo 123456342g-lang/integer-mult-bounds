@@ -33,5 +33,20 @@
     "open_pr_count": 722,
     "latest_observed_pr": 932
   },
-  "status": "claimed"
+  "status": "submitted",
+  "completed_utc": "2026-10-13T13:54:10Z",
+  "integration_base_commit": "47481c89fd30a43f8f882eb4b391e89c29273fd0",
+  "result": {
+    "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/945",
+    "classification": "finite complex-supplier circuit construction; no new kappa",
+    "candidate_pairs_checked": 6112,
+    "selected_pairs": 1586,
+    "backward_real_primitives_saved": 13072,
+    "conservative_local_bound_saved": 16,
+    "formal_input_columns": 737,
+    "current_selected_pr": 890,
+    "current_selected_kappa": "0.001661957774647029",
+    "scope_change": "Starting X4 selection became the official PR799 historical checkpoint during the sprint. Its exact inputs remain unchanged; no U8 transport is claimed.",
+    "verification": "Full backward Fraction replay, separate integer circuit/stream/path checker, 12+4 adverse controls, 7 tests including optimized minimal relocation, and refreshed selected-record integrity passed. No hosted CI pass claimed."
+  }
 }
