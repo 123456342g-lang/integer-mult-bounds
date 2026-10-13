@@ -68,8 +68,9 @@ not a formal proof of the all-prime-power theorem or integer multiplication.
 
 Seven pairs run sequentially in alternating order. Each member is a fresh
 isolated Python process on the same eight inputs. The guarded timing includes
-loading, hashing, and compiling the adapter. No priming run or timing sample is
-discarded. Times include the entire process, not just elimination.
+loading, hashing, and compiling the adapter. Within each recorded series,
+no priming run or timing sample is discarded. Times include the entire process,
+not just elimination.
 
 | Local interpreter | Reference wall median | Guarded wall median | Reference CPU median | Guarded CPU median |
 | --- | ---: | ---: | ---: | ---: |
@@ -81,6 +82,11 @@ Both runs were on macOS 26.5.2, arm64. Child CPU medians fell by 24.6% and
 with the guard. No universal speedup or complete frontier replay speedup is
 claimed. Raw samples are retained in [RESULT-python313.json](RESULT-python313.json)
 and [RESULT-python314.json](RESULT-python314.json).
+
+Before these series, a baseline-only smoke run took 2.7844 seconds. A separate
+feasibility pair using `python -c` measured 3.2008 seconds before the guard and
+2.8955 seconds after it, with identical receipts. Those preliminary runs use
+different launch conditions and are not included in the table's medians.
 
 The focused checks cover 36 matrix/mode combinations at orders 3, 4, and 5.
 They include sparse, dense, row-swapped, and singular matrices, non-rational

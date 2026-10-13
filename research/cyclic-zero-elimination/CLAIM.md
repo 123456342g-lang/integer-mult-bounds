@@ -20,3 +20,23 @@
   exact verifier rather than another selected-frontier kernel.
 
 Prepared by thakrarsagar with substantial OpenAI Codex assistance.
+
+## Result update
+
+Submitted [PR736](https://github.com/CrocSwap/integer-mult-bounds/pull/736).
+The source-pinned adapter preserves all eight cases and their negative controls.
+All 28 measured full replays match the predecessor receipt. Seven alternating
+pairs per interpreter measured 24.6% and 26.2% lower child CPU medians on local
+Python 3.13 and 3.14. Wall medians improved with more variability, including one
+slower pair. The [README](README.md) retains exact scope and all timing evidence.
+
+The 36 focused matrix/mode checks and corruption controls pass, including
+optimized Python. Isolated optimized replays from `/tmp` match on Python 3.11
+and 3.14. The selected-record check passes. The original source and `upstream/`
+remain unchanged. Full repository, cold frontier, and SymPy checks were not
+rerun. A separate Codex agent reviewed the guard and controls.
+
+Before submission, the PR queue was refreshed through #732 and relevant heads
+were checked separately. PR668 remains a distinct CRT coverage extension;
+PR727 optimizes a different owner checker. No overlapping zero-row adapter was
+found, and no pinned coordination issue was available.
