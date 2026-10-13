@@ -43,7 +43,7 @@ Verification and packaging began before the planned final-quarter deadline
 (19:46:30 UTC in a 30-minute envelope ending at 19:54 UTC). The claim records
 scope, time, seed, three candidates and the completed handoff.
 
-The live overlap refresh inspected recent PRs through #1173, plus targeted
+The live overlap refresh inspected recent PRs through #1176, plus targeted
 five-cube/non-affine/three-total searches. The only matching predecessor was
 PR1046 at `7cadcb0a2fc71fdedc0066704dec3fec58c2ca2c`; it is credited explicitly.
 The submission refresh also read the newly introduced discussion board: #1163, #1166 and #1167 were the complete three-thread inventory, all with no comments or overlapping claims. No pinned coordination issue existed; the original local claim was retained as instructed, with no separate reservation issue.
@@ -55,3 +55,5 @@ compiler, precision/tape, analytic transfer and independent human review.
 The added path-scoped Linux workflow runs the full package tests; hosted
 CI status is separate and no hosted pass is claimed by this local note.
 Only the new research package and its focused workflow are submitted.
+
+Submission base: `1b59b624d21924f8e3537cdc1ac52d3be6eda2fe`. The package is byte-identical before and after rebasing onto that refreshed main, and all seven input Git blobs are unchanged there. Selected-record integrity and its five tests pass after rebase. Implementation commit: `201c15fa7ed522396d3f4ebfb0eeabae7060f9bb`. Published for review as [PR1177](https://github.com/CrocSwap/integer-mult-bounds/pull/1177); subsequent closeout changes only this note and CLAIM.json.

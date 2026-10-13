@@ -34,5 +34,17 @@
     "1070": "XOR address affine-agreement theorem, not decoder supports",
     "669": "different odd-diagonal copy geometry; current graph-target class already covers candidate 3"
   },
-  "attribution": "Ross Richardson with substantial OpenAI Codex assistance; PR1046 martinxxx9, PR958 Ross Richardson, PR231 Joel Pulikkan, and inherited paired-cube/accounting authors credited."
+  "attribution": "Ross Richardson with substantial OpenAI Codex assistance; PR1046 martinxxx9, PR958 Ross Richardson, PR231 Joel Pulikkan, and inherited paired-cube/accounting authors credited.",
+  "result": {
+    "completed_utc": "2026-10-13T19:43:32.139808+00:00",
+    "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1177",
+    "implementation_commit": "201c15fa7ed522396d3f4ebfb0eeabae7060f9bb",
+    "submission_base": "1b59b624d21924f8e3537cdc1ac52d3be6eda2fe",
+    "statement": "At most three arbitrary-support terms have exact total minimum 32; cost-32 triples have peak16. Non-affine three-total witness 8+16+8 lowers the exact affine three-term minimum35, but the inherited optimistic stage deficit remains -32. No new kappa.",
+    "completed_domain": "433 reduced affine templates; all65535 nonempty masks of coordinate1=0 slice; independent Fraction check of all189 affine pairings and319 dense masks; all131068 canonical equality decoder identities.",
+    "evidence": "Primary and independent receipts regenerate byte-identically; both checkers and nine package groups pass on Python3.14.6 and3.9.6; seven source pins and selected-record/five selected tests pass. No full supplier/cold/native/Lean or hosted CI pass claimed.",
+    "overlap_refresh": "Recent PRs through1176 and targeted five-cube/non-affine/three-total searches; PR1046 same exact head. Newly introduced Discussions1163/1166/1167 all read, no comments or overlapping claims. No pinned issue; local claim retained.",
+    "limits": "Four or more arbitrary-support terms, larger cubes, alternative Gram/ledger, nonlinear data messages and physical/compiler/hosting/precision/tape/analytic realization remain open.",
+    "status": "One open focused research-note PR; no merge. Upstream and selected frontier unchanged."
+  }
 }
