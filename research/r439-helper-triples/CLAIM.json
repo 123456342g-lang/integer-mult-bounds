@@ -28,7 +28,20 @@
   "overlap": "713 open PRs scanned; PR941 certifies disjoint helper matching, excluding overlapping bases. PR952 synthesizes phase-A six-wire prefixes. No helper-triple compensation claim found.",
   "selected_kappa": "1661957774647029/1000000000000000000",
   "selected_source": "PR890, with unchanged PR589 bit supplier",
-  "result": "pending",
+  "result": {
+    "status": "finite bit construction, no new kappa",
+    "completed_at_utc": "2026-10-13T15:05:08.697112+00:00",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/965",
+    "implementation_commit": "82f2b20fff8ecc869dd0994721b77652c6c5063a",
+    "complete_ADDs": 11840,
+    "saved_beyond_PR926": 140,
+    "accepted_triples": 40,
+    "scores": 1774080,
+    "verification": "Full receipt equality, independent group/census, arbitrary-input restoration, owning checks, native legality and 5/9/11-stage replay passed; 144 bridge controls rejected. Selected-record check passed.",
+    "remaining": "Semantic D supplier admission, complete hosted emission/audit and invoices, outer assembly; inherited theorem assumptions remain.",
+    "overlap_refresh": "Queue through PR962 plus exact helper-triples search with zero matches before submission; no pinned coordination issue.",
+    "labels": "codex and codex-automation are not available in the upstream label catalog."
+  },
   "verification_began_utc": "2026-10-13T14:55:12Z",
   "negative_result_review": [
     "research/experiment-log/negative-searches/factored-retiming/README.md: different word and retiming objective",
