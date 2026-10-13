@@ -1,0 +1,28 @@
+{
+  "schema": "complex-rank7-end-pair-sources/1",
+  "base_commit": "f567884aeb8851b6e794af1184119a3bfbe1e631",
+  "sources": [
+    {
+      "pr": 741,
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds.git",
+      "commit": "e516b1463606840a15f80aac1995d64ce0092e89",
+      "path": "research/complex-sw4-frame8",
+      "manifest_sha256": "b9b39c206fcd2613382b0dcbda23a371e8781d1bedaf8e2f8e7df1e79dc1fa89"
+    },
+    {
+      "pr": 799,
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds.git",
+      "commit": "80e6463157cfc80b85af09e7e2f14748fe2dac60",
+      "path": "research/gauge44-frames-x",
+      "manifest_sha256": "e1b7998c8f7cb24f8674d250d0510f2b5b351b2ed0b35f17a17e6bacf3d9824b"
+    },
+    {
+      "pr": 777,
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds.git",
+      "commit": "eca5c317d8176401a1f71a5ea1e81384c2eab1e0",
+      "path": "research/pr699-frame-retiming",
+      "manifest_sha256": "e0102586186663b2a667768565f61db184638b370f68f0ea58dd673e523173ec"
+    }
+  ],
+  "research_start_commit": "66849e1475c930fd7732b1a0067ffee7e1e95f60"
+}
