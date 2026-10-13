@@ -162,6 +162,7 @@ def build():
         'research/community-batch932-audit/DISPOSITIONS.json',
         'research/community-batch952-audit/DISPOSITIONS.json',
         'research/community-batch970-audit/DISPOSITIONS.json',
+        'research/community-batch1047-audit/DISPOSITIONS.json',
     ) if (ROOT / p).exists()]
     family_path = family_paths[-1] if family_paths else None
     for family_path in family_paths:
