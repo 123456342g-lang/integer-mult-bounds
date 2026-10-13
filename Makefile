@@ -604,3 +604,10 @@ frontier890-verify: selected-record-check
 frontier942-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier942.XXXXXX"); \
 	python3 -B scripts/verify_frontier942.py --work "$$work/replay"
+
+# Research note: restoration deferral and coverage identity on the selected T37 payload (no new kappa).
+.PHONY: t37-restoration-deferral-verify
+t37-restoration-deferral-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-t37-restoration.XXXXXX"); \
+	python3 -B research/t37-restoration-deferral/verify.py --work "$$work/replay" && \
+	python3 -B -m unittest discover -s research/t37-restoration-deferral -p test_package.py
