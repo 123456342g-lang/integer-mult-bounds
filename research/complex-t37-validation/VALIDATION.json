@@ -66,5 +66,7 @@
   "independence_scope": "Independently developed owner schedule and new package/control logic, with a fresh replay of shared pinned inherited verifiers and both inherited exact moment engines.",
   "coordination": "Pinned issues API returned zero nodes; local sprint claim retained.",
   "final_overlap_refresh": "FINAL-OVERLAP-REFRESH.json",
-  "concurrent_pr962_head": "50c6ae8151493af21d284afe34fb35f68f6d4934"
+  "concurrent_pr962_head": "50c6ae8151493af21d284afe34fb35f68f6d4934",
+  "bootstrap_reserve_audit": "BOOTSTRAP-RESERVE-CHECK.json",
+  "bootstrap_reserve_scope": "All14recordedcutoffs are identical under512and1024linear formulas;4negative controls;normaland-O outputs equal. Standalone checker imports no inherited verifier."
 }

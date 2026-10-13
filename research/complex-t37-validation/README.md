@@ -38,6 +38,23 @@ router7991 < 30000, literal35287 < 100000 and required C0 exponent200012 <
 210000. Both exact moment engines and all 47 outer inequalities passed.
 The retained bit/bootstrap512 and local192 allowances are unchanged.
 
+The recorded bootstrap cutoffs also pay the stronger **1024-bit** linear
+reserve used explicitly by the concurrent packages. In all fourteen native
+and conservative cases, `gap <= 9/514`, so `36/gap^2 >= 2*(4+1024)/gap`.
+Thus both the retained 512 formula and enlarged 1024 formula select the
+same exact integer cutoff. The standalone rational checker imports no
+inherited verification code and passes four negative controls:
+
+```sh
+python3 -B research/complex-t37-validation/check_bootstrap_reserve.py
+```
+
+Expected JSON status:
+`PASS_FOURTEEN_UNCHANGED_BOOTSTRAP_CUTOFFS_AT_PAYLOAD1024`.
+Its output is byte-identical with `python3 -O`; the receipt binds the exact
+assembly and checker bytes. This checks the recorded obligations, not the
+general mathematical provenance of the bootstrap coefficient.
+
 All 18 targets in the base Makefile’s `verify` recipe completed. The prepared
 environment run stopped at `verify-positive` because a historical compiler
 command ignored BOOST_INCLUDE. After adding CPLUS_INCLUDE_PATH and moving

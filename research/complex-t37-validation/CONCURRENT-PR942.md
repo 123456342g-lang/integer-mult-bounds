@@ -47,6 +47,15 @@ adds the shifted ten-edit witness and the specific runtime-byte, receipt
 binding, recompression and assertion-targeted payload evidence above; it is
 not offered as a new packing mechanism relative to these concurrent results.
 
+One explicit accounting difference is resolved by
+`check_bootstrap_reserve.py`: our runtime retains the predecessor's literal
+512 in the bootstrap linear cutoff term, whereas the concurrent packages
+raise it to 1024. For every one of our fourteen recorded gaps,
+`gap <= 9/514`, hence `36/gap^2 >= 2*(4+1024)/gap`. The quadratic term
+therefore selects exactly the same integer cutoff under either allowance.
+The source-bound standalone check verifies both reserves and this equality,
+with four negative controls. No smaller cutoff is claimed or needed here.
+
 Source readings used for comparison: PR942's `PROOF.md`, `CLAIM.json`,
 `evidence/README.md` and `ALL-T-PROOF.md` at the head above. Its reported
 checks are credited as its evidence, not passed off as our execution.
