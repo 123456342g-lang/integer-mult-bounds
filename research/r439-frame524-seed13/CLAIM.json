@@ -1,0 +1,27 @@
+{
+  "track": "Bit supplier",
+  "assignment_seed": 13,
+  "randomness": "Python secrets.randbelow(100), operating-system randomness",
+  "base_commit": "f567884aeb8851b6e794af1184119a3bfbe1e631",
+  "started_utc": "2026-10-13T11:57:18Z",
+  "claim_utc": "2026-10-13T12:01:00Z",
+  "expected_finish_utc": "2026-10-13T12:47:18Z",
+  "coordination": "No pinned sprint coordination issue visible; only issue 650 was open. Local claim.",
+  "candidates": [
+    {
+      "object": "R439 frame520 fixed factors",
+      "decision": "Rejected: open PR844 already certifies the factor minima."
+    },
+    {
+      "object": "R439 frame524 B[449:490] fixed-factor scheduling",
+      "decision": "Chosen: whole-block single-write obstruction in PR891 does not cover factor scheduling; no separate frame524 construction found."
+    },
+    {
+      "object": "historical gen5b local pair module",
+      "decision": "Deferred: historical scope and more interface orientation required."
+    }
+  ],
+  "scope": "Exactly the frame524 block in selected PR589; exhaustive destination-once positive donor schedules of its fixed factors; at most one witnessed candidate or scoped finite obstruction. Literal reverse cleanup and whole-word dirty endpoint, frames and payload checked.",
+  "deliverable": "Self-contained finite circuit evidence package with source pins, reproducible verifier, controls, attribution and scoped claim. No new kappa.",
+  "status": "claimed"
+}
