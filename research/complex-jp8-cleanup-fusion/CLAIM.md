@@ -67,3 +67,8 @@ lowering. New #708 and #710 concern F2 bit circuits, and #717 records format
 limits; none supplies this JP8 shared-coefficient block. No pending patch is
 imported. A refreshed fetch still resolves main to the exact original base.
 No pinned coordination issue exists, so this completed claim stays local.
+
+Submitted: [PR #722](https://github.com/CrocSwap/integer-mult-bounds/pull/722),
+as a research note / finite circuit improvement. The immediate pre-submission
+refresh reached #721; #719's CK scalar-cleanup obstruction is compatible with
+this distinct JP8 primitive-lowering result and is credited in the PR.
