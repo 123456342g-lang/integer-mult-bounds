@@ -1,0 +1,18 @@
+{
+  "track": "complex supplier",
+  "assignment_seed": 20,
+  "random_source": "Python secrets.randbelow(100), operating-system randomness",
+  "base_commit": "66849e1475c930fd7732b1a0067ffee7e1e95f60",
+  "object": "Selected PR626 CK provider, retained PR622 canonical word, simultaneous B-phase frame reassignment at fixed scalar gate order",
+  "method": "Exact F2 subspace lower/upper propagation and per-register rank-partition bounds on the paid recursive moment; preserve A, cut, tail, cleanup, boundaries and ownership",
+  "candidate_tasks": [
+    "Additional signed K-triangles: covered by PR646",
+    "Coordinate-total factory resynthesis: overlaps PR681 and changed-dirt factory PR645",
+    "Fixed-order CK B-phase frame retiming: selected; seed 20 modulo 2 selects CK rather than JP8"
+  ],
+  "expected_deliverable": "One finite improving frame witness or a scoped negative certificate with a reproducible checker and controls; no unsupported kappa claim",
+  "expected_finish_utc": "2026-10-13T04:33:00Z",
+  "coordination": "No pinned issues and no open sprint/coordination issue found. Local claim, with open PR overlap checks.",
+  "overlap_snapshot": "501 open PRs through #681; PR661 supplies a related bit-frame barrier, while this object has complex F2-labelled frames and fixed CK tail interfaces",
+  "status": "in progress"
+}
