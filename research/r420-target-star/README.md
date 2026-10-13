@@ -155,6 +155,11 @@ records the checked related PR heads and later refresh.
   Python in addition to the unchanged native checkers. Their target-basis result
   is credited and has not been independently replayed here; no code or recipe is imported, and no priority for that mechanism
   is claimed. The stronger helper-basis #694 remains distinct and is not beaten.
+- **#731 (Joshua Snider)** independently audits baseline compensation rank and
+  kernel structure. **#733 (Scott Woolsey Biggart)** reports a larger 8,368 saving
+  by combining helper and target bases. It changes helper values during D; this
+  construction retains immutable helpers and shares target donors. Neither is
+  imported or independently replayed here; no overall saving record is claimed.
 - **#708** shares full-frame decoder operands; **#710** changes cleanup;
   **#711/#718** give scoped frame obstructions. None changes this D star-forest
   construction or is composed here.

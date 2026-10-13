@@ -178,5 +178,22 @@
     ],
     "base_still_current": true,
     "same_scope_found": false
+  },
+  "immediate_pre_submission_refresh": {
+    "checked_at_utc": "2026-10-13T05:02:13.305041+00:00",
+    "through_pr": 735,
+    "related_prs": [
+      {
+        "number": 731,
+        "headRefOid": "cf5ff54a358b400a7e69abe941d1d0ad0944b25e",
+        "scope": "independent baseline rank/kernel audit; not imported"
+      },
+      {
+        "number": 733,
+        "headRefOid": "dfe84e09298abc5c5e0074afda59a821e10abfb4",
+        "scope": "two-sided helper/target-basis composition reporting 8368 saving; changes helper values during D, unlike this immutable-helper target-star construction; not imported"
+      }
+    ],
+    "conclusion": "No competing shared-donor target-star circuit found. No overall saving record or priority claim."
   }
 }
