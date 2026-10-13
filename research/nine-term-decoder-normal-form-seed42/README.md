@@ -154,6 +154,10 @@ What `verify.py` checks:
 - **@mightyOil (PR1191, PR1197, open, concurrent):** one-sided mask rigidity for masked identities, and
   restricted P112 ten-term cases. These are adjacent scopes that neither contain nor are contained in
   this one.
+- **@burntout76 (PR1212)** and **@DavidAriasC (PR1213), open, concurrent:** rank-8 gauge rigidity and the
+  P112 connected component for *masked (E-graph-only) eight-term* decoders. Both list nine or more terms
+  as open, and both are disjoint from this all-pairs nine-term scope. The final overlap scan covered open
+  PRs through #1221.
 - **@3xcalibur-tech (PR1171):** the support-union hierarchy (U1, U2) is re-derived here independently.
 - Also credited: PR620 (GamingPuzzled), PR446 Theorem C (DreamingOfClouds) and the selected supplier
   lineage. All code here is independently written; nothing is vendored.
