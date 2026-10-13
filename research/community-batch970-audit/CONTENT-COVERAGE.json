@@ -1382,74 +1382,86 @@
         {
           "source_path": "research/r439-helper-triples/CERTIFICATE.json",
           "source_sha256": "db84b626db527b4b686530a95e63f567bed102a335a390b18056413de750fb96",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-triples/CERTIFICATE.json",
+          "integrated_sha256": "db84b626db527b4b686530a95e63f567bed102a335a390b18056413de750fb96"
         },
         {
           "source_path": "research/r439-helper-triples/CLAIM.json",
           "source_sha256": "8e5a2825b3ab46c7ae270735cfe8f2fcfb8fc6a908d7a802f0a66a743b0dcf45",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-triples/CLAIM.json",
+          "integrated_sha256": "8e5a2825b3ab46c7ae270735cfe8f2fcfb8fc6a908d7a802f0a66a743b0dcf45"
         },
         {
           "source_path": "research/r439-helper-triples/EXPECTED.json",
           "source_sha256": "2e9f4914c5afa4eef873b5db895545f934b19dc53b52463082c545bfc114b6b4",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-triples/EXPECTED.json",
+          "integrated_sha256": "2e9f4914c5afa4eef873b5db895545f934b19dc53b52463082c545bfc114b6b4"
         },
         {
           "source_path": "research/r439-helper-triples/NOTICE.md",
           "source_sha256": "2be86b4fa0acc2fbe5f80738a9d34bedb115cf2cc9d88098b837a6bc7cfc8fe9",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-triples/NOTICE.md",
+          "integrated_sha256": "2be86b4fa0acc2fbe5f80738a9d34bedb115cf2cc9d88098b837a6bc7cfc8fe9"
         },
         {
           "source_path": "research/r439-helper-triples/PROOF.md",
           "source_sha256": "699e9ae993300c7b910400a6fb8929ea44bf977b211c48b16cf7513c5922754e",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-triples/PROOF.md",
+          "integrated_sha256": "699e9ae993300c7b910400a6fb8929ea44bf977b211c48b16cf7513c5922754e"
         },
         {
           "source_path": "research/r439-helper-triples/README.md",
           "source_sha256": "c84d5000554bcc8b59379702439be31394d3b80785b64f375022688f936d02b6",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-triples/README.md",
+          "integrated_sha256": "c84d5000554bcc8b59379702439be31394d3b80785b64f375022688f936d02b6"
         },
         {
           "source_path": "research/r439-helper-triples/SOURCES.json",
           "source_sha256": "abe8a2c2063e6c58e31d3321b4d65cba03770da787f86f2812a44c9269cbecd9",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-triples/SOURCES.json",
+          "integrated_sha256": "abe8a2c2063e6c58e31d3321b4d65cba03770da787f86f2812a44c9269cbecd9"
         },
         {
           "source_path": "research/r439-helper-triples/VALIDATION.md",
           "source_sha256": "ffb18539401c9a2bc1705894bfc01ff0200a1d186dfac46bcae693688f6de61e",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-triples/VALIDATION.md",
+          "integrated_sha256": "ffb18539401c9a2bc1705894bfc01ff0200a1d186dfac46bcae693688f6de61e"
         },
         {
           "source_path": "research/r439-helper-triples/candidate.json.gz",
           "source_sha256": "11f5c75711090892827d536b6bf82b4001e02ebd13d10e87a1aa915a4e78704b",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-triples/candidate.json.gz",
+          "integrated_sha256": "11f5c75711090892827d536b6bf82b4001e02ebd13d10e87a1aa915a4e78704b"
         },
         {
           "source_path": "research/r439-helper-triples/native.py",
           "source_sha256": "f7ce2c4ad4c6785313a2ad2147d381b64fa268441f7db09340cd0a9431ad43d1",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-triples/native.py",
+          "integrated_sha256": "f7ce2c4ad4c6785313a2ad2147d381b64fa268441f7db09340cd0a9431ad43d1"
         },
         {
           "source_path": "research/r439-helper-triples/search.py",
           "source_sha256": "6fbe9125690bd899423e4676b972a5783b376ae70536e9f09a97960c77236864",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-triples/search.py",
+          "integrated_sha256": "6fbe9125690bd899423e4676b972a5783b376ae70536e9f09a97960c77236864"
         },
         {
           "source_path": "research/r439-helper-triples/verify.py",
           "source_sha256": "1b89e35ba66c9267225f49422b80531982794a9270259c3ba784150add4de337",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-triples/verify.py",
+          "integrated_sha256": "1b89e35ba66c9267225f49422b80531982794a9270259c3ba784150add4de337"
         }
       ]
     },
@@ -1461,116 +1473,135 @@
         {
           "source_path": "research/r439-helper-stars-seed19/BASE-SELECTION.json",
           "source_sha256": "41fb066ff0f43ce472323195e9088d6d888715c13c54eae7b42e357ed5bfc726",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/BASE-SELECTION.json",
+          "integrated_sha256": "41fb066ff0f43ce472323195e9088d6d888715c13c54eae7b42e357ed5bfc726"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/CERTIFICATE.json",
           "source_sha256": "35bdbd763e29791e4fa43d99d764d536fa284e89023bb9da482d2f3ba80ce333",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/CERTIFICATE.json",
+          "integrated_sha256": "35bdbd763e29791e4fa43d99d764d536fa284e89023bb9da482d2f3ba80ce333"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/CLAIM.json",
           "source_sha256": "6a4c46efd959959b9ec4b040dcb18d66fc5c5acb98feea6eb7e5548072a93727",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/CLAIM.json",
+          "integrated_sha256": "6a4c46efd959959b9ec4b040dcb18d66fc5c5acb98feea6eb7e5548072a93727"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/EXPECTED.json",
           "source_sha256": "1644336bf4b05ef452fc7314eaaa31778953db8a46fc7b68aff658e84ae8b7fc",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/EXPECTED.json",
+          "integrated_sha256": "1644336bf4b05ef452fc7314eaaa31778953db8a46fc7b68aff658e84ae8b7fc"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/LICENSE",
           "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/LICENSE",
+          "integrated_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/NATIVE.json",
           "source_sha256": "81df560a31a62f8bb4de5dd39a9f21ec6ea4ffc900373cb43cea2683b135acfc",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/NATIVE.json",
+          "integrated_sha256": "81df560a31a62f8bb4de5dd39a9f21ec6ea4ffc900373cb43cea2683b135acfc"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/NOTICE.md",
           "source_sha256": "f348f181fa93635cc2e9c1e10f75744a483b75150c0ee71291db2e7e9121d326",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/NOTICE.md",
+          "integrated_sha256": "f348f181fa93635cc2e9c1e10f75744a483b75150c0ee71291db2e7e9121d326"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/PAIR-CONTROL.json",
           "source_sha256": "46a64a4fb7735d21d5e04e89aa968f33e3eb4f43e3a7e9e3d8e9695b1f6aaa50",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/PAIR-CONTROL.json",
+          "integrated_sha256": "46a64a4fb7735d21d5e04e89aa968f33e3eb4f43e3a7e9e3d8e9695b1f6aaa50"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/PROOF.md",
           "source_sha256": "3d7bf3b23ba446653bee458af7a479874cbf94bdfd87f84cffe5857d8f0a67e1",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/PROOF.md",
+          "integrated_sha256": "3d7bf3b23ba446653bee458af7a479874cbf94bdfd87f84cffe5857d8f0a67e1"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/README.md",
           "source_sha256": "3f5ef64ed85b0e49c5751156c2bfce00643f039562aff102fbe82bc934c48f60",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/README.md",
+          "integrated_sha256": "3f5ef64ed85b0e49c5751156c2bfce00643f039562aff102fbe82bc934c48f60"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/SOURCES.json",
           "source_sha256": "c21eefd995b7147a7b14374f6840059268d2ec76be997da1a3a3e38978bbc1b6",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/SOURCES.json",
+          "integrated_sha256": "c21eefd995b7147a7b14374f6840059268d2ec76be997da1a3a3e38978bbc1b6"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/VALIDATION.json",
           "source_sha256": "8d55e359269730c5517fc903f06aaf8118fd1cb78cf3d0e7db1546b3e66ddcef",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/VALIDATION.json",
+          "integrated_sha256": "8d55e359269730c5517fc903f06aaf8118fd1cb78cf3d0e7db1546b3e66ddcef"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/build.py",
           "source_sha256": "c14c75c73fab605ab9fc133d6c146bd3d14a5e8a0ed85db1247981c4959f9ac7",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/build.py",
+          "integrated_sha256": "c14c75c73fab605ab9fc133d6c146bd3d14a5e8a0ed85db1247981c4959f9ac7"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/candidate.json.gz",
           "source_sha256": "d8b08885e8ce9868200b2645189d15ed18a27fc2742e54990b3257a0ca4df6b8",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/candidate.json.gz",
+          "integrated_sha256": "d8b08885e8ce9868200b2645189d15ed18a27fc2742e54990b3257a0ca4df6b8"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/common.py",
           "source_sha256": "a596d898017d8832e7bcb987fc12cccbd2c88a7ad760c10a1329b0a8ea21edec",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/common.py",
+          "integrated_sha256": "a596d898017d8832e7bcb987fc12cccbd2c88a7ad760c10a1329b0a8ea21edec"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/make-verify.log.gz",
           "source_sha256": "29d32da724589be02a47505e4603d391c768942ce37b228c33faa6f37ef667bf",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/make-verify.log.gz",
+          "integrated_sha256": "29d32da724589be02a47505e4603d391c768942ce37b228c33faa6f37ef667bf"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/native.py",
           "source_sha256": "8674fbdfbeb2fa2694ca490bf0223b68ae27ef16dd2602f648b28aa2d0b85bee",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/native.py",
+          "integrated_sha256": "8674fbdfbeb2fa2694ca490bf0223b68ae27ef16dd2602f648b28aa2d0b85bee"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/test_package.py",
           "source_sha256": "a414a4f8d9ac226d7c06164267b8618891dd2c27d165eb9b66f44dc46a150c99",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/test_package.py",
+          "integrated_sha256": "a414a4f8d9ac226d7c06164267b8618891dd2c27d165eb9b66f44dc46a150c99"
         },
         {
           "source_path": "research/r439-helper-stars-seed19/verify.py",
           "source_sha256": "5c9b6955bcb1fff3f7ede347355f45c463f2f5594cc9cd102d98ab552f4fb87d",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/r439-helper-stars-seed19/verify.py",
+          "integrated_sha256": "5c9b6955bcb1fff3f7ede347355f45c463f2f5594cc9cd102d98ab552f4fb87d"
         }
       ]
     },
@@ -1582,74 +1613,86 @@
         {
           "source_path": "research/dyadic-center-two-shear/BASE-SELECTED.json",
           "source_sha256": "9873519224e2db72d6a8c926f51e3e75129671e467948c6f6b03744f8bcfc699",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-two-shear/BASE-SELECTED.json",
+          "integrated_sha256": "9873519224e2db72d6a8c926f51e3e75129671e467948c6f6b03744f8bcfc699"
         },
         {
           "source_path": "research/dyadic-center-two-shear/CLAIM.json",
           "source_sha256": "0e632f791360db183325e38fa36aa62b3d8fc638a08adcdb9d66c41be429ae55",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-two-shear/CLAIM.json",
+          "integrated_sha256": "0e632f791360db183325e38fa36aa62b3d8fc638a08adcdb9d66c41be429ae55"
         },
         {
           "source_path": "research/dyadic-center-two-shear/EXPECTED.json",
           "source_sha256": "f425368477df26432190bf78d36ad600fe845fa29ea32de720d58943b9b00a92",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-two-shear/EXPECTED.json",
+          "integrated_sha256": "f425368477df26432190bf78d36ad600fe845fa29ea32de720d58943b9b00a92"
         },
         {
           "source_path": "research/dyadic-center-two-shear/OVERLAP.json",
           "source_sha256": "b972fe91243b6d7342574acb8a3309a7107f87dc90570cf08d49a3be9ac209d2",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-two-shear/OVERLAP.json",
+          "integrated_sha256": "b972fe91243b6d7342574acb8a3309a7107f87dc90570cf08d49a3be9ac209d2"
         },
         {
           "source_path": "research/dyadic-center-two-shear/README.md",
           "source_sha256": "47778f93127fceb5ec33c5e43842d514dd80d1c55818eac95dac5c16fdf9aea2",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-two-shear/README.md",
+          "integrated_sha256": "47778f93127fceb5ec33c5e43842d514dd80d1c55818eac95dac5c16fdf9aea2"
         },
         {
           "source_path": "research/dyadic-center-two-shear/SOURCES.json",
           "source_sha256": "a05471f475f6ca2bed77e5bbf46d73da74b248029af25414d2b50b638834e365",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-two-shear/SOURCES.json",
+          "integrated_sha256": "a05471f475f6ca2bed77e5bbf46d73da74b248029af25414d2b50b638834e365"
         },
         {
           "source_path": "research/dyadic-center-two-shear/VALIDATION.md",
           "source_sha256": "a7ecc627600b2c64b1edc5ed27059349f54ad5ca91cc6f255507fcab8456b19f",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-two-shear/VALIDATION.md",
+          "integrated_sha256": "a7ecc627600b2c64b1edc5ed27059349f54ad5ca91cc6f255507fcab8456b19f"
         },
         {
           "source_path": "research/dyadic-center-two-shear/circuit.py",
           "source_sha256": "38b4a940bd940d455366053d470d6ddd4e6003842eac6df301efd229daefa636",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-two-shear/circuit.py",
+          "integrated_sha256": "38b4a940bd940d455366053d470d6ddd4e6003842eac6df301efd229daefa636"
         },
         {
           "source_path": "research/dyadic-center-two-shear/cost_census.py",
           "source_sha256": "743427b3af2d1deab7c917b51c5ec1695a1bfb73079f65e73a51afddc813cea7",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-two-shear/cost_census.py",
+          "integrated_sha256": "743427b3af2d1deab7c917b51c5ec1695a1bfb73079f65e73a51afddc813cea7"
         },
         {
           "source_path": "research/dyadic-center-two-shear/independent.py",
           "source_sha256": "233d00417ed422c95794f34224564fa1cf2d07dd3cb7169b94656cee4401ab08",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-two-shear/independent.py",
+          "integrated_sha256": "233d00417ed422c95794f34224564fa1cf2d07dd3cb7169b94656cee4401ab08"
         },
         {
           "source_path": "research/dyadic-center-two-shear/test_package.py",
           "source_sha256": "7e18e8d49d3b5adb876585523378cf857b0642733c733169f0b420d589010bfb",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-two-shear/test_package.py",
+          "integrated_sha256": "7e18e8d49d3b5adb876585523378cf857b0642733c733169f0b420d589010bfb"
         },
         {
           "source_path": "research/dyadic-center-two-shear/verify.py",
           "source_sha256": "82e93bc5f86dde34632f713d43fce955450e10d1a9b2970ca843d294795d4a94",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-two-shear/verify.py",
+          "integrated_sha256": "82e93bc5f86dde34632f713d43fce955450e10d1a9b2970ca843d294795d4a94"
         }
       ]
     },
@@ -1661,68 +1704,79 @@
         {
           "source_path": "research/x4-joint-horner-seed29/CLAIM.json",
           "source_sha256": "f1054e48b5a0874639ac6653968872a737ad1702527ead33a4f070a2b7de01c7",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/x4-joint-horner-seed29/CLAIM.json",
+          "integrated_sha256": "f1054e48b5a0874639ac6653968872a737ad1702527ead33a4f070a2b7de01c7"
         },
         {
           "source_path": "research/x4-joint-horner-seed29/EXPECTED.json",
           "source_sha256": "ea89a0042f7b36a5f6e1d99d86cbe3b8e027bacbaf99333ed1153866c937ca52",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/x4-joint-horner-seed29/EXPECTED.json",
+          "integrated_sha256": "ea89a0042f7b36a5f6e1d99d86cbe3b8e027bacbaf99333ed1153866c937ca52"
         },
         {
           "source_path": "research/x4-joint-horner-seed29/OVERLAP.json",
           "source_sha256": "9e0438edd0c738da8a055839d86fc7a08fba92345f749cfc706f98cb69712935",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/x4-joint-horner-seed29/OVERLAP.json",
+          "integrated_sha256": "9e0438edd0c738da8a055839d86fc7a08fba92345f749cfc706f98cb69712935"
         },
         {
           "source_path": "research/x4-joint-horner-seed29/PROOF.md",
           "source_sha256": "c1e9374f723162bfb791e684c32a5abf7cadd3737174091f1e6c9e59ef055ae4",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/x4-joint-horner-seed29/PROOF.md",
+          "integrated_sha256": "c1e9374f723162bfb791e684c32a5abf7cadd3737174091f1e6c9e59ef055ae4"
         },
         {
           "source_path": "research/x4-joint-horner-seed29/README.md",
           "source_sha256": "d87574bd648af0c6d86a1f397d2ee68bb81154e6cb3edb0433767c1a87080c26",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/x4-joint-horner-seed29/README.md",
+          "integrated_sha256": "d87574bd648af0c6d86a1f397d2ee68bb81154e6cb3edb0433767c1a87080c26"
         },
         {
           "source_path": "research/x4-joint-horner-seed29/SOURCES.json",
           "source_sha256": "275c84f50977718632de251fa625d7b2940a5f7410a48504b041a24a8bfc1d94",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/x4-joint-horner-seed29/SOURCES.json",
+          "integrated_sha256": "275c84f50977718632de251fa625d7b2940a5f7410a48504b041a24a8bfc1d94"
         },
         {
           "source_path": "research/x4-joint-horner-seed29/VALIDATION.md",
           "source_sha256": "238f0510bf9f0784b0fa093f819ca88a2c18e6d1b95d5af9f195ebc10f0142a2",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/x4-joint-horner-seed29/VALIDATION.md",
+          "integrated_sha256": "238f0510bf9f0784b0fa093f819ca88a2c18e6d1b95d5af9f195ebc10f0142a2"
         },
         {
           "source_path": "research/x4-joint-horner-seed29/independent.py",
           "source_sha256": "34600858c5b009233b4a1364620ca7b00aa0de294c6afaaffd1c74bebb249ff9",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/x4-joint-horner-seed29/independent.py",
+          "integrated_sha256": "34600858c5b009233b4a1364620ca7b00aa0de294c6afaaffd1c74bebb249ff9"
         },
         {
           "source_path": "research/x4-joint-horner-seed29/joint.py",
           "source_sha256": "71a5b581184b03aca1c0b4944146e53b5d6463ccbe27bcc87e7fd272a07283a6",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/x4-joint-horner-seed29/joint.py",
+          "integrated_sha256": "71a5b581184b03aca1c0b4944146e53b5d6463ccbe27bcc87e7fd272a07283a6"
         },
         {
           "source_path": "research/x4-joint-horner-seed29/test_package.py",
           "source_sha256": "e0dd8200cadca6c20ee45c93b6ca6b32c2bff03095b921b4642f9393817b7fd0",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/x4-joint-horner-seed29/test_package.py",
+          "integrated_sha256": "e0dd8200cadca6c20ee45c93b6ca6b32c2bff03095b921b4642f9393817b7fd0"
         },
         {
           "source_path": "research/x4-joint-horner-seed29/verify.py",
           "source_sha256": "f27f5c3a5ddb4f2228a4616cf9ba82d2a98b9e3a60a7921b1e6190c960900e23",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/x4-joint-horner-seed29/verify.py",
+          "integrated_sha256": "f27f5c3a5ddb4f2228a4616cf9ba82d2a98b9e3a60a7921b1e6190c960900e23"
         }
       ]
     },
@@ -1734,80 +1788,93 @@
         {
           "source_path": "research/complex-ck-two-sided/CLAIM.md",
           "source_sha256": "01c853d04b6d6fda0af7154197da785b869fff49b92129b804dfbea71a2b4ae7",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-ck-two-sided/CLAIM.md",
+          "integrated_sha256": "01c853d04b6d6fda0af7154197da785b869fff49b92129b804dfbea71a2b4ae7"
         },
         {
           "source_path": "research/complex-ck-two-sided/EXPECTED.json",
           "source_sha256": "e2bcf8f49ec9b0c20c7d653ad9d20fe21ecbc587a72dcb996d11550bf2d57287",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-ck-two-sided/EXPECTED.json",
+          "integrated_sha256": "e2bcf8f49ec9b0c20c7d653ad9d20fe21ecbc587a72dcb996d11550bf2d57287"
         },
         {
           "source_path": "research/complex-ck-two-sided/NOTICE.md",
           "source_sha256": "adc719e7c77c0cea89e5184e5adebfdd69ebb3feb8b53dfd4f9e1d00b1ced51e",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-ck-two-sided/NOTICE.md",
+          "integrated_sha256": "adc719e7c77c0cea89e5184e5adebfdd69ebb3feb8b53dfd4f9e1d00b1ced51e"
         },
         {
           "source_path": "research/complex-ck-two-sided/PROOF.md",
           "source_sha256": "b033bd7d22229f60223d494665ec1332a27a370c048ea8c587f814dd9ed59a05",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-ck-two-sided/PROOF.md",
+          "integrated_sha256": "b033bd7d22229f60223d494665ec1332a27a370c048ea8c587f814dd9ed59a05"
         },
         {
           "source_path": "research/complex-ck-two-sided/README.md",
           "source_sha256": "b94bddf26ba781d93019dbf2f595f139bb842381dd0c53b5ec27bb9468afa428",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-ck-two-sided/README.md",
+          "integrated_sha256": "b94bddf26ba781d93019dbf2f595f139bb842381dd0c53b5ec27bb9468afa428"
         },
         {
           "source_path": "research/complex-ck-two-sided/RECIPE.json",
           "source_sha256": "8eae0f1036c2c455dd59017c4b37903e45aeff6d0c66d7a3ce74e9b78e4f4aac",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-ck-two-sided/RECIPE.json",
+          "integrated_sha256": "8eae0f1036c2c455dd59017c4b37903e45aeff6d0c66d7a3ce74e9b78e4f4aac"
         },
         {
           "source_path": "research/complex-ck-two-sided/SOURCES.json",
           "source_sha256": "f7ff3ef4b60ec73f4308cdb20dac17102160a3cfeb5e08b6bd908ef99a4350ba",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-ck-two-sided/SOURCES.json",
+          "integrated_sha256": "f7ff3ef4b60ec73f4308cdb20dac17102160a3cfeb5e08b6bd908ef99a4350ba"
         },
         {
           "source_path": "research/complex-ck-two-sided/VALIDATION.md",
           "source_sha256": "ef12041d23864208b3a2eed2c7498b2e4a075268c1472df974d2e37698c7dc04",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-ck-two-sided/VALIDATION.md",
+          "integrated_sha256": "ef12041d23864208b3a2eed2c7498b2e4a075268c1472df974d2e37698c7dc04"
         },
         {
           "source_path": "research/complex-ck-two-sided/experiment.py",
           "source_sha256": "f4197103380d8634dedd2e09cebf14af124661810bf3d35f6c41bc3123c747e1",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-ck-two-sided/experiment.py",
+          "integrated_sha256": "f4197103380d8634dedd2e09cebf14af124661810bf3d35f6c41bc3123c747e1"
         },
         {
           "source_path": "research/complex-ck-two-sided/independent.py",
           "source_sha256": "87d690c534409047322c1dc625586adf4c192a9746941eae06c3da6e0add3aa2",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-ck-two-sided/independent.py",
+          "integrated_sha256": "87d690c534409047322c1dc625586adf4c192a9746941eae06c3da6e0add3aa2"
         },
         {
           "source_path": "research/complex-ck-two-sided/test_independent.py",
           "source_sha256": "4eb117470ac91a097240da043f4e23a275f3184123d3342d3a41b1691cf36e24",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-ck-two-sided/test_independent.py",
+          "integrated_sha256": "4eb117470ac91a097240da043f4e23a275f3184123d3342d3a41b1691cf36e24"
         },
         {
           "source_path": "research/complex-ck-two-sided/test_package.py",
           "source_sha256": "cd226c1d909aa849da0e8c9b38a0b907104ff7d1d32c7549c9960b8d8730d904",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-ck-two-sided/test_package.py",
+          "integrated_sha256": "cd226c1d909aa849da0e8c9b38a0b907104ff7d1d32c7549c9960b8d8730d904"
         },
         {
           "source_path": "research/complex-ck-two-sided/verify.py",
           "source_sha256": "e72528e76852da7c6128a0a7d60f933ed505d9af893e269b8ae6b803877b963b",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-ck-two-sided/verify.py",
+          "integrated_sha256": "e72528e76852da7c6128a0a7d60f933ed505d9af893e269b8ae6b803877b963b"
         }
       ]
     },
@@ -1819,74 +1886,86 @@
         {
           "source_path": "research/ck-sign-normalization-seed22/CLAIM.json",
           "source_sha256": "eab57969113ac9d2552eed8570cdb9cab317f1895e407b9b2514f797e694de41",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-sign-normalization-seed22/CLAIM.json",
+          "integrated_sha256": "eab57969113ac9d2552eed8570cdb9cab317f1895e407b9b2514f797e694de41"
         },
         {
           "source_path": "research/ck-sign-normalization-seed22/EXPECTED.json",
           "source_sha256": "51919c642de3ba09aeb8f7c6da98392d0503c8879fb0ae9ad0145a33c07eb148",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-sign-normalization-seed22/EXPECTED.json",
+          "integrated_sha256": "51919c642de3ba09aeb8f7c6da98392d0503c8879fb0ae9ad0145a33c07eb148"
         },
         {
           "source_path": "research/ck-sign-normalization-seed22/INDEPENDENT.json",
           "source_sha256": "20d71d51daeb374ed3e768a7b05d08a0019fe175f789e1293c3d913e497e0e28",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-sign-normalization-seed22/INDEPENDENT.json",
+          "integrated_sha256": "20d71d51daeb374ed3e768a7b05d08a0019fe175f789e1293c3d913e497e0e28"
         },
         {
           "source_path": "research/ck-sign-normalization-seed22/PROOF.md",
           "source_sha256": "465acf959df27e8540f7a4616a2667d80d2adde0bad18f1a15b14e541bb90abf",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-sign-normalization-seed22/PROOF.md",
+          "integrated_sha256": "465acf959df27e8540f7a4616a2667d80d2adde0bad18f1a15b14e541bb90abf"
         },
         {
           "source_path": "research/ck-sign-normalization-seed22/README.md",
           "source_sha256": "262891780575d5821f734a10fc82ab0eca1add3a94061849662b0e8bb30af426",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-sign-normalization-seed22/README.md",
+          "integrated_sha256": "262891780575d5821f734a10fc82ab0eca1add3a94061849662b0e8bb30af426"
         },
         {
           "source_path": "research/ck-sign-normalization-seed22/SOURCE-PINS.json",
           "source_sha256": "56bda24c4c5de93cfd0256330e094484db7966b914d27331fc54a28d67475e5c",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-sign-normalization-seed22/SOURCE-PINS.json",
+          "integrated_sha256": "56bda24c4c5de93cfd0256330e094484db7966b914d27331fc54a28d67475e5c"
         },
         {
           "source_path": "research/ck-sign-normalization-seed22/VALIDATION.md",
           "source_sha256": "d18e57efb900f828b817e4415fb4fd4692adb7ab301a4b41b7fd49a983993e45",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-sign-normalization-seed22/VALIDATION.md",
+          "integrated_sha256": "d18e57efb900f828b817e4415fb4fd4692adb7ab301a4b41b7fd49a983993e45"
         },
         {
           "source_path": "research/ck-sign-normalization-seed22/check.py",
           "source_sha256": "6c8a8556238b7e8d0f0077e4b74a1f07cf251bffcdc2992315ff65d0157aa0db",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-sign-normalization-seed22/check.py",
+          "integrated_sha256": "6c8a8556238b7e8d0f0077e4b74a1f07cf251bffcdc2992315ff65d0157aa0db"
         },
         {
           "source_path": "research/ck-sign-normalization-seed22/check_independent.py",
           "source_sha256": "15615d1b0262931f0f2f0eb70cfbf2abf8aa5926fcc23f5660b573ba24436daa",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-sign-normalization-seed22/check_independent.py",
+          "integrated_sha256": "15615d1b0262931f0f2f0eb70cfbf2abf8aa5926fcc23f5660b573ba24436daa"
         },
         {
           "source_path": "research/ck-sign-normalization-seed22/compile.py",
           "source_sha256": "4e43b247a3edcc2bf2017d0dcd0b6aac3318689f60eab40b15cd812e7af3db5c",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-sign-normalization-seed22/compile.py",
+          "integrated_sha256": "4e43b247a3edcc2bf2017d0dcd0b6aac3318689f60eab40b15cd812e7af3db5c"
         },
         {
           "source_path": "research/ck-sign-normalization-seed22/test_package.py",
           "source_sha256": "e9585db2496a8f0caab2771ff1b3da3ca0cb298618225f654d2b09348feb390a",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-sign-normalization-seed22/test_package.py",
+          "integrated_sha256": "e9585db2496a8f0caab2771ff1b3da3ca0cb298618225f654d2b09348feb390a"
         },
         {
           "source_path": "research/ck-sign-normalization-seed22/verify.py",
           "source_sha256": "5baa112db35ba998fe5999181fb27e8c047ad21fcff469bf47d42870c98344ac",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-sign-normalization-seed22/verify.py",
+          "integrated_sha256": "5baa112db35ba998fe5999181fb27e8c047ad21fcff469bf47d42870c98344ac"
         }
       ]
     },
@@ -1898,62 +1977,72 @@
         {
           "source_path": "research/jp8-clean-work/CLAIM.json",
           "source_sha256": "498587676fe8d2d28b6fe14a8f1d9f7e2fb4bfd247a5aa7aea6a55abd646c465",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/jp8-clean-work/CLAIM.json",
+          "integrated_sha256": "498587676fe8d2d28b6fe14a8f1d9f7e2fb4bfd247a5aa7aea6a55abd646c465"
         },
         {
           "source_path": "research/jp8-clean-work/EXPECTED.json",
           "source_sha256": "c87e8c887b074ceb8fd13030bcdf3b912f373e2810867d05ed041a717f42c8c8",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/jp8-clean-work/EXPECTED.json",
+          "integrated_sha256": "c87e8c887b074ceb8fd13030bcdf3b912f373e2810867d05ed041a717f42c8c8"
         },
         {
           "source_path": "research/jp8-clean-work/OVERLAP.json",
           "source_sha256": "e9246a5f75a09259fcdf8ae7c19d5f5fcfffd37f085cb19cb0920ebe6500775d",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/jp8-clean-work/OVERLAP.json",
+          "integrated_sha256": "e9246a5f75a09259fcdf8ae7c19d5f5fcfffd37f085cb19cb0920ebe6500775d"
         },
         {
           "source_path": "research/jp8-clean-work/README.md",
           "source_sha256": "b88ae51c9624ff96d4cd9c0757d3afe043b1149539cc06443ceae3235d944067",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/jp8-clean-work/README.md",
+          "integrated_sha256": "b88ae51c9624ff96d4cd9c0757d3afe043b1149539cc06443ceae3235d944067"
         },
         {
           "source_path": "research/jp8-clean-work/SOURCE-PINS.json",
           "source_sha256": "092e7000cfb2a436ab9a8aa9145c5c982e58711ec123a1b07c5cdd4aa5736521",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/jp8-clean-work/SOURCE-PINS.json",
+          "integrated_sha256": "092e7000cfb2a436ab9a8aa9145c5c982e58711ec123a1b07c5cdd4aa5736521"
         },
         {
           "source_path": "research/jp8-clean-work/VALIDATION.md",
           "source_sha256": "17bc85ec62b33805279a69158ad2b64367590f394f436b2556dcc5fbf293101a",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/jp8-clean-work/VALIDATION.md",
+          "integrated_sha256": "17bc85ec62b33805279a69158ad2b64367590f394f436b2556dcc5fbf293101a"
         },
         {
           "source_path": "research/jp8-clean-work/controls.py",
           "source_sha256": "3eff467336461d40ee0f5aade61f44b04d3b1e6f280d50e67e24a15106846763",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/jp8-clean-work/controls.py",
+          "integrated_sha256": "3eff467336461d40ee0f5aade61f44b04d3b1e6f280d50e67e24a15106846763"
         },
         {
           "source_path": "research/jp8-clean-work/lower.py",
           "source_sha256": "8a434455efa48412a04dc39b8f637c2b3d5b6d2677a9987c7463adced7d9c988",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/jp8-clean-work/lower.py",
+          "integrated_sha256": "8a434455efa48412a04dc39b8f637c2b3d5b6d2677a9987c7463adced7d9c988"
         },
         {
           "source_path": "research/jp8-clean-work/test_package.py",
           "source_sha256": "a0f1ba25bae184848c90845cbbf166f200e7cd7b19002149348ca9d64e5425f8",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/jp8-clean-work/test_package.py",
+          "integrated_sha256": "a0f1ba25bae184848c90845cbbf166f200e7cd7b19002149348ca9d64e5425f8"
         },
         {
           "source_path": "research/jp8-clean-work/verify.py",
           "source_sha256": "8543917f4bbcae18337e014dcc07e44962a5f94195d09edc7b457068c63886f4",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/jp8-clean-work/verify.py",
+          "integrated_sha256": "8543917f4bbcae18337e014dcc07e44962a5f94195d09edc7b457068c63886f4"
         }
       ]
     },
@@ -1965,68 +2054,79 @@
         {
           "source_path": "research/complex-swap-runs-seed37/CLAIM.json",
           "source_sha256": "7c6caa2f10c5906dadcdce4ac97fe95c1609239c2f4f32acded8a8ddefe30e65",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-swap-runs-seed37/CLAIM.json",
+          "integrated_sha256": "7c6caa2f10c5906dadcdce4ac97fe95c1609239c2f4f32acded8a8ddefe30e65"
         },
         {
           "source_path": "research/complex-swap-runs-seed37/EXPECTED.json",
           "source_sha256": "b1d3b19f360c611802f105382e969f26e15bdbf57dae19264e412554805e43d5",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-swap-runs-seed37/EXPECTED.json",
+          "integrated_sha256": "b1d3b19f360c611802f105382e969f26e15bdbf57dae19264e412554805e43d5"
         },
         {
           "source_path": "research/complex-swap-runs-seed37/NOTICE.md",
           "source_sha256": "0a4904d51bc37d84658a6b72a0b2d997d7259db254df5551819fe5d64c29f72d",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-swap-runs-seed37/NOTICE.md",
+          "integrated_sha256": "0a4904d51bc37d84658a6b72a0b2d997d7259db254df5551819fe5d64c29f72d"
         },
         {
           "source_path": "research/complex-swap-runs-seed37/PROOF.md",
           "source_sha256": "29e747b833e6f39945ebec5d2a4a60e8b23c637943e6ad607541aa8721c417e0",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-swap-runs-seed37/PROOF.md",
+          "integrated_sha256": "29e747b833e6f39945ebec5d2a4a60e8b23c637943e6ad607541aa8721c417e0"
         },
         {
           "source_path": "research/complex-swap-runs-seed37/README.md",
           "source_sha256": "02066348e4106b82847b6e23faddad24829e80d62521030168cb9789b145013f",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-swap-runs-seed37/README.md",
+          "integrated_sha256": "02066348e4106b82847b6e23faddad24829e80d62521030168cb9789b145013f"
         },
         {
           "source_path": "research/complex-swap-runs-seed37/SOURCES.json",
           "source_sha256": "d50009c0846b370402c9c44b405615f02f519e1c8218182cdb65cb6d17b23366",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-swap-runs-seed37/SOURCES.json",
+          "integrated_sha256": "d50009c0846b370402c9c44b405615f02f519e1c8218182cdb65cb6d17b23366"
         },
         {
           "source_path": "research/complex-swap-runs-seed37/VALIDATION.json",
           "source_sha256": "25dee6833e11d4fb7f825088696d53d36f2a4c1965a1eed9ff2eaf68ca9226ef",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-swap-runs-seed37/VALIDATION.json",
+          "integrated_sha256": "25dee6833e11d4fb7f825088696d53d36f2a4c1965a1eed9ff2eaf68ca9226ef"
         },
         {
           "source_path": "research/complex-swap-runs-seed37/compiler.py",
           "source_sha256": "4fec1f1b03b583e95851b5b1243be6285d936c7c20fa863b24a277d54774b491",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-swap-runs-seed37/compiler.py",
+          "integrated_sha256": "4fec1f1b03b583e95851b5b1243be6285d936c7c20fa863b24a277d54774b491"
         },
         {
           "source_path": "research/complex-swap-runs-seed37/independent_checker.py",
           "source_sha256": "a6591b25506fad66c45839cd6c5e0827333ab5c59aa9b5ca3da9f1246e12b6f7",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-swap-runs-seed37/independent_checker.py",
+          "integrated_sha256": "a6591b25506fad66c45839cd6c5e0827333ab5c59aa9b5ca3da9f1246e12b6f7"
         },
         {
           "source_path": "research/complex-swap-runs-seed37/test_package.py",
           "source_sha256": "bbb4e55b27d00e36beaa72385055dd677178d68b973a5d9242921261389cdf5a",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-swap-runs-seed37/test_package.py",
+          "integrated_sha256": "bbb4e55b27d00e36beaa72385055dd677178d68b973a5d9242921261389cdf5a"
         },
         {
           "source_path": "research/complex-swap-runs-seed37/verify.py",
           "source_sha256": "d9ddd80b46e16ede23d16abe6c4f31e4baabf1de3df3c5f322f8e4fe14d67cf4",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-swap-runs-seed37/verify.py",
+          "integrated_sha256": "d9ddd80b46e16ede23d16abe6c4f31e4baabf1de3df3c5f322f8e4fe14d67cf4"
         }
       ]
     },
@@ -2038,62 +2138,72 @@
         {
           "source_path": "research/dyadic-center-anchor-bound/CERTIFICATE.json",
           "source_sha256": "08431f502407d4720ea52e4be3326d6456cdcdda726a4e4df66bde22d215e31c",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-anchor-bound/CERTIFICATE.json",
+          "integrated_sha256": "08431f502407d4720ea52e4be3326d6456cdcdda726a4e4df66bde22d215e31c"
         },
         {
           "source_path": "research/dyadic-center-anchor-bound/CLAIM.json",
           "source_sha256": "deffee323ccf8ad3b117a761a72b29f8646d6b4f8cf390a478b343f3aa043c6f",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-anchor-bound/CLAIM.json",
+          "integrated_sha256": "deffee323ccf8ad3b117a761a72b29f8646d6b4f8cf390a478b343f3aa043c6f"
         },
         {
           "source_path": "research/dyadic-center-anchor-bound/EXPECTED.json",
           "source_sha256": "a0a382755a44edb2d22cce762e34549f7a4cf851e4e833f9329b29a90bf31bb9",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-anchor-bound/EXPECTED.json",
+          "integrated_sha256": "a0a382755a44edb2d22cce762e34549f7a4cf851e4e833f9329b29a90bf31bb9"
         },
         {
           "source_path": "research/dyadic-center-anchor-bound/OVERLAP.json",
           "source_sha256": "8f49c370bb7052a2ebd68193ebda217f9edb7a3b00e01eb1279ceaf54accd04d",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-anchor-bound/OVERLAP.json",
+          "integrated_sha256": "8f49c370bb7052a2ebd68193ebda217f9edb7a3b00e01eb1279ceaf54accd04d"
         },
         {
           "source_path": "research/dyadic-center-anchor-bound/README.md",
           "source_sha256": "1078a78820bf7d9dfbfac94643ea687721ab01e280b385c953982ee74866e4b5",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-anchor-bound/README.md",
+          "integrated_sha256": "1078a78820bf7d9dfbfac94643ea687721ab01e280b385c953982ee74866e4b5"
         },
         {
           "source_path": "research/dyadic-center-anchor-bound/SOURCES.json",
           "source_sha256": "40ad645e854010c656eee64d1e99fda0cc24167e65f0b6a9f13f8d6c415fcb82",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-anchor-bound/SOURCES.json",
+          "integrated_sha256": "40ad645e854010c656eee64d1e99fda0cc24167e65f0b6a9f13f8d6c415fcb82"
         },
         {
           "source_path": "research/dyadic-center-anchor-bound/VALIDATION.md",
           "source_sha256": "942eaf59d12b198a919378d939e6710ec137bd20e65b7075f9c2daaab5f7f71f",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-anchor-bound/VALIDATION.md",
+          "integrated_sha256": "942eaf59d12b198a919378d939e6710ec137bd20e65b7075f9c2daaab5f7f71f"
         },
         {
           "source_path": "research/dyadic-center-anchor-bound/anchor.py",
           "source_sha256": "926f44426fa865922ebab266d6f5d9cf2bcc2764cba5b25e09a669f72c7eac61",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-anchor-bound/anchor.py",
+          "integrated_sha256": "926f44426fa865922ebab266d6f5d9cf2bcc2764cba5b25e09a669f72c7eac61"
         },
         {
           "source_path": "research/dyadic-center-anchor-bound/test_package.py",
           "source_sha256": "d43499ec3d740ba90423f7752cbeef36643a29b4793b946704b6770afa5c9b37",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-anchor-bound/test_package.py",
+          "integrated_sha256": "d43499ec3d740ba90423f7752cbeef36643a29b4793b946704b6770afa5c9b37"
         },
         {
           "source_path": "research/dyadic-center-anchor-bound/verify.py",
           "source_sha256": "02098a745d6a50d73be9ab16a818b24897cb788c3d5a2cee660230e936f0c9a8",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/dyadic-center-anchor-bound/verify.py",
+          "integrated_sha256": "02098a745d6a50d73be9ab16a818b24897cb788c3d5a2cee660230e936f0c9a8"
         }
       ]
     },
@@ -2105,68 +2215,79 @@
         {
           "source_path": "research/complex-factory-scale-frontier27/CLAIM.json",
           "source_sha256": "6325229a86e070913b5d1d8e4c81c9842a4b9fa20f276d9d116f43a98b30a133",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-factory-scale-frontier27/CLAIM.json",
+          "integrated_sha256": "6325229a86e070913b5d1d8e4c81c9842a4b9fa20f276d9d116f43a98b30a133"
         },
         {
           "source_path": "research/complex-factory-scale-frontier27/EXPECTED.json",
           "source_sha256": "e2972512b6f9cf41229a16773e66c21cada1f8d57c8005a858fa3889c68cc4d3",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-factory-scale-frontier27/EXPECTED.json",
+          "integrated_sha256": "e2972512b6f9cf41229a16773e66c21cada1f8d57c8005a858fa3889c68cc4d3"
         },
         {
           "source_path": "research/complex-factory-scale-frontier27/PROOF.md",
           "source_sha256": "aed94a93df6709a6281442eccaef2e3f41a2e76aa02475d5df552a0b94a9ebe6",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-factory-scale-frontier27/PROOF.md",
+          "integrated_sha256": "aed94a93df6709a6281442eccaef2e3f41a2e76aa02475d5df552a0b94a9ebe6"
         },
         {
           "source_path": "research/complex-factory-scale-frontier27/README.md",
           "source_sha256": "aacd03b6155d0fb86183a08867832357cd12e9bd2e143ff82d07bf76512eabc8",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-factory-scale-frontier27/README.md",
+          "integrated_sha256": "aacd03b6155d0fb86183a08867832357cd12e9bd2e143ff82d07bf76512eabc8"
         },
         {
           "source_path": "research/complex-factory-scale-frontier27/SOURCES.json",
           "source_sha256": "14429ee60efda11051f46447821175e573aad27a7448e8d102ee1e6beb339d42",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-factory-scale-frontier27/SOURCES.json",
+          "integrated_sha256": "14429ee60efda11051f46447821175e573aad27a7448e8d102ee1e6beb339d42"
         },
         {
           "source_path": "research/complex-factory-scale-frontier27/VALIDATION.md",
           "source_sha256": "21c66251f1f2139f12e5a2f2c34e873595cbd873025ae9b9e667a05e1e8cd449",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-factory-scale-frontier27/VALIDATION.md",
+          "integrated_sha256": "21c66251f1f2139f12e5a2f2c34e873595cbd873025ae9b9e667a05e1e8cd449"
         },
         {
           "source_path": "research/complex-factory-scale-frontier27/check.py",
           "source_sha256": "9b3296ffd68b2334adf9b04800ed388efa2023a80fb48e8592724250ba3f4cc3",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-factory-scale-frontier27/check.py",
+          "integrated_sha256": "9b3296ffd68b2334adf9b04800ed388efa2023a80fb48e8592724250ba3f4cc3"
         },
         {
           "source_path": "research/complex-factory-scale-frontier27/oracle.py",
           "source_sha256": "28458555944a31fd63177da2b6a533ff53df660f687a2efa2cb33674f08b304a",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-factory-scale-frontier27/oracle.py",
+          "integrated_sha256": "28458555944a31fd63177da2b6a533ff53df660f687a2efa2cb33674f08b304a"
         },
         {
           "source_path": "research/complex-factory-scale-frontier27/sources/PR924-COMPOSITION.json",
           "source_sha256": "f9341322c278901c34aa55876978fe58b05e7056bb4402a3db7f9c8f16fa7d53",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-factory-scale-frontier27/sources/PR924-COMPOSITION.json",
+          "integrated_sha256": "f9341322c278901c34aa55876978fe58b05e7056bb4402a3db7f9c8f16fa7d53"
         },
         {
           "source_path": "research/complex-factory-scale-frontier27/test_package.py",
           "source_sha256": "32019c069e590c5f342eb60c7906357f8fab61029ffca51546fd6686ac4ea573",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-factory-scale-frontier27/test_package.py",
+          "integrated_sha256": "32019c069e590c5f342eb60c7906357f8fab61029ffca51546fd6686ac4ea573"
         },
         {
           "source_path": "research/complex-factory-scale-frontier27/verify.py",
           "source_sha256": "5e06b95a36263f5c8c2fd0c7a93903172185f994c4c301293eb807ce6823b178",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-factory-scale-frontier27/verify.py",
+          "integrated_sha256": "5e06b95a36263f5c8c2fd0c7a93903172185f994c4c301293eb807ce6823b178"
         }
       ]
     },
@@ -2178,62 +2299,72 @@
         {
           "source_path": "research/complex-x4-dyadic-forest-seed31/CERTIFICATE.json",
           "source_sha256": "de9aa051ee7aadf3b2cd948717203eb58f6cf06f0beec6ef0258eb83a5815562",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-x4-dyadic-forest-seed31/CERTIFICATE.json",
+          "integrated_sha256": "de9aa051ee7aadf3b2cd948717203eb58f6cf06f0beec6ef0258eb83a5815562"
         },
         {
           "source_path": "research/complex-x4-dyadic-forest-seed31/CLAIM.json",
           "source_sha256": "1becac471532d85d62ed4d0788804c7f47ed46255d8a100a5164ce97d12ffb53",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-x4-dyadic-forest-seed31/CLAIM.json",
+          "integrated_sha256": "1becac471532d85d62ed4d0788804c7f47ed46255d8a100a5164ce97d12ffb53"
         },
         {
           "source_path": "research/complex-x4-dyadic-forest-seed31/PROOF.md",
           "source_sha256": "7489648e692c33ab2ad0f7c5d76c1285b13671c3c6b6bb47552e2fe1c70fb5ec",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-x4-dyadic-forest-seed31/PROOF.md",
+          "integrated_sha256": "7489648e692c33ab2ad0f7c5d76c1285b13671c3c6b6bb47552e2fe1c70fb5ec"
         },
         {
           "source_path": "research/complex-x4-dyadic-forest-seed31/README.md",
           "source_sha256": "1aaa610138ce812bd6c35b9fd29391b862490aec5dc83fd9755fd3741a22e382",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-x4-dyadic-forest-seed31/README.md",
+          "integrated_sha256": "1aaa610138ce812bd6c35b9fd29391b862490aec5dc83fd9755fd3741a22e382"
         },
         {
           "source_path": "research/complex-x4-dyadic-forest-seed31/SOURCE-PINS.json",
           "source_sha256": "ad641f876770a26fb2724b2fff5b7397a4e15c52aff3eb86c665c6948bde1b5d",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-x4-dyadic-forest-seed31/SOURCE-PINS.json",
+          "integrated_sha256": "ad641f876770a26fb2724b2fff5b7397a4e15c52aff3eb86c665c6948bde1b5d"
         },
         {
           "source_path": "research/complex-x4-dyadic-forest-seed31/VALIDATION.md",
           "source_sha256": "5fbf33cba672b0c299a01edfd49cba95a6121e00586348eeaa923c0187fb263d",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-x4-dyadic-forest-seed31/VALIDATION.md",
+          "integrated_sha256": "5fbf33cba672b0c299a01edfd49cba95a6121e00586348eeaa923c0187fb263d"
         },
         {
           "source_path": "research/complex-x4-dyadic-forest-seed31/census.py",
           "source_sha256": "a7cd6fc163c80ba209b2a1a2d9a8c431b6d470d6c1c8a548ffa161704c8d5fc3",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-x4-dyadic-forest-seed31/census.py",
+          "integrated_sha256": "a7cd6fc163c80ba209b2a1a2d9a8c431b6d470d6c1c8a548ffa161704c8d5fc3"
         },
         {
           "source_path": "research/complex-x4-dyadic-forest-seed31/independent.py",
           "source_sha256": "70100c0bc66da837ce1edb2b961bd919c8d55cc3fd668fc49526425c23a38b2e",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-x4-dyadic-forest-seed31/independent.py",
+          "integrated_sha256": "70100c0bc66da837ce1edb2b961bd919c8d55cc3fd668fc49526425c23a38b2e"
         },
         {
           "source_path": "research/complex-x4-dyadic-forest-seed31/test_package.py",
           "source_sha256": "3edea88df8c899f719e197a8ec7d29801b61219bf7cfa0248b54c534ed10c450",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-x4-dyadic-forest-seed31/test_package.py",
+          "integrated_sha256": "3edea88df8c899f719e197a8ec7d29801b61219bf7cfa0248b54c534ed10c450"
         },
         {
           "source_path": "research/complex-x4-dyadic-forest-seed31/verify.py",
           "source_sha256": "3b13715c6f5bb99551c85cdd049353074b1df6139f945c4d27ca0b9a4b479791",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-x4-dyadic-forest-seed31/verify.py",
+          "integrated_sha256": "3b13715c6f5bb99551c85cdd049353074b1df6139f945c4d27ca0b9a4b479791"
         }
       ]
     },
@@ -2245,80 +2376,93 @@
         {
           "source_path": "research/ck-power-forest-bound/CLAIM.json",
           "source_sha256": "e00a66826ee5c79b73cd4e27065ce55751d23b649da9ed69e7c75aaf2a09b653",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-power-forest-bound/CLAIM.json",
+          "integrated_sha256": "e00a66826ee5c79b73cd4e27065ce55751d23b649da9ed69e7c75aaf2a09b653"
         },
         {
           "source_path": "research/ck-power-forest-bound/EXPECTED.json",
           "source_sha256": "b56ce9b45a20ca3e338778b7fd71cce0df0d22417174c885ca7c462064a61b51",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-power-forest-bound/EXPECTED.json",
+          "integrated_sha256": "b56ce9b45a20ca3e338778b7fd71cce0df0d22417174c885ca7c462064a61b51"
         },
         {
           "source_path": "research/ck-power-forest-bound/INDEPENDENT.json",
           "source_sha256": "b80f155df589848b4b4e4b99c32a3b0d6881456efec601222465c365c1350195",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-power-forest-bound/INDEPENDENT.json",
+          "integrated_sha256": "b80f155df589848b4b4e4b99c32a3b0d6881456efec601222465c365c1350195"
         },
         {
           "source_path": "research/ck-power-forest-bound/LICENSE",
           "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-power-forest-bound/LICENSE",
+          "integrated_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
         },
         {
           "source_path": "research/ck-power-forest-bound/NOTICE.md",
           "source_sha256": "47fc6c4177ebf788d22492384f5ab70574ea01d01ac4beec6f31dcabc763c36a",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-power-forest-bound/NOTICE.md",
+          "integrated_sha256": "47fc6c4177ebf788d22492384f5ab70574ea01d01ac4beec6f31dcabc763c36a"
         },
         {
           "source_path": "research/ck-power-forest-bound/PROOF.md",
           "source_sha256": "3baed05d8e4aff59f574b050a7ada08ff877f4463b03160b6d9f1fa32a8db0f9",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-power-forest-bound/PROOF.md",
+          "integrated_sha256": "3baed05d8e4aff59f574b050a7ada08ff877f4463b03160b6d9f1fa32a8db0f9"
         },
         {
           "source_path": "research/ck-power-forest-bound/README.md",
           "source_sha256": "189ea8069462ce6645d0ba7eca91e643361dab2c69dc438f8886428afc31696b",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-power-forest-bound/README.md",
+          "integrated_sha256": "189ea8069462ce6645d0ba7eca91e643361dab2c69dc438f8886428afc31696b"
         },
         {
           "source_path": "research/ck-power-forest-bound/SOURCES.json",
           "source_sha256": "11301f2900a4903225ec164f51ace0eb026a78c51aa5cbeb633bdc361ca13ba1",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-power-forest-bound/SOURCES.json",
+          "integrated_sha256": "11301f2900a4903225ec164f51ace0eb026a78c51aa5cbeb633bdc361ca13ba1"
         },
         {
           "source_path": "research/ck-power-forest-bound/VALIDATION.md",
           "source_sha256": "bbe538e1bd66d583dc6afadab1539030b69155226812481f8aa3c463c463f021",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-power-forest-bound/VALIDATION.md",
+          "integrated_sha256": "bbe538e1bd66d583dc6afadab1539030b69155226812481f8aa3c463c463f021"
         },
         {
           "source_path": "research/ck-power-forest-bound/common.py",
           "source_sha256": "11bc9becdff8fe84cdaaab4429a9cc04387ed8d4eab7b27c4b64ff50d159ed1d",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-power-forest-bound/common.py",
+          "integrated_sha256": "11bc9becdff8fe84cdaaab4429a9cc04387ed8d4eab7b27c4b64ff50d159ed1d"
         },
         {
           "source_path": "research/ck-power-forest-bound/independent.py",
           "source_sha256": "5a4c6ee59e4a136eb46823362da8003ce4a6e461eb4fb4c920c29a86f689620d",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-power-forest-bound/independent.py",
+          "integrated_sha256": "5a4c6ee59e4a136eb46823362da8003ce4a6e461eb4fb4c920c29a86f689620d"
         },
         {
           "source_path": "research/ck-power-forest-bound/test_package.py",
           "source_sha256": "fdaebb706d99dfcbe1c13d77758316b303dea5bbe1b708559136553e8f6e908c",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-power-forest-bound/test_package.py",
+          "integrated_sha256": "fdaebb706d99dfcbe1c13d77758316b303dea5bbe1b708559136553e8f6e908c"
         },
         {
           "source_path": "research/ck-power-forest-bound/verify.py",
           "source_sha256": "a217686ec3e5d8cef9db5debe2b8a3571c84d4740c12759347962ae528b95a5f",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/ck-power-forest-bound/verify.py",
+          "integrated_sha256": "a217686ec3e5d8cef9db5debe2b8a3571c84d4740c12759347962ae528b95a5f"
         }
       ]
     },
@@ -2330,80 +2474,93 @@
         {
           "source_path": "research/e8-first-rank-drop/CERTIFICATE.json",
           "source_sha256": "141ad1b52fa75f104b39c9a3893cdbdb27bcec8cda166ae680197e835b241ee8",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/e8-first-rank-drop/CERTIFICATE.json",
+          "integrated_sha256": "141ad1b52fa75f104b39c9a3893cdbdb27bcec8cda166ae680197e835b241ee8"
         },
         {
           "source_path": "research/e8-first-rank-drop/CLAIM.json",
           "source_sha256": "b9311c2df26f1b9717175b300869dd3b7d091847c9b8996a826da80ba7b11bf6",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/e8-first-rank-drop/CLAIM.json",
+          "integrated_sha256": "b9311c2df26f1b9717175b300869dd3b7d091847c9b8996a826da80ba7b11bf6"
         },
         {
           "source_path": "research/e8-first-rank-drop/NOTICE.md",
           "source_sha256": "dfde98be5ae06e1267a2d621849c1753ee221dcac7aa488b135450ecf865ea91",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/e8-first-rank-drop/NOTICE.md",
+          "integrated_sha256": "dfde98be5ae06e1267a2d621849c1753ee221dcac7aa488b135450ecf865ea91"
         },
         {
           "source_path": "research/e8-first-rank-drop/OVERLAP.json",
           "source_sha256": "359a9bdcb4d30436c9a2fdae065bb4c208b75da49269b745ad1cff8e33c6be54",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/e8-first-rank-drop/OVERLAP.json",
+          "integrated_sha256": "359a9bdcb4d30436c9a2fdae065bb4c208b75da49269b745ad1cff8e33c6be54"
         },
         {
           "source_path": "research/e8-first-rank-drop/PROOF.md",
           "source_sha256": "fb9481d29398754f7ca03766b6d8d104b8b5f1a44770ba691b1e1a20172cdb56",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/e8-first-rank-drop/PROOF.md",
+          "integrated_sha256": "fb9481d29398754f7ca03766b6d8d104b8b5f1a44770ba691b1e1a20172cdb56"
         },
         {
           "source_path": "research/e8-first-rank-drop/README.md",
           "source_sha256": "75c67dcc50887fb596e32f7c6da3895ddf926a57a8eed703011850becf624164",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/e8-first-rank-drop/README.md",
+          "integrated_sha256": "75c67dcc50887fb596e32f7c6da3895ddf926a57a8eed703011850becf624164"
         },
         {
           "source_path": "research/e8-first-rank-drop/SOURCES.json",
           "source_sha256": "8246773966ecf7cd94a22107c01a87da49e51abcba46ac03e15295dd26e31875",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/e8-first-rank-drop/SOURCES.json",
+          "integrated_sha256": "8246773966ecf7cd94a22107c01a87da49e51abcba46ac03e15295dd26e31875"
         },
         {
           "source_path": "research/e8-first-rank-drop/VALIDATION.md",
           "source_sha256": "311b748fa548725e7469effb431af907b0eaab9148b58db582ab21f19e4bbc25",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/e8-first-rank-drop/VALIDATION.md",
+          "integrated_sha256": "311b748fa548725e7469effb431af907b0eaab9148b58db582ab21f19e4bbc25"
         },
         {
           "source_path": "research/e8-first-rank-drop/independent_check.py",
           "source_sha256": "09f9bc836ae467dc20431e74b05d00114ad98b0d5cb7ebeaedf4e6a084406de3",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/e8-first-rank-drop/independent_check.py",
+          "integrated_sha256": "09f9bc836ae467dc20431e74b05d00114ad98b0d5cb7ebeaedf4e6a084406de3"
         },
         {
           "source_path": "research/e8-first-rank-drop/reference/PR631-README.md",
           "source_sha256": "281f706bf29d1f91dd64ba096f9d66d622f49e9d82d0ff306fb9374f77ba7333",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/e8-first-rank-drop/reference/PR631-README.md",
+          "integrated_sha256": "281f706bf29d1f91dd64ba096f9d66d622f49e9d82d0ff306fb9374f77ba7333"
         },
         {
           "source_path": "research/e8-first-rank-drop/reference/PR939-PROOF.md",
           "source_sha256": "edbc645f2fdba1c8c936c0ba2073038788bd2b45de93ed1bb826e7d1a497ce3a",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/e8-first-rank-drop/reference/PR939-PROOF.md",
+          "integrated_sha256": "edbc645f2fdba1c8c936c0ba2073038788bd2b45de93ed1bb826e7d1a497ce3a"
         },
         {
           "source_path": "research/e8-first-rank-drop/test_package.py",
           "source_sha256": "28a4284f55cbbd2ebdd60194bb8a1659c46d8115e706e7ce57de9f2fd589c104",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/e8-first-rank-drop/test_package.py",
+          "integrated_sha256": "28a4284f55cbbd2ebdd60194bb8a1659c46d8115e706e7ce57de9f2fd589c104"
         },
         {
           "source_path": "research/e8-first-rank-drop/verify.py",
           "source_sha256": "66e8c4a4d55b03d446f0e7ae9bea6e7c46b382b406c669b6a240a8d1f0071a3e",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/e8-first-rank-drop/verify.py",
+          "integrated_sha256": "66e8c4a4d55b03d446f0e7ae9bea6e7c46b382b406c669b6a240a8d1f0071a3e"
         }
       ]
     },
@@ -2415,164 +2572,191 @@
         {
           "source_path": "research/five-port-quadratic-decoder/CERTIFICATE.json",
           "source_sha256": "7bb826b669b1bccc2f022305e8d07350bd6bc70a2ee10fe6651a127e1a438965",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/CERTIFICATE.json",
+          "integrated_sha256": "7bb826b669b1bccc2f022305e8d07350bd6bc70a2ee10fe6651a127e1a438965"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/CLAIM.json",
           "source_sha256": "44ef9acf67b599aceec28a8e18cbe6719707e43a792e2620052786ada177cd10",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/CLAIM.json",
+          "integrated_sha256": "44ef9acf67b599aceec28a8e18cbe6719707e43a792e2620052786ada177cd10"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/INDEPENDENT.json",
           "source_sha256": "78ca55791513043b0a9480d5491aca49c7a74e3bc8e6ddf9a2347a1e0f6b36ae",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/INDEPENDENT.json",
+          "integrated_sha256": "78ca55791513043b0a9480d5491aca49c7a74e3bc8e6ddf9a2347a1e0f6b36ae"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/LICENSE",
           "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/LICENSE",
+          "integrated_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/NOTICE.md",
           "source_sha256": "b91b5efc9fb5a237555c4830d5c8d7bff382b8169c1441116fc18d5843093396",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/NOTICE.md",
+          "integrated_sha256": "b91b5efc9fb5a237555c4830d5c8d7bff382b8169c1441116fc18d5843093396"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/OVERLAP.json",
           "source_sha256": "a42f2f93cd0a29cde676aa686488e1ad534756cb91077fd500185870d00e1520",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/OVERLAP.json",
+          "integrated_sha256": "a42f2f93cd0a29cde676aa686488e1ad534756cb91077fd500185870d00e1520"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/PROOF.md",
           "source_sha256": "df4437193b9e8f478673c5050735d5c67964c103e5e7c29ee124ae0f38b9b442",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/PROOF.md",
+          "integrated_sha256": "df4437193b9e8f478673c5050735d5c67964c103e5e7c29ee124ae0f38b9b442"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/README.md",
           "source_sha256": "4441cb3ce53d50133df3e55f561e1d5963a015d064a8e1351736bf279bf5a51b",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/README.md",
+          "integrated_sha256": "4441cb3ce53d50133df3e55f561e1d5963a015d064a8e1351736bf279bf5a51b"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/SOURCES.json",
           "source_sha256": "81f403d72817b43bce60edbfd27c239977c23d658cf28b31c2412498623e0f17",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/SOURCES.json",
+          "integrated_sha256": "81f403d72817b43bce60edbfd27c239977c23d658cf28b31c2412498623e0f17"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/VALIDATION.md",
           "source_sha256": "d96b7c6777d58536392228e0e735ab12f7e0c5bef2cfe861be7d7ec06958907b",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/VALIDATION.md",
+          "integrated_sha256": "d96b7c6777d58536392228e0e735ab12f7e0c5bef2cfe861be7d7ec06958907b"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/WITNESSES.json",
           "source_sha256": "d646efe099b20098fe02f9249cb8318ba2cdf4f50ef26dc54a8b2577567d2f28",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/WITNESSES.json",
+          "integrated_sha256": "d646efe099b20098fe02f9249cb8318ba2cdf4f50ef26dc54a8b2577567d2f28"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/discover.py",
           "source_sha256": "5dc3d521ac6d00f7df7c9aba314fc29e2112b6903515639d1b94b19cdbe08dd8",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/discover.py",
+          "integrated_sha256": "5dc3d521ac6d00f7df7c9aba314fc29e2112b6903515639d1b94b19cdbe08dd8"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/evidence/checks.json",
           "source_sha256": "8587165f88744cf9337182c39e7c683dc905a69817d06bcc8d93efe753da7d51",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/evidence/checks.json",
+          "integrated_sha256": "8587165f88744cf9337182c39e7c683dc905a69817d06bcc8d93efe753da7d51"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/evidence/clean-export.json",
           "source_sha256": "e249e090bfbe4ea1c65441955c03117237114374710ab1c95489bfa32695962b",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/evidence/clean-export.json",
+          "integrated_sha256": "e249e090bfbe4ea1c65441955c03117237114374710ab1c95489bfa32695962b"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/evidence/export-independent.py.txt",
           "source_sha256": "2309365c70e44cc4796459fd10a25437b60dc73334bc1b743e272b97bb333eb3",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/evidence/export-independent.py.txt",
+          "integrated_sha256": "2309365c70e44cc4796459fd10a25437b60dc73334bc1b743e272b97bb333eb3"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/evidence/export-verify.py.txt",
           "source_sha256": "41ef25a307d1776f6fd905a8c9d9353028787361c34b14320308970188a23829",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/evidence/export-verify.py.txt",
+          "integrated_sha256": "41ef25a307d1776f6fd905a8c9d9353028787361c34b14320308970188a23829"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/evidence/package-tests.txt",
           "source_sha256": "c4121d68881c6b86f823d18df782f607a720fa2637b586757e7e1d688b680c83",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/evidence/package-tests.txt",
+          "integrated_sha256": "c4121d68881c6b86f823d18df782f607a720fa2637b586757e7e1d688b680c83"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/evidence/primary-python312.txt",
           "source_sha256": "41ef25a307d1776f6fd905a8c9d9353028787361c34b14320308970188a23829",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/evidence/primary-python312.txt",
+          "integrated_sha256": "41ef25a307d1776f6fd905a8c9d9353028787361c34b14320308970188a23829"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/evidence/second-python314.txt",
           "source_sha256": "2309365c70e44cc4796459fd10a25437b60dc73334bc1b743e272b97bb333eb3",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/evidence/second-python314.txt",
+          "integrated_sha256": "2309365c70e44cc4796459fd10a25437b60dc73334bc1b743e272b97bb333eb3"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/evidence/selected-record.txt",
           "source_sha256": "3cb83d20780b906dd69ae628e4a75d062d9208c7906a3f02389ffce57361f7e9",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/evidence/selected-record.txt",
+          "integrated_sha256": "3cb83d20780b906dd69ae628e4a75d062d9208c7906a3f02389ffce57361f7e9"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/independent.py",
           "source_sha256": "7280f22e035166c4b1879d1d4b1f1aeae2b5f7dd3c4cc2beef3f799445db0c5b",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/independent.py",
+          "integrated_sha256": "7280f22e035166c4b1879d1d4b1f1aeae2b5f7dd3c4cc2beef3f799445db0c5b"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/sources/format-axioms-README.md",
           "source_sha256": "0fa0d6b2df96ddc06b876c41c5fa8d2335b97f36bc8f17d1371296d23199c263",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/sources/format-axioms-README.md",
+          "integrated_sha256": "0fa0d6b2df96ddc06b876c41c5fa8d2335b97f36bc8f17d1371296d23199c263"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/sources/pr231-README.md",
           "source_sha256": "2dc89289d1d979aec6709b8c55a2af7cd39d97297bc20fb94adc7d4cdf867cd1",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/sources/pr231-README.md",
+          "integrated_sha256": "2dc89289d1d979aec6709b8c55a2af7cd39d97297bc20fb94adc7d4cdf867cd1"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/sources/pr446-PROOF.md",
           "source_sha256": "7a8c3bab633c08e7d96297dec9f9e7ed68d6bd0e076b73310c7d6b08a16df017",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/sources/pr446-PROOF.md",
+          "integrated_sha256": "7a8c3bab633c08e7d96297dec9f9e7ed68d6bd0e076b73310c7d6b08a16df017"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/sources/selected-result-base.json",
           "source_sha256": "41fb066ff0f43ce472323195e9088d6d888715c13c54eae7b42e357ed5bfc726",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/sources/selected-result-base.json",
+          "integrated_sha256": "41fb066ff0f43ce472323195e9088d6d888715c13c54eae7b42e357ed5bfc726"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/test_package.py",
           "source_sha256": "e9938b704cec5ad4a602548f3bf49e598116c1bbc5dcc1c7a636d63ea26b9f60",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/test_package.py",
+          "integrated_sha256": "e9938b704cec5ad4a602548f3bf49e598116c1bbc5dcc1c7a636d63ea26b9f60"
         },
         {
           "source_path": "research/five-port-quadratic-decoder/verify.py",
           "source_sha256": "6f8106f02dee22a2fcaadc2fc95adf74f287305e80416d814264b1566f8447b8",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/five-port-quadratic-decoder/verify.py",
+          "integrated_sha256": "6f8106f02dee22a2fcaadc2fc95adf74f287305e80416d814264b1566f8447b8"
         }
       ]
     },
@@ -2584,62 +2768,72 @@
         {
           "source_path": "research/p111-receiver-census/CLAIM.md",
           "source_sha256": "f95db9ac69853264cf00b91d6a7fed19bd1ba3605831e09927d2a55fa41e8ae5",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/p111-receiver-census/CLAIM.md",
+          "integrated_sha256": "f95db9ac69853264cf00b91d6a7fed19bd1ba3605831e09927d2a55fa41e8ae5"
         },
         {
           "source_path": "research/p111-receiver-census/EXPECTED.json",
           "source_sha256": "6a9581e1b919902d52fee03340bbab66397d108fc23e873f7350461d713dab75",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/p111-receiver-census/EXPECTED.json",
+          "integrated_sha256": "6a9581e1b919902d52fee03340bbab66397d108fc23e873f7350461d713dab75"
         },
         {
           "source_path": "research/p111-receiver-census/NOTICE.md",
           "source_sha256": "ec11dc1a27a49136b4ad719b42cc443874a25f4149fb4f08118d6b0ffcab81da",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/p111-receiver-census/NOTICE.md",
+          "integrated_sha256": "ec11dc1a27a49136b4ad719b42cc443874a25f4149fb4f08118d6b0ffcab81da"
         },
         {
           "source_path": "research/p111-receiver-census/PROOF.md",
           "source_sha256": "13763044cc0e363f40cf7329085ef3805af852a3c8b95aa4c20ef75dd80aeddd",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/p111-receiver-census/PROOF.md",
+          "integrated_sha256": "13763044cc0e363f40cf7329085ef3805af852a3c8b95aa4c20ef75dd80aeddd"
         },
         {
           "source_path": "research/p111-receiver-census/README.md",
           "source_sha256": "0e50538b4965c302e5e1377c6d2ca52c2e470b4aefaa3388ca7ab20c130dd8f4",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/p111-receiver-census/README.md",
+          "integrated_sha256": "0e50538b4965c302e5e1377c6d2ca52c2e470b4aefaa3388ca7ab20c130dd8f4"
         },
         {
           "source_path": "research/p111-receiver-census/SOURCES.json",
           "source_sha256": "0e3505c8e2df97aaf2736a5710163363635080ebef7a24191ed76e424046cd37",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/p111-receiver-census/SOURCES.json",
+          "integrated_sha256": "0e3505c8e2df97aaf2736a5710163363635080ebef7a24191ed76e424046cd37"
         },
         {
           "source_path": "research/p111-receiver-census/VALIDATION.md",
           "source_sha256": "fa5e0a7dd119c0018a13aeef85b56e6aa7fe99e98757a9cd543498174607a4ee",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/p111-receiver-census/VALIDATION.md",
+          "integrated_sha256": "fa5e0a7dd119c0018a13aeef85b56e6aa7fe99e98757a9cd543498174607a4ee"
         },
         {
           "source_path": "research/p111-receiver-census/independent.py",
           "source_sha256": "30e7477659665bf93356ab07c450db44f2df0f64c13b21d1ba72e97ced60e54a",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/p111-receiver-census/independent.py",
+          "integrated_sha256": "30e7477659665bf93356ab07c450db44f2df0f64c13b21d1ba72e97ced60e54a"
         },
         {
           "source_path": "research/p111-receiver-census/test_package.py",
           "source_sha256": "b9a7a7ead662d3589ad535acd2ad6dd33ddf3b86df56ae83f1dbd25004be1cef",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/p111-receiver-census/test_package.py",
+          "integrated_sha256": "b9a7a7ead662d3589ad535acd2ad6dd33ddf3b86df56ae83f1dbd25004be1cef"
         },
         {
           "source_path": "research/p111-receiver-census/verify.py",
           "source_sha256": "2705f2dbd3a5573f0fbbbbb33df8ff1f478ca1d75c4e804891f1519830d93f6d",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/p111-receiver-census/verify.py",
+          "integrated_sha256": "2705f2dbd3a5573f0fbbbbb33df8ff1f478ca1d75c4e804891f1519830d93f6d"
         }
       ]
     },
@@ -2651,50 +2845,58 @@
         {
           "source_path": "research/complex-frame-pair-decoders/CLAIM.md",
           "source_sha256": "a28476a67166613b1eb3b6835a7d4f0c041ecd27ef48c13f97c13c5a43b8898b",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-frame-pair-decoders/CLAIM.md",
+          "integrated_sha256": "a28476a67166613b1eb3b6835a7d4f0c041ecd27ef48c13f97c13c5a43b8898b"
         },
         {
           "source_path": "research/complex-frame-pair-decoders/PROOF.md",
           "source_sha256": "ba53c1d8a9bc2d935d546bde46ca7341bd65f8515013e07b073296b4db2a9a74",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-frame-pair-decoders/PROOF.md",
+          "integrated_sha256": "ba53c1d8a9bc2d935d546bde46ca7341bd65f8515013e07b073296b4db2a9a74"
         },
         {
           "source_path": "research/complex-frame-pair-decoders/README.md",
           "source_sha256": "edd848b0177dc73a6e2646d4fd82f0b2ceae37e642bf19d6af602579a041a57e",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-frame-pair-decoders/README.md",
+          "integrated_sha256": "edd848b0177dc73a6e2646d4fd82f0b2ceae37e642bf19d6af602579a041a57e"
         },
         {
           "source_path": "research/complex-frame-pair-decoders/SOURCES.json",
           "source_sha256": "488af5eba0f500fe0bff3c9709ab4cd3ba4529f289a162b9f132b5e2401b24da",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-frame-pair-decoders/SOURCES.json",
+          "integrated_sha256": "488af5eba0f500fe0bff3c9709ab4cd3ba4529f289a162b9f132b5e2401b24da"
         },
         {
           "source_path": "research/complex-frame-pair-decoders/inputs/pr717/P104_HIT_flip_3a.txt",
           "source_sha256": "8e0178db02c14e1b29058cdbdbd50aac22f2b55a1ba21dc82f417610c9932526",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-frame-pair-decoders/inputs/pr717/P104_HIT_flip_3a.txt",
+          "integrated_sha256": "8e0178db02c14e1b29058cdbdbd50aac22f2b55a1ba21dc82f417610c9932526"
         },
         {
           "source_path": "research/complex-frame-pair-decoders/inputs/pr717/P111_HIT_g0.txt",
           "source_sha256": "c06d83ede44258b7250fe1df62a82011687f704c7f879ce4c91040ebbe2ef6b4",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-frame-pair-decoders/inputs/pr717/P111_HIT_g0.txt",
+          "integrated_sha256": "c06d83ede44258b7250fe1df62a82011687f704c7f879ce4c91040ebbe2ef6b4"
         },
         {
           "source_path": "research/complex-frame-pair-decoders/inputs/pr717/P111_HIT_g111.txt",
           "source_sha256": "8d5528362385dfc0c19cda625e5b2894d777d9405fc167c4c6723e99baa8db56",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-frame-pair-decoders/inputs/pr717/P111_HIT_g111.txt",
+          "integrated_sha256": "8d5528362385dfc0c19cda625e5b2894d777d9405fc167c4c6723e99baa8db56"
         },
         {
           "source_path": "research/complex-frame-pair-decoders/verify.py",
           "source_sha256": "bdf7ee497dc04dfc634ee5b7848f6a2b39b0169668fb1a60a9715111dbd15395",
-          "action": "pending",
-          "reason": "Frozen for later scoped review and execution; no approval or integration yet."
+          "action": "retained",
+          "integrated_path": "research/complex-frame-pair-decoders/verify.py",
+          "integrated_sha256": "bdf7ee497dc04dfc634ee5b7848f6a2b39b0169668fb1a60a9715111dbd15395"
         }
       ]
     },

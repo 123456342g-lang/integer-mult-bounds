@@ -21,8 +21,8 @@
   "counts": {
     "changed_since_review": 6,
     "incorporated": 174,
-    "partially_reviewed": 150,
-    "unreviewed": 312
+    "partially_reviewed": 166,
+    "unreviewed": 296
   },
   "source_sha256": {
     "docs/research/community-followup-validation.json": "81155f9cf9e5b91e3f1a587e3ba8eb83d25099cc937e603ef235b0a8b73dd732",
@@ -51,7 +51,7 @@
     "research/community-frontier890-audit/DISPOSITIONS.json": "c33d7d04ae1411a769ba14e812e75f8065b07bbdb085cbbf86b935eb1c8d8f8f",
     "research/community-batch932-audit/DISPOSITIONS.json": "78407de39b1d51acf31209a6ab11b6fe06e8cf3a617659c5cd43882870baa2d9",
     "research/community-batch952-audit/DISPOSITIONS.json": "fa89c90fb127e512903539ead9c6cf1e4667ed415b4d81a6510ff692f33bd53d",
-    "research/community-batch970-audit/DISPOSITIONS.json": "5c50a633995dd6987ab3c481d2af4b8e5fdc6225c489c26bc172d9922412ee7d"
+    "research/community-batch970-audit/DISPOSITIONS.json": "99cc2f18bdbf15d690c2b55055ee82f6357580f3775b5c8cc6ab86d6a0c0e5b3"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
   "pull_requests": [
@@ -18882,25 +18882,27 @@
         {
           "head": "6e9c76b2b9e31350a10ceb5b98e94df1438e3a1f",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Known-zero coefficient work removes 9228 historical JP8 primitives per orientation beyond #696, forgetting knowledge at every opaque/frame boundary and preserving addition exit obligations.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/jp8-clean-work"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "6e9c76b2b9e31350a10ceb5b98e94df1438e3a1f",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-circuits-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -21326,25 +21328,27 @@
         {
           "head": "085c32a25e2a09b029fa816195b97fa93d6f0788",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Joint target forest and helper pairs reduce historical CK compensation by 75318 real primitives per orientation, including 8798 beyond the target forest. Arbitrary inputs, both orientations, native wrappers and precision charged; not joint optimality.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/complex-ck-two-sided"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "085c32a25e2a09b029fa816195b97fa93d6f0788",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-circuits-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -21370,25 +21374,27 @@
         {
           "head": "79ee104a90c3c7c244362cce74997fce37923ce9",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Boundary-local sign normalization saves 224 CK primitives per orientation. Signs flushed before every opaque/frame boundary; source-dependent norms preserved. Historical finite scalar scope.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/ck-sign-normalization-seed22"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "79ee104a90c3c7c244362cce74997fce37923ce9",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-circuits-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -21866,25 +21872,27 @@
         {
           "head": "b303fed6dfe2066dcd78c0d8ed74d2a3b153ba72",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Historical rank-h central factor with two commuting basis shears reduces h26 gather/scatter bill to 42600. Complete dirty restoration and unchanged grouped-frame/rank invoice checked; improvement over Curtis Dransfield #809 credited separately.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/dyadic-center-two-shear"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "b303fed6dfe2066dcd78c0d8ed74d2a3b153ba72",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-circuits-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -22107,25 +22115,27 @@
         {
           "head": "a3245bf22fa2a2eb778b11128cbc605b130d737f",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Joint same-target two-source Horner blocks save 13072 backward primitives with complete 737-column replay and fixed-class disjoint-pair optimum. Conservative max-orientation invoice improves only by 16; no new exponent.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/x4-joint-horner-seed29"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "a3245bf22fa2a2eb778b11128cbc605b130d737f",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-circuits-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -22202,25 +22212,27 @@
         {
           "head": "b6f6418bdcae748b267cea72a5949d551feb7bb2",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Exact constant-row integral-shear optimum in the stated signed alphabet: #937 attains unique fixed-pivot 42600 at h26 and all even h>=10; h8 has a different optimum. Other row mixing and rational bases excluded.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/dyadic-center-anchor-bound"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "b6f6418bdcae748b267cea72a5949d551feb7bb2",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-circuits-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -22246,25 +22258,27 @@
         {
           "head": "102ddfb47d11c8ad66121350907d4a2cc04cea8c",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Exact 73-primitive optimum over diagonal signed-dyadic scale placements for the fixed 26-ADD factory. Complete 315392-tuple domain and higher-macro exclusion under the retained adapter invoice. CubeJerry #922/#924 supplied the attaining construction.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/complex-factory-scale-frontier27"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "102ddfb47d11c8ad66121350907d4a2cc04cea8c",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-circuits-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -22484,25 +22498,27 @@
         {
           "head": "a98219aa708e1bd2ae4ca90e720e66569f7f0147",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Classifies all 255 first E8 reader-code rank drops at 56 deletions, correctly separating available and required code dimensions. Exact star costs 50/57; through-56 fixed-star ratio exclusion inherits PR939 coverage.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/e8-first-rank-drop"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "a98219aa708e1bd2ae4ca90e720e66569f7f0147",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-circuits-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -22578,25 +22594,27 @@
         {
           "head": "28d68c88f0184835d8c8a7266ab8d0dad3f18a8a",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Natural five-port quadratic Gram decoder has supplier saving below 125/76433 under separate-star drop-free compressed-window premises. Seventeen exact rational-rank witnesses and all-p tail; no unrestricted decoder barrier.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/five-port-quadratic-decoder"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "28d68c88f0184835d8c8a7266ab8d0dad3f18a8a",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-circuits-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -22723,25 +22741,27 @@
         {
           "head": "4257ddf4b755cd0ac3bd3b0f6281cc5b2b1f72ad",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Historical X4 single-parent forest floor 10883 extends from signed units to all dyadics via finite coefficient domination plus proved infinite tails. Multiple parents, helper changes and shared work excluded.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/complex-x4-dyadic-forest-seed31"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "4257ddf4b755cd0ac3bd3b0f6281cc5b2b1f72ad",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-circuits-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -22767,25 +22787,27 @@
         {
           "head": "04c37d1c9d71808f77a36b3734f6c07a7ee772c1",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Complete 19683 receiver assignments in the frozen P111 generator cannot beat 439 helpers; 2646 minimizers. Fixed punctures, keeper plan and closure convention; not unrestricted helper/circuit optimality.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/p111-receiver-census"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "04c37d1c9d71808f77a36b3734f6c07a7ee772c1",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-circuits-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -22811,25 +22833,27 @@
         {
           "head": "7a3bf8460cf6ca16a2bf008ff51fdb06df1af938",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Historical CK signed-power-of-two parent forests retain floor 16364; each nonunit edge adds at least 10. Exact finite census plus infinite-tail proof; does not cover all dyadic numerators.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/ck-power-forest-bound"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "7a3bf8460cf6ca16a2bf008ff51fdb06df1af938",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-circuits-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -22855,25 +22879,27 @@
         {
           "head": "6292e3774abd82f2d5202190b498f35cc1628c39",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Coupled helper triples reduce the alternative R439 word from 11980 to 11840 ADDs; exhaustive 168-map component scores, greedy census, arbitrary-dirty endpoints and full native replay. Nine-stage precision uses 99.6193% of allowance. Not a new supplier or global optimum.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/r439-helper-triples"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "6292e3774abd82f2d5202190b498f35cc1628c39",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-circuits-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -22899,25 +22925,27 @@
         {
           "head": "c6caa79e6655d83780a3b70a1d658313126fb0b3",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Disjoint one/two-leaf helper stars reduce the alternative word to 11783 ADDs; full native 5/9/11-stage replay and exact 192-bit inequality pass at 99.996316% usage. Semantic D substitution; original gate-local H2 remains false. No kappa change.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/r439-helper-stars-seed19"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "c6caa79e6655d83780a3b70a1d658313126fb0b3",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-circuits-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -22943,25 +22971,27 @@
         {
           "head": "6a99e7240b961ac5e115ae6aa0301ec7c4a45d77",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Exact eight-term complex frame-pair decoder analysis and finite census: copy floor max(72-p,56) through 24 punctures; best copy ratio 7/13 at p16. Uses stated E8 hyperplane-flat coverage premise. Favorable pricing only, no built supplier or new kappa.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/complex-frame-pair-decoders"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "6a99e7240b961ac5e115ae6aa0301ec7c4a45d77",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-circuits-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -22987,25 +23017,27 @@
         {
           "head": "d1ee3f46a6167ea54913e070af3161c71a99e1f2",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Deferred exact swaps with paid cycle materialization save 560 primitives per historical CK/JP8 orientation after identical clear elision on both comparators. Complete dirty/private inputs and prefixes checked; physical/global adoption open.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/complex-swap-runs-seed37"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "d1ee3f46a6167ea54913e070af3161c71a99e1f2",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-circuits-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [

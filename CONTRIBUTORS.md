@@ -4,6 +4,19 @@
 See the [current review](docs/research/community-batch952-review.md) and
 [circuit integration](docs/research/community-circuits681-review.md) for scope.
 
+## Circuit and structural-bound checkpoint
+
+[Individual scopes and evidence](docs/research/community-batch970-circuits-review.md).
+All are finite constructions or scoped bounds; the selected exponent is unchanged.
+
+- **Ross Richardson / RossRichardson:** [#965](https://github.com/CrocSwap/integer-mult-bounds/pull/965), [#937](https://github.com/CrocSwap/integer-mult-bounds/pull/937), [#945](https://github.com/CrocSwap/integer-mult-bounds/pull/945), [#917](https://github.com/CrocSwap/integer-mult-bounds/pull/917), [#919](https://github.com/CrocSwap/integer-mult-bounds/pull/919), [#947](https://github.com/CrocSwap/integer-mult-bounds/pull/947), [#949](https://github.com/CrocSwap/integer-mult-bounds/pull/949), [#954](https://github.com/CrocSwap/integer-mult-bounds/pull/954), [#958](https://github.com/CrocSwap/integer-mult-bounds/pull/958).
+- **Sricharan Vagvala / theon199:** [#967](https://github.com/CrocSwap/integer-mult-bounds/pull/967).
+- **faw / faw01:** [#839](https://github.com/CrocSwap/integer-mult-bounds/pull/839).
+- **ToikY / ToikY:** [#969](https://github.com/CrocSwap/integer-mult-bounds/pull/969), [#963](https://github.com/CrocSwap/integer-mult-bounds/pull/963).
+- **woklerx / woklerx:** [#961](https://github.com/CrocSwap/integer-mult-bounds/pull/961).
+- **Gareth Davidson / bitplane:** [#964](https://github.com/CrocSwap/integer-mult-bounds/pull/964).
+- **themilkman216 / themilkman216:** [#968](https://github.com/CrocSwap/integer-mult-bounds/pull/968).
+
 ## Verification checkpoint in the forty-PR batch
 
 [Scopes and execution evidence](docs/research/community-batch970-review.md).
