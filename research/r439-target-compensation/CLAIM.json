@@ -1,0 +1,53 @@
+{
+  "pass": 10,
+  "assignment_seed": 10,
+  "drawn_at_utc": "2026-10-13T11:40:33.223566+00:00",
+  "track": "bit supplier",
+  "source": "secrets.randbelow(100), OS randomness",
+  "base": "f567884aeb8851b6e794af1184119a3bfbe1e631",
+  "branch": "research/pass10-bit-seed10",
+  "status": "claimed",
+  "claimed_at_utc": "2026-10-13T11:48:02.235714+00:00",
+  "candidate_selection": "10 modulo 3 = 1; seed10 orders equal-gain target shears",
+  "candidates": [
+    {
+      "object": "P111 label-functional copied-rank reduction below63",
+      "chosen": false,
+      "reason": "PR757/761 close the fixed label-functional class, corroborating PR620"
+    },
+    {
+      "object": "Selected R439 guarded target-basis compensation",
+      "chosen": true,
+      "method": "Successive target-row XOR changes with paid entrance/exit; exact incremental positive-bound guards at the unchanged nine-stage192-bit charge"
+    },
+    {
+      "object": "Selected R439 fixed-word frame retiming",
+      "chosen": false,
+      "reason": "PR886 certifies the unchanged word frame optimum"
+    }
+  ],
+  "statement": "Replace only frame-zero D in selected PR589 by a restored target basis E, helper injections E*K, and literal inverse E. Preserve the full arbitrary-dirt D boundary, all non-D fields, frame paths and paid ranks; explicitly replace syntactic H2 and literal K extraction by the semantic D contract already published for R420.",
+  "domain": "111 target rows,439 helper columns; successive elementary row additions, fixed seeded tie order, at most1000 accepted strict-gain steps. Guard F<=49347 and both64*F^3*B^2<2^104 and2^18*F^5*B^4<2^192; charge two target shears per step.",
+  "stopping_rule": "Score all ordered target pairs at each step, accept the best guarded positive complete-cost gain, and stop at no eligible gain or1000 steps. At most one evidence-driven pivot. No repeat of closed copy-rank/frame or pass9 prefix-window searches.",
+  "optimistic_complete_cost": "2*number_of_shears + popcount(E*K) versus18085 D ADDs; the other6220 local ADDs are unchanged. All target preparation and reverse restoration paid; no added registers/copies/frames.",
+  "expected_finish": "Approximately120 minutes; final quarter for verification and handoff",
+  "coordination": "Only non-PR issue650 asks for Discussions; no coordination issue. Local claim.",
+  "overlap": {
+    "open_inventory_count": 695,
+    "open_latest": 904,
+    "all_state_recent_range": [
+      605,
+      905
+    ],
+    "all_state_recent_count": 300,
+    "related": [
+      "PR794 target-basis R420 under192-bit guard",
+      "PR713/716 target-row pair methods",
+      "PR686/694 semantic D-boundary/helper-basis work",
+      "PR848 selected R439 H2 barrier",
+      "PR904 same-frame A/B windows; D unchanged"
+    ],
+    "notes": "No R439 compensation construction found in full open inventory and recent300 all-state records. GitHub search result was narrower than known metadata; not treated as exhaustive."
+  },
+  "scope": "Finite construction and semantic-prefix proof; no new kappa, global circuit optimum or automatic full-hosted admission. Full compiler/common-label/hosting/precision/tape and analytic assumptions remain."
+}
