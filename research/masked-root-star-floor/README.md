@@ -1,10 +1,10 @@
 # Masked root-star floor on P112: complete trimmed-star census (no new kappa)
 
-**Scoped negative / method-obstruction result; no new kappa, no supplier.** In PR717's B14
-decoder model on the pinned P112 label set, masked E-graph identity (PR717 D1(a): exactness
+**Scoped negative / method-obstruction result; no new kappa, no supplier.** In CrocSwap/integer-mult-bounds#717's B14
+decoder model on the pinned P112 label set, masked E-graph identity (CrocSwap/integer-mult-bounds#717 D1(a): exactness
 only on the 6720 even-pair entries, the 5824 odd entries fixed by cost-0 singleton terms),
 this package answers one bounded question: can root-star decoders with **trimmed** supports
-`N(alpha)` (pairing rank 7 atoms — the mixed-beta class PR717 D1 leaves open) improve on
+`N(alpha)` (pairing rank 7 atoms — the mixed-beta class CrocSwap/integer-mult-bounds#717 D1 leaves open) improve on
 the coordinate decoder's copy cost `cst = 64`, with any number of terms?
 
 **Answer: not by the frame-substitution argument, and the argument's exact limit is
@@ -22,7 +22,7 @@ pairs (exact pairing ranks, exact frame-hit counts over the 1260 E-graph 8-cliqu
 
 The covering lemma, the reduction lemma, the falsification record and the exact scope are
 in [PROOF.md](PROOF.md). The result extends the star floor of
-[PR968](https://github.com/CrocSwap/integer-mult-bounds/pull/968) and PR717 D1(b)/(c) from
+[PR968](https://github.com/CrocSwap/integer-mult-bounds/pull/968) and CrocSwap/integer-mult-bounds#717 D1(b)/(c) from
 eight-term all-pairs statements to arbitrary term counts under the masked identity inside
 this family, and it isolates the remaining window `[784/13, 64]` as an assembly problem.
 No construction below 64 is claimed; the paid moment is unchanged.
@@ -53,15 +53,15 @@ and compares every field of the recomputed receipt with the committed `RESULTS.j
 
 `verify.py` (checker, exact integer/F2), `RESULTS.json` (receipt), `PROOF.md` (statement and
 argument), `SOURCES.json` (pins), `CLAIM.md` (task card), `NOTICE.md` (attribution). The E8
-line enumeration is adapted from `research/complex-frame-pair-decoders/verify.py` (PR968
+line enumeration is adapted from `research/complex-frame-pair-decoders/verify.py` (CrocSwap/integer-mult-bounds#968
 package, Apache-2.0) with attribution; nothing is imported and no predecessor file changes.
 
 ## Scope and inherited obligations
 
 Covered: the masked identity on P112, root-star supports (untrimmed `C(alpha)`,
 self-trimmed `N(alpha)`), arbitrary real coefficients, any term count. Not covered: deeper
-trims and unions, non-star supports (PR717 D3's P111/P104 hits are non-star and beat 64 off
-P112), general supports (PR717 D1(e)'s sampled 43.8 bound), other punctures, and any
+trims and unions, non-star supports (CrocSwap/integer-mult-bounds#717 D3's P111/P104 hits are non-star and beat 64 off
+P112), general supports (CrocSwap/integer-mult-bounds#717 D1(e)'s sampled 43.8 bound), other punctures, and any
 assembly of the recorded beta-7 leads. Finite replay is not a formal proof of the
 multiplication theorem. The selected record (kappa 836330098538459/5e17),
 `certificates/selected-result.json`, `upstream/` and all frozen pins are unchanged; all
@@ -88,22 +88,22 @@ obligations of the selected construction remain inherited and unchecked here.
   [#669](https://github.com/CrocSwap/integer-mult-bounds/pull/669),
   [#725](https://github.com/CrocSwap/integer-mult-bounds/pull/725),
   [#732](https://github.com/CrocSwap/integer-mult-bounds/pull/732),
-  [#1171](https://github.com/CrocSwap/integer-mult-bounds/pull/1171)) concern the bit-side
+  [CrocSwap/integer-mult-bounds#1171](https://github.com/CrocSwap/integer-mult-bounds/pull/1171)) concern the bit-side
   label-code star model and puncture ratios; this result is on the complex B14 side and does
   not import their claims.
 - **Concurrent masked-model results (found in the final overlap refresh).**
-  [#1212](https://github.com/CrocSwap/integer-mult-bounds/pull/1212) proves the E-graph
+  [CrocSwap/integer-mult-bounds#1212](https://github.com/CrocSwap/integer-mult-bounds/pull/1212) proves the E-graph
   eight-term floor via rank-8 gauge rigidity, and
-  [#1213](https://github.com/CrocSwap/integer-mult-bounds/pull/1213) classifies the masked
+  [CrocSwap/integer-mult-bounds#1213](https://github.com/CrocSwap/integer-mult-bounds/pull/1213) classifies the masked
   coordinate component for eight terms (cost 64 along continuous paths from the coordinate
-  decoder); both explicitly leave nine or more terms open. [#1191](https://github.com/CrocSwap/integer-mult-bounds/pull/1191)
+  decoder); both explicitly leave nine or more terms open. [CrocSwap/integer-mult-bounds#1191](https://github.com/CrocSwap/integer-mult-bounds/pull/1191)
   proves one-sided root-linear masked rigidity at arbitrary term count — one factor in the
   root-coordinate space forces all-pairs exactness. This package is complementary to all
   three: it covers **arbitrary term counts with root-star support patterns and unrestricted
   (non-root-linear) coefficients on both factors**, the setting where the trimmed beta-7
   atoms live; no predecessor census covers those atoms. Coordination claim:
-  [discussion #1210](https://github.com/CrocSwap/integer-mult-bounds/discussions/1210)
-  (which [#1213](https://github.com/CrocSwap/integer-mult-bounds/pull/1213) cites as the
+  [discussion CrocSwap/integer-mult-bounds#1210](https://github.com/CrocSwap/integer-mult-bounds/discussions/1210)
+  (which [CrocSwap/integer-mult-bounds#1213](https://github.com/CrocSwap/integer-mult-bounds/pull/1213) cites as the
   announced scope of this census).
 
 Prepared by **Navinor** with help from opencode. New contributions are under the

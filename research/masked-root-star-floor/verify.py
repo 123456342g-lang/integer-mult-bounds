@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: Apache-2.0
-"""Masked root-star copy-cost floor on P112: complete trimmed-star census (PR717 D1 hole).
+"""Masked root-star copy-cost floor on P112: complete trimmed-star census (CrocSwap/integer-mult-bounds#717 D1 hole).
 
 Standard library only; exact integer and F2 arithmetic throughout.
 
-Model (PR717 B14, masked/E-graph form, see PR717 format-limits-2 D1(a)): the 120 E8 root
+Model (CrocSwap/integer-mult-bounds#717 B14, masked/E-graph form, see CrocSwap/integer-mult-bounds#717 format-limits-2 D1(a)): the 120 E8 root
 lines; P112 = 120 minus the 8 coordinate frame lines; labels pair as (<r_i,r_j> + 1) mod 2.
 A decoder is a list of terms (d_k, t_k); term k costs beta_k = F2 rank of the label pairing
 between its row support and column support; the identity is required only on the E-graph
@@ -14,7 +14,7 @@ odd entries are free (fixed after the fact by cost-0 singleton terms: section D)
 Root-star supports: for a root line alpha, C(alpha) = {i in P112 : <r_i, alpha> != 0}
 (untrimmed) and N(alpha) = C(alpha) minus alpha's own line (self-trimmed).  N(alpha) has
 label span H_alpha (dimension 8), so an odd root pair (alpha, beta) gives the mixed-beta
-atom cost 7 -- exactly the atoms PR717 D1(b) excludes from its flat-support census.
+atom cost 7 -- exactly the atoms CrocSwap/integer-mult-bounds#717 D1(b) excludes from its flat-support census.
 
 Sections (each prints PASS/FAIL lines):
   A  model facts: 120 lines, P112, E-graph row counts, 5824 free odd entries

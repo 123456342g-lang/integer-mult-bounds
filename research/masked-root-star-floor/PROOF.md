@@ -6,7 +6,7 @@ finite census for one support family; it is not a theorem about all decoders.
 
 ## 1. Model and the masked identity
 
-This is PR717's B14 decoder model in its masked (E-graph) form, exactly as stated in D1(a)
+This is CrocSwap/integer-mult-bounds#717's B14 decoder model in its masked (E-graph) form, exactly as stated in D1(a)
 of [PR717](https://github.com/CrocSwap/integer-mult-bounds/pull/717) (DreamingOfClouds). The
 120 E8 root lines carry labels `u_i` in F2^9 with pairing `S9(u_i,u_j) = (<r_i,r_j> + 1) mod 2`.
 P112 is the 120 lines minus the 8 coordinate frame lines. A decoder is a list of terms
@@ -34,7 +34,7 @@ Let `h_k` be the number of frames term k meets and let `gamma` be the minimum of
 
     cst = sum_k beta_k >= gamma * sum_k h_k >= gamma * 8 * 1260 = 10080 * gamma.
 
-For the class of all supports this recovers the weakness of PR717 D1(e) (sampled there at
+For the class of all supports this recovers the weakness of CrocSwap/integer-mult-bounds#717 D1(e) (sampled there at
 `8/rho` about 43.8). The point here is that for a **finite** family `gamma` is exact.
 
 ## 3. The census (root-star family)
@@ -44,7 +44,7 @@ For each of the 120 root lines `alpha` the root-star supports on P112 are
 that line is live (for the 8 frame normals the self-line is punctured, so both coincide).
 The label span of `N(alpha)` is `H_alpha = u_alpha^perp` (dimension 8), so an odd root pair
 `(<alpha,beta> odd)` gives pairing rank `8 - [<alpha,beta> odd] = 7` — the mixed-beta atoms
-that PR717 D1(b)'s flat-support census excludes (its supports are complements of hyperplane
+that CrocSwap/integer-mult-bounds#717 D1(b)'s flat-support census excludes (its supports are complements of hyperplane
 flats with all pairwise span pairings of rank at least 8; a trimmed star is not of that form).
 
 The census enumerates all 240 supports and all 57,600 ordered support pairs **(F6)**:
@@ -76,7 +76,7 @@ with exact pairing ranks and exact frame-hit counts (frames met on both sides):
    terms all have pairing rank at least 8 costs at least 64 for any number of terms, with
    the coordinate stars attaining it. This extends the star floor from the eight-term
    all-pairs statements of [PR968](https://github.com/CrocSwap/integer-mult-bounds/pull/968)
-   and PR717 D1(b)/(c) to arbitrary term counts under the masked identity, inside this family.
+   and CrocSwap/integer-mult-bounds#717 D1(b)/(c) to arbitrary term counts under the masked identity, inside this family.
 3. **The remaining question for the family is an assembly problem** in the exact window
    `[784/13, 64]`: can nine or more of the beta-7 atoms (the recorded leads hit 1170 of the
    1260 frames each) be combined so that every frame is met by at least 8 terms whose
@@ -85,10 +85,10 @@ with exact pairing ranks and exact frame-hit counts (frames met on both sides):
 
 No cost below 64 is claimed or constructed. No supplier, word, or kappa change is claimed.
 The favourable-cost accounting of the task card (one cst unit is +2.81% of `b` on the
-selected T37 profile per PR717 P1, and any complex-side change is capped by the PR589 bit
+selected T37 profile per CrocSwap/integer-mult-bounds#717 P1, and any complex-side change is capped by the CrocSwap/integer-mult-bounds#589 bit
 supplier at kappa 0.001730427469823602) is unchanged: nothing here lowers cst, so the paid
 recursive moment does not move. Realization charges that a future construction would owe
-(centre reads, frame legality, dirty restoration; PR717 recorded unpaired-centre parity
+(centre reads, frame legality, dirty restoration; CrocSwap/integer-mult-bounds#717 recorded unpaired-centre parity
 costs and negative net buildability for its P104/P111 hits) are **not** checked here.
 
 ## 5. Scope
@@ -98,9 +98,9 @@ costs and negative net buildability for its P104/P111 hits) are **not** checked 
   arbitrary real coefficients and arbitrary sign patterns (the covering bound depends only
   on supports); any number of terms.
 - **Not covered.** Supports trimmed by more than the self-line, unions of stars, non-star
-  supports (PR717 D3's cost-63 P111 and cost-56 P104 decoders are non-star), general
+  supports (CrocSwap/integer-mult-bounds#717 D3's cost-63 P111 and cost-56 P104 decoders are non-star), general
   supports (where D1(e)'s 43.8 applies), punctures other than P112, and any assembly or
-  coefficient search. The eight-term all-pairs results of PR968 and PR1077 are unchanged;
+  coefficient search. The eight-term all-pairs results of CrocSwap/integer-mult-bounds#968 and CrocSwap/integer-mult-bounds#1077 are unchanged;
   the eight-term masked case is closed concurrently by
   [PR1212](https://github.com/CrocSwap/integer-mult-bounds/pull/1212) and
   [PR1213](https://github.com/CrocSwap/integer-mult-bounds/pull/1213), and one-sided
