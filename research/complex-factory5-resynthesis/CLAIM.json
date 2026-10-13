@@ -1,0 +1,57 @@
+{
+  "track": "Complex supplier",
+  "assignment_seed": 33,
+  "randomness": "secrets.randbelow(100), operating-system randomness",
+  "base_commit": "66849e1475c930fd7732b1a0067ffee7e1e95f60",
+  "started_utc": "2026-10-13T03:35:03Z",
+  "claimed_utc": "2026-10-13T03:37:34.888996+00:00",
+  "expected_finish_utc": "2026-10-13T04:05:03Z",
+  "object": "Exact eight-register coordinate-total basis-change circuit in sorted factory block 5 (33 mod 14) of the pinned PR622 K-triangle constructor",
+  "method": "Compose the two exact rational basis changes; bounded Gaussian-elimination resynthesis and exact full-map, frame, inverse-cleanup and absolute-growth checks. No new kappa.",
+  "deliverable": "One standalone finite circuit improvement, or scoped negative result with exact evidence",
+  "candidates_considered": [
+    {
+      "task": "K-triangle frame regrouping",
+      "decision": "overlaps PR622/635/641 and later work"
+    },
+    {
+      "task": "Target-hosted packet delivery",
+      "decision": "PR651 already investigates this mechanism"
+    },
+    {
+      "task": "Exact-map scalar simplification of factory block 5",
+      "decision": "selected; preserves dirty map, unlike PR645 changed-input factory"
+    }
+  ],
+  "coordination": "No pinned sprint coordination issue found; only open issue #650 requests Discussions. Local claim used.",
+  "overlap_checked": [
+    620,
+    622,
+    626,
+    645,
+    646,
+    651,
+    665,
+    670,
+    671,
+    674,
+    675,
+    676,
+    677,
+    678,
+    679,
+    680
+  ],
+  "status": "completed",
+  "completed_utc": "2026-10-13T03:52:38.993257+00:00",
+  "result": {
+    "kind": "finite local circuit improvement; no new kappa",
+    "gates": "87 -> 35",
+    "saved_scalar_operations_with_cleanup": 104,
+    "saved_real_component_primitives_per_orientation": 652,
+    "reproduce": "python3 -B research/complex-factory5-resynthesis/verify.py",
+    "result_link": "README.md",
+    "certificate_link": "CIRCUIT.json",
+    "verification_link": "RESULT.json"
+  }
+}
