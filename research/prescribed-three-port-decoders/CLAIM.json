@@ -28,5 +28,14 @@
   },
   "coordination": "Public issues page showed only #913 and #650 and no pinned sprint issue; local claim used.",
   "expected_deliverable": "One scoped research note with proof, exact certificate, independent verifier and negative controls. No kappa claim.",
-  "expected_finish": "2026-10-13T15:45:00Z"
+  "expected_finish": "2026-10-13T15:45:00Z",
+  "completion": {
+    "status": "completed and submitted",
+    "completed_at": "2026-10-13T15:07:26.254Z",
+    "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/966",
+    "result": "Exact classification for all p>=3 in nonempty binary k2 star observations: triangle impossible, two-pair P4 costs6p-11, all other triples6p-12; p2 costs1. No new kappa.",
+    "scope_extension": "The same self-contained proof covers p3 and p4; original claim p>=5 retained above for provenance.",
+    "verification": "Two implementations agree:46348 main triples;800002 independent cut subspaces;538 restoration controls. See VALIDATION.json.",
+    "final_overlap": "Targeted public overlap refresh and Git source-head checks found unchanged base and PR669. No pinned coordination issue was available; this is the single local claim update."
+  }
 }
