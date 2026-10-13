@@ -1,25 +1,24 @@
 {
   "status": "PASS_GAUGE44_T16_STRICT_GLOBAL_REPLAY",
-  "kappa": "66906048756761/40000000000000000",
-  "kappa_decimal": "0.001672651218919025",
-  "conservative_kappa_decimal": "0.001672651216067113",
-  "complex_lower": "67018146741598030641/40000000000000000000000",
+  "kappa": "1672654541898561/1000000000000000000",
+  "kappa_decimal": "0.001672654541898561",
+  "conservative_kappa_decimal": "0.001672654539046638",
+  "complex_lower": "837728501331911376831/500000000000000000000000",
   "bit_lower": "1733427039589844234749/1000000000000000000000000",
   "complex_profile": {
-    "1": 349602,
-    "2": 60193,
-    "3": 62592,
+    "1": 349608,
+    "2": 60192,
+    "3": 62586,
     "4": 20448,
     "5": 11808,
-    "7": 4,
+    "7": 6,
     "8": 1152,
     "48": 4866
   },
   "idle_remainder_profile": {
-    "1": 2274,
-    "2": 1,
-    "3": 384,
-    "7": 4,
+    "1": 2280,
+    "3": 378,
+    "7": 6,
     "48": 4866
   },
   "complete_invocations": 144,
@@ -28,7 +27,7 @@
   "charged_prefix_bits": 512,
   "physical_row_coefficient": 16469,
   "retained_row_coefficient": 20161,
-  "actual_73_axis_charts": 10200,
+  "actual_73_axis_charts": 9997,
   "controls": {
     "admission": 69,
     "bit_supplier": 12,
@@ -36,71 +35,71 @@
     "controller_mutations": 15
   },
   "t8_kappa": "167166528321877/100000000000000000",
-  "spec_sha256": "7f5f710df21fe48079b4c79727953ff41cd8bec688592578554109ebf6b6d929",
+  "spec_sha256": "2a8728207fc2d1f65bcc0229a61c52a4fbd02f9d4acebe1b479d3fb0fe0690f6",
   "stages": [
     {
       "name": "restore-parent",
-      "seconds": 3.719,
+      "seconds": 2.828,
       "exit_code": 0,
       "log_sha256": "3aea2a4b68e7aaeadd9ffef649be0d25e2dff1535d9a61bffeaf6d92e55ba6a8"
     },
     {
       "name": "bind8",
-      "seconds": 0.922,
+      "seconds": 1.172,
       "exit_code": 0,
       "log_sha256": "78a081673d6b4fde10a86e6f767d53648b868d1f0cac2441d12951434ad7341b"
     },
     {
       "name": "lift16",
-      "seconds": 4.437,
+      "seconds": 4.984,
       "exit_code": 0,
-      "log_sha256": "f38fc6d2a39b8779e04f7c787c4d668c2f9e359a1de069b63a6c177a9ca9b2bc"
+      "log_sha256": "eb855e248709c72d340c20e7e901dca27b8c639cf8f38fac151c25a48e9c03bf"
     },
     {
       "name": "bind",
-      "seconds": 0.734,
+      "seconds": 1.468,
       "exit_code": 0,
       "log_sha256": "78a081673d6b4fde10a86e6f767d53648b868d1f0cac2441d12951434ad7341b"
     },
     {
       "name": "emit",
-      "seconds": 10.468,
+      "seconds": 8.593,
       "exit_code": 0,
-      "log_sha256": "67bc257d4a163312137b43eef4270bffca031b565e7221e96c476216ee007565"
+      "log_sha256": "3dcd31605a40e540a61847b02894d9fdab7a8b7804626f601ed1ff80990f1e0b"
     },
     {
       "name": "audit",
-      "seconds": 59.969,
+      "seconds": 37.016,
       "exit_code": 0,
-      "log_sha256": "089b0fa21e04d000d0601c61895aa5adfeacdc9fcd192ea1ef859ad48ef8f1cd"
+      "log_sha256": "45dd8137ec65a3918029a2763ae0dcd3e1882be891d008aa9da4ff842da0132b"
     },
     {
       "name": "invoice",
-      "seconds": 3.343,
+      "seconds": 3.609,
       "exit_code": 0,
       "log_sha256": "caa1229b78eca961462d35e8ee458be536111111a985294a153e4dd74b9171a8"
     },
     {
       "name": "assembly",
-      "seconds": 1.156,
+      "seconds": 0.922,
       "exit_code": 0,
-      "log_sha256": "eee609c93b4647fc340f4041ba763ced4d2df47cb94dd3d7ed83ceb3005b56ce"
+      "log_sha256": "4e4deb2b4e3d935d740f462aadc14940ad4f9bfac2e2a18636721cd29ea63f71"
     },
     {
       "name": "admission-controls",
-      "seconds": 1.391,
+      "seconds": 1.218,
       "exit_code": 0,
       "log_sha256": "34527ddfe1e53bec71dc5759eb9a26417be6d4e93e76cbf80575d9bafebd876b"
     },
     {
       "name": "bit-supplier-controls",
-      "seconds": 1.703,
+      "seconds": 1.484,
       "exit_code": 0,
       "log_sha256": "c648542cd6dddbb154af7d02a41aaed1025603d9a4ab54f7c249d2b683e22249"
     },
     {
       "name": "independent-t16",
-      "seconds": 3.062,
+      "seconds": 2.5,
       "exit_code": 0,
       "log_sha256": "d2c13b333d463a5c2de42078e9c47a89209075e1d1beac24cf3fc1f573f18c05"
     }
