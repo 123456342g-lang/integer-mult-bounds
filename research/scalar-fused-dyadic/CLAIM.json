@@ -69,7 +69,7 @@
       "author": "yuj1r0"
     }
   },
-  "status": "validated; awaiting PR submission",
+  "status": "submitted",
   "final_overlap_check": {
     "at_utc": "2026-10-13T07:24:56.554307+00:00",
     "open_pr_count": 641,
@@ -85,7 +85,9 @@
     "benchmark_rounds_per_interpreter": 5,
     "wall_speedup_python312": 1.4960781522533049,
     "wall_speedup_python314": 1.4504239677496398,
-    "kappa": "unchanged"
+    "kappa": "unchanged",
+    "pr_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/849"
   },
-  "validated_at_utc": "2026-10-13T07:28:36.440376+00:00"
+  "validated_at_utc": "2026-10-13T07:28:36.440376+00:00",
+  "submitted_at_utc": "2026-10-13T07:32:04.292564+00:00"
 }
