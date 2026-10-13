@@ -1,5 +1,5 @@
 {
-  "status": "claimed",
+  "status": "submitted",
   "assignment": {
     "pass_number": 17,
     "seed": 56,
@@ -40,5 +40,12 @@
   ],
   "coordination": "No pinned sprint coordination issue; only open issues 650 and 913. Full open queue, ancestor-borrowing and Cleve all-state PR searches checked before local claim.",
   "claimed_at_utc": "2026-10-13T16:46:20.290236+00:00",
-  "expected_finish_utc": "2026-10-13T18:00:00Z"
+  "expected_finish_utc": "2026-10-13T18:00:00Z",
+  "completed_at_utc": "2026-10-13T17:22:56.398810+00:00",
+  "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/1057",
+  "mathematical_head": "02159968f6c94572f2f2903839fac499d01702d7",
+  "result": "Exact additive ancestor-port borrowing uses at most three dirty arrays for arbitrary binary/ternary tree depth, or two for binary-only trees. The 56-factor word retains 1,568 leaf calls while reducing the PR822 sibling pool from five arrays to three. Nonlinear corruption is exhibited explicitly. No new kappa or fixed-tape compiler.",
+  "verification": "861 small trees, 1,752 free-module checks, 120 signed dense/layout replays, 16 mathematical rejections, old four-row capacity rejection, nonlinear boundary/inverse and 13 package controls pass. Canonical receipts identical on 3.14.4 and read-only relocated optimized 3.12.3. Source Git blobs, selected record, staged whitespace and clean patch application pass.",
+  "canonical_receipt_sha256": "db16953e908c215678dcb4ec7c18b22b74f8444ee73df89c444082865717ea7f",
+  "final_upstream": "2921874911956718fcaaaf9396fe8267b3cfa9f0"
 }
