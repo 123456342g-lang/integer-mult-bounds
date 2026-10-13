@@ -49,6 +49,12 @@
     "concurrent_pr966_head": "7eaf5665ac246310293fda06a3cf245fe72f6012",
     "role": "Independent finite verification after overlapping classifications appeared. Original mathematical source pins remain unchanged; these newer packages are compared and credited, not imported as executable dependencies.",
     "last_delta_check_at": "2026-10-13T15:20:42.099804+00:00",
-    "last_delta_latest_pr": 970
+    "last_delta_latest_pr": 970,
+    "pr971_review": {
+      "head": "b4cb9709ac48e69002a25607e1ecc2ed8452d5b3",
+      "author": "Eva Ayala (@ToikY)",
+      "reviewed_at": "2026-10-13T15:28:45.347953+00:00",
+      "scope": "Group-action inventory and supplied-witness checks through p=6; independent optimum enumeration only at p=3,4. Our additional p=6 unrestricted coefficient optimum computation is not duplicated. Source and receipt reviewed; no replay or imported code."
+    }
   }
 }

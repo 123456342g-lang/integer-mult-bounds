@@ -98,10 +98,19 @@ The comparison inspected the actual proof, checker sources and retained receipts
 | --- | --- |
 | PR966 at `7eaf5665` | RREF cut-subspace enumeration through p=5; its primary four-block census also covers p=6. |
 | PR669 at `8f4600b` | Retained-graph checks at p=2,3 and independent coefficient optimization at p=4, for triples and quadruples. |
+| PR971 at `b4cb9709` | Independent group-action inventory and literal witness audit through p=6; unrestricted RREF minimum comparison only at p=3,4. |
 | This package | Unrestricted eight-label coefficient enumeration at p=5,6; p=6 alone checks 301,989,888 assignments, all 19 target orbits (18 feasible), 34,220 triples and 433 separate row-space restoration controls. |
 
+At the user's request, PR971 by Eva Ayala (@ToikY), pinned at
+`b4cb9709ac48e69002a25607e1ecc2ed8452d5b3`, was also inspected. Its actual
+`audit.py`, `independent_check.py` and AUDIT.json restrict independent minimum
+computation to p=3,4; at p=6 its scope is inventory and supplied-attainer checks.
+It contributes explicit group actions and targetwise histogram-preserving
+controls, which are credited rather than claimed here as new. This bounded
+source/receipt review did not execute PR971's checker.
+
 The additional p=6 coefficient coverage does not assume four blocks or import
-either concurrent implementation. Its proof and primary census remain useful
+any concurrent implementation. Its proof and primary census remain useful
 cross-checks but are not new claims relative to those PRs. This review did not
 execute the concurrent checkers or certify their broader empty-star/forest
 statements. Our smaller-parameter cases remain finite boundary controls rather

@@ -32,8 +32,13 @@ Those claims subsume this package's theorem statement; no priority is claimed.
 
 The additional evidence is the independent p=6 coefficient search. PR966's
 partition census includes p=6, but its independent RREF checker stops at p=5;
-PR669's new independent coefficient optimization stops at p=4. The proof and
-primary census here are retained as an independent derivation and cross-check,
+PR669's new independent coefficient optimization stops at p=4. The subsequent
+[PR971](https://github.com/CrocSwap/integer-mult-bounds/pull/971) by Eva Ayala
+(@ToikY) independently audits PR966's inventory and supplied witnesses through
+p=6, but its unrestricted optimum comparison runs only at p=3,4. Our additional
+claim is independent p=6 optimality computation, not novelty of inventory or
+witness checking. The proof and primary census here are retained as an independent
+derivation and cross-check,
 not additional mathematical novelty. The original predecessor files remain
 pinned unchanged; no concurrent checker code or numerical output is imported.
 See [VALIDATION.md](VALIDATION.md) for the exact comparison and source revisions.
