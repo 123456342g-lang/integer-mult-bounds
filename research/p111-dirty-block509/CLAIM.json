@@ -33,5 +33,14 @@
     "actual_method": "Exhaust all 465 pivot/insertion pairs once; 152 eligible exact candidates, 145 positive-transfer-admissible; no iterative synthesis.",
     "result": "31 to 26 block XORs, 10 saved including literal cleanup; no new kappa.",
     "selected_at_fetched_base": "PR799 with PR589, kappa 1661634653669567/10^18. Initial pre-fetch checkout was PR741; actual bit source unchanged."
+  },
+  "handoff": {
+    "status": "completed finite circuit construction; no new kappa",
+    "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/843",
+    "completed_utc": "2026-10-13T07:18:32.138563+00:00",
+    "publication_parent": "7ee02b7c96d85f22b38d28bd7ed49bb8c1aeb261",
+    "result": "31 to 26 block XORs; 24,305 to 24,295 full local ADDs; complete nine-stage hosted events 7,843,392 to 7,840,512; unchanged paid profile and charged invoice.",
+    "verification": "Full local, native five/nine/eleven-stage and frozen nine-stage hosted replay pass; controls and AI reviews recorded in VALIDATION.json.",
+    "final_overlap_check_through": 842
   }
 }
