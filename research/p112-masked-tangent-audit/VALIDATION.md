@@ -65,10 +65,20 @@ Public coordination messages were not posted. The task card was kept local;
 the submission is one focused research contribution. Source and predecessor
 credit appear in README, PROOF and SOURCES.
 
+## Hosted workflow
+
+The follow-up workflow `.github/workflows/p112-masked-tangent-audit.yml` runs the
+primary certificate, independent certificate, package controls, inherited
+complex-floor replay and selected-record checks on Ubuntu 24.04 with Python
+3.10 and 3.14. It includes a final tracked-file cleanliness check. The pull
+request records hosted run URLs and their exact commit; the initial local
+receipt above does not establish hosted success. Upstream fork runs require
+maintainer approval, so a fork-hosted run is identified as such.
+
 ## Unrun obligations
 
 No selected-supplier cold replay, repository-wide historical regeneration,
-physical/native admission, new moment/outer invoice, hosted Linux CI or Lean
+physical/native admission, new moment/outer invoice or Lean
 proof was run. None is needed to establish this isolated finite rank result;
 none is claimed. The differential and topological steps require mathematical
 review, and the copy-cost corollary retains the predecessor's geometric premise

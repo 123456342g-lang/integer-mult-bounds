@@ -49,6 +49,12 @@ python3 -I -B research/p112-masked-tangent-audit/independent.py
 python3 -I -B research/p112-masked-tangent-audit/test_package.py
 ```
 
+The path-scoped [GitHub Actions workflow](../../.github/workflows/p112-masked-tangent-audit.yml)
+runs these checks, the inherited complex-floor replay and selected-record
+regressions on Ubuntu 24.04 with Python 3.10 and 3.14. It also requires tracked
+sources and certificates to remain unchanged. Hosted run status is linked from
+the pull request; successful local execution alone does not imply hosted success.
+
 The primary success marker is:
 
 ```
