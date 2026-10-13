@@ -34,6 +34,29 @@ Earlier contributors and source-specific assistance notices remain credited.
 Importing a predecessor's package or mechanism does not imply review of its
 entire PR. Parallel work retains credit independently of the selected headline.
 
+## Eighteen-PR U8/T21 batch
+
+[Full contribution review and scope](docs/research/community-frontier890-review.md).
+
+- **Chafik Boukhalfa / chafreaky (#890):** T21 composition, partial-bank checks and fixed-family owner bound.
+- **Jeremy Kothe / jeremykothe2 (#869/#870):** U8 triangle-hybrid delivery rewrite and T16 integration.
+- **Hao Yan / FanPUYen (#858, closed dependency):** T16 owner construction, bank lift and independent physical-window/chart audit reused in the new frontier.
+- **Lucas Steinmetz / ljste (#838/#812):** evidence-omission audit and independent literal binary spectra.
+- **Chinmay Arvind / chinmayarvind23 (#847):** public replay-coverage integration and regression tests, credited alongside the independently developed stronger default.
+- **nightangelflowerwin-ops (#865):** versioned evidence contracts, complete selected-replay admission and portability checks.
+- **Adem Vessell / AdemVessell (#851):** exact bridge-control identity coverage.
+- **Mihir Srivastava / mihir-s-05 (#841):** digest-bound primary-proof pointers.
+- **Aaron / navinor (#853/#864/#894/#910):** parallel replay, exact X4 frame bound, endpoint accounting and bounded insertion census.
+- **SethBurkart123 (#881/#886):** independent U8 CRT/frame checking and fixed bit-frame enumeration.
+- **Amnon Tamsut / AmnonTamsut (#874):** profile-additivity and ideal-gain accounting audit.
+- **ToikY (#909/#911):** nonunit target-pair exclusion and exhaustive binary residual/phase verification.
+
+Original AI-assistance disclosures remain attached. Maintainer integration adds
+integer CRT height bounds, rational interval cost comparisons, a rounding-text
+correction and historical-context adapters; these refinements do not replace
+contributor credit. Predecessors, including Rohan Arun, icekylinx,
+DreamingOfClouds and eumemic, retain their cumulative attribution below.
+
 ## Historical K-triangle round through #626
 
 **Historical reviewed composition: #626 with #543, κ=0.001635527380375392.**
