@@ -76,8 +76,16 @@ CI or proof-assistant certification is claimed.
 
 [OVERLAP.json](OVERLAP.json) records the final scan of **695 open PRs through
 #904** and relevant exact heads. Both consumed predecessors remain at the
-same pinned heads. No pinned coordination issue exists; [CLAIM.md](CLAIM.md)
+same pinned heads. An immediate pre-submission metadata refresh covered new
+arrivals through #907; the latter's abelian metric counterexample was read
+and is distinct from this header model. No pinned coordination issue exists; [CLAIM.md](CLAIM.md)
 is the local claim and result handoff. No other contributor's PR was modified.
+
+The branch was pushed successfully to the contributor fork. Both CLI GraphQL
+and connected GitHub REST PR creation failed with `Resource not accessible by
+integration` (REST status 403). A follow-up head-branch query confirmed that
+no PR was created. The clean patch and prepared PR text provide the requested
+fallback; this is a submission-permission limitation, not a failed replay.
 
 The entry point is read-only by default and can be invoked from any working
 directory. Explicit `--write /tmp/hurwitz-adaptive-replay.json` regeneration

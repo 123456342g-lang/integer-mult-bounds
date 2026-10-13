@@ -4,6 +4,55 @@
   "distinction": "Paid globally visible input-dependent support headers are excluded from PR785/814/888. PR83 chooses complete recursion profiles rather than communicating an input-dependent support selector. PR845/761/765 concern distinct fixed factorization classes. PR892 concerns coded-helper lifetime and packing. New arrivals through PR904 do not overlap the claimed header model. No code from these PRs is required; PR703 and PR785 proof bytes alone are retained and pinned.",
   "final_newest_pr": 904,
   "final_open_count": 695,
+  "immediate_submission_refresh": {
+    "checked_at_utc": "2026-10-13T11:54:21Z",
+    "new_arrivals": [
+      {
+        "headRefOid": "029af1db4f2deabcddc9513025434a60dd4ca701",
+        "number": 910,
+        "title": "Scoped negative result: SW4 pre-read insertion slides do not change the complex cost (seed 20)",
+        "updatedAt": "2026-10-13T11:53:57Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/910"
+      },
+      {
+        "headRefOid": "5896f6fce48ee1d507722cc91eb1dcccc878670d",
+        "number": 909,
+        "title": "Scoped negative result: nonunit dyadic target pairs cannot improve X4 (no new kappa)",
+        "updatedAt": "2026-10-13T11:53:08Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/909"
+      },
+      {
+        "headRefOid": "7deb3ca8ee112249b5eec22acd24e214383078bd",
+        "number": 908,
+        "title": "Finite construction: R439 frame 519 saves 20 complete local ADDs (no new kappa)",
+        "updatedAt": "2026-10-13T11:52:48Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/908"
+      },
+      {
+        "headRefOid": "6ab467167d5ac5dc48e8aef938f87e7fed1121bd",
+        "number": 907,
+        "title": "Research/abelian metric scope seed99",
+        "updatedAt": "2026-10-13T11:51:08Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/907"
+      },
+      {
+        "headRefOid": "7b66a13f63b26e72a97ff11745adb8b45179f8c5",
+        "number": 906,
+        "title": "Research/r439 block522 seed17 112112",
+        "updatedAt": "2026-10-13T11:49:16Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/906"
+      },
+      {
+        "headRefOid": "aab6c0b8f4574cb36285ab5dab3fcfad0cd2b69e",
+        "number": 905,
+        "title": "Research: cubic precision for cyclic inverses with arbitrary dirty arrays (no new kappa)",
+        "updatedAt": "2026-10-13T11:45:32Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/905"
+      }
+    ],
+    "pr907_scope": "Read its description: abelian/Cayley rank-distance metric counterexample, distinct from adaptive decoder headers.",
+    "submission": "Branch push succeeded; CLI GraphQL and connected GitHub REST creation rejected with Resource not accessible by integration; no PR created."
+  },
   "initial_newest_pr": 901,
   "initial_open_count": 693,
   "pinned_coordination_issues": [],

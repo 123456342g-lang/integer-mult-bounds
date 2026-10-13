@@ -28,5 +28,17 @@
 - Contributor: Jerry Chen (@CubeJerry), with substantial OpenAI Codex
   assistance in mathematics, implementation, verification and writing.
 
-Result: in progress. No new bound, physical supplier or formal verification
-of integer multiplication is claimed.
+Result (2026-10-13 11:54 UTC): completed a scoped negative result. A fully
+charged public prefix-free routing header preserves the Hurwitz nonlinear
+copy floor in expectation and worst case. The exhaustive four-port census
+classifies 30 optimal nonconstant headers out of 65,534, with explicit
+attaining decoders; all five package tests and selected-record integrity pass.
+The proof, exact receipt, independent conflict-graph implementation, source
+pins and verification transcripts are included. No new κ, physical supplier
+or formal verification of integer multiplication is claimed.
+
+Handoff: [published branch and package](https://github.com/CubeJerry/integer-mult-bounds/tree/research/seed42-decoder/research/hurwitz-adaptive-routing).
+Both the CLI GraphQL route and connected GitHub REST tool rejected PR creation
+with `403: Resource not accessible by integration`. No PR was created. A clean
+patch and prepared PR body accompany the local handoff. The final queue scan
+through #907 found no overlap; no pinned issue existed to update remotely.
