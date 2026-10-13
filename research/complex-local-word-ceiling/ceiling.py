@@ -7,7 +7,7 @@ Model (all inputs explicit):
     hosted on data families, so w = 2 * pairs * V / stages is fixed by the port count V;
   * coverage identity (PR1012, re-checked here on the selected profile): paid rank mass equals
     (m - 1) * W + centre * N, i.e. every live family keeps exactly one unpaid coordinate and every
-    call pays its centre path;
+    call pays its centre path (`unpaid` > 1 is a what-if for a changed coverage law only);
   * the local word fixes its own paid child profile `local` (per call);
   * every remaining unit of mass is an idle/remainder child of rank at most R, where the outer
     recipe's halving guard m^2 > 2 R^2 bounds R (R = 51 for m = 73).
@@ -106,22 +106,23 @@ def max_idle_rank(m):
     return R
 
 
-def model(local, m, families, stages, centre, R=None):
+def model(local, m, families, stages, centre, R=None, unpaid=1):
     """Per-call quantities. local: {rank: count per call (Fraction ok)}."""
     R = max_idle_rank(m) if R is None else R
     require(2 * R * R < m * m, 'idle rank cap violates the halving guard')
     require(all(0 < r < m for r in local) and all(n >= 0 for n in local.values()), 'local profile')
     w = Q(families, stages)
-    total = (m - 1) * w + centre
+    require(1 <= unpaid < m, 'unpaid coordinates per family')
+    total = (m - unpaid) * w + centre
     local_mass = sum(r * Q(n) for r, n in local.items())
     idle = total - local_mass
     require(idle >= 0, 'local word pays more mass than the coverage law allows')
-    return dict(R=R, w=w, total_mass=total, local_mass=local_mass, idle_mass=idle, deficit=w - centre)
+    return dict(R=R, w=w, total_mass=total, local_mass=local_mass, idle_mass=idle, deficit=unpaid * w - centre)
 
 
-def relax(local, m, families, stages, centre, a, R=None):
+def relax(local, m, families, stages, centre, a, R=None, unpaid=1):
     """Enclosure of the per-call relaxation moment at saving a."""
-    q = model(local, m, families, stages, centre, R)
+    q = model(local, m, families, stages, centre, R, unpaid)
     lo = hi = Q(0)
     for r, n in local.items():
         c = child_cost(r, m, a)
@@ -132,16 +133,16 @@ def relax(local, m, families, stages, centre, a, R=None):
     return down(lo / q['w']), up(hi / q['w'])
 
 
-def ceiling(local, m, families, stages, centre, grid=Q(1, 10 ** 15), R=None):
+def ceiling(local, m, families, stages, centre, grid=Q(1, 10 ** 15), R=None, unpaid=1):
     """Grid bracket [a_lo, a_hi]: relax(a_lo) < 1 < relax(a_hi), certified. a_hi is the ceiling."""
     lo, hi = Q(0), Q(1, 20)
-    require(relax(local, m, families, stages, centre, hi, R)[0] > 1, 'search window too small')
-    require(relax(local, m, families, stages, centre, lo, R)[1] < 1, 'relaxation has no positive saving')
+    require(relax(local, m, families, stages, centre, hi, R, unpaid)[0] > 1, 'search window too small')
+    require(relax(local, m, families, stages, centre, lo, R, unpaid)[1] < 1, 'relaxation has no positive saving')
     while hi - lo > grid:
         mid = Q(int((lo + hi) / 2 / grid)) * grid
         if mid <= lo:
             mid = lo + grid
-        v = relax(local, m, families, stages, centre, mid, R)
+        v = relax(local, m, families, stages, centre, mid, R, unpaid)
         if v[1] < 1:
             lo = mid
         elif v[0] > 1:

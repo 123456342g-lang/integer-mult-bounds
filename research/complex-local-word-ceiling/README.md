@@ -46,6 +46,20 @@ per family, a smaller 64-per-call centre charge, or more families per call. Help
 can be screened against these numbers before any network is built: `ceiling.ceiling(local, 73, 896, 9, 64)`
 takes a per-call local profile.
 
+### Ideal lever budgets
+
+`levers.py` changes one premise at a time and reports the packing ceiling. These are favorable relaxations
+that omit the costs of realizing each lever.
+
+| Lever | Ceiling × | κ cap |
+|---|---:|---:|
+| Centre path free (no rank-8 copies, no 64-per-call charge) | 2.80 | 0.00472 |
+| Centre path shared by two calls | 1.90 | 0.00320 |
+| Local mass as rank-16 children | 2.31 | 0.00389 |
+| Local mass as rank-8 children | 1.62 | 0.00273 |
+| Two unpaid coordinates per live family | 3.77 | 0.00634 |
+| Centre free and rank-16 children | 6.51 | 0.01089 |
+
 ## Scope and limits
 
 - The bound holds for one local word (paid profile per call), 112 ports, the nine-stage four-pair
@@ -67,6 +81,7 @@ takes a per-call local profile.
 ```sh
 python3 -I -B research/complex-local-word-ceiling/verify.py          # ~10 s, PASS_COMPLEX_LOCAL_WORD_CEILING
 python3 scripts/research_package.py --package research/complex-local-word-ceiling
+python3 -I -B research/complex-local-word-ceiling/levers.py          # ~5 s, planning budgets
 ```
 
 `verify.py --write` regenerates `RESULT.json`. The exact arithmetic in `ceiling.py` uses the standard
