@@ -1,0 +1,11 @@
+{
+  "status": "ARITHMETIC_CANDIDATE_FULL_ADMISSION_PENDING",
+  "kappa": "0.001672285678298543",
+  "parent_pr": 1056,
+  "parent_head": "d0201efbd68c4acc9832b84bcc986c8781b83c4f",
+  "upstream_pr1050_head": "c87242f846cfab8c0b97fd889b5fecb0eacef939",
+  "parent_kappa": "0.001672267698427438",
+  "method": "500 profile-neutral equal-width exchanges at seed 4286363695, followed by improving whole-helper group exchanges. Frozen owner map provided; full strict admission follows draft publication.",
+  "scope": "Conditional inherited framework and PR589 bit H1-H5. No independently verified owner or global admission claim for this draft yet.",
+  "credit": "PR1056 and PR1050 lineage; FanPUYen PR858; PR1018 slots and rohanarun PR987; PR1005; NewBArch PR869 and inherited suppliers."
+}
