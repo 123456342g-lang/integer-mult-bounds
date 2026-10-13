@@ -36,6 +36,17 @@ assertions. All 30 predecessor/current omitted owner edits and both omitted
 interleaving delays are also checked. Exact receipts and source hashes are
 retained beside this note; the default command rebuilds the full ancestry.
 
+The final overlap check also found Joel Pulikkan (@GamingPuzzled)'s
+[PR962](https://github.com/CrocSwap/integer-mult-bounds/pull/962), head
+`50c6ae8151493af21d284afe34fb35f68f6d4934`. Its PR description reports another
+independent eight-edit construction, with merge keys `(i+1)/189` and
+`(j+1)/144`, the same κ and a cold ancestry replay. We inspected that
+description and changed-file inventory, but did not execute its package.
+Its work is credited as additional concurrent corroboration. This submission
+adds the shifted ten-edit witness and the specific runtime-byte, receipt
+binding, recompression and assertion-targeted payload evidence above; it is
+not offered as a new packing mechanism relative to these concurrent results.
+
 Source readings used for comparison: PR942's `PROOF.md`, `CLAIM.json`,
 `evidence/README.md` and `ALL-T-PROOF.md` at the head above. Its reported
 checks are credited as its evidence, not passed off as our execution.

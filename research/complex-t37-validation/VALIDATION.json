@@ -7,7 +7,7 @@
   "kappa_decimal": "0.001661960547713947",
   "delta_over_pr890": "1386533459/500000000000000000",
   "comparison_pr890_head": "61b71bcf5a34db70220da81fa978d5b0c7bbb008",
-  "latest_pr_metadata_checked": 961,
+  "latest_pr_metadata_checked": 984,
   "baseline_mode": "Fresh full PR589/PR741/PR799 replay, followed by explicit source-bound ancestry reuse in T37 driver",
   "t37_stages": 20,
   "t37_stage_seconds": 613.152,
@@ -60,9 +60,11 @@
   "make_target_coverage": "VERIFY-TARGET-COVERAGE.json",
   "package_path": "research/complex-t37-independent-seed39",
   "validation_output": "/tmp/mult-t37-independent-final",
-  "metadata_scope": "Inventory of the 100 most recent open PRs through961, then explicit PR942 refresh showing MERGED; selected certificate read at pinned main. Snapshots describe their observation time, not permanent status.",
+  "metadata_scope": "100 most recent open PRs through961; subsequent35 most recent PRs of all states through984; explicitPR942 andPR962 metadata; selected certificate at pinned main.",
   "concurrent_pr942_head": "1960cfa919a0945d0ca4cb14ea96237000037903",
   "record_claim": "Matches the selected PR942 kappa with a distinct ten-edit owner schedule. No improvement over the current selected value, no uniqueness or priority claim.",
   "independence_scope": "Independently developed owner schedule and new package/control logic, with a fresh replay of shared pinned inherited verifiers and both inherited exact moment engines.",
-  "coordination": "Pinned issues API returned zero nodes; local sprint claim retained."
+  "coordination": "Pinned issues API returned zero nodes; local sprint claim retained.",
+  "final_overlap_refresh": "FINAL-OVERLAP-REFRESH.json",
+  "concurrent_pr962_head": "50c6ae8151493af21d284afe34fb35f68f6d4934"
 }

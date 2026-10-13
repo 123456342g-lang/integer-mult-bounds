@@ -59,8 +59,10 @@ The submission refresh read main at
 `bbc600db2fc15007b7c914f4f2b2ed55fa909c87`, whose selected certificate points
 to PR942 at `1960cfa919a0945d0ca4cb14ea96237000037903`.
 `SELECTED-AT-SUBMISSION.json` preserves that certificate. The 100 most recent
-open PRs were checked through #961; a subsequent explicit PR942 refresh
-confirmed it merged. These are timestamped observations, not permanent status.
+open PRs were checked through #961; the final 35-PR refresh reached #984 and
+also found Joel Pulikkan's concurrent PR962, explicitly credited in the
+comparison note. An explicit PR942 refresh confirmed it merged. These are
+timestamped observations, not permanent status.
 PR890 advanced from pinned `61b71bcf` to `4b3bd8cb` only to extend its CI timeout;
 `PR890-HEAD-DELTA.patch` preserves the exact diff. Its construction and κ are
 unchanged, so the gain **over PR890** remains
