@@ -74,6 +74,39 @@ class PackageTests(unittest.TestCase):
         path.write_text(json.dumps(data))
         self.rejection("source manifest coverage")
 
+    def test_forged_source_provenance(self):
+        path = self.package / "SOURCES.json"
+        data = json.loads(path.read_text())
+        data["source_heads"]["837"] = "0"*40
+        data["base_commit"] = "1"*40
+        data["historical_provider"] = "a different provider"
+        path.write_text(json.dumps(data))
+        self.rejection("source provenance identity")
+
+    def test_boolean_coefficient_denominator(self):
+        def change(certificate):
+            next(e for e in certificate["entries"] if e["denominator"] == 1)["denominator"] = True
+        self.edit_certificate(change)
+        self.rejection("certificate reconstruction mismatch")
+
+    def test_float_preparation_count(self):
+        def change(certificate):
+            entry = certificate["entries"][0]
+            entry["preparation_steps"] = float(entry["preparation_steps"])
+        self.edit_certificate(change)
+        self.rejection("certificate reconstruction mismatch")
+
+    def test_altered_search_domain_type(self):
+        self.edit_certificate(lambda c: c["domain"].update(maximum_numerator=127.0))
+        self.rejection("certificate search domain")
+
+    def test_float_receipt_count(self):
+        path = self.package / "EXPECTED.json"
+        data = json.loads(path.read_text())
+        data["improved_coefficients"] = float(data["improved_coefficients"])
+        path.write_text(json.dumps(data))
+        self.rejection("expected receipt mismatch")
+
     def test_missing_coefficient(self):
         self.edit_certificate(lambda c: c["entries"].pop())
         self.rejection("certificate reconstruction mismatch")

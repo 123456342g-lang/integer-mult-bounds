@@ -201,7 +201,165 @@ comparators at these occurrences is therefore 88 per orientation. That
 second figure is a comparator calculation, not an assertion that the
 complete PR837 implementation is composed into this package.
 
-## 5. Magnitude bound inherited from original binary Horner
+## 5. Exact instruction/source-read Pareto certificate
+
+[pareto.py](pareto.py) audits a second coordinate on the **same 49 graphs**:
+the number of instructions that read the unchanged macro source `S`.
+During preparation, `add` and `subtract` contribute the cost pair `(1,1)`;
+doubling, halving and negation contribute `(1,0)`. The paid initial copy
+contributes one further source read. Target accumulation reads `W`, and
+the final clear reads no `S`. Thus a preparation pair `(l,r)` has complete
+macro pair `(l+3,r+1)`. All register operations remain charged by the first
+coordinate; the second singles out occurrences of `S` as an operand. It
+is not a measured memory-access count.
+
+Operation identities matter for this audit. For example, at `m=d`, both
+doubling and adding `S` reach `2d`, but their source-read increments are
+zero and one respectively. The search and checker preserve these
+differently priced parallel edges.
+
+A pair dominates another pair when it is no larger in either coordinate
+and strictly smaller in at least one. Each vertex stores an antichain of
+nondominated preparation pairs and one operation-word witness per pair.
+The search discards a candidate only when an existing label is no more
+expensive in either coordinate. These state-local costs are additive, so
+the same comparison holds after every common continuation. Removing a
+cycle strictly decreases the instruction coordinate and cannot increase
+source reads. Every nondominated pair therefore has a simple-path witness
+of at most `|V|-1` instructions. This proves finiteness without a search
+depth cutoff or a heuristic read budget.
+
+The checker certifies the resulting antichains independently of the
+search's integer successor table and pruning decisions. It requires:
+
+1. Exactly the declared state set `[-ad,ad]`, and the initial label `(0,0)`
+   at state `d`.
+2. A rational-arithmetic replay of every stored witness from coefficient
+   one, with the exact instruction/read counts, endpoint, magnitude bound
+   and grid at every prefix.
+3. Pairwise nondomination among labels at each state.
+4. Local closure for every label and every admissible operation: extending
+   a label at `v` must produce a pair dominated or equalled by a stored
+   label at its successor. Successors are reconstructed with `Fraction`
+   arithmetic, including differently priced operations to one successor.
+
+To prove completeness, take any finite graph walk. The initial `(0,0)`
+label covers its empty prefix. If a stored label covers a prefix cost,
+monotonicity of addition and local closure give a stored label covering
+the next prefix cost. Induction therefore shows that every attainable
+pair is covered by a stored pair. Conversely, every stored pair is
+attainable by its checked witness. The two sets have the same upward
+closure; the checked antichains are consequently their exact Pareto
+frontiers. Taking the union at both signed goals and removing dominated
+pairs gives the complete endpoint frontier.
+
+Across the corpus, this checks **3,703 vertices, 4,104 labels and 16,096
+edge-label closure obligations**. [pareto.py](pareto.py) binds the coefficient
+census and occurrence weights to the pinned JP8 payload, replays every
+label witness, and returns canonical hashes of the complete label tables.
+The receipt also compares each existing [CERTIFICATE.json](CERTIFICATE.json)
+word with its frontier: all **submitted** shortest witnesses minimize
+source reads among shortest words. This does not mean every shortest word
+minimizes reads: for coefficient `2`, `double` and `add` are both one-step
+preparations, with zero and one source reads.
+
+Exactly the seven selected coefficients have two endpoint Pareto points;
+the other 42 coefficients have one. Pairs below include all macro
+instructions and the initial copy's source read, per real component:
+
+| `|q|` | Submitted `(instructions, reads)` | Lower-read Pareto alternative |
+| --- | --- | --- |
+| `9/4` | `(7,3)` | `(9,2)` |
+| `5/2` | `(6,3)` | `(7,2)` |
+| `11/4` | `(8,4)` | `(10,3)` |
+| `13/4` | `(8,4)` | `(10,3)` |
+| `7/2` | `(7,4)` | `(8,3)` |
+| `15/4` | `(9,5)` | `(11,3)` |
+| `17/4` | `(9,5)` | `(10,2)` |
+
+There is no third intermediate Pareto point. The alternative for `15/4`
+prepares the integer coefficient along
+`1 -> 2 -> 4 -> 8 -> 7 -> 14 -> 15`, then halves twice. Its complete pair
+`(11,3)` dominates PR696's `(11,4)` in source reads at equal instruction
+count. This is the bounded signed-Horner construction class credited to
+**Chris Pagolu's PR734**, not a newly claimed coefficient construction.
+The endpoint frontier and witness words are diagnostic evidence; the
+emitted circuits remain the seven submitted shortest words in section 4.
+
+For the 44 affected macro occurrences in either orientation, the source
+audit independently counts actual frozen comparator words. The following
+totals include both real components and use the pins in
+[SOURCES.json](SOURCES.json):
+
+| Lowering at the affected occurrences | Instructions | Source reads |
+| --- | ---: | ---: |
+| Original pre-PR696 binary Horner | 782 | 216 |
+| PR696 / binary-forward comparator | 694 | 216 |
+| NAF-forward comparator | 690 | 180 |
+| Binary-reverse comparator | 678 | 216 |
+| NAF-reverse comparator | 706 | 180 |
+| Best of four, PR837's stable instruction-count tie order | 678 | 200 |
+| Best of four, minimum reads among instruction-count ties | 678 | 180 |
+| Submitted replacement words | 590 | 308 |
+
+The best-of-four rows are coefficient-wise comparator selections, not the
+execution of one fixed candidate family. These comparators remain
+unrestricted by the search's magnitude/grid constraints, as in the original
+instruction-count comparison. For example, NAF-forward for `7/2` has pair
+`(8,2)` but reaches coefficient `8`, exceeding the allowed magnitude `7`.
+It therefore does not contradict the bounded frontier `(7,4),(8,3)`.
+
+All primitive operand occurrences are counted separately from reads of the
+unchanged macro source. A clear reads zero operands, a copy or unary operation
+reads one, and an addition/subtraction reads two. The complete submitted
+replacement adds 92 additions and removes 196 doublings per orientation;
+other primitive-tag counts stay unchanged. It therefore increases source
+reads by 92 while reducing total operand reads by `2*92-196 = -12`:
+`207138 -> 207126` forward and `207154 -> 207142` backward. These are syntactic
+operand occurrences, not physical memory loads, cache traffic or runtime.
+
+### Hypothetical source-read sensitivity
+
+To expose the tradeoff algebraically, define a hypothetical cost
+
+\[
+\text{instructions}+p\,\text{source reads},\qquad p\ge0.
+\]
+
+Here `p` is an **additional** overhead on a source read that is already
+paid as a primitive. No physical or runtime value of `p` is assumed or
+inferred. For the fixed submitted schedule, the gain against PR696 is
+`104 - 92p` per orientation, with algebraic break-even `p=26/23`.
+
+Choosing the least hypothetical cost independently from each of the seven
+frontiers gives exact switch points `1/3`, `1`, and `2`. The other macro
+positions stay at their PR696 baseline. The resulting diagnostic deltas
+per orientation, including both real components, are:
+
+| Hypothetical extra read overhead | Instruction delta versus PR696 | Source-read delta versus PR696 |
+| --- | ---: | ---: |
+| `0 <= p < 1/3` | `-104` | `+92` |
+| `1/3 < p < 1` | `-102` | `+86` |
+| `1 < p < 2` | `-16` | `0` |
+| `p > 2` | `0` | `-8` |
+
+Adjacent choices tie at a switch point; intermediate mixtures of tied
+choices are also optimal there. The switch points follow from each pair's
+instruction difference divided by its read difference: `17/4` switches at
+`1/3`; `5/2`, `7/2` and `15/4` at `1`; and `9/4`, `11/4` and `13/4` at `2`.
+Because the objective is additive over these fixed occurrences, minimizing
+each independently minimizes their summed hypothetical cost.
+
+The zero aggregate read-delta row keeps the submitted words for `9/4`,
+`11/4` and `13/4`, and uses the lower-read alternatives for the other four,
+including the credited bounded-Horner `15/4` word. This describes a
+certified possible schedule, not an implemented alternative or a physical
+read-budget guarantee. Equal aggregate read counts do not establish equal
+costs for different frames, source locations or access schedules. The
+executable lowering and its 104-primitive saving per orientation remain
+unchanged.
+
+## 6. Magnitude bound inherited from original binary Horner
 
 The original binary-Horner preparation explicitly reaches `W=aS` before
 its terminal halvings. Every candidate preparation value obeys
@@ -225,7 +383,20 @@ row literally occurs in the original trace, or that all simultaneous
 transfer matrices satisfy an entrywise order. New fractional coefficients
 usually prevent literal prefix-trace containment.
 
-## 6. What the fractional-grid constraint guarantees
+The complete scalar replays additionally measure the exact maximum row-L1
+norm over all 725 formal input columns at every primitive prefix. Initial
+basis rows have norm one; after each primitive only the written row can
+change the maximum. The Fraction interpreter sums absolute rational entries;
+the independent integer interpreter sums absolute integer numerators and
+compares dyadic values by cross multiplication. All historical, PR696 and
+replacement traces agree at `503316465` forward and `1469388997/2` backward.
+These finite values supplement the substitution proof; they do not interpret
+physical frame or recursive operators, nor reduce the inherited 192-bit
+allocation. Both observed global maxima lie in unchanged macros outside the
+bounded coefficient search, so equality of these maxima alone would not prove
+every changed macro satisfies its local bound.
+
+## 7. What the fractional-grid constraint guarantees
 
 Locally, if macro-entry `T`, `S` and `W` are on `2^-p Z`, every candidate
 value is representable on `2^-(p+k) Z`, with an unbounded integer part.
@@ -271,7 +442,7 @@ integer multiplication theorem. The distinction matters because a
 coefficient on a depth-`k` local grid can be applied to a source already
 carrying additional fractional depth from previous macros.
 
-## 7. Adverse checks and review boundaries
+## 8. Adverse checks and review boundaries
 
 Endpoint checks alone would miss several false claims. The implemented
 controls exercise distinct failures with the recorded failure reason:
@@ -295,12 +466,20 @@ controls exercise distinct failures with the recorded failure reason:
   aliased source/target/work: domain or register-contract validation must
   reject it.
 
+The Pareto checker adds four controls with specific rejection reasons:
+removing a required lower-read label fails edge closure; understating a
+label's source-read count fails witness replay; changing the declared
+magnitude bound fails domain matching; and omitting the initial source
+copy fails macro-boundary/source-read accounting. These checks distinguish
+frontier completeness from endpoint correctness and detect an uncharged
+source read even when a claimed preparation length looks plausible.
+
 The reproducible verifier output and validation record identify the controls
 actually executed. Independent implementation here
 means a separate algorithm and interpreter, not independent human review
 or formal verification of the full theorem.
 
-## 8. Relation to the closest prior work
+## 9. Relation to the closest prior work
 
 PR696 already supplies the copy/unit lowering and dirty-work contract.
 PR734 supplies numerator-bounded signed-Horner circuits, a proof within its

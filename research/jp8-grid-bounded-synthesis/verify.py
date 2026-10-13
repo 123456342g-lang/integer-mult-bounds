@@ -30,6 +30,16 @@ VENDOR_NAMES = {"vendor/pr837/lower.py", "vendor/pr837/vendor/pr696_lower.py"}
 DOMAIN = {"maximum_numerator":127, "maximum_denominator":16,
           "magnitude_bound":"abs(numerator)", "scratch_grid":"1/denominator",
           "unit_handling":"direct accumulation plus private clear, cost 2; outside graph search"}
+PROVENANCE = {
+    "base_commit":"f567884aeb8851b6e794af1184119a3bfbe1e631",
+    "historical_provider":"PR626 JP8; not a PR799 implementation change",
+    "source_heads":{
+        "626":"660de893d27bb7abd1d5b01b1640207528a5c851",
+        "622":"f69477f4f6d3c7eb1f740b166881bffed4ffa9f6",
+        "696":"5a3f983715027c4fd83f50bc9001d4b18463bed1",
+        "837":"0a2977195efc8fb2a918fbfb694ec8d294387f08",
+    },
+}
 
 
 def need(ok, message):
@@ -52,6 +62,8 @@ def read(path):
 
 def check_pins():
     pins = read(HERE / "SOURCES.json")
+    need(canonical({key:pins.get(key) for key in PROVENANCE}) == canonical(PROVENANCE),
+         "source provenance identity")
     need(set(pins["files"]) == SOURCE_NAMES and set(pins["vendored"]) == VENDOR_NAMES,
          "source manifest coverage")
     for section, root in (("files", ROOT), ("vendored", HERE)):
@@ -149,6 +161,8 @@ def collect():
     spec = check_pins()
     import synth
     import crosscheck
+    import integer_replay
+    import pareto
     from replay import replay
 
     programs = read(PROVIDER / "LOCAL-PROGRAMS.json.gz")
@@ -168,17 +182,21 @@ def collect():
                            if q != 1 and q.numerator <= 127 and q.denominator <= 16})
     coefficients = coefficients[33:] + coefficients[:33]
     certificate = read(HERE / "CERTIFICATE.json")
-    need(certificate["schema"] == "jp8-grid-bounded-synthesis/1" and certificate["seed"] == 33,
+    need(certificate["schema"] == "jp8-grid-bounded-synthesis/1" and
+         type(certificate["seed"]) is int and certificate["seed"] == 33,
          "certificate identity")
-    need(certificate["domain"] == DOMAIN, "certificate search domain")
+    need(canonical(certificate["domain"]) == canonical(DOMAIN), "certificate search domain")
     rebuilt = []
     for q in coefficients:
         entry = synth.solve(q.numerator, q.denominator)
         entry["horner_macro_costs"] = synth.comparisons(entry)
         entry["strict_horner_improvement"] = synth.improved(entry)
         rebuilt.append(entry)
-    need(certificate["entries"] == rebuilt, "certificate reconstruction mismatch")
-    independent = crosscheck.run(rebuilt, source=PROVIDER / "LOCAL-PROGRAMS.json.gz")
+    # JSON true, 1 and 1.0 have different certificate types although Python
+    # equality conflates them. Verify the submitted witness itself after a
+    # type-preserving reconstruction comparison, not only the regenerated one.
+    need(canonical(certificate["entries"]) == canonical(rebuilt), "certificate reconstruction mismatch")
+    independent = crosscheck.run(certificate["entries"], source=PROVIDER / "LOCAL-PROGRAMS.json.gz")
     entries = {Q(x["numerator"],x["denominator"]): x for x in rebuilt}
     census = []
     for q, entry in entries.items():
@@ -197,6 +215,30 @@ def collect():
                            "scratch_operations": entry["operations"]})
     controls = negative_controls(entries)
     complete = replay(programs, checks, inherited, entries)
+    integer_result = integer_replay.verify(programs, checks, inherited, certificate)
+    for orientation in ("forward", "backward"):
+        other = integer_result["programs"][orientation]
+        for lowering in ("pr696", "replacement"):
+            need(canonical(other["lowerings"][lowering]) ==
+                 canonical(complete[orientation]["lowerings"][lowering]),
+                 "independent integer primitive trace disagreement")
+        for field in ("total_exact_input_columns", "logical_input_columns",
+                      "arbitrary_private_input_columns", "arbitrary_helper_columns_restored",
+                      "private_registers_erased", "events", "scalar_macros", "changed_macros",
+                      "addition_macros_with_coefficient_work_clear", "saved_real_primitives_vs_pr696",
+                      "extra_real_source_reads_vs_pr696", "non_scalar_event_indexed_sha256",
+                      "scalar_frame_indexed_sha256", "paid_profile"):
+            need(canonical(other[field]) == canonical(complete[orientation][field]),
+                 "independent integer accounting disagreement: " + field)
+    source_read_pareto = pareto.verify(certificate["entries"])
+    for orientation in ("forward", "backward"):
+        costs = source_read_pareto["selected_occurrence_totals_both_real_components"][orientation]
+        need(costs["binary-forward"][0] - costs["current"][0] ==
+             complete[orientation]["saved_real_primitives_vs_pr696"],
+             "Pareto instruction accounting disagrees with full replay")
+        need(costs["current"][1] - costs["binary-forward"][1] ==
+             complete[orientation]["extra_real_source_reads_vs_pr696"],
+             "Pareto source-read accounting disagrees with full replay")
     comparator_saving = {orientation: 2*sum(
         c[q]*(min(entry["horner_macro_costs"].values()) - entry["preparation_steps"]-3)
         for q,entry in entries.items() if synth.improved(entry))
@@ -206,6 +248,8 @@ def collect():
             "saved_real_primitives_vs_four_horner_at_replacements":comparator_saving,
             "full_pr837_composition_claimed":False,
             "independent_graph":independent, "programs":complete,
+            "independent_integer_replay":integer_result,
+            "source_read_pareto":source_read_pareto,
             "negative_controls":controls, "kappa_claim":None,
             "scope":"Historical PR626 JP8 scalar projections; finite graph class optimum only."}
 
@@ -223,7 +267,7 @@ def main():
             json.dump(result, stream, indent=2, sort_keys=True)
             stream.write("\n")
     else:
-        need(result == read(HERE / "EXPECTED.json"), "expected receipt mismatch")
+        need(canonical(result) == canonical(read(HERE / "EXPECTED.json")), "expected receipt mismatch")
     if args.json:
         print(json.dumps(result,indent=2,sort_keys=True))
     else:

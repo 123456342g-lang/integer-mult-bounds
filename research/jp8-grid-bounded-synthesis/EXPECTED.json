@@ -1603,6 +1603,213 @@
     "source_coverage_checked": true,
     "status": "PASS"
   },
+  "independent_integer_replay": {
+    "arithmetic": "normalized sparse integer rows with a common power-of-two denominator",
+    "certificate_coefficients_checked": 49,
+    "finite_graph_optimality_rechecked": false,
+    "independently_recomputed_comparator_lengths": {
+      "11/4": {
+        "binary-forward": 10,
+        "binary-reverse": 9,
+        "naf-forward": 11,
+        "naf-reverse": 11
+      },
+      "13/4": {
+        "binary-forward": 10,
+        "binary-reverse": 9,
+        "naf-forward": 11,
+        "naf-reverse": 11
+      },
+      "15/4": {
+        "binary-forward": 11,
+        "binary-reverse": 10,
+        "naf-forward": 10,
+        "naf-reverse": 10
+      },
+      "17/4": {
+        "binary-forward": 10,
+        "binary-reverse": 10,
+        "naf-forward": 10,
+        "naf-reverse": 10
+      },
+      "5/2": {
+        "binary-forward": 7,
+        "binary-reverse": 7,
+        "naf-forward": 7,
+        "naf-reverse": 7
+      },
+      "7/2": {
+        "binary-forward": 8,
+        "binary-reverse": 8,
+        "naf-forward": 8,
+        "naf-reverse": 9
+      },
+      "9/4": {
+        "binary-forward": 9,
+        "binary-reverse": 8,
+        "naf-forward": 9,
+        "naf-reverse": 8
+      }
+    },
+    "input_semantic_sha256": {
+      "certificate": "b77549cc42ebc4ffbb2ea95e02b20cbcfa200846e67d85ccf00f9f9fffc20a6f",
+      "checks": "e29bdcebdc2966979a9f5911f56b68c6f4942f6fdbeb6737e9db44e147d0193a",
+      "inherited": "3ca597b8c9053574c66ba005fc553dbec5291b01dd476e147b18870cb786c0d2",
+      "programs": "efe45ce7fb025a6f53cc9eb54e951ac2211a5ed927e689a049e4f68ca680654b"
+    },
+    "kappa_claim": null,
+    "negative_controls": {
+      "dirty_scratch_missing_clear": "dirty coefficient scratch",
+      "endpoint_neutral_grid_excursion": "coefficient grid excursion",
+      "incorrect_halving": "incorrect local macro endpoint",
+      "incorrect_scale_sign": "incorrect local macro endpoint",
+      "missing_source_copy": "dirty scratch dependency",
+      "wrong_accumulation_sign": "incorrect local macro endpoint"
+    },
+    "positive_controls": {
+      "NAF_carry_cases": 1,
+      "integer_row_arithmetic_cases": 5
+    },
+    "programs": {
+      "backward": {
+        "addition_macros_with_coefficient_work_clear": 22219,
+        "arbitrary_helper_columns_restored": 492,
+        "arbitrary_private_input_columns": 9,
+        "changed_macros": 44,
+        "events": 27909,
+        "extra_real_source_reads_vs_pr696": 92,
+        "historical_real_primitives": 257280,
+        "logical_input_columns": 716,
+        "lowerings": {
+          "pr696": {
+            "maximum_fractional_denominator_exponent": 27,
+            "maximum_scalar_prefix_row_l1": "1469388997/2",
+            "primitive_tags": {
+              "add": 29176,
+              "clear": 44470,
+              "copy": 31992,
+              "double": 32576,
+              "halve": 39438,
+              "negate": 692,
+              "subtract": 22052
+            },
+            "primitive_word_sha256": "8a1f3a16f146088e72c4a3decf0f967ff449b58a3521a86c3ee5c60d8abc5e75",
+            "real_macro_source_reads": 51228,
+            "real_primitives": 200396,
+            "real_total_register_reads": 207154
+          },
+          "replacement": {
+            "maximum_fractional_denominator_exponent": 27,
+            "maximum_scalar_prefix_row_l1": "1469388997/2",
+            "primitive_tags": {
+              "add": 29268,
+              "clear": 44470,
+              "copy": 31992,
+              "double": 32380,
+              "halve": 39438,
+              "negate": 692,
+              "subtract": 22052
+            },
+            "primitive_word_sha256": "28fe0fbc9983efbce296864a9ed18f9faba57fb12afc29c8c4e6e574d57ef5ed",
+            "real_macro_source_reads": 51320,
+            "real_primitives": 200292,
+            "real_total_register_reads": 207142
+          }
+        },
+        "macro_boundaries_compared_with_integer_oracle": 22693,
+        "non_scalar_event_indexed_sha256": "f6d942e0ed78b1df58bc5e9b5f313b96385ab10ec315feff237fcbe11b755622",
+        "paid_profile": {
+          "1": 2512,
+          "2": 400,
+          "3": 448,
+          "4": 160,
+          "5": 70,
+          "6": 8,
+          "8": 8
+        },
+        "private_registers_erased": 9,
+        "saved_real_primitives_vs_pr696": 104,
+        "scalar_frame_indexed_sha256": "e3dfdbc2f70a81019ab5d3d8aac7d86c677e9dd3967ecfb0150f8b38b0220c6d",
+        "scalar_macros": 22693,
+        "total_exact_input_columns": 725
+      },
+      "forward": {
+        "addition_macros_with_coefficient_work_clear": 22211,
+        "arbitrary_helper_columns_restored": 492,
+        "arbitrary_private_input_columns": 9,
+        "changed_macros": 44,
+        "events": 27909,
+        "extra_real_source_reads_vs_pr696": 92,
+        "historical_real_primitives": 257232,
+        "logical_input_columns": 716,
+        "lowerings": {
+          "pr696": {
+            "maximum_fractional_denominator_exponent": 4,
+            "maximum_scalar_prefix_row_l1": "503316465",
+            "primitive_tags": {
+              "add": 29050,
+              "clear": 44454,
+              "copy": 32008,
+              "double": 32576,
+              "halve": 39438,
+              "negate": 692,
+              "subtract": 22162
+            },
+            "primitive_word_sha256": "65af87a53b40699f2711182819179af1820be741474b291009c4f5567921bf56",
+            "real_macro_source_reads": 51228,
+            "real_primitives": 200380,
+            "real_total_register_reads": 207138
+          },
+          "replacement": {
+            "maximum_fractional_denominator_exponent": 4,
+            "maximum_scalar_prefix_row_l1": "503316465",
+            "primitive_tags": {
+              "add": 29142,
+              "clear": 44454,
+              "copy": 32008,
+              "double": 32380,
+              "halve": 39438,
+              "negate": 692,
+              "subtract": 22162
+            },
+            "primitive_word_sha256": "3a6a08261e75f4ef4bb5f1286d1c842ade135005691543072aa29f5b9349eae9",
+            "real_macro_source_reads": 51320,
+            "real_primitives": 200276,
+            "real_total_register_reads": 207126
+          }
+        },
+        "macro_boundaries_compared_with_integer_oracle": 22693,
+        "non_scalar_event_indexed_sha256": "bd1e5e7700469f06100d7580e064a6524658931785359e6c9fe6429425b4a47b",
+        "paid_profile": {
+          "1": 2512,
+          "2": 400,
+          "3": 448,
+          "4": 160,
+          "5": 70,
+          "6": 8,
+          "8": 8
+        },
+        "private_registers_erased": 9,
+        "saved_real_primitives_vs_pr696": 104,
+        "scalar_frame_indexed_sha256": "7fa49a442a45e031833e44b7f00ce98e3ceda30f36a9fdcd92ce1cdbc9c5855f",
+        "scalar_macros": 22693,
+        "total_exact_input_columns": 725
+      }
+    },
+    "schema": "jp8-integer-scalar-crosscheck/1",
+    "scope": "Historical PR626 JP8 scalar projections only; no complex-event or multiplication-bound proof.",
+    "selected_coefficients": [
+      "9/4",
+      "5/2",
+      "11/4",
+      "13/4",
+      "7/2",
+      "15/4",
+      "17/4"
+    ],
+    "selected_replacements": 7,
+    "status": "PASS_JP8_INTEGER_SCALAR_CROSSCHECK"
+  },
   "kappa_claim": null,
   "negative_controls": {
     "endpoint_neutral_grid_excursion": "fractional grid",
@@ -1711,6 +1918,7 @@
       "lowerings": {
         "historical": {
           "maximum_fractional_denominator_exponent": 27,
+          "maximum_scalar_prefix_row_l1": "1469388997/2",
           "primitive_tags": {
             "add": 73614,
             "clear": 88908,
@@ -1726,6 +1934,7 @@
         },
         "pr696": {
           "maximum_fractional_denominator_exponent": 27,
+          "maximum_scalar_prefix_row_l1": "1469388997/2",
           "primitive_tags": {
             "add": 29176,
             "clear": 44470,
@@ -1742,6 +1951,7 @@
         },
         "replacement": {
           "maximum_fractional_denominator_exponent": 27,
+          "maximum_scalar_prefix_row_l1": "1469388997/2",
           "primitive_tags": {
             "add": 29268,
             "clear": 44470,
@@ -1870,6 +2080,7 @@
       "lowerings": {
         "historical": {
           "maximum_fractional_denominator_exponent": 4,
+          "maximum_scalar_prefix_row_l1": "503316465",
           "primitive_tags": {
             "add": 73472,
             "clear": 88876,
@@ -1886,6 +2097,7 @@
         },
         "pr696": {
           "maximum_fractional_denominator_exponent": 4,
+          "maximum_scalar_prefix_row_l1": "503316465",
           "primitive_tags": {
             "add": 29050,
             "clear": 44454,
@@ -1902,6 +2114,7 @@
         },
         "replacement": {
           "maximum_fractional_denominator_exponent": 4,
+          "maximum_scalar_prefix_row_l1": "503316465",
           "primitive_tags": {
             "add": 29142,
             "clear": 44454,
@@ -1944,5 +2157,1408 @@
   },
   "scope": "Historical PR626 JP8 scalar projections; finite graph class optimum only.",
   "searched_nonunit_coefficients": 49,
+  "source_read_pareto": {
+    "all_submitted_shortest_witnesses_minimize_reads": true,
+    "coefficients": 49,
+    "common_nonunit_macro_overhead": [
+      3,
+      1
+    ],
+    "cost_coordinates": [
+      "primitive_instructions",
+      "reads_of_unchanged_macro_source"
+    ],
+    "emitted_circuits_changed": false,
+    "graphs": [
+      {
+        "coefficient": "1/8",
+        "edge_label_obligations": 53,
+        "label_certificate_sha256": "1389f622a8e9d68a4be6f8b4bdb68d4e83b7a4bd8d78f1dd012436a809707a2c",
+        "labels": 17,
+        "macro_frontier": [
+          [
+            6,
+            1
+          ]
+        ],
+        "vertices": 17
+      },
+      {
+        "coefficient": "1/4",
+        "edge_label_obligations": 29,
+        "label_certificate_sha256": "e60ecc8be8a5837945b16fa982226293902dbe6eb7c5a3746d1857adaa57e9fc",
+        "labels": 9,
+        "macro_frontier": [
+          [
+            5,
+            1
+          ]
+        ],
+        "vertices": 9
+      },
+      {
+        "coefficient": "3/8",
+        "edge_label_obligations": 207,
+        "label_certificate_sha256": "c387330dd64dce02783b88213a4793b198f1b673bdeceffc419f6ab9803c7c23",
+        "labels": 57,
+        "macro_frontier": [
+          [
+            7,
+            2
+          ]
+        ],
+        "vertices": 49
+      },
+      {
+        "coefficient": "1/2",
+        "edge_label_obligations": 17,
+        "label_certificate_sha256": "2108c1eb57d439d19732a6601248d64e160379221c55c0339d13720e44b715c7",
+        "labels": 5,
+        "macro_frontier": [
+          [
+            4,
+            1
+          ]
+        ],
+        "vertices": 5
+      },
+      {
+        "coefficient": "3/4",
+        "edge_label_obligations": 99,
+        "label_certificate_sha256": "aeccfa1f3a4de26e458c1d11425ff439f74edb69a3ae6ef4e00abf23f6937f22",
+        "labels": 27,
+        "macro_frontier": [
+          [
+            6,
+            2
+          ]
+        ],
+        "vertices": 25
+      },
+      {
+        "coefficient": "5/4",
+        "edge_label_obligations": 171,
+        "label_certificate_sha256": "ab5a32cc7edde4be5b977b7a83b764542b27f6c7ad5b452e11cba927ecf3eeef",
+        "labels": 44,
+        "macro_frontier": [
+          [
+            6,
+            2
+          ]
+        ],
+        "vertices": 41
+      },
+      {
+        "coefficient": "3/2",
+        "edge_label_obligations": 49,
+        "label_certificate_sha256": "5724d9c86c663ba1b59a7a7f37df9b9b2835316f6f496376a2e2f816826d9d52",
+        "labels": 13,
+        "macro_frontier": [
+          [
+            5,
+            2
+          ]
+        ],
+        "vertices": 13
+      },
+      {
+        "coefficient": "7/4",
+        "edge_label_obligations": 236,
+        "label_certificate_sha256": "e69e77615a70533defd006a03f30ca549aea9509cfd09b5c7c8a5239bdadcd3c",
+        "labels": 60,
+        "macro_frontier": [
+          [
+            7,
+            3
+          ]
+        ],
+        "vertices": 57
+      },
+      {
+        "coefficient": "2",
+        "edge_label_obligations": 19,
+        "label_certificate_sha256": "03928b20f860c2e0f5319daa1ee97dca684a0af6aff39059efe8fb5210d69564",
+        "labels": 5,
+        "macro_frontier": [
+          [
+            4,
+            1
+          ]
+        ],
+        "vertices": 5
+      },
+      {
+        "coefficient": "9/4",
+        "edge_label_obligations": 429,
+        "label_certificate_sha256": "01693f3f6d16763e81b0185ee73d39de8341178e387e466ce93bc1eec5d18121",
+        "labels": 114,
+        "macro_frontier": [
+          [
+            7,
+            3
+          ],
+          [
+            9,
+            2
+          ]
+        ],
+        "vertices": 73
+      },
+      {
+        "coefficient": "5/2",
+        "edge_label_obligations": 99,
+        "label_certificate_sha256": "7acb4dca7cf02343730f5b2e5328dc08b76c8967aeda99d209e92324d1bb5b77",
+        "labels": 27,
+        "macro_frontier": [
+          [
+            6,
+            3
+          ],
+          [
+            7,
+            2
+          ]
+        ],
+        "vertices": 21
+      },
+      {
+        "coefficient": "11/4",
+        "edge_label_obligations": 538,
+        "label_certificate_sha256": "a0feff93b375d5b7b51d5af9463890e2fcf47b51de826f97c6a760abe398dc19",
+        "labels": 142,
+        "macro_frontier": [
+          [
+            8,
+            4
+          ],
+          [
+            10,
+            3
+          ]
+        ],
+        "vertices": 89
+      },
+      {
+        "coefficient": "3",
+        "edge_label_obligations": 25,
+        "label_certificate_sha256": "8efe402b90956a464aa0c2576f270585bfdc13efd2f4c7505341b57b23d1de69",
+        "labels": 7,
+        "macro_frontier": [
+          [
+            5,
+            2
+          ]
+        ],
+        "vertices": 7
+      },
+      {
+        "coefficient": "13/4",
+        "edge_label_obligations": 634,
+        "label_certificate_sha256": "07cf48fd74b7b54b021ae15423684e5b268103189ccd9a97294943de055cca4c",
+        "labels": 167,
+        "macro_frontier": [
+          [
+            8,
+            4
+          ],
+          [
+            10,
+            3
+          ]
+        ],
+        "vertices": 105
+      },
+      {
+        "coefficient": "7/2",
+        "edge_label_obligations": 145,
+        "label_certificate_sha256": "691ad76d52d8bc22438babc4fb1a16590d4fe2e3ff8a20be06e733e534035e93",
+        "labels": 39,
+        "macro_frontier": [
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            3
+          ]
+        ],
+        "vertices": 29
+      },
+      {
+        "coefficient": "15/4",
+        "edge_label_obligations": 751,
+        "label_certificate_sha256": "b3690cda07c0843ff52dfb37923510ca8ffe6101f66ee9ef208e10bbf1336f84",
+        "labels": 197,
+        "macro_frontier": [
+          [
+            9,
+            5
+          ],
+          [
+            11,
+            3
+          ]
+        ],
+        "vertices": 121
+      },
+      {
+        "coefficient": "4",
+        "edge_label_obligations": 35,
+        "label_certificate_sha256": "73c4622e9d69469f388a76aa5ede9861ad0d7846e9d731dedf38201d42ad9a90",
+        "labels": 9,
+        "macro_frontier": [
+          [
+            5,
+            1
+          ]
+        ],
+        "vertices": 9
+      },
+      {
+        "coefficient": "17/4",
+        "edge_label_obligations": 834,
+        "label_certificate_sha256": "ad25921abb9f70123114cedb942db79c3fb26d334e5a4a26ac892b3633f4ddec",
+        "labels": 219,
+        "macro_frontier": [
+          [
+            9,
+            5
+          ],
+          [
+            10,
+            2
+          ]
+        ],
+        "vertices": 137
+      },
+      {
+        "coefficient": "9/2",
+        "edge_label_obligations": 161,
+        "label_certificate_sha256": "d50f2b6fa34dd3660187078784de49d17cb3c76b82474657b5faf0d19d81620a",
+        "labels": 41,
+        "macro_frontier": [
+          [
+            8,
+            2
+          ]
+        ],
+        "vertices": 37
+      },
+      {
+        "coefficient": "5",
+        "edge_label_obligations": 41,
+        "label_certificate_sha256": "b97df5b3b40e7aff08f0ecdcb9938775bde58eadef93172b007979541e9d6c9a",
+        "labels": 11,
+        "macro_frontier": [
+          [
+            6,
+            2
+          ]
+        ],
+        "vertices": 11
+      },
+      {
+        "coefficient": "11/2",
+        "edge_label_obligations": 193,
+        "label_certificate_sha256": "f77259279655e52cf537c56e310294849f3e449d6d716f4b0e07c4400c2b4f26",
+        "labels": 49,
+        "macro_frontier": [
+          [
+            9,
+            3
+          ]
+        ],
+        "vertices": 45
+      },
+      {
+        "coefficient": "6",
+        "edge_label_obligations": 51,
+        "label_certificate_sha256": "8394d5b6a3178034126f8c7d432ad1bcea5f2cd6ce8727eeda75bc13f4e27792",
+        "labels": 13,
+        "macro_frontier": [
+          [
+            6,
+            2
+          ]
+        ],
+        "vertices": 13
+      },
+      {
+        "coefficient": "13/2",
+        "edge_label_obligations": 225,
+        "label_certificate_sha256": "05c7b5304369a7782f359895e42f290b512401b61236f38dcd8616b5b4b71b00",
+        "labels": 57,
+        "macro_frontier": [
+          [
+            9,
+            3
+          ]
+        ],
+        "vertices": 53
+      },
+      {
+        "coefficient": "7",
+        "edge_label_obligations": 57,
+        "label_certificate_sha256": "2cb2f1dd90e352306cd60a577cac82d705fa5ac023e7c3bc5ddadebff05fa865",
+        "labels": 15,
+        "macro_frontier": [
+          [
+            7,
+            3
+          ]
+        ],
+        "vertices": 15
+      },
+      {
+        "coefficient": "15/2",
+        "edge_label_obligations": 257,
+        "label_certificate_sha256": "4ff00d4c27bb56a89189d3599f6909d845f8c46b08d8f96e4a0a53f43bb6ca15",
+        "labels": 65,
+        "macro_frontier": [
+          [
+            10,
+            3
+          ]
+        ],
+        "vertices": 61
+      },
+      {
+        "coefficient": "31/4",
+        "edge_label_obligations": 1102,
+        "label_certificate_sha256": "8a5a636661a52395b548b8eb65ebeb53c0abfd93c7a6b26e21a7a39a95394ce0",
+        "labels": 276,
+        "macro_frontier": [
+          [
+            12,
+            3
+          ]
+        ],
+        "vertices": 249
+      },
+      {
+        "coefficient": "8",
+        "edge_label_obligations": 67,
+        "label_certificate_sha256": "81a33a24c9cf15c025cf7e45b1e0577592543c8a4875f1a9fe3309a0926a7cea",
+        "labels": 17,
+        "macro_frontier": [
+          [
+            6,
+            1
+          ]
+        ],
+        "vertices": 17
+      },
+      {
+        "coefficient": "17/2",
+        "edge_label_obligations": 289,
+        "label_certificate_sha256": "db4beb2807ae37ec90fd70efa90f36e539ada386b6b25360befb3836be86b03d",
+        "labels": 73,
+        "macro_frontier": [
+          [
+            9,
+            2
+          ]
+        ],
+        "vertices": 69
+      },
+      {
+        "coefficient": "9",
+        "edge_label_obligations": 73,
+        "label_certificate_sha256": "afae1a1a648b64b17df8c57cc0b9ace09aabadbebb367347055a9c387565791c",
+        "labels": 19,
+        "macro_frontier": [
+          [
+            7,
+            2
+          ]
+        ],
+        "vertices": 19
+      },
+      {
+        "coefficient": "10",
+        "edge_label_obligations": 83,
+        "label_certificate_sha256": "7f7e5f346ab716d9258c41610d69aae3e8aeed6e3f27ecc3806b35aab9d17e12",
+        "labels": 21,
+        "macro_frontier": [
+          [
+            7,
+            2
+          ]
+        ],
+        "vertices": 21
+      },
+      {
+        "coefficient": "11",
+        "edge_label_obligations": 89,
+        "label_certificate_sha256": "82426b9c86a70f1c8c93e6fd2672ef3a1551f36f01cdf35df7cb7770295fdea4",
+        "labels": 23,
+        "macro_frontier": [
+          [
+            8,
+            3
+          ]
+        ],
+        "vertices": 23
+      },
+      {
+        "coefficient": "12",
+        "edge_label_obligations": 99,
+        "label_certificate_sha256": "e0847dc27bd30b794f77395a94d1d6e8d9086d8e7d2f7ae87a1bab20f4969bda",
+        "labels": 25,
+        "macro_frontier": [
+          [
+            7,
+            2
+          ]
+        ],
+        "vertices": 25
+      },
+      {
+        "coefficient": "15",
+        "edge_label_obligations": 121,
+        "label_certificate_sha256": "6bf4f83a28156f3d7102db4fd6627bba6928093ae9efed6fbd599a6c32f34479",
+        "labels": 31,
+        "macro_frontier": [
+          [
+            9,
+            3
+          ]
+        ],
+        "vertices": 31
+      },
+      {
+        "coefficient": "31/2",
+        "edge_label_obligations": 513,
+        "label_certificate_sha256": "c2bb594f24ad8cf3539103f711140aace02511b37ca6e7dd5145fe4dcc8da47a",
+        "labels": 129,
+        "macro_frontier": [
+          [
+            11,
+            3
+          ]
+        ],
+        "vertices": 125
+      },
+      {
+        "coefficient": "16",
+        "edge_label_obligations": 131,
+        "label_certificate_sha256": "ee397b3ffb1bd94097cd475c951f7ff56569b2042130c0c4f3e518af4370b53a",
+        "labels": 33,
+        "macro_frontier": [
+          [
+            7,
+            1
+          ]
+        ],
+        "vertices": 33
+      },
+      {
+        "coefficient": "20",
+        "edge_label_obligations": 163,
+        "label_certificate_sha256": "3682d87bba58e26f814083d40d608345d07de96827936018268d617480670a5b",
+        "labels": 41,
+        "macro_frontier": [
+          [
+            8,
+            2
+          ]
+        ],
+        "vertices": 41
+      },
+      {
+        "coefficient": "24",
+        "edge_label_obligations": 195,
+        "label_certificate_sha256": "bfe204ca2951ec261687afcaff3a61ca7995db2dc78be3ef5f782bb499a101f8",
+        "labels": 49,
+        "macro_frontier": [
+          [
+            8,
+            2
+          ]
+        ],
+        "vertices": 49
+      },
+      {
+        "coefficient": "32",
+        "edge_label_obligations": 259,
+        "label_certificate_sha256": "717f7225d7328966482a52a7e4cfc7243bb2ecb3dd59812c054646188f77ecc0",
+        "labels": 65,
+        "macro_frontier": [
+          [
+            8,
+            1
+          ]
+        ],
+        "vertices": 65
+      },
+      {
+        "coefficient": "79/2",
+        "edge_label_obligations": 1281,
+        "label_certificate_sha256": "71571c23a2fa4bd33c50b8013fa305d078584ea5fb60f2d208c6afad50b1f68e",
+        "labels": 321,
+        "macro_frontier": [
+          [
+            13,
+            4
+          ]
+        ],
+        "vertices": 317
+      },
+      {
+        "coefficient": "48",
+        "edge_label_obligations": 387,
+        "label_certificate_sha256": "604893b45ec734e52495e462cb8d06ec9c3c1bde2601a9d5730d69168c2f29b4",
+        "labels": 97,
+        "macro_frontier": [
+          [
+            9,
+            2
+          ]
+        ],
+        "vertices": 97
+      },
+      {
+        "coefficient": "54",
+        "edge_label_obligations": 435,
+        "label_certificate_sha256": "ca1c2a410a3293339ff6ddebc70a9b32f5eaa7cf5766e6d692f5df35e32accc8",
+        "labels": 109,
+        "macro_frontier": [
+          [
+            11,
+            3
+          ]
+        ],
+        "vertices": 109
+      },
+      {
+        "coefficient": "60",
+        "edge_label_obligations": 483,
+        "label_certificate_sha256": "f41aa9e7fa95d6d1e13cc6665e0d9ddefec7831514b3d1333c19e0feeb431bf8",
+        "labels": 121,
+        "macro_frontier": [
+          [
+            10,
+            2
+          ]
+        ],
+        "vertices": 121
+      },
+      {
+        "coefficient": "64",
+        "edge_label_obligations": 515,
+        "label_certificate_sha256": "18a775b1aefa59263ac0b1af7727f434ae170c78c1d2f84f90b59aaf06f5cd2b",
+        "labels": 129,
+        "macro_frontier": [
+          [
+            9,
+            1
+          ]
+        ],
+        "vertices": 129
+      },
+      {
+        "coefficient": "72",
+        "edge_label_obligations": 579,
+        "label_certificate_sha256": "34061687ae799ab5170c740913f1c570e75f8d4d04bc48e296df32f8f546cd6b",
+        "labels": 145,
+        "macro_frontier": [
+          [
+            10,
+            2
+          ]
+        ],
+        "vertices": 145
+      },
+      {
+        "coefficient": "79",
+        "edge_label_obligations": 633,
+        "label_certificate_sha256": "689d98dc667394df6a3d6f147b38e50350c28a33bc5724351cfac0b6e67cc0ec",
+        "labels": 159,
+        "macro_frontier": [
+          [
+            12,
+            4
+          ]
+        ],
+        "vertices": 159
+      },
+      {
+        "coefficient": "80",
+        "edge_label_obligations": 643,
+        "label_certificate_sha256": "a4d7dd2846bb4bddaa2c9b54309d5aac43e0dc792fbb8785ea3f2df1b5e69589",
+        "labels": 161,
+        "macro_frontier": [
+          [
+            10,
+            2
+          ]
+        ],
+        "vertices": 161
+      },
+      {
+        "coefficient": "96",
+        "edge_label_obligations": 771,
+        "label_certificate_sha256": "562a6d5adb075497c3357b66735f50be4eebfc8801f7a2658e5bdce8171b483b",
+        "labels": 193,
+        "macro_frontier": [
+          [
+            10,
+            2
+          ]
+        ],
+        "vertices": 193
+      },
+      {
+        "coefficient": "108",
+        "edge_label_obligations": 867,
+        "label_certificate_sha256": "e4cba7fe38b8fa7757f50782da80ec99946c523da355c493e4f674363a39a93e",
+        "labels": 217,
+        "macro_frontier": [
+          [
+            12,
+            3
+          ]
+        ],
+        "vertices": 217
+      },
+      {
+        "coefficient": "120",
+        "edge_label_obligations": 963,
+        "label_certificate_sha256": "717b4f28cfe94b3ef19e55325262536cd59c05b8c1fe50edfb57979c3b9e7031",
+        "labels": 241,
+        "macro_frontier": [
+          [
+            11,
+            2
+          ]
+        ],
+        "vertices": 241
+      }
+    ],
+    "hypothetical_sensitivity": {
+      "breakpoints": [
+        "1/3",
+        "1",
+        "2"
+      ],
+      "current_schedule_break_even": "26/23",
+      "current_schedule_gain_vs_696": "104 - 92*p per orientation",
+      "endpoint_rule": "Intervals describe interiors; adjacent choices tie at a breakpoint; p=0 uses the first.",
+      "intervals": [
+        {
+          "choices": {
+            "11/4": [
+              8,
+              4
+            ],
+            "13/4": [
+              8,
+              4
+            ],
+            "15/4": [
+              9,
+              5
+            ],
+            "17/4": [
+              9,
+              5
+            ],
+            "5/2": [
+              6,
+              3
+            ],
+            "7/2": [
+              7,
+              4
+            ],
+            "9/4": [
+              7,
+              3
+            ]
+          },
+          "delta_instructions_source_reads_vs_696": {
+            "backward": [
+              -104,
+              92
+            ],
+            "forward": [
+              -104,
+              92
+            ]
+          },
+          "lower": "0",
+          "upper": "1/3"
+        },
+        {
+          "choices": {
+            "11/4": [
+              8,
+              4
+            ],
+            "13/4": [
+              8,
+              4
+            ],
+            "15/4": [
+              9,
+              5
+            ],
+            "17/4": [
+              10,
+              2
+            ],
+            "5/2": [
+              6,
+              3
+            ],
+            "7/2": [
+              7,
+              4
+            ],
+            "9/4": [
+              7,
+              3
+            ]
+          },
+          "delta_instructions_source_reads_vs_696": {
+            "backward": [
+              -102,
+              86
+            ],
+            "forward": [
+              -102,
+              86
+            ]
+          },
+          "lower": "1/3",
+          "upper": "1"
+        },
+        {
+          "choices": {
+            "11/4": [
+              8,
+              4
+            ],
+            "13/4": [
+              8,
+              4
+            ],
+            "15/4": [
+              11,
+              3
+            ],
+            "17/4": [
+              10,
+              2
+            ],
+            "5/2": [
+              7,
+              2
+            ],
+            "7/2": [
+              8,
+              3
+            ],
+            "9/4": [
+              7,
+              3
+            ]
+          },
+          "delta_instructions_source_reads_vs_696": {
+            "backward": [
+              -16,
+              0
+            ],
+            "forward": [
+              -16,
+              0
+            ]
+          },
+          "lower": "1",
+          "upper": "2"
+        },
+        {
+          "choices": {
+            "11/4": [
+              10,
+              3
+            ],
+            "13/4": [
+              10,
+              3
+            ],
+            "15/4": [
+              11,
+              3
+            ],
+            "17/4": [
+              10,
+              2
+            ],
+            "5/2": [
+              7,
+              2
+            ],
+            "7/2": [
+              8,
+              3
+            ],
+            "9/4": [
+              9,
+              2
+            ]
+          },
+          "delta_instructions_source_reads_vs_696": {
+            "backward": [
+              0,
+              -8
+            ],
+            "forward": [
+              0,
+              -8
+            ]
+          },
+          "lower": "2",
+          "upper": null
+        }
+      ],
+      "lower_read_15_over_4_prior_art": "Bounded signed-Horner word credited to PR734; no new construction claim.",
+      "model": "instructions + p * source_reads; p >= 0 is hypothetical additional overhead",
+      "physical_price_claimed": false
+    },
+    "negative_controls": {
+      "forged_source_reads": "Pareto witness source-read count",
+      "missing_lower_read_tradeoff": "Pareto edge closure",
+      "uncharged_initial_copy": "Pareto macro initial copy",
+      "wrong_magnitude_bound": "Pareto declared bound"
+    },
+    "selected_frontiers": [
+      {
+        "coefficient": "9/4",
+        "comparators": {
+          "binary-forward": {
+            "instructions": 9,
+            "source_reads": 2,
+            "within_grid": true,
+            "within_magnitude": true
+          },
+          "binary-reverse": {
+            "instructions": 8,
+            "source_reads": 2,
+            "within_grid": false,
+            "within_magnitude": true
+          },
+          "naf-forward": {
+            "instructions": 9,
+            "source_reads": 2,
+            "within_grid": true,
+            "within_magnitude": true
+          },
+          "naf-reverse": {
+            "instructions": 8,
+            "source_reads": 2,
+            "within_grid": false,
+            "within_magnitude": true
+          }
+        },
+        "frontier": [
+          {
+            "end_sign": 1,
+            "macro_instructions": 7,
+            "macro_source_reads": 3,
+            "operations": [
+              "halve",
+              "halve",
+              "add",
+              "add"
+            ],
+            "preparation_instructions": 4,
+            "preparation_source_reads": 2
+          },
+          {
+            "end_sign": 1,
+            "macro_instructions": 9,
+            "macro_source_reads": 2,
+            "operations": [
+              "double",
+              "double",
+              "double",
+              "add",
+              "halve",
+              "halve"
+            ],
+            "preparation_instructions": 6,
+            "preparation_source_reads": 1
+          }
+        ],
+        "occurrences": {
+          "backward": 2,
+          "forward": 2
+        }
+      },
+      {
+        "coefficient": "5/2",
+        "comparators": {
+          "binary-forward": {
+            "instructions": 7,
+            "source_reads": 2,
+            "within_grid": true,
+            "within_magnitude": true
+          },
+          "binary-reverse": {
+            "instructions": 7,
+            "source_reads": 2,
+            "within_grid": false,
+            "within_magnitude": true
+          },
+          "naf-forward": {
+            "instructions": 7,
+            "source_reads": 2,
+            "within_grid": true,
+            "within_magnitude": true
+          },
+          "naf-reverse": {
+            "instructions": 7,
+            "source_reads": 2,
+            "within_grid": false,
+            "within_magnitude": true
+          }
+        },
+        "frontier": [
+          {
+            "end_sign": 1,
+            "macro_instructions": 6,
+            "macro_source_reads": 3,
+            "operations": [
+              "halve",
+              "add",
+              "add"
+            ],
+            "preparation_instructions": 3,
+            "preparation_source_reads": 2
+          },
+          {
+            "end_sign": 1,
+            "macro_instructions": 7,
+            "macro_source_reads": 2,
+            "operations": [
+              "double",
+              "double",
+              "add",
+              "halve"
+            ],
+            "preparation_instructions": 4,
+            "preparation_source_reads": 1
+          }
+        ],
+        "occurrences": {
+          "backward": 25,
+          "forward": 25
+        }
+      },
+      {
+        "coefficient": "11/4",
+        "comparators": {
+          "binary-forward": {
+            "instructions": 10,
+            "source_reads": 3,
+            "within_grid": true,
+            "within_magnitude": true
+          },
+          "binary-reverse": {
+            "instructions": 9,
+            "source_reads": 3,
+            "within_grid": false,
+            "within_magnitude": true
+          },
+          "naf-forward": {
+            "instructions": 11,
+            "source_reads": 3,
+            "within_grid": true,
+            "within_magnitude": false
+          },
+          "naf-reverse": {
+            "instructions": 11,
+            "source_reads": 3,
+            "within_grid": false,
+            "within_magnitude": true
+          }
+        },
+        "frontier": [
+          {
+            "end_sign": 1,
+            "macro_instructions": 8,
+            "macro_source_reads": 4,
+            "operations": [
+              "halve",
+              "add",
+              "halve",
+              "add",
+              "add"
+            ],
+            "preparation_instructions": 5,
+            "preparation_source_reads": 3
+          },
+          {
+            "end_sign": 1,
+            "macro_instructions": 10,
+            "macro_source_reads": 3,
+            "operations": [
+              "double",
+              "double",
+              "double",
+              "subtract",
+              "halve",
+              "halve",
+              "add"
+            ],
+            "preparation_instructions": 7,
+            "preparation_source_reads": 2
+          }
+        ],
+        "occurrences": {
+          "backward": 1,
+          "forward": 1
+        }
+      },
+      {
+        "coefficient": "13/4",
+        "comparators": {
+          "binary-forward": {
+            "instructions": 10,
+            "source_reads": 3,
+            "within_grid": true,
+            "within_magnitude": true
+          },
+          "binary-reverse": {
+            "instructions": 9,
+            "source_reads": 3,
+            "within_grid": false,
+            "within_magnitude": true
+          },
+          "naf-forward": {
+            "instructions": 11,
+            "source_reads": 3,
+            "within_grid": true,
+            "within_magnitude": true
+          },
+          "naf-reverse": {
+            "instructions": 11,
+            "source_reads": 3,
+            "within_grid": false,
+            "within_magnitude": true
+          }
+        },
+        "frontier": [
+          {
+            "end_sign": 1,
+            "macro_instructions": 8,
+            "macro_source_reads": 4,
+            "operations": [
+              "halve",
+              "halve",
+              "add",
+              "add",
+              "add"
+            ],
+            "preparation_instructions": 5,
+            "preparation_source_reads": 3
+          },
+          {
+            "end_sign": 1,
+            "macro_instructions": 10,
+            "macro_source_reads": 3,
+            "operations": [
+              "double",
+              "double",
+              "double",
+              "add",
+              "halve",
+              "halve",
+              "add"
+            ],
+            "preparation_instructions": 7,
+            "preparation_source_reads": 2
+          }
+        ],
+        "occurrences": {
+          "backward": 1,
+          "forward": 1
+        }
+      },
+      {
+        "coefficient": "7/2",
+        "comparators": {
+          "binary-forward": {
+            "instructions": 8,
+            "source_reads": 3,
+            "within_grid": true,
+            "within_magnitude": true
+          },
+          "binary-reverse": {
+            "instructions": 8,
+            "source_reads": 3,
+            "within_grid": false,
+            "within_magnitude": true
+          },
+          "naf-forward": {
+            "instructions": 8,
+            "source_reads": 2,
+            "within_grid": true,
+            "within_magnitude": false
+          },
+          "naf-reverse": {
+            "instructions": 9,
+            "source_reads": 2,
+            "within_grid": false,
+            "within_magnitude": true
+          }
+        },
+        "frontier": [
+          {
+            "end_sign": 1,
+            "macro_instructions": 7,
+            "macro_source_reads": 4,
+            "operations": [
+              "halve",
+              "add",
+              "add",
+              "add"
+            ],
+            "preparation_instructions": 4,
+            "preparation_source_reads": 3
+          },
+          {
+            "end_sign": 1,
+            "macro_instructions": 8,
+            "macro_source_reads": 3,
+            "operations": [
+              "double",
+              "double",
+              "add",
+              "halve",
+              "add"
+            ],
+            "preparation_instructions": 5,
+            "preparation_source_reads": 2
+          }
+        ],
+        "occurrences": {
+          "backward": 10,
+          "forward": 10
+        }
+      },
+      {
+        "coefficient": "15/4",
+        "comparators": {
+          "binary-forward": {
+            "instructions": 11,
+            "source_reads": 4,
+            "within_grid": true,
+            "within_magnitude": true
+          },
+          "binary-reverse": {
+            "instructions": 10,
+            "source_reads": 4,
+            "within_grid": false,
+            "within_magnitude": true
+          },
+          "naf-forward": {
+            "instructions": 10,
+            "source_reads": 2,
+            "within_grid": true,
+            "within_magnitude": false
+          },
+          "naf-reverse": {
+            "instructions": 10,
+            "source_reads": 2,
+            "within_grid": false,
+            "within_magnitude": true
+          }
+        },
+        "frontier": [
+          {
+            "end_sign": 1,
+            "macro_instructions": 9,
+            "macro_source_reads": 5,
+            "operations": [
+              "halve",
+              "add",
+              "halve",
+              "add",
+              "add",
+              "add"
+            ],
+            "preparation_instructions": 6,
+            "preparation_source_reads": 4
+          },
+          {
+            "end_sign": 1,
+            "macro_instructions": 11,
+            "macro_source_reads": 3,
+            "operations": [
+              "double",
+              "double",
+              "double",
+              "subtract",
+              "double",
+              "add",
+              "halve",
+              "halve"
+            ],
+            "preparation_instructions": 8,
+            "preparation_source_reads": 2
+          }
+        ],
+        "occurrences": {
+          "backward": 4,
+          "forward": 4
+        }
+      },
+      {
+        "coefficient": "17/4",
+        "comparators": {
+          "binary-forward": {
+            "instructions": 10,
+            "source_reads": 2,
+            "within_grid": true,
+            "within_magnitude": true
+          },
+          "binary-reverse": {
+            "instructions": 10,
+            "source_reads": 2,
+            "within_grid": false,
+            "within_magnitude": true
+          },
+          "naf-forward": {
+            "instructions": 10,
+            "source_reads": 2,
+            "within_grid": true,
+            "within_magnitude": true
+          },
+          "naf-reverse": {
+            "instructions": 10,
+            "source_reads": 2,
+            "within_grid": false,
+            "within_magnitude": true
+          }
+        },
+        "frontier": [
+          {
+            "end_sign": 1,
+            "macro_instructions": 9,
+            "macro_source_reads": 5,
+            "operations": [
+              "halve",
+              "halve",
+              "add",
+              "add",
+              "add",
+              "add"
+            ],
+            "preparation_instructions": 6,
+            "preparation_source_reads": 4
+          },
+          {
+            "end_sign": 1,
+            "macro_instructions": 10,
+            "macro_source_reads": 2,
+            "operations": [
+              "double",
+              "double",
+              "double",
+              "double",
+              "add",
+              "halve",
+              "halve"
+            ],
+            "preparation_instructions": 7,
+            "preparation_source_reads": 1
+          }
+        ],
+        "occurrences": {
+          "backward": 1,
+          "forward": 1
+        }
+      }
+    ],
+    "selected_occurrence_totals_both_real_components": {
+      "backward": {
+        "best-four-min-read-cost-tie": [
+          678,
+          180
+        ],
+        "best-four-stable": [
+          678,
+          200
+        ],
+        "binary-forward": [
+          694,
+          216
+        ],
+        "binary-reverse": [
+          678,
+          216
+        ],
+        "current": [
+          590,
+          308
+        ],
+        "naf-forward": [
+          690,
+          180
+        ],
+        "naf-reverse": [
+          706,
+          180
+        ],
+        "original-binary": [
+          782,
+          216
+        ]
+      },
+      "forward": {
+        "best-four-min-read-cost-tie": [
+          678,
+          180
+        ],
+        "best-four-stable": [
+          678,
+          200
+        ],
+        "binary-forward": [
+          694,
+          216
+        ],
+        "binary-reverse": [
+          678,
+          216
+        ],
+        "current": [
+          590,
+          308
+        ],
+        "naf-forward": [
+          690,
+          180
+        ],
+        "naf-reverse": [
+          706,
+          180
+        ],
+        "original-binary": [
+          782,
+          216
+        ]
+      }
+    },
+    "state_totals": {
+      "edge_label_obligations": 16096,
+      "labels": 4104,
+      "vertices": 3703
+    },
+    "status": "PASS_JP8_PARETO_SOURCE_READS"
+  },
   "status": "PASS_JP8_GRID_BOUNDED_SYNTHESIS"
 }

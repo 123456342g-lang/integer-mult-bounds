@@ -83,6 +83,7 @@ class Interpreter:
         self.rows = initial_rows()
         self.tags = Counter()
         self.denominator_exponent = 0
+        self.maximum_row_l1 = Q(1)
         self.word_hash = hashlib.sha256()
         self.source_reads = 0
         self.all_register_reads = 0
@@ -127,6 +128,10 @@ class Interpreter:
             require(denominator & (denominator - 1) == 0, "nondyadic trace row")
             self.denominator_exponent = max(self.denominator_exponent,
                                             denominator.bit_length() - 1)
+        # Initial basis rows have norm one. Only this written row can change
+        # the maximum; this measures scalar coordinates, not physical frames.
+        self.maximum_row_l1 = max(self.maximum_row_l1,
+                                  sum((abs(x) for x in self.rows[target].values()), Q(0)))
         self.tags[tag] += 2  # same circuit separately on real and imaginary parts
         self.instructions += 1
         self.word_hash.update(canonical([event_index, frame, primitive]) + b"\n")
@@ -165,6 +170,7 @@ class Interpreter:
             "primitive_tags": dict(sorted(self.tags.items())),
             "primitive_word_sha256": self.word_hash.hexdigest(),
             "maximum_fractional_denominator_exponent": self.denominator_exponent,
+            "maximum_scalar_prefix_row_l1": str(self.maximum_row_l1),
             "real_macro_source_reads": 2 * self.source_reads,
             "real_total_register_reads": 2 * self.all_register_reads,
         }
@@ -271,6 +277,8 @@ def replay_orientation(orientation, events, checks, inherited, entries):
             receipts["pr696"]["maximum_fractional_denominator_exponent"] <=
             receipts["historical"]["maximum_fractional_denominator_exponent"],
             "scalar fractional guard increased")
+    require(interpreters["replacement"].maximum_row_l1 <= interpreters["pr696"].maximum_row_l1
+            <= interpreters["historical"].maximum_row_l1, "scalar prefix row-L1 maximum increased")
     require(peak < 2 ** inherited["charged_payload_bits"], "inherited payload bound exceeded")
     require(receipts["historical"]["real_primitives"] - receipts["pr696"]["real_primitives"]
             == 2 * (additions + units), "PR696 closed-form saving")
