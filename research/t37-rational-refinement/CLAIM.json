@@ -1,0 +1,17 @@
+{
+  "track": "complex supplier",
+  "assignment_seed": 24,
+  "seed_source": "OS randomness through Python secrets.randbelow(100)",
+  "base_commit": "8bddbee377e2f3ce1f1247196c4b290d55767d20",
+  "object": "Exact T37 conditional assembly at a finer rational kappa grid, with source word, paid profile, physical invoice, bootstrap, eta and beta fixed",
+  "candidates": [
+    "refine the T37 outer objective grid with unchanged seven-stage bootstrap",
+    "refine both the complex moment endpoint and outer grid",
+    "price an additional paid bootstrap step before refining the outer objective"
+  ],
+  "method": "Reconstruct original 47 exact slacks and bootstrap; compare all inherited source pins, moment and invoice inputs; derive the strict 10^-24 outer grid point and next-grid rejection",
+  "deliverable": "one exact conditional kappa witness and bound-source closure",
+  "expected_finish_utc": "2026-10-13T16:42:00Z",
+  "coordination": "No pinned issue; full PR metadata and all-state T37/grid searches checked. PR942 proves the 10^-18 grid optimum, not a real-root optimum; PR987 proposes a changed U10 word and is distinct.",
+  "status": "claimed"
+}
