@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "sha256": {
+    ".gitattributes": "8d3eea09c326d8636669849bb00208a26ec4a709dfdaa505c9fdec253798dfa3",
+    "CLAIM.json": "26eeeaa2027af5e90e7edb40be533a549b7197211599ab2c21f9087e354dbc76",
+    "evidence/environment.json": "7a7fe94aaf9af7d585426260c51505685397ec836b44094d78fe353a92e2bdfd",
+    "evidence/package-tests.txt": "32e8de78ad3ff79dcdd0f162cfbd5f01dc031a39f346f76c57ecba288befaf91",
+    "evidence/verify.txt": "953432aa42f96318eb5cfe65e1d0f17a3dc0f75ca60e5e57a04fc00d4136dd9a",
+    "EXPECTED.json": "9e019e77443a9fc1c4938d9d03d809d813de0558581fecf2fb72efef48f4bdcc",
+    "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "NOTICE.md": "032c8a86591624e69dd306f93a66cbc2edf5ef108a5eacd7b893a0c48f6bab08",
+    "PROOF.md": "ffcad151a6fda894d16d7c227c219caa79a0fc0d446d2b7f7c903ebf1a06438e",
+    "README.md": "af582bea08442fea7e690202c5ee23d5f79f12b2305b1dd49a3e24444813d1eb",
+    "SOURCES.json": "68fca3bf9cdc9a69375d692514f2bd402ed59e0540bdb87b3d96d276ce7f9c01",
+    "test_package.py": "287632c4632bd0de696cad3d5170eae1c15b739802a194143941abf7c41fa03d",
+    "VALIDATION.md": "92a7a586a9ae4fc2e0b2b168cf62f6d5fa9f31b3e42680ab8c70c96ca2a3cd4f",
+    "vendor/previous-fourier-NOTICE.md": "05e6e660b74d34a8ed298f41889b9bb8b7fe365137bf2179f9828cdd2bb9a8b7",
+    "vendor/previous-fourier-PROOF.md": "0dd5ff1a4377f4eeb92b3af7b75254bb343c64675b09201db132b394b0ebaaad",
+    "vendor/prime-power-NOTICE.md": "96111c95cfec3c03a6f69c8e02c5d0bceff957d187e638d0534c676d6e3ffd77",
+    "vendor/prime-power-proof.md": "2b8056c88e66f692f407450fff0414d41bcd09db8597be22e274a6c3dc20eb9e",
+    "vendor/selected-result.json": "b3bf402f31a69bde0629936a9b569bed48281568d7b16d5fba120b5311ea1f53",
+    "verify.py": "b40f04343586a17a8a6debb22408c30e7ed8265cbce9b079bcdddce4f0c9da6d"
+  }
+}
