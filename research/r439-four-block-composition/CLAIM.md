@@ -37,3 +37,16 @@ will be checked again before handoff.
 One delegated worker checks only these four block maps independently. Another
 prepares only their native multistage harness. Substantial OpenAI Codex AI
 assistance is disclosed; no independent human review is claimed.
+
+## Result update
+
+Completed and submitted as [PR989](https://github.com/CrocSwap/integer-mult-bounds/pull/989).
+The combined word saves **72 ADDs**, from 24,305 to 24,233, with unchanged paid
+profile and a reverse positive bound of 942,262. All 16 subset words, 32 cover
+relations, 661 dirty columns per word, five package tests, native legality and
+5/9/11-stage checks passed, including nine local and 96 native bridge controls.
+No new kappa is claimed. The final metadata refresh through PR986 found a
+different phase-A frame281 boundary result; no same four-block composition was
+found. The retained claim is local because no pinned sprint issue was present.
+Exact receipts, predecessor attribution and open adoption obligations accompany
+the PR. No frontier was edited and no PR was merged or closed.
