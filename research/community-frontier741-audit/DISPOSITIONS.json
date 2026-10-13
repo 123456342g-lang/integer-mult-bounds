@@ -1,5 +1,5 @@
 {
-  "status": "PREPARED_FOR_PUBLICATION_SIX_COMPLETE_ONE_SUBSET",
+  "status": "PUBLISHED_SIX_MERGED_ONE_CHECKER_SUBSET",
   "pull_requests": [
     {
       "number": 675,
@@ -20,19 +20,26 @@
       },
       "reviewed_head": "f011d03633f0570257b653e7aa1e869b1b06d06a",
       "current_head": "f011d03633f0570257b653e7aa1e869b1b06d06a",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/owner-boundary-audit"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "f011d03633f0570257b653e7aa1e869b1b06d06a",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:10:35Z",
+        "integration_commit": "9927fc52dd67e6a58a20b17245e5947eba30aed0",
+        "publication_commit": "c290b7b919790300e14004a75d8d24b55ca3c5b5",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/c290b7b919790300e14004a75d8d24b55ca3c5b5/docs/research/community-frontier741-review.md"
+      },
       "scope": "Independent owner timing boundary and scalar-controller distinction.",
-      "unresolved_question": "Publish tested integration; then record remote resolution.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier741-review.md",
@@ -58,20 +65,27 @@
       },
       "reviewed_head": "e536f6fc8aad65adef8ac4682d13625598a5c3f9",
       "current_head": "e536f6fc8aad65adef8ac4682d13625598a5c3f9",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/supplier-circuit-consolidation",
         "docs/research/community-circuits681-review.md"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "e536f6fc8aad65adef8ac4682d13625598a5c3f9",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:10:35Z",
+        "integration_commit": "9927fc52dd67e6a58a20b17245e5947eba30aed0",
+        "publication_commit": "c290b7b919790300e14004a75d8d24b55ca3c5b5",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/c290b7b919790300e14004a75d8d24b55ca3c5b5/docs/research/community-frontier741-review.md"
+      },
       "scope": "Historical R420 and complex circuit consolidation, full native/hosted replay and source-preserving adapter; no new exponent.",
-      "unresolved_question": "Publish tested integration; then record remote resolution.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier741-review.md",
@@ -97,19 +111,26 @@
       },
       "reviewed_head": "e322f2f1d9cc0f830cb3a50c6e928e0a1a32383c",
       "current_head": "e322f2f1d9cc0f830cb3a50c6e928e0a1a32383c",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/selected626-linux-reconciliation"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "e322f2f1d9cc0f830cb3a50c6e928e0a1a32383c",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:10:35Z",
+        "integration_commit": "9927fc52dd67e6a58a20b17245e5947eba30aed0",
+        "publication_commit": "c290b7b919790300e14004a75d8d24b55ca3c5b5",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/c290b7b919790300e14004a75d8d24b55ca3c5b5/docs/research/community-frontier741-review.md"
+      },
       "scope": "Historical exact-head Linux evidence reconciliation; unavailable payloads remain explicit.",
-      "unresolved_question": "Publish tested integration; then record remote resolution.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier741-review.md",
@@ -135,20 +156,27 @@
       },
       "reviewed_head": "152583fe2062f23b1149b4b20255f8e85946d558",
       "current_head": "152583fe2062f23b1149b4b20255f8e85946d558",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "scripts/verify_pr_reconciliation.py",
         "research/ledger-decision-binding"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "152583fe2062f23b1149b4b20255f8e85946d558",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:10:35Z",
+        "integration_commit": "9927fc52dd67e6a58a20b17245e5947eba30aed0",
+        "publication_commit": "c290b7b919790300e14004a75d8d24b55ca3c5b5",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/c290b7b919790300e14004a75d8d24b55ca3c5b5/docs/research/community-frontier741-review.md"
+      },
       "scope": "Review-ledger provenance validation and mutation rejection.",
-      "unresolved_question": "Publish tested integration; then record remote resolution.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier741-review.md",
@@ -174,19 +202,26 @@
       },
       "reviewed_head": "7dea7d399a773543ecfc5f77d76f57d33bcec844",
       "current_head": "7dea7d399a773543ecfc5f77d76f57d33bcec844",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/async-inventory-reconciliation"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "7dea7d399a773543ecfc5f77d76f57d33bcec844",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:10:35Z",
+        "integration_commit": "9927fc52dd67e6a58a20b17245e5947eba30aed0",
+        "publication_commit": "c290b7b919790300e14004a75d8d24b55ca3c5b5",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/c290b7b919790300e14004a75d8d24b55ca3c5b5/docs/research/community-frontier741-review.md"
+      },
       "scope": "Historical finite-menu source binding and optimized-Python rejection.",
-      "unresolved_question": "Publish tested integration; then record remote resolution.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier741-review.md",
@@ -212,20 +247,27 @@
       },
       "reviewed_head": "e516b1463606840a15f80aac1995d64ce0092e89",
       "current_head": "e516b1463606840a15f80aac1995d64ce0092e89",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/complex-sw4-frame8",
         "research/complex-sw4-frame8-validation"
       ],
-      "closure": null,
+      "closure": {
+        "reviewed_head": "e516b1463606840a15f80aac1995d64ce0092e89",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T06:10:35Z",
+        "integration_commit": "9927fc52dd67e6a58a20b17245e5947eba30aed0",
+        "publication_commit": "c290b7b919790300e14004a75d8d24b55ca3c5b5",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/c290b7b919790300e14004a75d8d24b55ca3c5b5/docs/research/community-frontier741-review.md"
+      },
       "scope": "Full finite complex reconstruction with freshly rebuilt bit589 and exact composition; excludes stale contributor-guidance rollback.",
-      "unresolved_question": "Publish tested integration; then record remote resolution.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier741-review.md",
@@ -263,7 +305,7 @@
         "changed_file_coverage": false,
         "scoped_mechanism_review": true,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-frontier741-review.md",
