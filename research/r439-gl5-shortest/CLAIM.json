@@ -31,5 +31,14 @@
   "coordination": "No pinned issues at 19:30 UTC; local claim only. Open PR bodies checked through1161.",
   "prior_art": "Optimal CNOT/GL(5,2) BFS is established; see Christensen, Jorgensen, Pavlogiannis and van de Pol, On Exact Sizes of Minimal CNOT Circuits (RC2025), https://cs.au.dk/~pavlogiannis/publications/papers/rc25.pdf and https://github.com/Quantum-Software-Aarhus/CNOTter . New claim is the pinned R439 application and precision/cleanup admission, not BFS priority.",
   "attribution": "Gareth Davidson (@bitplane), with substantial OpenAI Codex assistance. PR1122/980/952/904 Davidson; PR936 Ross Richardson; PR1062 Sagar Thakrar and its credited PR967/1015/923/915/926 predecessors; PR589/555 original supplier.",
-  "status": "claimed; no result yet"
+  "status": "completed; PR submitted",
+  "pr": 1188,
+  "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1188",
+  "result": "59 disjoint A windows; exact one-pass maximum 80 A / 160 complete ADD savings; full word 10652 -> 10492; F 13667 / B 3758418; 91/175 sufficient bits within 104/192; unchanged paid profile; inherited H2/K false; no kappa.",
+  "mathematical_head": "b0fc9f45e09ee64d0cd57948b8ba59b6f24304c0",
+  "validation": "Complete GL5 metric: 199987200 edges; 1203 windows / 38496 truth cases; full 661-column F2 both directions and 5/9/11 native stages; 20 local / 96 bridge controls; 10 package / 14 repository tests; identical normal 3.14 and read-only isolated optimized 3.12 receipts.",
+  "receipt_sha256": "651157b0fecd64d805ef3b871435b2891ebce14a1118af55d35cd42a41b987f0",
+  "completed_at_utc": "2026-10-13T19:52:52.399180+00:00",
+  "final_overlap_through": 1178,
+  "upstream_refresh": "1b59b624d21924f8e3537cdc1ac52d3be6eda2fe"
 }
