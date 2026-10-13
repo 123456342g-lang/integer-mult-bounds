@@ -14,3 +14,19 @@ Three narrow candidates were considered: (1) the P112 support lemma by Gram iden
 The accepted conditional kappa at this base is 1661960547713947/10^18, not a pending PR title. CONTRIBUTING, current status, review ledger, selected manifest, PR942 construction and batch952 review were followed. PR845 is incorporated; its all-real negative result is not reopened. The inherited PR717 geometry and PR620 coordinate cost retain priority.
 
 GitHub's pinned-issues query returned no pinned issues; open issues were #913 and #650, neither a sprint coordination issue. An open-PR inventory of 757 entries was inspected, including precise support/single-lift terms. No separate reservation issue was opened. Work is confined to this new directory; no delegated workers.
+
+## Completed result and handoff
+
+Submitted [PR1098](https://github.com/CrocSwap/integer-mult-bounds/pull/1098),
+status **independent verification**, on 2026-10-13. Complete enumeration confirms
+503 full-rank supports and eight coordinate-axis kernels, with ten exact Gram
+spectra and sharp full-rank energy constant 4. Seven mathematical controls and
+five isolated package scenarios pass; the predecessor independent checker and
+selected-record check also pass. No new kappa or complete theorem proof.
+
+The final pre-submission refresh covered 763 open PRs and found main unchanged
+at the exact base. No matching Gram-support contribution was identified; PR765
+concerns a different full-E8 tensor obstruction. Only this new research package
+was published. Reproduction, source pins, exact evidence, attribution and
+remaining assumptions are in README.md, SOURCES.json, RESULTS.json and
+VALIDATION.json. There was no coordination issue on which to post this update.
