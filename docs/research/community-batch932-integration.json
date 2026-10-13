@@ -25,7 +25,7 @@
   "receipts": {
     "research/community-batch932-audit/CONTENT-COVERAGE.json": "184629cac91a5cfaca50330a88596008b824221433867dcf8117539c913c284a",
     "research/community-batch932-audit/LIVE-BEFORE-MERGE.json": "29c2a8ededd595df498e3a98c290ba99c7fa2d0938409bf0ee6c3964ee4766d1",
-    "research/community-batch932-audit/MAINTAINER-CHANGES.json": "842f3c21af081f244649bef68ea0b9f18a65b510305ec5f7233d344c1357edc6",
+    "research/community-batch932-audit/MAINTAINER-CHANGES.json": "86315300350854af119911acf870765038d536b4f9270dadfa720cc57260a165",
     "research/community-batch932-audit/PLAN.json": "177da679323976bdc59ddbbb5e58149f05442a5bb87277b899bc51f192253563",
     "research/community-batch932-audit/batch932-data-corner.json": "5414aeb62f3653363b39567c60bcf06fe6000e072896c7b24b3e45dd63f944c7",
     "research/community-batch932-audit/batch932-runner-benchmark.json": "89176767e02a8b44eb9ad5fbeabb38dcf316b135d3c6dd2c6f95ae25acdd1dcd",
@@ -142,7 +142,10 @@
     "research/community-batch932-audit/submitted/884/research/r439-block521-factor/SOURCES.json": "99d00c230bc6824764d93b35def53fd3971049d53135bbdcac2187d0fec9af61",
     "research/community-batch932-audit/submitted/921/research/agent-07-verifeng-seed88/README.md": "388a06cc6379d5efe8ac67851600097d630229692a7d88c27264f13ffbbc1c85",
     "research/community-batch932-audit/submitted/921/research/agent-07-verifeng-seed88/benchmark.py": "eb896ae607ff5c2c3725e51651b944591471788e31576644124508d3b56a3760",
-    "docs/research/community-batch932-review.md": "c9ea20ad52dbb583eec9f32c1d4cb8e8068f3a962337409e4e80cfacad21a703"
+    "docs/research/community-batch932-review.md": "c9ea20ad52dbb583eec9f32c1d4cb8e8068f3a962337409e4e80cfacad21a703",
+    "research/community-batch932-audit/before-integration/gitattributes": "6897b4aad2024be11c2e56590e313c3ab69542a5739178c40f413b979b7cf290",
+    "research/community-batch932-audit/logs/publication-corrected-ledger-tests.log": "d17d292152388975ddb4e139160b9991f5748df230d7f67a60d4d376328b6784",
+    "research/community-batch932-audit/logs/publication-corrected-ledger.log": "b6aff744d6418507299c9dd08c997cf5f6d4ff2b3b40d89240be28044f9fadaf"
   },
   "linux_ci": {
     "status": "Pending; no passed Linux integration claimed for this batch.",
@@ -199,5 +202,6 @@
     ]
   },
   "source_commit": "550746fd",
-  "publication_commit": "cdd6e3468b6e8cfd69df4edf45de009ae79252ac"
+  "publication_commit": "cdd6e3468b6e8cfd69df4edf45de009ae79252ac",
+  "post_publication_correction": "Preserved historical .gitattributes bytes for nine family588 rows and one hyperplane599 row, retaining every original byte digest. Current attributes add only new raw-evidence whitespace rules. Complete 585-PR ledger check and 14 regression tests pass after correction."
 }

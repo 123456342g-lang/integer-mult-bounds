@@ -217,7 +217,7 @@ def main():
             require(len({f['path'] for f in covered['files']}) == covered['changed_files'],
                     f'#{number}: repeated changed file')
             for f in covered['files']:
-                data = (ROOT / f['path']).read_bytes()
+                data = (ROOT / f.get('integrated_path', f['path'])).read_bytes()
                 blob = hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()
                 require(blob == f['integrated_blob'], f'#{number}: covered bytes changed: {f["path"]}')
         closures = ROOT / 'research/community-family588-audit/CLOSURES.json'
