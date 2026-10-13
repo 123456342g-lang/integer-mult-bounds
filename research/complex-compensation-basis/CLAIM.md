@@ -42,3 +42,24 @@ preserved negative results were inspected. No separate reservation issue was
 opened. The recent queue reached #721. Work is parent-only on
 `codex/complex-compensation-seed24`; `upstream/` and the selected frontier stay
 unchanged.
+
+## Result — one completion update
+
+Completed and submitted as [PR #749](https://github.com/CrocSwap/integer-mult-bounds/pull/749).
+The 56-pair circuit reduces JP8 compensation from 8,800 to 4,596 additions and
+saves 48,400 real scalar primitives in each orientation, fully pricing both
+basis changes. No new kappa is claimed. The exact recipe, proof, source pins,
+complete local replay and meaningful rejection controls are included.
+
+All 716 input columns in both orientations, ten new controls, 25 unchanged
+native controls, six focused tests, exact search reproduction, relocation,
+recompression, optimized-mode checks and corruption rejection pass.
+`make selected-record-check` passes. The final full-queue refresh covered 562
+open PRs through #743, followed by an immediate refresh through #748. New
+coefficient-lowering, cleanup-sharing and adjoint-verification work is distinct;
+no combined savings or pending-source dependency is asserted.
+
+Implementation and research finished by 05:00 UTC. The remaining session was
+used for verification, overlap review and handoff, exceeding the requested
+final-quarter reserve. The contribution was submitted at 05:06 UTC, ahead of
+the 05:25 UTC window. The selected frontier and `upstream/` remain unchanged.

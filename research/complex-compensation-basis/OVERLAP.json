@@ -75,6 +75,12 @@
       "head": "afeb452f58ff0cbf109172335e2ba282aac3dcde",
       "title": "Research: optimal disjoint R420 target pairs save 3,250 XORs (no new kappa)",
       "read": "final title/head refresh; later optimal matching is not imported"
+    },
+    {
+      "pr": 745,
+      "head": "fc6ebccca3bd61a6eaf6ec3fcbf2e99d2888c35c",
+      "title": "Independent verification: JP8 adjoint replay and dirty-centre clear witness",
+      "read": "body inspected before submission; intact construction passes, coverage witness concerns omitted private clear; this replacement retains all center events verbatim"
     }
   ],
   "scope_difference": "The new package changes the rational JP8 compensation macro circuit through a restored target basis. #713/#716 concern binary R420; #722/#739 share coefficient work in JP8 cleanup; #696/#723/#734 change coefficient lowering; #681 changes raw factory gates. No combined savings or pending implementation dependency is claimed.",
