@@ -237,7 +237,7 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#275](https://github.com/CrocSwap/integer-mult-bounds/pull/275) | lydakis | unreviewed | No exact-head review established; inspect contribution and dependencies. |
 | [#277](https://github.com/CrocSwap/integer-mult-bounds/pull/277) | hcg890 | unreviewed | No exact-head review established; inspect contribution and dependencies. |
 | [#278](https://github.com/CrocSwap/integer-mult-bounds/pull/278) | hcg890 | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#279](https://github.com/CrocSwap/integer-mult-bounds/pull/279) | rohanarun | changed since review | [record 1](../../docs/research/community-pr279-integration.json) · [record 2](../../research/pr-reconciliation-20261012/content-comparison.json) |
+| [#279](https://github.com/CrocSwap/integer-mult-bounds/pull/279) | rohanarun | changed since review | [record 1](../../docs/research/community-pr279-integration.json) · [record 2](../../research/pr-reconciliation-20261012/content-comparison.json) · [later-head source and contributor replay](../../research/pr279-target-prefix-reconciliation/README.md); maintainer disposition pending |
 | [#280](https://github.com/CrocSwap/integer-mult-bounds/pull/280) | utcorvusvolat-dotcom | unreviewed | No exact-head review established; inspect contribution and dependencies. |
 | [#281](https://github.com/CrocSwap/integer-mult-bounds/pull/281) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
 | [#282](https://github.com/CrocSwap/integer-mult-bounds/pull/282) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |

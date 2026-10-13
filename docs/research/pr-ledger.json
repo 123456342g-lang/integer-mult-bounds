@@ -6719,10 +6719,11 @@
         "research/five-stage-gen4-banks"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Whole-current-PR incorporation is not established: 12 changed paths lack byte-identical coverage in main or its checked PR181 archive. Distinguish later equivalent edits, unique content and historical implementations before closure.",
+      "unresolved_question": "A contributor companion reconstructs the exact later target-prefix head from the historical package plus all 12 previously uncovered files and supplies scoped replay evidence. Maintainer acceptance and disposition of that later head remain pending; the earlier integrated checkpoint and its inherited theorem obligations are unchanged.",
       "closure": null,
       "reconciliation_evidence": [
-        "research/pr-reconciliation-20261012/content-comparison.json"
+        "research/pr-reconciliation-20261012/content-comparison.json",
+        "research/pr279-target-prefix-reconciliation/RESULTS.json"
       ],
       "current_head_observed_in": "research/pr-reconciliation-20261012/ending-snapshot.json"
     },
