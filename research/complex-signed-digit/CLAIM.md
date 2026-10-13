@@ -31,3 +31,13 @@ comment. Live PR metadata was checked immediately before creating this file.
 No selected certificate, source construction, global invoice, or `upstream/`
 file will be changed. New kappa, full theorem formalization, and runtime
 performance are outside the claim.
+
+## Completed result
+
+Submitted [PR #723](https://github.com/CrocSwap/integer-mult-bounds/pull/723).
+The exact finite recipe saves 3,276 real-component primitives per JP8
+orientation, with 250 changed additions each. Both 716-column scalar
+projections and nine negative controls pass. The recomputed forward envelope
+increases slightly, while the 64/101-bit local bounds remain unchanged.
+The selected-record check passes. No new kappa is claimed. See EXPECTED.json
+and VALIDATION.md for the exact evidence, final overlap check and limits.
