@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Exact R420 adjacent A-gate frame rigidity. Apache-2.0.
 
-Prepared for Sagar Thakrar with substantial OpenAI Codex assistance.
+Prepared for GitHub contributor thakrarsagar with substantial OpenAI Codex assistance.
 The predecessor word and its full audit are eumemic's PR543 contribution.
 """
 import copy

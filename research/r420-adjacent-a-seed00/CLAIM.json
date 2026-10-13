@@ -14,5 +14,9 @@
     "R420 decoder/COPY-cost change"
   ],
   "overlap": "PR661 fixes B gate order. PR589 single-operation transport on P111 differs in word and simultaneous search class. PR691 changes a quad circuit; PR694 changes helper basis. This task preserves each original A gate and its sources.",
-  "status": "claimed locally"
+  "status": "completed: scoped negative result",
+  "result": "All 1735 commuting adjacent A-gate pairs have both frames forced by exact lower-span/upper-intersection equality over Q. All 3470 gate-occurrences checked; no local paid-profile improvement in this single-exchange class. Independent full A replays agree; all 328 dependency swaps change the operator.",
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/711",
+  "completed_utc": "2026-10-13T04:38:46Z",
+  "final_overlap_check": "528 open PRs through #709 inspected before submission; later arrivals #708 and #709 change decoder circuits or tooling, not this fixed-gate search class. Main remained the exact base."
 }

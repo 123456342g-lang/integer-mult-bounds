@@ -181,7 +181,7 @@ remains in the predecessor's notices. `SOURCES.json` records exact input pins,
 the selected context and related PR heads; context hashes are historical and
 are not enforced as runtime dependencies.
 
-Contribution by Sagar Thakrar / `thakrarsagar`, with substantial OpenAI Codex
+Contribution by `thakrarsagar`, with substantial OpenAI Codex
 assistance for the experiment, proof, implementation, independent second
 implementation and review. New work is under the repository's Apache-2.0
 license; predecessor notices and source files are unchanged.
