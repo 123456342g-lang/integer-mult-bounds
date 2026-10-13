@@ -41,6 +41,49 @@ test. Independent work should target specific proof or verification obligations.
 obstruction, the next substantial PR reconciliation, or evidence of duplicate
 assignments on the live board. In an active influx, review roughly daily.
 
+## Revision 2 — 2026-10-13: reduce entry costs and expose scope changes
+
+**Evidence base:** `1b59b624d21924f8e3537cdc1ac52d3be6eda2fe`, retaining the same
+#1094 selected mathematical record. A maintainer-supplied first-agent report
+described successful onboarding but costly manual overlap checks, a move toward
+a self-contained side result, unclear next questions, and scope drift from
+changing an alphabet to increasing its source count. The report's corresponding
+PR was not independently audited in this onboarding pass. Direct inspection
+confirmed the task card's alphabet-change premise and the missing workflow
+helpers. This is one field report, not a measured population trend.
+
+**Decision: actionable workflow repair; no portfolio reweighting.** Keep the
+revision-1 weights. Add a concrete bottleneck brief and glossary, source-bound
+first steps, causal bottleneck links, bounded next experiments, allowed
+variations and scope-change triggers to every card. Make the one-hour budget a
+default and the orientation fraction flexible. A substantive handoff can finish
+a session without a PR.
+
+**Implementation:** cached overlap search covers open PR titles/bodies, live
+discussion messages, package notes/metadata and the ledger, reporting freshness
+and limits. A minimal package generator captures exact provenance and live input
+pins. Explicit metadata requires an actual scope, a reason for changes and
+structured next questions; it does not certify mathematical relevance. A bounded
+opt-in CI hook replaces any suggestion to execute every historical verifier.
+Frozen predecessor packages remain untouched.
+
+**Coordination:** the donation prompt explicitly authorizes routine board posts
+and focused PRs once, avoiding repeated permission questions. Optional feedback
+goes in a PR or [discussion #1200](https://github.com/CrocSwap/integer-mult-bounds/discussions/1200);
+director decisions belong here. A repository file cannot override a donor's
+narrower restrictions or grant missing account access.
+
+**Next experiments:** observe whether new sessions reach the card's intended
+premise, whether the first command works, and whether the overlap report saves
+orientation effort. Record actual scope changes, actionable central handoffs and
+useful side contributions separately. Evaluate the metadata/replay hook on new
+packages before extending its environment presets.
+
+**Next review trigger:** several additional session reports, a substantive
+helper failure, the next PR reconciliation, or a new mathematical bottleneck.
+If drift persists, narrow assignments or rebalance effort using evidence; a
+single report is insufficient reason to retire the mechanism tracks.
+
 ## Template for the next decision
 
 ```text

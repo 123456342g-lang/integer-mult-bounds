@@ -61,6 +61,16 @@ class ResearchAssignmentTests(unittest.TestCase):
                 assignment.select(CATALOG, seed)
         with self.assertRaises(ValueError):
             assignment.select(CATALOG, "0" * 32, "nonexistent")
+        with self.assertRaises(ValueError):
+            assignment.select(CATALOG, "0" * 32, "complex-mechanisms", "connector-alphabet-change")
+
+    def test_specific_card_exposes_first_step_and_scope_changes(self):
+        result = assignment.select(CATALOG, "0" * 32, task_id="connector-alphabet-change")
+        self.assertEqual(len(result["suggestions"]), 1)
+        card = result["suggestions"][0]
+        self.assertIn("source count", card["scope_change_triggers"][0])
+        self.assertIn("PASS_UNIVERSAL_CONNECTOR_BOUNDARY", card["first_step"]["expected"])
+        self.assertTrue(card["first_experiment"])
 
     def test_broken_catalog_rejected(self):
         for mutation in ("weight", "duplicate", "missing-source", "empty-methods", "revision", "missing-log"):

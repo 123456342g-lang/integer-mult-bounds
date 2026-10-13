@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "priority_revision": 1,
+  "priority_revision": 2,
   "priority_log": "docs/research/research-priority-log.md",
   "assessed_on": "2026-10-13",
   "status": "Research suggestions, not reservations or assertions that these questions are unclaimed. Check current main and live PRs.",
@@ -20,7 +20,30 @@
             "Derive a replacement interface lemma and price its implementation.",
             "Seek an exact dirty-input or chronological-cut counterexample to the proposed replacement."
           ],
-          "acceptance_gate": "A full boundary contract and paid profile; unchanged scalar counts alone are insufficient."
+          "acceptance_gate": "A full boundary contract and paid profile; unchanged scalar counts alone are insufficient.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "research/r439-bsection-stars-seed01/verify.py"
+            ],
+            "expected": "PASS_R439_BSECTION_STARS",
+            "inspect": "Compare the two false H2/K flags with the unchanged paid profile in its README.",
+            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Write one replacement H2/K implication for a single helper-star operation, then try to falsify it on dirty inputs.",
+          "bottleneck_link": "A legitimate replacement could admit a cheaper bit circuit; scalar savings alone do not alter the selected moment.",
+          "allowed_variations": [
+            "Choose one helper-star or quartet instance; narrow to one boundary implication."
+          ],
+          "scope_change_triggers": [
+            "Changing only source count or scalar addition count without an interface argument."
+          ],
+          "overlap_terms": [
+            "H2_D_frame0_targets_from_helpers",
+            "K_equals_D",
+            "helper-star"
+          ]
         },
         {
           "id": "bit-new-register-model",
@@ -33,7 +56,30 @@
             "Construct the smallest exact identity in a newly specified legal operation alphabet.",
             "Derive a target-specific relaxation bound for that same explicit alphabet."
           ],
-          "acceptance_gate": "Name the changed hypothesis, all counted roles and a uniform identity; finite column tests alone do not certify it."
+          "acceptance_gate": "Name the changed hypothesis, all counted roles and a uniform identity; finite column tests alone do not certify it.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "scripts/research_baseline.py"
+            ],
+            "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+            "inspect": "Read Model section 1 of the three-register bound and identify the exact excluded free operations.",
+            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Write a complete operation alphabet outside one named premise and price a baseline before searching identities.",
+          "bottleneck_link": "A small-width completed saving changes the bit primitive; a finite-address identity alone is insufficient.",
+          "allowed_variations": [
+            "Choose a fixed larger register count or a specified nonabelian operation family."
+          ],
+          "scope_change_triggers": [
+            "Remaining inside the already-excluded three-register abelian model."
+          ],
+          "overlap_terms": [
+            "three-register",
+            "nonabelian",
+            "group algebra"
+          ]
         }
       ]
     },
@@ -52,7 +98,30 @@
             "Synthesize a decoder with exact coefficients and fully priced helper endpoints.",
             "Bound the best possible budget for a fixed support alphabet before synthesis."
           ],
-          "acceptance_gate": "Change an assumption of the eight-term all-pairs bound and count all copied information, frames and restoration."
+          "acceptance_gate": "Change an assumption of the eight-term all-pairs bound and count all copied information, frames and restoration.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "research/complex-decoder-field-extension-seed44/verify.py"
+            ],
+            "expected": "PASS_COMPLEX_DECODER_FIELD_EXTENSION_S44",
+            "inspect": "Locate the excluded classes: masked identities, at least nine terms, and deeper punctures.",
+            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Choose one finite support alphabet and test exact decoding constraints before building a whole network.",
+          "bottleneck_link": "A cheaper fully realized decoder could increase deficit or lower recursive cost on the binding complex side.",
+          "allowed_variations": [
+            "Select a specific masked or overcomplete family with exact labels and supports."
+          ],
+          "scope_change_triggers": [
+            "Repeating the exact eight-term all-pairs search inside its proved scope."
+          ],
+          "overlap_terms": [
+            "masked decoder",
+            "overcomplete",
+            "eight-term"
+          ]
         },
         {
           "id": "complex-new-helper-inventory",
@@ -65,7 +134,30 @@
             "Propose a changed helper inventory and derive an optimistic exact moment.",
             "Design a small completed instance and independently verify its endpoint and rank bill."
           ],
-          "acceptance_gate": "A new physically realizable contract, not another mixture already covered by the frozen catalogue."
+          "acceptance_gate": "A new physically realizable contract, not another mixture already covered by the frozen catalogue.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "scripts/research_baseline.py"
+            ],
+            "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+            "inspect": "Read the frozen catalogue bound exclusions and select one genuinely different helper endpoint inventory.",
+            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Write the complete optimistic child histogram and reject it immediately if even the relaxation has insufficient headroom.",
+          "bottleneck_link": "Helper inventory changes can improve the moment; repacking a covered cost interface cannot evade its scoped bound.",
+          "allowed_variations": [
+            "Narrow to one changed boundary or helper type with explicit counts."
+          ],
+          "scope_change_triggers": [
+            "Mixing only providers already inside the pinned catalogue."
+          ],
+          "overlap_terms": [
+            "helper inventory",
+            "heterogeneous-owner",
+            "mutable leaver"
+          ]
         }
       ]
     },
@@ -84,7 +176,30 @@
             "Write typed entry/exit contracts and a contracting multitype recurrence.",
             "Derive a lower bound for the compulsory transitions of one proposed typed interface."
           ],
-          "acceptance_gate": "Show actual eliminated work and legal composition; changing a scalar recurrence into a matrix is insufficient."
+          "acceptance_gate": "Show actual eliminated work and legal composition; changing a scalar recurrence into a matrix is insufficient.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "scripts/research_baseline.py"
+            ],
+            "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+            "inspect": "Find a concrete consecutive-call boundary in the selected review and list its entry/exit obligations.",
+            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Specify two call types and one operation actually removed by composition; derive the normalized recurrence.",
+          "bottleneck_link": "Eliminating compulsory boundary work can lower recursive cost beyond packing gains.",
+          "allowed_variations": [
+            "A two-type pilot or one explicit deferred restoration."
+          ],
+          "scope_change_triggers": [
+            "Rewriting the old scalar recurrence as a matrix without eliminating work."
+          ],
+          "overlap_terms": [
+            "persistent boundary",
+            "deferred restoration",
+            "multitype"
+          ]
         },
         {
           "id": "connector-alphabet-change",
@@ -97,7 +212,30 @@
             "Construct and charge a legal extra operation on a minimal instance.",
             "Prove a target-specific bound after adding one specified operation family."
           ],
-          "acceptance_gate": "State which fixed-alphabet premise changes and charge its implementation; do not declare it free."
+          "acceptance_gate": "State which fixed-alphabet premise changes and charge its implementation; do not declare it free.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "research/universal-connector-boundary/verify.py"
+            ],
+            "expected": "PASS_UNIVERSAL_CONNECTOR_BOUNDARY",
+            "inspect": "Reproduce the 945-pairing control, then read Exact interface to list the allowed calls.",
+            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Add exactly one legally priced operation and test a tiny dirty-input instance before enumerating larger cases.",
+          "bottleneck_link": "A new legal connector operation could change recursive interface cost; a larger census in the same alphabet is a separate side result.",
+          "allowed_variations": [
+            "Choose one additional operation and a small source count for its first counterexample."
+          ],
+          "scope_change_triggers": [
+            "Keeping the alphabet and only increasing the source count; record this as a changed assignment."
+          ],
+          "overlap_terms": [
+            "universal connector",
+            "source-toggle",
+            "connector alphabet"
+          ]
         }
       ]
     },
@@ -116,7 +254,30 @@
             "Trace one hypothesis through the source, checker and complete caller.",
             "Construct one semantically invalid but superficially well-formed fixture and test rejection."
           ],
-          "acceptance_gate": "Pin the current sources and one obligation; the historical owner audit is an example, not evidence of a current bug."
+          "acceptance_gate": "Pin the current sources and one obligation; the historical owner audit is an example, not evidence of a current bug.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "research/owner-boundary-audit/verify.py"
+            ],
+            "expected": "PASS_PR626_NEXT_TOUCH_BOUNDARY_AUDIT",
+            "inspect": "Identify why the timing-only omission passes but the full production controller still rejects it.",
+            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Choose one current supplier obligation and trace whether its acceptance depends on an independent check.",
+          "bottleneck_link": "Closing a current acceptance gap or proof obligation strengthens reliability even without changing kappa.",
+          "allowed_variations": [
+            "Audit one named current condition using a new semantic counterexample."
+          ],
+          "scope_change_triggers": [
+            "Reporting the historical timing-only diagnostic as a new current acceptance bug."
+          ],
+          "overlap_terms": [
+            "owner boundary",
+            "bridge omission",
+            "hosting"
+          ]
         },
         {
           "id": "uniform-transfer-audit",
@@ -129,7 +290,30 @@
             "Prove one missing implication with explicit quantified hypotheses.",
             "Find an exact counterexample at the claimed interface boundary."
           ],
-          "acceptance_gate": "Identify the proposition and what would change downstream; do not equate a finite replay with a universal proof."
+          "acceptance_gate": "Identify the proposition and what would change downstream; do not equate a finite replay with a universal proof.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "scripts/research_baseline.py"
+            ],
+            "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+            "inspect": "Read the selected review scope and choose one exact all-size or precision implication.",
+            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Write its quantified inputs and conclusion; find a missing hypothesis or construct a minimal exact adversarial instance.",
+          "bottleneck_link": "Finite supplier improvements are useful only under the retained transfer obligations.",
+          "allowed_variations": [
+            "Choose one tape, precision, hosting or restoration lemma."
+          ],
+          "scope_change_triggers": [
+            "Replacing a quantified obligation with another finite smoke test."
+          ],
+          "overlap_terms": [
+            "uniform transfer",
+            "all-size",
+            "precision"
+          ]
         }
       ]
     },
@@ -147,7 +331,30 @@
             "Reconstruct the rank ledger from original operations rather than trusting its aggregate.",
             "Implement certified moment inequalities through a different exact enclosure method."
           ],
-          "acceptance_gate": "Demonstrate independence, source binding, positive cases and semantic failure controls."
+          "acceptance_gate": "Demonstrate independence, source binding, positive cases and semantic failure controls.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "scripts/research_baseline.py"
+            ],
+            "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+            "inspect": "Record the selected certificate and complex_profile rather than taking a PR headline as input.",
+            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Recompute one small part of the ledger or one certified enclosure using an independent implementation.",
+          "bottleneck_link": "Independent pricing prevents unsupported frontier claims and can reveal genuine accounting slack.",
+          "allowed_variations": [
+            "Reconstruct either a source ledger or a numeric enclosure with a different method."
+          ],
+          "scope_change_triggers": [
+            "Importing the primary function and calling its output independent verification."
+          ],
+          "overlap_terms": [
+            "independent moment",
+            "rank histogram",
+            "exact enclosure"
+          ]
         },
         {
           "id": "formal-interface-lemma",
@@ -160,7 +367,30 @@
             "Formalize a missing boundary lemma identified by the selected review.",
             "Audit a formal theorem-to-certificate binding independently."
           ],
-          "acceptance_gate": "State the exact formalized proposition and remaining assumptions; avoid duplicate arithmetic formalizations already present."
+          "acceptance_gate": "State the exact formalized proposition and remaining assumptions; avoid duplicate arithmetic formalizations already present.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "scripts/research_baseline.py"
+            ],
+            "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+            "inspect": "Read the exact hypotheses in the hyperplane-end proof and distinguish Lean theorems from finite supplier assumptions.",
+            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "State one missing boundary lemma in full before starting a proof-assistant build.",
+          "bottleneck_link": "A missing interface proof can reduce the conditional gap even if it does not change kappa.",
+          "allowed_variations": [
+            "Narrow to one formal lemma or one theorem-to-certificate binding."
+          ],
+          "scope_change_triggers": [
+            "Formalizing already-covered arithmetic and claiming the full multiplication theorem."
+          ],
+          "overlap_terms": [
+            "hyperplane end",
+            "formal interface",
+            "Lean binding"
+          ]
         }
       ]
     },
@@ -180,7 +410,30 @@
             "Profile one isolated replay and optimize the measured bottleneck.",
             "Design source-bound reuse with explicit dependency invalidation and negative controls."
           ],
-          "acceptance_gate": "Report before/after wall time on the same fixture, retained checks and invalidation behavior."
+          "acceptance_gate": "Report before/after wall time on the same fixture, retained checks and invalidation behavior.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "scripts/research_baseline.py"
+            ],
+            "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+            "inspect": "Read the selected reproduction command and choose a single replay stage for profiling.",
+            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Measure one unchanged fixture, preserve check coverage, and test one optimization with invalidation controls.",
+          "bottleneck_link": "Faster trustworthy replays increase review throughput and let mechanism candidates be checked sooner.",
+          "allowed_variations": [
+            "Profile one stage or design one source-bound cache boundary."
+          ],
+          "scope_change_triggers": [
+            "Skipping coverage or comparing different fixtures to claim speedup."
+          ],
+          "overlap_terms": [
+            "replay runtime",
+            "cache invalidation",
+            "isolated tests"
+          ]
         },
         {
           "id": "portable-replay",
@@ -193,7 +446,30 @@
             "Reproduce one portability failure and add a minimal cross-environment fix.",
             "Audit one canonical-payload comparison for omitted proof-relevant fields."
           ],
-          "acceptance_gate": "Preserve immutable source hashes and proof-relevant content; a different compressed byte stream alone is not a mathematical mismatch."
+          "acceptance_gate": "Preserve immutable source hashes and proof-relevant content; a different compressed byte stream alone is not a mathematical mismatch.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "scripts/research_baseline.py"
+            ],
+            "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+            "inspect": "Read the gzip-container reproducibility examples and distinguish frozen source bytes from regenerated payloads.",
+            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Reproduce one specific mismatch or audit one canonical comparison for omitted proof-relevant fields.",
+          "bottleneck_link": "Portable exact checks prevent environment failures from blocking valid contributions.",
+          "allowed_variations": [
+            "One interpreter/version mismatch or one payload field comparison."
+          ],
+          "scope_change_triggers": [
+            "Removing immutable-source pins because generated compressed bytes differ."
+          ],
+          "overlap_terms": [
+            "gzip container",
+            "reproducibility",
+            "canonical payload"
+          ]
         }
       ]
     },
@@ -212,7 +488,30 @@
             "Compare exact heads and retained artifacts to write a source-bound disposition receipt.",
             "Audit an existing receipt for missing content or predecessor attribution."
           ],
-          "acceptance_gate": "Separate complete integration, partial retention and changed heads; make no autonomous closures."
+          "acceptance_gate": "Separate complete integration, partial retention and changed heads; make no autonomous closures.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "scripts/research_baseline.py"
+            ],
+            "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+            "inspect": "Read one small PR set in the ledger and identify exact reviewed heads and unresolved content.",
+            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Compare that set to retained artifacts; produce a complete or explicitly partial disposition receipt.",
+          "bottleneck_link": "Reliable overlap evidence preserves credit and prevents repeated review of already-retained material.",
+          "allowed_variations": [
+            "One small related PR family or one existing integration receipt."
+          ],
+          "scope_change_triggers": [
+            "Treating matching titles or one shared blob as proof of full incorporation."
+          ],
+          "overlap_terms": [
+            "overlap receipt",
+            "partial integration",
+            "attribution"
+          ]
         },
         {
           "id": "scope-navigation",
@@ -226,7 +525,30 @@
             "Trace one confusing path from onboarding to its authoritative source.",
             "Index one tightly related family of obstructions with explicit excluded and open hypotheses."
           ],
-          "acceptance_gate": "Produce evidence-backed navigation, preserve historical records and avoid a duplicate global survey."
+          "acceptance_gate": "Produce evidence-backed navigation, preserve historical records and avoid a duplicate global survey.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "scripts/research_baseline.py"
+            ],
+            "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+            "inspect": "Follow one link from the selected record to its review and compare a potentially stale historical claim.",
+            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Repair one confusing path or produce a scoped map of one related obstruction family.",
+          "bottleneck_link": "Clear navigation lowers entry cost for central research; a global survey without a concrete fix is not required.",
+          "allowed_variations": [
+            "One historical-current ambiguity or one bounded family index."
+          ],
+          "scope_change_triggers": [
+            "Rewriting frozen scientific packages just to change their historical wording."
+          ],
+          "overlap_terms": [
+            "current status",
+            "historical checkpoint",
+            "scope navigation"
+          ]
         }
       ]
     },
@@ -245,7 +567,30 @@
             "Search a named unclaimed canonical candidate domain with a reproducible partition.",
             "Prove a stronger scoped relaxation or exact optimum for one named residual subproblem."
           ],
-          "acceptance_gate": "Check live PR overlap first, price both suppliers and distinguish a search best from an optimum."
+          "acceptance_gate": "Check live PR overlap first, price both suppliers and distinguish a search best from an optimum.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "scripts/research_baseline.py"
+            ],
+            "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+            "inspect": "Locate the selected packing source in the review and check live PRs for the same residual problem.",
+            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Define an unclaimed canonical domain and a favorable bound before starting a new search.",
+          "bottleneck_link": "An actual paid-profile gain can improve the frontier up to the other supplier cap.",
+          "allowed_variations": [
+            "One bounded residual packing instance or exact relaxation."
+          ],
+          "scope_change_triggers": [
+            "Rerunning an existing search with only a different seed as a separate mathematical contribution."
+          ],
+          "overlap_terms": [
+            "T16",
+            "owner exchange",
+            "packing"
+          ]
         },
         {
           "id": "scalar-to-moment",
@@ -258,7 +603,30 @@
             "Derive the changed legal frame itinerary and exact child histogram.",
             "Prove a scoped obstruction showing why that scalar gain cannot change the paid contract."
           ],
-          "acceptance_gate": "An unchanged histogram is not a kappa gain; record any separate runtime or proof benefit explicitly."
+          "acceptance_gate": "An unchanged histogram is not a kappa gain; record any separate runtime or proof benefit explicitly.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "research/r439-bsection-stars-seed01/verify.py"
+            ],
+            "expected": "PASS_R439_BSECTION_STARS",
+            "inspect": "Observe that the positive control improves scalar counts while retaining the paid histogram.",
+            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Choose one simplification and derive the complete changed frame itinerary, or prove why it cannot change the histogram.",
+          "bottleneck_link": "A legal change to the histogram, not addition count alone, is the bridge to an exponent gain.",
+          "allowed_variations": [
+            "One existing scalar simplification and one proposed frame-path change."
+          ],
+          "scope_change_triggers": [
+            "Submitting only another scalar count as completion of a paid-profile task."
+          ],
+          "overlap_terms": [
+            "scalar simplification",
+            "paid profile",
+            "R439"
+          ]
         }
       ]
     }

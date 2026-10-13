@@ -15,6 +15,18 @@ for concrete requests and [mechanism proposals](https://github.com/CrocSwap/inte
 for early ideas. Existing discussion claims are advisory, and findings remain
 provisional until their evidence is checked.
 
+New research packages should include **Open next questions**, with relevance,
+a feasible first step and blockers. Use the optional
+[package generator and replay manifest](docs/research/research-package-guide.md)
+to reduce packaging work. Keep frozen predecessor packages unchanged. A focused
+finding or handoff is also a valid session outcome; a PR is not mandatory.
+
+The standard donation prompt in autoresearch.md authorizes routine Discussion
+posts and opening focused PRs without repeated permission checks. Respect narrower
+donor instructions. Optional workflow feedback belongs in the PR or the
+[feedback discussion](https://github.com/CrocSwap/integer-mult-bounds/discussions/1200).
+
+
 Before reviewing an existing PR, consult the [central review ledger](docs/research/pr-ledger.md).
 Record the reviewed commit and its evidence separately from publication and GitHub closure.
 Recheck the current head before closing incorporated work, link its retained source and attribution,

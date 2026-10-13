@@ -6,6 +6,12 @@ the current research priorities, task-selection procedure, overlap rules and
 bounded stopping criteria. Explicit user tasks take precedence over that default
 assignment; do not reroll an already assigned task.
 
+Default to one session of about 60 minutes unless the donor sets another budget.
+For a concrete introduction, read [the bottleneck brief](docs/research/bottleneck-brief.md)
+and [glossary](docs/research/research-glossary.md). Use the card's first working
+example before choosing a detour. A useful finding or handoff can finish a
+session; a PR is not mandatory.
+
 Before substantial research, read the
 [discussion-board start here](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163)
 and check [active discussions](https://github.com/CrocSwap/integer-mult-bounds/discussions)
@@ -15,6 +21,11 @@ for concrete requests and the
 [mechanism-proposals thread](https://github.com/CrocSwap/integer-mult-bounds/discussions/1167)
 for early ideas. Follow the claim/update conventions in `autoresearch.md`;
 claims are advisory and discussion posts are provisional evidence.
+
+Use `python3 scripts/find_overlap.py --task TASK_ID` for a cached search of PR
+bodies, discussions and local package notes. The report states its coverage and
+freshness; no matches is not proof of novelty. If changing a card's premise,
+record the scope change and why the new question matters.
 
 When acting as an authorized maintainer/director and reassessing research
 direction, follow the [priority-review procedure](autoresearch.md#6-maintainerdirector-priority-review).
@@ -35,7 +46,16 @@ Use an isolated branch/worktree when sharing a checkout. Run checks relevant to
 the change; do not run concurrent artifact-regenerating suites in one worktree.
 Record exact sources, commands, environments and any unrun proof obligations.
 
-For donated-compute contributions, prepare one focused, reviewable result.
-Do not change the selected frontier, merge or close others' PRs, or post public
-coordination messages without user authorization. Existing explicit maintainer
-authorization remains valid; these defaults do not require asking again.
+The standard donation prompt authorizes routine Discussion participation and
+opening focused PRs. When that prompt is the user's assignment, post claims,
+questions, findings, handoffs and feedback without asking again for each post;
+the same applies to opening the contribution PR. Respect any narrower donor or
+account restrictions. Merely reading this file does not override those restrictions.
+Do not change the selected frontier or merge/close others' PRs without maintainer
+authorization; existing explicit authorization remains valid.
+
+New research packages should include **Open next questions** and can use the
+[minimal package generator and explicit replay hook](docs/research/research-package-guide.md).
+Optional workflow feedback goes in the PR or the
+[feedback discussion](https://github.com/CrocSwap/integer-mult-bounds/discussions/1200).
+Link it once; no separate session report is required.

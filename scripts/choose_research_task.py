@@ -55,6 +55,15 @@ def validate_catalog(catalog, root):
                 raise ValueError("incomplete task card")
             if not task["starting_points"]:
                 raise ValueError("task needs a starting point")
+            for key in ("first_step", "first_experiment", "bottleneck_link", "allowed_variations", "scope_change_triggers", "overlap_terms"):
+                if not task.get(key):
+                    raise ValueError("missing actionable task field: " + key)
+            step = task["first_step"]
+            if not step.get("expected") or not step.get("inspect") or not step.get("command"):
+                raise ValueError("incomplete first step")
+            script = step["command"][-1]
+            if not (root / script).is_file():
+                raise ValueError("missing first-step script: " + script)
             for name in task["starting_points"]:
                 path = root / name
                 if not path.resolve().is_relative_to(root.resolve()) or not path.is_file():
@@ -68,7 +77,7 @@ def scope_key(task_id, method):
     return digest(canonical({"task": task_id, "method": method}))[:20]
 
 
-def select(catalog, seed, track_id=None):
+def select(catalog, seed, track_id=None, task_id=None):
     if not re.fullmatch(r"[0-9a-fA-F]{32}", seed):
         raise ValueError("seed must be exactly 32 hexadecimal digits")
     seed = seed.lower()
@@ -77,6 +86,11 @@ def select(catalog, seed, track_id=None):
         return int(digest(canonical([seed, label])), 16)
 
     tracks = catalog["tracks"]
+    if task_id:
+        owners = [t for t in tracks if any(card["id"] == task_id for card in t["tasks"])]
+        if len(owners) != 1 or (track_id and owners[0]["id"] != track_id):
+            raise ValueError("unknown task or task/track mismatch")
+        track_id = owners[0]["id"]
     if track_id is not None:
         matches = [t for t in tracks if t["id"] == track_id]
         if not matches:
@@ -89,7 +103,8 @@ def select(catalog, seed, track_id=None):
             if ticket < 0:
                 break
 
-    ordered = sorted(track["tasks"], key=lambda t: draw("task:" + t["id"]))
+    ordered = sorted([t for t in track["tasks"] if not task_id or t["id"] == task_id],
+                     key=lambda t: draw("task:" + t["id"]))
     suggestions = []
     for task in ordered[:3]:
         method = task["methods"][draw("method:" + task["id"]) % len(task["methods"])]
@@ -98,6 +113,8 @@ def select(catalog, seed, track_id=None):
             "question": task["question"], "method": method,
             "starting_points": task["starting_points"],
             "acceptance_gate": task["acceptance_gate"],
+            **{key: task[key] for key in ("first_step", "first_experiment", "bottleneck_link", "allowed_variations", "scope_change_triggers", "overlap_terms")},
+            "scope_rule": "If you change the card's premise, record scope_status=changed and explain why. A package metadata check cannot establish mathematical relevance.",
         })
     return {"seed": seed, "track": track["id"], "suggestions": suggestions}
 
@@ -106,12 +123,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--seed", help="32 hex digits; default: fresh OS-random 128-bit nonce")
     parser.add_argument("--track", help="override weighted track selection; see catalogue")
+    parser.add_argument("--task", help="show one specific card, without rerolling an existing assignment")
     args = parser.parse_args()
     try:
         catalog_bytes = (ROOT / CATALOG).read_bytes()
         catalog = json.loads(catalog_bytes)
         validate_catalog(catalog, ROOT)
-        result = select(catalog, args.seed if args.seed is not None else secrets.token_hex(16), args.track)
+        result = select(catalog, args.seed if args.seed is not None else secrets.token_hex(16), args.track, args.task)
         selected_bytes = (ROOT / "certificates/selected-result.json").read_bytes()
         selected = json.loads(selected_bytes)
         try:

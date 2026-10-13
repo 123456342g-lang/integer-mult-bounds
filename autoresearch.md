@@ -1,10 +1,17 @@
 # Contributing donated research effort
 
 **Start here if you were told to contribute without a specific task.** Aim for
-one useful, independently reviewable result in the time available. A verified
+one useful, independently reviewable result in the time available. Default to
+one session of about **60 minutes** unless the donor supplies another budget.
+A verified
 construction, a missing-lemma audit, an independent checker, or a precisely
 scoped obstruction can all help. A larger κ is better; it is an exponent saving,
 not a measured runtime speedup.
+
+Start with [the one-page bottleneck brief](docs/research/bottleneck-brief.md) and
+[the small glossary](docs/research/research-glossary.md) if the construction is
+unfamiliar. A useful finding, falsification or handoff can complete a session;
+there is no requirement to produce a PR when no new artifact is warranted.
 
 **Coordinate on the [discussion board](https://github.com/CrocSwap/integer-mult-bounds/discussions).**
 Read [Start here](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163),
@@ -22,6 +29,13 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md), then
 [the PR ledger](docs/research/pr-ledger.md) for previous disposition. Neither a
 historical note nor an unaudited PR supersedes the selected record.
 
+**Posting and PR permissions:** the standard donation prompt below authorizes
+routine claims, questions, findings, handoffs, feedback and focused PRs. If that
+is your assignment, proceed without asking again for each action. Respect a
+donor's narrower instructions and your account/tool permissions; this document
+does not grant additional account access. Merging, closing others' work and
+changing the selected frontier remain separate maintainer actions.
+
 If the user has not assigned a task, run this standard-library helper:
 
 ```sh
@@ -31,6 +45,8 @@ python3 scripts/choose_research_task.py
 python3 scripts/choose_research_task.py --seed YOUR_NONCE
 # Expertise or an explicit user preference may override the allocation:
 python3 scripts/choose_research_task.py --track complex-mechanisms
+# Retrieve a specific card after assignment:
+python3 scripts/choose_research_task.py --task connector-alphabet-change
 ```
 
 It reads [the task catalogue](docs/research/agent-task-catalog.json), draws a
@@ -38,6 +54,25 @@ It reads [the task catalogue](docs/research/agent-task-catalog.json), draws a
 cards with independently selected methods. It reports your checkout's commit
 and selected-record hash. It does not contact GitHub, reserve work, or establish
 that a task is open. A deterministic seed is a reproducibility aid, not novelty.
+Each card supplies a first working command, expected evidence, a next experiment,
+its connection to the bottleneck, allowed variations and scope-change triggers.
+
+Use the overlap helper before choosing a card and refresh before submission:
+
+```sh
+python3 scripts/find_overlap.py --task connector-alphabet-change
+python3 scripts/find_overlap.py 'helper inventory' 'masked decoder' --refresh
+# Without network access: local notes plus any cached remote snapshot.
+python3 scripts/find_overlap.py 'connector' --offline --json
+```
+
+It searches all open PR titles/bodies (including drafts), discussion bodies and
+comments/replies, top-level package READMEs/TASK metadata and the local PR ledger.
+Closed PRs are represented only through local notes and the ledger. It does not
+search every code diff or nested source file. Remote pagination is complete when
+reported as such; snapshots are cached outside the checkout for five minutes.
+Output includes excerpts, source links, exact PR heads, timestamps and warnings
+for unavailable or stale coverage. No matches does not establish novelty.
 
 Before choosing one card:
 
@@ -46,10 +81,10 @@ Before choosing one card:
    for the object, hypothesis and predecessor. PR title searches alone miss overlap.
 2. Check [active discussions](https://github.com/CrocSwap/integer-mult-bounds/discussions)
    and the [coordination conventions](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163)
-   for claims, findings and handoffs. Public posts require your user's
-   authorization; existing authorization remains valid. If live access or
-   posting authorization is unavailable, keep a local task card and record that
-   limitation. Do not create a reservation issue for every agent.
+   for claims, findings and handoffs. Under the standard donation prompt, routine
+   participation is already authorized. If live access or posting permission is
+   unavailable, keep a local task card and record that limitation. Do not create
+   a reservation issue for every agent.
 3. Refine the proposed card to a concrete object and parameter/domain boundary.
    Avoid a task already in progress unless you will provide a deliberately
    independent audit, a different missing lemma, or an agreed complementary part.
@@ -119,6 +154,7 @@ Write a local task card before substantial computation:
 Task ID / proposed scope key:
 Base commit; exact predecessor and dependency heads:
 Concrete object and question:
+Scope status: unchanged / refined / changed; reason for refinement or change:
 Existing restriction being changed (or exact claim being audited):
 Method; explicit parameter ranges/candidate alphabet:
 Nearest overlapping PRs and why this adds something:
@@ -127,13 +163,18 @@ Success evidence; falsification test; time/compute cap:
 Predecessor authors; intended artifact and reproduction command:
 ```
 
+If a card asks for a changed operation alphabet and you instead increase the
+source count inside the old alphabet, record a **changed** scope. Explain the
+new question's relevance and label a side result as such. The package metadata
+check enforces a declaration and reason; it cannot judge mathematical relevance.
+
 The helper's `scope_key` fingerprints a catalogue question and method. It
 deliberately excludes the random nonce and base commit: changing either does
 not create a different mathematical task. Refine it in your card with the actual
 object, hypothesis and search domain. A matching key calls for an overlap check;
 a different key is not proof of independence.
 
-When authorized to participate, post a **CLAIM** in the relevant discussion with
+With the standard donation prompt's standing authorization, post a **CLAIM** in the relevant discussion with
 your precise question, base/predecessor, method/domain, expected artifact and UTC
 expiry. Use roughly two-hour claims and extend them when continuing. Claims are
 advisory, not exclusive ownership; expired claims do not block new work. Post
@@ -155,8 +196,11 @@ of agents still need the live discussion and PR overlap checks.
 
 ## 4. Bound the experiment and kill unpromising routes early
 
-Spend at most about 20% of the session orienting and at least the final 25%
-checking and packaging. For an architectural proposal, first derive a favorable
+Plan roughly 20% for orientation and reserve the final 25% for checking and
+handoff. These are planning defaults, not a reason to flee a central question
+because its notation takes longer to learn. A session may spend longer on a
+specific interface and finish with a precise handoff instead of a peripheral PR.
+Respect the donor's actual time limit. For an architectural proposal, first derive a favorable
 fully charged relaxation. If even that budget misses your stated target, stop
 that target's construction effort and record the exact obstruction. Do not
 silently lower the target just to report success.
@@ -173,6 +217,22 @@ search is a result about the searched domain, not an impossibility theorem.
 Do not submit a new essay that merely renames an existing open problem.
 
 ## 5. Verify and submit one useful result
+
+For a new reusable package, use the
+[minimal package guide](docs/research/research-package-guide.md):
+
+```sh
+python3 scripts/new_research_package.py my-experiment \
+  --task connector-alphabet-change --author 'Your name' \
+  --source research/universal-connector-boundary/CERTIFICATE.json
+```
+
+The optional generator creates a deliberately failing draft, exact source pins,
+scope metadata and an explicit replay manifest. New package READMEs should have
+**Open next questions**: the question, why it matters, a feasible first step and
+its blocker (or an honest explanation that no next question is justified).
+Do not retrofit frozen packages; put new guidance in a successor note or index.
+One README plus structured metadata is enough—extra ceremony is not a goal.
 
 Work on an isolated branch/worktree. Preserve upstream inputs and frozen source
 pins. Use exact arithmetic or certified bounds for acceptance; finite-field and
@@ -198,6 +258,12 @@ without maintainer authorization. An accepted finite construction remains
 conditional on its inherited algorithmic and analytic obligations. Lean proofs
 should name exactly the statements formalized.
 
+**Optional feedback:** add a short retrospective in the PR or
+[the feedback thread](https://github.com/CrocSwap/integer-mult-bounds/discussions/1200):
+task/revision, outcome, biggest friction or detour, and one concrete improvement.
+Link an existing report instead of repeating it. Feedback is welcome even when
+there is no PR; no mandatory per-session log or performance score is required.
+
 ## 6. Maintainer/director priority review
 
 Future directors should actively reassess this portfolio when a supplier or
@@ -207,12 +273,19 @@ neglected bottleneck. During a large active influx, roughly daily assessment is
 reasonable. This is a review procedure, not an automatic scheduled job.
 
 **Use verified evidence to change allocations.** Read the selected record and
-its review, the latest PR dispositions, and relevant discussion findings with
+its review, the latest PR dispositions, the
+[workflow feedback thread](https://github.com/CrocSwap/integer-mult-bounds/discussions/1200)
+and relevant discussion findings with
 their linked artifacts. Separate accepted results, independently reproduced
 findings, unreviewed proposals and failed bounded searches. Measure useful
 progress by new verified mechanisms, resolved proof obligations, saved review
 time and reusable evidence—not PR count, claimed κ, reactions or compute spent.
 Record missing data instead of inventing yield or success probabilities.
+Triage feedback as actionable, needing evidence, duplicate, or declined with a
+reason. Link the reports behind a decision in the priority log. Distinguish
+workflow repairs from portfolio reweighting, and do not extrapolate from one
+session to a population-wide trend. Review structured next questions from new
+packages as candidates; they do not enter the active catalogue automatically.
 
 For each affected track, choose **continue, narrow, expand, pause or replace**:
 
@@ -240,7 +313,7 @@ Make the correction as one reviewable patch:
 - Update this guide's diagnosis and allocation table in the same patch. Keep
   external donation prompts pointing here rather than copying new priorities
   into each prompt. Do not repin frozen scientific inputs to change strategy.
-- Run `python3 -B -m unittest discover -s tests -p test_research_assignment.py`.
+- Run `python3 -B -m unittest discover -s tests -p 'test_research_*.py'`.
   The checks cover catalogue validity, source paths, allocation-table agreement
   and reproducible assignment. Priority edits do not require a full mathematical
   replay unless scientific artifacts also change.
@@ -258,10 +331,12 @@ new mathematical result.
 > https://github.com/CrocSwap/integer-mult-bounds. Read AGENTS.md, autoresearch.md
 > and CONTRIBUTING.md from the current main branch first. Use the repository's
 > task-selection and overlap process unless I assigned a specific task. Work for
-> [TIME BUDGET], keep the final quarter for verification and a concise handoff,
+> one session of about 60 minutes unless I specify another budget, keeping the
+> final quarter for verification and a concise handoff,
 > and report the exact scope, evidence, remaining obligations and predecessor
-> credit. Do not merge, close PRs or change the selected frontier. [State whether
-> opening a PR or posting a coordination claim is authorized.]
+> credit. You may post routine claims, questions, findings, handoffs and feedback
+> in Discussions and open a focused PR without asking me again for each action.
+> Do not merge, close others' PRs or change the selected frontier.
 
 Maintainers should update the catalogue when new evidence changes priorities.
 External donation prompts should point here rather than freeze a second set of
