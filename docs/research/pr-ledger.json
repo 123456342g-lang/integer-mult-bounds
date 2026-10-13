@@ -3,19 +3,20 @@
   "snapshot": "research/pr-reconciliation-20261012/starting-snapshot.json",
   "starting_main": "f19cb621be2caf3a7291a37c343c1c55afe935e0",
   "starting_open_count": 446,
-  "inventory_count": 528,
-  "family_round": "research/community-k492-audit/DISPOSITIONS.json",
+  "inventory_count": 535,
+  "family_round": "research/community-frontier741-audit/DISPOSITIONS.json",
   "family_rounds": [
     "research/community-family533-audit/DISPOSITIONS.json",
     "research/community-family588-audit/DISPOSITIONS.json",
     "research/community-hyperplane599-audit/DISPOSITIONS.json",
     "research/community-cold617-audit/DISPOSITIONS.json",
-    "research/community-k492-audit/DISPOSITIONS.json"
+    "research/community-k492-audit/DISPOSITIONS.json",
+    "research/community-frontier741-audit/DISPOSITIONS.json"
   ],
   "counts": {
     "changed_since_review": 6,
     "incorporated": 91,
-    "partially_reviewed": 149,
+    "partially_reviewed": 156,
     "unreviewed": 282
   },
   "source_sha256": {
@@ -39,7 +40,8 @@
     "research/community-family588-audit/DISPOSITIONS.json": "70f66f8c223b0929904ff88e27713b5bdbdb0d6b92f4d55cf518565135d678b5",
     "research/community-hyperplane599-audit/DISPOSITIONS.json": "00763b888859d15618eda871a42a9c0e6912ea33b932a29c02bc6e2df984efc1",
     "research/community-cold617-audit/DISPOSITIONS.json": "d74bcfc9ae5219ecfe57e74466ae327c7e0d2524c87f52c143e74c6187db0984",
-    "research/community-k492-audit/DISPOSITIONS.json": "3f80fcee52c2d0abf1f428e9bf2ab9fab54985032535ae81495da759ee78d903"
+    "research/community-k492-audit/DISPOSITIONS.json": "3f80fcee52c2d0abf1f428e9bf2ab9fab54985032535ae81495da759ee78d903",
+    "research/community-frontier741-audit/DISPOSITIONS.json": "6dcfb366ad4adc367e4db8e45e11b865ef2f046df37472ed387e973259f17f62"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
   "pull_requests": [
@@ -6708,6 +6710,7 @@
         }
       ],
       "historical_mentions": [
+        "docs/research/community-frontier741-review.md",
         "docs/research/community-pr279-announcement.md",
         "docs/research/community-pr279-review.md"
       ],
@@ -17247,6 +17250,338 @@
       "reconciliation_evidence": [
         "research/community-k492-audit/DISPOSITIONS.json"
       ]
+    },
+    {
+      "number": 675,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/675",
+      "title": "Research audit: PR626 owner boundaries and bridge-omission blind spot",
+      "contributor": {
+        "id": "U_kgDOCRtulg",
+        "is_bot": false,
+        "login": "tekuuu",
+        "name": "Tekalign"
+      },
+      "draft": false,
+      "starting_head": "f011d03633f0570257b653e7aa1e869b1b06d06a",
+      "current_head": "f011d03633f0570257b653e7aa1e869b1b06d06a",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "f011d03633f0570257b653e7aa1e869b1b06d06a",
+          "evidence": "research/community-frontier741-audit/DISPOSITIONS.json",
+          "scope": "Independent owner timing boundary and scalar-controller distinction.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/owner-boundary-audit"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "f011d03633f0570257b653e7aa1e869b1b06d06a",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publish tested integration; then record remote resolution.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier741-review.md",
+        "research/community-queue-20261013/README.md"
+      ],
+      "current_head_observed_in": "research/community-frontier741-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier741-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 681,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/681",
+      "title": "Consolidate six circuit PRs: 31.72% fewer bit ADDs and 22–25% fewer complex primitives",
+      "contributor": {
+        "id": "U_kgDOCjbVBw",
+        "is_bot": false,
+        "login": "alluri-ritual",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "e536f6fc8aad65adef8ac4682d13625598a5c3f9",
+      "current_head": "e536f6fc8aad65adef8ac4682d13625598a5c3f9",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "e536f6fc8aad65adef8ac4682d13625598a5c3f9",
+          "evidence": "research/community-frontier741-audit/DISPOSITIONS.json",
+          "scope": "Historical R420 and complex circuit consolidation, full native/hosted replay and source-preserving adapter; no new exponent.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/supplier-circuit-consolidation",
+        "docs/research/community-circuits681-review.md"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "e536f6fc8aad65adef8ac4682d13625598a5c3f9",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publish tested integration; then record remote resolution.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier741-review.md",
+        "docs/research/community-circuits681-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier741-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier741-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 695,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/695",
+      "title": "Research consolidation: reconcile selected #626 Linux replay evidence",
+      "contributor": {
+        "id": "MDQ6VXNlcjExNDY1Mzg=",
+        "is_bot": false,
+        "login": "jsnider3",
+        "name": "Joshua Snider"
+      },
+      "draft": false,
+      "starting_head": "e322f2f1d9cc0f830cb3a50c6e928e0a1a32383c",
+      "current_head": "e322f2f1d9cc0f830cb3a50c6e928e0a1a32383c",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "e322f2f1d9cc0f830cb3a50c6e928e0a1a32383c",
+          "evidence": "research/community-frontier741-audit/DISPOSITIONS.json",
+          "scope": "Historical exact-head Linux evidence reconciliation; unavailable payloads remain explicit.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/selected626-linux-reconciliation"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "e322f2f1d9cc0f830cb3a50c6e928e0a1a32383c",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publish tested integration; then record remote resolution.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier741-review.md",
+        "research/community-queue-20261013/README.md"
+      ],
+      "current_head_observed_in": "research/community-frontier741-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier741-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 704,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/704",
+      "title": "Tooling: bind review-ledger metadata to pinned family decisions",
+      "contributor": {
+        "id": "MDQ6VXNlcjE3NzAwMjE3",
+        "is_bot": false,
+        "login": "roife",
+        "name": "roife"
+      },
+      "draft": false,
+      "starting_head": "152583fe2062f23b1149b4b20255f8e85946d558",
+      "current_head": "152583fe2062f23b1149b4b20255f8e85946d558",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "152583fe2062f23b1149b4b20255f8e85946d558",
+          "evidence": "research/community-frontier741-audit/DISPOSITIONS.json",
+          "scope": "Review-ledger provenance validation and mutation rejection.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "scripts/verify_pr_reconciliation.py",
+        "research/ledger-decision-binding"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "152583fe2062f23b1149b4b20255f8e85946d558",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publish tested integration; then record remote resolution.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier741-review.md",
+        "research/community-queue-20261013/README.md"
+      ],
+      "current_head_observed_in": "research/community-frontier741-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier741-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 740,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/740",
+      "title": "Research consolidation: bind archived inventory evidence and reject optimized false PASS",
+      "contributor": {
+        "id": "MDQ6VXNlcjEwMzY5NDM2",
+        "is_bot": false,
+        "login": "azide0x37",
+        "name": "Alexander West Templeton"
+      },
+      "draft": false,
+      "starting_head": "7dea7d399a773543ecfc5f77d76f57d33bcec844",
+      "current_head": "7dea7d399a773543ecfc5f77d76f57d33bcec844",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "7dea7d399a773543ecfc5f77d76f57d33bcec844",
+          "evidence": "research/community-frontier741-audit/DISPOSITIONS.json",
+          "scope": "Historical finite-menu source binding and optimized-Python rejection.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/async-inventory-reconciliation"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "7dea7d399a773543ecfc5f77d76f57d33bcec844",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publish tested integration; then record remote resolution.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier741-review.md",
+        "research/community-queue-20261013/README.md"
+      ],
+      "current_head_observed_in": "research/community-frontier741-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier741-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 741,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/741",
+      "title": "Conditional κ = 0.001661202643272239: eight B-frame coalescences after SW4",
+      "contributor": {
+        "id": "MDQ6VXNlcjQ0MDA1Mjc=",
+        "is_bot": false,
+        "login": "chafreaky",
+        "name": "chafreaky"
+      },
+      "draft": false,
+      "starting_head": "e516b1463606840a15f80aac1995d64ce0092e89",
+      "current_head": "e516b1463606840a15f80aac1995d64ce0092e89",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "e516b1463606840a15f80aac1995d64ce0092e89",
+          "evidence": "research/community-frontier741-audit/DISPOSITIONS.json",
+          "scope": "Full finite complex reconstruction with freshly rebuilt bit589 and exact composition; excludes stale contributor-guidance rollback.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/complex-sw4-frame8",
+        "research/complex-sw4-frame8-validation"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "e516b1463606840a15f80aac1995d64ce0092e89",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publish tested integration; then record remote resolution.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier741-review.md",
+        "research/community-queue-20261013/README.md"
+      ],
+      "current_head_observed_in": "research/community-frontier741-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier741-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 777,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/777",
+      "title": "Independent verification: point-set replay of κ = 0.001661202643272239",
+      "contributor": {
+        "id": "U_kgDOCRtulg",
+        "is_bot": false,
+        "login": "tekuuu",
+        "name": "Tekalign"
+      },
+      "draft": false,
+      "starting_head": "eca5c317d8176401a1f71a5ea1e81384c2eab1e0",
+      "current_head": "eca5c317d8176401a1f71a5ea1e81384c2eab1e0",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "eca5c317d8176401a1f71a5ea1e81384c2eab1e0",
+          "evidence": "research/community-frontier741-audit/DISPOSITIONS.json",
+          "scope": "Independent explicit-subspace frame recount and 12 controls only; remaining package unreviewed.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/community-queue-20261013/pr777-independent-frames.py"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "eca5c317d8176401a1f71a5ea1e81384c2eab1e0",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Remaining PR files and full pipeline are not reviewed; keep open.",
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier741-review.md",
+        "research/community-queue-20261013/README.md"
+      ],
+      "current_head_observed_in": "research/community-frontier741-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier741-audit/DISPOSITIONS.json"
+      ]
     }
   ],
   "ending_snapshot": "research/pr-reconciliation-20261012/ending-snapshot.json",
@@ -17259,6 +17594,6 @@
   "github_dispositions": {
     "CLOSED": 3,
     "MERGED": 88,
-    "OPEN": 437
+    "OPEN": 444
   }
 }

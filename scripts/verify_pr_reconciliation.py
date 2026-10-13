@@ -69,7 +69,8 @@ def main():
                         ROOT / 'research/community-family588-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-hyperplane599-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-cold617-audit/DISPOSITIONS.json',
-                        ROOT / 'research/community-k492-audit/DISPOSITIONS.json'):
+                        ROOT / 'research/community-k492-audit/DISPOSITIONS.json',
+                        ROOT / 'research/community-frontier741-audit/DISPOSITIONS.json'):
         if not family_path.exists():
             continue
         family = json.loads(family_path.read_text())
@@ -236,6 +237,35 @@ def main():
                     require(decision['disposition'] == 'incorporated' and
                             decision['github_state'] == closure['github_state'], 'Unsupported hyperplane closure')
             print('PASS hyperplane family: source coverage, scoped evidence, partial-history distinction and resolutions')
+    receipt_path = ROOT / 'docs/research/community-frontier741-integration.json'
+    if receipt_path.exists():
+        receipt = json.loads(receipt_path.read_text())
+        for name, digest in receipt['receipts'].items():
+            require(hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == digest,
+                    'Changed frontier741 review evidence: ' + name)
+        folder = ROOT / 'research/community-frontier741-audit'
+        coverage = json.loads((folder / 'CONTENT-COVERAGE.json').read_text())['pull_requests']
+        decisions = json.loads((folder / 'DISPOSITIONS.json').read_text())['pull_requests']
+        require(set(coverage) == set(receipt['reviewed_heads']) == {str(d['number']) for d in decisions},
+                'Frontier741 review scope differs')
+        for decision in decisions:
+            number = decision['number']
+            row = coverage[str(number)]
+            require(row['head'] == decision['reviewed_head'] == receipt['reviewed_heads'][str(number)],
+                    'Frontier741 coverage head differs')
+            require(len(row['files']) == row['changed_files'] == len({f['source_path'] for f in row['files']}),
+                    'Frontier741 changed-file inventory incomplete')
+            check_review_completion(actual[number], decision)
+            for item in row['files']:
+                require(item['action'] in {'retained', 'adapted', 'excluded', 'pending'}, 'Unknown file action')
+                if item['action'] == 'pending':
+                    require(not decision['review_completion']['changed_file_coverage'], 'Incomplete PR marked reviewed')
+                if item.get('integrated_sha256'):
+                    require(hashlib.sha256((ROOT / item['integrated_path']).read_bytes()).hexdigest()
+                            == item['integrated_sha256'], 'Changed integrated file: ' + item['integrated_path'])
+                if item['action'] != 'retained':
+                    require(bool(item.get('reason')), 'Missing adaptation or remaining scope')
+        print('PASS frontier741 batch: scoped source coverage, replay evidence and projection bindings')
     print(f'PASS immutable snapshot plus explicit family rounds: {len(actual)} PRs, attributed heads, evidence pins and unresolved questions')
 
 

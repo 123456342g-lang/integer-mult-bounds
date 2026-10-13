@@ -1,5 +1,24 @@
 # Current reviewed status
 
+Selected conditional κ: **0.001661202643272239**, #741 with #589 on #555.
+See the [review](community-frontier741-review.md),
+[integration receipt](community-frontier741-integration.json),
+[selected record](../../certificates/selected-result.json) and [PR ledger](pr-ledger.md).
+Public cold replay: `make frontier741-verify`.
+
+Both suppliers have fresh maintainer replays and an exact composition binding.
+The source PR's Linux checks passed; the combined integration workflow is tracked
+separately. Inherited uniform/physical/analytic hypotheses remain. No full Lean
+multiplication theorem is claimed.
+
+This round also covers #675/#695/#704/#740 verification and tooling, #681's
+historical circuit consolidation, and the independent checker subset of #777.
+The latter's remaining files and predecessor PRs retain separate review status.
+#681 preserves its original source pins via `scripts/verify_supplier_consolidation.py`;
+its circuit savings are not automatically transported into #741.
+
+# Superseded status through #626
+
 Selected conditional κ: **0.001635527380375392**, #626 on #622/#623 with #543.
 See the [review](community-k492-review.md), [integration receipt](community-k492-integration.json),
 [selected record](../../certificates/selected-result.json) and [PR ledger](pr-ledger.md).
