@@ -11,3 +11,11 @@
 - Budget: at most 60 minutes; orientation at most 12 minutes; final 15 minutes reserved for verification and handoff. Expected finish by 2026-10-13 21:44 UTC; earlier if the decisive test closes the mechanism.
 - Overlap: full 838-open-PR/body and 12-discussion snapshot plus 322 local records; PR1128 is the only precise boundary lead. No pinned sprint issue. Local claim follows the donor's no-pinned-issue fallback; no separate reservation issue.
 - Attribution: Ross Richardson, with substantial OpenAI Codex assistance; Apache-2.0. Predecessor PR589/555 and PR1128 authors retained.
+
+## Result and handoff
+
+Completed the six-helper domain: all six fail a single rank-seven retirement block; five also fail their least possible first restoration frame. Helper470 admits a lower-frame restore/clear schedule with the original D/A/scatter/B unchanged, all661 symbolic columns correct, and local rank mass5129 ->5128 for two additional ADDs. This is finite construction/interface evidence, not a new supplier bound or kappa. PR1043's earlier source-deletion result is explicitly credited and is not improved upon.
+
+Exact implementation and evidence: [source-pinned artifact](https://github.com/RossRichardson/integer-mult-bounds/blob/2a6d342645ba919392c121f94f3345430afe0240/research/bit-early-retirement-cut/README.md). The Python3.12 registered replay, Python3.9.6 standalone replay, both independently represented checkers and all eleven test groups pass. The CPython3.14.6 receipt regenerates byte-identically. Native hosting, changed H4 admission, packed precision/tape and an outer bound remain unresolved.
+
+Submission refresh: main `dadfea6e8a78ff6ba901705f87532a71c6f5bbb8`, same selected certificate and identical input blob; 845 open PRs and17 discussions checked with complete pagination. Nearest work PR1043/1079/1128/1179 is distinguished in the README. No pinned coordination issue existed. This is the one local claim update, with the immutable artifact link; the focused PR is the publication handoff. No upstream or selected-frontier changes, merge, or closure is authorized or performed.
