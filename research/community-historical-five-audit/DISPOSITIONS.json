@@ -23,13 +23,22 @@
       "reviewed_head": "8bb07d55f6898bc8ec919222cf7596e987e9b69f",
       "current_head": "8bb07d55f6898bc8ec919222cf7596e987e9b69f",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/community-historical-five-audit/sources.tar.gz",
         "docs/research/community-historical-five-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "closedAt": "2026-10-13T21:02:36Z",
+        "headRefOid": "8bb07d55f6898bc8ec919222cf7596e987e9b69f",
+        "mergedAt": "2026-10-13T21:02:36Z",
+        "number": 2,
+        "state": "MERGED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2#issuecomment-6155142676",
+        "integration_commit": "377e2bd5fc5597dd950b36afac08d12427f00132"
+      },
       "scope": "Aligned common-point pairing: full h50 support DAG; small dirty-state basis and both frame directions; exact historical 17*2^-63 witness, scoped ceiling, and regenerated upstream patch.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -132,13 +141,22 @@
       "reviewed_head": "8c225e619168c0141dcfcba3b68a65bbed6a8729",
       "current_head": "8c225e619168c0141dcfcba3b68a65bbed6a8729",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/community-historical-five-audit/sources.tar.gz",
         "docs/research/community-historical-five-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "closedAt": "2026-10-13T21:02:36Z",
+        "headRefOid": "8c225e619168c0141dcfcba3b68a65bbed6a8729",
+        "mergedAt": "2026-10-13T21:02:35Z",
+        "number": 4,
+        "state": "MERGED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/4",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/4#issuecomment-6155143067",
+        "integration_commit": "377e2bd5fc5597dd950b36afac08d12427f00132"
+      },
       "scope": "Retained-total complex circuit: full h24 coefficients, role frames and rational guards; small dirty-state and both physical phase directions; exact historical 591/10^12 assembly. Original PDF is stale and retained only as history.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -241,13 +259,22 @@
       "reviewed_head": "4920e44843512014f742d685e01341f6787bbd5f",
       "current_head": "4920e44843512014f742d685e01341f6787bbd5f",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/community-historical-five-audit/sources.tar.gz",
         "docs/research/community-historical-five-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "closedAt": "2026-10-13T21:02:36Z",
+        "headRefOid": "4920e44843512014f742d685e01341f6787bbd5f",
+        "mergedAt": "2026-10-13T21:02:36Z",
+        "number": 8,
+        "state": "MERGED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/8",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/8#issuecomment-6155143507",
+        "integration_commit": "377e2bd5fc5597dd950b36afac08d12427f00132"
+      },
       "scope": "Geometric-envelope complex alternative: full h25 support/frame checks, extra-coordinate negative control, h6/h7 physical phase checks, and 441-case unequal-factor bit screen; conditional 59/10^11 assembly.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -334,13 +361,22 @@
       "reviewed_head": "cfd6a2baded9dba990b987934474a7721d6ca3fb",
       "current_head": "cfd6a2baded9dba990b987934474a7721d6ca3fb",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/community-historical-five-audit/sources.tar.gz",
         "docs/research/community-historical-five-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "closedAt": "2026-10-13T21:02:36Z",
+        "headRefOid": "cfd6a2baded9dba990b987934474a7721d6ca3fb",
+        "mergedAt": "2026-10-13T21:02:36Z",
+        "number": 9,
+        "state": "MERGED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/9",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/9#issuecomment-6155143936",
+        "integration_commit": "377e2bd5fc5597dd950b36afac08d12427f00132"
+      },
       "scope": "Ternary star-template refinement: full h28 producer rebuilt twice; 20475 stars and 365 templates checked including arbitrary scratch; historical conditional 19/5000000000 assembly. Retains failed heuristic attempts and attribution.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -427,13 +463,22 @@
       "reviewed_head": "35d31e30f28bc5da0ae6a88e7b03d75ebc855534",
       "current_head": "35d31e30f28bc5da0ae6a88e7b03d75ebc855534",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/community-historical-five-audit/sources.tar.gz",
         "docs/research/community-historical-five-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "closedAt": "2026-10-13T21:02:36Z",
+        "headRefOid": "35d31e30f28bc5da0ae6a88e7b03d75ebc855534",
+        "mergedAt": "2026-10-13T21:02:36Z",
+        "number": 12,
+        "state": "MERGED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/12",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/12#issuecomment-6155144381",
+        "integration_commit": "377e2bd5fc5597dd950b36afac08d12427f00132"
+      },
       "scope": "Dimension-30 mixed-width composition: six complete native dimension screens and scoped prime-power exclusions; all seven matching enumerations; h30 full producer replay and 456 template dirty-state controls, exact moment, 29 assembly constraints and patch. Unchanged #10 dependencies remain inherited; not a new full theorem audit.",
       "review_completion": {
         "changed_file_coverage": true,
