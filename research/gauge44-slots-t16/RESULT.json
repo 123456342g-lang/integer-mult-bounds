@@ -1,24 +1,24 @@
 {
   "status": "PASS_GAUGE44_T16_STRICT_GLOBAL_REPLAY",
-  "kappa": "1672644568760139/1000000000000000000",
-  "kappa_decimal": "0.001672644568760139",
-  "conservative_kappa_decimal": "0.001672644565908221",
-  "complex_lower": "1675446996078375166313/1000000000000000000000000",
+  "kappa": "836325229349023/500000000000000000",
+  "kappa_decimal": "0.001672650458698046",
+  "conservative_kappa_decimal": "0.00167265045584613",
+  "complex_lower": "1675452905769408864539/1000000000000000000000000",
   "bit_lower": "1733427039589844234749/1000000000000000000000000",
   "complex_profile": {
-    "1": 349603,
+    "1": 349604,
     "2": 60192,
-    "3": 62597,
+    "3": 62592,
     "4": 20448,
     "5": 11808,
-    "7": 2,
+    "7": 4,
     "8": 1152,
     "48": 4866
   },
   "idle_remainder_profile": {
-    "1": 2275,
-    "3": 389,
-    "7": 2,
+    "1": 2276,
+    "3": 384,
+    "7": 4,
     "48": 4866
   },
   "complete_invocations": 144,
@@ -27,7 +27,7 @@
   "charged_prefix_bits": 512,
   "physical_row_coefficient": 16469,
   "retained_row_coefficient": 20161,
-  "actual_73_axis_charts": 10076,
+  "actual_73_axis_charts": 10004,
   "controls": {
     "admission": 69,
     "bit_supplier": 12,
@@ -35,71 +35,71 @@
     "controller_mutations": 15
   },
   "t8_kappa": "167166528321877/100000000000000000",
-  "spec_sha256": "ab74caddb1d425f20639b48c429aba5ef7d09860f2a4f11e60067cbd6ed2f77b",
+  "spec_sha256": "79c807d0f3f23a29f6dfb8ddf1d788c9e4fa1da4f54d9576099b54e8bf51c9a7",
   "stages": [
     {
       "name": "restore-parent",
-      "seconds": 1.984,
+      "seconds": 2.594,
       "exit_code": 0,
       "log_sha256": "3aea2a4b68e7aaeadd9ffef649be0d25e2dff1535d9a61bffeaf6d92e55ba6a8"
     },
     {
       "name": "bind8",
-      "seconds": 0.609,
+      "seconds": 0.781,
       "exit_code": 0,
       "log_sha256": "78a081673d6b4fde10a86e6f767d53648b868d1f0cac2441d12951434ad7341b"
     },
     {
       "name": "lift16",
-      "seconds": 3.782,
+      "seconds": 4.812,
       "exit_code": 0,
-      "log_sha256": "f82381c26f1627f16b93f1e8626562c56078246570cf04604ac945cea5584c53"
+      "log_sha256": "919b1f068ea5f62a8ab5d584b95b70bdf94ec35508f844e81f48d49db26a1db8"
     },
     {
       "name": "bind",
-      "seconds": 0.672,
+      "seconds": 0.875,
       "exit_code": 0,
       "log_sha256": "78a081673d6b4fde10a86e6f767d53648b868d1f0cac2441d12951434ad7341b"
     },
     {
       "name": "emit",
-      "seconds": 9.0,
+      "seconds": 10.016,
       "exit_code": 0,
-      "log_sha256": "bbb2a0bfb5a7e05b7ecf561427b08f522f8f0b0bb44987008371bb9c0728467b"
+      "log_sha256": "441121f402e35683cf2f01f010351739afe321a75881e5ca35d68a49bff380aa"
     },
     {
       "name": "audit",
-      "seconds": 34.593,
+      "seconds": 46.859,
       "exit_code": 0,
-      "log_sha256": "1036ab9fd07810ef177ea060f757366e9ce6176f808ef7d9d943fac3f35ab972"
+      "log_sha256": "f59679be5828ad9ce4498c2ab71d698d671a8d8b0147e7138556f7b29121f5a4"
     },
     {
       "name": "invoice",
-      "seconds": 2.344,
+      "seconds": 3.031,
       "exit_code": 0,
       "log_sha256": "caa1229b78eca961462d35e8ee458be536111111a985294a153e4dd74b9171a8"
     },
     {
       "name": "assembly",
-      "seconds": 0.422,
+      "seconds": 1.109,
       "exit_code": 0,
-      "log_sha256": "111cb81fc3d6ec78694d5ec8ba50158ec59b7e898ab171b779fc86caf541000e"
+      "log_sha256": "b8075b044e6f3e2108f92f91af9ad568fee744dd1cb14573bc2dc673260e0044"
     },
     {
       "name": "admission-controls",
-      "seconds": 0.625,
+      "seconds": 0.797,
       "exit_code": 0,
       "log_sha256": "34527ddfe1e53bec71dc5759eb9a26417be6d4e93e76cbf80575d9bafebd876b"
     },
     {
       "name": "bit-supplier-controls",
-      "seconds": 0.687,
+      "seconds": 1.063,
       "exit_code": 0,
       "log_sha256": "c648542cd6dddbb154af7d02a41aaed1025603d9a4ab54f7c249d2b683e22249"
     },
     {
       "name": "independent-t16",
-      "seconds": 1.453,
+      "seconds": 2.25,
       "exit_code": 0,
       "log_sha256": "d2c13b333d463a5c2de42078e9c47a89209075e1d1beac24cf3fc1f573f18c05"
     }
