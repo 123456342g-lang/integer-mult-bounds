@@ -618,3 +618,8 @@ phase-recipes-parallel-benchmark:
 frontier1042-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier1042.XXXXXX"); \
 	python3 -B scripts/verify_frontier1042.py --work "$$work/replay"
+
+.PHONY: frontier1042-invoice-audit-verify
+frontier1042-invoice-audit-verify:
+	python3 -I -B research/frontier1042-invoice-audit-seed81/verify.py
+	cd research/frontier1042-invoice-audit-seed81 && python3 -B -m unittest test_package -v
