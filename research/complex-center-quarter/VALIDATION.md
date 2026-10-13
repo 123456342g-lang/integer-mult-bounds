@@ -49,8 +49,9 @@ repacked with a different gzip timestamp and compression level; the replay and
 integer checker still pass.
 
 In that disposable checkout, changing a canonical-word payload is rejected by
-the source pin. Changing the expected cost is rejected by complete receipt
-comparison. The explicit receipt-output mode rejects an existing file and
+the source pin. A later check also rejects an altered pinned invoice source and
+a receipt that omits the 128 new adapter allowances. Changing the expected cost
+is rejected by complete receipt comparison. The explicit receipt-output mode rejects an existing file and
 preserves its bytes. Before/after SHA-256 snapshots confirm that the primary
 command leaves package inputs unchanged. Scratch directories are confined to
 the system temporary root and removed after use.

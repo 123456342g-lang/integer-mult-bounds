@@ -49,4 +49,28 @@ paid center stream. This experiment changes no copied-information rank cost.
 
 ## Result
 
-Pending bounded experiment and final overlap refresh.
+Completed 2026-10-13 05:33 UTC (2026-10-12 22:33 America/Los_Angeles).
+Submitted as [PR #786](https://github.com/CrocSwap/integer-mult-bounds/pull/786).
+
+All eight centers of both selected providers in both orientations are covered.
+Factoring the quarter saves 864 real scalar primitives per program. The complete
+local accounting exposed a limitation: eight new scale macros add 128 generic
+adapter allowances, increasing each conservative local bound by 3,319,594,144.
+The experiment stops at this finite circuit construction and scoped cost audit;
+there is no net supplier-cost or kappa improvement claim.
+
+The complete original/candidate scalar boundaries pass on 724 arbitrary inputs.
+All 32 primitive block pairs, 32 new rejection controls, 50 inherited native
+controls, 57,600 independent integer-matrix entries, 32 clear omissions and five
+focused failure tests pass. Source/receipt corruption, portable minimal-checkout
+and gzip-repackaging controls also pass. See VALIDATION.md for execution limits.
+
+Final overlap refresh: 602 open PRs through #783. Main still equals the exact
+base. Concurrent #755 (`a1dd9f819102c40e0b5e4a75215cf69ee864f480`) is credited
+for forward JP8 center coefficient reuse. This adds reverse gathering, CK
+coverage, recursive-input equality and the extra-macro accounting limit while
+retaining per-addition work clearing; no priority or stronger saving is claimed
+for the shared forward taps. #769 concerns CK cleanup/preconditioning and #776
+fixed-order A/B frames. Neither overlaps the changed center circuit. No pending
+source was imported. No pinned coordination issue was found, so this is the
+single local claim/result update.
