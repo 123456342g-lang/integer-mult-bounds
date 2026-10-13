@@ -1,5 +1,5 @@
 {
-  "status": "claimed",
+  "status": "submitted",
   "assignment": {
     "pass_number": 18,
     "seed": 95,
@@ -34,5 +34,12 @@
     761,
     1008,
     1035
-  ]
+  ],
+  "completed_at_utc": "2026-10-13T18:05:21.057568+00:00",
+  "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/1097",
+  "mathematical_head": "b0bd94592f3d200b828120cc0e65bd0cbea6f061",
+  "result": "Both archival claims confirmed with retained RUP/LRAT proofs: F2 fitting rank is at least nine, and the sole fitting matrix of rank at most nine is B0. A literal rank-nine factor supplies positive evidence. Historical root ordering retained; no supplier-order transfer, copy-cost theorem or new kappa.",
+  "verification": "37,044 proof additions and 1,409,475 hints checked independently; pinned native checker agrees. All 12,321 positive entries, 250 small matrices, 992 factor/mode cases, 16 gate truth cases, 15 mathematical/model controls and 22 package rejections pass. Two equivalent gzip containers accepted. Receipts match 3.14.4 and relocated read-only optimized 3.12.3. Source Git blobs, selected record and clean patch application pass; new material whitespace passes while one original trailing space is retained.",
+  "canonical_receipt_sha256": "ab65ab6dba482fb9c9741f7ff10235c972ed03052197ea1795374fd539a67d84",
+  "final_upstream": "abdc6a7002abdbcd9e21bfc5e1a795784deacfdf"
 }
