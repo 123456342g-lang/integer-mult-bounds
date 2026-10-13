@@ -4,7 +4,7 @@
   "starting_main": "f19cb621be2caf3a7291a37c343c1c55afe935e0",
   "starting_open_count": 446,
   "inventory_count": 722,
-  "family_round": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+  "family_round": "research/community-historical-five-audit/DISPOSITIONS.json",
   "family_rounds": [
     "research/community-family533-audit/DISPOSITIONS.json",
     "research/community-family588-audit/DISPOSITIONS.json",
@@ -19,12 +19,13 @@
     "research/community-batch970-audit/DISPOSITIONS.json",
     "research/community-batch1047-audit/DISPOSITIONS.json",
     "research/community-batch1099-audit/DISPOSITIONS.json",
-    "research/pr-reconciliation100-20261013/DISPOSITIONS.json"
+    "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+    "research/community-historical-five-audit/DISPOSITIONS.json"
   ],
   "counts": {
     "changed_since_review": 3,
-    "incorporated": 285,
-    "partially_reviewed": 151,
+    "incorporated": 290,
+    "partially_reviewed": 146,
     "superseded": 1,
     "unreviewed": 282
   },
@@ -59,6 +60,7 @@
     "research/community-batch1047-audit/DISPOSITIONS.json": "698c607fee0fd22f0f5b1f10957aca5fea255401f80b39254bc65ad156d161b6",
     "research/community-batch1099-audit/DISPOSITIONS.json": "81f584c1f802266cd02acd2513572b8ae012da577403f9c46620dd4094ce0a41",
     "research/pr-reconciliation100-20261013/DISPOSITIONS.json": "0351d2dc0ee00543d1218be04db687672f2497b5196b2128caa2a4cc04c4f006",
+    "research/community-historical-five-audit/DISPOSITIONS.json": "f6aa7ce4f45c4b9bb57d614c86185da72e149e93e7a0bbf445c83e4a6ae728c1",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -128,39 +130,50 @@
           "evidence": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
           "scope": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete.",
           "kind": "integration_or_partial_review"
+        },
+        {
+          "head": "8bb07d55f6898bc8ec919222cf7596e987e9b69f",
+          "evidence": "research/community-historical-five-audit/DISPOSITIONS.json",
+          "scope": "Aligned common-point pairing: full h50 support DAG; small dirty-state basis and both frame directions; exact historical 17*2^-63 witness, scoped ceiling, and regenerated upstream patch.",
+          "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [
+        "docs/research/community-historical-five-review.md",
         "docs/research/community-reconciliation100-review.md",
         "docs/research/community-round2-twitter.md",
         "docs/research/contribution-review.md",
         "docs/research/contributor-announcements.md"
       ],
-      "disposition": "partially_reviewed",
-      "integration_location": [],
+      "disposition": "incorporated",
+      "integration_location": [
+        "research/community-historical-five-audit/sources.tar.gz",
+        "docs/research/community-historical-five-review.md"
+      ],
       "github_state": "OPEN",
-      "unresolved_question": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete. Start with docs/research/aligned-paired-network.md, docs/research/aligned-paired-review.md, notes/aligned-paired-note.tex; complete residual list: COVERAGE.json.gz, PR 2 (15 unmatched paths). Byte mismatch is not a finding of invalidity.",
+      "unresolved_question": null,
       "closure": null,
-      "current_head_observed_in": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+      "current_head_observed_in": "research/community-historical-five-audit/DISPOSITIONS.json",
       "reviewed_head": "8bb07d55f6898bc8ec919222cf7596e987e9b69f",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
-        "published": false
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": true
       },
       "verification_evidence": [
         {
-          "path": "docs/research/contribution-review.md",
-          "scope": "Prior scoped review, not blanket current-head approval"
+          "path": "research/community-historical-five-audit/EXECUTION.json",
+          "scope": "Scoped exact-head replay commands, artifacts and inherited limitations"
         },
         {
-          "path": "research/pr-reconciliation100-20261013/COVERAGE.json.gz",
-          "scope": "Complete changed-file inventory and exact-content screen only"
+          "path": "research/community-historical-five-audit/SOURCES.json",
+          "scope": "Complete source inventories and original changed-file coverage"
         }
       ],
       "reconciliation_evidence": [
-        "research/pr-reconciliation100-20261013/DISPOSITIONS.json"
+        "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+        "research/community-historical-five-audit/DISPOSITIONS.json"
       ]
     },
     {
@@ -275,38 +288,49 @@
           "evidence": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
           "scope": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete.",
           "kind": "integration_or_partial_review"
+        },
+        {
+          "head": "8c225e619168c0141dcfcba3b68a65bbed6a8729",
+          "evidence": "research/community-historical-five-audit/DISPOSITIONS.json",
+          "scope": "Retained-total complex circuit: full h24 coefficients, role frames and rational guards; small dirty-state and both physical phase directions; exact historical 591/10^12 assembly. Original PDF is stale and retained only as history.",
+          "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [
+        "docs/research/community-historical-five-review.md",
         "docs/research/community-reconciliation100-review.md",
         "docs/research/community-round2-twitter.md",
         "docs/research/contribution-review.md"
       ],
-      "disposition": "partially_reviewed",
-      "integration_location": [],
+      "disposition": "incorporated",
+      "integration_location": [
+        "research/community-historical-five-audit/sources.tar.gz",
+        "docs/research/community-historical-five-review.md"
+      ],
       "github_state": "OPEN",
-      "unresolved_question": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete. Start with scripts/make_retained_complex_patch.py, scripts/retained_complex.py, tests/test_retained_complex.py; complete residual list: COVERAGE.json.gz, PR 4 (8 unmatched paths). Byte mismatch is not a finding of invalidity.",
+      "unresolved_question": null,
       "closure": null,
-      "current_head_observed_in": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+      "current_head_observed_in": "research/community-historical-five-audit/DISPOSITIONS.json",
       "reviewed_head": "8c225e619168c0141dcfcba3b68a65bbed6a8729",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
-        "published": false
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": true
       },
       "verification_evidence": [
         {
-          "path": "docs/research/contribution-review.md",
-          "scope": "Prior scoped review, not blanket current-head approval"
+          "path": "research/community-historical-five-audit/EXECUTION.json",
+          "scope": "Scoped exact-head replay commands, artifacts and inherited limitations"
         },
         {
-          "path": "research/pr-reconciliation100-20261013/COVERAGE.json.gz",
-          "scope": "Complete changed-file inventory and exact-content screen only"
+          "path": "research/community-historical-five-audit/SOURCES.json",
+          "scope": "Complete source inventories and original changed-file coverage"
         }
       ],
       "reconciliation_evidence": [
-        "research/pr-reconciliation100-20261013/DISPOSITIONS.json"
+        "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+        "research/community-historical-five-audit/DISPOSITIONS.json"
       ]
     },
     {
@@ -529,37 +553,48 @@
           "evidence": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
           "scope": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete.",
           "kind": "integration_or_partial_review"
+        },
+        {
+          "head": "4920e44843512014f742d685e01341f6787bbd5f",
+          "evidence": "research/community-historical-five-audit/DISPOSITIONS.json",
+          "scope": "Geometric-envelope complex alternative: full h25 support/frame checks, extra-coordinate negative control, h6/h7 physical phase checks, and 441-case unequal-factor bit screen; conditional 59/10^11 assembly.",
+          "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [
+        "docs/research/community-historical-five-review.md",
         "docs/research/community-reconciliation100-review.md",
         "docs/research/contribution-review.md"
       ],
-      "disposition": "partially_reviewed",
-      "integration_location": [],
+      "disposition": "incorporated",
+      "integration_location": [
+        "research/community-historical-five-audit/sources.tar.gz",
+        "docs/research/community-historical-five-review.md"
+      ],
       "github_state": "OPEN",
-      "unresolved_question": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete. Start with research/geometric-complex/README.md, research/geometric-complex/audit.py, research/geometric-complex/bit_screen.py; complete residual list: COVERAGE.json.gz, PR 8 (9 unmatched paths). Byte mismatch is not a finding of invalidity.",
+      "unresolved_question": null,
       "closure": null,
-      "current_head_observed_in": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+      "current_head_observed_in": "research/community-historical-five-audit/DISPOSITIONS.json",
       "reviewed_head": "4920e44843512014f742d685e01341f6787bbd5f",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
-        "published": false
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": true
       },
       "verification_evidence": [
         {
-          "path": "docs/research/contribution-review.md",
-          "scope": "Prior scoped review, not blanket current-head approval"
+          "path": "research/community-historical-five-audit/EXECUTION.json",
+          "scope": "Scoped exact-head replay commands, artifacts and inherited limitations"
         },
         {
-          "path": "research/pr-reconciliation100-20261013/COVERAGE.json.gz",
-          "scope": "Complete changed-file inventory and exact-content screen only"
+          "path": "research/community-historical-five-audit/SOURCES.json",
+          "scope": "Complete source inventories and original changed-file coverage"
         }
       ],
       "reconciliation_evidence": [
-        "research/pr-reconciliation100-20261013/DISPOSITIONS.json"
+        "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+        "research/community-historical-five-audit/DISPOSITIONS.json"
       ]
     },
     {
@@ -591,37 +626,48 @@
           "evidence": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
           "scope": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete.",
           "kind": "integration_or_partial_review"
+        },
+        {
+          "head": "cfd6a2baded9dba990b987934474a7721d6ca3fb",
+          "evidence": "research/community-historical-five-audit/DISPOSITIONS.json",
+          "scope": "Ternary star-template refinement: full h28 producer rebuilt twice; 20475 stars and 365 templates checked including arbitrary scratch; historical conditional 19/5000000000 assembly. Retains failed heuristic attempts and attribution.",
+          "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [
+        "docs/research/community-historical-five-review.md",
         "docs/research/community-reconciliation100-review.md",
         "docs/research/contribution-review.md"
       ],
-      "disposition": "partially_reviewed",
-      "integration_location": [],
+      "disposition": "incorporated",
+      "integration_location": [
+        "research/community-historical-five-audit/sources.tar.gz",
+        "docs/research/community-historical-five-review.md"
+      ],
       "github_state": "OPEN",
-      "unresolved_question": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete. Start with research/prime-field-followup/README.md, research/prime-field-followup/star_duality.py, research/prime-field-followup/vendor/README.md; complete residual list: COVERAGE.json.gz, PR 9 (5 unmatched paths). Byte mismatch is not a finding of invalidity.",
+      "unresolved_question": null,
       "closure": null,
-      "current_head_observed_in": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+      "current_head_observed_in": "research/community-historical-five-audit/DISPOSITIONS.json",
       "reviewed_head": "cfd6a2baded9dba990b987934474a7721d6ca3fb",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
-        "published": false
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": true
       },
       "verification_evidence": [
         {
-          "path": "docs/research/contribution-review.md",
-          "scope": "Prior scoped review, not blanket current-head approval"
+          "path": "research/community-historical-five-audit/EXECUTION.json",
+          "scope": "Scoped exact-head replay commands, artifacts and inherited limitations"
         },
         {
-          "path": "research/pr-reconciliation100-20261013/COVERAGE.json.gz",
-          "scope": "Complete changed-file inventory and exact-content screen only"
+          "path": "research/community-historical-five-audit/SOURCES.json",
+          "scope": "Complete source inventories and original changed-file coverage"
         }
       ],
       "reconciliation_evidence": [
-        "research/pr-reconciliation100-20261013/DISPOSITIONS.json"
+        "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+        "research/community-historical-five-audit/DISPOSITIONS.json"
       ]
     },
     {
@@ -653,37 +699,48 @@
           "evidence": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
           "scope": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete.",
           "kind": "integration_or_partial_review"
+        },
+        {
+          "head": "35d31e30f28bc5da0ae6a88e7b03d75ebc855534",
+          "evidence": "research/community-historical-five-audit/DISPOSITIONS.json",
+          "scope": "Dimension-30 mixed-width composition: six complete native dimension screens and scoped prime-power exclusions; all seven matching enumerations; h30 full producer replay and 456 template dirty-state controls, exact moment, 29 assembly constraints and patch. Unchanged #10 dependencies remain inherited; not a new full theorem audit.",
+          "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [
+        "docs/research/community-historical-five-review.md",
         "docs/research/community-reconciliation100-review.md",
         "docs/research/contribution-review.md"
       ],
-      "disposition": "partially_reviewed",
-      "integration_location": [],
+      "disposition": "incorporated",
+      "integration_location": [
+        "research/community-historical-five-audit/sources.tar.gz",
+        "docs/research/community-historical-five-review.md"
+      ],
       "github_state": "OPEN",
-      "unresolved_question": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete. Start with PATCHING.md, research/batched-followup/README.md, research/batched-followup/make_patch.py; complete residual list: COVERAGE.json.gz, PR 12 (25 unmatched paths). Byte mismatch is not a finding of invalidity.",
+      "unresolved_question": null,
       "closure": null,
-      "current_head_observed_in": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+      "current_head_observed_in": "research/community-historical-five-audit/DISPOSITIONS.json",
       "reviewed_head": "35d31e30f28bc5da0ae6a88e7b03d75ebc855534",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
-        "published": false
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": true
       },
       "verification_evidence": [
         {
-          "path": "docs/research/contribution-review.md",
-          "scope": "Prior scoped review, not blanket current-head approval"
+          "path": "research/community-historical-five-audit/EXECUTION.json",
+          "scope": "Scoped exact-head replay commands, artifacts and inherited limitations"
         },
         {
-          "path": "research/pr-reconciliation100-20261013/COVERAGE.json.gz",
-          "scope": "Complete changed-file inventory and exact-content screen only"
+          "path": "research/community-historical-five-audit/SOURCES.json",
+          "scope": "Complete source inventories and original changed-file coverage"
         }
       ],
       "reconciliation_evidence": [
-        "research/pr-reconciliation100-20261013/DISPOSITIONS.json"
+        "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+        "research/community-historical-five-audit/DISPOSITIONS.json"
       ]
     },
     {

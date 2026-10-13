@@ -3,6 +3,18 @@
 The [selected record](certificates/selected-result.json) identifies the current
 frontier; numbered checkpoints below retain their historical attribution.
 
+- **Andrew Barnes / Bortlesboat (#2):** aligned pair ordering and its smaller
+  h50 side circuit, original proof/review packet and historical `17·2^-63` witness.
+- **David Leen / dleen (#4):** retained complex totals composed with eumemic's
+  shared exclusions, full h24 checks and historical complex-side headroom.
+- **Rohan Arun / rohanarun (#8/#9/#12):** geometric-envelope complex alternative,
+  ternary star resynthesis, extended intersection matching and dimension-30
+  mixed-width composition, including negative dimension/prime-power screens.
+  Predecessor credit remains with Zhihao Chen / jacklightChen (#7), icekylinx
+  (#10), eumemic and the original notices. All five complete source snapshots
+  and focused replay evidence are retained in the
+  [historical integration](docs/research/community-historical-five-review.md).
+
 - **eumemic (#3):** the compressed complex-circuit contribution; the complete
   original historical packet is retained and its 10 exact tests restored and
   replayed against the already incorporated core. No new frontier claim.

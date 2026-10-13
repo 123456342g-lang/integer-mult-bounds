@@ -165,6 +165,7 @@ def build():
         'research/community-batch1047-audit/DISPOSITIONS.json',
         'research/community-batch1099-audit/DISPOSITIONS.json',
         'research/pr-reconciliation100-20261013/DISPOSITIONS.json',
+        'research/community-historical-five-audit/DISPOSITIONS.json',
     ) if (ROOT / p).exists()]
     family_path = family_paths[-1] if family_paths else None
     for family_path in family_paths:
@@ -241,7 +242,8 @@ def build():
                   'This frozen round covers #543/#545/#555 and related construction, research and tooling packages '
                   'through #588. Each disposition distinguishes completed checks, publication and remaining obligations. '
                   'The separate formalization PRs and later arrivals are not approved by this round.']
-    lines += ['', '[100-PR historical reconciliation](community-reconciliation100-review.md): exact-head coverage and individual carry-forward tasks; it is not 100 completed mathematical audits.', '', '## Remaining priorities', '',
+    lines += ['', '[100-PR historical reconciliation](community-reconciliation100-review.md): exact-head coverage and individual carry-forward tasks; it is not 100 completed mathematical audits.',
+              '[Five early contributions](community-historical-five-review.md): #2/#4/#8/#9/#12 retained with complete historical sources and focused replays; 92 carry-forwards remain from that frozen batch.', '', '## Remaining priorities', '',
               '1. Follow the new Linux CI for the published #442/#484/#509/#516/#520 batch; the [scoped review](community-formal-20261012-review.md) records completed local checks.',
               '2. Follow the explicit construction-family dispositions and remaining obligations; do not repeat completed foundation replays without a source/input change.',
               '3. Review #525’s checkpoint/ceiling and #529/#532’s distinct construction mechanisms; retain parallel credit.',
