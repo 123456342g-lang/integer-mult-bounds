@@ -22,3 +22,17 @@
 
 Prepared by Josh Snider (`jsnider3`) with substantial OpenAI Codex assistance.
 Apache-2.0. This claim is local because no sprint coordination issue exists.
+
+## Result — 2026-10-13 04:21 UTC
+
+Submitted [PR #695](https://github.com/CrocSwap/integer-mult-bounds/pull/695):
+preserved the completed Linux evidence and checked 39 source objects, six replay
+stages, 64 complex receipt substeps and 47 positive assembly margins. All 16
+rejection controls passed, including normal/optimized isolated runs from a
+separate committed-files-only worktree. Selected-record and ledger checks passed.
+The three differing generated provenance digests and unavailable CI payloads
+are documented explicitly; no new kappa or full theorem is claimed.
+
+Final overlap check through #693 found no matching run reconciliation; upstream
+main remained at the recorded base. No pinned sprint issue was available, so
+this is the single local claim update with the result and handoff link.
