@@ -43,5 +43,9 @@ sprint protocol.
   on the same schedule is intended: complete-class coverage and strictly
   shorter programs, with every competitor's number reproduced only as a
   comparison row.
-- Status: completed in session; branch `research/agent-10-bit-seed16`. See
-  README.md and VALIDATION.md for the result and evidence.
+- Status: completed in session; branch `research/agent-10-bit-seed16`, commit
+  `8f878062`; submitted as
+  https://github.com/CrocSwap/integer-mult-bounds/pull/1015. Result:
+  388 -> 262 phase-B gates; 24,305 -> 24,053 complete local ADDs; nine of
+  ten blocks improve on every recorded claim, frame 520 does not beat open
+  PR #923. See README.md and VALIDATION.md.
