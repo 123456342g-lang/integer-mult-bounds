@@ -45,6 +45,7 @@ research suites, remote CI and Lean were not run. The native check is a finite
 multistage scalar/frame replay, not the unresolved all-size compilation theorem.
 
 Final overlap inspection found no pinned coordination issue. The open queue
-had 569 PRs through #750; #748 and the updated #681 concern different circuit
-mechanisms and are explicitly credited in the README. Main remained at the
-recorded base. The local claim will carry the final handoff link.
+had 569 PRs through #750; immediately before submission, new arrivals through
+#753 were inspected as well. #748/#753 and the updated #681 concern different
+circuit mechanisms and are explicitly credited in the README. Main remained
+at the recorded base. The local claim carries the final handoff link.

@@ -248,3 +248,11 @@ Neither supplies this finite shortest-CNOT window census. Both change the word
 to which these original interval indices refer; integrating this mechanism
 would require new synthesis and verification rather than adding headline
 savings. No priority is claimed over their underlying circuit mechanisms.
+
+Immediately before submission, **Sagar Thakrar's
+[#753](https://github.com/CrocSwap/integer-mult-bounds/pull/753)** appeared at
+`2b30b63789f6d9948233fc67d9d79bca6b185c5b`: restored helper stars in decoder
+totals, with literal reverse cleanup and a larger positive prefix. That is
+another A/C mechanism; this contribution holds A fixed and independently
+resynthesizes C with a nonincreasing positive envelope. Its 128-XOR saving is
+not combined with the 137 certified here.

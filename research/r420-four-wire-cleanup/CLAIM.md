@@ -18,3 +18,18 @@
 ## Prior work and scope
 
 #710 `d97c8d20a8b885271a24c5a4e8446ac7f5697d5c` closes commuting-only deletion on the fixed cleanup and gives a different two-sandwich rewrite. This experiment does not repeat that search or import its patch. #688 `bb05c40c3e6319aa8c131b06a105e3648ac6c95b` concerns B blocks 3 and 5 and their changed cleanup. The archived R715 commuting-cancellation experiment is a different word and a narrower identity class. The selected result and actual #543 construction were inspected through the current selected certificate and #626 review. Previous contribution #739 is complex-side and independent.
+
+## Result and handoff — 2026-10-13 05:08 UTC
+
+Completed: [PR #754](https://github.com/CrocSwap/integer-mult-bounds/pull/754),
+construction commit `8ee38f714dc80526c05a6653c1ff56a678615d49`.
+All 7,693 original windows were examined; 284 admit shorter circuits.
+The independently certified optimum over disjoint original windows saves
+137 XORs in 101 replacements, taking the complete word from 26,916 to 26,779
+ADDs with unchanged paid paths and no new κ claim. Both words pass native
+legality and 5/9/11-stage replay, including 96 omitted-bridge controls.
+The final part of the sprint was reserved for independent review, relocated
+replay, corruption controls and this handoff. Final queue refresh through
+#753 found distinct concurrent decoder/compensation work, credited in the
+README without an additive or composed saving claim. No pinned coordination
+issue existed, so this is the single local claim update.
