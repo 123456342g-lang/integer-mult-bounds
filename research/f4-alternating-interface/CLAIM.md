@@ -17,3 +17,9 @@ Inspected current selected record, ledger, negative results and open PR titles.
 The completed enumeration includes all Hermitian F4 matrices through dimension
 3 and all nonsingular alternating binary matrices of dimensions 2 and 4 with
 all even refinements. No stochastic optimizer or solver timeout is involved.
+
+## Completed handoff
+
+Submitted research-note PR #831: https://github.com/CrocSwap/integer-mult-bounds/pull/831
+452 exact phase cases, 114752 kernel entries and four rejected controls.
+No new kappa. Normal and optimized receipts agree; source pins use Git blobs.
