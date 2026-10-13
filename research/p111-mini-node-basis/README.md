@@ -97,7 +97,8 @@ profile is unchanged:
 {1: 1323, 2: 1342, 3: 79, 4: 44, 5: 102, 6: 11, 7: 19}
 ```
 
-All source accesses, frame changes and copied ranks therefore stay the same.
+The frame changes and copied ranks therefore stay the same. Source reads inside
+the mini-nodes are charged in the XOR counts above.
 The cleanup is rebuilt from **every** source/helper gate in the new A and the
 unchanged B, so its cost includes the new basis preparation and recombination.
 No recursive child is removed or made free. The unchanged paid profile supplies
