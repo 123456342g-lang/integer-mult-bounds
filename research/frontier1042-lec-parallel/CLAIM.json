@@ -1,0 +1,37 @@
+{
+ "ai_assistance": "substantial: Claude (Anthropic) via Claude Code; candidate selection used parallel read-only scouting and judging subagents",
+ "assignment_seed": 89,
+ "base_commit": "ce7ad1b6ab09452c3478723a2e96ed5ff212dc08",
+ "claims": [
+  "On the five layer-end-control steps of the selected frontier1042 chain (lec-p6n, lec-promo, lec-jx, lec-hyb, lec-frames; 530 s recorded), lec_parallel.py/chain_lec.py reproduce the five archived maintainer receipts in research/community-frontier1042-audit/selected-replay.tar.gz byte for byte after rewriting only the recorded input path, and are byte-identical to the pinned serial launcher+script on the same paths (logs identical except the audit's own 'seconds' value).",
+  "The runner also accepts the T37 variant layers_p6n/layer_end_controls.py (fc58c569, merged PR1059's target) and reproduces the archived T37 receipt in research/community-frontier942-audit/t37-replay.tar.gz the same way.",
+  "The pinned launcher, scripts and PR635 audit are run unedited and digest-checked; real audit outcomes on byte-identical trial words are replayed through the pinned script's own assertions; forged acceptance, forged reasons, a corrupted unmutated word and tampered script/audit bytes are all rejected.",
+  "Timings in BENCHMARK-macos-arm64.json are local measurements on one machine."
+ ],
+ "contributor": "Sagar Thakrar (thakrarsagar)",
+ "expected_last_line": "PASS_FRONTIER1042_LEC_PARALLEL",
+ "license": "Apache-2.0",
+ "not_claimed": [
+  "any change to the selected kappa or to any mathematical obligation",
+  "wiring into reproduce_leaver_chain.py, verify_frontier1042.py or any manifest-pinned driver",
+  "speedups on other machines beyond the recorded measurement",
+  "a re-measurement of PR1041's phases runner on the frontier1042 words"
+ ],
+ "relation": {
+  "complementary": [
+   853,
+   1101
+  ],
+  "composes_with": [
+   1041,
+   1137
+  ],
+  "extends": [
+   1059
+  ]
+ },
+ "reproduce": "make frontier1042-lec-parallel-verify",
+ "seed_source": "Python secrets (OS CSPRNG)",
+ "status": "tooling improvement (verification engineering); no new kappa; extends merged PR1059 to the leaver variant",
+ "track": "85-94 verification engineering"
+}
