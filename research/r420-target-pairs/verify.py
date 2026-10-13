@@ -46,7 +46,7 @@ def rows(word):
     return result
 
 
-def nominate(word, seed):
+def greedy_baseline(word, seed):
     """One bounded greedy matching; exhaustive pair scoring is not optimal matching."""
     matrix = rows(word)
     candidates = []
@@ -64,6 +64,25 @@ def nominate(word, seed):
             pairs.append([a, b])
             used.update((a, b))
     return pairs, len(candidates)
+
+
+def check_matching_dual(word, pairs, dual):
+    """Vertex prices upper-bound every disjoint matching; equality proves this class's optimum."""
+    matrix = rows(word)
+    prices = dual["twice_vertex_prices"]
+    need(dual["first_target"] == word["v"] and len(prices) == word["v"], "dual target domain")
+    need(all(type(p) is int and p >= 0 for p in prices), "dual prices must be nonnegative integers")
+    for a in sorted(matrix):
+        for b in sorted(matrix):
+            if a < b:
+                weight = max(0, max(len(matrix[a]), len(matrix[b])) - len(matrix[a] ^ matrix[b]) - 2)
+                need(prices[a - word["v"]] + prices[b - word["v"]] >= 2 * weight,
+                     "dual edge inequality failed")
+    need(len({v for pair in pairs for v in pair}) == 2 * len(pairs), "dual witness pairs overlap")
+    saving = sum(len(matrix[a]) - len(matrix[a] ^ matrix[b]) - 2 for a, b in pairs)
+    need(sum(prices) == 2 * saving, "dual objective differs from matching saving")
+    return {"unordered_pairs_covered": word["v"] * (word["v"] - 1) // 2,
+            "twice_upper_bound": sum(prices), "optimal_saving_in_disjoint_pair_class": saving}
 
 
 def construct(word, pairs):
@@ -212,8 +231,18 @@ def controls(original, changed, pairs):
 def verify():
     original = load_source()
     recipe = json.loads((HERE / "recipe.json").read_text())
-    pairs, positive = nominate(original, recipe["seed"])
-    need(pairs == recipe["pairs"], "frozen recipe differs from bounded nomination")
+    greedy, positive = greedy_baseline(original, recipe["seed"])
+    pairs = recipe["pairs"]
+    dual = json.loads((HERE / "matching-dual.json").read_text())
+    matching_proof = check_matching_dual(original, pairs, dual)
+    corrupted_dual = copy.deepcopy(dual)
+    corrupted_dual["twice_vertex_prices"][0] -= 1
+    try:
+        check_matching_dual(original, pairs, corrupted_dual)
+    except ValueError as error:
+        need("dual edge inequality" in str(error), "wrong underpriced-dual rejection")
+    else:
+        raise ValueError("accepted underpriced dual")
     changed = construct(original, pairs)
     columns = check_prefix(original, changed)
     spec = importlib.util.spec_from_file_location("r420_source_xcheck", SOURCE / "code/xcheck.py")
@@ -248,6 +277,8 @@ def verify():
         "status": "finite circuit improvement; semantic D interface required; no new kappa",
         "seed": recipe["seed"], "oriented_pairs_scored": original["v"] * (original["v"] - 1),
         "positive_orientations": positive, "selected_disjoint_pairs": len(pairs),
+        "greedy_saved_additions": additions(original) - additions(construct(original, greedy)),
+        "matching_optimality": matching_proof, "underpriced_dual_rejected": True,
         "D_additions_before": sum(len(g[2]) for g in original["D"]),
         "D_additions_after": sum(len(g[2]) for g in changed["D"]),
         "total_additions_before": additions(original), "total_additions_after": additions(changed),

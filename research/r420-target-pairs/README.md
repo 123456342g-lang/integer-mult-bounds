@@ -1,10 +1,16 @@
 # R420 compensation with disjoint target pairs
 
 **Finite circuit improvement; no new kappa.** On eumemic's PR543 R420 word,
-57 disjoint target pairs reduce the frame-zero D compensation from **19,922
-to 16,772 binary XOR additions**. The complete local word drops from **26,916
-to 23,766 additions**, a saving of 3,150, including preparation and restoration.
+60 disjoint target pairs reduce the frame-zero D compensation from **19,922
+to 16,672 binary XOR additions**. The complete local word drops from **26,916
+to 23,666 additions**, a saving of 3,250, including preparation and restoration.
 Every source and helper keeps its original value at the D boundary.
+
+A small vertex-price certificate proves that **3,250 is optimal within this
+disjoint target-pair substitution class**. This adds 100 saved additions beyond
+concurrent [PR713](https://github.com/CrocSwap/integer-mult-bounds/pull/713),
+which independently found a 3,150-addition saving. Neither result is a new
+supplier exponent or a claim about arbitrary compensation circuits.
 
 The complete physical frame paths, 420 helpers, nine retained copies and paid
 rank mass 5,112 are unchanged. The reverse positive-prefix bound grows, so this
@@ -12,8 +18,8 @@ is not a free substitution into a previously certified hosted invoice.
 
 | Local quantity | PR543 source | Target-pair word |
 | --- | ---: | ---: |
-| D binary additions | 19,922 | 16,772 |
-| All binary additions | 26,916 | 23,766 |
+| D binary additions | 19,922 | 16,672 |
+| All binary additions | 26,916 | 23,666 |
 | Forward positive-prefix bound | 144,651 | 144,651 |
 | Reverse positive-prefix bound | 2,270,064 | 3,703,810 |
 | Local native payload bits | 100 | 102 |
@@ -35,13 +41,13 @@ python3 -B research/r420-target-pairs/verify.py
 Expected output:
 
 ```text
-PASS_R420_TARGET_PAIRS D=19922->16772 ADDs=26916->23766 saved=3150 columns=660 rank_mass=5112
+PASS_R420_TARGET_PAIRS D=19922->16672 ADDs=26916->23666 saved=3250 columns=660 rank_mass=5112
 ```
 
 `--report` prints the exact receipt, which must match `certificate.json`.
 The recipe and pinned source reconstruct the entire changed word in memory;
 its canonical JSON SHA-256 is
-`309cf1688f1027ec5ec182f5f6ccb8e5752e74ccd3ce017ced8bd45dfd7ff010`.
+`814b845afa056f6bce4e566e87494d591c6776092772748b509aead2959e0bff`.
 No generated word or changes to predecessor files are needed.
 
 To also run the unchanged native exporter, legality checker and five-, nine-
@@ -84,10 +90,10 @@ read and never modified. There is no clean-register assumption. All operands
 start and remain at frame zero throughout D, so there are no additional frame
 changes, copies, source accesses or recursive children. Both target-to-target
 additions are charged. The cost is `|K_b| + |K_a symmetric_difference K_b| + 2`,
-instead of `|K_a| + |K_b|`. Disjoint target pairs cannot interfere, and the six
-unpaired target rows retain their original operations.
+instead of `|K_a| + |K_b|`. Disjoint target pairs cannot interfere. The final
+recipe pairs all 120 targets.
 
-The changed D has more multi-input rows, 234 instead of 120. Counts in this
+The changed D has more multi-input rows, 240 instead of 120. Counts in this
 note are binary additions, after expanding every source operand. Neither a
 multi-input row nor a restored target mixing operation is charged for free.
 
@@ -120,23 +126,56 @@ This is a finite endpoint substitution and a written algebraic argument. It
 does not formalize the all-size multiplication theorem or establish that a
 downstream tool accepts H2'.
 
-## Search domain, scope and controls
+## Exact optimum in the disjoint-pair class
 
-The OS assignment seed was **13**. All `120 × 119 = 14,280` oriented target
-pairs were scored; 4,544 had positive complete local savings. One seed-13
-shuffle breaks ties before descending-gain greedy disjoint selection. That
-single pass selected the 57 pairs in `recipe.json`; there were no restarts or
-continuation searches. The verifier reproduces the nomination and freezes its
-exact endpoint and cost. No maximum-matching or circuit-optimality claim is
-made. Applying a known identity to D changes the compensation interface and
-its measured cost; seed diversity alone is not the contribution.
+The domain consists of arbitrary disjoint target pairs, either orientation
+for each pair, and unchanged D rows for any unpaired targets. Each pair uses
+exactly the four-operation identity above with both mixing operations paid.
+For distinct targets i,j, let
+
+```text
+w_ij = max(0, max(|K_i|, |K_j|) - |K_i symmetric_difference K_j| - 2).
+```
+
+This is the best nonnegative saving from that pair. In `matching-dual.json`,
+`twice_vertex_prices` gives 120 integers q_i in target order 120 through 239.
+The independent, integer-only checker verifies
+
+```text
+q_i >= 0                         for all 120 targets
+q_i + q_j >= 2*w_ij              for all 7,140 unordered pairs
+sum_i q_i = 6,500.
+```
+
+For any disjoint matching M, summing its edge inequalities gives
+`2*sum_M w_ij <= sum_used q_i <= sum_all q_i = 6,500`. Thus no matching in
+this class saves more than 3,250 additions. The 60-pair recipe has actual
+oriented saving exactly 3,250, so it attains the upper bound. This proves the
+restricted optimum without trusting a matching solver. It makes no claim
+about larger target blocks, overlapping transformations or helper factoring.
+
+The OS assignment seed was **13**. All `120 × 119 = 14,280` orientations were
+scored; 4,544 had positive complete local savings. The original single seed-13
+greedy pass saved 3,150. Concurrent PR713 reported that same saving before
+submission, so one bounded pivot replaced greedy selection by a maximum-weight
+matching nomination on the 3,280 positive undirected edges. NetworkX 3.5,
+with seed-13 shuffled edge insertion, nominated the final matching. A separate
+integer Hungarian assignment calculation produced the vertex prices and an
+attaining matching independently. Neither solver is imported or required by
+the shipped verifier. The exact frozen witness and feasible prices, rather
+than a solver's success message, establish the result. The stopping rule was
+one matching solve followed by the independent matching-bound certificate;
+there was no search beyond this class.
+
+## Controls
 
 Nine negative controls reject removed initial mixing, removed final recovery,
 a missing helper term, a nonzero D frame, target feedback into a helper,
 F2-neutral feedback into a helper, source access at frame zero, an edit outside
 D, and overlapping pairs. Every mutation must change the object and fail for
 the expected reason. A positive F2-neutral target-pair control passes the
-operator check but must pay two additional additions. These are finite tests,
+operator check but must pay two additional additions. A tenth negative
+control lowers one vertex price and must fail an edge inequality. These are finite tests,
 not impossibility proofs or a formal proof of the full theorem.
 
 ## Pins, predecessor credit and remaining work
@@ -171,10 +210,15 @@ rows, has no helper writes, imports no code from those pending PRs, and does
 not combine their circuits. PR670/674/688 optimize phase-B blocks, and PR691
 optimizes a phase-A quad. Those are separate scopes.
 
-The final overlap refresh covered 528 open PRs. PR708 shares
+The pre-submission overlap refresh covered 534 open PRs. PR708 shares
 phase-A decoder operands, while PR707/709 improve verification tooling. None
-changes these target-row compensation pairs. No pinned coordination issue
-existed at either check, so [the sprint claim](CLAIM.md) is local.
+of those changes these target rows. Scott Woolsey Biggart's PR713 appeared
+in the final refresh at head `1a19af5c5ddb6de9797a6d085e5df0b90ed6d58b` and
+independently constructed 57 target pairs with saving 3,150. The original
+version of this package corroborated that value. This final version adds the
+60-pair circuit and a solver-independent 3,250 upper bound for the full
+disjoint-pair class. It claims no priority for target-row factoring. No pinned
+coordination issue existed, so [the sprint claim](CLAIM.md) is local.
 
 The recursive profile is unchanged. No larger supplier exponent or kappa is
 claimed. Hosted-parent regeneration, whole-owner accounting, finite invoices,
@@ -190,7 +234,7 @@ Local replay on 2026-10-13 used Python 3.14.8, macOS 26.5.2 arm64, Apple Clang
 21.0.0 and Boost 1.92.0 headers. The standard-library verifier passed normally
 and with `python3 -I -O -B`. The final native run also used `-I -O -B`; all
 five-, nine- and eleven-stage checks and the two corruption controls passed.
-Native records fall from 29,874 to 26,724, while 2,940 nested MOVEs, nine
+Native records fall from 29,874 to 26,624, while 2,940 nested MOVEs, nine
 COPY/ERASE pairs and the paid histogram remain unchanged.
 
 Gzip recompression with a different timestamp passed the payload pin; changed
