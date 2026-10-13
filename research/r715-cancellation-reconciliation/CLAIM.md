@@ -27,3 +27,31 @@ subset ceiling. None covers this R715 deletion witness. Claim recorded locally.
 Selected record followed to #942's actual T37 construction and maintainer
 review: conditional kappa `1661960547713947/10^18`, unchanged #589 bit supplier.
 Source pins, selected frontier and upstream will remain unchanged.
+
+## Result and handoff — 2026-10-13T17:05:02Z
+
+Submitted [PR1039](https://github.com/CrocSwap/integer-mult-bounds/pull/1039),
+research consolidation / independent finite verification. Implementation head:
+`7833c6d6cfad11387d1152824f0ce14c11028b3d`; the only subsequent edit is this
+claim closeout. No pinned coordination issue exists to update.
+
+The four parent aliases match exactly. All 20 cancellation pairs and 688
+crossed occurrences pass; additions are 15,014 -> 14,974. Complete 955-column
+binary maps in both directions, all 963 rational frames, all register frame
+itineraries (including 425 empty-source parent records), nine copies and the
+4,140-child profile agree. The price-preserving claim is independently checked;
+a legal scalar-preserving empty-frame control raises the count to 4,141.
+
+Both Python 3.14.6 and 3.9.6 pass the full receipt and all 15 package tests,
+including 16 rejection mutations and offline relocation. Receipt regeneration
+is byte-identical; exact source/context pins, selected-record integrity and its
+five tests, links and whitespace pass. No native or full supplier replay.
+
+Submission overlap refreshed through #1038; targeted R715 reconciliation
+search found no duplicate. Concurrent #1024's R714 result is explicitly
+credited and distinguished in the README. Main remains the exact base above.
+The `codex` and `codex-automation` labels are unavailable upstream. No merge,
+selected-frontier edit or claim of a hosted CI pass.
+
+Orientation/claim finished by 16:48 UTC. Final verification and handoff began
+at 17:00 UTC, within the reserved final quarter of the 30-minute envelope.
