@@ -23,6 +23,13 @@ The earlier construction family #533–#537 and formal connections #513/#528 are
 
 This frozen round covers #543/#545/#555 and related construction, research and tooling packages through #588. Each disposition distinguishes completed checks, publication and remaining obligations. The separate formalization PRs and later arrivals are not approved by this round.
 
+## Proposed circuit consolidation (not yet published)
+
+The [supplier-circuit integration batch](supplier-circuit-consolidation.md)
+retains six pending research packages, composes compatible circuits and records
+exact-head coverage and post-merge recommendations. It does not change this
+ledger's historical dispositions or claim GitHub closures.
+
 ## Remaining priorities
 
 1. Follow the new Linux CI for the published #442/#484/#509/#516/#520 batch; the [scoped review](community-formal-20261012-review.md) records completed local checks.
