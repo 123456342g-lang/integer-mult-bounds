@@ -24,3 +24,30 @@
 - #681, `fdc2e4f3c6825530b02143b30deab5de10209479`: raw factory resynthesis.
 
 No pending implementation is imported. The selected construction and review were followed through #626's retained supplier, local event stream, emitter and source manifest. The review ledger marks #626 and #622 incorporated, while the newer PRs above remain pending.
+
+## Completed result — 2026-10-13
+
+Submitted [PR #739](https://github.com/CrocSwap/integer-mult-bounds/pull/739),
+**research construction / finite complex-supplier circuit improvement; no new
+κ**. Initial contribution commit: `db5271d831d506ecf446609dc431e02bc3da8e0e`.
+
+The complete fixed-word scan found 1,211 profitable distinct-magnitude edges.
+Combined with the explicitly credited equal-magnitude method, 1,015 blocks
+reduce forward real-component primitives from 257,232 to 227,206. The new
+increment beyond #722's 237,544 is **10,338**. Backward is unchanged. Both
+716-column scalar projections, all 6,279 independent block basis cases, exact
+prefix envelopes, negative controls and nine focused tests pass. The selected
+κ and paid recursive profiles are unchanged. Production block-interface
+admission and invoice integration remain open.
+
+The final pre-submission snapshot covered 556 open PRs through #737, including
+new #734 at `21606831df4b08f79d87fd420c558a520dca571e`, whose per-macro
+signed-Horner work is credited separately. #738 arrived during submission;
+its Gaussian copy-floor theorem is unrelated to coefficient-work rescaling.
+There was still no pinned coordination issue. The one delegated reviewer
+stayed within this package, supplied the independent checker and found no
+correctness blocker. One wording correction from that review distinguishes
+endpoint-neutral extra instructions from equal-cost instructions.
+
+Reproduce: `python3 -I -B research/complex-coefficient-rescaling/verify.py`.
+Expected: `PASS_JP8_COEFFICIENT_RESCALING incremental_real_saved=10338 blocks=1015 columns=716 orientations=2 controls=11`.

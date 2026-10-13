@@ -161,7 +161,7 @@ initial/final erasure, signs, rescaling, source aliasing, changed source/odd
 numerator/frame, an endpoint-neutral prefix excursion, nonprofitable joining,
 and phase boundaries. Four further independent semantic mutations reject.
 The tests also cover all 343 triples over a stated seven-value signed domain,
-early-ended helpers, cost-neutral extra instructions, input corruption and
+early-ended helpers, endpoint-neutral extra instructions, input corruption and
 receipt corruption. These are finite checks, not a formal proof of the full
 multiplication theorem.
 

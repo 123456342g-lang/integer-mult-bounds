@@ -44,11 +44,14 @@ saving and found no mathematical blocker. This is not independent human review.
 ## Coordination and limits
 
 The initial full open-PR snapshot contained 551 PRs through #732. The final
-snapshot contained 553 through #734; #696, #722 and #723 retained their pinned
-heads. #734's body, head and changed-file inventory were inspected and its
+intermediate snapshot contained 553 through #734, and the immediate
+pre-submission snapshot contained 556 through #737; #696, #722 and #723 retained
+their pinned heads. #734's body, head and changed-file inventory were inspected and its
 distinct per-macro signed-Horner contribution was credited in the README.
 GitHub reported no pinned coordination issue at either check, so the claim is
-local. No separate reservation issue was opened.
+local. No separate reservation issue was opened. #738 arrived during submission;
+its distinct Gaussian copy-floor result was checked for overlap. The single
+submission is [PR #739](https://github.com/CrocSwap/integer-mult-bounds/pull/739).
 
 Only this research package is changed. No selected supplier, production
 emitter, global invoice, frontier pointer or `upstream/` file is modified.
