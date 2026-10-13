@@ -67,5 +67,10 @@
   "discussion": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1237",
   "selected_source": "0fc329d0bec93ca7cd288eaea1295172e8789810",
   "submission_base": "dadfea6e8a78ff6ba901705f87532a71c6f5bbb8",
-  "overlap": "Final 21:05 UTC snapshot:844 open PRs through1247,9 Discussion threads including comments,324 local records; complete pagination,no warnings. Named predecessor heads unchanged; historical PR407 is a distinct scalar entrance-frame construction."
+  "overlap": "Final 21:05 UTC snapshot:844 open PRs through1247,9 Discussion threads including comments,324 local records; complete pagination,no warnings. Named predecessor heads unchanged; historical PR407 is a distinct scalar entrance-frame construction.",
+  "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/1255",
+  "mathematical_head": "306370dfde0097a1a0b6e3b539c6437fbe46a679",
+  "submitted_at_utc": "2026-10-13T21:11:54.846133+00:00",
+  "receipt_sha256": "34f3fc87deac2e04323d140b490133f7ebe2788c66143c926b5e266126993269",
+  "production_receipt_sha256": "0f1fc10c00dfbedeebc2c96353c18bdc2a7fff9a40abbd789397e21b395bf1cb"
 }
