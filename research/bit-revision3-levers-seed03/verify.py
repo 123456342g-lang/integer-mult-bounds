@@ -35,8 +35,14 @@ from levers import Reject, dec, max_count, need, relaxed, root, verdict, bill  #
 RECORDS = ('certificates/selected-result.json', 'certificates/checkpoints/frontier1094.json')
 ASSEMBLY = 'research/community-frontier1094-audit/ASSEMBLY.json'
 EXPECTED = 'research/e8-bit-p111-tuned/tune/EXPECTED.json'
-GUARD = ('research/e8-bit-p111-tuned/vendor/pr510/e8-r480-nine-stage/vendor/e8-r715-eleven-stage-whole/code/global_k.py',
-         'halving_integer_inequality=[M**HD,2*max(paid)**HD]')
+# The idle-rank cap is not fixed by a guard: global_k.py raises the halving depth HD until
+# 2 maxchild^HD < m^HD. HD is limited by the row-coefficient bound row < 20161 of the invoice in use.
+INVOICE = ('research/e8-bit-p111-tuned/vendor/pr510/e8-r480-nine-stage/code/assemble9.py',
+           ['2 * max(P) ** DEPTH < m ** DEPTH', 'row = DEPTH * (m * m + 1) + 9909 + 252'])
+ROW_BOUND = ('research/e8-bit-carrier-skeleton/code/hub/r740-hosted-eleven/code/row_bound.py',
+             ['assert m**depth>2*child**depth', 'row=depth*stock_exponent+9909+252', 'assert row<20161'])
+ADAPTIVE = ('research/e8-bit-p111-tuned/vendor/pr510/e8-r480-nine-stage/vendor/e8-r715-eleven-stage-whole/code/global_k.py',
+            ['while not 2*max(paid)**HD<M**HD: HD+=1'])
 TARGET = Q(1, 99)
 M = 64
 
@@ -68,8 +74,11 @@ def bind():
     need(sha(word_raw) == exp['word']['file_sha256'] and sha(gzip.decompress(word_raw)) == exp['word']['content_sha256'],
          'B3 record pins the bit word')
     need(frac(asm['bit_lower']) == frac(exp['nine']['bit_lower']), 'B4 certificate bit endpoint equals the PR589 record')
-    guard_text = (ROOT / GUARD[0]).read_text()
-    need(GUARD[1] in guard_text and exp['nine']['bit']['halving_depth'] == 2, 'B5 halving guard M^2 > 2 maxchild^2')
+    for path, lines in (INVOICE, ROW_BOUND, ADAPTIVE):
+        text = (ROOT / path).read_text()
+        need(all(line in text for line in lines), 'B5 halving-depth and row-bound sources: ' + path)
+    need(exp['nine']['bit']['halving_depth'] == 2 and exp['nine']['bit']['row_coefficient'] == 2 * (M * M + 1) + 10161,
+         'B5 the record uses halving depth 2 under the PR510 row bound')
     return dict(record=bound, assembly=ASSEMBLY, assembly_sha256=sha(asm_raw), expected=EXPECTED, expected_sha256=sha(exp_raw),
                 word=str(word_path.relative_to(ROOT)), word_sha256=sha(word_raw)), asm, exp, json.loads(gzip.decompress(word_raw))
 
@@ -160,14 +169,25 @@ def main():
     need(all(c >= 0 for c in idle_total.values()) and max(r for r, c in idle_total.items() if c) <= exp['nine']['bit']['maxchild'],
          'R3 the profile is N local words plus idle children')
     cap = max(r for r in range(1, M) if M * M > 2 * r * r)
-    need(cap == 45, 'B5 halving-guard cap')
+    need(cap == 45, 'B5 halving-depth-2 cap')
+    physical = exp['nine']['bit']['physical']
+    overhead = next(k for k in range(64) if 3 ** k > physical)
+    depths = []
+    for depth in range(2, 6):
+        dcap = max(r for r in range(1, M) if M ** depth > 2 * r ** depth)
+        depths.append(dict(halving_depth=depth, idle_cap=dcap,
+                           pr510_row=depth * (M * M + 1) + 10161, pr510_admissible=depth * (M * M + 1) + 10161 < 20161,
+                           elementary_cover_row=depth * (M * (M - 1) // 2 + M + overhead) + 10161,
+                           elementary_cover_admissible=depth * (M * (M - 1) // 2 + M + overhead) + 10161 < 20161))
+    caps = [d['idle_cap'] for d in depths if d['elementary_cover_admissible']]
+    need(caps == [45, 50, 53], 'B5 admissible idle caps under the merged elementary-cover row bound')
     out['replay'] = dict(
         v=v, replicas=T, stages=stages, calls=N, live=W, w=str(w), copy_charge_per_call=cst,
         local_histogram=show(local), local_mass=sum(r * c for r, c in local.items()),
         class_split={k: show(c) for k, c in split.items()}, copies=show(copies),
         class_mass={k: sum(r * c for r, c in s.items()) for k, s in split.items()},
         deficit=M * W - exp['nine']['bit']['rank_mass'], deficit_identity='D = W - %d N' % cst,
-        idle_children_total=show(+idle_total), halving_guard_cap=cap)
+        idle_children_total=show(+idle_total), record_idle_cap=cap, halving_depths=depths)
 
     # --- revision-3 levers on the bit side (fixed local word unless stated; idle at the cap)
     mass = sum(r * c for r, c in local.items())
@@ -189,13 +209,20 @@ def main():
         lever('centre free + rank-8 children', {8: Q(mass - cst, 8)}, 0),
         lever('centre free + rank-16 children', {16: Q(mass - cst, 16)}, 0),
         lever('centre free + two unpaid coordinates', +no_copies, 0, u=2),
+        lever('two unpaid + ideal in-window shapes (222 rank-7 data, 439 rank-8 helpers, copies kept)',
+              {7: Q(2 * v) + 9, 8: 439}, cst, u=2),
+        lever('centre free + ideal data + 332 width-8 helpers (in window)', {7: Q(2 * v), 8: 332}, 0),
     ]
     base = Q(levers[0]['root_lo'])
     for row in levers:
         row['multiplier'] = dec(Q(row['root_lo']) / base, 4)
     out['levers'] = levers
-    out['cap_curve'] = [lever('PR589 bit word, ideal idle packing', local, cst, R=R) for R in (42, 45)] + \
-        [dict(lever('PR589 bit word, ideal idle packing', local, cst, R=63), note='beyond the halving guard; robustness only')]
+    out['cap_curve'] = [lever('PR589 bit word, ideal idle packing', local, cst, R=R) for R in (42, 45, 50, 53)] + \
+        [dict(lever('PR589 bit word, ideal idle packing', local, cst, R=63), note='inadmissible under both row bounds; robustness only')]
+    out['lever_fails_at_larger_caps'] = {str(R): [dict(lever=row['lever'], at_1_over_99=verdict(
+        relaxed(H_, M, w, c_, R, u_), M, w, TARGET)) for row, (H_, c_, u_) in zip(levers[:7], (
+            (local, cst, 1), (+no_copies, 0, 1), (half_copies, Q(cst, 2), 1), (local, cst, 2), ({8: Q(mass, 8)}, cst, 1),
+            ({16: Q(mass, 16)}, cst, 1), ({8: Q(mass - cst, 8)}, 0, 1)))] for R in (50, 53, 63)}
 
     # --- joint budget surface at a = 1/99: helpers (one climb of rank = width) per copy charge
     data_ideal = {7: Q(2 * v)}                          # each data register a single rank-7 climb
@@ -208,7 +235,7 @@ def main():
         base_ship[7] = base_ship.get(7, 0) + Q(c, 7)
         row = dict(copy_charge=str(c))
         for label, b in (('ideal_data', base_ideal), ('shipped_data', base_ship)):
-            for R in (cap, 63):
+            for R in (45, 50, 53, 63):
                 res = max_count(b, 8, M, w, c, R, TARGET, 600)
                 row['%s_width8_cap%d' % (label, R)] = None if res is None else dict(max_helpers=res[0], next=res[2])
         surface.append(row)
@@ -216,31 +243,38 @@ def main():
     for c in (0, Q(63, 2)):
         b = dict(data_ideal)
         b[7] = b.get(7, 0) + Q(c, 7)
-        for width in (8, 7, 6, 4, 2):
-            for R in (cap, 63):
+        for width in (8, 7, 6, 4, 2, 1):
+            for R in (45, 50, 53):
                 res = max_count(b, width, M, w, c, R, TARGET, 2000)
                 widths.append(dict(copy_charge=str(c), helper_width=width, idle_cap=R,
                                    max_helpers=None if res is None else res[0], next=None if res is None else res[2]))
     out['joint_surface'] = surface
     out['helper_width'] = widths
     # obstruction rows, restated as certified verdicts
-    o1 = {R: verdict(relaxed({7: Q(2 * v) + Q(cst, 7)}, M, w, cst, R), M, w, TARGET) for R in (cap, 63)}
-    need(o1 == {cap: 'fail', 63: 'fail'}, 'O1 copy charge 63 cannot reach 1/99 in the relaxation')
-    o1_lo, o1_hi = root(relaxed({7: Q(2 * v) + Q(cst, 7)}, M, w, cst, cap), M, w)
-    out['O1'] = dict(statement='copy charge 63 per call, no helpers, every data register one rank-7 climb, idle at cap R',
-                     verdicts={str(R): v_ for R, v_ in o1.items()}, helper_free_ceiling_cap45=dec(o1_lo),
-                     helper_free_ceiling_bracket=[str(o1_lo), str(o1_hi)],
-                     format_limits_bit_X_star='6.0005e-3 (research/format-limits section A, stronger axioms)')
-    # O2: centre path shared by two calls against the design-free helper floors of research/format-limits section D
-    floors = dict(strict=138, sink_only=212)
-    shared = [r for r in widths if r['copy_charge'] == str(Q(63, 2)) and r['idle_cap'] == cap]
-    need(next(r for r in shared if r['helper_width'] == 8)['max_helpers'] < floors['strict'], 'O2 shared centre leaves too few width-8 helpers')
+    o1_local = {7: Q(2 * v) + Q(cst, 7)}
+    o1 = {R: verdict(relaxed(o1_local, M, w, cst, R), M, w, TARGET) for R in (42, 45, 50, 53, 63)}
+    need(all(v_ == 'fail' for v_ in o1.values()), 'O1 copy charge 63 cannot reach 1/99 in the relaxation')
+    o1_roots = {R: root(relaxed(o1_local, M, w, cst, R), M, w) for R in (45, 53, 63)}
+    o1_rank8 = {R: dec(root(relaxed({7: Q(2 * v), 8: Q(cst, 8)}, M, w, cst, R), M, w)[0]) for R in (45, 63)}
+    out['O1'] = dict(statement='copy charge 63 per call (as nine rank-7 copies), no helpers, every data register one rank-7 climb, idle at cap R',
+                     verdicts={str(R): v_ for R, v_ in o1.items()},
+                     helper_free_ceiling={str(R): dict(root=dec(lo), bracket=[str(lo), str(hi)]) for R, (lo, hi) in o1_roots.items()},
+                     copies_at_rank8_ceiling=o1_rank8,
+                     format_limits_bit='X(9) = 4.6072e-3 at s = 9 and X* = 6.0005e-3 over all s (research/format-limits section A, its axioms)')
+    # O2: centre path shared by two calls, width-8 helpers, against the design-free floor for full-frame helpers
+    floors = dict(strict=138, sink_only=212, shipped_ladders=222)
+    o2 = {}
+    for R in (45, 50, 53):
+        k = max_count({7: Q(2 * v) + Q(cst, 14)}, 8, M, w, Q(cst, 2), R, TARGET, 600)
+        o2[str(R)] = dict(max_width8_helpers=k[0], next=k[2], below_strict_floor=k[0] < floors['strict'])
+    need(o2['45']['below_strict_floor'] and o2['50']['below_strict_floor'] and not o2['53']['below_strict_floor'],
+         'O2 boundary: holds for halving depth <= 3, flips at depth 4')
+    k8 = max_count({7: Q(2 * v), 8: Q(cst, 16)}, 8, M, w, Q(cst, 2), 45, TARGET, 600)
     out['O2'] = dict(statement='copy charge 63/2 per call (centre path shared by two calls), every data register one rank-7 climb, '
-                               'helpers one climb of rank = width, idle at the cap 45; floors from research/format-limits section D (argued premises)',
-                     floors=floors,
-                     max_helpers_by_width={str(r['helper_width']): r['max_helpers'] for r in shared},
-                     widths_meeting_strict_floor=[r['helper_width'] for r in shared if r['max_helpers'] is not None and r['max_helpers'] >= floors['strict']],
-                     widths_meeting_sink_only_floor=[r['helper_width'] for r in shared if r['max_helpers'] is not None and r['max_helpers'] >= floors['sink_only']])
+                               'full-frame (width-8) helpers as one rank-8 climb, idle at cap R; floors from research/format-limits '
+                               'section D for full-frame helpers (argued premises)',
+                     floors=floors, by_cap=o2, copies_at_rank8_cap45=k8[0],
+                     holds_for='halving depth 2 (cap 45, the record) and depth 3 (cap 50); fails at depth 4 (cap 53)')
 
     # --- complex cross-check (#1240) and #1272's combined lever inside / beyond the window
     cw = {1: 2412, 2: 418, 3: 432, 4: 142, 5: 82, 8: 8}
@@ -249,13 +283,16 @@ def main():
     clo, chi = root(relaxed(cw, 73, cxw, ccst, ccap), 73, cxw)
     need(Q('0.0016900541090') < chi and clo < Q('0.0016900541091'), 'X1 #1240 complex word ceiling reproduced')
     rows = []
-    for name, H, c in (('complex word ceiling (#1240)', cw, ccst),
-                       ('centre free', {r: n for r, n in cw.items() if r != 8}, 0),
-                       ('centre free + rank-9 children (window h = 9)', {9: Q(cmass - ccst, 9)}, 0),
-                       ('centre free + rank-16 children (beyond the window)', {16: Q(cmass - ccst, 16)}, 0)):
-        lo, hi = root(relaxed(H, 73, cxw, c, ccap), 73, cxw)
+    cases = (('complex word ceiling (#1240)', cw, ccst, 1),
+             ('centre free', {r: n for r, n in cw.items() if r != 8}, 0, 1),
+             ('centre free + rank-9 children (window h = 9)', {9: Q(cmass - ccst, 9)}, 0, 1),
+             ('centre free + rank-16 children (beyond the window)', {16: Q(cmass - ccst, 16)}, 0, 1),
+             ('centre free + two unpaid coordinates', {r: n for r, n in cw.items() if r != 8}, 0, 2),
+             ('two unpaid + rank-9 children (window h = 9)', {9: Q(cmass, 9)}, ccst, 2))
+    for name, H, c, u_ in cases:
+        lo, hi = root(relaxed(H, 73, cxw, c, ccap, u_), 73, cxw)
         rows.append(dict(lever=name, root_lo=str(lo), root_hi=str(hi), root=dec(lo), multiplier=dec(lo / clo, 4),
-                         at_1_over_99=verdict(relaxed(H, 73, cxw, c, ccap), 73, cxw, TARGET)))
+                         at_1_over_99=verdict(relaxed(H, 73, cxw, c, ccap, u_), 73, cxw, TARGET)))
     out['complex_crosscheck'] = dict(m=73, w=str(cxw), copy_charge=ccst, idle_cap=ccap, rows=rows)
 
     text = json.dumps(dict(status='PASS_BIT_REVISION3_LEVERS', **out), indent=1, sort_keys=True) + '\n'

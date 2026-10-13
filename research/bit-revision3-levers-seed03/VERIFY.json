@@ -19,7 +19,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 120,
-      "checks": "Binds selected record -> frontier1094 ASSEMBLY -> PR589 EXPECTED -> bit word and the halving guard; reproduces the selected bit endpoint (accept, next 1e-24 reject, surcharge included) with code-disjoint exact arithmetic; replays the word's local histogram, class split and coverage law; certifies the lever table, cap curve, joint helper/copy-charge surface (k passes, k+1 fails), O1/O2 and the complex cross-check; RESULT.json byte-identical."
+      "checks": "Binds selected record -> frontier1094 ASSEMBLY -> PR589 EXPECTED -> bit word, and the halving-depth/row-bound sources; reproduces the selected bit endpoint (surcharge included); replays the word's local histogram, class split and coverage law; tabulates admissible idle caps per halving depth; certifies the lever table, cap curve, joint full-frame helper surface (k passes, k+1 fails), O1 (all caps), O2 (holds at depth <= 3, flips at depth 4) and the complex cross-check; RESULT.json byte-identical."
     },
     {
       "argv": [
@@ -35,7 +35,7 @@
         "test_package.py"
       ],
       "timeout_seconds": 120,
-      "checks": "Interval engine sanity, endpoint and neighbour controls, the favorable-relaxation steps (merging climbs, idle at the largest rank, surcharge), coverage-law and rank guards, certified O1/O2 boundaries, replay and record tampering controls, receipt values."
+      "checks": "Interval engine, endpoint and neighbours, one instance of each relaxation step, coverage-law and rank guards, halving-depth cap table, O1/O2 and in-window centre-free boundaries, replay and record tampering, receipt values."
     }
   ]
 }

@@ -40,32 +40,32 @@
     ]
   },
   "scope_status": "changed",
-  "actual_scope": "Certified bit-side budgets for priority revision 3: in the coverage-law relaxation of the selected PR589 bit word (fixed local word or most favorable in-window shapes, idle mass at the halving-guard cap 45, fractional counts, no surcharge), the packing ceiling, each revision-3 lever and combination at a = 1/99, and the joint copy-charge x helper-count x helper-width surface, with scoped obstructions O1 (copy charge 63) and O2 (centre path shared by two calls against the design-free helper floors).",
-  "scope_change_reason": "The card's helper-interface question is saturated or claimed (semantic-D contract #1194/#1311, entrances #1179/#1253, after-B frames #1128; register-model card actively claimed in #1317), while revision 3 (#1272) quantifies its levers on the complex side only and #1293 leaves the bit word's realizability-aware ceiling open. The bit-side budget answers what any bit helper or centre-path mechanism must meet to reach the 1/99 planning target.",
-  "bottleneck_link": "A large kappa jump needs both suppliers to advance (bottleneck brief, priority log). This gives the bit side's quantitative targets: which levers can reach 1/99 under the coverage law, and how many helpers of which width a given copy charge leaves room for. It also shows that the combined lever of #1272 (and its bit analogue) relies on rank-16 children beyond the stage window. No kappa change.",
+  "actual_scope": "Certified bit-side budgets for the proposed priority revision 3 (open #1272, stacked on open #1240): in the coverage-law relaxation of the selected PR589 bit word (fixed local word or most favorable in-window shapes, rank-7 copy carriage, idle mass at the halving-depth cap 45/50/53, fractional counts, no surcharge), each lever and combination at a = 1/99, the joint copy-charge x full-frame-helper surface, and scoped obstructions O1 (copy charge 63, every cap) and O2 (shared centre path vs the full-frame helper floor, halving depth <= 3).",
+  "scope_change_reason": "The card's helper-interface question is saturated (semantic-D contract #1194/#1311, entrances #1179/#1253, after-B frames #1128) and the register-model card is done in PR #1333 (claim #1317). The proposed revision 3 quantifies its levers on the complex side only; this supplies the bit-side numbers any bit centre-path or helper mechanism must meet at the 1/99 planning target. The bit packing ceiling itself reproduces our merged #1023 and is not claimed as new.",
+  "bottleneck_link": "A large kappa jump needs both suppliers to advance. This gives the bit side's quantitative targets: which levers reach 1/99 under the coverage law, how many full-frame helpers a given copy charge leaves room for at each admissible halving depth, and that #1272's combined lever relies on rank-16 children beyond the stage window while in-window alternatives (fewer helpers, a second unpaid coordinate) exist. No kappa change.",
   "budget_minutes": 180,
   "stop_rule": "Stop once every lever, surface boundary and obstruction is certified with exact intervals and the positive controls reproduce the selected bit endpoint and #1240's complex ceiling; report any undecided boundary instead of claiming it.",
   "outcome": "completed",
-  "evidence": "RESULT.json: bit word packing ceiling 0.001955918756 (cap 45); centre free x2.771, shared x1.885, two unpaid x3.738, rank-8 x1.642, rank-16 x2.419; centre free + rank-8 0.00894 < 1/99; centre free + rank-16 0.01317 and centre free + two unpaid 0.01076 pass. O1: copy charge 63 fails 1/99 at caps 42/45/63 even helper-free (ceiling 0.00679 at cap 45). O2: with the centre path shared (copy charge 31.5) at cap 45, at most 104 width-8 helpers fit (k=104 passes, 105 fails), below both floors (138 strict, 212 sink-only); only width <= 4 meets the strict floor and width 2 the sink-only floor. Complex cross-check: #1240's ceiling reproduced; #1272's combined lever gives 0.01101 with rank-16 children but 0.00813 < 1/99 inside the window (rank 9). 12 tests pass.",
+  "evidence": "RESULT.json: packing ceiling 0.001955918756 (cap 45; reproduces #1023's free concentration); levers x2.771/x1.885/x3.738/x1.642/x2.419; with the shipped local mass, centre free + rank-8 fails (0.00894) while centre free + rank-16 (0.01317) and + two unpaid (0.01076) pass; centre free with ideal data and <= 332 width-8 helpers passes in window (0.01010); two unpaid with ideal in-window shapes passes at full copy charge (0.01179). O1: copy charge 63 fails at caps 42/45/50/53/63 (ceilings 0.006794/0.007944/0.009665 at 45/53/63). O2: shared centre leaves 104/131/145 width-8 helpers at caps 45/50/53 (halving depths 2/3/4; certified k/k+1), below the strict floor 138 only at depth <= 3. Complex: #1240 reproduced; #1272's x6.5 needs rank-16; in window centre free + rank-9 0.00813 fails, two unpaid + rank-9 0.01091 passes. 15 tests pass.",
   "author": "Sagar Thakrar (thakrarsagar)",
   "ai_assistance": "Substantial: Claude (Anthropic) via Claude Code. Parallel read-only scout and judge subagents proposed and compared four bit-track candidates; this one ranked first on value and overlap.",
   "open_questions": [
     {
-      "question": "Is the halving-guard cap 45 the right idle-rank limit for every bit recursion depth, or can a changed halving depth admit larger idle children?",
-      "why_it_matters": "All verdicts are reported at cap 45 with cap 63 as a robustness bound; O1 holds at both, but surface boundaries move with the cap.",
-      "first_step": "Re-derive the guard from global_k.py's halving_integer_inequality for halving depths 2 and 3 and re-run the surface.",
+      "question": "At which halving depth, under which row-coefficient bound, does a concrete bit construction run?",
+      "why_it_matters": "O2 holds at halving depth <= 3 (caps 45, 50) and flips at depth 4 (cap 53), which the merged elementary-cover row bound admits.",
+      "first_step": "Price the selected profile's row coefficient under the elementary-cover bound at depths 3 and 4 and check the remaining finite guards.",
       "blocked_by": "None."
     },
     {
-      "question": "Can a bit centre-path mechanism keep data registers as single rank-7 climbs while sharing the copy charge, or does sharing force split climbs?",
-      "why_it_matters": "The surface's ideal-data rows assume single climbs; the shipped-data rows show the gap is large (e.g. 104 vs none at copy charge 31.5).",
-      "first_step": "Construct a two-call shared-centre toy on a small E8 sub-word and replay its climbs.",
+      "question": "Can a centre-path-sharing mechanism keep every data register a single rank-7 climb with at most 104-145 full-frame helpers?",
+      "why_it_matters": "The ideal-data rows assume single climbs; shipped shapes leave far less room (e.g. none at cap 45 for copy charge 31.5).",
+      "first_step": "Replay a two-call shared-centre toy on a small E8 sub-word.",
       "blocked_by": "A concrete centre-sharing construction."
     },
     {
-      "question": "Which local frame window (h) would a rank-16-children mechanism need on each side, and what does it cost in the invoice?",
-      "why_it_matters": "Both the bit and complex combined levers reach 1/99 only with rank-16 children beyond the current windows (h = 8 bit, h = 9 complex).",
-      "first_step": "Price a window-16 stage in the format-limits (Win)/(Dfc) accounting.",
+      "question": "What do the in-window alternatives to rank-16 children cost: a second unpaid coordinate, or fewer helpers (<= 332 with the centre free)?",
+      "why_it_matters": "Both reach 1/99 in this relaxation inside today's windows.",
+      "first_step": "Price a second unpaid coordinate in format-limits' (Dfc)/(Win) accounting with its invoice.",
       "blocked_by": "None."
     }
   ]

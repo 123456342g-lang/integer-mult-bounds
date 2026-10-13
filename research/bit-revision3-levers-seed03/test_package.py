@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Apache-2.0
-"""Controls for the bit-side lever budgets (about 20 s).
+"""Controls for the bit-side lever budgets (< 2 s; one instance of each relaxation step, fractional counts hold by superset).
 
 Run: python3 -I -B -m unittest discover -s research/bit-revision3-levers-seed03 -p test_package.py -v
 """
@@ -67,6 +67,27 @@ class Relaxation(unittest.TestCase):
         self.assertEqual(max(r for r in range(1, M) if M * M > 2 * r * r), 45)
         self.assertFalse(M * M > 2 * 46 * 46)
 
+    def test_halving_depth_caps_follow_the_row_bounds(self):
+        result = json.loads((HERE / 'RESULT.json').read_text())
+        rows = {d['halving_depth']: d for d in result['replay']['halving_depths']}
+        self.assertEqual({k: r['idle_cap'] for k, r in rows.items()}, {2: 45, 3: 50, 4: 53, 5: 55})
+        self.assertEqual([k for k, r in rows.items() if r['pr510_admissible']], [2])
+        self.assertEqual([k for k, r in rows.items() if r['elementary_cover_admissible']], [2, 3, 4])
+
+    def test_o2_flips_at_halving_depth_four(self):
+        base = {7: Q(222) + Q(63, 14)}
+        for R, k in ((50, 131), (53, 145)):
+            loc = dict(base)
+            loc[8] = k
+            self.assertEqual(L.verdict(L.relaxed(loc, M, w, Q(63, 2), R), M, w, Q(1, 99)), 'pass')
+            loc[8] = k + 1
+            self.assertEqual(L.verdict(L.relaxed(loc, M, w, Q(63, 2), R), M, w, Q(1, 99)), 'fail')
+
+    def test_centre_free_fits_in_window_with_fewer_helpers(self):
+        # the joint surface, not the window, is what the centre-free lever must meet
+        self.assertEqual(L.verdict(L.relaxed({7: 222, 8: 332}, M, w, 0, 45), M, w, Q(1, 99)), 'pass')
+        self.assertEqual(L.verdict(L.relaxed({7: 222, 8: 333}, M, w, 0, 45), M, w, Q(1, 99)), 'fail')
+
     def test_o2_boundary_is_certified(self):
         base = {7: Q(222) + Q(63, 14)}
         k, _, nxt = L.max_count(base, 8, M, w, Q(63, 2), 45, Q(1, 99), 600)
@@ -79,7 +100,7 @@ class Relaxation(unittest.TestCase):
 
     def test_o1_has_no_room_at_any_admissible_cap(self):
         base = {7: Q(222) + 9}
-        for R in (42, 45, 63):
+        for R in (42, 45, 50, 53, 63):
             self.assertEqual(L.verdict(L.relaxed(base, M, w, 63, R), M, w, Q(1, 99)), 'fail')
 
 
@@ -107,7 +128,8 @@ class Replay(unittest.TestCase):
         result = json.loads((HERE / 'RESULT.json').read_text())
         self.assertEqual(result['status'], 'PASS_BIT_REVISION3_LEVERS')
         self.assertEqual(result['levers'][0]['root'], '0.001955918756')
-        self.assertEqual(result['O2']['max_helpers_by_width']['8'], 104)
+        self.assertEqual(result['O2']['by_cap']['45']['max_width8_helpers'], 104)
+        self.assertEqual(result['O2']['by_cap']['53']['max_width8_helpers'], 145)
 
 
 EXPECTED_LOCAL = {int(r): n for r, n in EXP['word']['local_histogram'].items()}
