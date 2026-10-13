@@ -18,5 +18,18 @@
   "expected_finish_utc": "2026-10-13T15:52:00Z",
   "coordination": "No pinned sprint issue; checked pinnedIssues and recent open PR metadata before local claim",
   "overlap": "PR843 c99f4478156906c323b1a041f0443f76139d6b6c uses 465 single-hoist positions, 31->26. The planned whole-block factorization class and repeated writes differ. PR904/936/941 prefix series and PR965 D helper triples target distinct circuit domains.",
-  "status": "claimed"
+  "status": "completed and submitted",
+  "result": {
+    "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/973",
+    "code_checkpoint": "60f28747fffac3bc75b8a6f38dd7e829db8240c9",
+    "completed_utc": "2026-10-13T15:29:00Z",
+    "frame509_additions": "31 -> 21",
+    "complete_local_ADDs": "24305 -> 24285",
+    "further_complete_ADDs_vs_PR843": 10,
+    "new_kappa_claim": false,
+    "reproduction": "python3 -I -B research/r439-frame509-seed08/native.py --replay-search",
+    "checks": "exact integer columns; 2048 Boolean inputs; H1-H5 and 661 columns; fresh native 5/9/11 stages; 96 bridge controls; 11 local and 11 package controls; selected-record integrity; diff --check",
+    "overlap_refresh": "Open PR metadata refreshed through #972; #843 head unchanged; #967 changes D helper stars; #972 addresses h=10 parity frames. No new frame509 claim found.",
+    "limits": "No minimum-circuit proof, new moment/kappa, hosted supplier invoice or full multiplication theorem."
+  }
 }
