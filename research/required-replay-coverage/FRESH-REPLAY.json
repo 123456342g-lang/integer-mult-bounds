@@ -4,7 +4,7 @@
   "kappa": "1661634653669567/1000000000000000000",
   "reused_ancestry": true,
   "coverage_contract": "pr741-sw4-v1",
-  "contract_sha256": "c100f6934557b99b89b3f11fb76737cd46ce970f71fc9add566db0ece544803b",
+  "contract_sha256": "7acd5033bc78e3f473718269edaa267c2785d84fbe95ccf6815a33dcf58c2756",
   "selected_binding": {
     "status": "PASS_REBUILT_PR589_PR799_COMPOSITION",
     "kappa": "1661634653669567/1000000000000000000",
@@ -129,5 +129,6 @@
       "seconds": 1491.156
     }
   ],
-  "scope": "Fresh X4 native/global/independent replay using source-bound complete archived PR741 ancestry; final coverage and publication rechecked with current code. No fresh ancestral bit/SW4 reconstruction or hosted CI."
+  "scope": "Fresh X4 native/global/independent replay using source-bound complete archived PR741 ancestry; final coverage and publication rechecked with current code. No fresh ancestral bit/SW4 reconstruction or hosted CI.",
+  "contract_bytes": "Final coverage rechecked after LF normalization to match committed Git bytes."
 }

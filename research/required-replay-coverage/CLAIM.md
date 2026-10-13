@@ -22,3 +22,4 @@ phase and independent replay passes with verified archived ancestry reuse.
 Selected proof pins remain unchanged. Concurrent PR847 independently delivered
 the basic Make/CI gate; our additional version/result/log checks and actual
 fresh replay are described in README.md, with explicit predecessor credit.
+Submitted: https://github.com/CrocSwap/integer-mult-bounds/pull/865
