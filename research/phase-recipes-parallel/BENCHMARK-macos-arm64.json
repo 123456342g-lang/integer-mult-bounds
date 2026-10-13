@@ -1,0 +1,14 @@
+{
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "python": "3.14.8",
+  "cpu_count": 10,
+  "jobs": 10,
+  "parallel_seconds": 20.7,
+  "serial_seconds": 95.1,
+  "speedup": 4.59,
+  "controls": [
+    "C1_frame_rank_failure_in_parent",
+    "C2_edge_rank_failure_in_worker",
+    "C2_same_failure_in_serial_reference"
+  ]
+}
