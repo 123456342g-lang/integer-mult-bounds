@@ -38,4 +38,41 @@ and handoff. One evidence-driven pivot is allowed if the proposed dual fails.
 
 ## Result update
 
-Pending.
+Result posted at 2026-10-13 08:41:32 UTC:
+[PR868: Gaussian E8 all-clique certificate ceiling is 40](https://github.com/CrocSwap/integer-mult-bounds/pull/868).
+Research note / scoped negative result, **no new kappa**. The first result
+commit is `7cdd3ac12254290c55bac602d5e293dea4d981ae`.
+
+The original 900-pair extension fails concretely on singleton `{0}`:
+42 hits rather than 45. One evidence-driven pivot retains the 180 ordered
+orthogonal-normal hyperplane pairs with six-line intersection. Each has
+Gaussian pairing charge two. Every nonempty clique has at least nine hits
+per vertex, bounding every nonnegative weighted-clique certificate by 40.
+This closes PR770's expressly excluded non-maximal-clique domain; the
+predecessor's feasible value 40 and scalar decoder interval [40,60] are
+unchanged. A cost-40 decoder and a stronger multiplication bound are not
+constructed.
+
+Domain and stopping rule: every nonempty clique in the fixed 60-line Gaussian
+E8 nonorthogonality graph, extending until no vertex can be added; no sample
+or size cutoff. Completed coverage: **2,068,372 cliques**, sizes 1–12, with
+all counts and minima in `CERTIFICATE.json`. Seed 40 selected the task; the
+coverage itself is deterministic and exhaustive. The increasing-order
+traversal and an independent Gaussian-coordinate, Bron–Kerbosch/submask
+implementation agree on the complete domain digest
+`e07f4d5b163728561aa881fd76ba32092d93a2914c2718019964f8dd013e8efd`.
+
+The code and mathematical inputs pass ordinary replays and an isolated,
+optimized cold export from staged Git blobs. All 10 package tests pass,
+including source/certificate corruption controls and exhaustive small-graph
+checks. `VALIDATION.md` records the measured checks and exclusions. A separate
+scoped AI worker reviewed the proof; no independent human review is claimed.
+
+The refreshed overlap inventory at 08:33 UTC contains 661 open PRs through
+#866, no coordination issue, no duplicate of this scope, and unchanged heads
+for all eight inspected source PRs. Exact pins and predecessor credits are
+retained. No external claim requires an update; this is the single local
+claim result update. Research stopped after the complete certificate and
+independent replay, within the 120-minute budget, leaving ample verification
+and handoff time. Only the new package changes; no selected frontier or
+`upstream/` files are edited.
