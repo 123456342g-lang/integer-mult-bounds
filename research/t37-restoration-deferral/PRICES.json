@@ -11,67 +11,73 @@
    "binding": "complex",
    "complex_decimal": "0.001664727258740678855772",
    "complex_lower": "416181814685169713943/250000000000000000000000",
-   "coverage_preserving": true,
    "kappa": "1661960547713947/1000000000000000000",
    "kappa_decimal": "0.001661960547713947",
    "kappa_gain": "0",
    "kappa_gain_percent": "0",
-   "rank_mass": 2408256
+   "rank_mass": 2408256,
+   "rank_mass_neutral": true,
+   "realizable_in_selected_windows": true
   },
   "baseline_free_concentration": {
    "binding": "complex",
    "complex_decimal": "0.001664729781628087931514",
    "complex_lower": "832364890814043965757/500000000000000000000000",
-   "coverage_preserving": true,
    "kappa": "41549076555561/25000000000000000",
    "kappa_decimal": "0.00166196306222244",
    "kappa_gain": "2.514508493E-9",
    "kappa_gain_percent": "0.000151297724634",
-   "rank_mass": 2408256
+   "rank_mass": 2408256,
+   "rank_mass_neutral": true,
+   "realizable_in_selected_windows": false
   },
   "defer_all_free_concentration": {
    "binding": "bit",
    "complex_decimal": "0.001836621859873056285676",
    "complex_lower": "459155464968264071419/250000000000000000000000",
-   "coverage_preserving": true,
    "kappa": "865213734911801/500000000000000000",
    "kappa_decimal": "0.001730427469823602",
    "kappa_gain": "0.000068466922109655",
    "kappa_gain_percent": "4.11964785830",
-   "rank_mass": 2408256
+   "rank_mass": 2408256,
+   "rank_mass_neutral": true,
+   "realizable_in_selected_windows": false
   },
   "defer_all_selected_hosting": {
    "binding": "complex",
    "complex_decimal": "0.001711564828278027772823",
    "complex_lower": "1711564828278027772823/1000000000000000000000000",
-   "coverage_preserving": true,
    "kappa": "1708640379500299/1000000000000000000",
    "kappa_decimal": "0.001708640379500299",
    "kappa_gain": "0.000046679831786352",
    "kappa_gain_percent": "2.80872081173",
-   "rank_mass": 2408256
+   "rank_mass": 2408256,
+   "rank_mass_neutral": true,
+   "realizable_in_selected_windows": true
   },
   "exchange_merge_rank1_into_48": {
    "binding": "complex",
    "complex_decimal": "0.001665107908114924955942",
    "complex_lower": "832553954057462477971/500000000000000000000000",
-   "coverage_preserving": true,
    "kappa": "415584983186733/250000000000000000",
    "kappa_decimal": "0.001662339932746932",
    "kappa_gain": "3.79385032985E-7",
    "kappa_gain_percent": "0.0228275595054",
-   "rank_mass": 2408256
+   "rank_mass": 2408256,
+   "rank_mass_neutral": true,
+   "realizable_in_selected_windows": false
   },
   "zero_cost_delete_rank1": {
    "binding": "complex",
    "complex_decimal": "0.001711745368793742811272",
    "complex_lower": "213968171099217851409/125000000000000000000000",
-   "coverage_preserving": false,
    "kappa": "341764060710607/200000000000000000",
    "kappa_decimal": "0.001708820303553035",
    "kappa_gain": "0.000046859755839088",
    "kappa_gain_percent": "2.81954682399",
-   "rank_mass": 2407923
+   "rank_mass": 2407923,
+   "rank_mass_neutral": false,
+   "realizable_in_selected_windows": false
   }
  },
  "single_helper_deferral": {

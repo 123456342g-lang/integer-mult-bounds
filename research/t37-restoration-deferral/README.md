@@ -36,13 +36,15 @@ form a single child, merged with any remainder the window already has.
    idle ranks. One coordinate per family is unpaid. The centre paths act on private work
    families `[W, W+8)`.
 
-2. **The full-frame inverse cleanup consumes every U8 restoration climb.** 378 helpers carry
-   636 mass of restoration, with children `{1:272, 2:12, 3:64, 4:2, 5:28}`. All 112 sources
-   carry another 230. Every one of these 490 registers is touched by a full-frame cleanup gate:
-   8,492 gate incidences on the helpers and 3,618 on the sources. The other 126 helpers are
-   already low ends with zero restoration, and targets have none. Both emitted programs
-   (forward and backward, bound to the selected template) contain exactly these 490 `final`
-   climbs, in a phase that precedes `full_frame_cleanup`, with only exit adapters between.
+2. **The full-frame inverse cleanup consumes every helper restoration climb.** 378 helpers carry
+   636 mass of restoration, with children `{1:272, 2:12, 3:64, 4:2, 5:28}`, and every one of them
+   is touched by a full-frame cleanup gate (8,492 incidences). The other 126 helpers are already
+   low ends with zero restoration, and targets have none. The 112 sources carry another 230; the
+   data contract fixes their full endpoint, and the cleanup also touches them (3,618
+   incidences). Index by index, the helper restoration equals that of the canonical provider
+   word bound by the hosted template. In both emitted programs, the 490 `final` climbs have
+   exactly the replay's rank multiset `{1:350, 2:18, 3:64, 4:2, 5:56}` and run in a phase that
+   precedes `full_frame_cleanup`, with only exit adapters between.
 
 3. **Deferral is mass-neutral, and its whole value is consolidation.** Removing a restoration
    climb returns the same number of coordinates to an idle child, so total rank mass is
@@ -57,13 +59,15 @@ form a single child, merged with any remainder the window already has.
    **κ = 0.001708640379500299 (+2.81%)**. That is about what PR974's model assigns to deleting
    *one* rank-one child per call. Under ideal re-hosting into capacity-48 windows, the complex
    side passes the PR589 bit side, and κ stops at the bit cap 0.001730427469823602.
-   Per unit, one rank-one climb merged into an existing rank-48 idle child is worth about 1/124
-   of a zero-cost deletion.
+   As a relaxation, one rank-one climb merged into an existing rank-48 idle child is worth at
+   most about 1/124 of a zero-cost deletion. No re-hosting realizes that merge: every selected
+   window has capacity at most 48, and every rank-48 child already fills a whole idle window.
 
 5. **Source restoration has no deferral target in this template.** A source's restoration
    coordinates belong to the current invocation level of its own family. In the fixed nine-stage
    template, no idle window of that family contains them, and later bridges touch the family.
-   This note therefore does not price source deferral.
+   This note therefore does not price source deferral. This finding is argued from the
+   template's level structure and is not machine-checked here.
 
 ## Exact prices
 
@@ -71,15 +75,17 @@ Every row is certified the same way. Both pinned moment engines accept the compl
 and reject b + 10⁻²⁴. All 47 outer inequalities pass at κ, and κ + 10⁻¹⁸ is rejected.
 The bit endpoint is the unchanged PR589 value 0.001733427039589844234749.
 
-| Scenario | Coverage-preserving | Complex b | κ | Gain |
-|---|:---:|---|---|---:|
-| selected baseline (reproduced exactly) | yes | 0.0016647272587406788557 | 0.001661960547713947 | — |
-| baseline under free concentration (relaxation control) | yes | 0.0016647297816280879 | 0.001661963062222440 | +0.00015% |
-| defer all helper restoration, selected owner map | yes | 0.0017115648282780278 | **0.001708640379500299** | +2.809% |
-| same, free concentration into capacity-48 windows | yes | 0.0018366218598730563 | 0.001730427469823602 (bit binds) | +4.120% |
-| best single helper index (9), all calls | yes | 0.0016648937103306857 | 0.001662126446464193 | +0.00998% |
-| one rank-one climb per call into an existing 48-child (48 → 49) | yes | 0.0016651079081149250 | 0.001662339932746932 | +0.0228% |
-| PR974-style deletion of one rank-one child per call | **no** | 0.0017117453687937428 | 0.001708820303553035 | +2.820% |
+| Scenario | Rank-mass neutral | Realizable in selected windows | Complex b | κ | Gain |
+|---|:---:|:---:|---|---|---:|
+| selected baseline (reproduced exactly) | yes | yes | 0.0016647272587406788557 | 0.001661960547713947 | — |
+| baseline under free concentration (relaxation control) | yes | no | 0.0016647297816280879 | 0.001661963062222440 | +0.00015% |
+| defer all helper restoration, selected owner map | yes | yes* | 0.0017115648282780278 | **0.001708640379500299** | +2.809% |
+| same, free concentration into capacity-48 windows | yes | no | 0.0018366218598730563 | 0.001730427469823602 (bit binds) | +4.120% |
+| best single helper index (9), all calls | yes | yes* | 0.0016648937103306857 | 0.001662126446464193 | +0.00998% |
+| one rank-one climb per call into an existing 48-child (48 → 49) | yes | no | 0.0016651079081149250 | 0.001662339932746932 | +0.0228% |
+| PR974-style deletion of one rank-one child per call | **no** | no | 0.0017117453687937428 | 0.001708820303553035 | +2.820% |
+
+\* The window placement is realizable. The local obligations listed below are not attempted.
 
 "Free concentration" places all idle coordinates in children of rank 48. It ignores helper
 indivisibility, window capacities and chronology, so it bounds every re-hosting from above.
@@ -145,11 +151,13 @@ python3 -B -m unittest discover -s research/t37-restoration-deferral -p test_pac
 
 The expected last line is `PASS_T37_RESTORATION_DEFERRAL_REPLAY`. It takes about 8 s with
 standard-library Python 3.10+ and no network. The pinned engine files are loaded from the
-repository and hash-checked. `verify.py` reads three members of the committed T37 archive and
+repository and hash-checked. `verify.py` reads five members of the committed T37 archive and
 two of the T21 archive in memory, without extracting them. It recomputes `CENSUS.json` and
 `PRICES.json` and requires them to equal the committed files. A double-precision bisection
 that shares no code with the pinned engines must then agree with every certified endpoint and
-κ to within 10⁻¹³. Finally it runs nine negative controls:
+κ to within 10⁻¹³, including the best single-helper row. Finally it runs nine negative
+controls. C4, C5 and C7 test this package's own checks; the others test the inputs and the
+certification:
 
 | Control | Rejected because |
 |---|---|
@@ -169,11 +177,13 @@ that shares no code with the pinned engines must then agree with every certified
 `research/community-frontier942-audit/t37-replay.tar.gz` (`48285025…`). From it, the census
 reads the hosted template (payload `956e0c0e…`, equal to the `template_sha256` of the selected
 `ASSEMBLY.json`), the U8 word (content `090fd574…`) and the emitted local programs (container
-`8b6a9e3a…`, bound by the template). T21 is read from `t21-replay.tar.gz` (`6dcd7040…`). The
-engines `moment.py`, `base_two_moment.py` and `outer.py` are taken from
+`8b6a9e3a…`, bound by the template) and the canonical provider word (container `387a2266…`,
+bound by the template). T21 is read from `t21-replay.tar.gz` (`6dcd7040…`). The engines
+`moment.py`, `base_two_moment.py` and `outer.py` are taken from
 `research/native-complex-moment552/engines` and carry the SHA-256 digests recorded in the
-selected assembly. `price.py` replays `outer_witness` from the archive's `runtime/code/assemble.py`
-(`d89ed7a6…`).
+selected assembly. `price.py` transcribes `outer_witness` from the archive's
+`runtime/code/assemble.py`. It checks that file's digest (`d89ed7a6…`) and the literal lines it
+transcribes, and it cross-checks the bit endpoint against the selected `ASSEMBLY.json`.
 
 ## Credit
 

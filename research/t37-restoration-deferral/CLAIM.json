@@ -4,9 +4,9 @@
  "base_commit": "bbc600db2fc15007b7c914f4f2b2ed55fa909c87",
  "claims": [
   "Coverage identity on the selected T37 payload: 8*k_f + 1 + hosted_f + idle_f = 73 for all 33152 live families (and all 18816 T21 families); hence rank mass = 72W + 64N and deficit = W - 64N.",
-  "Every positive U8 restoration climb (378 helpers, 636 mass; 112 sources, 230 mass) belongs to a register touched by the full-frame inverse cleanup; the emitted forward and backward programs contain exactly these 490 final climbs before full_frame_cleanup.",
+  "Every positive U8 helper restoration climb (378 helpers, 636 mass) belongs to a register touched by the full-frame inverse cleanup and equals, index by index, the canonical provider word bound by the template; the 112 sources (230 mass) have full endpoints fixed by the data contract. Both emitted programs have 490 final climbs with exactly the replay rank multiset, before full_frame_cleanup.",
   "Restoration deferral is rank-mass neutral; under the selected owner map deferring all helper restoration gives at most kappa = 0.001708640379500299; under free concentration the PR589 bit side binds at 0.001730427469823602.",
-  "The best single helper index gives 0.001662126446464193; one rank-one climb per call merged into a rank-48 idle child gives 0.001662339932746932, versus 0.001708820303553035 for a PR974-style zero-cost deletion that leaves live coordinates unadvanced."
+  "The best single helper index gives 0.001662126446464193; as a relaxation that no re-hosting realizes, one rank-one climb per call merged into a rank-48 idle child gives at most 0.001662339932746932, versus 0.001708820303553035 for a PR974-style zero-cost deletion that leaves live coordinates unadvanced."
  ],
  "contributor": "Sagar Thakrar (thakrarsagar)",
  "deficit_T21": 6720,
@@ -35,6 +35,7 @@
   "census": "CENSUS.json",
   "prices": "PRICES.json"
  },
+ "review": "Independent adversarial review (AI-assisted subagent) of commit 2a4480a4: no blocking issues; should-fix items addressed in the follow-up commit.",
  "seed_source": "Python secrets (OS CSPRNG)",
  "selected_kappa_unchanged": "1661960547713947/1000000000000000000",
  "status": "research note / scoped negative result; no new kappa",

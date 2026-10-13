@@ -1,6 +1,9 @@
 # SPDX-License-Identifier: Apache-2.0
 """Exact prices of the census scenarios with the pinned rational engines.
 
+kappa() is a transcription of outer_witness in the T37 archive's runtime/code/assemble.py;
+check_transcription() binds it to that file's digest and to the literal lines it transcribes.
+
 Usage: price.py CENSUS.json OUT.json
 
 The complex endpoint b of a profile is accepted by both pinned interval
@@ -15,7 +18,7 @@ import sys
 from decimal import Decimal, localcontext
 from fractions import Fraction as Q
 
-from common import ROOT, SOURCES, canonical, require, sha256
+from common import ROOT, SOURCES, archive_text, canonical, require, sha256
 
 M_COMPLEX = 73
 
@@ -52,6 +55,18 @@ def endpoint(H, W):
         blo, bhi = BASE_TWO.moment(M_COMPLEX, W, list(H.items()), z)
         require((hi < 1 and bhi < 1) if accept else (lo > 1 and blo > 1), 'endpoint certification')
     return b
+
+
+def check_transcription():
+    text = archive_text('T37', 'source_member', 'source_sha256')
+    for line in ("eta=beta=Q(1,10**24);s=min(c,(1-beta)*bb)-Q(1,10**27)",
+                 "chain=[Q(384599,10**10)];cuts=[]", "for _ in range(7):",
+                 "old=chain[-1];a=(1-s)*s+s*old;gap=min(s-a,1-a-s,1-a-s*(1-old),1-s)",
+                 "q=chain[-1]*(1-2*eta);margin=(1-eta)*q/(1+q);ticks=margin*10**18;"
+                 "k=Q((ticks.numerator-1)//ticks.denominator,10**18)",
+                 "bridge={'semantic':{'C0':{'base':2,'exponent':210000},'strict_literal_gap':1},"
+                 "'rows':{'degree_gap':Q(10**6)-Q(51*20161,25)}}"):
+        require(line in text, 'transcribed outer_witness line not found: ' + line)
 
 
 def kappa(b):
@@ -92,17 +107,20 @@ def drop(H0, H, W, b):
 
 
 def main():
+    check_transcription()
     census = json.loads(open(sys.argv[1]).read())
     W = census['T37']['coverage']['live']
     selected = json.loads((ROOT / SOURCES['selected_record']['path']).read_text())
     assembly = json.loads((ROOT / SOURCES['constructions']['T37']['assembly']).read_text())
+    require(Q(assembly['bit_lower']) == BIT, 'bit endpoint differs from the selected assembly')
     rows = {}
     for key, row in census['scenarios'].items():
         H = {int(r): n for r, n in row['profile'].items()}
         b = endpoint(H, W)
         k, binding = kappa(b)
         rows[key] = dict(complex_lower=str(b), complex_decimal=dec(b), kappa=str(k), kappa_decimal=dec(k),
-                         binding=binding, coverage_preserving=row['coverage_preserving'],
+                         binding=binding, rank_mass_neutral=row['rank_mass_neutral'],
+                         realizable_in_selected_windows=row['realizable_in_selected_windows'],
                          rank_mass=row['rank_mass'])
     base = rows['baseline']
     require(base['complex_lower'] == assembly['complex_lower'], 'baseline complex endpoint differs from selected')

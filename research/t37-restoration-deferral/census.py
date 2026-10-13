@@ -10,9 +10,9 @@ import json
 import sys
 from collections import Counter
 
-from common import (ROOT, SOURCES, canonical, concentrated, coverage_census, emitted_restoration,
-                    global_profile, load_construction, load_programs, rank_mass, require,
-                    restoration_census, sha256, window_deferral)
+from common import (ROOT, SOURCES, canonical, canonical_restoration, concentrated, coverage_census,
+                    emitted_restoration, global_profile, load_canonical, load_construction, load_programs,
+                    rank_mass, require, restoration_census, sha256, window_deferral)
 
 CENTRE_RANK = 8
 HALVING_CAP = 48          # every idle window has capacity <= 48; 2*48^2 < 73^2
@@ -64,6 +64,21 @@ def census(name):
             == SOURCES['constructions'][name]['assembly_sha256'], f'{name}: assembly digest')
     require(counter_json(H) == assembly['complex_profile'], f'{name}: global profile differs from the selected assembly')
     emitted = None
+    binding = None
+    if 'canonical_member' in SOURCES['constructions'][name]:
+        (prov,) = template['local_providers'].values()
+        native = [r for r in local['registers'] if r['role'] == 'helper']
+        require([r['end'] - r['start'] for r in native] == prov['widths'], 'helper widths differ by index from the template')
+        canon = canonical_restoration(load_canonical(name, template))
+        v = local['v']
+        require(canon[2 * v:] == [r['restoration'] for r in native],
+                'helper restoration differs by index between the native and canonical words')
+        require(sorted(canon[:v]) == sorted(r['restoration'] for r in local['registers'] if r['role'] == 'source'),
+                'source restoration multiset differs between the native and canonical words')
+        local['template_helper_restoration'] = canon[2 * v:]
+        binding = dict(helper_widths_by_index='native word = hosted template provider (504 helpers)',
+                       helper_restoration_by_index='native word = canonical provider word bound by the template',
+                       source_restoration='equal as a multiset (sources are relabelled in the canonical word)')
     if 'program_member' in SOURCES['constructions'][name]:
         restored = Counter()
         for r in local['registers']:
@@ -78,7 +93,7 @@ def census(name):
             ph = e['phases']
             require(ph.index('final') < ph.index('full_frame_cleanup'), 'final climbs precede the full-frame cleanup')
             emitted[orientation] = dict(phases=ph, final_climbs=counter_json(e['final']))
-    out = dict(construction=name, emitted_programs=emitted, local=dict(
+    out = dict(construction=name, emitted_programs=emitted, index_binding=binding, local=dict(
         h=local['h'], v=local['v'], R=local['R'], profile=counter_json(local_profile), mass=local_mass,
         data_climb_per_incidence=data_step, centre_children=counter_json(local['centre_children']),
         phase_mass=counter_json(local['phase_mass']), roles=role_summary(local['registers'])),
@@ -91,34 +106,36 @@ def census(name):
 
 def scenarios(template, local, local_profile, H):
     N = len(template['calls'])
-    restoration = {r['register'] - 2 * local['v']: r['restoration']
-                   for r in local['registers'] if r['role'] == 'helper'}
+    restoration = dict(enumerate(local['template_helper_restoration']))
     positive = sorted(i for i, d in restoration.items() if d > 0)
     idle_ranks = Counter(c['rank'] for c in template['idle_children'])
     base_mass = rank_mass(H)
     out = {}
 
-    def add(key, profile, **meta):
-        require(max(profile) <= HALVING_CAP and 73 * 73 > 2 * max(profile) ** 2, f"{key}: child above the halving cap")
+    def add(key, profile, realizable, **meta):
+        require(73 * 73 > 2 * max(profile) ** 2, f"{key}: child above the halving cap")
+        if realizable:
+            require(max(profile) <= HALVING_CAP, f"{key}: child above every window capacity")
         out[key] = dict(profile=counter_json(profile), rank_mass=rank_mass(profile),
-                        coverage_preserving=rank_mass(profile) == base_mass, **meta)
+                        rank_mass_neutral=rank_mass(profile) == base_mass,
+                        realizable_in_selected_windows=realizable, **meta)
 
-    add('baseline', H, description='Selected T37 profile.')
+    add('baseline', H, True, description='Selected T37 profile.')
     H1, removed, returned = window_deferral(template, local_profile, restoration, set(positive))
     require(rank_mass(H1) == base_mass, 'deferral must be mass neutral')
-    add('defer_all_selected_hosting', H1,
+    add('defer_all_selected_hosting', H1, True,
         description='Every positive helper restoration climb (all calls) is deferred; its host '
                     'coordinates return to the same hosting window and are advanced by that '
                     "window's idle child, merged per window. Owner map unchanged.",
         deferred_helpers_per_call=len(positive), deferred_children=counter_json(removed),
         windows_receiving=sum(returned.values()), returned_window_ranks=counter_json(returned))
     H3 = concentrated(H, removed, idle_ranks, HALVING_CAP)
-    add('defer_all_free_concentration', H3,
+    add('defer_all_free_concentration', H3, False,
         description='Relaxation of the previous row: all idle coordinates, including the returned '
                     'ones, placed in capacity-48 children, ignoring helper indivisibility, windows '
                     'and chronology.')
     H4 = concentrated(H, Counter(), idle_ranks, HALVING_CAP)
-    add('baseline_free_concentration', H4,
+    add('baseline_free_concentration', H4, False,
         description='The same relaxation with no deferral (control for the relaxation itself).')
     # One rank-one restoration climb per call moved into an existing rank-48 idle child.
     H5 = Counter(H)
@@ -126,15 +143,16 @@ def scenarios(template, local, local_profile, H):
     H5[48] -= N
     H5[49] += N
     require(idle_ranks[48] >= N, 'enough rank-48 children')
-    out['exchange_merge_rank1_into_48'] = dict(
-        profile=counter_json(+H5), rank_mass=rank_mass(H5), coverage_preserving=rank_mass(H5) == base_mass,
-        description='Per call, one rank-one climb is removed and its coordinate joins an existing '
-                    'rank-48 idle child (48 -> 49 <= 51, halving 2*49^2 < 73^2). Upper bound on the '
-                    'value of one deferred rank-one climb per call under ideal re-hosting.')
+    add('exchange_merge_rank1_into_48', +H5, False,
+        description='Relaxation: per call, one rank-one climb is removed and its coordinate joins an '
+                    'existing rank-48 idle child (48 -> 49; halving 2*49^2 < 73^2). Every selected window '
+                    'has capacity at most 48 and every rank-48 child fills a whole idle window, so no '
+                    're-hosting realizes this; it over-estimates one deferred rank-one climb per call.')
     H6 = Counter(H)
     H6[1] -= N
     out['zero_cost_delete_rank1'] = dict(
-        profile=counter_json(+H6), rank_mass=rank_mass(H6), coverage_preserving=False,
+        profile=counter_json(+H6), rank_mass=rank_mass(H6), rank_mass_neutral=False,
+        realizable_in_selected_windows=False,
         description='PR974-style relaxation: one rank-one child per call deleted with zero parent '
                     'cost. It leaves N live coordinates unadvanced; priced only for comparison.')
     single = {}

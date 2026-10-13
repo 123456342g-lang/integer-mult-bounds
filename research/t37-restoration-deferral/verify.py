@@ -119,12 +119,15 @@ def price_controls():
     H0 = {int(r): n for r, n in census['scenarios']['baseline']['profile'].items()}
     passed = []
     b0 = price.endpoint(H0, W)
-    # C8: the next complex grid point is rejected by both engines.
+    # C8: at the next complex grid point both engines put the moment above one.
+    z = b0 + Q(1, 10 ** 24)
+    lo, hi = price.MOMENT.moment(H0, 73, W, z, False)
+    blo, bhi = price.BASE_TWO.moment(73, W, list(H0.items()), z)
+    require(lo > 1 and blo > 1, 'both engines must exceed one at the next endpoint')
+
     def accept_next():
-        z = b0 + Q(1, 10 ** 24)
-        lo, hi = price.MOMENT.moment(H0, 73, W, z, False)
-        require(hi < 1, 'next complex endpoint rejected')
-    passed.append(rejects('C8_next_complex_endpoint', accept_next, 'next complex endpoint rejected'))
+        require(hi < 1 or bhi < 1, 'next complex endpoint rejected by both engines')
+    passed.append(rejects('C8_next_complex_endpoint', accept_next, 'next complex endpoint rejected by both engines'))
     # C9: one extra rank-one child changes the baseline kappa, so the selected pin would fail.
     H1 = dict(H0)
     H1[1] += 1
@@ -153,7 +156,16 @@ def float_crosscheck(census_path, prices_path):
         s = min(bit, lo)
         require(abs(lo - float(exact['complex_decimal'])) < 1e-13, f'{key}: float endpoint disagrees')
         require(abs(s / (1 + s) - float(exact['kappa_decimal'])) < 1e-13, f'{key}: float kappa disagrees')
-    return len(census['scenarios'])
+    best = prices['single_helper_deferral']
+    H = {int(r): n for r, n in census['single_helper_profiles'][str(best['best_helper'])].items()}
+    f = lambda a: sum(r * n / (m * W) * math.exp(a * math.log(m / r)) for r, n in H.items()) - 1
+    lo, hi = 0.0, 0.01
+    for _ in range(200):
+        mid = (lo + hi) / 2
+        lo, hi = (mid, hi) if f(mid) < 0 else (lo, mid)
+    b = best['best_complex_lower'].split('/')
+    require(abs(lo - int(b[0]) / int(b[1])) < 1e-13, 'best single helper: float endpoint disagrees')
+    return len(census['scenarios']) + 1
 
 
 def main():
@@ -166,7 +178,7 @@ def main():
     require(same_json(work / 'CENSUS.json', HERE / 'CENSUS.json'), 'CENSUS.json differs from the committed result')
     run('price.py', work / 'CENSUS.json', work / 'PRICES.json')
     require(same_json(work / 'PRICES.json', HERE / 'PRICES.json'), 'PRICES.json differs from the committed result')
-    print('float cross-check agrees for', float_crosscheck(work / 'CENSUS.json', work / 'PRICES.json'), 'scenarios')
+    print('float cross-check agrees for', float_crosscheck(work / 'CENSUS.json', work / 'PRICES.json'), 'priced rows')
     template, word = load_construction('T37')
     consumed_by_cleanup(restoration_census(word))
     passed = controls() + price_controls()

@@ -41,6 +41,34 @@ def read_member(archive, member, payload_sha256):
     return json.loads(payload)
 
 
+def bound_member(name, template_key, member_key, container_key, payload_key, template, root=ROOT):
+    """A gzip JSON member whose container digest is bound by the hosted template."""
+    src = SOURCES['constructions'][name]
+    with tarfile.open(Path(root) / src['archive'], 'r:gz') as tar:
+        info = tar.getmember(src[member_key])
+        require(info.isfile(), f'{src[member_key]} is not a regular file')
+        container = tar.extractfile(info).read()
+    (prov,) = template['local_providers'].values()
+    require(sha256(container) == src[container_key] == prov[template_key],
+            f'{name}: {src[member_key]} is not the one bound by the hosted template')
+    payload = gzip.decompress(container)
+    require(sha256(payload) == src[payload_key], f'{name}: {src[member_key]} payload digest mismatch')
+    return json.loads(payload)
+
+
+def load_canonical(name, template, root=ROOT):
+    return bound_member(name, 'canonical_word_sha256', 'canonical_member', 'canonical_container_sha256',
+                        'canonical_payload_sha256', template, root)
+
+
+def archive_text(name, member_key, digest_key, root=ROOT):
+    src = SOURCES['constructions'][name]
+    with tarfile.open(Path(root) / src['archive'], 'r:gz') as tar:
+        data = tar.extractfile(tar.getmember(SOURCES['outer_witness'][member_key])).read()
+    require(sha256(data) == SOURCES['outer_witness'][digest_key], 'outer witness source digest')
+    return data.decode()
+
+
 def load_programs(name, template, root=ROOT):
     """Emitted forward/backward local programs, bound to the hosted template by container digest."""
     src = SOURCES['constructions'][name]
@@ -138,6 +166,40 @@ def gate_registers(g):
     return list(g[1:3]) if g[0] == 'add' else list(g[1:2])
 
 
+def canonical_restoration(cw):
+    """Per-register restoration climbs of the template's canonical provider word.
+
+    The canonical word indexes its frames through cw['frames'] and numbers its
+    registers as the hosted template does, so its helper k is the template's
+    pooled_slots helper k.  Same semantics as restoration_census.
+    """
+    h = cw['h']
+    F = [Span(f) for f in cw['frames']]
+    full = Span([1 << i for i in range(h)])
+    require(not cw['target_levels'], 'canonical word has target levels')
+    frame = [F[i] for i in cw['start']]
+
+    def climb(q, U):
+        require(frame[q].within(U), f'canonical word: non-monotone frame for register {q}')
+        frame[q] = U
+
+    for g in cw['A']:
+        for q in gate_registers(g):
+            climb(q, F[g[-1]])
+    for q, i in zip(cw['centers'], cw['center_frames']):
+        require(frame[q].same(F[i]), 'canonical word: centre frame at the cut')
+    for g in cw['B'] + cw['tail']:
+        for q in gate_registers(g):
+            climb(q, F[g[-1]])
+    restoration = []
+    for q, i in enumerate(cw['final']):
+        restoration.append(F[i].rank - frame[q].rank)
+        climb(q, F[i])
+    for g in cw['cleanup']:
+        require(F[g[-1]].same(full), 'canonical cleanup gate is not full-frame')
+    return restoration
+
+
 def restoration_census(word):
     """Replay the literal frame chains of a local word.
 
@@ -149,6 +211,7 @@ def restoration_census(word):
     rep = word['report']
     h, v, R = rep['h'], rep['v'], rep['R']
     n = 2 * v + R
+    require(not word['target_levels'], 'this replay assumes empty target levels')
     full = Span([1 << i for i in range(h)])
     frame = [Span([p]) for p in word['ports']] + [Span() for _ in range(v + R)]
     for q, U in word['start_extra'].items():

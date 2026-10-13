@@ -23,7 +23,7 @@ def toy_word():
     return dict(report=dict(h=3, v=1, R=2), ports=[0b001], start_extra={},
                 A=[['add', 0, 2, 1, 1, [0b001, 0b010]]], centers=[], center_frames=[], cut=[],
                 B=[['add', 3, 1, 1, 1, [0b010]]], early_cleanup=[],
-                cleanup=[['add', 0, 2, -1, 1, FULL3]], helper_final={'3': [0b010]})
+                cleanup=[['add', 0, 2, -1, 1, FULL3]], helper_final={'3': [0b010]}, target_levels={})
 
 
 def toy_template():
@@ -65,6 +65,12 @@ class RestorationTests(unittest.TestCase):
         w = toy_word()
         w['B'].append(['add', 2, 3, 1, 1, [0b100]])   # helper 2 sits at rank 2 and cannot drop to <100>
         with self.assertRaisesRegex(ValueError, 'non-monotone'):
+            restoration_census(w)
+
+    def test_target_levels_rejected(self):
+        w = toy_word()
+        w['target_levels'] = {'1': 1}
+        with self.assertRaisesRegex(ValueError, 'target levels'):
             restoration_census(w)
 
     def test_full_cleanup_on_low_end_rejected(self):

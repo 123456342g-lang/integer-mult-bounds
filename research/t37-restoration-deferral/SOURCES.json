@@ -20,7 +20,11 @@
       "program_member": "strict/global/base/providers/gauge44/LOCAL-PROGRAMS.json.gz",
       "program_container_sha256": "8b6a9e3a2411a04e5ca79ba6cd1dd449b21c95f65ca127475167d9b97c80a1ce",
       "program_payload_sha256": "a073d8d6a561cf5c8148d8b29ae2800bbe3978377c016b549edd7523eb3cf7e5",
-      "program_binding": "container digest equals local_providers.gauge44.local_programs_sha256 of the pinned hosted template"
+      "program_binding": "container digest equals local_providers.gauge44.local_programs_sha256 of the pinned hosted template",
+      "canonical_member": "strict/global/base/providers/gauge44/CANONICAL-WORD.json.gz",
+      "canonical_container_sha256": "387a2266ffe006d20042221d967f67a4b18d9bb8de1cd1e01d4031b539fa74a5",
+      "canonical_payload_sha256": "24db880b7dab31e6af4eec8a1aba1bbbae29cd50d9a7b77cf0e9b571b3e5ae7c",
+      "canonical_binding": "container digest equals local_providers.gauge44.canonical_word_sha256 of the pinned hosted template; its register numbering is the template numbering"
     },
     "T21": {
       "role": "preceding checkpoint (PR890), second instance of the coverage identity only",
@@ -48,6 +52,8 @@
     "bootstrap_start": "384599/10000000000",
     "bootstrap_steps": 7,
     "charged_complex_prefix_bits": 1024,
-    "bit_lower": "1733427039589844234749/1000000000000000000000000"
+    "bit_lower": "1733427039589844234749/1000000000000000000000000",
+    "source_sha256": "d89ed7a68f19e6d0dbb9d1bd75805433b1dc000bd89649fb598ef381c3887925",
+    "source_member": "runtime/code/assemble.py"
   }
 }

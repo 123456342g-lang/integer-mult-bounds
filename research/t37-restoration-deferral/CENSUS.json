@@ -117,6 +117,11 @@
    "rank_mass": 2408256,
    "statement": "data_climb*k_f + 1 + hosted_f + idle_f = m for every live family f; rank mass = (m-1)*W + 64*N; deficit = W - 64*N"
   },
+  "index_binding": {
+   "helper_restoration_by_index": "native word = canonical provider word bound by the template",
+   "helper_widths_by_index": "native word = hosted template provider (504 helpers)",
+   "source_restoration": "equal as a multiset (sources are relabelled in the canonical word)"
+  },
   "local": {
    "R": 504,
    "centre_children": {
@@ -1073,7 +1078,6 @@
  ],
  "scenarios": {
   "baseline": {
-   "coverage_preserving": true,
    "description": "Selected T37 profile.",
    "profile": {
     "1": 848490,
@@ -1084,10 +1088,11 @@
     "5": 23976,
     "8": 2664
    },
-   "rank_mass": 2408256
+   "rank_mass": 2408256,
+   "rank_mass_neutral": true,
+   "realizable_in_selected_windows": true
   },
   "baseline_free_concentration": {
-   "coverage_preserving": true,
    "description": "The same relaxation with no deferral (control for the relaxation itself).",
    "profile": {
     "1": 848484,
@@ -1099,10 +1104,11 @@
     "6": 1,
     "8": 2664
    },
-   "rank_mass": 2408256
+   "rank_mass": 2408256,
+   "rank_mass_neutral": true,
+   "realizable_in_selected_windows": false
   },
   "defer_all_free_concentration": {
-   "coverage_preserving": true,
    "description": "Relaxation of the previous row: all idle coordinates, including the returned ones, placed in capacity-48 children, ignoring helper indivisibility, windows and chronology.",
    "profile": {
     "1": 757908,
@@ -1114,10 +1120,11 @@
     "5": 14652,
     "8": 2664
    },
-   "rank_mass": 2408256
+   "rank_mass": 2408256,
+   "rank_mass_neutral": true,
+   "realizable_in_selected_windows": false
   },
   "defer_all_selected_hosting": {
-   "coverage_preserving": true,
    "deferred_children": {
     "1": 90576,
     "2": 3996,
@@ -1153,6 +1160,8 @@
     "9": 905
    },
    "rank_mass": 2408256,
+   "rank_mass_neutral": true,
+   "realizable_in_selected_windows": true,
    "returned_window_ranks": {
     "1": 18475,
     "10": 1010,
@@ -1180,8 +1189,7 @@
    "windows_receiving": 55543
   },
   "exchange_merge_rank1_into_48": {
-   "coverage_preserving": true,
-   "description": "Per call, one rank-one climb is removed and its coordinate joins an existing rank-48 idle child (48 -> 49 <= 51, halving 2*49^2 < 73^2). Upper bound on the value of one deferred rank-one climb per call under ideal re-hosting.",
+   "description": "Relaxation: per call, one rank-one climb is removed and its coordinate joins an existing rank-48 idle child (48 -> 49; halving 2*49^2 < 73^2). Every selected window has capacity at most 48 and every rank-48 child fills a whole idle window, so no re-hosting realizes this; it over-estimates one deferred rank-one climb per call.",
    "profile": {
     "1": 848157,
     "2": 112554,
@@ -1192,10 +1200,11 @@
     "5": 23976,
     "8": 2664
    },
-   "rank_mass": 2408256
+   "rank_mass": 2408256,
+   "rank_mass_neutral": true,
+   "realizable_in_selected_windows": false
   },
   "zero_cost_delete_rank1": {
-   "coverage_preserving": false,
    "description": "PR974-style relaxation: one rank-one child per call deleted with zero parent cost. It leaves N live coordinates unadvanced; priced only for comparison.",
    "profile": {
     "1": 848157,
@@ -1206,7 +1215,9 @@
     "5": 23976,
     "8": 2664
    },
-   "rank_mass": 2407923
+   "rank_mass": 2407923,
+   "rank_mass_neutral": false,
+   "realizable_in_selected_windows": false
   }
  },
  "single_helper_profiles": {
