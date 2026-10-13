@@ -87,7 +87,7 @@ review is claimed.
 ## Overlap and limits
 
 Initial orientation inspected 718 open PR metadata entries. A final refresh
-through **PR1038** found no overlapping affine five-cube copy result; main
+through **PR1045** immediately before submission found no overlapping affine five-cube copy result; main
 remained at the exact base. PR958 is closed/incorporated, with original
 head `28d68c88f0184835d8c8a7266ab8d0dad3f18a8a`. Its separate-total theorem
 explicitly leaves coded combinations outside scope. The continuing PR669
@@ -104,3 +104,7 @@ The repository-wide `make verify`, selected supplier cold replay, Linux CI
 and an all-size theorem were not run for this isolated research package.
 The affected predecessor, package and selected-record checks are recorded
 above; no unrelated artifact regeneration was performed.
+
+Submitted once as [PR1046](https://github.com/CrocSwap/integer-mult-bounds/pull/1046),
+with the local sprint claim updated to its result and link. No PR was merged,
+no other PR was closed, and the selected frontier was not edited.
