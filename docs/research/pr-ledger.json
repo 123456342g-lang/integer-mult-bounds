@@ -20,8 +20,8 @@
   ],
   "counts": {
     "changed_since_review": 6,
-    "incorporated": 174,
-    "partially_reviewed": 166,
+    "incorporated": 190,
+    "partially_reviewed": 150,
     "unreviewed": 296
   },
   "source_sha256": {
@@ -51,7 +51,7 @@
     "research/community-frontier890-audit/DISPOSITIONS.json": "c33d7d04ae1411a769ba14e812e75f8065b07bbdb085cbbf86b935eb1c8d8f8f",
     "research/community-batch932-audit/DISPOSITIONS.json": "78407de39b1d51acf31209a6ab11b6fe06e8cf3a617659c5cd43882870baa2d9",
     "research/community-batch952-audit/DISPOSITIONS.json": "fa89c90fb127e512903539ead9c6cf1e4667ed415b4d81a6510ff692f33bd53d",
-    "research/community-batch970-audit/DISPOSITIONS.json": "99cc2f18bdbf15d690c2b55055ee82f6357580f3775b5c8cc6ab86d6a0c0e5b3"
+    "research/community-batch970-audit/DISPOSITIONS.json": "e265dde52ebd7ebfa687714afea451af586d2beee9ad6e12a174cdee9c7ceda7"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
   "pull_requests": [
@@ -18890,16 +18890,20 @@
       "integration_location": [
         "research/jp8-clean-work"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "reviewed_head": "6e9c76b2b9e31350a10ceb5b98e94df1438e3a1f",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -21336,16 +21340,20 @@
       "integration_location": [
         "research/complex-ck-two-sided"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "reviewed_head": "085c32a25e2a09b029fa816195b97fa93d6f0788",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -21382,16 +21390,20 @@
       "integration_location": [
         "research/ck-sign-normalization-seed22"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "reviewed_head": "79ee104a90c3c7c244362cce74997fce37923ce9",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -21880,16 +21892,20 @@
       "integration_location": [
         "research/dyadic-center-two-shear"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "reviewed_head": "b303fed6dfe2066dcd78c0d8ed74d2a3b153ba72",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -22123,16 +22139,20 @@
       "integration_location": [
         "research/x4-joint-horner-seed29"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "reviewed_head": "a3245bf22fa2a2eb778b11128cbc605b130d737f",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -22220,16 +22240,20 @@
       "integration_location": [
         "research/dyadic-center-anchor-bound"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "reviewed_head": "b6f6418bdcae748b267cea72a5949d551feb7bb2",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -22266,16 +22290,20 @@
       "integration_location": [
         "research/complex-factory-scale-frontier27"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "reviewed_head": "102ddfb47d11c8ad66121350907d4a2cc04cea8c",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -22506,16 +22534,20 @@
       "integration_location": [
         "research/e8-first-rank-drop"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "reviewed_head": "a98219aa708e1bd2ae4ca90e720e66569f7f0147",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -22602,16 +22634,20 @@
       "integration_location": [
         "research/five-port-quadratic-decoder"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "reviewed_head": "28d68c88f0184835d8c8a7266ab8d0dad3f18a8a",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -22749,16 +22785,20 @@
       "integration_location": [
         "research/complex-x4-dyadic-forest-seed31"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "reviewed_head": "4257ddf4b755cd0ac3bd3b0f6281cc5b2b1f72ad",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -22795,16 +22835,20 @@
       "integration_location": [
         "research/p111-receiver-census"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "reviewed_head": "04c37d1c9d71808f77a36b3734f6c07a7ee772c1",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -22841,16 +22885,20 @@
       "integration_location": [
         "research/ck-power-forest-bound"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "reviewed_head": "7a3bf8460cf6ca16a2bf008ff51fdb06df1af938",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -22887,16 +22935,20 @@
       "integration_location": [
         "research/r439-helper-triples"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "reviewed_head": "6292e3774abd82f2d5202190b498f35cc1628c39",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -22933,16 +22985,20 @@
       "integration_location": [
         "research/r439-helper-stars-seed19"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "reviewed_head": "c6caa79e6655d83780a3b70a1d658313126fb0b3",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -22979,16 +23035,20 @@
       "integration_location": [
         "research/complex-frame-pair-decoders"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "reviewed_head": "6a99e7240b961ac5e115ae6aa0301ec7c4a45d77",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -23025,16 +23085,20 @@
       "integration_location": [
         "research/complex-swap-runs-seed37"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "reviewed_head": "d1ee3f46a6167ea54913e070af3161c71a99e1f2",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -23104,7 +23168,7 @@
   ],
   "github_dispositions": {
     "CLOSED": 3,
-    "MERGED": 171,
-    "OPEN": 468
+    "MERGED": 187,
+    "OPEN": 452
   }
 }

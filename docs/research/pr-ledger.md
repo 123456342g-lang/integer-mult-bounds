@@ -9,8 +9,8 @@ The ledger separates historical review from integration. A prior snapshot or a m
 | Disposition | Count |
 |---|---:|
 | changed since review | 6 |
-| incorporated | 174 |
-| partially reviewed | 166 |
+| incorporated | 190 |
+| partially reviewed | 150 |
 | unreviewed | 296 |
 
 The earlier reconciliation closing snapshot had 438 starting PRs still open and 441 total open. These are historical counts, not a live queue measurement. Later dispositions are recorded below.
@@ -595,7 +595,7 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#834](https://github.com/CrocSwap/integer-mult-bounds/pull/834) | chinmayarvind23 | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#837](https://github.com/CrocSwap/integer-mult-bounds/pull/837) | bitplane | incorporated | [record 1](../../research/community-batch932-audit/DISPOSITIONS.json) |
 | [#838](https://github.com/CrocSwap/integer-mult-bounds/pull/838) | ljste | incorporated | [record 1](../../research/community-frontier890-audit/DISPOSITIONS.json) |
-| [#839](https://github.com/CrocSwap/integer-mult-bounds/pull/839) | faw01 | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#839](https://github.com/CrocSwap/integer-mult-bounds/pull/839) | faw01 | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#841](https://github.com/CrocSwap/integer-mult-bounds/pull/841) | mihir-s-05 | incorporated | [record 1](../../research/community-frontier890-audit/DISPOSITIONS.json) |
 | [#845](https://github.com/CrocSwap/integer-mult-bounds/pull/845) | mihir-s-05 | incorporated | [record 1](../../research/community-batch952-audit/DISPOSITIONS.json) |
 | [#847](https://github.com/CrocSwap/integer-mult-bounds/pull/847) | chinmayarvind23 | incorporated | [record 1](../../research/community-frontier890-audit/DISPOSITIONS.json) |
@@ -642,8 +642,8 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#914](https://github.com/CrocSwap/integer-mult-bounds/pull/914) | RossRichardson | incorporated | [record 1](../../research/community-batch952-audit/DISPOSITIONS.json) |
 | [#915](https://github.com/CrocSwap/integer-mult-bounds/pull/915) | bitplane | incorporated | [record 1](../../research/community-batch932-audit/DISPOSITIONS.json) |
 | [#916](https://github.com/CrocSwap/integer-mult-bounds/pull/916) | nightangelflowerwin-ops | incorporated | [record 1](../../research/community-batch932-audit/DISPOSITIONS.json) |
-| [#917](https://github.com/CrocSwap/integer-mult-bounds/pull/917) | RossRichardson | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#919](https://github.com/CrocSwap/integer-mult-bounds/pull/919) | RossRichardson | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#917](https://github.com/CrocSwap/integer-mult-bounds/pull/917) | RossRichardson | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#919](https://github.com/CrocSwap/integer-mult-bounds/pull/919) | RossRichardson | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#921](https://github.com/CrocSwap/integer-mult-bounds/pull/921) | navinor | incorporated | [record 1](../../research/community-batch932-audit/DISPOSITIONS.json) |
 | [#923](https://github.com/CrocSwap/integer-mult-bounds/pull/923) | RossRichardson | incorporated | [record 1](../../research/community-batch952-audit/DISPOSITIONS.json) |
 | [#925](https://github.com/CrocSwap/integer-mult-bounds/pull/925) | RossRichardson | incorporated | [record 1](../../research/community-batch952-audit/DISPOSITIONS.json) |
@@ -653,29 +653,29 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#932](https://github.com/CrocSwap/integer-mult-bounds/pull/932) | RossRichardson | incorporated | [record 1](../../research/community-batch932-audit/DISPOSITIONS.json) |
 | [#934](https://github.com/CrocSwap/integer-mult-bounds/pull/934) | RossRichardson | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#936](https://github.com/CrocSwap/integer-mult-bounds/pull/936) | RossRichardson | incorporated | [record 1](../../research/community-batch952-audit/DISPOSITIONS.json) |
-| [#937](https://github.com/CrocSwap/integer-mult-bounds/pull/937) | RossRichardson | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#937](https://github.com/CrocSwap/integer-mult-bounds/pull/937) | RossRichardson | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#941](https://github.com/CrocSwap/integer-mult-bounds/pull/941) | bitplane | incorporated | [record 1](../../research/community-batch952-audit/DISPOSITIONS.json) |
 | [#942](https://github.com/CrocSwap/integer-mult-bounds/pull/942) | jon314159 | incorporated | [record 1](../../research/community-batch952-audit/DISPOSITIONS.json) |
 | [#943](https://github.com/CrocSwap/integer-mult-bounds/pull/943) | RossRichardson | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#944](https://github.com/CrocSwap/integer-mult-bounds/pull/944) | RossRichardson | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#945](https://github.com/CrocSwap/integer-mult-bounds/pull/945) | RossRichardson | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#945](https://github.com/CrocSwap/integer-mult-bounds/pull/945) | RossRichardson | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#946](https://github.com/CrocSwap/integer-mult-bounds/pull/946) | navinor | partially reviewed | [record 1](../../research/community-batch952-audit/DISPOSITIONS.json) · [record 2](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#947](https://github.com/CrocSwap/integer-mult-bounds/pull/947) | RossRichardson | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#949](https://github.com/CrocSwap/integer-mult-bounds/pull/949) | RossRichardson | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#947](https://github.com/CrocSwap/integer-mult-bounds/pull/947) | RossRichardson | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#949](https://github.com/CrocSwap/integer-mult-bounds/pull/949) | RossRichardson | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#950](https://github.com/CrocSwap/integer-mult-bounds/pull/950) | RossRichardson | incorporated | [record 1](../../research/community-batch952-audit/DISPOSITIONS.json) |
 | [#951](https://github.com/CrocSwap/integer-mult-bounds/pull/951) | chafreaky | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#952](https://github.com/CrocSwap/integer-mult-bounds/pull/952) | bitplane | incorporated | [record 1](../../research/community-batch952-audit/DISPOSITIONS.json) |
 | [#953](https://github.com/CrocSwap/integer-mult-bounds/pull/953) | RossRichardson | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#954](https://github.com/CrocSwap/integer-mult-bounds/pull/954) | RossRichardson | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#954](https://github.com/CrocSwap/integer-mult-bounds/pull/954) | RossRichardson | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#957](https://github.com/CrocSwap/integer-mult-bounds/pull/957) | navinor | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#958](https://github.com/CrocSwap/integer-mult-bounds/pull/958) | RossRichardson | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#958](https://github.com/CrocSwap/integer-mult-bounds/pull/958) | RossRichardson | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#959](https://github.com/CrocSwap/integer-mult-bounds/pull/959) | yssite | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#960](https://github.com/CrocSwap/integer-mult-bounds/pull/960) | davidNbreslauer | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#961](https://github.com/CrocSwap/integer-mult-bounds/pull/961) | woklerx | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#963](https://github.com/CrocSwap/integer-mult-bounds/pull/963) | ToikY | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#964](https://github.com/CrocSwap/integer-mult-bounds/pull/964) | bitplane | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#965](https://github.com/CrocSwap/integer-mult-bounds/pull/965) | RossRichardson | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#967](https://github.com/CrocSwap/integer-mult-bounds/pull/967) | theon199 | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#968](https://github.com/CrocSwap/integer-mult-bounds/pull/968) | themilkman216 | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#969](https://github.com/CrocSwap/integer-mult-bounds/pull/969) | ToikY | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#961](https://github.com/CrocSwap/integer-mult-bounds/pull/961) | woklerx | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#963](https://github.com/CrocSwap/integer-mult-bounds/pull/963) | ToikY | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#964](https://github.com/CrocSwap/integer-mult-bounds/pull/964) | bitplane | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#965](https://github.com/CrocSwap/integer-mult-bounds/pull/965) | RossRichardson | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#967](https://github.com/CrocSwap/integer-mult-bounds/pull/967) | theon199 | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#968](https://github.com/CrocSwap/integer-mult-bounds/pull/968) | themilkman216 | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#969](https://github.com/CrocSwap/integer-mult-bounds/pull/969) | ToikY | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#970](https://github.com/CrocSwap/integer-mult-bounds/pull/970) | woklerx | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |

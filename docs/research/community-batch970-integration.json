@@ -1,5 +1,5 @@
 {
-  "status": "NINE_PUBLISHED_SIXTEEN_REVIEWED_PUBLICATION_PENDING_15_REMAIN",
+  "status": "TWENTY_FIVE_PUBLISHED_15_REMAIN",
   "selected_kappa": "1661960547713947/1000000000000000000",
   "frontier_changed": false,
   "reviewed_heads": {
@@ -264,7 +264,8 @@
     "research/community-batch970-audit/logs/pr968-0.log": "1e70c35c107bd29e28bf15b7d5b0d0e61856485b304de9c7ea9a7f693b2ca634",
     "research/community-batch970-audit/pr965-replay.tar.gz": "03613e90afb7b9cb019cc8e21f04d60c10999921f568dc50cfc1e3fa1e95281f",
     "research/community-batch970-audit/pr967-replay.tar.gz": "f64ffa73381eb92e8a744fa2bf23c35a4c363a461ca08d07dd6ffd54f8cc19b8",
-    "research/community-batch970-audit/CHECKPOINT2-HEADS.json": "4d37b5b8013d753800ab180b801c333ab0aa722be12cfd882aa783cf8684432a"
+    "research/community-batch970-audit/CHECKPOINT2-HEADS.json": "4d37b5b8013d753800ab180b801c333ab0aa722be12cfd882aa783cf8684432a",
+    "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json": "67d49dbb04aeabe076f3af78313bbdd32f82679e3aee016c82d5f21e02aa4abd"
   },
   "publication_commit": "1cb9cde18dc2d61b20f0f46fac1ddbf93d57278d",
   "source_commit": "bee588ff",
@@ -285,5 +286,6 @@
     958,
     963,
     968
-  ]
+  ],
+  "checkpoint2_publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e"
 }

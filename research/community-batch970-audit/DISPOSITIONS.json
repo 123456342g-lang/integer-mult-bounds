@@ -1,5 +1,5 @@
 {
-  "status": "NINE_PUBLISHED_SIXTEEN_REVIEWED_PUBLICATION_PENDING_15_REMAIN",
+  "status": "TWENTY_FIVE_PUBLISHED_15_REMAIN",
   "pull_requests": [
     {
       "number": 959,
@@ -294,19 +294,23 @@
       },
       "reviewed_head": "6292e3774abd82f2d5202190b498f35cc1628c39",
       "current_head": "6292e3774abd82f2d5202190b498f35cc1628c39",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r439-helper-triples"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Coupled helper triples reduce the alternative R439 word from 11980 to 11840 ADDs; exhaustive 168-map component scores, greedy census, arbitrary-dirty endpoints and full native replay. Nine-stage precision uses 99.6193% of allowance. Not a new supplier or global optimum.",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -330,19 +334,23 @@
       },
       "reviewed_head": "c6caa79e6655d83780a3b70a1d658313126fb0b3",
       "current_head": "c6caa79e6655d83780a3b70a1d658313126fb0b3",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r439-helper-stars-seed19"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Disjoint one/two-leaf helper stars reduce the alternative word to 11783 ADDs; full native 5/9/11-stage replay and exact 192-bit inequality pass at 99.996316% usage. Semantic D substitution; original gate-local H2 remains false. No kappa change.",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -366,19 +374,23 @@
       },
       "reviewed_head": "b303fed6dfe2066dcd78c0d8ed74d2a3b153ba72",
       "current_head": "b303fed6dfe2066dcd78c0d8ed74d2a3b153ba72",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/dyadic-center-two-shear"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Historical rank-h central factor with two commuting basis shears reduces h26 gather/scatter bill to 42600. Complete dirty restoration and unchanged grouped-frame/rank invoice checked; improvement over Curtis Dransfield #809 credited separately.",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -402,19 +414,23 @@
       },
       "reviewed_head": "a3245bf22fa2a2eb778b11128cbc605b130d737f",
       "current_head": "a3245bf22fa2a2eb778b11128cbc605b130d737f",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/x4-joint-horner-seed29"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Joint same-target two-source Horner blocks save 13072 backward primitives with complete 737-column replay and fixed-class disjoint-pair optimum. Conservative max-orientation invoice improves only by 16; no new exponent.",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -438,19 +454,23 @@
       },
       "reviewed_head": "085c32a25e2a09b029fa816195b97fa93d6f0788",
       "current_head": "085c32a25e2a09b029fa816195b97fa93d6f0788",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/complex-ck-two-sided"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Joint target forest and helper pairs reduce historical CK compensation by 75318 real primitives per orientation, including 8798 beyond the target forest. Arbitrary inputs, both orientations, native wrappers and precision charged; not joint optimality.",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -474,19 +494,23 @@
       },
       "reviewed_head": "79ee104a90c3c7c244362cce74997fce37923ce9",
       "current_head": "79ee104a90c3c7c244362cce74997fce37923ce9",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/ck-sign-normalization-seed22"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Boundary-local sign normalization saves 224 CK primitives per orientation. Signs flushed before every opaque/frame boundary; source-dependent norms preserved. Historical finite scalar scope.",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -510,19 +534,23 @@
       },
       "reviewed_head": "6e9c76b2b9e31350a10ceb5b98e94df1438e3a1f",
       "current_head": "6e9c76b2b9e31350a10ceb5b98e94df1438e3a1f",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/jp8-clean-work"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Known-zero coefficient work removes 9228 historical JP8 primitives per orientation beyond #696, forgetting knowledge at every opaque/frame boundary and preserving addition exit obligations.",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -546,19 +574,23 @@
       },
       "reviewed_head": "d1ee3f46a6167ea54913e070af3161c71a99e1f2",
       "current_head": "d1ee3f46a6167ea54913e070af3161c71a99e1f2",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/complex-swap-runs-seed37"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Deferred exact swaps with paid cycle materialization save 560 primitives per historical CK/JP8 orientation after identical clear elision on both comparators. Complete dirty/private inputs and prefixes checked; physical/global adoption open.",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -582,19 +614,23 @@
       },
       "reviewed_head": "b6f6418bdcae748b267cea72a5949d551feb7bb2",
       "current_head": "b6f6418bdcae748b267cea72a5949d551feb7bb2",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/dyadic-center-anchor-bound"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Exact constant-row integral-shear optimum in the stated signed alphabet: #937 attains unique fixed-pivot 42600 at h26 and all even h>=10; h8 has a different optimum. Other row mixing and rational bases excluded.",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -618,19 +654,23 @@
       },
       "reviewed_head": "102ddfb47d11c8ad66121350907d4a2cc04cea8c",
       "current_head": "102ddfb47d11c8ad66121350907d4a2cc04cea8c",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/complex-factory-scale-frontier27"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Exact 73-primitive optimum over diagonal signed-dyadic scale placements for the fixed 26-ADD factory. Complete 315392-tuple domain and higher-macro exclusion under the retained adapter invoice. CubeJerry #922/#924 supplied the attaining construction.",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -654,19 +694,23 @@
       },
       "reviewed_head": "4257ddf4b755cd0ac3bd3b0f6281cc5b2b1f72ad",
       "current_head": "4257ddf4b755cd0ac3bd3b0f6281cc5b2b1f72ad",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/complex-x4-dyadic-forest-seed31"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Historical X4 single-parent forest floor 10883 extends from signed units to all dyadics via finite coefficient domination plus proved infinite tails. Multiple parents, helper changes and shared work excluded.",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -690,19 +734,23 @@
       },
       "reviewed_head": "7a3bf8460cf6ca16a2bf008ff51fdb06df1af938",
       "current_head": "7a3bf8460cf6ca16a2bf008ff51fdb06df1af938",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/ck-power-forest-bound"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Historical CK signed-power-of-two parent forests retain floor 16364; each nonunit edge adds at least 10. Exact finite census plus infinite-tail proof; does not cover all dyadic numerators.",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -726,19 +774,23 @@
       },
       "reviewed_head": "a98219aa708e1bd2ae4ca90e720e66569f7f0147",
       "current_head": "a98219aa708e1bd2ae4ca90e720e66569f7f0147",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/e8-first-rank-drop"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Classifies all 255 first E8 reader-code rank drops at 56 deletions, correctly separating available and required code dimensions. Exact star costs 50/57; through-56 fixed-star ratio exclusion inherits PR939 coverage.",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -762,19 +814,23 @@
       },
       "reviewed_head": "28d68c88f0184835d8c8a7266ab8d0dad3f18a8a",
       "current_head": "28d68c88f0184835d8c8a7266ab8d0dad3f18a8a",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/five-port-quadratic-decoder"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Natural five-port quadratic Gram decoder has supplier saving below 125/76433 under separate-star drop-free compressed-window premises. Seventeen exact rational-rank witnesses and all-p tail; no unrestricted decoder barrier.",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -798,19 +854,23 @@
       },
       "reviewed_head": "04c37d1c9d71808f77a36b3734f6c07a7ee772c1",
       "current_head": "04c37d1c9d71808f77a36b3734f6c07a7ee772c1",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/p111-receiver-census"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Complete 19683 receiver assignments in the frozen P111 generator cannot beat 439 helpers; 2646 minimizers. Fixed punctures, keeper plan and closure convention; not unrestricted helper/circuit optimality.",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
@@ -834,19 +894,23 @@
       },
       "reviewed_head": "6a99e7240b961ac5e115ae6aa0301ec7c4a45d77",
       "current_head": "6a99e7240b961ac5e115ae6aa0301ec7c4a45d77",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/complex-frame-pair-decoders"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "55645f9d4d806d67875c1c8b9840b0b039ece22e",
+        "evidence": "research/community-batch970-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Exact eight-term complex frame-pair decoder analysis and finite census: copy floor max(72-p,56) through 24 punctures; best copy ratio 7/13 at p16. Uses stated E8 hyperplane-flat coverage premise. Favorable pricing only, no built supplier or new kappa.",
-      "unresolved_question": "Scoped review and local execution complete; second checkpoint publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-circuits-review.md"
