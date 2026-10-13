@@ -119,3 +119,7 @@ research/tintagel-source-lookup/** -text -whitespace
 research/trace-curvature-preload/** -text -whitespace
 research/witness-spec-tools/** -text -whitespace
 research/community-family588-audit/** -text -whitespace
+
+# Preserve exact batch932 replay logs and submitted historical provenance output.
+research/community-batch932-audit/** -text -whitespace
+research/selected-source-coverage-audit/COVERAGE.md -text -whitespace

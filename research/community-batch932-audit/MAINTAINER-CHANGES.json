@@ -1,0 +1,5 @@
+{
+  "scripts/reconcile_pr_queue.py": "8637436dfbb2d6dce02d59c321def8e37fd1c8b5c5e55c5f480be5208bbbd022",
+  "scripts/verify_pr_reconciliation.py": "a97e011cffe3cf29f4dd5045a39120b35525e4689102be9d767a42d5c5cce026",
+  "research/agent-07-verifeng-seed88/test_benchmark.py": "9464add8e4397fa3d1c2c73b536f48b5bee7dcfa93d0a92d1355978e1bd99e4e"
+}

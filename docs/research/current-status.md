@@ -14,6 +14,12 @@ recorded separately. All-size/compiler, realization, hosting, precision/tape
 and analytic assumptions remain; no full Lean multiplication proof is claimed.
 The Linux integration job status is separate from the completed local replay.
 
+The [batch through #932](community-batch932-review.md) reviews eighteen circuit,
+precision and verification contributions without changing κ. It includes faster
+isolated tests, X4 scalar savings, R439 compensation candidates and independent
+outer/layout/provenance evidence. Full supplier adoption of the new bit circuits
+remains open; their finite boundary checks are not a new selected witness.
+
 # Superseded status through #799
 
 Selected conditional κ: **0.001661634653669567**, #799 with #589 on #555.

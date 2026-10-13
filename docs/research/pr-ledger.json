@@ -3,8 +3,8 @@
   "snapshot": "research/pr-reconciliation-20261012/starting-snapshot.json",
   "starting_main": "f19cb621be2caf3a7291a37c343c1c55afe935e0",
   "starting_open_count": 446,
-  "inventory_count": 567,
-  "family_round": "research/community-frontier890-audit/DISPOSITIONS.json",
+  "inventory_count": 585,
+  "family_round": "research/community-batch932-audit/DISPOSITIONS.json",
   "family_rounds": [
     "research/community-family533-audit/DISPOSITIONS.json",
     "research/community-family588-audit/DISPOSITIONS.json",
@@ -13,12 +13,13 @@
     "research/community-k492-audit/DISPOSITIONS.json",
     "research/community-frontier741-audit/DISPOSITIONS.json",
     "research/community-frontier799-audit/DISPOSITIONS.json",
-    "research/community-frontier890-audit/DISPOSITIONS.json"
+    "research/community-frontier890-audit/DISPOSITIONS.json",
+    "research/community-batch932-audit/DISPOSITIONS.json"
   ],
   "counts": {
     "changed_since_review": 6,
     "incorporated": 130,
-    "partially_reviewed": 149,
+    "partially_reviewed": 167,
     "unreviewed": 282
   },
   "source_sha256": {
@@ -45,7 +46,8 @@
     "research/community-k492-audit/DISPOSITIONS.json": "3f80fcee52c2d0abf1f428e9bf2ab9fab54985032535ae81495da759ee78d903",
     "research/community-frontier741-audit/DISPOSITIONS.json": "3190e452039b1aae2ec7ef2cf9c94c49a165957bde7619cc4b24bab25b15e8d8",
     "research/community-frontier799-audit/DISPOSITIONS.json": "4916ec599e2188d944388e36839f4e61cd939c42f761c9a3f2c3fe26c1400eb9",
-    "research/community-frontier890-audit/DISPOSITIONS.json": "c33d7d04ae1411a769ba14e812e75f8065b07bbdb085cbbf86b935eb1c8d8f8f"
+    "research/community-frontier890-audit/DISPOSITIONS.json": "c33d7d04ae1411a769ba14e812e75f8065b07bbdb085cbbf86b935eb1c8d8f8f",
+    "research/community-batch932-audit/DISPOSITIONS.json": "2cadff5dfc8ddb66cdb94e0ce325f389ba8b7bd6274e5c8f463221465e0d55f4"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
   "pull_requests": [
@@ -4413,6 +4415,7 @@
       "evidence": [],
       "historical_mentions": [
         "docs/research/assembly-domain-audit.md",
+        "docs/research/community-batch932-review.md",
         "docs/research/community-round8-review.md"
       ],
       "disposition": "partially_reviewed",
@@ -18448,6 +18451,144 @@
       ]
     },
     {
+      "number": 813,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/813",
+      "title": "Independent verification: Bernstein certificates for all 47 outer inequalities",
+      "contributor": {
+        "id": "MDQ6VXNlcjI3MzA1OQ==",
+        "is_bot": false,
+        "login": "bitplane",
+        "name": "Gareth Davidson"
+      },
+      "draft": false,
+      "starting_head": "5d3b961fca28c77cec74f5237a59acd361c8e851",
+      "current_head": "5d3b961fca28c77cec74f5237a59acd361c8e851",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "5d3b961fca28c77cec74f5237a59acd361c8e851",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "Exact Bernstein certificates for 47 retained outer inequalities, 57 polynomial rows and 2,586 weights; independent SymPy crosscheck. Historical #626 witness/domain only, supplier and bridge hypotheses inherited.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/outer-bernstein-certificate"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "5d3b961fca28c77cec74f5237a59acd361c8e851",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 816,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/816",
+      "title": "Research: signed CK target forests save 66,520 primitives with an exact class floor (no new kappa)",
+      "contributor": {
+        "id": "U_kgDOD9_NhQ",
+        "is_bot": false,
+        "login": "dd-hemant",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "133735a2cc2319c12ba5d786214b2217e083e7da",
+      "current_head": "133735a2cc2319c12ba5d786214b2217e083e7da",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "133735a2cc2319c12ba5d786214b2217e083e7da",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "Historical CK signed target forest, 66,520 primitives saved per orientation; exact minimum only in signed-unit single-parent forest class.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/complex-ck-target-forest"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "133735a2cc2319c12ba5d786214b2217e083e7da",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 837,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/837",
+      "title": "Research: bidirectional Horner saves 312 SW4 primitives per orientation (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjI3MzA1OQ==",
+        "is_bot": false,
+        "login": "bitplane",
+        "name": "Gareth Davidson"
+      },
+      "draft": false,
+      "starting_head": "0a2977195efc8fb2a918fbfb694ec8d294387f08",
+      "current_head": "0a2977195efc8fb2a918fbfb694ec8d294387f08",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "0a2977195efc8fb2a918fbfb694ec8d294387f08",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "Bidirectional binary/NAF Horner lowering with finite scalar savings; considered together with #866 fractional-grid correction, not an unchanged full precision theorem.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/dyadic-horner-direction"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "0a2977195efc8fb2a918fbfb694ec8d294387f08",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
       "number": 838,
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/838",
       "title": "Research audit: PR741 binding accepts omitted replay evidence (no new kappa)",
@@ -18611,6 +18752,52 @@
       "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
         "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 849,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/849",
+      "title": "Tooling: fuse exact dyadic updates for a 1.45–1.50x faster PR799 audit",
+      "contributor": {
+        "id": "MDQ6VXNlcjI3MzA1OQ==",
+        "is_bot": false,
+        "login": "bitplane",
+        "name": "Gareth Davidson"
+      },
+      "draft": false,
+      "starting_head": "f61b426397097a1cd8ecb16864674752b5d25809",
+      "current_head": "f61b426397097a1cd8ecb16864674752b5d25809",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "f61b426397097a1cd8ecb16864674752b5d25809",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "Opt-in exact dyadic multiply-add kernel; all 70,765 native updates and 15 changed-word controls checked. Default mathematical sources unchanged.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/scalar-fused-dyadic"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "f61b426397097a1cd8ecb16864674752b5d25809",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
       ]
     },
     {
@@ -18837,6 +19024,98 @@
       ]
     },
     {
+      "number": 866,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/866",
+      "title": "Research audit: CK Horner reversal raises scalar-grid guard from 3 to 5 bits (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjI3MzA1OQ==",
+        "is_bot": false,
+        "login": "bitplane",
+        "name": "Gareth Davidson"
+      },
+      "draft": false,
+      "starting_head": "5ae580bf68516f1cbe3b2dd3cb646be55170288f",
+      "current_head": "5ae580bf68516f1cbe3b2dd3cb646be55170288f",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "5ae580bf68516f1cbe3b2dd3cb646be55170288f",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "Exact scalar-prefix dyadic denominator criterion, complete CK/JP8/SW4 replays and rounding counterexample; CK forward guard rises from 3 to 5 bits, joint guard unchanged. Physical precision not certified.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/dyadic-fractional-grid"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "5ae580bf68516f1cbe3b2dd3cb646be55170288f",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 867,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/867",
+      "title": "Research consolidation: selected-source provenance gap map + 298-row vendored-source re-verification (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjUwMzY2Njc2",
+        "is_bot": false,
+        "login": "navinor",
+        "name": "Aaron Wang"
+      },
+      "draft": false,
+      "starting_head": "0f800fe82eba0a29fb08d162c193526e40d41e50",
+      "current_head": "0f800fe82eba0a29fb08d162c193526e40d41e50",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "0f800fe82eba0a29fb08d162c193526e40d41e50",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "Historical #799 provenance map and 298 vendored-source checks reproduced with PowerShell on original-base inputs. Matching bytes and citations do not approve whole predecessor PRs.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/selected-source-coverage-audit"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "0f800fe82eba0a29fb08d162c193526e40d41e50",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
       "number": 869,
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/869",
       "title": "Conditional κ = 0.001661948695165034: eight triangle-hybrid B deliveries in block 0 on PR799's word",
@@ -18996,6 +19275,52 @@
       ]
     },
     {
+      "number": 879,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/879",
+      "title": "Independent verification: exact synthetic-transform physical layouts (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjgyODk5MzMx",
+        "is_bot": false,
+        "login": "mightyOil",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "12012c9478d121d6d404a0d94e446016e3f51a2e",
+      "current_head": "12012c9478d121d6d404a0d94e446016e3f51a2e",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "12012c9478d121d6d404a0d94e446016e3f51a2e",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "Independent literal physical-layout and direct tensor-character checks: 9,486 layouts, 200,434 complete addresses, 4,340 ring columns and 11 controls. Bounded finite evidence, not all-size proof.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/synthetic-layout-independent"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "12012c9478d121d6d404a0d94e446016e3f51a2e",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
       "number": 881,
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/881",
       "title": "Independent verification: PR869's U8 word and κ with a code-disjoint checker (no new kappa)",
@@ -19046,6 +19371,144 @@
       "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
         "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 882,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/882",
+      "title": "Research construction: seven grid-preserving JP8 circuits save 104 primitives per orientation (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjgyODk5MzMx",
+        "is_bot": false,
+        "login": "mightyOil",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "e698981e0ffa680b6c5896dace1609025b97ad70",
+      "current_head": "e698981e0ffa680b6c5896dace1609025b97ad70",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "e698981e0ffa680b6c5896dace1609025b97ad70",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "Seven grid-bounded JP8 coefficient circuits; 104 primitives saved per orientation and independently checked bounded single-scratch class minima.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/jp8-grid-bounded-synthesis"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "e698981e0ffa680b6c5896dace1609025b97ad70",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 883,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/883",
+      "title": "Research construction: four-primitive X4 preconditions save 784 per orientation (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjgyODk5MzMx",
+        "is_bot": false,
+        "login": "mightyOil",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "b31a870a3842b37f6ab97767c506ce91783632a2",
+      "current_head": "b31a870a3842b37f6ab97767c506ce91783632a2",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "b31a870a3842b37f6ab97767c506ce91783632a2",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "Four-operation X4 precondition pairs, exact scoped two-register minimum and 784 real primitives saved per orientation; bound to immutable #799 checkpoint.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/x4-precondition-seed22"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "b31a870a3842b37f6ab97767c506ce91783632a2",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 884,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/884",
+      "title": "Research construction: R439 frame-521 block, 47 to 31 ADDs (no new kappa)",
+      "contributor": {
+        "id": "U_kgDOFF-BGQ",
+        "is_bot": false,
+        "login": "martinxxx9",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "35992d6721583d642465b1ad6dabd58dfc0cc77a",
+      "current_head": "35992d6721583d642465b1ad6dabd58dfc0cc77a",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "35992d6721583d642465b1ad6dabd58dfc0cc77a",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "R439 frame521 47-to-31 ADD replacement and literal cleanup, 32 complete ADDs saved; 12,000-trial search reproduced, no global optimum claimed. Historical checkpoint pin preserved.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/r439-block521-factor"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "35992d6721583d642465b1ad6dabd58dfc0cc77a",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
       ]
     },
     {
@@ -19158,6 +19621,52 @@
       ]
     },
     {
+      "number": 891,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/891",
+      "title": "Research construction: R439 phase-B blocks 506/523 to 24/39 ADDs + certified single-write class boundaries (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjUwMzY2Njc2",
+        "is_bot": false,
+        "login": "navinor",
+        "name": "Aaron Wang"
+      },
+      "draft": false,
+      "starting_head": "645fb93fcd21b86aca7e2bf81582be5c62411b27",
+      "current_head": "645fb93fcd21b86aca7e2bf81582be5c62411b27",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "645fb93fcd21b86aca7e2bf81582be5c62411b27",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "R439 phase-B frames 506/523 shortenings with exact single-write class census, independent Bellman verification and all-column endpoint; 16 complete ADDs saved, reverse bound improves.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/r439-bsection-survey"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "645fb93fcd21b86aca7e2bf81582be5c62411b27",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
       "number": 894,
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/894",
       "title": "Research audit: exact endpoint-to-kappa reduction of the selected frontier799 assembly (no new kappa)",
@@ -19208,6 +19717,98 @@
       "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
         "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 901,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/901",
+      "title": "Research construction: restored X4 target pairs save 33,800 primitives per orientation (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjI3NTY4NjE3",
+        "is_bot": false,
+        "login": "ToikY",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "dbe8dc01f8306bd7dab8d861a953b23e5cda6a70",
+      "current_head": "dbe8dc01f8306bd7dab8d861a953b23e5cda6a70",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "dbe8dc01f8306bd7dab8d861a953b23e5cda6a70",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "X4 disjoint target pairs, 33,800 primitives saved per orientation; arbitrary-input restoration and complete scalar replay. Production integration remains open.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/complex-x4-compensation-pairs"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "dbe8dc01f8306bd7dab8d861a953b23e5cda6a70",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 903,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/903",
+      "title": "Tooling: 1.71x faster exhaustive data-corner replay with identical receipts",
+      "contributor": {
+        "id": "MDQ6VXNlcjc3ODc5Mzgx",
+        "is_bot": false,
+        "login": "just-mn",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "4e1d75e312d09107298ceeb27a79d96f369459db",
+      "current_head": "4e1d75e312d09107298ceeb27a79d96f369459db",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "4e1d75e312d09107298ceeb27a79d96f369459db",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "Source-pinned pivot-column caching for the historical data-corner checker; all 4,073,300 cases and full receipts reproduced.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/data-corner-performance"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "4e1d75e312d09107298ceeb27a79d96f369459db",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
       ]
     },
     {
@@ -19368,6 +19969,238 @@
       "reconciliation_evidence": [
         "research/community-frontier890-audit/DISPOSITIONS.json"
       ]
+    },
+    {
+      "number": 915,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/915",
+      "title": "Bit supplier: save 11,097 R439 ADDs with guarded target-basis compensation (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjI3MzA1OQ==",
+        "is_bot": false,
+        "login": "bitplane",
+        "name": "Gareth Davidson"
+      },
+      "draft": false,
+      "starting_head": "e9daefe320a0043000bd9746664ed02c3287d056",
+      "current_head": "e9daefe320a0043000bd9746664ed02c3287d056",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "e9daefe320a0043000bd9746664ed02c3287d056",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "R439 restored target-basis D prefix: 24,305 to 13,208 ADDs; native 5/9/11-stage replay. Semantic D boundary accepted as a finite substitution; original H2/extractor remain false. Full hosted adoption open.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/r439-target-compensation"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "e9daefe320a0043000bd9746664ed02c3287d056",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 916,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/916",
+      "title": "Integration: admit PR883 X4 primitive lowering through selected invoice and assembly (no new kappa)",
+      "contributor": {
+        "id": "U_kgDOETsF7g",
+        "is_bot": false,
+        "login": "nightangelflowerwin-ops",
+        "name": "Stephen Shore"
+      },
+      "draft": false,
+      "starting_head": "1f0cd934f83ddf2f14f20275ecca072c5b85a7b9",
+      "current_head": "1f0cd934f83ddf2f14f20275ecca072c5b85a7b9",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "1f0cd934f83ddf2f14f20275ecca072c5b85a7b9",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "Source-bound #883 compiler refinement admitted through the complete #799 invoice and assembly with verified reused #741 ancestry; 56,448 fewer primitives, historical kappa unchanged. No U8/T21 transport claimed.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/x4-primitive-admission"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "1f0cd934f83ddf2f14f20275ecca072c5b85a7b9",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 921,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/921",
+      "title": "Tooling: schedule isolated test modules concurrently with identical receipts (3.3-3.9x faster verify-tests, no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjUwMzY2Njc2",
+        "is_bot": false,
+        "login": "navinor",
+        "name": "Aaron Wang"
+      },
+      "draft": false,
+      "starting_head": "c1ee2fbfdc5700a1ba0251e7727ee8ae0cb4782f",
+      "current_head": "c1ee2fbfdc5700a1ba0251e7727ee8ae0cb4782f",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "c1ee2fbfdc5700a1ba0251e7727ee8ae0cb4782f",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "Concurrent isolated test modules with ordered output; benchmark acceptance hardened against nondeterministic mismatches. All 94 modules pass in both schedules.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/agent-07-verifeng-seed88",
+        "scripts/run_isolated_tests.py",
+        "tests/test_isolated_test_runner.py"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "c1ee2fbfdc5700a1ba0251e7727ee8ae0cb4782f",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 926,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/926",
+      "title": "Finite bit construction: two-sided R439 compensation saves 1,228 more ADDs beyond PR915",
+      "contributor": {
+        "id": "MDQ6VXNlcjI3MzA1OQ==",
+        "is_bot": false,
+        "login": "bitplane",
+        "name": "Gareth Davidson"
+      },
+      "draft": false,
+      "starting_head": "0f216a345c37bc71cc0e22030ef11ec31b26a69e",
+      "current_head": "0f216a345c37bc71cc0e22030ef11ec31b26a69e",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "0f216a345c37bc71cc0e22030ef11ec31b26a69e",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "R439 two-sided compensation: 11,980 ADDs; full mixed term and native 5/9/11-stage checks. Nine-stage bound uses about 99.925% of allowance. No composition with other candidate savings or full hosted adoption claimed.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/r439-two-sided-compensation"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "0f216a345c37bc71cc0e22030ef11ec31b26a69e",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 932,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/932",
+      "title": "Finite construction: selected X4 target forests save 47,690 primitives with an exact class floor (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjU2NTI3MTY=",
+        "is_bot": false,
+        "login": "RossRichardson",
+        "name": "Ross Richardson"
+      },
+      "draft": false,
+      "starting_head": "c5b5b30279bdda513e97017587806a0b9f0ca850",
+      "current_head": "c5b5b30279bdda513e97017587806a0b9f0ca850",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "c5b5b30279bdda513e97017587806a0b9f0ca850",
+          "evidence": "research/community-batch932-audit/DISPOSITIONS.json",
+          "scope": "X4 signed target forest, 47,690 primitives saved per orientation, 10,883 per-component compensation floor in stated class; reverse envelope rises to 74 bits. Production integration remains open.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/complex-x4-target-forest"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "c5b5b30279bdda513e97017587806a0b9f0ca850",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch932-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch932-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch932-audit/DISPOSITIONS.json"
+      ]
     }
   ],
   "ending_snapshot": "research/pr-reconciliation-20261012/ending-snapshot.json",
@@ -19380,6 +20213,6 @@
   "github_dispositions": {
     "CLOSED": 3,
     "MERGED": 127,
-    "OPEN": 437
+    "OPEN": 455
   }
 }

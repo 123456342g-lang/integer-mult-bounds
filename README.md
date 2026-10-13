@@ -21,6 +21,8 @@ efficiently. The [#799 checkpoint](certificates/checkpoints/frontier799.json)
 is preserved. Earlier credit includes Chafik's #741 frames, icekylinx's source
 gauge, Rohan Arun's recurrence correction, and the cumulative community work.
 [Full contributor record](CONTRIBUTORS.md).
+The [eighteen-PR circuit and verification batch](docs/research/community-batch932-review.md)
+adds finite circuit savings, precision audits and faster checks; it leaves κ unchanged.
 
 Fresh U8, T16 and T21 finite replays pass, including scalar/frame/phase checks,
 physical owner admission, precision accounting, two rational moment engines and

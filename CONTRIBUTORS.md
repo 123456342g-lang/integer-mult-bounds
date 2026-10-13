@@ -1,7 +1,7 @@
 # Community contribution record
 
-**Current reviewed composition: #799 with #589, κ=0.001661634653669567.**
-See the [review](docs/research/community-frontier799-review.md) and
+**Current reviewed composition: #890 / #869 / #870 with #589, κ=0.001661957774647029.**
+See the [review](docs/research/community-frontier890-review.md) and
 [circuit integration](docs/research/community-circuits681-review.md) for scope.
 
 | Contributor | Work in this round and its construction lineage |
@@ -443,3 +443,22 @@ verified posts, profile associations and unresolved account identities.
 - **Michiel Kosters** ([research repository](https://github.com/michielkosters/mathematics_ai/tree/2e0aa64ca09c87fc94f8575f59493f70cf929d71/problems/integer-multiplication-109); Douglas associates @one_line_proof) developed a parallel weighted-hypergraph/coordinate-frame candidate, compressed centers and aligned bit pairing. Our [review](research/parallel-announcements/README.md) reproduces the finite certificate with its transfer/precision limitations explicit.
 - **Abe / @abe_asfaw**, via a suggestion supplied by Douglas, identified the redundant complex center and its historical 26.5% numerical gain. We [checked the scalar identity, counts and assembly arithmetic](research/parallel-announcements/README.md), and credit this parallel observation alongside the already preserved rank-h center research.
 - **Jacob Sussman** ([jacobalansussman](https://github.com/jacobalansussman/wht-power-saving-lean/tree/fdfb7815c15ec43af0fb54818a6a57ae4025126b)) published a separate Lean 4 development on the Fourier side (OpenAI's family 130, not this project's multiplication theorem): a proof of #130's general frame lemma for that RAM model, and a kernel check of #193's complex word, rebuilt from the published data, inside a five-stage layout. It was built with AI agents (Claude) and makes no κ claim. Nothing in it has been replayed or reviewed here.
+
+## Circuit, precision and verification batch through #932
+
+[Individual review and scope](docs/research/community-batch932-review.md).
+The selected κ is unchanged; finite candidates retain their integration obligations.
+
+- **Aaron Wang / navinor (#921/#891/#867):** concurrent isolated tests, exact R439 phase-B class survey and historical source-provenance reconciliation.
+- **just-mn (#903):** exact cached-pivot data-corner replay and differential controls.
+- **Gareth Davidson / bitplane (#849/#837/#866/#915/#926/#813):** exact dyadic audit acceleration, bidirectional Horner, fractional-grid audit, restored target/two-sided compensation and independent outer Bernstein certificates.
+- **Philipp / mightyOil (#883/#882/#879):** optimal scoped X4 pair compilation, grid-bounded JP8 synthesis and independent physical-layout verification.
+- **Stephen Shore / nightangelflowerwin-ops (#916):** full historical X4 invoice/assembly admission for #883's primitive refinement.
+- **dd-hemant (#816):** signed CK target forests and exact class floor, credited as the mechanism predecessor to #932.
+- **ToikY (#901):** restored X4 target pairs with full scalar replay.
+- **Ross Richardson (#932):** signed forests on the X4 compensation panel, complete cost and exact class floor.
+- **martinxxx9 (#884):** shorter frame521 R439 circuit, literal cleanup and improved positive bounds.
+
+These contributions retain their original assistance notices and predecessor
+credit, including Oscar Fennell, Sricharan Vagvala, Scott Woolsey Biggart, Sagar
+Thakrar and Romain Hedouin. Parallel work is credited independently of selection.
