@@ -120,5 +120,9 @@ No pending contribution is imported. In particular Sagar Thakrar's #708 shares
 restored operands while preserving the full dirty operator. This construction
 changes that operator and wins mainly in D, using a different search class.
 #686/#694 change frame-zero bases; #710 shortens cleanup; #716 optimizes target
-pairs. Those mechanisms are not combined here. The local claim records the
-candidate selection and absence of a pinned sprint coordination issue.
+pairs. Final overlap refresh through #734 also checked Joshua Snider's #731
+(rank/kernel of the **fixed correction matrix K**, not our decoder source map)
+and Scott Woolsey Biggart's #733 (two-sided basis composition preserving K).
+Our construction changes K; their savings must not be added to ours without a
+new composition audit. Those mechanisms are not combined here. The local claim
+records the candidate selection and absence of a pinned coordination issue.
