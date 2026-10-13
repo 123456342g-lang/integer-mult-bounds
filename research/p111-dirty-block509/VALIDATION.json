@@ -139,5 +139,7 @@
     "NATIVE.json": "1fd0ba71a028935c0a571ca9a64d16ab84b547c645c80f82856920527824b480",
     "recipe.json": "586a550d4b13270d3ba3ba5798ec878dd901c6e80053c3972000df8d4f066179",
     "SOURCES.json": "e5853e82a66ffe9272c9f442836ce51eb3aeb6eb262dd1a8f9aeb6209effa364"
-  }
+  },
+  "publication_parent": "7ee02b7c96d85f22b38d28bd7ed49bb8c1aeb261",
+  "publication_note": "OAuth workflow-scope restriction prevents importing unrelated upstream workflow updates. Publish only the research addition on the existing fork ancestor; consumed supplier inputs match the research base. Local checker and native input/source guards rerun on publication parent."
 }

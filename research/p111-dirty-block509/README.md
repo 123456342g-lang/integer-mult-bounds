@@ -6,13 +6,21 @@ reverse cleanup, the complete local word uses **24,295 instead of 24,305
 binary ADDs**. All eleven ordered outputs are preserved, including the
 arbitrary incoming value of dirty carrier 468. **No new kappa is claimed.**
 
-The exact base is `f567884aeb8851b6e794af1184119a3bfbe1e631`. At this base,
-[`selected-result.json`](../../certificates/selected-result.json) selects
+The exact research/test base is `f567884aeb8851b6e794af1184119a3bfbe1e631`. At this base,
+[`selected-result.json`](https://github.com/CrocSwap/integer-mult-bounds/blob/f567884aeb8851b6e794af1184119a3bfbe1e631/certificates/selected-result.json) selects
 **PR799 with PR589**, conditional
 `kappa = 1661634653669567/10^18 = 0.001661634653669567`.
-The [current review](../../docs/research/community-frontier799-review.md)
+The [pinned review](https://github.com/CrocSwap/integer-mult-bounds/blob/f567884aeb8851b6e794af1184119a3bfbe1e631/docs/research/community-frontier799-review.md)
 identifies the construction and inherited assumptions. Historical supplier
 README frontiers and pending PR claims do not supersede that record.
+
+The publication branch starts at the fork's existing ancestor
+`7ee02b7c96d85f22b38d28bd7ed49bb8c1aeb261`, because its OAuth token cannot
+import unrelated upstream workflow changes. Only this research package is
+cherry-picked for publication. All consumed supplier files are identical
+at the two commits; the local checks are also rerun on that publication
+parent. The selected-status statement above refers to the pinned upstream
+research base, not the older fork snapshot.
 
 ## Reproduce
 
