@@ -18,11 +18,11 @@
     "git diff --check passed"
   ],
   "overlap_refresh": {
-    "checked_at_utc": "2026-10-13T23:29:32Z",
+    "checked_at_utc": "2026-10-13T23:32:41Z",
     "open_prs": 838,
-    "discussions": 87,
+    "discussions": 88,
     "pagination_complete": true,
     "warnings": [],
-    "scope_collision": "No competing P104 tangent-to-orbit regularity audit found. PR #1292 remains open at the pinned head with no reviews; newer P112/rank-nine claims are adjacent but distinct."
+    "scope_collision": "No competing second audit of this local-regularity implication found. The original #1275 claim is DONE and released; PR #1292 remains open at the pinned head with no reviews. New P112/rank-nine claims are adjacent but distinct."
   }
 }
