@@ -61,3 +61,36 @@ The selected conditional kappa remains `836330098538459/500000000000000000`.
 Inherited compiler, common-label/mutable-source, hosting, precision/tape,
 analytic and bit H1-H5 obligations remain. No selected/frontier or upstream/
 files will change.
+
+## Completed result, 2026-10-13 23:49 UTC
+
+Submitted [PR1380](https://github.com/CrocSwap/integer-mult-bounds/pull/1380),
+research commit `094204c9689a0185855b8c7ba35763d1a6598995`.
+All 16 selected pairs and both orientations are complete, with no box expansion
+or pivot. Five pairs have a strict coupling gap. L225/L350 has the largest:
+-237 real primitives jointly versus -234 for the best composition of every
+tied independent optimum. Complete scalar bills become 148,528/148,544, saving
+474 per complex invocation in each orientation. The six-primitive coupling
+advantage is isolated to one block and one shared ADD, with an exact 9-by-9
+conditional-cost witness. No new kappa or physical supplier invoice is claimed.
+
+Two optimization implementations agree on 49,693,014 transition candidates;
+all 712 scalar columns, all changed frames and nonscalar boundaries, full
+literal prices, unchanged paid profiles, local precision, 729 tiny paths and
+twelve rejection controls pass. CPython3.14.8 and optimized3.11.15 pass, including
+outside-checkout execution and an external saved-certificate corruption check.
+Seven source/context Git blobs and selected-record integrity pass. The saved
+certificate SHA256 is `3c59f72bcd0768bf0740edebcb09427bcd48659b8bcbba762a0e30ca53aa2afc`.
+
+The final overlap refresh covered 850 open PRs after the complete 94-record
+discussion refresh at23:44. New PR1369 and PR1376 are credited with exact heads.
+PR1376's disjoint objectives separate; this result proves a strict interaction
+for a different pair and background. The source main remained at the same base
+on the final fetch. No pinned issue existed, so this local claim receives its
+single result update and is now released. Neither `codex` nor
+`codex-automation` label exists in the target repository.
+
+Verification/handoff began before23:43, well before the23:57 cutoff. Native and
+hosted admission, full cold replay, unbounded exponent optimization and formal
+or human review remain unrun. Review the small coupling witness and the
+scalar-cost versus complete-physical-cost boundary first.
