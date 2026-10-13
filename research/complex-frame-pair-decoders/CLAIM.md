@@ -33,3 +33,4 @@
   P104 +5.51% b, capped by the PR589 bit supplier at kappa 0.001730427469823602 (+4.12%).
 - Rebased at 15:15Z onto bbc600db2fc15007b7c914f4f2b2ed55fa909c87 (T37 selected, PR942).
 - Reproduce: `python3 -I -B research/complex-frame-pair-decoders/verify.py` (48 PASS, ~30 s, stdlib only).
+- Submitted: https://github.com/CrocSwap/integer-mult-bounds/pull/968 (status: research note / scoped structural result).
