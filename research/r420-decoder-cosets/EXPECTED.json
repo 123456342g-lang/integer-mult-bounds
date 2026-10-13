@@ -1,0 +1,38 @@
+{
+  "canonical_word_sha256": "125a17ce601465f746297a7487acad670ff1ea4a44b4efb2d98e2c175117a9d5",
+  "changed_dirt_columns": 93,
+  "columns": 660,
+  "controls": [
+    "stale_compensation",
+    "stale_cleanup",
+    "missing_compensation_read",
+    "missing_cleanup_gate",
+    "corrupt_total_with_matched_cleanup",
+    "total_at_zero_frame"
+  ],
+  "counts_after": {
+    "A": 2394,
+    "B": 1077,
+    "C": 2991,
+    "D": 19642,
+    "scatter": 568,
+    "total": 26672
+  },
+  "counts_before": {
+    "A": 2376,
+    "B": 1077,
+    "C": 2973,
+    "D": 19922,
+    "scatter": 568,
+    "total": 26916
+  },
+  "identical_register_paths": 660,
+  "labels": {
+    "frames": 672,
+    "gram_det": 1,
+    "labels": 120,
+    "lattice_rank": 8
+  },
+  "positive_forward_after": 144651,
+  "positive_forward_before": 144651
+}
