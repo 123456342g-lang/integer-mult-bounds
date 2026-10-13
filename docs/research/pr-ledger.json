@@ -5553,13 +5553,19 @@
           "evidence": "research/community-round9-audit/review-ledger.json",
           "scope": "scoped-replay-passed: Exact DFT profile arithmetic, ledger and next-grid controls pass on pinned supplier certificates. This does not rerun each supplier or independently prove the external all-size Fourier transfer theorem; not a multiplication kappa.",
           "kind": "review"
+        },
+        {
+          "head": "830971b6b157374ebf941d0ca0b73fd2b956e3e0",
+          "evidence": "research/pr225-five-stage-reconciliation/EXPECTED.json",
+          "scope": "Source-bound reconciliation of all 23 current package/workflow files against 19 reviewed files; four historical rows unchanged, two five-stage profiles derived, all six moment endpoints accepted and next grid points strictly excluded with independent exact intervals. Both unmodified original checkers replayed. Does not rebuild suppliers or establish the external five-stage batched-network transfer.",
+          "kind": "review"
         }
       ],
       "historical_mentions": [],
       "disposition": "changed_since_review",
       "integration_location": [],
       "github_state": "OPEN",
-      "unresolved_question": "Review the changes between the recorded historical head(s) and the current head; old evidence does not approve those changes.",
+      "unresolved_question": "Finite source/profile/pricing gap reconciled in research/pr225-five-stage-reconciliation/README.md. Independently justify Proposition E: transfer the PR233 pairing into the referenced five-stage batched network with this invoice. Original supplier realizations and external all-size transfer remain by-reference; no whole-PR approval or closure.",
       "closure": null,
       "current_head_observed_in": "research/pr-reconciliation-20261012/ending-snapshot.json"
     },

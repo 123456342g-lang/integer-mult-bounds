@@ -193,7 +193,7 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#221](https://github.com/CrocSwap/integer-mult-bounds/pull/221) | maxime-fleury | partially reviewed | [record 1](../../research/community-round9-audit/review-ledger.json) |
 | [#223](https://github.com/CrocSwap/integer-mult-bounds/pull/223) | ikeboy | partially reviewed | [record 1](../../research/community-round9-audit/review-ledger.json) |
 | [#224](https://github.com/CrocSwap/integer-mult-bounds/pull/224) | maxime-fleury | partially reviewed | [record 1](../../research/community-round9-audit/review-ledger.json) |
-| [#225](https://github.com/CrocSwap/integer-mult-bounds/pull/225) | chafreaky | changed since review | [record 1](../../research/community-round9-audit/review-ledger.json) |
+| [#225](https://github.com/CrocSwap/integer-mult-bounds/pull/225) | chafreaky | changed since review | [record 1](../../research/community-round9-audit/review-ledger.json) · [finite pricing reconciliation](../../research/pr225-five-stage-reconciliation/README.md) |
 | [#226](https://github.com/CrocSwap/integer-mult-bounds/pull/226) | pCwOrM | partially reviewed | [record 1](../../research/community-round9-audit/review-ledger.json) |
 | [#227](https://github.com/CrocSwap/integer-mult-bounds/pull/227) | Dugongue | partially reviewed | [record 1](../../research/community-round9-audit/review-ledger.json) |
 | [#228](https://github.com/CrocSwap/integer-mult-bounds/pull/228) | tehruhn | partially reviewed | [record 1](../../research/community-round9-audit/review-ledger.json) |
