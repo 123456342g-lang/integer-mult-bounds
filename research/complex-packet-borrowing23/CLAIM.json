@@ -33,5 +33,8 @@
   "selected_object": "Pair (6,7), sign +1; six all-K leavers, with scope extended to all eight signed all-K cells",
   "result": "Scoped obstruction for arbitrary repeated operations on one target pair; exact finite checks and a fully priced two-carrier three-source escape. No new kappa.",
   "expected_finish_utc": "2026-10-13T05:40:00Z",
-  "scope_record_updated_utc": "2026-10-13T05:27:04Z"
+  "scope_record_updated_utc": "2026-10-13T05:27:04Z",
+  "status": "submitted",
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/781",
+  "submitted_utc": "2026-10-13T05:34:00Z"
 }
