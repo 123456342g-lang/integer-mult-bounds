@@ -17,5 +17,13 @@
   "overlap_check": "GitHub open issue search returned only #650, no sprint coordination issue; targeted all-state PR searches for compensation+gauge44 and X4+compensation found #645 and #881, neither this circuit improvement. Reviewed #864 frame exclusion, #876 full pair/triple exchange search, #787 coefficient composition and #807 CK helper pairs.",
   "coordination": "Local claim because no coordination issue exists",
   "constraints": "Only this new research directory; upstream and selected frontier unchanged; subordinate worker restricted to provenance and independent scalar verification",
-  "result": "pending"
+  "result": {
+    "status": "Completed finite circuit construction; no new kappa",
+    "finished_utc": "2026-10-13T11:15:01Z",
+    "compensation_additions": "6320 -> 3276, including preparation and restoration",
+    "saved_real_primitives_per_orientation": 33800,
+    "validation": "Exact primitive replay on 728 logical plus 9 private columns, both orientations; independent integer/dyadic endpoint check; 9 package tests normal and optimized; selected-record check and 5 existing tests passed",
+    "unresolved": "Typed supplier integration, refreshed bindings and global assembly admission; inherited theorem obligations remain",
+    "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/901"
+  }
 }
