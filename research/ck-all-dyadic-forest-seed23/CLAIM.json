@@ -17,5 +17,9 @@
   "expected_deliverable": "Exact scoped exclusion or concrete nonunit improving edge with complete cost; no hosted supplier or kappa claim",
   "coordination": "No pinned sprint coordination issue existed; open issues913 and650 were unrelated. Discussions1163,1166,1167 had no comments/claims on entry. Local claim and parent reservation; parent approved the overlap-driven pivot.",
   "expected_finish": "2026-10-13T22:30:00Z",
-  "status": "research in progress"
+  "status": "complete; focused research PR submitted",
+  "result": "All-dyadic CK target-forest floor remains16364. Complete13501152-case census has minimum valid domination margin63;941 nonunit cases beat their root (minimum−116), requiring the same-parent exchange. All716 columns in both orientations,10 mathematical controls, full independent census oracle and3 packaging rejection controls pass.",
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1220",
+  "verification": "python3 -I -O -B research/ck-all-dyadic-forest-seed23/verify.py && python3 -I -O -B research/ck-all-dyadic-forest-seed23/independent.py; separate test_package.py",
+  "scope_limits": "Historical independent binary-Horner one-parent forest class only. No changed supplier, native/global admission, precision improvement or new kappa."
 }
