@@ -50,7 +50,7 @@
       691
     ]
   },
-  "status": "completed; publication pending",
+  "status": "completed; submitted for review",
   "contributor": "Ross Richardson (@RossRichardson)",
   "ai_assistance": "Substantial OpenAI Codex assistance; one AI agent; no independent human review claimed.",
   "initial_experiment": {
@@ -78,5 +78,9 @@
     "latest_seen": 924,
     "additional_coverage": "PR904 reaches 19 ADDs on this frame; this complete six-wire witness reaches12 and proves a restricted-class minimum. No combined savings.",
     "base_still_current": "91a2094f2e022930069e8cfdc810a3ea1b81cd09"
-  }
+  },
+  "result_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/925",
+  "tested_contribution_commit": "8541db4f7aff70fe8ab4ecd5a12277b696a532de",
+  "completed_utc": "2026-10-13T13:06:02.844396+00:00",
+  "handoff": "Focused and native checks pass; one 240-second repository-wide run incomplete. No new kappa, no frontier change, no merge."
 }
