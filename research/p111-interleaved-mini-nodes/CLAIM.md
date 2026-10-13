@@ -53,3 +53,28 @@ with the PR link or clean-patch handoff.
 
 Prepared for Ryan Haines (@Ryan-Haines) with substantial OpenAI Codex
 assistance. Apache-2.0; predecessor attribution is retained.
+
+## Final result update — 2026-10-13 05:40 UTC
+
+Submitted one focused contribution:
+[PR792](https://github.com/CrocSwap/integer-mult-bounds/pull/792).
+Status: **finite circuit construction with scoped exact optimality; no new
+kappa**. All four interleaved mini-nodes attain minima 13, 9, 9 and 8 XORs,
+saving 32 XORs including literal cleanup (24,305 -> 24,273), twelve beyond
+PR728. The favorable one-read witnesses also attain the minimum in the larger
+class allowing repeated reads; both reachable graphs were fully exhausted.
+
+Verification: 866 states, 5,168 potential edges, 4,096 local Boolean inputs,
+all 661 dirty-input columns, all frame paths, original H1-H5, unchanged C++
+5/9/11-stage native replay on both words and 96 stock bridge controls. Native
+payload remains 93 bits. Minimal-source relocation, corruption controls,
+optimized Python, selected-record binding, Ruff and whitespace checks pass.
+Hosted-parent/recursive invoices and a changed outer assembly remain outside
+this contribution. Exact evidence and limitations are in VALIDATION.json.
+
+Immediately before submission, the refreshed queue through PR790 still had
+only PR728 in this mini-node scope. Its pinned head and main's base were
+unchanged. No pinned coordination issue existed, so this is the single local
+claim update. A clean base-relative patch and a short local handoff are also
+retained in the session workspace. Research was complete before the final
+verification/handoff period; the handoff precedes the user's cutoff.

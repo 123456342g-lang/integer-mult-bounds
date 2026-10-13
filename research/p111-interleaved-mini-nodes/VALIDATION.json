@@ -44,11 +44,12 @@
     "preexisting_output_directory": "REJECT; sentinel preserved"
   },
   "overlap_refresh": {
-    "through_pr": 788,
+    "through_pr": 790,
     "pr728_head_unchanged": "d454ae19fdd474b4dfa7bd2c28bbe5b0996365fb",
     "main_head_unchanged": "66849e1475c930fd7732b1a0067ffee7e1e95f60",
     "pinned_coordination_issues": [],
-    "finding": "Only PR728 and the unrelated older assembly PR654 matched the R439/mini-node scope. PR728 uses a single injection layer; this contribution certifies arbitrary interleaving. The local claim is updated once at handoff."
+    "finding": "Only PR728 and the unrelated older assembly PR654 matched the R439/mini-node scope. PR728 uses a single injection layer; this contribution certifies arbitrary interleaving. The local claim is updated once at handoff.",
+    "submission": "https://github.com/CrocSwap/integer-mult-bounds/pull/792"
   },
   "not_run_or_not_claimed": [
     "Repository-wide make verify (no existing generator or artifact was edited)",
