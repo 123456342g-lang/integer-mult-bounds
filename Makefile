@@ -618,3 +618,13 @@ phase-recipes-parallel-benchmark:
 frontier1042-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier1042.XXXXXX"); \
 	python3 -B scripts/verify_frontier1042.py --work "$$work/replay"
+
+.PHONY: hpe-audit-fast-verify hpe-audit-fast-crosscheck-lec
+hpe-audit-fast-verify:
+	python3 -I -B research/hpe-audit-fast-seed93/verify.py
+	cd research/hpe-audit-fast-seed93 && python3 -B -m unittest test_package -v
+
+# Opt-in, about 2 minutes: all 96 trials of the selected chain's lec-p6n step, each run by both audits.
+hpe-audit-fast-crosscheck-lec:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/hpe-audit-fast.XXXXXX"); \
+	python3 -B research/hpe-audit-fast-seed93/run_lec.py --archived p6n --pins LEC-REASON-PINS-STACK --out "$$work/lec-p6n" --mode crosscheck
