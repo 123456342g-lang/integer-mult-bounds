@@ -77,5 +77,7 @@ nonempty proper-star observations. Exact nonlinear postprocessing of those
 same observations is covered. The empty star, changed observations,
 higher-k ports and a complete physical implementation are outside scope.
 The result supplies no cost-free preparation, source access, helper,
-copy/restoration, frame, recursive-child or hosting interface. The selected
-conditional #799 construction remains unchanged and is not re-audited here.
+copy/restoration, frame, recursive-child or hosting interface. At the recorded
+base, the selected construction was #799. Upstream subsequently selected #890;
+see [VALIDATION.md](VALIDATION.md) for the pinned follow-up context. This package
+changes neither construction and does not re-audit either multiplier.

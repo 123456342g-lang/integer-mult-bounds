@@ -59,18 +59,67 @@ code or solver is imported. The latest ledger has no scoped exact-head
 review of that pending PR; attribution here does not imply its acceptance.
 The needed argument is rederived in PROOF.md.
 
-The pre-submission refresh inspected **721 open PRs through #931**. Main
-and PR669's pinned head were unchanged. No matching prescribed-triple
-classification was found. PR669's selectable hierarchy and minimum-cost
+A follow-up compliance audit consulted the exact [contributor guide at
+47481c8](https://github.com/CrocSwap/integer-mult-bounds/blob/47481c89fd30a43f8f882eb4b391e89c29273fd0/CONTRIBUTING.md).
+It is byte-identical to the guide read at the base commit (SHA256
+`1cae543effcabab91dab7f78423ee9283e60fb504f10848483d153331cd72bc4`).
+The referenced [contribution-review index](../../docs/research/contribution-review.md)
+was consulted during this follow-up, rather than before building on PR669.
+It explicitly records historical triage through PR40, is not the current
+queue, and contains no PR669 acceptance or conflicting prescribed-triple
+finding. Source pins, attribution, mathematical scope, README/proof consistency,
+negative controls, Apache-2.0 notices and substantial AI disclosure were
+checked against the guide. No closure or integration of predecessor work
+is implied by this audit.
+
+The initial pre-submission refresh inspected **721 open PRs through #931**;
+main and PR669's pinned head were unchanged at that time. The follow-up
+refresh, completed after the broad checks at **2026-10-13 15:01 UTC**, inspected
+**715 open PRs through #962**, plus the previously inspected closed PR932/935
+bodies. No matching prescribed-triple classification was found. Nearby PR939
+and PR954 study E8 punctures with different geometry and cost objectives;
+PR958 uses k=5 quadratic geometry and explicitly excludes punctures. The
+physical scalar target forests of PR961 and supplier construction of PR962
+also use different contracts. The dirty-connector query schedules in
+PR934/938/943/944 use different observations and interfaces. PR669 remains
+open at the same pinned head; fresh source responses match both retained files.
+Its selectable hierarchy and minimum-cost
 criterion are credited; the new contribution closes only its remaining
 k=2 prescribed-triple budget question without the empty star. PR732/772
 concern different global thresholds and ranks. No pinned coordination
 issue existed at selection or refresh; the claim was recorded locally.
 
+During this work upstream advanced to
+`007664306fff84fbb1c9a1b4053b69f439764034`, selecting PR890 with conditional
+κ `1661957774647029/10^18` (source
+`4b3bd8cbe8e3e81c44161017c9b72c905a8040a8`). The current status, selected
+record, maintainer review, ledger and contribution index were consulted at
+that revision. The #799 context in SOURCES.json describes the original
+research base; the follow-up snapshot is recorded separately. Neither
+selected supplier is a mathematical or executable dependency of this note.
+
 Only this research package is added. `upstream/`, the selected certificate,
 existing generators and supplier artifacts are unchanged. The applicable
 focused checks and selected-record integrity pass. The repository-wide
-regenerating suite and full selected-supplier cold replay were not repeated.
+`make verify` suite **passed (exit 0)** in an isolated local clone at contribution
+commit `70484032ff4ae960b19acc8e159622e7e6ac8bac`: all 18 sequential groups,
+87 isolated test modules and 20 historical patch checks completed in
+4,840.266 seconds. The [compact receipt](evidence/make-verify.json) records
+the tested head, timestamps and full-log SHA256; the log is in the recovery
+archive. This is a run on the original base, not current-main integration.
+The later edits only add documentation, context metadata and evidence;
+proofs, executable checkers, certificates and predecessor bytes are unchanged.
+
+The historical PR741 cold replay included in that suite also passed current
+main's supported `scripts/verify_replay_coverage.py --frontier 741` gate,
+using its existing output. The exact current-main checker validates the
+22-stage/44-artifact contract, bridge controls and original composition
+bindings; its [receipt](evidence/current-main-741-coverage.json) reports
+`PASS_COMPLETE_PR741_REPLAY_COVERAGE`. The historical driver, binder and
+supplier packages are byte-identical at the original base and `0076643`.
+This additional admission check did not rerun producers or validate PR890.
+The #799 and current #890 selected-supplier cold replays were not run because
+this contribution changes neither construction.
 Both checkers also passed isolated optimized replay from an export of the
 staged Git blobs, launched outside the checkout. Staged whitespace checks
 passed. No hosted CI, independent human review or proof-assistant verification

@@ -22,8 +22,18 @@
     "pr": 799,
     "audited_source_head": "80e6463157cfc80b85af09e7e2f14748fe2dac60",
     "kappa": "1661634653669567/1000000000000000000",
-    "role": "Orientation only; selected construction and upstream/ unchanged."
+    "role": "Orientation at the original base only; subsequently superseded by PR890. No supplier is a dependency of this result."
   },
   "scope_choice": "PR669 states the exact larger budgets for prescribed triples failing its optimal-triangle criterion are not classified; this package treats only k=2 without the empty star.",
-  "coordination": "No pinned issue at selection; local claim and full 714-open-PR metadata retained in session notes. Nearby PRs 732/772 concern global puncture thresholds/ranks; 912 concerns adaptive Hurwitz routing; 920 concerns complex parity frames."
+  "coordination": "No pinned issue at selection; local claim and full 714-open-PR metadata retained in session notes. Nearby PRs 732/772 concern global puncture thresholds/ranks; 912 concerns adaptive Hurwitz routing; 920 concerns complex parity frames.",
+  "follow_up_context": {
+    "main_commit": "007664306fff84fbb1c9a1b4053b69f439764034",
+    "selected_pr": 890,
+    "audited_source_head": "4b3bd8cbe8e3e81c44161017c9b72c905a8040a8",
+    "kappa": "1661957774647029/1000000000000000000",
+    "role": "Read-only context refresh; original base and mathematical source pins unchanged.",
+    "captured_at": "2026-10-13T15:01:44.773181+00:00",
+    "open_pr_count": 715,
+    "latest_open_pr": 962
+  }
 }
