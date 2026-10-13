@@ -45,7 +45,7 @@ def validate(root, package, check_pins=True):
             "package must be research/<slug>")
     data = {}
     for name in ("TASK.json", "SOURCES.json", "VERIFY.json"):
-        data[name] = json.loads(relative_file(root, package + "/" + name).read_text())
+        data[name] = json.loads(relative_file(root, package + "/" + name).read_text(encoding="utf-8"))
         require(data[name].get("schema_version") == 1, "unsupported schema: " + name)
     task, sources, manifest = (data[n] for n in ("TASK.json", "SOURCES.json", "VERIFY.json"))
     require(task["scope_status"] in ("unchanged", "refined", "changed"), "declare scope_status")
@@ -64,7 +64,7 @@ def validate(root, package, check_pins=True):
     for question in questions:
         for field in ("question", "why_it_matters", "first_step", "blocked_by"):
             require(meaningful(question.get(field)), "complete next-question field: " + field)
-    readme = relative_file(root, package + "/README.md").read_text()
+    readme = relative_file(root, package + "/README.md").read_text(encoding="utf-8")
     require("## Open next questions" in readme, "README needs Open next questions")
     require(manifest.get("status") == "ready", "VERIFY.json is a draft; complete it before requesting replay")
     require(manifest.get("python") == "3.12", "generic replay currently uses Python 3.12")
@@ -120,7 +120,10 @@ def run_command(argv, cwd, timeout):
     try:
         code = process.wait(timeout=timeout)
     except subprocess.TimeoutExpired:
-        os.killpg(process.pid, signal.SIGKILL)
+        if hasattr(os, "killpg"):
+            os.killpg(process.pid, signal.SIGKILL)
+        else:  # Windows has no process groups to signal; end the whole child tree instead.
+            subprocess.run(["taskkill", "/F", "/T", "/PID", str(process.pid)], capture_output=True)
         process.wait()
         raise ValueError("verification timed out")
     require(code == 0, f"verification command exited {code}")
@@ -146,7 +149,7 @@ def plan(root, changed):
     packages = []
     for path in sorted((root / "research").glob("*/VERIFY.json")):
         package = path.parent.relative_to(root).as_posix()
-        manifest = json.loads(path.read_text())
+        manifest = json.loads(path.read_text(encoding="utf-8"))
         # Parse only for selection; validate fully in the isolated replay job.
         inputs = manifest.get("inputs", [])
         if (changed.intersection(inputs) or any(p.startswith(package + "/") for p in changed)
@@ -174,7 +177,7 @@ def main():
             matrix = json.dumps({"include": [{"package": p} for p in packages]})
             print(matrix)
             if args.github_output:
-                with args.github_output.open("a") as out:
+                with args.github_output.open("a", encoding="utf-8") as out:
                     out.write(f"matrix={matrix}\ncount={len(packages)}\n")
         elif args.package:
             if args.check_only:

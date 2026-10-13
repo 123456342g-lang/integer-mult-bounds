@@ -100,7 +100,7 @@ def fetch_discussions():
 
 def atomic_json(path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
-    with tempfile.NamedTemporaryFile(mode="w", dir=path.parent, delete=False) as out:
+    with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent, delete=False) as out:
         tmp = Path(out.name)
         json.dump(data, out)
         out.write("\n")
@@ -119,7 +119,7 @@ def error_summary(exc):
 def remote_snapshot(cache, offline=False, refresh=False, max_age=300):
     warnings = []
     try:
-        snapshot = json.loads(cache.read_text())
+        snapshot = json.loads(cache.read_text(encoding="utf-8"))
         if snapshot.get("schema_version") != 1 or snapshot.get("repository") != REPO:
             raise ValueError("cache schema or repository mismatch")
     except (OSError, ValueError):
@@ -212,7 +212,7 @@ def main():
         ap.error("keep the cache outside the repository")
     terms = list(args.terms)
     if args.task:
-        catalog = json.loads((ROOT / "docs/research/agent-task-catalog.json").read_text())
+        catalog = json.loads((ROOT / "docs/research/agent-task-catalog.json").read_text(encoding="utf-8"))
         cards = [t for tr in catalog["tracks"] for t in tr["tasks"] if t["id"] == args.task]
         if not cards:
             ap.error("unknown task")
