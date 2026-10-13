@@ -559,3 +559,25 @@ Thakrar and Romain Hedouin. Parallel work is credited independently of selection
 - **thakrarsagar / thakrarsagar:** [#1041](https://github.com/CrocSwap/integer-mult-bounds/pull/1041).
 
 Rohan Arun receives explicit mechanism credit for #987’s slot search and first two slots; Hao Yan for #858’s T16 controller. Earlier construction and verification work by Chafik Boukhalfa, Jonathan Capalbo, icekylinx, DreamingOfClouds, eumemic and the full retained lineage remains credited. These are cumulative contributions, not transferred authorship.
+
+## Packing, independent audits and finite circuits in batch #1099
+
+[Individual scope and attribution](docs/research/community-batch1099-review.md). Parallel contributions retain their own credit.
+
+- **rohanarun / rohanarun:** [#987](https://github.com/CrocSwap/integer-mult-bounds/pull/987), [#1056](https://github.com/CrocSwap/integer-mult-bounds/pull/1056), [#1063](https://github.com/CrocSwap/integer-mult-bounds/pull/1063), [#1082](https://github.com/CrocSwap/integer-mult-bounds/pull/1082), [#1094](https://github.com/CrocSwap/integer-mult-bounds/pull/1094).
+- **jeremykothe2 / jeremykothe2:** [#1050](https://github.com/CrocSwap/integer-mult-bounds/pull/1050), [#1053](https://github.com/CrocSwap/integer-mult-bounds/pull/1053), [#1055](https://github.com/CrocSwap/integer-mult-bounds/pull/1055), [#1061](https://github.com/CrocSwap/integer-mult-bounds/pull/1061), [#1065](https://github.com/CrocSwap/integer-mult-bounds/pull/1065), [#1068](https://github.com/CrocSwap/integer-mult-bounds/pull/1068), [#1074](https://github.com/CrocSwap/integer-mult-bounds/pull/1074), [#1087](https://github.com/CrocSwap/integer-mult-bounds/pull/1087).
+- **Cinna Davis / 1337isnot1337:** [#1090](https://github.com/CrocSwap/integer-mult-bounds/pull/1090).
+- **David Breslauer / davidNbreslauer:** [#1072](https://github.com/CrocSwap/integer-mult-bounds/pull/1072).
+- **thakrarsagar / thakrarsagar:** [#1049](https://github.com/CrocSwap/integer-mult-bounds/pull/1049), [#1051](https://github.com/CrocSwap/integer-mult-bounds/pull/1051), [#1069](https://github.com/CrocSwap/integer-mult-bounds/pull/1069), [#1059](https://github.com/CrocSwap/integer-mult-bounds/pull/1059), [#1023](https://github.com/CrocSwap/integer-mult-bounds/pull/1023), [#1045](https://github.com/CrocSwap/integer-mult-bounds/pull/1045), [#1062](https://github.com/CrocSwap/integer-mult-bounds/pull/1062).
+- **steph4n / steph4n-gh:** [#1052](https://github.com/CrocSwap/integer-mult-bounds/pull/1052).
+- **Josie Elliston / JosieElliston:** [#1091](https://github.com/CrocSwap/integer-mult-bounds/pull/1091).
+- **flemhhh / flemhhh:** [#1048](https://github.com/CrocSwap/integer-mult-bounds/pull/1048) (reviewed; corrections pending).
+- **woklerx / woklerx:** [#1096](https://github.com/CrocSwap/integer-mult-bounds/pull/1096), [#1099](https://github.com/CrocSwap/integer-mult-bounds/pull/1099), [#1077](https://github.com/CrocSwap/integer-mult-bounds/pull/1077), [#1008](https://github.com/CrocSwap/integer-mult-bounds/pull/1008), [#1017](https://github.com/CrocSwap/integer-mult-bounds/pull/1017).
+- **ToikY / ToikY:** [#1092](https://github.com/CrocSwap/integer-mult-bounds/pull/1092), [#1016](https://github.com/CrocSwap/integer-mult-bounds/pull/1016), [#1003](https://github.com/CrocSwap/integer-mult-bounds/pull/1003).
+- **martinxxx9 / martinxxx9:** [#1046](https://github.com/CrocSwap/integer-mult-bounds/pull/1046), [#1088](https://github.com/CrocSwap/integer-mult-bounds/pull/1088), [#1089](https://github.com/CrocSwap/integer-mult-bounds/pull/1089).
+- **Adam Gall / adamgall:** [#1098](https://github.com/CrocSwap/integer-mult-bounds/pull/1098).
+- **Gareth Davidson / bitplane:** [#1097](https://github.com/CrocSwap/integer-mult-bounds/pull/1097).
+- **Ali Romman / aliromman:** [#1034](https://github.com/CrocSwap/integer-mult-bounds/pull/1034).
+- **bbMisk / bbMisk:** [#1027](https://github.com/CrocSwap/integer-mult-bounds/pull/1027).
+
+Selected progression: Jeremy Kothe and Rohan Arun; T16 controller: Hao Yan. Independent current-owner/pricing checks: Josie Elliston and Sagar Thakrar. Earlier frame, geometry, native, bit and formalization contributors retain the full prior attribution.

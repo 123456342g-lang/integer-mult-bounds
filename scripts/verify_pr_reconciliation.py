@@ -18,6 +18,21 @@ def require(condition, message):
         raise ValueError(message)
 
 
+def check_batch1047_file(item):
+    """Preserve the pinned Makefile prefix after batch1099 appends reviewed targets.
+
+    Batch1099 separately binds the entire current Makefile. Other historical
+    source files still require their original complete byte hashes.
+    """
+    current = (ROOT / item['integrated_path']).read_bytes()
+    if hashlib.sha256(current).hexdigest() == item['integrated_sha256']:
+        return
+    require(item['integrated_path'] == 'Makefile', 'Changed integrated file: ' + item['integrated_path'])
+    original = (ROOT / 'research/community-batch1099-audit/checkpoints/Makefile1047').read_bytes()
+    require(hashlib.sha256(original).hexdigest() == item['integrated_sha256'], 'Changed historical Makefile')
+    require(original.endswith(b'\n') and current.startswith(original), 'Historical Makefile content changed')
+
+
 def check_family_decision(item, decision):
     """Bind projected ledger state to its authoritative, pinned family decision."""
     fields = ('number', 'reviewed_head', 'current_head', 'disposition',
@@ -117,7 +132,8 @@ def main():
                         ROOT / 'research/community-batch932-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-batch952-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-batch970-audit/DISPOSITIONS.json',
-                        ROOT / 'research/community-batch1047-audit/DISPOSITIONS.json'):
+                        ROOT / 'research/community-batch1047-audit/DISPOSITIONS.json',
+                        ROOT / 'research/community-batch1099-audit/DISPOSITIONS.json'):
         if not family_path.exists():
             continue
         family = json.loads(family_path.read_text())
@@ -476,11 +492,38 @@ def main():
                 if item['action'] == 'pending':
                     require(not decision['review_completion']['changed_file_coverage'], 'Incomplete review')
                 if item.get('integrated_sha256'):
+                    check_batch1047_file(item)
+                if item['action'] != 'retained':
+                    require(bool(item.get('reason')), 'Missing scope or adaptation reason')
+        print('PASS batch1047: scoped source coverage and review completion')
+    receipt_path = ROOT / 'docs/research/community-batch1099-integration.json'
+    if receipt_path.exists():
+        receipt = json.loads(receipt_path.read_text())
+        for name, digest in receipt['receipts'].items():
+            require(hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == digest,
+                    'Changed batch1099 evidence: ' + name)
+        folder = ROOT / 'research/community-batch1099-audit'
+        coverage = json.loads((folder / 'CONTENT-COVERAGE.json').read_text())['pull_requests']
+        decisions = json.loads((folder / 'DISPOSITIONS.json').read_text())['pull_requests']
+        require(set(coverage) == set(receipt['reviewed_heads']) == {str(d['number']) for d in decisions},
+                'Batch1099 review scope differs')
+        for decision in decisions:
+            number = decision['number']; row = coverage[str(number)]
+            require(row['head'] == decision['reviewed_head'] == receipt['reviewed_heads'][str(number)],
+                    'Batch1099 coverage head differs')
+            require(len(row['files']) == row['changed_files'] == len({f['source_path'] for f in row['files']}),
+                    'Batch1099 changed-file inventory incomplete')
+            check_review_completion(actual[number], decision)
+            for item in row['files']:
+                require(item['action'] in {'retained', 'adapted', 'excluded', 'pending'}, 'Unknown file action')
+                if item['action'] == 'pending':
+                    require(not decision['review_completion']['changed_file_coverage'], 'Incomplete review')
+                if item.get('integrated_sha256'):
                     require(hashlib.sha256((ROOT / item['integrated_path']).read_bytes()).hexdigest()
                             == item['integrated_sha256'], 'Changed integrated file: ' + item['integrated_path'])
                 if item['action'] != 'retained':
                     require(bool(item.get('reason')), 'Missing scope or adaptation reason')
-        print('PASS batch1047: scoped source coverage and review completion')
+        print('PASS batch1099: scoped source coverage and review completion')
     print(f'PASS immutable snapshot plus explicit family rounds: {len(actual)} PRs, attributed heads, evidence pins and unresolved questions')
 
 

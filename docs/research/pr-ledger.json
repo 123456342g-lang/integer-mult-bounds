@@ -3,8 +3,8 @@
   "snapshot": "research/pr-reconciliation-20261012/starting-snapshot.json",
   "starting_main": "f19cb621be2caf3a7291a37c343c1c55afe935e0",
   "starting_open_count": 446,
-  "inventory_count": 682,
-  "family_round": "research/community-batch1047-audit/DISPOSITIONS.json",
+  "inventory_count": 722,
+  "family_round": "research/community-batch1099-audit/DISPOSITIONS.json",
   "family_rounds": [
     "research/community-family533-audit/DISPOSITIONS.json",
     "research/community-family588-audit/DISPOSITIONS.json",
@@ -17,12 +17,13 @@
     "research/community-batch932-audit/DISPOSITIONS.json",
     "research/community-batch952-audit/DISPOSITIONS.json",
     "research/community-batch970-audit/DISPOSITIONS.json",
-    "research/community-batch1047-audit/DISPOSITIONS.json"
+    "research/community-batch1047-audit/DISPOSITIONS.json",
+    "research/community-batch1099-audit/DISPOSITIONS.json"
   ],
   "counts": {
     "changed_since_review": 6,
     "incorporated": 244,
-    "partially_reviewed": 150,
+    "partially_reviewed": 190,
     "unreviewed": 282
   },
   "source_sha256": {
@@ -54,6 +55,7 @@
     "research/community-batch952-audit/DISPOSITIONS.json": "fa89c90fb127e512903539ead9c6cf1e4667ed415b4d81a6510ff692f33bd53d",
     "research/community-batch970-audit/DISPOSITIONS.json": "e1781e098cd61089aa616c75f3d65977f1fc6e61e48c99d020de09d89831e32c",
     "research/community-batch1047-audit/DISPOSITIONS.json": "698c607fee0fd22f0f5b1f10957aca5fea255401f80b39254bc65ad156d161b6",
+    "research/community-batch1099-audit/DISPOSITIONS.json": "1f87d4cac87986dded51c34426a2fb89bbdaa7d38abdac07746b623bdc7cb941",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -23891,6 +23893,52 @@
       ]
     },
     {
+      "number": 987,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/987",
+      "title": "Conditional κ = 0.001662039077758742 — U10 (two new triangle-hybrid slots) on PR942's T37 owners",
+      "contributor": {
+        "id": "MDQ6VXNlcjExNjU5ODM5",
+        "is_bot": false,
+        "login": "rohanarun",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "5142511af0437572aca71b35d1987cd2b47bb5e3",
+      "current_head": "5142511af0437572aca71b35d1987cd2b47bb5e3",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "5142511af0437572aca71b35d1987cd2b47bb5e3",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Rohan Arun's U10 word: two additional triangle-hybrid slots on unchanged T37 owners; full dirty-state, native, controller and conditional assembly replay. Superseded numerically, with independent mechanism credit.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/complex-u10-t37"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "5142511af0437572aca71b35d1987cd2b47bb5e3",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
       "number": 988,
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/988",
       "title": "Independent verification: complete U8 terminal-cone census (no new kappa)",
@@ -24392,6 +24440,52 @@
       ]
     },
     {
+      "number": 1003,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1003",
+      "title": "Finite bit construction: R480 Q-node2 saves 18 ADDs (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjI3NTY4NjE3",
+        "is_bot": false,
+        "login": "ToikY",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "b0eda846c34413dabd1e75402b8ad730f8940ff2",
+      "current_head": "b0eda846c34413dabd1e75402b8ad730f8940ff2",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "b0eda846c34413dabd1e75402b8ad730f8940ff2",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Historical R480 Q-node2 shortened 52 to 43 XORs, complete word 33958 to 33940; full positive envelope and native 5/9/11-stage checks. Paid profile unchanged, no kappa gain.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/r480-qnode-seed02"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "b0eda846c34413dabd1e75402b8ad730f8940ff2",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
       "number": 1004,
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1004",
       "title": "Conditional κ = 0.001664233607446043: mutable-leaver all-K cells, U8 hybrids and frame re-optimisation on PR799's word",
@@ -24543,6 +24637,52 @@
       ]
     },
     {
+      "number": 1008,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1008",
+      "title": "Research: P111 tensor elementary shears cannot reduce pairing cost",
+      "contributor": {
+        "id": "U_kgDOFDLgvw",
+        "is_bot": false,
+        "login": "woklerx",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "5d90de8d5b7077f4078e42c08ba4872682662e5b",
+      "current_head": "5d90de8d5b7077f4078e42c08ba4872682662e5b",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "5d90de8d5b7077f4078e42c08ba4872682662e5b",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Exact census of 6480 elementary shears of the fixed punctured P111 two-factor product basis, unchanged pairing-cost floor 3969. No arbitrary-GL or multi-shear barrier.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/p111-tensor-shear-seed47"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "5d90de8d5b7077f4078e42c08ba4872682662e5b",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
       "number": 1009,
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1009",
       "title": "Audit selected T37 bootstrap depth: six levels suffice and five cannot",
@@ -24640,6 +24780,98 @@
       "current_head_observed_in": "research/community-batch1047-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
         "research/community-batch1047-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1016,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1016",
+      "title": "Negative result: PR952 frame assignments cannot improve its bit moment",
+      "contributor": {
+        "id": "MDQ6VXNlcjI3NTY4NjE3",
+        "is_bot": false,
+        "login": "ToikY",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "83e8e4ce9a556eb890c02af79b43b1505fd9cead",
+      "current_head": "83e8e4ce9a556eb890c02af79b43b1505fd9cead",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "83e8e4ce9a556eb890c02af79b43b1505fd9cead",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "PR952 fixed-word frame reassignment exclusion: 137 components, 13730 assignments, 933 concavity certificates plus one explicitly proved exceptional profile. Fixed order, operands, COPY frames and live-line spans only.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/r439-resynth-frame-seed10"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "83e8e4ce9a556eb890c02af79b43b1505fd9cead",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1017,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1017",
+      "title": "Independent verification: complete R439 single-ADD omission atlas",
+      "contributor": {
+        "id": "U_kgDOFDLgvw",
+        "is_bot": false,
+        "login": "woklerx",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "b66839f4707e4580524b0f4031d4edc1be939e27",
+      "current_head": "b66839f4707e4580524b0f4031d4edc1be939e27",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "b66839f4707e4580524b0f4031d4edc1be939e27",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Complete 5563 single-ADD omission atlas on frozen PR967 D, all 661 symbolic columns; distinct nonzero full syndromes, 221 target-invisible helper restorations. No multi-fault or full-native guarantee.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/r439-omission-atlas-seed81"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "b66839f4707e4580524b0f4031d4edc1be939e27",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
       ]
     },
     {
@@ -24846,6 +25078,99 @@
       "current_head_observed_in": "research/community-batch1047-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
         "research/community-batch1047-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1023,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1023",
+      "title": "Research note: PR589 bit hosting is width-8 optimal; width-7 residuals worth up to +17-23% bit headroom (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjE4NjIyMjg4",
+        "is_bot": false,
+        "login": "thakrarsagar",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "babca68167d8db321d194b7dc54230d88a8ad5f0",
+      "current_head": "babca68167d8db321d194b7dc54230d88a8ad5f0",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "babca68167d8db321d194b7dc54230d88a8ad5f0",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "No-bank width-eight slot-packing optimum for PR589, with hypothetical width-seven headroom prices. Does not construct narrower bit helpers or discharge window timing/hosting.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "Makefile",
+        "research/bit589-width-packing"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "babca68167d8db321d194b7dc54230d88a8ad5f0",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1027,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1027",
+      "title": "Finite R480 construction: 252 shortest quad12 circuits, 24 fewer ADDs (no new kappa)",
+      "contributor": {
+        "id": "U_kgDOCt6exg",
+        "is_bot": false,
+        "login": "bbMisk",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "ebc027e26a7018b73a5a452eae269a9bfeaabce9",
+      "current_head": "ebc027e26a7018b73a5a452eae269a9bfeaabce9",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "ebc027e26a7018b73a5a452eae269a9bfeaabce9",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "R480 quad12 admission of the known eleven-ADD minimum: complete 252 shortest-program census/four reverse classes, whole word 33934 and native checks. Credits PR1002's prior minimum; fixed positive transfer only.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/r480-quad12-exact-seed12"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "ebc027e26a7018b73a5a452eae269a9bfeaabce9",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
       ]
     },
     {
@@ -25058,6 +25383,52 @@
       ]
     },
     {
+      "number": 1034,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1034",
+      "title": "Research: a common dual for mixed owner assembly across 71 provider records",
+      "contributor": {
+        "id": "U_kgDODYXfmQ",
+        "is_bot": false,
+        "login": "aliromman",
+        "name": "Ali Romman"
+      },
+      "draft": false,
+      "starting_head": "a1aff126d9816cff75a5293675ae6e10f65377db",
+      "current_head": "a1aff126d9816cff75a5293675ae6e10f65377db",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "a1aff126d9816cff75a5293675ae6e10f65377db",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Common dual for 71 pinned provider records/25 interfaces with mixed helper inventories, whole helpers and fixed capacities; arbitrary real call counts allowed. Explicitly excludes later U10/leaver providers.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/heterogeneous-owner-assembly"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "a1aff126d9816cff75a5293675ae6e10f65377db",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
       "number": 1035,
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1035",
       "title": "Research consolidation: certify PR620 free P112 sink exclusions with exact minors",
@@ -25262,6 +25633,98 @@
       ]
     },
     {
+      "number": 1045,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1045",
+      "title": "Finite bit construction: exact R439 four-helper fusion below the pair floor",
+      "contributor": {
+        "id": "MDQ6VXNlcjE4NjIyMjg4",
+        "is_bot": false,
+        "login": "thakrarsagar",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "b4610c1c0ba67111c156bc56e9f16a4aab0fe613",
+      "current_head": "b4610c1c0ba67111c156bc56e9f16a4aab0fe613",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "b4610c1c0ba67111c156bc56e9f16a4aab0fe613",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Connected four-helper fusion crosses PR941 disjoint-pair floor: 1290240 fully priced GL(4,2) cases, word 11946, native checks. Semantic D candidate retains known syntactic H2/K mismatch; not a selected supplier.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/r439-helper-quartets-seed07"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "b4610c1c0ba67111c156bc56e9f16a4aab0fe613",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1046,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1046",
+      "title": "Research: exact affine five-cube copy floor and four rank-eight totals (no new kappa)",
+      "contributor": {
+        "id": "U_kgDOFF-BGQ",
+        "is_bot": false,
+        "login": "martinxxx9",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "7cadcb0a2fc71fdedc0066704dec3fec58c2ca2c",
+      "current_head": "7cadcb0a2fc71fdedc0066704dec3fec58c2ca2c",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "7cadcb0a2fc71fdedc0066704dec3fec58c2ca2c",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Smallest five-cube affine-code factorization: exact total pairing-rank floor 32 and peak floor eight, attained by four totals. Overcomplete factors included; only the stated additive stage ledger is excluded.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/five-cube-coded-copy-seed42"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "7cadcb0a2fc71fdedc0066704dec3fec58c2ca2c",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
       "number": 1047,
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1047",
       "title": "Local bit construction: save 14 ADDs with one restored post-PR967 helper shear",
@@ -25310,6 +25773,1387 @@
       "reconciliation_evidence": [
         "research/community-batch1047-audit/DISPOSITIONS.json"
       ]
+    },
+    {
+      "number": 1048,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1048",
+      "title": "Research: the bit paid profile is the whole bit supplier — exact pricer, and the reframing class is exhausted at #589 (no κ claim)",
+      "contributor": {
+        "id": "U_kgDOE9Xs-g",
+        "is_bot": false,
+        "login": "flemhhh",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "07730cd8302c378607259a9ad0efb73e0b57a2f2",
+      "current_head": "07730cd8302c378607259a9ad0efb73e0b57a2f2",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "07730cd8302c378607259a9ad0efb73e0b57a2f2",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Deferred: false general fixed-exponent root-ordering claim, floating-point search decisions presented as exact exclusions, and insufficient fail-closed endpoint bracketing. Exact counterexample and correction requirements retained; no optimality endorsement.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "07730cd8302c378607259a9ad0efb73e0b57a2f2",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Fix false general root-ordering statement, exact sign/bracket certification and two-move coverage. See review counterexample.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1049,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1049",
+      "title": "Research audit: independent check of PR1005/1018 mutable-leaver cells (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjE4NjIyMjg4",
+        "is_bot": false,
+        "login": "thakrarsagar",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "6d0a145e8b4774b1b0d4e3da56890af5adc9b04f",
+      "current_head": "6d0a145e8b4774b1b0d4e3da56890af5adc9b04f",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "6d0a145e8b4774b1b0d4e3da56890af5adc9b04f",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Code-disjoint exact scalar/frame audit of eight mutable-leaver cells, 24 leavers and seven slots, 704 columns and 14 controls. Corrects the raw per-cell profile description to +6H1-12H2+3H3-3H6; final priced word is unchanged.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/leaver-cell-audit-seed65"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "6d0a145e8b4774b1b0d4e3da56890af5adc9b04f",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1050,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1050",
+      "title": "Conditional κ = 0.001672241870811633: improved T16 owner packing on the seven-slot k8 word",
+      "contributor": {
+        "id": "U_kgDOEKXqaA",
+        "is_bot": false,
+        "login": "jeremykothe2",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "c87242f846cfab8c0b97fd889b5fecb0eacef939",
+      "current_head": "c87242f846cfab8c0b97fd889b5fecb0eacef939",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "c87242f846cfab8c0b97fd889b5fecb0eacef939",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Jeremy Kothe's exact T16 owner-map refinement on the unchanged seven-slot k8 word; complete hosting, controller, invoice, moment and assembly replay.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/community-batch1099-audit"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "c87242f846cfab8c0b97fd889b5fecb0eacef939",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1051,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1051",
+      "title": "Independent verification: code-disjoint T37 moment endpoints and kappa reduction (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjE4NjIyMjg4",
+        "is_bot": false,
+        "login": "thakrarsagar",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "3b8fab9b48d54160d0765c316eed45078f32aa5e",
+      "current_head": "3b8fab9b48d54160d0765c316eed45078f32aa5e",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "3b8fab9b48d54160d0765c316eed45078f32aa5e",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Independent prime-chain logarithm/Taylor interval audit of T37 and bit endpoints plus binding kappa; seven controls. Historical selection pin redirected to identical checkpoint bytes.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "Makefile",
+        "research/t37-endpoints-independent"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "3b8fab9b48d54160d0765c316eed45078f32aa5e",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1052,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1052",
+      "title": "Independent verification: T37 positive-binomial moments, all-T lemma, and 1024-bit reduction (seed 78, no new kappa)",
+      "contributor": {
+        "id": "U_kgDOEO2eAg",
+        "is_bot": false,
+        "login": "steph4n-gh",
+        "name": "steph4n"
+      },
+      "draft": false,
+      "starting_head": "e7f0319b7a7b4e8e1958ae523affdc123e3ea597",
+      "current_head": "e7f0319b7a7b4e8e1958ae523affdc123e3ea597",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "e7f0319b7a7b4e8e1958ae523affdc123e3ea597",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Independent positive-binomial certification of six moment decisions, 42 all-T inequalities, 14 bootstrap steps and 94 outer slacks, plus exact remainder-trade identities. Historical checkpoint retained byte-identically.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/t37-binomial-endpoint-audit-seed78"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "e7f0319b7a7b4e8e1958ae523affdc123e3ea597",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1053,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1053",
+      "title": "Conditional κ = 0.001672245809535804: improved T16 owner packing on the seven-slot k8 word",
+      "contributor": {
+        "id": "U_kgDOEKXqaA",
+        "is_bot": false,
+        "login": "jeremykothe2",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "6f92ce8884929c9fd4730c86a28e2e3735de02af",
+      "current_head": "6f92ce8884929c9fd4730c86a28e2e3735de02af",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "6f92ce8884929c9fd4730c86a28e2e3735de02af",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Jeremy Kothe's next exact T16 owner-map refinement; same word and compiler, independently replayed frozen placement.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/community-batch1099-audit"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "6f92ce8884929c9fd4730c86a28e2e3735de02af",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1055,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1055",
+      "title": "Conditional κ = 0.001672251604432734: improved T16 owner packing on the seven-slot k8 word",
+      "contributor": {
+        "id": "U_kgDOEKXqaA",
+        "is_bot": false,
+        "login": "jeremykothe2",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "a8ea308976f1709eef0a328463f010cf51469277",
+      "current_head": "a8ea308976f1709eef0a328463f010cf51469277",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "a8ea308976f1709eef0a328463f010cf51469277",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Jeremy Kothe's next exact T16 owner-map refinement; same word and compiler, independently replayed frozen placement.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/community-batch1099-audit"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "a8ea308976f1709eef0a328463f010cf51469277",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1056,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1056",
+      "title": "Conditional kappa 0.001672267698427438: whole-helper exchanges on the T16 owner map",
+      "contributor": {
+        "id": "MDQ6VXNlcjExNjU5ODM5",
+        "is_bot": false,
+        "login": "rohanarun",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "d0201efbd68c4acc9832b84bcc986c8781b83c4f",
+      "current_head": "d0201efbd68c4acc9832b84bcc986c8781b83c4f",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "d0201efbd68c4acc9832b84bcc986c8781b83c4f",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Rohan Arun's whole-helper exchanges from PR1050: 24 changed placements, unchanged local supplier; full unchanged strict verifier.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/complex-t16-owner-exchanges"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "d0201efbd68c4acc9832b84bcc986c8781b83c4f",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1059,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1059",
+      "title": "Tooling: opt-in parallel U8 layer-end controls, byte-identical receipt, 3.0x on 10 cores (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjE4NjIyMjg4",
+        "is_bot": false,
+        "login": "thakrarsagar",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "0e301503b29d802327238c32f5ae3377797a564c",
+      "current_head": "0e301503b29d802327238c32f5ae3377797a564c",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "0e301503b29d802327238c32f5ae3377797a564c",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Opt-in record/evaluate/replay parallelization of unchanged layer-end controls, byte-identical receipt and failure controls. Verification acceleration only.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "Makefile",
+        "research/layer-end-controls-parallel"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "0e301503b29d802327238c32f5ae3377797a564c",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1061,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1061",
+      "title": "Conditional κ = 0.00167259071506618: improved T16 owner packing on the seven-slot k8 word",
+      "contributor": {
+        "id": "U_kgDOEKXqaA",
+        "is_bot": false,
+        "login": "jeremykothe2",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "223f581afb1d63d5f8476a69040617e11bcd50e4",
+      "current_head": "223f581afb1d63d5f8476a69040617e11bcd50e4",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "223f581afb1d63d5f8476a69040617e11bcd50e4",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Jeremy Kothe's exact LNS T16 owner-map refinement; full strict replay, no global-optimality claim.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/community-batch1099-audit"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "223f581afb1d63d5f8476a69040617e11bcd50e4",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1062,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1062",
+      "title": "Finite bit construction: phase-B block programs on the R439 helper-star D, 11,783 -> 11,500 ADDs (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjE4NjIyMjg4",
+        "is_bot": false,
+        "login": "thakrarsagar",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "cd016e5dcd5ba28dafa3f3b4eeef003a38e6a11b",
+      "current_head": "cd016e5dcd5ba28dafa3f3b4eeef003a38e6a11b",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "cd016e5dcd5ba28dafa3f3b4eeef003a38e6a11b",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Compose nine PR1015 blocks and PR923 frame520 with helper-star D; 11783 to 11515 then 11500 ADDs as freed precision admits extra stars. All 661 columns and full local/nine-stage envelopes; known H2/K mismatch retained, no hosted supplier admission.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/r439-bsection-stars-seed01"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "cd016e5dcd5ba28dafa3f3b4eeef003a38e6a11b",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1063,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1063",
+      "title": "Conditional kappa 0.001672285678298543: neutral T16 reshuffles and whole-helper exchanges",
+      "contributor": {
+        "id": "MDQ6VXNlcjExNjU5ODM5",
+        "is_bot": false,
+        "login": "rohanarun",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "d9377d32e0c97e41338e704c3960fd6f2fa73806",
+      "current_head": "d9377d32e0c97e41338e704c3960fd6f2fa73806",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "d9377d32e0c97e41338e704c3960fd6f2fa73806",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Rohan Arun's neutral reshuffles unlock whole-helper exchanges; separately retained below later frontier, full strict replay.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/complex-t16-neutral-exchanges"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "d9377d32e0c97e41338e704c3960fd6f2fa73806",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1065,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1065",
+      "title": "Conditional κ = 0.001672644568760139: improved T16 owner packing on the seven-slot k8 word",
+      "contributor": {
+        "id": "U_kgDOEKXqaA",
+        "is_bot": false,
+        "login": "jeremykothe2",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "387d935e354a931d636e2c5e6ee63a6910f78a1b",
+      "current_head": "387d935e354a931d636e2c5e6ee63a6910f78a1b",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "387d935e354a931d636e2c5e6ee63a6910f78a1b",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Jeremy Kothe's next exact T16 packing; full strict replay with unchanged compiler and local word.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/community-batch1099-audit"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "387d935e354a931d636e2c5e6ee63a6910f78a1b",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1068,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1068",
+      "title": "Conditional κ = 0.001672650458698046: improved T16 owner packing on the seven-slot k8 word",
+      "contributor": {
+        "id": "U_kgDOEKXqaA",
+        "is_bot": false,
+        "login": "jeremykothe2",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "cc71375eae4e8754da0f5d940cb519d66625fb2e",
+      "current_head": "cc71375eae4e8754da0f5d940cb519d66625fb2e",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "cc71375eae4e8754da0f5d940cb519d66625fb2e",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Jeremy Kothe's next exact T16 packing; full strict replay with unchanged compiler and local word.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/community-batch1099-audit"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "cc71375eae4e8754da0f5d940cb519d66625fb2e",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1069,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1069",
+      "title": "Independent verification: code-disjoint pricing of all 16 pending kappa claims; every one has deficit W - 64N (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjE4NjIyMjg4",
+        "is_bot": false,
+        "login": "thakrarsagar",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "a3db661d0cc630820bc5d4af667bbd166bde154b",
+      "current_head": "a3db661d0cc630820bc5d4af667bbd166bde154b",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "a3db661d0cc630820bc5d4af667bbd166bde154b",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Code-disjoint arithmetic repricing of sixteen pinned historical claims, including deficit identity W-64N; source blobs rebound. Does not itself verify realized words or owners.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "Makefile",
+        "research/pending-claims-independent-pricing"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "a3db661d0cc630820bc5d4af667bbd166bde154b",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1072,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1072",
+      "title": "Conditional κ = 0.001661961039655941: one E4 call fills four T37 gaps",
+      "contributor": {
+        "id": "U_kgDOC0YAlA",
+        "is_bot": false,
+        "login": "davidNbreslauer",
+        "name": "David Breslauer"
+      },
+      "draft": false,
+      "starting_head": "6c1504cd75aae9b255ba16bf8e28d3f38af34c14",
+      "current_head": "6c1504cd75aae9b255ba16bf8e28d3f38af34c14",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "6c1504cd75aae9b255ba16bf8e28d3f38af34c14",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "David Breslauer's one-call E4 entrance-frame modification consumes four T37 gaps; four width increases and owner exchanges, full mixed-provider construction/admission. Historical parallel contribution, no automatic composition with k8.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/u8-e4-gap-fill"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "6c1504cd75aae9b255ba16bf8e28d3f38af34c14",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1074,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1074",
+      "title": "Conditional κ = 0.001672651218919025: improved T16 owner packing on the seven-slot k8 word",
+      "contributor": {
+        "id": "U_kgDOEKXqaA",
+        "is_bot": false,
+        "login": "jeremykothe2",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "052afc128954f7b6a2b3c409eb4d72248e4020f2",
+      "current_head": "052afc128954f7b6a2b3c409eb4d72248e4020f2",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "052afc128954f7b6a2b3c409eb4d72248e4020f2",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Jeremy Kothe's next exact T16 packing; full strict replay with unchanged compiler and local word.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/community-batch1099-audit"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "052afc128954f7b6a2b3c409eb4d72248e4020f2",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1077,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1077",
+      "title": "Scoped structural result: arbitrary complex coefficients retain the exact eight-term E8 decoder floor",
+      "contributor": {
+        "id": "U_kgDOFDLgvw",
+        "is_bot": false,
+        "login": "woklerx",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "1459f58a829e616ddf32a3da2782e166700e3218",
+      "current_head": "1459f58a829e616ddf32a3da2782e166700e3218",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "1459f58a829e616ddf32a3da2782e166700e3218",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Complex-coefficient extension of the exact eight-term E8 all-pairs decoder floor max(72-p,56), p<=24. Handles isotropic cross-term coincidences; inherits real root-hyperplane classification and excludes masked or overcomplete decoders.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/complex-decoder-field-extension-seed44"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "1459f58a829e616ddf32a3da2782e166700e3218",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1082,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1082",
+      "title": "Conditional kappa 0.001672653061493085: targeted T16 whole-helper repacking",
+      "contributor": {
+        "id": "MDQ6VXNlcjExNjU5ODM5",
+        "is_bot": false,
+        "login": "rohanarun",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "0c2e294ec204e83846d27344f829d15ed9ee7cc6",
+      "current_head": "0c2e294ec204e83846d27344f829d15ed9ee7cc6",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "0c2e294ec204e83846d27344f829d15ed9ee7cc6",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Rohan Arun's twelve-bin targeted repacking changes 30 placements; unchanged word and strict admission.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/complex-t16-targeted-repacking"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "0c2e294ec204e83846d27344f829d15ed9ee7cc6",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1087,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1087",
+      "title": "Conditional κ = 0.001672654541898561: improved T16 owner packing on the seven-slot k8 word",
+      "contributor": {
+        "id": "U_kgDOEKXqaA",
+        "is_bot": false,
+        "login": "jeremykothe2",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "589d1cedf5ef5f231182f4ec86408616311a8af0",
+      "current_head": "589d1cedf5ef5f231182f4ec86408616311a8af0",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "589d1cedf5ef5f231182f4ec86408616311a8af0",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Jeremy Kothe's next exact T16 packing; full strict replay, direct parent of PR1094.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/community-batch1099-audit"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "589d1cedf5ef5f231182f4ec86408616311a8af0",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1088,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1088",
+      "title": "Research: exact weighted optimum for signed 3x3 connector repairs (no new kappa)",
+      "contributor": {
+        "id": "U_kgDOFF-BGQ",
+        "is_bot": false,
+        "login": "martinxxx9",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "b0396aad724fec58630fbd4d13a809c562f18d9e",
+      "current_head": "b0396aad724fec58630fbd4d13a809c562f18d9e",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "b0396aad724fec58630fbd4d13a809c562f18d9e",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Signed three-by-three connector query optimum 2 sum(cF)+2 min(cF), six repairs across 288 orientations; full dirty restoration and 308-vs-332 priced fixture. Sign-symmetric fixed query prices only.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/weighted-signed-connector-seed58"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "b0396aad724fec58630fbd4d13a809c562f18d9e",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1089,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1089",
+      "title": "Finite bit construction: R480 Q-node5 saves 20 ADDs (no new kappa)",
+      "contributor": {
+        "id": "U_kgDOFF-BGQ",
+        "is_bot": false,
+        "login": "martinxxx9",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "9f33d4d10e59a7575d28378e63c033a4b0c13d3f",
+      "current_head": "9f33d4d10e59a7575d28378e63c033a4b0c13d3f",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "9f33d4d10e59a7575d28378e63c033a4b0c13d3f",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Historical R480 Q-node5 shortened 51 to 41 XORs, complete word 33938; all dirty columns and independent Python 5/9/11-stage evidence. Historical selected context redirected without changing hash; no native C++ claim.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/r480-qnode5-seed05"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "9f33d4d10e59a7575d28378e63c033a4b0c13d3f",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1090,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1090",
+      "title": "Conditional κ = 0.001672404744903063: rank-seven helper ends on the k8 word",
+      "contributor": {
+        "id": "U_kgDOCcbgOg",
+        "is_bot": false,
+        "login": "1337isnot1337",
+        "name": "Cinna Davis"
+      },
+      "draft": false,
+      "starting_head": "b535975a5948afafda984e73c301183a634ff8c8",
+      "current_head": "b535975a5948afafda984e73c301183a634ff8c8",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "b535975a5948afafda984e73c301183a634ff8c8",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Transfer of Alexander Schwartzman's rank-seven helper ends to k8 helpers 574/575; eight B frames and two tails change, width 3730 to 3728, fresh native and complete owner admission. Distinct construction, below selected packing candidate.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/k8-rank7-composition"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "b535975a5948afafda984e73c301183a634ff8c8",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1091,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1091",
+      "title": "Research audit: independent owner-map check of all 15 open T16 claims on the seven-slot k8 word (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjY4MjA3MTg3",
+        "is_bot": false,
+        "login": "JosieElliston",
+        "name": "Josie Elliston"
+      },
+      "draft": false,
+      "starting_head": "b4c13a228acb80f74c682b7097f0ce9bbf51bc4e",
+      "current_head": "b4c13a228acb80f74c682b7097f0ce9bbf51bc4e",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "b4c13a228acb80f74c682b7097f0ce9bbf51bc4e",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Independent event/window/owner recount of fifteen historical T16 maps and T8, including disjoint pending axes across children; eleven controls. No emitted controller, invoice or outer theorem claim.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/t16-owner-audit-seed67"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "b4c13a228acb80f74c682b7097f0ce9bbf51bc4e",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1092,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1092",
+      "title": "Tooling: exact Clifford state reuse with independent controls (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjI3NTY4NjE3",
+        "is_bot": false,
+        "login": "ToikY",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "9c4c5d62825c795148a2d2b9062788160063d0cb",
+      "current_head": "9c4c5d62825c795148a2d2b9062788160063d0cb",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "9c4c5d62825c795148a2d2b9062788160063d0cb",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Opt-in exact Clifford input-state reuse: pinned compiler edit, independent Gaussian-rational oracle, paired phase replays and driver fault controls. No selected compiler replacement or combined speedup claim.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/clifford-state-reuse"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "9c4c5d62825c795148a2d2b9062788160063d0cb",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1094,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1094",
+      "title": "Conditional kappa 0.001672660197076918: rare-pattern T16 exchanges",
+      "contributor": {
+        "id": "MDQ6VXNlcjExNjU5ODM5",
+        "is_bot": false,
+        "login": "rohanarun",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "0fc329d0bec93ca7cd288eaea1295172e8789810",
+      "current_head": "0fc329d0bec93ca7cd288eaea1295172e8789810",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "0fc329d0bec93ca7cd288eaea1295172e8789810",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Rohan Arun's rare-pattern sixteen-bin exchanges change 193 placements from PR1087; candidate conditional kappa 0.001672660197076918 with inherited full finite admission.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/complex-t16-rare-pattern-exchanges"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "0fc329d0bec93ca7cd288eaea1295172e8789810",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1096,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1096",
+      "title": "Finite precision audit: PR589 bank envelope uses 132 bits versus a 177-bit bound",
+      "contributor": {
+        "id": "U_kgDOFDLgvw",
+        "is_bot": false,
+        "login": "woklerx",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "08fac91b6e4e4f2c9af77fc9afa11e3ec2212faf",
+      "current_head": "08fac91b6e4e4f2c9af77fc9afa11e3ec2212faf",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "08fac91b6e4e4f2c9af77fc9afa11e3ec2212faf",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Complete PR589 nine-stage positive-majorant audit: 220905 events, 4839 columns; exact positive peak 127 bits, bank envelope 132, coarse bound 177. Production 192-bit charge unchanged; no physical 128-bit admission.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/nine-stage-prefix-audit-seed70"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "08fac91b6e4e4f2c9af77fc9afa11e3ec2212faf",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1097,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1097",
+      "title": "Research consolidation: checked P111 minrank and fitting-matrix uniqueness proofs",
+      "contributor": {
+        "id": "MDQ6VXNlcjI3MzA1OQ==",
+        "is_bot": false,
+        "login": "bitplane",
+        "name": "Gareth Davidson"
+      },
+      "draft": false,
+      "starting_head": "ad0cc538d7f827461da6364c3c0e09176b10bcae",
+      "current_head": "ad0cc538d7f827461da6364c3c0e09176b10bcae",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "ad0cc538d7f827461da6364c3c0e09176b10bcae",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Proof-carrying reconciliation of PR620 archived P111 minimum rank nine and unique rank-nine fitting matrix: 37044 RUP additions, 1409475 hints. Exact archival root order; does not transfer to different supplier punctures or close wider PR620.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/p111-minrank-proof-reconciliation"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "ad0cc538d7f827461da6364c3c0e09176b10bcae",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1098,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1098",
+      "title": "Independent verification: label-free P112 Gram support spectra (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjcwNjkyOQ==",
+        "is_bot": false,
+        "login": "adamgall",
+        "name": "Adam Gall"
+      },
+      "draft": false,
+      "starting_head": "75834dfc800511cebc0e4c696788e9081272d761",
+      "current_head": "75834dfc800511cebc0e4c696788e9081272d761",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "75834dfc800511cebc0e4c696788e9081272d761",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Label-free P112 Gram support spectrum certificate: 511 characters, 503 full rank, eight coordinate kernels, ten spectra and sharp restricted energy four. Corroborates PR845's finite premise only.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/p112-gram-support-seed80"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "75834dfc800511cebc0e4c696788e9081272d761",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 1099,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1099",
+      "title": "Tooling: accelerate exact frame-pair enumeration with unchanged D/E/H checks",
+      "contributor": {
+        "id": "U_kgDOFDLgvw",
+        "is_bot": false,
+        "login": "woklerx",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "c28a38863964fb4e50704d59cb24840d5cd9949b",
+      "current_head": "c28a38863964fb4e50704d59cb24840d5cd9949b",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "c28a38863964fb4e50704d59cb24840d5cd9949b",
+          "evidence": "research/community-batch1099-audit/DISPOSITIONS.json",
+          "scope": "Exact mask enumeration preserves ordered PR968 D/E/H streams: 1260 frames, 7168 decoders, 57344 term ranks and controls. Local benchmark separated from mathematical receipt.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/frame-pair-enumeration-fast-seed93"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "c28a38863964fb4e50704d59cb24840d5cd9949b",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-batch1099-review.md"
+      ],
+      "current_head_observed_in": "research/community-batch1099-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-batch1099-audit/DISPOSITIONS.json"
+      ]
     }
   ],
   "ending_snapshot": "research/pr-reconciliation-20261012/ending-snapshot.json",
@@ -25322,6 +27166,6 @@
   "github_dispositions": {
     "CLOSED": 3,
     "MERGED": 241,
-    "OPEN": 438
+    "OPEN": 478
   }
 }

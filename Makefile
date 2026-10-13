@@ -618,3 +618,39 @@ phase-recipes-parallel-benchmark:
 frontier1042-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier1042.XXXXXX"); \
 	python3 -B scripts/verify_frontier1042.py --work "$$work/replay"
+
+# Independent verification: code-disjoint T37 moment endpoints and kappa reduction (no new kappa).
+.PHONY: t37-endpoints-independent-verify
+t37-endpoints-independent-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-t37-endpoints.XXXXXX"); \
+	python3 -B research/t37-endpoints-independent/verify.py --work "$$work/replay" && \
+	python3 -B -m unittest discover -s research/t37-endpoints-independent -p test_package.py
+
+# Independent verification: code-disjoint pricing of the pending kappa claims (no new kappa).
+.PHONY: pending-claims-pricing-verify
+pending-claims-pricing-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-pending-claims.XXXXXX"); \
+	python3 -B research/pending-claims-independent-pricing/verify.py --work "$$work/replay" && \
+	python3 -B -m unittest discover -s research/pending-claims-independent-pricing -p test_package.py
+
+# Tooling: opt-in parallel U8 layer-end controls with a byte-identical receipt (no new kappa).
+.PHONY: layer-end-controls-parallel-verify layer-end-controls-parallel-benchmark
+layer-end-controls-parallel-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-layer-end.XXXXXX"); \
+	python3 -B research/layer-end-controls-parallel/verify.py --work "$$work/replay" && \
+	python3 -B -m unittest discover -s research/layer-end-controls-parallel -p test_package.py
+layer-end-controls-parallel-benchmark:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-layer-end.XXXXXX"); \
+	python3 -B research/layer-end-controls-parallel/verify.py --work "$$work/replay" --serial
+
+# Research note: width packing of the selected PR589 bit hosting (no new kappa).
+.PHONY: bit589-width-packing-verify
+bit589-width-packing-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-bit589-packing.XXXXXX"); \
+	python3 -B research/bit589-width-packing/verify.py --work "$$work/replay" && \
+	python3 -B -m unittest discover -s research/bit589-width-packing -p test_package.py
+
+.PHONY: frontier1094-verify
+frontier1094-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier1094.XXXXXX"); \
+	python3 -B scripts/verify_frontier1094.py --work "$$work/replay"

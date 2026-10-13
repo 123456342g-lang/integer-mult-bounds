@@ -1,5 +1,17 @@
 # Current reviewed status
 
+Selected conditional κ: **0.001672660197076918**, Rohan Arun's #1094 on Jeremy Kothe's #1087 packing and the cumulative k8/slot/T16 construction. The bit supplier remains #589 on #555.
+
+[Review and attribution](community-batch1099-review.md) · [Integration/CI receipt](community-batch1099-integration.json) · [Selected record](../../certificates/selected-result.json).
+
+Cold replay: `make frontier1094-verify`. This local review explicitly reuses the published, source-bound complete #1042 construction/bit evidence and freshly checks #1094. Exact native, hosting and arithmetic evidence remains conditional on the listed compiler/realization/precision/analytic interfaces. Linux CI is separate.
+
+#1048 remains open for the documented pricing and exact-certification corrections; no negative theorem from that proposal is accepted. Other historical deferrals, including #946, remain unchanged.
+
+# Historical status through #1042
+
+# Current reviewed status
+
 Selected conditional κ: **0.001672188119205421**, Jeremy Kothe's #1042 on the mutable-leaver/slot chain, Rohan Arun's #987 slot search and Hao Yan's T16 controller. The bit side remains #589 on #555.
 
 [Review and individual credit](community-batch1047-review.md) · [Publication/CI receipt](community-batch1047-integration.json) · [Selected record](../../certificates/selected-result.json) · [PR ledger](pr-ledger.md).
