@@ -34,3 +34,15 @@ Steinberg/3->2 ADD-count rewrites of the PR589 word. Overlap notes: #933 and
 #1048 close *profile/moment* reframing classes (orthogonal objective; this
 package keeps the profile exactly unchanged), and #1015/#1045/#1062/#980 work
 the phase-B blocks or other words (orthogonal region).
+
+## Result (recorded after completion)
+
+Delivered: 405 accepted rewrites, complete exported ADDs 24,305 -> 23,495
+(-810), records 27,234 -> 26,424, unchanged frame paths, paid profile and
+z-product U, exact endpoint on all 661 columns, six tamper controls rejected,
+exporter cross-check passed, deterministic regeneration confirmed.
+Submitted as PR https://github.com/CrocSwap/integer-mult-bounds/pull/1127
+(branch `research/agent-12-bit-seed13`, commit 5ce6bcaf on base abdc6a7).
+Concurrent #1122 (bitplane, same track/seed number by coincidence) composes
+frozen PR980/PR1062 changes on the semantic-D word lineage; different word and
+mechanism, not additive to this result.
