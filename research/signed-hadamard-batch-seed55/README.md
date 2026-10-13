@@ -134,7 +134,7 @@ interpreting the fixture's benefit as universal domination of both comparators.
 
 Child scratch is reused only after return, and the eight data rows and z are
 excluded from it. The peak is
-`1+max_i,j ceil(log2 |A_i|, log2 |B_j|)` borrowed dirty rows, here four.
+`1+max(max_i ceil(log2 |A_i|), max_j ceil(log2 |B_j|))` borrowed dirty rows, here four.
 Read-only coefficient storage, the emitted program, descriptors and loop state
 are additional. The dense reference uses 12L dirty data words and 24L²
 coefficient words, one scalar dot-product accumulator, and paid index/control
