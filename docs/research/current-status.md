@@ -1,5 +1,17 @@
 # Current reviewed status
 
+Selected conditional κ: **0.001672188119205421**, Jeremy Kothe's #1042 on the mutable-leaver/slot chain, Rohan Arun's #987 slot search and Hao Yan's T16 controller. The bit side remains #589 on #555.
+
+[Review and individual credit](community-batch1047-review.md) · [Publication/CI receipt](community-batch1047-integration.json) · [Selected record](../../certificates/selected-result.json) · [PR ledger](pr-ledger.md).
+
+Cold replay: `make frontier1042-verify`. Complete local finite construction and both exact moment engines pass, with source-bound retained ancestry reuse recorded. All-size/compiler, realization, hosting, precision/tape, analytic and bit-interface assumptions remain. Linux CI is separate; no complete Lean multiplication theorem is claimed.
+
+The forty-PR batch integrates constructions, parallel audits, circuit candidates, scoped negative results and verification tooling with individual attribution. #946 remains deferred, corroborated by #994's exact source-pin inventory.
+
+# Historical status through #942
+
+# Current reviewed status
+
 Selected conditional κ: **0.001661960547713947**, Jonathan Capalbo's #942 T37
 composition of the #890/#869/#870/#858 lineage, with unchanged #589 on #555.
 [Review and credit](community-batch952-review.md) ·

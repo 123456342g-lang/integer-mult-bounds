@@ -604,3 +604,17 @@ frontier890-verify: selected-record-check
 frontier942-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier942.XXXXXX"); \
 	python3 -B scripts/verify_frontier942.py --work "$$work/replay"
+# Tooling: opt-in parallel exact U8 phase recipes, byte-identical to the pinned serial step (no new kappa).
+.PHONY: phase-recipes-parallel-verify phase-recipes-parallel-benchmark
+phase-recipes-parallel-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-phase-parallel.XXXXXX"); \
+	python3 -B research/phase-recipes-parallel/verify.py --work "$$work/replay" && \
+	python3 -B -m unittest discover -s research/phase-recipes-parallel -p test_package.py
+phase-recipes-parallel-benchmark:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-phase-parallel.XXXXXX"); \
+	python3 -B research/phase-recipes-parallel/verify.py --work "$$work/replay" --serial
+
+.PHONY: frontier1042-verify
+frontier1042-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier1042.XXXXXX"); \
+	python3 -B scripts/verify_frontier1042.py --work "$$work/replay"

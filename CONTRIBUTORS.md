@@ -548,3 +548,14 @@ Thakrar and Romain Hedouin. Parallel work is credited independently of selection
 - **ToikY / ToikY:** [#1001](https://github.com/CrocSwap/integer-mult-bounds/pull/1001).
 - **Gareth Davidson / bitplane:** [#980](https://github.com/CrocSwap/integer-mult-bounds/pull/980), [#1006](https://github.com/CrocSwap/integer-mult-bounds/pull/1006).
 - **martinxxx9 / martinxxx9:** [#976](https://github.com/CrocSwap/integer-mult-bounds/pull/976).
+
+### Construction and phase-verification checkpoint
+
+- **jeremykothe2 / jeremykothe2:** [#1004](https://github.com/CrocSwap/integer-mult-bounds/pull/1004), [#1005](https://github.com/CrocSwap/integer-mult-bounds/pull/1005), [#1018](https://github.com/CrocSwap/integer-mult-bounds/pull/1018), [#1022](https://github.com/CrocSwap/integer-mult-bounds/pull/1022), [#1028](https://github.com/CrocSwap/integer-mult-bounds/pull/1028), [#1031](https://github.com/CrocSwap/integer-mult-bounds/pull/1031), [#1042](https://github.com/CrocSwap/integer-mult-bounds/pull/1042).
+- **Alexander Schwartzman / AlexS-scale:** [#1030](https://github.com/CrocSwap/integer-mult-bounds/pull/1030).
+- **Cinna Davis / 1337isnot1337:** [#1019](https://github.com/CrocSwap/integer-mult-bounds/pull/1019).
+- **Tekalign / tekuuu:** [#991](https://github.com/CrocSwap/integer-mult-bounds/pull/991).
+- **Ali Romman / aliromman:** [#1029](https://github.com/CrocSwap/integer-mult-bounds/pull/1029).
+- **thakrarsagar / thakrarsagar:** [#1041](https://github.com/CrocSwap/integer-mult-bounds/pull/1041).
+
+Rohan Arun receives explicit mechanism credit for #987’s slot search and first two slots; Hao Yan for #858’s T16 controller. Earlier construction and verification work by Chafik Boukhalfa, Jonathan Capalbo, icekylinx, DreamingOfClouds, eumemic and the full retained lineage remains credited. These are cumulative contributions, not transferred authorship.

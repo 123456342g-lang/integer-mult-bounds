@@ -53,7 +53,7 @@
     "research/community-batch932-audit/DISPOSITIONS.json": "78407de39b1d51acf31209a6ab11b6fe06e8cf3a617659c5cd43882870baa2d9",
     "research/community-batch952-audit/DISPOSITIONS.json": "fa89c90fb127e512903539ead9c6cf1e4667ed415b4d81a6510ff692f33bd53d",
     "research/community-batch970-audit/DISPOSITIONS.json": "e1781e098cd61089aa616c75f3d65977f1fc6e61e48c99d020de09d89831e32c",
-    "research/community-batch1047-audit/DISPOSITIONS.json": "c2f14ba8c765a1f6367bcaa69b3b56862987e5dc5a0c8e0d9927290426ef7ad8",
+    "research/community-batch1047-audit/DISPOSITIONS.json": "97f96cf4312627376d6ccfd8463df98c5f4648c36d8fa6f65569a2b3bfdb6cf7",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -24014,16 +24014,19 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/complex-t37-independent-seed39",
+        "research/complex-t37-validation"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "69f989511a3f0c6f7a26da1c1608b265fbb1668a",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and required local execution complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -24408,16 +24411,18 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/gauge44-leaver"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "1974578f82a30158dd5fcdcdf226b83df8e7196f",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and required local execution complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -24452,16 +24457,19 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/gauge44-leaver",
+        "research/gauge44-leaver8"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "779e80aef469bc3a28b19f1adde199871a9a22e3",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and required local execution complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -24646,16 +24654,20 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/gauge44-leaver",
+        "research/gauge44-leaver8",
+        "research/gauge44-slots"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "eac7547cb191f875d5f5ea5f9bbb1d2b8c51c4ef",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and required local execution complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -24690,16 +24702,18 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/t37-rational-refinement"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "eff657644137971f6e31ac3c825950c770471349",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and required local execution complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -24784,16 +24798,22 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/community-batch1047-audit",
+        "research/gauge44-leaver",
+        "research/gauge44-leaver8",
+        "research/gauge44-slots",
+        "research/gauge44-slots-t16"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "58618bcbfe88a252467755fc283c04c3db5ca4fd",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and required local execution complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -24828,16 +24848,22 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/community-batch1047-audit",
+        "research/gauge44-leaver",
+        "research/gauge44-leaver8",
+        "research/gauge44-slots",
+        "research/gauge44-slots-t16"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "be4bd89cb4483dcee43257200cd27601f938f13d",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and required local execution complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -24872,16 +24898,19 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        ".github/workflows",
+        "research/selected-replay-fastpath"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "ff4d7b9ac97a584275fe0653f226f4ce2ffc6086",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and required local execution complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -24916,16 +24945,18 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/complex-rank7-end-pair"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "d71857cd0ae7824e935aac17327e4ec27f66322b",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and required local execution complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -24960,16 +24991,22 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/community-batch1047-audit",
+        "research/gauge44-leaver",
+        "research/gauge44-leaver8",
+        "research/gauge44-slots",
+        "research/gauge44-slots-t16"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "e900534f0beda892c726723524203b97471fb9a3",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and required local execution complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -25104,16 +25141,19 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "Makefile",
+        "research/phase-recipes-parallel"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "9576c644a4cafd2cfac309689a19342451702f81",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and required local execution complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -25148,16 +25188,21 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/gauge44-leaver",
+        "research/gauge44-leaver8",
+        "research/gauge44-slots",
+        "research/gauge44-slots-t16"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "7e8ef087c02a77038a28a337a7ee3a77039cac0d",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and required local execution complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
