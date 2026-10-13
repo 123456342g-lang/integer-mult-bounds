@@ -2,8 +2,8 @@
   "schema": "witness-spec/1",
   "name": "gauge44-t16-two-bank",
   "data": {
-    "plan_sha256": "6483a5cd59ef9af5fdb9b9d2fae94e8f36b081a375f38c99f59eecab6337dec2",
-    "owners_sha256": "244e64ae72541badd367a29899b069da73d38c9692629733453e02285e570c68"
+    "plan_sha256": "955304649af47deef2eea38840e4dcf460b8dcd636a8681f7e9927248c6d9667",
+    "owners_sha256": "dfe4e13e8ce0137b86ee514e163424f29e52380f6924c0300730b56d8e94b4c2"
   },
   "dispatch": [
     [
@@ -1933,34 +1933,32 @@
     "gain_baseline_kappa": "0.001636241501576388",
     "hosted_residuals": 69120,
     "rank_mass": 1041408,
-    "actual_73column_sigmas": 10134,
-    "cross_replica_helper_roles": 56821,
-    "idle_remainders": 7538,
+    "actual_73column_sigmas": 10076,
+    "cross_replica_helper_roles": 57780,
+    "idle_remainders": 7532,
     "idle_remainder_profile": {
-      "1": 2268,
-      "3": 402,
+      "1": 2275,
+      "3": 389,
       "7": 2,
-      "16": 1,
-      "48": 4865
+      "48": 4866
     },
     "global_profile": {
-      "1": 349596,
+      "1": 349603,
       "2": 60192,
-      "3": 62610,
+      "3": 62597,
       "4": 20448,
       "5": 11808,
       "7": 2,
       "8": 1152,
-      "16": 1,
-      "48": 4865
+      "48": 4866
     },
     "live": 14336,
     "physical": 14826,
-    "conservative_kappa_decimal": "0.001672590712214321",
-    "kappa_decimal": "0.00167259071506618",
-    "complex_lower": "1675392961778137655331/1000000000000000000000000",
-    "conservative_complex_lower": "335078591783342966349/200000000000000000000000",
-    "kappa": "83629535753309/50000000000000000",
+    "conservative_kappa_decimal": "0.001672644565908221",
+    "kappa_decimal": "0.001672644568760139",
+    "complex_lower": "1675446996078375166313/1000000000000000000000000",
+    "conservative_complex_lower": "1675446993216893345017/1000000000000000000000000",
+    "kappa": "1672644568760139/1000000000000000000",
     "assembly_controls_rejected": 69,
     "provider_counts": {
       "gauge44": 144
