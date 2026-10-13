@@ -53,7 +53,7 @@
     "research/community-batch932-audit/DISPOSITIONS.json": "78407de39b1d51acf31209a6ab11b6fe06e8cf3a617659c5cd43882870baa2d9",
     "research/community-batch952-audit/DISPOSITIONS.json": "fa89c90fb127e512903539ead9c6cf1e4667ed415b4d81a6510ff692f33bd53d",
     "research/community-batch970-audit/DISPOSITIONS.json": "e1781e098cd61089aa616c75f3d65977f1fc6e61e48c99d020de09d89831e32c",
-    "research/community-batch1047-audit/DISPOSITIONS.json": "8ff8898b55b377f756b47951bc794105f71a5b5df4526d1217765c168741513a",
+    "research/community-batch1047-audit/DISPOSITIONS.json": "b1a145c77ee61d01e1f86a4803d9f2da80114586b96358059e02e155c5bd2244",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -23664,16 +23664,18 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/r439-frame509-seed08"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "c05dc72734c25dd069077157224d4dd30c6e8c19",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and local checks complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -23708,16 +23710,18 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/joint-frame-modular-screen"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "d5a694125b0bba7f4768df24a7e67f88f6631bd3",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and local checks complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -23802,16 +23806,18 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/r439-global-prefix-admission"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "ba1cf68bef0c97dfb120add04304e2de0db6f29c",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and local checks complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -23846,16 +23852,18 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/r439-frame281-seed15"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "12470750d68b13b88e91277cacf95efddab95a59",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and local checks complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -23940,16 +23948,18 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/r439-four-block-composition"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "101103e56e3effdb268ce90110c6caa4c6885671",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and local checks complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -24278,16 +24288,18 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/r439-frame506-two-factor"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "fbf54e6c95c47a3891eb7e8ed063b5198e920f3f",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and local checks complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -24322,16 +24334,18 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/r439-frame272-seed06"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "93e1a42c773a73bb55adddf35d71ed6b6c1d5748",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and local checks complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -24454,16 +24468,18 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/t37-slice-bitmaps"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "2b047edb2b3fedccc4f538608b1bd56dc711673d",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and local checks complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -25006,16 +25022,18 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/r439-target-retune-seed14"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "9d885867f28c1f391ab395af2d0b1f2a63681bfd",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and local checks complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -25138,16 +25156,18 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/r439-post-helper-shear-seed03"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "a01bd602969e4086e55f0d1f392855b91cfe0507",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Finish frozen source/mechanism review and required execution before integration.",
+      "unresolved_question": "Scoped review and local checks complete; publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [

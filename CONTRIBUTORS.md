@@ -540,3 +540,11 @@ Thakrar and Romain Hedouin. Parallel work is credited independently of selection
 - **D Lam / DLamdata:** [#979](https://github.com/CrocSwap/integer-mult-bounds/pull/979).
 - **ellipsi2 / ellipsi2:** [#772](https://github.com/CrocSwap/integer-mult-bounds/pull/772).
 - **ArnavSwiggy / ArnavSwiggy:** [#920](https://github.com/CrocSwap/integer-mult-bounds/pull/920).
+
+### Circuit and verifier checkpoint
+
+- **Cinna Davis / 1337isnot1337:** [#973](https://github.com/CrocSwap/integer-mult-bounds/pull/973).
+- **woklerx / woklerx:** [#986](https://github.com/CrocSwap/integer-mult-bounds/pull/986), [#1002](https://github.com/CrocSwap/integer-mult-bounds/pull/1002), [#989](https://github.com/CrocSwap/integer-mult-bounds/pull/989), [#1040](https://github.com/CrocSwap/integer-mult-bounds/pull/1040), [#1047](https://github.com/CrocSwap/integer-mult-bounds/pull/1047).
+- **ToikY / ToikY:** [#1001](https://github.com/CrocSwap/integer-mult-bounds/pull/1001).
+- **Gareth Davidson / bitplane:** [#980](https://github.com/CrocSwap/integer-mult-bounds/pull/980), [#1006](https://github.com/CrocSwap/integer-mult-bounds/pull/1006).
+- **martinxxx9 / martinxxx9:** [#976](https://github.com/CrocSwap/integer-mult-bounds/pull/976).

@@ -24074,92 +24074,107 @@
         {
           "source_path": "research/r439-frame509-seed08/CANDIDATE.json",
           "source_sha256": "4c340610fb641a3699224016b4a322005fa9c578d9761b23220b01bc67ab4068",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame509-seed08/CANDIDATE.json",
+          "integrated_sha256": "4c340610fb641a3699224016b4a322005fa9c578d9761b23220b01bc67ab4068"
         },
         {
           "source_path": "research/r439-frame509-seed08/CLAIM.json",
           "source_sha256": "893176e78ed2ebe372c3569f6980afc070ab653f07d4f7cac4f6bafefdef0aab",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame509-seed08/CLAIM.json",
+          "integrated_sha256": "893176e78ed2ebe372c3569f6980afc070ab653f07d4f7cac4f6bafefdef0aab"
         },
         {
           "source_path": "research/r439-frame509-seed08/ENVIRONMENT.json",
           "source_sha256": "412078d49d8dd82ddc869f877d8c6c89d5fa300de7a8499e4e067f756fdc798a",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame509-seed08/ENVIRONMENT.json",
+          "integrated_sha256": "412078d49d8dd82ddc869f877d8c6c89d5fa300de7a8499e4e067f756fdc798a"
         },
         {
           "source_path": "research/r439-frame509-seed08/EXPECTED.json",
           "source_sha256": "3808fe4daf12777e64613fc5cda6cc2c9ccc547190ceff0d380344759ae91982",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame509-seed08/EXPECTED.json",
+          "integrated_sha256": "3808fe4daf12777e64613fc5cda6cc2c9ccc547190ceff0d380344759ae91982"
         },
         {
           "source_path": "research/r439-frame509-seed08/NATIVE.json",
           "source_sha256": "e6ade780d455901d7d869d6d0a87a1a4af23bddd59543d46c1ebac411b0baee3",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame509-seed08/NATIVE.json",
+          "integrated_sha256": "e6ade780d455901d7d869d6d0a87a1a4af23bddd59543d46c1ebac411b0baee3"
         },
         {
           "source_path": "research/r439-frame509-seed08/NOTICE.md",
           "source_sha256": "9c532dd6d908abfe21ed0ea812e0d64d4f85e9a2dc2af6c8d0c048de324dd114",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame509-seed08/NOTICE.md",
+          "integrated_sha256": "9c532dd6d908abfe21ed0ea812e0d64d4f85e9a2dc2af6c8d0c048de324dd114"
         },
         {
           "source_path": "research/r439-frame509-seed08/PROOF.md",
           "source_sha256": "840f1521675884a7bfca44e0c4be50862a4a03ed4883d03e0a6f757f828d89f5",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame509-seed08/PROOF.md",
+          "integrated_sha256": "840f1521675884a7bfca44e0c4be50862a4a03ed4883d03e0a6f757f828d89f5"
         },
         {
           "source_path": "research/r439-frame509-seed08/README.md",
           "source_sha256": "731f70366d57356ff76af82db735d3863ca027a195c7eda392492b503f883735",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame509-seed08/README.md",
+          "integrated_sha256": "731f70366d57356ff76af82db735d3863ca027a195c7eda392492b503f883735"
         },
         {
           "source_path": "research/r439-frame509-seed08/SOURCES.json",
           "source_sha256": "799cb1cf862f6f5f302a2e8bbb90788d883dc4df70358245b0763ac3dd37c153",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame509-seed08/SOURCES.json",
+          "integrated_sha256": "799cb1cf862f6f5f302a2e8bbb90788d883dc4df70358245b0763ac3dd37c153"
         },
         {
           "source_path": "research/r439-frame509-seed08/VALIDATION.md",
           "source_sha256": "642621deebf4200c48d0499b4ae318fdcb6c537ff21507a7a91435c399d5b5a2",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame509-seed08/VALIDATION.md",
+          "integrated_sha256": "642621deebf4200c48d0499b4ae318fdcb6c537ff21507a7a91435c399d5b5a2"
         },
         {
           "source_path": "research/r439-frame509-seed08/native.py",
           "source_sha256": "6419b0c4fb3c965877b26efbbdf5e42d507fe337ddb61b3ae8fc5249db249401",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame509-seed08/native.py",
+          "integrated_sha256": "6419b0c4fb3c965877b26efbbdf5e42d507fe337ddb61b3ae8fc5249db249401"
         },
         {
           "source_path": "research/r439-frame509-seed08/predecessor843.json",
           "source_sha256": "586a550d4b13270d3ba3ba5798ec878dd901c6e80053c3972000df8d4f066179",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame509-seed08/predecessor843.json",
+          "integrated_sha256": "586a550d4b13270d3ba3ba5798ec878dd901c6e80053c3972000df8d4f066179"
         },
         {
           "source_path": "research/r439-frame509-seed08/search.py",
           "source_sha256": "13ed7dc78e0191e80dac23d425b4e0bb76f59842c055904d4fcf55c188442496",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame509-seed08/search.py",
+          "integrated_sha256": "13ed7dc78e0191e80dac23d425b4e0bb76f59842c055904d4fcf55c188442496"
         },
         {
           "source_path": "research/r439-frame509-seed08/test_package.py",
           "source_sha256": "b6e07c9a0ce97e8f4ae46ddc568516ee256965f1810c9a3247a484d0f8b49c1d",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame509-seed08/test_package.py",
+          "integrated_sha256": "b6e07c9a0ce97e8f4ae46ddc568516ee256965f1810c9a3247a484d0f8b49c1d"
         },
         {
           "source_path": "research/r439-frame509-seed08/verify.py",
           "source_sha256": "60583517f44338e8ec228bfa035f56aaba5d17110f9f9ee8d68111d9eb3c279f",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame509-seed08/verify.py",
+          "integrated_sha256": "60583517f44338e8ec228bfa035f56aaba5d17110f9f9ee8d68111d9eb3c279f"
         }
       ]
     },
@@ -24170,80 +24185,93 @@
         {
           "source_path": "research/r439-frame281-seed15/CERTIFICATE.json",
           "source_sha256": "33ff86f5a620d5f39fed3e3eea8e76b5203d2110b9da31b3b5fa64b3296e7f0d",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame281-seed15/CERTIFICATE.json",
+          "integrated_sha256": "33ff86f5a620d5f39fed3e3eea8e76b5203d2110b9da31b3b5fa64b3296e7f0d"
         },
         {
           "source_path": "research/r439-frame281-seed15/CLAIM.md",
           "source_sha256": "48431639dd26083ab2472474c71bdcbde723a8c97b06212e4d83dcbd6c15d16b",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame281-seed15/CLAIM.md",
+          "integrated_sha256": "48431639dd26083ab2472474c71bdcbde723a8c97b06212e4d83dcbd6c15d16b"
         },
         {
           "source_path": "research/r439-frame281-seed15/NOTICE.md",
           "source_sha256": "7a465f12e1bf3ff1e0ed8455e4a09c1548e25be05ec5541fd41d9380e08f7ebf",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame281-seed15/NOTICE.md",
+          "integrated_sha256": "7a465f12e1bf3ff1e0ed8455e4a09c1548e25be05ec5541fd41d9380e08f7ebf"
         },
         {
           "source_path": "research/r439-frame281-seed15/OVERLAP.json",
           "source_sha256": "354d5e5b6e4531cd3c3f49f954677fdcdaa2df25fa232ae766227f220845d1ac",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame281-seed15/OVERLAP.json",
+          "integrated_sha256": "354d5e5b6e4531cd3c3f49f954677fdcdaa2df25fa232ae766227f220845d1ac"
         },
         {
           "source_path": "research/r439-frame281-seed15/PROOF.md",
           "source_sha256": "eb5571c1d5b5a1229377fac5676cee2417533c50c8e275715359af61b970056a",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame281-seed15/PROOF.md",
+          "integrated_sha256": "eb5571c1d5b5a1229377fac5676cee2417533c50c8e275715359af61b970056a"
         },
         {
           "source_path": "research/r439-frame281-seed15/README.md",
           "source_sha256": "4ee614a074662acca7b811c8c340569aaf424b31f1d75779bf322b4692855255",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame281-seed15/README.md",
+          "integrated_sha256": "4ee614a074662acca7b811c8c340569aaf424b31f1d75779bf322b4692855255"
         },
         {
           "source_path": "research/r439-frame281-seed15/SOURCES.json",
           "source_sha256": "bb39950b49eb2e1bc237789bee821613a6bc8458dde1a7020b0ce5c050a29e29",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame281-seed15/SOURCES.json",
+          "integrated_sha256": "bb39950b49eb2e1bc237789bee821613a6bc8458dde1a7020b0ce5c050a29e29"
         },
         {
           "source_path": "research/r439-frame281-seed15/VALIDATION.md",
           "source_sha256": "86914a2a64f1e537734e093a9844a3d967f5e2ed4aab679bcb490ba224eb28b6",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame281-seed15/VALIDATION.md",
+          "integrated_sha256": "86914a2a64f1e537734e093a9844a3d967f5e2ed4aab679bcb490ba224eb28b6"
         },
         {
           "source_path": "research/r439-frame281-seed15/WITNESS.json",
           "source_sha256": "4bf9b597b20d07f03557c89e47d360c041929e90ab1a52b7ed9e1c821ef748ef",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame281-seed15/WITNESS.json",
+          "integrated_sha256": "4bf9b597b20d07f03557c89e47d360c041929e90ab1a52b7ed9e1c821ef748ef"
         },
         {
           "source_path": "research/r439-frame281-seed15/independent.py",
           "source_sha256": "394cebb7e5221709e4c4ee3cd7a06dedffa23f6b6e10987880bd5deb99b607f0",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame281-seed15/independent.py",
+          "integrated_sha256": "394cebb7e5221709e4c4ee3cd7a06dedffa23f6b6e10987880bd5deb99b607f0"
         },
         {
           "source_path": "research/r439-frame281-seed15/native.py",
           "source_sha256": "a556a34ca84e89e88bb4587ff72f4673354259b0b1b06d00d92ea815c678cda2",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame281-seed15/native.py",
+          "integrated_sha256": "a556a34ca84e89e88bb4587ff72f4673354259b0b1b06d00d92ea815c678cda2"
         },
         {
           "source_path": "research/r439-frame281-seed15/search.py",
           "source_sha256": "d1422b290f443be11892097ecc3d85db26887efbdb001d018dbf808cb7054052",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame281-seed15/search.py",
+          "integrated_sha256": "d1422b290f443be11892097ecc3d85db26887efbdb001d018dbf808cb7054052"
         },
         {
           "source_path": "research/r439-frame281-seed15/verify.py",
           "source_sha256": "8111e3a643082dea4310bbdf8084644e2ce7d56786b09e5f1f20344b0484598c",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame281-seed15/verify.py",
+          "integrated_sha256": "8111e3a643082dea4310bbdf8084644e2ce7d56786b09e5f1f20344b0484598c"
         }
       ]
     },
@@ -24254,104 +24282,121 @@
         {
           "source_path": "research/r439-frame506-two-factor/CANDIDATE.json",
           "source_sha256": "880c37ceab0f4fb1b3d8e7b1a1546ff4486224a3b3f9bdb9a41d38c85009ac8c",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/CANDIDATE.json",
+          "integrated_sha256": "880c37ceab0f4fb1b3d8e7b1a1546ff4486224a3b3f9bdb9a41d38c85009ac8c"
         },
         {
           "source_path": "research/r439-frame506-two-factor/CERTIFICATE.json",
           "source_sha256": "706f12a45d470037f4095ae6da2e224dc97ad7a2101f9ab5e2807ad5799f158f",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/CERTIFICATE.json",
+          "integrated_sha256": "706f12a45d470037f4095ae6da2e224dc97ad7a2101f9ab5e2807ad5799f158f"
         },
         {
           "source_path": "research/r439-frame506-two-factor/CLAIM.json",
           "source_sha256": "8a7784965796df29092909c67e981afa7738294a73716c4cd5597f35c854d394",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/CLAIM.json",
+          "integrated_sha256": "8a7784965796df29092909c67e981afa7738294a73716c4cd5597f35c854d394"
         },
         {
           "source_path": "research/r439-frame506-two-factor/ENVIRONMENT.json",
           "source_sha256": "184910c76b4fa6e79e6f47bb8ae9cdf2821b6f19067d744b63b8b1806ef7e7e0",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/ENVIRONMENT.json",
+          "integrated_sha256": "184910c76b4fa6e79e6f47bb8ae9cdf2821b6f19067d744b63b8b1806ef7e7e0"
         },
         {
           "source_path": "research/r439-frame506-two-factor/NATIVE.json",
           "source_sha256": "ab271dacec6eeabe13d63a17ffc70f1bcda7d7c09499562775a34dd850c5c244",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/NATIVE.json",
+          "integrated_sha256": "ab271dacec6eeabe13d63a17ffc70f1bcda7d7c09499562775a34dd850c5c244"
         },
         {
           "source_path": "research/r439-frame506-two-factor/NOTICE.md",
           "source_sha256": "01eff5c74c868677924fc2b339edbbcbbb56c870e04603d061c2743ad74d9e80",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/NOTICE.md",
+          "integrated_sha256": "01eff5c74c868677924fc2b339edbbcbbb56c870e04603d061c2743ad74d9e80"
         },
         {
           "source_path": "research/r439-frame506-two-factor/OVERLAP.json",
           "source_sha256": "64fb3351f3ffcb1b37b7e792ef7750211becfb8c4e469c63538c31a943e08259",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/OVERLAP.json",
+          "integrated_sha256": "64fb3351f3ffcb1b37b7e792ef7750211becfb8c4e469c63538c31a943e08259"
         },
         {
           "source_path": "research/r439-frame506-two-factor/PROOF.md",
           "source_sha256": "d83057d4a22f4bb0ead4a6fe85c106550469abff80c51d592bc889df25bf42d5",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/PROOF.md",
+          "integrated_sha256": "d83057d4a22f4bb0ead4a6fe85c106550469abff80c51d592bc889df25bf42d5"
         },
         {
           "source_path": "research/r439-frame506-two-factor/README.md",
           "source_sha256": "ff4e3c68862d2303330c2eede551fbc196d324d6ced0ba7580a70f21856e70de",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/README.md",
+          "integrated_sha256": "ff4e3c68862d2303330c2eede551fbc196d324d6ced0ba7580a70f21856e70de"
         },
         {
           "source_path": "research/r439-frame506-two-factor/SOURCES.json",
           "source_sha256": "995d3e256b92f7d8a057701bc5d6e4f30e9faf9d7d30a4a1bc6134cc85591431",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/SOURCES.json",
+          "integrated_sha256": "995d3e256b92f7d8a057701bc5d6e4f30e9faf9d7d30a4a1bc6134cc85591431"
         },
         {
           "source_path": "research/r439-frame506-two-factor/VALIDATION.md",
           "source_sha256": "c209e01544a6019970d7b10303677ff0b934bf1a8e50c781aa2dff931fdc3a84",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/VALIDATION.md",
+          "integrated_sha256": "c209e01544a6019970d7b10303677ff0b934bf1a8e50c781aa2dff931fdc3a84"
         },
         {
           "source_path": "research/r439-frame506-two-factor/independent.py",
           "source_sha256": "99333706b6b5c4d3823b6735e76affb922b2cc153507da94b57fe646289eff61",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/independent.py",
+          "integrated_sha256": "99333706b6b5c4d3823b6735e76affb922b2cc153507da94b57fe646289eff61"
         },
         {
           "source_path": "research/r439-frame506-two-factor/native-source-pins.json",
           "source_sha256": "15d5525868c943f23718b2db330fe17a903072d11aebb86f35352f2433e5e57e",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/native-source-pins.json",
+          "integrated_sha256": "15d5525868c943f23718b2db330fe17a903072d11aebb86f35352f2433e5e57e"
         },
         {
           "source_path": "research/r439-frame506-two-factor/native.py",
           "source_sha256": "a6659cf48ad208a72e9899018678fb200de2d765acb4e6e40fe8d4921d7387ab",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/native.py",
+          "integrated_sha256": "a6659cf48ad208a72e9899018678fb200de2d765acb4e6e40fe8d4921d7387ab"
         },
         {
           "source_path": "research/r439-frame506-two-factor/search.py",
           "source_sha256": "5eec468788141498b0195e5fa6a45102fbaed72fff364705ad05ff0f4d94bbda",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/search.py",
+          "integrated_sha256": "5eec468788141498b0195e5fa6a45102fbaed72fff364705ad05ff0f4d94bbda"
         },
         {
           "source_path": "research/r439-frame506-two-factor/test_package.py",
           "source_sha256": "32c6778babf9388f6783b6d93ae92334b369e13feb2137cfe981ce21abf4322c",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/test_package.py",
+          "integrated_sha256": "32c6778babf9388f6783b6d93ae92334b369e13feb2137cfe981ce21abf4322c"
         },
         {
           "source_path": "research/r439-frame506-two-factor/verify.py",
           "source_sha256": "6aa6d76f5332a33170fedafeab066e8e9430a0dbdb4871ee0a6b4549c8ac4c42",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame506-two-factor/verify.py",
+          "integrated_sha256": "6aa6d76f5332a33170fedafeab066e8e9430a0dbdb4871ee0a6b4549c8ac4c42"
         }
       ]
     },
@@ -24362,122 +24407,142 @@
         {
           "source_path": "research/r439-frame272-seed06/CERTIFICATE.json",
           "source_sha256": "883f283d81e84cc9c9c35c678374935c167ee16cbd69b33ff69227d930671ee8",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/CERTIFICATE.json",
+          "integrated_sha256": "883f283d81e84cc9c9c35c678374935c167ee16cbd69b33ff69227d930671ee8"
         },
         {
           "source_path": "research/r439-frame272-seed06/CLAIM.json",
           "source_sha256": "206581fe0dd92f07921e606ba317cc49949bd8b2fbd381b18e078dee2cd4a510",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/CLAIM.json",
+          "integrated_sha256": "206581fe0dd92f07921e606ba317cc49949bd8b2fbd381b18e078dee2cd4a510"
         },
         {
           "source_path": "research/r439-frame272-seed06/HANDOFF.json",
           "source_sha256": "7bb88ff0fd7988108dde27a3ceb2b3615f79d8c80d029ab281d63629e6a0e9a7",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/HANDOFF.json",
+          "integrated_sha256": "7bb88ff0fd7988108dde27a3ceb2b3615f79d8c80d029ab281d63629e6a0e9a7"
         },
         {
           "source_path": "research/r439-frame272-seed06/INDEPENDENT-GUARD.json",
           "source_sha256": "025fdd7b66f77ecff555cfa0ca2ab8967e6260ab374def841bdd16033ca6f11c",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/INDEPENDENT-GUARD.json",
+          "integrated_sha256": "025fdd7b66f77ecff555cfa0ca2ab8967e6260ab374def841bdd16033ca6f11c"
         },
         {
           "source_path": "research/r439-frame272-seed06/INDEPENDENT-MINIMUM.json",
           "source_sha256": "d44785323b43e0e82942fcc5544c39b83aab37784370314a5125286a5f3ea14e",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/INDEPENDENT-MINIMUM.json",
+          "integrated_sha256": "d44785323b43e0e82942fcc5544c39b83aab37784370314a5125286a5f3ea14e"
         },
         {
           "source_path": "research/r439-frame272-seed06/LICENSE",
           "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/LICENSE",
+          "integrated_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
         },
         {
           "source_path": "research/r439-frame272-seed06/NATIVE-ENVIRONMENT.json",
           "source_sha256": "f354563efba085df37ee7ebf90c4ba711e9c0a4a123e76fcd73f1d3c4274f8de",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/NATIVE-ENVIRONMENT.json",
+          "integrated_sha256": "f354563efba085df37ee7ebf90c4ba711e9c0a4a123e76fcd73f1d3c4274f8de"
         },
         {
           "source_path": "research/r439-frame272-seed06/NATIVE.json",
           "source_sha256": "675a355d0069912f5d2ebd21754bc48438e912c259a908f1eeeb6e83bba028a1",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/NATIVE.json",
+          "integrated_sha256": "675a355d0069912f5d2ebd21754bc48438e912c259a908f1eeeb6e83bba028a1"
         },
         {
           "source_path": "research/r439-frame272-seed06/NOTICE.md",
           "source_sha256": "ee05188005c1a991a451170fb088376622ed17fdbadaa772ece46834ba2c6a43",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/NOTICE.md",
+          "integrated_sha256": "ee05188005c1a991a451170fb088376622ed17fdbadaa772ece46834ba2c6a43"
         },
         {
           "source_path": "research/r439-frame272-seed06/OVERLAP.json",
           "source_sha256": "271af8b3d0dd1229a6638b0c54b49888b730503883b2c7093c606d1005085ffc",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/OVERLAP.json",
+          "integrated_sha256": "271af8b3d0dd1229a6638b0c54b49888b730503883b2c7093c606d1005085ffc"
         },
         {
           "source_path": "research/r439-frame272-seed06/PROOF.md",
           "source_sha256": "965715a4ec645c9b1324f15b5a0a0a1619745556d24b7e11c710a067b9b2915c",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/PROOF.md",
+          "integrated_sha256": "965715a4ec645c9b1324f15b5a0a0a1619745556d24b7e11c710a067b9b2915c"
         },
         {
           "source_path": "research/r439-frame272-seed06/README.md",
           "source_sha256": "48e0fa1febe305df813e90ca2ad373dfa2def50072aff80374ed24080cf85502",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/README.md",
+          "integrated_sha256": "48e0fa1febe305df813e90ca2ad373dfa2def50072aff80374ed24080cf85502"
         },
         {
           "source_path": "research/r439-frame272-seed06/SOURCES.json",
           "source_sha256": "9f1347cfdc8a7c815d1db8ea2180eb2b870c115c99fbe86709fdca19f08c5c1d",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/SOURCES.json",
+          "integrated_sha256": "9f1347cfdc8a7c815d1db8ea2180eb2b870c115c99fbe86709fdca19f08c5c1d"
         },
         {
           "source_path": "research/r439-frame272-seed06/VALIDATION.md",
           "source_sha256": "3d1df79112e97dd36f3cb6454cdb396ca6c6adb64a5c25fab716a3a9a36c7ffb",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/VALIDATION.md",
+          "integrated_sha256": "3d1df79112e97dd36f3cb6454cdb396ca6c6adb64a5c25fab716a3a9a36c7ffb"
         },
         {
           "source_path": "research/r439-frame272-seed06/WITNESS.json",
           "source_sha256": "97008b84dc93a1b33364da0f168aacf1ec0011197685d4634784b820b03362ba",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/WITNESS.json",
+          "integrated_sha256": "97008b84dc93a1b33364da0f168aacf1ec0011197685d4634784b820b03362ba"
         },
         {
           "source_path": "research/r439-frame272-seed06/native.py",
           "source_sha256": "d5ce4c3bbfccf4bb92939b289a0e5715970b560f65c899a1ad22dae5ddc97b07",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/native.py",
+          "integrated_sha256": "d5ce4c3bbfccf4bb92939b289a0e5715970b560f65c899a1ad22dae5ddc97b07"
         },
         {
           "source_path": "research/r439-frame272-seed06/optimality.py",
           "source_sha256": "4c094845642d5d8b131dd5f4e562eb7adf1db637faa46291883df224d98f2181",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/optimality.py",
+          "integrated_sha256": "4c094845642d5d8b131dd5f4e562eb7adf1db637faa46291883df224d98f2181"
         },
         {
           "source_path": "research/r439-frame272-seed06/search.py",
           "source_sha256": "481a40711685ff283fcdafdfd15395aac19b95b92ff80cf24950d1bfb46706cc",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/search.py",
+          "integrated_sha256": "481a40711685ff283fcdafdfd15395aac19b95b92ff80cf24950d1bfb46706cc"
         },
         {
           "source_path": "research/r439-frame272-seed06/test_package.py",
           "source_sha256": "08eaddddf05190cc7e4710644fcfa981ce69bb05b4921a20eeb110753b9e8870",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/test_package.py",
+          "integrated_sha256": "08eaddddf05190cc7e4710644fcfa981ce69bb05b4921a20eeb110753b9e8870"
         },
         {
           "source_path": "research/r439-frame272-seed06/verify.py",
           "source_sha256": "8b32ac86e032538b0a29c34556e9873f7fe590640254b6d9c6351b368112ff75",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-frame272-seed06/verify.py",
+          "integrated_sha256": "8b32ac86e032538b0a29c34556e9873f7fe590640254b6d9c6351b368112ff75"
         }
       ]
     },
@@ -24488,68 +24553,79 @@
         {
           "source_path": "research/r439-four-block-composition/CERTIFICATE.json",
           "source_sha256": "7389273884452ed64266d8a246c5fc6daae50032f8b5c4c6ae0b91bfab47100e",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-four-block-composition/CERTIFICATE.json",
+          "integrated_sha256": "7389273884452ed64266d8a246c5fc6daae50032f8b5c4c6ae0b91bfab47100e"
         },
         {
           "source_path": "research/r439-four-block-composition/CLAIM.md",
           "source_sha256": "8a4bd321322fd5e080d3cfcfb228b4e4382d4943d7968c842069dbc06a418024",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-four-block-composition/CLAIM.md",
+          "integrated_sha256": "8a4bd321322fd5e080d3cfcfb228b4e4382d4943d7968c842069dbc06a418024"
         },
         {
           "source_path": "research/r439-four-block-composition/NATIVE-ENVIRONMENT.json",
           "source_sha256": "3dc82875384510b622a13bc9bacaacc7b050243676acb21be2f436899e468340",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-four-block-composition/NATIVE-ENVIRONMENT.json",
+          "integrated_sha256": "3dc82875384510b622a13bc9bacaacc7b050243676acb21be2f436899e468340"
         },
         {
           "source_path": "research/r439-four-block-composition/NATIVE.json",
           "source_sha256": "5ea7079562594498bc02f6340166c23070393f363f0fda66a8c904794b6a58c8",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-four-block-composition/NATIVE.json",
+          "integrated_sha256": "5ea7079562594498bc02f6340166c23070393f363f0fda66a8c904794b6a58c8"
         },
         {
           "source_path": "research/r439-four-block-composition/README.md",
           "source_sha256": "2d0b7afeb4f11673fed7beef2c5e6f6fd3cf7fe3fc301146b4bebcedd75f4db6",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-four-block-composition/README.md",
+          "integrated_sha256": "2d0b7afeb4f11673fed7beef2c5e6f6fd3cf7fe3fc301146b4bebcedd75f4db6"
         },
         {
           "source_path": "research/r439-four-block-composition/SOURCES.json",
           "source_sha256": "b45157fdaf773f9a81f7e13f8e9ce4242d09e7617ebd1ace82461d3f7cc5df2a",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-four-block-composition/SOURCES.json",
+          "integrated_sha256": "b45157fdaf773f9a81f7e13f8e9ce4242d09e7617ebd1ace82461d3f7cc5df2a"
         },
         {
           "source_path": "research/r439-four-block-composition/VALIDATION.md",
           "source_sha256": "72318a7b4c983702a32a8ee57e94f598b721792eface3513456967d705b430c9",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-four-block-composition/VALIDATION.md",
+          "integrated_sha256": "72318a7b4c983702a32a8ee57e94f598b721792eface3513456967d705b430c9"
         },
         {
           "source_path": "research/r439-four-block-composition/check_blocks.py",
           "source_sha256": "d429f38157b83a860328fb49c667c8fc45820e9003f783c72a06547c5bc22764",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-four-block-composition/check_blocks.py",
+          "integrated_sha256": "d429f38157b83a860328fb49c667c8fc45820e9003f783c72a06547c5bc22764"
         },
         {
           "source_path": "research/r439-four-block-composition/native.py",
           "source_sha256": "bc8d7d09c4e47e7bdd6b758bd0593614e78448b0a849cd83ef150baee44daf04",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-four-block-composition/native.py",
+          "integrated_sha256": "bc8d7d09c4e47e7bdd6b758bd0593614e78448b0a849cd83ef150baee44daf04"
         },
         {
           "source_path": "research/r439-four-block-composition/test_package.py",
           "source_sha256": "2de74beef641158c5f7001825181e97ed61d39a84eddbd213d4acb8351148125",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-four-block-composition/test_package.py",
+          "integrated_sha256": "2de74beef641158c5f7001825181e97ed61d39a84eddbd213d4acb8351148125"
         },
         {
           "source_path": "research/r439-four-block-composition/verify.py",
           "source_sha256": "afd11dd28d2d7d9346994eafebe34004b31b0251e399b99d0bb89fa5abe567b2",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-four-block-composition/verify.py",
+          "integrated_sha256": "afd11dd28d2d7d9346994eafebe34004b31b0251e399b99d0bb89fa5abe567b2"
         }
       ]
     },
@@ -24560,92 +24636,107 @@
         {
           "source_path": "research/r439-global-prefix-admission/CERTIFICATE.json",
           "source_sha256": "d567b5d71e9c75425a1ede2401b1e8bef86997d0d21e923af6d88188ffda12a7",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-global-prefix-admission/CERTIFICATE.json",
+          "integrated_sha256": "d567b5d71e9c75425a1ede2401b1e8bef86997d0d21e923af6d88188ffda12a7"
         },
         {
           "source_path": "research/r439-global-prefix-admission/CLAIM.json",
           "source_sha256": "ea6f9245ec007bb2f8ca88f3fdde11ae5001ffb297a44503427118582265e626",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-global-prefix-admission/CLAIM.json",
+          "integrated_sha256": "ea6f9245ec007bb2f8ca88f3fdde11ae5001ffb297a44503427118582265e626"
         },
         {
           "source_path": "research/r439-global-prefix-admission/EXPECTED.json",
           "source_sha256": "af51d2ca596d09e5d77326b33cb213eb4b97c45a8888c5bc8e819d4e24a2b0ab",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-global-prefix-admission/EXPECTED.json",
+          "integrated_sha256": "af51d2ca596d09e5d77326b33cb213eb4b97c45a8888c5bc8e819d4e24a2b0ab"
         },
         {
           "source_path": "research/r439-global-prefix-admission/LICENSE",
           "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-global-prefix-admission/LICENSE",
+          "integrated_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
         },
         {
           "source_path": "research/r439-global-prefix-admission/NOTICE.md",
           "source_sha256": "f562b006f82e0bd0a92fca97da82f0ee2127ef0646f85d3dc6a2527c1c683ad2",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-global-prefix-admission/NOTICE.md",
+          "integrated_sha256": "f562b006f82e0bd0a92fca97da82f0ee2127ef0646f85d3dc6a2527c1c683ad2"
         },
         {
           "source_path": "research/r439-global-prefix-admission/PROOF.md",
           "source_sha256": "5627c9bbd927fe2d5b93f978ac31b902fb913fc1580f9d4fbcaf4fb2795ad779",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-global-prefix-admission/PROOF.md",
+          "integrated_sha256": "5627c9bbd927fe2d5b93f978ac31b902fb913fc1580f9d4fbcaf4fb2795ad779"
         },
         {
           "source_path": "research/r439-global-prefix-admission/README.md",
           "source_sha256": "9a41a2ec720317c6c293b731f6afcd85b5770b3c7a07e3153c267fc03386ba11",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-global-prefix-admission/README.md",
+          "integrated_sha256": "9a41a2ec720317c6c293b731f6afcd85b5770b3c7a07e3153c267fc03386ba11"
         },
         {
           "source_path": "research/r439-global-prefix-admission/SOURCES.json",
           "source_sha256": "f49244427abceafcef9bf2efd5f80f77e1d559536da3100eb8a1bba4a5aaa9a7",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-global-prefix-admission/SOURCES.json",
+          "integrated_sha256": "f49244427abceafcef9bf2efd5f80f77e1d559536da3100eb8a1bba4a5aaa9a7"
         },
         {
           "source_path": "research/r439-global-prefix-admission/VALIDATION.md",
           "source_sha256": "a6f5efae11e43d3267f58f74788b8a8ab61ef33a8a35c43d33a918fa0b28dd4e",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-global-prefix-admission/VALIDATION.md",
+          "integrated_sha256": "a6f5efae11e43d3267f58f74788b8a8ab61ef33a8a35c43d33a918fa0b28dd4e"
         },
         {
           "source_path": "research/r439-global-prefix-admission/build.py",
           "source_sha256": "c0a6907eb7870f12689c3032e88eef699c06b742098115561647f2e8ab95ba7c",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-global-prefix-admission/build.py",
+          "integrated_sha256": "c0a6907eb7870f12689c3032e88eef699c06b742098115561647f2e8ab95ba7c"
         },
         {
           "source_path": "research/r439-global-prefix-admission/candidate.json.gz",
           "source_sha256": "fffc0484a3572c76bf3bb5284d4a40eeb723c4b3acf3da5e2d9e113ac1747ec6",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-global-prefix-admission/candidate.json.gz",
+          "integrated_sha256": "fffc0484a3572c76bf3bb5284d4a40eeb723c4b3acf3da5e2d9e113ac1747ec6"
         },
         {
           "source_path": "research/r439-global-prefix-admission/common.py",
           "source_sha256": "c59e33f37720997d79082454887ec034d336430fa91de7a8ba384b282e02216c",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-global-prefix-admission/common.py",
+          "integrated_sha256": "c59e33f37720997d79082454887ec034d336430fa91de7a8ba384b282e02216c"
         },
         {
           "source_path": "research/r439-global-prefix-admission/native.py",
           "source_sha256": "5a988530d8a35baf3a0f5b7ecc93c9bfff1cdd69db269f0977ed2d620a2054c8",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-global-prefix-admission/native.py",
+          "integrated_sha256": "5a988530d8a35baf3a0f5b7ecc93c9bfff1cdd69db269f0977ed2d620a2054c8"
         },
         {
           "source_path": "research/r439-global-prefix-admission/test_package.py",
           "source_sha256": "8181b46d2dc2271dc1bc23435c4fc7930088706ef215f8ee76a52b99e5c8002d",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-global-prefix-admission/test_package.py",
+          "integrated_sha256": "8181b46d2dc2271dc1bc23435c4fc7930088706ef215f8ee76a52b99e5c8002d"
         },
         {
           "source_path": "research/r439-global-prefix-admission/verify.py",
           "source_sha256": "e2c52d7331374e295c3ed9eda143913c3eb63ddd2a981b1e3670e24c16afa0e8",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-global-prefix-admission/verify.py",
+          "integrated_sha256": "e2c52d7331374e295c3ed9eda143913c3eb63ddd2a981b1e3670e24c16afa0e8"
         }
       ]
     },
@@ -24656,80 +24747,93 @@
         {
           "source_path": "research/r439-target-retune-seed14/CERTIFICATE.json",
           "source_sha256": "8504fbb247e26a59a2262290b83d8f1f99a5749ae78ec9d6f6b54dd04d8e7e04",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-target-retune-seed14/CERTIFICATE.json",
+          "integrated_sha256": "8504fbb247e26a59a2262290b83d8f1f99a5749ae78ec9d6f6b54dd04d8e7e04"
         },
         {
           "source_path": "research/r439-target-retune-seed14/CLAIM.md",
           "source_sha256": "fc343bb7309aca3947e6f2cc92f1953cd7e19078b6a54b327aa5eef6df87e1a9",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-target-retune-seed14/CLAIM.md",
+          "integrated_sha256": "fc343bb7309aca3947e6f2cc92f1953cd7e19078b6a54b327aa5eef6df87e1a9"
         },
         {
           "source_path": "research/r439-target-retune-seed14/EXPECTED.json",
           "source_sha256": "c53260e4c4133f8710f464a8c675cd7b12da031fb5a3c0f59680ace6bb4a29ce",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-target-retune-seed14/EXPECTED.json",
+          "integrated_sha256": "c53260e4c4133f8710f464a8c675cd7b12da031fb5a3c0f59680ace6bb4a29ce"
         },
         {
           "source_path": "research/r439-target-retune-seed14/NOTICE.md",
           "source_sha256": "e0ff61e18eedf6bf95a279dec9560564c8d1068a94cb5690e9c8b36dbb052291",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-target-retune-seed14/NOTICE.md",
+          "integrated_sha256": "e0ff61e18eedf6bf95a279dec9560564c8d1068a94cb5690e9c8b36dbb052291"
         },
         {
           "source_path": "research/r439-target-retune-seed14/OVERLAP.json",
           "source_sha256": "fabe2e15c57e38ecaed872b53080bbbc9c2de02c20ca6212103dc171e68a80f6",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-target-retune-seed14/OVERLAP.json",
+          "integrated_sha256": "fabe2e15c57e38ecaed872b53080bbbc9c2de02c20ca6212103dc171e68a80f6"
         },
         {
           "source_path": "research/r439-target-retune-seed14/PR-BODY.md",
           "source_sha256": "355bf12d5d5e44c3b5b9e71e99b1a70ba3994651bf33aa286ed5dc03850006d7",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-target-retune-seed14/PR-BODY.md",
+          "integrated_sha256": "355bf12d5d5e44c3b5b9e71e99b1a70ba3994651bf33aa286ed5dc03850006d7"
         },
         {
           "source_path": "research/r439-target-retune-seed14/PROOF.md",
           "source_sha256": "56cccbe38c47f5f3cd522bf8bb225a72b478f36f56e8fe1e73be35a5dac5d944",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-target-retune-seed14/PROOF.md",
+          "integrated_sha256": "56cccbe38c47f5f3cd522bf8bb225a72b478f36f56e8fe1e73be35a5dac5d944"
         },
         {
           "source_path": "research/r439-target-retune-seed14/README.md",
           "source_sha256": "2005fba972978fa5af4bd5cd2bd749ddc7a31b693603abfa63c1e3a2378cc59e",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-target-retune-seed14/README.md",
+          "integrated_sha256": "2005fba972978fa5af4bd5cd2bd749ddc7a31b693603abfa63c1e3a2378cc59e"
         },
         {
           "source_path": "research/r439-target-retune-seed14/SOURCES.json",
           "source_sha256": "69bf93907791ac7a276458baee0765e638cd6dbea3f484cdf6cd777162af0976",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-target-retune-seed14/SOURCES.json",
+          "integrated_sha256": "69bf93907791ac7a276458baee0765e638cd6dbea3f484cdf6cd777162af0976"
         },
         {
           "source_path": "research/r439-target-retune-seed14/VALIDATION.md",
           "source_sha256": "004a86aa7e5af03edbb8c47208e3fb3b1c390e411ffbc24e835ef029afbf414c",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-target-retune-seed14/VALIDATION.md",
+          "integrated_sha256": "004a86aa7e5af03edbb8c47208e3fb3b1c390e411ffbc24e835ef029afbf414c"
         },
         {
           "source_path": "research/r439-target-retune-seed14/candidate.json.gz",
           "source_sha256": "908f285b69b70cc998718575706b48091e856d96f23e3267060dca7a7546ac50",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-target-retune-seed14/candidate.json.gz",
+          "integrated_sha256": "908f285b69b70cc998718575706b48091e856d96f23e3267060dca7a7546ac50"
         },
         {
           "source_path": "research/r439-target-retune-seed14/search.py",
           "source_sha256": "e6b083a78ece807326419307b84b2afb55810828e9b87c4682da4fe7ef3c671f",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-target-retune-seed14/search.py",
+          "integrated_sha256": "e6b083a78ece807326419307b84b2afb55810828e9b87c4682da4fe7ef3c671f"
         },
         {
           "source_path": "research/r439-target-retune-seed14/verify.py",
           "source_sha256": "5d35975db90f6c62f0a49c78b44bc9a207929eece971b5a8697d6e9e7a1ee8d8",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-target-retune-seed14/verify.py",
+          "integrated_sha256": "5d35975db90f6c62f0a49c78b44bc9a207929eece971b5a8697d6e9e7a1ee8d8"
         }
       ]
     },
@@ -24740,74 +24844,86 @@
         {
           "source_path": "research/r439-post-helper-shear-seed03/CERTIFICATE.json",
           "source_sha256": "44b7c2beb1ff799b2e6b3d5eb11f37dc33a7dd3dc4e72a7351d9bce485b908bb",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-post-helper-shear-seed03/CERTIFICATE.json",
+          "integrated_sha256": "44b7c2beb1ff799b2e6b3d5eb11f37dc33a7dd3dc4e72a7351d9bce485b908bb"
         },
         {
           "source_path": "research/r439-post-helper-shear-seed03/CLAIM.md",
           "source_sha256": "4df2fb78bc06d699dae61b7f4005ba4b30f345423c0462861315856a35bc5139",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-post-helper-shear-seed03/CLAIM.md",
+          "integrated_sha256": "4df2fb78bc06d699dae61b7f4005ba4b30f345423c0462861315856a35bc5139"
         },
         {
           "source_path": "research/r439-post-helper-shear-seed03/LICENSE",
           "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-post-helper-shear-seed03/LICENSE",
+          "integrated_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
         },
         {
           "source_path": "research/r439-post-helper-shear-seed03/NOTICE.md",
           "source_sha256": "62bd8d331afb22b1b205ffeba126716bf310221a0d71ec9ada98fc3e67b08563",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-post-helper-shear-seed03/NOTICE.md",
+          "integrated_sha256": "62bd8d331afb22b1b205ffeba126716bf310221a0d71ec9ada98fc3e67b08563"
         },
         {
           "source_path": "research/r439-post-helper-shear-seed03/PR_BODY.md",
           "source_sha256": "ebb6933978e871c4f93275bc77c38ac1ca0b7a64832815582a31e1164f92a7f7",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-post-helper-shear-seed03/PR_BODY.md",
+          "integrated_sha256": "ebb6933978e871c4f93275bc77c38ac1ca0b7a64832815582a31e1164f92a7f7"
         },
         {
           "source_path": "research/r439-post-helper-shear-seed03/README.md",
           "source_sha256": "361a177a7e8eab4c5310aa5258824e1c1097e2b0f6f555a30707d15be2635b36",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-post-helper-shear-seed03/README.md",
+          "integrated_sha256": "361a177a7e8eab4c5310aa5258824e1c1097e2b0f6f555a30707d15be2635b36"
         },
         {
           "source_path": "research/r439-post-helper-shear-seed03/SOURCES.json",
           "source_sha256": "d2a46e90f179b4de5487d3acf56afe4cd14599964250770b83ffbe43fdb30004",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-post-helper-shear-seed03/SOURCES.json",
+          "integrated_sha256": "d2a46e90f179b4de5487d3acf56afe4cd14599964250770b83ffbe43fdb30004"
         },
         {
           "source_path": "research/r439-post-helper-shear-seed03/VALIDATION.json",
           "source_sha256": "8aecaeaac1c7344f8e2f6019466076249619deab7c39d7b37d407ccb33375fef",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-post-helper-shear-seed03/VALIDATION.json",
+          "integrated_sha256": "8aecaeaac1c7344f8e2f6019466076249619deab7c39d7b37d407ccb33375fef"
         },
         {
           "source_path": "research/r439-post-helper-shear-seed03/candidate.json.gz",
           "source_sha256": "e6a7a50662ba2c32c7fb42d7051d1300bef52f8e442f593c0081999bc0c27934",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-post-helper-shear-seed03/candidate.json.gz",
+          "integrated_sha256": "e6a7a50662ba2c32c7fb42d7051d1300bef52f8e442f593c0081999bc0c27934"
         },
         {
           "source_path": "research/r439-post-helper-shear-seed03/independent.py",
           "source_sha256": "509f44d07090595b3d714dd185b53cfd86203497560cfe636b50e0fbf2cb8089",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-post-helper-shear-seed03/independent.py",
+          "integrated_sha256": "509f44d07090595b3d714dd185b53cfd86203497560cfe636b50e0fbf2cb8089"
         },
         {
           "source_path": "research/r439-post-helper-shear-seed03/search.py",
           "source_sha256": "c1f1944dc92028d3e9d5ed70086413426ab6f91fb958fd21662470aaf10b74a0",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-post-helper-shear-seed03/search.py",
+          "integrated_sha256": "c1f1944dc92028d3e9d5ed70086413426ab6f91fb958fd21662470aaf10b74a0"
         },
         {
           "source_path": "research/r439-post-helper-shear-seed03/verify.py",
           "source_sha256": "7da0d21f9ef49be1662982b3fbbaac478fd85f5b0c4f27079cf67bbc84fa9db6",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/r439-post-helper-shear-seed03/verify.py",
+          "integrated_sha256": "7da0d21f9ef49be1662982b3fbbaac478fd85f5b0c4f27079cf67bbc84fa9db6"
         }
       ]
     },
@@ -24818,98 +24934,114 @@
         {
           "source_path": "research/t37-slice-bitmaps/CLAIM.json",
           "source_sha256": "83cae8afad52b7734bf16cfbe6c2adbf338483348e2f63ae6b793f05a2073cee",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/t37-slice-bitmaps/CLAIM.json",
+          "integrated_sha256": "83cae8afad52b7734bf16cfbe6c2adbf338483348e2f63ae6b793f05a2073cee"
         },
         {
           "source_path": "research/t37-slice-bitmaps/EXPECTED.json",
           "source_sha256": "0627fb656754ce70ea7a23428b9049a2dc98ec52b946b0cff41f8b0442c868f3",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/t37-slice-bitmaps/EXPECTED.json",
+          "integrated_sha256": "0627fb656754ce70ea7a23428b9049a2dc98ec52b946b0cff41f8b0442c868f3"
         },
         {
           "source_path": "research/t37-slice-bitmaps/LICENSE",
           "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/t37-slice-bitmaps/LICENSE",
+          "integrated_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
         },
         {
           "source_path": "research/t37-slice-bitmaps/NOTICE.md",
           "source_sha256": "83abe3470da495ec392e42c10b252cb3b95381694cbc733f8a0d1c3a1409637d",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/t37-slice-bitmaps/NOTICE.md",
+          "integrated_sha256": "83abe3470da495ec392e42c10b252cb3b95381694cbc733f8a0d1c3a1409637d"
         },
         {
           "source_path": "research/t37-slice-bitmaps/PROOF.md",
           "source_sha256": "6760c7821ad0302a347d1f41e8b68b98fefcb2b0e018d5e69726298af103322c",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/t37-slice-bitmaps/PROOF.md",
+          "integrated_sha256": "6760c7821ad0302a347d1f41e8b68b98fefcb2b0e018d5e69726298af103322c"
         },
         {
           "source_path": "research/t37-slice-bitmaps/README.md",
           "source_sha256": "8d926c962c870522e10ad094ee23c941c4d5767f9c0d8dd3cb866130684c6335",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/t37-slice-bitmaps/README.md",
+          "integrated_sha256": "8d926c962c870522e10ad094ee23c941c4d5767f9c0d8dd3cb866130684c6335"
         },
         {
           "source_path": "research/t37-slice-bitmaps/SOURCES.json",
           "source_sha256": "71d3914815d7314157408501fc61cf6aa55338e619b54efed13fcb6b4bfde1ac",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/t37-slice-bitmaps/SOURCES.json",
+          "integrated_sha256": "71d3914815d7314157408501fc61cf6aa55338e619b54efed13fcb6b4bfde1ac"
         },
         {
           "source_path": "research/t37-slice-bitmaps/VALIDATION.md",
           "source_sha256": "7ee6b844ad252bb59873e9b64211579d0c422104692e6b866afe920396ad5b80",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/t37-slice-bitmaps/VALIDATION.md",
+          "integrated_sha256": "7ee6b844ad252bb59873e9b64211579d0c422104692e6b866afe920396ad5b80"
         },
         {
           "source_path": "research/t37-slice-bitmaps/adapter.py",
           "source_sha256": "0fdc4df0f75fda7a601dbc09a38fafb04e126fcfab28544443c53abd0be8b479",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/t37-slice-bitmaps/adapter.py",
+          "integrated_sha256": "0fdc4df0f75fda7a601dbc09a38fafb04e126fcfab28544443c53abd0be8b479"
         },
         {
           "source_path": "research/t37-slice-bitmaps/benchmark.py",
           "source_sha256": "dd80ffeae16b6615586c13795bf058aab6f8bff6ddfd8a08403c8744f7fac270",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/t37-slice-bitmaps/benchmark.py",
+          "integrated_sha256": "dd80ffeae16b6615586c13795bf058aab6f8bff6ddfd8a08403c8744f7fac270"
         },
         {
           "source_path": "research/t37-slice-bitmaps/common.py",
           "source_sha256": "3e8ea00ad2ecf034f5728b21f3717987ec7314c674bb4d27cdc8922fa35a09d7",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/t37-slice-bitmaps/common.py",
+          "integrated_sha256": "3e8ea00ad2ecf034f5728b21f3717987ec7314c674bb4d27cdc8922fa35a09d7"
         },
         {
           "source_path": "research/t37-slice-bitmaps/evidence/benchmark-python312.json",
           "source_sha256": "97b55e5452fd46d9574f2e8a86f77495dccd43df053fea44bfab6c1c91ad8271",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/t37-slice-bitmaps/evidence/benchmark-python312.json",
+          "integrated_sha256": "97b55e5452fd46d9574f2e8a86f77495dccd43df053fea44bfab6c1c91ad8271"
         },
         {
           "source_path": "research/t37-slice-bitmaps/evidence/benchmark-python314.json",
           "source_sha256": "c99284b1acecf3ebc05518378feb7af96f91af965a11bacf9afcfe6a668674fe",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/t37-slice-bitmaps/evidence/benchmark-python314.json",
+          "integrated_sha256": "c99284b1acecf3ebc05518378feb7af96f91af965a11bacf9afcfe6a668674fe"
         },
         {
           "source_path": "research/t37-slice-bitmaps/kernel.py",
           "source_sha256": "a9a5b1b039ba0fdff78d251413a837110e563b524eec61f9369dba5a367c246e",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/t37-slice-bitmaps/kernel.py",
+          "integrated_sha256": "a9a5b1b039ba0fdff78d251413a837110e563b524eec61f9369dba5a367c246e"
         },
         {
           "source_path": "research/t37-slice-bitmaps/test_package.py",
           "source_sha256": "55cbc7931be4a7d1348959ba83401553a7e0b97cc056c1617032ee47419234fe",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/t37-slice-bitmaps/test_package.py",
+          "integrated_sha256": "55cbc7931be4a7d1348959ba83401553a7e0b97cc056c1617032ee47419234fe"
         },
         {
           "source_path": "research/t37-slice-bitmaps/verify.py",
           "source_sha256": "dc68a077d5914d60e2934140bcfec9f3f57ae891966bdbdb9e694faa0f45fa61",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/t37-slice-bitmaps/verify.py",
+          "integrated_sha256": "dc68a077d5914d60e2934140bcfec9f3f57ae891966bdbdb9e694faa0f45fa61"
         }
       ]
     },
@@ -25076,68 +25208,79 @@
         {
           "source_path": "research/joint-frame-modular-screen/CLAIM.json",
           "source_sha256": "f037ab620df6eb29d7346d2f7764f489f930c5c95333daa1fb8d148f9b988a47",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/joint-frame-modular-screen/CLAIM.json",
+          "integrated_sha256": "f037ab620df6eb29d7346d2f7764f489f930c5c95333daa1fb8d148f9b988a47"
         },
         {
           "source_path": "research/joint-frame-modular-screen/EXPECTED.json",
           "source_sha256": "b7686b518e4e677ca5e6f92066a41255bd696abae6c7b0c4f09d11eb6e8bdffd",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/joint-frame-modular-screen/EXPECTED.json",
+          "integrated_sha256": "b7686b518e4e677ca5e6f92066a41255bd696abae6c7b0c4f09d11eb6e8bdffd"
         },
         {
           "source_path": "research/joint-frame-modular-screen/NOTICE.md",
           "source_sha256": "111fd758387d447b247ba6346cf764d452b3f919d1a2bb201c02ec7a33145503",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/joint-frame-modular-screen/NOTICE.md",
+          "integrated_sha256": "111fd758387d447b247ba6346cf764d452b3f919d1a2bb201c02ec7a33145503"
         },
         {
           "source_path": "research/joint-frame-modular-screen/PROOF.md",
           "source_sha256": "63057b3a5451f84cf55de49da9775f3281cd1fefb92e9b52a7aa4c612201de7f",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/joint-frame-modular-screen/PROOF.md",
+          "integrated_sha256": "63057b3a5451f84cf55de49da9775f3281cd1fefb92e9b52a7aa4c612201de7f"
         },
         {
           "source_path": "research/joint-frame-modular-screen/README.md",
           "source_sha256": "691fea25b7b5db7ed7068fdf2ae2e3ee8eeaa033efaeae94778c748019f7308f",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/joint-frame-modular-screen/README.md",
+          "integrated_sha256": "691fea25b7b5db7ed7068fdf2ae2e3ee8eeaa033efaeae94778c748019f7308f"
         },
         {
           "source_path": "research/joint-frame-modular-screen/RESULT.json",
           "source_sha256": "f40707248604da782d42682fd8538274050c3976eb413d5bd2460e76bb60af2c",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/joint-frame-modular-screen/RESULT.json",
+          "integrated_sha256": "f40707248604da782d42682fd8538274050c3976eb413d5bd2460e76bb60af2c"
         },
         {
           "source_path": "research/joint-frame-modular-screen/SOURCE.json",
           "source_sha256": "fd55fd7a519a61e42ddf03fe72b19ce831b059abeadfb4169570c37a1c1cb8b2",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/joint-frame-modular-screen/SOURCE.json",
+          "integrated_sha256": "fd55fd7a519a61e42ddf03fe72b19ce831b059abeadfb4169570c37a1c1cb8b2"
         },
         {
           "source_path": "research/joint-frame-modular-screen/kernel.py",
           "source_sha256": "2766579cfdadfbea798cd2acf30495aa0b41bc50b49dc0cbb1a36e3c83263cad",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/joint-frame-modular-screen/kernel.py",
+          "integrated_sha256": "2766579cfdadfbea798cd2acf30495aa0b41bc50b49dc0cbb1a36e3c83263cad"
         },
         {
           "source_path": "research/joint-frame-modular-screen/replay.py",
           "source_sha256": "58105d2822e962ce5823df6fdc827e92d884909807cd28c701a3b8ddffef3541",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/joint-frame-modular-screen/replay.py",
+          "integrated_sha256": "58105d2822e962ce5823df6fdc827e92d884909807cd28c701a3b8ddffef3541"
         },
         {
           "source_path": "research/joint-frame-modular-screen/test_kernel.py",
           "source_sha256": "13119a1e8e1dc30d444bfdb8d7c6ddb15c828945dd7cb25caef22503028e5a80",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/joint-frame-modular-screen/test_kernel.py",
+          "integrated_sha256": "13119a1e8e1dc30d444bfdb8d7c6ddb15c828945dd7cb25caef22503028e5a80"
         },
         {
           "source_path": "research/joint-frame-modular-screen/verify.py",
           "source_sha256": "707f8e1f99a096c983e811eea74cdfd8486d454d879338e52e121db959c73988",
-          "action": "pending",
-          "reason": "Frozen proposal; review or required execution is still in progress."
+          "action": "retained",
+          "integrated_path": "research/joint-frame-modular-screen/verify.py",
+          "integrated_sha256": "707f8e1f99a096c983e811eea74cdfd8486d454d879338e52e121db959c73988"
         }
       ]
     },
