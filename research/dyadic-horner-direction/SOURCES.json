@@ -61,7 +61,10 @@
     {
       "path": "certificates/selected-result.json",
       "encoding": "file",
-      "sha256": "8f2bfbf11609194654d4da145866223d4c546c5418727cae056bfb9968cabcac"
+      "sha256": "8f2bfbf11609194654d4da145866223d4c546c5418727cae056bfb9968cabcac",
+      "archived_paths": [
+        "certificates/checkpoints/frontier741.json"
+      ]
     },
     {
       "path": "research/community-frontier741-audit/SELECTED-SOURCE.json",

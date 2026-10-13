@@ -8,7 +8,7 @@ It preserves clearing after every addition, including arbitrary incoming work.
 
 The new saving, beyond copy/unit and forward signed-digit lowering, is **928
 real primitives per CK orientation, 810 per JP8 orientation, and 312 per SW4
-orientation**. SW4 is the actual #741 selected supplier at this base; CK and
+orientation**. SW4 was the #741 selected supplier at the starting base; CK and
 JP8 belong to the preserved #626 checkpoint. These are circuit counts, not
 runtime measurements. Earlier improvements receive separate columns:
 
@@ -142,6 +142,14 @@ Every consumed gzip member is compared after decompression. The original
 archive container hash is retained as provenance; harmless repackaging is
 accepted. This does not cold-rebuild the supplier construction chain.
 
+During publication, main advanced to
+`f567884aeb8851b6e794af1184119a3bfbe1e631` and selected #799 at
+κ = 0.001661634653669567. The six programs here retain their #741/#626 scope;
+no transport to #799 is claimed. The unchanged #741 record is now archived at
+`certificates/checkpoints/frontier741.json`. The verifier accepts either
+official location only with the same exact pinned bytes and manifest binding.
+Its complete receipt also passes using the actual inputs from refreshed main.
+
 Sagar Thakrar's **#696** copy/unit lowering at
 `5a3f983715027c4fd83f50bc9001d4b18463bed1` is vendored verbatim with its notice.
 Its Git blob is `a2c2889e5be41a0fc30d4dfa5dfcebb03d6d47f8`. Credit his
@@ -166,7 +174,7 @@ Chafik Boukhalfa, Rohan Arun, eumemic and the retained contributors to #622,
 Prepared for **Gareth Davidson (@bitplane) with substantial OpenAI Codex
 assistance**. No independent human review is claimed.
 
-The current selected κ remains **0.001661202643272239**. Production lowering,
+This contribution does not change the selected κ. Production lowering,
 global invoices/admission and any frontier promotion are separate work.
 Native geometry, ordered phase/wrapper identities and global ownership are
 inherited from the pinned construction; their expensive checks are not rerun

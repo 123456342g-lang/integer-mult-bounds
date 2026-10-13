@@ -54,15 +54,22 @@ def load_lower():
 
 def source_check(root=ROOT):
     pins = read(HERE / "SOURCES.json")
+    resolved = {}
     for item in pins["files"]:
-        path = root / item["path"]
-        data = payload(path) if item["encoding"] == "gzip-payload" else path.read_bytes()
-        need(hashlib.sha256(data).hexdigest() == item["sha256"], "source hash: " + item["path"])
+        for name in [item["path"]] + item.get("archived_paths", []):
+            path = root / name
+            if not path.is_file():
+                continue
+            data = payload(path) if item["encoding"] == "gzip-payload" else path.read_bytes()
+            if hashlib.sha256(data).hexdigest() == item["sha256"]:
+                resolved[item["path"]] = path
+                break
+        need(item["path"] in resolved, "source hash: " + item["path"])
     for record, head, spec in [
         ("certificates/checkpoints/k492626.json", pins["pr626_head"], OLD_SPEC),
         ("certificates/selected-result.json", pins["pr741_head"], NEW_SPEC),
     ]:
-        selected = read(root / record)
+        selected = read(resolved[record])
         need(selected["audited_source_head"] == head, "record head mismatch")
         manifest = read(root / selected["source_manifest"])
         need(manifest["files"][spec] == hashlib.sha256((root / spec).read_bytes()).hexdigest(),

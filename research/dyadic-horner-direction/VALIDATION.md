@@ -51,6 +51,16 @@ The #815 head changed to include a current-word frame search; it is neither
 imported nor used to establish this circuit result. Source and relation pins
 are recorded in CLAIM.json. Main still pointed to the exact base above.
 
+While publishing, upstream advanced to
+`f567884aeb8851b6e794af1184119a3bfbe1e631`, selecting #799. The complete
+verifier was rerun with the actual consumed files from that commit and its
+new selected pointer. It matches the original receipt. The #741 record moved
+to `certificates/checkpoints/frontier741.json` with exactly identical bytes;
+the source check now accepts that official archive path under the original
+digest. A corrupted archive record is rejected. This is a #741/#626 result,
+not a claim to optimize #799. [PR #837](https://github.com/CrocSwap/integer-mult-bounds/pull/837)
+is the single submission for this pass.
+
 Only issue #650 (requesting Discussions) was open outside PRs; no sprint
 coordination issue was available, so the scope/result claim is local.
 

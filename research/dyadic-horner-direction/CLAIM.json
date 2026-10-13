@@ -110,7 +110,7 @@
       "relation": "Transposed cross-macro #811 work. This contribution preserves each individual coefficient boundary; no combined saving claimed."
     }
   },
-  "status": "validated; awaiting PR submission",
+  "status": "submitted",
   "final_overlap_check": {
     "checked_at_utc": "2026-10-13T06:46:00.251632+00:00",
     "open_pr_count": 646,
@@ -127,7 +127,15 @@
     "coefficients": 962,
     "negative_controls": 14,
     "independent_grid_inputs": 13286,
-    "kappa": "unchanged"
+    "kappa": "unchanged",
+    "pr_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/837"
   },
-  "validated_at_utc": "2026-10-13T06:47:36.745728+00:00"
+  "validated_at_utc": "2026-10-13T06:47:36.745728+00:00",
+  "publication_refresh": {
+    "upstream_head": "f567884aeb8851b6e794af1184119a3bfbe1e631",
+    "new_selected_pr": 799,
+    "new_selected_kappa": "1661634653669567/1000000000000000000",
+    "scope": "#741 has become a checkpoint during submission. This six-program result retains its pinned #741/#626 scope; no transport to #799 is claimed.",
+    "record_relocation": "The identical pinned #741 record is accepted at its new official checkpoint path; its hash and manifest binding are still enforced."
+  }
 }
