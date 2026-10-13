@@ -24,7 +24,7 @@
     "kappa": "1661634653669567/1000000000000000000",
     "role": "Orientation at the original base only; subsequently superseded by PR890. No supplier is a dependency of this result."
   },
-  "scope_choice": "PR669 states the exact larger budgets for prescribed triples failing its optimal-triangle criterion are not classified; this package treats only k=2 without the empty star.",
+  "scope_choice": "Historical selection: PR669 at the original pinned head left larger prescribed-triple budgets open. Concurrent PR966 and later PR669 now subsume the theorem; this package is offered as independent verification, especially unrestricted coefficient enumeration at p=6.",
   "coordination": "No pinned issue at selection; local claim and full 714-open-PR metadata retained in session notes. Nearby PRs 732/772 concern global puncture thresholds/ranks; 912 concerns adaptive Hurwitz routing; 920 concerns complex parity frames.",
   "follow_up_context": {
     "main_commit": "007664306fff84fbb1c9a1b4053b69f439764034",
@@ -35,5 +35,20 @@
     "captured_at": "2026-10-13T15:01:44.773181+00:00",
     "open_pr_count": 715,
     "latest_open_pr": 962
+  },
+  "pre_open_context": {
+    "reviewed_at": "2026-10-13T15:19:17.050291+00:00",
+    "queue_captured_at": "2026-10-13T15:12:40.386737+00:00",
+    "open_pr_count": 702,
+    "latest_open_pr": 966,
+    "main_commit": "bbc600db2fc15007b7c914f4f2b2ed55fa909c87",
+    "selected_pr": 942,
+    "audited_source_head": "1960cfa919a0945d0ca4cb14ea96237000037903",
+    "kappa": "1661960547713947/1000000000000000000",
+    "current_pr669_head": "8f4600b41bf1f0f5d07f209e5d3950eb22ef5cad",
+    "concurrent_pr966_head": "7eaf5665ac246310293fda06a3cf245fe72f6012",
+    "role": "Independent finite verification after overlapping classifications appeared. Original mathematical source pins remain unchanged; these newer packages are compared and credited, not imported as executable dependencies.",
+    "last_delta_check_at": "2026-10-13T15:20:42.099804+00:00",
+    "last_delta_latest_pr": 970
   }
 }

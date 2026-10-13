@@ -72,31 +72,47 @@ negative controls, Apache-2.0 notices and substantial AI disclosure were
 checked against the guide. No closure or integration of predecessor work
 is implied by this audit.
 
-The initial pre-submission refresh inspected **721 open PRs through #931**;
-main and PR669's pinned head were unchanged at that time. The follow-up
-refresh, completed after the broad checks at **2026-10-13 15:01 UTC**, inspected
-**715 open PRs through #962**, plus the previously inspected closed PR932/935
-bodies. No matching prescribed-triple classification was found. Nearby PR939
-and PR954 study E8 punctures with different geometry and cost objectives;
-PR958 uses k=5 quadratic geometry and explicitly excludes punctures. The
-physical scalar target forests of PR961 and supplier construction of PR962
-also use different contracts. The dirty-connector query schedules in
-PR934/938/943/944 use different observations and interfaces. PR669 remains
-open at the same pinned head; fresh source responses match both retained files.
-Its selectable hierarchy and minimum-cost
-criterion are credited; the new contribution closes only its remaining
-k=2 prescribed-triple budget question without the empty star. PR732/772
-concern different global thresholds and ranks. No pinned coordination
-issue existed at selection or refresh; the claim was recorded locally.
+The initial refresh inspected 721 open PRs through #931; a later after-check
+snapshot at 2026-10-13 15:01 UTC inspected 715 through #962 and found no matching
+classification. **That overlap conclusion is now superseded.** The user's
+pre-opening refresh at 15:12 UTC found 702 open PRs through #966, following
+seventeen merges. No pinned coordination issue or existing PR from our branch
+was present. New PR963/964/965 concern different circuit or scalar-forest models. A final
+delta read at 15:20 UTC reached PR970: PR967/969/970 concern circuit, scalar
+compiler or provenance work; PR968 concerns complex frame-pair decoders. None
+adds the same coefficient verification. Main and the inspected PR669/966 heads
+remained unchanged.
 
-During this work upstream advanced to
-`007664306fff84fbb1c9a1b4053b69f439764034`, selecting PR890 with conditional
-κ `1661957774647029/10^18` (source
-`4b3bd8cbe8e3e81c44161017c9b72c905a8040a8`). The current status, selected
-record, maintainer review, ledger and contribution index were consulted at
-that revision. The #799 context in SOURCES.json describes the original
-research base; the follow-up snapshot is recorded separately. Neither
-selected supplier is a mathematical or executable dependency of this note.
+Concurrent **PR966 by @woklerx**, opened at 15:07:03 UTC, head
+`7eaf5665ac246310293fda06a3cf245fe72f6012`, states the same nonempty-star triple
+classification for p>=3 and an exact p=2 boundary. **PR669 by Sam Sung** subsequently
+expanded at `8f4600b41bf1f0f5d07f209e5d3950eb22ef5cad` to classify triples in both
+star spaces and give a broader arbitrary-forest formula. Those statements
+subsume our p>=5 theorem. The package is therefore presented as independent
+verification, with no claim of a new classification or priority. Our original
+retained PR669 texts remain byte-identical at its newer head.
+
+The comparison inspected the actual proof, checker sources and retained receipts:
+
+| Package and pinned version | Relevant independent finite coverage |
+| --- | --- |
+| PR966 at `7eaf5665` | RREF cut-subspace enumeration through p=5; its primary four-block census also covers p=6. |
+| PR669 at `8f4600b` | Retained-graph checks at p=2,3 and independent coefficient optimization at p=4, for triples and quadruples. |
+| This package | Unrestricted eight-label coefficient enumeration at p=5,6; p=6 alone checks 301,989,888 assignments, all 19 target orbits (18 feasible), 34,220 triples and 433 separate row-space restoration controls. |
+
+The additional p=6 coefficient coverage does not assume four blocks or import
+either concurrent implementation. Its proof and primary census remain useful
+cross-checks but are not new claims relative to those PRs. This review did not
+execute the concurrent checkers or certify their broader empty-star/forest
+statements. Our smaller-parameter cases remain finite boundary controls rather
+than a newly claimed uniform extension.
+
+Main advanced to `bbc600db2fc15007b7c914f4f2b2ed55fa909c87`, selecting PR942 with
+conditional κ `1661960547713947/10^18`, source
+`1960cfa919a0945d0ca4cb14ea96237000037903`. The current selected record and status
+were consulted; the contributor guide and PR template remain unchanged. The
+#799 and #890 contexts in SOURCES.json are earlier snapshots. No selected
+supplier is a mathematical or executable dependency of this verification.
 
 Only this research package is added. `upstream/`, the selected certificate,
 existing generators and supplier artifacts are unchanged. The applicable
@@ -108,25 +124,28 @@ commit `70484032ff4ae960b19acc8e159622e7e6ac8bac`: all 18 sequential groups,
 the tested head, timestamps and full-log SHA256; the log is in the recovery
 archive. This is a run on the original base, not current-main integration.
 The later edits only add documentation, context metadata and evidence;
-proofs, executable checkers, certificates and predecessor bytes are unchanged.
+mathematical arguments, executable checkers, certificates and predecessor bytes
+are unchanged; later provenance text credits the concurrent results.
 
-The historical PR741 cold replay included in that suite also passed current
-main's supported `scripts/verify_replay_coverage.py --frontier 741` gate,
-using its existing output. The exact current-main checker validates the
+The historical PR741 cold replay included in that suite also passed
+`scripts/verify_replay_coverage.py --frontier 741`, pinned at main
+`007664306fff84fbb1c9a1b4053b69f439764034`, using its existing output.
+That pinned checker validates the
 22-stage/44-artifact contract, bridge controls and original composition
 bindings; its [receipt](evidence/current-main-741-coverage.json) reports
 `PASS_COMPLETE_PR741_REPLAY_COVERAGE`. The historical driver, binder and
 supplier packages are byte-identical at the original base and `0076643`.
 This additional admission check did not rerun producers or validate PR890.
-The #799 and current #890 selected-supplier cold replays were not run because
-this contribution changes neither construction.
+The #799, #890 and current #942 selected-supplier cold replays were not run
+because this contribution changes no supplier construction.
 Both checkers also passed isolated optimized replay from an export of the
 staged Git blobs, launched outside the checkout. Staged whitespace checks
 passed. No hosted CI, independent human review or proof-assistant verification
 is claimed. Paid implementation, all-size/compiler, hosting, precision/tape
 and analytic obligations remain outside this information-threshold result.
 
-The next useful review is of the four-block concentration argument and
-the exceptional two-pair path, followed by consideration for integration
-as a scoped research note. Granting the empty star is a different open
-classification, not an implication of this theorem.
+The next useful review is the completeness of the unrestricted coefficient
+normalization and p=6 enumeration, together with its independent row-space
+checks. Maintainers can assess whether to integrate this evidence alongside
+PR966 or PR669. The broader empty-star and forest results in current PR669
+are outside the verification claimed here.

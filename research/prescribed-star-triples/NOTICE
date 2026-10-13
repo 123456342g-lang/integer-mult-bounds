@@ -19,3 +19,10 @@ and Villarreal, arXiv:1812.04106v2; no literature-wide novelty is claimed.
 Repository Apache-2.0 LICENSE applies. No predecessor executable code is
 imported into the new checkers. The selected #799/#741/#589 construction is
 context only; this contribution makes no new multiplication-exponent claim.
+
+Concurrent results inspected before submission: @woklerx's PR966 at
+7eaf5665ac246310293fda06a3cf245fe72f6012 and Sam Sung's expanded PR669 at
+8f4600b41bf1f0f5d07f209e5d3950eb22ef5cad subsume this package's theorem
+statement. They are credited explicitly; this package adds independent finite
+verification, especially at p=6. No code or numerical receipt is copied from
+those concurrent extensions, and no priority claim is made.

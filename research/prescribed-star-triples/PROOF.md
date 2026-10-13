@@ -170,11 +170,21 @@ input and the all-one triangle have the same vertex-star observations.
 Sam Sung (@the-missionary-company), PR669 at
 `7d526020fc368ce4157cd436995c2f4fcf683318`, establishes the complete k=2
 selectable-target hierarchies in `HIGHER-GRAPH.md`, and the optimal-triangle
-criterion for prescribed triples in `HIGHER-WEIGHTS.md`. The latter leaves
-larger budgets for triples failing that criterion unclassified. This note
-resolves that question only for k=2 without the empty star, identifying
-one exceptional orbit and its exact additional deletion. Both inspected
-texts are retained unchanged with SHA256 and Git-blob pins in SOURCES.json.
+criterion for prescribed triples in `HIGHER-WEIGHTS.md`. That historical
+pinned version left larger budgets unclassified. The argument here was
+developed independently for k=2 without the empty star; both inspected
+predecessor texts remain unchanged with SHA256 and Git-blob pins in SOURCES.json.
+
+Before submission, @woklerx's PR966 at
+`7eaf5665ac246310293fda06a3cf245fe72f6012` published this classification for
+p>=3, and Sam Sung's PR669 at `8f4600b41bf1f0f5d07f209e5d3950eb22ef5cad`
+added it together with broader forest and empty-star statements. Those
+results subsume this theorem statement. This proof is retained as an
+independent derivation; no new classification or priority is claimed.
+The package's additional contribution is independent unrestricted
+coefficient enumeration at p=6, as detailed in README-INDEPENDENT.md
+and VALIDATION.md. No code or numerical output from those concurrent
+extensions is imported.
 
 The graph incidence/cut-code connection is credited there to José
 Martínez-Bernal, Miguel A. Valencia-Bucio and Rafael H. Villarreal,

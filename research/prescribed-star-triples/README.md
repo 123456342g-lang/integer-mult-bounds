@@ -1,9 +1,15 @@
-# Exact deletion budgets for three prescribed graph-star targets
+# Independent verification of prescribed graph-star triple budgets
 
-**Scoped structural decoder result; no new κ.** In the signed two-port
-proper-star model, three specified targets can cost more than three freely
-chosen targets. For p>=5 original coordinate pairs, we classify the exact
-cost using the nonempty proper stars:
+**Independent verification; no new classification or κ.** This package adds
+an exhaustive decoder-coefficient search at p=6 to corroborate concurrent
+prescribed-triple results. It checks **301,989,888** normalized assignments
+using all eight binary coefficient labels, covering all 19 target orbits
+(34,220 triples), with 433 separate row-space restoration controls. It does
+not assume the four-block reduction. Start with
+[README-INDEPENDENT.md](README-INDEPENDENT.md) and `run_independent.py`.
+
+In the signed two-port proper-star model, the independently derived theorem
+retained here for p>=5 original coordinate pairs is:
 
 | Target pattern | Minimum deleted ports |
 | --- | ---: |
@@ -16,12 +22,21 @@ deletions, although the selectable-target minimum is **18**. Original
 mates are `{0,1}, {2,3}, ...`. [PROOF.md](PROOF.md) gives a uniform proof,
 explicitly separating information recovery from paid supplier costs.
 
-This extends the prescribed-target criterion in Sam Sung's
+This work originally extended the prescribed-target criterion in Sam Sung's
 [PR669](https://github.com/CrocSwap/integer-mult-bounds/pull/669), pinned at
-`7d526020fc368ce4157cd436995c2f4fcf683318`. Its selectable-target hierarchy
-and graph-code interpretation are credited predecessor results. The new
-claim is the complete prescribed-triple classification in this graph
-case, including the exceptional one-unit penalty.
+`7d526020fc368ce4157cd436995c2f4fcf683318`. Before submission, concurrent
+[PR966](https://github.com/CrocSwap/integer-mult-bounds/pull/966) by @woklerx
+published the same classification for p>=3, and PR669 added that result plus
+broader forest and empty-star results at `8f4600b41bf1f0f5d07f209e5d3950eb22ef5cad`.
+Those claims subsume this package's theorem statement; no priority is claimed.
+
+The additional evidence is the independent p=6 coefficient search. PR966's
+partition census includes p=6, but its independent RREF checker stops at p=5;
+PR669's new independent coefficient optimization stops at p=4. The proof and
+primary census here are retained as an independent derivation and cross-check,
+not additional mathematical novelty. The original predecessor files remain
+pinned unchanged; no concurrent checker code or numerical output is imported.
+See [VALIDATION.md](VALIDATION.md) for the exact comparison and source revisions.
 
 ## Reproduce
 
@@ -78,6 +93,6 @@ same observations is covered. The empty star, changed observations,
 higher-k ports and a complete physical implementation are outside scope.
 The result supplies no cost-free preparation, source access, helper,
 copy/restoration, frame, recursive-child or hosting interface. At the recorded
-base, the selected construction was #799. Upstream subsequently selected #890;
-see [VALIDATION.md](VALIDATION.md) for the pinned follow-up context. This package
-changes neither construction and does not re-audit either multiplier.
+base, the selected construction was #799. The latest reviewed main selects #942;
+see [VALIDATION.md](VALIDATION.md) for the pinned context and earlier #890 snapshot.
+This package changes no supplier construction and does not re-audit a multiplier.
