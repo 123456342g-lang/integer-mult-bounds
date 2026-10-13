@@ -1,6 +1,21 @@
 # Community contribution record
 
-**Current reviewed composition: #942 on #890 / #869 / #870 with #589, κ=0.001661960547713947.**
+The [selected record](certificates/selected-result.json) identifies the current
+frontier; numbered checkpoints below retain their historical attribution.
+
+- **eumemic (#3):** the compressed complex-circuit contribution; the complete
+  original historical packet is retained and its 10 exact tests restored and
+  replayed against the already incorporated core. No new frontier claim.
+- **Romain Hédouin / romainhedouin (#183):** exact closed-form ceilings and
+  reduced feasibility checks for the historical original/balanced assembly;
+  all three source files incorporated, with 22 exact tests replayed. This is
+  arithmetic tooling, not a new κ or a universal complexity ceiling.
+- **Anas Khan / anxkhn (#90):** current-review versus historical-release
+  documentation clarification, now resolved through the dynamic selected record.
+  See the [100-PR reconciliation](docs/research/community-reconciliation100-review.md).
+
+
+**Historical reviewed composition: #942 on #890 / #869 / #870 with #589, κ=0.001661960547713947.**
 See the [current review](docs/research/community-batch952-review.md) and
 [circuit integration](docs/research/community-circuits681-review.md) for scope.
 

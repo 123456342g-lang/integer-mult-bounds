@@ -133,7 +133,8 @@ def main():
                         ROOT / 'research/community-batch952-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-batch970-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-batch1047-audit/DISPOSITIONS.json',
-                        ROOT / 'research/community-batch1099-audit/DISPOSITIONS.json'):
+                        ROOT / 'research/community-batch1099-audit/DISPOSITIONS.json',
+                        ROOT / 'research/pr-reconciliation100-20261013/DISPOSITIONS.json'):
         if not family_path.exists():
             continue
         family = json.loads(family_path.read_text())
@@ -524,6 +525,10 @@ def main():
                 if item['action'] != 'retained':
                     require(bool(item.get('reason')), 'Missing scope or adaptation reason')
         print('PASS batch1099: scoped source coverage and review completion')
+    import runpy
+    reconciliation100 = ROOT / 'research/pr-reconciliation100-20261013/verify.py'
+    if reconciliation100.exists():
+        runpy.run_path(str(reconciliation100), run_name='__main__')
     print(f'PASS immutable snapshot plus explicit family rounds: {len(actual)} PRs, attributed heads, evidence pins and unresolved questions')
 
 
