@@ -46,7 +46,7 @@ Every canonical JSON field remained identical, and the complete command passed a
 The model is the literal scalar macro projection on 704 persistent and eight private-center coordinates.
 Non-scalar events, coefficient-work primitives, physical frames, Clifford phases and recursive child execution remain outside its scope.
 Native replay, global hosting/invoice/assembly, precision/tape, full cold replay, hosted CI and Lean were not run.
-The copied native receipt authenticates the original input, not a new physical replay.
+The retained native receipt authenticates the original input, not a new physical replay.
 
 The input archive SHA256 is
 `22c3f4dce4b897a1d423d1388801933e288b6a6b1906cb15e1b16a5eb68db754`.
@@ -91,3 +91,11 @@ No pinned coordination issue existed.
 New files are Apache-2.0. @Scratch-net contributes with substantial OpenAI Codex assistance
 in research, implementation, proof, verification and writing.
 The two implementations are AI-assisted, not independent human peer review.
+
+## Final handoff
+
+Submitted as [PR1198](https://github.com/CrocSwap/integer-mult-bounds/pull/1198).
+Exact implementation commit: `8c6178044a0fd46b4a10e99f1c99ba208ba82b46`.
+The handoff commit changes only this document and the local claim.
+Executable code, source pins and the mathematical certificate remain identical.
+No PR was merged or closed, and the selected frontier remains untouched.
