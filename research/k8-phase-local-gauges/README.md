@@ -1,10 +1,21 @@
-# Exact phase-local dyadic gauges on the selected k8 word
+# Exact zero-at-boundary gauges on the selected k8 word
 
-**Finite scalar construction and scoped optimum; no new kappa.** A helper may
-change dyadic scale between scalar operations, returning to its original scale
-before **every non-scalar event**. Charging every scale change gives a shortest
-path problem. Unlike a fixed gauge, this changes the gauge during a scalar run;
-unlike stage SCALE consolidation, it leaves every original SCALE in place.
+**Finite scalar construction, boundary-price comparison and scoped optimum;
+no new kappa.** Concurrent Sagar Thakrar [PR1259](https://github.com/CrocSwap/integer-mult-bounds/pull/1259)
+already supplies varying helper gauges and the integer-clipping/shortest-path
+mechanism, independently rediscovered here. This package adds a stricter
+interface: return the gauge to zero before **every non-scalar event**, including
+recursive children and residual wrappers. It prices that restriction exactly,
+checks all 477 eligible helpers including wrapped helpers, and admits the
+materialized words to the retained local scalar/frame/wrapper checker. Original
+SCALEs remain in place. No priority or novel shortest-path mechanism is claimed.
+
+The zero-boundary contract needs no commutation of a nonzero gauge through a
+recursive child or wrapper. Replaying PR1259's 32 unrestricted helper minima
+agrees exactly. For L276, imposing all boundary resets costs **4 primitives per
+complex call**: its unrestricted saving 344 becomes 340. L427 likewise pays 4,
+while L359 pays zero. [BOUNDARY-COMPARISON.json](BOUNDARY-COMPARISON.json) records
+the full 16-helper comparison and four corruption/coverage controls.
 
 On the source-bound PR1094/PR1042 k8 word, the exact best single-helper schedule
 is L427, with 22 new SCALE macros in each orientation. It saves **522 real scalar
@@ -49,6 +60,8 @@ realization, hosting, precision/tape, analytic and bit assumptions remain.
 - Main DP: 95,490 vertices per orientation on the selected word; 94,261 on PR1214.
 - Separate distance-transform DP uses literal PR696 lowerer lengths on a padded
   domain: **1,908 helper minima**, **758,270 vertices**, all agree exactly.
+- Independently reconstructed unrestricted minima agree with all **32** values
+  in the pinned PR1259 certificate; exact boundary premiums distinguish the classes.
 - Literal lowered replay: **296,404 primitives** across four candidate words,
   all **713** initial columns, including initially dirty coefficient work.
 - Original macro replay separately checks all 712 data/helper/center columns.
@@ -70,12 +83,13 @@ Python standard library only, from the repository root:
 python3 -I -B research/k8-phase-local-gauges/reproduce.py
 ```
 
-That bounded driver runs the four scoped checks below and ends with
+That bounded driver runs the five scoped checks below and ends with
 `PASS_COMPLETE_K8_PHASE_LOCAL_GAUGES`:
 
 ```sh
 python3 -I -B research/k8-phase-local-gauges/verify.py
 python3 -I -B research/k8-phase-local-gauges/independent.py
+python3 -I -B research/k8-phase-local-gauges/comparison.py
 python3 -I -O -B research/k8-phase-local-gauges/test_package.py
 python3 -I -B research/k8-phase-local-gauges/frame_replay.py
 ```
@@ -102,6 +116,18 @@ invoice is independently reconstructed. Their constant-gauge optima are credited
 not claimed as new proofs here. PR1170 consolidates existing stage SCALEs, whereas
 this package retains them; no composition with that pending result is claimed.
 
+Sagar Thakrar's concurrent PR1259 at
+`61367611154266a982fe25e1a6243a8aad77227d` (previous head
+`10f4aaed33d79f76ebdebc974e201b1baad8b8aa`) is the closest mechanism overlap.
+It checks 16 cold/FULL unwrapped helpers and permits nonzero gauges across
+non-scalar events under the inherited homogeneous-transfer contract. Its original
+certificate is pinned unchanged; this package replays its 32 minima before pricing
+the added reset restriction. Philipp / @mightyOil's concurrent PR1263 at
+`5fbaca13028846bddbb001e8e07addc2ab8e5816` uses many constant gauges and has the
+larger scalar saving 13,000. This package does **not** claim a best scalar bill
+across these classes, or composition with PR1263. Its specific contribution is
+the zero-boundary contract, exact restriction price and local admission evidence.
+
 Sagar Thakrar's PR696 supplies the literal lowerer. The emitted frame checker is
 the retained PR514/433 local replay, following icekylinx; source bytes are pinned.
 The selected construction is Rohan Arun's PR1094 packing on Jeremy Kothe's k8/T16
@@ -110,9 +136,10 @@ earlier supplier lineage, as documented in the frozen maintainer review.
 
 At selection, live open PR bodies (up to the 1,000-result request), current
 discussions and the local ledger/negative-result descriptions were inspected.
-Nearest scopes were PR1161, PR1214, PR1170, PR1119 and PR1186. No phase-local
-single-helper schedule optimum was found; this is bounded overlap checking,
-not a literature-priority claim. No pinned sprint issue was present; the local
+Nearest initial scopes were PR1161, PR1214, PR1170, PR1119 and PR1186. The final
+refresh and coordinator review identified overlapping PR1259; the contribution
+was reframed around the distinct boundary contract and exact comparison above.
+No pinned sprint issue was present; the local
 claim was recorded. Existing source packages, selection and `upstream/` are unchanged.
 
 Prepared for **Philipp / @mightyOil**, with substantial **OpenAI Codex

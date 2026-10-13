@@ -1,5 +1,11 @@
 # Paid phase-local gauge schedules
 
+The varying-gauge identity, clipping lemma and chain DP also occur in Sagar
+Thakrar's concurrent PR1259; they were independently derived during this work.
+We credit that overlap explicitly. The new proof obligation here is exact identity
+at **every** non-scalar boundary, including recursive and residual-wrapper events,
+and the exact price of imposing it. No novelty is claimed for the common DP.
+
 Fix a helper h not occurring in any scalar COPY/CLEAR and not a private center.
 Partition the emitted program at every non-scalar event, including phase markers,
 climbs, adapters, residual wrappers and center events. Each resulting scalar run
@@ -71,6 +77,16 @@ or all-helper bound. The same argument applies after fixing PR1214's fully price
 two-helper word; only one new phase-local helper is optimized in that comparison.
 
 ## Separate checks and limits
+
+`comparison.py` removes the reset barriers only for pricing, joins each helper's
+incident terms, and reproduces every one of PR1259's 32 saved minima. The barrier
+objective is a restriction of that chain: it inserts a fixed-zero state at every
+non-scalar boundary, so its optimum cannot be lower. Its one-component extra price
+is 2 at L276, 2 at L427, and 0 at L359, in each orientation. The unrestricted L427
+comparison is scalar pricing only; we do not construct or admit that unrestricted
+word. The reset L427 and fixed-PR1214-plus-reset-L359 words are the materialized
+and locally admitted constructions in this package. This distinction avoids
+assuming any new gauge commutation through the inherited recursive interface.
 
 The main implementation explicitly minimizes over all predecessor states.
 `independent.py` instead uses forward/backward distance-transform sweeps,

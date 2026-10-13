@@ -13,5 +13,8 @@
   "frame_checker": {
     "path": "research/complex-sw4-frame8/local/hpe_audit_local.py",
     "sha256": "6bd9a1e279c9c9e4f3767d9f82e537b559292906feb2ddab02f380fb6523a810"
-  }
+  },
+  "pr1259_head": "61367611154266a982fe25e1a6243a8aad77227d",
+  "pr1259_certificate_sha256": "3c5acedd505941f600124663c1bf53ddd4799573684b9da311e25a8c14780395",
+  "pr1263_head_context_only": "5fbaca13028846bddbb001e8e07addc2ab8e5816"
 }

@@ -37,6 +37,8 @@ def engine():
         need(sha((HERE / 'vendor/pr1161' / name).read_bytes()) == digest, 'vendor pin ' + name)
     need(sha((HERE / 'vendor/pr1214/CERTIFICATE.json').read_bytes()) ==
          pins['pr1214_certificate_sha256'], 'PR1214 certificate pin')
+    need(sha((HERE / 'vendor/pr1259/CERTIFICATE.json').read_bytes()) ==
+         pins['pr1259_certificate_sha256'], 'PR1259 certificate pin')
     spec = importlib.util.spec_from_file_location('pr1161', HERE / 'vendor/pr1161/engine.py')
     lib = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(lib)

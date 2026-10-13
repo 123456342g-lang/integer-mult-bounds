@@ -12,7 +12,8 @@
     "25 selected-record source/inventory tests",
     "verify_selected_result.py",
     "research_baseline.py (source bindings only)",
-    "Complete offline relocated replay from path containing a space with exactly12 external pinned files"
+    "Complete offline relocated replay from path containing a space with exactly12 external pinned files",
+    "Exact pinned PR1259 comparison: all32 unrestricted minima; four corruption/domain controls"
   ],
   "overlap_refresh": {
     "open_prs": 855,
@@ -23,9 +24,12 @@
       1214,
       1170,
       1119,
-      1186
+      1186,
+      1259,
+      1263
     ],
-    "new_overlap_found": false
+    "new_overlap_found": true,
+    "resolution": "Credit PR1259 varying-gauge/clipping mechanism; distinct zero-at-every-nonscalar contract, exact restriction-price comparison, wrapped-helper coverage and emitted local frame/wrapper admission. No composition with PR1263."
   },
   "certificate_sha256": "a86a8f223f421227ed2fa6f3d3e4d807bcb2045fd53482234a583a163ce971f5",
   "not_run": [
