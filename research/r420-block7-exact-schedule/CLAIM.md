@@ -29,3 +29,16 @@
   are not treated as accepted frontiers.
 - Contributor: Yuzhou Wang / @yzhouwang, with substantial OpenAI Codex
   assistance. Apache-2.0. No delegated workers or independent human review.
+
+## Result update (once)
+
+Completed 2026-10-13 05:39 UTC. Submitted
+[PR #789](https://github.com/CrocSwap/integer-mult-bounds/pull/789).
+The 41-XOR block is replaced by 28 XORs, with exact fixed-factor minima
+14 + 14. Charging the literal reverse cleanup saves 26 native ADDs overall:
+26,916 → 26,890. No new κ. All 660 dirty columns and frame paths pass;
+fresh 5/9/11-stage native checks pass with 96 bridge-omission controls.
+Python 3.9/3.14, optimized/relocated/committed-source replay, source and
+certificate controls and selected-record integrity pass. Scope, source pins,
+proof, inherited obligations and full validation are in README/VALIDATION.
+Final overlap refresh through #786 found no block-7 factor-schedule duplicate.

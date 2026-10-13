@@ -75,3 +75,11 @@ compensation forests; #782 concerns intrinsic lattice parity. Neither
 changes this block or supplies the finite schedule-class certificate.
 The inspected #681/#691/#754 heads remain those in `SOURCES.json`.
 No pending implementation was imported and no additive composition claimed.
+
+Final committed-files-only replay at construction commit
+`d8c13a065a942018e41721f859dc97da5249a2e1` passed from a minimal export.
+The complete patch applied cleanly to an empty target for these additions;
+staged whitespace checks passed. The submission is
+[PR #789](https://github.com/CrocSwap/integer-mult-bounds/pull/789).
+The subsequent handoff commit changes only this validation record and the
+one-time claim result update, with no code or certificate changes.
