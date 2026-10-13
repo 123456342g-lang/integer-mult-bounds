@@ -28,11 +28,6 @@
    "centre_mass_per_call": 64,
    "deficit": 5120,
    "deficit_identity": "D = W - 64 N",
-   "families_per_call": {
-    "data": 224,
-    "distinct_owners": 704,
-    "helper": 480
-   },
    "family_units": 72,
    "helpers": 480,
    "hosted_mass": 537120,
@@ -54,6 +49,12 @@
     "8": 1152,
     "16": 47,
     "48": 4850
+   },
+   "live_families_per_call": {
+    "N": 144,
+    "W": 14336,
+    "per_replica": 896,
+    "stages": 9
    },
    "local_calls": {
     "backward": 64,
@@ -78,6 +79,11 @@
     }
    },
    "m": 73,
+   "owner_families_per_call": {
+    "data": 224,
+    "distinct_owners": 704,
+    "helper": 480
+   },
    "pending_children": 32256,
    "pending_mass": 774144,
    "ports": 112,
@@ -114,11 +120,6 @@
    "centre_mass_per_call": 64,
    "deficit": 5120,
    "deficit_identity": "D = W - 64 N",
-   "families_per_call": {
-    "data": 224,
-    "distinct_owners": 704,
-    "helper": 480
-   },
    "family_units": 72,
    "helpers": 480,
    "hosted_mass": 537120,
@@ -137,6 +138,12 @@
     "7": 7,
     "8": 1152,
     "48": 4866
+   },
+   "live_families_per_call": {
+    "N": 144,
+    "W": 14336,
+    "per_replica": 896,
+    "stages": 9
    },
    "local_calls": {
     "backward": 64,
@@ -161,6 +168,11 @@
     }
    },
    "m": 73,
+   "owner_families_per_call": {
+    "data": 224,
+    "distinct_owners": 704,
+    "helper": 480
+   },
    "pending_children": 32256,
    "pending_mass": 774144,
    "ports": 112,
@@ -194,11 +206,6 @@
    "centre_mass_per_call": 64,
    "deficit": 2560,
    "deficit_identity": "D = W - 64 N",
-   "families_per_call": {
-    "data": 224,
-    "distinct_owners": 704,
-    "helper": 480
-   },
    "family_units": 72,
    "helpers": 480,
    "hosted_mass": 268560,
@@ -220,6 +227,12 @@
     "8": 576,
     "16": 23,
     "48": 2419
+   },
+   "live_families_per_call": {
+    "N": 72,
+    "W": 7168,
+    "per_replica": 896,
+    "stages": 9
    },
    "local_calls": {
     "backward": 32,
@@ -244,6 +257,11 @@
     }
    },
    "m": 73,
+   "owner_families_per_call": {
+    "data": 224,
+    "distinct_owners": 704,
+    "helper": 480
+   },
    "pending_children": 16128,
    "pending_mass": 387072,
    "ports": 112,
@@ -277,11 +295,6 @@
    "centre_mass_per_call": 64,
    "deficit": 2560,
    "deficit_identity": "D = W - 64 N",
-   "families_per_call": {
-    "data": 224,
-    "distinct_owners": 704,
-    "helper": 480
-   },
    "family_units": 72,
    "helpers": 480,
    "hosted_mass": 268560,
@@ -303,6 +316,12 @@
     "8": 576,
     "16": 23,
     "48": 2419
+   },
+   "live_families_per_call": {
+    "N": 72,
+    "W": 7168,
+    "per_replica": 896,
+    "stages": 9
    },
    "local_calls": {
     "backward": 32,
@@ -327,6 +346,11 @@
     }
    },
    "m": 73,
+   "owner_families_per_call": {
+    "data": 224,
+    "distinct_owners": 704,
+    "helper": 480
+   },
    "pending_children": 16128,
    "pending_mass": 387072,
    "ports": 112,

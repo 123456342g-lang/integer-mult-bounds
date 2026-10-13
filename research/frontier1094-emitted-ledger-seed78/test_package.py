@@ -2,7 +2,7 @@
 """Semantic and packaging controls for verify.py: every mutation must be rejected by its named check.
 
 Run: python3 -I -B -m unittest discover -s research/frontier1094-emitted-ledger-seed78 -p test_package.py -v
-(about a minute; the selected frontier1094 capsule is decoded once and copied per control)
+(about 10 s; the selected frontier1094 capsule is decoded once and copied per control)
 """
 import gzip
 import io
@@ -151,8 +151,9 @@ class Controls(unittest.TestCase):
         self.rejects(d, 'L7')
 
     def test_whole_local_stage_dropped_consistently(self):
-        # recipe, calls and local sweeps of one pair-0 stage removed together: coverage, bindings,
-        # hosting and remainders stay consistent; only per-family conservation sees the missing units
+        # recipe, calls and local sweeps of one pair-0 stage removed together: coverage and dispatch stay
+        # consistent; the dropped calls' owner-map slots are now executed by no route (conservation,
+        # mass and the certificate comparison reject it as well)
         d = fresh()
         T = d['template']
         stage = next(x['stage'] for x in T['recipe'] if x['kind'] == 'local' and x['pair'] == 0)
@@ -160,7 +161,7 @@ class Controls(unittest.TestCase):
         T['calls'] = [c for c in T['calls'] if c['stage'] != stage]
         T['execution_schedule'] = [e for e in T['execution_schedule']
                                    if not (e['kind'] == 'local_cover_sweep' and e.get('stage') == stage)]
-        self.rejects(d, 'L21')
+        self.rejects(d, 'L11 every owner-map slot')
 
     def test_data_route_family_duplicated(self):
         d = fresh()
@@ -172,6 +173,66 @@ class Controls(unittest.TestCase):
         d = fresh()
         d['template']['local_providers']['gauge44']['local_programs']['forward'].append(['scalar'])
         self.rejects(d, 'L3 dispatched programs')
+
+    def test_adapter_at_wrong_frame(self):
+        d = fresh()
+        e = next(e for e in d['programs']['forward'] if e[0] == 'adapter' and e[1] == 'old_to_new')
+        e[3] = 1 if e[3] != 1 else 2
+        rehash(d)
+        self.rejects(d, 'L5 adapter')
+
+    def test_scalar_at_wrong_frame(self):
+        d = fresh()
+        e = next(e for e in d['programs']['forward'] if e[0] == 'scalar' and e[1][0] == 'add')
+        e[2] = e[2] + 1
+        rehash(d)
+        self.rejects(d, 'L5 scalar')
+
+    def test_extra_phase_marker(self):
+        d = fresh()
+        d['programs']['forward'].insert(5, ['phase', 'extra_child_rank_48'])
+        rehash(d)
+        self.rejects(d, 'L4 phase sequence')
+
+    # --- schedule
+    def test_local_sweep_repointed(self):
+        # no program edit: one call is dispatched twice and another never
+        d = fresh()
+        e = next(e for e in d['template']['execution_schedule']
+                 if e['kind'] == 'local_cover_sweep' and e['stage'] == 3 and e['replica'] == 0)
+        e['stage'] = 0
+        self.rejects(d, 'L9 local sweeps dispatch')
+
+    def test_foreign_provider(self):
+        d = fresh()
+        T = d['template']
+        T['local_providers']['evil'] = pickle.loads(pickle.dumps(T['local_providers']['gauge44']))
+        self.rejects(d, 'L9 one local provider')
+
+    def test_multi_replica_sweep(self):
+        d = fresh()
+        e = next(e for e in d['template']['execution_schedule'] if e['kind'] == 'local_cover_sweep')
+        e['replicas'] = [e['replica'], (e['replica'] + 1) % 16]
+        self.rejects(d, 'L9 schedule events act on one replica')
+
+    def test_bank_sweep_reads_idle_children(self):
+        d = fresh()
+        e = next(e for e in d['template']['execution_schedule'] if e['kind'] == 'bank_padding_cover_sweep')
+        e['children_source'] = 'idle_children'
+        self.rejects(d, 'L8')
+
+    def test_slot_parked_in_phantom_replica(self):
+        # one slot moved to a nonexistent replica (route follows), with a ghost copy of the original left
+        # in the owner map: the idle recount would subtract slices that no call executes
+        d = fresh()
+        idx, z = next((i, z) for i, z in enumerate(d['owners']) if z['stage'] == 0 and z['replica'] == 0 and z['helper'] == 0)
+        ghost = dict(z, stage=99)
+        for slots in (d['owners'], d['template']['hosting']['pooled_slots']):
+            slots[idx] = dict(slots[idx], owner_replica=16, family=z['family'] + 16 * 896 - z['owner_replica'] * 896)
+            slots.append(dict(ghost))
+        call = next(c for c in d['template']['calls'] if (c['stage'], c['replica']) == (0, 0))
+        call['owners'][224][0] = d['owners'][idx]['family']
+        self.rejects(d, 'L11 every owner-map slot')
 
     # --- calls
     def test_program_hash_swapped(self):
@@ -286,6 +347,13 @@ class Controls(unittest.TestCase):
         x['rank'] -= 1
         self.rejects(d, 'L19')
 
+    def test_duplicate_remainder_frame(self):
+        d = fresh()
+        one = next(i for i, f in enumerate(d['frames']) if len(f['orthogonal_axes']) == 1)
+        big = next(f for f in d['frames'] if len(f['orthogonal_axes']) == 48)
+        d['frames'][one] = pickle.loads(pickle.dumps(big))
+        self.rejects(d, 'L20')
+
     def test_dependent_remainder_frame(self):
         d = fresh()
         f = next(f for f in d['frames'] if len(f['orthogonal_axes']) == 3)
@@ -317,6 +385,9 @@ class Packaging(unittest.TestCase):
 
     def test_decoy_template(self):
         self.rejects('B4', members={'template': 'global/base/split-centres/GLOBAL-TEMPLATE.json.gz'})
+
+    def test_foreign_local_replay_receipt(self):
+        self.rejects('B6', members={'local_replay': 'global/base/split-centres/INDEPENDENT-LOCAL-REPLAY.json'})
 
     def test_other_owner_map(self):
         self.rejects('B7', overrides={'owners': 'research/gauge44-slots-t16/data/OWNERS.json.gz'})

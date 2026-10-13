@@ -33,6 +33,12 @@
       "sha256": "684c50d1ac69863e1fcc0a34bf76c54bac576f6bbde79b3c67d8432a495c8c1c"
     },
     {
+      "path": "research/community-batch1099-audit/check_frontier1094.py",
+      "usage": "provenance",
+      "git_blob": "1c171898e4f58fbdeca81424c9932ec2c6bbb9c8",
+      "sha256": "2608ef213260a43d09a40b3429742f7a5f280861b54acae66400a7c29a123f51"
+    },
+    {
       "path": "research/community-frontier1042-audit/ASSEMBLY.json",
       "usage": "input",
       "git_blob": "4e308dc23da97373d66e5d8d4a68b0661caea8e9",
@@ -75,6 +81,12 @@
       "sha256": "f1da80610bf33c58527f18ad63b4350d0b864e1d4486141ee17ac9bed4d529d6"
     },
     {
+      "path": "research/complex-multicold/vendor/pr559/PROOF.md",
+      "usage": "provenance",
+      "git_blob": "9adf304048b62c6db9250a611a8d4b0b60ed8276",
+      "sha256": "d5d498edc56fdef8c5798af7f5ec66948bd2f66c553b9efe366cdaab01bd3453"
+    },
+    {
       "path": "research/complex-t16-rare-pattern-exchanges/data/OWNERS.json.gz",
       "usage": "input",
       "git_blob": "d3ba33d7e703a3229d9fb8a360f69d2f318bbb70",
@@ -103,6 +115,12 @@
       "usage": "input",
       "git_blob": "8eda84ea0c0f57ca4c14ecb11426874ec2e42886",
       "sha256": "32ca30cd1c652ef6ad43657273a08a157e1df3545e759ab36306a0d0b516fb4a"
+    },
+    {
+      "path": "research/native-complex-moment552/PROOF.md",
+      "usage": "provenance",
+      "git_blob": "9adf304048b62c6db9250a611a8d4b0b60ed8276",
+      "sha256": "d5d498edc56fdef8c5798af7f5ec66948bd2f66c553b9efe366cdaab01bd3453"
     }
   ]
 }

@@ -17,7 +17,10 @@ members in memory and importing nothing from the repository:
   * every nonempty idle remainder, recounted from the DATA-PHASES pending axes of every idle cover
     sweep minus the hosted owner-map slices, and matched one for one with the emitted idle_children
     and their literal remainder frames;
-  * with closed event and schedule vocabularies, so nothing else can be a paid child.
+  * with closed event and schedule vocabularies, every non-paid event (adapters, residual adapters,
+    scalar operands, phase markers) bound to its register's replayed frame, the local sweeps bound to
+    the calls and every owner-map slot executed by exactly one call route, so that under the PR552/559
+    classification nothing else can be a paid child.
 
 It derives W, N, m and the layout from the program, checks per-family rank conservation (every live
 family carries m-1 data/pending units, so rank mass = (m-1)W + (centre mass)N and D = W - 64N), and
@@ -31,6 +34,7 @@ Expected last line: PASS_FRONTIER1094_EMITTED_LEDGER
 import argparse
 import gzip
 import hashlib
+import io
 import json
 import sys
 import tarfile
@@ -44,6 +48,9 @@ SOURCES = json.loads((HERE / 'CASES.json').read_text())
 PROGRAM_EVENTS = {'scalar', 'climb', 'adapter', 'residual_adapter', 'phase', 'center'}
 SCHEDULE_EVENTS = {'idle_cover_sweep', 'local_cover_sweep', 'bridge', 'terminal', 'terminal_Y_translations',
                    'bank_padding_cover_sweep', 'translate_every_live_family'}
+# the program phase markers, in order (both orientations); climbs carry their phase, centres sit in 'centers'
+PHASES = ['zero_frame_precondition', 'entry_adapters', 'A', 'centers', 'B', 'cleanup_tail', 'final',
+          'exit_adapters', 'full_frame_cleanup', 'done']
 
 
 class Reject(Exception):
@@ -122,7 +129,7 @@ def load(name, members=None, archive_path=None, overrides=None):
     raw = path.read_bytes()
     need(sha(raw) == arc['sha256'], 'B1 archive digest')
     need(find_pin(json.loads((ROOT / arc['pinned_by']).read_text()), arc['path'], arc['sha256']), 'B1 archive pin')
-    with tarfile.open(path, 'r:gz') as tar:
+    with tarfile.open(fileobj=io.BytesIO(raw), mode='r:gz') as tar:     # parse exactly the hashed bytes
         index = safe_members(tar)
 
         def member(key):
@@ -163,6 +170,8 @@ def load(name, members=None, archive_path=None, overrides=None):
     need(sha(owners_raw) == template['hosting']['owner_map_sha256'], 'B7 owner map digest')
     need(sha(owners_raw) in (ROOT / case['owners_listed_in']).read_text(), 'B7 owner map in the source manifest')
     local_replay = json.loads(got['local_replay'])
+    need(local_replay['local_programs_sha256'] == sha(got['local_programs'])
+         and local_replay['canonical_word_sha256'] == sha(got['canonical_word']), 'B6 local replay receipt binds the same programs and word')
     full_word = None
     if case['full_word_pin']:
         pin_path, pin_key = case['full_word_pin']
@@ -206,12 +215,17 @@ def program_ledger(program, word, orientation):
     """
     frames = word['frames']
     dims = [len(basis(f)) for f in frames]
-    current = list(word['start'])
-    hist, per_register, centre_mass, centres_seen = Counter(), Counter(), 0, []
+    start, final = list(word['start']), list(word['final'])
+    current = list(start)
+    hist, per_register, centre_mass, centres_seen, phases = Counter(), Counter(), 0, [], []
     for e in program:
         need(e[0] in PROGRAM_EVENTS, 'L4 closed program vocabulary')
-        if e[0] == 'climb':
-            _, _, reg, a, b, declared = e
+        phase = phases[-1] if phases else None
+        if e[0] == 'phase':
+            phases.append(e[1])
+        elif e[0] == 'climb':
+            _, tag, reg, a, b, declared = e
+            need(0 <= reg < len(current) and tag == phase, 'L5 climb is in its phase on a real register')
             need(a == current[reg], 'L5 climb leaves its register\'s current frame')
             rank = dims[b] - dims[a]
             need(rank > 0 and nested(frames[a], frames[b]), 'L5 climbs ascend through nested frames')
@@ -222,13 +236,28 @@ def program_ledger(program, word, orientation):
         elif e[0] == 'center':
             _, i, a, b, declared = e
             cf, carrier = word['center_frames'][i], word['centers'][i]
-            need((a, b) == ((cf, b) if orientation == 'forward' else (a, cf)) and dims[b if orientation == 'forward' else a] == 0
-                 and current[carrier] == cf, 'L7 centre bound to its frame and carrier')
+            need(phase == 'centers' and (a, b) == ((cf, b) if orientation == 'forward' else (a, cf))
+                 and dims[b if orientation == 'forward' else a] == 0 and current[carrier] == cf,
+                 'L7 centre bound to its frame and carrier')
             rank = dims[cf]
             need(rank > 0 and rank == declared, 'L6 frame-derived centre rank')
             centres_seen.append(i)
             hist[rank] += 1
             centre_mass += rank
+        elif e[0] == 'adapter':
+            reg = e[2]
+            need(e[1] in ('old_to_new', 'new_to_old') and 0 <= reg < len(current)
+                 and e[3] == current[reg] == (start if e[1] == 'old_to_new' else final)[reg], 'L5 adapter at its register\'s frame')
+        elif e[0] == 'residual_adapter':
+            reg = e[2]
+            need(0 <= reg < len(current) and e[3] == start[reg] and e[4:] in ([], [final[reg]]),
+                 'L5 residual adapter at its register\'s frames')
+        elif e[0] == 'scalar':
+            op = e[1]
+            for operand in op[1:]:
+                if isinstance(operand, list) and operand and operand[0] == 'L':
+                    need(0 <= operand[1] < len(current) and current[operand[1]] == e[2], 'L5 scalar acts at its registers\' frames')
+    need(phases == PHASES, 'L4 phase sequence')
     need(current == list(word['final']), 'L5 every register ends at its final frame')
     need(sorted(centres_seen) == list(range(len(word['centers']))), 'L7 every centre exactly once')
     return hist, per_register, centre_mass
@@ -252,16 +281,26 @@ def check(d):
     N = len(calls)
     need(sorted((c['stage'], c['replica']) for c in calls) == [(s, r) for s in sorted(locals_) for r in range(replicas)],
          'L1 call coverage: every (local stage, replica) exactly once')
-    for e in T['execution_schedule']:
+    schedule = T['execution_schedule']
+    for e in schedule:
         need(e['kind'] in SCHEDULE_EVENTS, 'L4 closed schedule vocabulary')
-    need(sum(e['kind'] == 'local_cover_sweep' for e in T['execution_schedule']) == N, 'L9 one local sweep per call')
-    need(not T['bank_padding']['children'], 'L8 no bank-padding children')
+        need('replica' not in e or e.get('replicas', [e['replica']]) == [e['replica']], 'L9 schedule events act on one replica')
+    need(Counter((e['stage'], e['replica'], e['provider_id']) for e in schedule if e['kind'] == 'local_cover_sweep')
+         == Counter((c['stage'], c['replica'], c['provider_id']) for c in calls), 'L9 local sweeps dispatch exactly the calls')
+    need(list(T['local_providers']) == ['gauge44'], 'L9 one local provider')
+    idle_sweeps = Counter((e['replica'], e['pair'], tuple(e['child_indices'])) for e in schedule if e['kind'] == 'idle_cover_sweep')
+    need(all(n == 1 for n in idle_sweeps.values()), 'L9 every idle sweep once')
+    need(not T['bank_padding']['children'] and all(e['children_source'] == 'bank_padding.children' for e in schedule
+                                                    if e['kind'] == 'bank_padding_cover_sweep'), 'L8 no bank-padding children')
 
     programs = {}
     for o, program in P.items():
         programs[sha(compact(program))] = (o, *program_ledger(program, CW, o))
     need(len({c for (_, _, _, c) in programs.values()}) == 1, 'L7 equal centre mass in every orientation')
     local_hist, data_units = Counter(), Counter()
+    slot_keys = Counter((z['stage'], z['replica'], z['helper']) for z in d['owners'])
+    need(slot_keys == Counter((c['stage'], c['replica'], i) for c in calls for i in range(R))
+         and all(0 <= z['owner_replica'] < replicas for z in d['owners']), 'L11 every owner-map slot is executed by exactly one call route')
     slots_at = defaultdict(dict)
     for z in d['owners']:
         slots_at[(z['stage'], z['replica'])][z['helper']] = z
@@ -273,8 +312,8 @@ def check(d):
         _, hist, per, _ = programs[c['local_program_sha256']]
         local_hist.update(hist)
         owners = c['owners']
-        need(len(owners) == 2 * V + R and len({fam for fam, _ in owners}) == len(owners),
-             'L10 one route per owner family in every call')
+        need(len(owners) == 2 * V + R and len({fam for fam, _ in owners}) == len(owners)
+             and all(0 <= fam < W for fam, _ in owners), 'L10 one route per live owner family in every call')
         active = {c['replica'] * F + (2 * c['pair'] + side) * V + port for side in (0, 1) for port in range(V)}
         need({fam for fam, desc in owners[:2 * V]} == active and all(desc[0] == 1 for _, desc in owners[:2 * V]),
              'L10 data routes are the active pair families')
@@ -342,7 +381,8 @@ def check(d):
         need(key not in emitted and x['replicas'] == 1 and x['pending_offset'] == x['hosted'], 'L19 idle child records')
         emitted[key] = dict(replica=x['replica'], port=x['port'], hosted=x['hosted'], rank=x['rank'])
     need(emitted == expect, 'L19 emitted idle remainders equal the recount')
-    need(len(d['frames']) == len(expect), 'L20 one literal frame per remainder')
+    need(len(d['frames']) == len(expect) and {(f['family'], f['child']) for f in d['frames']} == set(expect),
+         'L20 one literal frame per remainder')
     for f in d['frames']:
         e = expect.get((f['family'], f['child']))
         need(e is not None and f['orthogonal_axes'] == axes[f['child']][e['port']][e['hosted']:]
@@ -382,7 +422,8 @@ def check(d):
     calls_per_family = {p: n // replicas for p, n in sorted(calls_per_family.items())}
     return dict(W=W, N=N, m=m, replicas=replicas, ports=V, helpers=R, centre_mass_per_call=centre,
                 local_profile_per_call=per_orientation, idle_histogram=dict(sorted(idle.items())),
-                families_per_call=dict(data=2 * V, helper=R, distinct_owners=2 * V + R),
+                owner_families_per_call=dict(data=2 * V, helper=R, distinct_owners=2 * V + R),
+                live_families_per_call=dict(W=W, N=N, per_replica=F, stages=len(locals_)),
                 calls_per_family_by_pair=calls_per_family, local_calls=dict(sorted(Counter(c['orientation'] for c in calls).items())),
                 pending_children=sum(1 for (rep, ch) in sweeps for _ in range(V) if rank[ch]),
                 pending_mass=sum(pending[(p, s, q)] for (p, s, q) in pending) * replicas,
@@ -421,6 +462,9 @@ def main():
         if text != target.read_text():
             raise SystemExit('FAIL RESULT.json differs from this run')
         print('PASS RESULT.json reproduced byte for byte')
+    else:
+        print('PASS_PARTIAL', ' '.join(names), '(RESULT.json not compared)')
+        return
     print('PASS_FRONTIER1094_EMITTED_LEDGER')
 
 

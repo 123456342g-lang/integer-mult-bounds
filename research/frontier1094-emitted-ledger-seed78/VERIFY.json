@@ -30,7 +30,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 120,
-      "checks": "Byte binding (capsule pins, certificate, template, owner audit, dispatched programs/word/phases, owner map, literal remainder frames, FULL-WORD) and the independent ledger rebuild from the emitted program for the selected frontier1094 record, the frontier1042 checkpoint and two T8 ancestors; every rebuilt ledger must equal its certificate; RESULT.json must be reproduced byte for byte."
+      "checks": "Byte binding (capsule pins, certificate and record, template, owner audit, dispatched programs/word/phases and the local replay receipt, owner map, literal remainder frames, FULL-WORD) and the independent ledger rebuild from the emitted program (dispatch and slot bindings, code-disjoint frame replay, idle recount, conservation) for the selected frontier1094 record, the frontier1042 checkpoint and two in-capsule T8 ancestor assemblies; every ledger must equal its assembly; RESULT.json must be reproduced byte for byte."
     },
     {
       "argv": [
@@ -46,7 +46,7 @@
         "test_package.py"
       ],
       "timeout_seconds": 300,
-      "checks": "Positive and order-invariance fixtures, 27 semantic failure controls (frame replay, centre binding, consistent forgeries) and 5 packaging controls, each rejected by its named check."
+      "checks": "frontier1094 positive and order invariance, 36 semantic failure controls (frame replay, dispatch, hosting, remainders, certificate; consistent forgeries) and 6 packaging controls, each rejected by the first check it reaches as named."
     }
   ]
 }
