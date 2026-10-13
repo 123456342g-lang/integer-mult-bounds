@@ -13,5 +13,10 @@
     "Exact positive-transfer and reverse-envelope boundary at quad17 in retained PR952 (chosen).",
     "Retained R439 decoder-total restoration sharing (overlaps closed restored-sharing census).",
     "Full frame509 optimization (overlaps PR973/1221 and B-block factorization work)."
-  ]
+  ],
+  "status": "DONE",
+  "result": "Exact minimum12 positive ADDs; 24 with mandatory literal cleanup; 1008032 shortest programs and57 reverse matrices; existing reverse envelope saturates the absolute inverse; no new kappa.",
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1341",
+  "published_source_commit": "d57e7c16485d99418f103598288a92847c381809",
+  "finished_utc": "2026-10-13T23:08:45.754945+00:00"
 }
