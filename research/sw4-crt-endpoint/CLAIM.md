@@ -25,3 +25,20 @@ frame geometry. No pinned sprint issue exists, so this is the local claim.
 
 Ryan Haines (@Ryan-Haines), with substantial OpenAI Codex assistance.
 Apache-2.0. Result and handoff will be recorded once after verification.
+
+## Result and handoff
+
+Completed: [PR #835](https://github.com/CrocSwap/integer-mult-bounds/pull/835).
+All 736 input columns pass exact reconstruction using two coprime odd
+moduli. The endpoint denominator bound is 19 and the scaled residual bound
+is 1582669748628115714804285440; the modulus product exceeds twice this.
+Seven controls reject, including a mutant invisible to both modular replays
+but rejected by the height guard. Windows normal/optimized, Linux, Ruff and
+whitespace checks pass. No new kappa; only the backward scalar projection.
+
+Final overlap scan through #834 at 06:51 UTC found no equivalent endpoint
+reconstruction. No pinned coordination issue exists. This is the single
+result update to the local claim. Initial research commit: `6b0b090`.
+The workspace also retains `sw4-crt-s80.patch` and `sw4-crt-HANDOFF.txt`
+with the final commit, patch hash and reproduction command. Full sprint
+handoff is in `SPRINT-HANDOFF.txt`. Work ends before the requested cutoff.

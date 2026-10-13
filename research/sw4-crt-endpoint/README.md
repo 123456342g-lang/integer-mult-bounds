@@ -79,7 +79,7 @@ and seven controls. Compression-container differences are not mathematical
 differences.
 
 Windows Python 3.14 normal and optimized replay pass; Linux Python 3.12 replay
-and Ruff are checked for handoff. No existing source or selected record is
+and Ruff also pass. No existing source or selected record is
 modified. The method independently corroborates the accepted rational replay.
 #668's CRT work concerns cyclic resultants; #777 checks frame geometry.
 
