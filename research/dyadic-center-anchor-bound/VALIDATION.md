@@ -49,8 +49,12 @@ phase replay, selected global admission, Lean proof or remote CI pass is
 claimed. The historical side invoice and recursive/physical obligations are
 inherited explicitly, not re-certified by the local result.
 
-The current-state refresh still found main at the exact starting base. The
-overlap snapshot contains 717 open PRs through #946. PR809 and PR937 remain
+The complete overlap snapshot contained 717 open PRs through #946. Main
+then advanced during publication to
+`007664306fff84fbb1c9a1b4053b69f439764034`. A fresh fetch confirmed that all
+eight mathematical inputs are byte-identical and PR890 remains selected at
+0.001661957774647029. The branch retains its exact recorded starting base.
+The immediately preceding submission check found no newer overlapping PR. PR809 and PR937 remain
 at the pinned heads; the latter already owns the minimum construction and its
 savings. This contribution supplies an all-even-h theorem for a defined
 simultaneous-shear class, which neither predecessor claims. Other new PRs
@@ -58,3 +62,6 @@ concern coefficient schedules, connectors and reproducibility. There was no
 pinned coordination issue, so the claim is local; `OVERLAP.json` records the
 specific inspected heads. GitHub publication and any later CI are separate
 from these local results.
+
+Published result: [PR947](https://github.com/CrocSwap/integer-mult-bounds/pull/947).
+The local sprint claim was updated once with this result and link.

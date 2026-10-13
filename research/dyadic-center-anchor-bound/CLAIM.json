@@ -30,5 +30,12 @@
   "expected_finish_utc": "2026-10-13T14:36:46Z",
   "verification_reserved_from_utc": "2026-10-13T14:25:31Z",
   "coordination": "No pinned issue in live GraphQL check; local claim per sprint instructions. Open PR list covered 714 entries through PR943; targeted metadata checked PR809, PR937, PR882, PR837 and PR922.",
-  "status": "claimed"
+  "status": "completed",
+  "result": {
+    "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/947",
+    "branch": "research/center-anchor-bound-seed33",
+    "summary": "Exact constant-row integral-shear classification; PR937 uniquely minimizes the complete cost for fixed pivot and every even h>=10. h8 has a certified size-two exception. No new kappa.",
+    "verification": "14 main controls, 9 package tests, 4 inherited tests and selected-record integrity pass.",
+    "completed_utc": "2026-10-13T14:16:18.246472+00:00"
+  }
 }

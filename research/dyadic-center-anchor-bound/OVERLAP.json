@@ -90,5 +90,13 @@
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/809"
     }
   ],
-  "distinction": "PR937 supplies the optimum construction; this package proves its exact optimality in the entire integral constant-row shear family. PR809 studies single shears including nonconstant-row mixing. No pending code or additive saving is imported."
+  "distinction": "PR937 supplies the optimum construction; this package proves its exact optimality in the entire integral constant-row shear family. PR809 studies single shears including nonconstant-row mixing. No pending code or additive saving is imported.",
+  "publication_refresh": {
+    "checked_utc": "2026-10-13T14:16:18.246472+00:00",
+    "upstream_main": "007664306fff84fbb1c9a1b4053b69f439764034",
+    "selected_kappa": "0.001661957774647029",
+    "all_eight_pinned_inputs_unchanged": true,
+    "newest_other_open_pr": 946,
+    "result_pr": 947
+  }
 }
