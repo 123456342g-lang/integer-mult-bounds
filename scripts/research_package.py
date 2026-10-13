@@ -115,8 +115,12 @@ def validate(root, package, check_pins=True):
 
 
 def run_command(argv, cwd, timeout):
+    # Assertion checks must not disappear because of the caller's environment.
+    # Keep explicit manifest options (including deliberate -O controls) intact.
+    env = os.environ.copy()
+    env.pop("PYTHONOPTIMIZE", None)
     # A timeout ends the whole local process group, including child solvers.
-    process = subprocess.Popen(argv, cwd=cwd, start_new_session=True)
+    process = subprocess.Popen(argv, cwd=cwd, env=env, start_new_session=True)
     try:
         code = process.wait(timeout=timeout)
     except subprocess.TimeoutExpired:
