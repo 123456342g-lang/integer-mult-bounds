@@ -1,6 +1,7 @@
 # Sprint claim and handoff
 
 Initial claim posted on the coordination board: [D#1163, comment 18911525](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18911525).
+Result submitted as [PR #1383](https://github.com/CrocSwap/integer-mult-bounds/pull/1383).
 
 - **Track / seed:** bit supplier, OS seed 0.
 - **Base:** `bce54fb3f895cbe5cd4c0eb477c3afeed100190f`.
