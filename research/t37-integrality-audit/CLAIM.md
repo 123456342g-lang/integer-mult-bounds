@@ -38,3 +38,17 @@ construction or claim priority for T37 optimality.
 Delegated review is confined to this same integrality step and certificate.
 Stopping rule: prove/check the finite 37-state certificate and declared
 controls, then stop; no broader supplier or parameter search.
+
+## Result and handoff
+
+Completed 2026-10-13. The audit derives the 1200-unit slack lattice and
+sharp off-37 numerator penalty, with all 37 residue certificates. Both
+checkers passed normally and under `-I -O -B`: 1,163 bin patterns, 1,591
+edge inequalities, 37 witnesses, and 8 primary / 10 independent rejection
+controls. The fresh overlap check also distinguished PR974's interface
+budget study. No physical construction or new kappa is claimed.
+
+Submitted one focused research-audit PR:
+[CrocSwap/integer-mult-bounds #992](https://github.com/CrocSwap/integer-mult-bounds/pull/992).
+No coordination issue was available, so this is the single local claim
+update with the result and link. The selected frontier remains unchanged.
