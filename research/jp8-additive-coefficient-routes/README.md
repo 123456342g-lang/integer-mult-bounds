@@ -26,8 +26,11 @@ Even optimistically substituting the new counts into the existing invoice
 while retaining all 437,040 adapter allowances and the 25,934,336 compiler
 charge leaves the local bound **11,334,342,462,720** unchanged. This is a
 useful forward-circuit improvement, not an admitted supplier-bound or
-exponent improvement. The selected conditional kappa remains
-**0.001635527380375392**.
+exponent improvement. At the research base, the selected conditional kappa was
+**0.001635527380375392**. During submission, main advanced to #741/#589 at
+**0.001661202643272239**. This package remains a historical #626 circuit
+result; no saving is transported to #741. Its source pins use the immutable
+#626 assembly, so advancing the selected-result pointer does not break replay.
 
 ## Reproduce
 
