@@ -22,22 +22,23 @@ def extract(out):
     lines = CONSTRUCTOR.read_text().splitlines()
     begin = lines.index('    regs=retired') + 1
     end = lines.index('    for i,r in zip(c,regs):') + 1
-    snapshot = {}
+    snapshots = {}
 
     def trace(frame, event, arg):
         if frame.f_code.co_filename != str(CONSTRUCTOR):
             return None
         if event == 'line' and frame.f_lineno in (begin, end):
             f = frame.f_locals
-            if tuple(f['c']) == sorted(f['blocks'])[33 % 14]:
-                if frame.f_lineno == begin:
-                    snapshot.update(block=list(f['c']), start=len(f['A']),
-                                    registers=f['retired'][:], frame=list(f['F']),
-                                    entry_frames=[list(f['cur'][r]) for r in f['retired']])
-                else:
-                    snapshot.update(end=len(f['A']),
-                                    gates=copy.deepcopy(f['A'][snapshot['start']:]),
-                                    exit_frames=[list(f['cur'][r]) for r in f['regs']])
+            index = sorted(f['blocks']).index(tuple(f['c']))
+            snapshot = snapshots.setdefault(index, {})
+            if frame.f_lineno == begin:
+                snapshot.update(block=list(f['c']), start=len(f['A']),
+                                registers=f['retired'][:], frame=list(f['F']),
+                                entry_frames=[list(f['cur'][r]) for r in f['retired']])
+            else:
+                snapshot.update(end=len(f['A']),
+                                gates=copy.deepcopy(f['A'][snapshot['start']:]),
+                                exit_frames=[list(f['cur'][r]) for r in f['regs']])
         return trace
 
     old_argv, old_trace = sys.argv, sys.gettrace()
@@ -52,10 +53,11 @@ def extract(out):
     finally:
         sys.settrace(old_trace)
         sys.argv = old_argv
-    if set(snapshot) != {'block', 'start', 'registers', 'frame', 'entry_frames',
-                         'end', 'gates', 'exit_frames'}:
-        raise ValueError('Constructor window not observed completely')
-    (out / 'WINDOW.json').write_text(json.dumps(snapshot, indent=2) + '\n')
+    expected = {'block', 'start', 'registers', 'frame', 'entry_frames',
+                'end', 'gates', 'exit_frames'}
+    if set(snapshots) != set(range(14)) or any(set(w) != expected for w in snapshots.values()):
+        raise ValueError('Constructor windows not observed completely')
+    (out / 'WINDOWS.json').write_text(json.dumps(snapshots, indent=2) + '\n')
 
 
 if __name__ == '__main__':

@@ -1,15 +1,17 @@
-# A smaller exact coordinate-total circuit in complex factory block 5
+# Smaller exact coordinate-total circuits across the complex factory
 
-**Finite local circuit improvement; no new κ.** One eight-register basis-change
-window in Jeremy Kothe's PR622 raw K-triangle constructor falls from **87 to 35
-scalar operations**. Replacing its literal inverse cleanup saves another 52:
-**104 fewer scalar operations and 652 fewer real-component primitives per raw
-invocation**, in either orientation. All arithmetic certificates are rational.
+**Finite local circuit improvement; no new κ.** All fourteen eight-register
+coordinate-total windows in Jeremy Kothe's PR622 raw K-triangle constructor
+have the same scalar map after register relabeling. A common replacement
+reduces **each window from 87 to 34 operations**. Replacing their inverse
+cleanups saves **1,484 scalar operations and 10,192 real-component primitives
+per raw invocation**, in either orientation. Arithmetic certificates are exact
+rationals; every block's distinct physical boundary is checked separately.
 
-The exact base is `66849e1475c930fd7732b1a0067ffee7e1e95f60`. Its selected result is
-PR626/PR543, κ = `51110230636731/31250000000000000`. This package does not change
-that result or any existing repository file. `SOURCE-PINS.json` binds the actual
-constructor, inputs, inherited auditors, review and selected assembly.
+The exact repository base remains `66849e1475c930fd7732b1a0067ffee7e1e95f60`.
+Its selected result is PR626/PR543, κ = `51110230636731/31250000000000000`.
+This package changes no existing supplier or selected frontier. Sixteen source
+pins bind the actual constructor, inputs, inherited auditors, proof and review.
 
 ## Reproduce
 
@@ -22,125 +24,155 @@ python3 -B research/complex-factory5-resynthesis/verify.py
 Expected:
 
 ```text
-PASS_COMPLEX_FACTORY5_RESYNTHESIS gates=87->35 saved_with_cleanup=104 columns=716 controls=10
+PASS_COMPLEX_FACTORY_RESYNTHESIS windows=14 gates=1218->476 saved_with_cleanup=1484 columns=716 controls=14
 ```
 
-This takes about five seconds on the development macOS/Python 3.14 environment.
-It freshly executes the **unchanged** pinned constructor, observes the chosen
-window, rebuilds both raw words, checks the local certificate and runs the
-inherited native audit, emitter and independent local auditor on both words.
-It compares every deterministic receipt field with `RESULT.json`. Temporary
-outputs are removed. To retain words and logs, add `--out /path/to/new-directory`.
-The output directory must not already exist. `--write PATH` is a development
-receipt-generation option; omitting it performs the frozen-result comparison.
-Inherited subprocesses always run without optimization, even if this verifier
-is called with `-I -O`. All new validation uses explicit exceptions.
+This takes about six seconds on the development macOS/Python 3.14 environment.
+It freshly executes the **unchanged** pinned constructor, observes all fourteen
+windows, verifies their common scalar template and separate physical frames,
+rebuilds both complete raw words and runs the inherited native audit, emitter
+and independent local auditor. It compares every deterministic receipt field
+with `RESULT.json`. Temporary outputs are removed. To retain words and logs,
+add `--out /path/to/new-directory`; the directory must not already exist.
+`--write PATH` generates a development receipt instead of comparing the frozen
+one. Inherited subprocesses always run without optimization, even if this
+verifier is called with `-I -O`. New validation uses explicit exceptions.
 
-The bounded search can be reproduced separately:
+Reproduce the search and test package integrity separately:
 
 ```sh
 python3 -B research/complex-factory5-resynthesis/search.py
+python3 -B research/complex-factory5-resynthesis/test_package.py
 ```
 
-Expected: `PASS_SEARCH_FACTORY5 trials=1024 gates=87->35`. Search code is not
-imported by the certificate verifier. No network, solver, NumPy or SymPy is used.
+Expected markers: `PASS_SEARCH_FACTORY trials=1024+512 gates=87->34 primitives=310->128`
+and `PASS_PACKAGE_CONTROLS relocation=1 rejections=5`. Search code is not imported
+by the certificate verifier. No network, external solver, NumPy or SymPy is required.
 
-## Exact object and result
+## Exact objects and accounting
 
-The operating-system assignment seed was **33**, selecting the complex track.
-Block `33 mod 14 = 5`, in lexicographic order, has support `(0,3,4,7)`. The
-constructor first normalizes eight retired donors to the source basis, then
-applies a second invertible change putting the four coordinate totals first.
-This experiment composes those two maps and resynthesizes their **entire**
-8×8 rational map; it does not choose a different complementary basis or assume
-that any helper starts at zero.
+The operating-system assignment seed was **33**, selecting the complex track
+and initial block `33 mod 14 = 5`. The package path retains that initial name.
+The continuation starts from PR681 commit
+`80d4edbc2d53f058787cb5c43bd0fc22c7e7fdff`, which simplified only block 5 to 35
+gates. A different synthesis class now finds a 34-gate, lower-primitive-cost
+word. Fresh constructor observation establishes the same original 87-gate
+scalar template in **every** block, allowing one certified replacement to
+cover all fourteen without further search or extrapolation.
 
-The pre-restriction ordered registers are
-`[325,320,323,321,330,79,76,77]`; after the constructor's 112-port restriction they
-are `[309,304,307,305,314,71,68,69]`. Five are helpers and three are source
-registers. The window is the half-open, zero-based section-A slice `[723,810)`.
-Every old and new gate is at the same rank-four frame
-`span_F2(390,74,44,30)`. Every register enters at its pinned rank-three frame,
-is touched at rank four, and exits at that same frame.
+`CIRCUIT.json` contains the 8×8 matrix, original 87-gate template, previous
+35-gate witness, new 34-gate witness and search receipt. `BLOCKS.json` gives
+all fourteen ordered register lists, original section-A intervals and binary
+entry/exit frames. The verifier checks the exact inventory 0 through 13,
+nonoverlapping intervals and pairwise-disjoint sets of eight registers.
 
-| Raw-word quantity | Before | After |
+Each window normalizes eight retired donors to a source basis and then puts
+the four coordinate totals first. Resynthesis preserves the **entire**
+ordered map, including the four complementary coordinates. No helper is
+assumed clean and no alternative complement or dirty-input map is introduced.
+
+For the seed block, support `(0,3,4,7)`, the ordered pre-restriction registers
+are `[325,320,323,321,330,79,76,77]`. After the constructor's 112-port restriction
+they are `[309,304,307,305,314,71,68,69]`, five helpers and three source registers.
+The original section-A slice is `[723,810)`, zero-based and half-open. Its gates
+are at `span_F2(390,74,44,30)`. Each block uses its own pinned rank-four frame;
+each of its eight registers climbs once from its own rank-three entry frame.
+
+| Raw-word quantity | Original | All fourteen replaced |
 |---|---:|---:|
-| Local window scalar operations | 87 | 35 |
-| Full compensated scalar program | 16,972 | 16,868 |
-| Emitted scalar macros, each orientation | 16,996 | 16,892 |
-| Forward real-component primitives | 170,488 | 169,836 |
-| Inverse-transpose real-component primitives | 170,536 | 169,884 |
-| Forward positive prefix bound | 86,491,024,246 | 77,948,354,244 |
-| Inverse-transpose positive prefix bound | 2,028,759,644,357 / 2 | same |
+| Scalar operations per window | 87 | 34 |
+| Scalar operations in fourteen forward windows | 1,218 | 476 |
+| Full compensated scalar program | 16,972 | 15,488 |
+| Emitted scalar macros, each orientation | 16,996 | 15,512 |
+| Forward real-component primitives | 170,488 | 160,296 |
+| Inverse-transpose real-component primitives | 170,536 | 160,344 |
+| Forward positive prefix bound | 86,491,024,246 | 68,417 |
+| Inverse-transpose positive prefix bound | 2,028,759,644,357 / 2 | 1,649,462 |
+| Forward / inverse-transpose prefix bits | 37 / 40 | 17 / 21 |
 | Helpers / arbitrary input columns | 492 / 716 | same |
 | Dirty-input compensation additions | 10,632 | same |
 | Paid rank mass / distinct directed phase edges | 6,284 / 3,110 | same |
 
-The raw word's paid histogram stays
-`{1:2024, 2:760, 3:300, 4:168, 5:168, 6:44, 8:8}`.
-These are raw-constructor quantities, **not** the selected optimized provider's
-profile or global invoice.
+The paid histogram stays `{1:2024, 2:760, 3:300, 4:168, 5:168, 6:44, 8:8}`.
+These quantities refer to the raw constructor, **not** the selected optimized
+provider or its global invoice. Prefix bits are conservative arithmetic bounds;
+no reduction of the selected payload allowance or practical runtime is claimed.
 
-## Cost and correctness boundary
+## Cost, checks and limits
 
-The optimistic bill was evaluated before packaging: a fixed-frame exact-map
-replacement can reduce scalar lowering work, but cannot improve the recurrence
-exponent when all child widths remain unchanged. That is the measured outcome.
-`PROOF.md` supplies the substitution argument and precise positive-envelope
-comparison. The full replay covers arbitrary source, target and helper inputs,
-private center clearing, both orientations and native frames.
+A fixed-frame exact-map substitution can reduce scalar work but cannot improve
+the recurrence exponent when all child widths remain unchanged. The complete
+bill includes every source read, Horner initialization, doubling, halving,
+signed accumulation, binary scale and private-work clear. Each of the main,
+inverse and two inverse-transpose windows falls from 310 to 128 real primitives.
+Thus the total saving is `14 × 2 windows × 2 components × (310−128) = 10,192`.
+The independent emitted-program counts must reproduce this exact difference.
+There is no extra helper, persistent copy, route, frame or recursive child.
 
-Every source access is an explicit addition in the circuit. The primitive bill
-includes Horner work initialization, source accumulation, doubling, halving,
-signed accumulation and clearing. Each scalar scale is lowered into signed
-binary operations. The new circuit uses no extra helper, persistent copy,
-frame, route, recursive child or restoration assumption. The existing private
-coefficient stream is reused. The main-plus-cleanup cost falls from
-`2 components × 2 windows × 310 = 1240` primitives to
-`2 × 2 × 147 = 588`.
+`PROOF.md` gives exact substitution, composition, scale conjugation and positive
+envelope arguments. The full replay covers all 716 arbitrary source, target
+and helper input columns, private center clearing and both orientations.
+Every new positive endpoint map is entrywise dominated by the original; every
+new intermediate/Horner bound is dominated by an actual old intermediate
+bound, for any nonnegative incoming envelope. The whole word's bounds are also
+freshly recomputed, not inferred from gate counts.
 
-There are ten new rejection controls: omitted gate, wrong sign, wrong source,
-wrong frame, non-dyadic addition, non-binary scale, exact-map-neutral growth
-inflation, endpoint-envelope-neutral prefix inflation, exact-map-neutral cost
-inflation and omitted cleanup. The inherited
-four local controls also run for each raw word. Gate counts alone are not used
-to infer a primitive or precision improvement.
+Fourteen new controls reject an omitted gate, wrong sign/source/frame,
+non-dyadic addition, non-binary scale, exact-map-neutral endpoint growth,
+endpoint-envelope-neutral prefix growth, exact-map-neutral cost inflation,
+missing cleanup, missing block, duplicate block, wrong block register and
+wrong block frame. Four inherited local controls also run for each full word.
 
-This package does **not** transport the edit through PR622's later prefix,
-gauge, frame-regroup and cold-end recipes. Those recipes refer to scalar words
-and indices and need separate reconstruction. It does not rerun phase lowering,
+This package does **not** transport the edits through the later prefix, gauge,
+frame-regroup or cold-end recipes. Those depend on scalar words and indices
+and require separate reconstruction. It does not rerun phase lowering,
 residual wrappers, whole-owner hosting, the 47-inequality assembly, the full
 repository suite or Lean. An unchanged phase-edge inventory is checked; it is
 not represented as a fresh Clifford proof. All-size/compiler/common-label/
-mutable-basis, precision/tape, analytic-transfer and selected bit-supplier
-assumptions remain inherited. This is neither a multiplication theorem nor a
-claim of optimal gate count, practical speedup or a larger κ.
+mutable-basis, precision/tape, analytic-transfer and bit-supplier assumptions
+remain inherited. No gate minimum, larger κ or multiplication theorem follows.
 
-## Search and overlap
+## Bounded research and overlap
 
-`CLAIM.json` records the three candidates considered and the local claim.
-There was no pinned coordination issue; the only open issue was #650 requesting
-Discussions. The method changes the scalar factorization while fixing the
-complete rational map. It does not reopen the decoder, delivery or owner-map
-searches closed or pursued by #620/#651 and the newer construction chain.
+`CLAIM.json` records the original three candidates and the continuation scope.
+No pinned coordination issue existed. The follow-up keeps assignment seed 33
+and updates the existing PR instead of opening another. The retired-row map
+remains fixed throughout; this does not reopen decoder or owner-map searches.
 
-The completed search used `random.Random(33)`, 1,024 trials, eight-column
-permutations, diagonal pivots when possible and randomly chosen feasible
-binary-rational pivots otherwise. Both diagonal-scale factors and inverse
-scales must be signed powers of two; additions must be dyadic. All 1,024 trials
-were admissible. Only shorter words with exact map equality and entrywise
-nonnegative transfer dominance in both directions were retained. Improvements
-occurred at zero-based trials 10, 39, 87, 695 and 784; the last had 35 gates.
-The stopping rule was 1,024 trials, not exhaustion. Only block 5 was searched.
-Full prefix, primitive, dual and native checks were performed on the winner.
+The historical 1,024 one-sided Gaussian trials reproduce the previous 35-gate
+word. The new domain uses **512 two-sided row/column sparse reductions** with
+exact dyadic coefficients and rational seeded score perturbations. Each step
+strictly reduces matrix nonzeros. Each trial tests eight middle Gaussian
+orders: **4,096 completed orders and 7,137 sparse-reduction steps** in total.
+Equal generators are collected only across commuting operations. Nomination
+minimizes the fully lowered real primitive cost first, then gate count.
+
+Improvements at zero-based trials 46, 96 and 308 cost 142, 136 and 133 real
+primitives, with 38, 35 and 34 gates respectively. Subsequent exact scale
+conjugations reduce 133 to 131, 129 and finally **128**, without changing the
+34-gate count. This pass stops when no strictly cheaper single-scale relocation
+exists, or after sixteen passes; it stopped after three accepted moves.
+
+These are bounded searches, not optimality certificates. Search acceptance uses
+exact maps and endpoint envelopes; the separate verifier checks full prefix,
+primitive, frame, dual, cleanup and all-block composition obligations. The
+other thirteen windows required no search: their literal scalar templates
+match exactly under their recorded register relabelings.
 
 PR645 changes the factory's arbitrary-helper-input map and complementary basis;
-this contribution preserves both. PR670 and concurrent PR674 independently
-simplify circuits in the **F2 bit supplier**, at blocks 3 and 5 respectively;
-this package uses rational complex arithmetic, signed scales, Horner lowering
-and the different PR622 coordinate-total circuit. Neither bit PR is a
-code/certificate dependency. Older target-prefix resynthesis (#411 and related
-work) changes delivery prefixes rather than this exact retired-row map.
+this preserves both. Concurrent #670/#674 and #688/#691/#694 simplify or compose
+**F2 bit-supplier** circuits; this work concerns the distinct rational complex
+coordinate-total factory and signed/Horner accounting. Those are related work,
+not code or certificate dependencies. Older target-prefix resynthesis (#411)
+changes delivery prefixes rather than this exact retired-row map. Current
+open heads and overlap checks are retained in `OVERLAP.json`.
+
+Concurrent [PR696](https://github.com/CrocSwap/integer-mult-bounds/pull/696),
+reviewed at `5a3f983715027c4fd83f50bc9001d4b18463bed1`, reduces primitive
+expansion costs while leaving the selected CK/JP8 scalar macro words unchanged.
+This package changes the raw factory macro words under the unchanged inherited
+lowering. These are distinct layers; neither combined savings nor compatibility
+with that lowering is claimed. Its code and certificates are not dependencies.
 
 ## Attribution and license
 

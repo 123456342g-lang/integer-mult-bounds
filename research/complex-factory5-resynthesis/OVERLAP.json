@@ -168,5 +168,154 @@
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/672"
     }
   ],
-  "conclusion": "No matching rational eight-register PR622 coordinate-total resynthesis found. PR670/674 address different F2 bit words; PR645 changes the arbitrary-helper-input factory map. No claim of repository-wide priority."
+  "conclusion": "No matching rational eight-register PR622 coordinate-total resynthesis found. PR670/674 address different F2 bit words; PR645 changes the arbitrary-helper-input factory map. No claim of repository-wide priority.",
+  "continuation": {
+    "checked_utc": "2026-10-13T04:39:09.494556+00:00",
+    "query": "gh pr list --repo CrocSwap/integer-mult-bounds --state open --limit 1000 --json number,title,headRefOid,url,updatedAt",
+    "open_count": 528,
+    "latest_seen": 709,
+    "relevant_open_heads": [
+      {
+        "headRefOid": "98310d032c67786190c1e9928f81cf7aaff27564",
+        "number": 709,
+        "title": "Tooling: cache exact R420 geometry for 6.47x faster mutation replay",
+        "updatedAt": "2026-10-13T04:36:07Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/709"
+      },
+      {
+        "headRefOid": "2ec522a466ec448f148d4355dc43b51c0ef1e0b5",
+        "number": 708,
+        "title": "Research: save 114 R420 XORs by sharing restored decoder operands (no new kappa)",
+        "updatedAt": "2026-10-13T04:35:11Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/708"
+      },
+      {
+        "headRefOid": "098bdbe5e554bb94a4ffe14b4f80758c80884bc5",
+        "number": 707,
+        "title": "Tooling: exact Gram prefix reuse with pinned equivalence and timing evidence",
+        "updatedAt": "2026-10-13T04:34:21Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/707"
+      },
+      {
+        "headRefOid": "0f7dbb54948775c010b5e5bc8ab3cf92a52a9b25",
+        "number": 706,
+        "title": "Independent verification: selected complex moments via integer root bounds",
+        "updatedAt": "2026-10-13T04:34:41Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/706"
+      },
+      {
+        "headRefOid": "eeb0cd605415a73b792915aaa9185000f293c84a",
+        "number": 705,
+        "title": "Research: determinant obstruction for rank-homogeneous register paths (no kappa)",
+        "updatedAt": "2026-10-13T04:33:58Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/705"
+      },
+      {
+        "headRefOid": "152583fe2062f23b1149b4b20255f8e85946d558",
+        "number": 704,
+        "title": "Tooling: bind review-ledger metadata to pinned family decisions",
+        "updatedAt": "2026-10-13T04:28:25Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/704"
+      },
+      {
+        "headRefOid": "358383e2f1b0f292d4d6eb897c06fd8558a4f5e6",
+        "number": 703,
+        "title": "Scoped negative result: asymmetric Hurwitz E8 copy cost is exactly 10",
+        "updatedAt": "2026-10-13T04:28:00Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/703"
+      },
+      {
+        "headRefOid": "27db45ac6befa99d6c06be920a93845023e81937",
+        "number": 702,
+        "title": "Research audit: verify all selected cold-wrapper amplitudes (no new kappa)",
+        "updatedAt": "2026-10-13T04:29:11Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/702"
+      },
+      {
+        "headRefOid": "de07c015b38e5b157016db636f210c4f7f537058",
+        "number": 701,
+        "title": "Research audit: sharp fixed-a Gaussian envelope for balanced assembly (no new kappa)",
+        "updatedAt": "2026-10-13T04:26:46Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/701"
+      },
+      {
+        "headRefOid": "dee275599160965d77324c9ab635bc00ad5f702d",
+        "number": 700,
+        "title": "Research audit: PR468 modular rank and parity arithmetic",
+        "updatedAt": "2026-10-13T04:24:03Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/700"
+      },
+      {
+        "headRefOid": "03e8d7ca494a083e5053cd6b1228f66b98414479",
+        "number": 699,
+        "title": "Conditional \u03ba = 0.001660666354374641: four entrance promotions, six dim-8 ends and a width-neutral B read exchange on the PR659 word",
+        "updatedAt": "2026-10-13T04:25:43Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/699"
+      },
+      {
+        "headRefOid": "ab78f797cffcbeddbb17a7eb069741085ffe3351",
+        "number": 698,
+        "title": "Scoped negative result: selected CK B frames are optimal at fixed boundaries",
+        "updatedAt": "2026-10-13T04:23:37Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/698"
+      },
+      {
+        "headRefOid": "3219863d868b4230eeb4bf2948758eff45efffcf",
+        "number": 697,
+        "title": "Research construction: direct-source E8 with 120 fewer helpers",
+        "updatedAt": "2026-10-13T04:23:26Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/697"
+      },
+      {
+        "headRefOid": "5a3f983715027c4fd83f50bc9001d4b18463bed1",
+        "number": 696,
+        "title": "Research: lower selected complex scalar primitives by 22\u201325% (no new kappa)",
+        "updatedAt": "2026-10-13T04:21:56Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/696"
+      },
+      {
+        "headRefOid": "9732ac127dd4bef98a846aaa904c20b5a84e72c1",
+        "number": 694,
+        "title": "Research: save 6,934 R420 XORs with a restored helper basis",
+        "updatedAt": "2026-10-13T04:25:50Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/694"
+      },
+      {
+        "headRefOid": "ee6b9175fe006c11871802866c487b5ecc1a93a4",
+        "number": 691,
+        "title": "Research: shorten R420 phase-A quad 13 from 19 to 12 XORs (no new kappa)",
+        "updatedAt": "2026-10-13T04:16:35Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/691"
+      },
+      {
+        "headRefOid": "bb05c40c3e6319aa8c131b06a105e3648ac6c95b",
+        "number": 688,
+        "title": "Research: compose R420 circuits with 16,704 fewer hosted instructions (no new kappa)",
+        "updatedAt": "2026-10-13T04:08:46Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/688"
+      },
+      {
+        "headRefOid": "82bbb9c3ac34540f196410d137ebc59d9c2c43a9",
+        "number": 687,
+        "title": "Scoped negative result: certify one K-triangle relocation neighborhood",
+        "updatedAt": "2026-10-13T04:07:09Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/687"
+      },
+      {
+        "headRefOid": "80d4edbc2d53f058787cb5c43bd0fc22c7e7fdff",
+        "number": 681,
+        "title": "Research: reduce one complex factory circuit from 87 to 35 operations (no new kappa)",
+        "updatedAt": "2026-10-13T03:56:49Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/681"
+      }
+    ],
+    "coordination": "Fresh pinned-issue query returns no pinned issue; existing local claim continued.",
+    "overlap_review": {
+      "696": "Inspected PR body, exact head and file inventory. Changes dyadic-to-primitive lowering of unchanged selected CK/JP8 macros. This contribution changes all fourteen raw PR622 factory macro windows under the unchanged inherited lowering. Distinct layers; no combined saving or compatibility claimed.",
+      "688/691/694/708": "F2 bit-supplier circuit composition or simplification; distinct map and arithmetic.",
+      "697": "E8 direct-source helper reduction; distinct helper map and objective.",
+      "698": "Selected CK B-frame boundaries; this preserves all raw factory frame boundaries."
+    },
+    "conclusion": "No matching all-fourteen exact-map raw coordinate-total replacement found in the refreshed metadata. Related PR696 primitive lowering is credited but neither consumed nor composed. No repository-wide priority claim."
+  }
 }

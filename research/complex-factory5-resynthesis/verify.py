@@ -276,48 +276,102 @@ def native(raw, out, logs):
             'programs_json_sha256': digest(read(out / 'LOCAL-PROGRAMS.json.gz'))}, word
 
 
+def bind_blocks(blocks, windows, cert):
+    require([b['index'] for b in blocks] == list(range(14)), 'block inventory is not exactly 0..13')
+    require(set(windows) == {str(i) for i in range(14)}, 'constructor inventory differs')
+    seen, last_end = set(), 0
+    for b in blocks:
+        w = windows[str(b['index'])]
+        require(b['block'] == w['block'], 'wrong block support')
+        require(b['registers_before_112_port_restriction'] == w['registers'], 'wrong block registers')
+        require(b['A_window_zero_based'] == [w['start'], w['end']], 'wrong block window')
+        require(b['frame'] == w['frame'] and b['entry_frames'] == w['entry_frames']
+                and b['exit_frames'] == w['exit_frames'], 'wrong block boundary frames')
+        require(b['exit_frames'] == [b['frame']]*8, 'wrong block exit frames')
+        require(len(set(w['registers'])) == 8 and not seen.intersection(w['registers']),
+                'aliased factory registers')
+        seen.update(w['registers'])
+        require(w['start'] >= last_end, 'overlapping factory windows')
+        last_end = w['end']
+        original = []
+        for e in w['gates']:
+            e = copy.deepcopy(e)
+            e[1] = w['registers'].index(e[1])
+            if e[0] == 'add':
+                e[2] = w['registers'].index(e[2])
+            original.append(e)
+        require([e[:-1] for e in original] == [e[:-1] for e in cert['original']],
+                'original gates are not the literal constructor window')
+        require(all(e[-1] == b['frame'] for e in original), 'nonconstant constructor frame')
+    require(blocks[5] == {k: cert[k] for k in ('block', 'registers_before_112_port_restriction',
+                'A_window_zero_based', 'frame', 'entry_frames', 'exit_frames')} | {'index': 5},
+            'seed block differs from original certificate')
+
+
+def block_controls(blocks, windows, cert):
+    mutants = {'missing_block': blocks[:-1], 'duplicate_block': blocks[:-1]+[blocks[0]]}
+    m = copy.deepcopy(blocks)
+    m[3]['registers_before_112_port_restriction'][0] += 1
+    mutants['wrong_block_register'] = m
+    m = copy.deepcopy(blocks)
+    m[8]['frame'][0] ^= 1
+    mutants['wrong_block_frame'] = m
+    rejected = []
+    for name, mutant in mutants.items():
+        try:
+            bind_blocks(mutant, windows, cert)
+        except ValueError as e:
+            rejected.append({'name': name, 'reason': str(e)})
+        else:
+            raise ValueError('Accepted family control: ' + name)
+    return rejected
+
+
 def verify(out):
     pins = read(HERE / 'SOURCE-PINS.json')
     for rel, expected in pins['files'].items():
         require(hashlib.sha256((ROOT / rel).read_bytes()).hexdigest() == expected,
                 'Source pin mismatch: ' + rel)
     cert = read(HERE / 'CIRCUIT.json')
+    blocks = read(HERE / 'BLOCKS.json')
     run(HERE / 'extract.py', [out / 'original'], out / 'constructor.log')
-    window = read(out / 'original/WINDOW.json')
-    require(cert['block_index'] == 33 % 14 and cert['block'] == window['block'], 'wrong block')
-    require(cert['registers_before_112_port_restriction'] == window['registers'], 'wrong registers')
-    require(cert['A_window_zero_based'] == [window['start'], window['end']], 'wrong window')
-    require(cert['frame'] == window['frame'] and cert['entry_frames'] == window['entry_frames']
-            and cert['exit_frames'] == window['exit_frames'], 'wrong boundary frames')
-    require(cert['exit_frames'] == [cert['frame']]*8, 'wrong exit frames')
-    original = []
-    for e in window['gates']:
-        e = copy.deepcopy(e)
-        e[1] = window['registers'].index(e[1])
-        if e[0] == 'add':
-            e[2] = window['registers'].index(e[2])
-        original.append(e)
-    require(original == cert['original'], 'original gates are not the literal constructor window')
+    windows = read(out / 'original/WINDOWS.json')
+    require(cert['block_index'] == 33 % 14, 'wrong seed block')
+    bind_blocks(blocks, windows, cert)
+    original = cert['original']
     matrix_rows = list(map(list, zip(*columns(original))))
     require([[str(x) for x in row] for row in matrix_rows] == cert['matrix'], 'wrong claimed matrix')
     local = validate(original, cert['replacement'], cert['frame'], cert['entry_frames'])
-    rejected = controls(cert)
+    rejected = controls(cert) + block_controls(blocks, windows, cert)
     raw = read(out / 'original/FULL-WORD.json.gz')
-    # Constructor's documented 120->112 restriction, with literal-window binding.
-    registers = [r-16 if r >= 240 else r-8 for r in window['registers']]
-
-    def relocate(events):
-        es = copy.deepcopy(events)
-        for e in es:
-            e[1] = registers[e[1]]
-            if e[0] == 'add':
-                e[2] = registers[e[2]]
-        return es
-
-    begin, end = cert['A_window_zero_based']
-    require(raw['A'][begin:end] == relocate(original), 'raw 112-port window mismatch')
     changed = copy.deepcopy(raw)
-    changed['A'][begin:end] = relocate(cert['replacement'])
+    bindings = []
+    for block in reversed(blocks):
+        index, frame = block['index'], block['frame']
+        # The scalar template is identical, but every physical boundary is checked.
+        old_events, new_events = copy.deepcopy(original), copy.deepcopy(cert['replacement'])
+        for e in old_events + new_events:
+            e[-1] = frame
+        require(validate(old_events, new_events, frame, block['entry_frames']) == local,
+                'block-specific local certificate differs')
+        registers = [r-16 if r >= 240 else r-8
+                     for r in block['registers_before_112_port_restriction']]
+
+        def relocate(events):
+            es = copy.deepcopy(events)
+            for e in es:
+                e[1] = registers[e[1]]
+                if e[0] == 'add':
+                    e[2] = registers[e[2]]
+            return es
+
+        begin, end = block['A_window_zero_based']
+        require(raw['A'][begin:end] == relocate(old_events), 'raw 112-port window mismatch')
+        # Descending splice order leaves all earlier source indices unchanged.
+        changed['A'][begin:end] = relocate(new_events)
+        bindings.append({'block_index': index, 'registers': registers,
+                         'old_gates': len(old_events), 'new_gates': len(new_events),
+                         'exact_map_and_frame_checked': True})
     changed['cleanup'] = inverse([e for e in changed['A'] + changed['B']
                                   if not 112 <= e[1] < 224])
     full = [256, 128, 64, 32, 16, 8, 4, 2, 1]
@@ -334,7 +388,19 @@ def verify(out):
     for key in ('local_profile', 'start', 'final', 'compensation', 'ports', 'centers', 'center_frames'):
         require(bw[key] == aw[key], 'changed native invariant: ' + key)
     require(bw['frames'] == aw['frames'] and bw['edges'] == aw['edges'], 'changed phase-edge inventory')
+    saved_macros = 2*len(blocks)*(len(original)-len(cert['replacement']))
+    saved_primitives = 2*len(blocks)*sum(
+        local[name]['old_real_primitives']-local[name]['new_real_primitives']
+        for name in ('main', 'cleanup'))
+    require(before['native']['scalar_operations']-after['native']['scalar_operations'] == saved_macros,
+            'native scalar saving differs from local bill')
     for direction in ('forward', 'backward'):
+        require(before['emitted'][direction]['scalar_macros']-
+                after['emitted'][direction]['scalar_macros'] == saved_macros,
+                'emitted scalar saving differs from local bill')
+        require(before['emitted'][direction]['real_component_primitive_bound']-
+                after['emitted'][direction]['real_component_primitive_bound'] == saved_primitives,
+                'emitted primitive saving differs from local bill')
         require(before['emitted'][direction]['paid_profile'] == after['emitted'][direction]['paid_profile'],
                 'changed paid profile')
         require(Q(after['local']['local'][direction]['prefix_l1_upper']) <=
@@ -355,11 +421,14 @@ def verify(out):
         rejected.append({'name': 'missing_cleanup', 'reason': 'literal reversed inverse mismatch'})
     else:
         raise ValueError('Missing cleanup accepted')
-    result = {'status': 'PASS_COMPLEX_FACTORY5_RESYNTHESIS', 'base_commit': pins['base_commit'],
+    result = {'status': 'PASS_COMPLEX_FACTORY_RESYNTHESIS', 'base_commit': pins['base_commit'],
               'circuit_sha256': hashlib.sha256((HERE / 'CIRCUIT.json').read_bytes()).hexdigest(),
-              'source_files_checked': len(pins['files']), 'block_index': 5,
+              'source_files_checked': len(pins['files']), 'seed_block_index': 5,
+              'block_count': len(blocks), 'block_bindings': bindings[::-1],
+              'blocks_sha256': hashlib.sha256((HERE / 'BLOCKS.json').read_bytes()).hexdigest(),
               'old_gates': len(original), 'new_gates': len(cert['replacement']),
-              'scalar_operations_saved_with_cleanup': 2*(len(original)-len(cert['replacement'])),
+              'scalar_operations_saved_with_cleanup': saved_macros,
+              'real_component_primitives_saved_per_orientation': saved_primitives,
               'local_checks': local, 'negative_controls': rejected,
               'before': before, 'after': after,
               'scope': 'Raw PR622 constructor only. No transported provider, hosted invoice, new kappa, phase lowering, or full multiplication theorem.'}
@@ -382,7 +451,7 @@ def main():
         write(args.write, result)
     else:
         require(result == read(HERE / 'RESULT.json'), 'receipt differs from frozen result')
-    print('PASS_COMPLEX_FACTORY5_RESYNTHESIS gates=87->35 saved_with_cleanup=104 columns=716 controls=10')
+    print('PASS_COMPLEX_FACTORY_RESYNTHESIS windows=14 gates=1218->476 saved_with_cleanup=1484 columns=716 controls=14')
 
 
 if __name__ == '__main__':

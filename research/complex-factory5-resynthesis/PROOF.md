@@ -6,7 +6,7 @@ Prepared for alluri-ritual with substantial OpenAI Codex assistance. Apache-2.0.
 
 Let `z` be the ordered vector of eight registers specified in `CIRCUIT.json`.
 An addition is the elementary map `z_t <- z_t + q z_s`, `t != s`; a scale is
-`z_t <- q z_t`, `q != 0`. The old 87-gate and new 35-gate products are both
+`z_t <- q z_t`, `q != 0`. The old 87-gate and new 34-gate products are both
 
 ```text
  1   1    1    1   -2  -2   2   2
@@ -45,7 +45,7 @@ restore all helpers, in both orientations.
 
 ## 2. Physical frames and child cost
 
-For each of the eight registers, the pinned entry frame is a rank-three
+For each of the seed block's eight registers, the pinned entry frame is a rank-three
 subspace of `F = span_F2(390,74,44,30)`, which has rank four. Both words touch
 every register and every gate is at F. Consequently each register climbs
 exactly once, from its own entry frame to F, in either factorization. No
@@ -86,9 +86,10 @@ leak check, is cleared before use and ends at zero; it is **private cleared
 work**, not a claim of restoring arbitrary public helper data by erasure.
 
 Each of the old main, old cleanup and their two dual words costs 310 real
-primitives; each replacement costs 147. Thus main plus cleanup saves
-`2 * (310-147) * 2 = 652` real-component primitives per complete raw invocation.
-The inherited emitted-program bill independently records this same decrease.
+primitives; each replacement costs 128. All fourteen disjoint windows are
+replaced, so main plus cleanup saves `14 * 2 * (310-128) * 2 = 10192`
+real-component primitives per complete raw invocation. The inherited
+emitted-program bill must independently record this exact decrease.
 
 ## 4. No hidden coefficient-growth increase
 
@@ -117,12 +118,67 @@ prefix bounds, including all private work and both orientations.
 The written linearity, inverse, fixed-frame and envelope arguments justify
 substitution of the finite checked circuit. The exact certificates establish
 the stated matrix equalities, inequalities and concrete lowering counts.
-Neither component asserts a minimum gate count. The 1,024-trial Gaussian
-search only nominated the witness; its failure to find fewer than 35 gates
-is not an impossibility theorem.
+Neither component asserts a minimum gate count. The historical 1,024-trial
+Gaussian search and the new 512-trial two-sided search only nominate witnesses; neither proves a lower bound. The final
+34-gate word is checked independently of either producer.
 
 Applying this edit after transported prefix/entrance/cold-end stages requires
 new index mappings, constructor binding and full admission. This package does
 not infer that compatibility from the raw-word result. Complete hosting,
 phase lowering, full invoices, outer assembly, uniform tape/compiler and
 analytic interfaces remain outside its proof boundary.
+
+## 6. Two-sided synthesis and exact scale transport
+
+A row shear is recorded as left multiplication. A column update
+`column_t += q column_s` is right multiplication by `I + q e_s e_t^T`.
+The nominator records the target/source reversal explicitly. If reductions
+produce `A = L M R`, then `M = L^-1 A R^-1`. The middle A is synthesized by
+exact Gaussian operations and the inverses on both sides are placed in the
+corresponding execution order. Matrix equality is checked again after
+nomination; the independent certificate checker does not consume this search
+derivation as proof of equality.
+
+For elementary additions E(t,s,a), two generators commute when neither one's
+target is the other's source. Equal generators may then combine by adding
+coefficients; equal scales combine by multiplication. The simplifier moves
+across only gates satisfying these conditions and drops only exact identities.
+
+Let D be a diagonal binary scale, with diagonal values d_i. A scalar addition
+with matrix E(t,s,q) satisfies
+
+`E(t,s,q) D = D E(t,s,q d_s/d_t)`.
+
+Thus moving a scale rightwards across an addition changes that addition's
+coefficient by d_s/d_t; moving it leftwards uses the reciprocal. This preserves
+the complete map, including arbitrary dirty inputs. All gates remain at the
+same block frame. The coefficient change can affect primitive counts and
+prefix growth, so neither is inherited without recomputation. The three final
+relocations pass all four local orientation checks and the full raw-word replay.
+
+## 7. Simultaneous composition of fourteen blocks
+
+The unchanged constructor is observed at the start and end of every retired-row
+basis-change interval. The recorded block inventory is exactly 0 through 13.
+After restricting source ports from 120 to 112, each interval's literal gates
+must equal the common original template with its own register names and frame.
+The fourteen sets of eight registers are pairwise disjoint, and all fourteen
+section-A intervals are nonoverlapping. These facts are checked, not assumed
+from regularity of the underlying Hamming design.
+
+For each interval separately, both words lift the same registers along the
+same rank-three-to-rank-four path and apply the same full 8×8 matrix. Replacing
+one interval therefore preserves its complete externally visible state for
+every ambient input. Repeating this argument composes the replacements; it
+does not require independent or uncorrelated incoming data. The verifier
+splices in descending original-index order to prevent index drift, regenerates
+the full inverse cleanup, and freshly checks both complete 716-column maps.
+
+Positive endpoint domination also composes: all unchanged surrounding scalar
+operations have nonnegative envelope maps, hence preserve componentwise
+ordering of incoming bounds. In each replaced interval, new prefix rows are
+dominated by old rows on the same incoming vector, and new outgoing envelopes
+are at most the old ones. Induction over the complete program gives a global
+nonincrease; the inherited emitted-program audit recomputes the stronger
+concrete bounds reported in RESULT.json. Unchanged paid profiles mean that
+this scalar and precision improvement still makes no new exponent claim.
