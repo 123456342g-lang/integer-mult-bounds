@@ -16,7 +16,8 @@
     {"pr":1038,"url":"https://github.com/CrocSwap/integer-mult-bounds/pull/1038","scope":"Four paid phase passes for quadratic-phase inverse words; no phase primitive or fusion change here"},
     {"pr":1012,"url":"https://github.com/CrocSwap/integer-mult-bounds/pull/1012","scope":"Mass-neutral hosted T37 restoration deferral; no deferral or hosted recurrence change here"},
     {"pr":764,"url":"https://github.com/CrocSwap/integer-mult-bounds/pull/764","scope":"Sharp inverse-square cyclic scan rounding; original conservative leaf budget is retained here"},
-    {"pr":1064,"url":"https://github.com/CrocSwap/integer-mult-bounds/pull/1064","scope":"Complex factory primitive lowering; unrelated to coarse-grid word planning"}
+    {"pr":1064,"url":"https://github.com/CrocSwap/integer-mult-bounds/pull/1064","scope":"Complex factory primitive lowering; unrelated to coarse-grid word planning"},
+    {"pr":1085,"url":"https://github.com/CrocSwap/integer-mult-bounds/pull/1085","scope":"Hanson Sun (@bbMisk) proves a sharp logarithmic coefficient bound for the PR905/628 balanced dirty commutator recursion. This package instead follows directed dependencies of the fixed six cubic-inverse signed shears and their inverse, retaining the original leaf bound. Neither code nor savings is imported or composed."}
   ],
   "prior_sprint_results": "Distinct from rounds 1-10 listed in batch instructions and round 11 complementary nullity audit: no decoder shear, stage-rank obstruction, omission atlas, source provenance migration or factory lowering"
 }

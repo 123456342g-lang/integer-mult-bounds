@@ -19,3 +19,8 @@ obligations remain. Only `research/word-precision53/` is added. Credit Chafik
 Boukhalfa's source implementation and composition proof, Ali Romman's inverse
 bound, and the PR628 lineage. Prepared for @woklerx with substantial OpenAI
 Codex assistance; Apache-2.0.
+
+Concurrent PR1085 by Hanson Sun (@bbMisk) sharpens ideal prefix coefficients
+for PR905/628's balanced dirty commutator recursion. This package treats the
+fixed six cubic-inverse shears and their full inverse word with componentwise
+magnitude/error propagation. It imports neither PR1085 code nor its savings.
