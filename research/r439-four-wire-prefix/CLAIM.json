@@ -1,0 +1,46 @@
+{
+  "pass": 9,
+  "assignment_seed": 11,
+  "drawn_at_utc": "2026-10-13T10:59:56.157702+00:00",
+  "track": "bit supplier",
+  "base": "f567884aeb8851b6e794af1184119a3bfbe1e631",
+  "status": "claimed",
+  "branch": "research/pass09-bit-seed11",
+  "claimed_at_utc": "2026-10-13T11:06:49.664551+00:00",
+  "candidate_selection": "11 modulo 3 = 2; four-register width selected by 3+(11 modulo 2)",
+  "candidates": [
+    {
+      "object": "Selected R439 fixed-word frame retiming",
+      "chosen": false,
+      "reason": "PR886 already proves exact frame optimality for that unchanged word"
+    },
+    {
+      "object": "Selected R439 mini-node interleaving",
+      "chosen": false,
+      "reason": "PR792 already certifies its same-wire same-frame class minima"
+    },
+    {
+      "object": "Selected R439 same-frame four-register prefix resynthesis",
+      "chosen": true,
+      "method": "Exact GL(2..4,2) CNOT synthesis on contiguous elementary A/B windows, with both-order positive-transfer domination and unchanged register frame paths; rebuild required literal reverse cleanup"
+    }
+  ],
+  "statement": "Search every contiguous same-frame window on at most four z registers in the selected PR589 A/B prefix. Replace disjoint windows by shorter exact F2 circuits without new helpers, target reads or frame changes; charge the paired literal cleanup and verify the complete local word.",
+  "domain": "Original selected PR589 word only; phases A and B, source/helper registers only, same frame and same physical participant set. Fixed deterministic shortest-path tie order diversified by seed 11; only accept nonincreasing positive transfer matrices in both orders. No global circuit optimum claim.",
+  "stopping_rule": "Complete one bounded original-window scan, construct and verify any accepted disjoint replacements. At most one evidence-driven pivot if needed. Do not repeat the closed frame-only or mini-node searches.",
+  "expected_finish": "Approximately 120 minutes from claim; final quarter for validation/handoff",
+  "coordination": "No sprint coordination issue; only #650 asks for Discussions. Claim recorded locally.",
+  "initial_open_pr_count": 689,
+  "latest_pr_at_claim": 897,
+  "related_prs": {
+    "754": "Exact four-wire synthesis on historical R420 cleanup; changes literal H4 to semantic H4-prime. This changes selected R439 A/B windows and preserves literal H4 via paired cleanup.",
+    "886": "Fixed-word frame optimum; no repeat",
+    "792": "Mini-node interleaving optimum; no repeat",
+    "891": "Whole-block positive single-write schedules and class obstructions; different window class",
+    "873": "R439 block508 whole-block rescheduling",
+    "880": "Block507 fixed-factor scheduling",
+    "884": "Block521 whole-block factorization",
+    "857": "Block523 positive factorization",
+    "827": "Cleanup-frame lower bound leaves scalar circuit savings open"
+  }
+}
