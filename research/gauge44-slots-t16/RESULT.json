@@ -1,28 +1,27 @@
 {
   "status": "PASS_GAUGE44_T16_STRICT_GLOBAL_REPLAY",
-  "kappa": "836125802216367/500000000000000000",
-  "kappa_decimal": "0.001672251604432734",
-  "conservative_kappa_decimal": "0.001672251601581387",
-  "complex_lower": "1675052714021265690157/1000000000000000000000000",
+  "kappa": "83629535753309/50000000000000000",
+  "kappa_decimal": "0.00167259071506618",
+  "conservative_kappa_decimal": "0.001672590712214321",
+  "complex_lower": "1675392961778137655331/1000000000000000000000000",
   "bit_lower": "1733427039589844234749/1000000000000000000000000",
   "complex_profile": {
-    "1": 349577,
-    "2": 60193,
-    "3": 62614,
+    "1": 349596,
+    "2": 60192,
+    "3": 62610,
     "4": 20448,
     "5": 11808,
-    "7": 5,
+    "7": 2,
     "8": 1152,
-    "16": 36,
-    "48": 4853
+    "16": 1,
+    "48": 4865
   },
   "idle_remainder_profile": {
-    "1": 2249,
-    "2": 1,
-    "3": 406,
-    "7": 5,
-    "16": 36,
-    "48": 4853
+    "1": 2268,
+    "3": 402,
+    "7": 2,
+    "16": 1,
+    "48": 4865
   },
   "complete_invocations": 144,
   "roles": 69120,
@@ -30,7 +29,7 @@
   "charged_prefix_bits": 512,
   "physical_row_coefficient": 16469,
   "retained_row_coefficient": 20161,
-  "actual_73_axis_charts": 10250,
+  "actual_73_axis_charts": 10134,
   "controls": {
     "admission": 69,
     "bit_supplier": 12,
@@ -38,71 +37,71 @@
     "controller_mutations": 15
   },
   "t8_kappa": "167166528321877/100000000000000000",
-  "spec_sha256": "16679e3995e2df1aad4b9890b38215f1d29e1fc32d37b65f82a24a99515a72d3",
+  "spec_sha256": "68e077c9152ebcf29b6d5fea1ff87450f40e27bc26f2fb708cf92637c3bed94f",
   "stages": [
     {
       "name": "restore-parent",
-      "seconds": 1.344,
+      "seconds": 2.156,
       "exit_code": 0,
       "log_sha256": "3aea2a4b68e7aaeadd9ffef649be0d25e2dff1535d9a61bffeaf6d92e55ba6a8"
     },
     {
       "name": "bind8",
-      "seconds": 0.453,
+      "seconds": 0.89,
       "exit_code": 0,
       "log_sha256": "78a081673d6b4fde10a86e6f767d53648b868d1f0cac2441d12951434ad7341b"
     },
     {
       "name": "lift16",
-      "seconds": 2.812,
+      "seconds": 3.531,
       "exit_code": 0,
-      "log_sha256": "8ab283187254fbae9d5e26dcf037e5bdd2eb23aea2f01029d973922ed3c98cbb"
+      "log_sha256": "170d73e72f71a50af7c9907d410d94e2e37184017cc22c6c3613070e016468b0"
     },
     {
       "name": "bind",
-      "seconds": 0.454,
+      "seconds": 0.672,
       "exit_code": 0,
       "log_sha256": "78a081673d6b4fde10a86e6f767d53648b868d1f0cac2441d12951434ad7341b"
     },
     {
       "name": "emit",
-      "seconds": 4.921,
+      "seconds": 5.672,
       "exit_code": 0,
-      "log_sha256": "263253fd2a40f79feee361edc19ffd8d710a457e0b289c6af013d3bdf7289441"
+      "log_sha256": "f79ff49f856c397d40209b961d48a187f8a1a26a1e96b6b0099e12b4d9b6b722"
     },
     {
       "name": "audit",
-      "seconds": 24.422,
+      "seconds": 33.985,
       "exit_code": 0,
-      "log_sha256": "dd49d01feacdd425d310364f92ef203c5cb33e4879ef7979d66ffc5d875566fc"
+      "log_sha256": "f431f2249f8a182949f8dc09da9dc40283856b74b068455ffebb0084a644d825"
     },
     {
       "name": "invoice",
-      "seconds": 1.016,
+      "seconds": 1.625,
       "exit_code": 0,
       "log_sha256": "caa1229b78eca961462d35e8ee458be536111111a985294a153e4dd74b9171a8"
     },
     {
       "name": "assembly",
-      "seconds": 0.343,
+      "seconds": 0.485,
       "exit_code": 0,
-      "log_sha256": "9a10a09ec34aa59e54855e0bda601a9f2272bda3817bbb60342fb112cf8cd1ca"
+      "log_sha256": "43c334d43900ce4cc273c52b6aa56cfa73fac120fa772976dd7072b199077a41"
     },
     {
       "name": "admission-controls",
-      "seconds": 0.391,
+      "seconds": 0.531,
       "exit_code": 0,
       "log_sha256": "34527ddfe1e53bec71dc5759eb9a26417be6d4e93e76cbf80575d9bafebd876b"
     },
     {
       "name": "bit-supplier-controls",
-      "seconds": 0.546,
+      "seconds": 0.719,
       "exit_code": 0,
       "log_sha256": "c648542cd6dddbb154af7d02a41aaed1025603d9a4ab54f7c249d2b683e22249"
     },
     {
       "name": "independent-t16",
-      "seconds": 0.766,
+      "seconds": 1.312,
       "exit_code": 0,
       "log_sha256": "d2c13b333d463a5c2de42078e9c47a89209075e1d1beac24cf3fc1f573f18c05"
     }
