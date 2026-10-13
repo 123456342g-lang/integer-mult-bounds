@@ -604,3 +604,10 @@ frontier890-verify: selected-record-check
 frontier942-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier942.XXXXXX"); \
 	python3 -B scripts/verify_frontier942.py --work "$$work/replay"
+
+# Research note: width packing of the selected PR589 bit hosting (no new kappa).
+.PHONY: bit589-width-packing-verify
+bit589-width-packing-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-bit589-packing.XXXXXX"); \
+	python3 -B research/bit589-width-packing/verify.py --work "$$work/replay" && \
+	python3 -B -m unittest discover -s research/bit589-width-packing -p test_package.py
