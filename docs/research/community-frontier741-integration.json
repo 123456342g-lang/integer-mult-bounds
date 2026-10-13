@@ -58,7 +58,20 @@
     "research/community-circuits681-audit/integration-hosted-replay.tar.gz": "a6c477b41144a72fb75825c557f49d0699028e1018266199e6e2a644514ae3e5",
     "research/community-circuits681-audit/integration-hosted.log": "811a36614b7f370a448bec7b01ef5c1b6fca0c1b7bf516e1a2207b04c8ad9f5c",
     "research/community-circuits681-audit/INTEGRATION-REPLAY.json": "a70433c6b810c4a2d83a6be83c26cbba9a39df61f0fd8a5de85057a9d7730287",
-    "research/community-frontier741-audit/PREPUBLICATION-HEADS.json": "0a3e3638644ba76491cbe2f5c7a26ef103d5f6ba3887955b1899cb7f23d34c13"
+    "research/community-frontier741-audit/PREPUBLICATION-HEADS.json": "0a3e3638644ba76491cbe2f5c7a26ef103d5f6ba3887955b1899cb7f23d34c13",
+    "research/community-frontier741-audit/composed-replay-evidence.tar.gz": "27516447e242c264030ba427dabc5e616f9a4aacbff9e0623db4d00c058e1a7b",
+    "research/community-frontier741-audit/COMPOSED-RESULT.json": "0369d31abbf1ca8545a4118dc76e327102cf8deeca4a58b9c401066f5f231255",
+    "research/community-frontier741-audit/COMPOSED-STEPS.json": "c51b15c9755816c1af8e6babc488de4529a4d134cd7d01af5757013b0c722431",
+    "research/community-frontier741-audit/composed-bit589.log": "7d0f339d9e389d6226097db5b383bbc182de9d141df760d4adf5b060f0800ae4",
+    "research/community-frontier741-audit/composed-bindings.log": "3749764c11e425c10f2f68137b987a7ed5c6a7f29fa319e0d0623cb1bd752526",
+    "research/community-frontier741-audit/composed-complex741.log": "a3051e115805e394538a7ecfed36cd08bf6895441b52c1ceb544d6efe4de2d50"
   },
-  "whitespace_review": "Maintainer changes pass. Eleven inherited whitespace diagnostics in byte-pinned PR741 vendor files are preserved rather than rewriting source pins."
+  "whitespace_review": "Maintainer changes pass. Eleven inherited whitespace diagnostics in byte-pinned PR741 vendor files are preserved rather than rewriting source pins.",
+  "local_composed_replay": {
+    "status": "PASS",
+    "receipt": "research/community-frontier741-audit/COMPOSED-RESULT.json",
+    "stages": "research/community-frontier741-audit/COMPOSED-STEPS.json",
+    "archive": "research/community-frontier741-audit/composed-replay-evidence.tar.gz",
+    "archive_scope": "All complex receipt artifacts and stage logs; full top-level logs and the bit binding inputs. Generated intermediate compiler trees are reproducible, not all archived."
+  }
 }

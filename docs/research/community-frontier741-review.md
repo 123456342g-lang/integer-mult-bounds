@@ -50,9 +50,10 @@ The #589 bit supplier was then freshly rebuilt, including C++ scalar-column,
 bridge, physical-owner and invoice checks. The [composition binding](../../research/community-frontier741-audit/BINDING.json)
 compares its actual nine-stage profile, precision invoice and endpoint with the
 input used by #741, and checks every complex receipt artifact and stage log.
-Eight deliberate binding corruptions are rejected. The two supplier executions
-were launched separately; their composed cold wrapper is the public command
-below. The new combined Linux workflow's status is recorded separately from
+Eight deliberate binding corruptions are rejected. After the separate supplier replays, the complete public cold wrapper also
+passed from a fresh directory, rebuilding both suppliers and binding the actual
+outputs. Its [receipt](../../research/community-frontier741-audit/COMPOSED-RESULT.json)
+and compressed replay evidence are retained. The new combined Linux workflow's status is recorded separately from
 the already completed source-PR CI.
 
 ```sh

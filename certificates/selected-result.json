@@ -107,7 +107,7 @@
     "scripts/verify_frontier588_bindings.py": "6d1932eea7b1936598118ea8e607b09c29b6e31b749ec41bbe0744ea4f0b606d",
     "scripts/verify_hpe_lean_binding.py": "52aa1d23641e4c716b43c98f6b883ad042087dd03a9d01369e8e6a735b07aa03",
     "research/hyperplane-end-lean/HyperplaneEnd/Exact.lean": "eebf3a3982af7ab9be45777b272a6aaa523206fa7667ceb6df63ad6589fd8183",
-    "docs/research/community-frontier741-review.md": "cb18a5c60857c385c3c422a0f2c7d5736d136dab0b4fa7214c2e346f5208c60a",
+    "docs/research/community-frontier741-review.md": "4634694fa75ea9e749ecf19d3db3e4d82effe3b61a2efdf08ac5a97275fb676a",
     "research/complex-sw4-frame8/PROVENANCE.md": "c7648719b01dd93af2c3a2c6e951a54711d13892dc4bd4339d16edb4c37c9bf0",
     "research/e8-bit-p111-tuned/tune/README.md": "46c7917fb252949f38b7bcd88cf568efc282e3ea065b61d11e457e41673d0b2d",
     "scripts/verify_frontier741.py": "215ee6a12de8dc2392e6811a1b8f2140035f6b2d2a0d2100ff4bd2fdcb8bb39b",
