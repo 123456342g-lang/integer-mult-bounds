@@ -1,0 +1,48 @@
+{
+  "assignment_seed": 4,
+  "drawn_at_utc": "2026-10-13T13:11:39.515987+00:00",
+  "track": "bit supplier",
+  "source": "secrets.randbelow(100), OS randomness",
+  "pass": 12,
+  "base": "91a2094f2e022930069e8cfdc810a3ea1b81cd09",
+  "branch": "research/pass12-bit-seed04",
+  "status": "claimed",
+  "claimed_at_utc": "2026-10-13T13:17:36.187221+00:00",
+  "candidate_selection": "Seed 4 modulo 3 selects candidate 1. Seed 4 fixes secondary nomination ordering.",
+  "candidates": [
+    {
+      "object": "Restored decoder stars in the selected R439 full-frame A totals",
+      "chosen": false,
+      "reason": "PR708/753 cover the predecessor mechanism; a new R439 transplant is less informative than closing the exact matching gap."
+    },
+    {
+      "object": "Exact disjoint helper matching around the fixed PR915 target basis, including the 192-bit prefix budget",
+      "chosen": true,
+      "method": "Certify the unrestricted pairing cost with integer vertex/odd-set prices; nominate one seed-4 matching and one lexicographic forward-cost matching, then exhaust all one-pair deletions of nominated optima if needed."
+    },
+    {
+      "object": "Reduce the selected frame267 fixed positive-transfer circuit",
+      "chosen": false,
+      "reason": "Fresh PR925 supplies a complete 12-ADD minimum in that class; larger computation alone would reopen a closed search."
+    }
+  ],
+  "statement": "Improve and bound the disjoint helper-pair class around the exact frozen PR915 target basis. Compare selected PR589, PR915, PR926 and the new fully charged candidate separately.",
+  "domain": "All 439*438/2 = 96,141 unordered helper pairs, both orientations; 1,885 positive undirected edges. At most three maximum-weight matching nominations total, including the completed lexicographic calibration, followed by all one-pair deletions of those nominations. No target-basis changes or overlapping helper shears.",
+  "optimistic_complete_cost": "The preliminary maximum-weight pairing saves 1,260 ADDs beyond PR915, giving D=5,728 and a complete word of 11,948. It has F=73,603, B=10,518,760 and a 193-bit nine-stage bound, so it is not admitted. PR926 costs 11,980 and has a 192-bit bound.",
+  "admission": "Recompute every combined word. Require 64*F^3*B^2 < 2^104 and 2^18*F^5*B^4 < 2^192. No inherited parent bound, free restoration or addition of standalone savings.",
+  "stopping_rule": "Complete the matching certificate and the declared bounded nomination/deletion family. If no admitted improvement exists, retain the exact floor and explicit budget obstruction as scoped evidence; do not claim global precision-constrained optimality.",
+  "expected_finish": "Approximately 90 minutes, with the final quarter reserved for verification and handoff.",
+  "coordination": "No pinned sprint coordination issue exists; open non-PR issues are #650 and #913. Claim recorded locally.",
+  "overlap": {
+    "open_prs": 720,
+    "through_pr": 929,
+    "related": "PR716 and PR817 certify R420 target matchings; PR926 uses a greedy R439 helper matching and explicitly leaves matching optimality open. PR923/925 concern separate phase-A/B blocks. No matching certificate for this frozen R439 matrix was found."
+  },
+  "predecessors": {
+    "915": "e9daefe320a0043000bd9746664ed02c3287d056",
+    "926": "0f216a345c37bc71cc0e22030ef11ec31b26a69e",
+    "817": "3147cac35c659152d36db1e0e60b9ce4b152c008",
+    "716": "afeb452f58ff0cbf109172335e2ba282aac3dcde"
+  },
+  "scope": "Finite bit construction and exact restricted pairing bound. Semantic D acceptance and full hosted reconstruction/invoice remain integration obligations. No new kappa, unrestricted optimum or measured runtime claim."
+}
