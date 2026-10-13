@@ -4,7 +4,7 @@
   "drawn_at_utc": "2026-10-13T10:18:13.485465+00:00",
   "track": "independent verification or formalization",
   "base": "f567884aeb8851b6e794af1184119a3bfbe1e631",
-  "status": "claimed",
+  "status": "submitted",
   "branch": "research/pass08-verification-seed83",
   "claimed_at_utc": "2026-10-13T10:26:20.672476+00:00",
   "candidate_selection": "83 modulo 3 = 2; fresh draw coincidentally equals the preceding seed, but the proof obligation is different",
@@ -164,5 +164,15 @@
     "upstream_head": "f567884aeb8851b6e794af1184119a3bfbe1e631",
     "subject_and_audit_heads_unchanged": true,
     "related_new_work": "PR889 batches multiple outputs sharing a common factor and gives different query-count evidence. It does not formalize this binary-tree nonlinear contract. PR893 audits historical Lean evidence rather than this mathematical obligation."
+  },
+  "completed_at_utc": "2026-10-13T10:57:03.649998+00:00",
+  "pr": 896,
+  "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/896",
+  "mathematical_commit": "238f0bbca6271441e365d3dca4af00a39382dfd4",
+  "result": "Lean 4.21.0 proves the typed binary evaluator restores arbitrary dirt, has target-independent nonlinear increments and exact inverses; additive leaves give the ordered product. Twelve formal statements, 34 source trace equalities, 1170 source and 2364 tree executions, and 13 controls pass. Leaf correctness and all-size address/Python correspondence remain separate. No new kappa.",
+  "validation": "Complete ordinary Python 3.14.4 and isolated optimized read-only Python 3.12.3 replays agree. Source/receipt/overwrite controls, selected-record integrity and staged scope/whitespace pass; hosted CI tracked separately.",
+  "immediate_pre_submission_check": {
+    "through_pr": 895,
+    "new_arrival": "PR895 screens BW16 as a decoder unit; no overlap with nonlinear restoration semantics"
   }
 }
