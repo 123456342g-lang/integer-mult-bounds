@@ -28,7 +28,8 @@ remain inherited. They do not change the logical leaf-boundary word.
 Let the ideal factors commute pairwise, with every subset product (including
 empty) of norm at most G >= 1. PR1054's actual cyclic factors satisfy this
 conditional premise because every factor is a rational function of the same
-immutable isometry U=tau Z_L^w; the single scalar r also commutes. The inherited
+immutable isometry U=tau Z_M_len^w, where M_len is the cyclic array length;
+the single scalar r also commutes. The inherited
 complementary-factor argument gives the stated G. Different mutable phases or
 unrelated operators do not satisfy this premise automatically.
 
@@ -171,14 +172,16 @@ budget and is not superseded or combined numerically here.
 ## 5. Complete cost and limits
 
 The actual word, source access, carrier swaps, restoration, coefficients and
-child calls are unchanged. Retain PR1054's per-leaf bounds 1280L scalar
-products/divisions and 4096L record moves, and full-kernel bound
-`8192(N+1)(h+2)L` data-record moves on two tapes. Let Aword=W+I and Bdesc
+child calls are unchanged. Write M_len for the data-array length, distinct
+from the interval norm bound L above. Retain PR1054's per-leaf bounds
+1280 M_len scalar products/divisions and 4096 M_len record moves, and
+full-kernel bound `8192(N+1)(h+2) M_len` data-record moves on two tapes.
+Let Aword=W+I and Bdesc
 include the actual immutable root, margin, multiplier and unit gauge lengths.
 With M(s) paying for rounded multiplication and division, the complete bill is
 
-    preparation + O(N L M(Aword+Bdesc))
-                + O(N(h+2)L(Aword+Bdesc)) + O(N L).
+    preparation + O(N M_len M(Aword+Bdesc))
+                + O(N(h+2) M_len (Aword+Bdesc)) + O(N M_len).
 
 Long stride/gauge descriptors remain extra input work; preparation retains
 its supplied soft-O(r^3(p+m+r^3)) bill. Effective numerical depth cannot

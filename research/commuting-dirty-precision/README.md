@@ -106,6 +106,10 @@ vendored subset serves this audit's proof and actual executions; frozen
 predecessor packages are not modified. Existing generic precision bounds stay
 valid. PR1244's noncommuting obstruction and PR1135's nonadditive borrowing
 obstruction are not removed. We retain the original reserved-depth allocation.
+Concurrent [PR1294](https://github.com/CrocSwap/integer-mult-bounds/pull/1294)
+by Philipp / mightyOil (`03025ca1d51091a9525203000e77dacccfa6a70d`) supplies
+universal local algebra certificates for PR1278. That is complementary; no
+PR1294 implementation or stronger local-hypothesis claim is consumed here.
 
 Only this package is added. The selected PR1094 record, upstream sources,
 source-access/restoration charges, paid rank profiles and all-size/compiler,
