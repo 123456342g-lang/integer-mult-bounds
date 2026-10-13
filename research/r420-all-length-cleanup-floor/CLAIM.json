@@ -40,5 +40,14 @@
     "discussion": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1279",
     "discussion_id": "D_kwDOU-508s4AqAjN",
     "posting_basis": "Routine Discussion participation authorized by the current repository instructions for the user donation assignment; no reservation issue opened."
+  },
+  "result_update": {
+    "status": "DONE",
+    "completed_at_utc": "2026-10-13T21:55:37Z",
+    "result": "Universal absolute-inverse, positive-diagonal and parity invariants force reverse-positive infinity norm >=9 for every finite positive ADD factorization of the fixed target. The inherited 11-ADD witness attains 9.",
+    "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1296",
+    "verification": "Full registered Python 3.12.15 replay and local Python 3.14.7 checks passed; exact Git/archive pins, two arithmetic engines, all 64 local Boolean inputs, 9331 finite regression words and eight package tests.",
+    "latest_overlap_coverage": "787 open PR bodies, 21 discussions and 7 recent handoff comments; PR1058/1266 are explicit predecessors, with no competing all-length target proof found.",
+    "limitations": "Fixed positive ADD alphabet, six ordered registers and exact integer lift. Full native pricing and nonuniform incoming-budget integration remain open; no new kappa."
   }
 }
