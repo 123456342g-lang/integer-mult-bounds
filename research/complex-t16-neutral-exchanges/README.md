@@ -2,7 +2,7 @@
 
 Candidate conditional kappa **0.001672285678298543**, above PR1056's **0.001672267698427438**. Equal-width reshuffles preserve the paid profile while changing which improving exchanges are legal. A 500-swap reshuffle (seed 4286363695) followed by whole-helper exchanges found this map. This is a finite witness, not an unrestricted or neighborhood-optimal packing claim.
 
-Draft-first publication: exact arithmetic and discovery/controller recomputation pass; the full strict publication-package replay is pending. Frozen OWNERS, PROFILE and PRICE retain the original candidate; data/ holds its independently measured PLAN and SPEC. The PR1050 source archive and all its notices remain byte-exact. Only the three frozen data files are overlaid; no verifier checks are altered.
+Published as a draft first; the full strict publication-package replay now passes. All 69 admission, 12 bit, 15 controller-mutation and six independent owner controls pass, with two exact arithmetic engines and 47 outer inequalities. This improves PR1056 but is below the subsequent PR1061 claim (0.00167259071506618). Frozen OWNERS, PROFILE and PRICE retain the original candidate; data/ holds its independently measured PLAN and SPEC. The PR1050 source archive and all its notices remain byte-exact. Only the three frozen data files are overlaid; no verifier checks are altered.
 
 ## Reproduce
 
