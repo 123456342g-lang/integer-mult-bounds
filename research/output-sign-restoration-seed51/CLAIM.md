@@ -1,6 +1,6 @@
 # Output sign frames for a sign-drifting recursive reader
 
-Status: claimed locally, 2026-10-13 20:10:49 UTC. No pinned coordination issue
+Claimed locally, 2026-10-13 20:10:49 UTC. No pinned coordination issue
 exists. Expected finish: 2026-10-13 20:43:52 UTC.
 
 - Track: recursive interfaces. Fresh OS-random assignment seed: 51.
@@ -65,3 +65,25 @@ the requested open-next-question section is included. The existing offline
 archive format is retained, without inventing a catalogue assignment for the
 user's explicit track. Scope is a refinement of that track and is unchanged
 since the local claim. No evidence-driven pivot was needed.
+
+## Completed result, 2026-10-13 20:30 UTC
+
+[PR1227](https://github.com/CrocSwap/integer-mult-bounds/pull/1227) submits the
+completed scoped construction. The sharp uniform wrapper minimum is
+`(k mod 2)N + 2 floor(k/2) min(N,d)`. The complete seed-selected dirty echo
+uses 200 scalar instructions versus 256 eager, saving 56 NEG operations;
+both words implement the same source-only map and restore all scratch.
+The fixed-child and final-observer restrictions are explicit. No new kappa.
+
+All 21,840 sign schedules, 384 price cases, 384 recursive cases and 3,168
+small-case basis columns pass, plus selected/deeper dense words, inverses,
+rational dirty probes, seven mathematical and seven input controls. Python
+3.14.8 normal/optimized and 3.11.17 optimized runs pass. Relocation, four
+on-disk corruptions, source identities and canonical regeneration pass.
+
+The immediate submission refresh covered 834 open PRs through #1225.
+PR784's sharp bound is for dirty-echo leaf calls, not this boundary alphabet.
+No matching output-sign wrapper was found. The repository has neither the
+`codex` nor `codex-automation` label. Selected cold replay, Linux, physical
+supplier admission, complete formalization and independent human review were
+not performed. Hosted CI is separate from the local evidence.
