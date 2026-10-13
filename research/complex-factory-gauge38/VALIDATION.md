@@ -1,5 +1,9 @@
 # Executed validation
 
+The original standalone validation below is preserved. The later PR922/924
+composition, its exact heads and reproduction command are documented in
+[COMPOSITION.md](COMPOSITION.md); it has a separate frozen receipt and controls.
+
 Prepared for @CubeJerry with substantial OpenAI Codex assistance. Apache-2.0.
 Executed on Linux, CPython **3.12.14**, 2026-10-13. Verification uses only the
 standard library. Optional nomination used NumPy **2.3.5** / SciPy **1.17.0**.
@@ -87,3 +91,30 @@ later provider transport, Clifford phase lowering, whole-owner/global invoice
 or outer-assembly replay, Lean, another Python version, or remote CI. These
 are separate from the completed raw-constructor/native/primitive verification.
 No independent human or delegated-agent review is claimed.
+
+## PR922/924 composition follow-up
+
+Executed on 2026-10-14 (Australia/Sydney), Linux, CPython 3.12.14. Both pinned
+heads and exact scope are recorded in `COMPOSITION.md`.
+
+| Executed check | Result |
+| --- | --- |
+| `python3 -I -B research/complex-factory-gauge38/compose_pr922.py` | PASS, complete frozen receipt matches |
+| `python3 -I -B research/complex-factory-gauge38/test_composition.py` | PASS, seven tests |
+| Full isolated optimized replay with `-O -S`, minimal source closure, spaces and repacked inputs | PASS, included in the seven tests |
+| Fresh PR922 native record versus its pinned retained `RESULT.json` | Exact match; one-time comparison |
+| Both application orders, all four local orientations, eight complete primitive projections with 725 columns each | PASS |
+| 38 local rejection controls, one complete missing-cleanup control, four inherited controls per native word | PASS |
+| Original PR924 `verify.py --local-only` | PASS, original class certificate and all 46 controls unchanged |
+| `make selected-record-check` and whitespace checks | PASS |
+
+The combination uses 32 macros and 73 PR696 primitives per component per block.
+Full counts are 123,320 forward and 123,336 backward. The saving against either
+standalone PR is 224 per orientation. The selected κ remains unchanged.
+
+Only the historical raw circuit and its retained local cost formula were
+replayed. Full `make verify`, selected-provider transport, frontier799 cold
+replay, phase/global/outer assembly, Lean, other Python versions and remote CI
+were not run for this follow-up. The original PR924 full suite was not rerun;
+its source files are unchanged, its local suite passes, and its useful full
+candidate is freshly reproduced and matched by the composition command.

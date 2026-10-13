@@ -38,5 +38,15 @@
     "branch": "research/complex-factory-gauge38-20261013",
     "branch_url": "https://github.com/CubeJerry/integer-mult-bounds/tree/research/complex-factory-gauge38-20261013",
     "completed_at_utc": "2026-10-13T12:52:00Z"
+  },
+  "followup_composition": {
+    "request": "@CubeJerry asked whether PR922 and PR924 together improve performance.",
+    "scope": "Deterministic composition of the two pinned circuits; compare baseline, each PR and both using full raw/native/primitive replay. No new search or kappa.",
+    "base_commit": "e6f3cb8ca813dfc54c77738c9acd74a536b607fd",
+    "pr922_head": "efd5643c0016b6c6dac26e9ed7dee8a75295ff2a",
+    "result": "PASS: 32 macros, 73 PR696 primitives per real component; 448 saved per complete orientation from baseline, 224 beyond either PR. Adapter allowance remains PR922's 319104.",
+    "verification": "Both application orders agree; eight complete projections on 725 arbitrary columns each; 38 local rejection controls, complete missing-cleanup control, inherited native controls, seven package tests including optimized offline replay.",
+    "branch_url": "https://github.com/CubeJerry/integer-mult-bounds/tree/research/complex-factory-gauge38-20261013",
+    "coordination": "Continuation of the local claim under an explicit user request; no GitHub API posting attempted."
   }
 }

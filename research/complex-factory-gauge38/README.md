@@ -1,5 +1,12 @@
 # Two coupled factory scales save 224 primitives per orientation
 
+**Follow-up: PR922 and PR924 compose.** The [combined construction](COMPOSITION.md)
+uses **32 macros and 73 PR696 primitives** per real-component block, versus
+77 for either PR alone. Complete raw replay saves **448 primitives per
+orientation against baseline**, or **224 beyond either PR**. Use
+`python3 -I -B research/complex-factory-gauge38/compose_pr922.py` to reproduce.
+The standalone result and its original certificate below remain unchanged.
+
 **Finite complex-supplier construction and scoped exact optimization result;
 No new κ.** Delaying two doublings together turns two nonunit additions into
 unit additions in Alluri's retained PR681 factory circuit. Neither move alone
@@ -129,8 +136,11 @@ same 224 marginal PR696 primitive saving. This contribution retains a different
 fixed-topology gauge certificate and the adverse complete-cost control, and
 replays the entire PR696 primitive streams including arbitrary private inputs.
 PR922's topology changes lie outside the gauge-class optimum proved here.
-Its source is neither imported nor independently replayed, and no superiority,
-priority, compatibility or additive saving over PR922 is claimed.
+The original standalone run did not import or replay PR922. The subsequent
+[composition follow-up](COMPOSITION.md), requested by @CubeJerry, retains its
+pinned circuit and freshly replays both contributions and their combination.
+It establishes additive savings for those exact heads; no priority or
+standalone superiority claim is made.
 
 Full source construction, local scalar/frame/wrapper checks and new primitive
 replays are completed. Later provider transport, global hosting/invoice and
