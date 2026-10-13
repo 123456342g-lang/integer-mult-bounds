@@ -1,5 +1,5 @@
 {
-  "status": "EIGHTEEN_PUBLISHED_TEN_MORE_REVIEWED_TWELVE_PENDING",
+  "status": "28_PUBLISHED_12_PENDING",
   "pull_requests": [
     {
       "number": 1004,
@@ -599,19 +599,23 @@
       },
       "reviewed_head": "c05dc72734c25dd069077157224d4dd30c6e8c19",
       "current_head": "c05dc72734c25dd069077157224d4dd30c6e8c19",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r439-frame509-seed08"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1a73d806aee3d90aa0f07f061a4751f46adf9550",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Frame509 31-to-21 ADD replacement, 24305-to-24285 complete word, with all dirty columns, finite search replay and native 5/9/11-stage checks. Unchanged paid profile and no new kappa.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -635,19 +639,23 @@
       },
       "reviewed_head": "12470750d68b13b88e91277cacf95efddab95a59",
       "current_head": "12470750d68b13b88e91277cacf95efddab95a59",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r439-frame281-seed15"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1a73d806aee3d90aa0f07f061a4751f46adf9550",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Frame281 13-to-12 ADD replacement after PR952, including exact class minima and full-word guard bounds. Native 5/9/11-stage replay supplied by maintainer; unchanged paid profile and no new kappa.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -671,19 +679,23 @@
       },
       "reviewed_head": "fbf54e6c95c47a3891eb7e8ed063b5198e920f3f",
       "current_head": "fbf54e6c95c47a3891eb7e8ed063b5198e920f3f",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r439-frame506-two-factor"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1a73d806aee3d90aa0f07f061a4751f46adf9550",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Frame506 two-factor 26-to-21 ADD replacement, complete 25-cut class audit and native full-word replay. The optimum is scoped to the two-factor class, not arbitrary circuits; no new kappa.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -707,19 +719,23 @@
       },
       "reviewed_head": "93e1a42c773a73bb55adddf35d71ed6b6c1d5748",
       "current_head": "93e1a42c773a73bb55adddf35d71ed6b6c1d5748",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r439-frame272-seed06"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1a73d806aee3d90aa0f07f061a4751f46adf9550",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Frame272 23-to-12 ADD replacement with constrained class minima, arbitrary dirty inputs and native 5/9/11-stage replay. Full word 24283 ADDs; no new kappa.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -743,19 +759,23 @@
       },
       "reviewed_head": "101103e56e3effdb268ce90110c6caa4c6885671",
       "current_head": "101103e56e3effdb268ce90110c6caa4c6885671",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r439-four-block-composition"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1a73d806aee3d90aa0f07f061a4751f46adf9550",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Four already credited block replacements composed with all subsets and edge checks; full word 24233 ADDs, unchanged paid profile, native multi-stage replay and exact precision admission. No new kappa.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -779,19 +799,23 @@
       },
       "reviewed_head": "ba1cf68bef0c97dfb120add04304e2de0db6f29c",
       "current_head": "ba1cf68bef0c97dfb120add04304e2de0db6f29c",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r439-global-prefix-admission"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1a73d806aee3d90aa0f07f061a4751f46adf9550",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Complete-word prefix admission for 42 Gaussian block replacements on PR952, reducing 23673 to 23433 ADDs (872 below PR589). Exact search regeneration, dirty columns, unchanged H1-H5, native 5/9/11 stages and 104/192-bit caps; no new kappa.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -815,19 +839,23 @@
       },
       "reviewed_head": "9d885867f28c1f391ab395af2d0b1f2a63681bfd",
       "current_head": "9d885867f28c1f391ab395af2d0b1f2a63681bfd",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r439-target-retune-seed14"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1a73d806aee3d90aa0f07f061a4751f46adf9550",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "One target-transvection retune after PR967, reducing 11783 to 11780 ADDs with exact optimum over 12210 directed insertions. Semantic D endpoint passes; original syntactic H2/K extraction remain false and hosted supplier integration is outside scope.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -851,19 +879,23 @@
       },
       "reviewed_head": "a01bd602969e4086e55f0d1f392855b91cfe0507",
       "current_head": "a01bd602969e4086e55f0d1f392855b91cfe0507",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r439-post-helper-shear-seed03"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1a73d806aee3d90aa0f07f061a4751f46adf9550",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "One restored cross-component helper shear after PR967, reducing 11783 to 11769 ADDs. Complete support-score census and 32 fully priced candidates, arbitrary dirty-input restoration and exact near-cap precision check. Semantic D only; no hosted admission or new kappa.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -887,19 +919,23 @@
       },
       "reviewed_head": "2b047edb2b3fedccc4f538608b1bd56dc711673d",
       "current_head": "2b047edb2b3fedccc4f538608b1bd56dc711673d",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/t37-slice-bitmaps"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1a73d806aee3d90aa0f07f061a4751f46adf9550",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Opt-in exact occupancy bitmaps for all 167832 T37 roles, retaining the complete receipt and 14 inherited controls. Verification tooling only; machine-specific timing is not a multiplication speedup.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -991,19 +1027,23 @@
       },
       "reviewed_head": "d5a694125b0bba7f4768df24a7e67f88f6631bd3",
       "current_head": "d5a694125b0bba7f4768df24a7e67f88f6631bd3",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/joint-frame-modular-screen"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1a73d806aee3d90aa0f07f061a4751f46adf9550",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT2-CLOSURES.json"
+      },
       "scope": "Mod-101 full-rank certificates with exact rational fallback for the historical joint-frame auditor. All 2644 rank calls compared, full certificate byte equality and meaningful controls; no approximate rank acceptance.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
