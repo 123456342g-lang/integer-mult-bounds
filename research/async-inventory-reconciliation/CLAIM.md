@@ -29,3 +29,21 @@
 - Contributor: Alexander Templeton (`azide0x37`), with substantial OpenAI
   Codex assistance. Original archive, search, and arithmetic authors retain
   their attribution. Apache-2.0.
+
+## Completed result — 2026-10-13 04:59 UTC
+
+[Verified contribution at commit 7a52e20](https://github.com/azide0x37/integer-mult-bounds/tree/7a52e20d2c16576173b6318947ba5b6095385107/research/async-inventory-reconciliation).
+All 146 source pairs match; both exact receipts reproduce. A removed-rank-one
+charge control exposes a false archived `PASS` under `-O`, with negative margin;
+the companion rejects it and checks source binding with checks active under `-O`.
+It checks 348 inequalities per engine, 12 distinct rejection controls per
+engine, and six historical executions per engine. No new search or κ.
+
+Seven tests pass normally and under optimization. Python 3.10, 3.13 and 3.14
+reports agree; a committed-files-only export also passes from an unrelated
+directory. Archive integrity and selected-result verification pass. Focused
+verification/handoff began at 04:54 UTC, before the planned final-quarter gate.
+The final overlap refresh through #732 found no matching contribution.
+#721 optimizes the central ledger's ZIP reader and #724 audits R/R0 accounting;
+neither overlaps this archived finite-menu/source reconciliation. Main still
+equals the recorded base, and no pinned coordination issue exists.
