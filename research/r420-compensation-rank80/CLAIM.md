@@ -31,3 +31,29 @@ workers were delegated. Scope is a fixed finite object, not a search for a
 stronger bound. Stop after exact rank/kernel and control checks are complete.
 The first 20% is reserved for selection and the final 25% for verification
 and handoff.
+
+## Result — 2026-10-13 04:58 UTC
+
+Completed and submitted as
+[PR #731](https://github.com/CrocSwap/integer-mult-bounds/pull/731).
+The correction has rank 120, nullity 300, and minimum nonzero kernel weight
+4, with exactly 18 weight-four vectors. The latter follows from the complete
+87,990-pair census on the same fixed map, not an expanded supplier search.
+The package supplies an inverse minor, all kernel directions by a compact
+formula, 120 isolated target-error inputs, ten rejecting controls and seven
+independent obligation tests. Normal/optimized runs, a minimal clean export,
+the original frame/scalar/interface checker, selected-record integrity and
+ledger checks pass; see VALIDATION.json. No new kappa is claimed.
+
+The final pre-submission refresh covered 547 open PRs through #728, with main
+still at the exact base. Two arrivals were checked immediately after posting:
+#729 (`deaed262cebc50bdb0c27c6ba132b8f8289b3eef`) checks complex helper frame
+lifetimes; #730 (`d222e348179cc02a54d6d26dbd2838944f62c6e5`) optimizes ordered
+dirty echoes. Neither overlaps this fixed bit correction matrix. No pinned
+sprint issue was available, so this is the single local result update.
+
+Implementation/certificate commit:
+`0e10ed667c0cc435eb0f69c71a1d542599cad170`; the follow-up changes only this
+claim. Verification and packaging occupied the final part of the run, and
+the contribution finished before the recorded deadline. No workers were
+delegated and no selected-frontier or upstream files changed.
