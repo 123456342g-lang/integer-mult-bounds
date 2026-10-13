@@ -74,6 +74,19 @@ def main():
                   changed_dirt_columns=delta.bit_count(), controls=rejected,
                   canonical_word_sha256=hashlib.sha256(json.dumps(
                       c, sort_keys=True, separators=(',', ':')).encode()).hexdigest())
+    # Actual predecessor exporter, not an assumed gate-to-record translation.
+    import tempfile
+    from native import audit
+    with tempfile.TemporaryDirectory(prefix='r420-cosets-') as tmp:
+        tmp = Path(tmp)
+        word = tmp/'candidate.json.gz'
+        with gzip.open(word, 'wt') as f:
+            json.dump(c, f)
+        baseline = audit(SOURCE, tmp/'baseline')
+        candidate = audit(word, tmp/'candidate')
+    assert baseline['additions']-candidate['additions'] == 244
+    assert baseline['rank_histogram'] == candidate['rank_histogram']
+    result['native_before'], result['native_after'] = baseline, candidate
     expected = HERE/'EXPECTED.json'
     if '--record' in sys.argv:
         expected.write_text(json.dumps(result, indent=2, sort_keys=True)+'\n')
