@@ -4,7 +4,7 @@
   "drawn_at_utc": "2026-10-13T08:36:24.867393+00:00",
   "track": "adversarial mathematical audit",
   "base": "f567884aeb8851b6e794af1184119a3bfbe1e631",
-  "status": "validated; ready for submission",
+  "status": "submitted",
   "branch": "research/pass06-audit-seed63",
   "claimed_at_utc": "2026-10-13T08:46:31.924453+00:00",
   "candidate_selection": "63 modulo 3 = 0",
@@ -78,5 +78,7 @@
     "package_mutation_controls": 6,
     "minimal_isolated_optimized_replay": "passed",
     "details": "VALIDATION.md"
-  }
+  },
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/877",
+  "submitted_at_utc": "2026-10-13T09:20:21.110701+00:00"
 }
