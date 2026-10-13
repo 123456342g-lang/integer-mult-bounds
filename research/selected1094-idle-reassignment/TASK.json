@@ -67,5 +67,7 @@
   "assigned_track": "incumbent-optimization",
   "assigned_scope_key": "2eb6f6918b10e182033b",
   "first_step": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY; current complex side binds; no full baseline cold/native ancestry rebuild claimed.",
-  "discussion": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1339"
+  "discussion": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1339",
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1387",
+  "mathematical_commit": "28b898f6b3a2e590da11b86e57b2a0af3f45e711"
 }

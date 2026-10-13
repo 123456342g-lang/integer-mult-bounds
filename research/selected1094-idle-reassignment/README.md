@@ -93,6 +93,7 @@ One OS draw selected `incumbent-optimization / selected-packing`, nonce
 revision 2. Base: `bce54fb3f895cbe5cd4c0eb477c3afeed100190f`.
 [TASK.json](TASK.json) records the evidence-driven scope change from attempted
 admission to exact relaxation plus obstruction; there was no new draw.
+Submission: [PR 1387](https://github.com/CrocSwap/integer-mult-bounds/pull/1387).
 Coordination: [Discussion 1339](https://github.com/CrocSwap/integer-mult-bounds/discussions/1339).
 [OVERLAP.json](OVERLAP.json) records snapshots and exact predecessor heads.
 
