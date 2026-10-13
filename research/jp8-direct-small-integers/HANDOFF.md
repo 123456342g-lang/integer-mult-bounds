@@ -38,8 +38,15 @@ predecessor credit and unresolved physical/compiler/analytic obligations.
 consumed inputs; `VALIDATION.md` records executed checks.
 
 Publication resumed after the contributor created `zewelor/integer-mult-bounds`.
-One focused PR is submitted from that writable fork, preserving the exact
-research base. The former patch-only handoff is superseded by this submission.
+The result is published on `research/jp8-direct-small-integers-seed29` in that
+writable fork, preserving the exact research base. The upstream PR submission
+attempt returned HTTP 403: `Resource not accessible by integration`. No PR is
+open yet. A verified public comparison is available at:
+
+https://github.com/CrocSwap/integer-mult-bounds/compare/main...zewelor:integer-mult-bounds:research/jp8-direct-small-integers-seed29?expand=1
+
+The prepared title/body are supplied in the conversation link for manual
+submission. The former patch-only handoff is superseded by the published branch.
 No pinned coordination issue existed, so the claim is recorded locally.
 Refreshed upstream main is `1b59b624d21924f8e3537cdc1ac52d3be6eda2fe`; all six
 consumed inputs are unchanged. Related PR999/1036/1064 are credited and the
