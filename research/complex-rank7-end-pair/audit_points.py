@@ -14,8 +14,8 @@ import json
 from pathlib import Path
 
 
-BASE_SHA = '1e1d99ba7aab877d6b573c41f7030ee73de9a52fee51d0a822ddaae71251999f'
-WORD_SHA = '796a40505ed9dc38d64c5b7856a0908e70bd9f22cd869edf01ebe66ac02ab15a'
+BASE_SHA = '090fd574747fbf9628e70cb9beb792732914cfa52e1df147579fe4dbccc68c5a'
+WORD_SHA = '096ed4abee4bb02c0d6f03bb8191510e57f6b1fcd34e8644f4fd336254e46411'
 RECIPE = Path(__file__).resolve().parent / 'data/END-RECIPE.json'
 
 
@@ -129,7 +129,7 @@ def check_edits(baseline, candidate, recipe):
     require([q for q, _, _ in recipe['ends']] == [588, 589], 'end sites')
     require([i for i, _, _ in recipe['B_frames']] ==
             [1018, 1019, 1050, 1051, 1130, 1131, 1162, 1163], 'B-frame sites')
-    require([i for i, _, _, _ in recipe['early_cleanup']] == [140, 141], 'tail sites')
+    require([i for i, _, _, _ in recipe['early_cleanup']] == [148, 149], 'tail sites')
     changes = []
     for q, old, new in recipe['ends']:
         require(baseline['helper_final'][str(q)] == old and candidate['helper_final'][str(q)] == new, 'literal end edit')

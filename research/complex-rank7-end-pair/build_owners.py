@@ -358,7 +358,7 @@ def main():
     flow, word, plan = map(read, (flow_path, args.word, args.plan))
     parent = read(args.source_template) if args.source_template else None
     word_hash = hashlib.sha256(raw(args.word)).hexdigest()
-    assert word_hash == '796a40505ed9dc38d64c5b7856a0908e70bd9f22cd869edf01ebe66ac02ab15a'
+    assert word_hash == '096ed4abee4bb02c0d6f03bb8191510e57f6b1fcd34e8644f4fd336254e46411'
     assert flow['schema'] == 'frozen-rank7-owner-flow/1'
     owners = expand(flow, plan)
     report = audit(flow, owners, plan, word, parent, word_hash)

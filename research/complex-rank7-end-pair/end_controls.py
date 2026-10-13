@@ -13,7 +13,7 @@ import sys
 import tempfile
 
 
-WORD_SHA = '796a40505ed9dc38d64c5b7856a0908e70bd9f22cd869edf01ebe66ac02ab15a'
+WORD_SHA = '096ed4abee4bb02c0d6f03bb8191510e57f6b1fcd34e8644f4fd336254e46411'
 RECIPE = Path(__file__).resolve().parent / 'data/END-RECIPE.json'
 
 

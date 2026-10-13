@@ -1,7 +1,7 @@
 {
   "status": "PASS_EXPLICIT_512_POINT_END_PAIR_ACCOUNTING",
-  "input_sha256": "1e1d99ba7aab877d6b573c41f7030ee73de9a52fee51d0a822ddaae71251999f",
-  "output_sha256": "796a40505ed9dc38d64c5b7856a0908e70bd9f22cd869edf01ebe66ac02ab15a",
+  "input_sha256": "090fd574747fbf9628e70cb9beb792732914cfa52e1df147579fe4dbccc68c5a",
+  "output_sha256": "096ed4abee4bb02c0d6f03bb8191510e57f6b1fcd34e8644f4fd336254e46411",
   "changed_annotations": {
     "helper_final": 2,
     "B": 8,
@@ -10,9 +10,9 @@
   "local_profile": {
     "1": 2542,
     "2": 352,
-    "3": 422,
-    "4": 194,
-    "5": 56,
+    "3": 438,
+    "4": 162,
+    "5": 72,
     "8": 8
   },
   "delta": {

@@ -5,6 +5,7 @@ No source package is copied or edited; only candidate data are prepared.
 """
 import argparse
 from fractions import Fraction
+import gzip
 import hashlib
 import json
 import os
@@ -19,7 +20,8 @@ HERE = Path(__file__).resolve().parent
 
 
 def read(path):
-    return json.loads(path.read_text())
+    raw = path.read_bytes()
+    return json.loads(gzip.decompress(raw) if path.suffix == '.gz' else raw)
 
 
 def sha(path):
@@ -54,12 +56,18 @@ def main():
         ap.add_argument('--' + name, type=Path, required=True)
     add_native_arguments(ap)
     ap.add_argument('--owners', type=Path, help='Specified gzipped owner rows for the fresh native widths')
+    ap.add_argument('--comparison-record', type=Path, required=True,
+                    help='Pinned selected-result record used for the strict improvement comparison')
     args = ap.parse_args()
     ancestor, replay, dep, checker, out = [getattr(args, name).resolve() for name in
         ('ancestor_package', 'ancestor_replay', 'dependency', 'checker_package', 'out')]
     natives = selected_native_directories(args)
     dispatch = selected_dispatch(args, natives)
     need(__debug__, 'Assertions must remain enabled')
+    comparison_path = args.comparison_record.resolve()
+    comparison_sha = sha(comparison_path)
+    comparison = read(comparison_path)
+    need(Fraction(comparison['kappa']) == Fraction(comparison['decimal']), 'Comparison record value')
     need(not out.exists(), 'Use a new output directory')
     need(not any(out.is_relative_to(p) for p in (ancestor, replay, dep, checker, *natives.values())),
          'Output must be separate from input artifacts and source packages')
@@ -146,7 +154,7 @@ def main():
     kappa = expected['kappa']
     need(kappa == assembly['kappa'] == owner_audit['kappa'] == price['prices']['native']['outer_with_bit']['kappa'],
          'Independent kappa witnesses disagree')
-    baseline_kappa = read(dep / 'data/SPEC.json')['expected']['kappa']
+    baseline_kappa = comparison['kappa']
     need(Fraction(kappa) > Fraction(baseline_kappa), 'A strictly improved kappa is required')
     need(len(owner_audit['negative_controls']) == 7 and owner_audit['roles'] == 36288, 'Independent owner census')
     for mode in ('native', 'conservative'):
@@ -162,10 +170,12 @@ def main():
     need(len(bit['rejected_controls']) == 12 and bit['derived_deficit'] == 10272, 'Bit controls')
     result = {'status': 'PASS_STRICTLY_IMPROVED_KAPPA_UNCHANGED_ADMISSION', 'kappa': kappa,
          'kappa_decimal': assembly['kappa_decimal'], 'baseline_kappa': baseline_kappa,
+         'comparison_record_sha256': comparison_sha,
          'gain': str(Fraction(kappa) - Fraction(baseline_kappa)), 'complex_lower': assembly['complex_lower'],
          'bit_lower': assembly['bit_lower'], 'global_profile': assembly['complex_profile'],
          'seconds': time.monotonic() - started, 'stages': stages,
          'scope': 'Finite conditional native exact-complex witness. Hash-verified reuse of a fresh ancestral replay; full changed-native and global admission. Cited PR589 bit circuit is repriced with its surcharge and controls. All inherited all-size and analytic-transfer assumptions remain.'}
+    need(sha(comparison_path) == comparison_sha, 'Comparison record changed during admission')
     dump(out / 'RESULT.json', result)
     retained = [p for p in out.rglob('*') if p.is_file() and p.name != 'RECEIPT.json']
     dump(out / 'RECEIPT.json', {'status': result['status'],

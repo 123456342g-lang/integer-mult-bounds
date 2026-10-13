@@ -67,6 +67,10 @@ def main():
     need(not work.exists() and not work.is_relative_to(PACKAGE), 'Use a new external output directory')
     work.mkdir(parents=True)
     pins, expected = read(PACKAGE / 'SOURCES.json'), read(PACKAGE / 'data/EXPECTED.json')
+    comparison = PACKAGE / pins['comparison_snapshot']['artifact']
+    need(payload_sha(comparison) == pins['comparison_snapshot']['source_content_sha256'],
+         'Pinned selected-result comparison snapshot')
+    need(read(comparison)['kappa'] == expected['baseline_kappa'], 'Selected comparison value')
     environment = dict(os.environ, PYTHONDONTWRITEBYTECODE='1', PYTHONUTF8='1', PYTHONINTMAXSTRDIGITS='0')
     for name in ('PYTHONOPTIMIZE', 'WITNESS_SPEC', 'WITNESS_DISCOVER', 'WITNESS_RECORD',
                  'MULTICOLD_SOURCE', 'GAIN_PR564_SOURCE', 'SW4_PIN', 'PR635_CODE',
@@ -151,16 +155,33 @@ def main():
     need(len(control_results) == 7, 'Complete predecessor construction control census')
     dump(construction / 'CONTROLS.json', control_results)
 
+    u8_source = sources[869]
+    u8_construction = work / 'baseline869-construction'
+    u8_construction.mkdir()
+    u8_word = u8_construction / 'FULL-WORD.json.gz'
+    u8_recipe = u8_source / 'construction/barch/RECIPE-U8.json'
+    python('build-u8-word', u8_source / 'construction/barch/build_tri.py',
+           base_word, u8_recipe, u8_word)
+    need(payload_sha(u8_word) == read(u8_recipe)['expect_sha256'] == expected['u8_word_sha256'],
+         'Rebuilt U8 source word')
+    need(sha(u8_source / 'independent/audit_local.py') == sha(dependency / 'independent/audit_local.py'),
+         'Unchanged independent U8 auditor')
+    python('u8-construction-controls', u8_source / 'construction/barch/run_controls.py',
+           base_word, u8_recipe, u8_source / 'independent/audit_local.py', u8_construction / 'controls')
+    u8_controls = read(u8_construction / 'controls/controls.json')
+    need(len(u8_controls) == 38 and all(row['ok'] is True for row in u8_controls.values()),
+         'Complete U8 construction control census')
+
     word = work / 'FULL-WORD.json.gz'
-    python('build-end-pair', PACKAGE / 'build_word.py', '--input', base_word, '--output', word)
+    python('build-end-pair', PACKAGE / 'build_word.py', '--input', u8_word, '--output', word)
     need(payload_sha(word) == expected['word_sha256'], 'Minimal candidate word')
-    python('independent-point-audit', PACKAGE / 'audit_points.py', '--baseline', base_word,
+    python('independent-point-audit', PACKAGE / 'audit_points.py', '--baseline', u8_word,
            '--word', word, '--output', work / 'POINT-AUDIT.json')
     python('end-pair-controls', PACKAGE / 'end_controls.py', '--word', word,
            '--independent-auditor', dependency / 'independent/audit_local.py',
            '--native-auditor', pr635 / 'code/hpe_audit_and_transport.py',
            '--portable-runner', native_source / 'code/run_portable.py',
-           '--routing', routing, '--output', work / 'end-controls')
+           '--routing', routing, '--main', root, '--output', work / 'end-controls')
     owners = work / 'owners'
     python('rebuild-owners', PACKAGE / 'build_owners.py', '--word', word,
            '--plan', dependency / 'data/PLAN.json', '--out', owners)
@@ -173,7 +194,8 @@ def main():
     admission = work / 'admission'
     python('complete-global-admission', PACKAGE / 'code/admit_candidate.py', '--ancestor-package', ancestor,
            '--ancestor-replay', baseline, '--dependency', dependency, '--checker-package', checker,
-           '--native', native, '--owners', owners / 'OWNERS.json.gz', '--out', admission)
+           '--native', native, '--owners', owners / 'OWNERS.json.gz',
+           '--comparison-record', comparison, '--out', admission)
     admitted = read(admission / 'RESULT.json')
     for field in ('kappa', 'kappa_decimal', 'complex_lower', 'bit_lower', 'global_profile', 'gain'):
         need(admitted[field] == expected[field], 'Frozen admitted result: ' + field)
@@ -182,13 +204,14 @@ def main():
                   baseline_kappa=admitted['baseline_kappa'], global_profile=admitted['global_profile'],
                   sources=pins, word_sha256=payload_sha(word), owners_sha256=payload_sha(owners / 'OWNERS.json.gz'),
                   native_pins=native_result['pins'], seconds=time.monotonic()-started, stages=stages,
-                  scope='Fresh pinned ancestor and X4 construction, minimal end recipe, independent point audit, '
+                  scope='Fresh pinned ancestor, X4 and U8 constructions, minimal end recipe, independent point audit, '
                         'targeted controls, exact owner reconstruction, complete native and strict global admission. '
                         'The cited PR589 bit circuit is repriced. Inherited uniform and analytic assumptions remain.')
     dump(work / 'RESULT.json', result)
     outputs = ['RESULT.json', 'STAGES.json', 'POINT-AUDIT.json', 'FULL-WORD.json.gz',
                'baseline741/RESULT.json', 'baseline741/RECEIPT.json', 'baseline741/ANCESTRAL-LINK.json',
                'baseline799-construction/CONTROLS.json', 'owners/OWNERS.json.gz',
+               'baseline869-construction/FULL-WORD.json.gz', 'baseline869-construction/controls/controls.json',
                'native/RESULT.json', 'native/RECEIPT.json', 'admission/RESULT.json', 'admission/RECEIPT.json']
     dump(work / 'RECEIPT.json', dict(status=result['status'],
          artifacts={name: sha(work / name) for name in outputs},

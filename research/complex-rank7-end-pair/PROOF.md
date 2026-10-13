@@ -1,6 +1,6 @@
 # The end pair and its complete cost
 
-All indices below refer to PR799's pinned raw word. The recipe records both
+All indices below refer to PR869's pinned U8 raw word. The recipe records both
 the old and new value at every changed position and checks the complete input
 and output content hashes.
 
@@ -21,7 +21,7 @@ wrapper contract.
 
 The new end requires eight B-frame changes, at zero-based positions
 1018, 1019, 1050, 1051, 1130, 1131, 1162, and 1163. The two early-cleanup
-frames at entries 140 and 141 also become U. No scalar gate changes. The
+frames at entries 148 and 149 also become U. No scalar gate changes. The
 independent point audit checks containment for every adjacent frame, every
 source and target boundary, the center interface, all paid jumps, and the
 unchanged scalar program. The unchanged native auditors independently derive
@@ -56,7 +56,7 @@ capacity. The retained global auditor independently reconstructs the physical
 windows and checks the final assignment against the native helper widths.
 The complete unused-space profile is exactly `{48:2400}`.
 
-Across all 72 calls, the global profile change from PR799 is
+Across all 72 calls, the global profile change from the U8 construction is
 
 ```
 ΔH_global = {1:-433, 2:+1008, 3:-577, 44:-1, 48:+4}.
@@ -65,18 +65,24 @@ Across all 72 calls, the global profile change from PR799 is
 The rank mass does not change:
 `-433 + 2*1008 - 3*577 - 44 + 4*48 = 0`.
 The resulting mass is 520704, retaining the deficit 2560 and the same physical
-geometry. At PR799's certified complex endpoint, the raw moment decreases by
-approximately `0.11903590824390181`. That decimal is a diagnostic; admission
-uses the two retained rational interval engines.
+geometry. The certified global prefix bound is 257 bits, within the retained
+512-bit allowance. The physical row coefficient is 16467, below 20161.
+Admission checks both retained rational interval engines and the complete
+precision and tape invoice.
 
 The native complex recurrence is accepted at
-`b = 832238996031084233427 / 500000000000000000000000`
+`b = 6659172436825204659 / 4000000000000000000000`
 and rejected at `b + 10^-24`. The complete bit profile retains its bad-residue
 surcharge. Both moment engines and all 47 outer inequalities certify
 
 ```
-κ = 1661712108827881 / 1000000000000000000.
+κ = 166202617947539 / 100000000000000000.
 ```
+
+This exceeds the selected PR942 value by exactly
+`65631761443 / 1000000000000000000`. PR942's all-replica bound fixes the
+previous U8 profile and width inventory. The new helper ends change both,
+so that bound does not exclude this construction.
 
 The scalar program and its finite envelopes retain their source predicates.
 The new frames, wrapper ranks, local profile, owner map, global profile,
