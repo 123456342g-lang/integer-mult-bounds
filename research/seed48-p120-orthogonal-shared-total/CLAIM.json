@@ -32,5 +32,13 @@
     "PR #1366 / discussion result: calibrated two-target diagonal obstruction for P120 e=L51,d0=L1, plus P112 C.6 positive control.",
     "PR #968: P120 all-pairs copy-rank floor 72 and P104 frame-pair geometry.",
     "PR #1292: local masked P104 rank-eight rigidity; global off-orbit cases remain open."
-  ]
+  ],
+  "result": {
+    "status": "completed negative result",
+    "completed_utc": "2026-10-13T23:54:12Z",
+    "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1386",
+    "package_commit": "41f06d17bd5693bcd7529eed18f96cae06f3e647",
+    "finding": "For the seed-selected orthogonal P120 pencil e=L48,d0=L91, every one of 1,056 shared-total-available calibrated row pairs cancels at least one target diagonal; the exact pair count is zero.",
+    "verification": "Independent exact replay passed, including PR1366 odd-pair regression, full P112 C.6 positive unit, total-source deletion control, label mutation control, source pins, and package metadata."
+  }
 }

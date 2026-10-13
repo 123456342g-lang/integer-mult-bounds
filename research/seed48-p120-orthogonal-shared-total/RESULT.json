@@ -4,6 +4,7 @@
   "track": "structural decoder research",
   "base_commit": "bce54fb3f895cbe5cd4c0eb477c3afeed100190f",
   "predecessor_commit": "21046cb8fa0d4f0e9b2f826ba71e01baaf9be02c",
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1386",
   "object": {
     "ports": 120,
     "e_index": 48,

@@ -1,5 +1,5 @@
 {
-  "status": "passed; PR submission pending",
+  "status": "passed locally; PR #1386 open; CI pending after the final claim update",
   "base_commit": "bce54fb3f895cbe5cd4c0eb477c3afeed100190f",
   "predecessor_commit": "21046cb8fa0d4f0e9b2f826ba71e01baaf9be02c",
   "local_python": "3.14.7",
@@ -10,6 +10,7 @@
     "python3 scripts/research_package.py --package research/seed48-p120-orthogonal-shared-total --check-only"
   ],
   "expected_final_marker": "PASS_P120_ORTHOGONAL_SHARED_TOTAL: no exact pair in the complete calibrated one-total family; no new kappa",
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1386",
   "results": [
     "PASS_SOURCE_AND_E8_CERTIFICATE: roots=120 labels=F2^9 pairings=14400",
     "PASS_P120_ORTHOGONAL_SHARED_TOTAL: 65 calibrated rows; 1,056 available pairs; 1,024 both-target and 32 one-target diagonal obstructions; zero exact pairs",
