@@ -1,10 +1,11 @@
 # Discovery record
 
-These exploratory searches guided the choice of a provable local statement.
-They do not certify the proposition. The submitted, standard-library checker
-independently verifies its geometric premises, five-event order contradiction,
-six-event example and paid controls. No solver is required to reproduce those
-results. The exploratory search scripts are not part of this package.
+The original searches guided the single-pair proposition. The follow-up event
+model resolved broader positive cases and found the one-helper construction.
+The standard-library checker independently verifies geometry, the chronology
+certificate, the explicit circuits and their changed native words. It needs
+no solver. The original exploratory scripts are not dependencies; the event
+model is included as `search_events.py` with optional solver dependencies.
 
 ## Assignment and domain
 
@@ -74,9 +75,49 @@ Z3 runs returned unknown at 55 seconds. CVC5 1.4.2 independently parsed the
 same exported formulas; both runs also returned unknown at 55 seconds.
 These helper bounds do not cover all possible coded circuits.
 
-No result about general multi-target coding, signed circuits or helper
-optimality follows from these searches. The final proof instead fixes one
-unordered target pair and allows arbitrarily many signed linear operations
-and arbitrary read order. The two-helper control in the checker uses a
-three-source projection and includes the compensation, cleanup and final
-climbs absent from the discovery models.
+These step-model outcomes remain inconclusive; longer work used the different
+encoding below. The analytic proof fixes one unordered target pair and permits
+arbitrarily many signed operations. Its three-source two-helper control includes
+compensation, cleanup and final climbs absent from discovery models.
+
+## Follow-up: event clocks instead of time steps
+
+Each possible read has an activation variable, a clock, a source-support mask
+and a common-frame mask. Pairwise constraints enforce frame monotonicity
+through both registers. A target receives each required term exactly once.
+The README explains why repeated directed edges and reversed target edges
+are unnecessary in this positive disjoint-support domain.
+
+The first formulation used pseudo-Boolean exact-one constraints. It resolved
+five sources as UNSAT in 0.858 s and six as UNSAT in 13.677 s, with a 300 s
+limit and Z3 seed 23. An alternate formulation replaced those cardinalities
+by pairwise exclusions. Its six-source formula was exported once and checked
+by Z3 5.1.0 (12.442 s) and CVC5 1.4.2 (130.715 s), both with a 180 s limit.
+Both returned UNSAT. The packaged script reproduces exactly the exported
+formula hash in `SEARCH-RESULTS.json`. No UNSAT proof object was collected.
+
+The no-helper direct-only control and the no-frame shared-target control both
+return SAT. The solver-free checker separately shows that omitting source-frame
+propagation falsely admits 60 of the 720 three-source event orders.
+
+The helper extension has no target-to-helper reads. A mixed helper packet is
+required; the recorded six-source runs were:
+
+| Helpers | Core addition limit | Result | Recorded elapsed time |
+| --- | --- | --- | --- |
+| 1 | 28 | SAT | 22.319 s |
+| 2 | 26 | SAT | 4.786 s |
+| 3 | 24 | unknown, 180 s timeout | 180.788 s |
+
+The two-helper circuit also passed a separate exploratory exact replay. The
+one-helper witness was selected for the contribution: `CODED-CELL.json` records
+its core, and `verify.py` derives compensation and cleanup, replays every dirty
+input, and checks its native construction against a matched-stock direct
+control. Its five target/helper preconditioning reads and two helper cleanup
+reads bring the local scalar count from 28 to 35. Those operations and all
+final frame climbs are accounted for.
+
+This follow-up establishes no general signed-circuit exclusion, no optimal
+core length, and no globally admitted κ. The three-helper timeout remains
+unknown. Solver receipts are discovery evidence; the explicit circuit's
+arbitrary-input scalar and frame identities are checked independently.

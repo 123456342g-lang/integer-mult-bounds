@@ -223,11 +223,11 @@ def scalar_matrix(registers, operations, backward=False):
     return rows
 
 
-def expected_matrix(registers, missing=None, backward=False):
+def expected_matrix(registers, missing=None, backward=False, n=3):
     rows = scalar_matrix(registers, [])
     index = {name: i for i, name in enumerate(registers)}
-    for i in range(3):
-        for j in range(3):
+    for i in range(n):
+        for j in range(n):
             if i != j and (i, j) != missing:
                 t, s = index[f"y{i}"], index[f"x{j}"]
                 if backward:
@@ -350,6 +350,61 @@ def verify_sources():
     return pins
 
 
+def coded_cell_checks(selected):
+    """Replay the discovered six-source circuit without trusting solver output."""
+    witness = json.loads((HERE / "CODED-CELL.json").read_bytes())
+    require(witness["selected"] == [selected["pair"], selected["sign"]], "coded cell binding changed")
+    require([[Fraction(x) for x in row] for row in selected["coefficients"]]
+            == [[Fraction(i != j) for j in range(6)] for i in range(6)],
+            "coded witness needs the selected unit-coefficient cell")
+    registers = [f"x{i}" for i in range(6)] + ["h0"] + [f"y{i}" for i in range(6)]
+    core, direct = witness["core"], witness["direct"]
+    require(len(core) == 28 and len(direct) == 30, "unexpected core lengths")
+    require(all(q == 1 and t != s and t in registers and s in registers
+                and not t.startswith("x") for t, s, q in core), "invalid positive core")
+    require(all(t.startswith("y") and s.startswith("x") and q == 1 for t, s, q in direct),
+            "direct control is not direct delivery")
+    require(all(s.startswith("x") for t, s, _ in core if t == "h0"),
+            "compensation derivation requires helper writes from immutable sources")
+    precondition = [(t, s, -q) for t, s, q in reversed(core) if not s.startswith("x")]
+    cleanup = [(t, s, -q) for t, s, q in reversed(core) if t == "h0"]
+    whole = precondition + core + cleanup
+    for backward in (False, True):
+        expected = expected_matrix(registers, backward=backward, n=6)
+        require(scalar_matrix(registers, whole, backward) == expected, "one-helper arbitrary-dirt replay")
+        require(scalar_matrix(registers, direct, backward) == expected, "six-source direct replay")
+    spaces = [span(s["frame"]) for s in selected["leavers"]]
+    caps = [cap(t["port"]) for t in selected["targets"]]
+    paid = framed_replay(registers, precondition + core, spaces, caps)
+    baseline = framed_replay(registers, direct, spaces, caps)
+    require(paid["ok"] and baseline["ok"], "six-source native frame replay")
+    require(paid["rank_mass"] == baseline["rank_mass"] == 99, "unmatched six-source stock")
+    require(all(t == "h0" and s.startswith("x") for t, s, _ in cleanup),
+            "cleanup must run on full-frame sources and helper after final climbs")
+    delta = Counter({int(k): v for k, v in paid["profile"].items()})
+    delta.subtract({int(k): v for k, v in baseline["profile"].items()})
+    delta = {str(k): v for k, v in sorted(delta.items()) if v}
+    require(delta == {"1": -16, "2": 5, "3": 5, "9": -1}, "coded cost comparison changed")
+    # README proves positivity of direct-minus-coded for every 0<s<1:
+    # with x=3^s, it is >= (3-x)(11/3-x)>0. The exact profile above is
+    # the finite premise of that analytic argument, not a numerical sampling.
+    mutations = {
+        "omit_compensation": core + cleanup,
+        "omit_helper_cleanup": precondition + core,
+        "omit_coded_helper_read": precondition + [e for e in core if e[1] != "h0"] + cleanup,
+        "double_shared_target_read": precondition + [
+            [t, s, 2 if s.startswith("y") else q] for t, s, q in core] + cleanup,
+    }
+    rejected = {name: scalar_matrix(registers, bad) != expected_matrix(registers, n=6)
+                for name, bad in mutations.items()}
+    require(all(rejected.values()), "one-helper mutation escaped")
+    return {"witness_sha256": digest(witness), "columns_each_orientation": 13,
+            "core_additions": len(core), "zero_frame_precondition_additions": len(precondition),
+            "full_frame_cleanup_additions": len(cleanup), "total_scalar_additions": len(whole),
+            "coded": paid, "same_stock_direct": baseline,
+            "coded_minus_direct_profile": delta, "mutations_rejected": rejected}
+
+
 def verify_assignment(pins):
     claim = json.loads((HERE / "CLAIM.json").read_bytes())
     require(claim["assignment_seed"] == ASSIGNMENT_SEED and claim["salt"] == SALT,
@@ -368,10 +423,19 @@ def verify_assignment(pins):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--geometry-worker", type=Path, help=argparse.SUPPRESS)
+    parser.add_argument("--native-worker", type=Path, help=argparse.SUPPRESS)
+    parser.add_argument("--native-output", type=Path, help=argparse.SUPPRESS)
     parser.add_argument("--record", type=Path, help="write a development evidence file instead of comparing EXPECTED.json")
     args = parser.parse_args()
     if args.geometry_worker is not None:
         geometry_worker(args.geometry_worker)
+        return
+    if args.native_worker is not None:
+        require(__debug__, "native worker requires assertions")
+        verify_sources()
+        native = runpy.run_path(str(HERE / "native.py"))
+        result = native["rebuild_and_audit"](json.loads(args.native_worker.read_bytes()), args.native_worker.parent)
+        args.native_output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
         return
     pins = verify_sources()
     verify_assignment(pins)
@@ -384,20 +448,27 @@ def main():
                                 capture_output=True, text=True, check=False)
         require(result.returncode == 0, "assertion-enabled constructor worker failed: " + result.stderr[-3000:])
         geometry = json.loads(output.read_bytes())
+        native_output = Path(temporary) / "native.json"
+        result = subprocess.run([sys.executable, "-I", "-B", str(Path(__file__).resolve()),
+                                 "--native-worker", str(output), "--native-output", str(native_output)],
+                                env=environment, capture_output=True, text=True, check=False)
+        require(result.returncode == 0, "assertion-enabled native audit failed: " + result.stderr[-3000:])
+        native = json.loads(native_output.read_bytes())
     selected = next(case for case in geometry["cases"] if [case["pair"], case["sign"]] == geometry["selected"])
-    evidence = {"schema": "complex-packet-borrowing23/1", "base_commit": pins["base_commit"],
+    evidence = {"schema": "complex-packet-borrowing23/2", "base_commit": pins["base_commit"],
                 "assignment_seed": ASSIGNMENT_SEED, "salt_sha256": hashlib.sha256(SALT.encode()).hexdigest(),
                 "selected": geometry["selected"], "formed_candidate_count": geometry["formed_candidate_count"],
                 "raw492_content_sha256": geometry["raw492_content_sha256"],
                 "geometry": validate_geometry(geometry), "chronology": chronology_check(),
-                "scalar_and_paid_controls": scalar_and_escape_checks(selected)}
+                "scalar_and_paid_controls": scalar_and_escape_checks(selected),
+                "one_helper_cell": coded_cell_checks(selected), "native_comparison": native}
     if args.record:
         args.record.write_text(json.dumps(evidence, indent=2) + "\n", encoding="utf-8")
         print(json.dumps(evidence, indent=2))
         return
     require(evidence == json.loads((HERE / "EXPECTED.json").read_bytes()), "evidence differs from EXPECTED.json")
-    print("PASS_COMPLEX_PACKET_PAIR_BORROWING_OBSTRUCTION_AND_PAID_ESCAPE")
-    print("8 signed cells; 3600 shared-support certificates; 720 scalar/frame orders; both dirty-input orientations")
+    print("PASS_COMPLEX_CODED_CELL_AND_PAIR_BORROWING_OBSTRUCTION")
+    print("One-helper cell; matched-stock native words, 714 columns each orientation; 8 signed cells; 720 order controls")
 
 
 if __name__ == "__main__":
