@@ -4,7 +4,7 @@
   "draw_source": "Python secrets backed by OS randomness",
   "started_at_utc": "2026-10-13T23:37:47Z",
   "base_commit": "bce54fb3f895cbe5cd4c0eb477c3afeed100190f",
-  "status": "experiment complete; final verifier passed; distinct-pair overlap documented; preparing one focused PR",
+  "status": "submitted as PR #1388; one distinct-pair certificate; selected kappa unchanged",
   "selected_record": {
     "kappa": "836330098538459/500000000000000000",
     "certificate": "research/community-frontier1094-audit/ASSEMBLY.json",
@@ -70,5 +70,6 @@
     "paid_profile_changed": false,
     "new_kappa_claim": false,
     "verifier": "PASS_COMPLEX_TEMPORAL_PAIR seed=28 helpers=348,359 shared_add=24336 cross=+3real saving=800complex/orientation controls=3 no_new_kappa"
-  }
+  },
+  "pr_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1388"
 }
