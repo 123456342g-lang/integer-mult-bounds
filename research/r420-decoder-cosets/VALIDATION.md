@@ -21,6 +21,8 @@ Passed after implementation:
    is compared through canonical JSON instead.
 6. `git diff --check origin/main` passed; `git diff --exit-code origin/main --
    upstream certificates/selected-result.json` passed.
+7. `make selected-record-check` passed with exact selected κ
+   `51110230636731/31250000000000000`.
 
 A separate AI reviewer checked the mathematical direction and cost formula,
 not execution, and prompted explicit source-kernel, downstream-host, changed
