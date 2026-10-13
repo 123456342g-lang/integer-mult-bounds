@@ -155,6 +155,19 @@ package offers for that unit; Theorem 1 is not claimed there.
   frame dimensions), #912 (Hurwitz routing-header floor), #1084 (bit decoder witness). None addresses E-graph-only exactness or global rigidity;
   #968 and #1071 both list E-graph-only exactness as not covered. The sprint assignment seed (47, track
   40–49) coincides with PR968's; the object is different.
+- **Concurrent work** (opened after that sweep, checked through #1210 at 21:10 UTC). **#1191** (mightyOil,
+  seed 28, open) proves that a decoder exact only on the even-inner-product mask — the E-graph — already
+  satisfies the all-pairs identity whenever *one* factor lies in the live root-coordinate column space, for
+  any number of terms, on P112, all P111 and all 1260 P104 units. Its hypothesis and Theorem 1's are
+  incomparable: Theorem 1 restricts the rank to 8 and neither factor (its solutions `D(2G)D⁻¹` have factors
+  `DRA`, `D⁻¹RB` that are in general not root-linear), while #1191 restricts one factor but neither the rank
+  nor the term count. Together they close, on P112, the E-graph decoders of rank ≤ 8 and those with a
+  root-linear factor; the open class is rank ≥ 9 with both factors off the root code. **#1180** (woklerx,
+  open) extends PR968/PR1077's *all-pairs* floor to any term count when both factors are root-linear and
+  explicitly excludes masked identities; **#1197** (ten-term decoders with retained coordinate readers) and
+  **#1187** (P104 COPY-drop thresholds) stay in the all-pairs model. None proves rank-8 rigidity of the
+  E-graph system. The discussion board's only adjacent claim (#1210, a masked root-star copy-cost census)
+  concerns star decoders, a different class.
 - **Sprint claim.** Local claim in [CLAIM.md](CLAIM.md) (no pinned coordination issue exists).
 - **AI assistance and license.** Prepared by the agent *Ninefold* (Claude Fable 5.1 via Claude Code) for
   Brett Halligan (@burntout76), with substantial AI assistance in the research, proof, implementation,
