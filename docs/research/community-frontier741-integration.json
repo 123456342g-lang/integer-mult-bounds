@@ -54,6 +54,11 @@
     "research/community-frontier741-audit/ledger-tests.log": "069e822c2509730dfd44f5b6cf556b7606a7f25573f5b2d8aa395e80a93fc5aa",
     "research/community-frontier741-audit/binding-tests.log": "3cca03b6b2fafc67999d5324bc64cd9a9f79165dfacc72b8944b3095c913a3b3",
     "research/community-frontier741-audit/bit589.log": "83d2e8ccd6924f2138350da693f8cecedaa8c113e758ad22f5f29725e9cccc7e",
-    "research/community-frontier741-audit/reconciliation.log": "ce6dae67e5807713ddac77c5710478a1e628e8ec338eae4077caff08d80c2e70"
-  }
+    "research/community-frontier741-audit/reconciliation.log": "ce6dae67e5807713ddac77c5710478a1e628e8ec338eae4077caff08d80c2e70",
+    "research/community-circuits681-audit/integration-hosted-replay.tar.gz": "a6c477b41144a72fb75825c557f49d0699028e1018266199e6e2a644514ae3e5",
+    "research/community-circuits681-audit/integration-hosted.log": "811a36614b7f370a448bec7b01ef5c1b6fca0c1b7bf516e1a2207b04c8ad9f5c",
+    "research/community-circuits681-audit/INTEGRATION-REPLAY.json": "a70433c6b810c4a2d83a6be83c26cbba9a39df61f0fd8a5de85057a9d7730287",
+    "research/community-frontier741-audit/PREPUBLICATION-HEADS.json": "0a3e3638644ba76491cbe2f5c7a26ef103d5f6ba3887955b1899cb7f23d34c13"
+  },
+  "whitespace_review": "Maintainer changes pass. Eleven inherited whitespace diagnostics in byte-pinned PR741 vendor files are preserved rather than rewriting source pins."
 }
