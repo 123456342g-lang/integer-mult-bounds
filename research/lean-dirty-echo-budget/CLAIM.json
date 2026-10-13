@@ -4,7 +4,7 @@
   "drawn_at_utc": "2026-10-13T09:23:47.272707+00:00",
   "track": "independent verification or formalization",
   "base": "f567884aeb8851b6e794af1184119a3bfbe1e631",
-  "status": "claimed",
+  "status": "submitted",
   "branch": "research/pass07-verification-seed83",
   "claimed_at_utc": "2026-10-13T09:37:39.196876+00:00",
   "candidate_selection": "83 modulo 3 = 2",
@@ -56,5 +56,11 @@
     "upstream_head": "f567884aeb8851b6e794af1184119a3bfbe1e631",
     "subject_head_unchanged": true,
     "related_new_work": "PR878 formalizes PR589 XOR boundaries; PR885 formalizes selected native Real moments. Neither treats reserved-scratch echo resources."
-  }
+  },
+  "completed_at_utc": "2026-10-13T10:15:12.978053+00:00",
+  "pr": 887,
+  "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/887",
+  "mathematical_commit": "c9a0c246602e2360ee125a2ddcf7f3e7674fddb0",
+  "result": "Lean 4.21.0 proves the all-size reserved-scratch capacity and call lower bound, exact feasibility and the equality family, including minimum 2304 at 50 factors / six arrays. All 5474 source-derived constructor proofs, 36 optimality instances, 1429954 literal instructions and nine controls pass. No new kappa.",
+  "validation": "Complete replay on Python 3.14.4 and standalone read-only Python 3.12.3; source/receipt/overwrite controls, selected-record integrity and staged whitespace pass. Hosted CI is tracked separately."
 }
