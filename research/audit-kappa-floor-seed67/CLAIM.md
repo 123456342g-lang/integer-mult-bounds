@@ -33,3 +33,6 @@ conservative-to-accepted gap to the complex surcharge removal; quantified
 the guard-parameter cost at 7.634935e-27 of cap (0 grid ticks). No new
 kappa; no counterexample in the audited step.
 
+Submitted as PR https://github.com/CrocSwap/integer-mult-bounds/pull/894
+(base commit f567884aeb8851b6e794af1184119a3bfbe1e631).
+
