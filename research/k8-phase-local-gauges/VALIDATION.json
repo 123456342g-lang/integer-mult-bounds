@@ -1,0 +1,39 @@
+{
+  "status": "PASS_COMPLETE_SCOPED_PACKAGE",
+  "base": "dadfea6e8a78ff6ba901705f87532a71c6f5bbb8",
+  "timestamp_utc": "2026-10-13T21:24:23.019964+00:00",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "main_interpreter": "3.14.7",
+  "portable_interpreter": "CPython 3.12.13",
+  "checks": [
+    "Complete reproduce.py on CPython3.12.13",
+    "Main and independent checks under isolated optimized default Python",
+    "Nine test groups under isolated optimized Python",
+    "25 selected-record source/inventory tests",
+    "verify_selected_result.py",
+    "research_baseline.py (source bindings only)",
+    "Complete offline relocated replay from path containing a space with exactly12 external pinned files"
+  ],
+  "overlap_refresh": {
+    "open_prs": 855,
+    "newest_pr": 1261,
+    "main": "dadfea6e8a78ff6ba901705f87532a71c6f5bbb8",
+    "closest": [
+      1161,
+      1214,
+      1170,
+      1119,
+      1186
+    ],
+    "new_overlap_found": false
+  },
+  "certificate_sha256": "a86a8f223f421227ed2fa6f3d3e4d807bcb2045fd53482234a583a163ce971f5",
+  "not_run": [
+    "Native C++ compiler",
+    "Complete hosting/global invoice",
+    "Selected cold replay",
+    "Remote CI",
+    "Lean"
+  ],
+  "changes_kappa": false
+}
