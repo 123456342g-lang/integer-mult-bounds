@@ -29,5 +29,17 @@
       "decision": "Selected: predecessor exhausts only k=2 through length five; new census covers every minimum and excludes all shorter words through k=5. PR896 formalizes binary nonlinear recursion, not this star-query census."
     }
   ],
-  "stopping_rule": "Finish fixed k=1..5 census; no supplier search, no expanded circuit alphabet, no kappa claim."
+  "stopping_rule": "Finish fixed k=1..5 census; no supplier search, no expanded circuit alphabet, no kappa claim.",
+  "result": {
+    "status": "completed",
+    "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/938",
+    "completed_at_utc": "2026-10-13T13:43:03.141512+00:00",
+    "refreshed_submission_base": "47481c89fd30a43f8f882eb4b391e89c29273fd0",
+    "latest_overlap_refresh_pr": 937,
+    "subject_head_unchanged": true,
+    "coverage": "All signed star words of lengths 0..2k+2 for k=1..5, with exact orbit counts and safe pruning; unpruned labelled cross-check k=1,2; 60 recursive emitter cases; 5 strict star cases; 6 algebraic controls; 10 package tests.",
+    "finding": "Minimum 2k+2; complete minimizer counts 4,24,288,5760,172800. Written proof gives 2(k+1)(k!)^2 for k>=1 within the stated alphabet.",
+    "verification": "Normal and optimized replay/package tests, standalone relocation, selected-record checks and five selected-result tests passed. No full regeneration, cold supplier replay or hosted-CI claim.",
+    "frontier": "Upstream independently selected PR890 during verification; refreshed conditional kappa 1661957774647029/10^18 unchanged by this package."
+  }
 }
