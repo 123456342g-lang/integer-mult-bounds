@@ -1,5 +1,5 @@
 {
-  "status": "EIGHTEEN_REVIEWED_CHECKPOINT_PUBLICATION_PENDING",
+  "status": "18_PUBLISHED_22_PENDING",
   "selected_kappa": "1661960547713947/1000000000000000000",
   "frontier_changed": false,
   "reviewed_heads": {
@@ -267,7 +267,8 @@
     "research/community-batch1047-audit/variants/pr1042/research/gauge44-slots-t16/data/OWNERS.json.gz": "fe4f65082d12adfc412ac8cc041fde26b9caadfaa84d524140dc1dbc92a22ee7",
     "research/community-batch1047-audit/variants/pr1042/research/gauge44-slots-t16/data/PLAN.json": "f451a04c1f85cc72fc331e0ac00b4b0ea902a1c8038387495609affb2d6a7f7b",
     "research/community-batch1047-audit/variants/pr1042/research/gauge44-slots-t16/data/SPEC.json": "78fb24ab0852fa52ceada755aff737165e92f80e5fff89a5452c9eceaae4f63c",
-    "research/community-batch1047-audit/CHECKPOINT1-HEADS.json": "365d1c0d0d859bb74dc8e21b23d4262f1bc78e641c46eeb1b5cc041e03c0cc40"
+    "research/community-batch1047-audit/CHECKPOINT1-HEADS.json": "365d1c0d0d859bb74dc8e21b23d4262f1bc78e641c46eeb1b5cc041e03c0cc40",
+    "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json": "9b82cb2eafb1cc0e2cbe2b1d61202353c0498cae3806afa458a71485d755bd21"
   },
   "scope": "Frozen forty exact heads. Completion flags and per-file coverage distinguish proposals from reviewed integrations. Linux CI separate from local execution."
 }

@@ -1,5 +1,5 @@
 {
-  "status": "EIGHTEEN_REVIEWED_CHECKPOINT_PUBLICATION_PENDING",
+  "status": "18_PUBLISHED_22_PENDING",
   "pull_requests": [
     {
       "number": 1004,
@@ -359,19 +359,23 @@
       },
       "reviewed_head": "607294b05e534087d934bb3a7fcb46e89f9b9851",
       "current_head": "607294b05e534087d934bb3a7fcb46e89f9b9851",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/t37-support-audit-seed66"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Independent uniform T37 supporting-inequality audit on 0<z<=1/500 with exact integral bounds and complete bin coverage; credits PR995's broader interval. No new kappa.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -395,19 +399,23 @@
       },
       "reviewed_head": "93a8127b990f9755d0c80e729b40c969d6c611e4",
       "current_head": "93a8127b990f9755d0c80e729b40c969d6c611e4",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/u8-supporting-uniform"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Uniform supporting inequality through saving 1/3 for the fixed U8 signed-dual relaxation, exact cube-root enclosures and all-replica equality condition. No physical supplier or new kappa.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -431,19 +439,23 @@
       },
       "reviewed_head": "9892e3e9f883fc39966e6d16bcd4e349597afeb4",
       "current_head": "9892e3e9f883fc39966e6d16bcd4e349597afeb4",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/u8-terminal-cone-census"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Necessary inverse-row and dirty-column terminal cones for a fixed compensated U8 prefix and monotone common-frame invertible cleanup; all 504 endpoints minimal under those premises. Changed prefix frames, erasures or new storage are outside scope.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -467,19 +479,23 @@
       },
       "reviewed_head": "4740dc74a2ee2fb7aeaa0e0013cf8f997558d101",
       "current_head": "4740dc74a2ee2fb7aeaa0e0013cf8f997558d101",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/t37-bootstrap-depth-seed60"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Six bootstrap levels suffice for the historical T37 witness; levels zero through five fail within the stated fixed parameter class. Exact assembly and mutation checks; no new kappa.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -503,19 +519,23 @@
       },
       "reviewed_head": "02087cdeb53559550b8eb6f47d748f806d067226",
       "current_head": "02087cdeb53559550b8eb6f47d748f806d067226",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/t37-support-interval"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Sharp uniform T37 supporting-line range: the first failure is the positive root of 37(3/2)^b-48^b-36, between 0.64 and 0.65. A relaxed T16 competitor establishes sharpness without claiming physical packing.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -539,19 +559,23 @@
       },
       "reviewed_head": "0efdfc28b1eb71c91c012ca1e1945baeeebce7bb",
       "current_head": "0efdfc28b1eb71c91c012ca1e1945baeeebce7bb",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/t37-integrality-audit"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Integer credit-slack lattice and exact rational residue potentials for all 37 replica classes, including a sharp positive numerator penalty off multiples of 37. The normalized gap vanishes with T; no stronger kappa follows.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -983,19 +1007,23 @@
       },
       "reviewed_head": "7eaf5665ac246310293fda06a3cf245fe72f6012",
       "current_head": "7eaf5665ac246310293fda06a3cf245fe72f6012",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/prescribed-three-port-decoders"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Exact prescribed-triple deletion thresholds in the nonempty binary two-port star observation model: triangles impossible, matched-pair P4 requires 6p-11, other forests 6p-12. Written bridge/component proof and independent finite census; no paid supplier.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -1019,19 +1047,23 @@
       },
       "reviewed_head": "b4cb9709ac48e69002a25607e1ecc2ed8452d5b3",
       "current_head": "b4cb9709ac48e69002a25607e1ecc2ed8452d5b3",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/prescribed-triple-decoder"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Independent targetwise audit of PR966: all 46348 targets and 63 orbits, literal decoder witnesses, and unrestricted p=3,4 RREF minima. Preserves predecessor priority and distinguishes larger-size witness checks from optimum proofs.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -1055,19 +1087,23 @@
       },
       "reviewed_head": "3a8ec54d62fb8824c658dc7ed356f99423cac8cf",
       "current_head": "3a8ec54d62fb8824c658dc7ed356f99423cac8cf",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/e8-joint-reader-bound"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Fixed E8 additive-star copy ratio cannot improve through 55 punctures, via shared-deletion support unions and complete root-flat capacities. Not a barrier for general pairing-rank decoders or new architectures.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -1091,19 +1127,23 @@
       },
       "reviewed_head": "7f334e4c749fd83d03feb6c1de4e4cda9534c9dc",
       "current_head": "7f334e4c749fd83d03feb6c1de4e4cda9534c9dc",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/e8-rank5-boundary"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Exact 36-puncture rank-five E8 boundary: 7560 conjugate puncture sets and equality-class basis cost 62 on 84 ports; excludes ratio improvement at that boundary, not a global cost optimum for every set.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -1127,19 +1167,23 @@
       },
       "reviewed_head": "5d4ba228f8a1fe9159c25ec6aac0abc0ab42e81a",
       "current_head": "5d4ba228f8a1fe9159c25ec6aac0abc0ab42e81a",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/prescribed-star-triples"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Independent unrestricted coefficient enumeration at p=5,6 for prescribed three-star targets, including 301989888 normalized assignments at p=6 and restoration controls. Corroborates PR966/669 theorem, no new supplier or kappa.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -1163,19 +1207,23 @@
       },
       "reviewed_head": "02b59e553649c333072b5dd4dfb97e43942efa14",
       "current_head": "02b59e553649c333072b5dd4dfb97e43942efa14",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/paired-star-rank"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Uniform signed proper-star rank formula and exact algebraic all-target puncture thresholds; distinguishes nonempty and empty star. At (8,4), dimensions 447/448 and deletions 673/672. Literature basis checked; historical context pinned without changing expected bytes.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -1199,19 +1247,23 @@
       },
       "reviewed_head": "913817423bbfaf241dec1d6b9edb1c7ded349508",
       "current_head": "913817423bbfaf241dec1d6b9edb1c7ded349508",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/complex-parity-frames-seed35"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Historical shared-parity decoder frame diagnosis: minimum separating-frame dimensions do not ensure legal nonalternating residual transfers. Scoped local counterexamples, no accepted supplier or new kappa.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -1235,19 +1287,23 @@
       },
       "reviewed_head": "f39f92a085fc95fe4245b06d4a695739d79763bc",
       "current_head": "f39f92a085fc95fe4245b06d4a695739d79763bc",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/frame-completion-seed47"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Exact minimum-rank nondegenerate frame sandwiches for all 2271 historical h=10 DAG nodes: 692 degenerate spans completable, two impossible common-span cases. Pointwise completion does not establish nesting or legal residuals.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -1271,19 +1327,23 @@
       },
       "reviewed_head": "66b777bf2b0160ed926572ff8714ac7b7bba0859",
       "current_head": "66b777bf2b0160ed926572ff8714ac7b7bba0859",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/p112-complex-single-lift"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Real representative of every complex single-lift decomposition with identical termwise support pairs, extending the inherited P112 cost floor 64 to complex coefficients. Fixed eight coordinate readers plus one total only; no physical compilation theorem.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -1307,19 +1367,23 @@
       },
       "reviewed_head": "bf4ee95df4ee6e3101a88f5d015c8aa85b688b6d",
       "current_head": "bf4ee95df4ee6e3101a88f5d015c8aa85b688b6d",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/root-pair-first-drop-seed48"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Exact first rank-six threshold for distinct nonorthogonal E8 root-normal pairing terms: 26 punctures, all 6720 ordered pairs by explicit reflection orbit. Complete eight-term witness costs 69 on 94 ports; no supplier gain.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -1343,19 +1407,23 @@
       },
       "reviewed_head": "e04eb10f36de392df2e9a752b8ea2a244a46a80e",
       "current_head": "e04eb10f36de392df2e9a752b8ea2a244a46a80e",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/p112-free-sink-audit97"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Exact integer-minor and independent rational replay of PR620's 28560-case free P112 sink exclusion. Closes that floating-rank evidence gap only; paid-extra-total search and broader PR620 review remain separate.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -1379,19 +1447,23 @@
       },
       "reviewed_head": "b2a47e14f7189969a8a8d0e5f0a44be69898f514",
       "current_head": "b2a47e14f7189969a8a8d0e5f0a44be69898f514",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/pr946-pin-migration"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Frozen PR946 byte-migration inventory and executable rejection/restoration of historical PR950 pins: 165 proposed paths, 561 old-byte references, eight individual rejections and complete restored audit. Does not apply or approve deferred PR946.",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"

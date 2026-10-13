@@ -21,8 +21,8 @@
   ],
   "counts": {
     "changed_since_review": 6,
-    "incorporated": 204,
-    "partially_reviewed": 190,
+    "incorporated": 222,
+    "partially_reviewed": 172,
     "unreviewed": 282
   },
   "source_sha256": {
@@ -53,7 +53,7 @@
     "research/community-batch932-audit/DISPOSITIONS.json": "78407de39b1d51acf31209a6ab11b6fe06e8cf3a617659c5cd43882870baa2d9",
     "research/community-batch952-audit/DISPOSITIONS.json": "fa89c90fb127e512903539ead9c6cf1e4667ed415b4d81a6510ff692f33bd53d",
     "research/community-batch970-audit/DISPOSITIONS.json": "e1781e098cd61089aa616c75f3d65977f1fc6e61e48c99d020de09d89831e32c",
-    "research/community-batch1047-audit/DISPOSITIONS.json": "ab5b39e200e33c04c1d2bddb9a16bc08ffa948e332f7de8961a1c112e392c26e",
+    "research/community-batch1047-audit/DISPOSITIONS.json": "8ff8898b55b377f756b47951bc794105f71a5b5df4526d1217765c168741513a",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -18247,16 +18247,20 @@
       "integration_location": [
         "research/paired-star-rank"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "02b59e553649c333072b5dd4dfb97e43942efa14",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -20053,16 +20057,20 @@
       "integration_location": [
         "research/e8-rank5-boundary"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "7f334e4c749fd83d03feb6c1de4e4cda9534c9dc",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -21618,16 +21626,20 @@
       "integration_location": [
         "research/complex-parity-frames-seed35"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "913817423bbfaf241dec1d6b9edb1c7ded349508",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -22186,16 +22198,20 @@
       "integration_location": [
         "research/e8-joint-reader-bound"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "3a8ec54d62fb8824c658dc7ed356f99423cac8cf",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -23301,16 +23317,20 @@
       "integration_location": [
         "research/prescribed-three-port-decoders"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "7eaf5665ac246310293fda06a3cf245fe72f6012",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -23547,16 +23567,20 @@
       "integration_location": [
         "research/prescribed-triple-decoder"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "b4cb9709ac48e69002a25607e1ecc2ed8452d5b3",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -23593,16 +23617,20 @@
       "integration_location": [
         "research/frame-completion-seed47"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "f39f92a085fc95fe4245b06d4a695739d79763bc",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -23727,16 +23755,20 @@
       "integration_location": [
         "research/prescribed-star-triples"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "5d4ba228f8a1fe9159c25ec6aac0abc0ab42e81a",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -23861,16 +23893,20 @@
       "integration_location": [
         "research/u8-terminal-cone-census"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "9892e3e9f883fc39966e6d16bcd4e349597afeb4",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -23995,16 +24031,20 @@
       "integration_location": [
         "research/t37-integrality-audit"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "0efdfc28b1eb71c91c012ca1e1945baeeebce7bb",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -24041,16 +24081,20 @@
       "integration_location": [
         "research/pr946-pin-migration"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "b2a47e14f7189969a8a8d0e5f0a44be69898f514",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -24087,16 +24131,20 @@
       "integration_location": [
         "research/u8-supporting-uniform"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "93a8127b990f9755d0c80e729b40c969d6c611e4",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -24133,16 +24181,20 @@
       "integration_location": [
         "research/p112-complex-single-lift"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "66b777bf2b0160ed926572ff8714ac7b7bba0859",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -24179,16 +24231,20 @@
       "integration_location": [
         "research/t37-support-audit-seed66"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "607294b05e534087d934bb3a7fcb46e89f9b9851",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -24445,16 +24501,20 @@
       "integration_location": [
         "research/t37-bootstrap-depth-seed60"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "4740dc74a2ee2fb7aeaa0e0013cf8f997558d101",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -24491,16 +24551,20 @@
       "integration_location": [
         "research/t37-support-interval"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "02087cdeb53559550b8eb6f47d748f806d067226",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -24625,16 +24689,20 @@
       "integration_location": [
         "research/root-pair-first-drop-seed48"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "bf4ee95df4ee6e3101a88f5d015c8aa85b688b6d",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -24891,16 +24959,20 @@
       "integration_location": [
         "research/p112-free-sink-audit97"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "4ae5c82b933e96a62427c69335d71c1d5bdb87c5",
+        "evidence": "research/community-batch1047-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "reviewed_head": "e04eb10f36de392df2e9a752b8ea2a244a46a80e",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and local checks complete; publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1047-review.md"
@@ -25096,7 +25168,7 @@
   ],
   "github_dispositions": {
     "CLOSED": 3,
-    "MERGED": 201,
-    "OPEN": 478
+    "MERGED": 219,
+    "OPEN": 460
   }
 }
