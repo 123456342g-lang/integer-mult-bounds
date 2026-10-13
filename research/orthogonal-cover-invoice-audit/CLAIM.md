@@ -54,8 +54,13 @@ whereas using GL(73,2) violates the row cap. Exact cover-only inflation reaches
 its first failed guard at a factor of 2^1847. No construction defect or new
 kappa is claimed. See README.md, CERTIFICATE.json and VALIDATION.json.
 
-The final full-queue check covered 586 open PRs through #767; no ambient
+The final full-queue check covered 586 open PRs through #767, followed by
+an immediate pre-submission latest-arrival check through #769; no ambient
 cover-cardinality audit was found. #717 remains distinct (moment/invoice
 sensitivity and finite program permutations). Upstream main is still the
-recorded base. No coordination issue exists, so the completion link is recorded
-here after submission.
+recorded base. No coordination issue exists, so the result is recorded locally.
+
+Submitted: https://github.com/CrocSwap/integer-mult-bounds/pull/771
+Completion recorded: 2026-10-13 05:24:47 UTC.
+The contribution finished early; verification and packaging occupied the final
+portion of the session. No work remains on the claimed mathematical scope.

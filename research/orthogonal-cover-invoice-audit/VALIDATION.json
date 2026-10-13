@@ -23,6 +23,10 @@
     {
       "command": "make selected-record-check",
       "result": "PASS selected record, exact kappa, original source inventory and proof supplement"
+    },
+    {
+      "command": "git diff --cached --check",
+      "result": "PASS, no whitespace errors"
     }
   ],
   "coverage": {
@@ -63,5 +67,6 @@
     "Linux CI",
     "Lean"
   ],
-  "limitations": "No production construction or selected-frontier changes. Group theorem is a written mathematical argument with finite checks, not a formal proof of multiplication. All supplier/compiler/hosting/precision/tape/analytic assumptions remain."
+  "limitations": "No production construction or selected-frontier changes. Group theorem is a written mathematical argument with finite checks, not a formal proof of multiplication. All supplier/compiler/hosting/precision/tape/analytic assumptions remain.",
+  "upstream_unchanged": "Verified no changes to upstream/, certificates/, docs/, scripts/ or Makefile against the exact base."
 }
