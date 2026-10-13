@@ -1,5 +1,5 @@
 {
-  "status": "completed: finite research construction and exact class optimum; clean patch handoff",
+  "status": "completed: historical finite construction and exact class optimum; branch published, PR creation blocked",
   "track": "complex supplier",
   "assignment_seed": 35,
   "seed_source": "Python secrets.randbelow(100), OS randomness",
@@ -36,10 +36,11 @@
     "kappa_change": false,
     "report": "README.md",
     "validation": "VALIDATION.md",
-    "reproduce": "python3 -B research/complex-jp8-diagonal-gauge/check.py"
+    "reproduce": "python3 -B research/complex-jp8-diagonal-gauge/check.py",
+    "branch_url": "https://github.com/mythrilium/integer-mult-bounds/tree/research/jp8-diagonal-gauge-seed35"
   },
   "overlap_final": "585 open PRs through #766, then 100 recently updated through #772 at 2026-10-13T05:25:52Z; no equivalent live-register diagonal sandwich found; #750/#739/#755/#769 and other distinct mechanisms credited",
-  "posting": "Personal fork mythrilium/integer-mult-bounds verified; publishing focused historical-source research PR.",
+  "posting": "Published as mythrilium commit 1a37df609e1267a43308a0c0f8f23280b08f691b. GitHub create-pull-request API returned 403 Resource not accessible by integration. No PR created.",
   "verification_started_utc": "2026-10-13T05:21:53Z",
   "publication_refresh": {
     "upstream": "bce54fb3f895cbe5cd4c0eb477c3afeed100190f",
