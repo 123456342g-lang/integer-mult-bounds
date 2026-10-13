@@ -1,5 +1,8 @@
 {
-  "status": "claimed",
+  "status": "completed; submitted for review",
+  "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/1205",
+  "result": "Exact terminal/prefix observer criterion; 46656 cases, 7776 terminal-safe, 6048 prefix-safe, 1728 terminal-only, 7712 safe with nonzero readers; 588 dirty-state columns, six mathematical controls, relocated replay and source-corruption rejection. Seed-selected five-child recursive word saves 1500 ADDs at depth3/N125; no supplier or kappa claim.",
+  "final_overlap_refresh": "PR1155 unchanged; latest twelve PRs through1193 inspected before submission, no duplicate observer-defect contribution identified.",
   "track": "recursive interfaces",
   "seed": 52,
   "os_uint32": 3718171852,
