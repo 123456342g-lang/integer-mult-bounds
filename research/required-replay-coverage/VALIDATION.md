@@ -38,8 +38,13 @@ the historical PR799 script does not support isolated Python imports. Its CLI
 invocation was corrected to ordinary assertion-enabled Python. The corrected
 full matrix passes; the new entrypoint independently supports isolated checking.
 
-`make verify` is running in the existing Ubuntu WSL environment. It has not
-completed and no repository-wide pass is claimed. Hosted CI is not claimed.
+`make verify` completed with a failure in the unchanged historical
+`tests/test_recycled_bit_integration.py`: eleven optimized-entrypoint subprocess
+checks exceeded their ten-second timeout under Ubuntu WSL on this checkout.
+The preceding long historical producer checks passed, including full fallback
+and both suppliers at kappa 0.000472154791. The aggregate stopped at
+`verify-recycled-bit`, so no repository-wide or hosted-CI pass is claimed.
+This contribution does not modify that test or its producer scripts.
 All validation above concerns the verification gate and finite selected replay,
 not the inherited all-size/compiler/hosting/analytic multiplication theorem.
 
