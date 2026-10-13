@@ -15,5 +15,10 @@
     "Stage boundary changes for mixed-rank decoders (not chosen; no concrete favorable recurrence identified)."
   ],
   "scope_limits": "Nonzero free rectangle and three nonzero original-coordinate projected products are essential. No claim about one/two projected-product branches or arbitrary masked decoders.",
-  "coordination": "No pinned sprint issue exists; claim recorded locally. Fresh complete PR/discussion scan in progress before experiment expansion."
+  "coordination": "No pinned sprint issue exists; claim recorded locally. Fresh complete PR/discussion scan in progress before experiment expansion.",
+  "status": "DONE",
+  "result": "P112 pair(4,6), nonzero free rectangle, three nonzero projected products: COPY sum >=66 and full power bill >=33/32 of baseline; fully dense sum>=72. Exact145600-record geometric census and ten controls; exactly-two branch remains open; no new kappa.",
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1373",
+  "published_source_commit": "ebeb286589792f26b8bcb882ba9eff3c47f4ae9c",
+  "finished_utc": "2026-10-13T23:40:14.310524+00:00"
 }
