@@ -2,6 +2,8 @@
   "track": "20-39: Complex supplier: improve one specific circuit, frame schedule, decoder, or paid recursive profile",
   "assignment_seed": 30,
   "base_commit": "abdc6a7002abdbcd9e21bfc5e1a795784deacfdf",
+  "status": "completed",
+  "pr_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1119",
   "selected_frontier_certificate": {
     "path": "certificates/selected-result.json",
     "sha256": "a1324455ccdf7261df660e3748374a6680fdbe15c97a7161cf30c9d0ab49cd8f",

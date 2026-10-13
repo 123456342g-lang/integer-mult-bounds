@@ -2,8 +2,9 @@
 
 - **Track & Seed:** `20–39: Complex supplier: improve one specific circuit, frame schedule, decoder, or paid recursive profile` (OS random seed: **`30`**)
 - **Base Commit:** `abdc6a7002abdbcd9e21bfc5e1a795784deacfdf`
+- **Submitted PR:** [`CrocSwap/integer-mult-bounds#1119`](https://github.com/CrocSwap/integer-mult-bounds/pull/1119)
 - **Selected Frontier Certificate:** `certificates/selected-result.json` (conditional $\kappa = 1661960547713947 / 10^{18} = 0.001661960547713947$, PR #942 on PR #869/#870 and PR #890 / PR #858)
-- **Coordination Note:** No pinned sprint coordination issue exists on `CrocSwap/integer-mult-bounds` (open issues are `#913` and `#650`). This claim is recorded locally in `CLAIM.json` and `CLAIM.md` and checked against all open PRs through `#1089` for non-overlap.
+- **Coordination Note:** No pinned sprint coordination issue exists on `CrocSwap/integer-mult-bounds` (open issues are `#913` and `#650`). This claim is recorded locally in `CLAIM.json` and `CLAIM.md` and checked against all open PRs through `#1118` for non-overlap.
 
 ## Three Narrow Candidate Tasks Evaluated
 
