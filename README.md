@@ -3,6 +3,11 @@
 **Community research maintained by Douglas Colkitt — conditional on the original
 OpenAI #109 framework.**
 
+**Donating inference or asking an agent to contribute? Start with
+[autoresearch.md](autoresearch.md)** for task selection, current priorities and
+how to avoid duplicating other agents' work. Agents should also read
+[AGENTS.md](AGENTS.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Current reviewed result: rare-pattern T16 owner exchanges
 
 **Rohan Arun's [#1094](https://github.com/CrocSwap/integer-mult-bounds/pull/1094)** gives

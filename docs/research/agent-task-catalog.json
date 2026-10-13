@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "assessed_on": "2026-10-13",
+  "status": "Research suggestions, not reservations or assertions that these questions are unclaimed. Check current main and live PRs.",
+  "tracks": [
+    {
+      "id": "bit-mechanisms",
+      "weight": 20,
+      "tasks": [
+        {
+          "id": "bit-helper-contract",
+          "question": "Can one precisely specified helper-mixing word satisfy a replacement for the inherited H2/K interface?",
+          "starting_points": [
+            "research/r439-bsection-stars-seed01/README.md",
+            "research/r439-copy-path-sharing-barrier/README.md"
+          ],
+          "methods": [
+            "Derive a replacement interface lemma and price its implementation.",
+            "Seek an exact dirty-input or chronological-cut counterexample to the proposed replacement."
+          ],
+          "acceptance_gate": "A full boundary contract and paid profile; unchanged scalar counts alone are insufficient."
+        },
+        {
+          "id": "bit-new-register-model",
+          "question": "Can an explicitly larger or nonabelian register model escape the scoped three-register obstruction?",
+          "starting_points": [
+            "research/bit-three-register-lower-bound/README.md",
+            "certificates/selected-result.json"
+          ],
+          "methods": [
+            "Construct the smallest exact identity in a newly specified legal operation alphabet.",
+            "Derive a target-specific relaxation bound for that same explicit alphabet."
+          ],
+          "acceptance_gate": "Name the changed hypothesis, all counted roles and a uniform identity; finite column tests alone do not certify it."
+        }
+      ]
+    },
+    {
+      "id": "complex-mechanisms",
+      "weight": 20,
+      "tasks": [
+        {
+          "id": "complex-masked-decoder",
+          "question": "Can one specified masked or overcomplete decoder improve the complete moment budget?",
+          "starting_points": [
+            "research/complex-decoder-field-extension-seed44/README.md",
+            "research/complex-frame-pair-decoders/README.md"
+          ],
+          "methods": [
+            "Synthesize a decoder with exact coefficients and fully priced helper endpoints.",
+            "Bound the best possible budget for a fixed support alphabet before synthesis."
+          ],
+          "acceptance_gate": "Change an assumption of the eight-term all-pairs bound and count all copied information, frames and restoration."
+        },
+        {
+          "id": "complex-new-helper-inventory",
+          "question": "Can a new local cost interface change the deficit-to-recursive-cost ratio beyond current packing?",
+          "starting_points": [
+            "research/heterogeneous-owner-assembly/README.md",
+            "certificates/selected-result.json"
+          ],
+          "methods": [
+            "Propose a changed helper inventory and derive an optimistic exact moment.",
+            "Design a small completed instance and independently verify its endpoint and rank bill."
+          ],
+          "acceptance_gate": "A new physically realizable contract, not another mixture already covered by the frozen catalogue."
+        }
+      ]
+    },
+    {
+      "id": "recursive-interfaces",
+      "weight": 15,
+      "tasks": [
+        {
+          "id": "persistent-boundary",
+          "question": "Can a specified pair of consecutive calls eliminate a restoration that the next call reconstructs?",
+          "starting_points": [
+            "research/heterogeneous-owner-assembly/README.md",
+            "certificates/selected-result.json"
+          ],
+          "methods": [
+            "Write typed entry/exit contracts and a contracting multitype recurrence.",
+            "Derive a lower bound for the compulsory transitions of one proposed typed interface."
+          ],
+          "acceptance_gate": "Show actual eliminated work and legal composition; changing a scalar recurrence into a matrix is insufficient."
+        },
+        {
+          "id": "connector-alphabet-change",
+          "question": "Does one explicit extension of the connector alphabet offer a favorable completed budget?",
+          "starting_points": [
+            "research/universal-connector-boundary/README.md",
+            "certificates/selected-result.json"
+          ],
+          "methods": [
+            "Construct and charge a legal extra operation on a minimal instance.",
+            "Prove a target-specific bound after adding one specified operation family."
+          ],
+          "acceptance_gate": "State which fixed-alphabet premise changes and charge its implementation; do not declare it free."
+        }
+      ]
+    },
+    {
+      "id": "adversarial-audit",
+      "weight": 15,
+      "tasks": [
+        {
+          "id": "supplier-boundary-audit",
+          "question": "Does one selected supplier obligation follow from its actual source-bound checks?",
+          "starting_points": [
+            "certificates/selected-result.json",
+            "research/owner-boundary-audit/README.md"
+          ],
+          "methods": [
+            "Trace one hypothesis through the source, checker and complete caller.",
+            "Construct one semantically invalid but superficially well-formed fixture and test rejection."
+          ],
+          "acceptance_gate": "Pin the current sources and one obligation; the historical owner audit is an example, not evidence of a current bug."
+        },
+        {
+          "id": "uniform-transfer-audit",
+          "question": "Can one exact all-size/compiler, precision, hosting or restoration implication be proved or falsified?",
+          "starting_points": [
+            "certificates/selected-result.json",
+            "docs/audit.md"
+          ],
+          "methods": [
+            "Prove one missing implication with explicit quantified hypotheses.",
+            "Find an exact counterexample at the claimed interface boundary."
+          ],
+          "acceptance_gate": "Identify the proposition and what would change downstream; do not equate a finite replay with a universal proof."
+        }
+      ]
+    },
+    {
+      "id": "independent-verification",
+      "weight": 10,
+      "tasks": [
+        {
+          "id": "independent-moment",
+          "question": "Can one selected pricing or assembly claim be checked by a genuinely independent exact implementation?",
+          "starting_points": [
+            "certificates/selected-result.json"
+          ],
+          "methods": [
+            "Reconstruct the rank ledger from original operations rather than trusting its aggregate.",
+            "Implement certified moment inequalities through a different exact enclosure method."
+          ],
+          "acceptance_gate": "Demonstrate independence, source binding, positive cases and semantic failure controls."
+        },
+        {
+          "id": "formal-interface-lemma",
+          "question": "Can one small, precisely scoped interface lemma be formalized with its actual hypotheses?",
+          "starting_points": [
+            "certificates/selected-result.json",
+            "research/hyperplane-end-lean/PROOF.md"
+          ],
+          "methods": [
+            "Formalize a missing boundary lemma identified by the selected review.",
+            "Audit a formal theorem-to-certificate binding independently."
+          ],
+          "acceptance_gate": "State the exact formalized proposition and remaining assumptions; avoid duplicate arithmetic formalizations already present."
+        }
+      ]
+    },
+    {
+      "id": "verifier-engineering",
+      "weight": 10,
+      "tasks": [
+        {
+          "id": "replay-runtime",
+          "question": "Can one measured replay bottleneck be sped up without dropping coverage?",
+          "starting_points": [
+            "scripts/run_isolated_tests.py",
+            "scripts/verify_replay_coverage.py",
+            "certificates/selected-result.json"
+          ],
+          "methods": [
+            "Profile one isolated replay and optimize the measured bottleneck.",
+            "Design source-bound reuse with explicit dependency invalidation and negative controls."
+          ],
+          "acceptance_gate": "Report before/after wall time on the same fixture, retained checks and invalidation behavior."
+        },
+        {
+          "id": "portable-replay",
+          "question": "Can one reproducible environment or artifact-comparison failure be repaired?",
+          "starting_points": [
+            "research/gzip-container-reproducibility/README.md",
+            "docs/ci-verification.md"
+          ],
+          "methods": [
+            "Reproduce one portability failure and add a minimal cross-environment fix.",
+            "Audit one canonical-payload comparison for omitted proof-relevant fields."
+          ],
+          "acceptance_gate": "Preserve immutable source hashes and proof-relevant content; a different compressed byte stream alone is not a mathematical mismatch."
+        }
+      ]
+    },
+    {
+      "id": "consolidation",
+      "weight": 5,
+      "tasks": [
+        {
+          "id": "overlap-receipt",
+          "question": "What exact content and credit of a small named PR set has already been retained?",
+          "starting_points": [
+            "docs/research/pr-ledger.md",
+            "CONTRIBUTORS.md"
+          ],
+          "methods": [
+            "Compare exact heads and retained artifacts to write a source-bound disposition receipt.",
+            "Audit an existing receipt for missing content or predecessor attribution."
+          ],
+          "acceptance_gate": "Separate complete integration, partial retention and changed heads; make no autonomous closures."
+        },
+        {
+          "id": "scope-navigation",
+          "question": "Can one misleading historical-current claim or missing research cross-reference be corrected?",
+          "starting_points": [
+            "docs/research/current-status.md",
+            "docs/research/pr-ledger.md",
+            "certificates/selected-result.json"
+          ],
+          "methods": [
+            "Trace one confusing path from onboarding to its authoritative source.",
+            "Index one tightly related family of obstructions with explicit excluded and open hypotheses."
+          ],
+          "acceptance_gate": "Produce evidence-backed navigation, preserve historical records and avoid a duplicate global survey."
+        }
+      ]
+    },
+    {
+      "id": "incumbent-optimization",
+      "weight": 5,
+      "tasks": [
+        {
+          "id": "selected-packing",
+          "question": "Is there a genuinely unsearched, explicitly bounded improvement to the selected packing?",
+          "starting_points": [
+            "certificates/selected-result.json",
+            "research/heterogeneous-owner-assembly/README.md"
+          ],
+          "methods": [
+            "Search a named unclaimed canonical candidate domain with a reproducible partition.",
+            "Prove a stronger scoped relaxation or exact optimum for one named residual subproblem."
+          ],
+          "acceptance_gate": "Check live PR overlap first, price both suppliers and distinguish a search best from an optimum."
+        },
+        {
+          "id": "scalar-to-moment",
+          "question": "Can one known scalar simplification be converted into an actual paid-profile improvement?",
+          "starting_points": [
+            "research/r439-bsection-stars-seed01/README.md",
+            "certificates/selected-result.json"
+          ],
+          "methods": [
+            "Derive the changed legal frame itinerary and exact child histogram.",
+            "Prove a scoped obstruction showing why that scalar gain cannot change the paid contract."
+          ],
+          "acceptance_gate": "An unchanged histogram is not a kappa gain; record any separate runtime or proof benefit explicitly."
+        }
+      ]
+    }
+  ]
+}
