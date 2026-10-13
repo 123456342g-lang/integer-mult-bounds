@@ -56,3 +56,14 @@ The live pinned-issues query remained empty. The claim is therefore local;
 no separate reservation issue was opened. Original predecessor credits and
 licenses are retained. The result is a completed finite circuit contribution,
 with an unchanged recurrence profile and no new kappa or global optimum claim.
+
+## Final handoff
+
+Submitted as [PR919](https://github.com/CrocSwap/integer-mult-bounds/pull/919).
+A minimal export of exact implementation commit
+`39b702f14f4ff74b87868257e5358e489e1dfe5c` (12 package files and four pinned
+inputs, no Git checkout or cached artifacts) passed both `check.py` and all
+package tests. The following commit only adds this handoff and updates the local
+claim with the result link; executable code and both receipts are identical.
+The immediate pre-submit refresh also saw #918's unrelated carry-grade modulus
+audit (`df86cd10f78693061a0a545153d7d6f65dd62c4e`). No pinned sprint issue appeared.

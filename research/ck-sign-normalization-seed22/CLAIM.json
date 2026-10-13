@@ -23,5 +23,8 @@
     }
   ],
   "seed_diversification": "Selected the historical CK member of the CK/JP8 pair; completed every scalar run in both orientations. Does not claim novelty from seed alone.",
-  "status": "Completed finite circuit construction: 224 real primitives saved per orientation; exact primary and independent verification and mutation controls pass; PR submission pending."
+  "status": "Completed finite circuit construction: 224 real primitives saved per orientation; exact primary and independent verification and mutation controls pass.",
+  "result_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/919",
+  "completed_utc": "2026-10-13T12:33:47Z",
+  "final_overlap": "707-PR full snapshot through917 plus immediate new-arrival refresh through918 (carry-grade audit, distinct); no duplicate found."
 }
