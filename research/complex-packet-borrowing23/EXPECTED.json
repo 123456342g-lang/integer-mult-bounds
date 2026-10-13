@@ -1,0 +1,83 @@
+{
+  "schema": "complex-packet-borrowing23/1",
+  "base_commit": "66849e1475c930fd7732b1a0067ffee7e1e95f60",
+  "assignment_seed": 23,
+  "salt_sha256": "e743f055badcf6eca828bbaca72994eb06af4ceda579a0a90535e982cb386d12",
+  "selected": [
+    [
+      6,
+      7
+    ],
+    1
+  ],
+  "formed_candidate_count": 52,
+  "raw492_content_sha256": "a78f4e2114212d2f4b567cc9ef4e3b31ace0c19983009cec562a642831a84c34",
+  "geometry": {
+    "signed_cells": 8,
+    "leaver_target_bindings": 48,
+    "exact_join_supports": 504,
+    "shared_support_clock_certificates": 3600,
+    "geometry_sha256": "a804597bbd53ef07609f18287e701bac803eea4c105fd6813cec9d35935dd351"
+  },
+  "chronology": {
+    "orders_examined": 120,
+    "orders_meeting_four_required_precedences": 16,
+    "surviving_orders": 0,
+    "contradiction_branches": {
+      "C_before_D_forbids_B": 8,
+      "D_before_C_forbids_A": 8
+    }
+  },
+  "scalar_and_paid_controls": {
+    "permutations_examined": 720,
+    "arbitrary_input_scalar_passes": 120,
+    "scalar_and_strict_frame_passes": 0,
+    "false_passes_when_source_pollution_is_omitted": 60,
+    "missing_required_entry_control": {
+      "ok": true,
+      "profile": {
+        "1": 4,
+        "2": 3,
+        "5": 2,
+        "6": 3,
+        "7": 1
+      },
+      "rank_mass": 45
+    },
+    "two_carrier_escape": {
+      "ok": true,
+      "profile": {
+        "1": 6,
+        "2": 5,
+        "5": 3,
+        "6": 3,
+        "7": 2
+      },
+      "rank_mass": 63,
+      "columns_each_orientation": 8,
+      "scalar_additions_including_precondition_compensation_cleanup": 14,
+      "all_dirty_helpers_restored": true
+    },
+    "matched_stock_direct_control": {
+      "ok": true,
+      "profile": {
+        "1": 6,
+        "2": 3,
+        "5": 3,
+        "6": 3,
+        "9": 2
+      },
+      "rank_mass": 63
+    },
+    "escape_minus_direct_profile": {
+      "2": 2,
+      "7": 2,
+      "9": -2
+    },
+    "dirty_input_mutations_rejected": {
+      "omit_h0_cleanup": true,
+      "omit_h1_compensation": true,
+      "double_shared_target_read": true
+    }
+  }
+}
