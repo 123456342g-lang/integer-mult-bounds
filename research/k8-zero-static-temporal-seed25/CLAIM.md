@@ -9,4 +9,6 @@ Initial claim posted on the coordination board: [D#1163, comment 18911281](https
 - **Result:** L359 uniquely minimizes the scoped census, saving 242 real / 484 complex scalar primitives per invocation over PR1263 in each orientation. Every zero-static coordinate's best constant exponent has zero change. No new κ or combined multi-coordinate claim.
 - **Reproduction:** `python3 -I -O -B research/k8-zero-static-temporal-seed25/verify.py`.
 
-The result is complete and awaits a focused pull request link. This handoff does not claim supplier admission, whole-hosted improvement, or a formal multiplication proof.
+**Submitted:** [PR #1369](https://github.com/CrocSwap/integer-mult-bounds/pull/1369), open against the pinned base.
+
+The result does not claim supplier admission, whole-hosted improvement, or a formal multiplication proof. The nearby L253 and L248 temporal PRs vary nonzero-static coordinates; this package adds the separate zero-static census and the complete L359 replay.
