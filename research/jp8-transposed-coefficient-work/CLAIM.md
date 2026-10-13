@@ -33,3 +33,31 @@ pinned at its completed historical-assembly update, with full attribution.
 
 Contributor: Ryan Haines (@Ryan-Haines), with substantial OpenAI Codex
 assistance. Apache-2.0. Result and handoff will be recorded once after checks.
+
+## Result and handoff
+
+Completed: [PR #830](https://github.com/CrocSwap/integer-mult-bounds/pull/830).
+All 1,091 backward companions pass; complete backward count is 224,470,
+saving 32,810 real primitives and 13,122 beyond #751's equal-coefficient
+result. Paired counts are 224,422/224,470. Exact complete prefixes remain
+64/101 bits, while 377 isolated prefixes grow (worst ratio 40/9), explicitly
+recorded as a limit on blanket transposition arguments. No new kappa.
+
+Literal replay covers 725 arbitrary columns in both orientations; the
+independent integer checker covers 6,776 block input columns and the full
+backward prefix recurrence. Windows/Linux, 10+4+25 mutation controls, five
+optimized/relocated/recompressed packaging tests, Ruff, Git-byte source pins
+and current selected-record integrity pass. README.md gives the commands.
+
+Final overlap refresh: 638 open PRs through #825 at 06:33 UTC; no new
+transposed-coefficient/fan-in claim was present. #816 is a CK target forest;
+#821 audits a global prefix estimate, a different object. #811 and #751
+remain at the pinned heads. No pinned coordination issue exists. Main
+advanced to `7ee02b7c96d85f22b38d28bd7ed49bb8c1aeb261`; all six consumed
+input files are unchanged, and the selected #741 frontier remains separate.
+
+Initial research commit: `0a5e2034c0d537c05a2cc3bb45f5d35ae0e3a668`.
+This is the single final claim update. The local workspace also retains
+`jp8-transposed-s25.patch` and `jp8-transposed-HANDOFF.txt`, with the final
+commit, patch hash and reproduction command, as a submission-independent
+handoff. No issue was opened merely to reserve this scope.
