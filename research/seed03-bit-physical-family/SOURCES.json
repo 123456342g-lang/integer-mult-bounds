@@ -79,6 +79,16 @@
       "commit": "cd96cf39d3ebb8f4ff06d13257a2a4c5ff1c7383",
       "role": "selected-PR589 budget relaxation; checked for overlap",
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1334"
+    },
+    {
+      "commit": "b54a856aa79857d91cd5d65f8f7144e26c8c084f",
+      "role": "fixed-word PR589 gate-order transport census; checked for overlap, distinct from physical helper placement",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1345"
+    },
+    {
+      "commit": "a42e525e9868970f3fa2d99dccca45f014aa0fd3",
+      "role": "R439 frame-509 local matrix replay; checked for overlap, distinct source block and claim",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1344"
     }
   ],
   "schema_version": 1

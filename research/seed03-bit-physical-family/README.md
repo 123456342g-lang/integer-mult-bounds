@@ -30,7 +30,7 @@ families.
 
 ## Reproduce
 
-From the repository root, with Python 3.12 and only the standard library:
+From the repository root, using only the standard library:
 
 ```sh
 python3 -I -O -B research/seed03-bit-physical-family/verify.py
@@ -44,8 +44,10 @@ The first command prints:
 PASS_PR589_PHYSICAL_FAMILY pair=1 copy=0 children=0,7 helpers=4 columns=128 controls=4 orderings=6 no_new_kappa
 ```
 
-The registered package command also validates the source inventory and runs
-both checks. `RESULT.json` records the selected family, its host slots,
+The first two commands were run with CPython 3.14.7 here. The registered
+Python 3.12 wrapper also validates the source inventory and runs both checks,
+but could not be run because Python 3.12 is not installed in this environment.
+`RESULT.json` records the selected family, its host slots,
 remainder axes, source hashes, matrix-column counts, positive order checks and
 negative controls.
 
@@ -67,6 +69,14 @@ negative controls.
   checks a semantic-D bridge for a different PR1122 word. Neither checks this
   PR589 family map. The older seed-3 PR1023/PR1281 work concerns width-seven
   slot relaxations, a different object and method.
+- **Late overlap refresh:** PR1345 (head
+  `b54a856aa79857d91cd5d65f8f7144e26c8c084f`) exhausts fixed-word single/pair
+  gate-order transports on PR589; it does not relocate helpers into
+  idle-family projectors. PR1344 (head
+  `a42e525e9868970f3fa2d99dccca45f014aa0fd3`) independently replays the
+  separate R439 frame-509 local matrix. Both are distinct from the selected
+  physical-family address-map identity checked here; exact heads and URLs are
+  recorded in `SOURCES.json`.
 
 The deterministic selector maximizes the number of hosted slots among
 single-replica families that span multiple idle children, then chooses the

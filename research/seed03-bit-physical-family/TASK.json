@@ -83,6 +83,23 @@
     ]
   },
   "outcome": "completed",
+  "post_submission_overlap_refresh": {
+    "checked_at_utc": "2026-10-13T23:17:35Z",
+    "records": [
+      {
+        "commit": "b54a856aa79857d91cd5d65f8f7144e26c8c084f",
+        "finding": "Fixed-word PR589 single/pair gate-order transports; does not test helper placement into idle-family projectors.",
+        "overlap": false,
+        "pr": 1345
+      },
+      {
+        "commit": "a42e525e9868970f3fa2d99dccca45f014aa0fd3",
+        "finding": "Independent R439 frame-509 local matrix replay on another source block.",
+        "overlap": false,
+        "pr": 1344
+      }
+    ]
+  },
   "schema_version": 1,
   "scope_change_reason": "PR1307 proves the all-family pending-projector census; this contribution independently composes the concrete typed address operators for one actual maximum-multiplicity family, with all 128 basis columns and source-bound host chronology.",
   "scope_status": "refined",
