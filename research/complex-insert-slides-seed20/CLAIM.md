@@ -40,6 +40,21 @@ No pinned sprint coordination issue exists in the repository (checked
    triples.** Not chosen: #775 and #876 already cover the main mass of this
    space and a second coverage sweep there would duplicate their method.
 
+## Result (2026-10-13)
+
+PR: https://github.com/CrocSwap/integer-mult-bounds/pull/910
+
+The complete census (1,432 configurations: 56 singles, 1,372 pairs, 4
+same-position tie-order swaps) finds **0 improving placements**: all 1,060
+legal configurations have exactly the pinned paid profile
+`{1:2548, 2:342, 3:438, 4:186, 5:56, 8:8}`, so the complex endpoint is
+pinned at `0.0016634287545401745`; the 372 refused configurations are
+frame-cap violations and all 1,432 preserve the exact B-end state. Scoped
+negative result; the "alternative insertion positions" gap in #775's scope
+list is now covered for singles, pairs and tie orders. Reproduce with
+`python3 -B research/complex-insert-slides-seed20/verify.py`
+(`PASS_INSERT_SLIDES_SEED20 singles=56 pairs=1372 swaps=4 legal=1060 improving=0 best_root=0.001663428754540`).
+
 ## Overlap statement
 
 Concurrent work acknowledged and not duplicated: #775 (coupled partial read
