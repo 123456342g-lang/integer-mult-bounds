@@ -33,7 +33,7 @@
   "coordination": "No pinned sprint coordination issue identified by a fresh open-issue search; local claim recorded in the package.",
   "expected_deliverable": "Source-pinned independent-verification package with exact projector certificate, two interval decompositions, three negative controls, and one reproduction command.",
   "expected_finish_utc": "2026-10-14T00:00:00Z",
-  "status": "verified locally; preparing one focused pull request",
+  "status": "completed and handed off",
   "final_overlap_refresh": {
     "searched_at_utc": "2026-10-13T23:34:41Z",
     "open_prs": 840,
@@ -54,5 +54,12 @@
         "scope": "seed22 complex mixed-gauge result; unrelated"
       }
     }
+  },
+  "contribution": {
+    "classification": "independent verification; no new kappa",
+    "summary": "Proved PR1351 family pair=1/copy=0 address-map identity for children 0 and 7 from exact orthogonal-projector decompositions and the D(P) block identity; three malformed decompositions rejected. Conditional on PR1351 pinned role map.",
+    "result": "PASS_BIT_FAMILY_PROJECTOR_ALGEBRA children=0,7 factors=2+4 q_rank=7 controls=3 no_new_kappa",
+    "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1371",
+    "commit": "aee76f5d"
   }
 }

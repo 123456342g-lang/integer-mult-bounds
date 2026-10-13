@@ -14,3 +14,10 @@ Overlap checked against PR #1345 (fixed-word gate-order transports), #1334
 This is an explicitly different-method independent audit of #1351, allowed by
 the sprint instruction. The PR #1351 source pin is head
 `6060e62e9d42a16eff493aba74c8a617a12d8041`.
+
+## Result and handoff
+
+The rational verifier proves both pinned interval decompositions and rejects
+all three mutated controls. It prints
+`PASS_BIT_FAMILY_PROJECTOR_ALGEBRA children=0,7 factors=2+4 q_rank=7 controls=3 no_new_kappa`.
+One focused pull request is open: [#1371](https://github.com/CrocSwap/integer-mult-bounds/pull/1371).
