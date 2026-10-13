@@ -3,8 +3,8 @@
   "snapshot": "research/pr-reconciliation-20261012/starting-snapshot.json",
   "starting_main": "f19cb621be2caf3a7291a37c343c1c55afe935e0",
   "starting_open_count": 446,
-  "inventory_count": 549,
-  "family_round": "research/community-frontier799-audit/DISPOSITIONS.json",
+  "inventory_count": 567,
+  "family_round": "research/community-frontier890-audit/DISPOSITIONS.json",
   "family_rounds": [
     "research/community-family533-audit/DISPOSITIONS.json",
     "research/community-family588-audit/DISPOSITIONS.json",
@@ -12,12 +12,13 @@
     "research/community-cold617-audit/DISPOSITIONS.json",
     "research/community-k492-audit/DISPOSITIONS.json",
     "research/community-frontier741-audit/DISPOSITIONS.json",
-    "research/community-frontier799-audit/DISPOSITIONS.json"
+    "research/community-frontier799-audit/DISPOSITIONS.json",
+    "research/community-frontier890-audit/DISPOSITIONS.json"
   ],
   "counts": {
     "changed_since_review": 6,
     "incorporated": 112,
-    "partially_reviewed": 149,
+    "partially_reviewed": 167,
     "unreviewed": 282
   },
   "source_sha256": {
@@ -43,7 +44,8 @@
     "research/community-cold617-audit/DISPOSITIONS.json": "d74bcfc9ae5219ecfe57e74466ae327c7e0d2524c87f52c143e74c6187db0984",
     "research/community-k492-audit/DISPOSITIONS.json": "3f80fcee52c2d0abf1f428e9bf2ab9fab54985032535ae81495da759ee78d903",
     "research/community-frontier741-audit/DISPOSITIONS.json": "3190e452039b1aae2ec7ef2cf9c94c49a165957bde7619cc4b24bab25b15e8d8",
-    "research/community-frontier799-audit/DISPOSITIONS.json": "4916ec599e2188d944388e36839f4e61cd939c42f761c9a3f2c3fe26c1400eb9"
+    "research/community-frontier799-audit/DISPOSITIONS.json": "4916ec599e2188d944388e36839f4e61cd939c42f761c9a3f2c3fe26c1400eb9",
+    "research/community-frontier890-audit/DISPOSITIONS.json": "5de6913faaa1153526df8ef8cb5ee111cb276558fbd7af90245aecb4ea97181e"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
   "pull_requests": [
@@ -18390,6 +18392,856 @@
       "reconciliation_evidence": [
         "research/community-frontier799-audit/DISPOSITIONS.json"
       ]
+    },
+    {
+      "number": 812,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/812",
+      "title": "Research audit: literal binary spectra and moment-preserving corruption control (no new kappa)",
+      "contributor": {
+        "id": "U_kgDOCNStgg",
+        "is_bot": false,
+        "login": "ljste",
+        "name": "Lucas"
+      },
+      "draft": false,
+      "starting_head": "4141e85b436fdfdeddea74d2ee17cadaa973c57d",
+      "current_head": "4141e85b436fdfdeddea74d2ee17cadaa973c57d",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "4141e85b436fdfdeddea74d2ee17cadaa973c57d",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "41 literal spectral polynomial/rank cases and corruption controls; historical-context adaptation.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/single-intersection-spectrum-audit",
+        "tests/test_single_intersection_spectrum_audit.py"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "4141e85b436fdfdeddea74d2ee17cadaa973c57d",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 838,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/838",
+      "title": "Research audit: PR741 binding accepts omitted replay evidence (no new kappa)",
+      "contributor": {
+        "id": "U_kgDOCNStgg",
+        "is_bot": false,
+        "login": "ljste",
+        "name": "Lucas"
+      },
+      "draft": false,
+      "starting_head": "2a50020bb9564229874cbfbdc112e17b235bacfc",
+      "current_head": "2a50020bb9564229874cbfbdc112e17b235bacfc",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "2a50020bb9564229874cbfbdc112e17b235bacfc",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "Incomplete-receipt reproducer and supplementary coverage contract.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/frontier741-receipt-coverage-audit"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "2a50020bb9564229874cbfbdc112e17b235bacfc",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 841,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/841",
+      "title": "Tooling: bind selected primary-proof pointers to verified digests (no new κ)",
+      "contributor": {
+        "id": "U_kgDOBmEn_g",
+        "is_bot": false,
+        "login": "mihir-s-05",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "2fedd468c0bb69722fbc402be01daa7701f0c7d6",
+      "current_head": "2fedd468c0bb69722fbc402be01daa7701f0c7d6",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "2fedd468c0bb69722fbc402be01daa7701f0c7d6",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "Digest-bound primary proof pointers, preserving historical checkpoint formats.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/selected-proof-binding",
+        "scripts/verify_selected_result.py",
+        "tests/test_selected_proof_binding.py"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "2fedd468c0bb69722fbc402be01daa7701f0c7d6",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 847,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/847",
+      "title": "Tooling: require complete receipts in public frontier verification",
+      "contributor": {
+        "id": "U_kgDOCJf6TQ",
+        "is_bot": false,
+        "login": "chinmayarvind23",
+        "name": "Chinmay Arvind"
+      },
+      "draft": false,
+      "starting_head": "72b8406b96ea2e0f37bb5143f594e12d4817c92a",
+      "current_head": "72b8406b96ea2e0f37bb5143f594e12d4817c92a",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "72b8406b96ea2e0f37bb5143f594e12d4817c92a",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "Parallel complete-receipt implementation; public design subsumed with credit by PR865.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        ".github/workflows/frontier741.yml",
+        ".github/workflows/frontier799.yml",
+        "Makefile",
+        "docs/research/frontier-replay-coverage.md",
+        "scripts/verify_frontier_replay.py",
+        "tests/test_frontier_replay_coverage.py"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "72b8406b96ea2e0f37bb5143f594e12d4817c92a",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 851,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/851",
+      "title": "Require complete bridge-control coverage in the PR741 binder",
+      "contributor": {
+        "id": "U_kgDOCAIRQw",
+        "is_bot": false,
+        "login": "AdemVessell",
+        "name": "Adem Vessell"
+      },
+      "draft": false,
+      "starting_head": "a6ffa47ba1da642846818081cedad10caccea535",
+      "current_head": "a6ffa47ba1da642846818081cedad10caccea535",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "a6ffa47ba1da642846818081cedad10caccea535",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "Bridge IDs 0..17 exactly once, integrated outside immutable historical bindings.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "tests/test_frontier741_bridge_controls.py"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "a6ffa47ba1da642846818081cedad10caccea535",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 853,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/853",
+      "title": "Tooling: 1.54-1.71x faster #741 complex replay by running independent pinned stages concurrently",
+      "contributor": {
+        "id": "MDQ6VXNlcjUwMzY2Njc2",
+        "is_bot": false,
+        "login": "navinor",
+        "name": "Aaron Wang"
+      },
+      "draft": false,
+      "starting_head": "9910c23b154e05cca2834f45797455200cadf6e4",
+      "current_head": "9910c23b154e05cca2834f45797455200cadf6e4",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "9910c23b154e05cca2834f45797455200cadf6e4",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "Opt-in parallel complex741 replay; full execution and strict coverage pass; no new timing ratio.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "Makefile",
+        "research/complex741-parallel-replay",
+        "scripts/verify_complex741_parallel.py",
+        "tests/test_complex741_parallel.py"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "9910c23b154e05cca2834f45797455200cadf6e4",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 864,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/864",
+      "title": "Scoped negative result: no frame reassignment of the selected X4 complex word admits the next tick (exact duals, no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjUwMzY2Njc2",
+        "is_bot": false,
+        "login": "navinor",
+        "name": "Aaron Wang"
+      },
+      "draft": false,
+      "starting_head": "9b1a55f6d281ae5bd7d691977d38861fcd9bd015",
+      "current_head": "9b1a55f6d281ae5bd7d691977d38861fcd9bd015",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "9b1a55f6d281ae5bd7d691977d38861fcd9bd015",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "Fixed X4 gate/frame family successor-endpoint exclusion via exact duals.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/complex-x4-frame-bound"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "9b1a55f6d281ae5bd7d691977d38861fcd9bd015",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 865,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/865",
+      "title": "Tooling: source-versioned PR799 evidence coverage with fresh replay and corruption controls",
+      "contributor": {
+        "id": "U_kgDOETsF7g",
+        "is_bot": false,
+        "login": "nightangelflowerwin-ops",
+        "name": "Stephen Shore"
+      },
+      "draft": false,
+      "starting_head": "7519ad89d7eb0e2f8c54f1424f5d9022eebda3f9",
+      "current_head": "7519ad89d7eb0e2f8c54f1424f5d9022eebda3f9",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "7519ad89d7eb0e2f8c54f1424f5d9022eebda3f9",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "Versioned full-replay evidence admission and default Make/CI gate.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        ".github/workflows/frontier741.yml",
+        ".github/workflows/frontier799.yml",
+        "Makefile",
+        "certificates/replay-coverage/pr741-sw4-v1.json",
+        "research/required-replay-coverage",
+        "scripts/verify_frontier_complete.py",
+        "scripts/verify_replay_coverage.py",
+        "tests/test_frontier799_bindings.py",
+        "tests/test_replay_coverage.py"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "7519ad89d7eb0e2f8c54f1424f5d9022eebda3f9",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 869,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/869",
+      "title": "Conditional κ = 0.001661948695165034: eight triangle-hybrid B deliveries in block 0 on PR799's word",
+      "contributor": {
+        "id": "U_kgDOEKXqaA",
+        "is_bot": false,
+        "login": "jeremykothe2",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "73e86f69bf9a391e3c334999f7bbe3825dc42759",
+      "current_head": "73e86f69bf9a391e3c334999f7bbe3825dc42759",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "73e86f69bf9a391e3c334999f7bbe3825dc42759",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "Explicit U8 local rewrite and independently replayed intermediate global finite witness.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/gauge44-barch"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "73e86f69bf9a391e3c334999f7bbe3825dc42759",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 870,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/870",
+      "title": "Conditional κ = 0.001661956299899884: PR858's sixteen-replica owner controller on the U8 word",
+      "contributor": {
+        "id": "U_kgDOEKXqaA",
+        "is_bot": false,
+        "login": "jeremykothe2",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "b734850dc348800942f0ffd1f0723fdec7539b2b",
+      "current_head": "b734850dc348800942f0ffd1f0723fdec7539b2b",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "b734850dc348800942f0ffd1f0723fdec7539b2b",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "U8 with Hao Yan T16 whole-owner composition and intermediate global finite witness.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/gauge44-barch-t16"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "b734850dc348800942f0ffd1f0723fdec7539b2b",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 874,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/874",
+      "title": "Research audit: X4 profile changes add, ideal exponent gains do not (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjY3MjQyNjA0",
+        "is_bot": false,
+        "login": "AmnonTamsut",
+        "name": "Amnon Tamsut"
+      },
+      "draft": false,
+      "starting_head": "c3f50fa0ccf88c2cf28a4926cd2ad8ff03769fed",
+      "current_head": "c3f50fa0ccf88c2cf28a4926cd2ad8ff03769fed",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "c3f50fa0ccf88c2cf28a4926cd2ad8ff03769fed",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "Exact profile additivity but strictly nonadditive ideal exponent gains.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/x4-gain-additivity-audit"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "c3f50fa0ccf88c2cf28a4926cd2ad8ff03769fed",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 881,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/881",
+      "title": "Independent verification: PR869's U8 word and κ with a code-disjoint checker (no new kappa)",
+      "contributor": {
+        "id": "U_kgDOBnC2ow",
+        "is_bot": false,
+        "login": "SethBurkart123",
+        "name": "Seth Burkart"
+      },
+      "draft": false,
+      "starting_head": "2730da199c4dad53b52b32b6be8ed6328f014648",
+      "current_head": "2730da199c4dad53b52b32b6be8ed6328f014648",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "2730da199c4dad53b52b32b6be8ed6328f014648",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "Independent finite CRT/frame/cone replay, strengthened with integer height bounds.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/u8-independent-xcheck"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "2730da199c4dad53b52b32b6be8ed6328f014648",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 886,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/886",
+      "title": "Scoped negative result: PR589's bit word is exactly frame-optimal (no new kappa)",
+      "contributor": {
+        "id": "U_kgDOBnC2ow",
+        "is_bot": false,
+        "login": "SethBurkart123",
+        "name": "Seth Burkart"
+      },
+      "draft": false,
+      "starting_head": "881f72ec596a5c6d7aba801153792292ecc39737",
+      "current_head": "881f72ec596a5c6d7aba801153792292ecc39737",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "881f72ec596a5c6d7aba801153792292ecc39737",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "Fixed live-line frame/COPY model optimum with rational interval integration refinement.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/bit589-frame-optimum"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "881f72ec596a5c6d7aba801153792292ecc39737",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 890,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/890",
+      "title": "Conditional κ = 0.001661957774647029: T21 whole-owner packing and fixed-family bound",
+      "contributor": {
+        "id": "MDQ6VXNlcjQ0MDA1Mjc=",
+        "is_bot": false,
+        "login": "chafreaky",
+        "name": "chafreaky"
+      },
+      "draft": false,
+      "starting_head": "4b3bd8cbe8e3e81c44161017c9b72c905a8040a8",
+      "current_head": "4b3bd8cbe8e3e81c44161017c9b72c905a8040a8",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "4b3bd8cbe8e3e81c44161017c9b72c905a8040a8",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "T21 conditional finite composition and fixed-U8/T<=22 whole-owner grid bound.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        ".github/workflows/complex-t21-owners.yml",
+        "research/complex-t21-owner-bound",
+        "research/complex-t21-owners",
+        "research/complex-t21-owners-validation"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "4b3bd8cbe8e3e81c44161017c9b72c905a8040a8",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 894,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/894",
+      "title": "Research audit: exact endpoint-to-kappa reduction of the selected frontier799 assembly (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjUwMzY2Njc2",
+        "is_bot": false,
+        "login": "navinor",
+        "name": "Aaron Wang"
+      },
+      "draft": false,
+      "starting_head": "144e7e21c4f6ab4afda1338fe25eaab5a53b4431",
+      "current_head": "144e7e21c4f6ab4afda1338fe25eaab5a53b4431",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "144e7e21c4f6ab4afda1338fe25eaab5a53b4431",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "Exact historical endpoint-to-grid accounting; upward-versus-nearest rounding correction.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/audit-kappa-floor-seed67"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "144e7e21c4f6ab4afda1338fe25eaab5a53b4431",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 909,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/909",
+      "title": "Scoped negative result: nonunit dyadic target pairs cannot improve X4 (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjI3NTY4NjE3",
+        "is_bot": false,
+        "login": "ToikY",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "5896f6fce48ee1d507722cc91eb1dcccc878670d",
+      "current_head": "5896f6fce48ee1d507722cc91eb1dcccc878670d",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "5896f6fce48ee1d507722cc91eb1dcccc878670d",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "Nonunit signed-power-of-two pair exclusion under individually restored Horner lowering.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/complex-x4-scaled-pairs"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "5896f6fce48ee1d507722cc91eb1dcccc878670d",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 910,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/910",
+      "title": "Scoped negative result: SW4 pre-read insertion slides do not change the complex cost (seed 20)",
+      "contributor": {
+        "id": "MDQ6VXNlcjUwMzY2Njc2",
+        "is_bot": false,
+        "login": "navinor",
+        "name": "Aaron Wang"
+      },
+      "draft": false,
+      "starting_head": "f9ce012a7f93d093b23229e1bc563990ca2aeaf0",
+      "current_head": "f9ce012a7f93d093b23229e1bc563990ca2aeaf0",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "f9ce012a7f93d093b23229e1bc563990ca2aeaf0",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "Fixed SW4 single/pair/tie-order insertion census; no improvement in stated domain.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/complex-insert-slides-seed20"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "f9ce012a7f93d093b23229e1bc563990ca2aeaf0",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 911,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/911",
+      "title": "Independent verification: exhaustive binary residual and phase-interface census (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjI3NTY4NjE3",
+        "is_bot": false,
+        "login": "ToikY",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "1074ca98132123b1f2c88375241295b8e2be3c57",
+      "current_head": "1074ca98132123b1f2c88375241295b8e2be3c57",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "1074ca98132123b1f2c88375241295b8e2be3c57",
+          "evidence": "research/community-frontier890-audit/DISPOSITIONS.json",
+          "scope": "Exhaustive embedded binary residual/phase verification through dimension six.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/binary-residual-exhaustive"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "1074ca98132123b1f2c88375241295b8e2be3c57",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review and execution complete; awaiting publication/merge confirmation.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/community-frontier890-review.md"
+      ],
+      "current_head_observed_in": "research/community-frontier890-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-frontier890-audit/DISPOSITIONS.json"
+      ]
     }
   ],
   "ending_snapshot": "research/pr-reconciliation-20261012/ending-snapshot.json",
@@ -18402,6 +19254,6 @@
   "github_dispositions": {
     "CLOSED": 3,
     "MERGED": 109,
-    "OPEN": 437
+    "OPEN": 455
   }
 }

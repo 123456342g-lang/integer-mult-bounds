@@ -1,5 +1,21 @@
 # Current reviewed status
 
+Selected conditional κ: **0.001661957774647029**, PR890 on PR869/870 and
+Hao Yan's PR858 T16 mechanism, with PR589 on PR555.
+[Review](community-frontier890-review.md) ·
+[Integration/publication/CI receipt](community-frontier890-integration.json) ·
+[Selected record](../../certificates/selected-result.json) · [PR ledger](pr-ledger.md).
+Cold replay: `make frontier890-verify`.
+
+The frozen eighteen-PR round includes frontier constructions, complete-receipt
+and proof-pointer fixes, parallel replay, exact local bounds and independent
+finite audits. Source coverage, individual credit and review corrections are
+recorded separately. All-size/compiler, realization, hosting, precision/tape
+and analytic assumptions remain; no full Lean multiplication proof is claimed.
+The Linux integration job status is separate from the completed local replay.
+
+# Superseded status through #799
+
 Selected conditional κ: **0.001661634653669567**, #799 with #589 on #555.
 See the [review](community-frontier799-review.md),
 [integration receipt](community-frontier799-integration.json),
