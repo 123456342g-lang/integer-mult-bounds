@@ -23,3 +23,23 @@
   frame-only changes: this claim changes the scalar program instead.
 - Workers are restricted to this one block and its validation. No separate issue
   was opened; this local claim substitutes for a pinned coordination comment.
+
+## Result update — 2026-10-13 12:59 UTC
+
+Submitted [PR923](https://github.com/CrocSwap/integer-mult-bounds/pull/923):
+**29 ADDs instead of 41**, plus literal reverse cleanup, gives **24 complete
+local ADDs saved**. The all-state overlap review found Gautam Gupta's closed
+PR844 (31 ADDs); this result adds **four complete ADDs** beyond that predecessor,
+whose original certificate is retained and replayed. PR844's initial failed
+mixed-factor search is explicitly credited; the new necessary diagonal guard
+prunes branches unable to reach identity, without claiming a new feasible class.
+
+Full local matrix/dirty-column/frame/interface/cost checks, nine controls,
+12 package tests, unchanged native 5/9/11-stage checks with 96 bridge controls,
+search regeneration and selected-record integrity passed. Exact receipts and
+coverage limits are in README.md and VALIDATION.md. No new kappa, global hosted
+repricing or full multiplication proof is claimed. No pinned sprint issue
+exists, so this single local result update is the coordination handoff.
+
+Implementation commit: `76d3fde8` (the subsequent commit only adds this result
+update). The PR remains open for independent review; no merge was performed.
