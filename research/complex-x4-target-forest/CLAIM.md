@@ -23,3 +23,15 @@
   PR925 immediately before this claim. No other issue opened.
 - Timing: orientation bounded to first 8 minutes of a 40-minute session;
   final 10 minutes reserved for verification and handoff.
+
+## Completion
+
+Submitted one contribution: [PR932](https://github.com/CrocSwap/integer-mult-bounds/pull/932).
+The selected-X4 forest has 6 roots and 106 edges, reduces compensation from
+6,320 to 2,324 additions, and saves 47,690 real primitives per orientation.
+Its exact scoped floor is 10,883 primitives per real component. Full scalar
+replay, independent Prim/cycle/operator checks, nine package tests and selected
+record checks pass; VALIDATION.md records remaining integration obligations.
+No new kappa is claimed. Final overlap refresh reached #931, with #901/#816
+heads unchanged and no competing selected-X4 forest found. No pinned issue
+was available, so this is the single local claim update with the result link.
