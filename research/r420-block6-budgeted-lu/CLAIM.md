@@ -13,3 +13,5 @@
 - **Stopping rule:** finish the fixed 20,000-candidate sweep, with a 10-CPU-minute cap. If no qualifying circuit appears, perform at most one distinct, explicitly bounded pivot, then hand off the searched domain and limits. Reserve the final quarter for verification and handoff.
 - **Expected deliverable:** exact replacement and regenerated word with a reproducible verifier, or a scoped finite-search result; no new κ claim.
 - **Expected finish:** 2026-10-14 00:38 UTC.
+
+DONE — 2026-10-13 23:59 UTC. [PR #1390](https://github.com/CrocSwap/integer-mult-bounds/pull/1390) records the fixed 20,000-sample Pareto-selected LU result: block 6 goes from 54 to 47 XORs, and full local scalar ADDs from 26,916 to 26,902. Local exact replay, 660-column interface checks, mutation controls, and the adapted native/hosted R420 pipeline passed. The selected κ is unchanged; no optimality or new-κ claim is made.
