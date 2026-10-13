@@ -39,3 +39,7 @@ Final overlap refresh: all open PR metadata through #856 on 2026-10-13;
 #848 (510441077c17ad775003b22fca03a519f5330453) is a sharing barrier.
 No block-8/frame-523 substitution found. No pinned coordination issue exists
 on the final check either. Main remains the exact experimental base.
+
+Submitted result: [PR #857](https://github.com/CrocSwap/integer-mult-bounds/pull/857).
+Local and native verification passed; detailed evidence and limitations are in
+`VALIDATION.md`. One focused PR submitted; no selected-frontier change or merge.
