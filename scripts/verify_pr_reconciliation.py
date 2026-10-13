@@ -18,6 +18,18 @@ def require(condition, message):
         raise ValueError(message)
 
 
+def check_family_decision(item, decision):
+    """Bind projected ledger state to its authoritative, pinned family decision."""
+    fields = ('number', 'reviewed_head', 'current_head', 'disposition',
+              'github_state', 'integration_location', 'unresolved_question', 'closure')
+    for field in fields + ('review_completion', 'verification_evidence'):
+        if field in fields or field in decision:
+            # JSON equality must distinguish true from 1, including nested flags.
+            require(field in item and json.dumps(item[field], sort_keys=True) ==
+                    json.dumps(decision[field], sort_keys=True),
+                    f'#{decision["number"]}: ledger differs from family decision: {field}')
+
+
 def check_review_completion(item, decision):
     """An incorporated disposition must not outrun its source/execution/publication record."""
     flags = decision['review_completion']
@@ -52,6 +64,7 @@ def main():
     ledger = json.loads((ROOT / 'docs/research/pr-ledger.json').read_text())
     snapshot = json.loads((AUDIT / 'starting-snapshot.json').read_text())
     expected = {p['number']: p for p in snapshot['pull_requests']}
+    family_decisions = {}
     for family_path in (ROOT / 'research/community-family533-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-family588-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-hyperplane599-audit/DISPOSITIONS.json',
@@ -63,11 +76,16 @@ def main():
         numbers = [p['number'] for p in family['pull_requests']]
         require(len(numbers) == len(set(numbers)), 'Duplicate family PR')
         for row in family['pull_requests']:
+            # The generator applies later rounds in this order; retain the final
+            # authoritative projection without rewriting historical metadata.
+            family_decisions[row['number']] = row
             if row['number'] not in expected:
                 expected[row['number']] = row['metadata']
     actual = {p['number']: p for p in ledger['pull_requests']}
     require(len(actual) == len(ledger['pull_requests']) == len(expected), 'Duplicate or missing PR')
     require(actual.keys() == expected.keys(), 'Starting PR set changed')
+    for number, decision in family_decisions.items():
+        check_family_decision(actual[number], decision)
     for number, pr in actual.items():
         require(pr['starting_head'] == expected[number]['headRefOid'], f'#{number}: starting head changed')
         require(pr['contributor'] == expected[number]['author'], f'#{number}: attribution changed')
