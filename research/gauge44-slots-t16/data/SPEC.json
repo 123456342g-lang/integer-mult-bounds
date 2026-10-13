@@ -2,8 +2,8 @@
   "schema": "witness-spec/1",
   "name": "gauge44-t16-two-bank",
   "data": {
-    "plan_sha256": "f451a04c1f85cc72fc331e0ac00b4b0ea902a1c8038387495609affb2d6a7f7b",
-    "owners_sha256": "fe4f65082d12adfc412ac8cc041fde26b9caadfaa84d524140dc1dbc92a22ee7"
+    "plan_sha256": "1a17227109e3a1ab121ac6ec90198276f1103c5ed73522e57d0b4b85948cca25",
+    "owners_sha256": "2fe90b7de64d0136d9c416efc5845d8dbf8b71ab8465dc0b1bb886e51081cede"
   },
   "dispatch": [
     [
@@ -1933,35 +1933,35 @@
     "gain_baseline_kappa": "0.001636241501576388",
     "hosted_residuals": 69120,
     "rank_mass": 1041408,
-    "actual_73column_sigmas": 9938,
-    "cross_replica_helper_roles": 56764,
-    "idle_remainders": 7550,
+    "actual_73column_sigmas": 10023,
+    "cross_replica_helper_roles": 56609,
+    "idle_remainders": 7554,
     "idle_remainder_profile": {
       "1": 2249,
       "2": 1,
-      "3": 400,
-      "7": 3,
-      "16": 47,
-      "48": 4850
+      "3": 413,
+      "7": 2,
+      "16": 36,
+      "48": 4853
     },
     "global_profile": {
       "1": 349577,
       "2": 60193,
-      "3": 62608,
+      "3": 62621,
       "4": 20448,
       "5": 11808,
-      "7": 3,
+      "7": 2,
       "8": 1152,
-      "16": 47,
-      "48": 4850
+      "16": 36,
+      "48": 4853
     },
     "live": 14336,
     "physical": 14826,
-    "conservative_kappa_decimal": "0.001672188116354182",
-    "kappa_decimal": "0.001672188119205421",
-    "complex_lower": "418747253984418082117/250000000000000000000000",
-    "conservative_complex_lower": "837494506538436943309/500000000000000000000000",
-    "kappa": "1672188119205421/1000000000000000000",
+    "conservative_kappa_decimal": "0.001672241867960281",
+    "kappa_decimal": "0.001672241870811633",
+    "complex_lower": "1675042947764293066129/1000000000000000000000000",
+    "conservative_complex_lower": "418760736225844996907/250000000000000000000000",
+    "kappa": "1672241870811633/1000000000000000000",
     "assembly_controls_rejected": 69,
     "provider_counts": {
       "gauge44": 144
