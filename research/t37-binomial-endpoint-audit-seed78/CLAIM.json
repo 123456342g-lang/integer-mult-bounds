@@ -1,5 +1,7 @@
 {
-  "status": "Completed independent verification; no new kappa",
+  "status": "Submitted independent verification PR #1052; no new kappa",
+  "submitted_pr": 1052,
+  "submitted_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1052",
   "date": "2026-10-13",
   "contributor": "steph4n-gh",
   "assignment_seed": 78,

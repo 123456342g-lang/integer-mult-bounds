@@ -1,6 +1,6 @@
 {
   "status": "PASS_SCOPED_LOCAL_VALIDATION",
-  "verified_at": "2026-10-13T17:17:07.562808+00:00",
+  "verified_at": "2026-10-13T17:17:58.666299+00:00",
   "base_commit": "2921874911956718fcaaaf9396fe8267b3cfa9f0",
   "branch": "research/t37-binomial-endpoint-audit-seed78",
   "environment": {
@@ -35,7 +35,7 @@
   ],
   "package_files_sha256": {
     "CERTIFICATE.json": "528c8474778c63cbbf6eba99822f96bbb34f82937133d0bbb92fa2b25a0a6286",
-    "CLAIM.json": "cc58b3b651c3042be3de78cf3344afa443b435c937fc73380db0c06203df0235",
+    "CLAIM.json": "e0ca0d8a8ea94fb1ba18481c507d648c334ea330d348f75a9c3b05d518e662c2",
     "README.md": "78df0a56238e0b2777c0058401bf191b44e4d1cc98e498ed78d475189bf1ce8b",
     "SOURCES.json": "6d2eb6df54b8396f34d1fea4dd1c566df8cf71bdc160ec14186731164f70e5fa",
     "inputs/ASSEMBLY.json": "4b2894956e594e408e111d806c842f2ed2c32aefcadff93fad69ff0b46f1991a",
@@ -53,5 +53,7 @@
     "Lean formalization",
     "hosted CI"
   ],
-  "scope": "Exact positive-binomial and 1024-bit endpoint-to-kappa audit of the selected PR #942 (T37) record, all-T supporting lemma, and remainder-trade margin bridge. Selected kappa unchanged."
+  "scope": "Exact positive-binomial and 1024-bit endpoint-to-kappa audit of the selected PR #942 (T37) record, all-T supporting lemma, and remainder-trade margin bridge. Selected kappa unchanged.",
+  "submitted_pr": 1052,
+  "submitted_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1052"
 }
