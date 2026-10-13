@@ -569,6 +569,7 @@ Rohan Arun receives explicit mechanism credit for #987’s slot search and first
 - **Cinna Davis / 1337isnot1337:** [#1090](https://github.com/CrocSwap/integer-mult-bounds/pull/1090).
 - **David Breslauer / davidNbreslauer:** [#1072](https://github.com/CrocSwap/integer-mult-bounds/pull/1072).
 - **thakrarsagar / thakrarsagar:** [#1049](https://github.com/CrocSwap/integer-mult-bounds/pull/1049), [#1051](https://github.com/CrocSwap/integer-mult-bounds/pull/1051), [#1069](https://github.com/CrocSwap/integer-mult-bounds/pull/1069), [#1059](https://github.com/CrocSwap/integer-mult-bounds/pull/1059), [#1023](https://github.com/CrocSwap/integer-mult-bounds/pull/1023), [#1045](https://github.com/CrocSwap/integer-mult-bounds/pull/1045), [#1062](https://github.com/CrocSwap/integer-mult-bounds/pull/1062).
+- **Aaron Wang / navinor:** [#1015](https://github.com/CrocSwap/integer-mult-bounds/pull/1015) (open; own package pending review). Its nine phase-B multi-write block programs are retained verbatim in #1062 (`research/r439-bsection-stars-seed01/inputs/PR1015-CANDIDATE.json`) and supply 244 of #1062's 283 saved ADDs; see the [retention receipt](research/r439-pr1015-retention-seed95/README.md).
 - **steph4n / steph4n-gh:** [#1052](https://github.com/CrocSwap/integer-mult-bounds/pull/1052).
 - **Josie Elliston / JosieElliston:** [#1091](https://github.com/CrocSwap/integer-mult-bounds/pull/1091).
 - **flemhhh / flemhhh:** [#1048](https://github.com/CrocSwap/integer-mult-bounds/pull/1048) (reviewed; corrections pending).
