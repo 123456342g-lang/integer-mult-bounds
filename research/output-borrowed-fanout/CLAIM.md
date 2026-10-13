@@ -16,3 +16,29 @@
 1. Heterogeneous ordered dirty-echo connector reuse: PR730/822 already cover this mechanism; not reopened.
 2. Remove cyclic-inverse data connectors with additive filters: active PR951 already directly addresses it; not duplicated.
 3. Borrow an output of a multi-output common-factor product shear as the connector: selected. Changes the allowed scratch ownership contract, unlike PR889's dedicated connector and PR822's recursive sibling connector reuse. New complete price, no assumption of a better bound.
+
+## Result and handoff (one claim update)
+
+Submitted [PR982](https://github.com/CrocSwap/integer-mult-bounds/pull/982),
+2026-10-13 15:50 UTC. Implementation commit:
+`880ba2287427b3c5df6443fd6329ba447c5da47c`.
+
+The exact construction removes the dedicated connector for four B calls plus
+two calls per A_i. The seed fixture uses 238 full leaf calls versus 318 for
+separate output-borrowed echoes, with three extra rows in both; the dedicated
+batch uses 158 calls and four rows. The written restricted-alphabet minimum is
+2k+4; all 40,320 two-output equality candidates were completed and 224 pass.
+No new kappa or native-supplier integration is claimed.
+
+CPython 3.14.6 and 3.9.6 agree on all 41 fixtures, 123 schedules, 1,550 complete
+child boundaries and 369 dense forward/inverse pairs. The default replay,
+offline relocation, exact payload/receipt regeneration, mathematical controls,
+eight package corruptions, source pins, selected-record check and five existing
+tests pass. See VALIDATION.md for exact commands and remaining obligations.
+
+Upstream refreshed to `407d52ff15b2217b6e22bce44728b4c3907b6515`, with unchanged
+selected certificate/current status. The final immediate overlap check reached
+PR981; no same-scope duplicate appeared. PR889 and PR822 remained at their
+pinned heads. No pinned coordination issue exists. Neither requested automation
+label exists upstream. Review should focus on exclusive complete-child ownership,
+the restricted query alphabet, and the paid extra B pair. No merge performed.
