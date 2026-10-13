@@ -1,5 +1,5 @@
 {
-  "status": "TWENTY_EIGHT_PUBLISHED_TWELVE_REVIEWED",
+  "status": "40_PUBLISHED_0_PENDING",
   "selected_kappa": "1672188119205421/1000000000000000000",
   "frontier_changed": true,
   "reviewed_heads": {
@@ -347,7 +347,8 @@
     "research/community-batch1047-audit/logs/final-selected.log": "291e488ef132a447fdd36754f1b58c7275a9abc204df88cfca62d9aa49d044bb",
     "research/community-batch1047-audit/logs/final-ledger.log": "f6ca1dea1316c84857ff0e553a8f48cdeddad41a2df27adc8c3c383db7e0b87c",
     "research/community-batch1047-audit/logs/final-whitespace.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "research/community-batch1047-audit/CHECKPOINT3-HEADS.json": "385343af76652c9b001b56ff1d9313e5adb0d2e7aa458450b85ac421ee616215"
+    "research/community-batch1047-audit/CHECKPOINT3-HEADS.json": "385343af76652c9b001b56ff1d9313e5adb0d2e7aa458450b85ac421ee616215",
+    "research/community-batch1047-audit/CHECKPOINT3-CLOSURES.json": "3a35a5361decf8dd1931265b4cc0563d552cd38f6445ea3c65bb4d306ec75913"
   },
   "scope": "Frozen forty exact heads. Completion flags and per-file coverage distinguish proposals from reviewed integrations. Linux CI separate from local execution.",
   "checkpoint2_reviews": [
