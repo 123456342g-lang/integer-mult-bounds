@@ -26,7 +26,8 @@
     "normal default verifier reproduces complete EXPECTED.json",
     "optimized package tests: seven pass before the context migration; final eight-test suite passes normally",
     "all 33 runtime/source pins agree with refreshed main; one base-selection context snapshot retained locally",
-    "post-migration optimized isolated native replay from a read-only minimal closure populated with refreshed main sources and its newer selected record; full receipts equal"
+    "post-migration optimized isolated native replay from a read-only minimal closure populated with refreshed main sources and its newer selected record; full receipts equal",
+    "eight package tests pass under optimized isolated Python; clean patch applies to refreshed main via an isolated index"
   ],
   "initial_native_attempt": {
     "status": "environmental link failure before executing checker",
@@ -52,7 +53,7 @@
     "hosted CI success",
     "unrestricted optimality or new kappa"
   ],
-  "hosted_CI": "Submission pending; local verification is complete. No hosted CI pass claimed.",
+  "hosted_CI": "PR967 is OPEN and MERGEABLE; no check runs visible in statusCheckRollup at 2026-10-13T15:17:41Z. No hosted CI pass claimed.",
   "final_overlap": {
     "open_prs": 702,
     "through_pr": 966,
@@ -67,5 +68,10 @@
     },
     "earlier_PR753": "restored stars on a different R420 phase-A decoder; credited"
   },
-  "source_binding_migration": "During the sprint only the moving selected-result.json changed upstream. Preserve its exact base bytes as BASE-SELECTION.json; 33 consumed runtime/proof inputs remain pinned at their unchanged repository paths."
+  "source_binding_migration": "During the sprint only the moving selected-result.json changed upstream. Preserve its exact base bytes as BASE-SELECTION.json; 33 consumed runtime/proof inputs remain pinned at their unchanged repository paths.",
+  "submission": {
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/967",
+    "mathematical_commit": "939f14eb5f6618feeb5df39eff5d14376463b4bf",
+    "files": 19
+  }
 }
