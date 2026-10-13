@@ -1,5 +1,26 @@
 # Cycle 7 local claim
 
+## Completed result, 2026-10-13 19:26 UTC
+
+Submitted [PR1168](https://github.com/CrocSwap/integer-mult-bounds/pull/1168),
+attached to the originating owner chat. This is the claim's one result update.
+The bounded-pending scheduler attains `2 sum c_A + 2 ceil(k/(2W)) c_B`.
+The cap-two fixture uses 404 primitive calls, compared with 716 for separate
+restoration and 300 with minimum pending capacity three. All four dirty rows
+restore. No new kappa, supplier or physical-memory improvement is claimed.
+
+Verification passes on CPython 3.11.15 and 3.14.8: 529 family cases, 46 complete
+child returns, 189 dense cases and inverses, five exact finite minima, 14
+negative controls, a nonlinear counterexample, five on-disk corruption controls,
+standalone optimized relocation and byte-identical certificate regeneration.
+Selected integrity and all 25 selected tests pass. A globally correct
+cross-boundary swap is rejected by the separate child-restoration check.
+
+The F3 line remains stopped as covered. No second pivot, selected-frontier
+edit or change to another contributor's PR was made. Full/cold supplier replay,
+Linux, formalization, hosted-CI success and independent human review are not
+claimed. The repository has neither codex nor codex-automation labels.
+
 ## One evidence-driven pivot, 19:08 UTC
 
 The first-result overlap check found that all six PR1088 certificate words
