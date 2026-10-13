@@ -65,3 +65,20 @@ Prior PR1168's pending-output fanout cap is a different query alphabet.
 Stop if a matching planner or correction appears, or if no useful checked
 artifact is ready by the verification deadline. At most one pivot, with the
 original clock unchanged. Recheck overlap at first result and before submission.
+
+## Result and release
+
+Completed with [PR1199](https://github.com/CrocSwap/integer-mult-bounds/pull/1199).
+Five nonzero readers admit one restoration instead of five. An observation after
+child two removes the saving. The package supplies a written criterion and
+restricted optimum, the cut planner, the exact complete-node accounting model,
+and an independent literal-column enumeration of 19,167 partitions across 3,011
+declared batches. The retained PR1155 certificate also reproduces unchanged.
+No new kappa, adopted supplier or runtime improvement is claimed.
+
+Verification and handoff started by 19:52:45 UTC. All relevant checks in
+VALIDATION.md pass. Final overlap at 19:56:39 UTC covered 808 open PRs through
+1196 and all active discussions; no matching correction or planner appeared.
+Upstream main was freshly fetched again and remained
+`1b59b624d21924f8e3537cdc1ac52d3be6eda2fe`, the original investigation base.
+No pivot. This scope is complete; do not rerun it as a new experiment.
