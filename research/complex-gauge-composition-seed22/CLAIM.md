@@ -11,3 +11,5 @@
 - Expected finish: 2026-10-13 23:25 UTC.
 
 Overlap check at claim time: no pinned sprint issue exists. PR #1259 covers a 16-helper seed-37 slice whose chosen variable-gauge object is L276; L248's sorted index 22 is outside that slice. PR #1263 covers simultaneous constant gauges on 218 helpers. PR #1322's coupled-gauge work is restricted to common constant shifts on at most three helpers. A fresh open-PR search found no L248 time-varying composition claim.
+
+Result and handoff: completed as a finite scalar construction with no new κ; the exact L248 path saves 90 complex primitives per orientation on top of #1263, with full invoices and 712-column endpoints. Reproduce with `python3 -I -O -B research/complex-gauge-composition-seed22/verify.py`. Submitted as [PR #1353](https://github.com/CrocSwap/integer-mult-bounds/pull/1353). The native supplier/controller and hosted admission remain open.
