@@ -2,8 +2,9 @@
 
 **Status: research note and scoped negative result. No new κ; the selected result is unchanged.**
 Track 50–59 (recursive interfaces), assignment seed 57 (OS CSPRNG via Python `secrets`).
-Base commit `bbc600db2fc15007b7c914f4f2b2ed55fa909c87`, where PR942's T37 record
-(κ = 0.001661960547713947) is selected.
+Analysis base `bbc600db2fc15007b7c914f4f2b2ed55fa909c87`, where PR942's T37 record
+(κ = 0.001661960547713947) is selected. Rebased onto `29218749` and re-verified there: the selected
+record is unchanged and all pinned inputs are byte-identical.
 
 ## Question
 

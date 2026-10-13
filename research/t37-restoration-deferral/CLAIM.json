@@ -29,6 +29,7 @@
   "a lower bound for any mechanism",
   "a proof of the inherited all-size, realization, hosting, precision/tape, analytic or bit H1-H5 assumptions"
  ],
+ "rebased_and_reverified_on": "2921874911956718fcaaaf9396fe8267b3cfa9f0",
  "reproduce": "make t37-restoration-deferral-verify",
  "results": {
   "census": "CENSUS.json",
