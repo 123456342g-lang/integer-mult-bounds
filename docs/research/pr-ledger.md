@@ -9,8 +9,8 @@ The ledger separates historical review from integration. A prior snapshot or a m
 | Disposition | Count |
 |---|---:|
 | changed since review | 3 |
-| incorporated | 285 |
-| partially reviewed | 151 |
+| incorporated | 290 |
+| partially reviewed | 146 |
 | superseded | 1 |
 | unreviewed | 282 |
 
@@ -25,6 +25,7 @@ The earlier construction family #533–#537 and formal connections #513/#528 are
 This frozen round covers #543/#545/#555 and related construction, research and tooling packages through #588. Each disposition distinguishes completed checks, publication and remaining obligations. The separate formalization PRs and later arrivals are not approved by this round.
 
 [100-PR historical reconciliation](community-reconciliation100-review.md): exact-head coverage and individual carry-forward tasks; it is not 100 completed mathematical audits.
+[Five early contributions](community-historical-five-review.md): #2/#4/#8/#9/#12 retained with complete historical sources and focused replays; 92 carry-forwards remain from that frozen batch.
 
 ## Remaining priorities
 
@@ -41,15 +42,15 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | PR | Contributor | Disposition | Evidence or remaining question |
 |---|---|---|---|
 | [#1](https://github.com/CrocSwap/integer-mult-bounds/pull/1) | Paureel | partially reviewed | [record 1](../../research/overnight-pr-review-20261009/dispositions.json) |
-| [#2](https://github.com/CrocSwap/integer-mult-bounds/pull/2) | Bortlesboat | partially reviewed | [record 1](../../research/overnight-pr-review-20261009/dispositions.json) · [record 2](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |
+| [#2](https://github.com/CrocSwap/integer-mult-bounds/pull/2) | Bortlesboat | incorporated | [record 1](../../research/community-historical-five-audit/DISPOSITIONS.json) · [record 2](../../research/overnight-pr-review-20261009/dispositions.json) · [record 3](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |
 | [#3](https://github.com/CrocSwap/integer-mult-bounds/pull/3) | eumemic | incorporated | [record 1](../../research/overnight-pr-review-20261009/dispositions.json) · [record 2](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |
-| [#4](https://github.com/CrocSwap/integer-mult-bounds/pull/4) | dleen | partially reviewed | [record 1](../../research/overnight-pr-review-20261009/dispositions.json) · [record 2](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |
+| [#4](https://github.com/CrocSwap/integer-mult-bounds/pull/4) | dleen | incorporated | [record 1](../../research/community-historical-five-audit/DISPOSITIONS.json) · [record 2](../../research/overnight-pr-review-20261009/dispositions.json) · [record 3](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |
 | [#5](https://github.com/CrocSwap/integer-mult-bounds/pull/5) | eumemic | partially reviewed | [record 1](../../research/overnight-pr-review-20261009/dispositions.json) · [record 2](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |
 | [#6](https://github.com/CrocSwap/integer-mult-bounds/pull/6) | eumemic | partially reviewed | [record 1](../../research/overnight-pr-review-20261009/dispositions.json) · [record 2](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |
 | [#7](https://github.com/CrocSwap/integer-mult-bounds/pull/7) | jacklightChen | partially reviewed | [record 1](../../research/overnight-pr-review-20261009/dispositions.json) · [record 2](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |
-| [#8](https://github.com/CrocSwap/integer-mult-bounds/pull/8) | rohanarun | partially reviewed | [record 1](../../research/overnight-pr-review-20261009/dispositions.json) · [record 2](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |
-| [#9](https://github.com/CrocSwap/integer-mult-bounds/pull/9) | rohanarun | partially reviewed | [record 1](../../research/overnight-pr-review-20261009/dispositions.json) · [record 2](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |
-| [#12](https://github.com/CrocSwap/integer-mult-bounds/pull/12) | rohanarun | partially reviewed | [record 1](../../research/overnight-pr-review-20261009/dispositions.json) · [record 2](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |
+| [#8](https://github.com/CrocSwap/integer-mult-bounds/pull/8) | rohanarun | incorporated | [record 1](../../research/community-historical-five-audit/DISPOSITIONS.json) · [record 2](../../research/overnight-pr-review-20261009/dispositions.json) · [record 3](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |
+| [#9](https://github.com/CrocSwap/integer-mult-bounds/pull/9) | rohanarun | incorporated | [record 1](../../research/community-historical-five-audit/DISPOSITIONS.json) · [record 2](../../research/overnight-pr-review-20261009/dispositions.json) · [record 3](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |
+| [#12](https://github.com/CrocSwap/integer-mult-bounds/pull/12) | rohanarun | incorporated | [record 1](../../research/community-historical-five-audit/DISPOSITIONS.json) · [record 2](../../research/overnight-pr-review-20261009/dispositions.json) · [record 3](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |
 | [#13](https://github.com/CrocSwap/integer-mult-bounds/pull/13) | eumemic | partially reviewed | [record 1](../../research/overnight-pr-review-20261009/dispositions.json) · [record 2](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |
 | [#14](https://github.com/CrocSwap/integer-mult-bounds/pull/14) | rohanarun | partially reviewed | [record 1](../../research/overnight-pr-review-20261009/dispositions.json) · [record 2](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |
 | [#15](https://github.com/CrocSwap/integer-mult-bounds/pull/15) | eumemic | partially reviewed | [record 1](../../research/overnight-pr-review-20261009/dispositions.json) · [record 2](../../research/pr-reconciliation100-20261013/DISPOSITIONS.json) |

@@ -4,7 +4,7 @@
   "starting_main": "f19cb621be2caf3a7291a37c343c1c55afe935e0",
   "starting_open_count": 446,
   "inventory_count": 722,
-  "family_round": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+  "family_round": "research/community-historical-five-audit/DISPOSITIONS.json",
   "family_rounds": [
     "research/community-family533-audit/DISPOSITIONS.json",
     "research/community-family588-audit/DISPOSITIONS.json",
@@ -19,12 +19,13 @@
     "research/community-batch970-audit/DISPOSITIONS.json",
     "research/community-batch1047-audit/DISPOSITIONS.json",
     "research/community-batch1099-audit/DISPOSITIONS.json",
-    "research/pr-reconciliation100-20261013/DISPOSITIONS.json"
+    "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+    "research/community-historical-five-audit/DISPOSITIONS.json"
   ],
   "counts": {
     "changed_since_review": 3,
-    "incorporated": 285,
-    "partially_reviewed": 151,
+    "incorporated": 290,
+    "partially_reviewed": 146,
     "superseded": 1,
     "unreviewed": 282
   },
@@ -58,7 +59,8 @@
     "research/community-batch970-audit/DISPOSITIONS.json": "e1781e098cd61089aa616c75f3d65977f1fc6e61e48c99d020de09d89831e32c",
     "research/community-batch1047-audit/DISPOSITIONS.json": "698c607fee0fd22f0f5b1f10957aca5fea255401f80b39254bc65ad156d161b6",
     "research/community-batch1099-audit/DISPOSITIONS.json": "81f584c1f802266cd02acd2513572b8ae012da577403f9c46620dd4094ce0a41",
-    "research/pr-reconciliation100-20261013/DISPOSITIONS.json": "5b5f2753b26909fde2d74833ea0e30355c1ba48bbc76939c73704688664fe9e1",
+    "research/pr-reconciliation100-20261013/DISPOSITIONS.json": "0351d2dc0ee00543d1218be04db687672f2497b5196b2128caa2a4cc04c4f006",
+    "research/community-historical-five-audit/DISPOSITIONS.json": "b2d8bfa841699b8a3140e70cb1cef6b78ef071c44014bd94c9c1787b7e0f1750",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -128,39 +130,59 @@
           "evidence": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
           "scope": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete.",
           "kind": "integration_or_partial_review"
+        },
+        {
+          "head": "8bb07d55f6898bc8ec919222cf7596e987e9b69f",
+          "evidence": "research/community-historical-five-audit/DISPOSITIONS.json",
+          "scope": "Aligned common-point pairing: full h50 support DAG; small dirty-state basis and both frame directions; exact historical 17*2^-63 witness, scoped ceiling, and regenerated upstream patch.",
+          "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [
+        "docs/research/community-historical-five-review.md",
         "docs/research/community-reconciliation100-review.md",
         "docs/research/community-round2-twitter.md",
         "docs/research/contribution-review.md",
         "docs/research/contributor-announcements.md"
       ],
-      "disposition": "partially_reviewed",
-      "integration_location": [],
-      "github_state": "OPEN",
-      "unresolved_question": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete. Start with docs/research/aligned-paired-network.md, docs/research/aligned-paired-review.md, notes/aligned-paired-note.tex; complete residual list: COVERAGE.json.gz, PR 2 (15 unmatched paths). Byte mismatch is not a finding of invalidity.",
-      "closure": null,
-      "current_head_observed_in": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+      "disposition": "incorporated",
+      "integration_location": [
+        "research/community-historical-five-audit/sources.tar.gz",
+        "docs/research/community-historical-five-review.md"
+      ],
+      "github_state": "MERGED",
+      "unresolved_question": null,
+      "closure": {
+        "closedAt": "2026-10-13T21:02:36Z",
+        "headRefOid": "8bb07d55f6898bc8ec919222cf7596e987e9b69f",
+        "mergedAt": "2026-10-13T21:02:36Z",
+        "number": 2,
+        "state": "MERGED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2#issuecomment-6155142676",
+        "integration_commit": "377e2bd5fc5597dd950b36afac08d12427f00132"
+      },
+      "current_head_observed_in": "research/community-historical-five-audit/DISPOSITIONS.json",
       "reviewed_head": "8bb07d55f6898bc8ec919222cf7596e987e9b69f",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
-        "published": false
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": true
       },
       "verification_evidence": [
         {
-          "path": "docs/research/contribution-review.md",
-          "scope": "Prior scoped review, not blanket current-head approval"
+          "path": "research/community-historical-five-audit/EXECUTION.json",
+          "scope": "Scoped exact-head replay commands, artifacts and inherited limitations"
         },
         {
-          "path": "research/pr-reconciliation100-20261013/COVERAGE.json.gz",
-          "scope": "Complete changed-file inventory and exact-content screen only"
+          "path": "research/community-historical-five-audit/SOURCES.json",
+          "scope": "Complete source inventories and original changed-file coverage"
         }
       ],
       "reconciliation_evidence": [
-        "research/pr-reconciliation100-20261013/DISPOSITIONS.json"
+        "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+        "research/community-historical-five-audit/DISPOSITIONS.json"
       ]
     },
     {
@@ -208,9 +230,18 @@
         "scripts/complex_network.py",
         "certificates/complex-network.json"
       ],
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "closedAt": "2026-10-13T20:45:33Z",
+        "headRefOid": "dfe5b818aad4d386cb5dd7d76df108088107765d",
+        "mergedAt": "2026-10-13T20:45:33Z",
+        "number": 3,
+        "state": "MERGED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/3",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/3#issuecomment-6154863961",
+        "integration_commit": "e3bb23b4c6bae16ba277f9443e11257a0a37780a"
+      },
       "current_head_observed_in": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
       "reviewed_head": "dfe5b818aad4d386cb5dd7d76df108088107765d",
       "review_completion": {
@@ -266,38 +297,58 @@
           "evidence": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
           "scope": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete.",
           "kind": "integration_or_partial_review"
+        },
+        {
+          "head": "8c225e619168c0141dcfcba3b68a65bbed6a8729",
+          "evidence": "research/community-historical-five-audit/DISPOSITIONS.json",
+          "scope": "Retained-total complex circuit: full h24 coefficients, role frames and rational guards; small dirty-state and both physical phase directions; exact historical 591/10^12 assembly. Original PDF is stale and retained only as history.",
+          "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [
+        "docs/research/community-historical-five-review.md",
         "docs/research/community-reconciliation100-review.md",
         "docs/research/community-round2-twitter.md",
         "docs/research/contribution-review.md"
       ],
-      "disposition": "partially_reviewed",
-      "integration_location": [],
-      "github_state": "OPEN",
-      "unresolved_question": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete. Start with scripts/make_retained_complex_patch.py, scripts/retained_complex.py, tests/test_retained_complex.py; complete residual list: COVERAGE.json.gz, PR 4 (8 unmatched paths). Byte mismatch is not a finding of invalidity.",
-      "closure": null,
-      "current_head_observed_in": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+      "disposition": "incorporated",
+      "integration_location": [
+        "research/community-historical-five-audit/sources.tar.gz",
+        "docs/research/community-historical-five-review.md"
+      ],
+      "github_state": "MERGED",
+      "unresolved_question": null,
+      "closure": {
+        "closedAt": "2026-10-13T21:02:36Z",
+        "headRefOid": "8c225e619168c0141dcfcba3b68a65bbed6a8729",
+        "mergedAt": "2026-10-13T21:02:35Z",
+        "number": 4,
+        "state": "MERGED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/4",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/4#issuecomment-6155143067",
+        "integration_commit": "377e2bd5fc5597dd950b36afac08d12427f00132"
+      },
+      "current_head_observed_in": "research/community-historical-five-audit/DISPOSITIONS.json",
       "reviewed_head": "8c225e619168c0141dcfcba3b68a65bbed6a8729",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
-        "published": false
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": true
       },
       "verification_evidence": [
         {
-          "path": "docs/research/contribution-review.md",
-          "scope": "Prior scoped review, not blanket current-head approval"
+          "path": "research/community-historical-five-audit/EXECUTION.json",
+          "scope": "Scoped exact-head replay commands, artifacts and inherited limitations"
         },
         {
-          "path": "research/pr-reconciliation100-20261013/COVERAGE.json.gz",
-          "scope": "Complete changed-file inventory and exact-content screen only"
+          "path": "research/community-historical-five-audit/SOURCES.json",
+          "scope": "Complete source inventories and original changed-file coverage"
         }
       ],
       "reconciliation_evidence": [
-        "research/pr-reconciliation100-20261013/DISPOSITIONS.json"
+        "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+        "research/community-historical-five-audit/DISPOSITIONS.json"
       ]
     },
     {
@@ -520,37 +571,57 @@
           "evidence": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
           "scope": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete.",
           "kind": "integration_or_partial_review"
+        },
+        {
+          "head": "4920e44843512014f742d685e01341f6787bbd5f",
+          "evidence": "research/community-historical-five-audit/DISPOSITIONS.json",
+          "scope": "Geometric-envelope complex alternative: full h25 support/frame checks, extra-coordinate negative control, h6/h7 physical phase checks, and 441-case unequal-factor bit screen; conditional 59/10^11 assembly.",
+          "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [
+        "docs/research/community-historical-five-review.md",
         "docs/research/community-reconciliation100-review.md",
         "docs/research/contribution-review.md"
       ],
-      "disposition": "partially_reviewed",
-      "integration_location": [],
-      "github_state": "OPEN",
-      "unresolved_question": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete. Start with research/geometric-complex/README.md, research/geometric-complex/audit.py, research/geometric-complex/bit_screen.py; complete residual list: COVERAGE.json.gz, PR 8 (9 unmatched paths). Byte mismatch is not a finding of invalidity.",
-      "closure": null,
-      "current_head_observed_in": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+      "disposition": "incorporated",
+      "integration_location": [
+        "research/community-historical-five-audit/sources.tar.gz",
+        "docs/research/community-historical-five-review.md"
+      ],
+      "github_state": "MERGED",
+      "unresolved_question": null,
+      "closure": {
+        "closedAt": "2026-10-13T21:02:36Z",
+        "headRefOid": "4920e44843512014f742d685e01341f6787bbd5f",
+        "mergedAt": "2026-10-13T21:02:36Z",
+        "number": 8,
+        "state": "MERGED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/8",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/8#issuecomment-6155143507",
+        "integration_commit": "377e2bd5fc5597dd950b36afac08d12427f00132"
+      },
+      "current_head_observed_in": "research/community-historical-five-audit/DISPOSITIONS.json",
       "reviewed_head": "4920e44843512014f742d685e01341f6787bbd5f",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
-        "published": false
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": true
       },
       "verification_evidence": [
         {
-          "path": "docs/research/contribution-review.md",
-          "scope": "Prior scoped review, not blanket current-head approval"
+          "path": "research/community-historical-five-audit/EXECUTION.json",
+          "scope": "Scoped exact-head replay commands, artifacts and inherited limitations"
         },
         {
-          "path": "research/pr-reconciliation100-20261013/COVERAGE.json.gz",
-          "scope": "Complete changed-file inventory and exact-content screen only"
+          "path": "research/community-historical-five-audit/SOURCES.json",
+          "scope": "Complete source inventories and original changed-file coverage"
         }
       ],
       "reconciliation_evidence": [
-        "research/pr-reconciliation100-20261013/DISPOSITIONS.json"
+        "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+        "research/community-historical-five-audit/DISPOSITIONS.json"
       ]
     },
     {
@@ -582,37 +653,57 @@
           "evidence": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
           "scope": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete.",
           "kind": "integration_or_partial_review"
+        },
+        {
+          "head": "cfd6a2baded9dba990b987934474a7721d6ca3fb",
+          "evidence": "research/community-historical-five-audit/DISPOSITIONS.json",
+          "scope": "Ternary star-template refinement: full h28 producer rebuilt twice; 20475 stars and 365 templates checked including arbitrary scratch; historical conditional 19/5000000000 assembly. Retains failed heuristic attempts and attribution.",
+          "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [
+        "docs/research/community-historical-five-review.md",
         "docs/research/community-reconciliation100-review.md",
         "docs/research/contribution-review.md"
       ],
-      "disposition": "partially_reviewed",
-      "integration_location": [],
-      "github_state": "OPEN",
-      "unresolved_question": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete. Start with research/prime-field-followup/README.md, research/prime-field-followup/star_duality.py, research/prime-field-followup/vendor/README.md; complete residual list: COVERAGE.json.gz, PR 9 (5 unmatched paths). Byte mismatch is not a finding of invalidity.",
-      "closure": null,
-      "current_head_observed_in": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+      "disposition": "incorporated",
+      "integration_location": [
+        "research/community-historical-five-audit/sources.tar.gz",
+        "docs/research/community-historical-five-review.md"
+      ],
+      "github_state": "MERGED",
+      "unresolved_question": null,
+      "closure": {
+        "closedAt": "2026-10-13T21:02:36Z",
+        "headRefOid": "cfd6a2baded9dba990b987934474a7721d6ca3fb",
+        "mergedAt": "2026-10-13T21:02:36Z",
+        "number": 9,
+        "state": "MERGED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/9",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/9#issuecomment-6155143936",
+        "integration_commit": "377e2bd5fc5597dd950b36afac08d12427f00132"
+      },
+      "current_head_observed_in": "research/community-historical-five-audit/DISPOSITIONS.json",
       "reviewed_head": "cfd6a2baded9dba990b987934474a7721d6ca3fb",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
-        "published": false
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": true
       },
       "verification_evidence": [
         {
-          "path": "docs/research/contribution-review.md",
-          "scope": "Prior scoped review, not blanket current-head approval"
+          "path": "research/community-historical-five-audit/EXECUTION.json",
+          "scope": "Scoped exact-head replay commands, artifacts and inherited limitations"
         },
         {
-          "path": "research/pr-reconciliation100-20261013/COVERAGE.json.gz",
-          "scope": "Complete changed-file inventory and exact-content screen only"
+          "path": "research/community-historical-five-audit/SOURCES.json",
+          "scope": "Complete source inventories and original changed-file coverage"
         }
       ],
       "reconciliation_evidence": [
-        "research/pr-reconciliation100-20261013/DISPOSITIONS.json"
+        "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+        "research/community-historical-five-audit/DISPOSITIONS.json"
       ]
     },
     {
@@ -644,37 +735,57 @@
           "evidence": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
           "scope": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete.",
           "kind": "integration_or_partial_review"
+        },
+        {
+          "head": "35d31e30f28bc5da0ae6a88e7b03d75ebc855534",
+          "evidence": "research/community-historical-five-audit/DISPOSITIONS.json",
+          "scope": "Dimension-30 mixed-width composition: six complete native dimension screens and scoped prime-power exclusions; all seven matching enumerations; h30 full producer replay and 456 template dirty-state controls, exact moment, 29 assembly constraints and patch. Unchanged #10 dependencies remain inherited; not a new full theorem audit.",
+          "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [
+        "docs/research/community-historical-five-review.md",
         "docs/research/community-reconciliation100-review.md",
         "docs/research/contribution-review.md"
       ],
-      "disposition": "partially_reviewed",
-      "integration_location": [],
-      "github_state": "OPEN",
-      "unresolved_question": "Separate each early circuit, proof note and independent test from old release wrappers; retain the alternative constructions even when their headline is obsolete. Start with PATCHING.md, research/batched-followup/README.md, research/batched-followup/make_patch.py; complete residual list: COVERAGE.json.gz, PR 12 (25 unmatched paths). Byte mismatch is not a finding of invalidity.",
-      "closure": null,
-      "current_head_observed_in": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+      "disposition": "incorporated",
+      "integration_location": [
+        "research/community-historical-five-audit/sources.tar.gz",
+        "docs/research/community-historical-five-review.md"
+      ],
+      "github_state": "MERGED",
+      "unresolved_question": null,
+      "closure": {
+        "closedAt": "2026-10-13T21:02:36Z",
+        "headRefOid": "35d31e30f28bc5da0ae6a88e7b03d75ebc855534",
+        "mergedAt": "2026-10-13T21:02:36Z",
+        "number": 12,
+        "state": "MERGED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/12",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/12#issuecomment-6155144381",
+        "integration_commit": "377e2bd5fc5597dd950b36afac08d12427f00132"
+      },
+      "current_head_observed_in": "research/community-historical-five-audit/DISPOSITIONS.json",
       "reviewed_head": "35d31e30f28bc5da0ae6a88e7b03d75ebc855534",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
-        "published": false
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": true
       },
       "verification_evidence": [
         {
-          "path": "docs/research/contribution-review.md",
-          "scope": "Prior scoped review, not blanket current-head approval"
+          "path": "research/community-historical-five-audit/EXECUTION.json",
+          "scope": "Scoped exact-head replay commands, artifacts and inherited limitations"
         },
         {
-          "path": "research/pr-reconciliation100-20261013/COVERAGE.json.gz",
-          "scope": "Complete changed-file inventory and exact-content screen only"
+          "path": "research/community-historical-five-audit/SOURCES.json",
+          "scope": "Complete source inventories and original changed-file coverage"
         }
       ],
       "reconciliation_evidence": [
-        "research/pr-reconciliation100-20261013/DISPOSITIONS.json"
+        "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
+        "research/community-historical-five-audit/DISPOSITIONS.json"
       ]
     },
     {
@@ -3625,9 +3736,18 @@
         "docs/reproducibility.md",
         "CONTRIBUTORS.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "closedAt": "2026-10-13T20:46:27Z",
+        "headRefOid": "8e0442641696b4c284bf7fbb4f2c97dccf24ea6c",
+        "mergedAt": null,
+        "number": 90,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/90",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/90#issuecomment-6154864882",
+        "integration_commit": "e3bb23b4c6bae16ba277f9443e11257a0a37780a"
+      },
       "current_head_observed_in": "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
       "reviewed_head": "8e0442641696b4c284bf7fbb4f2c97dccf24ea6c",
       "review_completion": {
@@ -6940,9 +7060,18 @@
         "scripts/assembly_ceiling.py",
         "tests/test_assembly_ceiling.py"
       ],
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "closedAt": "2026-10-13T20:45:33Z",
+        "headRefOid": "1f22094b12bdae7759124e6c51ab44d3ea2a10ab",
+        "mergedAt": "2026-10-13T20:45:33Z",
+        "number": 183,
+        "state": "MERGED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/183",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/183#issuecomment-6154864419",
+        "integration_commit": "e3bb23b4c6bae16ba277f9443e11257a0a37780a"
+      },
       "reconciliation_evidence": [
         "research/pr-reconciliation-20261012/content-comparison.json",
         "research/pr-reconciliation100-20261013/DISPOSITIONS.json"
@@ -29957,8 +30086,8 @@
     535
   ],
   "github_dispositions": {
-    "CLOSED": 3,
-    "MERGED": 280,
-    "OPEN": 439
+    "CLOSED": 4,
+    "MERGED": 287,
+    "OPEN": 431
   }
 }

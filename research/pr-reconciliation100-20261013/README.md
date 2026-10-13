@@ -19,6 +19,7 @@ three completed dispositions and 97 explicit carry-forwards. No new κ.
   `dfe5b818aad4d386cb5dd7d76df108088107765d`. Old release wrappers are historical.
   Original copyright, notices and assistance disclosures are retained.
 - `pr3-tests.txt`, `pr183-tests.txt`: local Python 3.12 execution receipts.
+- `CLOSURES.json`: verified GitHub merge/closure states, exact heads and explanation links.
 - `MANIFEST.json`: evidence byte pins; this is not a mathematical certificate.
 
 Reproduce the integrated focused checks and offline receipt integrity:

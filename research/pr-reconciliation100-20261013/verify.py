@@ -66,6 +66,11 @@ def main():
             merge_base = subprocess.check_output(['git', 'merge-base', '--all', c['base_ref_oid'], c['head']], cwd=ROOT, text=True).splitlines()
             require(merge_base == [c['merge_base']], f'#{n}: merge base differs')
         ready = n in (3,90,183)
+        if ready:
+            require(all(type(v) is bool and v for v in d['review_completion'].values()), f'#{n}: premature completion')
+            receipt = d['closure']
+            require(receipt is not None and receipt['headRefOid'] == c['head'] and receipt['state'] == d['github_state'], f'#{n}: closure head/state mismatch')
+            require(receipt['state'] == ('CLOSED' if n==90 else 'MERGED') and receipt['comment_url'] and receipt['integration_commit'], f'#{n}: incomplete closure receipt')
         require(c['changed_file_review_complete'] == ready, f'#{n}: unsupported coverage')
         require(d['review_completion']['changed_file_coverage'] == ready, f'#{n}: unsupported completion')
         if not ready:
@@ -86,6 +91,10 @@ def main():
             require('Historical reviewed checkpoint: #596' in (ROOT/'docs/reproducibility.md').read_text(), 'Stale checkpoint heading')
     pool = Counter((o['number'],o['path'],row['mode'],row['blob']) for row in shared for o in row['occurrences'])
     require(pool == residuals, 'Shared content index lost a contextual occurrence')
+    receipts = {r['number']:r for r in load('CLOSURES.json')['closures']}
+    require(set(receipts) == {3,90,183}, 'Closure scope differs')
+    for d in decisions:
+        if d['number'] in receipts: require(d['closure'] == receipts[d['number']], 'Projected closure receipt differs')
     summary = load('SUMMARY.json')
     require(sum(c['changed_paths'] for c in coverage) == summary['changed_paths'], 'File total differs')
     require(len(shared) == summary['distinct_unmatched_blobs'] and sum(pool.values()) == summary['unmatched_entries'], 'Shared-work totals differ')
