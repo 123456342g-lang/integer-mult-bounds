@@ -116,5 +116,15 @@
   "source_heads_unchanged": {
     "631": "fb893b5ee1317c2da3b297e6fe78eca0857d1a76",
     "939": "3a8ec54d62fb8824c658dc7ed356f99423cac8cf"
+  },
+  "immediate_presubmission_refresh": {
+    "newest_pr": 953,
+    "new_prs": [
+      950,
+      951,
+      952,
+      953
+    ],
+    "overlap": "No new contribution on the first E8 decoder rank-loss boundary."
   }
 }
