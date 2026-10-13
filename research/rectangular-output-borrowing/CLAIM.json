@@ -1,0 +1,35 @@
+{
+  "track": "recursive interfaces",
+  "seed": 54,
+  "seed_source": "Python secrets.randbelow(100), operating-system randomness; single draw",
+  "base_commit": "abdc6a7002abdbcd9e21bfc5e1a795784deacfdf",
+  "claimed_at_utc": "2026-10-13T17:58:02.895090+00:00",
+  "scope": "Dense rectangular batch y_i += A_i sum_j B_j x_j with arbitrary noncommuting factors, immutable sources, output-only dirty connectors, and no extra connector row. Derive and verify the complete work/storage recurrence and sharp query count in the explicit unit-generator alphabet.",
+  "method": "Seed 54 selects 3 sources (tens digit minus two) and 4 outputs (ones digit); free noncommutative polynomial identity, literal product-child lowering, dense integer controls; general lower bound in the stated alphabet.",
+  "deliverable": "One standalone research construction with exact certificate, complete prices, independent verification and negative controls; no kappa claim.",
+  "expected_finish_utc": "2026-10-13T18:43:02.895207+00:00",
+  "coordination": "No pinned issue at immediate pre-claim GitHub GraphQL check. Claim recorded locally. Open inventory checked through PR1089 (757 open PRs).",
+  "candidate_tasks": [
+    {
+      "task": "T37 restoration deferral",
+      "decision": "not selected; direct overlap with PR1012"
+    },
+    {
+      "task": "constant-space exact additive echo",
+      "decision": "not selected; direct overlap with PR1057"
+    },
+    {
+      "task": "dense multi-source output-borrowed batching",
+      "decision": "selected; PR982 has one source, PR997 retains dedicated dirty connector"
+    }
+  ],
+  "nearest_prs": [
+    982,
+    997,
+    990,
+    1057,
+    889,
+    822
+  ],
+  "status": "claimed"
+}
