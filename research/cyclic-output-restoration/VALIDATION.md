@@ -1,6 +1,8 @@
 # Local verification and handoff
 
-Research/submission base: `dadfea6e8a78ff6ba901705f87532a71c6f5bbb8`.
+Research base: `dadfea6e8a78ff6ba901705f87532a71c6f5bbb8`.
+Refreshed submission base: `b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c`.
+The rebase changes no package code, certificate, source bytes or selected record.
 Environment: macOS arm64; CPython 3.12.12 (registered runner), 3.14.6 and 3.9.6.
 Final mathematical implementation and certificate verified on 2026-10-13 UTC.
 

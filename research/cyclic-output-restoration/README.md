@@ -243,6 +243,12 @@ three README files, original notices, Git blob IDs and SHA256 hashes are retaine
 `PREDECESSORS.json`; no executable predecessor code is imported. Also credit
 Aaron Wang/Navinor PR1155, Sagar Thakrar PR1199, Adam Gall PR1205, and Ross
 Richardson/CubeJerry PR889 for the existing restoration and dirty-echo lineages.
+Hanson Sun's concurrent [PR1246](https://github.com/CrocSwap/integer-mult-bounds/pull/1246)
+adds paid additive defect repair at canonical partition cuts; its head
+`5ed1ce17a9df4c853a93f9758ba903d2620c3443` was inspected at submission. It is
+distinct from keeping output in a moving cyclic frame between fixed calls.
+No code, certificate or mathematical dependency is imported from it.
+
 This package does not claim priority for their compatible-reader corrections,
 observation distinctions or output-frame/echo principles.
 

@@ -37,3 +37,30 @@ PR1227's complete README was read. No delegated workers.
 Predecessors: Sagar Thakrar PR1227 and PR1199, Aaron Wang/Navinor PR1155,
 mightyOil/Philipp PR1203, Adam Gall PR1205, Ross Richardson/CubeJerry PR889.
 Prepared by Ross Richardson with substantial OpenAI Codex assistance.
+
+## DONE — 2026-10-13T21:45:03.216502+00:00
+
+[Completed construction and replay artifact](https://github.com/RossRichardson/integer-mult-bounds/blob/ecbc47ccde755dfc4571a3d60da1eb334aa070cd/research/cyclic-output-restoration/README.md).
+Implementation commit: `ecbc47ccde755dfc4571a3d60da1eb334aa070cd`; refreshed submission base
+`b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c`.
+
+The admitted order-three output-frame word reduces the complete five-child
+echo from **588 to 504 signed ADDs**, restoring all incoming dirt. Final
+pricing uses the known PR1145 six-ADD three-cycle in both words, replacing
+the initial valid but nonminimal two-SWAP upper budget. The complete boundary
+minimum is 15->8 triple rotations per batch; both passes save 84 ADDs.
+
+All 66,420 gap words, 19,683 admission matrices, 192 recursive cases and
+3,744 basis columns pass. Both direct and arbitrary-input inverse maps,
+recurrences, access invoices, source pins, ten mathematical controls, seven
+package test groups and five corruptions pass. Python3.12 registered replay
+and Python3.9 agree; Python3.14 export is byte-identical. No new kappa,
+physical supplier, full cold replay, total runtime or human review claim.
+The deeper word increases travel and coefficient bounds; see VALIDATION.md.
+
+Final complete overlap refresh at21:43 UTC covered871 open PRs and32
+discussion records. PR1246 (`5ed1ce17a9df4c853a93f9758ba903d2620c3443`)
+prices additive defect repair at canonical cuts, a different mechanism;
+Hanson Sun is credited. PR1227's head remains pinned and has no comments.
+No pinned coordination issue exists, so this updates the original local
+claim once under the user's fallback. Claim released.
