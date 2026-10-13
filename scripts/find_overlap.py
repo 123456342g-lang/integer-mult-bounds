@@ -12,6 +12,7 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import sys
 import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,7 +26,7 @@ def now():
 def gh_json(args, payload=None):
     result = subprocess.run(
         ["gh", "api", *args], input=None if payload is None else json.dumps(payload),
-        text=True, capture_output=True, timeout=90, check=True,
+        text=True, encoding="utf-8", capture_output=True, timeout=90, check=True,
     )
     value = json.loads(result.stdout)
     if isinstance(value, dict) and value.get("errors"):
@@ -238,6 +239,9 @@ def main():
     if args.json_output:
         print(json.dumps(report, indent=2))
     else:
+        # Excerpts quote arbitrary UTF-8; a cp1252 pipe must escape them, not crash.
+        if hasattr(sys.stdout, "reconfigure"):
+            sys.stdout.reconfigure(errors="backslashreplace")
         print(report["status"])
         print("Coverage: " + json.dumps(coverage))
         print(report["limits"])

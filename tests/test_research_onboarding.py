@@ -2,6 +2,7 @@
 import ast
 import importlib.util
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -26,6 +27,14 @@ class OverlapTests(unittest.TestCase):
         self.assertEqual(len(matches), 1)
         self.assertEqual(matches[0]["head"], "a" * 40)
         self.assertEqual(overlap.search(records, ["missing"]), [])
+
+    def test_report_survives_a_cp1252_stdout(self):
+        # Local package READMEs quote kappa; forcing cp1252 reproduces a Windows pipe on any host.
+        env = {**os.environ, "PYTHONIOENCODING": "cp1252", "PYTHONUTF8": "0"}
+        result = subprocess.run([sys.executable, "-B", str(ROOT / "scripts/find_overlap.py"), "κ", "--offline"],
+                                cwd=ROOT, env=env, capture_output=True, timeout=120)
+        self.assertEqual(result.returncode, 0, result.stderr.decode("utf-8", "replace"))
+        self.assertIn(b"\\u03ba", result.stdout)
 
     def test_pr_pagination_normalization(self):
         def row(n):
@@ -230,8 +239,10 @@ class TextEncodingTests(unittest.TestCase):
                 keywords = {k.arg: k.value for k in node.keywords}
                 mode = keywords.get("mode", node.args[0] if func == "open" and node.args else None)
                 binary = isinstance(mode, ast.Constant) and "b" in str(mode.value)
-                if (func in ("read_text", "write_text", "open", "NamedTemporaryFile")
-                        and not binary and "encoding" not in keywords):
+                text = any(isinstance(keywords.get(k), ast.Constant) and keywords[k].value is True
+                           for k in ("text", "universal_newlines"))
+                if ((func in ("read_text", "write_text", "open", "NamedTemporaryFile") and not binary
+                        or func in ("run", "Popen", "check_output") and text) and "encoding" not in keywords):
                     missing.append(f"{name}:{node.lineno}")
         self.assertEqual(missing, [])
 
