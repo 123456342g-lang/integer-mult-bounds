@@ -49,3 +49,21 @@ P111. Neither is a rational pairing-rank result for bit-side punctures through
 An immediate pre-submission refresh through #1068 also inspected #1060's
 complex P111 COPY construction: it prices a different physical complex word,
 not these bit rational-pairing decoder witnesses. Main remained at the base.
+
+## Result and handoff
+
+Submitted as [PR #1084](https://github.com/CrocSwap/integer-mult-bounds/pull/1084):
+research note / exact algebraic decoder and scoped lower bound, not a hosted
+supplier or new kappa. The retained witness has cost 54 on 102 ports, and the
+written argument bounds the label-decoder cost ratio by 9/17 through 25
+punctures. All eight package checks, the staged-export replay and selected
+source integrity pass. The checked changed-reader example costs 68/67 and
+guards the corrected fixed-reader scope of the PR589-to-P110 diagnostic.
+
+The immediate submission refresh reached #1081. PR1077's arbitrary-complex
+eight-term result is also distinct from the binary label-factor/rational
+pairing-rank model here. Upstream advanced to
+`abdc6a7002abdbcd9e21bfc5e1a795784deacfdf` while this branch retained its exact
+base; all seven pinned executable/data inputs remained byte-identical, and
+PR942's selected kappa remained 0.001661960547713947. No coordination issue
+was pinned, so this is the single local result update.
