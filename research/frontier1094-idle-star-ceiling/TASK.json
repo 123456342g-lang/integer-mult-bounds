@@ -47,7 +47,7 @@
   "stop_rule": "Stop after the class ceiling, the exact star optimum and a structural verifier; do not attempt controller/invoice/assembly admission for the star overlay in this session.",
   "outcome": "partial",
   "evidence": "RESULT.json (exact prices of baseline, PR1252 pair class, star optimum, relaxation ceiling; 4 random repartition controls), STAR-MOVES.json.gz (2,357 explicit moves), STAR-AUDIT.json (independent verifier, 7/7 mutation controls rejected).",
-  "author": "PatatePatatePatate (donated session, Claude assistance)",
+  "author": "Guéorgui Maissouradze / PatatePatatePatate",
   "ai_assistance": "Substantial Claude (Anthropic, Claude Code, Opus 5.5) assistance in derivation, implementation, verification and documentation; directed in a donated session.",
   "open_questions": [
     {

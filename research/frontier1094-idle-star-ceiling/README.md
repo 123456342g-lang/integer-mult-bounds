@@ -107,5 +107,5 @@ its open questions define this scope. The #1094 replay, T16 owner map and engine
 those of the selected review and its retained supplier ancestry. PR1240 (Douglas Colkitt)
 provides the broader fixed-word packing ceiling. Coordination is in
 [Discussion #1265](https://github.com/CrocSwap/integer-mult-bounds/discussions/1265).
-This package was prepared in a donated session (GitHub: PatatePatatePatate) with
+This package was prepared by Guéorgui Maissouradze (GitHub: PatatePatatePatate) with
 substantial Claude (Anthropic) assistance. Apache-2.0.
