@@ -49,3 +49,21 @@ No fresh search of an already closed domain is proposed.
 
 Prepared for Sagar Thakrar (@thakrarsagar), with substantial OpenAI Codex
 assistance in research, implementation, verification and writing. Apache-2.0.
+
+## Completed result, 2026-10-13 22:44 UTC
+
+Submitted [PR1327](https://github.com/CrocSwap/integer-mult-bounds/pull/1327).
+The complete 4,194,304-record census has copy-rank floor 64, or 76 when both
+factors leave the root code. The written amplitude argument covers all
+complex values. This is a scoped negative result, with no new kappa or
+physical supplier. The invalid old control was repaired, and deliberately
+unpaid compensation terms expose the false score 62.
+
+Both rank algorithms agree on 325638 support pairs. Normal Python 3.14 and
+optimized Python 3.11 pass, including 27 literal identity cases, eleven
+embedded controls, relocation and three external corruptions. Selected
+integrity and staged whitespace checks pass. The final overlap refresh
+covered 813 open PRs and 64 discussion records; nearby masked co-star,
+simplex and support-trimming work is distinct. See VALIDATION.md for the
+observed checks and unrun obligations. This single update closes the local
+claim and also completes the interrupted seed-32 scope.
