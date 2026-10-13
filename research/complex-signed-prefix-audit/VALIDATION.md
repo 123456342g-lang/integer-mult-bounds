@@ -56,3 +56,8 @@ proofs, analytic assembly, Lean, or repository-wide historical suites. The
 original local checker is run fully; its source assumptions do not become a
 complete multiplication proof. Hosted PR CI is a separate status and is
 reported at publication rather than inferred from these local passes.
+
+Published as [PR1282](https://github.com/CrocSwap/integer-mult-bounds/pull/1282).
+The mathematical package commit is `a7e3e61cd709ccbc22b3e938853e01f838048e72`;
+the follow-up changes publication metadata only. Staged whitespace and local
+documentation-link checks pass.

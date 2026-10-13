@@ -1,5 +1,7 @@
 # Selected PR1094: signed prefix precision audit
 
+Contribution: [PR1282](https://github.com/CrocSwap/integer-mult-bounds/pull/1282).
+
 The unchanged R480 programs have exact signed scalar/Horner prefix maxima
 **131088 forward and 1154896 backward**, requiring sufficient **18/21-bit**
 envelopes rather than the retained positive-recurrence estimates of 52/68
