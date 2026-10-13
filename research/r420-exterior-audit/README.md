@@ -63,6 +63,7 @@ distinct ordered pair rather than only a digest or a sample.
 
 The word uses eight integer coordinates with inner product `dot/2`. Multiplying
 the inner product by a nonzero scalar does not change an orthogonal projector.
+All exterior norms and contractions below use the ordinary dot product.
 The implementation imports no producer, rational elimination, Hermite reduction,
 determinant, Gram checker or geometry cache. It uses integer wedge products and
 contractions instead.
@@ -71,7 +72,7 @@ For a frame of rank r, append its listed root vectors to an exterior product,
 skipping a vector exactly when its wedge is zero. Divide each nonzero result by
 its coefficient gcd and normalize its sign. Root indices are ordered by
 `(index - 83) mod 120`; reversing that order must give the same normalized
-exterior vector w. This checks basis independence on every frame. The product c
+exterior vector w. This cross-checks two basis orders on every frame. The product c
 of the discarded positive gcds is retained, so the selected basis B satisfies
 `wedge(B) = +/- c w`. The empty basis has w=1 and c=1.
 
@@ -169,6 +170,8 @@ target-read schedules, #726 studies A2 gather neighborhoods, and #729 audits
 complex helper lifetimes. None supplies this exterior-coordinate frame audit.
 The A2 control here is an independently derived prime-three obstruction, not
 a gather construction or a claimed census result.
+The final pre-submission metadata check also covered #731's binary compensation
+kernel and #732's star punctures; neither studies these rational projectors.
 
 ## Local validation
 

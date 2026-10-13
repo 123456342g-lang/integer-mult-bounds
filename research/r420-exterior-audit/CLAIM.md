@@ -1,6 +1,7 @@
 # R420 exterior frame audit
 
-Status: claimed locally on 2026-10-13. GitHub returned no pinned issues.
+Status: completed on 2026-10-13. GitHub returned no pinned issues; the claim
+was recorded locally before implementation.
 
 - Track: independent verification; OS-random assignment seed 83.
 - Base: `66849e1475c930fd7732b1a0067ffee7e1e95f60`.
@@ -30,3 +31,18 @@ all-size realization remain outside this contribution. Existing sources,
 `upstream/` and the selected frontier remain unchanged.
 
 Prepared by Sagar Thakrar with substantial OpenAI Codex assistance, Apache-2.0.
+
+## Result update
+
+All 672 frames passed the independent exterior audit, including 2,460 distinct
+nested pairs, 66,240 nonincidences and dyadic basis/Gram witnesses. The complete
+certificate reproduces with 258 positive oracles and 11 rejected controls.
+The selected kappa is unchanged. The final overlap scan covered 549 open PRs
+through #730, followed by the new #731/#732 heads immediately before submission.
+No duplicate rational-projector audit was found. Verification and its limits
+are recorded in the README. No issue or PR belonging to another contributor
+was modified.
+
+The reviewable result is on
+[the contribution branch](https://github.com/thakrarsagar/integer-mult-bounds/tree/research/r420-exterior-frame-audit/research/r420-exterior-audit).
+One focused upstream PR will carry this branch; no merge is requested.
