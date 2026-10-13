@@ -1,6 +1,6 @@
 # T16 exchanges through rare full-bin patterns
 
-Conditional candidate kappa **0.001672658625164458**, **+0.000244119%** over PR1087 (0.001672654541898561). Repeated sixteen-bin whole-helper repacking, seeded through rare full-bin patterns, improves the idle-rank profile. The scalar word, role widths and source-event times are unchanged.
+Conditional candidate kappa **0.001672660197076918**, **+0.000338096%** over PR1087 (0.001672654541898561). Repeated sixteen-bin whole-helper repacking, seeded through rare full-bin patterns, improves the idle-rank profile. The scalar word, role widths and source-event times are unchanged.
 
 **Draft: exact arithmetic passes; full independent admission is pending.** Two pinned exact moment engines and all 47 outer inequalities price the proposed profile. This is not yet a verified new record. The unchanged strict verifier will be run next; readiness requires it to pass.
 
