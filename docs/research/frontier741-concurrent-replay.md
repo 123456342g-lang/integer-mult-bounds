@@ -56,11 +56,16 @@ machine. The first row used different checkout/output paths and is timing only.
 | original, sequential | 562 | – | – |
 | concurrent | 495 | 141 | 495 |
 | concurrent | 479 | – | – |
+| concurrent, `--complex-jobs 3` | 293 | 150 | 293 |
 
 Sequential mean 590 s, concurrent mean 487 s: about 17% less wall time, 100 to 120 s
 saved. The concurrent run is bounded below by `complex741` (critical path 469 to 495 s),
-so the bit supplier is hidden but nothing else is. That is 3 sequential and 2 concurrent
-samples on one machine; treat the ratio as indicative, not as a precise speedup.
+so the bit supplier is hidden but nothing else is. With `--complex-jobs 3` the complex
+chain shortens to the dependency chain of #853 and the bit supplier is again fully
+hidden: 293 s, about 50% less than sequential (one sample). That is 3 sequential, 2
+concurrent and 1 combined samples on one machine; treat the ratios as indicative, not
+as precise speedups. #853 alone would leave `bit589` (about 140 s) in series with the
+complex replay; that exact configuration was not run here.
 
 ## Coverage is unchanged
 
@@ -97,10 +102,13 @@ samples on one machine; treat the ratio as indicative, not as a precise speedup.
 * Overlap check at submission: #853 (merged) schedules stages inside `complex741` only and
   does not overlap the bit supplier; no open or merged PR found by search touches
   `verify_frontier741.py` or overlaps `bit589` with `complex741`. The two are
-  complementary: with `--complex-jobs`, the complex chain (about 350 to 390 s in #853's
-  measurement) would hide `bit589` entirely, but that combination is unmeasured here.
-* `--complex-jobs N>1` is exercised only by the existing scheduler tests and command
-  equality, not by a full cold run.
+  complementary: with `--complex-jobs 3` the complex chain hides `bit589` entirely (table
+  above).
+* `--complex-jobs 3` was run cold once (293 s). Its output has the same 385 files as the
+  sequential tree and passes `verify_replay_coverage.py --frontier 741`. Against the
+  sequential tree it differs in the 101 noise files plus `complex741.log`, whose 45
+  lines differ only in the order of `RUN`/`PASS` progress messages; every differing JSON
+  file is identical after masking `seconds` and SHA-256 values.
 * The `u8-native` stage (about 254 s) and the cold #799 `native` stage (about 393 s)
   dominate the remaining serial time and were not examined.
 * Peak memory with both suppliers running was not measured; the 7 GB benchmark machine
