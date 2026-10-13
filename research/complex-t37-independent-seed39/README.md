@@ -1,6 +1,6 @@
-# Conditional U8/T37 construction with paid payload1024
+# Independent U8/T37 construction with paid payload1024
 
-This package supplies a literal T37 whole-owner schedule with the claimed
+Independently developed from PR890 and PR870, this package supplies a literal T37 whole-owner schedule with the claimed
 conditional exponent saving **κ = 0.001661960547713947**. Its full replay must
 finish with `PASS_STRICT_U8_T37_PR589_COMPOSITION` before the claim is admitted.
 The exact gain over PR890's constructed T21 candidate is **0.000000002773066918**.
@@ -20,7 +20,7 @@ From the repository root, with Python 3.12, NumPy, SciPy, SymPy, a C++17
 compiler and Boost headers installed:
 
 ```sh
-python3.12 -B research/complex-t37-owners/verify.py --work /tmp/t37-cold
+python3.12 -B research/complex-t37-independent-seed39/verify.py --work /tmp/t37-cold
 ```
 
 Use a fresh output directory outside the checkout. Set `BOOST_INCLUDE` if
@@ -37,9 +37,9 @@ outer inequalities. Reuse is available only for a complete, source-bound
 PR799 replay **and** its complete PR741 ancestry:
 
 ```sh
-python3.12 -B research/complex-t37-owners/verify.py --work /tmp/t37-strict \
+python3.12 -B research/complex-t37-independent-seed39/verify.py --work /tmp/t37-strict \
   --baseline799 /tmp/frontier799 --ancestor741 /tmp/frontier799/ancestor
-python3.12 -B research/complex-t37-owners/package_controls.py \
+python3.12 -B research/complex-t37-independent-seed39/package_controls.py \
   --replay /tmp/t37-strict --baseline799 /tmp/frontier799 \
   --ancestor741 /tmp/frontier799/ancestor --out /tmp/t37-package-controls.json
 ```
@@ -72,3 +72,5 @@ predecessor credits and substantial OpenAI Codex assistance are recorded in
 [NOTICE.md](NOTICE.md), `VENDOR-PINS.json`, `DEPENDENCY-PINS.json` and the
 package manifest. `SPRINT-CLAIM.json` records seed39 and the local claim;
 no pinned sprint coordination issue was available.
+
+Concurrent credit: Jonathan Capalbo’s PR942 at `1960cfa919a0945d0ca4cb14ea96237000037903`, published during this work’s verification, reaches the same κ with eight owner edits and an all-T bound. This package uses a different ten-edit schedule and adds an independent full reconstruction with 47 package controls and five assertion-targeted payload controls. No unique record or priority claim is made.

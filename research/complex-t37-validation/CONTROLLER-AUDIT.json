@@ -1,7 +1,7 @@
 {
   "status": "PASS_INDEPENDENT_ASYNC_WHOLE_OWNER_CONTROLLER_PHASES_AND_SPECTATORS",
-  "template_sha256": "c39baec63dd80e5db844f6ac6254ec1b4b7e287e07e0f424b8772007650b6e25",
-  "complex_template_sha256": "c39baec63dd80e5db844f6ac6254ec1b4b7e287e07e0f424b8772007650b6e25",
+  "template_sha256": "c22960f1cac456eef5a38d69938fffebcec8423b1c687077a487b442f55e6aaa",
+  "complex_template_sha256": "c22960f1cac456eef5a38d69938fffebcec8423b1c687077a487b442f55e6aaa",
   "complex_live": 33152,
   "complex_profile": {
     "1": 848490,

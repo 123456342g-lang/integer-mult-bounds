@@ -28,3 +28,5 @@ required multiplicity. The generated runtime retains the upstream notices.
 dependencies. Their full source and artifact checks run through the retained
 ancestral verifiers. `MANIFEST.json` binds this package, including all data and
 proof-relevant source bytes.
+
+Jonathan Capalbo (@jon314159), PR942, concurrently constructed the same T37 profile and κ, using eight owner edits and an all-T bound. This package was developed independently from PR890 and PR870 and uses ten edits. PR942 code is not imported; its result is explicitly credited as concurrent corroboration.

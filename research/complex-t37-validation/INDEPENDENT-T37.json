@@ -125,9 +125,9 @@
     "/tmp/mult-t37-baseline799-complete/global/global/base/split-centres/GLOBAL-TEMPLATE.json.gz": "ab8448de2036a23d9b55a196a8846512dc24fdf09855c1e0f0caa5b7a6965f7b",
     "/tmp/mult-t37-baseline799-complete/global/global/base/work/complex-nine-native/DATA-PHASES.json": "c5916ff312678f12aba403847643fbbc29f643acec60bdf836fa56cd3e8251fa",
     "/tmp/mult-t37-baseline799-complete/global/global/base/split-centres/CANONICAL-WORD.json.gz": "66d3c3c70983224650643a0a05a21ac6c6959f84d0f4528650601016f5a76844",
-    "/tmp/mult-t37-strict/native/local/CANONICAL-WORD.json.gz": "387a2266ffe006d20042221d967f67a4b18d9bb8de1cd1e01d4031b539fa74a5",
-    "/tmp/mult-t37-strict/native/local/INDEPENDENT-LOCAL-REPLAY.json": "53bdbb329c2dec59389ddc4aa804b3df8db826d8e23a5d274b1df9edc632cb38",
-    "/tmp/mult-t37-strict/owners/OWNERS.json.gz": "a65ecbd24d37390b4d07581ab288622851e7571722806c976639b9740c1e2e5b",
-    "/tmp/mult-t37-strict/owners/ORDER.json": "42ad19633ed9d67dc54e497bb961be668edbb3e3df3b723d67046e2ca4ef2a19"
+    "/tmp/mult-t37-independent-final/native/local/CANONICAL-WORD.json.gz": "387a2266ffe006d20042221d967f67a4b18d9bb8de1cd1e01d4031b539fa74a5",
+    "/tmp/mult-t37-independent-final/native/local/INDEPENDENT-LOCAL-REPLAY.json": "53bdbb329c2dec59389ddc4aa804b3df8db826d8e23a5d274b1df9edc632cb38",
+    "/tmp/mult-t37-independent-final/owners/OWNERS.json.gz": "a65ecbd24d37390b4d07581ab288622851e7571722806c976639b9740c1e2e5b",
+    "/tmp/mult-t37-independent-final/owners/ORDER.json": "42ad19633ed9d67dc54e497bb961be668edbb3e3df3b723d67046e2ca4ef2a19"
   }
 }

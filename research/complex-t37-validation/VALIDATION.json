@@ -1,16 +1,16 @@
 {
   "status": "PASS_T37_CONSTRUCTION_PACKAGE_CONTROLS_AND_ALL_REQUIRED_VERIFY_TARGETS",
   "base": "f567884aeb8851b6e794af1184119a3bfbe1e631",
-  "refreshed_main": "91a2094f2e022930069e8cfdc810a3ea1b81cd09",
-  "selected_kappa_on_refreshed_main": "0.001661634653669567",
+  "refreshed_main": "bbc600db2fc15007b7c914f4f2b2ed55fa909c87",
+  "selected_kappa_on_refreshed_main": "0.001661960547713947",
   "kappa": "1661960547713947/1000000000000000000",
   "kappa_decimal": "0.001661960547713947",
   "delta_over_pr890": "1386533459/500000000000000000",
   "comparison_pr890_head": "61b71bcf5a34db70220da81fa978d5b0c7bbb008",
-  "latest_pr_metadata_checked": 922,
+  "latest_pr_metadata_checked": 961,
   "baseline_mode": "Fresh full PR589/PR741/PR799 replay, followed by explicit source-bound ancestry reuse in T37 driver",
   "t37_stages": 20,
-  "t37_stage_seconds": 660.847,
+  "t37_stage_seconds": 613.152,
   "baseline_steps": [
     {
       "name": "ancestor",
@@ -51,11 +51,18 @@
   ],
   "package_rejections": 47,
   "package_recompression_positives": 2,
-  "package_manifest_sha256": "a898c2367dc497620f1b2f80b6d663302ed1a69696a2e1998f4bc8489e01f13f",
+  "package_manifest_sha256": "2bde79cc87f02fa6c4c11d38ae306015cd2d4f57710d15d7ee50233a51c3440f",
   "notes": "No remote CI or independent human review claimed. All-size/compiler, realization, whole-call hosting, precision/tape, analytic transfer and bit H1-H5 remain inherited. Finite certificates are not a formal multiplication theorem. Receipts do not authenticate execution history.",
   "refreshed_pr890_head": "4b3bd8cbe8e3e81c44161017c9b72c905a8040a8",
   "pr890_head_delta": "Only .github/workflows/complex-t21-owners.yml changes: CI timeout adjustment. Construction, proof, owner sources, profiles, endpoints and kappa byte-identical.",
   "required_verification": "All18 Makefile verify recipe targets passed in documented stages; full make invocation stopped for environment setup and was resumed at the failed target.",
   "last_four_target_exit_code": 0,
-  "make_target_coverage": "VERIFY-TARGET-COVERAGE.json"
+  "make_target_coverage": "VERIFY-TARGET-COVERAGE.json",
+  "package_path": "research/complex-t37-independent-seed39",
+  "validation_output": "/tmp/mult-t37-independent-final",
+  "metadata_scope": "Inventory of the 100 most recent open PRs through961, then explicit PR942 refresh showing MERGED; selected certificate read at pinned main. Snapshots describe their observation time, not permanent status.",
+  "concurrent_pr942_head": "1960cfa919a0945d0ca4cb14ea96237000037903",
+  "record_claim": "Matches the selected PR942 kappa with a distinct ten-edit owner schedule. No improvement over the current selected value, no uniqueness or priority claim.",
+  "independence_scope": "Independently developed owner schedule and new package/control logic, with a fresh replay of shared pinned inherited verifiers and both inherited exact moment engines.",
+  "coordination": "Pinned issues API returned zero nodes; local sprint claim retained."
 }
