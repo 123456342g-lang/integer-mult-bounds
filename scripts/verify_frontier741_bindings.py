@@ -28,6 +28,24 @@ def digest(path):
     return sha256(path.read_bytes()).hexdigest()
 
 
+EXPECTED_BRIDGE_IDS = frozenset(range(18))
+
+
+def require_bridge_controls(value):
+    require(isinstance(value, list) and len(value) == 18,
+            'Bit bridge controls')
+    seen = []
+    for control in value:
+        require(isinstance(control, dict), 'Bit bridge control record')
+        bridge_id = control.get('omit_bridge')
+        require(type(bridge_id) is int and bridge_id in EXPECTED_BRIDGE_IDS,
+                'Bit bridge control ID')
+        require(type(control.get('rejected')) is bool and control['rejected'] is True,
+                'Bit bridge control rejection')
+        seen.append(bridge_id)
+    require(set(seen) == EXPECTED_BRIDGE_IDS, 'Bit bridge control coverage')
+
+
 def check(bit, complex_dir):
     cited_path = PACKAGE / 'inputs/PR589-EXPECTED.json'
     cited = read(cited_path)
@@ -52,8 +70,7 @@ def check(bit, complex_dir):
             hosted['emitted_program_sha256'] == actual['emitted_program_sha256'], 'Bit emitted program')
     columns = read(bit / 'cout/columns_k4.json')
     require(columns['formal_columns_checked'] == 1327, 'Bit formal columns')
-    require(len(columns['negative_controls']) == 18 and
-            all(x['rejected'] is True for x in columns['negative_controls']), 'Bit bridge controls')
+    require_bridge_controls(columns['negative_controls'])
 
     receipt = read(complex_dir / 'RECEIPT.json')
     require(receipt['manifest_sha256'] == digest(PACKAGE / 'MANIFEST.json') and
