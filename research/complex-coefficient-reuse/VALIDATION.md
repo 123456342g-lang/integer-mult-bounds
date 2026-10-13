@@ -36,3 +36,11 @@ and inherited all-size/physical/analytic obligations remain as described in
 
 Checks and review were performed with substantial OpenAI Codex assistance;
 there was no separate human or delegated-agent review.
+
+Publication-time refresh: 567 open PRs through #748. Newly published #722
+independently overlaps forward cleanup sharing; #739 extends that cleanup
+class across magnitudes. Their exact heads and scope are now credited in
+README.md and OVERLAP.json. A census using the unchanged lowering confirms
+additional A/centre/B coverage and all 1,088 backward precondition runs.
+This update changes documentation/coordination metadata only; the executable
+code, inputs and verified certificate are unchanged.

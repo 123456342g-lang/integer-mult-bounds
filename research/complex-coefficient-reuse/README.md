@@ -172,6 +172,40 @@ mechanism shares preparation across multiple adjacent macros; it is useful
 in addition to that contribution, rather than merely repeating its lowering.
 Historical PR411 is credited for explicitly priced dyadic coefficient words.
 
+
+### Concurrent work checked before publication
+
+While fork access was being arranged, @ellipsi2 published **PR722** at
+`a0766ab0fab379e1997fadc3ca157578d57986c1`. It independently uses the same
+sharing mechanism in the **forward full-frame cleanup**, covering 999 runs
+and 3,022 additions under the original Horner lowering. That overlap is
+explicitly credited; this submission does not claim priority for the mechanism.
+Its additional coverage is all other eligible scalar phases, the backward
+zero-frame precondition, and the verified composition with PR696's lowering.
+The existing `chunks` iterator on the pinned programs gives this phase census:
+
+| Orientation / phase | Runs | Additions | Saving beyond per-macro copy lowering |
+|---|---:|---:|---:|
+| Forward A | 11 | 28 | 102 |
+| Forward centres | 8 | 224 | 1,728 |
+| Forward B | 69 | 222 | 1,038 |
+| Forward full-frame cleanup | 999 | 3,022 | 15,642 |
+| Backward zero-frame precondition | 1,088 | 7,336 | 46,400 |
+
+The cleanup's 15,642 savings use the cheaper per-macro baseline, whereas
+PR722 reports 19,688 against original Horner; these are different baselines,
+not contradictory measurements. Outside cleanup, this package adds 2,868
+forward and 46,400 backward saved primitives over per-macro copy lowering.
+
+Jeffrey Cox (@namredips)'s **PR739**, at
+`abb9825202dba6f9bc95c7df8d12d86088fdff1a`, extends PR722's forward cleanup
+class to coefficient magnitudes related by powers of two. This package does
+not implement that extension or claim combined savings with it. Chris Pagolu
+(@AllStars101-sudo)'s **PR734**, at
+`ba76ba3321d000c8996b0b254bcf0d7260e1bbb6`, and **PR723** supply further
+per-macro signed-digit lowerings; those are also outside this composition.
+No code or certificate is imported from these concurrent submissions.
+
 PR681 resynthesizes a factory scalar word, and PR698 exhausts fixed-boundary
 CK frame choices. This package changes neither object. It does not reopen
 the closed CK frame class, delivery rigidity results or K-triangle relocation
