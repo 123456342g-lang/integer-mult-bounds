@@ -3,23 +3,23 @@
 All eight PR1005 cells in the selected PR1042 seven-slot scalar word have the
 same complete census among the 720 paired source/target label permutations:
 
-| | Frame boundary passes | Frame boundary fails | Total |
+| | Label-span boundary passes | Label-span boundary fails | Total |
 |---|---:|---:|---:|
 | Entering dirt preserved | **6** | 30 | 36 |
 | Entering dirt changed | 42 | 642 | 684 |
 | Total | 48 | 672 | 720 |
 
 Every one of the 5,760 rescaled cells implements its prescribed clean transfer.
-Thus a clean identity check alone admits all 720 choices; a frame check alone
+Thus a clean identity check alone admits all 720 choices; a label-span check alone
 admits 42 choices that change the target entering-helper response. Conversely,
-the dirt condition admits 30 choices that cannot fit the fixed frame boundary.
+the dirt condition admits 30 choices that cannot fit the fixed label-span boundary.
 The original selected labeling is one of the six joint successes in every cell.
 RESULT.json records all successful permutations, the complete census digest,
 actual frames and dirt rows, and an explicit witness for each rejection category.
 
-For example, in cell `01+`, permutation `[0,1,3,2,4,5]` fits the frame boundary
+For example, in cell `01+`, permutation `[0,1,3,2,4,5]` fits the label-span boundary
 but adds `1/4` of entering helper 600 to target 136. Permutation `[0,1,2,5,4,3]`
-preserves entering dirt but fails the frame boundary. The certificate identifies
+preserves entering dirt but fails the label-span boundary. The certificate identifies
 the exact helper, target and rational discrepancy in the first case, and the
 first failing operation, register, joined frame and cap in the second.
 
@@ -38,11 +38,12 @@ Each trial acts on one cell independently. Simultaneously relabel its six x and
 six y names by a permutation, retaining the ordered 21-operation template. Rescale
 to its original coefficient matrix. Entry frames are the actual frames immediately
 before the selected cell; the twelve exit caps are its actual original exit frames.
-Each operation uses the least frame containing both operands' current frames.
-A trial passes exactly when these frames remain below both operands' exit caps.
-At exit, any remaining climb to those caps is charged: the certificate's
-`paid_climbs` includes all such closing climbs, not just the 21 operations.
-This makes the geometry reconnect to the retained suffix at the same boundary.
+Each operation uses the least binary label span containing both operands' current spans.
+The label-span filter passes exactly when these spans remain below both operands' exit caps.
+At exit, every remaining label-span rank difference to those caps is included: the certificate's
+`rank_increment_tally` includes all such closing rank increments, not just the 21 operations.
+This is a rank-difference tally, not an executed primitive or provider invoice.
+This makes the label spans reconnect to the retained suffix at the same boundary.
 It does not optimize paid profiles or assert that any alternative is a complete
 replacement supplier. The six source registers are confirmed untouched by the
 remaining B suffix.
@@ -76,12 +77,15 @@ are zero, while the selected Q already fixes the dirt. There are therefore
 checks the hypotheses and the full rational response, including possible source
 contributions, instead of assuming the zero-row characterization.
 
-For frames, induction shows that every legal frame assignment to this fixed
+For label spans, induction shows that every monotone label-span assignment to this fixed
 operation order contains the least-join assignment at every register and step.
 Thus exceeding an exit cap in that assignment proves impossibility for the
 specified boundary. Conversely, staying within caps gives the literal least-join
-assignment and legal closing climbs. This is an exact finite boundary test,
-not a sufficient-only heuristic and not a statement about relaxed exit caps.
+assignment and closing span inclusions. This is an exact finite label-span boundary test,
+not a statement about relaxed exit caps. Physical/native frame legality may impose
+additional Gram-form or residual conditions: those are not checked here. The six
+joint successes pass two exact necessary filters in this fixed-boundary model only; no sufficiency for native
+admission is claimed.
 The loop is all of S6 for each of the eight cells, with no search budget, pruning
 or admission shortlist.
 
@@ -124,7 +128,7 @@ PR1018 and is reused by selected PR1042. PR1049 (thakrarsagar) already verifies 
 eight selected cells, full local endpoints, entering responses and the leaver
 premise. PR1112 independently checks the selected finite invoice. This work does
 neither audit again: its new object is the complete relabeling boundary atlas and
-the separation of two exact admission conditions. The concurrent round23
+the separation of two exact boundary filters. The concurrent round23
 monotone clean-cell minimum concerns a different class and objective.
 
 No native compilation, Clifford phase audit, provider invoice, outer assembly,

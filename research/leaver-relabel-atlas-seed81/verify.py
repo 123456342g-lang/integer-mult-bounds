@@ -145,9 +145,9 @@ def compute(cells,w,independent=True):
    if independent:
     d2,f2=other.check(ops,ctx,C)
     need((dirty,frame)==(d2,f2),'independent oracle disagreement')
-   key=('dirt_ok' if dirty else 'dirt_fail')+'_'+('frame_ok' if frame else 'frame_fail')
+   key=('dirt_ok' if dirty else 'dirt_fail')+'_'+('span_ok' if frame else 'span_fail')
    buckets[key]+=1
-   rec={'permutation':list(perm),'dirt':dirty,'frames':frame,'failure':fail,'paid_climbs':{str(k):v for k,v in paid.items()} if frame else None}
+   rec={'permutation':list(perm),'dirt':dirty,'frames':frame,'failure':fail,'rank_increment_tally':{str(k):v for k,v in paid.items()} if frame else None}
    if not dirty:
     delta=copy.deepcopy(ctx['dirt'])
     for e in ops:apply(e,delta)
@@ -160,7 +160,7 @@ def compute(cells,w,independent=True):
   # A dropped read must fail the independent endpoint, not just a receipt hash.
   bad=original[:1]+original[2:]
   need(any([rows_matrix(bad)[i+6].get(j,F(0)) for j in range(6)]!=C[i] for i in range(6)),'dropped read control');controls+=1
-  need('dirt_fail_frame_ok' in witness and 'dirt_ok_frame_fail' in witness,'both distinct rejection mechanisms');controls+=2
+  need('dirt_fail_span_ok' in witness and 'dirt_ok_span_fail' in witness,'both distinct rejection mechanisms');controls+=2
   empty=copy.deepcopy(ctx);empty['exit']=[()]*12
   need(not classify(original,empty)[2],'empty cap control');controls+=1
   # The source-read criterion is necessary here, not only sufficient: target
@@ -176,8 +176,8 @@ def compute(cells,w,independent=True):
     'counts':dict(sorted(buckets.items())),'clean_target_labels':clean,'accepted_permutations':accepted,
     'examples':witness,'atlas_sha256':hashlib.sha256(enc(records).encode()).hexdigest()})
  return {'base':BASE,'word_sha256':'c2b294300760e1fd6eeab8c22c4d13e4633dca40e52cac8da0d68163a76e3ca8',
-  'model':'individual S6 cell relabelings; fixed actual entry frames and original cell exit caps; target entering-dirt equality',
-  'cells':results,'entering_helpers':enter,'independent_entry_columns':len(enter),'trials':5760,'clean_transfers_checked':5760,'controls':controls,'native_executed':False,'new_kappa':False}
+  'model':'individual S6 cell relabelings; exact monotone GF(2) label-span containment within fixed entry and exit caps; target entering-dirt equality; no Gram or residual-legality test',
+  'cells':results,'entering_helpers':enter,'independent_entry_columns':len(enter),'trials':5760,'clean_transfers_checked':5760,'controls':controls,'gram_or_residual_legality_checked':False,'primitive_cost_invoice':False,'native_executed':False,'new_kappa':False}
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--write',action='store_true');a=ap.parse_args()
  cells,w=inputs();out=compute(cells,w)
