@@ -1,5 +1,5 @@
 {
-  "status": "REVIEW_COMPLETE_PUBLICATION_PENDING",
+  "status": "PUBLISHED_EIGHTEEN_MERGED_LOCAL_VERIFICATION_PASSED",
   "selected_kappa": "1661957774647029/1000000000000000000",
   "frontier_changed": false,
   "reviewed_heads": {
@@ -145,6 +145,59 @@
     "docs/research/community-batch932-review.md": "c9ea20ad52dbb583eec9f32c1d4cb8e8068f3a962337409e4e80cfacad21a703"
   },
   "linux_ci": {
-    "status": "No Linux run for this new batch yet; local checks recorded separately."
-  }
+    "status": "Pending; no passed Linux integration claimed for this batch.",
+    "tested_commit": "cdd6e3468b6e8cfd69df4edf45de009ae79252ac",
+    "runs": [
+      {
+        "conclusion": "",
+        "databaseId": 38411086047,
+        "headSha": "cdd6e3468b6e8cfd69df4edf45de009ae79252ac",
+        "name": "Verify research artifacts",
+        "status": "queued",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38411086047"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38411086051,
+        "headSha": "cdd6e3468b6e8cfd69df4edf45de009ae79252ac",
+        "name": "Verify early reset and kernel composition",
+        "status": "in_progress",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38411086051"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38411085571,
+        "headSha": "cdd6e3468b6e8cfd69df4edf45de009ae79252ac",
+        "name": "Verify terminal elimination on the paired-cube bit word",
+        "status": "in_progress",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38411085571"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38411085310,
+        "headSha": "cdd6e3468b6e8cfd69df4edf45de009ae79252ac",
+        "name": "Community exact tooling and scoped audits",
+        "status": "in_progress",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38411085310"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38411084830,
+        "headSha": "cdd6e3468b6e8cfd69df4edf45de009ae79252ac",
+        "name": "Verify recycled bit registers on the paired-cube bit word",
+        "status": "in_progress",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38411084830"
+      },
+      {
+        "conclusion": "success",
+        "databaseId": 38411085216,
+        "headSha": "cdd6e3468b6e8cfd69df4edf45de009ae79252ac",
+        "name": "Graded box convolution",
+        "status": "completed",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38411085216"
+      }
+    ]
+  },
+  "source_commit": "550746fd",
+  "publication_commit": "cdd6e3468b6e8cfd69df4edf45de009ae79252ac"
 }
