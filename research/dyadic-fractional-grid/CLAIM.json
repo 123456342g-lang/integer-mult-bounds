@@ -68,7 +68,7 @@
     }
   },
   "initial_open_pr_count": 648,
-  "status": "validated; ready for submission",
+  "status": "submitted",
   "final_overlap_check": {
     "at_utc": "2026-10-13T08:30:13.943767+00:00",
     "open_pr_count": 659,
@@ -99,5 +99,7 @@
     "receipt": "EXPECTED.json",
     "details": "VALIDATION.md",
     "all_local_checks": "passed"
-  }
+  },
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/866",
+  "submitted_at_utc": "2026-10-13T08:32:40.046289+00:00"
 }
