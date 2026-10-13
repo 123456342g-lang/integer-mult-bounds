@@ -32,4 +32,16 @@ does not concern verifier performance. PR667/672 address interval arithmetic.
 The selected PR626 certificate, its actual PR543 supplier and review, and the
 repository contribution instructions remain as established at the recorded base.
 
-Result: pending.
+Result: **completed tooling improvement**, submitted as
+[PR709](https://github.com/CrocSwap/integer-mult-bounds/pull/709).
+The same original mutation suite takes 8.239 s uncached and 1.273 s cached
+(6.47x) in the recorded local pair. Complete diagnostics match byte for byte;
+receipts, all ten original controls and twenty supplemental checks agree.
+The adapter is optional, bounded and source-pinned. No existing verifier,
+selected construction or upstream file changes; no new kappa.
+
+The pre-submission metadata refresh reached #704 with no overlapping PR543
+geometry-cache task. Main still equals the recorded base. Evidence, source pins,
+reproduction command, dependency argument and limits are in this package.
+This is the single result update to the local claim; no coordination thread
+was available.
