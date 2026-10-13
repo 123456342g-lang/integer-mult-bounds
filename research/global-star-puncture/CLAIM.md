@@ -11,3 +11,27 @@
 - Coordination: GitHub returned no pinned issues immediately before this claim. Open PR titles and relevant bodies through #709 were inspected. No separate reservation issue was opened.
 - Predecessor: Sam Sung / @the-missionary-company, PR #669, head `308f1e6ec3bb0b6ec0584cf7bfe219addc219b1e`; its symmetric predecessor is Joel Pulikkan / GamingPuzzled's #231.
 - Contributor: @thakrarsagar, with substantial OpenAI Codex assistance.
+
+## Result update, 2026-10-13 04:52 UTC
+
+Submitted [PR #725](https://github.com/CrocSwap/integer-mult-bounds/pull/725).
+The global proper-star threshold is exactly three punctures for every
+power-of-two `k>=2,p=k+1`. At `k=4,p=5`, the coefficient space has dimension
+65 and exactly 67 minimum patterns through the recorded target; only four
+work with target-local stars. All 67 literal decoder certificates and seven
+controls pass. No new kappa or paid supplier is claimed.
+
+The experiment finished before the planned deadline. Verification and packaging
+began at 04:47 UTC, reserving more than the final quarter of the session.
+Replays pass on Python 3.14.8, 3.12.15 and 3.11.15, including isolated optimized
+mode. A separate agent reviewed the mathematics, implementation and source pins.
+Selected-record integrity and staged whitespace checks pass. The repository-wide
+suite and selected supplier cold replay were not repeated; no existing supplier
+or selected certificate changes.
+
+The final overlap scan covered 541 open PRs through #722. PR #669 remains at
+the pinned head and is credited as the predecessor. PR #715 studies a distinct
+E8 mixed-port geometry, and #717's decoder floors concern complex E8 ports.
+Neither overlaps this paired-hypercube result. Main remains at the recorded
+base. A repeated pinned-issue query returned no coordination issue, so this is
+the single local claim result update.
