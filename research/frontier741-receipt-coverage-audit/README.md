@@ -1,4 +1,4 @@
-# Selected PR741 composition receipt coverage audit
+# PR741 composition receipt coverage audit
 
 **Research audit and supplemental evidence check; no new kappa.** The pinned
 `scripts/verify_frontier741_bindings.py` accepts incomplete complex replay
@@ -60,7 +60,7 @@ Expected result:
 PASS_SCOPED_PR741_RECEIPT_COVERAGE_AUDIT 111 altered-evidence cases accepted by original; 117 mutations rejected by supplement; pristine accepted
 ```
 
-The command checks source SHA256 pins, extracts ordinary archive members into
+The command checks runtime source SHA256 pins, extracts ordinary archive members into
 a temporary directory, invokes the original check on actual file mutations,
 and compares every outcome against the committed receipt. It does not execute
 the expensive supplier construction, use a solver or contact GitHub.
@@ -98,9 +98,20 @@ Audited PR741 source head, as recorded in the selection:
 [SOURCES.json](SOURCES.json) records SHA256 and exact base Git-blob IDs for
 the binding checker, its four repository input files, existing regression tests,
 producer, immutable replay archive, selected record and maintainer review.
-The archive's exact container
-hash is appropriate here because it is a committed immutable input; no
+The selected-record pin records the immutable base snapshot as historical
+context; it is not a runtime dependency on the moving selection file. All nine
+runtime input pins are checked. The archive's exact container hash is
+appropriate here because it is a committed immutable input; no
 regenerated gzip hash is used as a mathematical equality test.
+
+The final upstream refresh reached
+`f567884aeb8851b6e794af1184119a3bfbe1e631`, which selects PR799 at conditional
+kappa `1661634653669567/1000000000000000000`. The audited PR741 checker and
+all nine runtime inputs remain byte-identical there. The investigation keeps
+its original base and object; it does not audit PR799's new construction.
+The [PR799 binding at that pinned refresh](https://github.com/CrocSwap/integer-mult-bounds/blob/f567884aeb8851b6e794af1184119a3bfbe1e631/scripts/verify_frontier799_bindings.py)
+calls this PR741 checker for ancestry and then performs additional checks.
+Acceptance of the mutations by that complete newer wrapper is not claimed.
 
 Seed **72** selects the adversarial audit track and rotates the two complete
 traversals. The domains are all 22 single-stage replacements, all 44 single

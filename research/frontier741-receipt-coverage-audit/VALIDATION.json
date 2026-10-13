@@ -24,6 +24,12 @@
     {
       "name": "supplemental_cli_missing_42_files",
       "result": "rejected at required artifact inventory"
+    },
+    {
+      "name": "moving_selection_compatibility",
+      "upstream_commit": "f567884aeb8851b6e794af1184119a3bfbe1e631",
+      "selected_kappa": "1661634653669567/1000000000000000000",
+      "result": "Identical audit receipt with PR799 selection metadata; runtime source corruption still rejected under isolated optimized Python"
     }
   ],
   "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",

@@ -17,7 +17,7 @@ import subprocess
 import sys
 import tarfile
 import tempfile
-from typing import Protocol, TypedDict, cast
+from typing import Literal, Protocol, TypedDict, cast
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
@@ -47,6 +47,12 @@ class Coverage(TypedDict):
     artifacts: list[str]
 
 
+class SourcePin(TypedDict):
+    sha256: str
+    git_blob: str
+    role: Literal['runtime', 'base-selection-context']
+
+
 class Binding(Protocol):
 
     def check(self, bit: Path, complex_dir: Path) -> dict[str, object]: ...
@@ -73,10 +79,14 @@ def read_receipt(directory: Path) -> Receipt:
     return cast(Receipt, read_json(directory / 'RECEIPT.json'))
 
 
-def check_sources() -> dict[str, dict[str, str]]:
-    sources = cast(dict[str, dict[str, str]], read_json(HERE / 'SOURCES.json'))
+def check_sources() -> dict[str, SourcePin]:
+    sources = cast(dict[str, SourcePin], read_json(HERE / 'SOURCES.json'))
     for relative, pin in sources.items():
-        require(digest(ROOT / relative) == pin['sha256'], 'Audited source changed: ' + relative)
+        require(pin['role'] in {'runtime', 'base-selection-context'}, 'Unknown source role: ' + relative)
+        if pin['role'] == 'runtime':
+            require(digest(ROOT / relative) == pin['sha256'], 'Audited source changed: ' + relative)
+        else:
+            require(relative == 'certificates/selected-result.json', 'Unexpected selection context')
     return sources
 
 
