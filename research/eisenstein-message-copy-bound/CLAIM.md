@@ -24,4 +24,14 @@ The revised scope is fixed-support, deterministic, zero-error nonlinear messages
 
 ## Result update
 
-Pending.
+Completed 2026-10-13 06:16 UTC: submitted one research-note PR, [#814](https://github.com/CrocSwap/integer-mult-bounds/pull/814). Construction/proof commit: `f916c8b20060706bcc50a931a8138bab998aa0de`.
+
+- Result: fixed-support, deterministic, zero-error nonlinear messages on the 40 Eisenstein E8 lines obey C >= 22b for equal b-bit demands, with additive width-times-pairing-rank pricing. Unequal demands obey the weighted 11/20 sum bound and the maximum clique-demand bound. The physical pricing premise is explicit. No new kappa or supplier is claimed.
+- Complete geometric coverage: all 772 flats, 298,378 unordered flat pairs, 30,880 line extensions and 2,970 maximal cliques. Stopping rule: exhaust that finite domain and the declared message controls, then package one result. No incompleteness or timeout is presented as an impossibility theorem.
+- New evidence beyond #798/#785: the Eisenstein nonlinear and unequal-demand composition; 4,096 nonlinear inputs and 303,104 conditional transcripts; unequal-width and side-information boundary examples; exact reconstruction and a separate modular/Fraction arithmetic checker. The geometric scalar result and transcript method retain predecessor credit.
+- Validation: both implementations pass on CPython 3.14.4 and 3.12.13; 12 rejection controls, relocation, source/certificate tampering, output preservation, committed-byte equality and selected-record integrity pass. Structured autoreview reports no actionable findings. See VALIDATION.md for exact scope and commands.
+- Final pre-submission refresh: 625 open PRs through #812; #798 and #785 remain at their pinned heads. New #801 is a distinct format-ceiling/coordinate-total note. No pinned coordination issue exists; no reservation issue was opened. This is the single result update to the local claim.
+- Upstream advanced to `7ee02b7c96d85f22b38d28bd7ed49bb8c1aeb261` and selected #741 at kappa 1661202643272239/1000000000000000000. Its review was read. All pinned base geometry files remain byte-identical. The contribution retains its exact starting base and changes no selected or upstream file.
+
+Reproduce (Python 3.10+): `python3 -B research/eisenstein-message-copy-bound/verify.py`. Expected prefix: `PASS_EISENSTEIN_MESSAGE_BOUND`. Prepared by Michael Fischler (@shiftybitshiftr) with substantial OpenAI Codex assistance; Apache-2.0.
+
