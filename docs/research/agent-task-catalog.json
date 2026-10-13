@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "priority_revision": 1,
+  "priority_log": "docs/research/research-priority-log.md",
   "assessed_on": "2026-10-13",
   "status": "Research suggestions, not reservations or assertions that these questions are unclaimed. Check current main and live PRs.",
   "tracks": [

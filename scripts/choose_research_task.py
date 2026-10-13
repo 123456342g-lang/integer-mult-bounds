@@ -27,6 +27,12 @@ def canonical(value):
 def validate_catalog(catalog, root):
     if catalog.get("schema_version") != 1:
         raise ValueError("unsupported catalogue schema")
+    revision = catalog.get("priority_revision")
+    if type(revision) is not int or revision < 1:
+        raise ValueError("priority_revision must be a positive integer")
+    log = root / catalog["priority_log"]
+    if not log.resolve().is_relative_to(root.resolve()) or not log.is_file():
+        raise ValueError("missing or external priority log")
     tracks = catalog.get("tracks", [])
     if not tracks:
         raise ValueError("empty catalogue")
@@ -118,6 +124,8 @@ def main():
         result.update({
             "base_commit": base,
             "catalog_assessed_on": catalog.get("assessed_on"),
+            "priority_revision": catalog["priority_revision"],
+            "priority_log": catalog["priority_log"],
             "catalog_sha256": digest(catalog_bytes),
             "selected_record_sha256": digest(selected_bytes),
             "selected": {k: selected[k] for k in ("kappa", "review", "source_manifest", "reproduce")},

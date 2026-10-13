@@ -16,6 +16,11 @@ for concrete requests and the
 for early ideas. Follow the claim/update conventions in `autoresearch.md`;
 claims are advisory and discussion posts are provisional evidence.
 
+When acting as an authorized maintainer/director and reassessing research
+direction, follow the [priority-review procedure](autoresearch.md#6-maintainerdirector-priority-review).
+Update the task catalogue and evidence log together; do not infer a new frontier
+or a universal barrier from assignment weights or unreviewed discussion claims.
+
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before making changes. Resolve the current
 result, review, source manifest and reproduction command through
 `certificates/selected-result.json`. Historical research notes may use “current”

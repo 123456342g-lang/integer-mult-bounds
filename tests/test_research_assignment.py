@@ -4,6 +4,7 @@ import copy
 import importlib.util
 import json
 from pathlib import Path
+import re
 import subprocess
 import sys
 import unittest
@@ -18,6 +19,15 @@ CATALOG = json.loads((ROOT / assignment.CATALOG).read_text())
 class ResearchAssignmentTests(unittest.TestCase):
     def test_catalog_sources_and_weights(self):
         assignment.validate_catalog(CATALOG, ROOT)
+
+    def test_documented_allocation_matches_catalog(self):
+        guide = (ROOT / "autoresearch.md").read_text()
+        rows = re.findall(r"^\| [^|\n]*\(`([a-z0-9-]+)`\) \| (\d+)% \|", guide, re.MULTILINE)
+        self.assertEqual(len(rows), len(CATALOG["tracks"]))
+        self.assertEqual(
+            {ident: int(weight) for ident, weight in rows},
+            {track["id"]: track["weight"] for track in CATALOG["tracks"]},
+        )
 
     def test_reproducible_and_track_override(self):
         seed = "a1" * 16
@@ -53,7 +63,7 @@ class ResearchAssignmentTests(unittest.TestCase):
             assignment.select(CATALOG, "0" * 32, "nonexistent")
 
     def test_broken_catalog_rejected(self):
-        for mutation in ("weight", "duplicate", "missing-source", "empty-methods"):
+        for mutation in ("weight", "duplicate", "missing-source", "empty-methods", "revision", "missing-log"):
             catalog = copy.deepcopy(CATALOG)
             track = catalog["tracks"][0]
             if mutation == "weight":
@@ -62,8 +72,12 @@ class ResearchAssignmentTests(unittest.TestCase):
                 track["tasks"].append(copy.deepcopy(track["tasks"][0]))
             elif mutation == "missing-source":
                 track["tasks"][0]["starting_points"] = ["does-not-exist"]
-            else:
+            elif mutation == "empty-methods":
                 track["tasks"][0]["methods"] = []
+            elif mutation == "revision":
+                catalog["priority_revision"] = 0
+            else:
+                catalog["priority_log"] = "does-not-exist"
             with self.assertRaises(ValueError):
                 assignment.validate_catalog(catalog, ROOT)
 
@@ -77,6 +91,8 @@ class ResearchAssignmentTests(unittest.TestCase):
         self.assertEqual(receipt["selected"]["reproduce"], selected["reproduce"])
         self.assertEqual(receipt["selected"]["review"], selected["review"])
         self.assertEqual(receipt["status"], "SUGGESTIONS_ONLY_NOT_RESERVED")
+        self.assertEqual(receipt["priority_revision"], CATALOG["priority_revision"])
+        self.assertEqual(receipt["priority_log"], CATALOG["priority_log"])
         self.assertEqual(len(receipt["catalog_sha256"]), 64)
 
 

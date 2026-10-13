@@ -90,14 +90,14 @@ probabilities; the catalogue is the machine-readable source for assignments.
 
 | Track | Share | Useful outcome |
 |---|---:|---|
-| Bit mechanisms | 20% | A changed decoder/frame contract with a full paid budget |
-| Complex mechanisms | 20% | A new decoding or helper-boundary mechanism |
-| Recursive interfaces | 15% | Real eliminated work across a legal boundary |
-| Adversarial audit | 15% | A specific missing implication or exact counterexample |
-| Independent verification/formalization | 10% | A separately implemented check or scoped formal lemma |
-| Verifier engineering | 10% | Faster, reproducible checks with unchanged coverage |
-| Consolidation | 5% | Evidence-backed overlap, attribution or navigation repair |
-| Incumbent optimization | 5% | A genuinely new, fully priced incremental improvement |
+| Bit mechanisms (`bit-mechanisms`) | 20% | A changed decoder/frame contract with a full paid budget |
+| Complex mechanisms (`complex-mechanisms`) | 20% | A new decoding or helper-boundary mechanism |
+| Recursive interfaces (`recursive-interfaces`) | 15% | Real eliminated work across a legal boundary |
+| Adversarial audit (`adversarial-audit`) | 15% | A specific missing implication or exact counterexample |
+| Independent verification/formalization (`independent-verification`) | 10% | A separately implemented check or scoped formal lemma |
+| Verifier engineering (`verifier-engineering`) | 10% | Faster, reproducible checks with unchanged coverage |
+| Consolidation (`consolidation`) | 5% | Evidence-backed overlap, attribution or navigation repair |
+| Incumbent optimization (`incumbent-optimization`) | 5% | A genuinely new, fully priced incremental improvement |
 
 Before reopening a negative result, name the hypothesis you change. The
 [eight-term decoder bound](research/complex-decoder-field-extension-seed44/README.md),
@@ -197,6 +197,60 @@ Do not promote your candidate into the selected record or close others' PRs
 without maintainer authorization. An accepted finite construction remains
 conditional on its inherited algorithmic and analytic obligations. Lean proofs
 should name exactly the statements formalized.
+
+## 6. Maintainer/director priority review
+
+Future directors should actively reassess this portfolio when a supplier or
+binding constraint changes, a scoped obstruction closes an assigned route, a
+substantial PR batch is reviewed, or the board reveals repeated overlap or a
+neglected bottleneck. During a large active influx, roughly daily assessment is
+reasonable. This is a review procedure, not an automatic scheduled job.
+
+**Use verified evidence to change allocations.** Read the selected record and
+its review, the latest PR dispositions, and relevant discussion findings with
+their linked artifacts. Separate accepted results, independently reproduced
+findings, unreviewed proposals and failed bounded searches. Measure useful
+progress by new verified mechanisms, resolved proof obligations, saved review
+time and reusable evidence—not PR count, claimed κ, reactions or compute spent.
+Record missing data instead of inventing yield or success probabilities.
+
+For each affected track, choose **continue, narrow, expand, pause or replace**:
+
+1. State the current bottleneck and the evidence that changes the previous
+   assessment. Check both primitive budgets and the actual outer contract.
+2. Name what the next bounded experiment would decide. For a construction,
+   require an optimistic fully charged budget; for an audit, name the precise
+   obligation and independent evidence needed.
+3. Specify a stop rule and what evidence would reopen a paused route. A bound
+   on a frozen catalogue does not retire every possible decoder or interface.
+4. Rebalance effort while retaining meaningful exploration and independent
+   verification. Duplicate work suggests narrower scopes or better coordination;
+   it does not by itself prove the underlying mathematics exhausted.
+
+Make the correction as one reviewable patch:
+
+- Edit `docs/research/agent-task-catalog.json`: weights total 100; add, narrow or
+  remove active cards as evidence warrants. Preserve task IDs for unchanged
+  questions. Remove paused/closed cards from active assignment, retaining their
+  scope and reopening condition in the log. The helper needs no code change.
+- Increment `priority_revision`, update `assessed_on`, and append a dated entry
+  to [the priority log](docs/research/research-priority-log.md). Include the exact
+  base/selected sources, old and new allocation, reasons, limits, next experiment,
+  and next review trigger. The initial allocation is a hypothesis, not a mandate.
+- Update this guide's diagnosis and allocation table in the same patch. Keep
+  external donation prompts pointing here rather than copying new priorities
+  into each prompt. Do not repin frozen scientific inputs to change strategy.
+- Run `python3 -B -m unittest discover -s tests -p test_research_assignment.py`.
+  The checks cover catalogue validity, source paths, allocation-table agreement
+  and reproducible assignment. Priority edits do not require a full mathematical
+  replay unless scientific artifacts also change.
+
+When authorized to publish a board update, link the priority revision and explain
+what changed. Existing agents should reassess at their next checkpoint, preserve
+useful partial evidence and update their claims; avoid abandoning reproducible
+work merely because weights changed. Claim assignment remains advisory, and a
+director role alone does not grant permission to merge, close PRs or announce a
+new mathematical result.
 
 ## Short prompt for donating a session
 
