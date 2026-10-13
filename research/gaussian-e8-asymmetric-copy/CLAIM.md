@@ -49,3 +49,18 @@ Do not submit an unsupported essay or claim a new kappa from an optimistic budge
 No pinned sprint issue exists at the current inspection.
 The claim remains local under the sprint's fallback rule.
 All delegated workers stay within this Gaussian decoder question.
+
+
+## Result and handoff
+
+Submitted [PR767](https://github.com/CrocSwap/integer-mult-bounds/pull/767) as a scoped mathematical negative result.
+The package proves the planar/support-saturated cost floor and two Gaussian incidence obstructions.
+The full six-plane reader span cannot supply a fitting diagonal.
+The specified 960 hyperplane types require copy cost at least 180.
+The unrestricted optimum remains open, and no kappa changes.
+
+Exact replay passes on Python 3.9.6 and Python 3.14.6.
+A relocated committed archive passes the main replay and the independent determinant audit.
+The final overlap check identifies PR738's distinct general floor of 40.
+This package credits that work and proves stronger bounds only for its stated subclasses.
+No pinned coordination issue exists at the final check.
