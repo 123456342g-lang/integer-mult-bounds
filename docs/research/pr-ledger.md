@@ -28,7 +28,7 @@ This frozen round covers #543/#545/#555 and related construction, research and t
 1. Follow the new Linux CI for the published #442/#484/#509/#516/#520 batch; the [scoped review](community-formal-20261012-review.md) records completed local checks.
 2. Follow the explicit construction-family dispositions and remaining obligations; do not repeat completed foundation replays without a source/input change.
 3. Review #525’s checkpoint/ceiling and #529/#532’s distinct construction mechanisms; retain parallel credit.
-4. Reconcile #210/#279 updates with their earlier incorporated heads; audit #236’s source-package integration separately from its already published review receipts.
+4. Reconcile #210's remaining ancestral paths and audit #236's source-package integration separately from its published review receipts. For #279, the [commit-authenticated parent inventory](../../research/pr279-parent-closure/README.md) closes the 116-path source-coverage question left by batch970 using #828's retained sources and replay; acceptance and parent disposition remain separate maintainer decisions.
 5. Continue finite-instance connections for formal interfaces; abstract theorem builds do not instantiate all current physical constructions.
 
 ## Starting PR inventory
