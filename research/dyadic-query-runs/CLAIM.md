@@ -42,4 +42,27 @@ construction and maintainer review were followed. The first checkout read
 saw the older PR799 snapshot while the fetch was running; that snapshot is
 not used as the accepted result here.
 
-Result: pending verification.
+## Result update
+
+Completed contribution: [PR953](https://github.com/CrocSwap/integer-mult-bounds/pull/953),
+**recursive-interface research construction; no new kappa**. The written
+argument proves the `2|J|+runs(J)` query optimum in the declared uniform
+target-only dyadic alphabet, including arbitrary off-support excursions.
+The seed-55 batch uses 12 children and 72 affine events instead of 15 and 90,
+with ten XOR scans and no extra full private row in both programs. Actual
+coefficient-dependent work and all inherited implementation obligations remain
+explicit in [the proof and recurrence](PROOF.md).
+
+All 63 literal cases, the separate 15-selection bounded walk census, 252 dirty
+forward/inverse case pairs, 15 rejection controls and eight package faults
+pass. The complete evidence agrees on Python 3.14.6 and 3.9.6; source Git
+objects, relocation and regeneration pass. See [validation](VALIDATION.md)
+for the exact domains and the incomplete root-suite boundary (missing SymPy).
+
+The full overlap refresh reached #947 and the immediate pre-submission check
+reached #950, again with no pinned coordination issue. PR840's consumed head
+remains unchanged. Main advanced to `007664306fff84fbb1c9a1b4053b69f439764034`
+without changing the selected record. The mathematical implementation and
+certificate were committed at `282eff4d60bacfe1d0018bc08b22a2e1bf8d5928`;
+this result update adds publication metadata only. Verification and packaging
+occupied the final part of the session, after implementation was frozen.

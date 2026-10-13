@@ -70,6 +70,11 @@ does not change the selected record. The refreshed queue contains 700 open
 PRs through #947; the closest dependency PR840 remains at the exact consumed
 head. Its current discussion has no review or comment introducing a changed
 contract. PUBLICATION-CONTEXT.json records the overlap scope and heads.
+The immediate pre-submission refresh checked 40 recent open PRs through #950
+and again found no pinned coordination issue. The complete optimized replay
+and selected-record/five-test checks pass at mathematical commit
+`282eff4d60bacfe1d0018bc08b22a2e1bf8d5928`. The subsequent claim/publication
+update changes documentation and context metadata only.
 
 The required root `make verify` was launched once in an untouched archive of
 the exact base, so unrelated regeneration cannot enter this contribution.

@@ -48,9 +48,32 @@
     }
   ],
   "distinct_contribution": "Batch several PR840 pairs on the same target; prove the optimum within the target-only dyadic query alphabet. No duplicate identified in the inspected queue.",
+  "immediate_submit_refresh": {
+    "max_pr": 950,
+    "new_prs_since_full_refresh": [
+      {
+        "head": "5bafe2c91e045d10de207b9e5b21630dfebb9cd2",
+        "number": 950,
+        "title": "Tooling: 1.61x faster exact historical central-factor audit (no new kappa)"
+      },
+      {
+        "head": "102ddfb47d11c8ad66121350907d4a2cc04cea8c",
+        "number": 949,
+        "title": "Scoped negative result: exact 73-primitive factory scale optimum (no new kappa)"
+      },
+      {
+        "head": "eb11543094825c193c4bccece4857601fcd1620a",
+        "number": 948,
+        "title": "Independent verification: symbolic PR479 chirp state transitions (no new kappa)"
+      }
+    ],
+    "pinned_issue": null,
+    "recent_open_count": 40
+  },
   "max_pr": 947,
   "open_pr_count": 700,
   "pinned_coordination_issue": null,
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/953",
   "refreshed_main": "007664306fff84fbb1c9a1b4053b69f439764034",
   "search_terms": [
     "dyadic query",
@@ -63,5 +86,6 @@
     "dyadic-run"
   ],
   "selected_record_sha256": "41fb066ff0f43ce472323195e9088d6d888715c13c54eae7b42e357ed5bfc726",
-  "selected_record_unchanged": true
+  "selected_record_unchanged": true,
+  "verified_mathematical_commit": "282eff4d60bacfe1d0018bc08b22a2e1bf8d5928"
 }
