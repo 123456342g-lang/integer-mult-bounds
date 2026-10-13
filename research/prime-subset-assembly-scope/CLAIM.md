@@ -10,3 +10,24 @@
 - Coordination: no pinned sprint issue was present in the live public issue listing. Claim is local; no separate reservation issue opened. Curiosity Bot GitHub searches for prime-subset/common-subset returned no overlapping PR, and the current ledger/negative-result notes were read. Existing #927 historical J/kappa ranking and #930 PR210 reconciliation are distinct and not used as dependencies.
 - Selected context: conditional kappa 1661960547713947/10^18 (T37/#942). This historical reconciliation leaves the selected frontier and upstream unchanged.
 - Contributor: woklerx, with substantial OpenAI Codex assistance including an independent scoped agent review. Apache-2.0.
+
+## Result and handoff (single claim update)
+
+Completed 2026-10-13 at 09:09 America/Los_Angeles. Submitted one focused
+[research-note PR, #996](https://github.com/CrocSwap/integer-mult-bounds/pull/996).
+The [result](README.md) reconciles the historical `/5` exclusion with balanced
+`A/(1+A)`: all 626 finite cases and a strengthened analytical tail give a
+conditional family ceiling below `2^-24`; that transferred envelope does not
+exclude `2^-25` or `2^-26`. No supplier, bridge admission or new kappa is claimed.
+Fourteen focused tests, three historical family tests, optimized replay and
+selected-record integrity passed; see [VALIDATION.json](VALIDATION.json).
+
+Work was finalized in the isolated branch
+`research/prime-subset-assembly-reconciliation-seed95` after other work appeared
+in the shared checkout. The exact base and every existing file remain unchanged.
+Curiosity Bot searches for `repo:CrocSwap/integer-mult-bounds is:pr "prime-subset"`
+and the analogous `"common-subset"` query returned no matches immediately before
+submission. The open issue listing still contained only #913 and #650, with
+no pinned sprint coordination issue; no reservation issue or external claim
+comment was created. The scoped agent review is AI-assisted, not independent
+human peer review.
