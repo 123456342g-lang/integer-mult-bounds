@@ -48,6 +48,7 @@
   ],
   "overlap_refresh": {
     "distinction": "R480 quad1; PR691 changes R420 quad13. No pending source imported. R480 matches only historical boundary formalizations in the final targeted query.",
+    "immediate_pre_submission_latest_pr_seen": 816,
     "latest_pr_seen": 814,
     "no_coordination_issue": true,
     "queries": [
