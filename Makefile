@@ -604,3 +604,10 @@ frontier890-verify: selected-record-check
 frontier942-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier942.XXXXXX"); \
 	python3 -B scripts/verify_frontier942.py --work "$$work/replay"
+
+# Independent verification: code-disjoint pricing of the pending kappa claims (no new kappa).
+.PHONY: pending-claims-pricing-verify
+pending-claims-pricing-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-pending-claims.XXXXXX"); \
+	python3 -B research/pending-claims-independent-pricing/verify.py --work "$$work/replay" && \
+	python3 -B -m unittest discover -s research/pending-claims-independent-pricing -p test_package.py
