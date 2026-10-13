@@ -17,3 +17,13 @@ Acceptance requires a positive fully priced saving, exact maps including arbitra
 During optimistic pricing, the initial two-stream recipe was simplified to one stream. Halve the signed source sum first, then scan numerator bits from least to most significant, accumulating into the target at each set bit and doubling the work stream between bits. This is the transpose direction of binary Horner sharing. It needs no added private register and explicitly credits the related forward construction in #722.
 
 Prepared for Sagar Thakrar, @thakrarsagar, with substantial OpenAI Codex assistance. Apache-2.0.
+
+## Result
+
+Completed and submitted as [PR #751](https://github.com/CrocSwap/integer-mult-bounds/pull/751).
+All 999 backward cleanup batches, covering 3,022 additions, preserve their
+exact maps and save 19,688 real primitives with one existing private stream.
+The full backward prefix remains 101 bits. Main replay, twelve controls,
+the separate 5,020-column block checker and selected-record check pass.
+The contribution is a finite circuit research construction with no new kappa;
+production integration and inherited global obligations remain open.
