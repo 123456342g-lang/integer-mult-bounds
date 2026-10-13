@@ -37,6 +37,14 @@ No pinned coordination issue existed. Relevant refreshed heads were:
 These pending contributions are credited context, not source dependencies.
 The metadata refresh found no duplicate signed-digit JP8 contribution.
 
+The post-submission head check found concurrent #722 at
+`a0766ab0fab379e1997fadc3ca157578d57986c1`. Its body and file inventory were
+inspected. It shares preparation across forward cleanup blocks and keeps
+binary Horner; this result preserves each macro boundary, recodes numerators,
+and also improves backward. README.md and the PR description credit this
+distinct contribution. No additive saving or implementation dependency is
+claimed. The source and mathematical checks above are unaffected.
+
 The full regenerating `make verify`, selected cold replay, global hosting and
 assembly, Linux CI and Lean were not run. This package adds a local circuit
 and an exact finite check; it does not modify the selected construction.

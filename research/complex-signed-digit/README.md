@@ -171,6 +171,15 @@ persists under composition, but this package does not implement or certify
 that combined package. #681 changes a factory macro word; #687 examines a
 K-triangle frame neighborhood. None is an implementation dependency.
 
+Concurrent [#722](https://github.com/CrocSwap/integer-mult-bounds/pull/722),
+by @ellipsi2 at `a0766ab0fab379e1997fadc3ca157578d57986c1`, arrived between
+the final overlap snapshot and submission. It shares binary-Horner preparation
+across forward cleanup runs, changing private-work clearing to block boundaries.
+This contribution recodes individual numerators and preserves clearing after
+every macro. It also saves work backward, where #722 reports no eligible runs.
+No combined saving is claimed without a composed recount. #722 is credited
+related work and is not imported or independently verified here.
+
 Prepared for **Sagar Thakrar, @thakrarsagar**, with substantial **OpenAI Codex
 assistance** in research, code, proof analysis, verification and writing.
 A separately delegated Codex worker independently checked the cost census
