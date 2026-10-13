@@ -14,3 +14,5 @@ The repository ledger and `im-cold617-formal-binding.py` already record successf
 No pinned coordination issue was found (the open Discussions request #650 is unrelated). The claim is local. Overlap searches included PR612, source correspondence, independent verification, cyclic inverses and packed-bit audits. Workers stay within the chosen parser, controls and review scope.
 
 Final overlap refresh covered new arrivals through #833 and focused searches for PR612/source correspondence. No matching source-expression audit was found. Main advanced to `f567884aeb8851b6e794af1184119a3bfbe1e631`; all nine consumed/context source files are unchanged. The package retains its exact original base. Outcome: all 13 fields match, six altered expressions expose the historical check's narrower coverage, and the new checker rejects all 33 negative cases. See VALIDATION.md for the checks and limitations.
+
+Submitted as [PR #834](https://github.com/CrocSwap/integer-mult-bounds/pull/834). The contribution is complete for external review; maintainer acceptance and hosted workflow approval are separate.
