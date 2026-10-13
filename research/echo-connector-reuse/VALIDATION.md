@@ -67,3 +67,9 @@ changed after the original verified handoff; the construction, proof,
 certificate, verifier and immutable sources are unchanged.
 The isolated optimized replay and all relocation/corruption controls passed
 again after this documentation refresh; `git diff --check` also passed.
+
+The immediate submission check through #804 found only distinct cyclic-inverse
+results. The fork upload's Git tree exactly matched the verified local tree.
+GitHub accepted the fork branch but rejected creation of the upstream PR with
+HTTP 403, "Resource not accessible by integration." No PR or hosted-CI pass is
+claimed. The final claim records the branch and upstream comparison links.

@@ -46,5 +46,10 @@ remains at the consumed pin. PR673 advanced to
 `b3917936aafbd0d680a954a86e25c4ce7e28a9f9`; both consumed files are still
 byte-identical. Main remains the exact base, with no pinned coordination issue.
 
-The local claim retains this single completed result update. The contribution
-is prepared on [shhxera's research branch](https://github.com/shhxera/integer-mult-bounds/tree/research/echo-connector-reuse-s59).
+The immediate submission check through #804 found only distinct cyclic-inverse
+results. The local claim retains this single completed result update. The
+verified contribution is uploaded to [shhxera's research branch](https://github.com/shhxera/integer-mult-bounds/tree/research/echo-connector-reuse-s59).
+The GitHub integration accepted the tree, commit and branch but rejected the
+upstream PR request with HTTP 403, "Resource not accessible by integration."
+No PR was created. [Open the upstream comparison](https://github.com/CrocSwap/integer-mult-bounds/compare/main...shhxera:research/echo-connector-reuse-s59?expand=1)
+to submit this completed result; no merge or selected-frontier edit is requested.
