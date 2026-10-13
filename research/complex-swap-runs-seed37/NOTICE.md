@@ -22,7 +22,7 @@ Retain credit to:
 - DreamingOfClouds, eumemic, Rohan Arun, and the predecessor notices retained
   in the source packages and CONTRIBUTORS.md.
 
-Current PR890/869/870 and Hao Yan's PR858 mechanism establish the separate
+At the research base, PR890/869/870 and Hao Yan's PR858 mechanism establish the separate
 selected frontier context. The source words are historical PR626, so their
 local bills are not transported into that selected supplier by this package.
 
