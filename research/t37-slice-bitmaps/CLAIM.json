@@ -1,0 +1,41 @@
+{
+  "status": "claimed",
+  "assignment": {
+    "pass_number": 16,
+    "seed": 94,
+    "track": "verification engineering",
+    "drawn_at_utc": "2026-10-13T15:48:37.259894+00:00",
+    "source": "secrets.randbelow(100), OS randomness"
+  },
+  "base": "407d52ff15b2217b6e22bce44728b4c3907b6515",
+  "scope": "Replace only the set representation of occupied residual cells in the pinned T37 independent owner checker with exact nonnegative integer bitmaps. Preserve every whole-helper, window, chart, prefix, profile and row predicate and the entire accepted wrapper including its fourteen negative controls. Benchmark complete fresh-process audits on identical immutable inputs.",
+  "candidates": [
+    {
+      "task": "Exact bounded occupancy bitmaps in current T37 owner admission",
+      "decision": "chosen: 167,832 whole-helper roles create many small cell sets; bitwise disjointness, union and an exact prefix test preserve full coverage while reducing allocations"
+    },
+    {
+      "task": "Another exact rational scalar replay kernel",
+      "decision": "deferred: PR849 already accelerates the current native Fraction loop; a further representation change needs broader evidence"
+    },
+    {
+      "task": "Archive/source inventory admission acceleration",
+      "decision": "deferred: PR721 streaming and PR946 reproducibility cover related surfaces; source binding changes risk overlapping their unfinished integration"
+    }
+  ],
+  "method": "One fixed source adapter, no skipped role or cached acceptance; ordinary set reference and exact bitmaps. Seed 94 fixes differential-case and alternating benchmark order. At most five alternating fresh-process pairs per interpreter, with separate optional memory measurements; no timing pass threshold.",
+  "optimistic_cost": "Each current residual interval has width 4..9 in a rank at most 73. A Python set per occupied family can hold dozens of integer cells, while one bounded integer holds the same set. The expected gain is lower allocation cost and memory, with all chart and geometry work retained. No circuit bill or kappa changes.",
+  "related": [
+    942,
+    890,
+    858,
+    824,
+    849,
+    950,
+    976,
+    780
+  ],
+  "coordination": "Only open non-PR issues 650 and 913; no pinned sprint coordination issue. Current queue checked through 980.",
+  "claimed_at_utc": "2026-10-13T15:54:30.107478+00:00",
+  "expected_finish_utc": "2026-10-13T16:50:00Z"
+}
