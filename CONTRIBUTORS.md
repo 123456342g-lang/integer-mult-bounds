@@ -527,3 +527,16 @@ The selected κ is unchanged; finite candidates retain their integration obligat
 These contributions retain their original assistance notices and predecessor
 credit, including Oscar Fennell, Sricharan Vagvala, Scott Woolsey Biggart, Sagar
 Thakrar and Romain Hedouin. Parallel work is credited independently of selection.
+
+## Research and audits in batch #1047
+
+[Individual contributions and scope](docs/research/community-batch1047-review.md). Parallel and corroborating contributions retain separate credit.
+
+- **ToikY / ToikY:** [#1000](https://github.com/CrocSwap/integer-mult-bounds/pull/1000), [#988](https://github.com/CrocSwap/integer-mult-bounds/pull/988), [#971](https://github.com/CrocSwap/integer-mult-bounds/pull/971), [#972](https://github.com/CrocSwap/integer-mult-bounds/pull/972).
+- **woklerx / woklerx:** [#995](https://github.com/CrocSwap/integer-mult-bounds/pull/995), [#1009](https://github.com/CrocSwap/integer-mult-bounds/pull/1009), [#992](https://github.com/CrocSwap/integer-mult-bounds/pull/992), [#966](https://github.com/CrocSwap/integer-mult-bounds/pull/966), [#998](https://github.com/CrocSwap/integer-mult-bounds/pull/998), [#1020](https://github.com/CrocSwap/integer-mult-bounds/pull/1020), [#1035](https://github.com/CrocSwap/integer-mult-bounds/pull/1035), [#994](https://github.com/CrocSwap/integer-mult-bounds/pull/994).
+- **Charles Bethin / cbethin:** [#1010](https://github.com/CrocSwap/integer-mult-bounds/pull/1010).
+- **Ross Richardson / RossRichardson:** [#939](https://github.com/CrocSwap/integer-mult-bounds/pull/939).
+- **mightyOil / mightyOil:** [#875](https://github.com/CrocSwap/integer-mult-bounds/pull/875).
+- **D Lam / DLamdata:** [#979](https://github.com/CrocSwap/integer-mult-bounds/pull/979).
+- **ellipsi2 / ellipsi2:** [#772](https://github.com/CrocSwap/integer-mult-bounds/pull/772).
+- **ArnavSwiggy / ArnavSwiggy:** [#920](https://github.com/CrocSwap/integer-mult-bounds/pull/920).

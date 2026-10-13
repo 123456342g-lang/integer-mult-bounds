@@ -116,7 +116,8 @@ def main():
                         ROOT / 'research/community-frontier890-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-batch932-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-batch952-audit/DISPOSITIONS.json',
-                        ROOT / 'research/community-batch970-audit/DISPOSITIONS.json'):
+                        ROOT / 'research/community-batch970-audit/DISPOSITIONS.json',
+                        ROOT / 'research/community-batch1047-audit/DISPOSITIONS.json'):
         if not family_path.exists():
             continue
         family = json.loads(family_path.read_text())
@@ -452,6 +453,34 @@ def main():
                         item['closure'] is None and item['github_state'] == 'OPEN',
                         'Companion replay incorrectly promoted whole parent PR')
         print('PASS batch970 batch: reviewed sources, finite replays, scoped claims and closure bindings')
+    receipt_path = ROOT / 'docs/research/community-batch1047-integration.json'
+    if receipt_path.exists():
+        receipt = json.loads(receipt_path.read_text())
+        for name, digest in receipt['receipts'].items():
+            require(hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == digest,
+                    'Changed batch1047 evidence: ' + name)
+        folder = ROOT / 'research/community-batch1047-audit'
+        coverage = json.loads((folder / 'CONTENT-COVERAGE.json').read_text())['pull_requests']
+        decisions = json.loads((folder / 'DISPOSITIONS.json').read_text())['pull_requests']
+        require(set(coverage) == set(receipt['reviewed_heads']) == {str(d['number']) for d in decisions},
+                'Batch1047 review scope differs')
+        for decision in decisions:
+            number = decision['number']; row = coverage[str(number)]
+            require(row['head'] == decision['reviewed_head'] == receipt['reviewed_heads'][str(number)],
+                    'Batch1047 coverage head differs')
+            require(len(row['files']) == row['changed_files'] == len({f['source_path'] for f in row['files']}),
+                    'Batch1047 changed-file inventory incomplete')
+            check_review_completion(actual[number], decision)
+            for item in row['files']:
+                require(item['action'] in {'retained', 'adapted', 'excluded', 'pending'}, 'Unknown file action')
+                if item['action'] == 'pending':
+                    require(not decision['review_completion']['changed_file_coverage'], 'Incomplete review')
+                if item.get('integrated_sha256'):
+                    require(hashlib.sha256((ROOT / item['integrated_path']).read_bytes()).hexdigest()
+                            == item['integrated_sha256'], 'Changed integrated file: ' + item['integrated_path'])
+                if item['action'] != 'retained':
+                    require(bool(item.get('reason')), 'Missing scope or adaptation reason')
+        print('PASS batch1047: scoped source coverage and review completion')
     print(f'PASS immutable snapshot plus explicit family rounds: {len(actual)} PRs, attributed heads, evidence pins and unresolved questions')
 
 
