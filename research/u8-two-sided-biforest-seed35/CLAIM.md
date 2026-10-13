@@ -59,3 +59,7 @@ Completed finite circuit construction and verification in
 - Positive prefix peaks are `57` bits forward and `73` bits backward ($\le 192$);
   denominator powers remain `3` forward and `19` backward; paid child profile is
   unchanged (`{1: 2548, 2: 338, 3: 446, 4: 162, 5: 72, 8: 8}`). No new $\kappa$.
+- **Submitted PR**: [PR #1080](https://github.com/CrocSwap/integer-mult-bounds/pull/1080)
+  (branch `research/u8-two-sided-biforest-seed35`).
+  Receipts: [`EXPECTED.json`](EXPECTED.json), [`RECIPE.json`](RECIPE.json),
+  [`PROOF.md`](PROOF.md), [`VALIDATION.md`](VALIDATION.md).

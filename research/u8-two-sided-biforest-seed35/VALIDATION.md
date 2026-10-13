@@ -59,3 +59,5 @@ Only `research/u8-two-sided-biforest-seed35/` is added. `upstream/`,
 No new $\kappa$, no claim of joint global two-sided optimality beyond the
 coordinate-wise MST fixed point, and no formal proof of the asymptotic
 multiplication theorem are claimed.
+
+Handoff PR: [CrocSwap/integer-mult-bounds#1080](https://github.com/CrocSwap/integer-mult-bounds/pull/1080).
