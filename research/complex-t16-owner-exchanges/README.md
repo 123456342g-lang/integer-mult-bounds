@@ -16,7 +16,7 @@ Expected: PASS_T16_WHOLE_HELPER_EXCHANGES 0.001672267698427438.
 
 ## Verification status
 
-The candidate passed the original strict verifier locally: all 69 admission controls, 12 bit controls, 15 controller mutations, six independent owner controls, exact moment and 47 outer checks. The local baseline was rebuilt and checked earlier; this is not a new cold ancestry rebuild. The new publication wrapper is being replayed after draft publication. Hosted CI and Lean are not claimed.
+The candidate passed the original strict verifier locally: all 69 admission controls, 12 bit controls, 15 controller mutations, six independent owner controls, exact moment and 47 outer checks. The local baseline was rebuilt and checked earlier; this is not a new cold ancestry rebuild. The publication wrapper passed a fresh local replay after draft publication, reproducing the complete strict result. Hosted CI and Lean are not claimed.
 
 All-size/compiler, common-label and mutable-source realization, whole-call hosting, precision/tape, exact recovery, analytic transfer and the retained PR589 bit H1-H5 assumptions remain. This is a finite conditional witness, not an unconditional multiplication theorem or a global packing optimum.
 
