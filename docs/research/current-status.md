@@ -5,6 +5,12 @@ See the [review](community-k492-review.md), [integration receipt](community-k492
 [selected record](../../certificates/selected-result.json) and [PR ledger](pr-ledger.md).
 Public cold replay: `make frontier626-verify`.
 
+The previously queued #626 Linux run completed successfully on 2026-10-13.
+The [preserved evidence and offline checker](../../research/selected626-linux-reconciliation/README.md)
+bind that run to its tested sources, six replay stages and exact assembly.
+Three generated provenance digests differ from the committed assembly; the
+linked reconciliation records their scope and the unavailable payloads.
+
 The frozen round covers #618–#626. Eight scoped reviews complete; #620 remains
 partial pending portable research replays and validation of its solver/barrier
 claims. Earlier open reviews retain their ledger status. Inherited uniform,
