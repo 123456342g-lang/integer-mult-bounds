@@ -654,13 +654,3 @@ bit589-width-packing-verify:
 frontier1094-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier1094.XXXXXX"); \
 	python3 -B scripts/verify_frontier1094.py --work "$$work/replay"
-
-# Tooling: opt-in parallel layer-end controls for the selected frontier1042 chain, byte-identical receipts (no new kappa).
-.PHONY: frontier1042-lec-parallel-verify frontier1042-lec-parallel-benchmark
-frontier1042-lec-parallel-verify:
-	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-lec1042.XXXXXX"); \
-	python3 -B research/frontier1042-lec-parallel/verify.py --work "$$work/replay" && \
-	python3 -B -m unittest discover -s research/frontier1042-lec-parallel -p test_package.py
-frontier1042-lec-parallel-benchmark:
-	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-lec1042.XXXXXX"); \
-	python3 -B research/frontier1042-lec-parallel/verify.py --work "$$work/replay" --serial

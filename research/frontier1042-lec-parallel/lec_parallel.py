@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Apache-2.0
-"""Opt-in parallel runner for the pinned layer-end controls (selected frontier1042 chain and T37).
+"""Opt-in parallel runner for the pinned layer-end controls (frontier1042 leaver chain and T37).
 
 Usage: lec_parallel.py WORD ROUTING OUTDIR [ENTERING] [--jobs N] [--script PINNED_SCRIPT]
        (environment PR635_CODE, and LEC_REASON_PINS for the leaver variant, exactly as for the step)
@@ -9,12 +9,13 @@ Drop-in for the step
     python -B <multicold>/code/run_portable.py PINNED_SCRIPT WORD ROUTING OUTDIR
 
 where PINNED_SCRIPT is any byte-identical copy of one of the two signed variants in PINNED_SCRIPTS:
-layer_end_controls_leaver.py v2 (run five times by reproduce_leaver_chain.py's lec() in the
-selected frontier1042 chain; the default) or layers_p6n/layer_end_controls.py (run by the T37
-u8-native stage and by the #799 native stage). The pinned script audits the unmutated word and 95 mutated words with PR635's
-hpe_audit_and_transport.run; every mutant must be rejected for its pinned reason. The 96 audits
-are independent pure computations. The pinned launcher and script are never edited and never
-re-implemented:
+layer_end_controls_leaver.py v2 (the default; run five times by reproduce_leaver_chain.py's lec()
+in the frontier1042 leaver chain, the cold baseline of selected frontier1094) or
+layers_p6n/layer_end_controls.py (run by the T37 u8-native stage, complex741's p6n stage and the
+#799 native stage). The pinned script audits the unmutated word and 95 mutated words with
+PR635's hpe_audit_and_transport.run; every mutant must be rejected for its pinned reason. The 96
+audits are independent pure computations. The pinned launcher and script are never edited and
+never re-implemented:
 
 1. record:   the pinned launcher runs the pinned script with a stand-in hpe_audit_and_transport
              whose run() records the exact gzip bytes of each trial word. It answers the first
@@ -29,8 +30,9 @@ re-implemented:
              and write COLD-END-CONTROLS.json. The sequence of trial words must equal the
              recorded one.
 
-Outcomes are keyed by the sha256 of the exact trial bytes and the resolved routing path, so a
-Runner shared across steps (chain_lec.py) audits a word only once even if two steps build it.
+Outcomes are keyed by the sha256 of the exact trial bytes, the absolute (unresolved) routing path
+and the routing file's sha256, so a Runner shared across steps (chain_lec.py) audits a word only
+once even if two steps build it. A worker that dies fails the run instead of losing its task.
 """
 import argparse
 import gzip
@@ -95,6 +97,19 @@ def check_digest(path, expected, what):
         raise RuntimeError('pinned %s digest mismatch: %s' % (what, path))
 
 
+def routing_key(routing_arg, cache):
+    """(path, digest) of the routing file exactly as trial() hands it to the audit.
+
+    The path is made absolute but not resolved: PR635's reader picks gzip or JSON from the
+    suffix of the path it is given, so symlinks must not be followed here. The digest makes an
+    outcome table shared across steps safe even if the file at that path changes.
+    """
+    path = str(Path(routing_arg).absolute())
+    if path not in cache:
+        cache[path] = sha(Path(path).read_bytes())
+    return path, cache[path]
+
+
 def run_pinned(argv, stub_run, script=SCRIPT, stdout=None):
     """One run of the pinned launcher on the pinned script, with a stand-in audit module.
 
@@ -132,9 +147,10 @@ class Runner:
         self.code_dir, self.jobs = str(code_dir), jobs
         load_audit(self.code_dir)                      # digest check before any work starts
         self.table = {}
-        self.pool = None
+        self.pool, self.workers = None, []
         if jobs > 1:
             self.pool = mp.get_context('spawn').Pool(jobs, initializer=init_worker, initargs=(self.code_dir,))
+            self.workers = list(self.pool._pool)       # the pool never retires workers: any exit is a loss
         else:
             init_worker(self.code_dir)
 
@@ -144,11 +160,26 @@ class Runner:
             self.pool.join()
             self.pool = None
 
+    def terminate(self):
+        if self.pool is not None:
+            self.pool.terminate()
+            self.pool.join()
+            self.pool = None
+
     def __enter__(self):
         return self
 
-    def __exit__(self, *exc):
-        self.close()
+    def __exit__(self, kind, value, tb):
+        self.close() if kind is None else self.terminate()
+
+    def wait(self, result):
+        """result.get(), failing closed if a worker died: Pool would respawn it and lose its task."""
+        while True:
+            if any(p.exitcode is not None for p in self.workers):
+                raise RuntimeError('an audit worker process exited; refusing to wait for a lost task')
+            if result.ready():
+                return result.get()
+            result.wait(0.5)
 
     def step(self, word, routing, outdir, entering=None, stdout=None, script=SCRIPT, tamper=None):
         """Run the pinned controls on WORD; returns timing and reuse statistics.
@@ -157,14 +188,13 @@ class Runner:
         private copy of the outcome table before the replay.
         """
         start = time.monotonic()
-        tail = [str(entering)] if entering else []
-        recorded, fresh = [], 0
-        routing_abs = str(Path(routing).resolve())
+        tail = [] if entering is None else [str(entering)]
+        recorded, fresh, digests = [], 0, {}
 
         def record(p, routing_arg, out):
             nonlocal fresh
             data = Path(p).read_bytes()
-            key = (sha(data), str(Path(routing_arg).resolve()))
+            key = (sha(data), *routing_key(routing_arg, digests))
             recorded.append(key)
             if key not in self.table:
                 fresh += 1
@@ -184,7 +214,7 @@ class Runner:
         recorded_at = time.monotonic()
         for key in set(recorded):
             if not isinstance(self.table[key], tuple):
-                self.table[key] = self.table[key].get()
+                self.table[key] = self.wait(self.table[key])
         evaluated_at = time.monotonic()
 
         table = dict(self.table)
@@ -194,7 +224,7 @@ class Runner:
 
         def replay(p, routing_arg, out):
             data = Path(p).read_bytes()
-            key = (sha(data), str(Path(routing_arg).resolve()))
+            key = (sha(data), *routing_key(routing_arg, digests))
             seen.append(key)
             if key not in table:
                 raise RuntimeError('the replay built a trial word that the record pass did not')
@@ -213,7 +243,7 @@ class Runner:
             raise RuntimeError('the replay produced a different sequence of trial words')
         done = time.monotonic()
         return dict(trials=len(recorded), distinct=len(set(recorded)), audited_now=fresh,
-                    routing=routing_abs, record_seconds=round(recorded_at - start, 1),
+                    routing=sorted(digests), record_seconds=round(recorded_at - start, 1),
                     evaluate_wait_seconds=round(evaluated_at - recorded_at, 1),
                     replay_seconds=round(done - evaluated_at, 1), runner_seconds=round(done - start, 1))
 

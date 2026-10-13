@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Apache-2.0
-"""The five layer-end-control steps of the selected frontier1042 leaver chain, as lec() runs them.
+"""The five layer-end-control steps of the frontier1042 leaver chain, as lec() runs them.
 
 Usage: chain_lec.py --chain CHAIN_DIR --out NEW_DIR [--runner parallel|pinned] [--jobs N] [--id k8]
 
@@ -85,7 +85,7 @@ def main():
     os.environ.clear()
     os.environ.update(env)
     runner = lp.Runner(PR635_CODE, a.jobs) if a.runner == 'parallel' else None
-    steps = []
+    steps, ok = [], False
     try:
         for label, name, pins_name in STEPS:
             pf = LEAVER / ('%s-%s.json' % (pins_name, a.id))
@@ -118,9 +118,10 @@ def main():
             assert len(c['rejected']) == pins[label], (label, 'rejected controls')
             assert {x['site']: x['reason'] for x in c['not_applicable']} == pins[label + '_not_applicable'], (label, 'not applicable')
             print('PASS', label, len(c['rejected']), 'controls', '%.1f s' % steps[-1]['seconds'], flush=True)
+        ok = True
     finally:
         if runner is not None:
-            runner.close()
+            runner.close() if ok else runner.terminate()
     print('PASS_CHAIN_LEC', a.runner, '%.1f s' % sum(s['seconds'] for s in steps), flush=True)
 
 

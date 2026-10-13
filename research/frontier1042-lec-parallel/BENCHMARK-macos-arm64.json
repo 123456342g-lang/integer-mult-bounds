@@ -2,138 +2,124 @@
   "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
   "python": "3.14.8",
   "cpu_count": 10,
-  "base_commit": "ba82555c64e1879e4b7decce28186f208fcb8262",
-  "archived_serial_seconds": 529.5,
-  "note": "verify.py --serial --jobs 10, two full runs; timings are descriptive only",
-  "runs": [
+  "jobs": 10,
+  "base_commit": "ce7ad1b6ab09452c3478723a2e96ed5ff212dc08",
+  "parallel": [
     {
-      "load": "load average 6-15 (shared machine)",
-      "jobs": 10,
-      "pinned_steps": {
-        "lec-p6n": 52.614,
-        "lec-promo": 53.392,
-        "lec-jx": 53.053,
-        "lec-hyb": 53.488,
-        "lec-frames": 54.169
-      },
-      "parallel_steps": [
-        {
-          "step": "lec-p6n",
-          "seconds": 22.761,
-          "record_seconds": 11.1,
-          "evaluate_wait_seconds": 1.0,
-          "replay_seconds": 10.6,
-          "audited_now": 95
-        },
-        {
-          "step": "lec-promo",
-          "seconds": 23.249,
-          "record_seconds": 11.5,
-          "evaluate_wait_seconds": 1.0,
-          "replay_seconds": 10.8,
-          "audited_now": 95
-        },
-        {
-          "step": "lec-jx",
-          "seconds": 14.097,
-          "record_seconds": 7.5,
-          "evaluate_wait_seconds": 0.0,
-          "replay_seconds": 6.6,
-          "audited_now": 0
-        },
-        {
-          "step": "lec-hyb",
-          "seconds": 18.124,
-          "record_seconds": 10.4,
-          "evaluate_wait_seconds": 0.9,
-          "replay_seconds": 6.9,
-          "audited_now": 95
-        },
-        {
-          "step": "lec-frames",
-          "seconds": 18.905,
-          "record_seconds": 11.4,
-          "evaluate_wait_seconds": 1.0,
-          "replay_seconds": 6.5,
-          "audited_now": 95
-        }
+      "step": "lec-p6n",
+      "exit_code": 0,
+      "seconds": 17.273,
+      "trials": 96,
+      "distinct": 95,
+      "audited_now": 95,
+      "routing": [
+        "research/complex-k492-owner-repair/vendor/multicold/vendor/pr558/vendor/pr552/complex-local/inputs/phase-baseline/CANONICAL-WORD.json.gz"
       ],
-      "pinned_seconds": 266.7,
-      "parallel_seconds": 97.1,
-      "speedup": 2.75,
-      "t37": null,
-      "controls": [
-        "C1_corrupted_unmutated_word",
-        "C2_forged_acceptance",
-        "C3_forged_reason",
-        "C4_tampered_script_and_audit_refused"
-      ]
+      "record_seconds": 9.8,
+      "evaluate_wait_seconds": 0.8,
+      "replay_seconds": 6.6,
+      "runner_seconds": 17.3
     },
     {
-      "load": "load average 5-12 (shared machine)",
-      "jobs": 10,
-      "pinned_steps": {
-        "lec-p6n": 63.752,
-        "lec-promo": 65.228,
-        "lec-jx": 53.93,
-        "lec-hyb": 53.52,
-        "lec-frames": 57.08
-      },
-      "parallel_steps": [
-        {
-          "step": "lec-p6n",
-          "seconds": 26.689,
-          "record_seconds": 17.0,
-          "evaluate_wait_seconds": 2.2,
-          "replay_seconds": 7.4,
-          "audited_now": 95
-        },
-        {
-          "step": "lec-promo",
-          "seconds": 27.68,
-          "record_seconds": 15.1,
-          "evaluate_wait_seconds": 1.0,
-          "replay_seconds": 11.5,
-          "audited_now": 95
-        },
-        {
-          "step": "lec-jx",
-          "seconds": 17.624,
-          "record_seconds": 8.4,
-          "evaluate_wait_seconds": 0.0,
-          "replay_seconds": 9.2,
-          "audited_now": 0
-        },
-        {
-          "step": "lec-hyb",
-          "seconds": 30.406,
-          "record_seconds": 17.7,
-          "evaluate_wait_seconds": 1.4,
-          "replay_seconds": 11.3,
-          "audited_now": 95
-        },
-        {
-          "step": "lec-frames",
-          "seconds": 41.23,
-          "record_seconds": 27.4,
-          "evaluate_wait_seconds": 2.0,
-          "replay_seconds": 11.8,
-          "audited_now": 95
-        }
+      "step": "lec-promo",
+      "exit_code": 0,
+      "seconds": 18.643,
+      "trials": 96,
+      "distinct": 95,
+      "audited_now": 95,
+      "routing": [
+        "research/complex-k492-owner-repair/vendor/multicold/vendor/pr558/vendor/pr552/complex-local/inputs/phase-baseline/CANONICAL-WORD.json.gz"
       ],
-      "pinned_seconds": 293.5,
-      "parallel_seconds": 143.6,
-      "speedup": 2.04,
-      "t37": {
-        "parallel_seconds": 20.0,
-        "pinned_seconds": 59.7
-      },
-      "controls": [
-        "C1_corrupted_unmutated_word",
-        "C2_forged_acceptance",
-        "C3_forged_reason",
-        "C4_tampered_script_and_audit_refused"
-      ]
+      "record_seconds": 10.0,
+      "evaluate_wait_seconds": 0.9,
+      "replay_seconds": 7.7,
+      "runner_seconds": 18.6
+    },
+    {
+      "step": "lec-jx",
+      "exit_code": 0,
+      "seconds": 14.918,
+      "trials": 96,
+      "distinct": 95,
+      "audited_now": 0,
+      "routing": [
+        "research/complex-k492-owner-repair/vendor/multicold/vendor/pr558/vendor/pr552/complex-local/inputs/phase-baseline/CANONICAL-WORD.json.gz"
+      ],
+      "record_seconds": 8.2,
+      "evaluate_wait_seconds": 0.0,
+      "replay_seconds": 6.7,
+      "runner_seconds": 14.9
+    },
+    {
+      "step": "lec-hyb",
+      "exit_code": 0,
+      "seconds": 25.297,
+      "trials": 96,
+      "distinct": 95,
+      "audited_now": 95,
+      "routing": [
+        "research/complex-k492-owner-repair/vendor/multicold/vendor/pr558/vendor/pr552/complex-local/inputs/phase-baseline/CANONICAL-WORD.json.gz"
+      ],
+      "record_seconds": 14.5,
+      "evaluate_wait_seconds": 0.9,
+      "replay_seconds": 9.9,
+      "runner_seconds": 25.3
+    },
+    {
+      "step": "lec-frames",
+      "exit_code": 0,
+      "seconds": 24.087,
+      "trials": 96,
+      "distinct": 95,
+      "audited_now": 95,
+      "routing": [
+        "research/complex-k492-owner-repair/vendor/multicold/vendor/pr558/vendor/pr552/complex-local/inputs/phase-baseline/CANONICAL-WORD.json.gz"
+      ],
+      "record_seconds": 14.6,
+      "evaluate_wait_seconds": 1.5,
+      "replay_seconds": 8.0,
+      "runner_seconds": 24.1
     }
-  ]
+  ],
+  "parallel_seconds": 100.2,
+  "archived_serial_seconds": 529.5,
+  "pinned": [
+    {
+      "step": "lec-p6n",
+      "exit_code": 0,
+      "seconds": 54.582
+    },
+    {
+      "step": "lec-promo",
+      "exit_code": 0,
+      "seconds": 69.901
+    },
+    {
+      "step": "lec-jx",
+      "exit_code": 0,
+      "seconds": 66.573
+    },
+    {
+      "step": "lec-hyb",
+      "exit_code": 0,
+      "seconds": 59.106
+    },
+    {
+      "step": "lec-frames",
+      "exit_code": 0,
+      "seconds": 64.118
+    }
+  ],
+  "pinned_seconds": 314.3,
+  "speedup": 3.14,
+  "t37": {
+    "parallel_seconds": 26.2,
+    "pinned_seconds": 81.2
+  },
+  "controls": {
+    "C2_forged_acceptance": "cold-end mutation accepted: entering end 531: end at another hyperplane",
+    "C3_forged_reason": "cold-end mutation 'entering end 531: end at another hyperplane' rejected for the wrong reason: 'an unrelated assertion'",
+    "C1_corrupted_unmutated_word": "unmutated cold-end word must pass",
+    "C4_tampered_script_and_audit_refused": "refused before any work"
+  }
 }

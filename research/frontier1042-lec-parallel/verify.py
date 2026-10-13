@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Apache-2.0
-"""Check the opt-in parallel layer-end controls on the selected frontier1042 chain.
+"""Check the opt-in parallel layer-end controls on the frontier1042 leaver chain.
 
 Usage: python3 -B research/frontier1042-lec-parallel/verify.py --work NEW_EMPTY_DIR [--jobs N] [--serial]
 

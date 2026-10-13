@@ -6,7 +6,9 @@ Run: python3 -B -m unittest discover -s research/frontier1042-lec-parallel -p te
 import gzip
 import json
 import os
+import signal
 import sys
+import time
 import tarfile
 import tempfile
 import unittest
@@ -78,6 +80,26 @@ class RunnerTests(unittest.TestCase):
             # the launcher's portable gzip header reached the pinned script's trial word
             self.assertEqual(calls[0][9], 0xff)
             self.assertEqual(json.loads(gzip.decompress(calls[0])), json.loads(gzip.decompress(word.read_bytes())))
+
+    def test_routing_key_keeps_the_path_trial_uses(self):
+        # PR635's reader picks gzip or JSON from the suffix of the path it is given: never resolve symlinks
+        with tempfile.TemporaryDirectory() as tmp:
+            link = Path(tmp) / 'routing.json'
+            link.symlink_to(chain_lec.ROUTING)
+            path, digest = lp.routing_key(link, {})
+            self.assertTrue(path.endswith('routing.json'))
+            self.assertEqual(digest, PINS['routing']['sha256'])
+
+    def test_worker_loss_fails_closed(self):
+        runner = lp.Runner(chain_lec.PR635_CODE, 2)
+        try:
+            os.kill(runner.workers[0].pid, signal.SIGKILL)
+            runner.workers[0].join(5)
+            pending = runner.pool.apply_async(time.sleep, (3,))
+            with self.assertRaises(RuntimeError):
+                runner.wait(pending)
+        finally:
+            runner.terminate()
 
     def test_real_audit_accepts_word_and_rejects_corruption(self):
         audit_worker.init_worker(str(chain_lec.PR635_CODE))
