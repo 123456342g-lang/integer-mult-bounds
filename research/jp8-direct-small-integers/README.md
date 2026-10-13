@@ -41,6 +41,22 @@ a new receipt and refuses existing output. Focused tests:
 python3 -I -O -B research/jp8-direct-small-integers/test_package.py
 ```
 
+An additional full replay uses `Fraction` coefficients throughout, without
+importing the primary interpreter, its row arithmetic or its local controls:
+
+```sh
+python3 -I -O -B research/jp8-direct-small-integers/recheck_fraction.py
+```
+
+Expected final line:
+`PASS_JP8_FRACTION_RECHECK all_program_receipt_fields=equal no_new_kappa`.
+This checks all 725 input columns and the entire register state at every one of
+the 22,693 scalar macro boundaries in each orientation, recomputes every program
+receipt field, and runs seven additional endpoint/prefix/cost mutation controls.
+It shares the pinned programs, the two lowerers and the expected receipt with
+the first checker; it is a second arithmetic implementation, not independent
+human review. See `VALIDATION.md` for the repeated checks and publication pin.
+
 `EXPECTED.json` is an exact certificate of the finite executions and counts,
 including every changed event index, coefficient/frame/phase census, complete
 primitive-stream digests, prefix metrics and unchanged paid profiles.
@@ -128,10 +144,13 @@ operations against Fraction arithmetic, domain preservation, source corruption,
 equivalent gzip repacking, optimized offline relocation, typed-receipt
 corruption and output preservation.
 
-The primitive and direct-macro all-column engines share row arithmetic. The
-dense local checker and bounded Fraction differential checks mitigate that
-shared dependency; no independently implemented complete physical replay is
-claimed. Both implementations were prepared in one AI session. Non-scalar
+The primary primitive and direct-macro all-column engines share row arithmetic.
+The dense local checker, bounded Fraction differential checks and the additional
+complete `recheck_fraction.py` scalar interpreter check that shared dependency.
+The supplemental interpreter uses Fraction-valued rows instead of integer rows
+with a shared dyadic denominator; it compares complete register states at each
+macro boundary. All implementations were prepared in the same AI-assisted
+conversation. No independently implemented complete physical replay is claimed. Non-scalar
 frame, phase and wrapper events are preserved and hashed, but not executed by
 this scalar checker. The pinned maintainer evidence supplies that ancestry.
 Finite linear-map evidence is not formal verification of the full multiplication
@@ -208,6 +227,21 @@ All-size compilation, common-label/mutable-source realization, whole-call
 hosting, precision/tape/recovery, bit-supplier H1–H5 and analytic-transfer
 obligations remain inherited. Native physical admission, production lowerer
 integration, global invoices/assembly and transport to U8/T21 remain open.
+
+## Open next questions
+
+- **Can these exact words pass the historical JP8 physical interface?** This
+  determines whether the local saving can enter a complete construction. First
+  bind the replacement lowerer to that interface and rebuild its source-access,
+  frame/owner, precision and complete invoice checks. The blocker is that this
+  package executes scalar projections only; the unchanged scalar maxima do not
+  discharge physical admission.
+- **Does the replacement compose with pinned PR999?** Its retained ±2/±3 Horner
+  words suggest additional local savings, but no combined result is certified.
+  First replay both complete JP8 programs with an explicit composed dispatcher
+  and independently recompute the total cost, prefix bounds and dirty-input
+  contract. The blocker is the absent combined replay and interface evidence;
+  totals from separate packages must not simply be added.
 
 Prepared by **Michał Ciemięga (@zewelor)** with substantial **OpenAI Codex
 assistance** in research, code, proof writing and verification. Apache-2.0,

@@ -1,5 +1,5 @@
 {
-  "status": "completed and published to contributor fork; upstream PR creation blocked by GitHub integration permissions",
+  "status": "completed; published as upstream PR1223; second finite scalar audit recorded",
   "assignment_seed": 29,
   "randomness": "Python secrets.randbelow(100), backed by operating-system randomness",
   "started_utc": "2026-10-13T14:22:53.258115+00:00",
@@ -51,6 +51,12 @@
   "result": "Both complete JP8 scalar projections save 2,848 real primitives; 1,424 changed macros each; 725 input columns; unchanged exact magnitude/grid maxima and paid profile; no new kappa.",
   "result_reference": "HANDOFF.md",
   "final_overlap_reference": "OVERLAP.json",
-  "submission": "Published to zewelor/integer-mult-bounds branch research/jp8-direct-small-integers-seed29. The attempted upstream create-pull-request operation returned HTTP403 Resource not accessible by integration. A verified public compare link with proposed title/body is provided for manual submission; no PR has been opened.",
-  "publication_refresh_reference": "OVERLAP.json"
+  "submission": "https://github.com/CrocSwap/integer-mult-bounds/pull/1223; opened by the contributor after the integration create-PR operation returned HTTP403. Updates continue on the same fork branch.",
+  "publication_refresh_reference": "OVERLAP.json",
+  "second_audit": {
+    "reviewed_head": "86381e9adf3c9d1e958cca4d53fec15254190434",
+    "refreshed_main": "49b3157d1d89adcef16df8be98445451672be5ba",
+    "evidence": "VALIDATION.md; recheck_fraction.py",
+    "result": "Original circuit and exact receipt unchanged; full Fraction replay confirms every program receipt field."
+  }
 }
