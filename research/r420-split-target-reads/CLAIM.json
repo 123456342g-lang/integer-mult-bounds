@@ -20,5 +20,9 @@
     "head": "9ca7aa3ab0a3260a2f36ac86b9911a31fd88bd89",
     "distinction": "Changes gate grouping and allows different frames for reads within one original gate; the fixed-gate result does not cover this family."
   },
-  "status": "in progress"
+  "status": "complete",
+  "finished_at_utc": "2026-10-13T04:45:00Z",
+  "result": "Scoped negative result: each target has six equal-cost and two strictly worse split schedules for every 0 < p < 1, covering all 8^120 simultaneous choices. Exact primary replay and independent exhaustive rational enumeration pass; no new kappa.",
+  "final_overlap_checked_through_pr": 717,
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/718"
 }
