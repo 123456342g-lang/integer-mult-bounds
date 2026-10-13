@@ -9,7 +9,10 @@ on:
       - 'research/direct-delivery504-global/**'
       - 'research/complex-sw4-frame8/**'
       - 'research/gauge44-frames-x/**'
+      - 'scripts/verify_frontier741*.py'
       - 'scripts/verify_frontier799*.py'
+      - 'scripts/verify_frontier_replay.py'
+      - 'tests/test_frontier_replay_coverage.py'
       - 'tests/test_frontier799_bindings.py'
       - 'scripts/verify_selected_result.py'
       - 'certificates/selected-result.json'
@@ -24,7 +27,10 @@ on:
       - 'research/direct-delivery504-global/**'
       - 'research/complex-sw4-frame8/**'
       - 'research/gauge44-frames-x/**'
+      - 'scripts/verify_frontier741*.py'
       - 'scripts/verify_frontier799*.py'
+      - 'scripts/verify_frontier_replay.py'
+      - 'tests/test_frontier_replay_coverage.py'
       - 'tests/test_frontier799_bindings.py'
       - 'scripts/verify_selected_result.py'
       - 'certificates/selected-result.json'
@@ -55,11 +61,13 @@ jobs:
         run: |
           python -B scripts/verify_selected_result.py
           python -B scripts/verify_pr_reconciliation.py
+      - name: Receipt coverage regression checks
+        run: python -B -m unittest discover -s tests -p 'test_frontier_replay_coverage.py' -v
       - name: Cold finite replay and exact composition binding
         env:
           CXX: g++
           BOOST_INCLUDE: /usr/include
-        run: python -B scripts/verify_frontier799.py --work "$RUNNER_TEMP/frontier799"
+        run: python -B scripts/verify_frontier_replay.py --frontier 799 --work "$RUNNER_TEMP/frontier799"
       - name: Require committed files unchanged
         run: git diff --exit-code
       - uses: actions/upload-artifact@v4
@@ -68,10 +76,10 @@ jobs:
           name: frontier799-linux-python312
           path: |
             ${{ runner.temp }}/frontier799/RESULT.json
-            ${{ runner.temp }}/frontier799/ANCESTRY.json
-            ${{ runner.temp }}/frontier799/STEPS.json
-            ${{ runner.temp }}/frontier799/*.log
-            ${{ runner.temp }}/frontier799/INDEPENDENT-*.json
-            ${{ runner.temp }}/frontier799/global/ASSEMBLY.json
-            ${{ runner.temp }}/frontier799/global/STAGES.json
-            ${{ runner.temp }}/frontier799/native/STEPS.json
+            ${{ runner.temp }}/frontier799/replay/ANCESTRY.json
+            ${{ runner.temp }}/frontier799/replay/STEPS.json
+            ${{ runner.temp }}/frontier799/replay/*.log
+            ${{ runner.temp }}/frontier799/replay/INDEPENDENT-*.json
+            ${{ runner.temp }}/frontier799/replay/global/ASSEMBLY.json
+            ${{ runner.temp }}/frontier799/replay/global/STAGES.json
+            ${{ runner.temp }}/frontier799/replay/native/STEPS.json
