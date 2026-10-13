@@ -49,3 +49,5 @@ Final review found no competing frame-union implementation among 737 open PRs
 through #1042; #1029/#1041 are distinct U8 phase-recipe tools. No coordination
 issue was pinned. Source exploration ended before the final verification and
 handoff phase. The only additions are this optional package.
+
+Submitted contribution: [PR #1044](https://github.com/CrocSwap/integer-mult-bounds/pull/1044).
