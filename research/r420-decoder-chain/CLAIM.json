@@ -19,5 +19,9 @@
     "753": "disjoint restored stars; must distinguish any resulting chain from this class",
     "748": "source coset change with recomputed dirt compensation; excluded here"
   },
-  "status": "claimed"
+  "status": "completed",
+  "result": "Seven adaptive shears yield six noncommuting pairs, decoder321->250, complete native ADDs26916->26774; 660-column exact replay and both nine-stage native words pass; payload100->103 bits remains below104; no new kappa",
+  "pr_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1206",
+  "submission_overlap_refresh": "Pinned issues still empty; decoder search and newest open PRs through1204 inspected; PR753/748/848 distinctions retained in README; no competing ordered R420 decoder chain found",
+  "claim_update": "One completion update with result and PR link; no public coordination thread existed"
 }
