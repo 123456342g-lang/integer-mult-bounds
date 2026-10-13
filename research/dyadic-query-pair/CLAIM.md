@@ -64,3 +64,45 @@ relevant diffs were read. Neither existing PR will be changed.
 
 Prepared for **Wentao Li** (GitHub `VictorLiwentao`) with substantial OpenAI
 Codex assistance. Predecessor names and notices will be retained. Apache-2.0.
+
+## Completed result (single final claim update)
+
+Submitted [PR840](https://github.com/CrocSwap/integer-mult-bounds/pull/840).
+The mathematical package commit is
+`9623aa12bc4c3c3828f6a804c94c42f90e511041`; the exact base remains
+`7ee02b7c96d85f22b38d28bd7ed49bb8c1aeb261`. This result update changes
+only the claim record. The final PR head is reported in the chat handoff.
+
+The hypothesis succeeds as a scoped construction: three ordinary ADDRESS
+children, eighteen affine events and two XORs replace four children,
+twenty-four affine events and four XORs for the specified completed pair.
+All dirty source/spectator inputs are preserved and no full private row is
+added. The proof establishes the sharp three-query minimum in the stated
+power-query/XOR model; it does not assert a minimum over all tape programs.
+Fixed-j coefficient costs and all typed primitive/child charges remain paid.
+**No new kappa or physical runtime improvement is claimed.**
+
+Reproduce: `python3 -I -O -B research/dyadic-query-pair/verify.py`.
+Expected: `PASS_DYADIC_QUERY_PAIR`. Completed coverage: 112 signed lowerings,
+1,792 rational columns, 16,128 modular columns, 91,320 two-query products,
+154,160 full-domain dirty basis columns per program, 7,552 orbit columns,
+25 mathematical/admission controls and six package faults. Final evidence
+agrees on CPython 3.9.6, 3.12.14 and 3.13.2, including isolated optimized
+and relocated offline runs. Exact fetched Git inputs, selected-record and
+staged whitespace checks pass. One untouched-base `make verify` passes its
+seven initial historical groups, then stops on missing SymPy at gen4
+(exit 2); no full-suite or selected-supplier cold replay is claimed.
+
+Final overlap refresh covered 636 open PRs through #839. The two consumed
+PR heads remain unchanged. Later PR800/822/829/836/838 have different
+Clifford, storage or evidence-admission objects; no code is consumed.
+Upstream advanced to `f567884aeb8851b6e794af1184119a3bfbe1e631`, selecting
+PR799 at conditional kappa `0.001661634653669567`; its actual X4 construction
+and review were read and recorded as context. No frontier record is edited.
+
+Concrete non-overlap is unchanged: PR756's Fano checker/performance package
+and PR805's rational cyclic leaf/dirty-array-plus-scalar restoration are
+excluded. Neither existing PR, branch or worktree was changed. The result
+uses exact odd-ring ADDRESS maps and F2 VALUE arrays on the genuine DATA
+target, with no full private row. Complete supplier/physical/compiler and
+analytic transfer remain open, as detailed in PROOF.md and VALIDATION.md.
