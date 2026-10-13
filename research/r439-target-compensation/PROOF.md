@@ -116,7 +116,9 @@ by either guard during this particular nomination.
 The verified bound concerns the signed lift's finite cancellation-free
 prefix estimate. It does not establish unchanged unrounded invoice coefficients,
 all other charged allocations, a full hosted reconstruction, or a new exponent.
-The inherited realization, precision/tape and analytic obligations remain.
+The other assumptions of the selected construction remain those recorded in
+its maintainer review. This prefix estimate alone does not justify a complete
+machine implementation or the analytic multiplication bound.
 
 ## Completed domain
 

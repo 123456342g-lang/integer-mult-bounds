@@ -132,10 +132,12 @@ PR is certified. The selected #799 κ stays `1661634653669567/10^18`.
 Base: `f567884aeb8851b6e794af1184119a3bfbe1e631`.
 Word: **DreamingOfClouds's PR589 tuning of eumemic's PR555**,
 `a5afc8c6169ea61ba7c51dfd3cade02cc7b13b46`.
-Full compiler, common-label/mutable-basis realization, hosted invoices,
-precision/tape recovery and analytic-transfer obligations remain separate.
-The selected construction is unchanged; this is not a formal verification of
-the full multiplication theorem or a measured runtime improvement.
+Integration requires acceptance of the semantic D boundary and a full updated
+hosted reconstruction and invoice. The selected construction's other assumptions
+are recorded in the [maintainer review](../../docs/research/community-frontier799-review.md).
+These finite checks do not prove that the construction compiles correctly for
+every input size or establish the analytic reduction used by the multiplication
+theorem. The selected construction is unchanged; no runtime improvement is measured.
 
 Prepared for **Gareth Davidson (@bitplane), with substantial OpenAI Codex
 assistance**. One AI agent performed the work; no independent human review

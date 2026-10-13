@@ -93,7 +93,7 @@ D. The pinned #794 method and #848 H2 barrier are credited explicitly.
 
 Only `research/r439-target-compensation/` is added. No selected frontier,
 `upstream/`, generator or default checker is changed. A full repository suite,
-selected cold supplier reconstruction, complete hosted-parent/finite invoice,
+selected cold supplier reconstruction, hosted parent and complete finite invoice,
 changed-word outer assembly and Lean multiplication theorem were not run or
 claimed. In particular, the new prefix bound alone does not certify every
 other invoice allocation. Hosted CI is reported separately at the published
