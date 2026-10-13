@@ -10,6 +10,12 @@ for reduced sides at p<=15, which must be complex proportional to real
 root or D7 directions. That is precisely enough for the counting step.
 This is not a flaw in PR968's stated real theorem.
 
+Parallel PR1071 by JosieElliston independently rederives the support floor,
+characterizes mixed root bases, and bounds copy-chain delivery for an
+explicit P104 decoder. The contribution here is the arbitrary-complex
+coefficient and restricted-nonisotropy bridge, with exact counterexamples
+to two tempting shortcuts; no delivery construction is claimed.
+
 ```text
 python research/complex-decoder-field-extension-seed44/verify.py
 ```

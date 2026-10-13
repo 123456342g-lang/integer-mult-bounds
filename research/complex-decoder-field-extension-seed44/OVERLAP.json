@@ -12,7 +12,8 @@
     {"pr": 968, "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/968", "relation": "Local proof explicitly defines real D,T. Live PR body read. Existing real theorem and finite geometry are inherited, not re-claimed."},
     {"pr": 998, "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/998", "relation": "Complex single lift with fixed coordinate readers; different nine-term class. No code imported."},
     {"pr": 1020, "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1020", "relation": "Previous odd root-pair cost-six threshold at26; excluded from this unchanged p<=24 domain."},
-    {"pr": 1060, "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1060", "relation": "Coordinator fresh metadata: physical complex P111 COPY-word realization. This note proves a scalar-field lower bound and supplies no physical realization or invoice."}
+    {"pr": 1060, "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1060", "relation": "Coordinator fresh metadata: physical complex P111 COPY-word realization. This note proves a scalar-field lower bound and supplies no physical realization or invoice."},
+    {"pr": 1071, "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1071", "relation": "Live PR body inspected before publication: JosieElliston independently rederives the support floor across 255 W(E8) support classes, characterizes mixed root bases, and bounds copy-chain delivery for an explicit P104 decoder. Those results are credited as parallel work; this package's distinct result is the arbitrary-complex coefficient bridge through restricted nonisotropy, and its exact counterexamples to unrestricted cross-term nonparallelism and support-preserving projection as a duality argument. No PR1071 code imported or delivery claim repeated."}
   ],
   "targeted_live_queries": [
     "repo:CrocSwap/integer-mult-bounds is:pr decoder complex rational masked two lift",

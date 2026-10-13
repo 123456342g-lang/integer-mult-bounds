@@ -47,3 +47,11 @@ No supplier is changed or priced. Native compilation, complete repository
 suite, hosted CI, physical asymmetric centres, changed recursive profiles,
 outer assembly and all-size multiplication verification are not claimed.
 Only the new package is added; selected and predecessor files are unchanged.
+
+Coordination replay note: a receipt comparison failed during precommit
+finalization. The failing intermediate receipt was not preserved, so its
+exact cause cannot be reconstructed. After commit 78b5e793, both worker and
+coordinator reproduced the saved certificate under isolated optimized
+execution; a recursive comparison found no differing fields. The inherited
+log contains fixed facts only, with no timings. No certificate was
+regenerated in response to that transient failure.
