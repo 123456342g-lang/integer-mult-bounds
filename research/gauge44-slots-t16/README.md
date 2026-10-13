@@ -1,16 +1,16 @@
-# Sixteen replicas on the seven-slot k8 word (#1018): conditional κ = 0.001672081255752945
+# Sixteen replicas on the seven-slot k8 word (#1018): conditional κ = 0.001672166670891177
 
 This package runs the two-bank T16 whole-owner controller on [research/gauge44-slots](../gauge44-slots) (#1018).
 The local word (`c2b29430…`), its 480 helper widths and the PR589 bit supplier are unchanged. The only new
 object is a 16-replica owner map.
 
-- **κ = 0.001672081255752945** (conservative 0.001672081252901961). That is +4.16×10⁻⁷ over #1018's T8
+- **κ = 0.001672166670891177** (conservative 0.001672166668039986). That is +5.01×10⁻⁷ over #1018's T8
   κ 0.00167166528321877. The complex side binds.
-- **Change:** T16 on #1018. `data/OWNERS.json.gz` (`e0df503c…`, 69,120 whole-helper roles, 144 calls) is an exact
+- **Change:** T16 on #1018. `data/OWNERS.json.gz` (`0fe9f483…`, 69,120 whole-helper roles, 144 calls) is an exact
   pattern-flow LNS repack (integer pattern counts + König edge colouring) on the actual T16 window geometry. It is
   frozen data. The verifier runs no constructor and no optimizer: `t16/lift16.py` checks every role inside its
   owner's actual bridge-aware window, the controller audit re-derives the profile, and `t16/indep16.py` independently
-  rechecks windows, whole widths, charts, prefix and row. Idle profile `{1:2241, 2:16, 3:344, 7:33, 16:58, 48:4845}`.
+  rechecks windows, whole widths, charts, prefix and row. Idle profile `{1:2251, 3:389, 7:10, 16:49, 48:4849}`.
   Prefix 397 < 512; physical row coefficient 16469 < 20161.
 - **Code:** `code/` is byte-identical to the signed research/gauge44-barch-t16 code (the #870 T16 adaptation of
   #858's source edits). `t16/` holds #858's `build_parent.py` and the generic-R `lift16.py`/`indep16.py` (R taken from the
@@ -30,7 +30,7 @@ python -B research/gauge44-slots/construction/slots/verify_slots.py \
 # 2. this package (about 2 minutes)
 python -B research/gauge44-slots-t16/verify_manifest.py
 python -B research/gauge44-slots-t16/verify_t16.py --main . --local /tmp/slots/local --work /tmp/slots-t16
-# PASS_GAUGE44_T16_STRICT_GLOBAL_REPLAY 0.001672081255752945
+# PASS_GAUGE44_T16_STRICT_GLOBAL_REPLAY 0.001672166670891177
 ```
 
 Step 1 must use research/gauge44-slots itself: this package's inherited `verify_global.py` is removed, and the T8

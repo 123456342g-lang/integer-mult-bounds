@@ -2,8 +2,8 @@
   "schema": "witness-spec/1",
   "name": "gauge44-t16-two-bank",
   "data": {
-    "plan_sha256": "25b03816e3fe59c744d8e729a93126a020d54d97272ebd5305b7316503e5abd5",
-    "owners_sha256": "e0df503c31364e09edabef375760d2e11b92a6259a71f1df71f300915873605c"
+    "plan_sha256": "3a6694656688b3b340671c85e6952de692de52d18e17062901dba444c2b7d5a9",
+    "owners_sha256": "0fe9f483c286113b9ecf884202543821e55a73562a17c2fdbcce5b0a60b0c457"
   },
   "dispatch": [
     [
@@ -1933,35 +1933,34 @@
     "gain_baseline_kappa": "0.001636241501576388",
     "hosted_residuals": 69120,
     "rank_mass": 1041408,
-    "actual_73column_sigmas": 9373,
-    "cross_replica_helper_roles": 56087,
-    "idle_remainders": 7537,
+    "actual_73column_sigmas": 9908,
+    "cross_replica_helper_roles": 56410,
+    "idle_remainders": 7548,
     "idle_remainder_profile": {
-      "1": 2241,
-      "2": 16,
-      "3": 344,
-      "7": 33,
-      "16": 58,
-      "48": 4845
+      "1": 2251,
+      "3": 389,
+      "7": 10,
+      "16": 49,
+      "48": 4849
     },
     "global_profile": {
-      "1": 349569,
-      "2": 60208,
-      "3": 62552,
+      "1": 349579,
+      "2": 60192,
+      "3": 62597,
       "4": 20448,
       "5": 11808,
-      "7": 33,
+      "7": 10,
       "8": 1152,
-      "16": 58,
-      "48": 4845
+      "16": 49,
+      "48": 4849
     },
     "live": 14336,
     "physical": 14826,
-    "conservative_kappa_decimal": "0.001672081252901961",
-    "kappa_decimal": "0.001672081255752945",
-    "complex_lower": "837440897103320120967/500000000000000000000000",
-    "conservative_complex_lower": "1674881791346097982319/1000000000000000000000000",
-    "kappa": "334416251150589/200000000000000000",
+    "conservative_kappa_decimal": "0.001672166668039986",
+    "kappa_decimal": "0.001672166670891177",
+    "complex_lower": "418741873928083522699/250000000000000000000000",
+    "conservative_complex_lower": "418741873212895913693/250000000000000000000000",
+    "kappa": "1672166670891177/1000000000000000000",
     "assembly_controls_rejected": 69,
     "provider_counts": {
       "gauge44": 144
