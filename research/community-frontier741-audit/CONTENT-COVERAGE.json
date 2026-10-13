@@ -766,9 +766,9 @@
           "source_path": "docs/research/current-status.md",
           "source_sha256": "3645cddfede4f966a4793b2b3adcceed7a08ca563cd939b8a1753141c2c5860b",
           "action": "adapted",
-          "integrated_path": "docs/research/current-status.md",
+          "integrated_path": "research/community-frontier741-audit/snapshots/docs/research/current-status.md",
           "integrated_sha256": "8950a3f3c0a0996c32dba9acdf2242eb436d461a6378768c359f2741d332d3b1",
-          "reason": "Preserved contribution and extended current-status/family coverage for the new integration."
+          "reason": "Immutable reviewed checkpoint preserved; live status has been superseded by the reviewed PR799 publication."
         },
         {
           "source_path": "research/selected626-linux-reconciliation/CLAIM.md",
@@ -886,17 +886,17 @@
           "source_path": "scripts/verify_pr_reconciliation.py",
           "source_sha256": "0f65931402ccef5fc4a03ea5ce7195f6145fef74b50baf715904d67807e8ba50",
           "action": "adapted",
-          "integrated_path": "scripts/verify_pr_reconciliation.py",
+          "integrated_path": "research/community-frontier741-audit/snapshots/verify_pr_reconciliation.py",
           "integrated_sha256": "b8c56e52392577b49c9f653ca080fd64ec300085cebb20e0dd2b6b7b07254ba8",
-          "reason": "Preserved contribution and extended current-status/family coverage for the new integration."
+          "reason": "Historical reviewed implementation preserved immutably; later PR721 adds streaming archive I/O and the new batch adds authoritative decision supersession."
         },
         {
           "source_path": "tests/test_pr_reconciliation.py",
           "source_sha256": "cb8a1145f875192e091d9eb420cd666a60e099c48324df4f28d8db3ffc6a7b8d",
           "action": "adapted",
-          "integrated_path": "tests/test_pr_reconciliation.py",
+          "integrated_path": "research/community-frontier741-audit/snapshots/test_pr_reconciliation.py",
           "integrated_sha256": "455251acf102823878131ce81a23cc9a6316c3b93e27bbc2d9199d30f42f703d",
-          "reason": "Preserved contribution and extended current-status/family coverage for the new integration."
+          "reason": "Historical tests preserved; later round validates final authoritative decisions when a formerly partial PR is completed."
         }
       ]
     },

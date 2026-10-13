@@ -583,3 +583,8 @@ frontier626-verify: selected-record-check
 frontier741-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier741.XXXXXX"); \
 	python3 -B scripts/verify_frontier741.py --work "$$work/replay"
+
+.PHONY: frontier799-verify
+frontier799-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier799.XXXXXX"); \
+	python3 -B scripts/verify_frontier799.py --work "$$work/replay"

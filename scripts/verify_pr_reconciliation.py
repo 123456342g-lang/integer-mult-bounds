@@ -5,7 +5,7 @@ Offline integrity check, not a mathematical verifier or a live GitHub-state chec
 """
 from pathlib import Path
 import hashlib
-import io
+import tempfile
 import json
 import zipfile
 
@@ -60,6 +60,47 @@ def check_archived_files(root, records):
                     'Changed archived replay artifact: ' + name)
 
 
+def archive_inventory(package, manifest):
+    """Check immutable ZIP pins and hash every Git blob without buffering the ZIP.
+
+    A temporary file supplies the seekability required by ZipFile. Reading each
+    member through EOF preserves ZIP CRC checks; both actual lengths and the
+    complete compressed archive SHA256 remain checked. No extraction occurs.
+    """
+    chunk_size = 1024 * 1024
+    archive = {}
+    with tempfile.TemporaryFile() as spool:
+        archive_hash = hashlib.sha256()
+        for item in manifest['parts']:
+            part_hash = hashlib.sha256()
+            size = 0
+            with (package / item['file']).open('rb') as part:
+                while chunk := part.read(chunk_size):
+                    size += len(chunk)
+                    part_hash.update(chunk)
+                    archive_hash.update(chunk)
+                    spool.write(chunk)
+            require(size == item['bytes'], 'Archive part size')
+            require(part_hash.hexdigest() == item['sha256'], 'Archive part digest')
+        require(archive_hash.hexdigest() == manifest['archive_sha256'], 'Archive digest')
+        spool.seek(0)
+        with zipfile.ZipFile(spool) as z:
+            for name in z.namelist():
+                # Name lookup deliberately retains the original duplicate-name
+                # semantics (last entry wins); the immutable ZIP pin is unchanged.
+                info = z.getinfo(name)
+                blob = hashlib.sha1(b'blob ' + str(info.file_size).encode() + b'\0')
+                size = 0
+                with z.open(name) as member:
+                    while chunk := member.read(chunk_size):
+                        size += len(chunk)
+                        blob.update(chunk)
+                require(size == info.file_size, 'Archive member size')
+                archive[name] = blob.hexdigest()
+    require(len(archive) == manifest['files'], 'Archive file count')
+    return archive
+
+
 def main():
     ledger = json.loads((ROOT / 'docs/research/pr-ledger.json').read_text())
     snapshot = json.loads((AUDIT / 'starting-snapshot.json').read_text())
@@ -70,7 +111,8 @@ def main():
                         ROOT / 'research/community-hyperplane599-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-cold617-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-k492-audit/DISPOSITIONS.json',
-                        ROOT / 'research/community-frontier741-audit/DISPOSITIONS.json'):
+                        ROOT / 'research/community-frontier741-audit/DISPOSITIONS.json',
+                        ROOT / 'research/community-frontier799-audit/DISPOSITIONS.json'):
         if not family_path.exists():
             continue
         family = json.loads(family_path.read_text())
@@ -98,20 +140,7 @@ def main():
         require(hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == digest, f'Stale source: {path}')
     package = ROOT / 'research/coordinated-frames-and-entrance-banks'
     manifest = json.loads((package / 'BASELINE.json').read_text())
-    parts = []
-    for item in manifest['parts']:
-        data = (package / item['file']).read_bytes()
-        require(len(data) == item['bytes'], 'Archive part size')
-        require(hashlib.sha256(data).hexdigest() == item['sha256'], 'Archive part digest')
-        parts.append(data)
-    data = b''.join(parts)
-    require(hashlib.sha256(data).hexdigest() == manifest['archive_sha256'], 'Archive digest')
-    archive = {}
-    with zipfile.ZipFile(io.BytesIO(data)) as z:
-        for name in z.namelist():
-            body = z.read(name)
-            archive[name] = hashlib.sha1(b'blob ' + str(len(body)).encode() + b'\0' + body).hexdigest()
-    require(len(archive) == manifest['files'], 'Archive file count')
+    archive = archive_inventory(package, manifest)
     checks = json.loads((AUDIT / 'incorporation-checks.json').read_text())['checks']
     comparison = json.loads((AUDIT / 'content-comparison.json').read_text())
     for number, check in checks.items():
@@ -255,7 +284,8 @@ def main():
                     'Frontier741 coverage head differs')
             require(len(row['files']) == row['changed_files'] == len({f['source_path'] for f in row['files']}),
                     'Frontier741 changed-file inventory incomplete')
-            check_review_completion(actual[number], decision)
+            # Historical partial decisions remain immutable after a later review.
+            check_review_completion(actual[number] if family_decisions[number] == decision else decision, decision)
             for item in row['files']:
                 require(item['action'] in {'retained', 'adapted', 'excluded', 'pending'}, 'Unknown file action')
                 if item['action'] == 'pending':
@@ -266,6 +296,34 @@ def main():
                 if item['action'] != 'retained':
                     require(bool(item.get('reason')), 'Missing adaptation or remaining scope')
         print('PASS frontier741 batch: scoped source coverage, replay evidence and projection bindings')
+    receipt_path = ROOT / 'docs/research/community-frontier799-integration.json'
+    if receipt_path.exists():
+        receipt = json.loads(receipt_path.read_text())
+        for name, digest in receipt['receipts'].items():
+            require(hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == digest,
+                    'Changed frontier799 evidence: ' + name)
+        folder = ROOT / 'research/community-frontier799-audit'
+        coverage = json.loads((folder / 'CONTENT-COVERAGE.json').read_text())['pull_requests']
+        decisions = json.loads((folder / 'DISPOSITIONS.json').read_text())['pull_requests']
+        require(set(coverage) == set(receipt['reviewed_heads']) == {str(d['number']) for d in decisions},
+                'Frontier799 review scope differs')
+        for decision in decisions:
+            number = decision['number']; row = coverage[str(number)]
+            require(row['head'] == decision['reviewed_head'] == receipt['reviewed_heads'][str(number)],
+                    'Frontier799 coverage head differs')
+            require(len(row['files']) == row['changed_files'] == len({f['source_path'] for f in row['files']}),
+                    'Frontier799 changed-file inventory incomplete')
+            check_review_completion(actual[number], decision)
+            for item in row['files']:
+                require(item['action'] in {'retained', 'adapted', 'excluded', 'pending'}, 'Unknown file action')
+                if item['action'] == 'pending':
+                    require(not decision['review_completion']['changed_file_coverage'], 'Incomplete review')
+                if item.get('integrated_sha256'):
+                    require(hashlib.sha256((ROOT / item['integrated_path']).read_bytes()).hexdigest()
+                            == item['integrated_sha256'], 'Changed integrated file: ' + item['integrated_path'])
+                if item['action'] != 'retained':
+                    require(bool(item.get('reason')), 'Missing scope or adaptation reason')
+        print('PASS frontier799 batch: reviewed sources, finite replays, scoped claims and closure bindings')
     print(f'PASS immutable snapshot plus explicit family rounds: {len(actual)} PRs, attributed heads, evidence pins and unresolved questions')
 
 

@@ -1,5 +1,5 @@
 {
-  "status": "PUBLISHED_SIX_MERGED_ONE_SUBSET_LINUX_PENDING",
+  "status": "PUBLISHED_SIX_MERGED_ONE_HISTORICAL_SUBSET_LINUX_PASSED",
   "selected_kappa": "1661202643272239/1000000000000000000",
   "selected_decimal": "0.001661202643272239",
   "reviewed_heads": {
@@ -15,14 +15,14 @@
   "linux_ci": {
     "source_pr741": "passed exact head, Python 3.11 and 3.14",
     "source_run_url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38349298170",
-    "combined_integration": "started; see exact-head run list",
-    "circuits681": "full local hosted replay passed; see exact-head Linux run list",
+    "combined_integration": "passed",
+    "circuits681": "passed",
     "integration_runs": [
       {
-        "conclusion": "",
+        "conclusion": "success",
         "databaseId": 38355258935,
         "headSha": "c290b7b919790300e14004a75d8d24b55ca3c5b5",
-        "status": "in_progress",
+        "status": "completed",
         "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38355258935",
         "workflowName": "Selected family 741 finite composition"
       },
@@ -51,10 +51,10 @@
         "workflowName": "Verify early reset and kernel composition"
       },
       {
-        "conclusion": "",
+        "conclusion": "success",
         "databaseId": 38355258984,
         "headSha": "c290b7b919790300e14004a75d8d24b55ca3c5b5",
-        "status": "in_progress",
+        "status": "completed",
         "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38355258984",
         "workflowName": "Consolidated supplier circuit integration"
       },
@@ -90,7 +90,7 @@
   ],
   "scope": "Finite scalar, frame, phase, whole-owner, precision, moment and exact assembly checks on both freshly rebuilt suppliers. All-size/compiler/common-label/mutable-source/whole-call hosting/precision/tape/analytic assumptions remain. Not a full Lean multiplication theorem. Source PR Linux CI passed; combined integration CI status is separate.",
   "receipts": {
-    "research/community-frontier741-audit/CONTENT-COVERAGE.json": "036e6a5eed5c468a5486c022f94597b61b592f76bd98f0e58b004d763e2005b1",
+    "research/community-frontier741-audit/CONTENT-COVERAGE.json": "3c820fb30e1b4d9bcfc6a7ab524375e5b2abd66b940af2c509146104f0bcd79c",
     "research/community-frontier741-audit/DISPOSITIONS.json": "3190e452039b1aae2ec7ef2cf9c94c49a165957bde7619cc4b24bab25b15e8d8",
     "research/community-frontier741-audit/BINDING.json": "657f6e2c853fb942e9bf3acdaad00b716267aa8000b7fa6c1e80c93b47333df2",
     "research/community-frontier741-audit/ASSEMBLY.json": "21e2df9286542c9e2786f3720d0f13de0d0a7a982761ebe2184f8f7f811c774d",
@@ -131,7 +131,8 @@
     "research/community-frontier741-audit/composed-bit589.log": "7d0f339d9e389d6226097db5b383bbc182de9d141df760d4adf5b060f0800ae4",
     "research/community-frontier741-audit/composed-bindings.log": "3749764c11e425c10f2f68137b987a7ed5c6a7f29fa319e0d0623cb1bd752526",
     "research/community-frontier741-audit/composed-complex741.log": "a3051e115805e394538a7ecfed36cd08bf6895441b52c1ceb544d6efe4de2d50",
-    "research/community-frontier741-audit/PUBLICATION.json": "0ce88ed7903518a9e10297d59309d4a40945397a838638da044e7b2a67b882f9"
+    "research/community-frontier741-audit/PUBLICATION.json": "0ce88ed7903518a9e10297d59309d4a40945397a838638da044e7b2a67b882f9",
+    "research/community-frontier741-audit/snapshots/verify_pr_reconciliation.py": "b8c56e52392577b49c9f653ca080fd64ec300085cebb20e0dd2b6b7b07254ba8"
   },
   "whitespace_review": "Maintainer changes pass. Eleven inherited whitespace diagnostics in byte-pinned PR741 vendor files are preserved rather than rewriting source pins.",
   "local_composed_replay": {

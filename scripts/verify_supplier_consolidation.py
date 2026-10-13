@@ -22,6 +22,7 @@ def main():
     p.add_argument('--hosted', action='store_true')
     p.add_argument('--out', type=Path)
     p.add_argument('--package-tests', action='store_true')
+    p.add_argument('--component-tests', action='store_true', help='Also replay each of the six original component entry points')
     a = p.parse_args()
     if sys.flags.optimize:
         raise SystemExit('Assertions must remain enabled')
@@ -45,6 +46,20 @@ def main():
         if a.out:
             command += ['--out', str(a.out.resolve())]
         subprocess.run(command, check=True, cwd=root)
+        if a.component_tests:
+            packages = ('r420-two-block-composition', 'r420-quad13',
+                        'r420-compensation-basis', 'complex-dyadic-lowering',
+                        'r420-decoder-sharing', 'r420-target-basis')
+            for package in packages:
+                shutil.copytree(ROOT / 'research' / package, root / 'research' / package,
+                                dirs_exist_ok=True, ignore=shutil.ignore_patterns('__pycache__'))
+                args = [sys.executable, '-B', str(root / 'research' / package / 'verify.py')]
+                if a.hosted and package == 'r420-two-block-composition':
+                    args.append('--hosted')
+                subprocess.run(args, check=True, cwd=root)
+            subprocess.run([sys.executable, '-B', '-m', 'unittest', 'discover',
+                            '-s', 'research/r420-target-basis', '-p', 'test_*.py'],
+                           check=True, cwd=root)
         if a.package_tests:
             subprocess.run([sys.executable, '-B', str(root / REL / 'test_package.py')],
                            check=True, cwd=root)
