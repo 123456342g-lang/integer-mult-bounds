@@ -99,3 +99,11 @@ The four package tests and whitespace check pass after the source correction.
 New material is Apache-2.0. @Scratch-net contributes with substantial OpenAI
 Codex assistance in research, implementation, proof, verification and writing.
 The separate implementations are AI-assisted, not independent human peer review.
+
+## Final handoff
+
+Submitted as [PR1153](https://github.com/CrocSwap/integer-mult-bounds/pull/1153).
+Exact implementation commit: `643cf099f16b055731e393fea9582b45eff51035`.
+The handoff commit updates only this document and the local claim.
+Executable code, source pins and the exact receipt remain unchanged.
+No PR was merged or closed, and the selected frontier remains untouched.
