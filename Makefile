@@ -599,3 +599,8 @@ complex741-parallel:
 frontier890-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier890.XXXXXX"); \
 	python3 -B scripts/verify_frontier890.py --work "$$work/replay"
+
+.PHONY: frontier942-verify
+frontier942-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier942.XXXXXX"); \
+	python3 -B scripts/verify_frontier942.py --work "$$work/replay"

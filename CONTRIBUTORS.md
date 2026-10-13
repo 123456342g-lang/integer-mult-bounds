@@ -1,8 +1,29 @@
 # Community contribution record
 
-**Current reviewed composition: #890 / #869 / #870 with #589, κ=0.001661957774647029.**
-See the [review](docs/research/community-frontier890-review.md) and
+**Current reviewed composition: #942 on #890 / #869 / #870 with #589, κ=0.001661960547713947.**
+See the [current review](docs/research/community-batch952-review.md) and
 [circuit integration](docs/research/community-circuits681-review.md) for scope.
+
+## T37, circuit and scoped-bound batch
+
+[Individual scope, evidence and adaptations](docs/research/community-batch952-review.md).
+Parallel work is credited independently of the selected frontier.
+
+- **Jonathan Capalbo / jon314159 (#942):** T37 whole-owner composition, enlarged precision allowance, complete finite replay and all-positive-replica fixed-family grid bound.
+- **Gareth Davidson / bitplane (#904/#941/#952):** four-wire prefix synthesis, exact helper-matching floor with a precision-admitted near-optimum, and six-wire Boolean resynthesis.
+- **Ross Richardson (#936/#908/#914/#923/#925/#950):** five-wire prefix synthesis, independently checked block constructions and scoped minima, plus exact historical central-factor verification acceleration.
+- **Charles Bethin / cbethin (#850):** fixed SW4/X4 owner-profile optimum uniformly through exponent 1/3, with independent continuum certification.
+- **Aaron Wang / navinor (#873/#848):** frame508 schedule and copy-path sharing obstruction under the original interface. His separate #946 encoding proposal is credited as pending integration, with frozen-source conflicts recorded.
+- **Mihir Srivastava / mihir-s-05 (#845):** all-real fixed-reader P112 single-lift copy-rank obstruction, with independent finite premises.
+- **zeusinsight (#857):** parallel frame523 integer-factor construction and precision replay.
+- **Deftsalt / Deftsalt-debug (#880):** frame507 schedule, independent fixed-factor minima and native verification.
+- **CubeJerry (#906):** frame522 shortening with complete precision and native checks.
+
+Predecessor credit includes Chafik Boukhalfa, Jeremy Kothe, Hao Yan,
+DreamingOfClouds, eumemic, icekylinx and Rohan Arun; Jeffrey Cox's small-GL
+method; Sagar Thakrar's matching and sharing certificates; Scott Woolsey
+Biggart, Greer Guthrie, Mikhail Gadelha and commdata2338's basis work; Gautam
+Gupta's #844 block; and all native verification authors in the retained notices.
 
 | Contributor | Work in this round and its construction lineage |
 |---|---|

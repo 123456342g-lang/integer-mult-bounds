@@ -137,9 +137,10 @@
           "source_path": "Makefile",
           "source_sha256": "58dce973c1bd484f98049a0f2f1486bfbe6dec5bce5bec147bf9422bf6d0c4fc",
           "action": "adapted",
-          "integrated_path": "Makefile",
+          "integrated_path": "research/community-batch952-audit/before-integration/Makefile",
           "integrated_sha256": "27516e9e565965563405a3fc518840c43fee39e9812aab303abf5eea1385bcdc",
-          "reason": "Use PR865 stricter superset in default Make/CI; retain PR847 parallel implementation/tests and credit."
+          "reason": "Use PR865 stricter superset in default Make/CI; retain PR847 parallel implementation/tests and credit.",
+          "historical_snapshot_reason": "Preserve the exact reviewed Makefile before adding the T37 entrypoint; current Makefile extends this snapshot."
         },
         {
           "source_path": "docs/research/frontier-replay-coverage.md",
@@ -219,9 +220,10 @@
           "source_path": "Makefile",
           "source_sha256": "ebb8c663fd2ef326e87e887535755a21218c55b24762dda94e423a0da4ecad63",
           "action": "adapted",
-          "integrated_path": "Makefile",
+          "integrated_path": "research/community-batch952-audit/before-integration/Makefile",
           "integrated_sha256": "27516e9e565965563405a3fc518840c43fee39e9812aab303abf5eea1385bcdc",
-          "reason": "Maintainer adaptation documented in community-frontier890-review: composition of coverage fixes, immutable checkpoint context, arithmetic certification, or current replay/CI integration."
+          "reason": "Maintainer adaptation documented in community-frontier890-review: composition of coverage fixes, immutable checkpoint context, arithmetic certification, or current replay/CI integration.",
+          "historical_snapshot_reason": "Preserve the exact reviewed Makefile before adding the T37 entrypoint; current Makefile extends this snapshot."
         },
         {
           "source_path": "certificates/replay-coverage/pr741-sw4-v1.json",
@@ -327,9 +329,10 @@
           "source_path": "Makefile",
           "source_sha256": "3df577cb2f3d36b38a08fbcb114d7e9001c4278fdf1327ef479784d049fb9d13",
           "action": "adapted",
-          "integrated_path": "Makefile",
+          "integrated_path": "research/community-batch952-audit/before-integration/Makefile",
           "integrated_sha256": "27516e9e565965563405a3fc518840c43fee39e9812aab303abf5eea1385bcdc",
-          "reason": "Maintainer adaptation documented in community-frontier890-review: composition of coverage fixes, immutable checkpoint context, arithmetic certification, or current replay/CI integration."
+          "reason": "Maintainer adaptation documented in community-frontier890-review: composition of coverage fixes, immutable checkpoint context, arithmetic certification, or current replay/CI integration.",
+          "historical_snapshot_reason": "Preserve the exact reviewed Makefile before adding the T37 entrypoint; current Makefile extends this snapshot."
         },
         {
           "source_path": "research/complex741-parallel-replay/ACCESS.json",
