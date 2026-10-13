@@ -26,4 +26,7 @@ Prepared for nightangelflowerwin-ops with substantial OpenAI Codex assistance.
 Result: weighted four-factor signed-leaf charge 20 -> 16 with the same two
 scratch arrays and twelve calls; the full internal-dispatch threshold is
 explicit. Uniform54 matches 2112. Census, exact restoration, optimized,
-relocated and corruption checks pass. Latest overlap refreshed through779.
+relocated and corruption checks pass. Latest overlap refreshed through787.
+Concurrent PR784 supplies an analytic bound in an all-dirty class; no code
+or bound is consumed here. Submitted result:
+https://github.com/CrocSwap/integer-mult-bounds/pull/788

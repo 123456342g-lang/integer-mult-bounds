@@ -33,7 +33,10 @@ The selected source manifest, actual ASSEMBLY and maintainer review were read.
 No selected-supplier cold replay, root-wide suite, PR628 rounded leaf replay,
 remote CI, Linux execution or formal proof-assistant pass is claimed.
 
-Publication overlap refreshed through PR779. PR714,730,744,758 remain distinct:
+Publication overlap refreshed through PR787. PR714,730,744,758 remain distinct:
 one clean root versus all-dirty scheduling versus the present sequential reuse
 of one clean array. No pinned sprint issue was found. Posting permission for
 the upstream repository was not established by the connected integration.
+The credential-manager route successfully published PR788. PR784's newly
+arrived scratch-dependent theorem concerns an all-dirty class and is credited
+as concurrent context; its result is not imported or independently verified.
