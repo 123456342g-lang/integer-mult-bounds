@@ -38,3 +38,19 @@ helper and replaces the deliverable with an affine-support certificate and
 coefficient-wise quadratic-phase identity over 13 Boolean variables. This
 independently corroborates #702 by symbolic algebra rather than a second
 all-column enumerator. No #702 implementation or result is imported.
+
+## Result — 2026-10-13 04:39 UTC
+
+Submitted [PR #712](https://github.com/CrocSwap/integer-mult-bounds/pull/712).
+The affine support map is bijective and the quadratic phase residual vanishes
+at all 92 coefficient positions. Thirteen rejection controls pass; five test
+groups include direct checks of all six phase components on all 8,192 Boolean
+assignments. Normal and optimized isolated runs from a separate committed-files-only
+worktree reproduce the exact saved certificate. Selected-record and whitespace
+checks passed. No new kappa or full theorem is claimed.
+
+Final overlap refresh through #711 found #702 as the related amplitude audit,
+credited for its broader frame coverage. The symbolic method is distinct and
+upstream main remains at the recorded base. No pinned sprint issue exists, so
+this is the local result update and handoff link. The source contribution is
+commit `634026a`; this follow-up changes only the claim's handoff record.
