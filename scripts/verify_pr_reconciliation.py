@@ -45,6 +45,17 @@ def check_family_decision(item, decision):
                     f'#{decision["number"]}: ledger differs from family decision: {field}')
 
 
+def check_batch1099_file(item):
+    """Authenticate the original Makefile prefix after the opt-in PR154 target."""
+    current = (ROOT / item['integrated_path']).read_bytes()
+    if hashlib.sha256(current).hexdigest() == item['integrated_sha256']:
+        return
+    require(item['integrated_path'] == 'Makefile', 'Changed integrated file: ' + item['integrated_path'])
+    original = (ROOT / 'research/community-reconciliation92-audit/checkpoints/Makefile-before154').read_bytes()
+    require(hashlib.sha256(original).hexdigest() == item['integrated_sha256'], 'Changed historical Makefile')
+    require(original.endswith(b'\n') and current.startswith(original), 'Historical Makefile content changed')
+
+
 def check_review_completion(item, decision):
     """An incorporated disposition must not outrun its source/execution/publication record."""
     flags = decision['review_completion']
@@ -135,7 +146,8 @@ def main():
                         ROOT / 'research/community-batch1047-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-batch1099-audit/DISPOSITIONS.json',
                         ROOT / 'research/pr-reconciliation100-20261013/DISPOSITIONS.json',
-                        ROOT / 'research/community-historical-five-audit/DISPOSITIONS.json'):
+                        ROOT / 'research/community-historical-five-audit/DISPOSITIONS.json',
+                        ROOT / 'research/community-reconciliation92-audit/DISPOSITIONS.json'):
         if not family_path.exists():
             continue
         family = json.loads(family_path.read_text())
@@ -521,8 +533,7 @@ def main():
                 if item['action'] == 'pending':
                     require(not decision['review_completion']['changed_file_coverage'], 'Incomplete review')
                 if item.get('integrated_sha256'):
-                    require(hashlib.sha256((ROOT / item['integrated_path']).read_bytes()).hexdigest()
-                            == item['integrated_sha256'], 'Changed integrated file: ' + item['integrated_path'])
+                    check_batch1099_file(item)
                 if item['action'] != 'retained':
                     require(bool(item.get('reason')), 'Missing scope or adaptation reason')
         print('PASS batch1099: scoped source coverage and review completion')
@@ -533,6 +544,9 @@ def main():
     historical_five = ROOT / 'research/community-historical-five-audit/replay.py'
     if historical_five.exists():
         runpy.run_path(str(historical_five), run_name='__main__')
+    reconciliation92 = ROOT / 'research/community-reconciliation92-audit/verify.py'
+    if reconciliation92.exists():
+        runpy.run_path(str(reconciliation92), run_name='__main__')
     print(f'PASS immutable snapshot plus explicit family rounds: {len(actual)} PRs, attributed heads, evidence pins and unresolved questions')
 
 

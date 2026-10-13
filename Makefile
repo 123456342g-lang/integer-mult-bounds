@@ -654,3 +654,7 @@ bit589-width-packing-verify:
 frontier1094-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier1094.XXXXXX"); \
 	python3 -B scripts/verify_frontier1094.py --work "$$work/replay"
+
+.PHONY: verify-parallel
+verify-parallel:
+	python3 scripts/verify_parallel.py
