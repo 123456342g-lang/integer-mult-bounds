@@ -119,7 +119,16 @@
     188,
     189
   ],
-  "publication": "Review and integrations published with this receipt; GitHub resolutions recorded separately.",
-  "closures": "pending",
+  "publication": "Published to origin/main at e3bb23b4c6bae16ba277f9443e11257a0a37780a",
+  "closures": {
+    "merged": [
+      3,
+      183
+    ],
+    "closed_as_superseded": [
+      90
+    ],
+    "carry_forwards": 97
+  },
   "scope": "The other 97 need substantive delta reviews. Missing identical bytes does not mean missing ideas, invalid mathematics, or author action required."
 }

@@ -64,7 +64,7 @@
       "reviewed_head": "dfe5b818aad4d386cb5dd7d76df108088107765d",
       "current_head": "dfe5b818aad4d386cb5dd7d76df108088107765d",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/pr-reconciliation100-20261013/pr3-original.tar.gz",
         "tests/test_complex_network.py",
@@ -73,7 +73,16 @@
         "certificates/complex-network.json"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "closedAt": "2026-10-13T20:45:33Z",
+        "headRefOid": "dfe5b818aad4d386cb5dd7d76df108088107765d",
+        "mergedAt": "2026-10-13T20:45:33Z",
+        "number": 3,
+        "state": "MERGED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/3",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/3#issuecomment-6154863961",
+        "integration_commit": "e3bb23b4c6bae16ba277f9443e11257a0a37780a"
+      },
       "scope": "Historical compressed complex circuit: existing exact core retained, original tests restored and 10 tests replayed; full original 14-file packet preserved. Old frontier/build wrappers remain historical; upstream analytic interfaces assumed.",
       "review_lane": "early-circuit",
       "review_completion": {
@@ -2364,14 +2373,23 @@
       "reviewed_head": "8e0442641696b4c284bf7fbb4f2c97dccf24ea6c",
       "current_head": "8e0442641696b4c284bf7fbb4f2c97dccf24ea6c",
       "disposition": "superseded",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "CONTRIBUTING.md",
         "docs/reproducibility.md",
         "CONTRIBUTORS.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "closedAt": "2026-10-13T20:46:27Z",
+        "headRefOid": "8e0442641696b4c284bf7fbb4f2c97dccf24ea6c",
+        "mergedAt": null,
+        "number": 90,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/90",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/90#issuecomment-6154864882",
+        "integration_commit": "e3bb23b4c6bae16ba277f9443e11257a0a37780a"
+      },
       "scope": "Resolve stale current-checkpoint pointers with dynamic selected-record guidance.",
       "review_lane": "documentation",
       "review_completion": {
@@ -4196,14 +4214,23 @@
       "reviewed_head": "1f22094b12bdae7759124e6c51ab44d3ea2a10ab",
       "current_head": "1f22094b12bdae7759124e6c51ab44d3ea2a10ab",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "docs/research/assembly-ceiling.md",
         "scripts/assembly_ceiling.py",
         "tests/test_assembly_ceiling.py"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "closedAt": "2026-10-13T20:45:33Z",
+        "headRefOid": "1f22094b12bdae7759124e6c51ab44d3ea2a10ab",
+        "mergedAt": "2026-10-13T20:45:33Z",
+        "number": 183,
+        "state": "MERGED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/183",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/183#issuecomment-6154864419",
+        "integration_commit": "e3bb23b4c6bae16ba277f9443e11257a0a37780a"
+      },
       "scope": "Import all three files; replay exact ceiling tests against the retained historical assembly modules. No new supplier, kappa or universal ceiling claim.",
       "review_lane": "assembly-arithmetic",
       "review_completion": {
