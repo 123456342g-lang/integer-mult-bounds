@@ -13,5 +13,20 @@
   "deliverable": "one exact conditional kappa witness and bound-source closure",
   "expected_finish_utc": "2026-10-13T16:42:00Z",
   "coordination": "No pinned issue; full PR metadata and all-state T37/grid searches checked. PR942 proves the 10^-18 grid optimum, not a real-root optimum; PR987 proposes a changed U10 word and is distinct.",
-  "status": "claimed"
+  "status": "completed and submitted",
+  "result": {
+    "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/1019",
+    "code_checkpoint": "550ff1e752949296310a585e3b52e762aca24800",
+    "kappa": "1661960547713947858091/1000000000000000000000000",
+    "decimal": "0.001661960547713947858091",
+    "increase_over_selected": "858091/1000000000000000000000000",
+    "objective_grid": "10^-24",
+    "source_files_checked": 876,
+    "complete_baseline_reproduced": true,
+    "strict_outer_constraints": 47,
+    "controls": "7 arithmetic/invoice and 8 portable-package controls",
+    "native_geometry_and_ancestry": "Retained immutable reviewed evidence, not freshly emitted",
+    "overlap_refresh": "Full open metadata refreshed through #1017; all-state T37/grid searches found no matching refinement; live selected kappa remains lower.",
+    "reproduction": "python3 -I -B research/t37-rational-refinement/verify.py"
+  }
 }
