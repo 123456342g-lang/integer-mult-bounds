@@ -2,36 +2,55 @@
   "python": "Python 3.14.7",
   "runs": [
     {
-      "name": "relocated isolated optimized",
-      "exit_code": 0,
-      "seconds": 19.33163124974817,
-      "diagnostic": "PASS_TERNARY_ECHO_SPACE_AUDIT 2673 cells; 606 literal witnesses; 11 controls"
-    },
-    {
       "name": "corrupt predecessor",
       "exit_code": 1,
-      "seconds": 0.08215299993753433,
-      "diagnostic": "ValueError: Source changed: vendor/pr689/ternary.py"
+      "seconds": 0.10274216625839472,
+      "diagnostic": "Source changed: vendor/pr689/ternary.py"
     },
     {
-      "name": "corrupt optimum certificate",
+      "name": "extra certificate field",
       "exit_code": 1,
-      "seconds": 17.841449458152056,
-      "diagnostic": "ValueError: Receipt differs"
+      "seconds": 21.363197833299637,
+      "diagnostic": "Receipt differs"
     },
     {
       "name": "output overwrite",
       "exit_code": 1,
       "diagnostic": "Output already exists; original bytes retained"
+    },
+    {
+      "case": "normal",
+      "exit_code": 0,
+      "seconds": 21.479997250251472,
+      "diagnostic": "PASS_TERNARY_ECHO_SPACE_AUDIT 2673 cells; 606 literal witnesses; 11 controls"
+    },
+    {
+      "case": "isolated optimized",
+      "exit_code": 0,
+      "seconds": 18.927575916983187,
+      "diagnostic": "PASS_TERNARY_ECHO_SPACE_AUDIT 2673 cells; 606 literal witnesses; 11 controls"
+    },
+    {
+      "case": "boolean certificate mutation",
+      "exit_code": 1,
+      "seconds": 19.055976583622396,
+      "diagnostic": "Receipt differs"
+    },
+    {
+      "name": "corrupt optimum certificate",
+      "mutation": "cost_table[9][127]: 7488 -> 7487",
+      "exit_code": 1,
+      "seconds": 21.464331292081624,
+      "diagnostic": "Receipt differs"
     }
   ],
   "code_sha256": {
     "trees.py": "dc42e22aaec3bf9fd6e33308d2e0c05f26d72ff0bb86633eab43025a54f93bf1",
-    "verify.py": "a4c1729613de588c93651d5d8c8a3f7245a0db5892f2be9ca04dd3f5c8463c46"
+    "verify.py": "6558d918bb4adee77d28dd2240c1c669223819d45f12d16d70d79d1e30594bfa"
   },
   "certificate_sha256": "4ebeed830561d3356867e77c90acfbabfe05a0ac2be3908da54e041b7e509b1b",
   "base_commit": "66849e1475c930fd7732b1a0067ffee7e1e95f60",
-  "verified_utc": "2026-10-13T04:54:42.577574+00:00",
+  "verified_utc": "2026-10-13T05:10:09.619559+00:00",
   "platform": "macOS-26.6.1-arm64-arm-64bit-Mach-O",
   "normal_check": "PASS",
   "optimized_check": "PASS; exact receipt equality",
@@ -60,5 +79,10 @@
       "strict_ternary_minimum": 512,
       "comparison": "Different admitted classes; no broader minimum claimed."
     }
+  },
+  "typed_certificate_control": {
+    "before": "The first verifier admitted JSON true in place of integer 1 because Python equality merges them.",
+    "repair": "Compare parsed receipts with canonical JSON serialization. Normal and isolated optimized replay pass; the boolean mutation is rejected.",
+    "mathematical_results_changed": false
   }
 }

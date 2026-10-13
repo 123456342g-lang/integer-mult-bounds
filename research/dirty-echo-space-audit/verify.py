@@ -274,7 +274,9 @@ def main():
     if args.write:
         args.write.write_text(json.dumps(result,indent=2)+'\n')
     else:
-        require(json.loads((HERE/'CERTIFICATE.json').read_text()) == result,'Receipt differs')
+        recorded = json.loads((HERE/'CERTIFICATE.json').read_text())
+        require(json.dumps(recorded,sort_keys=True) == json.dumps(result,sort_keys=True),
+                'Receipt differs')
     print(result['status'],table['cells'],'cells;',table['feasible_cells'],'literal witnesses;',
           len(result['negative_controls']),'controls')
 

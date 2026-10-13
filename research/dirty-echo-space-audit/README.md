@@ -42,6 +42,7 @@ PASS_TERNARY_ECHO_SPACE_AUDIT 2673 cells; 606 literal witnesses; 11 controls
 
 The command also passes with `-O`. It checks retained source hashes, regenerates
 all evidence, and compares the complete result with `CERTIFICATE.json`.
+The comparison preserves JSON types; a boolean cannot replace an integer.
 `--write NEW_PATH` writes a new receipt without replacing an existing file.
 
 ## Proof and completed coverage
