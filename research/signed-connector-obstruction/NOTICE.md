@@ -14,6 +14,12 @@ factor fanout contract, star comparators and cost accounting. Both READMEs and
 notices are retained byte for byte; no source notice is silently corrected.
 No executable code from either contribution is imported.
 
+Concurrent PR938 counts minimum words in the one-source signed fanout model.
+PR943 at cf360b4b09b7d0419decdd6ac85421fefed55bdd gives a four/five-source
+binary boundary. Both are by Ross Richardson with substantial Codex assistance.
+They concern distinct query domains; their results and code are not used to
+establish this signed three-source classification.
+
 Chafik Boukhalfa (@chafreaky), PR628 at
 0768f97d06c623b8211e651543c66135796b62bf, supplies the dirty product commutator
 and literal-inverse convention credited by both predecessors. PR822's connector

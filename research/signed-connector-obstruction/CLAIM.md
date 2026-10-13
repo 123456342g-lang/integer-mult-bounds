@@ -52,4 +52,33 @@ No delegated workers are used.
 
 ## Result
 
-Pending. This section will be replaced once with the verified result and handoff.
+Completed and submitted as [PR944](https://github.com/CrocSwap/integer-mult-bounds/pull/944)
+by 2026-10-13 13:54 UTC (2026-10-14 00:54 Melbourne), within the 40-minute
+budget. Verification/handoff began before the final ten-minute reservation.
+
+The [research note](README.md) and [exact receipt](EXPECTED.json) establish the
+restricted-query minimum for all 19,683 signed patterns: 19,395 attain their
+support bound, while 288 have minimum 14. All 288 are signed/permuted copies
+of one obstruction; the explicit repair lowers to 308 leaf calls versus 388
+for the row-star comparator, with four dirty arrays. The checker uses a
+separate path enumerator and a free noncommutative interpreter. All 22
+mathematical controls, nine package corruptions, relocation and regeneration
+checks pass. No new kappa or selected-supplier implementation is claimed.
+
+The full prepublication refresh covered 711 open PRs through #940; immediate
+checks included #941, #942 and #943. PR938 independently counts one-source
+fanout minimizers. PR943 at `cf360b4b09b7d0419decdd6ac85421fefed55bdd` establishes
+a four/five-source binary boundary. Both are credited concurrent work with
+distinct query domains; no result or executable from them is consumed.
+PR889 and PR934 remained at the retained exact heads, with no PR934 comments.
+No pinned coordination issue existed at the final check, so this is the one
+local result update; no separate issue or external claim comment was posted.
+
+Upstream main advanced to `47481c89fd30a43f8f882eb4b391e89c29273fd0` during
+verification, selecting PR890 at `1661957774647029/10^18`. The selected record
+was followed to the U8/T21 construction and maintainer review. This branch
+was fast-forwarded onto that main before its contribution commit. Exact
+package verification, selected-record integrity and all five selected-result
+tests pass on the refreshed base. The original experiment/source pins remain
+explicit; all existing tracked files and upstream are unchanged relative to
+the refreshed base. No merge or other contributor PR modification was made.
