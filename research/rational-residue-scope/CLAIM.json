@@ -32,6 +32,16 @@
   "budget": "About 70 minutes from19:54 UTC; at least final25% validation/packaging; no broad rational reconstruction or rounded repair search. Stop on a failed homomorphism or unpaid interface; at most one bounded pivot.",
   "optimistic_complete_cost": "Inherited1376 calls, five length-two data arrays and four private work registers. If all coefficient denominators are units, the kernel stays52292 commands and56-bit data for the same integer endpoint bound. Price inverse preparation, every coefficient conversion, checks, input/output conversion, control, routing and all original descriptor storage separately. No q^D initialization for residue data; no claim it removes PR1135 cost for its different exact numerator representation.",
   "coordination": "Read Discussions1163/1166/1167 and all active threads; no overlapping claim. Open PRs through1190, including1159/1135/1164 and1181/1190. Public scoped claim authorized by updated user gist.",
-  "status": "claimed; no result yet",
-  "attribution": "Gareth Davidson with substantial OpenAI Codex assistance; Ali Romman PR1135, Davidson PR1057/1159 and their credited source lineage; modular localization is classical, no priority claim."
+  "status": "completed; submitted",
+  "attribution": "Gareth Davidson with substantial OpenAI Codex assistance; Ali Romman PR1135, Davidson PR1057/1159 and their credited source lineage; modular localization is classical, no priority claim.",
+  "completed_at_utc": "2026-10-13T20:38:24.272420+00:00",
+  "submission_base": "49b3157d1d89adcef16df8be98445451672be5ba",
+  "mathematical_head": "7961d6ab49181a0cfd5813daccdae89ea904ece6",
+  "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/1229",
+  "discussion": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1202",
+  "scope_status": "changed; executable comparison broader than original navigation card",
+  "result": "52 rational factors,1376 unchanged calls; exact least prefix denominator9;94-bit sufficient common-numerator data versus56-bit residue data, neither numerator minimum nor runtime comparison;2406 paid preparation commands plus52292 kernel commands; rounded and nonintegral output boundaries excluded; no kappa.",
+  "validation": "Complete Python3.14 and read-only isolated optimized3.12 replay receipts agree. Registered metadata/replay pass;8 package tests and25 selected/source-binding tests pass;12 mathematical/admission/price controls.",
+  "receipt_sha256": "2c63ba9c68e4537a49815af076b9097ae49c3f5a7ca66229710455b9d3aed6e2",
+  "final_overlap": "20:35 UTC;836 open PRs through1228,6 Discussion threads and comments,324 local records; complete pagination,no warnings. Relevant predecessor heads unchanged; declared search coverage is not a novelty certificate."
 }
