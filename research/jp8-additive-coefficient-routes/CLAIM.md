@@ -36,3 +36,27 @@ claim under the requested fallback. No separate reservation issue is opened.
 Contributor: Ryan Haines (@Ryan-Haines), with substantial OpenAI Codex
 assistance. New material is Apache-2.0. Result and handoff will be recorded
 once after verification.
+
+## Result and handoff
+
+Completed: [PR #811](https://github.com/CrocSwap/integer-mult-bounds/pull/811).
+The 269 positive one-read transitions save 2,784 real primitives beyond the
+power-only comparator; total forward saving is 32,810 (257,232 to 224,422).
+Both orientations pass literal replay on 725 arbitrary columns. Independent
+integer enumeration covers 849,420 exponent pairs and 6,776 block input
+columns. Windows and Linux, optimized/relocated/recompressed replay, 12+4+25
+mutation controls, four packaging tests, Ruff and selected-record integrity
+pass. The unchanged backward maximum leaves the local invoice unchanged;
+no new kappa is claimed. README.md gives the reproduction command and limits.
+
+Final overlap refresh: 629 open PRs through #810 at 06:08 UTC, plus renewed
+confirmation of no pinned issue and unchanged `origin/main`. New #807
+changes CK helper bases; #809 changes a historical center basis. Neither
+examines fixed-order JP8 cleanup numerator transitions. Source/comparison
+heads for #739 and #793 are pinned; no pending implementation is imported.
+
+The initial research commit is `e80c08f`; this final claim update records the
+result once. A clean patch and short handoff are also retained in the local
+workspace as `jp8-additive-s31.patch` and `jp8-additive-HANDOFF.txt`, including
+the final commit and verification command. This local claim is the requested
+coordination fallback because no pinned sprint issue exists.
