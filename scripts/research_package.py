@@ -143,6 +143,8 @@ def run_package(root, package, install=False):
 
 def plan(root, changed):
     changed = set(changed)
+    replay_changed = bool(changed.intersection({
+        "scripts/research_package.py", ".github/workflows/research-packages.yml"}))
     packages = []
     for path in sorted((root / "research").glob("*/VERIFY.json")):
         package = path.parent.relative_to(root).as_posix()
@@ -150,7 +152,7 @@ def plan(root, changed):
         # Parse only for selection; validate fully in the isolated replay job.
         inputs = manifest.get("inputs", [])
         if (changed.intersection(inputs) or any(p.startswith(package + "/") for p in changed)
-                or "scripts/research_package.py" in changed):
+                or replay_changed):
             packages.append(package)
     return packages
 
@@ -169,7 +171,8 @@ def main():
                 changed = git(ROOT, "ls-files", "-z").decode().split("\0")
             else:
                 base = git(ROOT, "rev-parse", "--verify", args.changed_since + "^{commit}").decode().strip()
-                changed = git(ROOT, "diff", "--name-only", "-z", base, "HEAD").decode().split("\0")
+                # A rename must invalidate both the removed input and its new path.
+                changed = git(ROOT, "diff", "--no-renames", "--name-only", "-z", base, "HEAD").decode().split("\0")
             packages = plan(ROOT, changed)
             matrix = json.dumps({"include": [{"package": p} for p in packages]})
             print(matrix)
