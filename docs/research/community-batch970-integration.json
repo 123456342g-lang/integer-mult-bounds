@@ -1,5 +1,5 @@
 {
-  "status": "FIRST_NINE_REVIEWED_PUBLICATION_PENDING_31_REMAIN",
+  "status": "FIRST_NINE_PUBLISHED_MERGED_31_REMAIN",
   "selected_kappa": "1661960547713947/1000000000000000000",
   "frontier_changed": false,
   "reviewed_heads": {
@@ -211,6 +211,9 @@
     "research/community-batch970-audit/pr970-metadata.json": "98e72db9433ab8f74d5155d436d7ceed8d1bce13e0a5c3e98a4e48e919411728",
     "research/community-batch970-audit/submitted/900/research/sparse-fusion-orbits/EXPECTED.json": "52c70416048a3ca26c099e630a5e616b3d4acd81b26c6f8af228c446b8044f2e",
     "research/community-batch970-audit/submitted/900/research/sparse-fusion-orbits/SOURCES.json": "09a26410da4d80d0ee1f32d94df7137642057bd7fd5b15c9a8d598d5dac2db08",
-    "research/community-batch970-audit/submitted/957/research/audit-frontier890-endpoint-seed73/audit_endpoint_reduction.py": "67b95bd181aebd704fa9724ecb874f8eaf4ee269829f18a2c015a6653e391959"
-  }
+    "research/community-batch970-audit/submitted/957/research/audit-frontier890-endpoint-seed73/audit_endpoint_reduction.py": "67b95bd181aebd704fa9724ecb874f8eaf4ee269829f18a2c015a6653e391959",
+    "research/community-batch970-audit/CHECKPOINT1-CLOSURES.json": "9d7a2892c1de433624bd4e9bd6b6dba037764022313b33190ae1636113158bc5"
+  },
+  "publication_commit": "1cb9cde18dc2d61b20f0f46fac1ddbf93d57278d",
+  "source_commit": "bee588ff"
 }

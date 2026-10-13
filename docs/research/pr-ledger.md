@@ -9,8 +9,8 @@ The ledger separates historical review from integration. A prior snapshot or a m
 | Disposition | Count |
 |---|---:|
 | changed since review | 6 |
-| incorporated | 165 |
-| partially reviewed | 159 |
+| incorporated | 174 |
+| partially reviewed | 150 |
 | unreviewed | 312 |
 
 The earlier reconciliation closing snapshot had 438 starting PRs still open and 441 total open. These are historical counts, not a live queue measurement. Later dispositions are recorded below.
@@ -589,10 +589,10 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#812](https://github.com/CrocSwap/integer-mult-bounds/pull/812) | ljste | incorporated | [record 1](../../research/community-frontier890-audit/DISPOSITIONS.json) |
 | [#813](https://github.com/CrocSwap/integer-mult-bounds/pull/813) | bitplane | incorporated | [record 1](../../research/community-batch932-audit/DISPOSITIONS.json) |
 | [#816](https://github.com/CrocSwap/integer-mult-bounds/pull/816) | dd-hemant | incorporated | [record 1](../../research/community-batch932-audit/DISPOSITIONS.json) |
-| [#818](https://github.com/CrocSwap/integer-mult-bounds/pull/818) | MrPink604 | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#819](https://github.com/CrocSwap/integer-mult-bounds/pull/819) | MrPink604 | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#818](https://github.com/CrocSwap/integer-mult-bounds/pull/818) | MrPink604 | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#819](https://github.com/CrocSwap/integer-mult-bounds/pull/819) | MrPink604 | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#828](https://github.com/CrocSwap/integer-mult-bounds/pull/828) | mihir-s-05 | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#834](https://github.com/CrocSwap/integer-mult-bounds/pull/834) | chinmayarvind23 | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#834](https://github.com/CrocSwap/integer-mult-bounds/pull/834) | chinmayarvind23 | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#837](https://github.com/CrocSwap/integer-mult-bounds/pull/837) | bitplane | incorporated | [record 1](../../research/community-batch932-audit/DISPOSITIONS.json) |
 | [#838](https://github.com/CrocSwap/integer-mult-bounds/pull/838) | ljste | incorporated | [record 1](../../research/community-frontier890-audit/DISPOSITIONS.json) |
 | [#839](https://github.com/CrocSwap/integer-mult-bounds/pull/839) | faw01 | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
@@ -626,10 +626,10 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#887](https://github.com/CrocSwap/integer-mult-bounds/pull/887) | bitplane | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#890](https://github.com/CrocSwap/integer-mult-bounds/pull/890) | chafreaky | incorporated | [record 1](../../research/community-frontier890-audit/DISPOSITIONS.json) |
 | [#891](https://github.com/CrocSwap/integer-mult-bounds/pull/891) | navinor | incorporated | [record 1](../../research/community-batch932-audit/DISPOSITIONS.json) |
-| [#893](https://github.com/CrocSwap/integer-mult-bounds/pull/893) | WeberChen8128 | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#893](https://github.com/CrocSwap/integer-mult-bounds/pull/893) | WeberChen8128 | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#894](https://github.com/CrocSwap/integer-mult-bounds/pull/894) | navinor | incorporated | [record 1](../../research/community-frontier890-audit/DISPOSITIONS.json) |
 | [#896](https://github.com/CrocSwap/integer-mult-bounds/pull/896) | bitplane | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#900](https://github.com/CrocSwap/integer-mult-bounds/pull/900) | ToikY | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#900](https://github.com/CrocSwap/integer-mult-bounds/pull/900) | ToikY | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#901](https://github.com/CrocSwap/integer-mult-bounds/pull/901) | ToikY | incorporated | [record 1](../../research/community-batch932-audit/DISPOSITIONS.json) |
 | [#903](https://github.com/CrocSwap/integer-mult-bounds/pull/903) | just-mn | incorporated | [record 1](../../research/community-batch932-audit/DISPOSITIONS.json) |
 | [#904](https://github.com/CrocSwap/integer-mult-bounds/pull/904) | bitplane | incorporated | [record 1](../../research/community-batch952-audit/DISPOSITIONS.json) |
@@ -667,10 +667,10 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#952](https://github.com/CrocSwap/integer-mult-bounds/pull/952) | bitplane | incorporated | [record 1](../../research/community-batch952-audit/DISPOSITIONS.json) |
 | [#953](https://github.com/CrocSwap/integer-mult-bounds/pull/953) | RossRichardson | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#954](https://github.com/CrocSwap/integer-mult-bounds/pull/954) | RossRichardson | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#957](https://github.com/CrocSwap/integer-mult-bounds/pull/957) | navinor | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#957](https://github.com/CrocSwap/integer-mult-bounds/pull/957) | navinor | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#958](https://github.com/CrocSwap/integer-mult-bounds/pull/958) | RossRichardson | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#959](https://github.com/CrocSwap/integer-mult-bounds/pull/959) | yssite | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#960](https://github.com/CrocSwap/integer-mult-bounds/pull/960) | davidNbreslauer | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#959](https://github.com/CrocSwap/integer-mult-bounds/pull/959) | yssite | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#960](https://github.com/CrocSwap/integer-mult-bounds/pull/960) | davidNbreslauer | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#961](https://github.com/CrocSwap/integer-mult-bounds/pull/961) | woklerx | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#963](https://github.com/CrocSwap/integer-mult-bounds/pull/963) | ToikY | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#964](https://github.com/CrocSwap/integer-mult-bounds/pull/964) | bitplane | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
@@ -678,4 +678,4 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#967](https://github.com/CrocSwap/integer-mult-bounds/pull/967) | theon199 | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#968](https://github.com/CrocSwap/integer-mult-bounds/pull/968) | themilkman216 | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
 | [#969](https://github.com/CrocSwap/integer-mult-bounds/pull/969) | ToikY | unreviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
-| [#970](https://github.com/CrocSwap/integer-mult-bounds/pull/970) | woklerx | partially reviewed | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |
+| [#970](https://github.com/CrocSwap/integer-mult-bounds/pull/970) | woklerx | incorporated | [record 1](../../research/community-batch970-audit/DISPOSITIONS.json) |

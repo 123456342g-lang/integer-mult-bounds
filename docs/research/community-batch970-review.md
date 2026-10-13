@@ -3,6 +3,7 @@
 The selected conditional saving remains **κ = 0.001661960547713947** (#942).
 This checkpoint completes nine scoped reviews and local executions from the
 [frozen forty-PR inventory](../../research/community-batch970-audit/PLAN.json).
+All nine reviewed PRs are published to main and confirmed MERGED at their reviewed heads.
 Thirty-one remain open, including deferred #946. Author-closed #871 was replaced
 before freezing by #953; no decision to reopen or incorporate #871 was made.
 

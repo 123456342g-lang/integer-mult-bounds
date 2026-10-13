@@ -1,5 +1,5 @@
 {
-  "status": "FIRST_NINE_REVIEWED_PUBLICATION_PENDING_31_REMAIN",
+  "status": "FIRST_NINE_PUBLISHED_MERGED_31_REMAIN",
   "pull_requests": [
     {
       "number": 959,
@@ -19,20 +19,24 @@
       },
       "reviewed_head": "0d05972943e2a9cb9f2424033c73333677ab026c",
       "current_head": "0d05972943e2a9cb9f2424033c73333677ab026c",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "scripts/verify_selected_result.py",
         "tests/test_selected_inventory_links.py"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1cb9cde18dc2d61b20f0f46fac1ddbf93d57278d",
+        "evidence": "research/community-batch970-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Reject directory, dangling and escaping symlinks in both selected-source inventory formats; retain pinned internal regular-file aliases. Stable filesystem scope, no concurrent-mutation guarantee.",
-      "unresolved_question": "Scoped review and local execution completed; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-review.md"
@@ -56,19 +60,23 @@
       },
       "reviewed_head": "65c931415587c444a7a1f48939842c4cf0aa0411",
       "current_head": "65c931415587c444a7a1f48939842c4cf0aa0411",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/audit-frontier890-endpoint-seed73"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1cb9cde18dc2d61b20f0f46fac1ddbf93d57278d",
+        "evidence": "research/community-batch970-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Historical T21 native/conservative moment endpoints, seven-step bootstrap and all 47 assembly slacks independently recomputed. Exact-cover surcharge removal remains an inherited interface assumption. No new kappa.",
-      "unresolved_question": "Scoped review and local execution completed; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-review.md"
@@ -92,19 +100,23 @@
       },
       "reviewed_head": "bf87e110106c997392645f76b429ab3cc4410419",
       "current_head": "bf87e110106c997392645f76b429ab3cc4410419",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/t21-binomial-audit"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1cb9cde18dc2d61b20f0f46fac1ddbf93d57278d",
+        "evidence": "research/community-batch970-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Independent positive-binomial, outward-integer enclosure confirms both historical T21 complex moment brackets; 450 exact comparisons, 5 model controls and 11 input controls. Arithmetic, not circuit replay.",
-      "unresolved_question": "Scoped review and local execution completed; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-review.md"
@@ -162,19 +174,23 @@
       },
       "reviewed_head": "0c17b5c2e9563c1973da73d3ec103d0587957e88",
       "current_head": "0c17b5c2e9563c1973da73d3ec103d0587957e88",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/pr626-native-payload-binding"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1cb9cde18dc2d61b20f0f46fac1ddbf93d57278d",
+        "evidence": "research/community-batch970-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Opt-in PR626 owner checker binds complete decompressed native bytes, admitting gzip-only differences while rejecting altered payloads. Full owner/profile/moment receipts match; no whole-cold-replay portability claim.",
-      "unresolved_question": "Scoped review and local execution completed; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-review.md"
@@ -198,19 +214,23 @@
       },
       "reviewed_head": "e32f0d70baa4ee575582c3f02a4bbe6aa2553716",
       "current_head": "e32f0d70baa4ee575582c3f02a4bbe6aa2553716",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r420-rref-performance"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1cb9cde18dc2d61b20f0f46fac1ddbf93d57278d",
+        "evidence": "research/community-batch970-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Opt-in R420 integer RREF adapter using Aman/PR367 kernel preserves exact rational basis, pivots and integer annihilators. Complete differential checker, original mutation controls and altered geometry pass. Author benchmark is historical, not a current-frontier speed claim.",
-      "unresolved_question": "Scoped review and local execution completed; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-review.md"
@@ -234,19 +254,23 @@
       },
       "reviewed_head": "6e004d863bffd2d91b4168b78deb4e7b6fa1fe5e",
       "current_head": "6e004d863bffd2d91b4168b78deb4e7b6fa1fe5e",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/sparse-fusion-orbits"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1cb9cde18dc2d61b20f0f46fac1ddbf93d57278d",
+        "evidence": "research/community-batch970-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Exact spectator-permutation orbit reduction for historical sparse-fusion screen; complete receipts match at h=22,25,28 with independent matrix conjugation checks. No new bound or selected supplier change.",
-      "unresolved_question": "Scoped review and local execution completed; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-review.md"
@@ -1222,19 +1246,23 @@
       },
       "reviewed_head": "8fdd194f0bfab7705c523a8de20af15778c456d2",
       "current_head": "8fdd194f0bfab7705c523a8de20af15778c456d2",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r420-lean-source-binding"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1cb9cde18dc2d61b20f0f46fac1ddbf93d57278d",
+        "evidence": "research/community-batch970-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Restricted Lean-source parser checks actual R420 expressions and 13 data fields against the pinned payload; 33 negative cases. Source correspondence only, no fresh Lean compilation or new lifecycle theorem.",
-      "unresolved_question": "Scoped review and local execution completed; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-review.md"
@@ -1258,20 +1286,24 @@
       },
       "reviewed_head": "5d8c2e96e0624efbadb182d9ee0a09ee65b70b48",
       "current_head": "5d8c2e96e0624efbadb182d9ee0a09ee65b70b48",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/pr236-independent-command-audit",
         "tests/test_pr236_independent_command_audit.py"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1cb9cde18dc2d61b20f0f46fac1ddbf93d57278d",
+        "evidence": "research/community-batch970-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Independent audit of historical PR236 source commands, dependency receipts and recorded axiom logs: 3606 modules and 14320 declarations. No fresh kernel run or available object/compiler binary authentication.",
-      "unresolved_question": "Scoped review and local execution completed; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-review.md"
@@ -1363,19 +1395,23 @@
       },
       "reviewed_head": "dd5b27a8d0ad7261899d972d41b1c56f25c496a5",
       "current_head": "dd5b27a8d0ad7261899d972d41b1c56f25c496a5",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/bit-compression-provenance"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "1cb9cde18dc2d61b20f0f46fac1ddbf93d57278d",
+        "evidence": "research/community-batch970-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Historical bit-compression source closure over 32 inputs, fresh isolated producer replay and independent finite arithmetic. All original certificate fields match; no extension of historical obstruction to current frontier.",
-      "unresolved_question": "Scoped review and local execution completed; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-review.md"
