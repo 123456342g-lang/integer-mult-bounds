@@ -4,6 +4,20 @@
 See the [current review](docs/research/community-batch952-review.md) and
 [circuit integration](docs/research/community-circuits681-review.md) for scope.
 
+## Recursive interfaces, formal proofs and historical replays
+
+[Individual scopes and evidence](docs/research/community-batch970-interfaces-review.md).
+These contributions improve local mechanisms and verification; the selected exponent is unchanged.
+
+- **Chafik Boukhalfa / chafreaky:** [#862](https://github.com/CrocSwap/integer-mult-bounds/pull/862), [#905](https://github.com/CrocSwap/integer-mult-bounds/pull/905), [#929](https://github.com/CrocSwap/integer-mult-bounds/pull/929), [#951](https://github.com/CrocSwap/integer-mult-bounds/pull/951).
+- **Gareth Davidson / bitplane:** [#877](https://github.com/CrocSwap/integer-mult-bounds/pull/877), [#896](https://github.com/CrocSwap/integer-mult-bounds/pull/896), [#887](https://github.com/CrocSwap/integer-mult-bounds/pull/887).
+- **Ross Richardson / RossRichardson:** [#934](https://github.com/CrocSwap/integer-mult-bounds/pull/934), [#943](https://github.com/CrocSwap/integer-mult-bounds/pull/943), [#944](https://github.com/CrocSwap/integer-mult-bounds/pull/944), [#953](https://github.com/CrocSwap/integer-mult-bounds/pull/953), [#930](https://github.com/CrocSwap/integer-mult-bounds/pull/930).
+- **Chinmay Arvind / chinmayarvind23:** [#856](https://github.com/CrocSwap/integer-mult-bounds/pull/856).
+- **mihir-s-05 / mihir-s-05:** [#828](https://github.com/CrocSwap/integer-mult-bounds/pull/828).
+
+The historical constructions remain credited to Rohan Arun (#279), eumemic (#210),
+and their preserved upstream lineage. Companion reviews do not transfer authorship.
+
 ## Circuit and structural-bound checkpoint
 
 [Individual scopes and evidence](docs/research/community-batch970-circuits-review.md).

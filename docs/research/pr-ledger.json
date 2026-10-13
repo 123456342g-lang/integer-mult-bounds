@@ -21,8 +21,8 @@
   "counts": {
     "changed_since_review": 6,
     "incorporated": 190,
-    "partially_reviewed": 150,
-    "unreviewed": 296
+    "partially_reviewed": 164,
+    "unreviewed": 282
   },
   "source_sha256": {
     "docs/research/community-followup-validation.json": "81155f9cf9e5b91e3f1a587e3ba8eb83d25099cc937e603ef235b0a8b73dd732",
@@ -51,7 +51,8 @@
     "research/community-frontier890-audit/DISPOSITIONS.json": "c33d7d04ae1411a769ba14e812e75f8065b07bbdb085cbbf86b935eb1c8d8f8f",
     "research/community-batch932-audit/DISPOSITIONS.json": "78407de39b1d51acf31209a6ab11b6fe06e8cf3a617659c5cd43882870baa2d9",
     "research/community-batch952-audit/DISPOSITIONS.json": "fa89c90fb127e512903539ead9c6cf1e4667ed415b4d81a6510ff692f33bd53d",
-    "research/community-batch970-audit/DISPOSITIONS.json": "e265dde52ebd7ebfa687714afea451af586d2beee9ad6e12a174cdee9c7ceda7"
+    "research/community-batch970-audit/DISPOSITIONS.json": "eb30721a58b305ff600563886cc16c1dc85c57cbc74376512691b7639ca526dc",
+    "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
   "pull_requests": [
@@ -5175,9 +5176,16 @@
           "evidence": "docs/research/community-pr210-integration.json",
           "scope": "EXACT_HISTORICAL_CHECKPOINT_IMPORTED",
           "kind": "integration"
+        },
+        {
+          "head": "b0c058ba979c748bb3a8604bfb6502e9fac9b84d",
+          "evidence": "research/community-batch970-audit/COMPANION-REVIEWS.json",
+          "scope": "Nineteen post-review changes retained, eight stages freshly replayed and emitted-stream rewrite independently checked.",
+          "kind": "scoped_companion_review"
         }
       ],
       "historical_mentions": [
+        "docs/research/community-batch970-interfaces-review.md",
         "docs/research/community-pr210-review.md",
         "docs/research/community-pr279-review.md"
       ],
@@ -5186,12 +5194,22 @@
         "research/five-stage-source527-banks"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Whole-current-PR incorporation is not established: 147 changed paths lack byte-identical coverage in main or its checked PR181 archive. Distinguish later equivalent edits, unique content and historical implementations before closure.",
+      "unresolved_question": "The 128 unresolved ancestral paths remain outside #930; do not close the parent from this companion replay.",
       "closure": null,
       "reconciliation_evidence": [
         "research/pr-reconciliation-20261012/content-comparison.json"
       ],
-      "current_head_observed_in": "research/pr-reconciliation-20261012/ending-snapshot.json"
+      "current_head_observed_in": "research/pr-reconciliation-20261012/ending-snapshot.json",
+      "companion_reviews": [
+        {
+          "number": 210,
+          "head": "b0c058ba979c748bb3a8604bfb6502e9fac9b84d",
+          "companion_pr": 930,
+          "location": "research/pr210-head-reconciliation",
+          "scope": "Nineteen post-review changes retained, eight stages freshly replayed and emitted-stream rewrite independently checked.",
+          "remaining": "The 128 unresolved ancestral paths remain outside #930; do not close the parent from this companion replay."
+        }
+      ]
     },
     {
       "number": 211,
@@ -6719,9 +6737,16 @@
           "evidence": "docs/research/community-pr279-integration.json",
           "scope": "Conditional on retained all-size compiler, weighted/common-ancestor chart, restored rows, selectors/routing, prime supply, precision/recovery, complex symbolic correctness and analytic transfer; finite replay and written review, not a full formal multiplication theorem.",
           "kind": "integration"
+        },
+        {
+          "head": "913ccc48a0bc1173709ea92280b96252256b7754",
+          "evidence": "research/community-batch970-audit/COMPANION-REVIEWS.json",
+          "scope": "All twelve post-review target-prefix files retained and all nine stages freshly replayed. Historical package retained; parent-wide disposition is still separate.",
+          "kind": "scoped_companion_review"
         }
       ],
       "historical_mentions": [
+        "docs/research/community-batch970-interfaces-review.md",
         "docs/research/community-frontier741-review.md",
         "docs/research/community-pr279-announcement.md",
         "docs/research/community-pr279-review.md"
@@ -6731,12 +6756,22 @@
         "research/five-stage-gen4-banks"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Whole-current-PR incorporation is not established: 12 changed paths lack byte-identical coverage in main or its checked PR181 archive. Distinguish later equivalent edits, unique content and historical implementations before closure.",
+      "unresolved_question": "Current-head companion coverage is in #828; reconcile it with the original 116-file parent inventory before parent closure.",
       "closure": null,
       "reconciliation_evidence": [
         "research/pr-reconciliation-20261012/content-comparison.json"
       ],
-      "current_head_observed_in": "research/pr-reconciliation-20261012/ending-snapshot.json"
+      "current_head_observed_in": "research/pr-reconciliation-20261012/ending-snapshot.json",
+      "companion_reviews": [
+        {
+          "number": 279,
+          "head": "913ccc48a0bc1173709ea92280b96252256b7754",
+          "companion_pr": 828,
+          "location": "research/pr279-target-prefix-reconciliation",
+          "scope": "All twelve post-review target-prefix files retained and all nine stages freshly replayed. Historical package retained; parent-wide disposition is still separate.",
+          "remaining": "Current-head companion coverage is in #828; reconcile it with the original 116-file parent inventory before parent closure."
+        }
+      ]
     },
     {
       "number": 280,
@@ -12631,7 +12666,9 @@
       "previously_reviewed_heads": [],
       "historical_assessment_heads": [],
       "evidence": [],
-      "historical_mentions": [],
+      "historical_mentions": [
+        "docs/research/community-batch970-interfaces-review.md"
+      ],
       "disposition": "unreviewed",
       "integration_location": [],
       "github_state": "OPEN",
@@ -18682,25 +18719,28 @@
         {
           "head": "2e43537c0e8ed1c9f9ef21cab0ef9cddb5d79976",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Twelve later PR279 target-prefix files retained in a reconstructible companion; all nine native stages freshly replayed at historical kappa 0.000724098741932703. Credits Rohan Arun, eumemic and gen4 lineage. Does not close parent PR279.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/community-batch970-audit",
+        "research/pr279-target-prefix-reconciliation"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "2e43537c0e8ed1c9f9ef21cab0ef9cddb5d79976",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-interfaces-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -19366,25 +19406,27 @@
         {
           "head": "4e31c0d816432435de2ca3965d33efb3ea6602a4",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Exact R420 Boolean scatter lifecycle bound to 9 COPY/568 ADD/9 ERASE operations: original coordinates correct, incoming temp irrelevant, temp ends zero. Fresh four-module macOS kernel replay and 28 probes; authored Linux-pinned checker not claimed passed.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/r420-scatter-lifecycle"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "4e31c0d816432435de2ca3965d33efb3ea6602a4",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-interfaces-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -19463,25 +19505,29 @@
         {
           "head": "57e0659150d323b784580110b36aa64a2dca2a33",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Cubic precision for an in-place cyclic inverse with owned clean low bits, plus a fixed-grid composition interface. Charges factor preparation and undo; 120 exact kernel and 20 composed-word checks. Does not admit arbitrary dirty low bits.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        ".github/workflows",
+        "research/cubic-cyclic-inverse",
+        "research/cubic-cyclic-inverse-validation"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "57e0659150d323b784580110b36aa64a2dca2a33",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-interfaces-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -19939,25 +19985,27 @@
         {
           "head": "80a60c0da2b916798167deb0ce3a5ef22fda147a",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Balanced dirty commutator prefix bound and nonlinear perturbation analysis reduce the inherited sufficient precision overhead to quartic. Full child inverses remain paid; no claim that rounded children are linear.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/dirty-prefix-precision"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "80a60c0da2b916798167deb0ce3a5ef22fda147a",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-interfaces-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -20354,25 +20402,27 @@
         {
           "head": "5b14b7a0a7443421cfc719ccec1ac909ddf34c3e",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Fresh Lean resource model for reserved-scratch ordered echo trees: capacity n<=2^s and exact 50-factor/six-array minimum 2304. Eight general statements, 5474 constructor proofs and nine controls. Wall timeout alone raised for native replay.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/lean-dirty-echo-budget"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "5b14b7a0a7443421cfc719ccec1ac909ddf34c3e",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-interfaces-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -20611,25 +20661,27 @@
         {
           "head": "4e34d42b64ff05a4f293b9748d71642e14ef273d",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Fresh Lean check of nonlinear dirty-commutator restoration, source-independent target increment and literal inverse, including source-trace correspondence and a nonlinear dirt-dependence counterexample. Numerical accuracy and selected leaf admission remain separate.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/lean-nonlinear-commutator"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "4e34d42b64ff05a4f293b9748d71642e14ef273d",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-interfaces-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -20864,25 +20916,29 @@
         {
           "head": "aab6c0b8f4574cb36285ab5dab3fcfad0cd2b69e",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Free noncommutative prefix lemma has no repeated factor occurrence. A common cyclic operator then gives cubic precision with arbitrary dirty low bits. Quadratic leaf count and logarithmic dirty-array count remain.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        ".github/workflows",
+        "research/dirty-cubic-precision",
+        "research/dirty-cubic-precision-validation"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "aab6c0b8f4574cb36285ab5dab3fcfad0cd2b69e",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-interfaces-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -21646,25 +21702,29 @@
         {
           "head": "85a1d11adbbd7610d269cfeb3e477cf7d457f2eb",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Two stable polynomial groups execute in four completed calls with one arbitrary dirty connector. O(rL) data arithmetic replaces the quadratic data term, with paid companion powering, exact closure solves, O(r^3(A+log L+log r)) clean scalar workspace and phase access.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        ".github/workflows",
+        "research/grouped-dirty-cyclic",
+        "research/grouped-dirty-cyclic-validation"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "85a1d11adbbd7610d269cfeb3e477cf7d457f2eb",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-interfaces-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -21690,25 +21750,27 @@
         {
           "head": "222fb22c0ae2d13c25674cb8c18d168d8518cef5",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Nineteen post-review PR210 changes reconstructed, eight native stages freshly replayed, and 20108 stream traces independently checked at historical kappa 0.000710069340338651. eumemic construction; Ross Richardson reconciliation. The 128 unresolved ancestral paths remain.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/pr210-head-reconciliation"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "222fb22c0ae2d13c25674cb8c18d168d8518cef5",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-interfaces-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -21787,25 +21849,27 @@
         {
           "head": "f3100aec6ce6a7b061987875d5e9a8b93801ac0b",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "All 512 binary 3x3 product patterns attain two complete queries per active operator in the stated one-connector alphabet. Six-cycle example: 18 to 12 queries, 228 to 198 lowered leaves, four dirty arrays.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/binary-connector-walk"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "f3100aec6ce6a7b061987875d5e9a8b93801ac0b",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-interfaces-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -22043,25 +22107,27 @@
         {
           "head": "cf360b4b09b7d0419decdd6ac85421fefed55bdd",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Universal four-source path; exhaustive 945 five-source pairings exclude complete coverage at ten toggles. All-31-output example has exact restricted optimum 74 queries, with a 182-leaf construction versus 278 for the comparator.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/universal-connector-boundary"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "cf360b4b09b7d0419decdd6ac85421fefed55bdd",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-interfaces-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -22087,25 +22153,27 @@
         {
           "head": "5dbcfbc63f646de5a1354f6b9760ec03837233f0",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "All 19683 signed 3x3 patterns classified: 288 in one orbit need 14 rather than 12 queries. Complete restored word achieves 308 leaves versus 388/676 star comparators; exact linear characteristic-zero scope.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/signed-connector-obstruction"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "5dbcfbc63f646de5a1354f6b9760ec03837233f0",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-interfaces-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -22385,25 +22453,29 @@
         {
           "head": "de0c8641dcf1a4cd0abde9b897fa946de2bede49",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Separated-pole Bezout/Laurent decomposition uses two additive stable filters and no borrowed length-L connector. Source is restored on the full incoming grid; clean scalar workspace and preparation remain paid and may exceed a data array for small L.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        ".github/workflows",
+        "research/additive-cyclic-no-connector",
+        "research/additive-cyclic-no-connector-validation"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "de0c8641dcf1a4cd0abde9b897fa946de2bede49",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-interfaces-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -22482,25 +22554,27 @@
         {
           "head": "5f052969846b0882ac4e22d9e818dd8ac05ea56f",
           "evidence": "research/community-batch970-audit/DISPOSITIONS.json",
-          "scope": "Frozen inventory only; substantive review and execution pending.",
+          "scope": "Uniform native BIT dyadic query batches have exact restricted optimum 2|J|+number_of_runs, including off-support excursions. Example drops 15 children/90 affine events to 12/72 with ten XOR scans unchanged; no DATA-to-ADDRESS recursive compiler supplied.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/dyadic-query-runs"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "5f052969846b0882ac4e22d9e818dd8ac05ea56f",
-      "disposition": "unreviewed",
-      "unresolved_question": "Complete source, mechanism, execution and integration review.",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-batch970-audit/PLAN.json"
+        "docs/research/community-batch970-interfaces-review.md"
       ],
       "current_head_observed_in": "research/community-batch970-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [

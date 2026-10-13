@@ -439,6 +439,18 @@ def main():
                             == item['integrated_sha256'], 'Changed integrated file: ' + item['integrated_path'])
                 if item['action'] != 'retained':
                     require(bool(item.get('reason')), 'Missing scope or adaptation reason')
+        companion_path = folder / 'COMPANION-REVIEWS.json'
+        if companion_path.exists():
+            for companion in json.loads(companion_path.read_text())['pull_requests']:
+                item = actual[companion['number']]
+                require(item['current_head'] == companion['head'] and
+                        item.get('companion_reviews') == [companion],
+                        'Companion review lost its parent-head binding')
+                require(item['unresolved_question'] == companion['remaining'],
+                        'Companion review lost its remaining scope')
+                require(item['disposition'] == 'changed_since_review' and
+                        item['closure'] is None and item['github_state'] == 'OPEN',
+                        'Companion replay incorrectly promoted whole parent PR')
         print('PASS batch970 batch: reviewed sources, finite replays, scoped claims and closure bindings')
     print(f'PASS immutable snapshot plus explicit family rounds: {len(actual)} PRs, attributed heads, evidence pins and unresolved questions')
 
