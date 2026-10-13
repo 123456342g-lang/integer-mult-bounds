@@ -9,7 +9,10 @@ path, outside that class. No new kappa is claimed.
 This is a small construction and an exact bounded search result. It is not
 the cheapest known R439 word: Ross Richardson's PR965 reports 11,840 ADDs
 with coupled triples, and PR967 reports 11,783 with restored stars. Their
-savings are not combined here. The additional evidence is a fully priced
+savings are not combined here. The final overlap refresh also found @woklerx's
+PR1040, which retunes one target step after PR967 and reports 11,780 ADDs.
+That changes the target basis; this package freezes it. PR1040 head:
+`9d885867f28c1f391ab395af2d0b1f2a63681bfd`. The additional evidence here is a fully priced
 GL(4,2) search around a fixed, precision-admitted matching, with an exact
 minimum for each of 64 prescribed quartets.
 
