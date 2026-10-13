@@ -1,6 +1,6 @@
 # T16 exchanges through rare full-bin patterns
 
-Conditional candidate kappa **0.00167265606234865**, **+0.000090900%** over PR1087 (0.001672654541898561). Sampling rare full-bin patterns enables a sixteen-bin whole-helper repacking: four rank-one idle remainders become two rank-two remainders. The scalar word, role widths and source-event times are unchanged.
+Conditional candidate kappa **0.001672657904933398**, **+0.000201060%** over PR1087 (0.001672654541898561). Sampling rare full-bin patterns enables a sixteen-bin whole-helper repacking: four rank-one idle remainders become two rank-two remainders, then a rank-two and rank-three remainder combine into rank five. The scalar word, role widths and source-event times are unchanged.
 
 **Draft: exact arithmetic passes; full independent admission is pending.** Two pinned exact moment engines and all 47 outer inequalities price the proposed profile. This is not yet a verified new record. The unchanged strict verifier will be run next; readiness requires it to pass.
 
