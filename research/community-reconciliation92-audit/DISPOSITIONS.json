@@ -25,14 +25,24 @@
       "reviewed_head": "d3d370c34937503bd3fa63c83d505a05e8e50893",
       "current_head": "d3d370c34937503bd3fa63c83d505a05e8e50893",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 5,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "d3d370c34937503bd3fa63c83d505a05e8e50893",
+        "closedAt": "2026-10-13T21:45:03Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5#issuecomment-6155851108",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Chirped Gaussian correlations and the potential estimate for correction powers remove the historical epsilon<1/5 bottleneck. Nine fresh tests cover identities and negative parameter controls. Historical analytic proof remains conditional; subsequent input-error corrections in the current chain take precedence.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -87,14 +97,24 @@
       "reviewed_head": "5015011bd9a655da038910171eee9f431f4590ff",
       "current_head": "5015011bd9a655da038910171eee9f431f4590ff",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 6,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "5015011bd9a655da038910171eee9f431f4590ff",
+        "closedAt": "2026-10-13T21:45:08Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6#issuecomment-6155852314",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Aligned global pair groups and the h(h-1) center accounting refine the paired network. Fresh tests, certificate generation and patch application; complete historical proof retained. Not merely a duplicate of #2.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -149,14 +169,24 @@
       "reviewed_head": "6725c6a17b17871a35353fd29157f4ed851bc114",
       "current_head": "6725c6a17b17871a35353fd29157f4ed851bc114",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 7,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "6725c6a17b17871a35353fd29157f4ed851bc114",
+        "closedAt": "2026-10-13T21:45:12Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/7",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/7#issuecomment-6155853497",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Ternary five-subset bit construction and paired complex motif at h=28. Fresh tests and native full-size producer replay; no claim of an optimal family or practical speedup.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -211,14 +241,24 @@
       "reviewed_head": "3ef246fa4f69c87ebfed78376418afa9ffcad145",
       "current_head": "3ef246fa4f69c87ebfed78376418afa9ffcad145",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 13,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "3ef246fa4f69c87ebfed78376418afa9ffcad145",
+        "closedAt": "2026-10-13T21:45:16Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/13",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/13#issuecomment-6155854519",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Source-frame relocation and a third complex child class preserve rank mass while improving the block distribution. Focused source-frame tests; all endpoint identity obligations retained. Reuses the previously reviewed integration chain rather than rerunning every historical compiler.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -273,14 +313,24 @@
       "reviewed_head": "1fa5b9a9aaccbebb3eb29ac7ea55811f46464eee",
       "current_head": "1fa5b9a9aaccbebb3eb29ac7ea55811f46464eee",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 14,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "1fa5b9a9aaccbebb3eb29ac7ea55811f46464eee",
+        "closedAt": "2026-10-13T21:45:20Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/14",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/14#issuecomment-6155855690",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Common rational bases create larger data corners. Fresh witness replay. The written finite-polynomial argument, not random numeric samples, supplies existence of the simultaneous basis.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -335,14 +385,24 @@
       "reviewed_head": "a17cab396ce1c79c288bde9d06002cefdc0af8e6",
       "current_head": "a17cab396ce1c79c288bde9d06002cefdc0af8e6",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 15,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "a17cab396ce1c79c288bde9d06002cefdc0af8e6",
+        "closedAt": "2026-10-13T21:45:25Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/15",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/15#issuecomment-6155856892",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Rectangular streaming and four-star resynthesis at h=30, including the complex residual inventory. All 303 tests replayed. Auxiliary searches are bounded experiments, not optimality theorems; full native production for every alternative was not rerun.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -397,14 +457,24 @@
       "reviewed_head": "a80f5e676c84b59def9791495df0655efe89a04f",
       "current_head": "a80f5e676c84b59def9791495df0655efe89a04f",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 16,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "a80f5e676c84b59def9791495df0655efe89a04f",
+        "closedAt": "2026-10-13T21:45:29Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/16",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/16#issuecomment-6155857974",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Nested source bases and all-residual guards. Five focused integration tests; preserves the nested basis compatibility and full residual accounting.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -459,14 +529,24 @@
       "reviewed_head": "c915b4117626a512dd470adbdbd76963108f5cb3",
       "current_head": "c915b4117626a512dd470adbdbd76963108f5cb3",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 17,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "c915b4117626a512dd470adbdbd76963108f5cb3",
+        "closedAt": "2026-10-13T21:45:33Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/17",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/17#issuecomment-6155859109",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Compatible source boundaries improve the nested stream. Fresh nested-stream tests; entrance work is not counted twice.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -521,14 +601,24 @@
       "reviewed_head": "817aeb7b1225717d1b784d507570bf02ed89294c",
       "current_head": "817aeb7b1225717d1b784d507570bf02ed89294c",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 19,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "817aeb7b1225717d1b784d507570bf02ed89294c",
+        "closedAt": "2026-10-13T21:45:38Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/19",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/19#issuecomment-6155860197",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Partial-swap ternary construction removes a legacy outer shear. Focused tests include nonsymmetric controls; source archive retains all alternative experiments with their stated scope.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -583,14 +673,24 @@
       "reviewed_head": "5ba6cf0bfb68f2be8d15610e7972207c50254d6a",
       "current_head": "5ba6cf0bfb68f2be8d15610e7972207c50254d6a",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 21,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "5ba6cf0bfb68f2be8d15610e7972207c50254d6a",
+        "closedAt": "2026-10-13T21:45:42Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/21",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/21#issuecomment-6155861279",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Translated second-stage partial swaps and corrected complex phase gauge. Fresh translated-partial tests; phase and coefficient accounting remain part of the contract.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -645,14 +745,24 @@
       "reviewed_head": "c2f03ed48637fbe69803b6cecdcd50686e3274af",
       "current_head": "c2f03ed48637fbe69803b6cecdcd50686e3274af",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 22,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "c2f03ed48637fbe69803b6cecdcd50686e3274af",
+        "closedAt": "2026-10-13T21:45:46Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/22",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/22#issuecomment-6155862345",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Exact parameter refinement of the unchanged translated-partial construction. Fresh own driver and negative controls; grid rejection is only for its sufficient rational envelope, not a universal ceiling.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -707,14 +817,24 @@
       "reviewed_head": "661ebabc1076c9f525d7ce4967c876b203fa9827",
       "current_head": "661ebabc1076c9f525d7ce4967c876b203fa9827",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 23,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "661ebabc1076c9f525d7ce4967c876b203fa9827",
+        "closedAt": "2026-10-13T21:45:50Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/23",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/23#issuecomment-6155863472",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Semantic bulk accounting with C1=1 and a fully charged literal bound. Fresh semantic-bulk tests. Retains RaD's bulk/routing/phase attribution and inherited analytic assumptions.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -769,14 +889,24 @@
       "reviewed_head": "003f366cfa99e19fbeacd9300a219f2d44c8cff0",
       "current_head": "003f366cfa99e19fbeacd9300a219f2d44c8cff0",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 25,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "003f366cfa99e19fbeacd9300a219f2d44c8cff0",
+        "closedAt": "2026-10-13T21:45:54Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/25",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/25#issuecomment-6155864520",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "A5 Schur blocks preserve rank mass with a different child distribution. Fresh semantic tests; finite-interface and analytic assumptions remain explicit.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -831,14 +961,24 @@
       "reviewed_head": "c297233e788a23e9833ad1ee07fc8517accd0f42",
       "current_head": "c297233e788a23e9833ad1ee07fc8517accd0f42",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 27,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "c297233e788a23e9833ad1ee07fc8517accd0f42",
+        "closedAt": "2026-10-13T21:45:58Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/27",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/27#issuecomment-6155865546",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Compose the endpoint bit supplier with the semantic bulk reduction. Fresh own certificate and negative controls; compatible bit/complex/row stocks are charged together.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -893,14 +1033,24 @@
       "reviewed_head": "bb1143d0714bf315a0043cebeabe96b987af935e",
       "current_head": "bb1143d0714bf315a0043cebeabe96b987af935e",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 28,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "bb1143d0714bf315a0043cebeabe96b987af935e",
+        "closedAt": "2026-10-13T21:46:02Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/28",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/28#issuecomment-6155866545",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Rectangular semantic basis and its downstream assembly. Focused rectangular-semantic tests; the complete historical dependency snapshot is preserved.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -955,14 +1105,24 @@
       "reviewed_head": "9d963275075fa98f1da821e27757b238dafd6b3c",
       "current_head": "9d963275075fa98f1da821e27757b238dafd6b3c",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 29,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "9d963275075fa98f1da821e27757b238dafd6b3c",
+        "closedAt": "2026-10-13T21:46:06Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/29",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/29#issuecomment-6155867621",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Two-stage construction with separate compatible interfaces. Focused two-stage tests and previously reviewed downstream integration; no new current frontier.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -1017,14 +1177,24 @@
       "reviewed_head": "122e6453e80330633af701eabd1a6a72dfefd286",
       "current_head": "122e6453e80330633af701eabd1a6a72dfefd286",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 31,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "122e6453e80330633af701eabd1a6a72dfefd286",
+        "closedAt": "2026-10-13T21:46:11Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/31",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/31#issuecomment-6155868706",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Ordered 51/45 corner blocks and their rank-cut argument. Focused corner tests; preserves the actual order rather than treating dimensions as interchangeable.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -1079,14 +1249,24 @@
       "reviewed_head": "a499a345c040aa15b68e984a0904eadc485c7a7e",
       "current_head": "a499a345c040aa15b68e984a0904eadc485c7a7e",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 33,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "a499a345c040aa15b68e984a0904eadc485c7a7e",
+        "closedAt": "2026-10-13T21:46:15Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/33",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/33#issuecomment-6155869884",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Smaller 47/45 dimensions with regenerated rank identities. Focused dimension tests; retained certificate and native sources remain separately reproducible.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -1141,14 +1321,24 @@
       "reviewed_head": "7fecbe3651e095fb0f450756afdeefd2a9ee80a2",
       "current_head": "7fecbe3651e095fb0f450756afdeefd2a9ee80a2",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 34,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "7fecbe3651e095fb0f450756afdeefd2a9ee80a2",
+        "closedAt": "2026-10-13T21:46:20Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/34",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/34#issuecomment-6155871089",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Reversed 45/47 construction and balanced layout. Fresh pinned scientific checker via portable reproduce.py, plus inherited tests. Not just removal of an assembly constraint.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -1203,14 +1393,24 @@
       "reviewed_head": "9c345a2a11e5f4f3649f7c68214bf9a2a0a3fe9c",
       "current_head": "9c345a2a11e5f4f3649f7c68214bf9a2a0a3fe9c",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 35,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "9c345a2a11e5f4f3649f7c68214bf9a2a0a3fe9c",
+        "closedAt": "2026-10-13T21:46:25Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/35",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/35#issuecomment-6155872172",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Fixed I+J basis and a conservative 43-dimensional block. Fresh own verifier and negative controls; no unsupported 37-dimensional claim.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -1265,14 +1465,24 @@
       "reviewed_head": "605323bab4ba330de3d1785dc5b3ecb14e8ab747",
       "current_head": "605323bab4ba330de3d1785dc5b3ecb14e8ab747",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 38,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "605323bab4ba330de3d1785dc5b3ecb14e8ab747",
+        "closedAt": "2026-10-13T21:46:30Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/38",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/38#issuecomment-6155873304",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Copied fixed-basis rank-one cleanup. Fresh complete certificate driver; every paid center copy and data endpoint remains in the ledger.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -1327,14 +1537,24 @@
       "reviewed_head": "e3bf3ab0cb1ec48588e279b31a97e7a49c72f99e",
       "current_head": "e3bf3ab0cb1ec48588e279b31a97e7a49c72f99e",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 40,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "e3bf3ab0cb1ec48588e279b31a97e7a49c72f99e",
+        "closedAt": "2026-10-13T21:46:34Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/40",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/40#issuecomment-6155874663",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Both fixed axes reversed, with the full pair I+J source geometry. Focused tests and later integration evidence; source-frame compatibility is retained.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -1389,14 +1609,24 @@
       "reviewed_head": "03bde70c0c2a453f1ceae20c619b602841405467",
       "current_head": "03bde70c0c2a453f1ceae20c619b602841405467",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 41,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "03bde70c0c2a453f1ceae20c619b602841405467",
+        "closedAt": "2026-10-13T21:46:39Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/41",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/41#issuecomment-6155875861",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "RaD association and alternating producer arithmetic with exact composition. Both own arithmetic drivers replayed. Arithmetic does not by itself certify a changed producer; later #42 replay provides separate integration evidence for the alternating construction. Preserve this distinction.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -1451,14 +1681,24 @@
       "reviewed_head": "a92fc98c456f6c8863b8bba90079ba71b97d2dc0",
       "current_head": "a92fc98c456f6c8863b8bba90079ba71b97d2dc0",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 42,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "a92fc98c456f6c8863b8bba90079ba71b97d2dc0",
+        "closedAt": "2026-10-13T21:46:43Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/42",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/42#issuecomment-6155877079",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Combine RaD's alternating producers with fixed reversed geometry. Focused tests; previously reviewed full profiles supply construction evidence. Credits both contributions.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -1513,14 +1753,24 @@
       "reviewed_head": "1a21794eb5384db0e96d7bc2b11aa6f28cff7a85",
       "current_head": "1a21794eb5384db0e96d7bc2b11aa6f28cff7a85",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 44,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "1a21794eb5384db0e96d7bc2b11aa6f28cff7a85",
+        "closedAt": "2026-10-13T21:46:48Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/44",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/44#issuecomment-6155878275",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Search for improved compatible matchings. Focused matching and fixed-basis tests. Floating-point optimization chooses candidates; it is not a proof of global optimality.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -1575,14 +1825,24 @@
       "reviewed_head": "117caf164e3b235ef20188aa2dc1b49617e9255c",
       "current_head": "117caf164e3b235ef20188aa2dc1b49617e9255c",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 47,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "117caf164e3b235ef20188aa2dc1b49617e9255c",
+        "closedAt": "2026-10-13T21:46:53Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/47",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/47#issuecomment-6155879382",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Climb producer choices with portable source vectors. Focused producer tests; bounded search, not a globally optimal construction.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -1637,14 +1897,24 @@
       "reviewed_head": "5e42f913e827990f30d0f0918e54a803d830f13e",
       "current_head": "5e42f913e827990f30d0f0918e54a803d830f13e",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 63,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "5e42f913e827990f30d0f0918e54a803d830f13e",
+        "closedAt": "2026-10-13T21:46:57Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/63",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/63#issuecomment-6155880688",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Rank-first choices among eligible clearing controls. Exact-head CI evidence and source review; eligibility and literal paid work remain mandatory.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -1699,14 +1969,24 @@
       "reviewed_head": "b0cea06d7fd5ac10f76169b01d3114f208fc7448",
       "current_head": "b0cea06d7fd5ac10f76169b01d3114f208fc7448",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 65,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "b0cea06d7fd5ac10f76169b01d3114f208fc7448",
+        "closedAt": "2026-10-13T21:47:02Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/65",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/65#issuecomment-6155881815",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Region ordering subject to the dependency DAG. Exact-head CI evidence; rank ties alone do not authorize an invalid schedule.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -1761,14 +2041,24 @@
       "reviewed_head": "701b1246e2def8b022a14309b5171138f2b12a52",
       "current_head": "701b1246e2def8b022a14309b5171138f2b12a52",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 66,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "701b1246e2def8b022a14309b5171138f2b12a52",
+        "closedAt": "2026-10-13T21:47:06Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/66",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/66#issuecomment-6155882911",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Joint split/dual source combinations with restored import state. Exact-head CI evidence; retains the independent word checker and complete profile rather than assuming additive gains.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -1823,14 +2113,24 @@
       "reviewed_head": "46991a21d13f37faf2350591de7d794cfaa4455e",
       "current_head": "46991a21d13f37faf2350591de7d794cfaa4455e",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 67,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "46991a21d13f37faf2350591de7d794cfaa4455e",
+        "closedAt": "2026-10-13T21:47:10Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/67",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/67#issuecomment-6155884026",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Optimize actual profile cost with stable candidate evaluation. Exact-head CI evidence; heuristic objective does not certify global optimality.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -1885,14 +2185,24 @@
       "reviewed_head": "b1b2af3415ecb494a0552b16c18045bf3ee05e95",
       "current_head": "b1b2af3415ecb494a0552b16c18045bf3ee05e95",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 68,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "b1b2af3415ecb494a0552b16c18045bf3ee05e95",
+        "closedAt": "2026-10-13T21:47:15Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/68",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/68#issuecomment-6155885060",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Cost-aware live frames F subset E subset G and a global-anchor negative argument. Exact-head evidence for the main construction. Supplemental cost-live-both proof is explicitly a draft with replay outstanding; preserved as research, not an accepted extra bound.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -1947,14 +2257,24 @@
       "reviewed_head": "11a4e3176511ece840d57b7db045772945d9703c",
       "current_head": "11a4e3176511ece840d57b7db045772945d9703c",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 70,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "11a4e3176511ece840d57b7db045772945d9703c",
+        "closedAt": "2026-10-13T21:47:19Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/70",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/70#issuecomment-6155886128",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Profile-aware carry exchange and standalone finite Lean endpoints. Fresh native full-word ordinary/dirty checks and Frozen62Research Lean build. Formal scope is the finite arithmetic interface, not the multiplication theorem.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -2009,14 +2329,24 @@
       "reviewed_head": "f59cb9f54d12a2a02b665afef24a9bb5061ae011",
       "current_head": "f59cb9f54d12a2a02b665afef24a9bb5061ae011",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 71,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "f59cb9f54d12a2a02b665afef24a9bb5061ae011",
+        "closedAt": "2026-10-13T21:47:23Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/71",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/71#issuecomment-6155887191",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Anchored splits with strict contraction and dirty-state obligations. Retains the earlier fresh physical replay and 23 tests; exact-head CI supplements rather than replaces that scoped review.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -2071,14 +2401,24 @@
       "reviewed_head": "da9b6cbebb33e8b8293a604dde0eace9de53406b",
       "current_head": "da9b6cbebb33e8b8293a604dde0eace9de53406b",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 75,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "da9b6cbebb33e8b8293a604dde0eace9de53406b",
+        "closedAt": "2026-10-13T21:47:27Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/75",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/75#issuecomment-6155888368",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Kernel-zero toggles with excluded target and live-frame bounds. Fresh native full-word checks and CurrentRecordMath Lean build. No full analytic formalization claim.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -2133,14 +2473,24 @@
       "reviewed_head": "17c979eb6dcd4c300e6263c66111f220a9e926e7",
       "current_head": "17c979eb6dcd4c300e6263c66111f220a9e926e7",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 77,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "17c979eb6dcd4c300e6263c66111f220a9e926e7",
+        "closedAt": "2026-10-13T21:47:31Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/77",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/77#issuecomment-6155889493",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Balanced splitting, carry cycles and coordinate flags. Fresh rebuild and tests of the dedicated package; complete W and finite bridge are charged.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -2195,14 +2545,24 @@
       "reviewed_head": "7c3793131155fa5795920eff35057672be38833a",
       "current_head": "7c3793131155fa5795920eff35057672be38833a",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 78,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "7c3793131155fa5795920eff35057672be38833a",
+        "closedAt": "2026-10-13T21:47:36Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/78",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/78#issuecomment-6155890554",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Relabel by permutations commuting with I+J. Exact-head CI evidence; internal profiles are recomputed, while the full Cartesian data invariant is preserved.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -2257,14 +2617,24 @@
       "reviewed_head": "79dd6e134855bc8a7b8950c3aa0eb279fe148ceb",
       "current_head": "79dd6e134855bc8a7b8950c3aa0eb279fe148ceb",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 79,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "79dd6e134855bc8a7b8950c3aa0eb279fe148ceb",
+        "closedAt": "2026-10-13T21:47:40Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/79",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/79#issuecomment-6155891718",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Balanced row/column partitions and legal carry choices. Exact-head CI evidence; complete future unit basis required, gains are not simply added.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -2319,14 +2689,24 @@
       "reviewed_head": "4fb50b65e3542592bb1674a0211b0b5faa3ed920",
       "current_head": "4fb50b65e3542592bb1674a0211b0b5faa3ed920",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 80,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "4fb50b65e3542592bb1674a0211b0b5faa3ed920",
+        "closedAt": "2026-10-13T21:47:44Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/80",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/80#issuecomment-6155892912",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Select compatible axes with the correct stock and bridge. Earlier full physical replay and stale-width correction retained; exact-head CI evidence included.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -2381,14 +2761,24 @@
       "reviewed_head": "acae4964aef41c69f3c57e72a45e76afc4d4934d",
       "current_head": "acae4964aef41c69f3c57e72a45e76afc4d4934d",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 81,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "acae4964aef41c69f3c57e72a45e76afc4d4934d",
+        "closedAt": "2026-10-13T21:47:49Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/81",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/81#issuecomment-6155894146",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Bounded column-carry variants of the same construction. Fresh dense audit and selected-word validation against an exact #71 baseline; portable regenerated evidence distinguished from the original claim.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -2443,14 +2833,24 @@
       "reviewed_head": "67b446ccdb9d23cae9683f6059fb607b52285004",
       "current_head": "67b446ccdb9d23cae9683f6059fb607b52285004",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 82,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "67b446ccdb9d23cae9683f6059fb607b52285004",
+        "closedAt": "2026-10-13T21:47:53Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/82",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/82#issuecomment-6155895505",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Compose before compiling and use coordinate cost oracles. Exact-head CI evidence; oracle scores remain candidate-selection heuristics.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -2505,14 +2905,24 @@
       "reviewed_head": "183077b7b3ae12e96eb3a87c1dc08023e6494dca",
       "current_head": "183077b7b3ae12e96eb3a87c1dc08023e6494dca",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 83,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "183077b7b3ae12e96eb3a87c1dc08023e6494dca",
+        "closedAt": "2026-10-13T21:47:58Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/83",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/83#issuecomment-6155896919",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Shared work functional for an adaptive depth menu. Fresh arithmetic, independent checks and tests; exact-head full Linux menu CI retained. Scoped 64-profile family, not a universal algorithmic lower bound.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -2567,14 +2977,24 @@
       "reviewed_head": "424ef44609eda377250b2985a5210cb336ade19e",
       "current_head": "424ef44609eda377250b2985a5210cb336ade19e",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 84,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "424ef44609eda377250b2985a5210cb336ade19e",
+        "closedAt": "2026-10-13T21:48:02Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/84",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/84#issuecomment-6155898141",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Retired/pending indices, atomic two-cycle changes and contracting multisplits. Exact-head CI evidence; serial lifecycle and ordering obligations reviewed.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -2629,14 +3049,24 @@
       "reviewed_head": "dd7690a5a7a3027afcb002aa8ef41d0e29bde58f",
       "current_head": "dd7690a5a7a3027afcb002aa8ef41d0e29bde58f",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 85,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "dd7690a5a7a3027afcb002aa8ef41d0e29bde58f",
+        "closedAt": "2026-10-13T21:48:07Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/85",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/85#issuecomment-6155899615",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Coordinate relabeling in dimensions three and four. Exact-head CI profile evidence; no automatic gain from relabeling without recompilation.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -2691,14 +3121,24 @@
       "reviewed_head": "f0fe4453a088c62af3ee795691fa92c502ed8b57",
       "current_head": "f0fe4453a088c62af3ee795691fa92c502ed8b57",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 86,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "f0fe4453a088c62af3ee795691fa92c502ed8b57",
+        "closedAt": "2026-10-13T21:48:12Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/86",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/86#issuecomment-6155900985",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Coordinate oracle and short carry cycles. Exact-head CI evidence; independence and partition conditions retained.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -2753,14 +3193,24 @@
       "reviewed_head": "466fc99e67d872831d1d192394f346a28e909e09",
       "current_head": "466fc99e67d872831d1d192394f346a28e909e09",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 87,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "466fc99e67d872831d1d192394f346a28e909e09",
+        "closedAt": "2026-10-13T21:48:17Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/87",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/87#issuecomment-6155902370",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Congruent [4,4,1] splitting. Exact-head CI evidence; scoped finite improvement, not optimality.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -2815,14 +3265,24 @@
       "reviewed_head": "d5a5b936844104db18c5bdd871f89da2fbf99551",
       "current_head": "d5a5b936844104db18c5bdd871f89da2fbf99551",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 88,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "d5a5b936844104db18c5bdd871f89da2fbf99551",
+        "closedAt": "2026-10-13T21:48:22Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/88",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/88#issuecomment-6155903854",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Whole-construction selection from a bounded portfolio. Exact-head CI evidence; 51,525-candidate search scope retained, not a global ceiling.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -2877,14 +3337,24 @@
       "reviewed_head": "6e3d667ee119cc630eb5ffc69ea4c222f967ce2d",
       "current_head": "6e3d667ee119cc630eb5ffc69ea4c222f967ce2d",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 89,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "6e3d667ee119cc630eb5ffc69ea4c222f967ce2d",
+        "closedAt": "2026-10-13T21:48:27Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/89",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/89#issuecomment-6155905422",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Null-circuit Gaussian relations preserve XOR action. Exact-head CI evidence includes physical validation; scalar cancellation alone is insufficient.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -2939,14 +3409,24 @@
       "reviewed_head": "8d1a0838f3e906d372818df02b3564c8b36495cc",
       "current_head": "8d1a0838f3e906d372818df02b3564c8b36495cc",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 91,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "8d1a0838f3e906d372818df02b3564c8b36495cc",
+        "closedAt": "2026-10-13T21:48:33Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/91",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/91#issuecomment-6155906928",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Aligned frames plus rational Lean endpoint arithmetic. Finite numerical/physical CI and saved Lean source/axiom evidence retained. Generic formal(matrix) CI does not establish the new Lean module; no fresh full kernel rebuild claimed here.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3001,14 +3481,24 @@
       "reviewed_head": "2b4dca843b7a719512595896aab29de28bc4ea1f",
       "current_head": "2b4dca843b7a719512595896aab29de28bc4ea1f",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 92,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "2b4dca843b7a719512595896aab29de28bc4ea1f",
+        "closedAt": "2026-10-13T21:48:39Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/92",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/92#issuecomment-6155908675",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Dependency-valid region ordering and saved-word resynthesis. Exact-head CI evidence; actual DAG compatibility retained.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3063,14 +3553,24 @@
       "reviewed_head": "f5f5ebdfc92fa6001d209aafba432a36ff9d86f5",
       "current_head": "f5f5ebdfc92fa6001d209aafba432a36ff9d86f5",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 93,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "f5f5ebdfc92fa6001d209aafba432a36ff9d86f5",
+        "closedAt": "2026-10-13T21:48:44Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/93",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/93#issuecomment-6155910133",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Adjacent coordinate flags and complete profile reassembly. Exact-head CI evidence; historical variant retained independently of the selected record.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3125,14 +3625,24 @@
       "reviewed_head": "0c440e40c9d4a5a02ca5bd028a2ebb5ebbca55d7",
       "current_head": "0c440e40c9d4a5a02ca5bd028a2ebb5ebbca55d7",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 94,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "0c440e40c9d4a5a02ca5bd028a2ebb5ebbca55d7",
+        "closedAt": "2026-10-13T21:48:49Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/94",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/94#issuecomment-6155911500",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Adjacent-flag improvement with inherited formal artifacts. Exact-head CI evidence. The older #91 Lean package is not a formal proof of this newer kappa.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3187,14 +3697,24 @@
       "reviewed_head": "641aae7baf14ae21b69145d54e8232bf20076fce",
       "current_head": "641aae7baf14ae21b69145d54e8232bf20076fce",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 95,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "641aae7baf14ae21b69145d54e8232bf20076fce",
+        "closedAt": "2026-10-13T21:48:55Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/95",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/95#issuecomment-6155913407",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Further adjacent-flag selection and full composition. Exact-head CI evidence; inherited analytic interfaces remain assumptions.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3249,14 +3769,24 @@
       "reviewed_head": "e15350b66e4bf796153a68c240a6cc1b788abe3e",
       "current_head": "e15350b66e4bf796153a68c240a6cc1b788abe3e",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 97,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "e15350b66e4bf796153a68c240a6cc1b788abe3e",
+        "closedAt": "2026-10-13T21:49:01Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/97",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/97#issuecomment-6155915261",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Stable commuting fans and reflected event ledgers. Exact-head CI plus the separately retained verifier-hardening patch. Signed complex endpoint correction and Gaussian phase remain explicit.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3311,14 +3841,24 @@
       "reviewed_head": "6862c47f5fcb69dfb424e1bb7f32f415d8659063",
       "current_head": "6862c47f5fcb69dfb424e1bb7f32f415d8659063",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 98,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "6862c47f5fcb69dfb424e1bb7f32f415d8659063",
+        "closedAt": "2026-10-13T21:49:06Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/98",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/98#issuecomment-6155916689",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Coordinate pricing with the baseline legal engine. Exact-head CI evidence. The long-cycle search accepted zero candidates; retained as a scoped negative experiment.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3373,14 +3913,24 @@
       "reviewed_head": "22dc19dd7123dd582110a912a6ca687e31e2243f",
       "current_head": "22dc19dd7123dd582110a912a6ca687e31e2243f",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 100,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "22dc19dd7123dd582110a912a6ca687e31e2243f",
+        "closedAt": "2026-10-13T21:49:11Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/100",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/100#issuecomment-6155918237",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Prefix refinement and a separate balanced physical layout experiment. Exact-head CI evidence; original source and log-regeneration provenance remain separate from later experiments.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3435,14 +3985,24 @@
       "reviewed_head": "3fc54ebacb1fbbd1f0e0e66f9dbd32202934661c",
       "current_head": "3fc54ebacb1fbbd1f0e0e66f9dbd32202934661c",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 102,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "3fc54ebacb1fbbd1f0e0e66f9dbd32202934661c",
+        "closedAt": "2026-10-13T21:49:16Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/102",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/102#issuecomment-6155919549",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Monotone moment follow-up with an exact fixed grid. Fresh dedicated verifier; arithmetic-only improvement, no new physical circuit.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3497,14 +4057,24 @@
       "reviewed_head": "75ab1f70d146c21c7611ce0df9eb5f645f51ac0e",
       "current_head": "75ab1f70d146c21c7611ce0df9eb5f645f51ac0e",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 103,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "75ab1f70d146c21c7611ce0df9eb5f645f51ac0e",
+        "closedAt": "2026-10-13T21:49:20Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/103",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/103#issuecomment-6155920955",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Saturated frames and nondegenerate backward extension. Exact-head CI evidence includes target-edge accounting; zero-rank mass changes are explicitly charged.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3559,14 +4129,24 @@
       "reviewed_head": "34c066390b9b0026789d8ce9b0e044bc30253b2b",
       "current_head": "34c066390b9b0026789d8ce9b0e044bc30253b2b",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 106,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "34c066390b9b0026789d8ce9b0e044bc30253b2b",
+        "closedAt": "2026-10-13T21:49:25Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/106",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/106#issuecomment-6155922353",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Contiguous pair exchanges and minimum-cost circuits. Exact-head CI evidence; role increases and offsets are included in complete W, not silently canceled by heuristic scores.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3621,14 +4201,24 @@
       "reviewed_head": "eb231b7b63f7fc99d51ffc16e0356831c3af1c22",
       "current_head": "eb231b7b63f7fc99d51ffc16e0356831c3af1c22",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 107,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "eb231b7b63f7fc99d51ffc16e0356831c3af1c22",
+        "closedAt": "2026-10-13T21:49:32Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/107",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/107#issuecomment-6155924281",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Reverse-pair leaves on disjoint supports. Exact-head CI evidence; legal matching and unchanged coefficient denominator retained.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3683,14 +4273,24 @@
       "reviewed_head": "4974895daf92b51d2cc4a954bc6b77be2d7ff4c4",
       "current_head": "4974895daf92b51d2cc4a954bc6b77be2d7ff4c4",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 108,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "4974895daf92b51d2cc4a954bc6b77be2d7ff4c4",
+        "closedAt": "2026-10-13T21:49:37Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/108",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/108#issuecomment-6155925706",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Dual suffixes trade more additions for fewer roles. Exact-head CI evidence; both literal pieces remain paid.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3745,14 +4345,24 @@
       "reviewed_head": "45389b383b31092d83d19007dd6faaa8543db961",
       "current_head": "45389b383b31092d83d19007dd6faaa8543db961",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 109,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "45389b383b31092d83d19007dd6faaa8543db961",
+        "closedAt": "2026-10-13T21:49:41Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/109",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/109#issuecomment-6155927020",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Matching selection with independently audited binary frames. Exact-head CI evidence. Float matching is only a proposal mechanism; actual eligibility and histogram nonnegativity are checked separately.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3807,14 +4417,24 @@
       "reviewed_head": "09775e9f3fbf1900175010bcd0c3d6d1dbf65ffe",
       "current_head": "09775e9f3fbf1900175010bcd0c3d6d1dbf65ffe",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 110,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "09775e9f3fbf1900175010bcd0c3d6d1dbf65ffe",
+        "closedAt": "2026-10-13T21:49:45Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/110",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/110#issuecomment-6155928344",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Deferred complex stages plus stopped-depth bit accounting. Fresh complex, supplied-input bit and assembly arithmetic retained. Original full complex stage-2 proof obligation is not discharged by randomized modular tests. Historical conditional research only; stale Makefile-pin CI failure and corrected local invocation recorded.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3869,14 +4489,24 @@
       "reviewed_head": "5b3add9415bf7ef19e1dfe739903d09d66c1d9ca",
       "current_head": "5b3add9415bf7ef19e1dfe739903d09d66c1d9ca",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 111,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "5b3add9415bf7ef19e1dfe739903d09d66c1d9ca",
+        "closedAt": "2026-10-13T21:49:50Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/111",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/111#issuecomment-6155929800",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Cyclic strips on both axes and positive matchings. Exact-head CI evidence; actual matchings and envelope bounds are distinct checks.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3931,14 +4561,24 @@
       "reviewed_head": "502761e7e02e25c737f61be718e29bca3f391d19",
       "current_head": "502761e7e02e25c737f61be718e29bca3f391d19",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 113,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "502761e7e02e25c737f61be718e29bca3f391d19",
+        "closedAt": "2026-10-13T21:49:55Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/113",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/113#issuecomment-6155931265",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Refinement of deferred/stopped accounting. Exact-head CI evidence. Early copied PROOF sections describe an older checkpoint; current certificate and README control its historical claim.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -3993,14 +4633,24 @@
       "reviewed_head": "77227550987a49eec5f335b61ab233fc5c93dbe8",
       "current_head": "77227550987a49eec5f335b61ab233fc5c93dbe8",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 114,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "77227550987a49eec5f335b61ab233fc5c93dbe8",
+        "closedAt": "2026-10-13T21:49:59Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/114",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/114#issuecomment-6155932709",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Completed-core sharing with full pre-exterior accounting. Exact-head CI evidence; current head differs from obsolete PR-body narrative. No silent zeroing of auxiliary input.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -4055,14 +4705,24 @@
       "reviewed_head": "295a48a3b966428896057a98c6b4834c0b4b7416",
       "current_head": "295a48a3b966428896057a98c6b4834c0b4b7416",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 116,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "295a48a3b966428896057a98c6b4834c0b4b7416",
+        "closedAt": "2026-10-13T21:50:04Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/116",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/116#issuecomment-6155934127",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Cube-deferred construction with reflection and coefficient obligations. Exact-head CI evidence; finite checks retain stated reflection/analytic dependencies.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -4117,14 +4777,24 @@
       "reviewed_head": "cbb05ce504d571546d9b7794c186a613c659c3bf",
       "current_head": "cbb05ce504d571546d9b7794c186a613c659c3bf",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 117,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "cbb05ce504d571546d9b7794c186a613c659c3bf",
+        "closedAt": "2026-10-13T21:50:09Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/117",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/117#issuecomment-6155935749",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Replayed complex producer and stopped bit supplier. Exact-head CI evidence retains 91,770 additions and 28,705 complex roles; full composition rather than isolated savings.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -4179,14 +4849,24 @@
       "reviewed_head": "51fd1bbff9b73e3ad6e8bc6d53318909c3785484",
       "current_head": "51fd1bbff9b73e3ad6e8bc6d53318909c3785484",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 118,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "51fd1bbff9b73e3ad6e8bc6d53318909c3785484",
+        "closedAt": "2026-10-13T21:50:14Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/118",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/118#issuecomment-6155937125",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Repair the 55/42 coefficient by splitting it into 1+13/42. Exact-head CI evidence; both scalar additions are charged. This is not a free precision improvement.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -4241,14 +4921,24 @@
       "reviewed_head": "446dd07dbe14f6dcfcca629f3a9cb01cb148f003",
       "current_head": "446dd07dbe14f6dcfcca629f3a9cb01cb148f003",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 121,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "446dd07dbe14f6dcfcca629f3a9cb01cb148f003",
+        "closedAt": "2026-10-13T21:50:18Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/121",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/121#issuecomment-6155938416",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Staggered prefix/suffix pairs with compatible supports. Exact-head CI evidence; joint and complex-only snapshots remain distinct.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -4339,7 +5029,8 @@
       "publication": {
         "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c",
         "evidence": "research/community-reconciliation92-audit/PUBLICATION.json"
-      }
+      },
+      "blocker_comment": "https://github.com/CrocSwap/integer-mult-bounds/pull/122#issuecomment-6155939784"
     },
     {
       "number": 123,
@@ -4365,14 +5056,24 @@
       "reviewed_head": "4634e11162691478556c1ef88fa6a369c2622abf",
       "current_head": "4634e11162691478556c1ef88fa6a369c2622abf",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 123,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "4634e11162691478556c1ef88fa6a369c2622abf",
+        "closedAt": "2026-10-13T21:50:25Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/123",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/123#issuecomment-6155940557",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Seed-1 tie-order search with independent frame validation. Exact-head CI evidence; retains the unit-split coefficient repair and bounded heuristic scope.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -4427,14 +5128,24 @@
       "reviewed_head": "3657b5d62fabc0bd2b1c596ad86b97002e437ea8",
       "current_head": "3657b5d62fabc0bd2b1c596ad86b97002e437ea8",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 124,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "3657b5d62fabc0bd2b1c596ad86b97002e437ea8",
+        "closedAt": "2026-10-13T21:50:29Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/124",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/124#issuecomment-6155941832",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Reuse at a legal birth cut with exact dirty-state compensation. Exact-head CI evidence; inverse chronology and feasible moment majorization retained, no reset assumed.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -4489,14 +5200,24 @@
       "reviewed_head": "dda535bdcfc321a13a1ebd3c2d70e2b5bb72368e",
       "current_head": "dda535bdcfc321a13a1ebd3c2d70e2b5bb72368e",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 125,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "dda535bdcfc321a13a1ebd3c2d70e2b5bb72368e",
+        "closedAt": "2026-10-13T21:50:33Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/125",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/125#issuecomment-6155943184",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Shrink to the minimal nondegenerate span inside a successor frame. Exact-head CI evidence; recomputed profile and fixed target-frame boundaries required.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -4551,14 +5272,24 @@
       "reviewed_head": "530588a019b4a74f09180680c9e3961bf649ec89",
       "current_head": "530588a019b4a74f09180680c9e3961bf649ec89",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 128,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "530588a019b4a74f09180680c9e3961bf649ec89",
+        "closedAt": "2026-10-13T21:50:38Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/128",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/128#issuecomment-6155944465",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Completed-core sharing with separate dirty-restored cores. Fresh dedicated full replay; signed phase and physical scratch allocation matter. No identification of independent dirty inputs.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -4613,14 +5344,24 @@
       "reviewed_head": "59fade1f7790db61a56b69e0d3974c0a97b41f4d",
       "current_head": "59fade1f7790db61a56b69e0d3974c0a97b41f4d",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 129,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "59fade1f7790db61a56b69e0d3974c0a97b41f4d",
+        "closedAt": "2026-10-13T21:50:42Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/129",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/129#issuecomment-6155945671",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Rational 9I-J sunflower geometry and source gauge. Exact-head CI evidence; 161 groups and the complete tail are paid.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -4675,14 +5416,24 @@
       "reviewed_head": "3acf2f944abd069301600ce468f16f1dd8f1f9e4",
       "current_head": "3acf2f944abd069301600ce468f16f1dd8f1f9e4",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 131,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "3acf2f944abd069301600ce468f16f1dd8f1f9e4",
+        "closedAt": "2026-10-13T21:50:46Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/131",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/131#issuecomment-6155946982",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Three-stage cover with general Clifford phases. Exact-head CI evidence for finite construction; uniform phase/compiler contracts remain assumptions, not consequences of geometry alone.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -4737,14 +5488,24 @@
       "reviewed_head": "2c97e8ab1578d05d0aacf03903f458b088c7dd50",
       "current_head": "2c97e8ab1578d05d0aacf03903f458b088c7dd50",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 133,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "2c97e8ab1578d05d0aacf03903f458b088c7dd50",
+        "closedAt": "2026-10-13T21:50:50Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/133",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/133#issuecomment-6155948321",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Radical complements, phase-aware roles, lazy deferral and plateau pricing. Exact-head CI evidence; whole-profile accounting, not additive local savings.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -4799,14 +5560,24 @@
       "reviewed_head": "c205b7d9df0ab933c4b7392ea6625c05dbd5e4c0",
       "current_head": "c205b7d9df0ab933c4b7392ea6625c05dbd5e4c0",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 137,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "c205b7d9df0ab933c4b7392ea6625c05dbd5e4c0",
+        "closedAt": "2026-10-13T21:50:55Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/137",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/137#issuecomment-6155949820",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Pad to 72 with local copies and sequential banks. Exact-head CI evidence; unpaired sequential banks, rank-zero adapters, scalar costs and rare-class factor are retained.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -4861,14 +5632,24 @@
       "reviewed_head": "c5a48c3ed0b1f16cdda7601ea0555b9998e9e734",
       "current_head": "c5a48c3ed0b1f16cdda7601ea0555b9998e9e734",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 138,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "c5a48c3ed0b1f16cdda7601ea0555b9998e9e734",
+        "closedAt": "2026-10-13T21:51:00Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/138",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/138#issuecomment-6155951379",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Tighten beta/backoff on the frozen #137 construction. Fresh exact certificate after repairing the invocation layout with byte-identical pinned sibling inputs. The original command failed imports/data lookup; no mathematical source was changed. Parameter-only contribution, not a new finite network.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -4923,14 +5704,24 @@
       "reviewed_head": "3ddc4dcf7312ec5ab3bff843fd3e8c10cce041dc",
       "current_head": "3ddc4dcf7312ec5ab3bff843fd3e8c10cce041dc",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 141,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "3ddc4dcf7312ec5ab3bff843fd3e8c10cce041dc",
+        "closedAt": "2026-10-13T21:51:05Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/141",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/141#issuecomment-6155952659",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Shrunk-birth terminal elision with exact adjoint and redirects. Exact-head physical CI evidence and source-linked saved 240-theorem arithmetic evidence. No fresh Lean kernel rebuild or analytic formalization claimed.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -4985,14 +5776,24 @@
       "reviewed_head": "2fc6cf548523fb22bba1d88aaadc367fd0a0b499",
       "current_head": "2fc6cf548523fb22bba1d88aaadc367fd0a0b499",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 142,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "2fc6cf548523fb22bba1d88aaadc367fd0a0b499",
+        "closedAt": "2026-10-13T21:51:09Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/142",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/142#issuecomment-6155954172",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Restrict to 22 and replay new supports and coefficients. Exact-head CI evidence; old geometry is not assumed unchanged.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -5047,14 +5848,24 @@
       "reviewed_head": "803b28a5e373442974385396e9d4d3f6e75fd5e7",
       "current_head": "803b28a5e373442974385396e9d4d3f6e75fd5e7",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 143,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "803b28a5e373442974385396e9d4d3f6e75fd5e7",
+        "closedAt": "2026-10-13T21:51:14Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/143",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/143#issuecomment-6155955728",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Late compensation before birth and target deadlines. Exact-head CI evidence; donor finish, disjointness and complete chronology are checked.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -5109,14 +5920,24 @@
       "reviewed_head": "ce7a86f674c6f83a0fe33348c0a046064fefe901",
       "current_head": "ce7a86f674c6f83a0fe33348c0a046064fefe901",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 145,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "ce7a86f674c6f83a0fe33348c0a046064fefe901",
+        "closedAt": "2026-10-13T21:51:19Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/145",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/145#issuecomment-6155957234",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Valid unpaired supplier plus a retracted paired-lockstep attempt. Only unpaired kappa=0.000337546392004 retained as a conditional historical witness. Paired kappa=0.00036855 was retracted; preserve the counterexample and warning, never promote it.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -5171,14 +5992,24 @@
       "reviewed_head": "70355a3192028852598e96624ae29b389e664451",
       "current_head": "70355a3192028852598e96624ae29b389e664451",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 146,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "70355a3192028852598e96624ae29b389e664451",
+        "closedAt": "2026-10-13T21:51:24Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/146",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/146#issuecomment-6155958518",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Exact min-cut producer over a fixed candidate subset. Fresh producer replay plus later #147/#150/#151 integration provenance. Exactness applies to the specified 2^11565 subset, not every producer or topology.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -5233,14 +6064,24 @@
       "reviewed_head": "f571bcbd6e06618aeae0b8279da48060032dc74b",
       "current_head": "f571bcbd6e06618aeae0b8279da48060032dc74b",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 154,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "f571bcbd6e06618aeae0b8279da48060032dc74b",
+        "closedAt": "2026-10-13T21:51:29Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/154",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/154#issuecomment-6155959945",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Isolated parallel verification runner and frame-equivalence work. Adapted runner integrated actively, with positive-job validation and correct tracked/ignored-file snapshots; six new adversarial tests. Historical optimizer retained separately with existing 12,000-case equivalence evidence; no blanket runtime benchmark claimed.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -5295,14 +6136,24 @@
       "reviewed_head": "279b2ff6d3f0a1abe4a61c1f2ea4944bca7cf3dd",
       "current_head": "279b2ff6d3f0a1abe4a61c1f2ea4944bca7cf3dd",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 162,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "279b2ff6d3f0a1abe4a61c1f2ea4944bca7cf3dd",
+        "closedAt": "2026-10-13T21:51:33Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/162",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/162#issuecomment-6155961307",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Expanded legal carrier relation with full backward containment. Fresh full replay; acyclic relation and all 48 arcs paid.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -5357,14 +6208,24 @@
       "reviewed_head": "0bffdfa5aafdc23e668e035ae2b179212b4b3d9a",
       "current_head": "0bffdfa5aafdc23e668e035ae2b179212b4b3d9a",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 178,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "0bffdfa5aafdc23e668e035ae2b179212b4b3d9a",
+        "closedAt": "2026-10-13T21:51:38Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/178",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/178#issuecomment-6155962709",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Retiming operation frames with fixed endpoints and schedule. Fresh full replay with CRT and dirty-state checks; no free endpoint change.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -5419,14 +6280,24 @@
       "reviewed_head": "af90b94783f7d104a0be75c762ade758bec75855",
       "current_head": "af90b94783f7d104a0be75c762ade758bec75855",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 182,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "af90b94783f7d104a0be75c762ade758bec75855",
+        "closedAt": "2026-10-13T21:51:42Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/182",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/182#issuecomment-6155963989",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Shared edges and terminal-data accounting in the actual word. Fresh full replay; independent construction evidence retained.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -5481,14 +6352,24 @@
       "reviewed_head": "561d6ecbbeb94a11b67862ccedd32bfcbad2cae0",
       "current_head": "561d6ecbbeb94a11b67862ccedd32bfcbad2cae0",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 185,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "561d6ecbbeb94a11b67862ccedd32bfcbad2cae0",
+        "closedAt": "2026-10-13T21:51:47Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/185",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/185#issuecomment-6155965402",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Finite three-level ordinary-leaf bootstrap. Fresh verifier; exactly three levels, not a new infinite fixed-point theorem.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -5543,14 +6424,24 @@
       "reviewed_head": "201737a1ec4f936e166e2481fb9e88104cb2ccc7",
       "current_head": "201737a1ec4f936e166e2481fb9e88104cb2ccc7",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 187,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "201737a1ec4f936e166e2481fb9e88104cb2ccc7",
+        "closedAt": "2026-10-13T21:51:51Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/187",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/187#issuecomment-6155966733",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Source-assisted injection before original sources mix. Fresh --full replay; conservative Gram ancestry, donor complements and full global word paid.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -5605,14 +6496,24 @@
       "reviewed_head": "c6eea3e8a46bf122878b512590f9f91a20260800",
       "current_head": "c6eea3e8a46bf122878b512590f9f91a20260800",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 188,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "c6eea3e8a46bf122878b512590f9f91a20260800",
+        "closedAt": "2026-10-13T21:51:56Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/188",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/188#issuecomment-6155968109",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Terminal accumulator executed on every required column. Exact-head Linux full-word/CRT/assembly CI passed. Local macOS stopped at RLIMIT_AS setup; record that portability failure, not a mathematical failure or fresh Linux replay.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -5667,14 +6568,24 @@
       "reviewed_head": "0a4091175b3981267a97a62ab7492cb9ba528916",
       "current_head": "0a4091175b3981267a97a62ab7492cb9ba528916",
       "disposition": "incorporated",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/community-reconciliation92-audit/ARCHIVE.json",
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 189,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "0a4091175b3981267a97a62ab7492cb9ba528916",
+        "closedAt": "2026-10-13T21:52:01Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/189",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/189#issuecomment-6155969626",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "scope": "Facetwin bit locals combined with shared-edge complex supplier. Fresh full replay of both suppliers and composition; complete conditional interfaces retained.",
       "review_completion": {
         "changed_file_coverage": true,

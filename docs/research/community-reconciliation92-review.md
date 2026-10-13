@@ -1,6 +1,10 @@
 # Completion of the frozen 100-PR reconciliation
 
 This review finishes the **92 carry-forwards** after #2/#3/#4/#8/#9/#12/#90/#183.
+The final live reconciliation records **99 of the original 100 resolved**, with **91 PRs
+closed in this completion** and #122 still open for its missing parent artifacts.
+See the [final snapshot](../../research/community-reconciliation92-audit/FINAL-100-SNAPSHOT.json)
+and [closure receipts](../../research/community-reconciliation92-audit/CLOSURE-RECEIPTS.json).
 It incorporates historical construction, proof, verification and tooling contributions;
 it does **not** change the selected conditional frontier, establish the full multiplication
 theorem, or turn an author's saved receipt into a fresh maintainer replay.

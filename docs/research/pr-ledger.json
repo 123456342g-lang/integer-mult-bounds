@@ -62,7 +62,7 @@
     "research/community-batch1099-audit/DISPOSITIONS.json": "81f584c1f802266cd02acd2513572b8ae012da577403f9c46620dd4094ce0a41",
     "research/pr-reconciliation100-20261013/DISPOSITIONS.json": "0351d2dc0ee00543d1218be04db687672f2497b5196b2128caa2a4cc04c4f006",
     "research/community-historical-five-audit/DISPOSITIONS.json": "b2d8bfa841699b8a3140e70cb1cef6b78ef071c44014bd94c9c1787b7e0f1750",
-    "research/community-reconciliation92-audit/DISPOSITIONS.json": "2c364b27a8ee078331d92e6af4daf4e9e4895169c0dcda576ffe601c8344f6df",
+    "research/community-reconciliation92-audit/DISPOSITIONS.json": "5dafbc374822ed60d67da35fcdb27127c71ad839acec7b68a206c5229d45ba11",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -404,9 +404,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 5,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "d3d370c34937503bd3fa63c83d505a05e8e50893",
+        "closedAt": "2026-10-13T21:45:03Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5#issuecomment-6155851108",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "d3d370c34937503bd3fa63c83d505a05e8e50893",
       "review_completion": {
@@ -486,9 +496,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 6,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "5015011bd9a655da038910171eee9f431f4590ff",
+        "closedAt": "2026-10-13T21:45:08Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6#issuecomment-6155852314",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "5015011bd9a655da038910171eee9f431f4590ff",
       "review_completion": {
@@ -573,9 +593,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 7,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "6725c6a17b17871a35353fd29157f4ed851bc114",
+        "closedAt": "2026-10-13T21:45:12Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/7",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/7#issuecomment-6155853497",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "6725c6a17b17871a35353fd29157f4ed851bc114",
       "review_completion": {
@@ -904,9 +934,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 13,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "3ef246fa4f69c87ebfed78376418afa9ffcad145",
+        "closedAt": "2026-10-13T21:45:16Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/13",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/13#issuecomment-6155854519",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "3ef246fa4f69c87ebfed78376418afa9ffcad145",
       "review_completion": {
@@ -987,9 +1027,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 14,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "1fa5b9a9aaccbebb3eb29ac7ea55811f46464eee",
+        "closedAt": "2026-10-13T21:45:20Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/14",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/14#issuecomment-6155855690",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "1fa5b9a9aaccbebb3eb29ac7ea55811f46464eee",
       "review_completion": {
@@ -1069,9 +1119,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 15,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "a17cab396ce1c79c288bde9d06002cefdc0af8e6",
+        "closedAt": "2026-10-13T21:45:25Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/15",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/15#issuecomment-6155856892",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "a17cab396ce1c79c288bde9d06002cefdc0af8e6",
       "review_completion": {
@@ -1151,9 +1211,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 16,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "a80f5e676c84b59def9791495df0655efe89a04f",
+        "closedAt": "2026-10-13T21:45:29Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/16",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/16#issuecomment-6155857974",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "a80f5e676c84b59def9791495df0655efe89a04f",
       "review_completion": {
@@ -1233,9 +1303,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 17,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "c915b4117626a512dd470adbdbd76963108f5cb3",
+        "closedAt": "2026-10-13T21:45:33Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/17",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/17#issuecomment-6155859109",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "c915b4117626a512dd470adbdbd76963108f5cb3",
       "review_completion": {
@@ -1314,9 +1394,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 19,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "817aeb7b1225717d1b784d507570bf02ed89294c",
+        "closedAt": "2026-10-13T21:45:38Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/19",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/19#issuecomment-6155860197",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "817aeb7b1225717d1b784d507570bf02ed89294c",
       "review_completion": {
@@ -1432,9 +1522,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 21,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "5ba6cf0bfb68f2be8d15610e7972207c50254d6a",
+        "closedAt": "2026-10-13T21:45:42Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/21",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/21#issuecomment-6155861279",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "5ba6cf0bfb68f2be8d15610e7972207c50254d6a",
       "review_completion": {
@@ -1514,9 +1614,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 22,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "c2f03ed48637fbe69803b6cecdcd50686e3274af",
+        "closedAt": "2026-10-13T21:45:46Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/22",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/22#issuecomment-6155862345",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "c2f03ed48637fbe69803b6cecdcd50686e3274af",
       "review_completion": {
@@ -1597,9 +1707,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 23,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "661ebabc1076c9f525d7ce4967c876b203fa9827",
+        "closedAt": "2026-10-13T21:45:50Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/23",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/23#issuecomment-6155863472",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "661ebabc1076c9f525d7ce4967c876b203fa9827",
       "review_completion": {
@@ -1678,9 +1798,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 25,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "003f366cfa99e19fbeacd9300a219f2d44c8cff0",
+        "closedAt": "2026-10-13T21:45:54Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/25",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/25#issuecomment-6155864520",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "003f366cfa99e19fbeacd9300a219f2d44c8cff0",
       "review_completion": {
@@ -1760,9 +1890,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 27,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "c297233e788a23e9833ad1ee07fc8517accd0f42",
+        "closedAt": "2026-10-13T21:45:58Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/27",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/27#issuecomment-6155865546",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "c297233e788a23e9833ad1ee07fc8517accd0f42",
       "review_completion": {
@@ -1841,9 +1981,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 28,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "bb1143d0714bf315a0043cebeabe96b987af935e",
+        "closedAt": "2026-10-13T21:46:02Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/28",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/28#issuecomment-6155866545",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "bb1143d0714bf315a0043cebeabe96b987af935e",
       "review_completion": {
@@ -1923,9 +2073,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 29,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "9d963275075fa98f1da821e27757b238dafd6b3c",
+        "closedAt": "2026-10-13T21:46:06Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/29",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/29#issuecomment-6155867621",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "9d963275075fa98f1da821e27757b238dafd6b3c",
       "review_completion": {
@@ -2005,9 +2165,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 31,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "122e6453e80330633af701eabd1a6a72dfefd286",
+        "closedAt": "2026-10-13T21:46:11Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/31",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/31#issuecomment-6155868706",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "122e6453e80330633af701eabd1a6a72dfefd286",
       "review_completion": {
@@ -2087,9 +2257,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 33,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "a499a345c040aa15b68e984a0904eadc485c7a7e",
+        "closedAt": "2026-10-13T21:46:15Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/33",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/33#issuecomment-6155869884",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "a499a345c040aa15b68e984a0904eadc485c7a7e",
       "review_completion": {
@@ -2170,9 +2350,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 34,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "7fecbe3651e095fb0f450756afdeefd2a9ee80a2",
+        "closedAt": "2026-10-13T21:46:20Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/34",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/34#issuecomment-6155871089",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "7fecbe3651e095fb0f450756afdeefd2a9ee80a2",
       "review_completion": {
@@ -2252,9 +2442,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 35,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "9c345a2a11e5f4f3649f7c68214bf9a2a0a3fe9c",
+        "closedAt": "2026-10-13T21:46:25Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/35",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/35#issuecomment-6155872172",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "9c345a2a11e5f4f3649f7c68214bf9a2a0a3fe9c",
       "review_completion": {
@@ -2335,9 +2535,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 38,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "605323bab4ba330de3d1785dc5b3ecb14e8ab747",
+        "closedAt": "2026-10-13T21:46:30Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/38",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/38#issuecomment-6155873304",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "605323bab4ba330de3d1785dc5b3ecb14e8ab747",
       "review_completion": {
@@ -2419,9 +2629,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 40,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "e3bf3ab0cb1ec48588e279b31a97e7a49c72f99e",
+        "closedAt": "2026-10-13T21:46:34Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/40",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/40#issuecomment-6155874663",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "e3bf3ab0cb1ec48588e279b31a97e7a49c72f99e",
       "review_completion": {
@@ -2502,9 +2722,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 41,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "03bde70c0c2a453f1ceae20c619b602841405467",
+        "closedAt": "2026-10-13T21:46:39Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/41",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/41#issuecomment-6155875861",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "03bde70c0c2a453f1ceae20c619b602841405467",
       "review_completion": {
@@ -2584,9 +2814,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 42,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "a92fc98c456f6c8863b8bba90079ba71b97d2dc0",
+        "closedAt": "2026-10-13T21:46:43Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/42",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/42#issuecomment-6155877079",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "a92fc98c456f6c8863b8bba90079ba71b97d2dc0",
       "review_completion": {
@@ -2667,9 +2907,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 44,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "1a21794eb5384db0e96d7bc2b11aa6f28cff7a85",
+        "closedAt": "2026-10-13T21:46:48Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/44",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/44#issuecomment-6155878275",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "1a21794eb5384db0e96d7bc2b11aa6f28cff7a85",
       "review_completion": {
@@ -2750,9 +3000,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 47,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "117caf164e3b235ef20188aa2dc1b49617e9255c",
+        "closedAt": "2026-10-13T21:46:53Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/47",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/47#issuecomment-6155879382",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "117caf164e3b235ef20188aa2dc1b49617e9255c",
       "review_completion": {
@@ -2831,9 +3091,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 63,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "5e42f913e827990f30d0f0918e54a803d830f13e",
+        "closedAt": "2026-10-13T21:46:57Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/63",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/63#issuecomment-6155880688",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "5e42f913e827990f30d0f0918e54a803d830f13e",
       "review_completion": {
@@ -2912,9 +3182,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 65,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "b0cea06d7fd5ac10f76169b01d3114f208fc7448",
+        "closedAt": "2026-10-13T21:47:02Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/65",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/65#issuecomment-6155881815",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "b0cea06d7fd5ac10f76169b01d3114f208fc7448",
       "review_completion": {
@@ -2992,9 +3272,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 66,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "701b1246e2def8b022a14309b5171138f2b12a52",
+        "closedAt": "2026-10-13T21:47:06Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/66",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/66#issuecomment-6155882911",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "701b1246e2def8b022a14309b5171138f2b12a52",
       "review_completion": {
@@ -3073,9 +3363,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 67,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "46991a21d13f37faf2350591de7d794cfaa4455e",
+        "closedAt": "2026-10-13T21:47:10Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/67",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/67#issuecomment-6155884026",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "46991a21d13f37faf2350591de7d794cfaa4455e",
       "review_completion": {
@@ -3154,9 +3454,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 68,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "b1b2af3415ecb494a0552b16c18045bf3ee05e95",
+        "closedAt": "2026-10-13T21:47:15Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/68",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/68#issuecomment-6155885060",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "b1b2af3415ecb494a0552b16c18045bf3ee05e95",
       "review_completion": {
@@ -3270,9 +3580,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 70,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "11a4e3176511ece840d57b7db045772945d9703c",
+        "closedAt": "2026-10-13T21:47:19Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/70",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/70#issuecomment-6155886128",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "11a4e3176511ece840d57b7db045772945d9703c",
       "review_completion": {
@@ -3360,9 +3680,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 71,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "f59cb9f54d12a2a02b665afef24a9bb5061ae011",
+        "closedAt": "2026-10-13T21:47:23Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/71",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/71#issuecomment-6155887191",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "f59cb9f54d12a2a02b665afef24a9bb5061ae011",
       "review_completion": {
@@ -3486,9 +3816,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 75,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "da9b6cbebb33e8b8293a604dde0eace9de53406b",
+        "closedAt": "2026-10-13T21:47:27Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/75",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/75#issuecomment-6155888368",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "da9b6cbebb33e8b8293a604dde0eace9de53406b",
       "review_completion": {
@@ -3601,9 +3941,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 77,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "17c979eb6dcd4c300e6263c66111f220a9e926e7",
+        "closedAt": "2026-10-13T21:47:31Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/77",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/77#issuecomment-6155889493",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "17c979eb6dcd4c300e6263c66111f220a9e926e7",
       "review_completion": {
@@ -3682,9 +4032,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 78,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "7c3793131155fa5795920eff35057672be38833a",
+        "closedAt": "2026-10-13T21:47:36Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/78",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/78#issuecomment-6155890554",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "7c3793131155fa5795920eff35057672be38833a",
       "review_completion": {
@@ -3763,9 +4123,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 79,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "79dd6e134855bc8a7b8950c3aa0eb279fe148ceb",
+        "closedAt": "2026-10-13T21:47:40Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/79",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/79#issuecomment-6155891718",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "79dd6e134855bc8a7b8950c3aa0eb279fe148ceb",
       "review_completion": {
@@ -3853,9 +4223,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 80,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "4fb50b65e3542592bb1674a0211b0b5faa3ed920",
+        "closedAt": "2026-10-13T21:47:44Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/80",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/80#issuecomment-6155892912",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "4fb50b65e3542592bb1674a0211b0b5faa3ed920",
       "review_completion": {
@@ -3944,9 +4324,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 81,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "acae4964aef41c69f3c57e72a45e76afc4d4934d",
+        "closedAt": "2026-10-13T21:47:49Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/81",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/81#issuecomment-6155894146",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "acae4964aef41c69f3c57e72a45e76afc4d4934d",
       "review_completion": {
@@ -4036,9 +4426,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 82,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "67b446ccdb9d23cae9683f6059fb607b52285004",
+        "closedAt": "2026-10-13T21:47:53Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/82",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/82#issuecomment-6155895505",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "67b446ccdb9d23cae9683f6059fb607b52285004",
       "review_completion": {
@@ -4129,9 +4529,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 83,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "183077b7b3ae12e96eb3a87c1dc08023e6494dca",
+        "closedAt": "2026-10-13T21:47:58Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/83",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/83#issuecomment-6155896919",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "183077b7b3ae12e96eb3a87c1dc08023e6494dca",
       "review_completion": {
@@ -4209,9 +4619,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 84,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "424ef44609eda377250b2985a5210cb336ade19e",
+        "closedAt": "2026-10-13T21:48:02Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/84",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/84#issuecomment-6155898141",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "424ef44609eda377250b2985a5210cb336ade19e",
       "review_completion": {
@@ -4289,9 +4709,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 85,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "dd7690a5a7a3027afcb002aa8ef41d0e29bde58f",
+        "closedAt": "2026-10-13T21:48:07Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/85",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/85#issuecomment-6155899615",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "dd7690a5a7a3027afcb002aa8ef41d0e29bde58f",
       "review_completion": {
@@ -4369,9 +4799,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 86,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "f0fe4453a088c62af3ee795691fa92c502ed8b57",
+        "closedAt": "2026-10-13T21:48:12Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/86",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/86#issuecomment-6155900985",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "f0fe4453a088c62af3ee795691fa92c502ed8b57",
       "review_completion": {
@@ -4449,9 +4889,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 87,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "466fc99e67d872831d1d192394f346a28e909e09",
+        "closedAt": "2026-10-13T21:48:17Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/87",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/87#issuecomment-6155902370",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "466fc99e67d872831d1d192394f346a28e909e09",
       "review_completion": {
@@ -4529,9 +4979,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 88,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "d5a5b936844104db18c5bdd871f89da2fbf99551",
+        "closedAt": "2026-10-13T21:48:22Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/88",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/88#issuecomment-6155903854",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "d5a5b936844104db18c5bdd871f89da2fbf99551",
       "review_completion": {
@@ -4609,9 +5069,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 89,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "6e3d667ee119cc630eb5ffc69ea4c222f967ce2d",
+        "closedAt": "2026-10-13T21:48:27Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/89",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/89#issuecomment-6155905422",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "6e3d667ee119cc630eb5ffc69ea4c222f967ce2d",
       "review_completion": {
@@ -4774,9 +5244,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 91,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "8d1a0838f3e906d372818df02b3564c8b36495cc",
+        "closedAt": "2026-10-13T21:48:33Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/91",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/91#issuecomment-6155906928",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "8d1a0838f3e906d372818df02b3564c8b36495cc",
       "review_completion": {
@@ -4854,9 +5334,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 92,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "2b4dca843b7a719512595896aab29de28bc4ea1f",
+        "closedAt": "2026-10-13T21:48:39Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/92",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/92#issuecomment-6155908675",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "2b4dca843b7a719512595896aab29de28bc4ea1f",
       "review_completion": {
@@ -4934,9 +5424,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 93,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "f5f5ebdfc92fa6001d209aafba432a36ff9d86f5",
+        "closedAt": "2026-10-13T21:48:44Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/93",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/93#issuecomment-6155910133",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "f5f5ebdfc92fa6001d209aafba432a36ff9d86f5",
       "review_completion": {
@@ -5014,9 +5514,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 94,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "0c440e40c9d4a5a02ca5bd028a2ebb5ebbca55d7",
+        "closedAt": "2026-10-13T21:48:49Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/94",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/94#issuecomment-6155911500",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "0c440e40c9d4a5a02ca5bd028a2ebb5ebbca55d7",
       "review_completion": {
@@ -5094,9 +5604,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 95,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "641aae7baf14ae21b69145d54e8232bf20076fce",
+        "closedAt": "2026-10-13T21:48:55Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/95",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/95#issuecomment-6155913407",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "641aae7baf14ae21b69145d54e8232bf20076fce",
       "review_completion": {
@@ -5192,9 +5712,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 97,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "e15350b66e4bf796153a68c240a6cc1b788abe3e",
+        "closedAt": "2026-10-13T21:49:01Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/97",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/97#issuecomment-6155915261",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "e15350b66e4bf796153a68c240a6cc1b788abe3e",
       "review_completion": {
@@ -5272,9 +5802,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 98,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "6862c47f5fcb69dfb424e1bb7f32f415d8659063",
+        "closedAt": "2026-10-13T21:49:06Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/98",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/98#issuecomment-6155916689",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "6862c47f5fcb69dfb424e1bb7f32f415d8659063",
       "review_completion": {
@@ -5385,9 +5925,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 100,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "22dc19dd7123dd582110a912a6ca687e31e2243f",
+        "closedAt": "2026-10-13T21:49:11Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/100",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/100#issuecomment-6155918237",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "22dc19dd7123dd582110a912a6ca687e31e2243f",
       "review_completion": {
@@ -5465,9 +6015,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 102,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "3fc54ebacb1fbbd1f0e0e66f9dbd32202934661c",
+        "closedAt": "2026-10-13T21:49:16Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/102",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/102#issuecomment-6155919549",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "3fc54ebacb1fbbd1f0e0e66f9dbd32202934661c",
       "review_completion": {
@@ -5545,9 +6105,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 103,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "75ab1f70d146c21c7611ce0df9eb5f645f51ac0e",
+        "closedAt": "2026-10-13T21:49:20Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/103",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/103#issuecomment-6155920955",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "75ab1f70d146c21c7611ce0df9eb5f645f51ac0e",
       "review_completion": {
@@ -5625,9 +6195,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 106,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "34c066390b9b0026789d8ce9b0e044bc30253b2b",
+        "closedAt": "2026-10-13T21:49:25Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/106",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/106#issuecomment-6155922353",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "34c066390b9b0026789d8ce9b0e044bc30253b2b",
       "review_completion": {
@@ -5705,9 +6285,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 107,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "eb231b7b63f7fc99d51ffc16e0356831c3af1c22",
+        "closedAt": "2026-10-13T21:49:32Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/107",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/107#issuecomment-6155924281",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "eb231b7b63f7fc99d51ffc16e0356831c3af1c22",
       "review_completion": {
@@ -5785,9 +6375,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 108,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "4974895daf92b51d2cc4a954bc6b77be2d7ff4c4",
+        "closedAt": "2026-10-13T21:49:37Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/108",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/108#issuecomment-6155925706",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "4974895daf92b51d2cc4a954bc6b77be2d7ff4c4",
       "review_completion": {
@@ -5872,9 +6472,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 109,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "45389b383b31092d83d19007dd6faaa8543db961",
+        "closedAt": "2026-10-13T21:49:41Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/109",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/109#issuecomment-6155927020",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "45389b383b31092d83d19007dd6faaa8543db961",
       "review_completion": {
@@ -5952,9 +6562,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 110,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "09775e9f3fbf1900175010bcd0c3d6d1dbf65ffe",
+        "closedAt": "2026-10-13T21:49:45Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/110",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/110#issuecomment-6155928344",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "09775e9f3fbf1900175010bcd0c3d6d1dbf65ffe",
       "review_completion": {
@@ -6032,9 +6652,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 111,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "5b3add9415bf7ef19e1dfe739903d09d66c1d9ca",
+        "closedAt": "2026-10-13T21:49:50Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/111",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/111#issuecomment-6155929800",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "5b3add9415bf7ef19e1dfe739903d09d66c1d9ca",
       "review_completion": {
@@ -6112,9 +6742,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 113,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "502761e7e02e25c737f61be718e29bca3f391d19",
+        "closedAt": "2026-10-13T21:49:55Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/113",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/113#issuecomment-6155931265",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "502761e7e02e25c737f61be718e29bca3f391d19",
       "review_completion": {
@@ -6192,9 +6832,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 114,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "77227550987a49eec5f335b61ab233fc5c93dbe8",
+        "closedAt": "2026-10-13T21:49:59Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/114",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/114#issuecomment-6155932709",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "77227550987a49eec5f335b61ab233fc5c93dbe8",
       "review_completion": {
@@ -6273,9 +6923,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 116,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "295a48a3b966428896057a98c6b4834c0b4b7416",
+        "closedAt": "2026-10-13T21:50:04Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/116",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/116#issuecomment-6155934127",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "295a48a3b966428896057a98c6b4834c0b4b7416",
       "review_completion": {
@@ -6357,9 +7017,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 117,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "cbb05ce504d571546d9b7794c186a613c659c3bf",
+        "closedAt": "2026-10-13T21:50:09Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/117",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/117#issuecomment-6155935749",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "cbb05ce504d571546d9b7794c186a613c659c3bf",
       "review_completion": {
@@ -6438,9 +7108,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 118,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "51fd1bbff9b73e3ad6e8bc6d53318909c3785484",
+        "closedAt": "2026-10-13T21:50:14Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/118",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/118#issuecomment-6155937125",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "51fd1bbff9b73e3ad6e8bc6d53318909c3785484",
       "review_completion": {
@@ -6518,9 +7198,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 121,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "446dd07dbe14f6dcfcca629f3a9cb01cb148f003",
+        "closedAt": "2026-10-13T21:50:18Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/121",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/121#issuecomment-6155938416",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "446dd07dbe14f6dcfcca629f3a9cb01cb148f003",
       "review_completion": {
@@ -6681,9 +7371,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 123,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "4634e11162691478556c1ef88fa6a369c2622abf",
+        "closedAt": "2026-10-13T21:50:25Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/123",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/123#issuecomment-6155940557",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "4634e11162691478556c1ef88fa6a369c2622abf",
       "review_completion": {
@@ -6763,9 +7463,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 124,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "3657b5d62fabc0bd2b1c596ad86b97002e437ea8",
+        "closedAt": "2026-10-13T21:50:29Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/124",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/124#issuecomment-6155941832",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "3657b5d62fabc0bd2b1c596ad86b97002e437ea8",
       "review_completion": {
@@ -6845,9 +7555,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 125,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "dda535bdcfc321a13a1ebd3c2d70e2b5bb72368e",
+        "closedAt": "2026-10-13T21:50:33Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/125",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/125#issuecomment-6155943184",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "dda535bdcfc321a13a1ebd3c2d70e2b5bb72368e",
       "review_completion": {
@@ -6994,9 +7714,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 128,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "530588a019b4a74f09180680c9e3961bf649ec89",
+        "closedAt": "2026-10-13T21:50:38Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/128",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/128#issuecomment-6155944465",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "530588a019b4a74f09180680c9e3961bf649ec89",
       "review_completion": {
@@ -7074,9 +7804,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 129,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "59fade1f7790db61a56b69e0d3974c0a97b41f4d",
+        "closedAt": "2026-10-13T21:50:42Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/129",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/129#issuecomment-6155945671",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "59fade1f7790db61a56b69e0d3974c0a97b41f4d",
       "review_completion": {
@@ -7155,9 +7895,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 131,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "3acf2f944abd069301600ce468f16f1dd8f1f9e4",
+        "closedAt": "2026-10-13T21:50:46Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/131",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/131#issuecomment-6155946982",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "3acf2f944abd069301600ce468f16f1dd8f1f9e4",
       "review_completion": {
@@ -7237,9 +7987,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 133,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "2c97e8ab1578d05d0aacf03903f458b088c7dd50",
+        "closedAt": "2026-10-13T21:50:50Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/133",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/133#issuecomment-6155948321",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "2c97e8ab1578d05d0aacf03903f458b088c7dd50",
       "review_completion": {
@@ -7354,9 +8114,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 137,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "c205b7d9df0ab933c4b7392ea6625c05dbd5e4c0",
+        "closedAt": "2026-10-13T21:50:55Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/137",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/137#issuecomment-6155949820",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "c205b7d9df0ab933c4b7392ea6625c05dbd5e4c0",
       "review_completion": {
@@ -7435,9 +8205,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 138,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "c5a48c3ed0b1f16cdda7601ea0555b9998e9e734",
+        "closedAt": "2026-10-13T21:51:00Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/138",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/138#issuecomment-6155951379",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "c5a48c3ed0b1f16cdda7601ea0555b9998e9e734",
       "review_completion": {
@@ -7515,9 +8295,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 141,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "3ddc4dcf7312ec5ab3bff843fd3e8c10cce041dc",
+        "closedAt": "2026-10-13T21:51:05Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/141",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/141#issuecomment-6155952659",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "3ddc4dcf7312ec5ab3bff843fd3e8c10cce041dc",
       "review_completion": {
@@ -7596,9 +8386,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 142,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "2fc6cf548523fb22bba1d88aaadc367fd0a0b499",
+        "closedAt": "2026-10-13T21:51:09Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/142",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/142#issuecomment-6155954172",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "2fc6cf548523fb22bba1d88aaadc367fd0a0b499",
       "review_completion": {
@@ -7679,9 +8479,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 143,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "803b28a5e373442974385396e9d4d3f6e75fd5e7",
+        "closedAt": "2026-10-13T21:51:14Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/143",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/143#issuecomment-6155955728",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "803b28a5e373442974385396e9d4d3f6e75fd5e7",
       "review_completion": {
@@ -7761,9 +8571,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 145,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "ce7a86f674c6f83a0fe33348c0a046064fefe901",
+        "closedAt": "2026-10-13T21:51:19Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/145",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/145#issuecomment-6155957234",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "ce7a86f674c6f83a0fe33348c0a046064fefe901",
       "review_completion": {
@@ -7843,9 +8663,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 146,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "70355a3192028852598e96624ae29b389e664451",
+        "closedAt": "2026-10-13T21:51:24Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/146",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/146#issuecomment-6155958518",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "reconciliation_evidence": [
         "research/pr-reconciliation-20261012/content-comparison.json",
         "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
@@ -7991,9 +8821,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 154,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "f571bcbd6e06618aeae0b8279da48060032dc74b",
+        "closedAt": "2026-10-13T21:51:29Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/154",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/154#issuecomment-6155959945",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "f571bcbd6e06618aeae0b8279da48060032dc74b",
       "review_completion": {
@@ -8121,9 +8961,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 162,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "279b2ff6d3f0a1abe4a61c1f2ea4944bca7cf3dd",
+        "closedAt": "2026-10-13T21:51:33Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/162",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/162#issuecomment-6155961307",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "279b2ff6d3f0a1abe4a61c1f2ea4944bca7cf3dd",
       "review_completion": {
@@ -8593,9 +9443,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 178,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "0bffdfa5aafdc23e668e035ae2b179212b4b3d9a",
+        "closedAt": "2026-10-13T21:51:38Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/178",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/178#issuecomment-6155962709",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "0bffdfa5aafdc23e668e035ae2b179212b4b3d9a",
       "review_completion": {
@@ -8788,9 +9648,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 182,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "af90b94783f7d104a0be75c762ade758bec75855",
+        "closedAt": "2026-10-13T21:51:42Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/182",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/182#issuecomment-6155963989",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "reconciliation_evidence": [
         "research/pr-reconciliation-20261012/content-comparison.json",
         "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
@@ -8949,9 +9819,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 185,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "561d6ecbbeb94a11b67862ccedd32bfcbad2cae0",
+        "closedAt": "2026-10-13T21:51:47Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/185",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/185#issuecomment-6155965402",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "reconciliation_evidence": [
         "research/pr-reconciliation-20261012/content-comparison.json",
         "research/pr-reconciliation100-20261013/DISPOSITIONS.json",
@@ -9032,9 +9912,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 187,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "201737a1ec4f936e166e2481fb9e88104cb2ccc7",
+        "closedAt": "2026-10-13T21:51:51Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/187",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/187#issuecomment-6155966733",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "201737a1ec4f936e166e2481fb9e88104cb2ccc7",
       "review_completion": {
@@ -9114,9 +10004,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 188,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "c6eea3e8a46bf122878b512590f9f91a20260800",
+        "closedAt": "2026-10-13T21:51:56Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/188",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/188#issuecomment-6155968109",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "c6eea3e8a46bf122878b512590f9f91a20260800",
       "review_completion": {
@@ -9197,9 +10097,19 @@
         "research/community-reconciliation92-audit/REVIEW.json",
         "docs/research/community-reconciliation92-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "number": 189,
+        "state": "CLOSED",
+        "isDraft": false,
+        "headRefOid": "0a4091175b3981267a97a62ab7492cb9ba528916",
+        "closedAt": "2026-10-13T21:52:01Z",
+        "mergedAt": null,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/189",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/189#issuecomment-6155969626",
+        "integration_commit": "b84ba67156a01f9c2cb34fe1e3cb1dcdeab00d9c"
+      },
       "current_head_observed_in": "research/community-reconciliation92-audit/DISPOSITIONS.json",
       "reviewed_head": "0a4091175b3981267a97a62ab7492cb9ba528916",
       "review_completion": {
@@ -31968,8 +32878,8 @@
     535
   ],
   "github_dispositions": {
-    "CLOSED": 4,
+    "CLOSED": 95,
     "MERGED": 287,
-    "OPEN": 431
+    "OPEN": 340
   }
 }

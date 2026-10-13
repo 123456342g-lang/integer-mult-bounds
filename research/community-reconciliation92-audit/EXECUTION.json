@@ -1234,18 +1234,28 @@
     {
       "number": 154,
       "head": "f571bcbd6e06618aeae0b8279da48060032dc74b",
-      "evidence_kind": "manual local log; command detail limited to retained output",
+      "evidence_kind": "Fresh adapted integration-tree runner tests; head identifies original PR provenance, not the executed modified tree",
       "retained_log": "logs/pr154-integration-optimized-tests.txt.gz",
       "sha256": "d7298764d026f446499ec9765e2bd85a266624a39930cb05cf8844fa2697b3ea",
-      "scope": "Historical focused check, not a fresh full theorem replay"
+      "scope": "Six adversarial runner checks, normal or optimized Python as indicated by the log; no historical frame compiler replacement or full-suite speed claim",
+      "executed_source_sha256": {
+        "scripts/run_parallel.py": "f046e98e4c296fde954b93b466b7f359be0c05c287d96943e016f0b850587387",
+        "scripts/verify_parallel.py": "7751bcdd2df3c98798b1855050646744404f24d015eb4cd2b4af84bfb591cdc3",
+        "tests/test_parallel_verification.py": "c9b4af62a123e3f09c841059f77b4744df58f27127e9a5ef2b6195e5b8b9d4e2"
+      }
     },
     {
       "number": 154,
       "head": "f571bcbd6e06618aeae0b8279da48060032dc74b",
-      "evidence_kind": "manual local log; command detail limited to retained output",
+      "evidence_kind": "Fresh adapted integration-tree runner tests; head identifies original PR provenance, not the executed modified tree",
       "retained_log": "logs/pr154-integration-tests.txt.gz",
       "sha256": "d7298764d026f446499ec9765e2bd85a266624a39930cb05cf8844fa2697b3ea",
-      "scope": "Historical focused check, not a fresh full theorem replay"
+      "scope": "Six adversarial runner checks, normal or optimized Python as indicated by the log; no historical frame compiler replacement or full-suite speed claim",
+      "executed_source_sha256": {
+        "scripts/run_parallel.py": "f046e98e4c296fde954b93b466b7f359be0c05c287d96943e016f0b850587387",
+        "scripts/verify_parallel.py": "7751bcdd2df3c98798b1855050646744404f24d015eb4cd2b4af84bfb591cdc3",
+        "tests/test_parallel_verification.py": "c9b4af62a123e3f09c841059f77b4744df58f27127e9a5ef2b6195e5b8b9d4e2"
+      }
     }
   ],
   "failures": {

@@ -105,6 +105,46 @@ def main():
     require(set(archive['parents'])=={r['head'] for r in source}, 'Source archive omitted a head')
     require(oid('commit',archive['commit_object'].encode())==archive['commit'], 'Archive commit authentication')
     require(set(x[7:] for x in archive['commit_object'].splitlines() if x.startswith('parent '))==set(archive['parents']), 'Archive parent binding')
+    if (HERE/'PUBLICATION.json').exists():
+        publication=load('PUBLICATION.json')
+        require(publication['source_archive_commit']==archive['commit']
+                and publication['source_archive_tag']==archive['tag'], 'Published archive differs')
+        for decision in decisions.values():
+            if decision['review_completion']['published']:
+                require(decision['publication']['integration_commit']==publication['integration_commit'],
+                        'Published integration differs')
+    if (HERE/'CLOSURE-RECEIPTS.json').exists():
+        receipts=load('CLOSURE-RECEIPTS.json')
+        require(len(receipts)==92 and {r['number'] for r in receipts}==set(decisions), 'Incomplete closure reconciliation')
+        for receipt in receipts:
+            n=receipt['number']; observation=receipt['observed']; decision=decisions[n]
+            require(observation['headRefOid']==decision['current_head']==snapshot[n]['headRefOid'], 'Closure receipt head differs')
+            require(observation['state']==decision['github_state'], 'Closure receipt state differs')
+            if receipt['status']=='closed_after_published_review':
+                require(decision['closure']['comment_url']==receipt['comment']['url'], 'Closure comment differs')
+                require(decision['disposition']=='incorporated' and observation['state']=='CLOSED', 'Premature closure')
+            elif receipt['status']=='blocked_missing_parent':
+                require(observation['state']=='OPEN' and decision['unresolved_question'], 'Lost open blocker')
+    if (HERE/'REGENERATED.json').exists():
+        for result in load('REGENERATED.json'):
+            raw=gzip.decompress((HERE/result['path']).read_bytes())
+            require(hashlib.sha256(raw).hexdigest()==result['uncompressed_sha256'], 'Changed regenerated arithmetic')
+    if (HERE/'FINAL-100-SNAPSHOT.json').exists():
+        final=load('FINAL-100-SNAPSHOT.json')
+        original=json.loads((ROOT/'research/pr-reconciliation100-20261013/STARTING-SNAPSHOT.json').read_text())
+        observed=final['pull_requests']
+        require(len(observed)==100 and {r['number'] for r in observed}==
+                {r['number'] for r in original['pull_requests']}, 'Final snapshot changed frozen scope')
+        counts={state:sum(r['state']==state for r in observed) for state in ('OPEN','CLOSED','MERGED')}
+        require(counts==final['counts'] and counts['CLOSED']+counts['MERGED']==final['resolved']==99,
+                'Final resolved count differs')
+        require(sorted(r['number'] for r in observed if r['state']=='OPEN')==final['open_blocked']==[122],
+                'Final blocker differs')
+        for row in observed:
+            if row['number'] in decisions:
+                decision=decisions[row['number']]
+                require(row['headRefOid']==decision['current_head'] and row['state']==decision['github_state'],
+                        'Final observation differs from decision')
     if args.git_blobs:
         proc=subprocess.Popen(['git','cat-file','--batch'],cwd=ROOT,stdin=subprocess.PIPE,stdout=subprocess.PIPE)
         try:
