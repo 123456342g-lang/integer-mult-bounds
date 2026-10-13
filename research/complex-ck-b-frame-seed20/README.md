@@ -183,6 +183,9 @@ The final refresh covered 513 open PRs through #693. New #683 concerns mixed
 K/M bypass carriers and #687 enumerates one-read relocations under minimal join
 frames. Neither changes this result's fixed-order, all-frame scope or supplies
 a dependency. The pinned-issue query remained empty.
+Immediately before submission, #694 through #697 were also reviewed. #696
+lowers complex scalar primitives while preserving frames; #697 changes source
+access and helper count. Both lie outside the fixed-circuit class here.
 
 Credit goes to Jeremy Kothe's #622 K-triangle construction and schedule;
 Chafik Boukhalfa's #626 owner package; DreamingOfClouds' cold-helper, emitter and
@@ -205,3 +208,6 @@ outside this result. The expensive full supplier/global replay is not needed to
 establish this isolated barrier and was not rerun; the selected-record check was.
 The complete package command passed on macOS arm64 with Python 3.11.17 and
 3.14.8. [VALIDATION.json](VALIDATION.json) records the checks and their limits.
+The same command passed from a clean archive containing only this package and
+the eight pinned inputs. [PR #698](https://github.com/CrocSwap/integer-mult-bounds/pull/698)
+is the completed sprint handoff.
