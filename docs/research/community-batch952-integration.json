@@ -1,5 +1,5 @@
 {
-  "status": "SEVENTEEN_REVIEWED_PUBLICATION_PENDING_ONE_DEFERRED",
+  "status": "PUBLISHED_SEVENTEEN_REVIEWED_HEADS_MERGED_ONE_DEFERRED",
   "selected_kappa": "1661960547713947/1000000000000000000",
   "frontier_changed": true,
   "reviewed_heads": {
@@ -183,10 +183,96 @@
     "research/community-batch952-audit/logs/final-ledger-check.log": "32fb0d3b59e9c8ed6deb19e8fdf1f493d589ae1deba2f440c9d25c28579ab708"
   },
   "linux_ci": {
-    "status": "Not yet run on this integration commit; complete local macOS checks recorded separately.",
-    "workflows": [
-      "U8 T37 whole-owner composition",
-      "Community T37-era finite circuits and bounds"
+    "status": "Queued on the published integration commit; local execution passed. No hosted success claimed yet.",
+    "runs": [
+      {
+        "conclusion": "",
+        "databaseId": 38419228342,
+        "headSha": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "status": "queued",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38419228342",
+        "workflowName": "Graded box convolution"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38419227096,
+        "headSha": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "status": "queued",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38419227096",
+        "workflowName": "Selected family 799 finite composition"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38419227155,
+        "headSha": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "status": "queued",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38419227155",
+        "workflowName": "Verify recycled bit registers on the paired-cube bit word"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38419227306,
+        "headSha": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "status": "queued",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38419227306",
+        "workflowName": "Community T37-era finite circuits and bounds"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38419227139,
+        "headSha": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "status": "queued",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38419227139",
+        "workflowName": "U8 T37 whole-owner composition"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38419227082,
+        "headSha": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "status": "queued",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38419227082",
+        "workflowName": "Verify research artifacts"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38419227122,
+        "headSha": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "status": "queued",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38419227122",
+        "workflowName": "Selected family 626 finite composition"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38419227091,
+        "headSha": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "status": "queued",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38419227091",
+        "workflowName": "Community exact tooling and scoped audits"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38419227286,
+        "headSha": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "status": "queued",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38419227286",
+        "workflowName": "Verify early reset and kernel composition"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38419227278,
+        "headSha": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "status": "queued",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38419227278",
+        "workflowName": "Verify terminal elimination on the paired-cube bit word"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38419227092,
+        "headSha": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "status": "queued",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38419227092",
+        "workflowName": "Selected family 741 finite composition"
+      }
     ]
   },
   "local_execution": {
@@ -200,5 +286,7 @@
     "package_controls": 14,
     "binding_file_controls": 12,
     "binding_optimized_controls": 8
-  }
+  },
+  "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+  "source_commit": "3825dc0e"
 }

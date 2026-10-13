@@ -19,8 +19,8 @@
   ],
   "counts": {
     "changed_since_review": 6,
-    "incorporated": 148,
-    "partially_reviewed": 167,
+    "incorporated": 165,
+    "partially_reviewed": 150,
     "unreviewed": 282
   },
   "source_sha256": {
@@ -49,7 +49,7 @@
     "research/community-frontier799-audit/DISPOSITIONS.json": "4916ec599e2188d944388e36839f4e61cd939c42f761c9a3f2c3fe26c1400eb9",
     "research/community-frontier890-audit/DISPOSITIONS.json": "c33d7d04ae1411a769ba14e812e75f8065b07bbdb085cbbf86b935eb1c8d8f8f",
     "research/community-batch932-audit/DISPOSITIONS.json": "78407de39b1d51acf31209a6ab11b6fe06e8cf3a617659c5cd43882870baa2d9",
-    "research/community-batch952-audit/DISPOSITIONS.json": "2919d6f2be879be99c4e4856e7a359055c241b07cccdc13bfe96a00a98171253"
+    "research/community-batch952-audit/DISPOSITIONS.json": "fa89c90fb127e512903539ead9c6cf1e4667ed415b4d81a6510ff692f33bd53d"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
   "pull_requests": [
@@ -18746,16 +18746,23 @@
       "integration_location": [
         "research/p112-single-lift"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "125ce25bdae421627b56077adc14940c2d0aa52f",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:48Z",
+        "integration_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "125ce25bdae421627b56077adc14940c2d0aa52f",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -18850,16 +18857,23 @@
       "integration_location": [
         "research/r439-copy-path-sharing-barrier"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "510441077c17ad775003b22fca03a519f5330453",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:48Z",
+        "integration_commit": "6779eb0f6edc89a92edd87403428def2fb423fa7",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "510441077c17ad775003b22fca03a519f5330453",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -18949,16 +18963,23 @@
       "integration_location": [
         "research/owner-profile-uniform"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "3f13663132838ba2e8e36876ba0f280c809c70e5",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:48Z",
+        "integration_commit": "c25282a8624966371dd1a2d65a6e29726f63f747",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "3f13663132838ba2e8e36876ba0f280c809c70e5",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -19104,16 +19125,23 @@
       "integration_location": [
         "research/r439-block8-integer-factor"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "530c72042438f723782c834101427591f465dd0d",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:48Z",
+        "integration_commit": "df8ee5297a9afada744acf453a497d96120536b1",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "530c72042438f723782c834101427591f465dd0d",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -19476,16 +19504,23 @@
       "integration_location": [
         "research/r439-block508-schedule"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "117c48527dd4f066dad103121761154cf1bb39cd",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:49Z",
+        "integration_commit": "9358ce2463f77f092f840a6efb3f8f9e0cf8a1df",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "117c48527dd4f066dad103121761154cf1bb39cd",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -19628,16 +19663,23 @@
       "integration_location": [
         "research/r439-block1-schedule"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "554532392ae15ef3c2e90050df3a90a4d0ac573e",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:48Z",
+        "integration_commit": "b87856cdfe87ccd21e678a7a9c0fc7901e204909",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "554532392ae15ef3c2e90050df3a90a4d0ac573e",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -20207,16 +20249,23 @@
       "integration_location": [
         "research/r439-four-wire-prefix"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "883a0bdf7792693e57c16be660824b57aacfbe05",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:48Z",
+        "integration_commit": "e5f0645486d8f8ef075cf0cbd8068ac6d6bedd6c",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "883a0bdf7792693e57c16be660824b57aacfbe05",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -20253,16 +20302,23 @@
       "integration_location": [
         "research/r439-block522-factor"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "7b66a13f63b26e72a97ff11745adb8b45179f8c5",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:48Z",
+        "integration_commit": "a0a514a4aa1e7f0c076c13b39ee31b94815d2bcd",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "7b66a13f63b26e72a97ff11745adb8b45179f8c5",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -20299,16 +20355,23 @@
       "integration_location": [
         "research/r439-frame519-seed02"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "7deb3ca8ee112249b5eec22acd24e214383078bd",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:48Z",
+        "integration_commit": "f82ed4875561c62d576b2a9fe66aef5820dcb92e",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "7deb3ca8ee112249b5eec22acd24e214383078bd",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -20504,16 +20567,23 @@
       "integration_location": [
         "research/r439-frame524-seed13"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "dba9199e8cbb0136bcba6b769c36753a61092190",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:48Z",
+        "integration_commit": "ff69464ef044cc0dc7037afd78a6534ffe2fae4f",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "dba9199e8cbb0136bcba6b769c36753a61092190",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -20711,16 +20781,23 @@
       "integration_location": [
         "research/r439-frame520"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "7287ea1524f37899d3d209dc4a9f8ba5c06766f5",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:48Z",
+        "integration_commit": "c0b235ae5122bd8e665e8c7c4e73066f25401562",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "7287ea1524f37899d3d209dc4a9f8ba5c06766f5",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -20757,16 +20834,23 @@
       "integration_location": [
         "research/r439-frame267-seed01"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "eb85d40a1ba80c2f776481fbeed1bae8cf04cfde",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:48Z",
+        "integration_commit": "5d2bce1606e97ed50071046c01510c4ef854e761",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "eb85d40a1ba80c2f776481fbeed1bae8cf04cfde",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -20909,16 +20993,23 @@
       "integration_location": [
         "research/r439-five-wire-prefix"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "0679fb6e1e4c91f573ae07ab1d0ea273b13c74e3",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:48Z",
+        "integration_commit": "6fd6c644a28dabb1a2392a5ded8fb4eb5e3f75cb",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "0679fb6e1e4c91f573ae07ab1d0ea273b13c74e3",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -20955,16 +21046,23 @@
       "integration_location": [
         "research/r439-helper-matching"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "8af78333709a2eafd84463a7dc91467be5618b49",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:48Z",
+        "integration_commit": "c50d31dcb6ee141870b14de751d9bd5544b87e8f",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "8af78333709a2eafd84463a7dc91467be5618b49",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -21004,16 +21102,23 @@
         "research/complex-t21-owners",
         "research/complex-t37-owners"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "1960cfa919a0945d0ca4cb14ea96237000037903",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:48Z",
+        "integration_commit": "3c84be1db6d225d02b239fefc18e8db6e005c9f9",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "1960cfa919a0945d0ca4cb14ea96237000037903",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -21094,16 +21199,23 @@
       "integration_location": [
         "research/central-factor-packed"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "5bafe2c91e045d10de207b9e5b21630dfebb9cd2",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:48Z",
+        "integration_commit": "e7cb3400c228792b1a706c44eee22483aaed5036",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "5bafe2c91e045d10de207b9e5b21630dfebb9cd2",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -21140,16 +21252,23 @@
       "integration_location": [
         "research/r439-six-wire-boolean"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "reviewed_head": "11d24706f06e95271804c9438869546724c67aab",
+        "github_state": "MERGED",
+        "merged_at": "2026-10-13T15:06:48Z",
+        "integration_commit": "f1fe08da7608a91d644c366b3e73d7bb33240b13",
+        "publication_commit": "946293a3dcaa9121ef5f4be44db2e07adb7de085",
+        "explanation_url": "https://github.com/CrocSwap/integer-mult-bounds/blob/946293a3dcaa9121ef5f4be44db2e07adb7de085/docs/research/community-batch952-review.md"
+      },
       "reviewed_head": "11d24706f06e95271804c9438869546724c67aab",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review complete; publication and GitHub merge confirmation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch952-review.md"
@@ -21169,7 +21288,7 @@
   ],
   "github_dispositions": {
     "CLOSED": 3,
-    "MERGED": 145,
-    "OPEN": 455
+    "MERGED": 162,
+    "OPEN": 438
   }
 }
