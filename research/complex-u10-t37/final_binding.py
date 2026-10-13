@@ -203,7 +203,11 @@ def check(work,baseline):
     controls=read(work/'native10/u10-controls/controls.json')
     assert len(controls)==14 and all(x['ok'] for x in controls.values())
     assert len(read(work/'native10/controls/COLD-END-CONTROLS.json')['rejected'])==95
-    assert read(work/'native10/local/CANONICAL-WORD.json.gz')['report']['local_profile']=={'1':2548,'2':338,'3':450,'4':154,'5':76,'8':8}
+    u10_profile={'1':2548,'2':338,'3':450,'4':154,'5':76,'8':8}
+    assert read(work/'native10/u10/FULL-WORD.json.gz')['report']['local_profile']==u10_profile
+    local_checks=read(work/'native10/local/LOCAL-CHECKS.json')
+    assert all(local_checks[o]['paid_profile']==u10_profile for o in ('forward','backward'))
+    assert read(P/'CLAIM.json')['local_profile']==u10_profile
     for name in ('CANONICAL-WORD.json.gz','LOCAL-PROGRAMS.json.gz','LOCAL-CHECKS.json','INDEPENDENT-LOCAL-REPLAY.json','CLIFFORD-RECIPES.json','CLIFFORD-REVIEW.json','RESIDUAL-ADAPTERS.json','WRAPPER-CHECKS.json'):
         assert read(g/'base/providers/gauge44'/name)==read(native/name),name
     stages=read(work/'STAGES.json')

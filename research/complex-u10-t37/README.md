@@ -7,9 +7,12 @@ kappa = 831019538879371 / 5*10^17 = 0.001662039077758742
 This is **+7.8530044795e-8 over the selected PR942 result** (`0.001661960547713947`). It is about 28× PR942's own gain over
 PR890. The complex side binds, and the PR589 bit supplier is unchanged.
 
-**Status: draft.** The U10 word, its controls, its native chain and the exact arithmetic are all done (see "Evidence").
-The strict cold `verify.py` replay, i.e. the complete PR942 pipeline on the U10 locals, is being run, and its receipts
-will be added to this PR.
+**Status: strict replay passed.** The complete PR942 pipeline on the U10 locals, `verify.py`, ends with
+`PASS_U10_T37_STRICT_WITH_SOURCE_BOUND_ANCESTRY 0.001662039077758742`. It covers fresh U8 and U10 native chains,
+independent owner, construction and partial-bank checks, discovery plus strict controller emission, audit with 15
+mutations, the complete invoice (prefix 779 < 1024, row 17495 < 20161), assembly, 69 admission and 12 bit-supplier
+controls, payload controls and the final binding. The receipts are in `evidence/strict/` (Linux, Python 3.13), and the
+cold PR799/PR741/PR589 ancestry was replayed fresh (`PASS_REBUILT_PR589_PR799_COMPOSITION`).
 
 ## What changes: the local word only
 

@@ -36,6 +36,18 @@ def expected_adaptations():
             # U10: the frozen plan profile is 333 x the U10 local profile (this package's CLAIM), not U8's.
             text=replace(text,"read(HERE/'data/CLAIM.json')['local_profile']","read("+repr(str(P/'CLAIM.json'))+")['local_profile']")
             text=replace(text,"mode='gauge44-U8-t37-","mode='gauge44-U10-t37-")
+            # U10: rebind the inherited U8 provider identities in the T8 plan registry to the frozen U10 values
+            # (construction/u10/PROVIDER-U10.json); bind_providers_portable.py re-checks them against fresh U10 locals.
+            text=replace(text,"    plan = read(HERE/'vendor/pr870/data/T8/PLAN.json')\n",
+                "    plan = read(HERE/'vendor/pr870/data/T8/PLAN.json')\n"
+                "    import json as _json\n"
+                "    _u10 = read("+repr(str(P/'construction/u10/PROVIDER-U10.json'))+")\n"
+                "    _text = _json.dumps(plan)\n"
+                "    for _old, _new in _u10['rebind'].items():\n"
+                "        require(_text.count(_old) > 0, 'U10 rebind source identity present')\n"
+                "        _text = _text.replace(_old, _new)\n"
+                "    plan = _json.loads(_text)\n"
+                "    plan['provider_registry']['gauge44']['actual_paid_profile'] = _u10['actual_paid_profile']\n")
         receipts[name]=dict(source=source,text=text)
     source=T21/'vendor/pr870/code'
     edit_table=read(T21/'data/ADAPTER-EDITS.json')
