@@ -209,7 +209,8 @@ endpoint-to-kappa accounting chain and its surcharge input, method exact
 independent recomputation with three evaluators plus six tamper controls,
 deliverable this note and its script. Checked open PRs and
 `docs/research/pr-ledger.md` for overlap before submission; the closest
-neighbours are the seed-67 audit and PR894, addressed above.
+neighbours are the seed-67 audit and PR894, addressed above. Submitted as
+[PR #957](https://github.com/CrocSwap/integer-mult-bounds/pull/957).
 
 ## Attribution
 
