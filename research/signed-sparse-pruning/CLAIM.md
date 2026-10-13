@@ -18,3 +18,12 @@
   concern different objects. No overlapping signed-sparse enumeration found.
 - Expected finish: within 25 minutes of claim, final quarter reserved for
   verification and submission. No delegated workers.
+
+## Result / final handoff
+
+Completed: all 13 ordered streams and the full historical certificate agree;
+14 relevant tests pass, including two factor-identity negative controls.
+Enumeration improves; no full-audit speedup or new κ is claimed. Exact timings,
+pins, reproduction command and inherited limits are in README.md / RESULT.json.
+Final overlap refresh found no competing change to this routine.
+Submitted: https://github.com/CrocSwap/integer-mult-bounds/pull/833
