@@ -604,3 +604,13 @@ frontier890-verify: selected-record-check
 frontier942-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier942.XXXXXX"); \
 	python3 -B scripts/verify_frontier942.py --work "$$work/replay"
+
+# Tooling: opt-in parallel U8 layer-end controls with a byte-identical receipt (no new kappa).
+.PHONY: layer-end-controls-parallel-verify layer-end-controls-parallel-benchmark
+layer-end-controls-parallel-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-layer-end.XXXXXX"); \
+	python3 -B research/layer-end-controls-parallel/verify.py --work "$$work/replay" && \
+	python3 -B -m unittest discover -s research/layer-end-controls-parallel -p test_package.py
+layer-end-controls-parallel-benchmark:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-layer-end.XXXXXX"); \
+	python3 -B research/layer-end-controls-parallel/verify.py --work "$$work/replay" --serial
