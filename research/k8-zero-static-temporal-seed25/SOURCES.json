@@ -153,11 +153,18 @@
     "pr1263_gauges": "vendor/pr1263/GAUGES.json",
     "pr1263_predecessors": "vendor/pr1263/PREDECESSORS.json"
   },
-  "related_distinct_result": {
-    "head": "64b8a55c6933ffb6d9e30fa19f85d05b572d4aa5",
-    "pr": 1350,
-    "scope": "temporal gauge on nonzero-static L253; not composed"
-  },
+  "related_temporal_results": [
+    {
+      "head": "64b8a55c6933ffb6d9e30fa19f85d05b572d4aa5",
+      "pr": 1350,
+      "scope": "time-varying L253; its static PR1263 exponent is nonzero; not composed"
+    },
+    {
+      "head": "efc6bfc3302a966ac0e1f5f4656e94b4cabeb9ca",
+      "pr": 1353,
+      "scope": "time-varying L248; its static PR1263 exponent is nonzero; not composed"
+    }
+  ],
   "schema_version": 1,
   "selected_result": {
     "certificate_path": "research/community-frontier1094-audit/ASSEMBLY.json",

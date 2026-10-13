@@ -73,7 +73,7 @@ The registered repository replay is `python3.12 scripts/research_package.py --pa
 
 ## Pins, scope, and credit
 
-The base, selected certificate hash, PR1263 head `5fbaca13028846bddbb001e8e07addc2ab8e5816`, temporal-gauge method head PR1259 `61367611154266a982fe25e1a6243a8aad77227d`, source Git blobs, and vendored SHA-256 values are recorded in `DEPENDENCIES.json` and `SOURCES.json`. The distinct L253 temporal construction is PR1350, head `64b8a55c6933ffb6d9e30fa19f85d05b572d4aa5`; it varies a nonzero-static coordinate and is not combined here.
+The base, selected certificate hash, PR1263 head `5fbaca13028846bddbb001e8e07addc2ab8e5816`, temporal-gauge method head PR1259 `61367611154266a982fe25e1a6243a8aad77227d`, source Git blobs, and vendored SHA-256 values are recorded in `DEPENDENCIES.json` and `SOURCES.json`. Related concurrent work varies nonzero-static coordinates: PR1350 head `64b8a55c6933ffb6d9e30fa19f85d05b572d4aa5` studies L253, and PR1353 head `efc6bfc3302a966ac0e1f5f4656e94b4cabeb9ca` studies L248. This result adds a complete census of the 19 eligible zero-static coordinates, including the independently checked L359 schedule; it does not compose the other temporal results.
 
 The inherited all-size/compiler, native realization, hosting, precision/tape, analytic, and bit-interface assumptions remain. No runtime or whole-hosted result is claimed.
 

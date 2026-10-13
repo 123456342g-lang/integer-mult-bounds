@@ -9,6 +9,16 @@
     "head": "b9ca10f02fca37c8214d880c244ac14ead6bae7a",
     "scope": "two-coordinate constant gauges; not an executable dependency"
   },
+  "related_temporal_pr1350": {
+    "base": "bce54fb3f895cbe5cd4c0eb477c3afeed100190f",
+    "head": "64b8a55c6933ffb6d9e30fa19f85d05b572d4aa5",
+    "scope": "time-varying L253 on PR1263 nonzero-static support; separate result"
+  },
+  "related_temporal_pr1353": {
+    "base": "bce54fb3f895cbe5cd4c0eb477c3afeed100190f",
+    "head": "efc6bfc3302a966ac0e1f5f4656e94b4cabeb9ca",
+    "scope": "time-varying L248 on PR1263 nonzero-static support; separate result"
+  },
   "schema_version": 1,
   "source_git_blobs": {
     "vendor/pr1259/search.py": "6d9f53c62fe16db66c8bcce6f21a89dabbf4384f",

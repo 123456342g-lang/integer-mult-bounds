@@ -34,6 +34,7 @@
   "not_run": [
     "native supplier emission",
     "whole-call hosted admission",
+    "selected cold frontier replay",
     "repository-wide make verify",
     "hosted CI",
     "formal multiplication theorem"
