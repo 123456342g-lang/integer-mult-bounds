@@ -1,5 +1,5 @@
 {
-  "status": "REVIEW_AND_LOCAL_EXECUTION_COMPLETE_PUBLICATION_PENDING",
+  "status": "PUBLISHED_EIGHTEEN_MERGED_LOCAL_VERIFICATION_PASSED",
   "selected_kappa": "1661957774647029/1000000000000000000",
   "selected_decimal": "0.001661957774647029",
   "reviewed_heads": {
@@ -29,8 +29,90 @@
     "scope": "Used T16 components reviewed through U8/T21; standalone historical cold wrapper not rerun; already closed by author."
   },
   "linux_ci": {
-    "status": "pending integration publication",
-    "submitted_evidence": "Original PR890 Linux/macOS evidence retained separately; not substituted for maintainer integration CI."
+    "status": "queued or in progress; not yet a passed integration run",
+    "tested_commit": "9a16422bf8d0ebd3342c1156c33cb5703c6cb02a",
+    "runs": [
+      {
+        "conclusion": "",
+        "databaseId": 38405544769,
+        "headSha": "9a16422bf8d0ebd3342c1156c33cb5703c6cb02a",
+        "name": "Verify early reset and kernel composition",
+        "status": "in_progress",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38405544769"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38405544993,
+        "headSha": "9a16422bf8d0ebd3342c1156c33cb5703c6cb02a",
+        "name": "Verify recycled bit registers on the paired-cube bit word",
+        "status": "queued",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38405544993"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38405545251,
+        "headSha": "9a16422bf8d0ebd3342c1156c33cb5703c6cb02a",
+        "name": "Verify research artifacts",
+        "status": "queued",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38405545251"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38405545007,
+        "headSha": "9a16422bf8d0ebd3342c1156c33cb5703c6cb02a",
+        "name": "Selected family 741 finite composition",
+        "status": "in_progress",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38405545007"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38405544976,
+        "headSha": "9a16422bf8d0ebd3342c1156c33cb5703c6cb02a",
+        "name": "Community exact tooling and scoped audits",
+        "status": "in_progress",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38405544976"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38405544761,
+        "headSha": "9a16422bf8d0ebd3342c1156c33cb5703c6cb02a",
+        "name": "Selected family 626 finite composition",
+        "status": "in_progress",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38405544761"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38405544981,
+        "headSha": "9a16422bf8d0ebd3342c1156c33cb5703c6cb02a",
+        "name": "Verify terminal elimination on the paired-cube bit word",
+        "status": "in_progress",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38405544981"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38405545146,
+        "headSha": "9a16422bf8d0ebd3342c1156c33cb5703c6cb02a",
+        "name": "U8 T21 whole-owner composition",
+        "status": "in_progress",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38405545146"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38405544764,
+        "headSha": "9a16422bf8d0ebd3342c1156c33cb5703c6cb02a",
+        "name": "Selected family 799 finite composition",
+        "status": "in_progress",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38405544764"
+      },
+      {
+        "conclusion": "",
+        "databaseId": 38405544815,
+        "headSha": "9a16422bf8d0ebd3342c1156c33cb5703c6cb02a",
+        "name": "Graded box convolution",
+        "status": "in_progress",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/actions/runs/38405544815"
+      }
+    ]
   },
   "baseline_reuse": {
     "frontier799": "/tmp/frontier799-integrated",
@@ -163,6 +245,8 @@
     "research/community-frontier890-audit/submitted/911/research/binary-residual-exhaustive/verify.py": "e66d94a69f766405540a3f45f6c7d57bc3c15ce530789038338b4052b5acd67c",
     "research/community-frontier890-audit/submitted894/research/audit-kappa-floor-seed67/audit_kappa_reduction.py": "a79fe69a4d391150c9e7147bf05647f7eb40b545b0a81209e4e9ea571193ba35",
     "research/community-frontier890-audit/submitted894/research/audit-kappa-floor-seed67/AUDIT.md": "bc1f9cd39b36c38f23b0e61c37bec039f56d633aeffc03ea4cc00db53b2c348f",
-    "research/community-frontier890-audit/submitted886/research/bit589-frame-optimum/frameopt.py": "669ee450315109e88dbe818056e6f58c41e8cfb4822ed34ba1132067354b1d76"
-  }
+    "research/community-frontier890-audit/submitted886/research/bit589-frame-optimum/frameopt.py": "669ee450315109e88dbe818056e6f58c41e8cfb4822ed34ba1132067354b1d76",
+    "research/community-frontier890-audit/CLOSURES.json": "471c4a2ae79c3aafcc183bb55a9e0187a188226b1122aefe5dab63589581a156"
+  },
+  "publication_commit": "9a16422bf8d0ebd3342c1156c33cb5703c6cb02a"
 }
