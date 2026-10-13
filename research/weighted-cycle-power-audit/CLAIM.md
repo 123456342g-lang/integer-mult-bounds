@@ -53,3 +53,36 @@ This is a metadata overlap check, not a claim about all unpublished work.
 The only open issue was #650, which requests Discussions; no pinned sprint
 coordination issue was visible. This local claim follows the permitted
 fallback. No reservation issue or remote claim is posted.
+
+## Result update (2026-10-13)
+
+Submitted one focused research audit / scoped negative result:
+[PR852](https://github.com/CrocSwap/integer-mult-bounds/pull/852).
+The exact base above is unchanged. The research scope was frozen at
+07:21 UTC for verification and handoff, ahead of the reserved final window.
+
+The result gives the exact cycle-local power factor, a sharp extremal
+linear-inverse formula with rational attaining weights, and the strict
+local-error/gap threshold. The simple length-256 counterexample has norm
+between 1936 and 1937; the class maximum at the same tolerance is between
+2164 and 2165. These invalidate a weaker operator admission rule, not
+PR803's correctly stated hypothesis. No new kappa is claimed.
+
+Normal and optimized clean-export exact replays passed, including 1,377
+generated power cases, 72 three-regime resolvents, 96 sharp real inverses,
+108 complex-phase inverses, the larger witnesses, 18 admission/failure
+controls and all 11 package/mutation tests. See `README.md` for the command,
+`DOMAIN.json` for complete finite coverage, and `VALIDATION.json` for the
+recorded environment, source-code hashes and explicit unrun checks.
+
+The complete final inventory covered 643 open PRs through #846; its proof
+and notice were inspected and credited as distinct concurrent work. An
+immediate pre-submit refresh also inspected updates through #851, with no
+matching weighted-cycle scope found. The audited predecessor heads were
+unchanged. GitHub's pinned-issue query returned no coordination issue, so
+this is the single local claim-result update. `OVERLAP.json` records the
+newly accepted #799 frontier at refreshed main as context. Neither frontier
+record, any predecessor PR, nor any `upstream/` file was edited.
+
+Contributor: **William Lawyer**, with substantial **OpenAI Codex assistance**.
+Independent human review and proof-assistant formalization remain open.
