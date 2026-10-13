@@ -1,0 +1,22 @@
+{
+  "status": "CLAIMED",
+  "track": "Complex supplier",
+  "assignment_seed": 37,
+  "seed_origin": "secrets.randbelow(100), operating-system randomness",
+  "base_commit": "007664306fff84fbb1c9a1b4053b69f439764034",
+  "claimed_at_utc": "2026-10-13T14:53:45+00:00",
+  "expected_finish_utc": "2026-10-13T15:18:34Z",
+  "coordination": "Open issues650 and913 are not sprint coordination issues; no pinned sprint coordination issue found in open inventory. Local claim; no reservation issue.",
+  "candidates": [
+    "Lower maximal contiguous same-frame scalar SWAP runs of historical PR626 CK/JP8 into paid scratch-copy permutation cycles",
+    "Fuse historical full-frame helper negation/scale runs; adjacent prior PR919 sign normalization makes this less distinct",
+    "Resynthesize historical common-frame source-scale/add/restore coefficient runs; PR750 and later coefficient-route work make overlap likely"
+  ],
+  "chosen_object": "Historical PR626 CK and JP8 literal scalar SWAP windows, maximal contiguous runs in each orientation.",
+  "method": "Detect exact two-register SWAP matrices in four consecutive scalar macros at an identical frame; lower whole runs as permutation cycles with one existing coefficient-work register, charging every copy and final clear. Compare PR696 and clear-elided unit comparator; exact arbitrary-input whole scalar replay.",
+  "domain": "Four frozen local programs (CK,JP8 times forward,backward); exhaustive deterministic scan. Seed37 fixes provider/report/control ordering; no random sampled correctness claim.",
+  "stopping_rule": "One completed scan and explicit run lowering, no frame/word-order search or broader circuit synthesis. Final7.5min reserved verification/publication.",
+  "expected_deliverable": "One opt-in finite circuit construction with exact primitive bills, source pins, strong comparator, arbitrary dirty-work tests and scoped mathematical argument. No new kappa.",
+  "overlap": "Reviewed current ledger, batch932 and recent PR metadata through961; known coefficient/forest/factory work is distinct. Precise swap/permutation overlap search completed before claim; no pending code imported.",
+  "delegation": "One bounded read-only scout, then independent permutation checker in its own file; root owns compiler, whole replay and packaging."
+}
