@@ -33,4 +33,15 @@ PR589, PR620 (decoder floors, not circuit lower bounds), PR661, PR670, PR674,
 and the selected PR626 construction/review. PR661 explicitly excludes circuit
 resynthesis; the two circuit PRs change phase B, whereas this changes phase A.
 
-Result: pending final verification and submission.
+Result: **completed finite circuit improvement**, submitted as
+[PR691](https://github.com/CrocSwap/integer-mult-bounds/pull/691). Quad 13 uses
+12 gates instead of 19; literal cleanup gives 14 fewer native ADDs overall.
+The forward integer matrix agrees, the reverse positive matrix is dominated,
+all 660 dirty-input columns restore, frame paths and rank mass 5112 agree, and
+all eight rejection controls pass. No new kappa. `VALIDATION.json` records the
+bounded checks and unreplayed downstream obligations.
+
+Final metadata refresh covered new PRs through #690 and found no phase-A quad
+overlap. PR686 changes D, and PR688 composes phase-B blocks from PR670/674;
+neither is imported here. Main still equals the recorded base. This is the
+single result update to the local claim; no coordination thread was available.
