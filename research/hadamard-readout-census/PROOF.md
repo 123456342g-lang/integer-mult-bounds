@@ -16,6 +16,11 @@ sources restore on return. Maps need not commute. Both signs have the same
 complete query price, independent of state, placement and other queries.
 No output is borrowed as scratch, no initialization of `z` is assumed,
 and no further scalar operations on these rows are admitted in this class.
+Correctness for the optimum means the coefficient identity for independent
+formal A/B operators and independent initial-data symbols. Special maps with
+additional relations (for example, a zero A map) can admit cheaper words and
+are outside this lower bound. The emitted construction remains correct for
+arbitrary exact linear maps, including singular ones.
 
 The desired coefficient matrix, in fixed output/source order, is
 

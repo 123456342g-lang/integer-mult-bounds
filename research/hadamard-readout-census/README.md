@@ -57,7 +57,10 @@ PR997 is pinned at `b3fda8d59436103b195069a6328cbf5d74f73bc0` and its word
 is replayed through the same new backend as the candidate.
 
 The domain fixes exactly one + and one - B call per source, an arbitrary
-dirty connector and exact linear additive children. Enumeration stops after
+dirty connector and exact linear additive children.
+Correctness for the optimum is the independent formal-operator coefficient
+identity; special maps with additional algebraic relations are excluded.
+Enumeration stops after
 all 40,320 source paths; readout cardinality is completely covered by the
 proved eight-call upper bound. Signed prices must agree and be independent
 of placement/state. The envelope excludes varying frame/travel charges,
