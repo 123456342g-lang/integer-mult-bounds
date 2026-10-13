@@ -47,3 +47,24 @@ record, existing generators and `upstream/` are outside the edit scope.
 
 Prepared for @navinor with substantial OpenAI GPT-6 Astra assistance.
 New material is under Apache-2.0.
+
+## Result update
+
+Submitted one focused PR:
+[#825](https://github.com/CrocSwap/integer-mult-bounds/pull/825).
+The common affine complete flag forces **s >= Wm** and hence a normalized
+rank-child moment of at least one. This is a scoped negative theorem, with
+no new kappa and no claim about unrestricted nontriangular frames.
+
+Completed finite evidence: 14 circuits, 13 tests and all 729 ordered
+triangular-matrix differences. The existing scorer agrees on every edge
+rank and all-role endpoint contract. Optimized/relocated replay, source and
+receipt corruption rejection, output protection and regeneration passed;
+see `VALIDATION.md` for commands, review responses and limitations.
+
+Final overlap snapshot: 637 open PRs through #824, no matching theorem
+identified; pinned issues still empty. Upstream main was refreshed to
+`7ee02b7c96d85f22b38d28bd7ed49bb8c1aeb261`, selecting #741/#589/#555.
+The original research base is retained; all four mathematical source pins
+are unchanged. The submission awaits human review of the written proof
+and its interface scope.
