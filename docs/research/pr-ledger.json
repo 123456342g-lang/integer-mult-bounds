@@ -20,8 +20,8 @@
   ],
   "counts": {
     "changed_since_review": 6,
-    "incorporated": 190,
-    "partially_reviewed": 164,
+    "incorporated": 204,
+    "partially_reviewed": 150,
     "unreviewed": 282
   },
   "source_sha256": {
@@ -51,7 +51,7 @@
     "research/community-frontier890-audit/DISPOSITIONS.json": "c33d7d04ae1411a769ba14e812e75f8065b07bbdb085cbbf86b935eb1c8d8f8f",
     "research/community-batch932-audit/DISPOSITIONS.json": "78407de39b1d51acf31209a6ab11b6fe06e8cf3a617659c5cd43882870baa2d9",
     "research/community-batch952-audit/DISPOSITIONS.json": "fa89c90fb127e512903539ead9c6cf1e4667ed415b4d81a6510ff692f33bd53d",
-    "research/community-batch970-audit/DISPOSITIONS.json": "eb30721a58b305ff600563886cc16c1dc85c57cbc74376512691b7639ca526dc",
+    "research/community-batch970-audit/DISPOSITIONS.json": "e1781e098cd61089aa616c75f3d65977f1fc6e61e48c99d020de09d89831e32c",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -18728,16 +18728,20 @@
         "research/community-batch970-audit",
         "research/pr279-target-prefix-reconciliation"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed content integrated with documented context/platform adaptations; exact head merged by ancestry and published to main",
+        "publication_commit": "f4a7051883bc76dad7861b3f0caf7361ce86fe90",
+        "evidence": "research/community-batch970-audit/CHECKPOINT3-CLOSURES.json"
+      },
       "reviewed_head": "2e43537c0e8ed1c9f9ef21cab0ef9cddb5d79976",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-interfaces-review.md"
@@ -19414,16 +19418,20 @@
       "integration_location": [
         "research/r420-scatter-lifecycle"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed content integrated with documented context/platform adaptations; exact head merged by ancestry and published to main",
+        "publication_commit": "f4a7051883bc76dad7861b3f0caf7361ce86fe90",
+        "evidence": "research/community-batch970-audit/CHECKPOINT3-CLOSURES.json"
+      },
       "reviewed_head": "4e31c0d816432435de2ca3965d33efb3ea6602a4",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-interfaces-review.md"
@@ -19515,16 +19523,20 @@
         "research/cubic-cyclic-inverse",
         "research/cubic-cyclic-inverse-validation"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed content integrated with documented context/platform adaptations; exact head merged by ancestry and published to main",
+        "publication_commit": "f4a7051883bc76dad7861b3f0caf7361ce86fe90",
+        "evidence": "research/community-batch970-audit/CHECKPOINT3-CLOSURES.json"
+      },
       "reviewed_head": "57e0659150d323b784580110b36aa64a2dca2a33",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-interfaces-review.md"
@@ -19993,16 +20005,20 @@
       "integration_location": [
         "research/dirty-prefix-precision"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed content integrated with documented context/platform adaptations; exact head merged by ancestry and published to main",
+        "publication_commit": "f4a7051883bc76dad7861b3f0caf7361ce86fe90",
+        "evidence": "research/community-batch970-audit/CHECKPOINT3-CLOSURES.json"
+      },
       "reviewed_head": "80a60c0da2b916798167deb0ce3a5ef22fda147a",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-interfaces-review.md"
@@ -20410,16 +20426,20 @@
       "integration_location": [
         "research/lean-dirty-echo-budget"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed content integrated with documented context/platform adaptations; exact head merged by ancestry and published to main",
+        "publication_commit": "f4a7051883bc76dad7861b3f0caf7361ce86fe90",
+        "evidence": "research/community-batch970-audit/CHECKPOINT3-CLOSURES.json"
+      },
       "reviewed_head": "5b14b7a0a7443421cfc719ccec1ac909ddf34c3e",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-interfaces-review.md"
@@ -20669,16 +20689,20 @@
       "integration_location": [
         "research/lean-nonlinear-commutator"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed content integrated with documented context/platform adaptations; exact head merged by ancestry and published to main",
+        "publication_commit": "f4a7051883bc76dad7861b3f0caf7361ce86fe90",
+        "evidence": "research/community-batch970-audit/CHECKPOINT3-CLOSURES.json"
+      },
       "reviewed_head": "4e34d42b64ff05a4f293b9748d71642e14ef273d",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-interfaces-review.md"
@@ -20926,16 +20950,20 @@
         "research/dirty-cubic-precision",
         "research/dirty-cubic-precision-validation"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed content integrated with documented context/platform adaptations; exact head merged by ancestry and published to main",
+        "publication_commit": "f4a7051883bc76dad7861b3f0caf7361ce86fe90",
+        "evidence": "research/community-batch970-audit/CHECKPOINT3-CLOSURES.json"
+      },
       "reviewed_head": "aab6c0b8f4574cb36285ab5dab3fcfad0cd2b69e",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-interfaces-review.md"
@@ -21712,16 +21740,20 @@
         "research/grouped-dirty-cyclic",
         "research/grouped-dirty-cyclic-validation"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed content integrated with documented context/platform adaptations; exact head merged by ancestry and published to main",
+        "publication_commit": "f4a7051883bc76dad7861b3f0caf7361ce86fe90",
+        "evidence": "research/community-batch970-audit/CHECKPOINT3-CLOSURES.json"
+      },
       "reviewed_head": "85a1d11adbbd7610d269cfeb3e477cf7d457f2eb",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-interfaces-review.md"
@@ -21758,16 +21790,20 @@
       "integration_location": [
         "research/pr210-head-reconciliation"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed content integrated with documented context/platform adaptations; exact head merged by ancestry and published to main",
+        "publication_commit": "f4a7051883bc76dad7861b3f0caf7361ce86fe90",
+        "evidence": "research/community-batch970-audit/CHECKPOINT3-CLOSURES.json"
+      },
       "reviewed_head": "222fb22c0ae2d13c25674cb8c18d168d8518cef5",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-interfaces-review.md"
@@ -21857,16 +21893,20 @@
       "integration_location": [
         "research/binary-connector-walk"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed content integrated with documented context/platform adaptations; exact head merged by ancestry and published to main",
+        "publication_commit": "f4a7051883bc76dad7861b3f0caf7361ce86fe90",
+        "evidence": "research/community-batch970-audit/CHECKPOINT3-CLOSURES.json"
+      },
       "reviewed_head": "f3100aec6ce6a7b061987875d5e9a8b93801ac0b",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-interfaces-review.md"
@@ -22115,16 +22155,20 @@
       "integration_location": [
         "research/universal-connector-boundary"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed content integrated with documented context/platform adaptations; exact head merged by ancestry and published to main",
+        "publication_commit": "f4a7051883bc76dad7861b3f0caf7361ce86fe90",
+        "evidence": "research/community-batch970-audit/CHECKPOINT3-CLOSURES.json"
+      },
       "reviewed_head": "cf360b4b09b7d0419decdd6ac85421fefed55bdd",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-interfaces-review.md"
@@ -22161,16 +22205,20 @@
       "integration_location": [
         "research/signed-connector-obstruction"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed content integrated with documented context/platform adaptations; exact head merged by ancestry and published to main",
+        "publication_commit": "f4a7051883bc76dad7861b3f0caf7361ce86fe90",
+        "evidence": "research/community-batch970-audit/CHECKPOINT3-CLOSURES.json"
+      },
       "reviewed_head": "5dbcfbc63f646de5a1354f6b9760ec03837233f0",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-interfaces-review.md"
@@ -22463,16 +22511,20 @@
         "research/additive-cyclic-no-connector",
         "research/additive-cyclic-no-connector-validation"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed content integrated with documented context/platform adaptations; exact head merged by ancestry and published to main",
+        "publication_commit": "f4a7051883bc76dad7861b3f0caf7361ce86fe90",
+        "evidence": "research/community-batch970-audit/CHECKPOINT3-CLOSURES.json"
+      },
       "reviewed_head": "de0c8641dcf1a4cd0abde9b897fa946de2bede49",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-interfaces-review.md"
@@ -22562,16 +22614,20 @@
       "integration_location": [
         "research/dyadic-query-runs"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "method": "Reviewed content integrated with documented context/platform adaptations; exact head merged by ancestry and published to main",
+        "publication_commit": "f4a7051883bc76dad7861b3f0caf7361ce86fe90",
+        "evidence": "research/community-batch970-audit/CHECKPOINT3-CLOSURES.json"
+      },
       "reviewed_head": "5f052969846b0882ac4e22d9e818dd8ac05ea56f",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Scoped review and required local execution complete; final checkpoint publication pending.",
+      "disposition": "incorporated",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch970-interfaces-review.md"
@@ -23242,7 +23298,7 @@
   ],
   "github_dispositions": {
     "CLOSED": 3,
-    "MERGED": 187,
-    "OPEN": 452
+    "MERGED": 201,
+    "OPEN": 438
   }
 }

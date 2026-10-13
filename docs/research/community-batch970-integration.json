@@ -1,5 +1,5 @@
 {
-  "status": "THIRTY_NINE_REVIEWED_FINAL_CHECKPOINT_PUBLICATION_PENDING_ONE_DEFERRED",
+  "status": "THIRTY_NINE_PUBLISHED_ONE_DEFERRED",
   "selected_kappa": "1661960547713947/1000000000000000000",
   "frontier_changed": false,
   "reviewed_heads": {
@@ -333,7 +333,8 @@
     "research/community-batch970-audit/submitted/828/docs/research/pr-ledger.json": "5c222a350b94a406365991066e90f61851bbeb61f57efa9c00ac1f08eafed2af",
     "research/community-batch970-audit/submitted/828/docs/research/pr-ledger.md": "905d748c890dd22f71163a68765f9bb4dd84a8dc74c66a6a7653bfab52dfdd72",
     "research/community-batch970-audit/submitted/943/research/universal-connector-boundary/SOURCES.json": "35b0503e925bcf6f00ca9164b5322612373364eca1e1fa8c287c1b44ae8a5a41",
-    "research/community-batch970-audit/CHECKPOINT3-HEADS.json": "70392fc1133412fce6c4ab16051aab3d596b826b3f9fc603dc301e701831b5b9"
+    "research/community-batch970-audit/CHECKPOINT3-HEADS.json": "70392fc1133412fce6c4ab16051aab3d596b826b3f9fc603dc301e701831b5b9",
+    "research/community-batch970-audit/CHECKPOINT3-CLOSURES.json": "a985ea0917670e5335028c85a30d6d35c07c80319f0873ae10128724b3307b9c"
   },
   "publication_commit": "1cb9cde18dc2d61b20f0f46fac1ddbf93d57278d",
   "source_commit": "bee588ff",
@@ -371,5 +372,6 @@
     856,
     828,
     930
-  ]
+  ],
+  "checkpoint3_publication_commit": "f4a7051883bc76dad7861b3f0caf7361ce86fe90"
 }
