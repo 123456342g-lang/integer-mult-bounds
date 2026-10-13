@@ -107,7 +107,9 @@ d[(j+score(pattern)) mod 37] - d[j]
 Telescoping over a packing lower-bounds idle cost by
 `idle_mass + lambda*S + d[S mod 37]`. Add the complete audited local profile.
 Each variant's local, idle and score changes are linear; rank mass remains
-520704. The checker proves nonnegative inventories for every mixture first.
+520704. A positive profile coefficient uses the lower power endpoint, while a
+negative coefficient uses the upper endpoint, so removed costs retain a
+conservative lower bound. The checker proves nonnegative inventories for every mixture first.
 
 The new DP stores the minimum linear change for each number of modified calls
 and residue. Extending a state by each of four variants enumerates every count

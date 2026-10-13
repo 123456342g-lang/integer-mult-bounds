@@ -22,7 +22,10 @@ Offline relocation uses a root whose name contains spaces, this package and
 only the five pinned repository inputs. The first relocated native replay passed
 all eight words but its final receipt comparison failed because it had loaded the
 earlier signed-rounding implementation before the correction. The final relocated
-replay uses the corrected implementation and frozen receipt.
+replay uses the corrected implementation and frozen receipt and passes the
+full eight-word audit, exact cost screen and strict receipt comparison under
+`python -I -O -B`. Its final status is
+`PASS_EARLY8_CONSTRUCTION_AND_EXTENDED_COST_OBSTRUCTION`.
 
 The selected-record checker passes at the pinned current PR799 target. No
 selected record, upstream source, accepted construction, Make target or workflow
