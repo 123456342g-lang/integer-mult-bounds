@@ -583,3 +583,10 @@ frontier626-verify: selected-record-check
 frontier741-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier741.XXXXXX"); \
 	python3 -B scripts/verify_frontier741.py --work "$$work/replay"
+
+# Opt-in: the complex741 stage of frontier741-verify with independent stages run
+# concurrently. Same pinned commands and checks; see research/complex741-parallel-replay.
+.PHONY: complex741-parallel-verify
+complex741-parallel-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-complex741p.XXXXXX"); \
+	python3 -B scripts/verify_complex741_parallel.py --work "$$work/complex"
