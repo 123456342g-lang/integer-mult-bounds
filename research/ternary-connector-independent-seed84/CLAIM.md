@@ -40,3 +40,22 @@ remain unchanged.
 
 Prepared by Sagar Thakrar (@thakrarsagar) with substantial OpenAI Codex
 assistance. Predecessor attribution will accompany the completed result.
+
+## Completed result, 2026-10-13 23:16 UTC
+
+[PR1349](https://github.com/CrocSwap/integer-mult-bounds/pull/1349), research
+commit `65581feb`, completes this claim. Every one of PR944's 288 obstruction
+patterns has exact query minimum thirteen over F3. All six extra-operator
+choices work, giving the exact positive sign-symmetric query price
+`2 sum_F c_F + min_F c_F`. The declared balanced factor fixture expands to
+304 fully restored leaves when B0 is cheapest. This is a different coefficient
+field from the source's correct minimum-fourteen theorem, not a counterexample
+to it. No physical supplier or new kappa is claimed.
+
+The complete 720/5040-path census, 1728 query words and inverses, twelve literal
+noncommutative leaf replays and 170 controls pass. CPython 3.14.8 and optimized
+3.11.15, relocation, corrupted source/receipt rejection, source Git blobs and
+selected integrity checks pass. Final overlap refresh at 23:13:49 UTC covered
+831 open PRs, 76 discussion records and 326 local records. PR1340's temporary
+F2 source mutations use a different interface. See VALIDATION.md for limits.
+No pinned issue exists; this is the single result update to the local claim.
