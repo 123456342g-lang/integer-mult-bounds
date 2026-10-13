@@ -67,5 +67,7 @@
   "assigned_track": "bit-mechanisms",
   "assigned_scope_key": "7084092dd726e7ba1f2f",
   "first_step": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY; other-card source baseline PASS_R439_BSECTION_STARS",
-  "discussion": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1317"
+  "discussion": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1317",
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1333",
+  "mathematical_commit": "9211d72a1b416534909208e4af7a1043244d2a9e"
 }

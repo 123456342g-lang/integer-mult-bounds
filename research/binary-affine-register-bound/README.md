@@ -117,6 +117,8 @@ for observed commands and coverage limits. The proof is not Lean-checked.
 
 ## Task, sources and overlap
 
+Submitted as [PR1333](https://github.com/CrocSwap/integer-mult-bounds/pull/1333).
+
 Base `bce54fb3f895cbe5cd4c0eb477c3afeed100190f`; OS nonce
 `5d737eb3d3ab653b8a6a9411d0753d36`; bit-mechanisms card
 `bit-new-register-model`, scope key `7084092dd726e7ba1f2f`, priority revision 2.
