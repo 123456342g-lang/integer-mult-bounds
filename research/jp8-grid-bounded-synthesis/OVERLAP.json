@@ -1,0 +1,96 @@
+{
+  "checked_at": "2026-10-13T09:37:56.703666+00:00",
+  "initial_open_prs": 669,
+  "final_open_prs": 672,
+  "base_still_current": "f567884aeb8851b6e794af1184119a3bfbe1e631",
+  "pinned_sprint_issues": [],
+  "recent_metadata_refreshed": 60,
+  "latest_number_observed": 880,
+  "new_prs_since_initial": [
+    {
+      "number": 880,
+      "title": "Research/r439 block1 schedule seed8",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/880",
+      "headRefOid": "554532392ae15ef3c2e90050df3a90a4d0ac573e",
+      "updatedAt": "2026-10-13T09:31:31Z"
+    },
+    {
+      "number": 879,
+      "title": "Independent verification: exact synthetic-transform physical layouts (no new kappa)",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/879",
+      "headRefOid": "12012c9478d121d6d404a0d94e446016e3f51a2e",
+      "updatedAt": "2026-10-13T09:29:54Z"
+    },
+    {
+      "number": 878,
+      "title": "[Lean] Verify selected PR589 B boundaries and XOR interfaces",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/878",
+      "headRefOid": "7b3241566ddfd50548e6b113ede9333826b86313",
+      "updatedAt": "2026-10-13T09:25:59Z"
+    },
+    {
+      "number": 877,
+      "title": "Research audit: quartic precision for balanced dirty cyclic inverses (no new kappa)",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/877",
+      "headRefOid": "80a60c0da2b916798167deb0ce3a5ef22fda147a",
+      "updatedAt": "2026-10-13T09:20:29Z"
+    }
+  ],
+  "related": {
+    "696": {
+      "title": "Research: lower selected complex scalar primitives by 22\u201325% (no new kappa)",
+      "head": "5a3f983715027c4fd83f50bc9001d4b18463bed1",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/696",
+      "relation": "Accepted binary copy/unit lowering; baseline dependency."
+    },
+    "734": {
+      "title": "Research: prefix-bounded signed-Horner circuits for CK and JP8 (no new kappa)",
+      "head": "ba76ba3321d000c8996b0b254bcf0d7260e1bbb6",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/734",
+      "relation": "Bounded integer signed-Horner graph; excludes arbitrary interleaved halves and repeated reads."
+    },
+    "837": {
+      "title": "Research: bidirectional Horner saves 312 SW4 primitives per orientation (no new kappa)",
+      "head": "0a2977195efc8fb2a918fbfb694ec8d294387f08",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/837",
+      "relation": "Four binary/NAF Horner comparator words, pinned and vendored verbatim."
+    },
+    "866": {
+      "title": "Research audit: CK Horner reversal raises scalar-grid guard from 3 to 5 bits (no new kappa)",
+      "head": "5ae580bf68516f1cbe3b2dd3cb646be55170288f",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/866",
+      "relation": "Exact fractional-grid audit; motivates preserving original guard."
+    },
+    "811": {
+      "title": "Research: JP8 additive coefficient routes save 2,784 beyond rescaling (no new kappa)",
+      "head": "b5c244c916dd0b30957332edad7ae7ae22b0eb9d",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/811",
+      "relation": "Shares coefficient work across JP8 macros; no composition asserted."
+    },
+    "860": {
+      "title": "Research construction: signed CK reuse saves 926 primitives",
+      "head": "72899c888af7e171f8aba4d5c66f4b31a5719eba",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/860",
+      "relation": "Signed CK inter-macro routes; different provider and scratch boundary."
+    },
+    "750": {
+      "title": "Research: save 62 CK primitives per orientation by relocating one scale (no new kappa)",
+      "head": "b6d6934092c063ab2575ebee00f48bbc7b1c9d82",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/750",
+      "relation": "Completed CK scale relocation class; rejected candidate track."
+    },
+    "876": {
+      "title": "Scoped negative result: simultaneous full pair/triple exchanges do not beat SW4 (seed 29)",
+      "head": "0d8d4be2b8093e809c4c422849c486532f6ee1c1",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/876",
+      "relation": "SW4 pair/triple exchange search; rejected candidate track."
+    },
+    "864": {
+      "title": "Scoped negative result: no frame reassignment of the selected X4 complex word admits the next tick (exact duals, no new kappa)",
+      "head": "9b1a55f6d281ae5bd7d691977d38861fcd9bd015",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/864",
+      "relation": "Fixed X4 frame reassignment exclusion; separate geometric class."
+    }
+  },
+  "assessment": "No duplicate of the seven local grid-preserving JP8 circuits found. General shift/add synthesis is not claimed as novel; finite words, exact class optima, all-column substitution and guard evidence are the contribution."
+}
