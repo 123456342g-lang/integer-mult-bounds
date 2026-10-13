@@ -1,5 +1,5 @@
 {
-  "status": "THIRTY_NINE_REVIEWED_ONE_DEFERRED_PUBLICATION_PENDING",
+  "status": "39_PUBLISHED_1_DEFERRED",
   "pull_requests": [
     {
       "number": 987,
@@ -19,19 +19,23 @@
       },
       "reviewed_head": "5142511af0437572aca71b35d1987cd2b47bb5e3",
       "current_head": "5142511af0437572aca71b35d1987cd2b47bb5e3",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/complex-u10-t37"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Rohan Arun's U10 word: two additional triangle-hybrid slots on unchanged T37 owners; full dirty-state, native, controller and conditional assembly replay. Superseded numerically, with independent mechanism credit.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -55,19 +59,23 @@
       },
       "reviewed_head": "c87242f846cfab8c0b97fd889b5fecb0eacef939",
       "current_head": "c87242f846cfab8c0b97fd889b5fecb0eacef939",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-batch1099-audit"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Jeremy Kothe's exact T16 owner-map refinement on the unchanged seven-slot k8 word; complete hosting, controller, invoice, moment and assembly replay.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -91,19 +99,23 @@
       },
       "reviewed_head": "6f92ce8884929c9fd4730c86a28e2e3735de02af",
       "current_head": "6f92ce8884929c9fd4730c86a28e2e3735de02af",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-batch1099-audit"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Jeremy Kothe's next exact T16 owner-map refinement; same word and compiler, independently replayed frozen placement.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -127,19 +139,23 @@
       },
       "reviewed_head": "a8ea308976f1709eef0a328463f010cf51469277",
       "current_head": "a8ea308976f1709eef0a328463f010cf51469277",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-batch1099-audit"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Jeremy Kothe's next exact T16 owner-map refinement; same word and compiler, independently replayed frozen placement.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -163,19 +179,23 @@
       },
       "reviewed_head": "d0201efbd68c4acc9832b84bcc986c8781b83c4f",
       "current_head": "d0201efbd68c4acc9832b84bcc986c8781b83c4f",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/complex-t16-owner-exchanges"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Rohan Arun's whole-helper exchanges from PR1050: 24 changed placements, unchanged local supplier; full unchanged strict verifier.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -199,19 +219,23 @@
       },
       "reviewed_head": "223f581afb1d63d5f8476a69040617e11bcd50e4",
       "current_head": "223f581afb1d63d5f8476a69040617e11bcd50e4",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-batch1099-audit"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Jeremy Kothe's exact LNS T16 owner-map refinement; full strict replay, no global-optimality claim.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -235,19 +259,23 @@
       },
       "reviewed_head": "d9377d32e0c97e41338e704c3960fd6f2fa73806",
       "current_head": "d9377d32e0c97e41338e704c3960fd6f2fa73806",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/complex-t16-neutral-exchanges"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Rohan Arun's neutral reshuffles unlock whole-helper exchanges; separately retained below later frontier, full strict replay.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -271,19 +299,23 @@
       },
       "reviewed_head": "387d935e354a931d636e2c5e6ee63a6910f78a1b",
       "current_head": "387d935e354a931d636e2c5e6ee63a6910f78a1b",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-batch1099-audit"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Jeremy Kothe's next exact T16 packing; full strict replay with unchanged compiler and local word.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -307,19 +339,23 @@
       },
       "reviewed_head": "cc71375eae4e8754da0f5d940cb519d66625fb2e",
       "current_head": "cc71375eae4e8754da0f5d940cb519d66625fb2e",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-batch1099-audit"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Jeremy Kothe's next exact T16 packing; full strict replay with unchanged compiler and local word.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -343,19 +379,23 @@
       },
       "reviewed_head": "052afc128954f7b6a2b3c409eb4d72248e4020f2",
       "current_head": "052afc128954f7b6a2b3c409eb4d72248e4020f2",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-batch1099-audit"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Jeremy Kothe's next exact T16 packing; full strict replay with unchanged compiler and local word.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -379,19 +419,23 @@
       },
       "reviewed_head": "0c2e294ec204e83846d27344f829d15ed9ee7cc6",
       "current_head": "0c2e294ec204e83846d27344f829d15ed9ee7cc6",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/complex-t16-targeted-repacking"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Rohan Arun's twelve-bin targeted repacking changes 30 placements; unchanged word and strict admission.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -415,19 +459,23 @@
       },
       "reviewed_head": "589d1cedf5ef5f231182f4ec86408616311a8af0",
       "current_head": "589d1cedf5ef5f231182f4ec86408616311a8af0",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-batch1099-audit"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Jeremy Kothe's next exact T16 packing; full strict replay, direct parent of PR1094.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -451,19 +499,23 @@
       },
       "reviewed_head": "0fc329d0bec93ca7cd288eaea1295172e8789810",
       "current_head": "0fc329d0bec93ca7cd288eaea1295172e8789810",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/complex-t16-rare-pattern-exchanges"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Rohan Arun's rare-pattern sixteen-bin exchanges change 193 placements from PR1087; candidate conditional kappa 0.001672660197076918 with inherited full finite admission.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -487,19 +539,23 @@
       },
       "reviewed_head": "b535975a5948afafda984e73c301183a634ff8c8",
       "current_head": "b535975a5948afafda984e73c301183a634ff8c8",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/k8-rank7-composition"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Transfer of Alexander Schwartzman's rank-seven helper ends to k8 helpers 574/575; eight B frames and two tails change, width 3730 to 3728, fresh native and complete owner admission. Distinct construction, below selected packing candidate.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -523,19 +579,23 @@
       },
       "reviewed_head": "6c1504cd75aae9b255ba16bf8e28d3f38af34c14",
       "current_head": "6c1504cd75aae9b255ba16bf8e28d3f38af34c14",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/u8-e4-gap-fill"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "David Breslauer's one-call E4 entrance-frame modification consumes four T37 gaps; four width increases and owner exchanges, full mixed-provider construction/admission. Historical parallel contribution, no automatic composition with k8.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -559,19 +619,23 @@
       },
       "reviewed_head": "6d0a145e8b4774b1b0d4e3da56890af5adc9b04f",
       "current_head": "6d0a145e8b4774b1b0d4e3da56890af5adc9b04f",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/leaver-cell-audit-seed65"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Code-disjoint exact scalar/frame audit of eight mutable-leaver cells, 24 leavers and seven slots, 704 columns and 14 controls. Corrects the raw per-cell profile description to +6H1-12H2+3H3-3H6; final priced word is unchanged.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -595,20 +659,24 @@
       },
       "reviewed_head": "3b8fab9b48d54160d0765c316eed45078f32aa5e",
       "current_head": "3b8fab9b48d54160d0765c316eed45078f32aa5e",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "Makefile",
         "research/t37-endpoints-independent"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Independent prime-chain logarithm/Taylor interval audit of T37 and bit endpoints plus binding kappa; seven controls. Historical selection pin redirected to identical checkpoint bytes.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -632,19 +700,23 @@
       },
       "reviewed_head": "e7f0319b7a7b4e8e1958ae523affdc123e3ea597",
       "current_head": "e7f0319b7a7b4e8e1958ae523affdc123e3ea597",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/t37-binomial-endpoint-audit-seed78"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Independent positive-binomial certification of six moment decisions, 42 all-T inequalities, 14 bootstrap steps and 94 outer slacks, plus exact remainder-trade identities. Historical checkpoint retained byte-identically.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -668,20 +740,24 @@
       },
       "reviewed_head": "a3db661d0cc630820bc5d4af667bbd166bde154b",
       "current_head": "a3db661d0cc630820bc5d4af667bbd166bde154b",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "Makefile",
         "research/pending-claims-independent-pricing"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Code-disjoint arithmetic repricing of sixteen pinned historical claims, including deficit identity W-64N; source blobs rebound. Does not itself verify realized words or owners.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -705,19 +781,23 @@
       },
       "reviewed_head": "b4c13a228acb80f74c682b7097f0ce9bbf51bc4e",
       "current_head": "b4c13a228acb80f74c682b7097f0ce9bbf51bc4e",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/t16-owner-audit-seed67"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Independent event/window/owner recount of fifteen historical T16 maps and T8, including disjoint pending axes across children; eleven controls. No emitted controller, invoice or outer theorem claim.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -775,19 +855,23 @@
       },
       "reviewed_head": "08fac91b6e4e4f2c9af77fc9afa11e3ec2212faf",
       "current_head": "08fac91b6e4e4f2c9af77fc9afa11e3ec2212faf",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/nine-stage-prefix-audit-seed70"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Complete PR589 nine-stage positive-majorant audit: 220905 events, 4839 columns; exact positive peak 127 bits, bank envelope 132, coarse bound 177. Production 192-bit charge unchanged; no physical 128-bit admission.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -811,20 +895,24 @@
       },
       "reviewed_head": "0e301503b29d802327238c32f5ae3377797a564c",
       "current_head": "0e301503b29d802327238c32f5ae3377797a564c",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "Makefile",
         "research/layer-end-controls-parallel"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Opt-in record/evaluate/replay parallelization of unchanged layer-end controls, byte-identical receipt and failure controls. Verification acceleration only.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -848,19 +936,23 @@
       },
       "reviewed_head": "9c4c5d62825c795148a2d2b9062788160063d0cb",
       "current_head": "9c4c5d62825c795148a2d2b9062788160063d0cb",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/clifford-state-reuse"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Opt-in exact Clifford input-state reuse: pinned compiler edit, independent Gaussian-rational oracle, paired phase replays and driver fault controls. No selected compiler replacement or combined speedup claim.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -884,19 +976,23 @@
       },
       "reviewed_head": "c28a38863964fb4e50704d59cb24840d5cd9949b",
       "current_head": "c28a38863964fb4e50704d59cb24840d5cd9949b",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/frame-pair-enumeration-fast-seed93"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Exact mask enumeration preserves ordered PR968 D/E/H streams: 1260 frames, 7168 decoders, 57344 term ranks and controls. Local benchmark separated from mathematical receipt.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -920,19 +1016,23 @@
       },
       "reviewed_head": "7cadcb0a2fc71fdedc0066704dec3fec58c2ca2c",
       "current_head": "7cadcb0a2fc71fdedc0066704dec3fec58c2ca2c",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/five-cube-coded-copy-seed42"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Smallest five-cube affine-code factorization: exact total pairing-rank floor 32 and peak floor eight, attained by four totals. Overcomplete factors included; only the stated additive stage ledger is excluded.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -956,19 +1056,23 @@
       },
       "reviewed_head": "b0396aad724fec58630fbd4d13a809c562f18d9e",
       "current_head": "b0396aad724fec58630fbd4d13a809c562f18d9e",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/weighted-signed-connector-seed58"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Signed three-by-three connector query optimum 2 sum(cF)+2 min(cF), six repairs across 288 orientations; full dirty restoration and 308-vs-332 priced fixture. Sign-symmetric fixed query prices only.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -992,19 +1096,23 @@
       },
       "reviewed_head": "1459f58a829e616ddf32a3da2782e166700e3218",
       "current_head": "1459f58a829e616ddf32a3da2782e166700e3218",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/complex-decoder-field-extension-seed44"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Complex-coefficient extension of the exact eight-term E8 all-pairs decoder floor max(72-p,56), p<=24. Handles isotropic cross-term coincidences; inherits real root-hyperplane classification and excludes masked or overcomplete decoders.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -1028,19 +1136,23 @@
       },
       "reviewed_head": "75834dfc800511cebc0e4c696788e9081272d761",
       "current_head": "75834dfc800511cebc0e4c696788e9081272d761",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/p112-gram-support-seed80"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Label-free P112 Gram support spectrum certificate: 511 characters, 503 full rank, eight coordinate kernels, ten spectra and sharp restricted energy four. Corroborates PR845's finite premise only.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -1064,19 +1176,23 @@
       },
       "reviewed_head": "ad0cc538d7f827461da6364c3c0e09176b10bcae",
       "current_head": "ad0cc538d7f827461da6364c3c0e09176b10bcae",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/p111-minrank-proof-reconciliation"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Proof-carrying reconciliation of PR620 archived P111 minimum rank nine and unique rank-nine fitting matrix: 37044 RUP additions, 1409475 hints. Exact archival root order; does not transfer to different supplier punctures or close wider PR620.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -1100,19 +1216,23 @@
       },
       "reviewed_head": "5d90de8d5b7077f4078e42c08ba4872682662e5b",
       "current_head": "5d90de8d5b7077f4078e42c08ba4872682662e5b",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/p111-tensor-shear-seed47"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Exact census of 6480 elementary shears of the fixed punctured P111 two-factor product basis, unchanged pairing-cost floor 3969. No arbitrary-GL or multi-shear barrier.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -1136,20 +1256,24 @@
       },
       "reviewed_head": "babca68167d8db321d194b7dc54230d88a8ad5f0",
       "current_head": "babca68167d8db321d194b7dc54230d88a8ad5f0",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "Makefile",
         "research/bit589-width-packing"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "No-bank width-eight slot-packing optimum for PR589, with hypothetical width-seven headroom prices. Does not construct narrower bit helpers or discharge window timing/hosting.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -1173,19 +1297,23 @@
       },
       "reviewed_head": "83e8e4ce9a556eb890c02af79b43b1505fd9cead",
       "current_head": "83e8e4ce9a556eb890c02af79b43b1505fd9cead",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r439-resynth-frame-seed10"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "PR952 fixed-word frame reassignment exclusion: 137 components, 13730 assignments, 933 concavity certificates plus one explicitly proved exceptional profile. Fixed order, operands, COPY frames and live-line spans only.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -1209,19 +1337,23 @@
       },
       "reviewed_head": "b66839f4707e4580524b0f4031d4edc1be939e27",
       "current_head": "b66839f4707e4580524b0f4031d4edc1be939e27",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r439-omission-atlas-seed81"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Complete 5563 single-ADD omission atlas on frozen PR967 D, all 661 symbolic columns; distinct nonzero full syndromes, 221 target-invisible helper restorations. No multi-fault or full-native guarantee.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -1245,19 +1377,23 @@
       },
       "reviewed_head": "a1aff126d9816cff75a5293675ae6e10f65377db",
       "current_head": "a1aff126d9816cff75a5293675ae6e10f65377db",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/heterogeneous-owner-assembly"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Common dual for 71 pinned provider records/25 interfaces with mixed helper inventories, whole helpers and fixed capacities; arbitrary real call counts allowed. Explicitly excludes later U10/leaver providers.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -1281,19 +1417,23 @@
       },
       "reviewed_head": "b0eda846c34413dabd1e75402b8ad730f8940ff2",
       "current_head": "b0eda846c34413dabd1e75402b8ad730f8940ff2",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r480-qnode-seed02"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Historical R480 Q-node2 shortened 52 to 43 XORs, complete word 33958 to 33940; full positive envelope and native 5/9/11-stage checks. Paid profile unchanged, no kappa gain.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -1317,19 +1457,23 @@
       },
       "reviewed_head": "ebc027e26a7018b73a5a452eae269a9bfeaabce9",
       "current_head": "ebc027e26a7018b73a5a452eae269a9bfeaabce9",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r480-quad12-exact-seed12"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "R480 quad12 admission of the known eleven-ADD minimum: complete 252 shortest-program census/four reverse classes, whole word 33934 and native checks. Credits PR1002's prior minimum; fixed positive transfer only.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -1353,19 +1497,23 @@
       },
       "reviewed_head": "9f33d4d10e59a7575d28378e63c033a4b0c13d3f",
       "current_head": "9f33d4d10e59a7575d28378e63c033a4b0c13d3f",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r480-qnode5-seed05"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Historical R480 Q-node5 shortened 51 to 41 XORs, complete word 33938; all dirty columns and independent Python 5/9/11-stage evidence. Historical selected context redirected without changing hash; no native C++ claim.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -1389,19 +1537,23 @@
       },
       "reviewed_head": "b4610c1c0ba67111c156bc56e9f16a4aab0fe613",
       "current_head": "b4610c1c0ba67111c156bc56e9f16a4aab0fe613",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r439-helper-quartets-seed07"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Connected four-helper fusion crosses PR941 disjoint-pair floor: 1290240 fully priced GL(4,2) cases, word 11946, native checks. Semantic D candidate retains known syntactic H2/K mismatch; not a selected supplier.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"
@@ -1425,19 +1577,23 @@
       },
       "reviewed_head": "cd016e5dcd5ba28dafa3f3b4eeef003a38e6a11b",
       "current_head": "cd016e5dcd5ba28dafa3f3b4eeef003a38e6a11b",
-      "github_state": "OPEN",
-      "disposition": "partially_reviewed",
+      "github_state": "MERGED",
+      "disposition": "incorporated",
       "integration_location": [
         "research/r439-bsection-stars-seed01"
       ],
-      "closure": null,
+      "closure": {
+        "method": "Reviewed source integrated, exact PR head merged by ancestry and published to main",
+        "publication_commit": "2894d40732cadc6df6b4523255745674d27fb6eb",
+        "evidence": "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json"
+      },
       "scope": "Compose nine PR1015 blocks and PR923 frame520 with helper-star D; 11783 to 11515 then 11500 ADDs as freed precision admits extra stars. All 661 columns and full local/nine-stage envelopes; known H2/K mismatch retained, no hosted supplier admission.",
-      "unresolved_question": "Scoped review and execution complete; publication pending.",
+      "unresolved_question": "",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/community-batch1099-review.md"

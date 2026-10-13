@@ -1,5 +1,5 @@
 {
-  "status": "THIRTY_NINE_REVIEWED_ONE_DEFERRED_PUBLICATION_PENDING",
+  "status": "39_PUBLISHED_1_DEFERRED",
   "selected_kappa": "836330098538459/500000000000000000",
   "frontier_changed": true,
   "reviewed_heads": {
@@ -406,7 +406,9 @@
     "research/community-batch1099-audit/logs/batch1099-old-record-final.log": "8ccda9508dcbb431c318be44f3465f84ab3301cdb164023cf266d98403803c9b",
     "research/community-batch1099-audit/logs/batch1099-final-tests.log": "1d07ddae5e7a1de5a27e29f0af24fe2aef5b3c0ecfaae9d02526c298fabaca62",
     "research/community-batch1099-audit/MAKEFILE-EXTENSION.json": "ec302970ecc505fa9ffbeb9d6c3dd07b8a877c47b3ccb64dd3034a1d96f362ca",
-    "research/community-batch1099-audit/CHECKPOINT1-HEADS.json": "3784895bb66e08624d6052314ee046e99cbba0f35840d2f0aeaa14970fc63ea0"
+    "research/community-batch1099-audit/CHECKPOINT1-HEADS.json": "3784895bb66e08624d6052314ee046e99cbba0f35840d2f0aeaa14970fc63ea0",
+    "research/community-batch1099-audit/QUEUE-AFTER-PUBLICATION.json": "289970c0c2d3290b3dcaa3f835ffe52d7f5dac4a2bcfe7052281ce46bc7a58d5",
+    "research/community-batch1099-audit/CHECKPOINT1-CLOSURES.json": "2d772fa20fc927a3db504b7709b7df0c2823ed4202f5ffeec9896c0ed110f27c"
   },
   "scope": "Forty frozen exact heads: thirty-nine scoped integrations, one mathematical deferral. Completion flags separate execution from publication. No source claims are unconditionally promoted.",
   "ci": "Successful local macOS execution; hosted Linux CI pending and not claimed passed.",
