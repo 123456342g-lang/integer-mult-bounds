@@ -33,4 +33,7 @@ protocol.
   use mechanisms outside the single-write class and are disclosed as
   complementary evidence in README.md. Frames 506 and 523 remain uncovered
   by any open PR except #857's weaker 523 witness.
-- Status: completed in session; see README.md and VALIDATION.md.
+- Status: completed in session; submitted as
+  https://github.com/CrocSwap/integer-mult-bounds/pull/891 (branch
+  `research/agent-04-bit-seed08`, commit `bdff756c`). See README.md and
+  VALIDATION.md.
