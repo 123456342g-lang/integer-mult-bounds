@@ -43,3 +43,30 @@ compensation reordering), and concurrent #807 (CK helper pairs). No pending
 implementation is imported; their savings are not assumed additive.
 
 Prepared for @dd-hemant with substantial OpenAI Codex assistance.
+
+## Result — 2026-10-13, 06:21 UTC
+
+Completed and submitted as
+[PR #816](https://github.com/CrocSwap/integer-mult-bounds/pull/816).
+The six signed target trees reduce CK compensation from 8,704 to 3,342
+additions, saving 66,520 real primitives in each complete local orientation.
+All 12,544 signed/root edges were priced; cycle inequalities and an independent
+Prim implementation certify the attained 16,364-complex-primitive minimum in
+the stated forest class. No pivot or incomplete search remains. No new kappa.
+
+Both native programs pass all 716 arbitrary input columns and 25 inherited
+controls; 11 new controls and four external corruption checks also pass.
+Python 3.10/3.12, optimized execution, minimal relocation, recompressed inputs,
+read-only verification and application/replay against refreshed main passed.
+See VALIDATION.md for limitations and reproducible commands in README.md.
+
+The final overlap refresh covered 628 open PRs through #815. New #811 studies
+JP8 coefficient routes; #815 changes only frames. Neither duplicates this CK
+target-forest class. No pinned coordination issue appeared. Upstream meanwhile
+selected #741 at main `7ee02b7c96d85f22b38d28bd7ed49bb8c1aeb261`; all runtime
+inputs here remain unchanged. This is explicitly a #626 checkpoint result,
+with no automatic transfer to #741. The original base is retained.
+
+Construction commit: `88fceaf12dfed9f7f572fdb840b666aa251be896`. Only this
+research package was changed. Production integration and global admission
+remain open; no merge or modification of another contributor's work occurred.

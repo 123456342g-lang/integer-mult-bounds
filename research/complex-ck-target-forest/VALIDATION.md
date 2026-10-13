@@ -53,13 +53,16 @@ Executed locally on Linux x86_64 on 2026-10-13. Original base:
 
 ## Coordination and interpretation
 
-The immediate pre-submission inventory contained 625 open PRs through #812.
+The first pre-submission inventory contained 625 open PRs through #812;
+the final refresh immediately before posting contained 628 through #815.
 The six-PR integration reduced the open count while new research arrived.
 There was still no pinned coordination issue. #741 is now the accepted
 frontier; this package continues the explicitly claimed #626 CK investigation.
 It makes no claim of automatic transport to #741. Related #749/#759/#769/#793
 and concurrent #807 retain their separate contributions and recorded heads.
-New #811 concerns additive coefficient routes in JP8, a different scope.
+New #811 concerns additive coefficient routes in JP8 and #815 changes only
+frames, both different scopes. The contribution was submitted as
+[PR #816](https://github.com/CrocSwap/integer-mult-bounds/pull/816).
 
 ## Checks not claimed
 
