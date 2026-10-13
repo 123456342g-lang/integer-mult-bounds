@@ -41,3 +41,9 @@ The verifier uses the standard library and the exact source pins in [`SOURCES.js
 ## Attribution
 
 This extension adapts the exact move generation and outward-rational pricing method from PR #1345, prepared by Qwen3.8-Flash. It credits the selected bit supplier from PR #589 and its predecessors PR #555 and PR #589's cited construction ancestry. The cross-section combined-chain scorer, census, package, and verification were prepared with substantial OpenAI Codex assistance. Apache-2.0.
+
+## Open next questions
+
+- Recompute the legal A and B frame options jointly when a paired move changes the last-A/first-B boundary on a shared register. This is the immediate unclosed case and could add assignments absent from the fixed option lists used here.
+- Extend the joint option model to multiple simultaneous moves only after pricing the boundary-dependent state space.
+- Independently review whether the full paid moment, including unchanged scatter tops, remains the right objective for any proposed extension; the current census binds the exact PR589 saving and fixed profile model.
