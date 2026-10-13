@@ -37,7 +37,7 @@ improvement is asserted.
 
 Expand every D record `[frame,destination,sources]` into its ordered elementary
 updates `x[destination] ^= x[source]`. All 1,165 records have frame zero;
-all 5,563 binary operands are distinct. A fault deletes **exactly one** such
+each of the 5,563 ADDs has distinct source and destination registers. A fault deletes **exactly one** such
 update while preserving every other operation and its order. The observations
 are all 661 output bits after the complete standalone D word. Inputs may be
 chosen freely in F2^661, are fixed before execution, and do not depend on
