@@ -1,5 +1,5 @@
 {
-  "status": "claimed",
+  "status": "completed; research PR submitted for review",
   "assignment_seed": 23,
   "randomness": "Python secrets.randbelow(100), OS entropy; drawn once at session start",
   "track": "complex supplier",
@@ -57,5 +57,39 @@
     "source_head": "fa8ab946df57ebadae1a470b637c2a590a0a5317",
     "finding": "Coefficient-3 rewrites at rank zero do not improve paid climbs",
     "distinction": "This contribution changes primitive synthesis for the later selected large numerators, retains the exact intermediate coefficient envelope, and claims only scalar cost savings; it agrees that the paid profile and kappa do not improve."
+  },
+  "completed_utc": "2026-10-13T05:00:13Z",
+  "implementation_commit": "21606831df4b08f79d87fd420c558a520dca571e",
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/734",
+  "result": {
+    "classification": "finite complex-supplier circuit improvement / research note; no new kappa",
+    "saved_real_primitives_beyond_pr696": {
+      "ck/forward": 122,
+      "ck/backward": 122,
+      "jp8/forward": 3090,
+      "jp8/backward": 3090
+    },
+    "coverage": "All 686 selected dyadic coefficient types and four complete scalar programs; 716 native + 9 private formal columns each; 8256 independent digit-graph comparisons; 12 mathematical controls and four package/algorithm corruption controls. No search timeout or unfinished case.",
+    "prefix_bound": "Original per-macro numerator cap and inherited exact global scalar envelope retained",
+    "verification_started_utc": "2026-10-13T04:52:04Z",
+    "reproduce": "python3 -B research/complex-prefix-bounded-dyadic/verify.py",
+    "expected": "PASS_PREFIX_BOUNDED_DYADIC programs=4 columns=716+9 coefficients=686 extra_savings=122,122,3090,3090 controls=12",
+    "limitations": "No production emitter integration, new global invoice/admission, full theorem proof, new kappa or practical runtime claim."
+  },
+  "concurrent_result": {
+    "pr": 723,
+    "head": "d3bc41b87fc7d23f50d064a0f06f1a89e3ab02a7",
+    "credit": "Sagar Thakrar independently developed JP8 signed-digit lowering during this session",
+    "distinct_evidence": "Hard per-macro numerator cap with unchanged exact prefix envelope; optimal recurrence for this restricted class; separate forward graph check; CK coverage and explicit composition with pinned PR696. PR723 permits numerator+1 and saves 186 more recoding primitives per JP8 orientation. Its implementation is not independently verified here."
+  },
+  "final_overlap_refresh": {
+    "utc": "2026-10-13T04:59:42Z",
+    "latest_other_pr": 732,
+    "related_heads_unchanged": [
+      696,
+      722,
+      723
+    ],
+    "coordination_issue": null
   }
 }
