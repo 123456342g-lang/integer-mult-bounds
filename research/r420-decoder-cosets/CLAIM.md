@@ -20,3 +20,15 @@
 - Reviewed selected certificate, #626 review/construction dependencies, review
   ledger, #543 construction/family limitations and open PR metadata through
   #725. #711/#718 address scheduling, not decoder source cosets.
+
+## Completed handoff
+
+[PR #748](https://github.com/CrocSwap/integer-mult-bounds/pull/748): one
+index-3 decoder source-coset replacement saves 244 complete local binary XORs,
+including changed D and literal C. All 660 columns, original frame/interface
+checks, native counts/bounds and six rejection controls pass; no new κ.
+Search stopped at 32 trials / 2,997 scored candidates, five accepted moves.
+The final portion was reserved for exact verification, clean archive replay,
+source/optimized-mode controls, independent static AI review and handoff.
+Final overlap refreshed through #747, including distinct #731/#733/#742 work.
+No selected-frontier or upstream changes. See README and VALIDATION for limits.
