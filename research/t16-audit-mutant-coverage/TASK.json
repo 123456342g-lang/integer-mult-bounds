@@ -46,12 +46,12 @@
   "budget_minutes": 60,
   "stop_rule": "Stop at the first accepted semantically consequential mutant (report it) or when every reachable assert statement in audit() has a rejecting mutant; unreachable ones are explained.",
   "outcome": "completed",
-  "evidence": "verify.py: 15/15 shipped controls rejected at 8 of 39 assert statements; 34/35 new mutants rejected, reaching 23 more (idle window both sides, cross-call cell overlap, pending-prefix gap, schedule order/retiming, pooled-slot binding); accepted: pooled-slot time and 18 descriptive fields with no post-emit reader; template pooled_slots == frozen OWNERS (69,120 roles) and owner_map_sha256 names it; 8 asserts unreachable by template mutation, each explained. Identical EXPECTED.json on CPython 3.10/3.12/3.14.",
+  "evidence": "verify.py: 15/15 shipped controls rejected, first reaching 8 of the 42 lines with an assert; 34/35 new mutants rejected, reaching 20 more (the field census 6 more) (idle window both sides, cross-call cell overlap, pending-prefix gap, schedule order/retiming, pooled-slot binding); accepted: pooled-slot time (line 172 omits it), 15 fields audit() never reads (no post-emit reader by text search) and 3 partial checks; template pooled_slots == frozen OWNERS (69,120 roles) and owner_map_sha256 names it; 8 asserts unreachable by template mutation, each explained. Identical EXPECTED.json on CPython 3.10/3.12/3.14.",
   "author": "Josie Elliston (JosieElliston)",
   "ai_assistance": "Substantial Claude Code (Claude Opus 5.5) assistance in selection, harness implementation, verification and documentation, in a donated session.",
   "open_questions": [
     {
-      "question": "Do the nine other audit_allcold.py versions in the cold #1042 ancestry have the same predicate coverage?",
+      "question": "Do the nine other audit_allcold.py versions in the repository (PR1939 handoff) have the same predicate coverage?",
       "why_it_matters": "Each version ships its own controls; the selected record's reuse path depends on them.",
       "first_step": "Parametrize verify.py by archive member and script hash; use the #1042 audit archive as fixture.",
       "blocked_by": "Locating each version's hosted template in the retained receipts."
@@ -64,7 +64,7 @@
     },
     {
       "question": "Which predicates of invoice_allcold.py (finite prefix/row inequalities) reject targeted mutants?",
-      "why_it_matters": "The invoice carries the 397<512 prefix and 16,469<20,161 row inequalities and ships no mutation controls.",
+      "why_it_matters": "The invoice carries the 397<512 prefix and 16,469<20,161 row inequalities and has no mutation-control block of its own.",
       "first_step": "Run the same in-process harness on invoice_allcold.run() with one-field template and receipt mutants.",
       "blocked_by": "Nothing; out of this session's time."
     }

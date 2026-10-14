@@ -15,11 +15,11 @@ The pinned audit runs unchanged and in-process; the verifier only records which 
 On the unmutated template it reproduces every field of the archived selected `ASYNC-AUDIT.json` except the
 two mutation-run fields.
 
-| Mutant set | Count | Rejected | Accepted | Distinct `assert` statements reached first |
+| Mutant set | Count | Rejected | Accepted | Further lines with an `assert` reached first |
 |---|---:|---:|---:|---:|
-| Shipped controls (exact text of the pinned control block) | 15 | 15 | 0 | 8 of 39 |
-| New targeted semantic mutants | 35 | 34 | 1 | 23 further |
-| One-field census of the template | 111 | 92 | 19 | (overlaps the above) |
+| Shipped controls (exact text of the pinned control block) | 15 | 15 | 0 | 8 of 42 |
+| New targeted semantic mutants | 35 | 34 | 1 | 20 |
+| One-field census of the template | 111 | 92 | 19 | 6 |
 
 - **Shipped controls are concentrated.** Four of the 15 shipped controls are rejected first by line 94 (the
   whole provider-registry equality). Three are rejected by line 152 and three by line 159. In the
@@ -34,18 +34,23 @@ two mutation-run fields.
   - schedule list order and retiming (lines 114, 121, 122 and 129);
   - pooled-slot count, key and field binding (lines 169, 171, 172 and 173);
   - the retired top-level `local_programs` (line 95).
-- **Accepted: the pooled-slot `time` field, plus 18 descriptive fields.** The audit compares a pooled slot's
-  roles fields but not its `time`. The single-field census also accepts changes to:
-  - `cover`, `m`, `version`, `port_restriction`, `provider_dispatch`, `replica_lift`, `route_semantics`,
-    `supplier_substitution` and `expanded_scalar_interface`;
-  - `hosting.{rule, scope, idle_remainder_semantics, owner_map_sha256}` and `async_schedule.{scope, source_plan_sha256}`;
-  - appended text in `loop_order`;
-  - an extra key in `hosting` or `async_schedule`.
+- **Accepted: 19 path mutations, in three groups.**
+  - *Pooled-slot `time`.* Line 172 compares a pooled slot's roles fields but not its `time`. The audit
+    itself would therefore accept a template whose pooled times differ from the frozen owners. See the
+    binding below for why this does not affect the selected fixture.
+  - *15 fields that `audit()` never reads.* These are `cover`, `m`, `version`, `port_restriction`,
+    `provider_dispatch`, `replica_lift`, `route_semantics`, `supplier_substitution` and
+    `expanded_scalar_interface`, plus `hosting.{rule, scope, idle_remainder_semantics, owner_map_sha256}`
+    and `async_schedule.{scope, source_plan_sha256}`.
+  - *Three partial checks.* The audit reads `loop_order` but only requires one sentence to be present,
+    so appended text passes. It reads named subfields of `hosting` and `async_schedule`, so an extra key
+    in either passes.
 
-  A text search of the PR1087 archive finds no reader of these fields in the hosted template after `emit`.
-  The files that mention the key names are their producers (`emit_allcold.py`) or stages that run before
-  `emit`, such as `restore_parent.py`, `build_parent.py`, `lift16.py` and `prepare_global.py`. In particular,
-  `invoice_allcold.py` and `assemble.py` read only audited fields. This is a text search, not a proof.
+  A text search of the PR1087 archive and the maintainer frontier1094 scripts finds no reader of the 15
+  unread fields in the hosted template after `emit`. The files that mention those key names are their
+  producers (`emit_allcold.py`) or stages that run before `emit`, such as `restore_parent.py`,
+  `build_parent.py`, `lift16.py` and `prepare_global.py`. `invoice_allcold.py` and `assemble.py` read
+  none of them. This is a text search, not a proof.
 - **Cross-stage binding that no selected stage checks.** The audit checks the hosted template.
   `lift16` and `independent-t16` check the frozen `data/OWNERS.json.gz` instead, and the final binding
   compares only counts and profiles. The verifier checks the link directly. The template's
@@ -53,7 +58,7 @@ two mutation-run fields.
   `hosting.owner_map_sha256` is the SHA-256 of that gzip. So for the selected fixture, the one field the
   audit ignores equals the time that `independent-t16` checks against invocation times. Each stage of the
   selected chain is deterministic. The link between them was previously implied by that determinism, not checked.
-- **Eight `assert` statements are not reachable by any template-only mutation.** Lines 98, 157 and 182
+- **Eight lines with an `assert` are not reachable by any template-only mutation.** The other 34 of the 42 are reached. Lines 98, 157 and 182
   depend only on base inputs (DATA-PHASES and the provider artifacts) once earlier lines pass. Lines 123,
   160, 161, 164 and 167 follow from earlier assertions or from how the audit builds the values: line 123
   from 120 and 122; lines 160 and 161 from how `sigma` is built; lines 164 and 167 from lines 103, 148
@@ -63,8 +68,13 @@ two mutation-run fields.
   harness counts these exception types as rejections. Every other rejection is an `AssertionError`.
 
 **Conclusion.** For the selected fixture, no missing implication was found in this checker. Each of
-its 31 reachable predicates rejects a targeted mutant. The unchecked template fields are write-only metadata,
-and the one consequential unchecked link (template owners against frozen owners) holds.
+its 34 reachable assertion lines rejects some mutant first. This is line coverage: on a line with a
+compound condition, such as lines 94, 152 and 156, not every conjunct has its own mutant.
+
+What `audit()` implies for *any* template is narrower than what is checked here for the *selected* one.
+The audit alone accepts changed pooled-slot times and the 15 unread fields. For the selected template,
+`verify.py` checks separately that the pooled owners, including their times, equal the frozen owners
+that `independent-t16` checks. The unread fields have no reader after `emit` (text search).
 
 ## Reproduce
 
@@ -83,8 +93,8 @@ module-level provider checks in lines 20–80. Other stages are also not mutatio
 
 ## Open next questions
 
-1. **Same receipt for the other `audit_allcold.py` versions.** Why it matters: PR1939 counts nine other
-   hashes of this file in the cold #1042 ancestry, and each has its own shipped controls. First step:
+1. **Same receipt for the other `audit_allcold.py` versions.** Why it matters: PR1939's handoff lists nine other
+   hashes of this file in the repository, and each has its own shipped controls. First step:
    parametrize `verify.py` by archive member and script hash, and use the #1042 audit archive as the
    fixture. Blocked by: locating each version's hosted template in the retained receipts.
 2. **Bind the template owner map in the replay driver.** Why it matters: today the template-to-OWNERS link
@@ -92,7 +102,7 @@ module-level provider checks in lines 20–80. Other stages are also not mutatio
    package's `template_to_frozen_owners_binding`) to a successor driver; the frozen PR1087 code stays unchanged.
    Blocked by: a maintainer decision on whether to wrap the frozen `verify_t16.py`.
 3. **Mutation-test the invoice.** Why it matters: `invoice_allcold.py` carries the finite inequalities
-   (prefix 397 < 512, row 16,469 < 20,161) and ships no mutation controls. First step: the same in-process
+   (prefix 397 < 512, row 16,469 < 20,161) and has no mutation-control block of its own. Whether the 69 admission controls cover its inputs was not checked. First step: the same in-process
    harness on its `run()` with one-field template and receipt mutants. Blocked by: nothing; it was out of
    this session's time.
 
