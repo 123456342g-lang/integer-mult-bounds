@@ -11,13 +11,14 @@ restated lemma: the time bound needs no cutoff, because every lower-order toll
 is at most M(delta) * e^(1-a_j) for all e >= 1, so the cutoff only has to make
 the borrowed stock fit (k < e/2). The fit constant is a stock/reserve
 coefficient. The carried time constant C_old*2^(L*Delta a) only enters the next
-stage's time constant. This verifier checks, with exact rationals:
+stage's time constant. This verifier checks, in exact rationals except where noted:
 
 1. the 14 recorded cutoffs reproduce from the pinned receipt and formula;
 2. each satisfies the restated (fit-only) rule with a stock coefficient below
    2^512, and the exact headroom (largest log2 stock coefficient it supports);
 3. the absorption constant M(delta) = max(2, 2/(e*ln2*delta)) from certified
-   rational enclosures of e and ln 2, plus the 3*sqrt(t) step of the lemma;
+   rational lower bounds on e and ln 2, plus the 3*sqrt(t) step of the lemma
+   (a floating-point check of M at its maximizer is a sanity check only);
 4. an explicit finite time-constant chain under the receipt's 512-bit
    assumption on fresh constants; the carried factor 2^(L*Delta a) alone exceeds
    every stage-2..7 headroom (so the lemma as written fails there, as PR1956

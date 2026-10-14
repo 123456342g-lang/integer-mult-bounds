@@ -10,9 +10,11 @@ are not valid instances of the cutoff lemma **as written** in
 [FINITE_BIT_ACCOUNTING](../five-stage-source527-banks/proof/FINITE_BIT_ACCOUNTING.md). That lemma's C must
 dominate the "previous ordinary constants". The carried time constant `C_old·2^(L·Δa)` is about twice too large
 for every stage after the first. PR #1956 left open whether a restated lemma ("repair (b)") makes the recorded
-numbers valid. This package answers that question for the time constant: yes. The cutoff has only one real job,
-to make the borrowed stock fit. A previous time constant never needs to enter it. What remains is a space
-obligation with a large exact margin.
+numbers valid. This package answers that question for the time constant: yes, under hypotheses (H1)–(H3)
+below, which are read from the retained sources but not re-proved. Under them the cutoff has only one job, to
+make the borrowed stock fit, and no previous time constant needs to enter it. The recorded cutoffs then reduce
+to a space obligation with a large exact margin. That obligation is **not** discharged, because the actual
+stock coefficients σ_j are not computed here.
 
 ## The two jobs of the 1/16 condition
 
@@ -49,7 +51,9 @@ Here K is finite and does not depend on e or on the cutoff. K is built from fres
 the weighted-induction factor `1+1/(1−μ_1)+1/(1−μ_τ)`, scalar/wrapper/padding counts, the stock coefficient
 inside the high-part exchange) and from `C_(j−1)`, which enters through the ordinary leaves, the remainder, the
 routing and the high-part exchange. This is the retained stopped-leaf estimate of PR387 with its O-constant
-written as K. (H3) `log_q S(e,w) ≤ σ·w·(1+log2 e)`, where σ is a *stock* coefficient. It is built from the
+written as K. The sources state it asymptotically ("for large e", `k = o(e)`). Its quantifier "whenever
+`k < e/2`" and the independence of K from the cutoff are a reading of those sources, not a quotation.
+(H3) `log_q S(e,w) ≤ σ·w·(1+log2 e)`, where σ is a *stock* coefficient. It is built from the
 per-level row stock, the depth factor and the old algorithm's logarithmic row-reserve coefficient. It contains
 no time constant.
 
@@ -74,17 +78,21 @@ The original lemma's next constant `C_large + C_old·2^(L(a_(j+1)−a_j))` domin
 
 **Consequence for the selected receipt.** Read with C = 8σ (a space constant) instead of a constant that
 dominates the previous time constant, the receipt's formula `max(⌈36/δ²⌉, ⌈2(4+512)/δ⌉)` is an instance of
-the restated lemma whenever `8σ_j ≤ 2^512`. In fact each recorded cutoff supports much more. The verifier
+the restated lemma whenever `8σ_j ≤ 2^512`, that is, whenever `σ_j ≤ 2^509`. In fact each recorded cutoff supports much more. The verifier
 computes the exact largest `ℓ` each one admits (`stock_headroom_log2`). It is 6,562,783 bits at stage 1 and
 grows by about 1/s per stage, to about 3·10^23 bits at stage 7. Every one of the 14 recorded cutoffs is
-therefore a valid fit cutoff for any stock coefficient below 2^6,562,783. The carried time constant stays
+therefore a valid fit cutoff for any stock coefficient `σ_j ≤ 2^(H_j−3)`, where `H_j` is that stage's headroom.
+At stage 1 this means `σ_1 ≤ 2^6,562,780`. The carried time constant stays
 finite and does not feed back into L. Under the receipt's own assumption that fresh time constants are below
-2^512, the verifier's explicit chain bounds `log2 C_7` by a 27-digit integer. On the other side, the carried
+2^512, the verifier's explicit chain bounds `log2 C_7` by a 27-digit integer. That chain also assumes
+`K_j ≤ 2^512 + 2^512·C_(j−1)`, which is a modeling assumption stronger than (H2)'s finite K. It only illustrates
+finiteness and plays no role in the cutoffs. On the other side, the carried
 factor alone gives `log2 C_(j−1) ≥ L_(j−1)·Δa_(j−1)`, which already exceeds the stage-j headroom for every
 j = 2..7. This reproduces PR #1956's finding from the other side: the lemma *as written* fails exactly at
 stages 2–7.
 
-So, under (H1)–(H3), only the proof text needs to change. The recorded cutoff numbers are valid as they stand.
+So, under (H1)–(H3), the recorded cutoff numbers are valid exactly when every `σ_j ≤ 2^(H_j−3)`. If that holds,
+only the proof text needs to change. The condition is plausible by a wide margin, but it is not verified here.
 
 ## Remaining obligations (not discharged here)
 
@@ -114,7 +122,7 @@ time_constant_finite=2 controls_rejected=7`, in well under a second, using the s
 
 The verifier checks every input against [SOURCES.json](SOURCES.json). It binds the lemma text, the fit statement
 in `three-stage-cover-rows.tex` and the assembler formula in the pinned `upstream1087.tar.gz`. It then checks the
-following, all in exact rationals:
+following in exact rational arithmetic:
 
 - the 14 cutoffs reproduce from the receipt's chain;
 - δ never exceeds the stock gap;
@@ -124,7 +132,8 @@ following, all in exact rationals:
 - the `3√t` step, from `9(ln2)²/2 ≥ 1`;
 - the explicit time-constant chain.
 
-A floating-point check at the true maximizer `t* = 1/(δ ln2) − 1` and on a grid confirms that `M(δ)` dominates
+The `ℯ` bound needs only a positive partial sum. The quartered-M control (control 3 below) uses the same
+floating-point check. A floating-point check at the true maximizer `t* = 1/(δ ln2) − 1` and on a grid confirms that `M(δ)` dominates
 the actual supremum. It is a sanity check, not a certificate. The verifier compares its summary with
 [RESULT.json](RESULT.json).
 
