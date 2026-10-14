@@ -55,6 +55,16 @@ def least_width(n, s, phases=(0,)):
     raise ValueError("proved upper width failed")
 
 
+def fixed_width_formula(n, s):
+    # Closed all-size classification; checked below by independent count oracles.
+    extra = 1
+    if n == 1 and s % 8 not in (0, 6, 7):
+        extra = 2
+    elif n == 2 and s % 8 not in (0, 1, 5, 6, 7):
+        extra = 2
+    return n+s+extra
+
+
 def injection(n, s, d, phase=0):
     need(feasible(n, s, d, phase), "insufficient native eigenspace")
     pools = [[v for v in range(2**d) if v.bit_count() % 4 == (j-phase) % 4]
@@ -166,6 +176,8 @@ def compute():
                 need(not feasible(n, s, N, phase), "equal-volume encoding admitted")
                 need(feasible(n, s, N+2, phase), "two-bit upper bound failed")
             need(fixed[0] in (N+1, N+2) and phased[0] in (N+1, N+2), "width range")
+            need(fixed[0] == fixed_width_formula(n, s), "closed fixed-width classification")
+            need(phased[0] == N+1, "closed optional-phase classification")
             table.append([n, s, *fixed, *phased])
     fixtures = []
     for n, s in [(1,1), (1,2), (2,1), (2,2), (3,1), (1,4)]:
@@ -199,6 +211,12 @@ def compute():
             "scope": "Exact invariant clean-subspace algebra; inherited full-volume tariff screen only",
             "multiplicity_oracle_widths": 131, "width_cases": len(table),
             "width_table_sha256": sha256(table_bytes).hexdigest(),
+            "closed_width_formula": {
+                "fixed_n1_extra1_s_mod8": [0,6,7],
+                "fixed_n2_extra1_s_mod8": [0,1,5,6,7],
+                "fixed_n_at_least3_extra": 1,
+                "fixed_other_small_cases_extra": 2,
+                "optional_fourth_root_phase_extra": 1},
             "fixed_width_counts": {str(k): sum(row[2]-row[0]-row[1] == k for row in table) for k in (1,2)},
             "optional_phase_width_counts": {str(k): sum(row[4]-row[0]-row[1] == k for row in table) for k in (1,2)},
             "fixtures": fixtures, "controls": controls,

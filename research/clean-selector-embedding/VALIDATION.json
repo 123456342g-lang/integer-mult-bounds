@@ -5,7 +5,7 @@
   "platform": "macOS-26.5.2-arm64-arm-64bit",
   "base_commit": "0b1cccf86e2f5132ed286a26ef0a681a495740ea",
   "selected_record_sha256": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32",
-  "certificate_sha256": "83a2adcb783bc3d6590d6a854e13a4698628843fe22a4fae03a61fa290e775df",
+  "certificate_sha256": "9b48ea90df1d17655f92604ad4e1e1d065989a7c0190cf3b3db7349adc21251a",
   "commands": [
     {
       "argv": [
@@ -71,7 +71,8 @@
       "literal fixtures cover declared selected phases; algebraic width signs cover all4",
       "Literal width and budget theorem explicitly limits spectator extension to E tensor I with the same factor. Independent recurrence checks changed-host example counts; permutation C1 tensor I4096 also keeps8192 coordinates at width1 and budget tie. Arbitrary spectator reassignment is outside the theorem."
     ],
-    "separate_recurrence": "Independent agent used its own four-state recurrence for all576 n,s=1..12 and four-phase cases; lower/upper and exact phase mapping agree. Final static proof/code/metadata review found no actionable error after stated corrections."
+    "separate_recurrence": "Independent agent used its own four-state recurrence for all576 n,s=1..12 and four-phase cases; lower/upper and exact phase mapping agree. Final static proof/code/metadata review found no actionable error after stated corrections.",
+    "closed_formula": "A separate agent four-state Pascal recurrence (no package imports) agrees on all4096 pairs:4032 fixed-phase +1,64 fixed-phase +2, all optional-phase +1. Independent written-proof review validates monotone normalized counts, small-width residue signs, and phase rotations."
   },
   "unrun": [
     "make frontier1094-verify",

@@ -17,6 +17,19 @@ model. PROOF.md gives an unchanged-volume width-one example and a distinct
 twofold-volume width-two example. This is not a minimum supplier recursive-rank
 theorem.
 
+The sharp closed formula, with `N=n+s`, is:
+
+| Convention | Least d |
+| --- | --- |
+| Exact phase, `n>=3` | `N+1` |
+| Exact phase, `n=2` and `s mod 8` in `{0,1,5,6,7}` | `N+1` |
+| Exact phase, `n=1` and `s mod 8` in `{0,6,7}` | `N+1` |
+| Other exact-phase cases | `N+2` |
+| Any fourth-root global phase allowed | `N+1` |
+
+Pascal averaging and the eight-residue character signs prove this for every
+positive `n,s`; finite enumeration corroborates the formula separately.
+
 The motivating 16-lane, width-one target has multiplicities `(16,16,0,0)`:
 
 | Native width | Multiplicities of C_d | Exact phase | Optional phase |

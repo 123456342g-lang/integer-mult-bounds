@@ -5,6 +5,23 @@
   "multiplicity_oracle_widths": 131,
   "width_cases": 4096,
   "width_table_sha256": "12873f0c677ad03b12084ccd8272ce8c006caa334c08c262c2512f633ee04637",
+  "closed_width_formula": {
+    "fixed_n1_extra1_s_mod8": [
+      0,
+      6,
+      7
+    ],
+    "fixed_n2_extra1_s_mod8": [
+      0,
+      1,
+      5,
+      6,
+      7
+    ],
+    "fixed_n_at_least3_extra": 1,
+    "fixed_other_small_cases_extra": 2,
+    "optional_fourth_root_phase_extra": 1
+  },
   "fixed_width_counts": {
     "1": 4032,
     "2": 64
