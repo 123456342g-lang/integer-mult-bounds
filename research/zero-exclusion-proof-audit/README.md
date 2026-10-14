@@ -48,8 +48,9 @@ not read PR1560's, PR1616's or PR1650's code) and checks them exactly at **all 2
 - **E7** four values in `{x, 1−x}` with sum 1 are all 1/4 or a permutation of `(1,0,0,0)`;
 - **E8** the identity `Σ_k ε_ik ε_jk = 2G_ij` used for nonpivot pairs in §6.
 
-All hold at every pivot. Controls: a non-frame pivot fails; removing one class-completion frame is caught by E4;
-a same-class "witness" gives `w = 1`, so opposite parity is what forces the contradiction.
+All hold at every pivot. Controls: a non-frame pivot fails; removing one class-completion frame is caught by E4.
+An illustration (an identity, not a rejection control) shows that a same-class "witness" gives `w = 1`, so
+opposite parity is what forces the contradiction.
 
 ## 3. Binding to PR1616 / PR1650
 
@@ -76,8 +77,8 @@ PR1650 at `d960f8a2`), all **agree**:
 
 The fixtures are PR1560's positive fixture (passes), its `X_bad` control (fails (W)), and session 13's
 full-family (G)-without-(D) pivot from #1502 (fails (D) in both). Because PR1650 stops at its first failure, this
-compares (G) and (D) verdicts only where every earlier test passed. That is thin for (G) and (D): two and one
-cases.
+compares (G) and (D) verdicts only where every earlier test passed. That is thin for (G) and (D): two cases and one distinct case (the same fixture in both runs).
+
 
 Part 3 is a same-account check: PR1616/PR1650 were earlier Claude sessions on this account. Parts 1 and 2 do not
 depend on that code.
@@ -93,12 +94,12 @@ depend on that code.
 ## Reproduce
 
 ```sh
-python3 -I -B research/zero-exclusion-proof-audit/verify.py            # about 50 s
+python3.12 -I -B research/zero-exclusion-proof-audit/verify.py          # about 50 s; 3.10+
 python3 scripts/research_package.py --package research/zero-exclusion-proof-audit --check-only
 python3.12 scripts/research_package.py --package research/zero-exclusion-proof-audit
 # Cross-check (needs PR1650's verify.py at d960f8a2, not on main):
 git show d960f8a2:research/complex-rank8-rigidity-p105/verify.py > /tmp/pr1650_verify.py
-python3 -I -B research/zero-exclusion-proof-audit/binding_crosscheck.py /tmp/pr1650_verify.py --samples 1000
+python3.12 -I -B research/zero-exclusion-proof-audit/binding_crosscheck.py /tmp/pr1650_verify.py --samples 1000  # needs 3.10+ (int.bit_count)
 ```
 
 ## Open next questions

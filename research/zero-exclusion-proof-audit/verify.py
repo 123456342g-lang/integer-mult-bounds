@@ -189,7 +189,8 @@ def main():
     check('E7.dichotomy', sols == {(Fraction(1, 4),) * 4, (0, 0, 0, 1)},
           'four values in {x, 1-x} with sum 1: all 1/4, or {1, 0, 0, 0} up to order')
 
-    # Negative controls: each fact must be falsifiable by the check that is meant to catch it.
+    # Negative controls: each fact must be falsifiable by the check that is meant to catch it. The third entry is
+    # an illustration (an arithmetic identity), not a rejection control.
     bad = list(frames[0])
     bad[0] = next(i for i in range(N) if i not in bad and G[i][bad[1]] == 0)  # not a frame any more
     check('control.non-frame-pivot', isinstance(facts_at(tuple(bad), frameset), str),
@@ -197,7 +198,7 @@ def main():
     r = facts_at(F1560, frameset - {tuple(sorted([22, 27, 34, 37] + [8, 9, 108, 117]))})
     check('control.missing-class-frame', isinstance(r, str) and r.startswith('E4 frame'),
           'removing a class-completion frame from the frame list is detected: ' + str(r))
-    check('control.same-class-witness', all(
+    check('illustration.same-class-witness', all(
         Fraction(1, 4) + sum(Fraction(a * b, 4) for a, b in zip(s0, s0)) == 1
         for s0 in itertools.product((1, -1), repeat=3)),
         'a same-class "witness" (j = i0) reproduces w = 1, so the opposite parity of j is what forces 1/2 or -1/2')
