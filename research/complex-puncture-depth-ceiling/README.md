@@ -82,7 +82,7 @@ cst ≤ 41 to match the selected word.
 
 - **Favorable relaxation only.** The bound allows fractional idle counts at rank 51. It omits whatever
   realizing a punctured word costs, including the asymmetric-centre reads, frame legality, restoration and
-  the unpaired-centre parity costs (≥ 78) that PR717 recorded. An actual moment is at most its ceiling.
+  the unpaired-centre parity costs (≥ 78) that PR717 recorded. The admissible primitive saving in this model is at most its ceiling.
 - **The per-port knob is PR717's local marginal model, not a derived word.** A real P104 or P120 word may
   have a different profile. The proportional row brackets one alternative, and the qualitative conclusions
   (P104 is the argmax, 1/99 is unreachable, the lever only unbinds) hold in both models. Rows with V > 112
