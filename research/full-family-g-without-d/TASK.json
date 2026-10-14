@@ -59,7 +59,7 @@
     {
       "question": "For |X| <= 7 (P105 to P111), does every pivot passing (W), nonempty blocks and (G) on the full live family pass (D)?",
       "why_it_matters": "PR1650's open question 1 is now false at |X| = 8; if it holds for |X| <= 7, the P105 replay could drop its rank computations, which are almost all of its 1200 s budget.",
-      "first_step": "Every-frame census of the 19295 P106 units (about 3.6 CPU-hours with PR1650's criterion), or a lemma explaining why the eight-line rank drop (two quadruples of lines met equally by every live frame) needs eight deletions.",
+      "first_step": "Every-frame census of the 19295 P106 units (about 40 CPU-hours with PR1650's criterion at the P107 rate of 9 CPU-s per unit), or a lemma explaining why the eight-line rank drop (two quadruples of lines met equally by every live frame) needs eight deletions.",
       "blocked_by": "Compute for P106/P105 every-frame censuses; no candidate lemma."
     },
     {

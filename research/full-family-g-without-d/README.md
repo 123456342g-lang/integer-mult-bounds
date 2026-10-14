@@ -85,7 +85,7 @@ Expected last line: `PASS_FULL_FAMILY_G_WITHOUT_D fixtures=2: ...`. `-O` is refu
 1. **Does the shortcut hold for |X| ≤ 7 (P105 to P111)?**
    - *Why it matters.* If it does, the P105 replay could drop the rank computations that take nearly all of its
      1200 s budget.
-   - *First step.* Run an every-frame census on the 19295 P106 units (about 3.6 CPU-hours with PR1650's criterion),
+   - *First step.* Run an every-frame census on the 19295 P106 units (about 40 CPU-hours with PR1650's criterion at the P107 rate of 9 CPU-s per unit),
      then on a P105 sample. Or prove that a balanced pair of line sets inside I_k needs eight deletions.
    - *Blocker.* Compute, and no candidate lemma. The D4 mechanism needs exactly eight, and no mechanism with fewer
      appeared in the searches above.
