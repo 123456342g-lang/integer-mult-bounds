@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "python": "3.12",
+  "requirements": [],
+  "inputs": ["research/direct-delivery504-global/inputs/hamming/PROTOTYPE.json"],
+  "commands": [
+    {"argv":["{python}","-I","-O","-B","{package}/verify.py"],"timeout_seconds":120,"checks":"Source-bound rational and binary quadratic spaces, complete 255-cut rank certificates over two primes, all tetrad/sign and predecessor clique premises, positive controls and eight rejected corruptions. Universal implications remain the written proof."}
+  ]
+}
