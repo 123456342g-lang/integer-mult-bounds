@@ -1,5 +1,5 @@
 {
-  "observed_at": "2026-10-14T03:10:45.570657+00:00",
+  "observed_at": "2026-10-14T03:21:13.603018+00:00",
   "pull_requests": [
     {
       "number": 423,
@@ -318,10 +318,10 @@
     },
     {
       "number": 483,
-      "state": "OPEN",
+      "state": "CLOSED",
       "isDraft": false,
       "headRefOid": "3738c3ce2d04d6a6c6363408ff9402286f592bc7",
-      "closedAt": null,
+      "closedAt": "2026-10-14T03:11:49Z",
       "mergedAt": null,
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/483"
     },
@@ -759,10 +759,10 @@
     },
     {
       "number": 651,
-      "state": "OPEN",
+      "state": "CLOSED",
       "isDraft": false,
       "headRefOid": "df5b9c41fcea749242af886646dfebb9d86319a7",
-      "closedAt": null,
+      "closedAt": "2026-10-14T03:11:53Z",
       "mergedAt": null,
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/651"
     },
@@ -822,10 +822,10 @@
     },
     {
       "number": 659,
-      "state": "OPEN",
+      "state": "CLOSED",
       "isDraft": false,
       "headRefOid": "4982f0ca66ffe0960b5a6451deb5b66b1039326b",
-      "closedAt": null,
+      "closedAt": "2026-10-14T03:11:57Z",
       "mergedAt": null,
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/659"
     },

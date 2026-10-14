@@ -27,8 +27,8 @@
     "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json"
   ],
   "counts": {
-    "incorporated": 655,
-    "partially_reviewed": 45,
+    "incorporated": 663,
+    "partially_reviewed": 37,
     "superseded": 1,
     "unreviewed": 60
   },
@@ -67,7 +67,7 @@
     "research/community-reconciliation92-audit/DISPOSITIONS.json": "5dafbc374822ed60d67da35fcdb27127c71ad839acec7b68a206c5229d45ba11",
     "research/community-reconciliation-next100-audit/DISPOSITIONS.json": "de8d4f4026b86e5e59d5945d0b865de16c6886aa013451a2e3c117665bd95b51",
     "research/community-reconciliation-third100-audit/DISPOSITIONS.json": "dbd7051bd339005e1bd5c11e296965fda0e267dfc09136d9e4cf0ecb17976b89",
-    "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json": "65721a200640ae11bb5e6f2344dd064e44d013cf57afd0dfc36d5c8ddf1e530e",
+    "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json": "5910b3620e328af9479df4b16a112fea97c6e37316578b56cf2310ea55f863b9",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -29348,14 +29348,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-fourth100-audit/ARCHIVE.json",
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
       "reviewed_head": "e037bc50c3d5efc1bec0d258a9f274f79ba45ec7",
@@ -29363,7 +29363,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -31035,14 +31035,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-fourth100-audit/ARCHIVE.json",
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
       "reviewed_head": "0c9eb6f80cef2e5797e5b7af940f447c0bdf25ad",
@@ -31050,7 +31050,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -38218,13 +38218,13 @@
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "dc14a57d17c63b0e427a5623ef23a2459bc196e9",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -38289,13 +38289,13 @@
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "189b5771bc1792d5038105463e476e30cb6eb58c",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -38806,13 +38806,13 @@
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "ff580ea5407aa427d64233523e46ee0afe24a766",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -38948,13 +38948,13 @@
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "bbfa9fe1d84d5572f4d144c2ee56a3eddc7a83f5",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -39890,13 +39890,13 @@
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "a1f15d0c78e1ca44d3414d184e57637b36c6822d",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -40339,13 +40339,13 @@
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "fed4c136d20835764be543dcf6c0c60177aee9ed",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
