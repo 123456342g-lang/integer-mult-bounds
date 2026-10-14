@@ -55,7 +55,7 @@ above. Set `PR1650_PACKAGE` to that package's directory. Wall times are on a sha
 | `minimize.py` on those 176 | restore deleted lines greedily while the verdict stays (D)-fail | locally minimal sizes 8 (20 sets), 10 (48), 11–28 (the rest); **none below 8** |
 | `mech.py` | all 7 D4⊕D4 splits that contain FRAME0 as 4+4 (closure of the coordinate splits under the stabiliser generators), all 1260 pivots disjoint from FRAME0, all k; X = the live split lines even to F[k] | sizes 4, 6, 8, 10. **(D) fails only at |X| = 8** (32256 cases). Every |X| = 4, 6 or 10 case passes or fails blocks. |
 | `allframes.py random --size s --sample 100` | random X of size 8, 9 and 10 (seeds 8, 9, 10), every live frame | 189952 frames: none fails (G) or (D); only (W) fails |
-| `allframes.py p107` | every live frame of all 1614 P107 units | P107_RESULT |
+| `allframes.py p107` | every live frame of all 1614 P107 units (1807 s wall, 8 processes) | 1393377 frames: 1386438 pass all four, 6936 fail (W), 3 fail blocks; **none fails (G) or (D)** |
 
 The first two rows also give the fixtures: walk seeds 1023 and 1759 minimize to fixtures 1 and 2 (pivot indices
 1765 and 1670 in PR1650's frame order).
