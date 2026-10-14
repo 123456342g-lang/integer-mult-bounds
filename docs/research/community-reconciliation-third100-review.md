@@ -1,6 +1,11 @@
 # Third 100-PR reconciliation: #304–#421
 
-This round covers **100 non-draft PRs by 13 contributors**. It retains historical constructions,
+This round covers **100 non-draft PRs by 13 contributors**.
+
+The final live check records **98 PRs closed in this round**, with **2 retained open**: #309, #379.
+See the [closure receipts](../../research/community-reconciliation-third100-audit/CLOSURE-RECEIPTS.json) and [ending snapshot](../../research/community-reconciliation-third100-audit/ENDING-SNAPSHOT.json).
+
+It retains historical constructions,
 parallel improvements, verification tools and research notes. It does not change the selected
 conditional frontier: **κ = 0.001672660197076918**.
 
