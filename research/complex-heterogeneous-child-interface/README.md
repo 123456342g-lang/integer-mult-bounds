@@ -40,8 +40,10 @@ T = (C_p tensor I_(N/2^p)) direct-sum
 ```
 
 Tensor factor order is immaterial. We ask for any invertible complex linear
-encoding `E`, one child `lambda C_d tensor I_t`, and any number of arbitrary
-dirty coordinates restored identically. The decoder is **exactly `E^-1`**.
+encoding `E`, one child `lambda C_d tensor I_t` with positive integers
+**`d>=1` and `t>=1`**, and any number of arbitrary dirty coordinates restored
+identically. The decoder is **exactly `E^-1`**. A scalar width-zero child is
+outside this declared contract.
 The child is identity on coordinates outside its active operand. Padding may
 be mixed into the encoding; it is not required to stay in its original slots.
 Any nonidentity operation on the child's complement is an additional operation,
