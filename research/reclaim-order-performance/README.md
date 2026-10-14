@@ -150,3 +150,8 @@ archives and adapters are unchanged.
 
 Prepared by Ali Romman with substantial OpenAI Codex assistance. Apache-2.0.
 Original source credits are retained. No independent human review is claimed.
+
+## Follow-up review
+
+The [2026-10-14 follow-up](FOLLOWUP-REVIEW.md) records the response to the
+maintainer triage, the fresh checks and the remaining proof boundaries.
