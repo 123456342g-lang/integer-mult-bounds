@@ -86,5 +86,6 @@
   "catalog_sha256": "6686ad58f1fbdbc87134a78901b60fd53a20d3984355e91defbbebc9e9fa8075",
   "selected_record_sha256": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32",
   "source_word_sha256": "c2b294300760e1fd6eeab8c22c4d13e4633dca40e52cac8da0d68163a76e3ca8",
-  "discussion_claim": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1167#discussioncomment-18921596"
+  "discussion_claim": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1167#discussioncomment-18921596",
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1814"
 }

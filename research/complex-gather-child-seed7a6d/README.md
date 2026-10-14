@@ -1,6 +1,6 @@
 # Three-source gather child: a scoped negative result
 
-**Result type:** source-pinned finite screen of one hypothetical rank-shape mechanism. No physical supplier, selected-frontier change, or new \(\kappa\) is claimed. The original coordination claim is [Discussion #1167, comment 18921596](https://github.com/CrocSwap/integer-mult-bounds/discussions/1167#discussioncomment-18921596).
+**Result type:** source-pinned finite screen of one hypothetical rank-shape mechanism. No physical supplier, selected-frontier change, or new \(\kappa\) is claimed. Review: [PR #1814](https://github.com/CrocSwap/integer-mult-bounds/pull/1814). The original coordination claim is [Discussion #1167, comment 18921596](https://github.com/CrocSwap/integer-mult-bounds/discussions/1167#discussioncomment-18921596).
 
 ## Question and scope
 
