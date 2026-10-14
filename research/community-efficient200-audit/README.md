@@ -2,7 +2,7 @@
 
 Frozen selection: **100 open, non-draft PRs #815–#1095**, excluding prior same-head dispositions. Baseline `858771bcca3b8dd5d4ef4aa682a13cc9b7e23920`. Full Git differences determine coverage; GitHub file-list truncation is not used as the inventory.
 
-**65 ready for scoped incorporation; 0 observed merged; 35 explicit follow-ups.** The selected conditional κ remains `836330098538459/500000000000000000`. No incompatible local gains are added together.
+**73 ready for scoped incorporation; 65 observed merged; 27 explicit follow-ups.** The selected conditional κ remains `836330098538459/500000000000000000`. No incompatible local gains are added together.
 
 Original author commits, notices, predecessor attribution and assistance disclosures are retained. Notes, corrections, negative results and verification engineering receive credit alongside constructions. Incorporation accepts the stated scope, not a new supplier or the full multiplication theorem.
 
@@ -75,6 +75,14 @@ Original author commits, notices, predecessor attribution and assistance disclos
 | [#1066](https://github.com/CrocSwap/integer-mult-bounds/pull/1066) | woklerx | Independent complementary-block kernel/nullity identities over rational and finite fields; no new global topology exclusion. |
 | [#1067](https://github.com/CrocSwap/integer-mult-bounds/pull/1067) | woklerx | Tighter signed reverse-D prefix envelope on an unchanged finite R439 word; production precision and paid profile retained. |
 | [#1070](https://github.com/CrocSwap/integer-mult-bounds/pull/1070) | bbMisk | Sharp arbitrary-mask XOR/affine agreement and graph-cover bound; no matching movement construction or changed-domain lower bound. |
+| [#1071](https://github.com/CrocSwap/integer-mult-bounds/pull/1071) | JosieElliston | Frame-pair center delivery costs in specified realization classes and independent predecessor-floor reconstruction; no supplier. |
+| [#1073](https://github.com/CrocSwap/integer-mult-bounds/pull/1073) | thakrarsagar | T37 execution-index/log coverage supplement and frozen native-predicate omission controls; not a full-binder or mathematical counterexample. |
+| [#1078](https://github.com/CrocSwap/integer-mult-bounds/pull/1078) | bbMisk | Portable aggregate-price reconciliation for five archived PR485 variants, two words; physical hosting not established. |
+| [#1079](https://github.com/CrocSwap/integer-mult-bounds/pull/1079) | bbMisk | Complete direct-source substitution census in a precisely fixed R439 deletion class; confirms #1043's unique surviving candidate in that class. |
+| [#1080](https://github.com/CrocSwap/integer-mult-bounds/pull/1080) | steph4n-gh | Two-sided signed U8 compensation forests with restoration and complete local scalar replay; no selected κ or whole-host reprice. |
+| [#1084](https://github.com/CrocSwap/integer-mult-bounds/pull/1084) | navinor | Exact 102-port orthogonal-pair decoder and conditional 9/17 label-decoder floor through 25 punctures; physical word/owner map remain open. |
+| [#1093](https://github.com/CrocSwap/integer-mult-bounds/pull/1093) | woklerx | Directed-dependency sufficient precision budgets for a fixed interacting shear word; unchanged rounded leaf and owned clean-low-bit contract. |
+| [#1095](https://github.com/CrocSwap/integer-mult-bounds/pull/1095) | woklerx | Exact prefix-monomial permutation-boundary floors with one workspace; no unrestricted whole-run circuit optimum. |
 
 ## Remaining review
 
@@ -86,7 +94,7 @@ Original author commits, notices, predecessor attribution and assistance disclos
 | [#846](https://github.com/CrocSwap/integer-mult-bounds/pull/846) | Rohansguliani | New all-length fixed-tape stride solver: review FIFO traffic, uniform accuracy and factorization interface together with the later #977/#985 refinements. |
 | [#860](https://github.com/CrocSwap/integer-mult-bounds/pull/860) | amazedbot | Local signed coefficient lowering includes a whole #626 admission claim; authenticate the reused full-replay payload and altered invoice before whole-head incorporation. |
 | [#895](https://github.com/CrocSwap/integer-mult-bounds/pull/895) | DaysSky | The pinned command reached its 180-second batch limit. Finish the remaining declared coverage in a dedicated bounded replay; a timeout is not mathematical evidence. |
-| [#897](https://github.com/CrocSwap/integer-mult-bounds/pull/897) | DaysSky | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
+| [#897](https://github.com/CrocSwap/integer-mult-bounds/pull/897) | DaysSky | The pinned command reached its 180-second batch limit. Finish the remaining declared coverage in a dedicated bounded replay; a timeout is not mathematical evidence. |
 | [#899](https://github.com/CrocSwap/integer-mult-bounds/pull/899) | DreamingOfClouds | Review solver-status and recorded-only minimality rows separately from exact certificates; execute verify.sh with its declared dependencies and preserve the proof scope. |
 | [#928](https://github.com/CrocSwap/integer-mult-bounds/pull/928) | rohanarun | Separate workflow proposal review: current AGENTS.md/autoresearch.md/package guidance now cover the contribution workflow. Avoid duplicating 20,119 historical files or introducing conflicting entry points. |
 | [#931](https://github.com/CrocSwap/integer-mult-bounds/pull/931) | RossRichardson | The pinned command reached its 180-second batch limit. Finish the remaining declared coverage in a dedicated bounded replay; a timeout is not mathematical evidence. |
@@ -99,22 +107,14 @@ Original author commits, notices, predecessor attribution and assistance disclos
 | [#1038](https://github.com/CrocSwap/integer-mult-bounds/pull/1038) | aliromman | New reversible quadratic-phase/tape implementation must be checked jointly with dirty-stride source reuse and precision assumptions. |
 | [#1043](https://github.com/CrocSwap/integer-mult-bounds/pull/1043) | aliromman | Full R438 hosted claim requires the declared C++17/Boost native pipeline and complete source-bound invoice replay. Keep open for the Linux/Boost lane; no admission from local column checks alone. |
 | [#1054](https://github.com/CrocSwap/integer-mult-bounds/pull/1054) | aliromman | All-length dirty-stride accuracy theorem needs a dedicated audit of coarse-grid refinement, dirty magnitude and both orientations. |
-| [#1060](https://github.com/CrocSwap/integer-mult-bounds/pull/1060) | aliromman | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
+| [#1060](https://github.com/CrocSwap/integer-mult-bounds/pull/1060) | aliromman | The pinned command reached its 180-second batch limit. Finish the remaining declared coverage in a dedicated bounded replay; a timeout is not mathematical evidence. |
 | [#1064](https://github.com/CrocSwap/integer-mult-bounds/pull/1064) | aliromman | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
-| [#1071](https://github.com/CrocSwap/integer-mult-bounds/pull/1071) | JosieElliston | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
-| [#1073](https://github.com/CrocSwap/integer-mult-bounds/pull/1073) | thakrarsagar | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
-| [#1075](https://github.com/CrocSwap/integer-mult-bounds/pull/1075) | RossRichardson | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
+| [#1075](https://github.com/CrocSwap/integer-mult-bounds/pull/1075) | RossRichardson | The pinned command reached its 180-second batch limit. Finish the remaining declared coverage in a dedicated bounded replay; a timeout is not mathematical evidence. |
 | [#1076](https://github.com/CrocSwap/integer-mult-bounds/pull/1076) | navinor | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
-| [#1078](https://github.com/CrocSwap/integer-mult-bounds/pull/1078) | bbMisk | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
-| [#1079](https://github.com/CrocSwap/integer-mult-bounds/pull/1079) | bbMisk | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
-| [#1080](https://github.com/CrocSwap/integer-mult-bounds/pull/1080) | steph4n-gh | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
 | [#1081](https://github.com/CrocSwap/integer-mult-bounds/pull/1081) | steph4n-gh | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
 | [#1083](https://github.com/CrocSwap/integer-mult-bounds/pull/1083) | bbMisk | Exact certificate requires a Lean 4.28.0 build plus axiom/statement coverage; installed Lean toolchains differ. Do not treat Python recount as the formal proof. |
-| [#1084](https://github.com/CrocSwap/integer-mult-bounds/pull/1084) | navinor | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
 | [#1085](https://github.com/CrocSwap/integer-mult-bounds/pull/1085) | bbMisk | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
 | [#1086](https://github.com/CrocSwap/integer-mult-bounds/pull/1086) | Hope7Happiness | Source check is only part of this formalization; requires Lean 4.27.0 kernel build and complete axiom/statement coverage. Installed toolchains differ. |
-| [#1093](https://github.com/CrocSwap/integer-mult-bounds/pull/1093) | woklerx | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
-| [#1095](https://github.com/CrocSwap/integer-mult-bounds/pull/1095) | woklerx | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
 
 ## Evidence and limits
 

@@ -595,11 +595,6 @@ complex741-parallel:
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-parallel741.XXXXXX"); \
 	python3 -B scripts/verify_complex741_parallel.py --work "$$work/replay" --jobs 3
 
-.PHONY: t21-interface-budget-verify
-t21-interface-budget-verify:
-	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/t21-interface-budget.XXXXXX"); \
-	python3 -B research/t21-interface-budget/verify.py --work "$$work/replay"
-
 .PHONY: frontier890-verify
 frontier890-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier890.XXXXXX"); \
@@ -663,6 +658,12 @@ frontier1094-verify: selected-record-check
 .PHONY: verify-parallel
 verify-parallel:
 	python3 scripts/verify_parallel.py
+
+.PHONY: t21-interface-budget-verify
+t21-interface-budget-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/t21-interface-budget.XXXXXX"); \
+	python3 -B research/t21-interface-budget/verify.py --work "$$work/replay"
+
 
 # Research note: restoration deferral and coverage identity on the selected T37 payload (no new kappa).
 .PHONY: t37-restoration-deferral-verify
