@@ -743,10 +743,11 @@ Original contributor commits and predecessor notices are preserved. These are sc
 - **1337isnot1337** — [#997](https://github.com/CrocSwap/integer-mult-bounds/pull/997).
 - **ZK-Snarky** — [#999](https://github.com/CrocSwap/integer-mult-bounds/pull/999).
 - **martinxxx9** — [#1013](https://github.com/CrocSwap/integer-mult-bounds/pull/1013).
-- **bbMisk** — [#1024](https://github.com/CrocSwap/integer-mult-bounds/pull/1024), [#1033](https://github.com/CrocSwap/integer-mult-bounds/pull/1033), [#1036](https://github.com/CrocSwap/integer-mult-bounds/pull/1036), [#1070](https://github.com/CrocSwap/integer-mult-bounds/pull/1070), [#1078](https://github.com/CrocSwap/integer-mult-bounds/pull/1078), [#1079](https://github.com/CrocSwap/integer-mult-bounds/pull/1079).
-- **steph4n-gh** — [#1044](https://github.com/CrocSwap/integer-mult-bounds/pull/1044), [#1080](https://github.com/CrocSwap/integer-mult-bounds/pull/1080).
+- **bbMisk** — [#1024](https://github.com/CrocSwap/integer-mult-bounds/pull/1024), [#1033](https://github.com/CrocSwap/integer-mult-bounds/pull/1033), [#1036](https://github.com/CrocSwap/integer-mult-bounds/pull/1036), [#1070](https://github.com/CrocSwap/integer-mult-bounds/pull/1070), [#1078](https://github.com/CrocSwap/integer-mult-bounds/pull/1078), [#1079](https://github.com/CrocSwap/integer-mult-bounds/pull/1079), [#1085](https://github.com/CrocSwap/integer-mult-bounds/pull/1085).
+- **steph4n-gh** — [#1044](https://github.com/CrocSwap/integer-mult-bounds/pull/1044), [#1080](https://github.com/CrocSwap/integer-mult-bounds/pull/1080), [#1081](https://github.com/CrocSwap/integer-mult-bounds/pull/1081).
 - **bitplane** — [#1057](https://github.com/CrocSwap/integer-mult-bounds/pull/1057).
 - **cbarber1** — [#1058](https://github.com/CrocSwap/integer-mult-bounds/pull/1058).
+- **aliromman** — [#1064](https://github.com/CrocSwap/integer-mult-bounds/pull/1064).
 - **JosieElliston** — [#1071](https://github.com/CrocSwap/integer-mult-bounds/pull/1071).
 
 Pending contributors and their remaining obligations are listed in the linked review. A hold is not a rejection.

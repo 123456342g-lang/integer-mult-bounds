@@ -1196,7 +1196,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "The pinned command reached its 180-second batch limit. Finish the remaining declared coverage in a dedicated bounded replay; a timeout is not mathematical evidence.",
+      "unresolved_question": "The BW16 primary screen reached 180 seconds before all 21 declared checks completed. Continue its exact geometry/copy-budget replay; no conclusion is inferred from the timeout.",
       "closure": null,
       "scope": "Barnes\u2013Wall unit screen and a 72-line clique witness under the retained stage/copy proxy; not a universal lattice obstruction.",
       "ready_to_integrate": false,
@@ -1230,7 +1230,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "The pinned command reached its 180-second batch limit. Finish the remaining declared coverage in a dedicated bounded replay; a timeout is not mathematical evidence.",
+      "unresolved_question": "After repairing a missing historical format-limits input, the full E7 classification replay reached 180 seconds. Finish the cover/near-cover domain and remaining controls; the initial missing-file error was our fixture setup.",
       "closure": null,
       "scope": "E7 hyperplane cover/near-cover classification and limits of a per-pool counting argument; exact finite geometry.",
       "ready_to_integrate": false,
@@ -1653,7 +1653,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "The pinned command reached its 180-second batch limit. Finish the remaining declared coverage in a dedicated bounded replay; a timeout is not mathematical evidence.",
+      "unresolved_question": "The complete butterfly/elimination recipe replay reached the 180-second budget. Finish its 78,728-recipe coverage and full losing-witness comparisons; do not infer exclusion from incomplete search.",
       "closure": null,
       "scope": "Complete finite butterfly/elimination recipe rejection for the historical factory; not an unrestricted circuit minimum.",
       "ready_to_integrate": false,
@@ -3153,7 +3153,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "The pinned command reached its 180-second batch limit. Finish the remaining declared coverage in a dedicated bounded replay; a timeout is not mathematical evidence.",
+      "unresolved_question": "The finite physical decoder replay reached 180 seconds. Finish all native signed-phase, complete physical-array and inverse-transpose checks before incorporating the physical construction; no defect inferred.",
       "closure": null,
       "scope": "Finite physical P111 decoder with one nonzero COPY endpoint, signed phase lowering and complete local moment/extra-work accounting; no selected-host or all-size admission.",
       "ready_to_integrate": false,
@@ -3186,20 +3186,23 @@
       "current_head": "b0181971c2364744d1dd9b0c2d4ee1ea532b8bb6",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation.",
+      "integration_location": [
+        "research/complex-factory-fusion"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
       "scope": "Unit-add complex factory lowering with restored source scales and full historical raw orientations; no per-macro invoice substitution.",
-      "ready_to_integrate": false,
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
         "research/community-efficient200-audit/packets/1064.json",
-        "research/community-efficient200-audit/checks/check-1064-fixture.json"
+        "research/community-efficient200-audit/checks/check-1064-fixture.json",
+        "research/community-efficient200-audit/checks/check-1064.json"
       ]
     },
     {
@@ -3414,7 +3417,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "The pinned command reached its 180-second batch limit. Finish the remaining declared coverage in a dedicated bounded replay; a timeout is not mathematical evidence.",
+      "unresolved_question": "The historical cube-XOR differential case passed, but the whole command reached 180 seconds before the larger declared coverage completed. Finish the remaining differential/certificate comparison.",
       "closure": null,
       "scope": "Opt-in historical cube-XOR mask cache with complete row/certificate comparison; source check coverage retained.",
       "ready_to_integrate": false,
@@ -3448,7 +3451,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation.",
+      "unresolved_question": "Engine regressions pass and fixtures 0\u201310 compare exactly, but the full benchmark reached 180 seconds during the heavy fixture. Complete all 14,662 row comparisons and the fresh certificate/hash-only comparison before changing the default checker.",
       "closure": null,
       "scope": "Default quadratic-affine batched exact-row engine, reference differential checks and hash-only certificate change; no new mathematics.",
       "ready_to_integrate": false,
@@ -3460,7 +3463,8 @@
       },
       "verification_evidence": [
         "research/community-efficient200-audit/packets/1076.json",
-        "research/community-efficient200-audit/checks/check-1076-supplement.json"
+        "research/community-efficient200-audit/checks/check-1076-supplement.json",
+        "research/community-efficient200-audit/checks/check-1076.json"
       ]
     },
     {
@@ -3590,19 +3594,22 @@
       "current_head": "5fb9a3d1ff67845c681233072a00d107e7084bd7",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation.",
+      "integration_location": [
+        "research/ck-dyadic-helper-shears-seed22"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
       "scope": "Exact fixed-forest CK helper matching under two lowerings; the stronger PR696 model receives no alphabet gain.",
-      "ready_to_integrate": false,
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient200-audit/packets/1081.json"
+        "research/community-efficient200-audit/packets/1081.json",
+        "research/community-efficient200-audit/checks/check-1081.json"
       ]
     },
     {
@@ -3693,19 +3700,22 @@
       "current_head": "82b99c7d12dac009d35636562df4c6c91e885409",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation.",
+      "integration_location": [
+        "research/dirty-prefix-monomial-audit"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
       "scope": "Sharp reserved-depth ideal dirty-commutator prefix coefficient bound; inherited rounded precision guard only, no altered primitive.",
-      "ready_to_integrate": false,
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient200-audit/packets/1085.json"
+        "research/community-efficient200-audit/packets/1085.json",
+        "research/community-efficient200-audit/checks/check-1085.json"
       ]
     },
     {
