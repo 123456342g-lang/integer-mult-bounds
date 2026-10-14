@@ -118,5 +118,45 @@
     "local_python": "3.14.7",
     "registered_python": "3.12",
     "registered_runner": "not available locally; package metadata check and direct replay are recorded separately."
+  },
+  "final_overlap": {
+    "at": "2026-10-14T14:30:50Z",
+    "coverage": {
+      "open_prs": 585,
+      "discussions": 565,
+      "complete_pagination": true,
+      "warnings": []
+    },
+    "terms": [
+      "dirty output anchor",
+      "two-sided compensation",
+      "shared bilinear output",
+      "dirty-anchor fanout",
+      "persistent-boundary"
+    ],
+    "exact_match": "The only exact dirty-anchor term match is this claim at Discussion #1167 comment 18925817; no other same-scope PR or claim appeared.",
+    "manually_reviewed_nearest_prs": [
+      {
+        "pr": 1872,
+        "head": "626ce207ec92a76f70a84843fe4ce3c39f67899d",
+        "difference": "clean scratch helper with inverse cleanup"
+      },
+      {
+        "pr": 1907,
+        "head": "49b870f7a64f5f414208c3a82d4483b9cc95f5b8",
+        "difference": "clean required-output anchor; this result permits arbitrary dirty outputs"
+      },
+      {
+        "pr": 1917,
+        "head": "ee4d821c233f1072e99a5557c7001cd1dc20fa11",
+        "difference": "cross-fed parity connector comparison"
+      },
+      {
+        "pr": 1930,
+        "head": "11cb2266f7e99279c440a301ea4b862587a9afa2",
+        "difference": "three-stage arbitrary-linear prefix chain"
+      }
+    ],
+    "limits": "Open PR titles/bodies and Discussion bodies/comments/replies plus top-level local records; no arbitrary code-diff or literature-completeness claim."
   }
 }
