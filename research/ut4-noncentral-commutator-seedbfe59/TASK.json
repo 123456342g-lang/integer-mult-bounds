@@ -104,8 +104,15 @@
   },
   "optimistic_budget": "Direct word costs eight formal unit calls. The target has natural-representation displacement rank two and any one call has displacement rank at most one, so the rank floor is two. A hypothetical q<=4 word would halve the formal direct count. No physical supplier, helper schedule, recursive children, frame transitions, copied-information price, hosting, restoration, precision, or interface is specified by this abstract alphabet; treating absent costs as zero is optimistic only and cannot support a kappa claim.",
   "required_observable_improvement": "An exact q<=4 endpoint in the full formal group algebra, followed by a separately admitted supplier and complete recursive/assembly cost. The finite q<=4 search found no endpoint.",
-  "claim_status": "Posted as Discussion #1759 at 2026-10-14T09:02:54Z; finding update with the PR link will follow after submission. Claim expiry is 2026-10-14T10:30:00Z.",
+  "claim_status": "Completed finding and handoff posted as Discussion comment 18920217 at 2026-10-14T09:07:24Z. Original claim was posted at 2026-10-14T09:02:54Z.",
   "claim_url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1759",
+  "claim_update_url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1759#discussioncomment-18920217",
+  "pull_request": {
+    "number": 1761,
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1761",
+    "status_at_handoff": "open",
+    "title": "Research: q<=4 barrier for a noncentral UT4 root pair"
+  },
   "overlap": {
     "searched_at": "2026-10-14T09:05:53Z",
     "coverage": {
@@ -129,7 +136,7 @@
       "1738": "UT3 third dirty register for D8 central commutator; updated 2026-10-14T08:27:41Z",
       "1740": "S4 four-register sharing for noncommuting 3-cycles; updated 2026-10-14T08:26:56Z",
       "1743": "R439 compensated terminal helper-star deferral; updated 2026-10-14T08:28:17Z",
-      "1759": "This run's bounded UT4 noncentral root-pair claim; posted 2026-10-14T09:02:54Z"
+      "1759": "This run's bounded UT4 noncentral root-pair claim; posted 2026-10-14T09:02:54Z and updated with FINDING/HANDOFF at 2026-10-14T09:07:24Z"
     },
     "warnings": [],
     "limits": "Search covered PR bodies and indexed Discussions plus direct relevant pages and local research notes. It did not inspect every code diff and is not a proof of novelty."

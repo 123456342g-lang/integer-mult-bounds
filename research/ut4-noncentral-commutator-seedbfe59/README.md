@@ -111,9 +111,9 @@ The live overlap refresh paginated all 434 open PRs and all 392 Discussions
 with no warnings. Direct checks of active claims #1738, #1740, and #1743 found
 different groups, targets, and mechanisms. The claim was kept local during
 the initial GraphQL rate limit, then posted after reset as
-[Discussion #1759](https://github.com/CrocSwap/integer-mult-bounds/discussions/1759);
-its finding update will carry the PR link. TASK.json records exact refresh
-timestamps, active heads, and limits.
+[Discussion #1759](https://github.com/CrocSwap/integer-mult-bounds/discussions/1759).
+The finding and handoff comment links this package's [PR #1761](https://github.com/CrocSwap/integer-mult-bounds/pull/1761).
+TASK.json records exact refresh timestamps, active heads, and limits.
 
 The current selected record is a maintainer-reviewed conditional finite
 construction, with kappa 836330098538459/500000000000000000. Its review is

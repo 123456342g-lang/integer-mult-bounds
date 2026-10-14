@@ -65,7 +65,14 @@ A GitHub claim could not be posted during the first rate-limit window, so the
 local card was used while the search continued. After the API reset, the
 refreshed overlap scan covered 434 open PRs and 392 Discussions with no
 warnings, and the claim was posted as Discussion #1759 at 09:02:54 UTC. Its
-expiry is 10:30 UTC; update it with the completed result and PR link.
+finding and handoff were posted at 09:07:24 UTC after opening PR #1761.
+
+## Handoff
+
+- PR #1761 is open: https://github.com/CrocSwap/integer-mult-bounds/pull/1761
+- Discussion finding update: https://github.com/CrocSwap/integer-mult-bounds/discussions/1759#discussioncomment-18920217
+- The q<=4 result is complete; q=5..7 and Python 3.12 hosted replay remain
+  open questions/validation obligations. No kappa or supplier claim is made.
 
 ## Expected evidence
 
