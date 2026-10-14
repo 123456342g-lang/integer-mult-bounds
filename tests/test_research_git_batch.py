@@ -1,6 +1,7 @@
 """Behavioral parity and cleanup checks for streamed Git provenance reads."""
 from contextlib import closing
 import importlib.util
+import io
 from pathlib import Path
 import subprocess
 import sys
@@ -70,6 +71,35 @@ class GitBatchTests(unittest.TestCase):
         self.assertEqual(list(M.git_source_rows(self.root,'HEAD',['empty'])),old)
         M.git(self.root,'add','empty');M.git(self.root,'-c','maintenance.auto=false','-c','gc.auto=0','commit','-qm','change')
         self.assertNotEqual(list(M.git_source_rows(self.root,'HEAD',['empty'])),old)
+
+    def fake_process(self, response, code=0):
+        class Process:
+            def __init__(self):
+                self.stdin=io.BytesIO();self.stdout=io.BytesIO(response)
+                self.stderr=io.BytesIO(b'injected reader failure');self.returncode=None
+            def __enter__(self):return self
+            def __exit__(self,*args):self.stdout.close();self.stderr.close()
+            def poll(self):return self.returncode
+            def wait(self,timeout=None):self.returncode=code;return code
+            def kill(self):self.returncode=-9
+        return Process()
+
+    def test_malformed_and_truncated_batch_responses_fail_closed(self):
+        oid=b'a'*40
+        for response in [b'',oid+b' blob invalid\n',oid+b' blob 3\nab',oid+b' blob 3\nabcX']:
+            with self.subTest(response=response):
+                child=self.fake_process(response)
+                with patch.object(M.subprocess,'Popen',return_value=child):
+                    with self.assertRaisesRegex(ValueError,'invalid Git source|truncated Git source'):
+                        list(M.git_source_rows(self.root,'HEAD',['empty']))
+                self.assertIsNotNone(child.poll())
+
+    def test_valid_payload_followed_by_nonzero_exit_rejects(self):
+        child=self.fake_process(b'a'*40+b' blob 0\n\n',code=7)
+        with patch.object(M.subprocess,'Popen',return_value=child):
+            with self.assertRaisesRegex(ValueError,'Git source reader failed'):
+                list(M.git_source_rows(self.root,'HEAD',['empty']))
+        self.assertEqual(child.poll(),7)
 
 
 if __name__=='__main__':unittest.main()
