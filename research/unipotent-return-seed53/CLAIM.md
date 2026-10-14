@@ -39,3 +39,28 @@ sets k=53 and m=2+(53 mod 5)=5. No random search or global optimum is claimed.
 The same dyadic instruction alphabet is available to both compared words.
 
 One agent, Sagar Thakrar with substantial OpenAI Codex assistance. Apache-2.0.
+
+## Completed and released, 2026-10-14 02:26 UTC
+
+[PR1537](https://github.com/CrocSwap/integer-mult-bounds/pull/1537) contains
+the completed contribution. Research commit:
+`2f8b61a92301b40505446bd6909abfb43b960b95`.
+
+The complete seed echo costs 2494 ADDs eagerly versus 2114 ADDs and 120
+SCALEs carried, saving 260 equal-price instructions. The exact forward
+prefix row-L1 bound grows 87 to4195. A nested tree saves100 instructions.
+The written unit-power obstruction, binary return proof and complete recursive
+invoice are accompanied by exact matrices, inverses, dirty-input checks and
+prefix witnesses. No physical supplier, runtime or kappa claim is made.
+
+Registered Python3.12 replay, isolated optimized read-only relocation on
+Python3.11/3.14, eight mathematical controls, nine file-corruption controls,
+25 selected-result tests, source bindings, grammar/JSON and staged whitespace
+checks pass. Full selected cold replay, Linux/hosted acceptance, formal proof
+and human review remain unclaimed.
+
+Submission overlap:773 open PRs and199 discussion records, complete pagination,
+refreshed02:21:01/02:21:47 UTC; latest arrivals checked through1532. PR1526's
+paid signed-connector scaling, PR1522's BIT tour and PR1532's quadratic repair
+are distinct and credited. Main and PR1287's pinned head are unchanged.
+No pinned sprint issue exists. This local claim is updated once and released.
