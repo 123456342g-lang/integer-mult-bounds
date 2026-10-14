@@ -710,6 +710,21 @@ The following contributions are retained at their original heads with source not
 
 The six pending contributions are credited in the pilot ledger; pending review is not rejection. Predecessor attribution, including R420, K492, PR628 and PR673 lineage, remains in each package.
 
+## Efficient eighth 100-PR round: #1729–#1862
+
+Original contributor commits and predecessor notices are preserved. These are scoped research and verification contributions, with no selected κ change. See the [review and exact-head evidence](docs/research/community-efficient800-review.md).
+
+- **jmbarrancoml** — [#1729](https://github.com/CrocSwap/integer-mult-bounds/pull/1729), [#1757](https://github.com/CrocSwap/integer-mult-bounds/pull/1757).
+- **1337isnot1337** — [#1732](https://github.com/CrocSwap/integer-mult-bounds/pull/1732), [#1733](https://github.com/CrocSwap/integer-mult-bounds/pull/1733), [#1734](https://github.com/CrocSwap/integer-mult-bounds/pull/1734), [#1739](https://github.com/CrocSwap/integer-mult-bounds/pull/1739), [#1741](https://github.com/CrocSwap/integer-mult-bounds/pull/1741), [#1742](https://github.com/CrocSwap/integer-mult-bounds/pull/1742), [#1746](https://github.com/CrocSwap/integer-mult-bounds/pull/1746), [#1749](https://github.com/CrocSwap/integer-mult-bounds/pull/1749), [#1756](https://github.com/CrocSwap/integer-mult-bounds/pull/1756).
+- **rtyu193-rgb** — [#1735](https://github.com/CrocSwap/integer-mult-bounds/pull/1735).
+- **Tuafo** — [#1744](https://github.com/CrocSwap/integer-mult-bounds/pull/1744).
+- **RossRichardson** — [#1747](https://github.com/CrocSwap/integer-mult-bounds/pull/1747).
+- **ToikY** — [#1748](https://github.com/CrocSwap/integer-mult-bounds/pull/1748).
+- **VictorLiwentao** — [#1750](https://github.com/CrocSwap/integer-mult-bounds/pull/1750).
+- **thakrarsagar** — [#1752](https://github.com/CrocSwap/integer-mult-bounds/pull/1752).
+
+Pending contributors and their obligations are listed in the review. A hold is not a rejection.
+
 ## Efficient seventh 100-PR round: #1601–#1726
 
 Original contributor commits and predecessor notices are preserved. These are scoped research and verification contributions, with no selected κ change. See the [review and exact-head evidence](docs/research/community-efficient700-review.md).

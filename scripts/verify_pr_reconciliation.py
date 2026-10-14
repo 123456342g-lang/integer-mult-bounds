@@ -177,7 +177,8 @@ def main():
                         ROOT / 'research/community-efficient400-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-efficient500-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-efficient600-audit/DISPOSITIONS.json',
-                        ROOT / 'research/community-efficient700-audit/DISPOSITIONS.json'):
+                        ROOT / 'research/community-efficient700-audit/DISPOSITIONS.json',
+                        ROOT / 'research/community-efficient800-audit/DISPOSITIONS.json'):
         if not family_path.exists():
             continue
         family = json.loads(family_path.read_text())
