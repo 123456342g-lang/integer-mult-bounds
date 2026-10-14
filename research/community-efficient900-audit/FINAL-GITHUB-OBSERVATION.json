@@ -70,10 +70,12 @@
   "p1873": {
     "number": 1873,
     "headRefOid": "08f1eaf5946f57de0e126e82b5e0432564cca4e0",
-    "state": "OPEN",
+    "state": "MERGED",
     "isDraft": false,
-    "mergedAt": null,
-    "mergeCommit": null
+    "mergedAt": "2026-10-14T16:57:12Z",
+    "mergeCommit": {
+      "oid": "6aff82d6d346fb2238d061ef45066b82d48a9b67"
+    }
   },
   "p1874": {
     "number": 1874,
@@ -102,10 +104,12 @@
   "p1877": {
     "number": 1877,
     "headRefOid": "6d455d2d71eb35ecf8e562711e5f719b994fe3f3",
-    "state": "OPEN",
+    "state": "MERGED",
     "isDraft": false,
-    "mergedAt": null,
-    "mergeCommit": null
+    "mergedAt": "2026-10-14T16:57:12Z",
+    "mergeCommit": {
+      "oid": "6aff82d6d346fb2238d061ef45066b82d48a9b67"
+    }
   },
   "p1878": {
     "number": 1878,
@@ -120,10 +124,12 @@
   "p1880": {
     "number": 1880,
     "headRefOid": "f4e150e4222ce4b4418e66874c6363c43987c8d1",
-    "state": "OPEN",
+    "state": "MERGED",
     "isDraft": false,
-    "mergedAt": null,
-    "mergeCommit": null
+    "mergedAt": "2026-10-14T17:00:07Z",
+    "mergeCommit": {
+      "oid": "b6135f9fe8c0783f22bd87992a080575f2943511"
+    }
   },
   "p1881": {
     "number": 1881,
@@ -146,18 +152,22 @@
   "p1887": {
     "number": 1887,
     "headRefOid": "025d4fcd87f1b6ea01aa1c52721f8f46389aacce",
-    "state": "OPEN",
+    "state": "MERGED",
     "isDraft": false,
-    "mergedAt": null,
-    "mergeCommit": null
+    "mergedAt": "2026-10-14T16:57:12Z",
+    "mergeCommit": {
+      "oid": "6aff82d6d346fb2238d061ef45066b82d48a9b67"
+    }
   },
   "p1888": {
     "number": 1888,
     "headRefOid": "9c0fd1d20d33353018a508fbc84e4189525c593c",
-    "state": "OPEN",
+    "state": "MERGED",
     "isDraft": false,
-    "mergedAt": null,
-    "mergeCommit": null
+    "mergedAt": "2026-10-14T16:57:11Z",
+    "mergeCommit": {
+      "oid": "6aff82d6d346fb2238d061ef45066b82d48a9b67"
+    }
   },
   "p1889": {
     "number": 1889,
@@ -172,42 +182,52 @@
   "p1891": {
     "number": 1891,
     "headRefOid": "8b93e9e1b60dc73768ddf4006fcff67708a5453b",
-    "state": "OPEN",
+    "state": "MERGED",
     "isDraft": false,
-    "mergedAt": null,
-    "mergeCommit": null
+    "mergedAt": "2026-10-14T17:00:06Z",
+    "mergeCommit": {
+      "oid": "b6135f9fe8c0783f22bd87992a080575f2943511"
+    }
   },
   "p1892": {
     "number": 1892,
     "headRefOid": "bcc1b9a37460a15fb4aa611957ed9f6842eb6da2",
-    "state": "OPEN",
+    "state": "MERGED",
     "isDraft": false,
-    "mergedAt": null,
-    "mergeCommit": null
+    "mergedAt": "2026-10-14T16:57:11Z",
+    "mergeCommit": {
+      "oid": "6aff82d6d346fb2238d061ef45066b82d48a9b67"
+    }
   },
   "p1893": {
     "number": 1893,
     "headRefOid": "86f11f760119c4fb398d3824a3366a2fe81c6595",
-    "state": "OPEN",
+    "state": "MERGED",
     "isDraft": false,
-    "mergedAt": null,
-    "mergeCommit": null
+    "mergedAt": "2026-10-14T16:57:11Z",
+    "mergeCommit": {
+      "oid": "6aff82d6d346fb2238d061ef45066b82d48a9b67"
+    }
   },
   "p1894": {
     "number": 1894,
     "headRefOid": "cd4d55afc5fe55369f08e67558939375ca79745f",
-    "state": "OPEN",
+    "state": "MERGED",
     "isDraft": false,
-    "mergedAt": null,
-    "mergeCommit": null
+    "mergedAt": "2026-10-14T16:57:11Z",
+    "mergeCommit": {
+      "oid": "6aff82d6d346fb2238d061ef45066b82d48a9b67"
+    }
   },
   "p1895": {
     "number": 1895,
     "headRefOid": "14cf51a62d64b0e97785c701ee84babfce01e2c5",
-    "state": "OPEN",
+    "state": "MERGED",
     "isDraft": false,
-    "mergedAt": null,
-    "mergeCommit": null
+    "mergedAt": "2026-10-14T16:57:12Z",
+    "mergeCommit": {
+      "oid": "6aff82d6d346fb2238d061ef45066b82d48a9b67"
+    }
   },
   "p1897": {
     "number": 1897,
@@ -276,10 +296,12 @@
   "p1908": {
     "number": 1908,
     "headRefOid": "e54fcebd99d888b6fc4acb20fde81002e3ba024e",
-    "state": "OPEN",
+    "state": "MERGED",
     "isDraft": false,
-    "mergedAt": null,
-    "mergeCommit": null
+    "mergedAt": "2026-10-14T16:57:11Z",
+    "mergeCommit": {
+      "oid": "6aff82d6d346fb2238d061ef45066b82d48a9b67"
+    }
   },
   "p1909": {
     "number": 1909,
@@ -300,10 +322,12 @@
   "p1911": {
     "number": 1911,
     "headRefOid": "712593f82739203639d0a169b88c6bcac6f0590c",
-    "state": "OPEN",
+    "state": "MERGED",
     "isDraft": false,
-    "mergedAt": null,
-    "mergeCommit": null
+    "mergedAt": "2026-10-14T16:57:11Z",
+    "mergeCommit": {
+      "oid": "6aff82d6d346fb2238d061ef45066b82d48a9b67"
+    }
   },
   "p1912": {
     "number": 1912,
@@ -548,10 +572,12 @@
   "p1949": {
     "number": 1949,
     "headRefOid": "be198c23d6b21c67ee9e6714dd04338c5a279cc3",
-    "state": "OPEN",
+    "state": "MERGED",
     "isDraft": false,
-    "mergedAt": null,
-    "mergeCommit": null
+    "mergedAt": "2026-10-14T16:57:11Z",
+    "mergeCommit": {
+      "oid": "6aff82d6d346fb2238d061ef45066b82d48a9b67"
+    }
   },
   "p1951": {
     "number": 1951,

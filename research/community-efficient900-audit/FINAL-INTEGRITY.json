@@ -1,8 +1,24 @@
 {
-  "accepted": 9,
-  "pending": 59,
-  "changed_files_checked": 66,
-  "shared_additive_resolutions": [],
+  "accepted": 22,
+  "pending": 46,
+  "changed_files_checked": 166,
+  "shared_additive_resolutions": [
+    {
+      "number": 1891,
+      "path": "scripts/research_package.py",
+      "source_blob": "b241fdfdc3cfe0373e6b3a917742ac9a8f7c8a59",
+      "final_blob": "6733ec2f5700e6602d60dc95938c1ea1854980f0",
+      "resolution": {
+        "number": 1891,
+        "path": "scripts/research_package.py",
+        "source_blob": "b241fdfdc3cfe0373e6b3a917742ac9a8f7c8a59",
+        "integrated_blob": "6733ec2f5700e6602d60dc95938c1ea1854980f0",
+        "added_lines": [],
+        "combined_receipt": "combined-tooling.json",
+        "scope": "Three-way composition retains current git_blobs batching and adds reviewed canonical-path validation. Combined targeted suite passed."
+      }
+    }
+  ],
   "selected_sha256": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32",
   "selected_unchanged": true,
   "historical_makefile_prefix_preserved": true,

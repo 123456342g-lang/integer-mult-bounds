@@ -512,20 +512,24 @@
       },
       "reviewed_head": "f4e150e4222ce4b4418e66874c6363c43987c8d1",
       "current_head": "f4e150e4222ce4b4418e66874c6363c43987c8d1",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/joint-dual-replay-fast"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "b6135f9fe8c0783f22bd87992a080575f2943511",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1880"
+      },
       "scope": "Opt-in containment-mask adapter preserves both frozen full-basis replay orientations and receipts; full historical16-test suite,24 mutation cases, exhaustive small shapes and assertion-disabled entry rejection pass. Missing historical PR58 fixture restored from exact head. Benchmark speedup remains author-measured, not selected-supplier adoption.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1880.json",
@@ -743,22 +747,26 @@
       },
       "reviewed_head": "8b93e9e1b60dc73768ddf4006fcff67708a5453b",
       "current_head": "8b93e9e1b60dc73768ddf4006fcff67708a5453b",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "docs/research",
         "scripts/research_package.py",
         "tests/test_research_input_paths.py"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "b6135f9fe8c0783f22bd87992a080575f2943511",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1891"
+      },
       "scope": "Canonical relative-path validation prevents declared dependency aliases from silently missing Git change invalidation. Five regression tests and current-main replay-selection/onboarding/Git-batching suites pass. Three-way composition explicitly preserves the newer git_blobs implementation; integrated script bound by combined receipt.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1891.json",
