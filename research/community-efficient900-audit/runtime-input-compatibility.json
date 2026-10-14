@@ -1,0 +1,531 @@
+{
+  "numbers": [
+    1863,
+    1864,
+    1866,
+    1867,
+    1870,
+    1872,
+    1873,
+    1877,
+    1878,
+    1880,
+    1881,
+    1887,
+    1888,
+    1889,
+    1891,
+    1892,
+    1893,
+    1894,
+    1895,
+    1907,
+    1908,
+    1909,
+    1911,
+    1914,
+    1915,
+    1917,
+    1918,
+    1938,
+    1945,
+    1949
+  ],
+  "unique_inputs": 54,
+  "mismatches": [],
+  "inputs": [
+    {
+      "number": 1863,
+      "path": "certificates/selected-result.json",
+      "expected": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32",
+      "actual": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32"
+    },
+    {
+      "number": 1864,
+      "path": "certificates/selected-result.json",
+      "expected": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32",
+      "actual": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32"
+    },
+    {
+      "number": 1864,
+      "path": "research/community-frontier1094-audit/SELECTED-SOURCE.json",
+      "expected": "79b3de5db3dbcb9829789ba58e9e45758926031e2a7d80667a08429d369be53b",
+      "actual": "79b3de5db3dbcb9829789ba58e9e45758926031e2a7d80667a08429d369be53b"
+    },
+    {
+      "number": 1864,
+      "path": "scripts/verify_selected_result.py",
+      "expected": "d7fd929726b326aeeaf0a3996475adec88eee9aac09ae0bebeeaa0bc1fc8f199",
+      "actual": "d7fd929726b326aeeaf0a3996475adec88eee9aac09ae0bebeeaa0bc1fc8f199"
+    },
+    {
+      "number": 1866,
+      "path": "research/community-frontier1094-audit/ASSEMBLY.json",
+      "expected": "1122cb3a575f8c788345fc1bf4c108ac7c3250fb81a5988671f5eb04b3ab3045",
+      "actual": "1122cb3a575f8c788345fc1bf4c108ac7c3250fb81a5988671f5eb04b3ab3045"
+    },
+    {
+      "number": 1866,
+      "path": "research/community-frontier1094-audit/INDEPENDENT1094.json",
+      "expected": "301fb8a0e4ab7e3c383ff974c54c08178283b2a3453c5282757f692a3c7a4bfd",
+      "actual": "301fb8a0e4ab7e3c383ff974c54c08178283b2a3453c5282757f692a3c7a4bfd"
+    },
+    {
+      "number": 1866,
+      "path": "research/community-frontier1094-audit/SELECTED-SOURCE.json",
+      "expected": "79b3de5db3dbcb9829789ba58e9e45758926031e2a7d80667a08429d369be53b",
+      "actual": "79b3de5db3dbcb9829789ba58e9e45758926031e2a7d80667a08429d369be53b"
+    },
+    {
+      "number": 1866,
+      "path": "research/complex-local-word-ceiling/RESULT.json",
+      "expected": "d91d6c46509875abf1f61de67c2609656d3dc685451299f83caa6f922493692d",
+      "actual": "d91d6c46509875abf1f61de67c2609656d3dc685451299f83caa6f922493692d"
+    },
+    {
+      "number": 1866,
+      "path": "research/complex-local-word-ceiling/ceiling.py",
+      "expected": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc",
+      "actual": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc"
+    },
+    {
+      "number": 1866,
+      "path": "research/complex-t16-rare-pattern-exchanges/upstream1087.tar.gz",
+      "expected": "d4acf04daef85d4514f80ec5fcd2492d0c60e5d6c49fa71b3e6523f8db2dea86",
+      "actual": "d4acf04daef85d4514f80ec5fcd2492d0c60e5d6c49fa71b3e6523f8db2dea86"
+    },
+    {
+      "number": 1870,
+      "path": "research/bit-dihedral-commutator/README.md",
+      "expected": "4f3f9df6d6d96a26ccb0fcd2ef947cce5d53b0d992da22e866f1e025be4c0492",
+      "actual": "4f3f9df6d6d96a26ccb0fcd2ef947cce5d53b0d992da22e866f1e025be4c0492"
+    },
+    {
+      "number": 1872,
+      "path": "research/community-frontier1094-audit/SELECTED-SOURCE.json",
+      "expected": "79b3de5db3dbcb9829789ba58e9e45758926031e2a7d80667a08429d369be53b",
+      "actual": "79b3de5db3dbcb9829789ba58e9e45758926031e2a7d80667a08429d369be53b"
+    },
+    {
+      "number": 1872,
+      "path": "research/complex-local-word-ceiling/RESULT.json",
+      "expected": "d91d6c46509875abf1f61de67c2609656d3dc685451299f83caa6f922493692d",
+      "actual": "d91d6c46509875abf1f61de67c2609656d3dc685451299f83caa6f922493692d"
+    },
+    {
+      "number": 1872,
+      "path": "research/complex-local-word-ceiling/ceiling.py",
+      "expected": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc",
+      "actual": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc"
+    },
+    {
+      "number": 1872,
+      "path": "research/complex-t16-rare-pattern-exchanges/upstream1087.tar.gz",
+      "expected": "d4acf04daef85d4514f80ec5fcd2492d0c60e5d6c49fa71b3e6523f8db2dea86",
+      "actual": "d4acf04daef85d4514f80ec5fcd2492d0c60e5d6c49fa71b3e6523f8db2dea86"
+    },
+    {
+      "number": 1873,
+      "path": "research/community-frontier1094-audit/ASSEMBLY.json",
+      "expected": "1122cb3a575f8c788345fc1bf4c108ac7c3250fb81a5988671f5eb04b3ab3045",
+      "actual": "1122cb3a575f8c788345fc1bf4c108ac7c3250fb81a5988671f5eb04b3ab3045"
+    },
+    {
+      "number": 1873,
+      "path": "research/complex-k492-owner-repair/vendor/multicold/engines/base_two_moment.py",
+      "expected": "aee70c242a2f1d225528fabe2002e1564d1dc884797c07d28a831c7878ee9098",
+      "actual": "aee70c242a2f1d225528fabe2002e1564d1dc884797c07d28a831c7878ee9098"
+    },
+    {
+      "number": 1873,
+      "path": "research/complex-k492-owner-repair/vendor/multicold/engines/moment.py",
+      "expected": "81cbc864e106418fc7854322746f72180cb8110ff39f74450a3b8d55a82c1482",
+      "actual": "81cbc864e106418fc7854322746f72180cb8110ff39f74450a3b8d55a82c1482"
+    },
+    {
+      "number": 1873,
+      "path": "research/complex-local-word-ceiling/RESULT.json",
+      "expected": "d91d6c46509875abf1f61de67c2609656d3dc685451299f83caa6f922493692d",
+      "actual": "d91d6c46509875abf1f61de67c2609656d3dc685451299f83caa6f922493692d"
+    },
+    {
+      "number": 1873,
+      "path": "research/complex-t16-rare-pattern-exchanges/data/OWNERS.json.gz",
+      "expected": "87902c528dfab7d503dcf8a784260e3ab6fb7424c418a1820f7261f25be7b6bc",
+      "actual": "87902c528dfab7d503dcf8a784260e3ab6fb7424c418a1820f7261f25be7b6bc"
+    },
+    {
+      "number": 1873,
+      "path": "research/complex-t16-rare-pattern-exchanges/data/PLAN.json",
+      "expected": "7bd786ba8e66408f02aa9ef446eaf20c1bfe981ea2e4dd1e5a929f0aa7767bc0",
+      "actual": "7bd786ba8e66408f02aa9ef446eaf20c1bfe981ea2e4dd1e5a929f0aa7767bc0"
+    },
+    {
+      "number": 1873,
+      "path": "research/e8-bit-p111-tuned/tune/EXPECTED.json",
+      "expected": "b9f0e5ca038abe837b0007c8fe006f366a6f02009244ac57705a8a200e2301f4",
+      "actual": "b9f0e5ca038abe837b0007c8fe006f366a6f02009244ac57705a8a200e2301f4"
+    },
+    {
+      "number": 1878,
+      "path": "docs/research/bottleneck-brief.md",
+      "expected": "a5e316569672dc88276647d1a7ae91df150b944e1376a975c67af246d94d67c8",
+      "actual": "a5e316569672dc88276647d1a7ae91df150b944e1376a975c67af246d94d67c8"
+    },
+    {
+      "number": 1878,
+      "path": "research/complex-local-word-ceiling/README.md",
+      "expected": "b60be039cb0e03e064a27407d0bce9e58908d793da5ee405c876de5aebfa5f81",
+      "actual": "b60be039cb0e03e064a27407d0bce9e58908d793da5ee405c876de5aebfa5f81"
+    },
+    {
+      "number": 1880,
+      "path": "certificates/joint-dual-compiler.json",
+      "expected": "516c4d85158553dabd0a98216a064b2a7397957a9d5dd0df1d6e5aec53a4e805",
+      "actual": "516c4d85158553dabd0a98216a064b2a7397957a9d5dd0df1d6e5aec53a4e805"
+    },
+    {
+      "number": 1880,
+      "path": "certificates/joint-dual-transitions-23.json",
+      "expected": "9ee68e542768b7a8802f8e1fc8a61b17c72c319f6c1d70c69a086c811cfec7fc",
+      "actual": "9ee68e542768b7a8802f8e1fc8a61b17c72c319f6c1d70c69a086c811cfec7fc"
+    },
+    {
+      "number": 1880,
+      "path": "certificates/joint-dual-transitions-25.json",
+      "expected": "f858c3f71d563c14013c9ae4cc10fce2b9f227da38e468a392c6890613444c8d",
+      "actual": "f858c3f71d563c14013c9ae4cc10fce2b9f227da38e468a392c6890613444c8d"
+    },
+    {
+      "number": 1880,
+      "path": "certificates/joint-dual-word-23.json.gz",
+      "expected": "634da1cb39634be15c6d4070132c6bdf4f5a927331cac3b4f13dc995dd799b6b",
+      "actual": "634da1cb39634be15c6d4070132c6bdf4f5a927331cac3b4f13dc995dd799b6b"
+    },
+    {
+      "number": 1880,
+      "path": "certificates/joint-dual-word-25.json.gz",
+      "expected": "dd2223d7ee0b91c4445f5acd0b7cad945f56f4e16456b6818f53ddef64a0cb16",
+      "actual": "dd2223d7ee0b91c4445f5acd0b7cad945f56f4e16456b6818f53ddef64a0cb16"
+    },
+    {
+      "number": 1880,
+      "path": "research/joint-dual/SOURCE.json",
+      "expected": "330fac72bad557ef4ae999298121c7d63ce237e23bb3184222c9bd6b54264687",
+      "actual": "330fac72bad557ef4ae999298121c7d63ce237e23bb3184222c9bd6b54264687"
+    },
+    {
+      "number": 1880,
+      "path": "scripts/experiments/binary_frame_math.py",
+      "expected": "1f96e8aafc8ae89f8eeec5d03800131d93d58e01bf8a7fca8feb03702d1740d0",
+      "actual": "1f96e8aafc8ae89f8eeec5d03800131d93d58e01bf8a7fca8feb03702d1740d0"
+    },
+    {
+      "number": 1880,
+      "path": "scripts/experiments/binary_frame_profile_prepare.py",
+      "expected": "16dea3d3ef3dc90db928ed3e35d002f6926d2e7388da4766fc2fd725550f739e",
+      "actual": "16dea3d3ef3dc90db928ed3e35d002f6926d2e7388da4766fc2fd725550f739e"
+    },
+    {
+      "number": 1880,
+      "path": "scripts/experiments/binary_frame_replay.py",
+      "expected": "1a572dbb33faba6695b3293768a7e61392d11cb4c2d5f708eedcd2cb95d0aff9",
+      "actual": "1a572dbb33faba6695b3293768a7e61392d11cb4c2d5f708eedcd2cb95d0aff9"
+    },
+    {
+      "number": 1880,
+      "path": "tests/test_joint_reclaim.py",
+      "expected": "c4e2817bf6e699f462aa3c589ee45e24ab0dcad6bcdb6152ca2a1e16ac7bffeb",
+      "actual": "c4e2817bf6e699f462aa3c589ee45e24ab0dcad6bcdb6152ca2a1e16ac7bffeb"
+    },
+    {
+      "number": 1887,
+      "path": "research/universal-connector-boundary/CERTIFICATE.json",
+      "expected": "e733746ba3e5151c829b4e8728bfff5ae3ed24d8d203eb77c735d20758e8266a",
+      "actual": "e733746ba3e5151c829b4e8728bfff5ae3ed24d8d203eb77c735d20758e8266a"
+    },
+    {
+      "number": 1887,
+      "path": "research/universal-connector-boundary/README.md",
+      "expected": "23415f7829ab8d80a783142f10f7d31abbce84579362769984680af3df954476",
+      "actual": "23415f7829ab8d80a783142f10f7d31abbce84579362769984680af3df954476"
+    },
+    {
+      "number": 1887,
+      "path": "research/universal-connector-boundary/NOTICE.md",
+      "expected": "1172648a1883827399d5103a9916deaa4314e4ee2c28653c183890f6bd5a7a17",
+      "actual": "1172648a1883827399d5103a9916deaa4314e4ee2c28653c183890f6bd5a7a17"
+    },
+    {
+      "number": 1887,
+      "path": "research/universal-connector-boundary/verify.py",
+      "expected": "e4fa4700f9e1ae6ca09c3c76ebc569e8361b89b699425a67839d999d8812e42d",
+      "actual": "e4fa4700f9e1ae6ca09c3c76ebc569e8361b89b699425a67839d999d8812e42d"
+    },
+    {
+      "number": 1888,
+      "path": "research/community-frontier1094-audit/ASSEMBLY.json",
+      "expected": "1122cb3a575f8c788345fc1bf4c108ac7c3250fb81a5988671f5eb04b3ab3045",
+      "actual": "1122cb3a575f8c788345fc1bf4c108ac7c3250fb81a5988671f5eb04b3ab3045"
+    },
+    {
+      "number": 1888,
+      "path": "research/e8-bit-p111-tuned/tune/EXPECTED.json",
+      "expected": "b9f0e5ca038abe837b0007c8fe006f366a6f02009244ac57705a8a200e2301f4",
+      "actual": "b9f0e5ca038abe837b0007c8fe006f366a6f02009244ac57705a8a200e2301f4"
+    },
+    {
+      "number": 1889,
+      "path": "research/community-frontier1094-audit/selected-replay.tar.gz",
+      "expected": "f1da80610bf33c58527f18ad63b4350d0b864e1d4486141ee17ac9bed4d529d6",
+      "actual": "f1da80610bf33c58527f18ad63b4350d0b864e1d4486141ee17ac9bed4d529d6"
+    },
+    {
+      "number": 1889,
+      "path": "research/complex-rank8-decoder-rigidity/PROOF.md",
+      "expected": "bccab452803cb0094685c298fe4fba5ceeddf9d6158a6af0b584712391db14c9",
+      "actual": "bccab452803cb0094685c298fe4fba5ceeddf9d6158a6af0b584712391db14c9"
+    },
+    {
+      "number": 1889,
+      "path": "research/split-centres-global/proofs/INHERITED-COMPLEX-GEOMETRY.txt",
+      "expected": "c1ff55536594222a8d2a30bc0e0956959774e1be2d5420b7838ad553ee556df2",
+      "actual": "c1ff55536594222a8d2a30bc0e0956959774e1be2d5420b7838ad553ee556df2"
+    },
+    {
+      "number": 1893,
+      "path": "research/complex-local-word-ceiling/RESULT.json",
+      "expected": "d91d6c46509875abf1f61de67c2609656d3dc685451299f83caa6f922493692d",
+      "actual": "d91d6c46509875abf1f61de67c2609656d3dc685451299f83caa6f922493692d"
+    },
+    {
+      "number": 1907,
+      "path": "research/complex-local-word-ceiling/ceiling.py",
+      "expected": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc",
+      "actual": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc"
+    },
+    {
+      "number": 1908,
+      "path": "docs/research/community-batch1099-review.md",
+      "expected": "7e76d2c38e5fce30587835b7251df1430488ae4dd372611ef69a3f03f476b6cb",
+      "actual": "7e76d2c38e5fce30587835b7251df1430488ae4dd372611ef69a3f03f476b6cb"
+    },
+    {
+      "number": 1908,
+      "path": "research/dirty-prefix-precision/PROOF.md",
+      "expected": "a4ee1b8a0175048948272141c675a38625fda577770b9382af4d3cf328355e55",
+      "actual": "a4ee1b8a0175048948272141c675a38625fda577770b9382af4d3cf328355e55"
+    },
+    {
+      "number": 1908,
+      "path": "research/dirty-prefix-precision/vendor/pr628/NOTICE.md",
+      "expected": "abeacf1ad1491d5797cfcf1f3832799bbf3b24b99597229d7bc884059a51ec68",
+      "actual": "abeacf1ad1491d5797cfcf1f3832799bbf3b24b99597229d7bc884059a51ec68"
+    },
+    {
+      "number": 1908,
+      "path": "research/dirty-prefix-precision/vendor/pr628/check.py",
+      "expected": "a3e46b556894d71a1c83bbbac01c50c1a541285fc9422a3567d5eb1d1ee86e7d",
+      "actual": "a3e46b556894d71a1c83bbbac01c50c1a541285fc9422a3567d5eb1d1ee86e7d"
+    },
+    {
+      "number": 1908,
+      "path": "research/dirty-prefix-precision/vendor/pr628/dirty.py",
+      "expected": "09e7f41141594e6540828330d27be27c083ee6569660ae42c0cd519b09fc8d21",
+      "actual": "09e7f41141594e6540828330d27be27c083ee6569660ae42c0cd519b09fc8d21"
+    },
+    {
+      "number": 1908,
+      "path": "research/dirty-prefix-precision/vendor/pr628/interval_kernel.py",
+      "expected": "9b7bb24640a9a7d3f83c7951dfef483ec933db4c50de6c0130b85f450eeddfbe",
+      "actual": "9b7bb24640a9a7d3f83c7951dfef483ec933db4c50de6c0130b85f450eeddfbe"
+    },
+    {
+      "number": 1908,
+      "path": "research/dirty-prefix-precision/vendor/pr628/scan.py",
+      "expected": "1a9c01ca1a29a9be1e756858161202621db29d5d332a4266b4017a9502a50d7e",
+      "actual": "1a9c01ca1a29a9be1e756858161202621db29d5d332a4266b4017a9502a50d7e"
+    },
+    {
+      "number": 1908,
+      "path": "research/dirty-prefix-precision/vendor/pr628/weighted.py",
+      "expected": "8b0f93d131a30e64eb0ccd893779daffea79c0c00f1d2a30a91d23eb2bf0bff5",
+      "actual": "8b0f93d131a30e64eb0ccd893779daffea79c0c00f1d2a30a91d23eb2bf0bff5"
+    },
+    {
+      "number": 1908,
+      "path": "research/mixed-precision-inverse-boundary/README.md",
+      "expected": "a7155436e91b6ae0cb551d11e478ce0fb2cec370a0037cdfda1c34de362707a5",
+      "actual": "a7155436e91b6ae0cb551d11e478ce0fb2cec370a0037cdfda1c34de362707a5"
+    },
+    {
+      "number": 1909,
+      "path": "research/complex-local-word-ceiling/README.md",
+      "expected": "b60be039cb0e03e064a27407d0bce9e58908d793da5ee405c876de5aebfa5f81",
+      "actual": "b60be039cb0e03e064a27407d0bce9e58908d793da5ee405c876de5aebfa5f81"
+    },
+    {
+      "number": 1909,
+      "path": "research/complex-rank8-decoder-rigidity/PROOF.md",
+      "expected": "bccab452803cb0094685c298fe4fba5ceeddf9d6158a6af0b584712391db14c9",
+      "actual": "bccab452803cb0094685c298fe4fba5ceeddf9d6158a6af0b584712391db14c9"
+    },
+    {
+      "number": 1909,
+      "path": "research/masked-root-star-assembly/PROOF.md",
+      "expected": "6cd0a6df96a418b524623e7e39c863af7709a18c4ded453a6a077bcd5ade92a2",
+      "actual": "6cd0a6df96a418b524623e7e39c863af7709a18c4ded453a6a077bcd5ade92a2"
+    },
+    {
+      "number": 1911,
+      "path": "research/binary-affine-register-bound/README.md",
+      "expected": "7951868efdf35fdb2aacdd302ca825cbde0586a5fae6df23aee78e29f30c332a",
+      "actual": "7951868efdf35fdb2aacdd302ca825cbde0586a5fae6df23aee78e29f30c332a"
+    },
+    {
+      "number": 1911,
+      "path": "research/bit-dihedral-commutator/README.md",
+      "expected": "4f3f9df6d6d96a26ccb0fcd2ef947cce5d53b0d992da22e866f1e025be4c0492",
+      "actual": "4f3f9df6d6d96a26ccb0fcd2ef947cce5d53b0d992da22e866f1e025be4c0492"
+    },
+    {
+      "number": 1911,
+      "path": "research/bit-three-register-lower-bound/README.md",
+      "expected": "c12b33ef388deece0cbf891505a2ce2c0779a0c3a6cf1f0f7f7039bab59cbebd",
+      "actual": "c12b33ef388deece0cbf891505a2ce2c0779a0c3a6cf1f0f7f7039bab59cbebd"
+    },
+    {
+      "number": 1914,
+      "path": "research/community-frontier1094-audit/ASSEMBLY.json",
+      "expected": "1122cb3a575f8c788345fc1bf4c108ac7c3250fb81a5988671f5eb04b3ab3045",
+      "actual": "1122cb3a575f8c788345fc1bf4c108ac7c3250fb81a5988671f5eb04b3ab3045"
+    },
+    {
+      "number": 1914,
+      "path": "research/community-frontier1094-audit/REPLAY.json",
+      "expected": "ce0678fa7abaab221de74baeace0c6696d5ea23a36719a58cff230215a06aae7",
+      "actual": "ce0678fa7abaab221de74baeace0c6696d5ea23a36719a58cff230215a06aae7"
+    },
+    {
+      "number": 1914,
+      "path": "research/community-frontier1094-audit/SELECTED-SOURCE.json",
+      "expected": "79b3de5db3dbcb9829789ba58e9e45758926031e2a7d80667a08429d369be53b",
+      "actual": "79b3de5db3dbcb9829789ba58e9e45758926031e2a7d80667a08429d369be53b"
+    },
+    {
+      "number": 1914,
+      "path": "research/complex-t16-rare-pattern-exchanges/data/OWNERS.json.gz",
+      "expected": "87902c528dfab7d503dcf8a784260e3ab6fb7424c418a1820f7261f25be7b6bc",
+      "actual": "87902c528dfab7d503dcf8a784260e3ab6fb7424c418a1820f7261f25be7b6bc"
+    },
+    {
+      "number": 1914,
+      "path": "research/complex-t16-rare-pattern-exchanges/data/PLAN.json",
+      "expected": "7bd786ba8e66408f02aa9ef446eaf20c1bfe981ea2e4dd1e5a929f0aa7767bc0",
+      "actual": "7bd786ba8e66408f02aa9ef446eaf20c1bfe981ea2e4dd1e5a929f0aa7767bc0"
+    },
+    {
+      "number": 1914,
+      "path": "research/complex-t16-rare-pattern-exchanges/data/SPEC.json",
+      "expected": "8cb51f25a5da4a29d3783853025b73ff1f452429d4fdb30c599e598bcab0e71d",
+      "actual": "8cb51f25a5da4a29d3783853025b73ff1f452429d4fdb30c599e598bcab0e71d"
+    },
+    {
+      "number": 1914,
+      "path": "research/r480-owner-optimum/CERTIFICATE.json",
+      "expected": "9bc2e6116d8ada1f5accd2011e161310ba18067cb7a8450ff89efc265bcc04e5",
+      "actual": "9bc2e6116d8ada1f5accd2011e161310ba18067cb7a8450ff89efc265bcc04e5"
+    },
+    {
+      "number": 1915,
+      "path": "research/universal-connector-boundary/CERTIFICATE.json",
+      "expected": "e733746ba3e5151c829b4e8728bfff5ae3ed24d8d203eb77c735d20758e8266a",
+      "actual": "e733746ba3e5151c829b4e8728bfff5ae3ed24d8d203eb77c735d20758e8266a"
+    },
+    {
+      "number": 1915,
+      "path": "research/universal-connector-boundary/EXPECTED.json",
+      "expected": "658924c2940cbe193378d5ef09f4d62500fc7b385c16c0ea33846be836c429d2",
+      "actual": "658924c2940cbe193378d5ef09f4d62500fc7b385c16c0ea33846be836c429d2"
+    },
+    {
+      "number": 1915,
+      "path": "research/universal-connector-boundary/README.md",
+      "expected": "23415f7829ab8d80a783142f10f7d31abbce84579362769984680af3df954476",
+      "actual": "23415f7829ab8d80a783142f10f7d31abbce84579362769984680af3df954476"
+    },
+    {
+      "number": 1917,
+      "path": "research/heterogeneous-owner-assembly/README.md",
+      "expected": "30f5d93adebc874370b63dddf98069079001fbd7b8f078a023d9eeb5d347c185",
+      "actual": "30f5d93adebc874370b63dddf98069079001fbd7b8f078a023d9eeb5d347c185"
+    },
+    {
+      "number": 1917,
+      "path": "research/mutable-source-persistent-connector/README.md",
+      "expected": "1cb2636f93330e41cfdbc9436bc4df6706ce1141fe05da8fd7b72f29fe682f4d",
+      "actual": "1cb2636f93330e41cfdbc9436bc4df6706ce1141fe05da8fd7b72f29fe682f4d"
+    },
+    {
+      "number": 1917,
+      "path": "research/mutable-source-shear-cost/PROOF.md",
+      "expected": "570a35ea0f6fa3ceaa2126730fc407f63935a32430c8757b8f07a7689a95b99e",
+      "actual": "570a35ea0f6fa3ceaa2126730fc407f63935a32430c8757b8f07a7689a95b99e"
+    },
+    {
+      "number": 1918,
+      "path": "certificates/selected-result.json",
+      "expected": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32",
+      "actual": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32"
+    },
+    {
+      "number": 1918,
+      "path": "research/community-frontier1094-audit/selected-replay.tar.gz",
+      "expected": "f1da80610bf33c58527f18ad63b4350d0b864e1d4486141ee17ac9bed4d529d6",
+      "actual": "f1da80610bf33c58527f18ad63b4350d0b864e1d4486141ee17ac9bed4d529d6"
+    },
+    {
+      "number": 1938,
+      "path": "research/complex-local-word-ceiling/RESULT.json",
+      "expected": "d91d6c46509875abf1f61de67c2609656d3dc685451299f83caa6f922493692d",
+      "actual": "d91d6c46509875abf1f61de67c2609656d3dc685451299f83caa6f922493692d"
+    },
+    {
+      "number": 1938,
+      "path": "research/complex-local-word-ceiling/ceiling.py",
+      "expected": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc",
+      "actual": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc"
+    },
+    {
+      "number": 1938,
+      "path": "research/p112-single-lift/geometry.py",
+      "expected": "3857c11ec731a602b8059d85d58fbb3b641bab687bb33016a0e54f7567752c8a",
+      "actual": "3857c11ec731a602b8059d85d58fbb3b641bab687bb33016a0e54f7567752c8a"
+    },
+    {
+      "number": 1945,
+      "path": "research/universal-connector-boundary/CERTIFICATE.json",
+      "expected": "e733746ba3e5151c829b4e8728bfff5ae3ed24d8d203eb77c735d20758e8266a",
+      "actual": "e733746ba3e5151c829b4e8728bfff5ae3ed24d8d203eb77c735d20758e8266a"
+    },
+    {
+      "number": 1945,
+      "path": "research/universal-connector-boundary/NOTICE.md",
+      "expected": "1172648a1883827399d5103a9916deaa4314e4ee2c28653c183890f6bd5a7a17",
+      "actual": "1172648a1883827399d5103a9916deaa4314e4ee2c28653c183890f6bd5a7a17"
+    },
+    {
+      "number": 1945,
+      "path": "research/universal-connector-boundary/README.md",
+      "expected": "23415f7829ab8d80a783142f10f7d31abbce84579362769984680af3df954476",
+      "actual": "23415f7829ab8d80a783142f10f7d31abbce84579362769984680af3df954476"
+    },
+    {
+      "number": 1949,
+      "path": "references/three-stage-cover/pr117/dag.json.gz",
+      "expected": "3c034d0aae388ef567a454826f4f48b26fd8a94c71e8ffed4835271b349a783b",
+      "actual": "3c034d0aae388ef567a454826f4f48b26fd8a94c71e8ffed4835271b349a783b"
+    }
+  ],
+  "main_commit": "135c4f90ca51fa3165cb4770d708dc932a5972d0"
+}
