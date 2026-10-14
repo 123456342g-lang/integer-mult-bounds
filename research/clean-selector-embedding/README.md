@@ -9,6 +9,14 @@ least native width is **`n+s+1` or `n+s+2`**, decided by four integer inequaliti
 [PROOF.md](PROOF.md) gives the all-size argument and an explicit dyadic Walsh
 encoding; the finite checker is separate evidence.
 
+This minimum is for the literal host `C_d` with no extra variable spectator
+factor. Common spectator fibers extend the result only by `E tensor I`, with
+the same fibers separate from the encoding. Reassigning them changes the
+contract; neither the minimum width nor the budget formula below covers that
+model. PROOF.md gives an unchanged-volume width-one example and a distinct
+twofold-volume width-two example. This is not a minimum supplier recursive-rank
+theorem.
+
 The motivating 16-lane, width-one target has multiplicities `(16,16,0,0)`:
 
 | Native width | Multiplicities of C_d | Exact phase | Optional phase |

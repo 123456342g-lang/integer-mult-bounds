@@ -14,7 +14,12 @@ C=((1+i)I+(1-i)X)/2,\qquad C_d=C^{\otimes d},\qquad C_0=I.
 Fix integers \(n,s\geq1\), put \(q=2^s\), \(N=n+s\), and let
 \(B=I_q\otimes C_n\). The active dimension is \(D=2^N\).
 The optional phase convention is \(i^uC_d\), with \(u\in\{0,1,2,3\}\);
-the fixed convention means \(u=0\).
+the fixed convention means \(u=0\). Here \(d\) counts all axes of this literal
+\(C_d\) host: there is no additional variable spectator factor in the existence
+problem. If each lane has a separate common spectator fiber, this result
+extends only by \(E\otimes I\), keeping that same fiber unchanged and outside
+the encoding. Neither the minimum width nor the budget formula below covers
+arbitrary changes to the native/spectator split.
 
 ## Exact existence and least ambient dimension
 
@@ -175,6 +180,18 @@ The dimensions here are literal tensor dimensions. If data width is scaled to
 The finite example \(C_7\) must not be relabeled \(C_{7f}\) while retaining its
 constant fourfold volume. Scaling selector width as well changes the lane
 count and must charge that volume explicitly.
+
+Allowing a different spectator factor changes the minimum active width. For
+example, \(I_{16}\otimes C_1\otimes I_{256}\) is permutation-equivalent to
+\(C_1\otimes I_{4096}\). This keeps all 8192 coordinates and native width one,
+with the same volume-linear budget as sixteen original lanes. Also, the
+different host \(C_2\otimes I_{4096}\) has multiplicities
+\((4096,8192,4096,0)\), dominating the payload's \((4096,4096,0,0)\), and
+admits a clean encoding on 16384 ambient coordinates. Its separate budget
+ratio is \(2\cdot2^\sigma>2\). Neither example contradicts the literal
+width-seven result: both change the spectator factor. The displayed general
+\(2^{d-N}(d/n)^\sigma\) formula must not be applied to that changed model;
+its full dimension and cost invoice must be derived separately.
 
 The retained [selector-batching note](../selector-batching/README.md) supplies
 the kernel convention, monomial support obstruction, arbitrary-dirty-padding

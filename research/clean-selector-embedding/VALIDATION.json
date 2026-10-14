@@ -68,7 +68,8 @@
     "findings_addressed": [
       "PR665 spectral-capacity method credited",
       "integer-to-boolean JSON aliases reject",
-      "literal fixtures cover declared selected phases; algebraic width signs cover all4"
+      "literal fixtures cover declared selected phases; algebraic width signs cover all4",
+      "Literal width and budget theorem explicitly limits spectator extension to E tensor I with the same factor. Independent recurrence checks changed-host example counts; permutation C1 tensor I4096 also keeps8192 coordinates at width1 and budget tie. Arbitrary spectator reassignment is outside the theorem."
     ],
     "separate_recurrence": "Independent agent used its own four-state recurrence for all576 n,s=1..12 and four-phase cases; lower/upper and exact phase mapping agree. Final static proof/code/metadata review found no actionable error after stated corrections."
   },
