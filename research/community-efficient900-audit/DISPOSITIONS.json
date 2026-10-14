@@ -1165,20 +1165,24 @@
       },
       "reviewed_head": "788848032c16bbe0a543c1186c6691c66131c090",
       "current_head": "788848032c16bbe0a543c1186c6691c66131c090",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/hpe-energy-packed-radix"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "1dff1b7d76055c7183c496ed93592ebbfdab2a34",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1906"
+      },
       "scope": "Written Gaussian energy-ball proof gives sharp uniform integer radixB>=2R and K+1 bits for validated unitary gates. All3072 scaled rows,5265 ball vectors and source/receipt controls pass. Three retained pairs need10 rather than11/20 bits; Lean formalization and production adoption remain open.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1906.json",
@@ -1980,20 +1984,24 @@
       },
       "reviewed_head": "a055aaf34b012e04714066aafbfc7057ee1f3e9f",
       "current_head": "a055aaf34b012e04714066aafbfc7057ee1f3e9f",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/hpe-energy-independent-audit"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "1dff1b7d76055c7183c496ed93592ebbfdab2a34",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1934"
+      },
       "scope": "Independent closed parser and direct realification check all6291456 entries of six retained matrices, all3072 row energies and1906 row digests. Seven tests include585 small dense words and nonunitary countercontrol. Corroborates1906 without importing its interpreter; no new bound, Lean build or selected supplier replay.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1934.json",
