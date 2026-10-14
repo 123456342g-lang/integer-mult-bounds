@@ -64,7 +64,7 @@
     },
     {
       "path": "research/e8-bit-p111-tuned/vendor/pr510/e8-r480-nine-stage/vendor/e8-r715-eleven-stage-whole/code/global_k.py",
-      "usage": "provenance",
+      "usage": "input",
       "git_blob": "3df12bd632f1fdba825ced57110a1fee82eb2857",
       "sha256": "6368196a393ac25bb2918880e4c4bd31ed733b762c27b6873ab391cbc0c5c3c8"
     },

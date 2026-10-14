@@ -1,13 +1,17 @@
 # SPDX-License-Identifier: Apache-2.0
-"""The PR442/PR463 hosting windows of the nine-stage PR589 bit template, rebuilt independently.
+"""The PR442 hosting windows of the nine-stage PR589 bit template.
 
 The idle schedule follows global_k.py's recipe (K = 4 bank pairs, L = 9 stages): a local cover sweep
-per stage, the idle children it inserts, and the bridges. A child's window is the set of stages whose
-sweep falls strictly after the child's pair was last touched and before the child is inserted, on
-another pair. The result is cross-checked against BOTH vendored predicates (PR442
-hosting_core.windows and the hosted audit's audit_hosted_k.windows) and against the frozen PR589
-hosting selection. Standard library only.
+per stage, the idle children it inserts, and the bridges. schedule() writes it out here; at run time
+it is compared event by event with the schedule that the pinned global_k.py itself produces (its
+recipe() and its idle-insertion rule, extracted from the file with ast and replayed, asserts
+included). A child's window is the set of stages whose sweep falls strictly after the child's pair
+was last touched and before the child is inserted, on another pair. Three implementations of that
+predicate (this one, PR442 hosting_core.windows and audit_hosted_k.windows) are run on the one
+shared schedule and must agree; the frozen PR589 hosting selection must lie inside the windows.
+Standard library only.
 """
+import ast
 import importlib.util
 import json
 from pathlib import Path
@@ -17,6 +21,7 @@ VENDOR = ROOT / 'research/e8-bit-p111-tuned/vendor/pr510/e8-r480-nine-stage/vend
 HOSTING_CORE = VENDOR / 'idle-axis-hosting/hosting_core.py'
 AUDIT_HOSTED = VENDOR / 'e8-r715-eleven-stage-whole/code/audit_hosted_k.py'
 SELECTION = ROOT / 'research/e8-bit-p111-tuned/data/selection9-p111.json'
+GLOBAL_K = VENDOR / 'e8-r715-eleven-stage-whole/code/global_k.py'
 K, L = 4, 9
 
 
@@ -63,6 +68,40 @@ def schedule():
     return sched
 
 
+def global_k_schedule(k=K):
+    """The schedule produced by the pinned global_k.py: its recipe(K) and the idle-insertion if-block of
+    its main loop, both extracted with ast and executed (the scalar replay around them is not needed)."""
+    tree = ast.parse(GLOBAL_K.read_text())
+    recipe_fn = [n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == 'recipe']
+    rules = [n for n in ast.walk(tree) if isinstance(n, ast.If) and ast.unparse(n.test) == 's % 2 == 1 and s <= 2 * K - 3']
+    if len(recipe_fn) != 1 or len(rules) != 1:
+        raise ValueError('global_k.py: recipe() or the idle-insertion rule not found exactly once')
+    ns = {}
+    exec(compile(ast.Module(body=recipe_fn, type_ignores=[]), str(GLOBAL_K), 'exec'), ns)
+    rule = compile(ast.Module(body=rules, type_ignores=[]), str(GLOBAL_K), 'exec')
+    levels, sched = [-1] * k, []
+    for e in ns['recipe'](k):
+        if e['kind'] == 'local':
+            s, p = e['stage'], e['pair']
+            if levels[p] != s - 1:
+                raise ValueError('global_k.py: stage order')
+            levels[p] = s
+            sched.append(dict(kind='local_cover_sweep', **{x: v for x, v in e.items() if x != 'kind'}))
+            exec(rule, dict(s=s, K=k, levels=levels, schedule=sched))
+        elif e['kind'] == 'bridge':
+            if levels[e['dst']] != levels[e['src']]:
+                raise ValueError('global_k.py: bridge levels')
+            sched.append(e)
+        else:
+            sched.append(e)
+    return sched
+
+
+def _events(sched):
+    keys = dict(local_cover_sweep=('stage', 'pair'), idle=('pair', 'rank'), bridge=('dst', 'src'), exchange=())
+    return [(e['kind'],) + tuple(e[x] for x in keys[e['kind']]) for e in sched]
+
+
 def windows(sched):
     out, last, seen = {}, {}, []
     for pos, e in enumerate(sched):
@@ -76,9 +115,12 @@ def windows(sched):
     return out
 
 
-def checked_windows():
-    """{child: (capacity, stages)} for the children that can host, after the three-way cross-check."""
-    sched = schedule()
+def checked_windows(sched=None):
+    """{child: (capacity, stages)} for the children that can host, after the schedule is matched with
+    global_k.py and the three window predicates agree on it."""
+    sched = schedule() if sched is None else sched
+    if _events(sched) != _events(global_k_schedule()):
+        raise ValueError('schedule differs from the one global_k.py produces')
     mine = windows(sched)
     hc = _load('pr442_hosting_core', HOSTING_CORE)
     ah = _load('audit_hosted_k', AUDIT_HOSTED)

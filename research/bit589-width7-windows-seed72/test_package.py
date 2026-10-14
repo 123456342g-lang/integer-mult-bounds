@@ -21,12 +21,28 @@ import wopt  # noqa: E402
 RESULT = json.loads((HERE / 'RESULT.json').read_text())
 
 
+def row_idle(k):
+    return RESULT['rows'][k]['idle']
+
+
 class Windows(unittest.TestCase):
     def test_capacity7_children_admit_one_stage_each(self):
         ah = windows._load('audit_hosted_k', windows.AUDIT_HOSTED)
         W, rank, _ = ah.windows(windows.schedule())
         sevens = {i: sorted(W[i]) for i in W if rank[i] == 7 and W[i]}
         self.assertEqual(sevens, {1: [2], 3: [4], 5: [6]})
+
+    def test_schedule_matches_global_k_and_a_dropped_bridge_is_caught(self):
+        sched = windows.schedule()
+        self.assertEqual(windows._events(sched), windows._events(windows.global_k_schedule()))
+        first_bridge = next(n for n, e in enumerate(sched) if e['kind'] == 'bridge')
+        mutated = sched[:first_bridge] + sched[first_bridge + 1:]
+        with self.assertRaisesRegex(ValueError, 'global_k.py'):
+            windows.checked_windows(mutated)
+        # without the anchor, the three predicates would still agree on the mutated schedule
+        # while the capacity-7 windows widen, which is why the anchor is needed
+        widened = {i: st for i, (p, r, st) in windows.windows(mutated).items() if r == 7}
+        self.assertNotEqual(widened, {1: (2,), 3: (4,), 5: (6,)})
 
     def test_cw1_window_free_k1_uses_nine_seven_slots(self):
         # #1023's partial placement (packing.width7_partial_idle) fills 9 capacity-7 copies per replica
@@ -42,8 +58,18 @@ class Windows(unittest.TestCase):
 class Certificates(unittest.TestCase):
     def test_k0_reproduces_the_selected_endpoint_and_is_tight(self):
         row = RESULT['rows']['0']['optimistic']
-        self.assertEqual(Q(row['endpoint']), Q(wopt.P.pinned_json('bit_record')['nine']['bit_lower']))
-        self.assertTrue(row['same_argmin_at_bound'])
+        record = wopt.P.pinned_json('bit_record')
+        self.assertEqual(Q(row['endpoint']), Q(record['nine']['bit_lower']))
+        model = wopt.P.slot_model(record, wopt.P.pinned_json('selection'))
+        W, calls = record['nine']['bit']['live'], model['calls']
+        local, _ = wopt.P.local_bracket(model['local'], 0)
+        at = Q(row['certified_bound'])
+        lb, _ = V.certificate_bound(0, local, at, calls, W)
+        H = Counter({r: n * calls for r, n in local.items()})
+        H.update({int(r): n * wopt.T for r, n in row_idle('0').items()})
+        lo, _ = wopt.P.MOMENT.moment(dict(+H), wopt.M, W, at, True)
+        self.assertGreater(lb, 1)
+        self.assertLess(abs(lb - lo), Q(1, 10 ** 50))
 
     def test_cw2_window_free_local_rows_exceed_the_bound(self):
         for k in ('1', '2', '10', '37', '74'):
@@ -57,7 +83,7 @@ class Certificates(unittest.TestCase):
         self.assertEqual(len(priced), 9)
         for key, row in priced.items():
             if key != 'k0_optimistic':
-                self.assertTrue(row['unreachable'], key)
+                self.assertTrue(row['local_above_bound'] and row['pooled32_above_per_replica_bound'], key)
         self.assertEqual(RESULT['pr1281']['idle_optima_matched'], 75)
 
     def test_pr1023_partial_rows_all_unreachable(self):
@@ -80,7 +106,7 @@ class Certificates(unittest.TestCase):
 class Reduction(unittest.TestCase):
     def test_brute_force_matches_the_chains(self):
         n, agree = V.brute_force_reduction(2)
-        self.assertEqual(n, agree)
+        self.assertEqual((n, agree), (6188, 6188))     # every composition of 12 into six parts
 
     def test_cw5_dropping_a_chain_constraint_breaks_agreement(self):
         original = V.chain_ok

@@ -4,18 +4,23 @@
 
 Usage: python3 -I -B research/bit589-width7-windows-seed72/verify.py [--write] [--kmax K]
 
-0. Binds the selected record -> frontier1094 ASSEMBLY -> the PR589 record and engines pinned by #1023's packing.py.
-1. Rebuilds the nine-stage idle schedule and its hosting windows, cross-checked against both vendored
-   predicates and the frozen PR589 selection (windows.py). Capacity-7 children admit one stage each.
-2. Checks the interval Hall reduction to two nested chains by brute force for k = 1, 2.
+0. Binds the frontier1094 certificate (named by the selected record, or by a checkpoint record once
+   the frontier moves) -> the PR589 record and engines pinned by #1023's packing.py.
+1. Builds the nine-stage idle schedule, matches it event by event with the schedule the pinned
+   global_k.py produces, and runs three window predicates on it (windows.py); the frozen PR589
+   selection lies inside the windows. Capacity-7 children admit one stage each.
+2. Checks the interval Hall reduction to two nested chains by max-flow over every distribution of
+   the 6k residuals for k = 1, 2.
 3. For every k = 0..74 converted helpers per call: the exact window-respecting optimum (DP lower bound),
    an explicit residual-level placement attaining it (window, width, offset, disjoint cells, every
-   (stage, helper) hosted once), its bit endpoint under both of #1023's local brackets with the pinned
+   (stage, helper) hosted once; built and checked at run time by build()), its bit endpoint under both of #1023's local brackets with the pinned
    engines, a certificate that no window-feasible placement reaches the next 1e-24 grid point, and a
    tightness check against the engine moment of the explicit histogram.
 4. Compares with the window-free rows: #1023's eight partial rows (its RESULT.json) and merged #1281's
-   EXPECTED.json (digest-pinned): its local idle optimum for every k, and its nine priced cases
-   (local endpoints and histograms reproduced exactly; local and pooled32 endpoints above the bound).
+   EXPECTED.json (digest-pinned). #1281's closed-form local optimum is transcribed in windowfree_idle(),
+   checked against its 75 idle profiles and re-priced here for every k; its nine priced cases are
+   reproduced exactly in local endpoint and local histogram; local and pooled32 endpoints of the
+   priced cases lie above the per-replica bound.
 5. Checks that #1023's all-width-7 optimum {42:340, 21:1} is window-feasible.
 Expected last line: PASS_BIT589_WIDTH7_WINDOWS
 """
@@ -36,28 +41,28 @@ PR1281 = dict(merged='e4a7f61f168837f628a1d8b54aa5cff0680f9a38', path='research/
               sha256='a6ec64866b949626d6508ee7172b144c3fd29f1065822b523fafd7d2a59e2e91')
 
 
-RECORDS = ('certificates/selected-result.json', 'certificates/checkpoints/frontier1094.json')
 ASSEMBLY = 'research/community-frontier1094-audit/ASSEMBLY.json'
 
 
 def bind():
-    """Selected record -> frontier1094 ASSEMBLY -> the PR589 record and engines that #1023's packing.py pins."""
+    """frontier1094 ASSEMBLY -> the PR589 record and engines that #1023's packing.py pins. The certificate
+    must be named, with its digest, by the selected record or (after the frontier moves) by a record in
+    certificates/checkpoints/; which one is not written to RESULT.json."""
     raw = (P.ROOT / ASSEMBLY).read_bytes()
-    bound = None
-    for path in RECORDS:
-        f = P.ROOT / path
+    records = [P.ROOT / 'certificates/selected-result.json'] + sorted((P.ROOT / 'certificates/checkpoints').glob('*.json'))
+    named = False
+    for f in records:
         rec = json.loads(f.read_text()) if f.is_file() else {}
-        if rec.get('certificate') == ASSEMBLY and rec.get('certificate_sha256') == P.sha256(raw):
-            bound = path
-            break
-    need(bound is not None, 'a record binds the frontier1094 certificate')
+        named = named or (rec.get('certificate') == ASSEMBLY and rec.get('certificate_sha256') == P.sha256(raw))
+    need(named, 'a selected or checkpoint record names the frontier1094 certificate')
     asm = json.loads(raw)
     need(asm['input_sha256']['package:inputs/PR589-EXPECTED.json'] == P.SOURCES['inputs']['bit_record']['sha256'],
          'the certificate pins the PR589 record that packing.py reads')
     for name in ('moment.py', 'base_two_moment.py', 'outer.py'):
         need(asm['input_sha256']['engines/' + name] == P.SOURCES['engines'][name], 'the certificate pins engine ' + name)
     need(Q(asm['bit_lower']) == Q(P.pinned_json('bit_record')['nine']['bit_lower']), 'certificate bit endpoint = PR589 record')
-    return dict(record=bound, assembly=ASSEMBLY, assembly_sha256=P.sha256(raw), bit_lower=asm['bit_lower'])
+    return dict(assembly=ASSEMBLY, assembly_sha256=P.sha256(raw), bit_lower=asm['bit_lower'],
+                named_by='certificates/selected-result.json or certificates/checkpoints/*.json')
 
 
 def need(ok, label):
@@ -132,15 +137,14 @@ def chain_ok(B, k):
 
 
 def brute_force_reduction(k):
-    """Every distribution of the 6k non-7-slot width-7 residuals over children 0,2,4,6,7,8: window
-    transport feasibility (max-flow) must equal the chain predicate."""
+    """Every distribution of the 6k non-7-slot width-7 residuals over children 0,2,4,6,7,8 (all
+    compositions of 6k into six parts): window transport feasibility (max-flow) must equal the chain
+    predicate."""
     supply = {s: (0 if s in (2, 4, 6) else k) for s in range(STG)}
     count = agree = 0
-    for parts in itertools.product(range(4 * k + 1), repeat=5):
-        last = 6 * k - sum(parts)
-        if last < 0:
-            continue
-        B = dict(zip(REST, list(parts) + [last]))
+    for bars in itertools.combinations(range(6 * k + 5), 5):
+        cuts = (-1,) + bars + (6 * k + 5,)
+        B = dict(zip(REST, [cuts[i + 1] - cuts[i] - 1 for i in range(6)]))
         feasible = maxflow_assign(supply, {i: B[i] for i in REST}, {i: set(WIN[i][1]) for i in REST}) is not None
         count += 1
         agree += feasible == chain_ok(B, k)
@@ -201,8 +205,17 @@ def build(k, plan):
     return +rem
 
 
+def certificate_bound(k, local, at, calls, W):
+    """Moment lower bound at `at` over every window-feasible replica-local placement (DP over the idle
+    children, exact moment of the fixed local histogram), and the DP argmin plan there."""
+    tot5, _, plan, _ = wopt.solve(k, at, True)
+    lo_local, _ = P.MOMENT.moment(dict(Counter({r: n * calls for r, n in local.items()})), M, W, at, True)
+    return lo_local + Q(T * tot5, 5 * SHIFT * M * W), plan
+
+
 def windowfree_idle(k):
-    """#1281's replica-local optimum without windows (every width-7 role in a 7-slot; S = 45 + 9k = 5q + t)."""
+    """#1281's replica-local optimum without windows, transcribed from its closed form (every width-7 role in
+    a 7-slot; S = 45 + 9k = 5q + t) and checked against its EXPECTED.json idle profiles in main()."""
     S = 45 + 9 * k
     q, t = divmod(S, 5)
     idle = Counter({7: 666 - 9 * k, 6: 444, 4: 444, 2: 444})
@@ -248,12 +261,6 @@ def main():
         need(sum(r * n for r, n in H.items()) == sum(r * n for r, n in model['H'].items()), 'rank mass')
         return P.endpoint(dict(H), W), H
 
-    def lower_bound(k, local, at):
-        """Moment lower bound at `at` over every window-feasible placement, and the DP argmin there."""
-        tot5, _, plan, _ = wopt.solve(k, at, True)
-        lo_local, _ = P.MOMENT.moment(dict(Counter({r: n * calls for r, n in local.items()})), M, W, at, True)
-        return lo_local + Q(T * tot5, 5 * SHIFT * M * W), plan
-
     rows, windowfree_H = {}, {}
     for k in range(0, a.kmax + 1):
         need(w8_vacuous(k), 'width-8 Hall conditions vacuous k=%d' % k)
@@ -267,7 +274,7 @@ def main():
             cwf, Hwf = price(local, windowfree_idle(k))
             windowfree_H[(k, name)] = Hwf
             nxt = c + Q(1, 10 ** 24)
-            lb, plan_n = lower_bound(k, local, nxt)
+            lb, plan_n = certificate_bound(k, local, nxt, calls, W)
             need(lb > 1, 'certificate k=%d %s' % (k, name))
             lo_full, _ = P.MOMENT.moment(dict(H), M, W, nxt, True)
             need(abs(lb - lo_full) < Q(1, 10 ** 50), 'tight certificate k=%d %s' % (k, name))
@@ -314,12 +321,15 @@ def main():
         bound = Q(r['certified_bound'])
         priced[key] = dict(local=P.dec(Q(case['optimal']['lower']), 22), pooled32=P.dec(Q(case['pooled32']['lower']), 22),
                            certified_bound=r['certified_bound'],
-                           unreachable=k > 0 and Q(case['optimal']['lower']) >= bound and Q(case['pooled32']['lower']) >= bound)
-    need(all(v['unreachable'] for key, v in priced.items() if not key.startswith('k0_')), '#1281 priced rows unreachable under windows')
+                           local_above_bound=Q(case['optimal']['lower']) >= bound,
+                           pooled32_above_per_replica_bound=Q(case['pooled32']['lower']) >= bound)
+    need(all(v['local_above_bound'] and v['pooled32_above_per_replica_bound'] for key, v in priced.items()
+             if not key.startswith('k0_')), '#1281 priced rows above the per-replica bound')
     local_unreach = sum(rows[str(k)][b]['windowfree_unreachable'] for k in range(1, a.kmax + 1) for b in ('optimistic', 'pessimistic'))
     need(local_unreach == 2 * a.kmax, '#1281 local rows unreachable under windows')
     out['pr1281'] = dict(PR1281, idle_optima_matched=sum(c['k'] <= a.kmax for c in e1281['cases']), priced_cases=priced,
-                         local_rows_unreachable='%d of %d (both brackets, k = 1..%d)' % (local_unreach, 2 * a.kmax, a.kmax))
+                         local_rows_unreachable='%d of %d priced here (both brackets, k = 1..%d; %d priced by #1281)' % (
+                             local_unreach, 2 * a.kmax, a.kmax, sum(1 for x in priced if not x.startswith('k0_'))))
 
     # #1023's all-width-7 optimum stays window-feasible
     feasible = []

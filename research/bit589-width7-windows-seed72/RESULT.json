@@ -14,7 +14,7 @@
   "assembly": "research/community-frontier1094-audit/ASSEMBLY.json",
   "assembly_sha256": "1122cb3a575f8c788345fc1bf4c108ac7c3250fb81a5988671f5eb04b3ab3045",
   "bit_lower": "1733427039589844234749/1000000000000000000000000",
-  "record": "certificates/selected-result.json"
+  "named_by": "certificates/selected-result.json or certificates/checkpoints/*.json"
  },
  "capacity7_children": {
   "1": [
@@ -30,8 +30,8 @@
  "chain_reduction_brute_force": {
   "agree": "all",
   "distributions_checked": {
-   "1": 432,
-   "2": 5908
+   "1": 462,
+   "2": 6188
   }
  },
  "pr1023_partial_rows": {
@@ -78,63 +78,72 @@
  },
  "pr1281": {
   "idle_optima_matched": 75,
-  "local_rows_unreachable": "148 of 148 (both brackets, k = 1..74)",
+  "local_rows_unreachable": "148 of 148 priced here (both brackets, k = 1..74; 8 priced by #1281)",
   "merged": "e4a7f61f168837f628a1d8b54aa5cff0680f9a38",
   "path": "research/bit-partial-width7-optimum/EXPECTED.json",
   "priced_cases": {
    "k0_optimistic": {
     "certified_bound": "6933708158359376939/4000000000000000000000",
     "local": "0.001733427039589844234749",
+    "local_above_bound": false,
     "pooled32": "0.001733427039589844234749",
-    "unreachable": false
+    "pooled32_above_per_replica_bound": false
    },
    "k1_optimistic": {
     "certified_bound": "1734347102923006399613/1000000000000000000000000",
     "local": "0.001734846264120199151475",
+    "local_above_bound": true,
     "pooled32": "0.001734900431583947157341",
-    "unreachable": true
+    "pooled32_above_per_replica_bound": true
    },
    "k1_pessimistic": {
     "certified_bound": "108381532739553010717/62500000000000000000000",
     "local": "0.001734603545275303824122",
+    "local_above_bound": true,
     "pooled32": "0.001734657697586404233802",
-    "unreachable": true
+    "pooled32_above_per_replica_bound": true
    },
    "k2_optimistic": {
     "certified_bound": "1388217536169998549/800000000000000000000",
     "local": "0.001736327170598942735353",
+    "local_above_bound": true,
     "pooled32": "0.0017363781660342837852",
-    "unreachable": true
+    "pooled32_above_per_replica_bound": true
    },
    "k2_pessimistic": {
     "certified_bound": "216848289009341626869/125000000000000000000000",
     "local": "0.0017358409713034135953",
+    "local_above_bound": true,
     "pooled32": "0.001735891938199934503774",
-    "unreachable": true
+    "pooled32_above_per_replica_bound": true
    },
    "k37_optimistic": {
     "certified_bound": "1770809187427053553943/1000000000000000000000000",
     "local": "0.001789671631346367026824",
+    "local_above_bound": true,
     "pooled32": "0.001789725802593008582027",
-    "unreachable": true
+    "pooled32_above_per_replica_bound": true
    },
    "k37_pessimistic": {
     "certified_bound": "1761884716885951335477/1000000000000000000000000",
     "local": "0.001780556367920637129218",
+    "local_above_bound": true,
     "pooled32": "0.001780609989052611495117",
-    "unreachable": true
+    "pooled32_above_per_replica_bound": true
    },
    "k74_optimistic": {
     "certified_bound": "904953559530015237129/500000000000000000000000",
     "local": "0.00184975423837042835336",
+    "local_above_bound": true,
     "pooled32": "0.001849803954130003404634",
-    "unreachable": true
+    "pooled32_above_per_replica_bound": true
    },
    "k74_pessimistic": {
     "certified_bound": "56005875337664138131/31250000000000000000000",
     "local": "0.001831249661111873873002",
+    "local_above_bound": true,
     "pooled32": "0.001831298387323686469848",
-    "unreachable": true
+    "pooled32_above_per_replica_bound": true
    }
   },
   "sha256": "a6ec64866b949626d6508ee7172b144c3fd29f1065822b523fafd7d2a59e2e91"
