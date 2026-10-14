@@ -30,13 +30,15 @@ exact fixtures. Fixture 1:
   supported on I_2, and it is not a combination of the h_2l.
 - **Locally minimal.** Restoring any one of the eight deleted lines makes the same pivot pass all four conditions.
   Each restored live set has 816 live frames.
-- This unit is still rigid through other pivots: 674 of its live frames pass all four conditions. Of the rest,
-  96 pass (W), blocks and (G) but fail (D), 4 fail (G) and 10 fail (W).
+- This unit is still rigid through other pivots. Running PR1650's criterion at every live frame (`unit()` in
+  `search/allframes.py`; unregistered, reproduced independently by the Codex review): 674 pass all four
+  conditions, 96 pass (W), blocks and (G) but fail (D), 4 fail (G) and 10 fail (W).
 
 Fixture 2, X = (13, 18, 22, 27, 34, 35, 36, 37) with pivot (17, 25, 38, 52, 61, 75, 98, 116), has the same
 pattern at k = 7: rank 44 on 52 lines. Its certificate is +1 on {111, 112, 113, 114} and −1 on {12, 19, 21, 28}.
-These come from a non-coordinate pair of orthogonal D4 subsystems, each containing 4 FRAME0 lines; the pair is an
-image of the coordinate halves under the FRAME0 stabiliser (`search/mech.py`).
+These come from a non-coordinate pair of orthogonal 12-line systems, each containing 4 FRAME0 lines. `verify.py`
+checks those properties and the frame identity; that the pair is an image of the coordinate halves under the FRAME0
+stabiliser comes from `search/mech.py` and is not re-checked.
 
 So the conditions in PR1650's question cannot replace (D) in general. Whether they can on P105 to P111
 (|X| ≤ 7) is still open; the evidence below found no counterexample there.

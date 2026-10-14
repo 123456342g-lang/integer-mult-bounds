@@ -13,7 +13,7 @@ def unit(X):
             continue
         r = V.criterion(tuple(X), V.FRAMES[n])[0]
         tally[r] += 1
-        if r in ('D', 'D-kernel-vectors', 'support'):
+        if r in ('D', 'D-kernel-vectors'):
             bad.append((list(X), n, r))
     return tally, bad
 
