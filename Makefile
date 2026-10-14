@@ -676,3 +676,13 @@ t37-restoration-deferral-verify:
 frontier1042-invoice-audit-verify:
 	python3 -I -B research/frontier1042-invoice-audit-seed81/verify.py
 	cd research/frontier1042-invoice-audit-seed81 && python3 -B -m unittest test_package -v
+
+.PHONY: hpe-audit-fast-verify hpe-audit-fast-crosscheck-lec
+hpe-audit-fast-verify:
+	python3 -I -B research/hpe-audit-fast-seed93/verify.py
+	cd research/hpe-audit-fast-seed93 && python3 -B -m unittest test_package -v
+
+# Opt-in, about 2 minutes: all 96 trials of the selected chain's lec-p6n step, each run by both audits.
+hpe-audit-fast-crosscheck-lec:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/hpe-audit-fast.XXXXXX"); \
+	python3 -B research/hpe-audit-fast-seed93/run_lec.py --archived p6n --pins LEC-REASON-PINS-STACK --out "$$work/lec-p6n" --mode crosscheck
