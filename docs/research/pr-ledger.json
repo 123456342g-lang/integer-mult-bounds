@@ -81,7 +81,7 @@
     "research/community-efficient300-audit/DISPOSITIONS.json": "b5b1232b5f3580f41947cca4437c7f5726c01daf50a0ad2b9aff8d80db3c5a64",
     "research/community-efficient400-audit/DISPOSITIONS.json": "3d6c4ddb87902503a043b8609fd8fdafaa7bdef416cb977f73271542d458b147",
     "research/community-efficient500-audit/DISPOSITIONS.json": "bd5fcd01f868edb2766874b2cd9daaf1d8500e57debe621537760a5906fbb5b3",
-    "research/community-efficient600-audit/DISPOSITIONS.json": "452e91464c2f653b7ef07463f988a706a659f31cffec41c06fcb2fc335c7f0a7",
+    "research/community-efficient600-audit/DISPOSITIONS.json": "0b5b7777073b61dcccd09ecfe01d24c0843e8294f0daf1a9f38f5aabdaa2e4f4",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec",
     "research/community-efficient300-audit/PARENT-EVIDENCE.json": "8d9e28ec3ece26b91ef5a297092697c341652853164477a4961c992151cec353"
   },
@@ -77585,7 +77585,7 @@
       "closure": null,
       "reviewed_head": "cfd97ca1e9d332e497bb29ba9cdbdeb594e23800",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation.",
+      "unresolved_question": "The primary reuse replay passed. The required full K=4 census hit the 2,400-second supplemental limit after the last recorded progress of 960/1,922 branches. Complete that census in a dedicated replay before incorporation; partial progress is not an exhaustive certificate.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -77594,6 +77594,7 @@
       },
       "verification_evidence": [
         "research/community-efficient600-audit/packets/1487.json",
+        "research/community-efficient600-audit/checks/check-1487-supplement.json",
         "research/community-efficient600-audit/checks/check-1487.json"
       ],
       "current_head_observed_in": "research/community-efficient600-audit/DISPOSITIONS.json",
