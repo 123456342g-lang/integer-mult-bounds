@@ -868,3 +868,7 @@ The [scoped review](docs/research/community-reconciliation-fourth100-review.md) 
 - **[Mister-Meeseeks](https://github.com/Mister-Meeseeks)**: [#665](https://github.com/CrocSwap/integer-mult-bounds/pull/665).
 - **[at1as](https://github.com/at1as)**: [#666](https://github.com/CrocSwap/integer-mult-bounds/pull/666).
 - **[swbiggart](https://github.com/swbiggart)**: [#668](https://github.com/CrocSwap/integer-mult-bounds/pull/668).
+
+Historical PR1181 credit statement retained for its source-bound verifier. **PR1015 has since been reviewed and merged**; the parenthetical in the original statement below records its submission-time state.
+
+- **Aaron Wang / navinor:** [#1015](https://github.com/CrocSwap/integer-mult-bounds/pull/1015) (open; own package pending review). Its nine phase-B multi-write block programs are retained verbatim in #1062 (`research/r439-bsection-stars-seed01/inputs/PR1015-CANDIDATE.json`) and supply 244 of #1062's 283 saved ADDs; see the [retention receipt](research/r439-pr1015-retention-seed95/README.md).
