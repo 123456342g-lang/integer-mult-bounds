@@ -42,7 +42,8 @@ cross-family price requires an operator realization outside the obstruction docu
 #540 formalizes a concrete PR442 invocation and the stated multi-host contract, not the whole
 multiplier. #594/#611 preserve already-integrated contributor replay reports and check their
 identity/internal consistency; this round does not claim to recreate their missing original
-full output trees. #634's computational examples do not by themselves prove its written
+full output trees. #634's four shipped SAT proofs additionally pass the repository-pinned drat-trim checker.
+The optional external 33-vertex flow instance is not replayed here. Its computational examples do not by themselves prove its written
 oblivious-compilation and lower-bound implications. #657's square-root wall is specific to
 its separate-pass accounting. The exact-log kernel in #667 is retained as an optional tested
 package; its arithmetic timings are not a full-suite speed claim or production activation.
@@ -123,7 +124,7 @@ see also [CONTRIBUTORS.md](../../CONTRIBUTORS.md).
 | [#631](https://github.com/CrocSwap/integer-mult-bounds/pull/631) — Zhao Chi (@vectorsss) | Exact E8 star-decoder puncture thresholds. | The Weyl/parabolic reduction and non-root-normal argument apply to the stated star decoder. The result does not exclude general pairing-rank decoders or changed helper schemes. |
 | [#632](https://github.com/CrocSwap/integer-mult-bounds/pull/632) — chafreaky (@chafreaky) | Owner-map repair on the two factored cold ends. | Supplier words and admission code stay fixed; all literal placements and independent exact moments are checked. The unchanged bit supplier is cited and repriced. |
 | [#633](https://github.com/CrocSwap/integer-mult-bounds/pull/633) — Zhao Chi (@vectorsss) | Independent reconstruction and audit of PR627. | A separate native/owner checker and focused tail controls add verification evidence. Distinguish the contributor's saved fresh replay from this round's commands. |
-| [#634](https://github.com/CrocSwap/integer-mult-bounds/pull/634) — Shike Chen (@ShikeChen01) | Lower-bound, coding-gap, Lorentzian and loss-chain research notes. | Retain written conditional arguments separately from computational certificates. Oblivious compilation and broad literature implications are not established by a SAT run or profile calculation alone. |
+| [#634](https://github.com/CrocSwap/integer-mult-bounds/pull/634) — Shike Chen (@ShikeChen01) | Lower-bound, coding-gap, Lorentzian and loss-chain research notes. | Four shipped SAT proofs pass the pinned drat-trim checker; the optional external 33-vertex instance is not replayed. Retain written conditional arguments separately from computational certificates. Oblivious compilation and broad literature implications are not established by a SAT run or profile calculation alone. |
 | [#635](https://github.com/CrocSwap/integer-mult-bounds/pull/635) — jeremykothe2 (@jeremykothe2) | Combination of h4a and two factored cold ends. | The interaction requires re-derived premixes and absorption repairs, not addition of separate savings. Full declarative reconstruction, dirty-state admission and ownership remain required. |
 | [#636](https://github.com/CrocSwap/integer-mult-bounds/pull/636) — Zhao Chi (@vectorsss) | Independent cold-end combination and PR635 owner repair. | The same-frame absorption and ten basis corrections have a separate rational proof. Recomputed supplier/owner profiles retain all inherited compiler and bit premises. |
 | [#637](https://github.com/CrocSwap/integer-mult-bounds/pull/637) — jeremykothe2 (@jeremykothe2) | Four additional premix-only dimension-eight ends. | No forward construction change is needed, but factored accumulators and every distinct terminal frame retain mutation controls. No general optimality claim. |
@@ -158,98 +159,15 @@ see also [CONTRIBUTORS.md](../../CONTRIBUTORS.md).
 ## Open next questions
 
 - **#455:** The fresh scientific stages pass. A JSON LF-to-CRLF adapter resolves the bit-template pin and downstream bit audit, but the subsequent complex_template_sha256 remains unmatched: expected 02d4d0031a173664f8adc5bccf0244f8ce349307eac09c0d48a3c8948a7f5b17; regenerated 62d1e17fe80b82691e7cef2b03974a826b513da6af5689eb4c0aac1b38355971. The tested newline and gzip-header/level variants do not explain it. Supply a portable source-bound correction; no expected digest is bypassed.
-- **#459:** Required contributed-package replay is still running; no completed execution is claimed.
 - **#461:** The claimed sharper 2*m^3/2^80 exceptional fraction is a GL-cover estimate, while the supplier retains the orthogonal-cover invoice. PR491 explicitly withdraws this probability transfer. Supply a valid bound for the actual cover or revert to the retained bad fraction and reprice; arithmetic alone does not discharge this obligation.
 - **#465:** The improved assembly imports the sharper GL-cover exceptional fraction without establishing it for the charged orthogonal cover. PR491 withdraws that probability transfer and uses a count-only correction. Reprice using a justified bad fraction or prove the missing transfer.
 - **#485:** The exact width rule/pivot ceiling has successful light checks. The actual full Linux job 114567592208 reaches the final discover check but fails: frozen hosting selection differs from recomputed optimum. Correct or explain that frozen selection with a source-bound completed full replay before closing the construction claim.
-- **#492:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
-  File "/tmp/reconciliation-fourth100-20261013/local-492/research/tensor-syndrome-portfolio/verify.py", line 16, in <module>
-    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]
-    ~~~~~~~~~^^
-  File "/tmp/reconciliation-fourth100-20261013/local-492/research/tensor-syndrome-portfolio/verify.py", line 15, in integrity
-    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: Package manifest mismatch
-
-- **#498:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
-  File "/tmp/reconciliation-fourth100-20261013/local-498/research/tensor-nonroot-pairs/verify.py", line 16, in <module>
-    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]
-    ~~~~~~~~~^^
-  File "/tmp/reconciliation-fourth100-20261013/local-498/research/tensor-nonroot-pairs/verify.py", line 15, in integrity
-    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: Package manifest mismatch
-
+- **#498:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File "/tmp/reconciliation-fourth100-20261013/local-498/research/tensor-nonroot-pairs/verify.py", line 16, in <module> integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[] ~~~~~~~~~^^ File "/tmp/reconciliation-fourth100-20261013/local-498/research/tensor-nonroot-pairs/verify.py", line 15, in integrity assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: Package manifest mismatch
 - **#499:** The proposal prices a cross-copy/cross-family split. PR451 supplies a trace obstruction to treating that split as the present physical operator. Retain the proposed ledger, but supply a realizable operator/interface and its complete charge before accepting the claimed improvement.
-- **#633:** Required contributed-package replay has not completed successfully. Latest direct evidence: transfer remain assumptions. No unconditional theorem or full Lean certification."
-}
-Traceback (most recent call last):
-  File "/tmp/reconciliation-fourth100-20261013/extra-633/research/pr627-independent-audit-20261013/check_native_owners.py", line 35, in <module>
-    selected = read(a.repository/'research/complex-k492-owner-repair/data/SPEC.json')
-  File "/tmp/reconciliation-fourth100-20261013/extra-633/research/pr627-independent-audit-20261013/check_native_owners.py", line 24, in read
-    raw = p.read_bytes()
-  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 777, in read_bytes
-    with self.open(mode='rb', buffering=0) as f:
-         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
-    return io.open(self, mode, buffering, encoding, errors, newline)
-           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '/tmp/reconciliation-fourth100-20261013/extra-633/research/complex-k492-owner-repair/data/SPEC.json'
-
-- **#634:** Required contributed-package replay is still running; no completed execution is claimed.
-- **#636:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
-  File "/tmp/reconciliation-fourth100-20261013/cold-636/research/combined-cold-ends-20261013/witness635/verify.py", line 39, in <module>
-    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: larger_gain manifest pin
-
-- **#638:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
-  File "/tmp/reconciliation-fourth100-20261013/cold-638/research/pr637-improvement-20261013/witness637/verify.py", line 39, in <module>
-    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: larger_gain manifest pin
-
-- **#639:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
-  File "/tmp/reconciliation-fourth100-20261013/cold-639/research/pr638-improvement-20261013/witness638/verify.py", line 39, in <module>
-    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: larger_gain manifest pin
-
-- **#640:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
-  File "/tmp/reconciliation-fourth100-20261013/cold-640/research/ck-u4-improvement-20261013/witness/verify.py", line 39, in <module>
-    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: larger_gain manifest pin
-
-- **#641:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
-  File "/tmp/reconciliation-fourth100-20261013/cold-641/research/complex-571-cold14-st2s4/verify.py", line 39, in <module>
-    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: larger_gain manifest pin
-
-- **#642:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
-  File "/tmp/reconciliation-fourth100-20261013/cold-642/research/selective249-improvement-20261013/witness/verify.py", line 39, in <module>
-    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: larger_gain manifest pin
-
-- **#643:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
-  File "/tmp/reconciliation-fourth100-20261013/cold-643/research/complex-571-cold14-twin/verify.py", line 39, in <module>
-    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: larger_gain manifest pin
-
-- **#644:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
-  File "/tmp/reconciliation-fourth100-20261013/cold-644/research/pr643-improvement-20261013/witness/verify.py", line 39, in <module>
-    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: larger_gain manifest pin
-
-- **#646:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
-  File "/tmp/reconciliation-fourth100-20261013/cold-646/research/signed-root-k480/verify.py", line 39, in <module>
-    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: larger_gain manifest pin
-
-- **#658:** Required contributed-package replay is still running; no completed execution is claimed.
-- **#664:** Required contributed-package replay is still running; no completed execution is claimed.
+- **#636:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File "/tmp/reconciliation-fourth100-20261013/cold-636/research/combined-cold-ends-20261013/witness635/verify.py", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin
+- **#638:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File "/tmp/reconciliation-fourth100-20261013/cold-638/research/pr637-improvement-20261013/witness637/verify.py", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin
+- **#639:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File "/tmp/reconciliation-fourth100-20261013/cold-639/research/pr638-improvement-20261013/witness638/verify.py", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin
+- **#640:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File "/tmp/reconciliation-fourth100-20261013/cold-640/research/ck-u4-improvement-20261013/witness/verify.py", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin
+- **#642:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File "/tmp/reconciliation-fourth100-20261013/cold-642/research/selective249-improvement-20261013/witness/verify.py", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin
+- **#644:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File "/tmp/reconciliation-fourth100-20261013/cold-644/research/pr643-improvement-20261013/witness/verify.py", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin
+- **#646:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File "/tmp/reconciliation-fourth100-20261013/cold-646/research/signed-root-k480/verify.py", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin

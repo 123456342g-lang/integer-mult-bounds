@@ -159,7 +159,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        19
+        20
       ],
       "ci_jobs": [],
       "remaining": null
@@ -222,7 +222,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        20
+        21
       ],
       "ci_jobs": [],
       "remaining": null
@@ -472,7 +472,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        21
+        22
       ],
       "ci_jobs": [],
       "remaining": null
@@ -512,13 +512,15 @@
     "mechanism": "Rank151 kernel combined with target-prefix mixing.",
     "scope_and_limits": "The complete new word is checked under the common-frame bit-label interface. The unchanged complex supplier binds; inherited rank149 CI alone is insufficient.",
     "evidence": {
-      "mode": "incomplete; retained diagnostics",
-      "fresh_receipt_indices": [],
+      "mode": "fresh scoped replay or report check",
+      "fresh_receipt_indices": [
+        23
+      ],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+      "remaining": null
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+    "remaining": null
   },
   "461": {
     "head": "dc297912ad446779f983818816617c03dfc76e16",
@@ -841,13 +843,15 @@
     "mechanism": "Response-preserving injection relocation and stage-conditioned donors.",
     "scope_and_limits": "Provider-specific widths, words and isometries are assigned to complete invocations. The simpler commuting realization and unsuccessful exploratory routes are distinguished.",
     "evidence": {
-      "mode": "incomplete; retained diagnostics",
-      "fresh_receipt_indices": [],
+      "mode": "fresh scoped replay or report check",
+      "fresh_receipt_indices": [
+        12
+      ],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/local-492/research/tensor-syndrome-portfolio/verify.py\", line 16, in <module>\n    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]\n    ~~~~~~~~~^^\n  File \"/tmp/reconciliation-fourth100-20261013/local-492/research/tensor-syndrome-portfolio/verify.py\", line 15, in integrity\n    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Package manifest mismatch\n"
+      "remaining": null
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/local-492/research/tensor-syndrome-portfolio/verify.py\", line 16, in <module>\n    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]\n    ~~~~~~~~~^^\n  File \"/tmp/reconciliation-fourth100-20261013/local-492/research/tensor-syndrome-portfolio/verify.py\", line 15, in integrity\n    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Package manifest mismatch\n"
+    "remaining": null
   },
   "495": {
     "head": "355d9f7ff293e291676ff4a32eed434419692576",
@@ -905,10 +909,10 @@
       "mode": "incomplete; retained diagnostics",
       "fresh_receipt_indices": [],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/local-498/research/tensor-nonroot-pairs/verify.py\", line 16, in <module>\n    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]\n    ~~~~~~~~~^^\n  File \"/tmp/reconciliation-fourth100-20261013/local-498/research/tensor-nonroot-pairs/verify.py\", line 15, in integrity\n    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Package manifest mismatch\n"
+      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/local-498/research/tensor-nonroot-pairs/verify.py\", line 16, in <module> integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[] ~~~~~~~~~^^ File \"/tmp/reconciliation-fourth100-20261013/local-498/research/tensor-nonroot-pairs/verify.py\", line 15, in integrity assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: Package manifest mismatch"
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/local-498/research/tensor-nonroot-pairs/verify.py\", line 16, in <module>\n    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]\n    ~~~~~~~~~^^\n  File \"/tmp/reconciliation-fourth100-20261013/local-498/research/tensor-nonroot-pairs/verify.py\", line 15, in integrity\n    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Package manifest mismatch\n"
+    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/local-498/research/tensor-nonroot-pairs/verify.py\", line 16, in <module> integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[] ~~~~~~~~~^^ File \"/tmp/reconciliation-fourth100-20261013/local-498/research/tensor-nonroot-pairs/verify.py\", line 15, in integrity assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: Package manifest mismatch"
   },
   "499": {
     "head": "0f3e55dbf6b29a28bf462b4b3ec2a3ef06a28f5d",
@@ -984,7 +988,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        62
+        69
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1026,7 +1030,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        18
+        19
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1068,7 +1072,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        56
+        61
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1110,7 +1114,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        14
+        15
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1131,7 +1135,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        45
+        50
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1152,7 +1156,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        15
+        16
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1215,7 +1219,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        16
+        17
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1257,7 +1261,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        59
+        66
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1278,7 +1282,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        60
+        67
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1299,7 +1303,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        36
+        38
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1341,7 +1345,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        35
+        37
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1362,7 +1366,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        46
+        51
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1383,7 +1387,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        47
+        52
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1423,13 +1427,15 @@
     "mechanism": "Independent reconstruction and audit of PR627.",
     "scope_and_limits": "A separate native/owner checker and focused tail controls add verification evidence. Distinguish the contributor's saved fresh replay from this round's commands.",
     "evidence": {
-      "mode": "incomplete; retained diagnostics",
-      "fresh_receipt_indices": [],
+      "mode": "fresh scoped replay or report check",
+      "fresh_receipt_indices": [
+        70
+      ],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: transfer remain assumptions. No unconditional theorem or full Lean certification.\"\n}\nTraceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/extra-633/research/pr627-independent-audit-20261013/check_native_owners.py\", line 35, in <module>\n    selected = read(a.repository/'research/complex-k492-owner-repair/data/SPEC.json')\n  File \"/tmp/reconciliation-fourth100-20261013/extra-633/research/pr627-independent-audit-20261013/check_native_owners.py\", line 24, in read\n    raw = p.read_bytes()\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py\", line 777, in read_bytes\n    with self.open(mode='rb', buffering=0) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/tmp/reconciliation-fourth100-20261013/extra-633/research/complex-k492-owner-repair/data/SPEC.json'\n"
+      "remaining": null
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: transfer remain assumptions. No unconditional theorem or full Lean certification.\"\n}\nTraceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/extra-633/research/pr627-independent-audit-20261013/check_native_owners.py\", line 35, in <module>\n    selected = read(a.repository/'research/complex-k492-owner-repair/data/SPEC.json')\n  File \"/tmp/reconciliation-fourth100-20261013/extra-633/research/pr627-independent-audit-20261013/check_native_owners.py\", line 24, in read\n    raw = p.read_bytes()\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py\", line 777, in read_bytes\n    with self.open(mode='rb', buffering=0) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/tmp/reconciliation-fourth100-20261013/extra-633/research/complex-k492-owner-repair/data/SPEC.json'\n"
+    "remaining": null
   },
   "634": {
     "head": "189b5771bc1792d5038105463e476e30cb6eb58c",
@@ -1440,15 +1446,17 @@
       "name": "Shike Chen"
     },
     "mechanism": "Lower-bound, coding-gap, Lorentzian and loss-chain research notes.",
-    "scope_and_limits": "Retain written conditional arguments separately from computational certificates. Oblivious compilation and broad literature implications are not established by a SAT run or profile calculation alone.",
+    "scope_and_limits": "Four shipped SAT proofs pass the pinned drat-trim checker; the optional external 33-vertex instance is not replayed. Retain written conditional arguments separately from computational certificates. Oblivious compilation and broad literature implications are not established by a SAT run or profile calculation alone.",
     "evidence": {
-      "mode": "incomplete; retained diagnostics",
-      "fresh_receipt_indices": [],
+      "mode": "fresh scoped replay or report check",
+      "fresh_receipt_indices": [
+        65
+      ],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+      "remaining": null
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+    "remaining": null
   },
   "635": {
     "head": "a6895a69f8ad98ab45777b03e9e6f48888c39f6f",
@@ -1463,7 +1471,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        37
+        39
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1485,10 +1493,10 @@
       "mode": "incomplete; retained diagnostics",
       "fresh_receipt_indices": [],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-636/research/combined-cold-ends-20261013/witness635/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-636/research/combined-cold-ends-20261013/witness635/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin"
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-636/research/combined-cold-ends-20261013/witness635/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-636/research/combined-cold-ends-20261013/witness635/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin"
   },
   "637": {
     "head": "4edb0dda99c495141cc56ae6e8a74e632a74db8a",
@@ -1503,7 +1511,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        38
+        40
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1525,10 +1533,10 @@
       "mode": "incomplete; retained diagnostics",
       "fresh_receipt_indices": [],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-638/research/pr637-improvement-20261013/witness637/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-638/research/pr637-improvement-20261013/witness637/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin"
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-638/research/pr637-improvement-20261013/witness637/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-638/research/pr637-improvement-20261013/witness637/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin"
   },
   "639": {
     "head": "a374528ad44924951514067c3e104b7afb0e54c3",
@@ -1544,10 +1552,10 @@
       "mode": "incomplete; retained diagnostics",
       "fresh_receipt_indices": [],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-639/research/pr638-improvement-20261013/witness638/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-639/research/pr638-improvement-20261013/witness638/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin"
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-639/research/pr638-improvement-20261013/witness638/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-639/research/pr638-improvement-20261013/witness638/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin"
   },
   "640": {
     "head": "8ef4414fc65c8189f37fc43dc51915cb565d041e",
@@ -1563,10 +1571,10 @@
       "mode": "incomplete; retained diagnostics",
       "fresh_receipt_indices": [],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-640/research/ck-u4-improvement-20261013/witness/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-640/research/ck-u4-improvement-20261013/witness/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin"
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-640/research/ck-u4-improvement-20261013/witness/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-640/research/ck-u4-improvement-20261013/witness/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin"
   },
   "641": {
     "head": "ff580ea5407aa427d64233523e46ee0afe24a766",
@@ -1579,13 +1587,15 @@
     "mechanism": "Cost-neutral pivot swaps unlocking entering ends.",
     "scope_and_limits": "Typed pivot-swap admission and generalized width checks retain targeted controls. Moving pivots preserves zero dirty response only after complete reconstruction.",
     "evidence": {
-      "mode": "incomplete; retained diagnostics",
-      "fresh_receipt_indices": [],
+      "mode": "fresh scoped replay or report check",
+      "fresh_receipt_indices": [
+        42
+      ],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-641/research/complex-571-cold14-st2s4/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+      "remaining": null
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-641/research/complex-571-cold14-st2s4/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+    "remaining": null
   },
   "642": {
     "head": "d1154e23e13d85fdbf64d4b41fa20bb0f56a428f",
@@ -1601,10 +1611,10 @@
       "mode": "incomplete; retained diagnostics",
       "fresh_receipt_indices": [],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-642/research/selective249-improvement-20261013/witness/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-642/research/selective249-improvement-20261013/witness/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin"
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-642/research/selective249-improvement-20261013/witness/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-642/research/selective249-improvement-20261013/witness/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin"
   },
   "643": {
     "head": "bbfa9fe1d84d5572f4d144c2ee56a3eddc7a83f5",
@@ -1617,13 +1627,15 @@
     "mechanism": "Twin JP8-family supplier replacing the CK call.",
     "scope_and_limits": "The second provider must differ in the checked substitution fields and pass its own full construction. Provider labels alone do not satisfy partner-control obligations.",
     "evidence": {
-      "mode": "incomplete; retained diagnostics",
-      "fresh_receipt_indices": [],
+      "mode": "fresh scoped replay or report check",
+      "fresh_receipt_indices": [
+        41
+      ],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-643/research/complex-571-cold14-twin/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+      "remaining": null
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-643/research/complex-571-cold14-twin/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+    "remaining": null
   },
   "644": {
     "head": "5d9427d492b0d3f22a895e2c519624f293eac44e",
@@ -1639,10 +1651,10 @@
       "mode": "incomplete; retained diagnostics",
       "fresh_receipt_indices": [],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-644/research/pr643-improvement-20261013/witness/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-644/research/pr643-improvement-20261013/witness/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin"
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-644/research/pr643-improvement-20261013/witness/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-644/research/pr643-improvement-20261013/witness/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin"
   },
   "645": {
     "head": "638a5171dd1aca89ff50d07dcbe288b567769804",
@@ -1679,10 +1691,10 @@
       "mode": "incomplete; retained diagnostics",
       "fresh_receipt_indices": [],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-646/research/signed-root-k480/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-646/research/signed-root-k480/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin"
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-646/research/signed-root-k480/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-646/research/signed-root-k480/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin"
   },
   "648": {
     "head": "52b3fc87653a19a024d74144f6c4dc453ffd69cb",
@@ -1697,7 +1709,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        39
+        43
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1718,7 +1730,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        40
+        44
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1739,7 +1751,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        58
+        63
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1760,7 +1772,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        41
+        45
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1802,7 +1814,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        42
+        46
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1823,7 +1835,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        43
+        47
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1863,13 +1875,15 @@
     "mechanism": "Joint three- and four-call owner improvement.",
     "scope_and_limits": "Strict integer stop-loss comparison and literal maps support the gain. Failed five-call exploration is bounded evidence, not optimality.",
     "evidence": {
-      "mode": "incomplete; retained diagnostics",
-      "fresh_receipt_indices": [],
+      "mode": "fresh scoped replay or report check",
+      "fresh_receipt_indices": [
+        64
+      ],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+      "remaining": null
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+    "remaining": null
   },
   "659": {
     "head": "4982f0ca66ffe0960b5a6451deb5b66b1039326b",
@@ -1884,7 +1898,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        44
+        48
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1926,7 +1940,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        53
+        58
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1947,7 +1961,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        49
+        54
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1966,13 +1980,15 @@
     "mechanism": "Three entrance-promotion groups on the no-triangle word.",
     "scope_and_limits": "The scalar program stays fixed but all changed entrance/frame charges and owner packing are recomputed. Full promotion's exclusion is a restricted packing result.",
     "evidence": {
-      "mode": "incomplete; retained diagnostics",
-      "fresh_receipt_indices": [],
+      "mode": "fresh scoped replay or report check",
+      "fresh_receipt_indices": [
+        49
+      ],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+      "remaining": null
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+    "remaining": null
   },
   "665": {
     "head": "d0e4f1eb295e5cce508dc76c6937290a9175e42b",
@@ -1987,7 +2003,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        54
+        59
       ],
       "ci_jobs": [],
       "remaining": null
@@ -2008,7 +2024,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        55
+        60
       ],
       "ci_jobs": [],
       "remaining": null
@@ -2029,7 +2045,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        52
+        57
       ],
       "ci_jobs": [],
       "remaining": null

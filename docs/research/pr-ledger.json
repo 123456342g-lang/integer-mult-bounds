@@ -67,7 +67,7 @@
     "research/community-reconciliation92-audit/DISPOSITIONS.json": "5dafbc374822ed60d67da35fcdb27127c71ad839acec7b68a206c5229d45ba11",
     "research/community-reconciliation-next100-audit/DISPOSITIONS.json": "de8d4f4026b86e5e59d5945d0b865de16c6886aa013451a2e3c117665bd95b51",
     "research/community-reconciliation-third100-audit/DISPOSITIONS.json": "dbd7051bd339005e1bd5c11e296965fda0e267dfc09136d9e4cf0ecb17976b89",
-    "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json": "a27539f3256e722be5dd086634e82f38798aa5482c878ccb1328fc599cff6b59",
+    "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json": "65721a200640ae11bb5e6f2344dd064e44d013cf57afd0dfc36d5c8ddf1e530e",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -29355,15 +29355,15 @@
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Required contributed-package replay is still running; no completed execution is claimed.",
+      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
       "reviewed_head": "e037bc50c3d5efc1bec0d258a9f274f79ba45ec7",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
-        "required_execution_complete": false,
-        "published": true
+        "required_execution_complete": true,
+        "published": false
       },
       "verification_evidence": [
         {
@@ -30510,9 +30510,19 @@
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "closedAt": "2026-10-14T03:11:49Z",
+        "headRefOid": "3738c3ce2d04d6a6c6363408ff9402286f592bc7",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 483,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/483",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/483#issuecomment-6160029230",
+        "integration_commit": "7f19399def7c51ff8016d9190999830ef3e17f95"
+      },
       "current_head_observed_in": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
       "reviewed_head": "3738c3ce2d04d6a6c6363408ff9402286f592bc7",
       "review_completion": {
@@ -31032,15 +31042,15 @@
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/local-492/research/tensor-syndrome-portfolio/verify.py\", line 16, in <module>\n    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]\n    ~~~~~~~~~^^\n  File \"/tmp/reconciliation-fourth100-20261013/local-492/research/tensor-syndrome-portfolio/verify.py\", line 15, in integrity\n    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Package manifest mismatch\n",
+      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
       "reviewed_head": "0c9eb6f80cef2e5797e5b7af940f447c0bdf25ad",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
-        "required_execution_complete": false,
-        "published": true
+        "required_execution_complete": true,
+        "published": false
       },
       "verification_evidence": [
         {
@@ -31321,7 +31331,7 @@
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/local-498/research/tensor-nonroot-pairs/verify.py\", line 16, in <module>\n    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]\n    ~~~~~~~~~^^\n  File \"/tmp/reconciliation-fourth100-20261013/local-498/research/tensor-nonroot-pairs/verify.py\", line 15, in integrity\n    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Package manifest mismatch\n",
+      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/local-498/research/tensor-nonroot-pairs/verify.py\", line 16, in <module> integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[] ~~~~~~~~~^^ File \"/tmp/reconciliation-fourth100-20261013/local-498/research/tensor-nonroot-pairs/verify.py\", line 15, in integrity assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: Package manifest mismatch",
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
       "reviewed_head": "44a703782a69a897350572b5b078d5292fdbf92d",
@@ -38209,12 +38219,12 @@
       "closure": null,
       "reviewed_head": "dc14a57d17c63b0e427a5623ef23a2459bc196e9",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: transfer remain assumptions. No unconditional theorem or full Lean certification.\"\n}\nTraceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/extra-633/research/pr627-independent-audit-20261013/check_native_owners.py\", line 35, in <module>\n    selected = read(a.repository/'research/complex-k492-owner-repair/data/SPEC.json')\n  File \"/tmp/reconciliation-fourth100-20261013/extra-633/research/pr627-independent-audit-20261013/check_native_owners.py\", line 24, in read\n    raw = p.read_bytes()\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py\", line 777, in read_bytes\n    with self.open(mode='rb', buffering=0) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/tmp/reconciliation-fourth100-20261013/extra-633/research/complex-k492-owner-repair/data/SPEC.json'\n",
+      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
-        "required_execution_complete": false,
-        "published": true
+        "required_execution_complete": true,
+        "published": false
       },
       "verification_evidence": [
         {
@@ -38266,7 +38276,7 @@
         {
           "head": "189b5771bc1792d5038105463e476e30cb6eb58c",
           "evidence": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
-          "scope": "Lower-bound, coding-gap, Lorentzian and loss-chain research notes. Retain written conditional arguments separately from computational certificates. Oblivious compilation and broad literature implications are not established by a SAT run or profile calculation alone.",
+          "scope": "Lower-bound, coding-gap, Lorentzian and loss-chain research notes. Four shipped SAT proofs pass the pinned drat-trim checker; the optional external 33-vertex instance is not replayed. Retain written conditional arguments separately from computational certificates. Oblivious compilation and broad literature implications are not established by a SAT run or profile calculation alone.",
           "kind": "integration_or_partial_review"
         }
       ],
@@ -38280,12 +38290,12 @@
       "closure": null,
       "reviewed_head": "189b5771bc1792d5038105463e476e30cb6eb58c",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay is still running; no completed execution is claimed.",
+      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
-        "required_execution_complete": false,
-        "published": true
+        "required_execution_complete": true,
+        "published": false
       },
       "verification_evidence": [
         {
@@ -38432,7 +38442,7 @@
       "closure": null,
       "reviewed_head": "679621828a85bac68af869fb0e55b54508e6b14b",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-636/research/combined-cold-ends-20261013/witness635/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n",
+      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-636/research/combined-cold-ends-20261013/witness635/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
@@ -38584,7 +38594,7 @@
       "closure": null,
       "reviewed_head": "a77f4a358b5129cda3e510a11a7f9a818aba5274",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-638/research/pr637-improvement-20261013/witness637/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n",
+      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-638/research/pr637-improvement-20261013/witness637/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
@@ -38655,7 +38665,7 @@
       "closure": null,
       "reviewed_head": "a374528ad44924951514067c3e104b7afb0e54c3",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-639/research/pr638-improvement-20261013/witness638/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n",
+      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-639/research/pr638-improvement-20261013/witness638/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
@@ -38726,7 +38736,7 @@
       "closure": null,
       "reviewed_head": "8ef4414fc65c8189f37fc43dc51915cb565d041e",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-640/research/ck-u4-improvement-20261013/witness/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n",
+      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-640/research/ck-u4-improvement-20261013/witness/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
@@ -38797,12 +38807,12 @@
       "closure": null,
       "reviewed_head": "ff580ea5407aa427d64233523e46ee0afe24a766",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-641/research/complex-571-cold14-st2s4/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n",
+      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
-        "required_execution_complete": false,
-        "published": true
+        "required_execution_complete": true,
+        "published": false
       },
       "verification_evidence": [
         {
@@ -38868,7 +38878,7 @@
       "closure": null,
       "reviewed_head": "d1154e23e13d85fdbf64d4b41fa20bb0f56a428f",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-642/research/selective249-improvement-20261013/witness/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n",
+      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-642/research/selective249-improvement-20261013/witness/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
@@ -38939,12 +38949,12 @@
       "closure": null,
       "reviewed_head": "bbfa9fe1d84d5572f4d144c2ee56a3eddc7a83f5",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-643/research/complex-571-cold14-twin/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n",
+      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
-        "required_execution_complete": false,
-        "published": true
+        "required_execution_complete": true,
+        "published": false
       },
       "verification_evidence": [
         {
@@ -39010,7 +39020,7 @@
       "closure": null,
       "reviewed_head": "5d9427d492b0d3f22a895e2c519624f293eac44e",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-644/research/pr643-improvement-20261013/witness/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n",
+      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-644/research/pr643-improvement-20261013/witness/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
@@ -39162,7 +39172,7 @@
       "closure": null,
       "reviewed_head": "cdfe8273bb5054e0a837a3594309c6262e995b1f",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-646/research/signed-root-k480/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n",
+      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last): File \"/tmp/reconciliation-fourth100-20261013/cold-646/research/signed-root-k480/verify.py\", line 39, in <module> assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: larger_gain manifest pin",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
@@ -39391,8 +39401,18 @@
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "CLOSED",
+      "closure": {
+        "closedAt": "2026-10-14T03:11:53Z",
+        "headRefOid": "df5b9c41fcea749242af886646dfebb9d86319a7",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 651,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/651",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/651#issuecomment-6160030047",
+        "integration_commit": "7f19399def7c51ff8016d9190999830ef3e17f95"
+      },
       "reviewed_head": "df5b9c41fcea749242af886646dfebb9d86319a7",
       "disposition": "incorporated",
       "unresolved_question": null,
@@ -39871,12 +39891,12 @@
       "closure": null,
       "reviewed_head": "a1f15d0c78e1ca44d3414d184e57637b36c6822d",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay is still running; no completed execution is claimed.",
+      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
-        "required_execution_complete": false,
-        "published": true
+        "required_execution_complete": true,
+        "published": false
       },
       "verification_evidence": [
         {
@@ -39938,8 +39958,18 @@
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "CLOSED",
+      "closure": {
+        "closedAt": "2026-10-14T03:11:57Z",
+        "headRefOid": "4982f0ca66ffe0960b5a6451deb5b66b1039326b",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 659,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/659",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/659#issuecomment-6160030931",
+        "integration_commit": "7f19399def7c51ff8016d9190999830ef3e17f95"
+      },
       "reviewed_head": "4982f0ca66ffe0960b5a6451deb5b66b1039326b",
       "disposition": "incorporated",
       "unresolved_question": null,
@@ -40310,12 +40340,12 @@
       "closure": null,
       "reviewed_head": "fed4c136d20835764be543dcf6c0c60177aee9ed",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay is still running; no completed execution is claimed.",
+      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
-        "required_execution_complete": false,
-        "published": true
+        "required_execution_complete": true,
+        "published": false
       },
       "verification_evidence": [
         {
@@ -50632,8 +50662,8 @@
     535
   ],
   "github_dispositions": {
-    "CLOSED": 366,
+    "CLOSED": 369,
     "MERGED": 287,
-    "OPEN": 108
+    "OPEN": 105
   }
 }

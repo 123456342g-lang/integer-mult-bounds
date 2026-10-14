@@ -45,6 +45,15 @@
     "repair": "Remove only absent .gitattributes checkout metadata; all present source/data pins exact"
   },
   {
+    "number": 498,
+    "head": "44a703782a69a897350572b5b078d5292fdbf92d",
+    "manifest_path": "research/tensor-nonroot-pairs/MANIFEST.json",
+    "original_sha256": "3f776fc96738e0de639981b1cd045dba28ad31b7339cc78a58fa9b5be7a883fa",
+    "missing_metadata_hash": "48747480eddba024928d03be9bf83dc579e5515768647507a767e8187a85c9ab",
+    "repaired_sha256": "b6a75d5dfc3276e5ca49ac43d9754b8e2ad64eb116a0dcd26b0cc9ee7ef8e5ee",
+    "repair": "Remove only absent .gitattributes checkout metadata; all present source/data pins exact"
+  },
+  {
     "number": 505,
     "head": "4ee769c8e28837482272b5f4742497da8e2fc9d4",
     "manifest_path": "research/asynchronous-whole-owners/MANIFEST.json",

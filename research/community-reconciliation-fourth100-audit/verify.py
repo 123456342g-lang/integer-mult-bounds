@@ -156,6 +156,13 @@ def main():
         normalized=gzip.decompress((HERE/'adapters/pr505-normalized-template.json.gz').read_bytes())
         require(original.replace(hashlib.sha256(lf).hexdigest().encode(),hashlib.sha256(crlf).hexdigest().encode())==normalized,'Serialization changed other template bytes')
         require(hashlib.sha256(normalized).hexdigest()==load('adapters/pr505-expected.json')['template_sha256'],'Serialization missed original template expectation')
+    if (HERE/'DRAT-SOURCE.json').exists():
+        drat=load('DRAT-SOURCE.json')
+        require(hashlib.sha256((ROOT/drat['path']).read_bytes()).hexdigest()==drat['sha256'], 'SAT checker source changed')
+        proof_checks=[r for r in execution if r.get('receipt_group')=='proof' and r['number']==634]
+        require(len(proof_checks)==1 and proof_checks[0]['exit_code']==0, 'Missing independent SAT proof check')
+        proof_log=gzip.decompress((HERE/proof_checks[0]['retained_log']).read_bytes())
+        require(proof_log.count(b's VERIFIED')==4, 'Incomplete SAT proof evidence')
     for report in load('REPORT-IDENTITY.json'):
         src=sources_by_number[report['number']]
         require(src['head']==report['head'], 'Report source head')
