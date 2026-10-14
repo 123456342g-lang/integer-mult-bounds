@@ -8,9 +8,9 @@
   ],
   "python": "Python 3.12.11",
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
-  "seconds": 1.863,
-  "status": "failed",
-  "exit_code": 1,
+  "seconds": 1.806,
+  "status": "passed",
+  "exit_code": 0,
   "input_sha256": {
     "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
     "Makefile": "ea8830dd79da493e2d75baf753d733ff7efbcf2b4794afe41fae0ac8f3055646",
@@ -192,6 +192,7 @@
     "scripts/compact_control_layer.py": "e814c9f8d84f2e5d3aa2e06c36697f27f110218addc40ff8df2801fde861ff9f",
     "scripts/verify_frontier531_wrapper_swap.py": "fe6a948e67366825f6c22e7c69a661a727b4092b2aa9cb3e877d6c3002e592a9",
     "scripts/three_stage_cover_network.py": "7e0ad6fd1921b6905a53ce1eeaa03d3bb3a8a8bbaa0382516ea98b636f46335e",
+    ".github/workflows/community-batch1099.yml": "523c7de95ed4375e487dce59430c2e7cffbf25cef996cec6b4b6dbd0a149e5b7",
     "scripts/copied_centers/__init__.py": "13db4f09038a2ff5335cbd4dbd93274b0fb16b3c7b51e4de67cbb2801a3f78e1",
     "scripts/copied_centers/README.md": "8d348a28fc11615fb686f7d47548db06a5000378b54e0e47438d17292b5942b9",
     "scripts/copied_centers/corners.py": "9eecdc39c67cc18c806a33f0be03986c28591d322881fd60c11f52c625c8067b",
@@ -5306,6 +5307,6 @@
     "research/native-complex-moment552/inputs/PR558-INVOICE.json": "4b6977a049663ab958bd9a48c2864f7a7bddb26aef03e14f3068aede020ef76f",
     "research/native-complex-moment552/inputs/PR552-INVOICE.json": "4ac060dbf2ea2624dd1f4bda23bdb81c0a3013dfe49b77c092b631885529947f"
   },
-  "log_sha256": "2470afb7b8e79581e0f288e7f7be1bb482a4d2aeaa3c783cde8cd00febc57283",
+  "log_sha256": "0193862a263acc3f74428a764b74d5e5533f56cd2bc5728fc0d26e747e316201",
   "scope": "Scoped package command only; no full supplier replay or theorem certification. Inputs are an explicit isolated snapshot; this pilot does not automatically reuse these receipts as a complete transitive cache."
 }
