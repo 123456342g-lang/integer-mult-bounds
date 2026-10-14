@@ -18,9 +18,11 @@ verifier checks, with exact rationals only:
    and the recorded (smaller) previous cutoff;
 3. the closed-form reason: delta' = s*delta and Delta a = (1-s)*delta/s exactly,
    so the quadratic cutoff can never pay the carry while s < 1/2;
-4. an exact corrected cutoff chain that satisfies the rule at every stage;
-5. kappa does not depend on the cutoffs (the pinned outer engine has no cutoff
-   input, and kappa reproduces from the chain end alone).
+4. an exact corrected cutoff chain that satisfies the rule at every stage, least
+   under the receipt's own 512-bit bound on each stage's fresh constants;
+5. the numerical kappa calculation does not read the cutoffs (the pinned outer
+   engine has no cutoff input, and kappa reproduces from the chain end alone).
+   The bootstrap proof obligation itself is not discharged here.
 
 Standard library only. Prepared by Josie Elliston with Claude Code
 (Claude Opus 5.5) assistance.
@@ -95,7 +97,10 @@ def bind_text(data):
         src = tar.extractfile('code/assemble.py').read().decode()
     require('cut=max(ceil(36/gap**2),ceil(2*(4+512)/gap))' in src, 'selected assembler formula')
     require("chain=[Q(384599,10**10)]" in src and 'for _ in range(7)' in src, 'selected chain start/depth')
-    outer = data['research/complex-allcold/engines/outer.py'].decode()
+    return check_outer(data['research/complex-allcold/engines/outer.py'].decode())
+
+
+def check_outer(outer):
     fn = [n for n in ast.parse(outer).body if isinstance(n, ast.FunctionDef) and n.name == 'assembly']
     require(len(fn) == 1, 'one outer assembly')
     args = [a.arg for a in fn[0].args.args]
@@ -201,7 +206,7 @@ def summarize(record):
     return result
 
 
-def controls(record, args):
+def controls(record, outer_src):
     rejected = []
 
     def expect(name, fn):
@@ -248,11 +253,13 @@ def controls(record, args):
     expect('recorded_cutoffs_with_carry', recorded_with_carry)
 
     def outer_with_cutoff():
-        require(args + ['cutoffs'] == ['bit_saving', 'complex_saving', 'bridge', 'kappa', 'eta', 'beta'],
-                'outer signature')
+        src = outer_src.replace('def assembly(bit_saving,complex_saving,bridge,kappa,',
+                                'def assembly(bit_saving,complex_saving,bridge,kappa,cutoffs,')
+        require(src != outer_src, 'mutation applied')
+        check_outer(src)
     expect('outer_engine_with_cutoff_input', outer_with_cutoff)
 
-    # positive control: the corrected cutoffs, written into the receipt, pay the carry
+    # positive control: the corrected cutoffs, substituted in memory, pay the carry
     s, rows, _ = audit_branch(record, 'bootstrap', 'complex_lower')
     fixed = [x['L'] for x in corrected_chain(rows)]
     fails = carry_failures(s, rows, fixed)
@@ -262,10 +269,10 @@ def controls(record, args):
 
 def main():
     data = load_sources()
-    args = bind_text(data)
+    bind_text(data)
     record = json.loads(data['research/community-frontier1094-audit/ASSEMBLY.json'])
     result = summarize(record)
-    rejected = controls(record, args)
+    rejected = controls(record, data['research/complex-allcold/engines/outer.py'].decode())
     result['controls_rejected'] = rejected
     expected_path = HERE / 'RESULT.json'
     if '--write' in sys.argv:

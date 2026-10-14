@@ -46,7 +46,7 @@
   "budget_minutes": 60,
   "stop_rule": "Stop after the exact verdict on all 14 recorded cutoffs, the closed-form reason and an exact corrected chain; do not attempt repair (b) or other lineages in this session.",
   "outcome": "completed",
-  "evidence": "verify.py (stdlib, exact Fractions): 14 recorded cutoffs reproduce; stage 1 valid in both branches; stages 2-7 of both branches (12/14) fail the rule with the minimal carry, shortfall ratio 1.996649 = ~2(1-s); closed form delta_(i+1)=s*delta_i, Delta a=(1-s)delta/s proves quadratic cutoffs never pay the carry for s<1/2; exact minimal corrected chain (stage-7 cutoff 48 digits vs 46); kappa reproduced from chain end, outer engine takes no cutoff; 6 rejected controls, RESULT.json pinned.",
+  "evidence": "verify.py (stdlib, exact Fractions): 14 recorded cutoffs reproduce; stage 1 valid in both branches; stages 2-7 of both branches (12/14) fail the rule with the minimal carry, shortfall ratio 1.996649 = ~2(1-s); closed form delta_(i+1)=s*delta_i, Delta a=(1-s)delta/s proves quadratic cutoffs never pay the carry for s<1/2; exact minimal corrected chain (stage-7 cutoff 48 digits vs 46); kappa reproduced from chain end, outer engine takes no cutoff; 6 rejected controls, RESULT.json pinned. Supplementary unregistered scan_receipts.py: all 114 stage>=3 cutoffs in 23 branches of 12 in-repo ASSEMBLY.json receipts fail the minimal carry.",
   "author": "Josie Elliston",
   "ai_assistance": "Claude Code (Claude Opus 5.5) wrote the verifier and README under the author's direction; arithmetic is exact and self-checked.",
   "open_questions": [
@@ -57,10 +57,10 @@
       "blocked_by": "The toll inventory is spread across inherited proofs (PR387, five-stage banks, #384 lineage)."
     },
     {
-      "question": "Do the T37 (1024-allowance) receipts and the deeper-chain open PRs #1424 (12 levels), #1586 (82) and #1724 (240) fail the same way?",
-      "why_it_matters": "The closed form predicts yes for every fixed-allowance chain with s < 1/2; a direct check would confirm the scope of the correction.",
-      "first_step": "Parameterize verify.py by receipt path, allowance, chain start and depth.",
-      "blocked_by": "None; not run here to keep the scope to the selected record."
+      "question": "Do the open PRs with deeper chains (#1424: 12 levels, #1586: 82, #1724: 240) fail the same way, and how large do their corrected cutoffs become?",
+      "why_it_matters": "The in-repo receipts all fail; deeper chains compound the carry, so their corrected cutoffs show the scale of the text correction if repair (b) is not adopted.",
+      "first_step": "Run scan_receipts.py against each PR head's ASSEMBLY receipt.",
+      "blocked_by": "None; out of this session's scope (selected record only)."
     }
   ]
 }

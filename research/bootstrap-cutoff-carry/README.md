@@ -1,6 +1,6 @@
 # Selected bootstrap cutoffs omit the carried constant
 
-**Scoped audit of one finite lemma instantiation. κ is unchanged and no new bound is claimed.**
+**Scoped audit of one finite lemma instantiation. The numerical κ is unchanged and no new bound is claimed.**
 
 The selected record's assembly (`research/community-frontier1094-audit/ASSEMBLY.json`, SHA-256 `1122cb3a…`)
 records seven finite bootstrap cutoffs per branch (`bootstrap[*]` and `conservative_bootstrap[*]`). The frozen
@@ -26,22 +26,31 @@ constant as `C_large + C_old*2^(L*(a_(j+1)-a_j))`. That carried factor alone giv
   `a_(i+1) − a_i = (1−s)δ_i/s` exactly. Any valid stage-i cutoff has `L_i ≥ 36/δ_i²`, so the next carry is
   at least `36(1−s)/δ_(i+1)` bits. The quadratic cutoff `⌈36/δ'²⌉` gives `Lδ' < 36/δ' + δ'`, while the rule
   needs `Lδ' ≥ 8 + 72(1−s)/δ'`. Both hold only if `δ'² − 8δ' > 36(1−2s)`, which is impossible for `s < 1/2`
-  and `δ' < 8`. As δ → 0 the shortfall tends to `2(1−s)`. The argument depends only on the recurrence and
-  the formula, so every lineage that uses this formula with a fixed allowance should fail the same way. The
-  T37 lineage uses a 1024-bit allowance, and the open PRs #1424, #1586 and #1724 use deeper chains. **Only
-  the selected record is checked here.**
+  and `δ' < 8`. As δ → 0 the shortfall tends to `2(1−s)`. The argument uses only the recurrence and the
+  formula. It therefore applies to any stage after the first whose recorded cutoff is the quadratic term.
+  With a fixed allowance that is every stage once `18/δ − 4` exceeds the allowance, which is all of them
+  here. This predicts the same failure in the T37 lineage (1024-bit allowance) and in the deeper chains of
+  open PRs #1424, #1586 and #1724. **Only the selected record is checked by the registered verifier.**
+- **Supplementary scan.** `scan_receipts.py` is not part of the registered replay. It reads every in-repo
+  `research/*/ASSEMBLY.json` that records cutoffs: 12 receipts and 23 branches, including the #741, #799,
+  #890, #942 and #1042 frontier audits and the T37 1024-bit receipt. It checks stages 3 onward using
+  recorded exponents only, with no assumed chain start or allowance. All 114 such stages fail the
+  minimal carry.
 - **Corrected chain.** Take the least cutoffs that satisfy the rule, with `ceil(log2 C)` carried as
-  `max(512, ℓ + ⌈L·Δa⌉) + 1`. This assumes each stage's fresh constants stay below `2^512`, as the
-  receipt does. The corrected cutoffs are about `2^(i−1)` times the recorded ones: stage 7 has 48 decimal
-  digits instead of 46. The carried constant reaches about `1.9·10^25` bits. A positive control writes
-  these cutoffs back into the receipt and confirms that every stage then pays the carry.
-- **κ is unaffected.** The pinned outer engine (`engines/outer.py`, `c1ebb521…`) has signature
+  the upper bound `max(512, ℓ + ⌈L·Δa⌉) + 1`. "Least" is relative to this propagated bound and the
+  receipt's own assumption that each stage's fresh constants stay below `2^512`. It is not a minimum
+  over the actual, unmeasured constants. The corrected cutoffs are about `2^(i−1)` times the recorded ones: stage 7 has 48 decimal
+  digits instead of 46. The carried constant reaches about `1.9·10^25` bits. A positive control substitutes
+  these cutoffs in memory and confirms that every stage then pays the carry.
+- **The numerical κ calculation is unaffected.** The pinned outer engine (`engines/outer.py`, `c1ebb521…`) has signature
   `assembly(bit_saving, complex_saving, bridge, kappa, eta, beta)` and never reads a cutoff. Both branches'
-  κ reproduce exactly from the chain end, η and the 10^-18 grid. At fixed depth any finite cutoff serves
-  the asymptotic statement.
+  κ reproduce exactly from the chain end, η and the 10^-18 grid. At fixed depth the asymptotic statement
+  needs only *some* finite cutoff per stage. That conclusion still rests on the bootstrap lemma itself,
+  under either repair below. This package does not discharge that obligation.
 
-So the recorded `cutoff_log2` values are not valid instances of the lemma as written. This is a
-receipt/proof-text inconsistency, not a counterexample to the multiplication bound. There are two repairs:
+So the recorded `cutoff_log2` values are not valid instances of the lemma **as written**. The finding is
+conditional on that wording. It is a receipt/proof-text inconsistency, and this audit does **not**
+establish that the bound fails. There are two repairs:
 (a) carry `C_old` into the cutoff, which yields the exact corrected chain above; or (b) restate the lemma so
 that previous-algorithm tolls are absorbed against the new constant (which already exceeds
 `C_old·2^(LΔa)`), so that C counts only fresh toll coefficients. Option (b) is the usual "choose the induction constant
@@ -60,6 +69,7 @@ the cutoffs.
 ```sh
 python3 -B research/bootstrap-cutoff-carry/verify.py
 python3.12 scripts/research_package.py --package research/bootstrap-cutoff-carry
+python3 -B research/bootstrap-cutoff-carry/scan_receipts.py   # supplementary, unregistered
 ```
 
 Expected: `PASS_BOOTSTRAP_CUTOFF_CARRY_AUDIT recorded=14 fail_with_carry=12 stage1_valid=2 corrected=14
@@ -77,16 +87,18 @@ Six controls must be rejected:
 3. a shifted starting saving;
 4. a corrected cutoff minus one, which shows the corrected chain is minimal;
 5. the recorded cutoffs under the carry rule;
-6. an outer engine signature that takes a cutoff.
+6. the pinned outer engine source, mutated in memory so that `assembly` takes a `cutoffs` argument.
 
-One more positive check: dropping the carry from the corrected chain reproduces the receipt's 14 cutoffs
+Controls 1–3 test the receipt binding, 4–5 the carry rule and 6 the κ-independence check. One more
+positive check: dropping the carry from the corrected chain reproduces the receipt's 14 cutoffs
 exactly.
 
 ## Not checked
 
 - Whether `C_old` must enter the lemma's C at all, that is, whether repair (b) holds.
 - What the fresh per-stage constants actually are. The 512 allowance is taken from the receipt.
-- Other lineages' receipts. The closed form predicts the same failure, but they were not run.
+- Open PRs' receipts (#1424, #1586, #1724 and others). The in-repo scan covers stages 3 onward only, and
+  it is not pinned.
 - Every inherited all-size, precision, hosting and analytic obligation of the selected record.
 
 ## Open next questions
@@ -96,8 +108,9 @@ exactly.
    and only the proof text changes. If it does not, every lineage's recorded cutoffs need the carry.
    *First step:* restate the FINITE_BIT_ACCOUNTING induction with explicit toll terms. *Blocked by:* the
    toll inventory is spread across inherited proofs.
-2. **Same failure elsewhere?** Run this check against the T37 (1024) receipts and PRs #1424, #1586 and
-   #1724. *First step:* parameterize `verify.py` by receipt path, allowance and depth.
+2. **Open PRs with deeper chains.** The in-repo receipts all fail (see the scan). Do the open PRs #1424
+   (12 levels), #1586 (82) and #1724 (240) also fail, and how large do their corrected cutoffs get?
+   *First step:* run `scan_receipts.py` on each PR head's receipt.
 
 ## Credit
 
