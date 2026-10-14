@@ -292,8 +292,7 @@ def build_receipt(write=False):
         "severity": "low",
         "severity_rationale": (
             "Publication/attribution metadata only; certificate, inventory and "
-            "supplements remain hash-bound. Cold frontier1094-verify does not "
-            "read these fields either. No kappa change and no counterfeit "
+            "supplements remain hash-bound. No kappa change and no counterfeit "
             "construction acceptance was demonstrated."
         ),
         "scope": (

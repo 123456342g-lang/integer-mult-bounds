@@ -17,7 +17,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 120,
-      "checks": "Pins listed sources; confirms live verify_selected_result accepts the selected record and four metadata mutants while rejecting a certificate_sha256 mutant; statically confirms scripts/ does not read dependency-head fields; checks published consistency against frontier1042 and batch1099 integration reviewed_heads; confirms proposed guard.py accepts the live record and rejects three head/kappa/source_prs mutants; compares the full receipt to EXPECTED.json."
+      "checks": "Pins listed sources; confirms live verify_selected_result accepts the selected record and four metadata mutants while rejecting a certificate_sha256 mutant; statically confirms top-level scripts/*.py do not mention dependency-head fields; checks published consistency against frontier1042 and batch1099 integration reviewed_heads; confirms proposed guard.py accepts the live record and rejects three head/kappa/source_prs mutants; compares the full receipt to EXPECTED.json."
     },
     {
       "argv": [

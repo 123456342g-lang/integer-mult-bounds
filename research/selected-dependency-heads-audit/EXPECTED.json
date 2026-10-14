@@ -95,6 +95,6 @@
     }
   },
   "severity": "low",
-  "severity_rationale": "Publication/attribution metadata only; certificate, inventory and supplements remain hash-bound. Cold frontier1094-verify does not read these fields either. No kappa change and no counterfeit construction acceptance was demonstrated.",
+  "severity_rationale": "Publication/attribution metadata only; certificate, inventory and supplements remain hash-bound. No kappa change and no counterfeit construction acceptance was demonstrated.",
   "scope": "Finite metadata audit of the selected #1094 record and verify_selected_result.py acceptance surface, plus a static scan of top-level scripts/*.py only. Not a full cold replay, Lean proof, repository-wide source scan, or GitHub authenticity theorem."
 }

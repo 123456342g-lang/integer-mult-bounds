@@ -44,18 +44,20 @@ those network observations are **not** part of the offline replay.
 
 ## Reproduce
 
-From the repository root, Python 3.10+ standard library only:
+The audit and guard run with Python 3.10+ (standard library only). The
+registered `scripts/research_package.py` runner for this package requires
+**Python 3.12**. Prefer the copy/paste recipe below:
 
 ```sh
-python3 -B research/selected-dependency-heads-audit/verify.py
-python3 -B research/selected-dependency-heads-audit/guard.py
-python3 scripts/research_package.py --package research/selected-dependency-heads-audit --check-only
+python3.12 -B research/selected-dependency-heads-audit/verify.py
+python3.12 -B research/selected-dependency-heads-audit/guard.py
+python3.12 -B scripts/research_package.py --package research/selected-dependency-heads-audit
 ```
 
 Expected final verifier status: `PASS_SELECTED_DEPENDENCY_HEADS_AUDIT`.
 The deterministic receipt must equal [EXPECTED.json](EXPECTED.json).
 Normal verification writes no files. After an intentional code change, regenerate
-with `python3 -B research/selected-dependency-heads-audit/verify.py --write`.
+with `python3.12 -B research/selected-dependency-heads-audit/verify.py --write`.
 
 The verifier refuses `-O` (assertions must stay enabled). Positive control: the
 live selected record passes `verify_selected_result.check`. Negative control: a
