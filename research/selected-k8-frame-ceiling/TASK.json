@@ -312,5 +312,10 @@
       "GitHub CI at this stage"
     ],
     "external_review": "No independent human review."
+  },
+  "publication": {
+    "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1671",
+    "mathematical_commit": "11fbeaf34609147c124323c2f5e74fc450dad931",
+    "followup_scope": "README and TASK publication metadata only; runtime, proof, sources and certificates unchanged."
   }
 }

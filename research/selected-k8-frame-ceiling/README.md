@@ -110,6 +110,11 @@ lever table and selected-source binding control passed before the bounded
 investigation. [Discussion1659](https://github.com/CrocSwap/integer-mult-bounds/discussions/1659)
 records the claim and finding; TASK.json records scope and overlap.
 
+Published as [PR1671](https://github.com/CrocSwap/integer-mult-bounds/pull/1671).
+The mathematical commit is
+`11fbeaf34609147c124323c2f5e74fc450dad931`; the follow-up publication
+metadata changes no runtime code, source, proof or certificate.
+
 The final overlap refresh covered 499 open PRs and 318 discussion records
 with complete pagination and no warnings, at 05:59–06:00 UTC on 2026-10-14.
 Relevant PR815 and PR1605 heads were rechecked. Main advanced to
