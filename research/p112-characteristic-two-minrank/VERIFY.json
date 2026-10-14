@@ -16,7 +16,18 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 30,
-      "checks": "Pinned P112 input, six-clique scalar-rank certificate, all required zeros, full binary Gram matrix and rank-nine upper bounds, seven corruption controls. The general-field and block-rank arguments are human proofs in README."
+      "checks": "Pinned P112 input, four-clique block-rank certificate, exact induced Petersen-plus-four-isolates graph, all required zeros, full binary Gram matrix and rank-nine upper bounds; ten corruption controls. Universal rank and entropy reductions are human-readable proofs in README."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "-O",
+        "{package}/petersen_lp_verify.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Reconstruct 113 valid Petersen Shannon/rank constraint expressions; verify all 1024 rational coefficient sums equal F(empty)-5, five corruption controls, and a perfect-matching positive fixture against all elementary constraints. No LP solver is used."
     }
   ]
 }

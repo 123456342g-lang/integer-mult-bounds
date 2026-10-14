@@ -42,48 +42,52 @@
     ]
   },
   "scope_status": "changed",
-  "actual_scope": "Prove the minimum rank of arbitrary, possibly asymmetric fitting matrices for the pinned P112 required-zero graph over every characteristic-two field, with an explicit small certificate and independent checker.",
-  "scope_change_reason": "The constructive helper-inventory investigation raised a necessary rank-eight label premise. This package isolates its exact obstruction as a side result; it does not supply a changed helper inventory.",
-  "bottleneck_link": "Excludes replacing the fixed P112 nine-coordinate fitting labels by eight coordinates over any characteristic-two extension field, even with different source and target labels. Changed graphs, block interfaces, and complete suppliers require separate work; no kappa improvement follows.",
+  "actual_scope": "Source-pinned induced Petersen-plus-four-isolates certificate: block fitting rank at least 9d over every field, equality in characteristic two, and exact nonlinear zero-error binary broadcast length 9d for every positive block size d.",
+  "scope_change_reason": "The helper-inventory investigation raised a necessary rank-eight label premise. This side result isolates the obstruction, strengthens it to all block sizes and binary nonlinear coding, and identifies its known Petersen-theorem basis; it supplies no new helper inventory.",
+  "bottleneck_link": "Closes below-nine fitting compression of this exact graph over every field and binary nonlinear broadcast compression at every block size. A positive supplier must change the graph/constraints or save other paid work; no kappa improvement follows.",
   "budget_minutes": 75,
-  "stop_rule": "Stop this side-result investigation after a source-pinned finite certificate, an elementary proof over every characteristic-two field, independent replay and explicit scope/attribution checks.",
+  "stop_rule": "Finish this side result after source-pinned embedding, exact rational dual, independent characteristic-two proof, registered replays, and explicit prior-art/scope checks.",
   "outcome": "completed",
-  "evidence": "Six eight-cliques use 17 vertices and have odd incidence exactly at adjacent vertices 0 and 1. The independent standard-library verifier checks all 2912 required-zero pairs, the complete binary Gram matrix, rank-nine upper bounds, the symbolic scalar contradiction and seven corruption controls. README gives the universal proof and a separately reviewed block-rank corollary.",
+  "evidence": "Four eight-cliques on 14 vertices have odd incidence at a four-clique, proving 4d<=4(r-8d) in characteristic two. The induced usual fitting graph is four isolates plus Petersen. A 113-term exact rational certificate proves the known Petersen bound five and extends the full lower bound to all fields and nonlinear zero-error codes. Independent standard-library replays check all 2912 required-zero pairs, 12544 binary Gram entries, all 1024 dual coefficients, a matching positive fixture, and 15 corruption controls.",
   "author": "Thiago, with OpenAI GPT-6 Astra and Codex assistance",
   "ai_assistance": "Substantial OpenAI GPT-6 Astra and Codex assistance was used for mathematical exploration, independent checking, literature search, implementation and packaging.",
   "open_questions": [
     {
-      "question": "Can a changed port graph or genuinely block-valued label interface improve a complete paid supplier budget?",
-      "why_it_matters": "The scalar rank-eight premise for this exact graph is closed. The block corollary gives only normalized rank at least 25/3, not nine, and does not price a supplier.",
-      "first_step": "Write the changed graph or block constraints and derive a complete optimistic paid budget before constructing a circuit.",
-      "blocked_by": "No compatible native word, restoration/phase proof or global owner invoice for such a changed interface is supplied here."
+      "question": "Can a changed graph or changed native interface improve a complete paid supplier budget?",
+      "why_it_matters": "The fixed graph cannot be compressed below nine using scalar or block-linear fitting matrices over any field, nor nonlinear zero-error binary codes. Savings must change those constraints or remove other paid work.",
+      "first_step": "Specify the changed graph or native constraints and derive a complete optimistic paid budget before constructing a circuit.",
+      "blocked_by": "No compatible native word, restoration/phase proof or global owner invoice for a changed interface is supplied here."
     }
   ],
   "coordination": {
     "discussion": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1713",
-    "overlap_checked_at": "2026-10-14T08:19:31.840748+00:00",
+    "overlap_checked_at": "2026-10-14T09:32:07.988435+00:00",
     "coverage": {
       "open_prs": {
-        "fetched_at": "2026-10-14T08:18:08.249593+00:00",
+        "fetched_at": "2026-10-14T09:30:20.286086+00:00",
         "complete_pagination": true,
-        "records": 418
+        "records": 442
       },
       "discussions": {
-        "fetched_at": "2026-10-14T08:19:31.759476+00:00",
+        "fetched_at": "2026-10-14T09:32:07.925671+00:00",
         "complete_pagination": true,
-        "records": 371
+        "records": 409
       }
     },
     "nearest_overlap": {
       "pr": 1471,
       "head": "3695ad16e7bc4c0f6248a9e5a64fc069fa096733",
-      "difference": "PR1471 audits odd-characteristic portability of a pinned P112 tensor argument; this package proves a lower bound for all fitting matrices over every characteristic-two field."
+      "difference": "PR1471 audits odd-characteristic portability of a pinned P112 tensor argument; this package gives an all-field lower bound for all fitting block matrices and a nonlinear binary broadcast lower bound through an explicit classical subgraph."
     }
   },
   "prior_art": [
     {
       "url": "https://arxiv.org/abs/1009.1195",
       "description": "Leung, Mancinska, Matthews, Ozols and Roy, Theorem 9 and section 4: known rank-nine symplectic upper construction; graph convention explained in README."
+    },
+    {
+      "url": "https://arxiv.org/abs/1004.1379",
+      "description": "Blasiak, Kleinberg and Lubetzky, Index coding via linear programming, Fact 5.6(1): known Petersen broadcast rate five. The package gives a source-pinned embedding and exact rational dual, with no novelty claim for this theorem."
     }
   ]
 }
