@@ -6,6 +6,8 @@ This package documents and verifies one change to the live coordination tool
 answers "which open PRs touch this path?", the request left in
 [the workflow feedback thread](https://github.com/CrocSwap/integer-mult-bounds/discussions/1200#discussioncomment-18909265).
 
+Integration note: the live tool retains main's UTF-8 handling, and its tests include PR1702's isolated Unicode fixture. `SOURCES.json` pins this combined version and retains the submitted input pins. Both the complete onboarding suite and this package's unmodified acceptance checks are rerun for the combination.
+
 ## Scope and evidence
 
 Original card: `replay-runtime` (verifier-engineering), scope **refined** to the

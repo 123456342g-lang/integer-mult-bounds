@@ -17,14 +17,23 @@
     {
       "path": "scripts/find_overlap.py",
       "usage": "input",
-      "git_blob": "2668844310ea52bb4fe3c4561dd4ee16fcdd20cc",
-      "sha256": "ce77860b18ea5a58ee527a1055e0ba7c650b2da2167a6aaeaaf83af099689b4f"
+      "git_blob": "34677253e224a8a2df51113dcd82b48f8826f81c",
+      "sha256": "eb4db436663b07d8584f836637071c9a6e6aa974645addddfc473dd7e85d3368",
+      "submitted_input": {
+        "git_blob": "2668844310ea52bb4fe3c4561dd4ee16fcdd20cc",
+        "sha256": "ce77860b18ea5a58ee527a1055e0ba7c650b2da2167a6aaeaaf83af099689b4f"
+      }
     },
     {
       "path": "tests/test_research_onboarding.py",
       "usage": "input",
-      "git_blob": "8d5dfdee97a59153ddc155d2590a35131aea6076",
-      "sha256": "b0f23e38a5d6fa2079712df1f564a23b9bab0b997bc90f09f48965aa4802cc2e"
+      "git_blob": "562c3f5dd42f581bc20d285bb5fc311729bbb3ce",
+      "sha256": "8a592b92f51bb2250960c1eb739d062c84bc46ed24a9320f28d5597fac5a4a2f",
+      "submitted_input": {
+        "git_blob": "8d5dfdee97a59153ddc155d2590a35131aea6076",
+        "sha256": "b0f23e38a5d6fa2079712df1f564a23b9bab0b997bc90f09f48965aa4802cc2e"
+      }
     }
-  ]
+  ],
+  "integration_note": "Live input pins rebound after combining PR1623 with retained main UTF-8 handling and PR1702 isolated Unicode fixture. Submitted pins retained per entry; integration audit records both exact sources and combined replay."
 }
