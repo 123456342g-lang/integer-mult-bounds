@@ -143,6 +143,17 @@ def validate_witness(witness, q, z):
         need(d != 0 and str(d) == witness['determinants'][bit], 'exact nonzero determinant')
 
 
+def validate_selected_row(witness, q):
+    i, j, x = (witness[key] for key in ('output_port', 'input_port', 'character'))
+    coefficient = Q(witness['coefficient'])
+    need(coefficient != 0, 'nonzero forced coefficient')
+    bits = [(q[p] & x).bit_count() & 1 for p in (i, j)]
+    need(bits[0] != bits[1], 'different line eigenvalues')
+    need(witness['line_eigenbits'] == bits, 'line eigenbit receipt')
+    phases = [(x.bit_count()-b) % 4 for b in bits]
+    need(witness['output_frame_phases_mod4'] == phases and phases[0] != phases[1], 'different output-frame eigenvalues')
+
+
 def rejected(fn):
     try:
         fn()
@@ -183,7 +194,30 @@ def build():
     z = [[(-12 if i in A else 1) * x for x in row] for i, row in enumerate(k)]
     ell = [[x if j in T else Q(0) for j, x in enumerate(row)] for row in r]
     need(product(r, z) == product(ell, z) == ident, 'fixed-support response identities')
+    # Every LG=R forces G_T=L_T^-1 R=K_T R, even for operator-valued G.
+    kt = [k[i] for i in T]
+    selected_rows = product(kt, r)
+    need(product([[row[j] for j in T] for row in ell], kt) == ident, 'inverse selected read')
+    selected_index, j, value = next((t, j, x) for t, row in enumerate(selected_rows) for j, x in enumerate(row) if j not in T and x)
+    i = T[selected_index]
+    character = (q[i] ^ q[j]) & -(q[i] ^ q[j])
+    bits = [(q[p] & character).bit_count() & 1 for p in (i, j)]
+    forced = dict(output_port=i, input_port=j, coefficient=str(value), character=character, line_eigenbits=bits, output_frame_phases_mod4=[(character.bit_count()-b) % 4 for b in bits])
+    validate_selected_row(forced, q)
+    # A sparse-source algebraic logger attains the cover in the actual 112-port instance.
+    u = [[Q(0)]*8 for _ in range(112)]
+    for p in T:
+        u[p] = k[p][:]
     difference = [[x-y for x, y in zip(a, b)] for a, b in zip(r, ell)]
+    need(product(r, u) == product(ell, u) == ident, 'sparse-source response')
+    need(product(difference, u) == [[Q(0)]*8 for _ in range(8)], 'nilpotent sparse-source encoder')
+    delta = product(u, difference)
+    response = [[a-b for a, b in zip(ui, ki)] for ui, ki in zip(u, k)]
+    correction = product(response, difference)
+    source_support = [i for i, row in enumerate(delta) if any(row)]
+    target_support = [i for i, row in enumerate(correction) if any(row)]
+    need(source_support == T and len(target_support) == 104 and not set(source_support)&set(target_support), 'actual-instance sharp endpoint support')
+    need(sorted(source_support+target_support) == list(range(112)), 'actual-instance cover')
     q_minor = determinant([[row[j] for j in A] for row in difference])
     need(q_minor != 0 and all(any(row) for row in k), 'support-cover hypotheses')
     need(product(r, k) == [[14*x for x in row] for row in ident], 'invertible J via RK=14I')
@@ -215,9 +249,12 @@ def build():
     bad_det = dict(witness, determinants=['0', witness['determinants'][1]])
     mutated_raw = bytes([raw[0] ^ 1]) + raw[1:]
     controls = dict(constant_character=rejected(lambda: validate_witness(bad_character, q, z)), zeroed_matrix_row=rejected(lambda: validate_witness(witness, q, bad_z)), false_determinant=rejected(lambda: validate_witness(bad_det, q, z)), changed_source_archive=rejected(lambda: load(mutated_raw)))
+    same_q = list(q)
+    same_q[forced['input_port']] = same_q[forced['output_port']]
+    controls.update(zero_forced_coefficient=rejected(lambda: validate_selected_row(dict(forced, coefficient='0'), q)), equal_line_labels=rejected(lambda: validate_selected_row(forced, same_q)), constant_forced_character=rejected(lambda: validate_selected_row(dict(forced, character=0), q)))
     need(all(controls.values()), 'mutation controls')
     counts = Counter(map(tuple, census))
-    return dict(schema=2, status='PASS_SOURCECODE_SUPPORT_AND_FIXED_FRAME', source_archive_sha256=ARCHIVE_SHA, predecessor_pr=1862, predecessor_head='7649d9ceecec949541bec4bbde5929344166ba59', compensation_ports=A, query_ports=T, support_cover=dict(Q_minor_ports=A, Q_minor_determinant=str(q_minor), nonzero_K_rows=112, query_rank=8, minimum_source_support=8, minimum_target_support=8, minimum_endpoint_support_sum=112, conditional_rowwise_out_and_back_budget=120, sharp_three_port_example=positive, missing_premise_counterexamples=premise_examples), rank_census=[dict(ranks=list(rs), characters=n) for rs, n in sorted(counts.items())], full_rank_characters=counts[8, 8], witness=witness, R_L_mismatch=list(mismatch), controls=controls, scope='Every invertible full-query encoder has source-change and target-correction supports covering all 112 ports. Endpoint support is not a universal native-child charge. The fixed-Z logger is unique and cannot commute with diag(C_q), or with the specified output frame diag(F C_q^-1), even allowing address-linear coefficients and positive tensor powers. Does not exclude changed/conjugated operators, paid transitions or all zero-native circuits; no supplier or kappa claim.')
+    return dict(schema=3, status='PASS_SOURCECODE_SUPPORT_AND_FIXED_FRAME', source_archive_sha256=ARCHIVE_SHA, predecessor_pr=1862, predecessor_head='7649d9ceecec949541bec4bbde5929344166ba59', compensation_ports=A, query_ports=T, support_cover=dict(Q_minor_ports=A, Q_minor_determinant=str(q_minor), nonzero_K_rows=112, query_rank=8, minimum_source_support=8, minimum_target_support=8, minimum_endpoint_support_sum=112, conditional_rowwise_out_and_back_budget=120, sharp_actual_source_support=source_support, sharp_actual_target_support=target_support, sharp_example='G=I+U(R-L), U=K restricted to rows T. RU=LU=I and (R-L)U=0, so G^-1=I-U(R-L). Target correction=(U-K)(R-L). Algebraic example, no complete native invoice.', sharp_three_port_example=positive, missing_premise_counterexamples=premise_examples), forced_selected_row=forced, rank_census=[dict(ranks=list(rs), characters=n) for rs, n in sorted(counts.items())], full_rank_characters=counts[8, 8], witness=witness, R_L_mismatch=list(mismatch), controls=controls, scope='Every invertible full-query encoder has source-change and target-correction supports covering all 112 ports; an explicit algebraic encoder attains the cover with 8 changed source and 104 corrected target ports. Endpoint support is not a universal native-child charge. No logger with this fixed eight-port read L can commute with diag(C_q), or with the specified output frame diag(F C_q^-1), even allowing arbitrary address-linear G and positive tensor powers. The fixed-Z logger is unique; its separate two-minor test agrees. Does not exclude changed/conjugated operators, changed query reads, paid transitions or all zero-native circuits; no supplier or kappa claim.')
 
 
 def main():
@@ -237,7 +274,7 @@ def main():
         args.out.parent.mkdir(parents=True, exist_ok=True)
         with args.out.open('xb') as f:
             f.write(raw)
-    print('PASS_SOURCECODE_SUPPORT_AND_FRAME endpoint_support>=112 characters=512 full_rank=494 mutations=4 premise_controls=3 no_new_kappa')
+    print('PASS_SOURCECODE_SUPPORT_AND_FRAME endpoint_support>=112 sharp=8+104 characters=512 full_rank=494 mutations=7 premise_controls=3 no_new_kappa')
 
 
 if __name__ == '__main__':

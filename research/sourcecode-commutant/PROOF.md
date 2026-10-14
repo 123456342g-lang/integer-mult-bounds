@@ -44,7 +44,18 @@ of R-L, or nonzero K rows can invalidate the cover. Each retains the other
 premises, including invertibility of J. A fourth valid example attains
 |source support|+|target support|=n. The verifier checks all four examples.
 
-## The fixed-frame commuting shortcut also fails
+The cover is also sharp in the actual 112-port instance. Let U equal K on
+the eight selected rows T and zero elsewhere, and put Q=R-L. Then
+
+    RU=LU=I,   QU=0,   G=I+UQ,   G^-1=I-UQ,   LG=R.
+
+Exactly eight source rows change. The required target correction is
+J UQ=(U-K)Q, zero on T and nonzero on every other row because Q has full
+row rank and K_i is nonzero. It has exactly 104 target rows. This is an
+algebraic endpoint example, not a complete native implementation or cost
+invoice; its sparse source comes with a much wider target correction.
+
+## The fixed-read commuting shortcut also fails
 
 The local source encoder in PR1862 is valid and its unchanged replay passes.
 The following argument rules out one shortcut for carrying that code: keeping the same
@@ -63,6 +74,27 @@ D=diag(C_qi). Its eight-by-112 R, 112-by-eight Z, and eight-port selector L
 are those of the pinned PR1862 replay. Every row of Z is a nonzero scalar
 multiple of the corresponding row of K=R^T/4: the multiplier is -12 on the
 eight compensation ports and one elsewhere.
+
+### A forced row rules out every response space
+
+Write L=L_T selector_T, where L_T is an invertible eight-by-eight matrix.
+For any address-linear G, the logger identity LG=R tensor identity forces
+
+    G_T=L_T^-1 R tensor identity.
+
+This contains a nonzero off-diagonal coefficient p_ij with i in T, j outside
+T, and qi different from qj. Commutation with D would require
+p_ij(C_qi-C_qj)=0, which is false. Commutation with S would require
+p_ij F(C_qi^-1-C_qj^-1)=0, also false since F is invertible. The verifier
+computes the forced coefficient and a Fourier character distinguishing the
+two lines. A character (x,0,...,0) distinguishes their positive tensor powers.
+
+Thus no logger with this fixed eight-port read commutes with D or S. This
+statement does not restrict the encoder to the response space Z, and it
+does not require invertibility of G. A different, address-valued read or
+query contract is outside its scope.
+
+### Fixed-response uniqueness and a separate two-minor witness
 
 Allow B to be an arbitrary eight-by-112 matrix of complex linear operators
 on V. Thus this includes address-valued coefficients, not just dyadic scalar
@@ -120,7 +152,8 @@ phases. The same two minors, or the entire rank-eight row set, again force
 every coefficient b_j at that output character to vanish. The obstruction
 therefore persists for arbitrary address-linear B on V^tensor t.
 
-This concerns commutation with the unchanged output operator. A compiler
+The general forced-row result and the narrower two-minor result concern
+commutation with the unchanged output operator. A compiler
 could instead change the code under a monomial conjugacy, carry it through
 later compulsory native work, use a different response space, or pay for
 transport. None of those possibilities is priced or excluded here. The
@@ -140,11 +173,15 @@ elimination methods. All 512 characters are inspected as supplementary evidence:
 the two constant characters have (0,8) and (8,0). The single explicit witness
 already proves the statement. Four actual mutations reject a constant character,
 a zeroed matrix row, a false determinant and a changed source archive.
+Three more reject a zero forced coefficient, equal line labels and a
+constant distinguishing character. The actual-instance sparse-source
+example is checked by RU=LU=I, QU=0 and its complete endpoint supports.
 
 PR1862 head 7649d9ceecec949541bec4bbde5929344166ba59 supplies the encoder,
 fixed-support response space and pinned historical complex supplier.
 Its sources and notices retain the PR1042/PR1094, gauge44, E8, frame and
-native-checker lineage. This note adds the fixed-frame commutant obstruction;
+native-checker lineage. This note adds the support tradeoff, its sharp
+actual-instance example and the general fixed-read commutant obstruction;
 it claims no independent human review, complete native supplier or kappa.
 
 The next useful question is a paid or conjugated chart transition with an

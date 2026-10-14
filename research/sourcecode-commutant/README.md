@@ -6,8 +6,9 @@ at this interface, the source fields it changes and the target fields it must
 correct together cover all 112 ports. Both endpoints cannot be sparse.
 
 The support theorem allows arbitrary finite address-linear encoders. A second,
-narrower result rules out a fixed-response logger commuting with the unchanged
-line or specified output-frame operator, for every positive tensor power.
+narrower result rules out any logger with the fixed eight-port read commuting
+with the unchanged line or specified output-frame operator, for every positive
+tensor power; it does not require the response space to be Z.
 Neither result excludes changed operators, monomial conjugacies, carrying the
 code through later native work, or paid chart transitions. Endpoint support is
 not a universal native-child charge. No new supplier or kappa is claimed.
@@ -27,13 +28,18 @@ rowwise comparators, not a lower bound for all implementations; the old eight
 rank-eight centre queries cost 64 in rank mass. A useful implementation must
 beat that per-endpoint charging model.
 
-For G=I+ZB and the eight-port query read L in PR1862, there is no solution to
-LG=R that commutes with diag(C_q), or with diag(F C_q^-1). Here B may contain
-arbitrary complex linear maps, although LZ=I already makes the full-query
-logger unique: B=R-L. This is a fixed-frame obstruction, not a lower bound
-for every zero-native-cost circuit.
+An explicit algebraic encoder attains the cover with eight changed source
+ports and 104 corrected target ports: G=I+U(R-L), where U equals K on the
+selected source rows and is zero elsewhere. This sharpness example does not
+supply a complete native invoice or a saving.
 
-One Fourier output character is enough. At x=1, both excluded-eigenvalue
+The selected read forces G_T=L_T^-1 R for every logger. One nonzero coefficient
+between different line labels prevents commutation with diag(C_q) or with
+diag(F C_q^-1), even allowing arbitrary address-linear G. In the narrower
+G=I+ZB family, LZ=I also makes the logger unique: B=R-L. These are fixed-frame
+obstructions, not a lower bound for every zero-native-cost circuit.
+
+A separate Fourier-rank check corroborates the fixed-Z case. At x=1, both excluded-eigenvalue
 row sets of Z contain an invertible eight-by-eight minor. Their exact
 determinants are -3/512 and -3/1024. Commutation forces the whole output
 row of B at that character to vanish, contradicting a nonzero R-L coefficient.
@@ -44,7 +50,9 @@ derives R directly from the pinned historical scalar program, checks the
 source response identities and physical labels, and checks all 512 characters.
 There are 494 full-rank cases in both eigenvalue groups. Four actual mutations
 fail: a constant character, a zeroed matrix row, a false determinant and a
-changed source archive. Three explicit three-port counterexamples show why
+changed source archive. Three additional forced-row mutations reject a zero
+coefficient, equal line labels and a constant distinguishing character.
+Three explicit three-port counterexamples show why
 invertibility, rank(R-L) and nonzero K rows are needed. A valid toy attains
 the support-cover inequality. Checks remain active under Python optimization.
 
@@ -64,7 +72,7 @@ python3 -I -O -B research/sourcecode-commutant/verify.py
 Expected output:
 
 ```text
-PASS_SOURCECODE_SUPPORT_AND_FRAME endpoint_support>=112 characters=512 full_rank=494 mutations=4 premise_controls=3 no_new_kappa
+PASS_SOURCECODE_SUPPORT_AND_FRAME endpoint_support>=112 sharp=8+104 characters=512 full_rank=494 mutations=7 premise_controls=3 no_new_kappa
 ```
 
 The runtime reads only its committed certificate and the frozen input archive
@@ -96,8 +104,9 @@ authors. The source notices credit icekylinx, Hao Yan / FanPUYen, Jeremy Kothe,
 Chafik Boukhalfa, rohanarun and NewBArch for the retained frame and supplier work.
 No predecessor code is copied into this package.
 
-The new contribution is the endpoint-support tradeoff for arbitrary invertible
-full-query encoders, the fixed-frame obstruction and its two-minor witness,
+The new contribution is the sharp endpoint-support tradeoff for arbitrary
+invertible full-query encoders, the general fixed-read frame obstruction,
+the supplementary two-minor witness,
 and a separate source-derived exact verifier. Prepared
 for Chafik Boukhalfa with substantial OpenAI Codex assistance. No independent
 human review or formal proof assistant is claimed. New material is Apache-2.0.
