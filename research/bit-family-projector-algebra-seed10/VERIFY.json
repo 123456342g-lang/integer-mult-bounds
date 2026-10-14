@@ -5,7 +5,6 @@
   "requirements": [],
   "inputs": [
     "certificates/selected-result.json",
-    "docs/research/agent-task-catalog.json",
     "research/community-frontier1094-audit/ASSEMBLY.json",
     "research/community-frontier1094-audit/SELECTED-SOURCE.json",
     "research/e8-bit-carrier-skeleton/code/nine/geometry.py",
