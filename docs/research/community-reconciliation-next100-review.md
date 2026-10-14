@@ -1,7 +1,10 @@
 # Next 100-PR reconciliation: #153–#303
 
-This round reviews a frozen set of **100 non-draft PRs from 32 authors**. It preserves
-historical constructions, parallel improvements, proof/negative research and verification tools.
+This round reviews a frozen set of **100 non-draft PRs from 32 authors**.
+The final live check records **97 PRs closed in this round**, with **3 retained open**: #259, #275, #283.
+See the [closure receipts](../../research/community-reconciliation-next100-audit/CLOSURE-RECEIPTS.json) and [ending snapshot](../../research/community-reconciliation-next100-audit/ENDING-SNAPSHOT.json).
+
+The review preserves historical constructions, parallel improvements, proof/negative research and verification tools.
 It does **not** change the selected conditional frontier:
 κ = 836330098538459 / 500000000000000000 = 0.001672660197076918.
 
