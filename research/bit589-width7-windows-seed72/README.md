@@ -143,7 +143,7 @@ python3.12 scripts/research_package.py --package research/bit589-width7-windows-
 
 - **Requirements.** Standard-library Python 3.10 or later. The pinned engines, record and slot model come from merged #1023's `packing.py`, which is imported read-only. `verify.py --kmax K` runs a partial check (`PASS_PARTIAL`).
 - **Where it was run.** `verify.py` and the tests pass on Python 3.12.15 and 3.14.8 (macOS 26.5, arm64). `--check-only` passes.
-- **Registered replay.** The python3.12 replay was run locally. It exceeded its 600 s wall-clock limit only because the host was heavily loaded (load average about 100). `verify.py` itself needs about 140 s of CPU.
+- **Registered replay.** The python3.12 replay passes (`PASS_REGISTERED_RESEARCH_PACKAGE`, 80 s of wall time on an unloaded host). An earlier attempt timed out at 600 s only because the host was heavily loaded (load average about 100). `verify.py` itself needs about 140 s of CPU.
 
 ## Scope and remaining obligations
 
