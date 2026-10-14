@@ -101,9 +101,19 @@ complex replay; that exact configuration was not run here.
   `PASS_REBUILT_PR589_PR799_COMPOSITION`, kappa `1661634653669567/10^18`, and
   `verify_replay_coverage.py --frontier 799 --ancestor <output>` printed
   `PASS_COMPLETE_PR799_REPLAY_COVERAGE`. It records the ancestor as reused
-  (`reused_ancestry: true`), as for any externally produced ancestor. The #942 and #1042
-  replays were **not** run with it. Nothing here changes what
-  `make frontier1042-verify` (or `frontier942-verify`) runs.
+  (`reused_ancestry: true`), as for any externally produced ancestor. Nothing here
+  changes what `make frontier1042-verify` (or `frontier942-verify`) runs.
+* End to end, cold `frontier1042` on the rebased PR tree (WSL, same checkout, one run
+  each, one after the other): the original `verify_frontier1042.py` took **1560 s**
+  (`baseline799-cold` 788 s, its own stages 772 s). The new path (concurrent driver 467 s,
+  then `verify_frontier799.py --ancestor` 189 s, then
+  `verify_frontier1042.py --baseline799` 756 s, with the ancestor moved to
+  `<baseline799>/ancestor` as that script expects) took **1412 s**, 148 s or 9.5% less.
+  Both ended in `PASS_COMPLETE_PR1042_COMPOSITION` with kappa
+  `0.001672188119205421`; the new path records `reused_completed_baseline: true`. About
+  132 s of the saving is the 741 part (788 s to 656 s); the rest is run-to-run noise in
+  1042's own stages (chain 479 s vs 464 s). Single runs, so about +/-2% should be
+  assumed. The #942 replay was not run with it.
 * Overlap check at submission: #853 (merged) schedules stages inside `complex741` only and
   does not overlap the bit supplier; no open or merged PR found by search touches
   `verify_frontier741.py` or overlaps `bit589` with `complex741`. The two are
