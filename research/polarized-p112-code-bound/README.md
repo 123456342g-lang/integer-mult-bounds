@@ -1,230 +1,179 @@
-# Polarized P112 decoders within the retained coordinate codes
+# One-sided P112 fitting rigidity
 
-We prove that changing the directed decoder support cannot reduce the binary
-pairing rank below nine while both factors retain their original coordinate
-codes. We allow nonsymmetric rational decoders and nonsymmetric binary pairings.
-This extends the fixed-mask question to a specified family of changed masks.
-We supply no new supplier, paid cost improvement or multiplication exponent.
+We state a one-sided corollary of Adam Gall's
+[PR1098 support-spectrum certificate](../p112-gram-support-seed80/README.md)
+and verify it by a separate deletion-rank calculation. Fixing only the column
+spaces of the rational decoder and binary pairing already forces both original
+matrices. Neither row space needs a restriction.
 
-## Theorem and scope
+The support geometry and spectra belong to Mihir Srivastava's PR845 and Adam
+Gall's PR1098. We do not claim new underlying geometry. The contribution here
+is the joint-fitting corollary, its explicit coloop classification and the
+direct exact checker. It supplies no new supplier or exponent.
 
-Let R be the 112-by-8 rational matrix whose rows are `root_lines[8:]/2`, and
-let U be the 112-by-9 binary matrix from `binary_ports[8:]` in the pinned
-[prototype](../direct-delivery504-global/inputs/hamming/PROTOTYPE.json).
-Use least-significant-bit coordinate numbering for U. For arbitrary matrices
-C over Q and M over F2, define
+## Statement
 
-```
-N = R C R^T,        B = U M U^T.
-```
+Let P contain `root_lines[8:]` from the pinned
+[prototype](../direct-delivery504-global/inputs/hamming/PROTOTYPE.json), and put
+R=P/2. Each raw root has squared norm four, so R has unit row norms. Let U be
+the corresponding 112-by-9 binary matrix from `binary_ports[8:]`.
 
-Suppose N and B have unit diagonal, and every off-diagonal entry with B_ij=1
-has N_ij=0. Then **rank_F2(B)=9**. Neither C nor M needs to be symmetric.
-
-The conclusion excludes an eight-dimensional directed pairing in this family.
-It concerns both row and column spaces: each must stay inside its corresponding
-retained code. It does not cover outside-code source or receiver factors,
-different port sets, different rational decoder spaces, arbitrary block-valued
-deformations, or a changed native interface. It gives no lower bound on the
-complete paid cost of a supplier at window nine.
-
-The [format-limits C.6 interface](../format-limits/README.md#c6-asymmetric-pairing-uniqueness-at-the-e8-pattern-c6_asympy)
-uses the same directed zero condition. Thiago Goulart's
-[PR1744](https://github.com/CrocSwap/integer-mult-bounds/pull/1744) proves rank
-nine for arbitrary fitting matrices on the original zero mask. Here N may
-change that mask. We use and recheck PR1744's four-clique certificate only in
-the cases that reduce to the original mask.
-
-## Proof
-
-### 1. Unit diagonal forces a skew perturbation
-
-Write r_i for the unnormalized integer root rows, so R_i=r_i/2. For each row
-form its eight square coordinates and 28 cross products. The resulting
-112-by-36 matrix F satisfies
+For arbitrary W in Q^(8-by-112) and L in F2^(9-by-112), put
 
 ```
-F^T F = diag(32 I_8 + 24 J_8, 24 I_28).
+N = R W,        B = U L.
 ```
 
-Its eigenvalues are 224, seven copies of 32, and 28 copies of 24. Thus the
-diagonal measurements span all symmetric 8-by-8 matrices over Q. Since
-R_i R_i^T=1, the condition N_ii=1 forces
+Suppose both matrices have unit diagonal, and N_ij=0 whenever i!=j and
+B_ij=1. Then
 
 ```
-C = I + A,        A^T = -A.
+N = R R^T,        B = U U^T.
 ```
 
-The checker reconstructs F and its full Gram matrix from the roots. In
-particular, we do not assume the skew form as an extra restriction on C.
+In particular, rank_Q(N)=8 and rank_F2(B)=9. Transposing the statement gives
+the analogous result when only the two row spaces are fixed.
 
-### 2. Classify the possible binary polar forms
+For a proposed decoder that retains both rational root-code spaces, a binary
+pairing below rank nine must therefore change both its column and row codes.
+This statement does not exclude such outside-code constructions, different
+port sets, block-valued replacements, or other native interfaces. It gives no
+new lower bound on the complete paid supplier cost at window nine.
 
-Put L(u)=sum_i u_i. Each retained binary label has L(u)=1. Let H contain the
-45 degree-one and square-free degree-two evaluations on the 112 labels.
-Exact binary elimination gives rank(H)=36. Its nine-dimensional relation
-space has the following basis: the eight independent relations
+## Column reduction
 
-```
-u_j (L(u)+1) = 0,       0 <= j < 8,
-```
-
-and
+For a nonzero character a in F2^9, define
 
 ```
-q(u) = sum_(i<j) u_i u_j + u_2+u_4+u_6+u_7+u_8 = 0.
+S_a = {i : u_i dot a = 1}.
 ```
 
-For the first eight expressions, replace u_j squared by u_j. We verify both
-the rank and all relation evaluations. Consequently every M satisfying
-u_i^T M u_i=1 has, on the retained labels, the polar identity
+In column j of B, the coefficient vector a=L[:,j] must satisfy j in S_a.
+The fitting equations require the corresponding rational column w=W[:,j]
+to obey R_i w=0 for i in S_a except j, and R_j w=1. Thus deleting row j
+must lower the rational rank of R[S_a,:]. Such a row is a *coloop* of that
+row configuration.
+
+The complete classification is
 
 ```
-B_ij + B_ji = lambda (1+B0_ij) + f_a(i)+f_a(j),
-B0 = U U^T,        f_a(i)=a dot u_i,
+{(a,j) : j is a coloop of P[S_a,:]} = {(u_j,j) : 0 <= j < 112}.
 ```
 
-for lambda in F2 and one representative a with its ninth coordinate zero.
-There are 256 representatives. Adding the all-ones vector to a exchanges the
-two cut classes and leaves the polar form unchanged. The formula follows by
-polarizing the nine relations; the polar of q on odd labels is 1+u_i dot u_j.
+Consequently a=u_j in column j, which forces B=U U^T. For this character,
+the other selected roots span the seven-dimensional orthogonal complement
+of r_j. Their annihilator is the line through R_j^T. Unit diagonal fixes
+w=R_j^T, so N=R R^T. This proves the statement without a symmetry assumption.
 
-### 3. Every nonconstant cut forces A=0
+## Derivation from the predecessor spectra
 
-For a pair with r_i dot r_j=0, the retained Gram identity gives B0_ij=1.
-If f_a(i) differs from f_a(j), the preceding formula gives B_ij+B_ji=1,
-regardless of lambda. One of N_ij,N_ji must therefore vanish. Its symmetric
-part already vanishes, so
+PR1098 considers H_a=P[S_a,:]^T P[S_a,:]. Its complete spectrum certificate
+has three relevant classes:
 
-```
-r_i^T A r_j = 0.
-```
+- Eight singular supports have eigenvalues zero and seven copies of 32.
+- 112 supports have a simple eigenvalue four; their other eigenvalues exceed four.
+- The remaining 391 supports have minimum eigenvalue strictly greater than four.
 
-For each of the 255 nonconstant representatives, the checker forms these
-homogeneous equations in the 28 skew entries of A. Each coefficient matrix
-has rank 28 modulo 101 and modulo 103. A nonzero minor modulo either prime
-is a nonzero integer minor, so these are exact rational rank certificates.
-We also select 28 original rows for each cut and compute their nonzero
-determinants with separate fraction-free integer elimination.
-Thus A=0 for every nonconstant cut.
+Each selected row r has squared norm four. Deleting it replaces H by
+H-rr^T. On a full-rank support with minimum eigenvalue greater than four,
+this cannot lower rank. On a singular support, r lies in the range of H;
+the positive eigenvalues remain at least 32-4, so its rank also stays unchanged.
 
-The complete enumeration has 112 cuts of weight 52, 24 of weight 56,
-112 of weight 60 and seven of weight 64. We enumerate this finite binary
-parameter space; we do not sample rational A or infer a universal statement
-from a failed rational search.
-
-### 4. Handle the two constant-cut cases
-
-If a=0 and lambda=0, then B is symmetric. If B_ij=1, both N_ij and N_ji
-vanish, so their sum gives r_i dot r_j=0. Hence B fits the original mask.
-The same conclusion holds when step 3 gives A=0, without requiring B to be
-symmetric.
-
-For completeness, PR1744's characteristic-two certificate uses four
-eight-cliques of nonorthogonal root pairs whose odd-incidence set T is a
-four-clique. An eight-clique already requires b>=8. Factor a fitting B of rank b as B_ij=x_i y_j and set
-P_i=y_i x_i. These are rank-one idempotents; the idempotents on each clique
-annihilate one another. For each eight-clique D, put E_D=I-sum_(i in D)P_i.
-Then rank(E_D)=b-8. In characteristic two,
+For H>=4I, a rank drop requires equality in both
 
 ```
-sum_D E_D = sum_(i in T) P_i,
-4 <= 4(b-8),        b >= 9.
+z^T H z >= 4 ||z||^2,
+(r^T z)^2 <= 4 ||z||^2.
 ```
 
-We reproduce the four clique lists from the pinned predecessor and verify
-their pairs and incidences against the source. This step retains PR1744's
-credit; it is not a new fixed-mask rank theorem.
+Hence r spans the four-eigenspace. That space is simple in each of the
+112 exceptional supports. For every original character a=u_j, the retained
+Gram identity says that S_a consists of j and roots orthogonal to r_j.
+Therefore H_a r_j=4r_j. These 112 distinct characters exhaust the exceptional
+supports, and distinct projective root lines give the unique coloop j.
 
-It remains to exclude a=0, lambda=1. In that case B_ij+B_ji=1 whenever
-r_i dot r_j is nonzero. One direction of each such pair must vanish in N,
-which would require
+This is an application of PR1098's published spectra. PR845 supplies the
+original support lemma. Philipp's [PR1191 fixed-mask result](../complex-masked-rigidity-seed28/PROOF.md)
+already proves the related one-sided rational rigidity after fixing the mask;
+the coloop argument here first forces the binary mask itself.
 
-```
-(r_i^T A r_j)^2 = 4       whenever r_i dot r_j = +/-2.
-```
+## Independent deletion-rank evidence
 
-### 5. Tetrad incidences exclude the remaining skew form
+The prototype's 112 raw rows equal the X rows in PR845's
+[reference geometry](../p112-single-lift/reference-geometry.json) after a
+literal row permutation. The verifier checks this bridge. PR1098 binds its
+generated X to that same reference; no sign or coordinate change is needed.
 
-The roots contain all eight projective sign patterns on each of fourteen
-four-coordinate supports. Fix a coordinate k and a support T containing it.
-Take a sign vector u on T and flip coordinate k to form v. Then u dot v=2.
-Skewness and the preceding squared identity give
+Our checker enumerates all 511 nonzero binary characters. It computes each
+rational row rank by integer elimination with gcd normalization, then tests
+deletion of each row in one chosen original-row basis. A row outside that
+basis cannot be a coloop because the basis remains after its deletion.
+Separate fraction-free Gram determinants check independence of every chosen
+basis. The resulting census is:
 
-```
-(sum_(j in T, j != k) A_kj u_j)^2 = 1
-```
+| Support size | Rational rank | Coloops | Characters |
+|---:|---:|---:|---:|
+| 48 | 8 | 0 | 7 |
+| 52 | 8 | 0 | 224 |
+| 56 | 7 | 0 | 8 |
+| 56 | 8 | 0 | 40 |
+| 60 | 8 | 0 | 112 |
+| 60 | 8 | 1 | 112 |
+| 64 | 8 | 0 | 7 |
+| 112 | 8 | 0 | 1 |
 
-for all eight choices of the other three signs. Comparing their independent
-sign characters yields pairwise products A_ki A_kj=0 and the sum of squares
-equal to one. Therefore exactly one of these three entries is nonzero, and
-its value is +1 or -1.
+The verifier identifies the 112 character/port pairs, checks their rank-seven
+punctures and orthogonality, and verifies the rank-nine original pairing. It
+does not import predecessor verifiers, read stored spectrum answers, or use
+floating-point rank estimates.
 
-Each coordinate belongs to seven supports; each coordinate pair belongs to
-three. If d_k counts the nonzero entries in row k of A, counting the chosen
-neighbors over these supports gives
+## Reproduce
 
-```
-3 d_k = 7,
-```
-
-which no integer d_k satisfies. The checker verifies the complete sign
-patterns, both incidence counts, and the sign-character independence.
-A single-tetrad positive control admits a skew form with the required
-squared values, confirming the role of the global incidence condition.
-
-We have reduced each possible polar class to the fixed-mask bound or a
-contradiction. Finally rank(B)<=rank(U)=9, so rank(B)=9, as claimed.
-
-## Reproduce and limits of verification
-
-From the repository root:
+From the repository root, with the Python standard library:
 
 ```sh
 python3.12 -I -O -B research/polarized-p112-code-bound/verify.py
 python3.12 scripts/research_package.py --package research/polarized-p112-code-bound
 ```
 
-The verifier uses the Python standard library and explicit exceptions, which
-remain active under `-O`. It imports no search code or predecessor verifier.
-It checks the source hash, root and binary quadratic ranks, complete relation
-basis, all 255 cut systems over two primes and 255 exact integer minors, the tetrad and clique certificates,
-two positive fixtures, and eight corruptions. It prints a deterministic JSON
-receipt without rewriting files. A local modular rank certificate establishes
-a rational nonzero minor; it is not a floating-point estimate.
+Expected status: `PASS_ONE_SIDED_P112_FITTING_RIGIDITY`.
 
-The written proof supplies the universal reductions between those finite
-facts. We have not formalized them in Lean, replayed the selected supplier,
-or proved any improved multiplication theorem.
+The read-only replay checks 511 supports, 4,080 basis-row deletions and 4,591
+positive integer Gram minors. It exercises positive coloop/non-coloop controls
+and rejects nine corruptions, including missing characters, a changed coordinate
+bridge and a false coloop. Explicit exceptions keep acceptance checks active
+under `-O`. The program prints a deterministic receipt without rewriting files.
+
+The universal reduction from fitting equations to coloops is the written proof
+above. We have not formalized it in Lean or replayed a complete supplier.
 
 ## Open next questions
 
-A directed decoder could change at least one coordinate code. A first test
-would construct explicit source and receiver factors outside U's column
-space, verify the full zero condition and ranks, and price all centre and
-side work before attempting global assembly. We have no such candidate.
-Changing only matrix coefficients inside both retained codes cannot help.
-[TASK.json](TASK.json) records this question and its acceptance boundary.
+Can a pairing with both binary factor codes outside U produce a cheaper native
+unit? A first step is to give explicit rational and binary factors, check every
+diagonal and required zero, and establish their ranks. A candidate then needs
+centre and side programs, restoration, phase adapters and a complete paid moment.
+We have no such candidate. [TASK.json](TASK.json) records this acceptance boundary.
 
 ## Attribution and coordination
 
-Jose Manuel (@jmbarrancoml) prepared this contribution with substantial
-OpenAI Codex assistance in exploration, proof, exact checking and writing.
-Read-only subagents derived the tetrad contradiction and checked source
-geometry. We claim no independent human review. New work is Apache-2.0.
+Jose Manuel (@jmbarrancoml) prepared this corollary and direct checker with
+substantial OpenAI Codex assistance. Read-only subagents identified the spectral
+connection, checked the geometry bridge and performed a separate deletion census.
+We claim no independent human review. New work is Apache-2.0.
 
-The unchanged root and binary-label input comes from icekylinx's
-[direct-delivery504-global](../direct-delivery504-global/NOTICE.md), with the
-PR523/514/507/425/433 ancestry retained there. We credit the format-limits
-authors for the directed pairing interface. We credit Thiago Goulart (@Tuafo)
-for PR1744's four-clique certificate and fixed-mask theorem, consumed at
-`a9ae6278ee6196fb0e59c8220c48349cc8e05513`. Its later head
-`78033981ec296b545b3cb50435668fe98e764e65` adds the selected P111 corollary;
-our result and input remain P112. We neither copy nor modify predecessor
-packages.
+- Adam Gall (@adamgall), PR1098 head `75834dfc800511cebc0e4c696788e9081272d761`:
+  exact support spectra and sharp energy constant four.
+- Mihir Srivastava (@mihir-s-05), PR845 head `125ce25bdae421627b56077adc14940c2d0aa52f`:
+  original support lemma, rank census and single-lift obstruction.
+- DreamingOfClouds, PR717, and the E8/compiler authors retain the geometry
+  attribution in [PR845's notice](../p112-single-lift/NOTICE.md).
+- icekylinx supplied the unchanged prototype in
+  [direct-delivery504-global](../direct-delivery504-global/NOTICE.md).
+- Philipp (@mightyOil), PR1191, supplied the related fixed-mask one-sided result.
+  Thiago Goulart (@Tuafo), PR1744, supplied the separate fixed-mask rank/broadcast
+  theorem that helped frame this investigation.
 
 [Discussion1803](https://github.com/CrocSwap/integer-mult-bounds/discussions/1803)
-records the scope. The source manifest pins base
-`0b1cccf86e2f5132ed286a26ef0a681a495740ea`. The complete overlap refresh at
-10:21–10:22 UTC on October14 covered 464 open PRs and 439 Discussion records.
-That metadata search does not establish literature-wide novelty.
+records the scope and attribution. Source pins are in [SOURCES.json](SOURCES.json).
+We leave the selected frontier and predecessor packages unchanged.

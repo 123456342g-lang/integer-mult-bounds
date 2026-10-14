@@ -17,17 +17,17 @@
     "overlap_terms":["helper inventory","heterogeneous-owner","mutable leaver"]
   },
   "scope_status":"changed",
-  "actual_scope":"A written rank-nine theorem for changed directed P112 masks with both rational decoder spaces inside the retained root code and both binary pairing spaces inside the retained binary-label code.",
-  "scope_change_reason":"The attempt to lower the complex window through a nonsymmetric decoder produced a complete obstruction for this coordinate-code family. This is a structural side result, not a new helper inventory or a passed positive-budget gate.",
-  "bottleneck_link":"A rank-eight directed pairing could alter the local cost interface. The theorem excludes obtaining it by coefficient changes inside both retained codes; a constructive attempt must change at least one code or another hypothesis.",
+  "actual_scope":"A one-sided joint-fitting corollary of PR1098's published support spectra: fixing only the rational and binary column codes forces the original Gram decoder and pairing. A separate exact deletion-rank checker verifies all character/coloop pairs.",
+  "scope_change_reason":"The directed-decoder search reduced to a support-coloop condition. The stronger one-sided statement follows from the existing support spectra, which receive explicit credit. This is a structural side result and independent finite certificate, not a new geometry, helper inventory or passed positive-budget gate.",
+  "bottleneck_link":"For a decoder retaining both rational root-code spaces, any binary pairing below rank nine must change both binary factor codes. Merely changing coefficients or the opposite row space cannot improve this interface.",
   "budget_minutes":120,
   "stop_rule":"Finish the scoped proof, exact finite premises, controls and source-bound replay. Preserve the broader research objective and do not identify this theorem with an exponent improvement.",
   "outcome":"negative-result",
-  "evidence":"README proof; source-bound verify.py checks two quadratic ranks, all 255 nonconstant cut systems over two primes, the tetrad contradiction premises, the predecessor clique certificate and positive/corrupted controls.",
+  "evidence":"Credited README corollary and source-bound verify.py: exact coordinate bridge, all 511 character supports, 4080 basis-row deletions, 4591 positive integer Gram minors, 112 unique coloop pairs, positive fixtures and nine rejected corruptions.",
   "author":"Jose Manuel (@jmbarrancoml)",
-  "ai_assistance":"Substantial OpenAI Codex assistance in exploration, proof, implementation and prose. Read-only subagents derived the tetrad argument and checked geometry. No independent human review.",
+  "ai_assistance":"Substantial OpenAI Codex assistance in exploration, proof, implementation and prose. Read-only subagents identified the spectral connection, checked the coordinate bridge and performed a separate deletion census. No independent human review.",
   "coordination":"https://github.com/CrocSwap/integer-mult-bounds/discussions/1803",
   "open_questions":[
-    {"question":"Can a directed pairing outside at least one retained coordinate code yield a lower-cost native unit?","why_it_matters":"The theorem leaves such changes open while excluding coefficient deformations inside both codes.","first_step":"Give explicit rational decoder and binary source/receiver factors, verify every diagonal and required zero and the exact ranks, then price the centre and restored side word before global assembly.","blocked_by":"No outside-code candidate or complete paid native word has been found. A fitting pair alone would not establish a supplier."}
+    {"question":"Can a directed pairing with both binary factor codes outside U yield a lower-cost native unit?","why_it_matters":"The corollary excludes retaining either corresponding one-sided code when the decoder retains both rational root-code spaces.","first_step":"Give explicit rational decoder and binary source/receiver factors, verify every diagonal and required zero and the exact ranks, then price the centre and restored side word before global assembly.","blocked_by":"No outside-code candidate or complete paid native word has been found. A fitting pair alone would not establish a supplier."}
   ]
 }
