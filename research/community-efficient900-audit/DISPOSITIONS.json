@@ -1998,20 +1998,24 @@
       },
       "reviewed_head": "d5e6ac0e442a1acfd0ac933af90a2adfb3417138",
       "current_head": "d5e6ac0e442a1acfd0ac933af90a2adfb3417138",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/r439-late-entrance-census-seed09"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "179089e4111a56a3bbf1f512410e7ef789380a71",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1932"
+      },
       "scope": "Two independent exact engines reproduce fixed-word closure and late-entrance census across five pinned words. Written cone/span argument supports the stated single-common-frame LC-fav necessary test; A6 excludes late compensation, while storage-relay triple444/470/578 remains OPEN. Source-donor and relay relaxations retain their narrower execution coverage; full661-column synthetic positive and mutation controls pass. No universal entrance obstruction or supplier improvement follows.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1932.json",
@@ -2543,20 +2547,24 @@
       },
       "reviewed_head": "6d4587f91bc345325856d839ad752f5a202a6212",
       "current_head": "6d4587f91bc345325856d839ad752f5a202a6212",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/r439-staged-retirement-boundary"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "179089e4111a56a3bbf1f512410e7ef789380a71",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1948"
+      },
       "scope": "Exact661-column cut isolation forces dirty465 through four retained contacts into an incompatible final frame, excluding the stated monotone retirement route even with restored auxiliaries. Independent geometry, least-join propagation, four-ADD positive isolation and scalar ghost-word controls pass. Optimistic two-slot moment is a budget only; relaxing contacts, new COPY/descent or physical realization remains outside the exclusion.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1948.json",
