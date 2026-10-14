@@ -21,7 +21,7 @@ define the map B0 x -> B1 x between the two images. Equal kernels make it
 well-defined and injective, and it is onto by construction. Extend bases of
 the two images to bases of Z and map the remaining basis vectors bijectively.
 This proof includes zero and singular maps. Equal rank alone is insufficient:
-over F2 the row maps (1,0,0) and (2,0,0) have different kernels.
+over F2 the rank-one functionals x -> x0 and x -> x1 have different kernels.
 
 The implementation below is specifically over F2. Arrays x,z,y1,y2 are
 distinct and arbitrarily dirty. The source x is fixed, z is reserved and
