@@ -36,11 +36,13 @@
   ],
   "python": "Python 3.12.11",
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
-  "seconds": 336.078,
-  "status": "budget_deferred",
+  "seconds": 1029.313,
+  "status": "passed",
   "exit_codes": [
     0,
-    null
+    0,
+    0,
+    0
   ],
   "input_sha256": {
     "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
@@ -335,6 +337,6 @@
     "research/complex-frame-pair-decoders/README.md": "edd848b0177dc73a6e2646d4fd82f0b2ceae37e642bf19d6af602579a041a57e",
     "research/community-frontier1094-audit/INDEPENDENT1094.json": "301fb8a0e4ab7e3c383ff974c54c08178283b2a3453c5282757f692a3c7a4bfd"
   },
-  "log_sha256": "21f35a5bc5fdc70f94ce9774bf3ab747b82011bcc77e6d7792b34766a5599a03",
+  "log_sha256": "68a008e010e8383c7a699363b7b0eecb1f05224cd70b2c726fbef3654aab4fc8",
   "scope": "Pinned scoped package commands and their stated finite/proof-support coverage; not complete multiplication-theorem certification."
 }
