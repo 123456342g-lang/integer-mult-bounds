@@ -24,7 +24,6 @@
     }
   ],
   "inputs": [
-    "docs/research/agent-task-catalog.json",
     "docs/research/current-status.md",
     "docs/research/pr-ledger.md",
     "certificates/selected-result.json",
