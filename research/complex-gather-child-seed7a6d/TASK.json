@@ -78,7 +78,7 @@
       "complex-coefficient-reuse: shared coefficient preparation for same-source scalar runs without a local rank-profile change.",
       "complex-block-rank-optimum: fixed eight-array block lower bound; changed cross-block interfaces remain outside its scope."
     ],
-    "overlap_snapshot": "Rank-shape refresh 2026-10-14T10:20:27Z: 464 open PRs, 438 Discussions, complete/no warnings; exact gather terms refresh/cache 2026-10-14T10:27:52Z: 465 PRs, 444 Discussions, complete/no warnings and zero remote matches. Snapshots are OVERLAP.json and OVERLAP-GATHER.json."
+    "overlap_snapshot": "Rank-shape refresh 2026-10-14T10:20:27Z: 464 open PRs, 438 Discussions, complete/no warnings; final exact-gather refresh 2026-10-14T10:34:31Z: 473 PRs and 449 Discussions, complete/no warnings, zero remote matches (one local-package self-match). Snapshots are OVERLAP.json and OVERLAP-GATHER.json."
   },
   "accepted_seed": "7a6da0d3a89bdb0425f85454db15342b",
   "track": "complex-mechanisms",
