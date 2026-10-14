@@ -13,12 +13,12 @@
       "research/r439-matching-neighborhood13/test_package.py"
     ]
   ],
-  "status": "budget_deferred",
+  "status": "passed",
   "exit_codes": [
     0,
-    null
+    0
   ],
-  "seconds": 223.329,
+  "seconds": 234.913,
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
   "python": "Python 3.12.11",
   "input_sha256": {
@@ -188,6 +188,29 @@
     "scripts/compact_control_layer.py": "e814c9f8d84f2e5d3aa2e06c36697f27f110218addc40ff8df2801fde861ff9f",
     "scripts/verify_frontier531_wrapper_swap.py": "fe6a948e67366825f6c22e7c69a661a727b4092b2aa9cb3e877d6c3002e592a9",
     "scripts/three_stage_cover_network.py": "7e0ad6fd1921b6905a53ce1eeaa03d3bb3a8a8bbaa0382516ea98b636f46335e",
+    ".matching neighborhood13 u15e6boa/research/r439-helper-matching/build.py": "db74c9560edfc3408b4ce63ebeb69595a14dda6dbc7f4d660a6701f8bd1770e5",
+    ".matching neighborhood13 u15e6boa/research/r439-helper-matching/PROOF.md": "85e7b10264aa30d2f6fb9490527d492fe7988ad63db33e0f89bfce79b056c6ae",
+    ".matching neighborhood13 u15e6boa/research/r439-helper-matching/README.md": "59e06613a2b5a809de9cedc3530ffba556664acaa073b36fa7c71027b804ce8d",
+    ".matching neighborhood13 u15e6boa/research/r439-helper-matching/NOMINATION.json": "d35aaec98a3bf0f65036e5a3ecbd89d115699d06df329d320e5b4d1cae9923c5",
+    ".matching neighborhood13 u15e6boa/research/r439-helper-matching/common.py": "885d19538d04ae22387ead8e0445a0bd0d36af30c0bb4e38e439b04e535ff190",
+    ".matching neighborhood13 u15e6boa/research/r439-helper-matching/verify.py": "8d8adc25f0a59685fc72d9c62ab7e60f327eaf313d96a0c4d8d0bac88af00bdc",
+    ".matching neighborhood13 u15e6boa/research/r439-helper-matching/NOTICE.md": "7b640935783311b63f0a9b3a033909b360db93b371890759e93bfd451f3b1947",
+    ".matching neighborhood13 u15e6boa/research/r439-matching-neighborhood13/SOURCES.json": "2a53d536ac98ebc507cda7363f37bf60813064ad71d70632cfba1d4af4542fd1",
+    ".matching neighborhood13 u15e6boa/research/r439-matching-neighborhood13/PROOF.md": "53680f49fb2598b0e72f76aa904b17d94506ae2fc4a23ac394a7e89acfb881fa",
+    ".matching neighborhood13 u15e6boa/research/r439-matching-neighborhood13/test_package.py": "4f2ea93ce49d43d17c799d42da563ad713312a5bd288954a810a4ba5c3efa78f",
+    ".matching neighborhood13 u15e6boa/research/r439-matching-neighborhood13/EXPECTED.json": "5f4b4082899eb194084c1721fd2f931d47fabc7434b92139cc50b5a91ac06353",
+    ".matching neighborhood13 u15e6boa/research/r439-matching-neighborhood13/PR-BODY.md": "060d85b215bd2b06cccac81f86aa4e33acf72db02f29d6e0195472a47e07a358",
+    ".matching neighborhood13 u15e6boa/research/r439-matching-neighborhood13/VALIDATION.md": "ac3b20cf74c97717782b0e737be339077ca0e955425069c38c576787c2329e94",
+    ".matching neighborhood13 u15e6boa/research/r439-matching-neighborhood13/independent.py": "3059661bc46008c926766d6f502207f63586191438522e5bbb71d4c85c684aa5",
+    ".matching neighborhood13 u15e6boa/research/r439-matching-neighborhood13/README.md": "5eb8bdadff479af7740a684f3ece867a8b152b2487870125b8eba22a24665994",
+    ".matching neighborhood13 u15e6boa/research/r439-matching-neighborhood13/OVERLAP.json": "ab4c16f788f7f59de747838154017928477413c0b57866da009a878733252ddc",
+    ".matching neighborhood13 u15e6boa/research/r439-matching-neighborhood13/BASE-SELECTED.json": "1d35283cb0ce3f8db1f285683933517f9e87475d295e2b6316399ad9928c81c3",
+    ".matching neighborhood13 u15e6boa/research/r439-matching-neighborhood13/CLAIM.json": "b5d79fb44dd49fc88cea8e7134ffab0520c0dcb1c738de7a8d187e84ac86c39e",
+    ".matching neighborhood13 u15e6boa/research/r439-matching-neighborhood13/verify.py": "c82ed29df9c3b25973d8b66333e785ea84935887ffe966ab5d977413b02b954e",
+    ".matching neighborhood13 u15e6boa/research/r439-matching-neighborhood13/NOTICE.md": "0a570c15cec7bd8c0eff59f2d4060ad619f332c99691058d6bac213a7adaa15e",
+    ".matching neighborhood13 u15e6boa/research/e8-bit-p111-tuned/tune/bitE8mut-p111-tuned.json.gz": "e3e301e62bc2b41dbf1ceac0acf3d35824ebeab1848c5a2142d4577b109da52f",
+    ".matching neighborhood13 u15e6boa/research/r439-helper-matching/vendor/pr915/candidate.json.gz": "ac30266144f8772ec8cd629153993aa9eb692fe745a9f95015a1b7fa88977a2e",
+    ".matching neighborhood13 u15e6boa/research/r439-helper-matching/vendor/pr915/CERTIFICATE.json": "a9958d9a933b57dcb9f7e5cf8e9694c0762f055a1cdab9f8ab42b2c6561fc4d7",
     "scripts/copied_centers/__init__.py": "13db4f09038a2ff5335cbd4dbd93274b0fb16b3c7b51e4de67cbb2801a3f78e1",
     "scripts/copied_centers/README.md": "8d348a28fc11615fb686f7d47548db06a5000378b54e0e47438d17292b5942b9",
     "scripts/copied_centers/corners.py": "9eecdc39c67cc18c806a33f0be03986c28591d322881fd60c11f52c625c8067b",
@@ -5390,6 +5413,6 @@
     "research/native-complex-moment552/inputs/PR558-INVOICE.json": "4b6977a049663ab958bd9a48c2864f7a7bddb26aef03e14f3068aede020ef76f",
     "research/native-complex-moment552/inputs/PR552-INVOICE.json": "4ac060dbf2ea2624dd1f4bda23bdb81c0a3013dfe49b77c092b631885529947f"
   },
-  "log_sha256": "537d991bf05d6b15a59fe3907a5f84cc9a97530ab2453127354448ae8174f837",
+  "log_sha256": "3ac98482fa03e47d09f7f23b10a06be1d10eb2b11fee37a7055af45249b8a341",
   "scope": "Independent/corruption/native supplements at the declared package scope; no full multiplication theorem verification."
 }

@@ -1,0 +1,2 @@
+PASS parallel receipts equal the five archived receipts 225.4 s
+PASS T37 variant receipt equals the archived T37 receipt {'parallel_seconds': 44.0}

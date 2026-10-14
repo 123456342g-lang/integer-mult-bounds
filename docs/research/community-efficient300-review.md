@@ -2,7 +2,7 @@
 
 Frozen selection: **100 open, non-draft PRs #1100–#1208**, excluding prior same-head dispositions. Baseline `1f7a934975e5eacaf83511c9ac870263bf095e05`. Full Git differences determine coverage; GitHub file-list truncation is not used as the inventory.
 
-**67 ready for scoped incorporation; 0 observed merged; 33 explicit follow-ups.** The selected conditional κ remains `836330098538459/500000000000000000`. No incompatible local gains are added together.
+**68 ready for scoped incorporation; 67 observed merged; 32 explicit follow-ups.** The selected conditional κ remains `836330098538459/500000000000000000`. No incompatible local gains are added together.
 
 Original author commits, notices, predecessor attribution and assistance disclosures are retained. Notes, corrections, negative results and verification engineering receive credit alongside constructions. Incorporation accepts the stated scope, not a new supplier or the full multiplication theorem.
 
@@ -20,6 +20,7 @@ Original author commits, notices, predecessor attribution and assistance disclos
 | [#1110](https://github.com/CrocSwap/integer-mult-bounds/pull/1110) | RossRichardson | Commit-authenticated PR225 four-to-six-profile source reconciliation, exact five-stage histogram arithmetic and interval brackets; external all-size transfer remains open. |
 | [#1111](https://github.com/CrocSwap/integer-mult-bounds/pull/1111) | seslly | Group-635 entrance demotion with unchanged scalar word and within-call T16 reassignment; complete mixed-provider admission replay, inherited analytic and bit assumptions retained. |
 | [#1112](https://github.com/CrocSwap/integer-mult-bounds/pull/1112) | Wronskode | Independent historical PR1042 invoice, nine guards, fourteen bootstrap levels and 94 strict outer slacks; inputs are authenticated data, not a fresh supplier rebuild. |
+| [#1113](https://github.com/CrocSwap/integer-mult-bounds/pull/1113) | woklerx | Complete 711,624-proposal four-endpoint matching neighborhood: 857 cost-preserving words fail the nine-stage precision guard; no exclusion of wider neighborhoods. |
 | [#1114](https://github.com/CrocSwap/integer-mult-bounds/pull/1114) | adamgall | Exact line-or-plane classification at six fixed coalescence sites; all 64 subsets, 192 marginals and containing-plane inventory, without unrestricted frame optimality. |
 | [#1116](https://github.com/CrocSwap/integer-mult-bounds/pull/1116) | woklerx | Two restored dyadic helper butterflies reduce the historical CK scalar panel beyond the retained single-shear comparator; complete dirty scalar maps, not hosted admission. |
 | [#1118](https://github.com/CrocSwap/integer-mult-bounds/pull/1118) | ToikY | Exact finite grid-preserving CK single-scratch coefficient circuits and shortest-path distances; complete per-orientation scalar saving, no paid-moment or runtime claim. |
@@ -84,7 +85,6 @@ Original author commits, notices, predecessor attribution and assistance disclos
 | --- | --- | --- |
 | [#1104](https://github.com/CrocSwap/integer-mult-bounds/pull/1104) | jeremykothe2 | Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions. |
 | [#1107](https://github.com/CrocSwap/integer-mult-bounds/pull/1107) | jeremykothe2 | Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions. |
-| [#1113](https://github.com/CrocSwap/integer-mult-bounds/pull/1113) | woklerx | The pinned command reached its recorded batch execution limit. Finish the remaining declared coverage in a dedicated bounded replay; a timeout is not mathematical evidence. |
 | [#1115](https://github.com/CrocSwap/integer-mult-bounds/pull/1115) | martinxxx9 | The reviewed Git head omits verify.py and source pins used by test_package.py/README. Commit the complete primary verifier and its declared immutable input closure; no test was bypassed. |
 | [#1117](https://github.com/CrocSwap/integer-mult-bounds/pull/1117) | jeremykothe2 | Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions. |
 | [#1121](https://github.com/CrocSwap/integer-mult-bounds/pull/1121) | jeremykothe2 | Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions. |
@@ -96,11 +96,11 @@ Original author commits, notices, predecessor attribution and assistance disclos
 | [#1147](https://github.com/CrocSwap/integer-mult-bounds/pull/1147) | RaphaelFakhri | Complete 10,144-candidate census and 1,536 exact compiler replays declared at about 25 minutes; dedicated coverage replay needed for exhaustive claim. |
 | [#1148](https://github.com/CrocSwap/integer-mult-bounds/pull/1148) | tomdif | Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions. |
 | [#1150](https://github.com/CrocSwap/integer-mult-bounds/pull/1150) | rohanarun | Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions. |
-| [#1151](https://github.com/CrocSwap/integer-mult-bounds/pull/1151) | thakrarsagar | The pinned command reached its recorded batch execution limit. Finish the remaining declared coverage in a dedicated bounded replay; a timeout is not mathematical evidence. |
+| [#1151](https://github.com/CrocSwap/integer-mult-bounds/pull/1151) | thakrarsagar | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
 | [#1152](https://github.com/CrocSwap/integer-mult-bounds/pull/1152) | chafreaky | Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions. |
 | [#1154](https://github.com/CrocSwap/integer-mult-bounds/pull/1154) | Dugongue | Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions. |
 | [#1155](https://github.com/CrocSwap/integer-mult-bounds/pull/1155) | navinor | Read-free is sufficient, not necessary: #1199/#1203/#1205 give exact nonzero-reader counterexamples. Also a dense phase/Walsh/permutation product retains its cheap factorization; dense entries do not prove quadratic application cost. Correct the iff and cost claims. |
-| [#1156](https://github.com/CrocSwap/integer-mult-bounds/pull/1156) | thakrarsagar | The pinned command reached its recorded batch execution limit. Finish the remaining declared coverage in a dedicated bounded replay; a timeout is not mathematical evidence. |
+| [#1156](https://github.com/CrocSwap/integer-mult-bounds/pull/1156) | thakrarsagar | Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation. |
 | [#1157](https://github.com/CrocSwap/integer-mult-bounds/pull/1157) | rohanarun | Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions. |
 | [#1169](https://github.com/CrocSwap/integer-mult-bounds/pull/1169) | rohanarun | Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions. |
 | [#1172](https://github.com/CrocSwap/integer-mult-bounds/pull/1172) | midhatn | Same evolving rank-seven supplier package as #1104–#1130; reconcile native/owner admissions and preserved historical source versions together. |
