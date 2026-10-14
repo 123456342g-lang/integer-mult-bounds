@@ -11,3 +11,10 @@
 - Success/falsification: full coefficient equality to `diag([st],[ts],[e])`; exact direct four-call positive control; one-call omission, label mutation and role-swap negative controls. Seed-specific domain is finite and fully enumerable. Stop after the complete <=3 search plus controls; no broader quotient claim.
 - Intended artifact: self-contained `research/d10-reflection-sharing-seeda3def8/` package with exact replay and scope. Reproduction command planned: `python3 -I -B research/d10-reflection-sharing-seeda3def8/verify.py`.
 - Predecessor attribution: PR #1911 (D-infinity reflection tariffs), PR #1821 (D16 central pair), PR #1573 (D8 central pair), and the base three-register rank-one-idempotent model in `research/bit-three-register-lower-bound/README.md`. Prepared with substantial OpenAI Codex assistance; no independent review claimed.
+
+
+## Handoff
+
+- Result: exact minimum four; all 178,809 words through three calls excluded by both engines, with the direct four-call endpoint verified.
+- PR: [#1953](https://github.com/CrocSwap/integer-mult-bounds/pull/1953), open at handoff from head `4f3bdf7c`.
+- Remaining: registered Python 3.12 replay / hosted CI; no native supplier or compiler mapping; no conditional-moment or `kappa` consequence.
