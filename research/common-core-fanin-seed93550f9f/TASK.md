@@ -54,3 +54,10 @@ No frame changes or source/target copies are omitted. The six scratch toggles an
 - Stop: retain the construction only if the dirty-state identity, map ranks, negative controls, and the strict cost inequality all pass. Do not expand to more sources or other ranks in this cycle.
 - Expected artifact: this task card, exact verifier, literal maps and cost certificate, reproducible from the repository root. Local result only unless the physical row/precision overhead can be matched to a live supplier interface.
 - Predecessors retain attribution. This work uses no predecessor implementation code. Prepared with substantial OpenAI Codex assistance.
+
+## Handoff
+
+- Focused PR: https://github.com/CrocSwap/integer-mult-bounds/pull/1863, head `53e716e640d998c81886aed7bae3c71e20985c36`.
+- Original claim updated with the result: https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18923560.
+- PR was open and mergeable at handoff; all 61 checks were queued at the latest poll.
+- Remaining obligations: map the construction to a concrete selected-supplier seam and charge the dirty-row, guard-bit, and remaining interface costs. No selected-profile or `kappa` change is claimed.

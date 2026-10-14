@@ -108,5 +108,24 @@
       "1504": "latest comment 2026-10-14T02:09:06Z"
     },
     "final_rest_pr_filter": "Complete open-PR pagination and title/body filter for common-core, simultaneous-source, low-rank source, and rank-one-deviation wording; only unrelated #148 matched."
+  },
+  "publication": {
+    "pr_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1863",
+    "head_commit": "53e716e640d998c81886aed7bae3c71e20985c36",
+    "state": "open",
+    "mergeable": true,
+    "checks_at_handoff": {
+      "observed_at_utc": "2026-10-14T12:11:43Z",
+      "total": 61,
+      "status": "all queued"
+    },
+    "discussion_handoff_url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18923560",
+    "remaining_obligations": [
+      "Map the local rank-class construction to a named selected-supplier seam.",
+      "Charge dirty-row hosting, two guard bits, orientation asymmetry, and all remaining interface overhead against the 28-unit budget.",
+      "Await registered Python 3.12 CI replay."
+    ],
+    "selected_frontier_changed": false,
+    "new_kappa_claimed": false
   }
 }
