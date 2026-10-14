@@ -15,8 +15,8 @@
       "local_path": "references/DISCUSSION1412.json",
       "sha256": "201def56e4f0c54ac1a5b18649202c0ce9cc77d5e7782a73e3366b47c0bc7beb",
       "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1412",
-      "fetched_at_utc": "2026-10-14T01:31:00Z",
-      "usage": "provisional concurrent claim; not a mathematical dependency"
+      "usage": "provisional concurrent claim; not a mathematical dependency",
+      "snapshot_file_mtime_utc": "2026-10-14T01:30:53.872783+00:00"
     }
   ]
 }

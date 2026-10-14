@@ -146,5 +146,7 @@
       "research/universal-connector-boundary/NOTICE.md": true,
       "research/universal-connector-boundary/README.md": true
     }
-  }
+  },
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1498",
+  "mathematical_head": "5431fba4a80e30925e0c2b2c161b9c68bbac1c17"
 }

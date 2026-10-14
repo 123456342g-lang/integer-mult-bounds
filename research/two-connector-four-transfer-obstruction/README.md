@@ -152,9 +152,8 @@ incoming dirt columns. Hence **every schedule with at most five C calls
 fails**, establishing the necessary threshold six. This padding argument
 is a correctness reduction; the added calls are not free in any cost bill.
 
-The projection idea also gives a general necessary condition: for 2k C
-calls with k>=1,
-and two nonempty source groups, the even and odd phases each have at
+The projection idea also gives a general necessary condition: for 2k C calls
+with k>=1 and two nonempty source groups, the even and odd phases each have at
 most k distinct restored offset values. Their within-parity differences
 provide at most k(k-1) nonzero J1 projections. Universality therefore requires
 `2^r-1 <= k(k-1)`. This coarse condition alone does not settle six transfers.
@@ -264,6 +263,8 @@ interfaces draw, card `connector-alphabet-change`; no reroll. The prescribed
 universal-connector first example and selected baseline binding check passed.
 Exact base: `4040a0f46d67b41c36a472a7cd4af791fd4c36cc`. The selected #1094
 frontier remains a historical context pin, not an input to this theorem.
+Published contribution: [1498](https://github.com/CrocSwap/integer-mult-bounds/pull/1498); mathematical commit
+`5431fba4a80e30925e0c2b2c161b9c68bbac1c17`.
 The original claim and result are in [Discussion1486](https://github.com/CrocSwap/integer-mult-bounds/discussions/1486).
 
 The entry overlap check found PR1438 and [Cinna Davis's Discussion1412](https://github.com/CrocSwap/integer-mult-bounds/discussions/1412).
