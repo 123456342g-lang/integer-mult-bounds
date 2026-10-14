@@ -19,5 +19,8 @@
   "deliverable": "Scoped finite circuit or exact negative census, source pins, verifier, controls and review note",
   "nearest_work": [1206, 708, 753, 748, 1306],
   "overlap_distinction": "PR1206 ordered single shears is the pinned predecessor. PR1306 is a 3-helper/3-target zero-frame feedback census, whereas this scope restores three FULL-frame helper operands of nine R420 totals. No target feedback is allowed here.",
-  "status": "active"
+  "status": "completed and released",
+  "completed_at_utc": "2026-10-14T01:54:00Z",
+  "result": "Exactly four strictly improving GL(3,2) basis cases among 13,802,880; all unique shortest realizations fail the native 104-bit precision allowance. Two complete implementations and all seven word/export replays agree. No new kappa or supplier admission.",
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1500"
 }
