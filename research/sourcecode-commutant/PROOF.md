@@ -1,7 +1,53 @@
-# A commuting source code cannot log the complete query at this interface
+# Endpoint support and fixed-frame obstructions for complete source queries
+
+## Every invertible full-query encoder has complete endpoint support
+
+Let R,L be r-by-n matrices, K be n-by-r, and J=I-KR. Assume R-L has full
+row rank and every row K_i is nonzero. For any invertible G satisfying
+LG=R, put Delta=G-I and H=J Delta. H is precisely the target correction
+needed by the input prelude X+=HY, Y=GY before the retained clean-J word.
+
+The full-query identity gives
+
+    R Delta=RG-R=(R-L)G.
+
+Its row rank is r. If Delta_i=0 and H_i=0 at a port i, then
+K_i R Delta=0. A full-row-rank matrix has no nonzero left annihilator,
+so K_i=0, a contradiction. The changed-source and corrected-target row
+supports therefore cover all n ports. Also L Delta=R-L gives
+rank(Delta)>=r, so at least r source rows change. If J is invertible,
+rank(H)=rank(Delta)>=r, so at least r target rows are corrected.
+
+For an arbitrary finite address payload, tensor R,L,K with its identity
+and allow G to be any invertible complex linear map on all port payloads.
+The same proof uses full row rank r times the payload dimension. A nonzero
+K_i tensor identity cannot annihilate that surjective map. The covering
+statement therefore counts whole port blocks and is not restricted to
+scalar source codes.
+
+In the pinned instance n=112 and r=8. The R-L minor on A has nonzero
+determinant, all 112 K_i are nonzero, and RK=14I. The latter implies
+J^-1=I-KR/13 over C; no circuit division by 13 is proposed. Thus both
+supports contain at least eight ports and their union contains all 112.
+Since G^-1-I=-Delta G^-1, the source support is also exactly the support
+of the inverse's changed rows.
+
+If a particular rowwise implementation charges at least one rank-one child
+for every active target and source endpoint, it pays at least 112. If its
+source normalization and return each cost one such child, it pays at least
+112+8=120. These are conditional cost comparators. The support theorem
+alone is not a universal native-cost lower bound and does not rule out a
+compiler carrying updates through compulsory later work.
+
+Three literal n=3,r=1 examples show that dropping invertibility, full rank
+of R-L, or nonzero K rows can invalidate the cover. Each retains the other
+premises, including invertibility of J. A fourth valid example attains
+|source support|+|target support|=n. The verifier checks all four examples.
+
+## The fixed-frame commuting shortcut also fails
 
 The local source encoder in PR1862 is valid and its unchanged replay passes.
-This note rules out one shortcut for carrying that code: keeping the same
+The following argument rules out one shortcut for carrying that code: keeping the same
 operator across the individual source output frames. It does not rule out
 changed charts, different encoders, paid transports or a complete supplier.
 In particular, it is not a lower bound for every zero-native-cost circuit.
@@ -26,6 +72,11 @@ matrices. Consider G=I+ZB. The proposed complete logger condition is
 
 There is no such G commuting with D. There is also no such G commuting
 with S. Invertibility of G is not needed for this obstruction.
+
+For this particular Z and L, LZ=I. The logger condition already forces
+B=R-L, even when B initially allows address-linear operators. Thus there
+is only one full-query logger in this fixed response family. The Fourier
+argument below verifies its incompatibility with the fixed frames directly.
 
 ## One Fourier output character suffices
 

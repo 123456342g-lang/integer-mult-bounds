@@ -1,4 +1,4 @@
-name: Source-code fixed-frame commutant
+name: Source-query endpoint support and frames
 
 on:
   pull_request:

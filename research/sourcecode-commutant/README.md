@@ -1,23 +1,37 @@
-# Fixed-frame commutation cannot carry the complete source query
+# Full-query source codes require complete endpoint support
 
 PR1862 gives a valid local source encoder that stores the eight-coordinate
-centre query in existing source fields. Its output fields have different
-native frames. This package rules out one way to avoid transporting the
-code: an encoder in that fixed response space cannot both retain the full
-query and commute with the unchanged line or specified output-frame operator.
+centre query in existing source fields. For any invertible full-query encoder
+at this interface, the source fields it changes and the target fields it must
+correct together cover all 112 ports. Both endpoints cannot be sparse.
 
-The statement allows arbitrary address-linear operator coefficients, not
-only scalar coefficients. It holds for every positive tensor power in the
-stated frame model. It does **not** exclude changed operators, monomial
-conjugacies, different response spaces, carrying the code through later
-native work, or paid chart transitions. It is not a lower bound for every
-zero-native-cost circuit. No new supplier or kappa is claimed.
+The support theorem allows arbitrary finite address-linear encoders. A second,
+narrower result rules out a fixed-response logger commuting with the unchanged
+line or specified output-frame operator, for every positive tensor power.
+Neither result excludes changed operators, monomial conjugacies, carrying the
+code through later native work, or paid chart transitions. Endpoint support is
+not a universal native-child charge. No new supplier or kappa is claimed.
 
 ## Result and evidence
 
+Write J=I-KR, Delta=G-I and H=J Delta. The full-query condition LG=R gives
+R Delta=(R-L)G. Since R-L has rank eight and G is invertible, this matrix
+has full row rank. If both Delta_i and H_i vanish at a port, then
+K_i R Delta=0, contradicting the nonzero K_i. Thus the endpoint supports
+cover all 112 ports. Each support also contains at least eight ports.
+
+This supplies a scoped cost control: a model charging one rank-one child per
+active endpoint already pays at least 112. Charging a changed source for both
+outward and return transfers gives at least 120. Those prices are conditional
+rowwise comparators, not a lower bound for all implementations; the old eight
+rank-eight centre queries cost 64 in rank mass. A useful implementation must
+beat that per-endpoint charging model.
+
 For G=I+ZB and the eight-port query read L in PR1862, there is no solution to
 LG=R that commutes with diag(C_q), or with diag(F C_q^-1). Here B may contain
-arbitrary complex linear maps on the address payload.
+arbitrary complex linear maps, although LZ=I already makes the full-query
+logger unique: B=R-L. This is a fixed-frame obstruction, not a lower bound
+for every zero-native-cost circuit.
 
 One Fourier output character is enough. At x=1, both excluded-eigenvalue
 row sets of Z contain an invertible eight-by-eight minor. Their exact
@@ -30,7 +44,9 @@ derives R directly from the pinned historical scalar program, checks the
 source response identities and physical labels, and checks all 512 characters.
 There are 494 full-rank cases in both eigenvalue groups. Four actual mutations
 fail: a constant character, a zeroed matrix row, a false determinant and a
-changed source archive. Checks remain active under Python optimization.
+changed source archive. Three explicit three-port counterexamples show why
+invertibility, rank(R-L) and nonzero K rows are needed. A valid toy attains
+the support-cover inequality. Checks remain active under Python optimization.
 
 The finite certificate and written argument are separate from a complete
 native replay, global routing, precision, hosting or multiplication theorem.
@@ -48,7 +64,7 @@ python3 -I -O -B research/sourcecode-commutant/verify.py
 Expected output:
 
 ```text
-PASS_SOURCECODE_FIXED_FRAME_COMMUTANT characters=512 full_rank=494 minors=2 controls=4 no_new_kappa
+PASS_SOURCECODE_SUPPORT_AND_FRAME endpoint_support>=112 characters=512 full_rank=494 mutations=4 premise_controls=3 no_new_kappa
 ```
 
 The runtime reads only its committed certificate and the frozen input archive
@@ -80,7 +96,8 @@ authors. The source notices credit icekylinx, Hao Yan / FanPUYen, Jeremy Kothe,
 Chafik Boukhalfa, rohanarun and NewBArch for the retained frame and supplier work.
 No predecessor code is copied into this package.
 
-The new contribution is the operator-valued fixed-frame commutant obstruction,
-the two-minor witness and a separate source-derived exact verifier. Prepared
+The new contribution is the endpoint-support tradeoff for arbitrary invertible
+full-query encoders, the fixed-frame obstruction and its two-minor witness,
+and a separate source-derived exact verifier. Prepared
 for Chafik Boukhalfa with substantial OpenAI Codex assistance. No independent
 human review or formal proof assistant is claimed. New material is Apache-2.0.

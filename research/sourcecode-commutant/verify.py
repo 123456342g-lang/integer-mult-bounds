@@ -1,4 +1,4 @@
-"""Exact fixed-frame commutant obstruction for PR1862's response space.
+"""Endpoint-support tradeoff and fixed-frame obstruction for complete queries.
 
 Read frozen original inputs directly; import no pending PR implementation.
 This is finite evidence for PROOF.md, not a complete supplier verification.
@@ -151,6 +151,19 @@ def rejected(fn):
     return False
 
 
+def endpoint_toy(k, ell, g):
+    """Literal three-port examples exercise every support-cover premise."""
+    r = [[1, 1, 1]]
+    eye = [[int(i == j) for j in range(3)] for i in range(3)]
+    delta = [[g[i][j] - eye[i][j] for j in range(3)] for i in range(3)]
+    kr = product(k, r)
+    jay = [[eye[i][j] - kr[i][j] for j in range(3)] for i in range(3)]
+    h = product(jay, delta)
+    source = [i for i, row in enumerate(delta) if any(row)]
+    target = [i for i, row in enumerate(h) if any(row)]
+    return dict(R=r, K=k, L=ell, G=g, logger=product(ell, g) == r, invertible=determinant(g) != 0, full_query_difference=any(a != b for a, b in zip(r[0], ell[0])), nonzero_K_rows=all(any(row) for row in k), invertible_J=determinant(jay) != 0, source_support=source, target_support=target, union=sorted(set(source) | set(target)))
+
+
 def build():
     raw = ARCHIVE.read_bytes()
     data = load(raw)
@@ -170,6 +183,22 @@ def build():
     z = [[(-12 if i in A else 1) * x for x in row] for i, row in enumerate(k)]
     ell = [[x if j in T else Q(0) for j, x in enumerate(row)] for row in r]
     need(product(r, z) == product(ell, z) == ident, 'fixed-support response identities')
+    difference = [[x-y for x, y in zip(a, b)] for a, b in zip(r, ell)]
+    q_minor = determinant([[row[j] for j in A] for row in difference])
+    need(q_minor != 0 and all(any(row) for row in k), 'support-cover hypotheses')
+    need(product(r, k) == [[14*x for x in row] for row in ident], 'invertible J via RK=14I')
+    good_g = [[1, 1, 1], [0, 1, 0], [0, 0, 1]]
+    singular_g = [[1, 1, 1], [0, 1, 0], [0, -1, 0]]
+    identity_g = [[int(i == j) for j in range(3)] for i in range(3)]
+    positive = endpoint_toy([[1], [1], [1]], [[1, 0, 0]], good_g)
+    need(positive['logger'] and positive['invertible'] and positive['union'] == [0, 1, 2], 'sharp support-cover toy')
+    need(len(positive['source_support']) + len(positive['target_support']) == 3, 'sharp union budget')
+    premise_examples = dict(no_invertibility=endpoint_toy([[1], [1], [1]], [[1, 0, 0]], singular_g), no_query_difference_rank=endpoint_toy([[1], [1], [1]], [[1, 1, 1]], identity_g), zero_K_row=endpoint_toy([[1], [0], [1]], [[1, 0, 0]], good_g))
+    for name, example in premise_examples.items():
+        need(example['logger'] and len(example['union']) < 3 and example['invertible_J'], 'genuine missing-premise counterexample '+name)
+    need(not premise_examples['no_invertibility']['invertible'] and premise_examples['no_invertibility']['full_query_difference'] and premise_examples['no_invertibility']['nonzero_K_rows'], 'invertibility control isolates premise')
+    need(premise_examples['no_query_difference_rank']['invertible'] and not premise_examples['no_query_difference_rank']['full_query_difference'] and premise_examples['no_query_difference_rank']['nonzero_K_rows'], 'query-difference control isolates premise')
+    need(premise_examples['zero_K_row']['invertible'] and premise_examples['zero_K_row']['full_query_difference'] and not premise_examples['zero_K_row']['nonzero_K_rows'], 'K-row control isolates premise')
     census, witness = [], None
     for x in range(512):
         minors = [independent_ports(z, [i for i, qi in enumerate(q) if ((qi & x).bit_count() & 1) != bit]) for bit in (0, 1)]
@@ -188,19 +217,19 @@ def build():
     controls = dict(constant_character=rejected(lambda: validate_witness(bad_character, q, z)), zeroed_matrix_row=rejected(lambda: validate_witness(witness, q, bad_z)), false_determinant=rejected(lambda: validate_witness(bad_det, q, z)), changed_source_archive=rejected(lambda: load(mutated_raw)))
     need(all(controls.values()), 'mutation controls')
     counts = Counter(map(tuple, census))
-    return dict(schema=1, status='PASS_SOURCECODE_FIXED_FRAME_COMMUTANT', source_archive_sha256=ARCHIVE_SHA, predecessor_pr=1862, predecessor_head='7649d9ceecec949541bec4bbde5929344166ba59', compensation_ports=A, query_ports=T, rank_census=[dict(ranks=list(rs), characters=n) for rs, n in sorted(counts.items())], full_rank_characters=counts[8, 8], witness=witness, R_L_mismatch=list(mismatch), controls=controls, scope='No G=I+ZB with arbitrary address-linear B can satisfy LG=R and commute with diag(C_q), or with the specified output frame diag(F C_q^-1). The written witness extends to every positive tensor power. Does not exclude changed operators, monomial conjugacies, paid transitions, different response spaces, or all zero-native circuits; no supplier or kappa claim.')
+    return dict(schema=2, status='PASS_SOURCECODE_SUPPORT_AND_FIXED_FRAME', source_archive_sha256=ARCHIVE_SHA, predecessor_pr=1862, predecessor_head='7649d9ceecec949541bec4bbde5929344166ba59', compensation_ports=A, query_ports=T, support_cover=dict(Q_minor_ports=A, Q_minor_determinant=str(q_minor), nonzero_K_rows=112, query_rank=8, minimum_source_support=8, minimum_target_support=8, minimum_endpoint_support_sum=112, conditional_rowwise_out_and_back_budget=120, sharp_three_port_example=positive, missing_premise_counterexamples=premise_examples), rank_census=[dict(ranks=list(rs), characters=n) for rs, n in sorted(counts.items())], full_rank_characters=counts[8, 8], witness=witness, R_L_mismatch=list(mismatch), controls=controls, scope='Every invertible full-query encoder has source-change and target-correction supports covering all 112 ports. Endpoint support is not a universal native-child charge. The fixed-Z logger is unique and cannot commute with diag(C_q), or with the specified output frame diag(F C_q^-1), even allowing address-linear coefficients and positive tensor powers. Does not exclude changed/conjugated operators, paid transitions or all zero-native circuits; no supplier or kappa claim.')
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--record', action='store_true', help='write EXPECTED.json only if absent')
+    parser.add_argument('--record', action='store_true', help='regenerate the package EXPECTED.json during authoring')
     parser.add_argument('--out', type=Path, help='write a new replay receipt')
     args = parser.parse_args()
     result = build()
     raw = (json.dumps(result, indent=2, sort_keys=True) + '\n').encode()
     expected = HERE / 'EXPECTED.json'
     if args.record:
-        with expected.open('xb') as f:
+        with expected.open('wb') as f:
             f.write(raw)
     else:
         need(json.loads(expected.read_text(encoding='utf-8')) == result, 'expected exact certificate')
@@ -208,7 +237,7 @@ def main():
         args.out.parent.mkdir(parents=True, exist_ok=True)
         with args.out.open('xb') as f:
             f.write(raw)
-    print('PASS_SOURCECODE_FIXED_FRAME_COMMUTANT characters=512 full_rank=494 minors=2 controls=4 no_new_kappa')
+    print('PASS_SOURCECODE_SUPPORT_AND_FRAME endpoint_support>=112 characters=512 full_rank=494 mutations=4 premise_controls=3 no_new_kappa')
 
 
 if __name__ == '__main__':

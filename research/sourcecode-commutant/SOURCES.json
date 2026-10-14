@@ -14,7 +14,7 @@
     "pr": 1862,
     "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1862",
     "head": "7649d9ceecec949541bec4bbde5929344166ba59",
-    "role": "Source-code response space Z, disjoint minors A/T, query condition LG=R and specified output-frame model. No code imported."
+    "role": "Clean-J source interface, full-query read LG=R, response Z, disjoint minors A/T and specified output-frame model. No pending code imported."
   },
   "predecessor_roles": [
     {
@@ -34,6 +34,20 @@
       "role": "Retained frame work credited in archive notices."
     }
   ],
-  "scope": "Finite exact input/census/minor certificate and written commutant argument only; not a full local native replay, global compiler or supplier audit.",
-  "disclosure": "New proof, independent scalar-prefix/rank checker and packaging prepared for Chafik Boukhalfa with substantial OpenAI Codex assistance. No independent human review or formal proof assistant."
+  "scope": "Endpoint-support tradeoff for arbitrary invertible full-query encoders, with exact premise witnesses and three-port controls; fixed-response logger uniqueness and fixed-frame commutant obstruction. No full local native replay, global compiler, universal native-cost lower bound or supplier audit.",
+  "disclosure": "New proof, independent scalar-prefix/rank checker and packaging prepared for Chafik Boukhalfa with substantial OpenAI Codex assistance. No independent human review or formal proof assistant.",
+  "overlap": {
+    "checked_utc": "2026-10-14 12:45 UTC",
+    "queries": [
+      "GitHub PR source code, source-code, commutant",
+      "GitHub Discussion commutant"
+    ],
+    "predecessor_current_head_verified": "7649d9ceecec949541bec4bbde5929344166ba59",
+    "neighbor": {
+      "pr": 1756,
+      "head": "b78859dd6f0d07bf1dda81718a18102bfec9cccb",
+      "scope_difference": "One read-only source and two clean-cache output ports; excludes multi-source coding. This package treats a full eight-query invertible source code and its endpoint support."
+    },
+    "limits": "Targeted live search, not a novelty proof; no Discussion claim posted."
+  }
 }
