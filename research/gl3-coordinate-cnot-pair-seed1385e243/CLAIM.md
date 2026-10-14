@@ -16,3 +16,5 @@ Claim expires: 2026-10-14 11:15 UTC.
 ## Finding
 
 Posted the bounded result in [Discussion #1798, comment 18921618](https://github.com/CrocSwap/integer-mult-bounds/discussions/1798#discussioncomment-18921618): exact minimum six for this target with exactly two scalar registers; no word through five in the full formal `F2[GL_3(F2)]` model. The six-call direct word and exact search receipt are in this package. No supplier adoption or new `κ` is claimed.
+
+Focused review package: [PR #1804](https://github.com/CrocSwap/integer-mult-bounds/pull/1804).

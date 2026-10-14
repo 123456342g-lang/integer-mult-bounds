@@ -81,7 +81,8 @@
       "PR #1757: arbitrary nonlinear scalar-gate theorem, different address alphabet."
     ],
     "finding_comment": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1798#discussioncomment-18921618",
-    "github_claim_status": "CLAIM posted and updated with exact scoped finding; no PR opened yet."
+    "github_claim_status": "CLAIM and FINDING posted; focused package PR #1804 opened from the existing author fork.",
+    "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1804"
   },
   "result_kind": "scoped-negative-result",
   "predecessors": [
@@ -119,5 +120,6 @@
       "checked_utc": "2026-10-14T10:14:05Z",
       "distinction": "Different scalar/address operation alphabet."
     }
-  ]
+  ],
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1804"
 }

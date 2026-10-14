@@ -103,6 +103,7 @@ not inspect code diffs or arbitrary nested files. Other pinned predecessor and
 selected-record context is listed in [SOURCES.json](SOURCES.json). The claim
 and its expiry are recorded in
 [CLAIM.md](CLAIM.md) and [Discussion #1798](https://github.com/CrocSwap/integer-mult-bounds/discussions/1798).
+The focused package is submitted as [PR #1804](https://github.com/CrocSwap/integer-mult-bounds/pull/1804).
 
 The finite search does not address `r > 2`, other target matrices, translation
 labels, general affine labels, arbitrary free address maps, rational frames,
