@@ -89,7 +89,8 @@
     "result": "The product-only relaxation cannot retain a uniform precision or magnitude guard; all-cut dyadic family and complete sufficient scan certificate. Retained full caller rejects the family.",
     "status": "DONE",
     "experiment_finished_utc": "2026-10-14T01:25:46.732987+00:00",
-    "handoff": "One focused mathematical-audit PR containing this package; link supplied in the donor handoff."
+    "handoff": "Completed focused PR1481; local sprint claim updated once with the result and publication link.",
+    "result_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1481"
   },
   "overlap": {
     "checked_at": "2026-10-14T01:03:13Z",
