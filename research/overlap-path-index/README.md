@@ -21,7 +21,9 @@ both axes given, `matches` is the intersection (a record must hit at least one
 term and one path) while `path_matches` stays the superset of all path hits, so
 a path hit can never disappear silently. Patterns are `fnmatch` patterns or
 literal substrings of the repository-relative path. A PR whose changed-file
-list is unavailable (for example PR 376 at the measured snapshot) is recorded
+list is unavailable (for example
+[CrocSwap/integer-mult-bounds#376](https://github.com/CrocSwap/integer-mult-bounds/pull/376)
+at the measured snapshot) is recorded
 with empty paths and `truncated: true`, and PRs beyond GitHub's 100-file
 listing are flagged `truncated: true` in the output; neither is silently
 trusted. Diff contents remain unsearched, and the report's `path_limits` says so.
@@ -47,7 +49,8 @@ it never reports "no overlap" from missing data without a warning.
 [CrocSwap/integer-mult-bounds#1365](https://github.com/CrocSwap/integer-mult-bounds/pull/1365)
 and
 [CrocSwap/integer-mult-bounds#1494](https://github.com/CrocSwap/integer-mult-bounds/pull/1494),
-the stacked PR442 level-model phases.
+the stacked level-model phases of
+[CrocSwap/integer-mult-bounds#442](https://github.com/CrocSwap/integer-mult-bounds/pull/442).
 
 ## Reproduce
 

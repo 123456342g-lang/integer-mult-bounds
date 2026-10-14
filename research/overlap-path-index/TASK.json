@@ -47,7 +47,7 @@
   "budget_minutes": 60,
   "stop_rule": "Ship the index and its controls if a cached offline path query answers both discussion 1200 example questions; stop if GitHub cannot serve the file lists within its gateway limits at any page size tested (25 PRs/page 502s at ~10 s, 10 PRs/page works).",
   "outcome": "completed",
-  "evidence": "scripts/find_overlap.py gained fetch_pr_files/path_report and --path; 5 new fixture tests plus 6 pre-existing Overlap tests pass (11 total); the package verifier runs 7 hermetic CLI controls. Measured on Windows 11, CPython 3.13: full index build 745 open PRs / 20117 changed-path entries in 87.7 s, cached offline path query 0.48 s, body searches pay nothing extra (pr_files is fetched only for --path queries). Live answers: docs/research/current-status.md is touched by CrocSwap/integer-mult-bounds#1232 only; research/lean-external-review is touched by CrocSwap/integer-mult-bounds#1365 and CrocSwap/integer-mult-bounds#1494, the stacked PR442 level-model work. 112 PRs (of 745) exceed GitHub's 100-file listing and are flagged truncated; PR 376 reports no file list and is recorded empty+flagged.",
+  "evidence": "scripts/find_overlap.py gained fetch_pr_files/path_report and --path; 5 new fixture tests plus 6 pre-existing Overlap tests pass (11 total); the package verifier runs 7 hermetic CLI controls. Measured on Windows 11, CPython 3.13: full index build 745 open PRs / 20117 changed-path entries in 87.7 s, cached offline path query 0.48 s, body searches pay nothing extra (pr_files is fetched only for --path queries). Live answers: docs/research/current-status.md is touched by CrocSwap/integer-mult-bounds#1232 only; research/lean-external-review is touched by CrocSwap/integer-mult-bounds#1365 and CrocSwap/integer-mult-bounds#1494, the stacked CrocSwap/integer-mult-bounds#442 level-model work. 112 PRs (of 745) exceed GitHub's 100-file listing and are flagged truncated; https://github.com/CrocSwap/integer-mult-bounds/pull/376 reports no file list and is recorded empty+flagged.",
   "author": "Aaron Wang / navinor, with help from opencode",
   "ai_assistance": "Substantial assistance from opencode (agent tooling): design, implementation, tests, measurements and writing. No other AI tools used.",
   "open_questions": [
@@ -65,7 +65,7 @@
     },
     {
       "question": "What stacks on a given PR beyond shared files (base-branch chains)?",
-      "why_it_matters": "The discussion 1200 question 'what stacks on #540?' is only approximated by shared-path hits; true stacking is a head/base relationship.",
+      "why_it_matters": "The discussion 1200 question about what stacks on https://github.com/CrocSwap/integer-mult-bounds/pull/540 is only approximated by shared-path hits; true stacking is a head/base relationship.",
       "first_step": "Record each open PR's base ref in the pr_files rows and flag PRs whose base names another open PR's head branch.",
       "blocked_by": "Most stacked PRs here target main and reference their parent only in prose, so the signal would be incomplete and must be labeled as such."
     }
