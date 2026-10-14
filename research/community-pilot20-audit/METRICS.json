@@ -13,5 +13,9 @@
   "actual_token_usage": null,
   "token_note": "Provider token telemetry not exposed to this pilot; no measured token saving claimed.",
   "comparison_note": "No matched control batch. This measures scoped throughput, not a speedup factor or 20 completed scientific reviews.",
-  "cache_note": "Source comparison and pinned receipts implemented; no automatic transitive verification cache. #671 records missing reusable dependency payload."
+  "cache_note": "Source comparison and pinned receipts implemented; no automatic transitive verification cache. #671 records missing reusable dependency payload.",
+  "merged": 14,
+  "open": 6,
+  "publication_wall_seconds": 735.869,
+  "integration_commit": "ee055dc44815497927ef618fc985b93c2dcbda2a"
 }

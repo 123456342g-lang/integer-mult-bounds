@@ -2,7 +2,7 @@
 
 Baseline: `81e81af67714bdc8d1693b0bf5c29468b92f62ff`. Selection: the oldest 20 open non-draft PRs after the fourth100 range; no selection by apparent ease. Source heads were checked live before integration.
 
-**14 ready for scoped research integration; six remain open. Selected κ unchanged.** Publication and live merge observations are recorded separately in DISPOSITIONS.json.
+**14 merged on main; six remain open. Selected κ unchanged.** Integration commit: `ee055dc44815497927ef618fc985b93c2dcbda2a`. GitHub confirms all 14 merges; exact-head observations and individual explanation links are in DISPOSITIONS.json and COMMENT-RECEIPTS.json.
 
 Complete Git diffs, not truncated API lists, define coverage. #671/#676/#685 contain 112/117/682 changed files respectively. Every accepted PR consists of new isolated research material (and four focused workflows); original source and author commits are retained by the merge.
 
@@ -38,7 +38,7 @@ Complete Git diffs, not truncated API lists, define coverage. #671/#676/#685 con
 
 ## Evidence and efficiency
 
-The 14 passing scoped commands consumed **129.9 aggregate process-seconds** with four workers. This is test runtime, not elapsed reviewer time. No full supplier rebuild was started. METRICS.json records selection/review timing; publication time is added after completion. Token telemetry is unavailable, and there is no matched control batch: no numerical token-saving or speedup claim is made.
+The 14 passing scoped commands consumed **129.9 aggregate process-seconds** with four workers. This is test runtime, not elapsed reviewer time. No full supplier rebuild was started. METRICS.json records **12.3 minutes** from frozen selection through publication and disposition comments. This includes packet tooling and review work, not just execution. Token telemetry is unavailable, and there is no matched control batch: no numerical token-saving or speedup claim is made.
 
 The unchanged selected supplier is reused only as historical context/pinned inputs. These scoped checks do not re-establish its theorem. #671 compares 103 identical predecessor files and identifies nine changed files; missing local provider payload prevents blanket reuse of #664 logs. Keeping a minimal authenticated artifact bundle is the next cache improvement.
 
