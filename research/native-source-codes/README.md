@@ -1,147 +1,110 @@
-# Eight-child source codes for centre information
+# Eight-child identity transfers and centre-query source codes
 
-This package gives an input source code for the historical complex
-supplier. It puts the complete eight-coordinate centre query into eight
-existing source fields, while the target receives the original clean-J
-operation. All 480 arbitrary borrowed helpers are restored. It adds eight
-rank-one native children and no array field.
+This package gives a source code for the historical complex supplier
+that stores the full centre query in eight existing source fields while
+the target performs the exact subtraction `X-Y`. Its forward companion
+performs `(G^-1 X,Y+G^-1 X)`. Each complete word restores all 480 arbitrary
+helpers and costs 217898 scalar primitives, eight added rank-one children,
+and no new array field.
 
-The enabling theorem uses two disjoint dyadic coordinate minors of the
-low-rank defect `J=I-KR`. It chooses a source response Z whose target
-effect JZ is supported on only eight fields. Applying the source code at
-the common input frame removes the restriction to a response space at an
-internal cut. The same support gives a group of source automorphisms that
-can be composed with an eight-child native bound; scalar costs can grow.
+The code has order six in one fixed chart. A general ordered-ring theorem
+proves the construction, and a modulo-13 argument proves that eight target
+repair rows are minimal for this source-preparation interface. These are
+local results. **The complete supplier and kappa bound are unchanged.**
+Routed composition, source removal, global precision, address work, and
+recursive hosting remain open.
 
-There is **no complete kappa improvement**. The encoded source outputs
-retain their individual `F C_p^-1` frames. A complete supplier must still
-restore the original data across its cover charts and account for every
-bridge, address map, precision bound, and recursive child.
+## Construction and evidence
 
-Helper restoration is in canonical contents. Each physical helper keeps
-its original native transform and endpoint contract.
+[UNIT-TRANSFER-PROOF.md](UNIT-TRANSFER-PROOF.md) gives the theorem, exact
+native cuts, cost, scoped row bound, and conditional query-transport law.
+[unit-transfer-certificate.json](unit-transfer-certificate.json) binds
+the two complete words and inverse output recipes. Positive input recipes
+remain in [certificate.json](certificate.json). Source inputs and credit
+evidence are pinned in [SOURCES.json](SOURCES.json).
 
-## Construction and exact scope
+For `J=I-KR`, choose maps with `RP=LK=I` and `LP=0`. Put
 
-[PROOF.md](PROOF.md) gives the general theorem, the actual instance,
-the scalar word, and the full local allowance. [certificate.json](certificate.json)
-contains the selected minors and eight exact native recipes.
-[SOURCES.json](SOURCES.json) pins the source archive, its members, and
-the source credit evidence.
+```text
+Z=K-P(RK-I), Q=R-L,
+G=(I-PL)(I+ZQ), G^-1=I+PL-ZR.
+```
 
-For the actual matrix, `K=R^T/4` and `RK=14I`. Use disjoint selected
-sets A and T with invertible eight-by-eight minors. Let P insert `R_A^-1`
-at A, let `L=R_T selector_T`, and put
+Then `LG=R`, `G^6=I`, and `JG-I=-P[R+(RK-I)Q]`. The last expression has
+only the eight selected target rows. Input correction and source coding
+give `(X-Y,GY,h,0)`. Output source decoding and selected correction give
+`(G^-1X,Y+G^-1X,h,0)`. No odd inverse occurs.
 
-    Z=K-13P,       Q=R-L.
+All added source reads occur at the common I entrance or the common FULL
+exit. The backward copy uses the intrinsic positive line C_p; the forward
+copy uses its inverse. Query outputs retain their individual native
+frames. They do not provide free common-frame access.
 
-Then `RZ=LZ=I`, `QZ=0`, and `JZ=-13P`. The source code
+The earlier fixed-support source group remains in [PROOF.md](PROOF.md).
+It preserves the original clean-J target operation while changing the
+source. Its four literal examples remain unchanged.
 
-    G=I+ZQ,       G^-1=I-ZQ
-
-has `LG=R`. Its eight T fields contain the complete original query.
-Before the retained local word, apply `X+=JZQY` in the eight input
-target frames, then `Y=GY` at the common input source frame. The result is
-
-    (X,Y,h,c) -> (X-JY,GY,h,0).
-
-Each source query is fully read before its scatter. Its completed
-scatter preserves every subsequent query. Thus the logger needs only
-one existing private field. No inverse of 13 occurs.
-
-The more general family `G=I+ZB` uses the eight existing private fields
-to store BY before changing Y. It is a dyadic automorphism exactly when
-`I+BZ` is. This family is the full group that preserves the 104 rows of
-J outside A. The package also emits a non-diagonal member and its inverse
-to check the complete snapshot schedule.
-
-For the logger and its inverse source code, the complete scalar allowance
-is 218794 real-component primitives per array coordinate. This includes
-202138 from the retained clean-J word, 8736 for the scalar source code,
-and 7920 for target query formation, additions, and private clears.
-The complete child profile is
-
-    {1:2420, 2:418, 3:432, 4:142, 5:82},
-
-with original-rank mass 5530. The retained mass is 5522. The eight added
-children also use 16 explicit binary address maps. Their complete
-compiler, recursive, and precision costs are not included in the scalar
-subtotal.
-
-| Literal example | Complete scalar allowance | Private fields used |
+| Complete local word | Scalar allowance | Existing private fields used |
 | --- | ---: | ---: |
-| Query logger | 218794 | 1 |
-| Inverse source code | 218794 | 1 |
-| Non-diagonal parameter `(I+E_10)R` | 222846 | 8 |
-| Inverse non-diagonal parameter | 225794 | 8 |
+| Backward identity transfer and full-query code | 217898 | 1 |
+| Forward companion | 217898 | 1 |
+| Original query logger | 218794 | 1 |
+| Inverse original source code | 218794 | 1 |
+| Non-diagonal source code | 222846 | 8 |
+| Inverse non-diagonal source code | 225794 | 8 |
 
-All four words have the same child profile above. In E_10, the only
-nonzero entry is row 1, column 0, with zero-based indices.
+Every word has native profile `{1:2420,2:418,3:432,4:142,5:82}`, with rank
+mass 5530, versus retained mass 5522. The eight new children use 16 explicit
+address maps. The scalar column counts real primitives per array coordinate;
+it does not include the complete recursive or precision invoice. Every
+complete word clears all eight owned private outputs. The forward and
+backward words are not inverse calls.
 
 ## Reproduction
 
 Use Python 3.10 or later, Git, and the Python standard library. The local
-Git object database must contain commit
-`bce54fb3f895cbe5cd4c0eb477c3afeed100190f`. The replay reads immutable
-objects at that commit and needs no network.
-
-Run from the repository root with a new output directory:
+Git database must contain commit
+`bce54fb3f895cbe5cd4c0eb477c3afeed100190f`. No network is needed.
+From the repository root, use a new output directory:
 
 ```sh
-python3 -I -O -B research/native-source-codes/replay.py \
-  --repo . --out /tmp/native-source-codes-review
+python3 -I -O -B research/native-source-codes/replay_unit_transfers.py \
+  --repo . --out /tmp/native-unit-transfer-review
 ```
 
 Expected output:
 
 ```text
-PASS_INPUT_ONLY_SOURCE_CODES
-All 712 formal input columns and 4096 new native Gaussian columns passed.
+PASS_UNIT_TRANSFER_EXTENSION
+Four published examples and both unit transfers passed all 712 formal input columns.
+The eight positive and eight inverse native recipes passed all 8192 Gaussian columns.
 The complete supplier and kappa calculation are unchanged.
 ```
 
-The replay writes the literal words and source, algebra, native, and
-overall receipts. It checks all 712 formal input columns, all helper
-and private outputs, physical frame access, exact query storage, prelude
-inverses, composition, and each scalar allowance. The producer and
-verifier use separate propagation methods. The verifier does not import
-the producer. Checks remain active with `-O`.
+This checks all six complete words, source inverse orders, serial query
+reads, private lifetimes, helpers, frame access, exact native phases,
+scalar allowances, and formal scalar prefix bounds. The producer and
+verifier use separate propagation methods. Checks remain active with
+`-O`. The earlier `replay.py` command remains available for the four
+original examples.
 
-Native checks compare every new recipe on all 512 basis inputs, with
-exact Gaussian dyadic arithmetic. Wrong inverse signs and global phases
-are rejected. A source-read mutation keeps the same legal frames and
-scalar cost but changes the full operation. Missing compensation and
-incorrect scalar coefficients also fail the exact map checks.
+[UNIT-TRANSFER-REVIEW.md](UNIT-TRANSFER-REVIEW.md) records independent
+extension review. [REVIEW.md](REVIEW.md) retains the earlier package review.
+Receipts are in [evidence](evidence). No complete supplier replay or
+repository-wide suite was run for this local addition.
 
-The inverse preludes restore the persistent data and helpers. Used
-private fields end at zero; unused ones stay unchanged. Each complete
-call clears all eight private fields. An inverse source code is not an
-inverse complete backward call, since the latter still applies its
-target shear.
+## Remaining construction
 
-## Open next questions
+A complete controller must retain the independent selected inputs as well
+as the stored queries. It must prove each ordered chart transition and
+intervening bank operation. The conditional query law preserves full
+queries, but does not make the complete source map identity. The final
+native gauges and source code must be removed with a priced word.
 
-The source code is now a priced local operation. The remaining question
-is how to use it in the actual routed controller without an unaffordable
-source-restoration step. Stored query values alone do not determine all
-original selected inputs. The input source code also changes some
-off-selected fields, which a global construction must account for.
-
-Two concrete next steps are:
-
-- Can a controller restore the source from the stored queries? Derive its
-  complete ordered content map and selected-input inverse first. The
-  blocker is the missing original selected information at the endpoint;
-  a stored query alone does not remove that obligation.
-- Can the fixed-support source group cross the actual cover charts?
-  Derive the transition between two adjacent routed bases, then check
-  its physical source reads and arbitrary borrowed state. The blocker
-  is that a scalar code at one interface does not supply an unpriced
-  address-valued code at another.
-
-These steps would turn the local code into a reusable supplier component.
-A supplier claim must then include its native access schedule, complete
-child profile, precision, recursive hosting, and finite assembly invoice.
+The eight-row bound applies to target-row repair after source preparation.
+It is not a lower bound for all possible native circuits. A larger selected
+interface, a different controller, or a borrowed-state code can change the
+remaining design constraints; none is admitted by this package.
 
 ## Credit
 
@@ -149,7 +112,7 @@ The input is the frozen local word in the historical
 [PR #1042 audit](https://github.com/CrocSwap/integer-mult-bounds/pull/1042),
 also used by the historical
 [PR #1094 assembly](https://github.com/CrocSwap/integer-mult-bounds/pull/1094).
-The exact notices and material predecessor credits are in
-[NOTICE.md](NOTICE.md). New research, code, and independent agent review
-used substantial OpenAI Codex assistance under the user's direction.
-No independent human review is claimed. New material uses Apache-2.0.
+Exact notices and predecessor credit remain in [NOTICE.md](NOTICE.md).
+New research, code, and independent agent review used substantial OpenAI
+Codex assistance under the user's direction. No independent human review
+is claimed. New material uses Apache-2.0.
