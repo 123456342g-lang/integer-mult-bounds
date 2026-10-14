@@ -47,5 +47,6 @@
     "scope": "Only JSON serialization and LF/CRLF variation; no field values or source pins altered."
   },
   "binary_word_matches": true,
-  "scope": "No source pin was replaced or disabled. The twelve-stage public baseline, kernel38/retiming61 and rank-modular159 sub-replays passed; the inherited base did not complete, and the TI extension was not reached. First attempt stopped on local disk capacity; the retry exposed this independent source-binding failure. This is a replay blocker, not a counterexample to the mathematics."
+  "scope": "No source pin was replaced or disabled. The twelve-stage public baseline, kernel38/retiming61 and rank-modular159 sub-replays passed; the inherited base did not complete, and the TI extension was not reached. First attempt stopped on local disk capacity; the retry exposed this independent source-binding failure. This is a replay blocker, not a counterexample to the mathematics.",
+  "pin_file": "PR309-RETIMING51-PIN.json.gz"
 }
