@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "python": "3.12",
+  "requirements": [],
+  "inputs": [
+    "research/bit-partial-width7-optimum/EXPECTED.json",
+    "research/bit589-width-packing/RESULT.json",
+    "research/bit589-width-packing/SOURCES.json",
+    "research/bit589-width-packing/packing.py",
+    "research/community-frontier1094-audit/ASSEMBLY.json",
+    "research/e8-bit-p111-tuned/data/selection9-p111.json",
+    "research/e8-bit-p111-tuned/tune/EXPECTED.json",
+    "research/e8-bit-p111-tuned/vendor/pr510/e8-r480-nine-stage/vendor/e8-r715-eleven-stage-whole/code/audit_hosted_k.py",
+    "research/e8-bit-p111-tuned/vendor/pr510/e8-r480-nine-stage/vendor/idle-axis-hosting/hosting_core.py",
+    "research/native-complex-moment552/engines/base_two_moment.py",
+    "research/native-complex-moment552/engines/moment.py",
+    "research/native-complex-moment552/engines/outer.py"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/verify.py"
+      ],
+      "timeout_seconds": 600,
+      "checks": "Binds selected record -> frontier1094 ASSEMBLY -> the PR589 record and engines pinned by #1023's packing.py; rebuilds the nine-stage idle schedule and windows, equal to PR442 hosting_core.windows and audit_hosted_k.windows, frozen selection inside its windows; capacity-7 children admit one stage each; chain reduction by brute force (k = 1, 2); for every k = 0..74 the DP optimum, an explicit residual-level placement attaining it (window, width, offset, disjoint cells, hosted once), both local brackets priced with the pinned engines, a 1e-24 grid certificate tight to 1e-50 against the explicit histogram; #1023's eight partial rows and merged #1281's EXPECTED.json (75 idle optima, 9 priced cases with exact endpoints and histograms; local and pooled32 rows above the bound); #1023's all-width-7 optimum window-feasible; RESULT.json byte-identical."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "{package}",
+        "-p",
+        "test_package.py"
+      ],
+      "timeout_seconds": 300,
+      "checks": "Capacity-7 windows, #1023's k = 1 placement outside its windows, k = 0 reproduction, window-free rows above and window-respecting rows below the bound, #1281 local and pooled rows, all-width-7 feasibility, brute-force reduction, dropped chain constraint and perturbed window controls, width-8 Hall vacuity."
+    }
+  ]
+}
