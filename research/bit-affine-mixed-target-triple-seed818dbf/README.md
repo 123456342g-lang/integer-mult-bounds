@@ -127,11 +127,15 @@ was not changed.
 ## Overlap and attribution
 
 Overlap was checked against open PRs and fully paginated active Discussion
-claims. The scope is distinct from the two-coordinate-swap packages, the
-mixed-`GL_3` target-pair work, and the concurrent two-copy and five-helper
-`R439` claims. The nearby claim for two identical `h` targets is also a
-different target multiset and register count. The exact claim and its expiry
-are recorded in Discussion
+claims. Open PR #1711 studies two-register endpoints `diag([h],[h])` and
+`diag([h],[h^-1])` with the four-label alphabet `{a,b,t_x,t_y}` (24
+generators). This result instead uses exactly three registers, target tuple
+`(a,b,h)`, and the restricted alphabet `{a,b,t_x}` (84 generators). The
+adjacent claim for two identical `h` targets is the same two-register,
+four-label scope as #1711. PR #1696 studies the related but linear target
+`(a,b,aba)` in `GL_2(F2)`. The two-coordinate-swap packages and mixed-`GL_3`
+target-pair work also change the target or address group. The exact claim and
+its expiry are recorded in Discussion
 [#1317](https://github.com/CrocSwap/integer-mult-bounds/discussions/1317#discussioncomment-18918291).
 
 This package builds on the affine rank argument in
