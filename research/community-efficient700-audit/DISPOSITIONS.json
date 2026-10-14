@@ -3237,20 +3237,24 @@
       },
       "reviewed_head": "3d2e634e046ac4fbf07ddbfb0e59da4cf9907f4e",
       "current_head": "3d2e634e046ac4fbf07ddbfb0e59da4cf9907f4e",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/common-a-broadcast-readout-seed4a52"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "4d3248d6d52f8ddfe612e8508b74a36acb67fbe3",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1707"
+      },
       "scope": "The exact dirty connector identity groups 64 readouts into ten common-A evaluations with every target write retained. The complete declared invoice gives a break-even condition including dispatch and routing; no common-A selected supplier or physical broadcast tariff is supplied.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient700-audit/packets/1707.json",
@@ -3620,20 +3624,24 @@
       },
       "reviewed_head": "3ae9a6f3ac74ded022ab3b4872a7357a621af6fb",
       "current_head": "3ae9a6f3ac74ded022ab3b4872a7357a621af6fb",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/involutive-walsh-lift"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "4d3248d6d52f8ddfe612e8508b74a36acb67fbe3",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1719"
+      },
       "scope": "Written doubled-Walsh operator and cover proofs, complete native/global replays, and independent invoice checks preserve normalized recursive ranks and arbitrary helper jobs under inherited interfaces. The Gaussian-unit lift makes port phases involutions; changed centre decoding, mode hosting and its costs remain open, with no selected-bound improvement.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient700-audit/packets/1719.json",
