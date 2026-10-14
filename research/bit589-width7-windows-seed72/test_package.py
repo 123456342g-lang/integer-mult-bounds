@@ -39,10 +39,23 @@ class Windows(unittest.TestCase):
         mutated = sched[:first_bridge] + sched[first_bridge + 1:]
         with self.assertRaisesRegex(ValueError, 'global_k.py'):
             windows.checked_windows(mutated)
-        # without the anchor, the three predicates would still agree on the mutated schedule
-        # while the capacity-7 windows widen, which is why the anchor is needed
-        widened = {i: st for i, (p, r, st) in windows.windows(mutated).items() if r == 7}
+        # without the anchor the three predicates still agree on the mutated schedule, while the
+        # capacity-7 windows widen: the anchor is what pins the singleton windows
+        widened = {i: st for i, (p, r, st) in windows.three_way(mutated).items() if r == 7}
+        self.assertEqual(widened[1], (0, 1, 2))
         self.assertNotEqual(widened, {1: (2,), 3: (4,), 5: (6,)})
+
+    def test_anchor_compares_every_field(self):
+        base = windows.schedule()
+        idle = [n for n, e in enumerate(base) if e['kind'] == 'idle']
+        local = [n for n, e in enumerate(base) if e['kind'] == 'local_cover_sweep']
+        bridge = [n for n, e in enumerate(base) if e['kind'] == 'bridge']
+        for n, field, value in ((idle[1], 'rank', 14), (idle[1], 'pair', 0), (local[3], 'pair', 2),
+                                (local[3], 'stage', 4), (bridge[0], 'dst', 2), (bridge[0], 'src', 0)):
+            mutated = copy.deepcopy(base)
+            mutated[n][field] = value
+            with self.assertRaisesRegex(ValueError, 'global_k.py', msg=(n, field, value)):
+                windows.checked_windows(mutated)
 
     def test_cw1_window_free_k1_uses_nine_seven_slots(self):
         # #1023's partial placement (packing.width7_partial_idle) fills 9 capacity-7 copies per replica
@@ -85,6 +98,26 @@ class Certificates(unittest.TestCase):
             if key != 'k0_optimistic':
                 self.assertTrue(row['local_above_bound'] and row['pooled32_above_per_replica_bound'], key)
         self.assertEqual(RESULT['pr1281']['idle_optima_matched'], 75)
+        # recompute one bound independently of RESULT's flags: at k = 1 (optimistic) the certificate holds
+        # at the recorded bound, and #1281's published local and pooled32 values (read from its file) lie above it
+        record = wopt.P.pinned_json('bit_record')
+        model = wopt.P.slot_model(record, wopt.P.pinned_json('selection'))
+        local, _ = wopt.P.local_bracket(model['local'], 1)
+        bound = Q(RESULT['rows']['1']['optimistic']['certified_bound'])
+        lb, _ = V.certificate_bound(1, local, bound, model['calls'], record['nine']['bit']['live'])
+        self.assertGreater(lb, 1)
+        e1281 = json.loads((wopt.ROOT / V.PR1281['path']).read_text())['priced_cases']['k1_optimistic']
+        self.assertGreaterEqual(Q(e1281['optimal']['lower']), bound)
+        self.assertGreaterEqual(Q(e1281['pooled32']['lower']), bound)
+
+    def test_record_binding_and_explicit_k1_placement(self):
+        self.assertEqual(V.bind()['assembly'], V.ASSEMBLY)
+        _, _, plan, _ = wopt.solve(1, Q(1, 570), True)
+        slots = []
+        idle = V.build(1, plan, slots)
+        self.assertEqual(len(slots), 9 * wopt.R)                       # every (stage, helper) once
+        self.assertTrue(all(s in wopt.WIN[i][1] for i, cp, off, w, s, h in slots))
+        self.assertEqual({str(r): n for r, n in sorted(idle.items())}, RESULT['rows']['1']['idle'])
 
     def test_pr1023_partial_rows_all_unreachable(self):
         rows = RESULT['pr1023_partial_rows']

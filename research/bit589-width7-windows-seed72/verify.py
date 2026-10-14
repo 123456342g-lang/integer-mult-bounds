@@ -52,7 +52,11 @@ def bind():
     records = [P.ROOT / 'certificates/selected-result.json'] + sorted((P.ROOT / 'certificates/checkpoints').glob('*.json'))
     named = False
     for f in records:
-        rec = json.loads(f.read_text()) if f.is_file() else {}
+        try:
+            rec = json.loads(f.read_text()) if f.is_file() else {}
+        except ValueError:
+            rec = {}
+        rec = rec if isinstance(rec, dict) else {}
         named = named or (rec.get('certificate') == ASSEMBLY and rec.get('certificate_sha256') == P.sha256(raw))
     need(named, 'a selected or checkpoint record names the frontier1094 certificate')
     asm = json.loads(raw)
@@ -151,8 +155,10 @@ def brute_force_reduction(k):
     return count, agree
 
 
-def build(k, plan):
-    """Explicit per-replica hosting from the DP plan, verified in the audit_hosted_k style."""
+def build(k, plan, slots_out=None):
+    """Explicit per-replica hosting from the DP plan, verified in the audit_hosted_k style. Returns the idle
+    remainder histogram; if slots_out is a list, the checked slots (child, copy, offset, width, stage,
+    helper) are appended to it."""
     copies = {i: [] for i in WIN}
     for i in WIN:
         for (l, b, r) in plan['copies'][i]:
@@ -197,6 +203,8 @@ def build(k, plan):
         need((s, h) not in hosted, 'hosted once')
         hosted.add((s, h))
     need(hosted == {(s, h) for s in range(STG) for h in range(R)}, 'every (stage, helper) hosted')
+    if slots_out is not None:
+        slots_out.extend(slots)
     for i in WIN:
         for cp in range(N):
             r = CAP[i] - len(used.get((i, cp), ()))

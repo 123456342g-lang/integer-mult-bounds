@@ -3,9 +3,10 @@
 
 The idle schedule follows global_k.py's recipe (K = 4 bank pairs, L = 9 stages): a local cover sweep
 per stage, the idle children it inserts, and the bridges. schedule() writes it out here; at run time
-it is compared event by event with the schedule that the pinned global_k.py itself produces (its
-recipe() and its idle-insertion rule, extracted from the file with ast and replayed, asserts
-included). A child's window is the set of stages whose sweep falls strictly after the child's pair
+it is compared event by event with the schedule obtained by executing the pinned global_k.py's own
+recipe() and its idle-insertion if-block (extracted with ast, their asserts included) inside a
+transcription of the surrounding loop of global_k.main() (level bookkeeping, the sweep, bridge and
+exchange appends, and its stage-order, bridge-level and exchange checks). A child's window is the set of stages whose sweep falls strictly after the child's pair
 was last touched and before the child is inserted, on another pair. Three implementations of that
 predicate (this one, PR442 hosting_core.windows and audit_hosted_k.windows) are run on the one
 shared schedule and must agree; the frozen PR589 hosting selection must lie inside the windows.
@@ -69,8 +70,8 @@ def schedule():
 
 
 def global_k_schedule(k=K):
-    """The schedule produced by the pinned global_k.py: its recipe(K) and the idle-insertion if-block of
-    its main loop, both extracted with ast and executed (the scalar replay around them is not needed)."""
+    """global_k.py's schedule: its recipe(K) and the idle-insertion if-block of main(), both extracted with
+    ast and executed, inside a transcription of the surrounding loop (the scalar replay is not needed)."""
     tree = ast.parse(GLOBAL_K.read_text())
     recipe_fn = [n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == 'recipe']
     rules = [n for n in ast.walk(tree) if isinstance(n, ast.If) and ast.unparse(n.test) == 's % 2 == 1 and s <= 2 * K - 3']
@@ -93,6 +94,8 @@ def global_k_schedule(k=K):
                 raise ValueError('global_k.py: bridge levels')
             sched.append(e)
         else:
+            if levels != [2 * k] * k:
+                raise ValueError('global_k.py: exchange levels')
             sched.append(e)
     return sched
 
@@ -115,12 +118,8 @@ def windows(sched):
     return out
 
 
-def checked_windows(sched=None):
-    """{child: (capacity, stages)} for the children that can host, after the schedule is matched with
-    global_k.py and the three window predicates agree on it."""
-    sched = schedule() if sched is None else sched
-    if _events(sched) != _events(global_k_schedule()):
-        raise ValueError('schedule differs from the one global_k.py produces')
+def three_way(sched):
+    """The windows of `sched` after checking that the three predicates agree on it (no anchor)."""
     mine = windows(sched)
     hc = _load('pr442_hosting_core', HOSTING_CORE)
     ah = _load('audit_hosted_k', AUDIT_HOSTED)
@@ -130,6 +129,16 @@ def checked_windows(sched=None):
     audit = {i: (pair[i], rank[i], tuple(sorted(W[i]))) for i in W}
     if not (mine == theirs == audit):
         raise ValueError('window predicates disagree')
+    return mine
+
+
+def checked_windows(sched=None):
+    """{child: (capacity, stages)} for the children that can host, after the schedule is matched with
+    global_k.py and the three window predicates agree on it."""
+    sched = schedule() if sched is None else sched
+    if _events(sched) != _events(global_k_schedule()):
+        raise ValueError('schedule differs from the one global_k.py produces')
+    mine = three_way(sched)
     win = {i: (r, st) for i, (p, r, st) in mine.items() if r > 0 and st}
     for i, w, s, n in json.loads(SELECTION.read_text())['bit']['stages']:
         if s not in win[i][1]:
