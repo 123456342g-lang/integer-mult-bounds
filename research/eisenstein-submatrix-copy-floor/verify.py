@@ -13,7 +13,7 @@ research/eisenstein-clique-copy-bound (PR798) and checks:
    nonorthogonal pairs, so every S_uw has the same minrank;
 3. the rational weights 184/6835 (singletons), 13/13670 (7-cliques) and
    7/20505 (S_uw) satisfy sum_S w_S [S meets F][S meets G] <= c(F,G) on all
-   298,378 unordered flat pairs with c >= 1;
+   296,321 unordered flat pairs with c >= 1 (of 298,378 unordered pairs);
 4. objective 30200/1367 > 22, so every fitting decomposition costs >= 23;
 5. rejection controls.
 """

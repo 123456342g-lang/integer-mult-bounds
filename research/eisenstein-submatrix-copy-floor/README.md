@@ -44,8 +44,10 @@ weights `λ_S ≥ 0` with
 
 prove `C ≥ Σ_S λ_S m(S)`. Closure keeps `c` and can only add hits, so flats
 suffice, exactly as in PR798. Cliques (`m(Q) = |Q|`) are PR798's method.
-Asymmetric row/column sets add nothing: `m(P,Q) = m(P∩Q)`, because every
-entry outside `(P∩Q)²` is zero or free.
+Asymmetric row/column sets add nothing. Define `m(P,Q)` as the least rank
+of `B[P,Q]` over fitting `B`. Every entry of `B[P,Q]` outside `(P∩Q)²` is off
+the diagonal, so it is zero or free; setting the free ones to zero gives
+`m(P,Q) = m(P∩Q)`, while the hit count for `(P,Q)` is at least that for `P∩Q`.
 
 **The new sets.** For distinct nonorthogonal `u, w`, let `S_uw = N[u] ∩ N[w]`
 (20 lines; 540 sets). `u` and `w` are nonorthogonal to every line of `S_uw`, so
@@ -93,8 +95,8 @@ classes by (|A|, |S|, price), computed one minrank per class by SAT with the
 Lemma 3 normalization, and solved the class-uniform LP. Only the `S_uw` class
 violates the clique dual, and the LP optimum is again 30200/1367. If those
 classes are orbits of the graph's automorphism group (not checked), then
-30200/1367 is the exact optimum of the whole principal-submatrix method, and
-pushing past 23 needs yet another ingredient.
+30200/1367 would be the exact optimum of the whole principal-submatrix method,
+and pushing past 23 would need yet another ingredient. This is conditional.
 
 ## Consequences and scope
 
