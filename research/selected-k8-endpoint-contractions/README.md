@@ -90,12 +90,23 @@ for the complete constraint screen. It was not a realizable assignment.
 [Discussion1674](https://github.com/CrocSwap/integer-mult-bounds/discussions/1674)
 records the scoped claim and outcome; TASK.json retains the card and pins.
 
-The final overlap refresh covered 409 open PRs at 06:38:34 UTC and 330
-discussions at 06:39:18 UTC on 2026-10-14, with complete pagination.
-PR1583, PR1090 and PR1671 heads were rechecked. Search covers metadata,
-not arbitrary code, and is not a novelty certificate. Main at
-`d78fe4bbb6f6b769e39586f8bb3ba8c31a31fd3a` preserved all 19 checked
-instruction, selection, replay and source paths and had no package collision.
+The publication refresh covered 433 open PRs at 16:32:27 UTC and 622
+Discussions at 16:33:41 UTC on 2026-10-14, with complete pagination.
+PR1583, PR1090 and PR1671 retained their exact heads and are now merged.
+Search covers metadata, not arbitrary code, and is not a novelty certificate.
+Main at `01a65937ece11b56d515c81f039464ae3043c1c1` preserved all 12
+mathematical inputs and the selected record, with no package collision.
+Its changed package runner passed a fresh full CPython 3.12 registered replay.
+The other changed guidance adds an E8 scope map and CI invalidation details.
+
+Ross Richardson's intervening `selected-k8-uniform-frame-audit` extends
+PR1671 uniformly over a power-price interval with fixed ends. It is
+complementary to this variable-end result and is not a certificate input.
+The helper-450 emitted audits and the source-independent full-cleanup
+obstruction also have distinct scopes; TASK.json records that review.
+
+Published as [PR1995](https://github.com/CrocSwap/integer-mult-bounds/pull/1995).
+Mathematical commit: `73e323159d65c974debb180189694fd59144da5f`.
 
 This is the card's bounded endpoint-contract obstruction. It does not
 supply a construction passing its acceptance gate. No whole hosted

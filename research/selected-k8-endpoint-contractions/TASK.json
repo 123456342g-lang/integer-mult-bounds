@@ -218,7 +218,30 @@
       "limits": "Remote PR scope is open PRs including drafts. Closed work is searched through local READMEs, TASK metadata and ledger only. No code diffs or arbitrary package files are searched. Recheck relevant heads before submission.",
       "matches_total": 43
     },
-    "final": {
+    "reviewed_predecessor_heads": [
+      {
+        "headRefOid": "04516881142961cdf97a828fbbc63d72e232a148",
+        "number": 1583,
+        "state": "MERGED",
+        "title": "Audit selected k8 helper endpoint rigidity and rank-preserving failures",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1583"
+      },
+      {
+        "headRefOid": "b535975a5948afafda984e73c301183a634ff8c8",
+        "number": 1090,
+        "state": "MERGED",
+        "title": "Conditional \u03ba = 0.001672404744903063: rank-seven helper ends on the k8 word",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1090"
+      },
+      {
+        "headRefOid": "ce130d291f5ab6dd801544886a16f62d42d86118",
+        "number": 1671,
+        "state": "MERGED",
+        "title": "Research: exact complete frame ceiling for the selected k8 word",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1671"
+      }
+    ],
+    "before_pause": {
       "searched_at": "2026-10-14T06:39:18.689085+00:00",
       "coverage": {
         "open_prs": {
@@ -236,34 +259,48 @@
       "limits": "Remote PR scope is open PRs including drafts. Closed work is searched through local READMEs, TASK metadata and ledger only. No code diffs or arbitrary package files are searched. Recheck relevant heads before submission.",
       "matches_total": 6
     },
-    "reviewed_predecessor_heads": [
+    "final": {
+      "searched_at": "2026-10-14T16:33:41.725170+00:00",
+      "coverage": {
+        "open_prs": {
+          "fetched_at": "2026-10-14T16:32:27.475898+00:00",
+          "complete_pagination": true,
+          "records": 433
+        },
+        "discussions": {
+          "fetched_at": "2026-10-14T16:33:41.681355+00:00",
+          "complete_pagination": true,
+          "records": 622
+        }
+      },
+      "warnings": [],
+      "limits": "Remote PR scope is open PRs including drafts. Closed work is searched through local READMEs, TASK metadata and ledger only. No code diffs or arbitrary package files are searched. Recheck relevant heads before submission.",
+      "matches_total": 9
+    },
+    "intervening_main_review": [
       {
-        "headRefOid": "04516881142961cdf97a828fbbc63d72e232a148",
-        "number": 1583,
-        "state": "OPEN",
-        "title": "Audit selected k8 helper endpoint rigidity and rank-preserving failures",
-        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1583"
+        "package": "research/selected-k8-uniform-frame-audit",
+        "author": "Ross Richardson",
+        "scope": "Uniform power-cost optimality and profile rigidity for fixed ends. Does not include variable ends; read as complementary work, not a certificate input."
       },
       {
-        "headRefOid": "b535975a5948afafda984e73c301183a634ff8c8",
-        "number": 1090,
-        "state": "MERGED",
-        "title": "Conditional \u03ba = 0.001672404744903063: rank-seven helper ends on the k8 word",
-        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1090"
+        "package": "research/selected-k8-catalogue-scope",
+        "scope": "Navigation/source-bound comparison of the selected inventory with the historical catalogue, not a joint contraction bound."
       },
       {
-        "headRefOid": "ce130d291f5ab6dd801544886a16f62d42d86118",
-        "number": 1671,
-        "state": "OPEN",
-        "title": "Research: exact complete frame ceiling for the selected k8 word",
-        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1671"
+        "package": "research/k8-hpe450-binding and research/k8-hpe450-forward-audit",
+        "scope": "Emitted helper 450 restoration/operator binding, not endpoint optimization."
+      },
+      {
+        "package": "research/r480-source-independent-cleanup",
+        "scope": "Deferral/covariance of the 402 full-cleanup helpers; these are fixed full in this package."
       }
     ]
   },
   "latest_main_check": {
-    "verified_at_utc": "2026-10-14T06:40:55.601877+00:00",
+    "verified_at_utc": "2026-10-14T16:32:34.865744+00:00",
     "base": "15d2aca0385b61596155e8421140d08d27e543af",
-    "main": "d78fe4bbb6f6b769e39586f8bb3ba8c31a31fd3a",
+    "main": "01a65937ece11b56d515c81f039464ae3043c1c1",
     "records": [
       {
         "path": "AGENTS.md",
@@ -280,8 +317,8 @@
       {
         "path": "autoresearch.md",
         "base_blob": "8d5403e0f10f68a61d0cb9294fa2e83e872d1d82",
-        "main_blob": "8d5403e0f10f68a61d0cb9294fa2e83e872d1d82",
-        "same": true
+        "main_blob": "84c108dd0d650944066ee34796e733f2329acf28",
+        "same": false
       },
       {
         "path": "docs/research/agent-task-catalog.json",
@@ -298,14 +335,14 @@
       {
         "path": "scripts/research_package.py",
         "base_blob": "f1475a7e8bcffab0e65034bb08cdcd69e95f6d6d",
-        "main_blob": "f1475a7e8bcffab0e65034bb08cdcd69e95f6d6d",
-        "same": true
+        "main_blob": "2b85498087ba032c29d62a0b2080065ac9e53ff6",
+        "same": false
       },
       {
         "path": "docs/research/research-package-guide.md",
         "base_blob": "2b4841ab5d00f2a17f1379718a061a9cf8fe88ee",
-        "main_blob": "2b4841ab5d00f2a17f1379718a061a9cf8fe88ee",
-        "same": true
+        "main_blob": "8dc1a921179dcc7a9ecc2dc961ccd77b5ed60c02",
+        "same": false
       },
       {
         "path": "research/r480-owner-optimum/inputs/local/FULL-WORD.json.gz",
@@ -428,6 +465,139 @@
       "all-size compiler and precision/tape obligations",
       "outer analytic transfer"
     ],
-    "scope": "Exact local scalar/frame and certificate checks; no new full multiplication theorem or selected frontier update."
+    "scope": "Exact local scalar/frame and certificate checks; no new full multiplication theorem or selected frontier update.",
+    "current_main_runner": {
+      "main": "01a65937ece11b56d515c81f039464ae3043c1c1",
+      "runner_git_blob": "2b85498087ba032c29d62a0b2080065ac9e53ff6",
+      "runner_sha256": "f719e8f7435ebbd7b2ced72f77e244292248799f33fd7e4e1ca74f6a9645dc6c",
+      "python": "CPython 3.12.3",
+      "full_registered_replay_exit_code": 0,
+      "control_groups": 18,
+      "method": "Imported unchanged runner bytes from the pinned current main, set ROOT to this checkout, and invoked main with the package argument. All mathematical inputs and the selected record remain unchanged."
+    }
+  },
+  "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/1995",
+  "mathematical_head": "73e323159d65c974debb180189694fd59144da5f",
+  "latest_main_check_before_pause": {
+    "verified_at_utc": "2026-10-14T06:40:55.601877+00:00",
+    "base": "15d2aca0385b61596155e8421140d08d27e543af",
+    "main": "d78fe4bbb6f6b769e39586f8bb3ba8c31a31fd3a",
+    "records": [
+      {
+        "path": "AGENTS.md",
+        "base_blob": "860762e04e963e1b163b8fa5267854c0040a9e67",
+        "main_blob": "860762e04e963e1b163b8fa5267854c0040a9e67",
+        "same": true
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "base_blob": "e51435543687f1bd88ab22248082dc689ce8b853",
+        "main_blob": "e51435543687f1bd88ab22248082dc689ce8b853",
+        "same": true
+      },
+      {
+        "path": "autoresearch.md",
+        "base_blob": "8d5403e0f10f68a61d0cb9294fa2e83e872d1d82",
+        "main_blob": "8d5403e0f10f68a61d0cb9294fa2e83e872d1d82",
+        "same": true
+      },
+      {
+        "path": "docs/research/agent-task-catalog.json",
+        "base_blob": "06c96f5579bb67ed1b86d334e78fbed7da6945f1",
+        "main_blob": "06c96f5579bb67ed1b86d334e78fbed7da6945f1",
+        "same": true
+      },
+      {
+        "path": "certificates/selected-result.json",
+        "base_blob": "ae6a99f28aa468649eb66a361e764d769363bf11",
+        "main_blob": "ae6a99f28aa468649eb66a361e764d769363bf11",
+        "same": true
+      },
+      {
+        "path": "scripts/research_package.py",
+        "base_blob": "f1475a7e8bcffab0e65034bb08cdcd69e95f6d6d",
+        "main_blob": "f1475a7e8bcffab0e65034bb08cdcd69e95f6d6d",
+        "same": true
+      },
+      {
+        "path": "docs/research/research-package-guide.md",
+        "base_blob": "2b4841ab5d00f2a17f1379718a061a9cf8fe88ee",
+        "main_blob": "2b4841ab5d00f2a17f1379718a061a9cf8fe88ee",
+        "same": true
+      },
+      {
+        "path": "research/r480-owner-optimum/inputs/local/FULL-WORD.json.gz",
+        "base_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+        "main_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+        "same": true
+      },
+      {
+        "path": "research/gauge44-slots/construction/slots/SLOT-PINS-k8.json",
+        "base_blob": "2702c368f4de0b671577aee9a0e2df41c1b27658",
+        "main_blob": "2702c368f4de0b671577aee9a0e2df41c1b27658",
+        "same": true
+      },
+      {
+        "path": "research/complex-x4-frame-bound/model.py",
+        "base_blob": "33cfb4f404be0ed9fabd53a362084ef8dbc1911c",
+        "main_blob": "33cfb4f404be0ed9fabd53a362084ef8dbc1911c",
+        "same": true
+      },
+      {
+        "path": "research/complex-x4-frame-bound/gen_duals.py",
+        "base_blob": "bd85022a44dde95c14710d7dd28fed6b81926fd1",
+        "main_blob": "bd85022a44dde95c14710d7dd28fed6b81926fd1",
+        "same": true
+      },
+      {
+        "path": "research/complex-x4-frame-bound/README.md",
+        "base_blob": "e2ddf660ac1dabaf5286531dc784f9b21bfdd5bd",
+        "main_blob": "e2ddf660ac1dabaf5286531dc784f9b21bfdd5bd",
+        "same": true
+      },
+      {
+        "path": "research/complex-local-word-ceiling/ceiling.py",
+        "base_blob": "6c0f54527d879396f689523bfde19928a9b6157c",
+        "main_blob": "6c0f54527d879396f689523bfde19928a9b6157c",
+        "same": true
+      },
+      {
+        "path": "research/complex-local-word-ceiling/README.md",
+        "base_blob": "f5f742f8196da29d2c3f4dffb3c27685ca9401f6",
+        "main_blob": "f5f742f8196da29d2c3f4dffb3c27685ca9401f6",
+        "same": true
+      },
+      {
+        "path": "research/gauge44-slots/independent/audit_local.py",
+        "base_blob": "4744d8783c25bf7bf5076886169077ca3808309a",
+        "main_blob": "4744d8783c25bf7bf5076886169077ca3808309a",
+        "same": true
+      },
+      {
+        "path": "research/k8-rank7-composition/data/END-RECIPE.json",
+        "base_blob": "7af7b6341c06589239bcf4c4634febbc8f757ec2",
+        "main_blob": "7af7b6341c06589239bcf4c4634febbc8f757ec2",
+        "same": true
+      },
+      {
+        "path": "research/k8-rank7-composition/construct.py",
+        "base_blob": "5600f92cbb9d391563af88f59eafd0e16a3b33b0",
+        "main_blob": "5600f92cbb9d391563af88f59eafd0e16a3b33b0",
+        "same": true
+      },
+      {
+        "path": "research/k8-rank7-composition/README.md",
+        "base_blob": "306ec133620358b6d043311d59f91013bbf1f886",
+        "main_blob": "306ec133620358b6d043311d59f91013bbf1f886",
+        "same": true
+      },
+      {
+        "path": "research/selected1042-lineage-resolution98/README.md",
+        "base_blob": "b9d19db8834b1cd8b64e564555581748e870f948",
+        "main_blob": "b9d19db8834b1cd8b64e564555581748e870f948",
+        "same": true
+      }
+    ],
+    "package_path_collision": false
   }
 }
