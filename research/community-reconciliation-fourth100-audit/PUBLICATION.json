@@ -1,9 +1,9 @@
 {
-  "integration_commit": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f",
+  "integration_commit": "7f19399def7c51ff8016d9190999830ef3e17f95",
   "source_archive_commit": "2ce0a79d27b38390ec046321dfbe519de50635d5",
   "source_archive_tag": "archive/pr-reconciliation-fourth100-20261013",
-  "observed_remote_refs": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f\trefs/heads/main\n2ce0a79d27b38390ec046321dfbe519de50635d5\trefs/tags/archive/pr-reconciliation-fourth100-20261013\n",
-  "observed_at": "2026-10-14T02:55:51.078748+00:00",
+  "observed_remote_refs": "7f19399def7c51ff8016d9190999830ef3e17f95\trefs/heads/main\n2ce0a79d27b38390ec046321dfbe519de50635d5\trefs/tags/archive/pr-reconciliation-fourth100-20261013\n",
+  "observed_at": "2026-10-14T03:11:43.227171+00:00",
   "scope": "Published scoped review and source retention; not approval of every historical claim.",
   "prior_publications": [
     {
@@ -20,6 +20,14 @@
       "source_archive_tag": "archive/pr-reconciliation-fourth100-20261013",
       "observed_remote_refs": "459f9dbdf41ea86f17fa21a6c71df00010a62c9b\trefs/heads/main\n2ce0a79d27b38390ec046321dfbe519de50635d5\trefs/tags/archive/pr-reconciliation-fourth100-20261013\n",
       "observed_at": "2026-10-14T02:42:31.466642+00:00",
+      "scope": "Published scoped review and source retention; not approval of every historical claim."
+    },
+    {
+      "integration_commit": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f",
+      "source_archive_commit": "2ce0a79d27b38390ec046321dfbe519de50635d5",
+      "source_archive_tag": "archive/pr-reconciliation-fourth100-20261013",
+      "observed_remote_refs": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f\trefs/heads/main\n2ce0a79d27b38390ec046321dfbe519de50635d5\trefs/tags/archive/pr-reconciliation-fourth100-20261013\n",
+      "observed_at": "2026-10-14T02:55:51.078748+00:00",
       "scope": "Published scoped review and source retention; not approval of every historical claim."
     }
   ]
