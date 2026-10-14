@@ -17,10 +17,11 @@
   ],
   "python": "Python 3.12.11",
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
-  "seconds": 166.078,
-  "status": "failed",
+  "seconds": 101.825,
+  "status": "passed",
   "exit_codes": [
-    1
+    0,
+    0
   ],
   "input_sha256": {
     "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
@@ -499,6 +500,7 @@
     "docs/research/community-batch1099-review.md": "7e76d2c38e5fce30587835b7251df1430488ae4dd372611ef69a3f03f476b6cb",
     "certificates/checkpoints/frontier799.json": "9873519224e2db72d6a8c926f51e3e75129671e467948c6f6b03744f8bcfc699",
     "certificates/replay-coverage/pr741-sw4-v1.json": "7acd5033bc78e3f473718269edaa267c2785d84fbe95ccf6815a33dcf58c2756",
+    "references/frame-compiler/pr58/certificates/joint-dual-kappa.json": "c05631d319c71ca6c91e8422cee9d617d9b0056ebf971db8282b041613b09025",
     "research/idle-axis-hosting/PROOF.md": "cfe34bf0b64259661312dae22c3a23adc5bf6f6326951eee5c1488ccfc347542",
     "research/idle-axis-hosting/audit.py": "38594423a401110bd430b734037c6ecba422ee6a94d71709984e0afa9cd1edf8",
     "research/idle-axis-hosting/EXPECTED.json": "ed83c1bf1ca2d01eaab5149a34520806a07ef375dfa9e3ed69d123f4be4c9960",
@@ -5851,6 +5853,6 @@
     "research/native-complex-moment552/inputs/PR558-INVOICE.json": "4b6977a049663ab958bd9a48c2864f7a7bddb26aef03e14f3068aede020ef76f",
     "research/native-complex-moment552/inputs/PR552-INVOICE.json": "4ac060dbf2ea2624dd1f4bda23bdb81c0a3013dfe49b77c092b631885529947f"
   },
-  "log_sha256": "62f81cb97b7882ba74a50dd43723395585d6248ac07e149193cc90fce3d4682e",
+  "log_sha256": "645051d9f93ea0ee12ac3ca972dc78f1321f8b6b4f5ab27cd06219f563606899",
   "scope": "Pinned scoped package commands and their stated finite/proof-support coverage; not complete multiplication-theorem certification."
 }

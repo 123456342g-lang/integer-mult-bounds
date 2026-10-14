@@ -37,8 +37,8 @@
     "research/community-efficient900-audit/DISPOSITIONS.json"
   ],
   "counts": {
-    "incorporated": 1330,
-    "partially_reviewed": 248,
+    "incorporated": 1341,
+    "partially_reviewed": 237,
     "superseded": 1,
     "unreviewed": 60
   },
@@ -87,7 +87,7 @@
     "research/community-efficient600-audit/DISPOSITIONS.json": "0b5b7777073b61dcccd09ecfe01d24c0843e8294f0daf1a9f38f5aabdaa2e4f4",
     "research/community-efficient700-audit/DISPOSITIONS.json": "a49662d33eee2d1e1308815314fbe415f91496a8304620664fb991ec47ae4c31",
     "research/community-efficient800-audit/DISPOSITIONS.json": "d97825a16961faa81b42c0a2007bef86c39572172f229a8a903a45664a1c6247",
-    "research/community-efficient900-audit/DISPOSITIONS.json": "74237a7ada16c48f87c2ad76b1d2ea6a8ed12f162fb90f17ae50ac1eca7ee5a2",
+    "research/community-efficient900-audit/DISPOSITIONS.json": "688b6dce6ed398cc9f6e7da71e056d5871764facf0af071ba3b7128aea4e2f90",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec",
     "research/community-efficient300-audit/PARENT-EVIDENCE.json": "8d9e28ec3ece26b91ef5a297092697c341652853164477a4961c992151cec353"
   },
@@ -91739,16 +91739,20 @@
       "integration_location": [
         "research/selected-t16-three-role-cycle-seedc375"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "6aff82d6d346fb2238d061ef45066b82d48a9b67",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1873"
+      },
       "reviewed_head": "08f1eaf5946f57de0e126e82b5e0432564cca4e0",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1873.json",
@@ -91920,16 +91924,20 @@
         ".github/workflows",
         "research/sourcecode-commutant"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "6aff82d6d346fb2238d061ef45066b82d48a9b67",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1877"
+      },
       "reviewed_head": "6d455d2d71eb35ecf8e562711e5f719b994fe3f3",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1877.json",
@@ -92010,21 +92018,23 @@
         {
           "head": "f4e150e4222ce4b4418e66874c6363c43987c8d1",
           "evidence": "research/community-efficient900-audit/DISPOSITIONS.json",
-          "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+          "scope": "Opt-in containment-mask adapter preserves both frozen full-basis replay orientations and receipts; full historical16-test suite,24 mutation cases, exhaustive small shapes and assertion-disabled entry rejection pass. Missing historical PR58 fixture restored from exact head. Benchmark speedup remains author-measured, not selected-supplier adoption.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/joint-dual-replay-fast"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "f4e150e4222ce4b4418e66874c6363c43987c8d1",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Publication and live merge observation pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -92160,16 +92170,20 @@
       "integration_location": [
         "research/two-projection-connector-seed51a5"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "6aff82d6d346fb2238d061ef45066b82d48a9b67",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1887"
+      },
       "reviewed_head": "025d4fcd87f1b6ea01aa1c52721f8f46389aacce",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1887.json",
@@ -92207,16 +92221,20 @@
       "integration_location": [
         "research/centre-sharing-mixed-overhead"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "6aff82d6d346fb2238d061ef45066b82d48a9b67",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1888"
+      },
       "reviewed_head": "9c0fd1d20d33353018a508fbc84e4189525c593c",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1888.json",
@@ -92297,27 +92315,32 @@
         {
           "head": "8b93e9e1b60dc73768ddf4006fcff67708a5453b",
           "evidence": "research/community-efficient900-audit/DISPOSITIONS.json",
-          "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+          "scope": "Canonical relative-path validation prevents declared dependency aliases from silently missing Git change invalidation. Five regression tests and current-main replay-selection/onboarding/Git-batching suites pass. Three-way composition explicitly preserves the newer git_blobs implementation; integrated script bound by combined receipt.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "docs/research",
+        "scripts/research_package.py",
+        "tests/test_research_input_paths.py"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "8b93e9e1b60dc73768ddf4006fcff67708a5453b",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Publication and live merge observation pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1891.json",
         "research/community-efficient900-audit/checks/check-1891-initial.json",
-        "research/community-efficient900-audit/checks/check-1891.json"
+        "research/community-efficient900-audit/checks/check-1891.json",
+        "research/community-efficient900-audit/combined-tooling.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -92351,16 +92374,20 @@
       "integration_location": [
         "research/shear-orbit-interval-audit"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "6aff82d6d346fb2238d061ef45066b82d48a9b67",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1892"
+      },
       "reviewed_head": "bcc1b9a37460a15fb4aa611957ed9f6842eb6da2",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1892.json",
@@ -92398,16 +92425,20 @@
       "integration_location": [
         "research/idle-stability-radical-audit"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "6aff82d6d346fb2238d061ef45066b82d48a9b67",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1893"
+      },
       "reviewed_head": "86f11f760119c4fb398d3824a3366a2fe81c6595",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1893.json",
@@ -92445,16 +92476,20 @@
       "integration_location": [
         "research/nonlinear-cut-exhaustive-audit"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "6aff82d6d346fb2238d061ef45066b82d48a9b67",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1894"
+      },
       "reviewed_head": "cd4d55afc5fe55369f08e67558939375ca79745f",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1894.json",
@@ -92492,16 +92527,20 @@
       "integration_location": [
         "research/source-query-finite-field-audit"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "6aff82d6d346fb2238d061ef45066b82d48a9b67",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1895"
+      },
       "reviewed_head": "14cf51a62d64b0e97785c701ee84babfce01e2c5",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1895.json",
@@ -92896,16 +92935,20 @@
       "integration_location": [
         "research/rounded-leaf-lattice-closure"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "6aff82d6d346fb2238d061ef45066b82d48a9b67",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1908"
+      },
       "reviewed_head": "e54fcebd99d888b6fc4acb20fde81002e3ba024e",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1908.json",
@@ -93033,16 +93076,20 @@
       "integration_location": [
         "research/infinite-dihedral-register-bound"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "6aff82d6d346fb2238d061ef45066b82d48a9b67",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1911"
+      },
       "reviewed_head": "712593f82739203639d0a169b88c6bcac6f0590c",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1911.json",
@@ -93432,7 +93479,7 @@
         {
           "head": "98dd6ef113e1e6a4ca3848b0889cd13b1970fd32",
           "evidence": "research/community-efficient900-audit/DISPOSITIONS.json",
-          "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+          "scope": "Cleared-denominator rational matrix multiplication and2500 positive-shape differential cases, historical12-case stream, certificate-pin discipline and12 unit tests pass. Targeted zero-width differential replay exposes a legacy API regression; correction required before production integration.",
           "kind": "integration_or_partial_review"
         }
       ],
@@ -93442,7 +93489,7 @@
       "closure": null,
       "reviewed_head": "98dd6ef113e1e6a4ca3848b0889cd13b1970fd32",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Preserve zero-inner-width behavior before merging production product: product(((),), ()) formerly returns ((),) but now raises IndexError at B[0]; product(((),()), ()) similarly regresses. Add a degenerate-shape guard and regression tests, refresh the production source pin and bound replay receipt, then rerun the already-passing differential/certificate suite. Ordinary positive-shape arithmetic and complete scoped suite passed.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -94429,16 +94476,20 @@
       "integration_location": [
         "research/diagonal-tensor-projection-barrier"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "6aff82d6d346fb2238d061ef45066b82d48a9b67",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1949"
+      },
       "reviewed_head": "be198c23d6b21c67ee9e6714dd04338c5a279cc3",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1949.json",
@@ -94505,7 +94556,7 @@
   ],
   "github_dispositions": {
     "CLOSED": 377,
-    "MERGED": 954,
-    "OPEN": 308
+    "MERGED": 965,
+    "OPEN": 297
   }
 }
