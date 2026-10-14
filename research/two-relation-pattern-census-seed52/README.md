@@ -154,21 +154,22 @@ All external source hashes and Git blobs are listed in
 
 ## Live overlap and distinction
 
-The live claim is Discussion #1700 and expires at 2026-10-14 09:15 UTC. The PR
-scan refreshed at 2026-10-14 07:38 UTC covered all 404 open PRs with complete
-pagination. The Discussions refresh hit the authenticated GraphQL
-rate limit; the latest complete snapshot was fetched at 07:30 UTC and covered
-352 discussions. The cache reports a reset at 08:00 UTC, so the claim and
-Discussion overlap must be refreshed again immediately before submission.
-
-Nearest items in the refreshed scan are [PR #1705](https://github.com/CrocSwap/integer-mult-bounds/pull/1705),
-which studies four coordinate-SWAP targets in F2[GL2(F2)] with free GL4 mixing,
-and [PR #1716](https://github.com/CrocSwap/integer-mult-bounds/pull/1716),
-a restricted three-register AGL2 target triple. [Discussion #1630](https://github.com/CrocSwap/integer-mult-bounds/discussions/1630)
-records an eleven-call obstruction in a fixed-weight conic slice. These are
-nearby register-model work, but their operation alphabets, targets, and slices
-differ from this package's four-register rational frame list with exactly two
-independent address relations. Earlier rational three-register work is PR #720.
+The live claim is [Discussion #1700](https://github.com/CrocSwap/integer-mult-bounds/discussions/1700)
+and expires at 2026-10-14 09:15 UTC. The overlap refresh completed at
+2026-10-14 08:06:59 UTC: 414 open PRs fetched at 08:05:08 and 363 Discussions
+fetched at 08:06:59, with complete pagination and no warnings. The nearest
+open PRs are [#1705](https://github.com/CrocSwap/integer-mult-bounds/pull/1705),
+four coordinate-SWAP targets in F2[GL2(F2)]; [#1711](https://github.com/CrocSwap/integer-mult-bounds/pull/1711),
+a two-target affine AGL2 problem; and [#1716](https://github.com/CrocSwap/integer-mult-bounds/pull/1716),
+a restricted three-register AGL2 triple. [Discussion #1715](https://github.com/CrocSwap/integer-mult-bounds/discussions/1715)
+also covers four coordinate swaps. The concurrent [Discussion #1727](https://github.com/CrocSwap/integer-mult-bounds/discussions/1727)
+uses four mixed affine targets with standalone translations. These are nearby
+but use different target families, operation alphabets, register counts, or
+relation hypotheses from this four-register rational frame list with exactly
+two independent address relations. The fixed-weight conic obstruction in
+[Discussion #1630](https://github.com/CrocSwap/integer-mult-bounds/discussions/1630)
+and the arbitrary rational three-register result in [PR #720](https://github.com/CrocSwap/integer-mult-bounds/pull/720)
+are additional predecessors.
 
 ## Predecessors and credit
 

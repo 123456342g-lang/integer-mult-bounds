@@ -73,37 +73,41 @@
   "selected_assembly_certificate": "research/community-frontier1094-audit/ASSEMBLY.json",
   "discussion_claim": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1700",
   "live_overlap_review": {
-    "searched_at_utc": "2026-10-14T07:38:13Z",
+    "searched_at_utc": "2026-10-14T08:06:59Z",
     "open_prs": {
-      "count": 404,
+      "count": 414,
       "complete_pagination": true,
-      "fetched_at_utc": "2026-10-14T07:38:12Z"
+      "fetched_at_utc": "2026-10-14T08:05:08Z"
     },
     "discussions": {
-      "count": 352,
+      "count": 363,
       "complete_pagination": true,
-      "fetched_at_utc": "2026-10-14T07:30:03Z",
-      "refresh_status": "stale snapshot; live refresh failed due GitHub GraphQL rate limit, reset 2026-10-14T08:00:00Z"
+      "fetched_at_utc": "2026-10-14T08:06:59Z"
     },
+    "warnings": [],
     "nearest_items": [
       {
         "id": "PR #1705",
-        "scope": "four coordinate-SWAP targets at exactly four registers in F2[GL2(F2)], rank-one idempotent calls with free GL4 mixing; minimum narrowed to 8, 10, or 12"
+        "scope": "open; four coordinate-SWAP targets in F2[GL2(F2)] with free GL4 mixing"
+      },
+      {
+        "id": "PR #1711",
+        "scope": "open; exact two-target affine AGL2 minimum"
       },
       {
         "id": "PR #1716",
-        "scope": "restricted three-register AGL2 target triple with paid labels {a,b,t_x}"
+        "scope": "open; restricted three-register AGL2 target triple"
       },
       {
-        "id": "Discussion #1630",
-        "scope": "four full targets in a fixed-weight conic slice; eleven-call obstruction"
+        "id": "Discussion #1715",
+        "scope": "four coordinate-CNOT/SWAP targets and label saturation"
       },
       {
-        "id": "PR #720",
-        "scope": "arbitrary invertible three-register rational targets; nine-call lower bound"
+        "id": "Discussion #1727",
+        "scope": "concurrent four-register mixed affine targets with standalone translations; distinct target tuple and address model"
       }
     ],
-    "distinction": "These use different target families, operation alphabets, or parameter slices from the four-register rational address frame list with exactly two complete Q/F2 relations studied here."
+    "distinction": "Nearby work uses coordinate swaps, a two-target affine pair, a restricted three-register affine triple, or a different mixed affine tuple. This package fixes a rational four-register address list with exactly two independent complete Q/F2 relations and studies a bounded pattern-class screen."
   },
   "claim_expires_at_utc": "2026-10-14T09:15:00Z"
 }
