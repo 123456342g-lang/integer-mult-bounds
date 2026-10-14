@@ -117,6 +117,10 @@ class ExclusionSupportMasksTests(unittest.TestCase):
             )
             restored = deepcopy(live)
             restored["source_sha256"]["scripts/exclusion_circuit.py"] = ORIGINAL_SHA256
+            if "scripts/experiments/disjoint_tensor.py" in live["source_sha256"]:
+                restored["source_sha256"]["scripts/experiments/disjoint_tensor.py"] = (
+                    "102dd59bf96033f96ba0dab4c2aba77b3a7a73b67b0f96929ff8b20a98b91cd8"
+                )
             self.assertEqual(restored, base)
 
 

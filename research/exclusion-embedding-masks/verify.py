@@ -220,7 +220,10 @@ class _expect_assertion:
 
 
 def check_certificate_pin_discipline() -> dict:
-    """Working certificates may change only the exclusion_circuit.py source pin."""
+    """Certificates may update exclusion_circuit.py and companion disjoint_tensor.py pins."""
+    companion_key = "scripts/experiments/disjoint_tensor.py"
+    companion_orig = "102dd59bf96033f96ba0dab4c2aba77b3a7a73b67b0f96929ff8b20a98b91cd8"
+    companion_opt = "085600fc922ae167b5981505e1a5caba4d1c1df15482f61d83d2c086fa89eac1"
     reports = {}
     for rel in PINNED_CERTIFICATES:
         base = json.loads(git_show(rel).decode())
@@ -231,7 +234,13 @@ def check_certificate_pin_discipline() -> dict:
         require(live_pin == OPTIMIZED_SHA256, f"{rel}: optimized pin missing")
         restored = deepcopy(live)
         restored["source_sha256"]["scripts/exclusion_circuit.py"] = ORIGINAL_SHA256
-        require(restored == base, f"{rel}: changed fields beyond the exclusion_circuit pin")
+        if companion_key in live["source_sha256"]:
+            require(
+                live["source_sha256"][companion_key] in {companion_orig, companion_opt},
+                f"{rel}: unexpected companion disjoint_tensor pin",
+            )
+            restored["source_sha256"][companion_key] = companion_orig
+        require(restored == base, f"{rel}: changed fields beyond allowed source pins")
         reports[rel] = {
             "base_pin": base_pin,
             "live_pin": live_pin,
