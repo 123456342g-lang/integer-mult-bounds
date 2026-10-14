@@ -29,12 +29,23 @@ class OverlapTests(unittest.TestCase):
         self.assertEqual(overlap.search(records, ["missing"]), [])
 
     def test_report_survives_a_cp1252_stdout(self):
-        # Local package READMEs quote kappa; forcing cp1252 reproduces a Windows pipe on any host.
+        # Supply the excerpt ourselves, independently of checkout contents or user caches.
+        # Forcing cp1252 reproduces a Windows pipe on any host.
         env = {**os.environ, "PYTHONIOENCODING": "cp1252", "PYTHONUTF8": "0"}
-        result = subprocess.run([sys.executable, "-B", str(ROOT / "scripts/find_overlap.py"), "κ", "--offline"],
-                                cwd=ROOT, env=env, capture_output=True, timeout=120)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp) / "repo"
+            script = root / "scripts/find_overlap.py"
+            script.parent.mkdir(parents=True)
+            script.write_bytes((ROOT / "scripts/find_overlap.py").read_bytes())
+            readme = root / "research/fixture/README.md"
+            readme.parent.mkdir(parents=True)
+            readme.write_text("Fixture contains κ", encoding="utf-8")
+            result = subprocess.run([sys.executable, "-B", str(script), "κ", "--offline",
+                                     "--cache", str(Path(tmp) / "overlap.json")],
+                                    cwd=root, env=env, capture_output=True, timeout=120)
         self.assertEqual(result.returncode, 0, result.stderr.decode("utf-8", "replace"))
-        self.assertIn(b"\\u03ba", result.stdout)
+        self.assertIn(b"1 possible matches; showing 1", result.stdout)
+        self.assertIn(b"Fixture contains \\u03ba", result.stdout)
 
     def test_pr_pagination_normalization(self):
         def row(n):
