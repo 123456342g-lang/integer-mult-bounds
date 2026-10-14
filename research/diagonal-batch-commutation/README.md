@@ -52,6 +52,9 @@ that convention is not computed here.
   rank-16 child needs copies, frames, hosting, output storage, precision and arbitrary-dirty restoration. This
   package inherits #1779's premise that a diagonal rank-16 child realizes 16 independent rank-1 climbs, and
   does not examine it.
+- The reorder is checked only at the local level. Every register's frame at each phase marker is unchanged
+  because climbs stay inside their phase. The check does not establish that global hosting and the idle-remainder
+  frame audit (`global/hosted`, `global/audit` in the replay archive) are insensitive to positions inside a phase.
 - Batch counts are a greedy lower bound. 149 is the trivial phase cap, not an attained value.
 - The bit supplier binds well before +39% (#1605), so the complex ceiling alone does not set κ.
 
