@@ -36,8 +36,8 @@
     "research/community-efficient800-audit/DISPOSITIONS.json"
   ],
   "counts": {
-    "incorporated": 1313,
-    "partially_reviewed": 197,
+    "incorporated": 1321,
+    "partially_reviewed": 189,
     "superseded": 1,
     "unreviewed": 60
   },
@@ -85,7 +85,7 @@
     "research/community-efficient500-audit/DISPOSITIONS.json": "bd5fcd01f868edb2766874b2cd9daaf1d8500e57debe621537760a5906fbb5b3",
     "research/community-efficient600-audit/DISPOSITIONS.json": "0b5b7777073b61dcccd09ecfe01d24c0843e8294f0daf1a9f38f5aabdaa2e4f4",
     "research/community-efficient700-audit/DISPOSITIONS.json": "a49662d33eee2d1e1308815314fbe415f91496a8304620664fb991ec47ae4c31",
-    "research/community-efficient800-audit/DISPOSITIONS.json": "496697158a9e577906cccdec20d0c9f8d59b0c266c27b372d07fbe1fd0d34509",
+    "research/community-efficient800-audit/DISPOSITIONS.json": "d97825a16961faa81b42c0a2007bef86c39572172f229a8a903a45664a1c6247",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec",
     "research/community-efficient300-audit/PARENT-EVIDENCE.json": "8d9e28ec3ece26b91ef5a297092697c341652853164477a4961c992151cec353"
   },
@@ -88720,16 +88720,20 @@
       "integration_location": [
         "research/eisenstein-phase-cost-screen"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "cad44bb9eb8f71edf3a0421f169ef168eb1a1ccd",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1794"
+      },
       "reviewed_head": "148762722bb39c7ce2fd3fd0d42ef25d945aae4d",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1794.json",
@@ -88767,16 +88771,20 @@
       "integration_location": [
         "research/pr1786-fine-prime-transfer-audit"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "cad44bb9eb8f71edf3a0421f169ef168eb1a1ccd",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1797"
+      },
       "reviewed_head": "4e8f77031b1a936d6739b2cd84f378dcf1eb5635",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1797.json",
@@ -89567,16 +89575,20 @@
       "integration_location": [
         "research/bit-d16-central-pair-seed1f8b"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "cad44bb9eb8f71edf3a0421f169ef168eb1a1ccd",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1821"
+      },
       "reviewed_head": "a986127fa82b680a5bbb29f49fec4c8c3a944bde",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1821.json",
@@ -89614,16 +89626,20 @@
       "integration_location": [
         "research/q8-central-commutator-pair"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "cad44bb9eb8f71edf3a0421f169ef168eb1a1ccd",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1822"
+      },
       "reviewed_head": "ee736b4b11bbd63b04d94c8edafb3790161ebdea",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1822.json",
@@ -89661,16 +89677,20 @@
       "integration_location": [
         "research/compact-agreement-set-seed29"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "cad44bb9eb8f71edf3a0421f169ef168eb1a1ccd",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1823"
+      },
       "reviewed_head": "5577d53f4bc093b5e9e960387ffc5d5bea55ee6f",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1823.json",
@@ -89760,16 +89780,20 @@
       "integration_location": [
         "research/paired-plane-port-matching-seed6c563a"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "cad44bb9eb8f71edf3a0421f169ef168eb1a1ccd",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1825"
+      },
       "reviewed_head": "d16fb8936795ff101e4d2f63cfdc6a25066ebabf",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1825.json",
@@ -89807,16 +89831,20 @@
       "integration_location": [
         "research/c5-paired-frame-seed-d937e545"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "cad44bb9eb8f71edf3a0421f169ef168eb1a1ccd",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1826"
+      },
       "reviewed_head": "40430c79c39d278616b34ae47819e27ef72a0013",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1826.json",
@@ -89949,16 +89977,20 @@
       "integration_location": [
         "research/selected-centre-adjacent-pair-seed01fcb1"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "cad44bb9eb8f71edf3a0421f169ef168eb1a1ccd",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1829"
+      },
       "reviewed_head": "e150e7ed8fa33f0be769926535eeacd076c6bd13",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1829.json",
@@ -89998,7 +90030,7 @@
       "closure": null,
       "reviewed_head": "a6578b3dfad3d0b3279b1b6db23940b0660f9e5f",
       "disposition": "partially_reviewed",
-      "unresolved_question": "The unified12-stage H6 successor replay passed in136.433s. Whole-head review remains open: audit the universal physical recipe and compositional factor/chronology proofs, successor export/mutation CI gate, and the additional inherited audit/pricing packages in the113-file change. The retained958521600-pair predecessor receipt is not a fresh reviewer replay; full tape/approximate-child admission is explicitly outside this package.",
+      "unresolved_question": "The unified12-stage H6 successor replay passed in136.433s. Whole-head review remains open: audit the universal physical recipe and compositional factor/chronology proofs, successor export/mutation CI gate, and the additional inherited audit/pricing packages in the168-file change. The retained958521600-pair predecessor receipt is not a fresh reviewer replay; full tape/approximate-child admission is explicitly outside this package.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -91337,7 +91369,7 @@
   ],
   "github_dispositions": {
     "CLOSED": 377,
-    "MERGED": 937,
-    "OPEN": 257
+    "MERGED": 945,
+    "OPEN": 249
   }
 }

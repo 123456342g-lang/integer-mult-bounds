@@ -1857,20 +1857,24 @@
       },
       "reviewed_head": "148762722bb39c7ce2fd3fd0d42ef25d945aae4d",
       "current_head": "148762722bb39c7ce2fd3fd0d42ef25d945aae4d",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/eisenstein-phase-cost-screen"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "cad44bb9eb8f71edf3a0421f169ef168eb1a1ccd",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1794"
+      },
       "scope": "Exact E8 clean-pair census and sharp40-cost witnesses; threshold formula and rational increment/tail closure bound all odd stages in the inherited format. Non-clean copy cost<=31 is necessary there, not a supplier. Fixed complex-only prize excludes changes to the bit side.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1794.json",
@@ -1893,20 +1897,24 @@
       },
       "reviewed_head": "4e8f77031b1a936d6739b2cd84f378dcf1eb5635",
       "current_head": "4e8f77031b1a936d6739b2cd84f378dcf1eb5635",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/pr1786-fine-prime-transfer-audit"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "cad44bb9eb8f71edf3a0421f169ef168eb1a1ccd",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1797"
+      },
       "scope": "Independent nine-row rational accounting, prime-interval substitutions and Neumann identity reviewed as a conditional transfer audit. Decimal Gaussian/alpha fixtures and floating cutoff estimates are numerical evidence, not interval certificates; Toeplitz theorem, layout/cost derivations and supplier admission remain outside scope.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1797.json",
@@ -2517,20 +2525,24 @@
       },
       "reviewed_head": "a986127fa82b680a5bbb29f49fec4c8c3a944bde",
       "current_head": "a986127fa82b680a5bbb29f49fec4c8c3a944bde",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/bit-d16-central-pair-seed1f8b"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "cad44bb9eb8f71edf3a0421f169ef168eb1a1ccd",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1821"
+      },
       "scope": "Complete F2[D16] rank-one-idempotent alphabet and involutive7/8 meet-in-middle balls certify two-register central target minimum16. Independent tuple-state replay, full formal product and omission controls pass; no address-group-to-supplier implementation is supplied.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1821.json",
@@ -2553,20 +2565,24 @@
       },
       "reviewed_head": "ee736b4b11bbd63b04d94c8edafb3790161ebdea",
       "current_head": "ee736b4b11bbd63b04d94c8edafb3790161ebdea",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/q8-central-commutator-pair"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "cad44bb9eb8f71edf3a0421f169ef168eb1a1ccd",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1822"
+      },
       "scope": "Complete full-group-algebra BFS through depth3 and independent Hamilton-quaternion witness replay certify all three specified Q8 pair minima4. Free scalar mixing normalization and GL2/GL3 closure checked; inverse labels, more active roles and physical suppliers remain outside this result.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1822.json",
@@ -2589,20 +2605,24 @@
       },
       "reviewed_head": "5577d53f4bc093b5e9e960387ffc5d5bea55ee6f",
       "current_head": "5577d53f4bc093b5e9e960387ffc5d5bea55ee6f",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/compact-agreement-set-seed29"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "cad44bb9eb8f71edf3a0421f169ef168eb1a1ccd",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1823"
+      },
       "scope": "Independent whole-slot raw-map census of24074240 states in47cells reproduces11880712 agreements, sufficient guard inclusions and density formula. Reviewer supplement distinguishes actual sign reversal from submitted omitted-unload control; both reject. Repair/tape costs, all-size extension and production-predicate adoption remain open.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1823.json",
@@ -2666,20 +2686,24 @@
       },
       "reviewed_head": "d16fb8936795ff101e4d2f63cfdc6a25066ebabf",
       "current_head": "d16fb8936795ff101e4d2f63cfdc6a25066ebabf",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/paired-plane-port-matching-seed6c563a"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "cad44bb9eb8f71edf3a0421f169ef168eb1a1ccd",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1825"
+      },
       "scope": "Exact56-plane matching and binary global factorization checked on all112x112 decoder entries, with28672 Gaussian-dyadic endpoint basis cases and support-pairing invoice126. Two-unpaid-coordinate law and .00343536 projected cap are favorable hypotheses; full hosted multiplicity, routing and both suppliers are unpriced.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1825.json",
@@ -2702,20 +2726,24 @@
       },
       "reviewed_head": "40430c79c39d278616b34ae47819e27ef72a0013",
       "current_head": "40430c79c39d278616b34ae47819e27ef72a0013",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/c5-paired-frame-seed-d937e545"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "cad44bb9eb8f71edf3a0421f169ef168eb1a1ccd",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1826"
+      },
       "scope": "Exact C5 whole-register phase recurrence, all3125 five-child paths and35-column integer dirty echoes reproduce560vs800 and1090vs1120 ADD bills. Prefix L1 growth is retained; optimality is scoped to the declared macro alphabet, with no tape/precision/supplier admission.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1826.json",
@@ -2811,20 +2839,24 @@
       },
       "reviewed_head": "e150e7ed8fa33f0be769926535eeacd076c6bd13",
       "current_head": "e150e7ed8fa33f0be769926535eeacd076c6bd13",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/selected-centre-adjacent-pair-seed01fcb1"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "cad44bb9eb8f71edf3a0421f169ef168eb1a1ccd",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1829"
+      },
       "scope": "All143 adjacent selected-call pairs bound to actual local programs and global owner charts;81 same-orientation pairs have disjoint target panels but no common centre owner. Six predicate controls pass. Excludes only direct identical-owner reuse, not aliases, transport or changed schedules.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1829.json",
