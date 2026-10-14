@@ -24,7 +24,6 @@
     }
   ],
   "inputs": [
-    "docs/research/agent-task-catalog.json",
     "certificates/selected-result.json",
     "research/community-frontier1094-audit/ASSEMBLY.json",
     "research/community-frontier1094-audit/SELECTED-SOURCE.json",
