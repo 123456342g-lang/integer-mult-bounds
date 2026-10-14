@@ -2,7 +2,7 @@
 
 Frozen selection: **100 open, non-draft PRs #1729–#1862**, excluding prior same-head dispositions. Baseline `4d3248d6d52f8ddfe612e8508b74a36acb67fbe3`. Complete Git differences determine changed-file coverage.
 
-**39 ready; 26 observed merged; 61 pending.** The selected conditional κ remains `836330098538459/500000000000000000`.
+**39 ready; 39 observed merged; 61 pending.** The selected conditional κ remains `836330098538459/500000000000000000`.
 
 Original author commits, notices, predecessor credit and assistance disclosures are retained. Scoped research incorporation does not admit a new supplier or verify the inherited full multiplication theorem.
 
@@ -113,7 +113,7 @@ Original author commits, notices, predecessor credit and assistance disclosures 
 | [#1857](https://github.com/CrocSwap/integer-mult-bounds/pull/1857) | woklerx | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1858](https://github.com/CrocSwap/integer-mult-bounds/pull/1858) | woklerx | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1859](https://github.com/CrocSwap/integer-mult-bounds/pull/1859) | woklerx | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
-| [#1861](https://github.com/CrocSwap/integer-mult-bounds/pull/1861) | VictorLiwentao | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
+| [#1861](https://github.com/CrocSwap/integer-mult-bounds/pull/1861) | VictorLiwentao | Warm-cache input-validation regression: basis((1,)) then basis((1.0,)) accepts the float although the baseline and cold optimized call reject it. Validate row types before cache lookup or use a key preserving row types, add a warm-cache regression test and refresh affected source pins. Positive integer certificate equivalence is retained but insufficient to preserve rejection behavior. |
 | [#1862](https://github.com/CrocSwap/integer-mult-bounds/pull/1862) | aliromman | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 
 ## Evidence and limits
