@@ -3,8 +3,9 @@
 
 The five-call candidate itself is provisional Discussion text, not a source
 package. This checker proves a conditional obstruction for its stated route.
-Apache-2.0. Josie Elliston, with substantial OpenAI Codex assistance.
+Apache-2.0. Josie Elliston, with substantial AI assistance (OpenAI Codex draft; Claude review and fixes).
 """
+import ast
 import hashlib
 import json
 import sys
@@ -18,6 +19,10 @@ MANIFEST = 'research/community-frontier1094-audit/SELECTED-SOURCE.json'
 PROOF = 'research/split-centres-global/proofs/INHERITED-COMPLEX-GEOMETRY.txt'
 ROOT_PROOF = 'research/split-centres-global/proofs/PR425-COMPLEX.txt'
 MASK9 = (1 << 9) - 1
+PIN = 'DISCUSSION-1636-PIN.json'
+# The word this checker was written against: (orientation, M coefficient, K coefficient).
+FIVE_CALL = (('L', Q(1, 12), Q(0)), ('U', Q(-12, 13), Q(0)), ('L', Q(143, 144), Q(131, 144)),
+             ('U', Q(-12, 13), Q(0)), ('L', Q(1, 12), Q(0)))
 
 
 def need(ok, reason):
@@ -52,6 +57,58 @@ def sources():
     ports = [recipe['q'] for recipe in data['recipes']]
     validate_ports(ports)
     return ports
+
+
+def linear_coefficients(text):
+    """Parse a Discussion pulse argument such as (143M + 131K)/144 into (c, d)."""
+    source = ''
+    for i, ch in enumerate(text):
+        if ch in 'MK' and i and (text[i-1].isdigit() or text[i-1] == ')'):
+            source += '*'
+        source += ch
+    allowed = (ast.Expression, ast.BinOp, ast.UnaryOp, ast.Add, ast.Sub, ast.Mult, ast.Div,
+               ast.USub, ast.Constant, ast.Name, ast.Load)
+    tree = ast.parse(source, mode='eval')
+    need(all(isinstance(node, allowed) for node in ast.walk(tree)), 'pinned word syntax')
+    def value(node, m, k):
+        if isinstance(node, ast.Expression):
+            return value(node.body, m, k)
+        if isinstance(node, ast.Constant):
+            need(type(node.value) is int, 'pinned word constant')
+            return Q(node.value)
+        if isinstance(node, ast.Name):
+            need(node.id in ('M', 'K'), 'pinned word symbol')
+            return m if node.id == 'M' else k
+        if isinstance(node, ast.UnaryOp):
+            return -value(node.operand, m, k)
+        a, b = value(node.left, m, k), value(node.right, m, k)
+        return {ast.Add: a+b, ast.Sub: a-b, ast.Mult: a*b}.get(type(node.op)) if \
+            not isinstance(node.op, ast.Div) else a/b
+    c, d = value(tree, Q(1), Q(0)), value(tree, Q(0), Q(1))
+    for m, k in ((Q(2), Q(3)), (Q(-5), Q(7))):
+        need(value(tree, m, k) == c*m + d*k and value(tree, Q(0), Q(0)) == 0, 'pinned word not linear')
+    return c, d
+
+
+def pinned_word(pin=None):
+    """Bind FIVE_CALL to the verbatim word pinned from discussion 1636."""
+    if pin is None:
+        pin = json.loads((HERE/PIN).read_bytes())
+    need(pin['discussion'].endswith('/discussions/1636'), 'pin discussion')
+    comments = {c['id']: c for c in pin['comments']}
+    need(set(comments) == {18915216, 18915408}, 'pinned comment ids')
+    text = comments[18915216]['excerpt']
+    word = []
+    for item in text.split('), '):
+        item = item.strip()
+        item = item if item.endswith(')') else item + ')'
+        need(item[0] in 'LU' and item[1] == '(' and item[-1] == ')', 'pinned pulse form')
+        word.append((item[0],) + linear_coefficients(item[2:-1]))
+    need(tuple(word) == FIVE_CALL, 'pinned discussion word differs from checked word')
+    route = comments[18915408]['excerpt']
+    need('rho_(s,p) rho_(s,q)' in route and '[[1,0],[131/144,1]]' in route,
+         'pinned route statement')
+    return pin
 
 
 def validate_ports(ports):
@@ -212,19 +269,31 @@ def stage_revisit_counterexample():
     m = [[Q(0), Q(1)], [Q(1), Q(0)]]
     square = multiply(m, m)
     need(square == [[Q(1), Q(0)], [Q(0), Q(1)]], 'two-port return fixture')
-    # Upper-left block of U(M)L(M) is I + M^2. Each factor alone has
-    # M_00=0, yet their product's same-port diagonal is 2, not 1.
-    need(m[0][0] == 0 and 1+square[0][0] == 2, 'projection limitation fixture')
+    eye = lambda i, j: Q(i == j)
+    upper = [[eye(i, j) if i//2 == j//2 else
+              m[i%2][j%2] if i//2 == 0 else Q(0)
+              for j in range(4)] for i in range(4)]
+    lower = [[eye(i, j) if i//2 == j//2 else
+              m[i%2][j%2] if i//2 == 1 else Q(0)
+              for j in range(4)] for i in range(4)]
+    product = [[sum(upper[i][k]*lower[k][j] for k in range(4))
+                for j in range(4)] for i in range(4)]
+    project = lambda a: [[a[i][j] for j in (0, 2)] for i in (0, 2)]
+    projected_factors = multiply(project(upper), project(lower))
+    need(m[0][0] == 0 and project(product)[0][0] == 2 and
+         projected_factors[0][0] == 1 and project(product) != projected_factors,
+         'projection limitation fixture')
     return 'M=[[0,1],[1,0]], (U(M)L(M))_same_port_upper_left=2'
 
 
-def shear_word(m, middle_k=131):
+def shear_word(m, word=FIVE_CALL):
+    """Scalar word at M=m, K=1-m: an eigenvalue of M, or M_pp=0 for the
+    multiplicative same-port projection (valid only without return paths)."""
     k = 1-m
-    def L(t): return [[Q(1), Q(0)], [t, Q(1)]]
-    def U(t): return [[Q(1), t], [Q(0), Q(1)]]
-    word = [L(m/12), U(-12*m/13), L((143*m+middle_k*k)/144), U(-12*m/13), L(m/12)]
     result = [[Q(1), Q(0)], [Q(0), Q(1)]]
-    for gate in word:
+    for kind, c, d in word:
+        t = c*m + d*k
+        gate = [[Q(1), Q(0)], [t, Q(1)]] if kind == 'L' else [[Q(1), t], [Q(0), Q(1)]]
         result = multiply(gate, result)
     return result
 
@@ -248,15 +317,27 @@ def controls(ports):
         pass
     else:
         raise ValueError('corrupted-frame control accepted')
-    need(shear_word(Q(-13), middle_k=130) != [[Q(0), Q(-1)], [Q(1), Q(0)]],
+    changed = list(FIVE_CALL)
+    changed[2] = ('L', Q(143, 144), Q(130, 144))
+    need(shear_word(Q(-13), tuple(changed)) != [[Q(0), Q(-1)], [Q(1), Q(0)]],
          'middle-coefficient control failed')
     need(shear_word(Q(0)) != [[Q(0), Q(-1)], [Q(1), Q(0)]],
          'off-spectrum control failed')
+    tampered = json.loads((HERE/PIN).read_bytes())
+    for comment in tampered['comments']:
+        comment['excerpt'] = comment['excerpt'].replace('131K', '130K')
+    try:
+        pinned_word(tampered)
+    except ValueError as exc:
+        need('differs from checked word' in str(exc), 'pin control rejected for wrong reason')
+    else:
+        raise ValueError('tampered discussion pin accepted')
 
 
 def main():
     need(not sys.flags.optimize, 'run without -O')
     ports = sources()
+    pin = pinned_word()
     matched, mismatched, witness = route_census(ports)
     blocks, lines = sign_line_gram()
     pulse_patterns = two_pulse_floor()
@@ -270,8 +351,9 @@ def main():
     controls(ports)
     output = {
         'status': 'PASS_CENTRE_FIVECALL_COVER_AUDIT',
-        'scope': 'Conditional on the inherited rho route and discussion 1636 five-call coefficients/one-transition-per-fresh-stage form; Hamming sign-line Gram and M_pp=0 independently checked. Not an audit of an unavailable candidate package or a supplier.',
+        'scope': 'Conditional on the inherited rho route, the five-call word pinned verbatim from discussion 1636 (DISCUSSION-1636-PIN.json; provisional Discussion text, no candidate package or head), and one transition per fresh stage with no returning port excursion, so that same-cover projection is multiplicative. Both the L(131/144) same-port block and the three-pulse floor need that premise; this package does not derive it for the five-call word. Port frames, the 50,176-pair census, the Hamming sign-line Gram and M_pp=0 are checked from repository sources. Not an audit of a candidate package or a supplier.',
         'discussion': 'https://github.com/CrocSwap/integer-mult-bounds/discussions/1636',
+        'discussion_pin': {str(c['id']): c['body_sha256'] for c in pin['comments']},
         'base_commit': '1f7a934975e5eacaf83511c9ac870263bf095e05',
         'port_count': len(ports), 'fresh_stages': 4,
         'ordered_stage_port_pairs': matched+mismatched,
@@ -296,7 +378,7 @@ def main():
     else:
         need(not sys.argv[1:], 'usage: verify.py [--write]')
         need(result_path.read_bytes() == encoded, 'RESULT.json differs from exact replay')
-    print(output['status'], 'pairs=50176', 'preserving=448', 'same_port=131/144')
+    print(output['status'], 'pairs=50176', 'preserving=448', 'same_port=131/144', 'controls=5')
 
 
 if __name__ == '__main__':
