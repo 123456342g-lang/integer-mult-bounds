@@ -694,7 +694,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation.",
+      "unresolved_question": "The primary reuse replay passed. The required full K=4 census hit the 2,400-second supplemental limit after the last recorded progress of 960/1,922 branches. Complete that census in a dedicated replay before incorporation; partial progress is not an exhaustive certificate.",
       "closure": null,
       "scope": "Intersection dimension proves the 2K+1 recipe floor; the bounded K4 search prices one signed bridge with coefficient entries bounded by eight. Complete census replay is required separately from stored-receipt pricing; no unrestricted recipe optimum is claimed.",
       "ready_to_integrate": false,
@@ -706,6 +706,7 @@
       },
       "verification_evidence": [
         "research/community-efficient600-audit/packets/1487.json",
+        "research/community-efficient600-audit/checks/check-1487-supplement.json",
         "research/community-efficient600-audit/checks/check-1487.json"
       ]
     },

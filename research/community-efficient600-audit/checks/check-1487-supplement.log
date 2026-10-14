@@ -14,3 +14,6 @@
    384/1922 branches, 406336 recipes, 579 structures, 529s
    576/1922 branches, 610216 recipes, 1064 structures, 927s
    768/1922 branches, 820824 recipes, 1064 structures, 1452s
+   960/1922 branches, 1023576 recipes, 1064 structures, 2046s
+/Users/colkitt/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
