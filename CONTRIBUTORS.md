@@ -710,6 +710,32 @@ The following contributions are retained at their original heads with source not
 
 The six pending contributions are credited in the pilot ledger; pending review is not rejection. Predecessor attribution, including R420, K492, PR628 and PR673 lineage, remains in each package.
 
+## Efficient tenth 46-PR round: #1952–#2027
+
+Original contributor commits and predecessor notices are preserved. These are scoped research and verification contributions, with no selected κ change. See the [review and exact-head evidence](docs/research/community-efficient1000-review.md).
+
+- **1337isnot1337** — [#2015](https://github.com/CrocSwap/integer-mult-bounds/pull/2015), [#2011](https://github.com/CrocSwap/integer-mult-bounds/pull/2011), [#2010](https://github.com/CrocSwap/integer-mult-bounds/pull/2010), [#1996](https://github.com/CrocSwap/integer-mult-bounds/pull/1996), [#1988](https://github.com/CrocSwap/integer-mult-bounds/pull/1988), [#1968](https://github.com/CrocSwap/integer-mult-bounds/pull/1968), [#1967](https://github.com/CrocSwap/integer-mult-bounds/pull/1967), [#1962](https://github.com/CrocSwap/integer-mult-bounds/pull/1962), [#1960](https://github.com/CrocSwap/integer-mult-bounds/pull/1960), [#1954](https://github.com/CrocSwap/integer-mult-bounds/pull/1954), [#1953](https://github.com/CrocSwap/integer-mult-bounds/pull/1953).
+- **JosieElliston** — [#1977](https://github.com/CrocSwap/integer-mult-bounds/pull/1977), [#1965](https://github.com/CrocSwap/integer-mult-bounds/pull/1965), [#1959](https://github.com/CrocSwap/integer-mult-bounds/pull/1959), [#1956](https://github.com/CrocSwap/integer-mult-bounds/pull/1956).
+- **thakrarsagar** — [#1964](https://github.com/CrocSwap/integer-mult-bounds/pull/1964).
+- **RossRichardson** — [#2014](https://github.com/CrocSwap/integer-mult-bounds/pull/2014), [#1989](https://github.com/CrocSwap/integer-mult-bounds/pull/1989), [#1966](https://github.com/CrocSwap/integer-mult-bounds/pull/1966).
+- **aliromman** — [#1969](https://github.com/CrocSwap/integer-mult-bounds/pull/1969).
+- **petalas** — [#1981](https://github.com/CrocSwap/integer-mult-bounds/pull/1981), [#1970](https://github.com/CrocSwap/integer-mult-bounds/pull/1970).
+- **DavidAriasC** — [#1973](https://github.com/CrocSwap/integer-mult-bounds/pull/1973).
+- **mtpsl** — [#1975](https://github.com/CrocSwap/integer-mult-bounds/pull/1975).
+- **lydakis** — [#1979](https://github.com/CrocSwap/integer-mult-bounds/pull/1979).
+- **navinor** — [#1982](https://github.com/CrocSwap/integer-mult-bounds/pull/1982).
+- **cbethin** — [#2022](https://github.com/CrocSwap/integer-mult-bounds/pull/2022), [#1983](https://github.com/CrocSwap/integer-mult-bounds/pull/1983).
+- **VictorLiwentao** — [#2001](https://github.com/CrocSwap/integer-mult-bounds/pull/2001), [#1994](https://github.com/CrocSwap/integer-mult-bounds/pull/1994), [#1984](https://github.com/CrocSwap/integer-mult-bounds/pull/1984).
+- **ToikY** — [#1990](https://github.com/CrocSwap/integer-mult-bounds/pull/1990).
+- **chafreaky** — [#1991](https://github.com/CrocSwap/integer-mult-bounds/pull/1991).
+- **bitplane** — [#2027](https://github.com/CrocSwap/integer-mult-bounds/pull/2027), [#2013](https://github.com/CrocSwap/integer-mult-bounds/pull/2013), [#1995](https://github.com/CrocSwap/integer-mult-bounds/pull/1995).
+- **jmbarrancoml** — [#2017](https://github.com/CrocSwap/integer-mult-bounds/pull/2017), [#1998](https://github.com/CrocSwap/integer-mult-bounds/pull/1998).
+- **ianlibanio** — [#2002](https://github.com/CrocSwap/integer-mult-bounds/pull/2002).
+- **commdata2338** — [#2021](https://github.com/CrocSwap/integer-mult-bounds/pull/2021), [#2020](https://github.com/CrocSwap/integer-mult-bounds/pull/2020), [#2018](https://github.com/CrocSwap/integer-mult-bounds/pull/2018).
+- **antunishdPursuit** — [#2026](https://github.com/CrocSwap/integer-mult-bounds/pull/2026).
+
+Pending contributors and their obligations are listed in the review. A hold is not a rejection.
+
 ## Efficient ninth 68-PR round: #1863–#1951
 
 Original contributor commits and predecessor notices are preserved. These are scoped research and verification contributions, with no selected κ change. See the [review and exact-head evidence](docs/research/community-efficient900-review.md).
