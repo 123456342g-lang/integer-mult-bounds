@@ -1,6 +1,6 @@
 # Local claim: P104 two-term basis shear
 
-Discussion posting is temporarily unavailable: GitHub GraphQL returns `graphql_rate_limit` for this account. The current REST overlap refresh found no open claim for this exact term-mixing scope. Continue with this local claim card and repost when the board is reachable.
+The initial GraphQL rate-limit response prevented posting this claim at cycle start, so this local card preserved its exact scope. After the endpoint recovered, the completed handoff was posted in [Discussion #1728](https://github.com/CrocSwap/integer-mult-bounds/discussions/1728). The focused artifact is [PR #1726](https://github.com/CrocSwap/integer-mult-bounds/pull/1726).
 
 ## CLAIM
 
@@ -19,4 +19,4 @@ The main REST overlap refresh was completed at `2026-10-14T07:47Z`; it found no 
 
 ## Local DONE update
 
-The exact finite replay passed for all 392 one-shears and all 71,344 bounded touching two-shear paths. Certificate and derivation are in `RESULT.json` and `README.md`. Discussion posting remains unavailable because the GitHub GraphQL API continues to reject calls with `graphql_rate_limit`; this local card preserves the claim and handoff.
+The exact finite replay passed for all 392 one-shears and all 71,344 bounded touching two-shear paths. Certificate and derivation are in `RESULT.json` and `README.md`. PR #1726 is open at head `6498353243328d5e2bf97a8b34e55b0dc4a881f4`; hosted checks were queued at last observation. Discussion #1728 records the completed handoff.
