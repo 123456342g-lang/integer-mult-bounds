@@ -186,5 +186,10 @@
       "blocked_by": "The finite F2 prototype does not instantiate the selected E8 frame or its native local word."
     }
   ],
-  "coordination": "Claim posted to Discussion #1166 comment 18922942; it states this limitation and expires 2026-10-14T13:40Z."
+  "coordination": "Claim and finding are in Discussion #1166 comments 18922942 and 18923124. Focused PR #1838 is open at https://github.com/CrocSwap/integer-mult-bounds/pull/1838; initial submitted head f6dd3a43a6b026b085a77aa9acb06cbd6a2bcb52. PR checks were pending when checked at 2026-10-14T11:48Z.",
+  "submitted_pr": {
+    "number": 1838,
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1838",
+    "head_commit_at_submission": "f6dd3a43a6b026b085a77aa9acb06cbd6a2bcb52"
+  }
 }

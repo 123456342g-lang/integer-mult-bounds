@@ -43,6 +43,7 @@ The exact fixed-word ceiling improves from the selected upper bound
 `1/99` saving target. No supplier occurrence, frame realization, new `kappa`, or
 frontier change is established.
 
+The focused package PR is [#1838](https://github.com/CrocSwap/integer-mult-bounds/pull/1838).
 The claim and live coordination record are at
 [Discussion #1166, comment 18922942](https://github.com/CrocSwap/integer-mult-bounds/discussions/1166#discussioncomment-18922942).
 Related work includes identical-center sharing (#1708, #1748, #1791), idle-axis
