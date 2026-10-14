@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "task_id": "formal-interface-lemma",
+  "priority_revision": 3,
+  "base_commit": "a18b4b0136d647529971e9fcb99fa83f5b9a0b81",
+  "original_card": {
+    "id": "formal-interface-lemma",
+    "question": "Can one small, precisely scoped interface lemma be formalized with its actual hypotheses?",
+    "starting_points": [
+      "certificates/selected-result.json",
+      "research/hyperplane-end-lean/PROOF.md"
+    ],
+    "methods": [
+      "Formalize a missing boundary lemma identified by the selected review.",
+      "Audit a formal theorem-to-certificate binding independently."
+    ],
+    "acceptance_gate": "State the exact formalized proposition and remaining assumptions; avoid duplicate arithmetic formalizations already present.",
+    "first_step": {
+      "command": [
+        "python3",
+        "-B",
+        "scripts/research_baseline.py"
+      ],
+      "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+      "inspect": "Read the exact hypotheses in the hyperplane-end proof and distinguish Lean theorems from finite supplier assumptions.",
+      "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+    },
+    "first_experiment": "State one missing boundary lemma in full before starting a proof-assistant build.",
+    "bottleneck_link": "A missing interface proof can reduce the conditional gap even if it does not change kappa.",
+    "allowed_variations": [
+      "Narrow to one formal lemma or one theorem-to-certificate binding."
+    ],
+    "scope_change_triggers": [
+      "Formalizing already-covered arithmetic and claiming the full multiplication theorem."
+    ],
+    "overlap_terms": [
+      "hyperplane end",
+      "formal interface",
+      "Lean binding"
+    ]
+  },
+  "scope_status": "unchanged",
+  "actual_scope": "Can one small, precisely scoped interface lemma be formalized with its actual hypotheses?",
+  "scope_change_reason": null,
+  "bottleneck_link": "TODO: explain the causal connection or label this as a side result",
+  "budget_minutes": 60,
+  "stop_rule": "TODO",
+  "outcome": "in-progress",
+  "evidence": "TODO",
+  "author": "Josie Elliston (with Claude Opus 5.5)",
+  "ai_assistance": "TODO: disclose tools used",
+  "open_questions": [
+    {
+      "question": "TODO",
+      "why_it_matters": "TODO",
+      "first_step": "TODO",
+      "blocked_by": "TODO"
+    }
+  ]
+}
