@@ -13,6 +13,7 @@ and contracts govern a proof; historical packages may use different conventions.
 | Role / register / helper | A logical data or workspace position. A helper may hold arbitrary initial data; it is not automatically zero or disposable. |
 | Dirty state / restoration | A routine must work for arbitrary initial workspace and return the state required by its caller's contract. |
 | Frame / label | The representation attached to a role or operation. Changing frames can require paid recursive work. |
+| Decoder / copy cost | In the complex E8 algebraic model, a sum of support-pair terms realizing the required Gram identity; each term is charged its binary label-pairing rank. Term count, all-pairs versus masked exactness and retained readers change which [decoder bound](complex-decoder-scope-map.md) applies. A decoder alone does not supply a physical COPY program. |
 | Rank / paid profile / histogram | The size of each recursive child and the count at each size, derived from the actual frame transitions and other charged calls. |
 | Moment / invoice | The normalized recursive cost at a proposed saving, including the applicable extra charges. It must satisfy strict inequalities. |
 | Owner / bank | A physical allocation used to host logical helper families. Compatibility, capacity and timing must be established; reuse is not free by declaration. |
