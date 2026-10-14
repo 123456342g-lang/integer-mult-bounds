@@ -1,0 +1,7 @@
+['/tmp/pr-efficient200-venv/bin/python', '-B', 'research/ut4-two-target-fifteen/verify.py', '--part', 'small']
+PASS part 'small' is one of all, small, large
+PASS vendored pr1690_search.py matches PR1690 head dfd15686 byte for byte
+PASS quotient map multiplicative on all 4096 pairs; phi(z)=1+abc+acb+bac+cba
+PASS direct 16-call word hits the formal and quotient endpoints
+PASS generalized driver reproduces PR1690 (4,6,4) stage counts exactly
+PASS GL2 orbits of 5582 representatives cover all 33489 zero-sum length-6 middle sequences

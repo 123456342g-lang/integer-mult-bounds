@@ -23,10 +23,11 @@
   ],
   "python": "Python 3.12.11",
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
-  "seconds": 300.014,
-  "status": "budget_deferred",
+  "seconds": 360.856,
+  "status": "passed",
   "exit_codes": [
-    null
+    0,
+    0
   ],
   "input_sha256": {
     "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
@@ -418,6 +419,6 @@
     "research/native-complex-moment552/engines/moment.py": "81cbc864e106418fc7854322746f72180cb8110ff39f74450a3b8d55a82c1482",
     "research/native-complex-moment552/engines/outer.py": "c1ebb52163a7219504c728a5c2b098bf1e50bf20148a2879c5a74c3cadc7c03c"
   },
-  "log_sha256": "33d60e45e9b73497d3a844f56d285c62be731b040a02d9ac600cb6f2c862f24b",
+  "log_sha256": "7da9d82ade92b1220a51f3cbc76e68658833e9c6fa90ff9460f14e8852b0f778",
   "scope": "Pinned scoped package commands and their stated finite/proof-support coverage; not complete multiplication-theorem certification."
 }

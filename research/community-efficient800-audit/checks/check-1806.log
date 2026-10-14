@@ -15,3 +15,6 @@ port-adapter
 parent-template
 parent-audit
 hosted-emission
+hosted-audit
+invoice
+PASS_R439_ABC_HOSTED_INVOICE ADDs=10652 helpers=126432 banks=0 no_new_kappa
