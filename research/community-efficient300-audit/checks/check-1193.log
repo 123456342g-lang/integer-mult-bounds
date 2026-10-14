@@ -13,3 +13,8 @@ PASS owners
 PASS parent
 PASS strict bind
 PASS strict emit
+PASS strict audit
+PASS strict invoice
+PASS strict assembly
+PASS strict admission-controls
+PASS strict bit-controls

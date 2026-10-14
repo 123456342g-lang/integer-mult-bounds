@@ -31,8 +31,8 @@
     "research/community-efficient300-audit/DISPOSITIONS.json"
   ],
   "counts": {
-    "incorporated": 903,
-    "partially_reviewed": 117,
+    "incorporated": 904,
+    "partially_reviewed": 116,
     "superseded": 1,
     "unreviewed": 60
   },
@@ -75,7 +75,7 @@
     "research/community-pilot20-audit/DISPOSITIONS.json": "089f96e2b88d09f577041996eba760c7a5972579e890994d4a34fdf4b9712b8d",
     "research/community-efficient100-audit/DISPOSITIONS.json": "4bdfee153177598ddb26a4d6d67085b85b6ea1b73331eab031a56b1725268bc1",
     "research/community-efficient200-audit/DISPOSITIONS.json": "57265559ef6bd7560ecf0ac457937428d1274b86bc4fda49a70af77535824eee",
-    "research/community-efficient300-audit/DISPOSITIONS.json": "4e358a8f8b98163775e67b39bb372cf724e023e711cf18cc6614d9f79e077a6e",
+    "research/community-efficient300-audit/DISPOSITIONS.json": "329c0c34818856e3d4fd85ff5f65227063f21956c7b0f526440db6f98a765b85",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec",
     "research/community-efficient300-audit/PARENT-EVIDENCE.json": "8d9e28ec3ece26b91ef5a297092697c341652853164477a4961c992151cec353"
   },
@@ -62006,7 +62006,7 @@
       "closure": null,
       "reviewed_head": "d8982686afd7ef6ce52ddeaa17011ccda558d666",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/gauge44-ends7-t16`, `research/gauge44-slots-t16`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -62152,7 +62152,7 @@
       "closure": null,
       "reviewed_head": "6123fc5d57db16aaa3e8a26b4a11a34b46c0c391",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/gauge44-ends7-t16`, `research/gauge44-slots-t16`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -62403,16 +62403,20 @@
       "integration_location": [
         "research/r439-matching-neighborhood13"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "3d161fdcdf9b49812efe3546e0ac5bff63f4de46",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1113"
+      },
       "reviewed_head": "f2c2b72381481ae0193449304913271ab300a730",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient300-audit/packets/1113.json",
@@ -62601,7 +62605,7 @@
       "closure": null,
       "reviewed_head": "342b67f23dfa8f41a520a0d58978b2875e9eb0dd",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/gauge44-ends7-t16`, `research/gauge44-slots-t16`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -62799,7 +62803,7 @@
       "closure": null,
       "reviewed_head": "61e816c29165a94f6cfc57d9e195063a5b027bc2",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/gauge44-ends7-t16`, `research/gauge44-slots-t16`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -62946,7 +62950,7 @@
       "closure": null,
       "reviewed_head": "7c0e3ee0e2d4f6c00d033a4f1dfe4e793e7ecae4",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/gauge44-ends7-t16`, `research/gauge44-ends7-x54-t16`, `research/gauge44-slots-t16`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -63246,7 +63250,7 @@
       "closure": null,
       "reviewed_head": "1558508e5cbff0b7c534d1c4cc7a0fb1b7145c1c",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/gauge44-ends7-t16`, `research/gauge44-ends7-x54-t16`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -63290,7 +63294,7 @@
       "closure": null,
       "reviewed_head": "fcdc42737b703323d8ed550a528141a482e68e96",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/complex-t37-seven-slot-owners`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -64083,7 +64087,7 @@
       "closure": null,
       "reviewed_head": "506ea08dd77388105682044ebb0848ce9b274964",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/k8-coordinated-owners`, `research/k8-eight-ends-t16`, `research/k8-eight-ends`, `research/k8-joint-entrances`, `research/k8-three-demotions`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -64178,7 +64182,7 @@
       "closure": null,
       "reviewed_head": "bebf64ffda3fd5128342d19ee6d419b1150b49f7",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/complex-rank7-owner-exchanges`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -64217,21 +64221,24 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/frontier1042-lec-parallel"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "99d4f42f7cfe5f60d14316ef18e9455c38eaa290",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation.",
+      "unresolved_question": "Publication and live merge observation pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
         "research/community-efficient300-audit/packets/1151.json",
-        "research/community-efficient300-audit/checks/check-1151-initial.json"
+        "research/community-efficient300-audit/checks/check-1151-initial.json",
+        "research/community-efficient300-audit/checks/check-1151.json"
       ],
       "current_head_observed_in": "research/community-efficient300-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -64267,7 +64274,7 @@
       "closure": null,
       "reviewed_head": "d376209304f05551f975b0ddf6eaa84edc4ae31a",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/complex-t37-ends7-owners`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -64362,7 +64369,7 @@
       "closure": null,
       "reviewed_head": "390de2866a03758e7f4ddbb2846e5b2ee4e72154",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/adaptive-kernel-demotion`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -64496,7 +64503,7 @@
       "closure": null,
       "reviewed_head": "c5647aecc8ff44e49776860bb75520bfe3e88f1e",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/k8-x54-t37`, `research/r480-owner-optimum`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -64899,7 +64906,7 @@
       "closure": null,
       "reviewed_head": "13d02293a7af67d7e3bd2e4d7f1a2943ac20537e",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/three-demotions-t37-composition`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -65045,7 +65052,7 @@
       "closure": null,
       "reviewed_head": "4d2cc9df55ed5a17786b7c0a200d70332afbe41e",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Same evolving rank-seven supplier package as #1104–#1130; reconcile native/owner admissions and preserved historical source versions together.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/gauge44-ends7-t16`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -65192,7 +65199,7 @@
       "closure": null,
       "reviewed_head": "76b9f99e177ecdea82877a092dc21e767035d3a2",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/gauge44-slots-arcflow`, `research/gauge44-slots-deepen-arcflow`, `research/gauge44-slots-t16-arcflow`, `research/gauge44-slots-unpromo-arcflow`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -65236,7 +65243,7 @@
       "closure": null,
       "reviewed_head": "3a0d419341879a395d921693112c3b826de93677",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/crosscall-kernel-demotion`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -65332,7 +65339,7 @@
       "closure": null,
       "reviewed_head": "6d4d0dd1c2df531a3350495dd15e00105793c52d",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/k8-coordinated-owners`, `research/k8-dem-x54`, `research/k8-eight-ends-t16`, `research/k8-eight-ends`, `research/k8-joint-entrances`, `research/k8-three-demotions`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -65582,7 +65589,7 @@
       "closure": null,
       "reviewed_head": "9e7ccda21f28f5dd0397aa04a596e4f0e1d75d1d",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/mixed-t37-entrances`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -66033,7 +66040,7 @@
       "closure": null,
       "reviewed_head": "970793428d346b4aa8d8fa2af03aa6dd5ad6f994",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/crosscall-t37-entrances`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -66173,7 +66180,7 @@
       "closure": null,
       "reviewed_head": "cc1b023b123622abba467c7933f3759f8034c753",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/k8-coordinated-owners`, `research/k8-eight-ends-t16`, `research/k8-eight-ends`, `research/k8-joint-entrances`, `research/k8-source-holder-fusions`, `research/k8-three-demotions`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -66217,7 +66224,7 @@
       "closure": null,
       "reviewed_head": "7015903d1d01a2b50ff16f85184edc2686f69e37",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/complex-t37-joint-x54-owners`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -66415,7 +66422,7 @@
       "closure": null,
       "reviewed_head": "86a7072626d9b3e49222378bb76601a11d2f58ea",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/mixed-t37-source-holder-fusions`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -66612,7 +66619,7 @@
       "closure": null,
       "reviewed_head": "d53f23eafc378a6e680294081d09886597129733",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Supplier-family review pending: bind native local replay, physical owners and complete admission; reconcile overlapping historical package versions.",
+      "unresolved_question": "Whole-head supplier review remains open for `research/x54-mixed-t37-fusions`. Bind its exact native providers, physical owner allocation and admission evidence, then reconcile changed predecessor blobs before merge. Path overlap with a replayed descendant does not establish complete coverage; see SUPPLIER-FAMILIES.json.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -66689,7 +66696,7 @@
   ],
   "github_dispositions": {
     "CLOSED": 377,
-    "MERGED": 527,
-    "OPEN": 177
+    "MERGED": 528,
+    "OPEN": 176
   }
 }
