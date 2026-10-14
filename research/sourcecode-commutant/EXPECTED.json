@@ -1,0 +1,107 @@
+{
+  "R_L_mismatch": [
+    0,
+    0,
+    "1",
+    "0"
+  ],
+  "compensation_ports": [
+    0,
+    7,
+    20,
+    27,
+    36,
+    46,
+    57,
+    111
+  ],
+  "controls": {
+    "changed_source_archive": true,
+    "constant_character": true,
+    "false_determinant": true,
+    "zeroed_matrix_row": true
+  },
+  "full_rank_characters": 494,
+  "predecessor_head": "7649d9ceecec949541bec4bbde5929344166ba59",
+  "predecessor_pr": 1862,
+  "query_ports": [
+    21,
+    37,
+    47,
+    76,
+    81,
+    87,
+    92,
+    110
+  ],
+  "rank_census": [
+    {
+      "characters": 1,
+      "ranks": [
+        0,
+        8
+      ]
+    },
+    {
+      "characters": 8,
+      "ranks": [
+        7,
+        8
+      ]
+    },
+    {
+      "characters": 1,
+      "ranks": [
+        8,
+        0
+      ]
+    },
+    {
+      "characters": 8,
+      "ranks": [
+        8,
+        7
+      ]
+    },
+    {
+      "characters": 494,
+      "ranks": [
+        8,
+        8
+      ]
+    }
+  ],
+  "schema": 1,
+  "scope": "No G=I+ZB with arbitrary address-linear B can satisfy LG=R and commute with diag(C_q), or with the specified output frame diag(F C_q^-1). The written witness extends to every positive tensor power. Does not exclude changed operators, monomial conjugacies, paid transitions, different response spaces, or all zero-native circuits; no supplier or kappa claim.",
+  "source_archive_sha256": "22c3f4dce4b897a1d423d1388801933e288b6a6b1906cb15e1b16a5eb68db754",
+  "status": "PASS_SOURCECODE_FIXED_FRAME_COMMUTANT",
+  "witness": {
+    "character": 1,
+    "determinants": [
+      "-3/512",
+      "-3/1024"
+    ],
+    "port_minors": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        12
+      ],
+      [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        44
+      ]
+    ]
+  }
+}

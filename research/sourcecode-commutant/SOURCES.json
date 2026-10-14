@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "base_commit": "0b1cccf86e2f5132ed286a26ef0a681a495740ea",
+  "frozen_source_base": "bce54fb3f895cbe5cd4c0eb477c3afeed100190f",
+  "inputs": [
+    {
+      "path": "research/community-frontier1042-audit/selected-replay.tar.gz",
+      "git_blob": "6f4dc6fe7631d8aacf8081fcaecf32197181685b",
+      "sha256": "22c3f4dce4b897a1d423d1388801933e288b6a6b1906cb15e1b16a5eb68db754",
+      "role": "Original local word, forward program and physical data phases; exact archive/member/payload pins in verify.py."
+    }
+  ],
+  "pending_predecessor": {
+    "pr": 1862,
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1862",
+    "head": "7649d9ceecec949541bec4bbde5929344166ba59",
+    "role": "Source-code response space Z, disjoint minors A/T, query condition LG=R and specified output-frame model. No code imported."
+  },
+  "predecessor_roles": [
+    {
+      "pr": 1042,
+      "role": "Frozen historical source archive."
+    },
+    {
+      "pr": 1094,
+      "role": "Historical assembly also consumes that archive."
+    },
+    {
+      "pr": 799,
+      "role": "Retained local supplier lineage credited in archive notices."
+    },
+    {
+      "pr": 741,
+      "role": "Retained frame work credited in archive notices."
+    }
+  ],
+  "scope": "Finite exact input/census/minor certificate and written commutant argument only; not a full local native replay, global compiler or supplier audit.",
+  "disclosure": "New proof, independent scalar-prefix/rank checker and packaging prepared for Chafik Boukhalfa with substantial OpenAI Codex assistance. No independent human review or formal proof assistant."
+}
