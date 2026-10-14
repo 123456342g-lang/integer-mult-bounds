@@ -69,6 +69,9 @@ y_t(cut) = y_t + x_t + sum_{(c,l) in E} K[t,c] h_l
 h_l(cut) = h_l.
 ```
 
+Omitting these frame-zero gates changes no frame itinerary: their operands
+already have frame zero, and the earlier preparation and later continuation
+are retained. The post-C cones above therefore apply to every subset.
 The omitted word is invertible on the 661 original coordinates, so its cut values
 are independent arbitrary coordinates. Correcting target t therefore requires
 adding the displayed parity of **full-frame leaf cut coordinates**. Every actual
