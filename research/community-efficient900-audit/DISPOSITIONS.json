@@ -179,15 +179,17 @@
       "current_head": "6b222d01fee072bcd3a680e6a96ae7d22e13bcac",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/r439-twisted-star-absorption-seed02"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Twisted scalar helper contract and three frame-path-preserving absorption moves reduce retained1062/1188 ADD counts by3. Full661-column forward/reverse replay, lockstep frame census and strict controls pass. Physical helper-climb additivity remains inherited conditional infrastructure; the general twisted contract is not admitted as a new supplier interface.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -1067,15 +1069,17 @@
       "current_head": "ebbeb8be3435f2dbeafceded4e3ddb6d3b6b8ee5",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/r439-twisted-native-audit"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Independent native compilation replays both absorbed words and parents for5/9/11 stages, with192 inherited and18 additional native controls. Vendored1868 artifacts match exact predecessor bytes; all runtime pins checked. Scalar columns and legality replays do not establish physical helper-climb additivity, hosted admission or a stronger selected bound.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -1965,6 +1969,7 @@
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1932.json",
+        "research/community-efficient900-audit/checks/check-1932-initial.json",
         "research/community-efficient900-audit/checks/check-1932.json"
       ]
     },

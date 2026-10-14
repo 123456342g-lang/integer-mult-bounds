@@ -4,6 +4,7 @@
     1864,
     1866,
     1867,
+    1868,
     1870,
     1872,
     1873,
@@ -21,6 +22,7 @@
     1894,
     1895,
     1898,
+    1902,
     1906,
     1907,
     1908,
@@ -41,7 +43,7 @@
     1945,
     1949
   ],
-  "unique_inputs": 76,
+  "unique_inputs": 89,
   "mismatches": [],
   "inputs": [
     {
@@ -103,6 +105,48 @@
       "path": "research/complex-t16-rare-pattern-exchanges/upstream1087.tar.gz",
       "expected": "d4acf04daef85d4514f80ec5fcd2492d0c60e5d6c49fa71b3e6523f8db2dea86",
       "actual": "d4acf04daef85d4514f80ec5fcd2492d0c60e5d6c49fa71b3e6523f8db2dea86"
+    },
+    {
+      "number": 1868,
+      "path": "research/e8-bit-carrier-skeleton/code/bit/export_records.py",
+      "expected": "8a5999601f917dbb492bb9ae9a344611f18cc7cedc53dc3c76496a369e530eb3",
+      "actual": "8a5999601f917dbb492bb9ae9a344611f18cc7cedc53dc3c76496a369e530eb3"
+    },
+    {
+      "number": 1868,
+      "path": "research/e8-bit-p111-tuned/code/xcheck_p.py",
+      "expected": "af3decc877e27c00001cf56f50c6c09566e8e101297ab34c7860aed96a06d80e",
+      "actual": "af3decc877e27c00001cf56f50c6c09566e8e101297ab34c7860aed96a06d80e"
+    },
+    {
+      "number": 1868,
+      "path": "research/e8-bit-p111-tuned/tune/bitE8mut-p111-tuned.json.gz",
+      "expected": "e3e301e62bc2b41dbf1ceac0acf3d35824ebeab1848c5a2142d4577b109da52f",
+      "actual": "e3e301e62bc2b41dbf1ceac0acf3d35824ebeab1848c5a2142d4577b109da52f"
+    },
+    {
+      "number": 1868,
+      "path": "research/r439-abc-star-composition/candidate.json.gz",
+      "expected": "2b09a7a3851cdf2a7f19350d1555cf75788d001c9507a37e459cd931881ee066",
+      "actual": "2b09a7a3851cdf2a7f19350d1555cf75788d001c9507a37e459cd931881ee066"
+    },
+    {
+      "number": 1868,
+      "path": "research/r439-bsection-stars-seed01/candidate.json.gz",
+      "expected": "b452d2c2b0b2a546d1105b1da9769aa78e5c54d6f00e97b30c77e3f54ce445ee",
+      "actual": "b452d2c2b0b2a546d1105b1da9769aa78e5c54d6f00e97b30c77e3f54ce445ee"
+    },
+    {
+      "number": 1868,
+      "path": "research/r439-gl5-shortest/candidate.json.gz",
+      "expected": "4e7904d01ebdbfc60a26472b4e0d2e813c19c2fe1a4bb8ab390c12746a1da359",
+      "actual": "4e7904d01ebdbfc60a26472b4e0d2e813c19c2fe1a4bb8ab390c12746a1da359"
+    },
+    {
+      "number": 1868,
+      "path": "research/r439-helper-stars-seed19/candidate.json.gz",
+      "expected": "d8b08885e8ce9868200b2645189d15ed18a27fc2742e54990b3257a0ca4df6b8",
+      "actual": "d8b08885e8ce9868200b2645189d15ed18a27fc2742e54990b3257a0ca4df6b8"
     },
     {
       "number": 1870,
@@ -373,6 +417,60 @@
       "path": "research/universal-connector-boundary/README.md",
       "expected": "23415f7829ab8d80a783142f10f7d31abbce84579362769984680af3df954476",
       "actual": "23415f7829ab8d80a783142f10f7d31abbce84579362769984680af3df954476"
+    },
+    {
+      "number": 1902,
+      "path": "research/e8-bit-carrier-skeleton/code/bit/checkers/columns_k.cpp",
+      "expected": "1c344d18fcd494eeca93e259f10cafae7705780e6592f6dcb35b34752dab9bc2",
+      "actual": "1c344d18fcd494eeca93e259f10cafae7705780e6592f6dcb35b34752dab9bc2"
+    },
+    {
+      "number": 1902,
+      "path": "research/e8-bit-carrier-skeleton/code/bit/checkers/json.hpp",
+      "expected": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+      "actual": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63"
+    },
+    {
+      "number": 1902,
+      "path": "research/e8-bit-carrier-skeleton/code/bit/checkers/legality_h.cpp",
+      "expected": "6c1ef2b24e57781d6951c172a1024fc4300e6fd392c9d6672079a7806ab663b3",
+      "actual": "6c1ef2b24e57781d6951c172a1024fc4300e6fd392c9d6672079a7806ab663b3"
+    },
+    {
+      "number": 1902,
+      "path": "research/e8-bit-carrier-skeleton/code/bit/export_records.py",
+      "expected": "8a5999601f917dbb492bb9ae9a344611f18cc7cedc53dc3c76496a369e530eb3",
+      "actual": "8a5999601f917dbb492bb9ae9a344611f18cc7cedc53dc3c76496a369e530eb3"
+    },
+    {
+      "number": 1902,
+      "path": "research/e8-bit-carrier-skeleton/code/bit/regression/stage_cohort.py",
+      "expected": "6c288f6f234b528c1a7c0a4adfb724e91e0fe6b18c8dffad96af3f973de1829a",
+      "actual": "6c288f6f234b528c1a7c0a4adfb724e91e0fe6b18c8dffad96af3f973de1829a"
+    },
+    {
+      "number": 1902,
+      "path": "research/e8-bit-carrier-skeleton/portable-include/bits/stdc++.h",
+      "expected": "420094be2af295eed03a983dd66debbbe9cfb78d8252859f4498a615a0074b99",
+      "actual": "420094be2af295eed03a983dd66debbbe9cfb78d8252859f4498a615a0074b99"
+    },
+    {
+      "number": 1902,
+      "path": "research/e8-bit-p111-tuned/vendor/pr510/e8-r480-nine-stage/vendor/e8-r715-eleven-stage-whole/code/global_k.py",
+      "expected": "6368196a393ac25bb2918880e4c4bd31ed733b762c27b6873ab391cbc0c5c3c8",
+      "actual": "6368196a393ac25bb2918880e4c4bd31ed733b762c27b6873ab391cbc0c5c3c8"
+    },
+    {
+      "number": 1902,
+      "path": "research/r439-bsection-stars-seed01/candidate.json.gz",
+      "expected": "b452d2c2b0b2a546d1105b1da9769aa78e5c54d6f00e97b30c77e3f54ce445ee",
+      "actual": "b452d2c2b0b2a546d1105b1da9769aa78e5c54d6f00e97b30c77e3f54ce445ee"
+    },
+    {
+      "number": 1902,
+      "path": "research/r439-gl5-shortest/candidate.json.gz",
+      "expected": "4e7904d01ebdbfc60a26472b4e0d2e813c19c2fe1a4bb8ab390c12746a1da359",
+      "actual": "4e7904d01ebdbfc60a26472b4e0d2e813c19c2fe1a4bb8ab390c12746a1da359"
     },
     {
       "number": 1906,
@@ -735,5 +833,5 @@
       "actual": "3c034d0aae388ef567a454826f4f48b26fd8a94c71e8ffed4835271b349a783b"
     }
   ],
-  "main_commit": "c4e06b3822987b4272c70ff82ae1c84773ee4426"
+  "main_commit": "b5d138e63a10da21cc625088d1d953f962f05a8f"
 }
