@@ -1,9 +1,9 @@
 {
   "selected": 68,
-  "ready": 48,
-  "merged": 42,
-  "remaining": 20,
-  "elapsed_seconds": 2116.4,
+  "ready": 50,
+  "merged": 48,
+  "remaining": 18,
+  "elapsed_seconds": 2176.1,
   "retained_receipt_process_seconds": 1924.3,
   "successful_receipts": 62,
   "initial_command_budget_seconds": 300,

@@ -38,9 +38,11 @@
     1918,
     1919,
     1920,
+    1923,
     1924,
     1934,
     1935,
+    1936,
     1938,
     1940,
     1941,
@@ -773,6 +775,18 @@
       "actual": "e50bae87f9bfa2dee515468aeb56d47676410ca3adfdf0e83d11bf0e31fadf2d"
     },
     {
+      "number": 1923,
+      "path": "certificates/selected-result.json",
+      "expected": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32",
+      "actual": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32"
+    },
+    {
+      "number": 1923,
+      "path": "research/complex-local-word-ceiling/ceiling.py",
+      "expected": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc",
+      "actual": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc"
+    },
+    {
       "number": 1924,
       "path": "docs/research/agent-task-catalog.json",
       "expected": "6686ad58f1fbdbc87134a78901b60fd53a20d3984355e91defbbebc9e9fa8075",
@@ -807,6 +821,24 @@
       "path": "research/bit-three-register-lower-bound/README.md",
       "expected": "c12b33ef388deece0cbf891505a2ce2c0779a0c3a6cf1f0f7f7039bab59cbebd",
       "actual": "c12b33ef388deece0cbf891505a2ce2c0779a0c3a6cf1f0f7f7039bab59cbebd"
+    },
+    {
+      "number": 1936,
+      "path": "research/complex-local-word-ceiling/ceiling.py",
+      "expected": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc",
+      "actual": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc"
+    },
+    {
+      "number": 1936,
+      "path": "research/e8-bit-p111-tuned/tune/EXPECTED.json",
+      "expected": "b9f0e5ca038abe837b0007c8fe006f366a6f02009244ac57705a8a200e2301f4",
+      "actual": "b9f0e5ca038abe837b0007c8fe006f366a6f02009244ac57705a8a200e2301f4"
+    },
+    {
+      "number": 1936,
+      "path": "research/e8-bit-p111-tuned/tune/bitE8mut-p111-tuned.json.gz",
+      "expected": "e3e301e62bc2b41dbf1ceac0acf3d35824ebeab1848c5a2142d4577b109da52f",
+      "actual": "e3e301e62bc2b41dbf1ceac0acf3d35824ebeab1848c5a2142d4577b109da52f"
     },
     {
       "number": 1938,
@@ -941,5 +973,5 @@
       "actual": "3c034d0aae388ef567a454826f4f48b26fd8a94c71e8ffed4835271b349a783b"
     }
   ],
-  "main_commit": "8e65b2e0e1f6352a21bb136f09b35702f9a3ccba"
+  "main_commit": "a49c31a940a392d14a3b271f1ade00c862b99b6d"
 }
