@@ -1,6 +1,6 @@
 # PR review and integration ledger
 
-The immutable starting snapshot contains **446 PRs**. Explicit later family rounds extend the current inventory to **761**; unrelated arrivals remain outside the round.
+The immutable starting snapshot contains **446 PRs**. Explicit later family rounds extend the current inventory to **781**; unrelated arrivals remain outside the round.
 
 [Machine-readable ledger](pr-ledger.json) · [Starting snapshot](../../research/pr-reconciliation-20261012/starting-snapshot.json)
 
@@ -9,7 +9,7 @@ The ledger separates historical review from integration. A prior snapshot or a m
 | Disposition | Count |
 |---|---:|
 | incorporated | 663 |
-| partially reviewed | 37 |
+| partially reviewed | 57 |
 | superseded | 1 |
 | unreviewed | 60 |
 
@@ -611,10 +611,30 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#666](https://github.com/CrocSwap/integer-mult-bounds/pull/666) | at1as | incorporated | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
 | [#667](https://github.com/CrocSwap/integer-mult-bounds/pull/667) | yuj1r0 | incorporated | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
 | [#668](https://github.com/CrocSwap/integer-mult-bounds/pull/668) | swbiggart | incorporated | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
+| [#669](https://github.com/CrocSwap/integer-mult-bounds/pull/669) | the-missionary-company | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
+| [#670](https://github.com/CrocSwap/integer-mult-bounds/pull/670) | yongjae321 | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
+| [#671](https://github.com/CrocSwap/integer-mult-bounds/pull/671) | jeremykothe2 | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
+| [#672](https://github.com/CrocSwap/integer-mult-bounds/pull/672) | steph4n-gh | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
+| [#673](https://github.com/CrocSwap/integer-mult-bounds/pull/673) | androolloyd | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
+| [#674](https://github.com/CrocSwap/integer-mult-bounds/pull/674) | x0hu | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
 | [#675](https://github.com/CrocSwap/integer-mult-bounds/pull/675) | tekuuu | incorporated | [record 1](../../research/community-frontier741-audit/DISPOSITIONS.json) |
+| [#676](https://github.com/CrocSwap/integer-mult-bounds/pull/676) | jeremykothe2 | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
+| [#677](https://github.com/CrocSwap/integer-mult-bounds/pull/677) | commdata2338 | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
+| [#678](https://github.com/CrocSwap/integer-mult-bounds/pull/678) | 0x-chad | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
+| [#679](https://github.com/CrocSwap/integer-mult-bounds/pull/679) | g-guthrie | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
+| [#680](https://github.com/CrocSwap/integer-mult-bounds/pull/680) | littleBro | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
 | [#681](https://github.com/CrocSwap/integer-mult-bounds/pull/681) | alluri-ritual | incorporated | [record 1](../../research/community-frontier741-audit/DISPOSITIONS.json) |
+| [#682](https://github.com/CrocSwap/integer-mult-bounds/pull/682) | swbiggart | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
+| [#683](https://github.com/CrocSwap/integer-mult-bounds/pull/683) | Mister-Meeseeks | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
+| [#684](https://github.com/CrocSwap/integer-mult-bounds/pull/684) | ineffyble | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
+| [#685](https://github.com/CrocSwap/integer-mult-bounds/pull/685) | chafreaky | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
+| [#686](https://github.com/CrocSwap/integer-mult-bounds/pull/686) | mikhailramalho | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
+| [#687](https://github.com/CrocSwap/integer-mult-bounds/pull/687) | cbethin | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
 | [#688](https://github.com/CrocSwap/integer-mult-bounds/pull/688) | aliromman | incorporated | [record 1](../../research/community-frontier799-audit/DISPOSITIONS.json) |
+| [#689](https://github.com/CrocSwap/integer-mult-bounds/pull/689) | dillona | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
 | [#691](https://github.com/CrocSwap/integer-mult-bounds/pull/691) | mtpsl | incorporated | [record 1](../../research/community-frontier799-audit/DISPOSITIONS.json) |
+| [#692](https://github.com/CrocSwap/integer-mult-bounds/pull/692) | Ambassators | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
+| [#693](https://github.com/CrocSwap/integer-mult-bounds/pull/693) | thakrarsagar | partially reviewed | [record 1](../../research/community-pilot20-audit/DISPOSITIONS.json) |
 | [#694](https://github.com/CrocSwap/integer-mult-bounds/pull/694) | g-guthrie | incorporated | [record 1](../../research/community-frontier799-audit/DISPOSITIONS.json) |
 | [#695](https://github.com/CrocSwap/integer-mult-bounds/pull/695) | jsnider3 | incorporated | [record 1](../../research/community-frontier741-audit/DISPOSITIONS.json) |
 | [#696](https://github.com/CrocSwap/integer-mult-bounds/pull/696) | thakrarsagar | incorporated | [record 1](../../research/community-frontier799-audit/DISPOSITIONS.json) |

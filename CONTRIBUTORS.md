@@ -689,6 +689,27 @@ The [scoped review](docs/research/community-reconciliation-third100-review.md) r
 - **[jacklightChen](https://github.com/jacklightChen)**: [#377](https://github.com/CrocSwap/integer-mult-bounds/pull/377), [#386](https://github.com/CrocSwap/integer-mult-bounds/pull/386).
 - **[ai-nanachi](https://github.com/ai-nanachi)**: [#389](https://github.com/CrocSwap/integer-mult-bounds/pull/389).
 
+## Twenty-PR pilot: scoped research and verification
+
+The following contributions are retained at their original heads with source notices and AI-assistance disclosures. No new selected κ is attributed to this round. See [the scoped review](docs/research/community-pilot20-review.md).
+
+- **yongjae321** — [PR #670](https://github.com/CrocSwap/integer-mult-bounds/pull/670): Block 3: 50→33 XORs, 34 saved including cleanup.
+- **steph4n-gh** — [PR #672](https://github.com/CrocSwap/integer-mult-bounds/pull/672): Exact integer exponential enclosure replacement.
+- **x0hu** — [PR #674](https://github.com/CrocSwap/integer-mult-bounds/pull/674): Block 5: 46→34 XORs, 24 saved including cleanup.
+- **commdata2338** — [PR #677](https://github.com/CrocSwap/integer-mult-bounds/pull/677): Completed fixed-h DATA shear: two target queries, four private-only dirty queries, or one owned-disposable query.
+- **0x-chad** — [PR #678](https://github.com/CrocSwap/integer-mult-bounds/pull/678): Independent generalized-binomial rational enclosure confirms the #543 consumed bracket with fallback surcharge.
+- **g-guthrie** — [PR #679](https://github.com/CrocSwap/integer-mult-bounds/pull/679): Exact selector circuit and dirty-padding repair; volume-weighted budget defeats this specific batching proposal.
+- **littleBro** — [PR #680](https://github.com/CrocSwap/integer-mult-bounds/pull/680): Exact support/rank/torus refutations for 33 fixed formal projective Clifford words.
+- **swbiggart** — [PR #682](https://github.com/CrocSwap/integer-mult-bounds/pull/682): Independent tensor E8 profile audit at depths 1–66 and center-copy asymptotic correction.
+- **Mister-Meeseeks** — [PR #683](https://github.com/CrocSwap/integer-mult-bounds/pull/683): Fixed mixed K/M bypass: four carriers under stated monotone pure-carrier constraints.
+- **ineffyble** — [PR #684](https://github.com/CrocSwap/integer-mult-bounds/pull/684): Restricted generated Gaussian chirp domain and integer-window/precision arithmetic.
+- **cbethin** — [PR #687](https://github.com/CrocSwap/integer-mult-bounds/pull/687): Fixed K-triangle relocation domain: 841 distinct relocations, 708 illegal, 133 same-profile.
+- **dillona** — [PR #689](https://github.com/CrocSwap/integer-mult-bounds/pull/689): Balanced ternary echo placement: 208→160 calls at 15 factors, same five arrays.
+- **Ambassators** — [PR #692](https://github.com/CrocSwap/integer-mult-bounds/pull/692): Independent cycle-local geometric resolvent and bilinear inverse transpose, with varying phases and rounded predecessor comparisons.
+- **thakrarsagar** — [PR #693](https://github.com/CrocSwap/integer-mult-bounds/pull/693): Independent signed-block extraction and carry audit.
+
+The six pending contributions are credited in the pilot ledger; pending review is not rejection. Predecessor attribution, including R420, K492, PR628 and PR673 lineage, remains in each package.
+
 ## Historical PR reconciliation: #423–#668
 
 This batch preserves parallel constructions, research, repairs and verification work.

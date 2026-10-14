@@ -3,8 +3,8 @@
   "snapshot": "research/pr-reconciliation-20261012/starting-snapshot.json",
   "starting_main": "f19cb621be2caf3a7291a37c343c1c55afe935e0",
   "starting_open_count": 446,
-  "inventory_count": 761,
-  "family_round": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
+  "inventory_count": 781,
+  "family_round": "research/community-pilot20-audit/DISPOSITIONS.json",
   "family_rounds": [
     "research/community-family533-audit/DISPOSITIONS.json",
     "research/community-family588-audit/DISPOSITIONS.json",
@@ -24,11 +24,12 @@
     "research/community-reconciliation92-audit/DISPOSITIONS.json",
     "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
     "research/community-reconciliation-third100-audit/DISPOSITIONS.json",
-    "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json"
+    "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
+    "research/community-pilot20-audit/DISPOSITIONS.json"
   ],
   "counts": {
     "incorporated": 663,
-    "partially_reviewed": 37,
+    "partially_reviewed": 57,
     "superseded": 1,
     "unreviewed": 60
   },
@@ -68,6 +69,7 @@
     "research/community-reconciliation-next100-audit/DISPOSITIONS.json": "de8d4f4026b86e5e59d5945d0b865de16c6886aa013451a2e3c117665bd95b51",
     "research/community-reconciliation-third100-audit/DISPOSITIONS.json": "dbd7051bd339005e1bd5c11e296965fda0e267dfc09136d9e4cf0ecb17976b89",
     "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json": "a5b5a0acbd7c36e2b4bb012cc9585f589fa43430057bcc4c8120d230f81a0d02",
+    "research/community-pilot20-audit/DISPOSITIONS.json": "52dfa3f08bfe94f5280b4ea69208dee87b166eebb9776a9e64da8f2629d1006d",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -23532,7 +23534,9 @@
       "previously_reviewed_heads": [],
       "historical_assessment_heads": [],
       "evidence": [],
-      "historical_mentions": [],
+      "historical_mentions": [
+        "docs/research/community-pilot20-review.md"
+      ],
       "disposition": "unreviewed",
       "integration_location": [],
       "github_state": "OPEN",
@@ -40783,6 +40787,280 @@
       ]
     },
     {
+      "number": 669,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/669",
+      "title": "Research: exact star-decoder hierarchies, target budgets, and COPY bounds",
+      "contributor": {
+        "id": "U_kgDOB_v2mg",
+        "is_bot": false,
+        "login": "the-missionary-company",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "8f4600b41bf1f0f5d07f209e5d3950eb22ef5cad",
+      "current_head": "8f4600b41bf1f0f5d07f209e5d3950eb22ef5cad",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "8f4600b41bf1f0f5d07f209e5d3950eb22ef5cad",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Sharp proper-star weight hierarchies, target budgets and model-specific COPY bounds. Multi-proof package triaged; universal proofs not audited in this pilot.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "8f4600b41bf1f0f5d07f209e5d3950eb22ef5cad",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Dedicated proof review of uniform higher weights, equality classifications, graph targets and COPY model; finite checks must not substitute for those proofs.",
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/669.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 670,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/670",
+      "title": "Research: simplify one R420 block from 50 to 33 XOR gates (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjMzOTIzNjE0",
+        "is_bot": false,
+        "login": "yongjae321",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "2e31fcad7f9ecc8b97039ecb2333e581fd725fa1",
+      "current_head": "2e31fcad7f9ecc8b97039ecb2333e581fd725fa1",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "2e31fcad7f9ecc8b97039ecb2333e581fd725fa1",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Block 3: 50→33 XORs, 34 saved including cleanup. Exact F2 endpoint, unchanged paid frame paths, positive-transfer domination and all 660 dirty columns checked; no new exponent.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/r420-block3-xor"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "2e31fcad7f9ecc8b97039ecb2333e581fd725fa1",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publication and GitHub merge observation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/670.json",
+        "research/community-pilot20-audit/checks/check-670.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 671,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/671",
+      "title": "Conditional κ = 0.001658714981837397: pattern-flow owner map on the PR664 promoted word",
+      "contributor": {
+        "id": "U_kgDOEKXqaA",
+        "is_bot": false,
+        "login": "jeremykothe2",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "16a27439d4ba1db451b6179c9475793529a485b6",
+      "current_head": "16a27439d4ba1db451b6179c9475793529a485b6",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "16a27439d4ba1db451b6179c9475793529a485b6",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Historical owner-only candidate 0.001658714981837397. 103 files match reviewed #664, including construction/verifiers; nine changed metadata/owner/pricing files. Not promoted or admitted by this pilot.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "16a27439d4ba1db451b6179c9475793529a485b6",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Reuse #664 only after authenticating/restoring its local provider artifact bundle; replay changed physical OWNERS/PLAN, binding, invoice and assembly. Prior full replay logs exist but reusable local payload was not retained.",
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/671.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 672,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/672",
+      "title": "Tooling: exact integer exponential intervals with pinned replay evidence",
+      "contributor": {
+        "id": "U_kgDOEO2eAg",
+        "is_bot": false,
+        "login": "steph4n-gh",
+        "name": "steph4n"
+      },
+      "draft": false,
+      "starting_head": "7519539e28eaa59f6cb1ebc7a83413ade5521afa",
+      "current_head": "7519539e28eaa59f6cb1ebc7a83413ade5521afa",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "7519539e28eaa59f6cb1ebc7a83413ade5521afa",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Exact integer exponential enclosure replacement. All 11 tests passed, including original-checker controls. Integer Horner polynomial, geometric tail and outward rounding reviewed. Runtime improvement not rebenchmarked.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        ".github/workflows",
+        "research/exact-exp-performance"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "7519539e28eaa59f6cb1ebc7a83413ade5521afa",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publication and GitHub merge observation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/672.json",
+        "research/community-pilot20-audit/checks/check-672.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 673,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/673",
+      "title": "Research: dirty echo, verifier repair, and priced bit-sharing boundaries",
+      "contributor": {
+        "id": "MDQ6VXNlcjEyMzcyNTk=",
+        "is_bot": false,
+        "login": "androolloyd",
+        "name": "androolloyd "
+      },
+      "draft": false,
+      "starting_head": "0b4f514c60d9bc7786415d7cbc24754f24d6dc3b",
+      "current_head": "0b4f514c60d9bc7786415d7cbc24754f24d6dc3b",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "0b4f514c60d9bc7786415d7cbc24754f24d6dc3b",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Six-package dirty-echo, phase-alias repair and priced sharing campaign. Triaged with PR689 dependence distinguished; no blanket acceptance of this campaign.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "0b4f514c60d9bc7786415d7cbc24754f24d6dc3b",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Split review into alias-guard regression, dirty-echo construction, and four priced-boundary packages. PR689 independently audits only its vendored ternary subset.",
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/673.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 674,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/674",
+      "title": "Research: reduce R420 block 5 from 46 to 34 XOR gates (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjQxNDYxNDEx",
+        "is_bot": false,
+        "login": "x0hu",
+        "name": "xo"
+      },
+      "draft": false,
+      "starting_head": "1b01fd8b135fb2c458554fbbbab4338336bf366d",
+      "current_head": "1b01fd8b135fb2c458554fbbbab4338336bf366d",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "1b01fd8b135fb2c458554fbbbab4338336bf366d",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Block 5: 46→34 XORs, 24 saved including cleanup. Integer forward equality, reverse majorant domination, frame paths and all dirty columns checked. No hosted supplier or composition with #670 claimed.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/r420-block5-resynthesis"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "1b01fd8b135fb2c458554fbbbab4338336bf366d",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publication and GitHub merge observation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/674.json",
+        "research/community-pilot20-audit/checks/check-674.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
       "number": 675,
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/675",
       "title": "Research audit: PR626 owner boundaries and bridge-omission blind spot",
@@ -40834,6 +41112,239 @@
       "current_head_observed_in": "research/community-frontier741-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
         "research/community-frontier741-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 676,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/676",
+      "title": "Conditional κ = 0.001659319032684569: six dim-8 cold ends and three entrance promotions on the PR659 no-triangle word",
+      "contributor": {
+        "id": "U_kgDOEKXqaA",
+        "is_bot": false,
+        "login": "jeremykothe2",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "18649d6b37a6865894e0c0775ba4b558e3168877",
+      "current_head": "18649d6b37a6865894e0c0775ba4b558e3168877",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "18649d6b37a6865894e0c0775ba4b558e3168877",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Historical six-end/three-promotion candidate 0.001659319032684569. Changed construction requires delta construction/phase review, not merely owner repricing.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "18649d6b37a6865894e0c0775ba4b558e3168877",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Authenticate/replay six new cold ends and minimal promotion recipe; then changed owner/phase/global admission. Reuse unchanged #659/#664 code only with complete source-bound artifact coverage.",
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/676.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 677,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/677",
+      "title": "Research note: restored DATA-shear boundaries for PR #521's native BIT query (exact query costs, no new κ)",
+      "contributor": {
+        "id": "U_kgDOC-l38Q",
+        "is_bot": false,
+        "login": "commdata2338",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "613c02b8b4411f991f108dcc1481b3f9100b996f",
+      "current_head": "613c02b8b4411f991f108dcc1481b3f9100b996f",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "613c02b8b4411f991f108dcc1481b3f9100b996f",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Completed fixed-h DATA shear: two target queries, four private-only dirty queries, or one owned-disposable query. Laurent determinant and projector classification reviewed, complete finite checks passed. Typed recurrences are not self-recursion.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/native-fusion-restored-shear"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "613c02b8b4411f991f108dcc1481b3f9100b996f",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publication and GitHub merge observation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/677.json",
+        "research/community-pilot20-audit/checks/check-677.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 678,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/678",
+      "title": "Independent verification of the #543 bit moment using binomial enclosures",
+      "contributor": {
+        "id": "U_kgDOB_gh-Q",
+        "is_bot": false,
+        "login": "0x-chad",
+        "name": "MevMan"
+      },
+      "draft": false,
+      "starting_head": "bdc9317efd6d928a0f050159670d1316ba5f4c5b",
+      "current_head": "bdc9317efd6d928a0f050159670d1316ba5f4c5b",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "bdc9317efd6d928a0f050159670d1316ba5f4c5b",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Independent generalized-binomial rational enclosure confirms the #543 consumed bracket with fallback surcharge. Positive-term geometric tail and outward rounding checked; inherited profile correctness is a premise.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/pr543-binomial-audit"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "bdc9317efd6d928a0f050159670d1316ba5f4c5b",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publication and GitHub merge observation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/678.json",
+        "research/community-pilot20-audit/checks/check-678.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 679,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/679",
+      "title": "Scoped negative result: volume-aware selector batching of complex children",
+      "contributor": {
+        "id": "U_kgDOCOzb5g",
+        "is_bot": false,
+        "login": "g-guthrie",
+        "name": "Greer Guthrie"
+      },
+      "draft": false,
+      "starting_head": "dce137e540acd2b689281afe222cd32c0ec1f1ae",
+      "current_head": "dce137e540acd2b689281afe222cd32c0ec1f1ae",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "dce137e540acd2b689281afe222cd32c0ec1f1ae",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Exact selector circuit and dirty-padding repair; volume-weighted budget defeats this specific batching proposal. Tensor identity and support/volume argument reviewed; no universal algorithmic lower bound.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        ".github/workflows",
+        "research/selector-batching"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "dce137e540acd2b689281afe222cd32c0ec1f1ae",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publication and GitHub merge observation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/679.json",
+        "research/community-pilot20-audit/checks/check-679.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 680,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/680",
+      "title": "Scoped negative result: certify 33 fixed Clifford register words (no kappa claim)",
+      "contributor": {
+        "id": "MDQ6VXNlcjM1ODU4NTA=",
+        "is_bot": false,
+        "login": "littleBro",
+        "name": "Ivan"
+      },
+      "draft": false,
+      "starting_head": "c3a5b6b7afec35d259c29bc2d8bb8516e975ad31",
+      "current_head": "c3a5b6b7afec35d259c29bc2d8bb8516e975ad31",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "c3a5b6b7afec35d259c29bc2d8bb8516e975ad31",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Exact support/rank/torus refutations for 33 fixed formal projective Clifford words. Boolean traces, determinant identities and controls replayed. Formal group algebra only, not arbitrary finite representations or all eight-call words.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/clifford-relation-obstructions"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "c3a5b6b7afec35d259c29bc2d8bb8516e975ad31",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publication and GitHub merge observation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/680.json",
+        "research/community-pilot20-audit/checks/check-680.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
       ]
     },
     {
@@ -40892,6 +41403,284 @@
       ]
     },
     {
+      "number": 682,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/682",
+      "title": "Research audit: tensor E8 rate and finite-depth center-copy correction",
+      "contributor": {
+        "id": "MDQ6VXNlcjI5NzY5NQ==",
+        "is_bot": false,
+        "login": "swbiggart",
+        "name": "Scott Woolsey Biggart"
+      },
+      "draft": false,
+      "starting_head": "cfc7130e0e371395f4cf2f96c122c240cdbeab97",
+      "current_head": "cfc7130e0e371395f4cf2f96c122c240cdbeab97",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "cfc7130e0e371395f4cf2f96c122c240cdbeab97",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Independent tensor E8 profile audit at depths 1–66 and center-copy asymptotic correction. Root enclosure and derivative-bound argument reviewed; original physical/analytic supplier claims not newly certified.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        ".github/workflows",
+        "research/tensor-e8-rate-audit"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "cfc7130e0e371395f4cf2f96c122c240cdbeab97",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publication and GitHub merge observation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/682.json",
+        "research/community-pilot20-audit/checks/check-682.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 683,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/683",
+      "title": "Scoped negative result: partial K/M face bypass requires four carriers",
+      "contributor": {
+        "id": "MDQ6VXNlcjE4MjA0OTg3",
+        "is_bot": false,
+        "login": "Mister-Meeseeks",
+        "name": "Doug Colkitt"
+      },
+      "draft": false,
+      "starting_head": "cbf30fdb56126d8cb7594f32e4d9a74ea7cd80a7",
+      "current_head": "cbf30fdb56126d8cb7594f32e4d9a74ea7cd80a7",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "cbf30fdb56126d8cb7594f32e4d9a74ea7cd80a7",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Fixed mixed K/M bypass: four carriers under stated monotone pure-carrier constraints. Exact geometry and 716-column native control replayed; strict concavity establishes the supplied profile loss, not every possible four-carrier schedule.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/partial-k-face-bypass"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "cbf30fdb56126d8cb7594f32e4d9a74ea7cd80a7",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publication and GitHub merge observation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/683.json",
+        "research/community-pilot20-audit/checks/check-683.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 684,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/684",
+      "title": "Audit Gaussian chirp domain and exact block budgets",
+      "contributor": {
+        "id": "MDQ6VXNlcjgzNDg4MA==",
+        "is_bot": false,
+        "login": "ineffyble",
+        "name": "Effy Elden"
+      },
+      "draft": false,
+      "starting_head": "14dd937d9e2d3e51092c0c35a8c2c9cdf8ba81f4",
+      "current_head": "14dd937d9e2d3e51092c0c35a8c2c9cdf8ba81f4",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "14dd937d9e2d3e51092c0c35a8c2c9cdf8ba81f4",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Restricted generated Gaussian chirp domain and integer-window/precision arithmetic. Scoped source and arithmetic replay passed; #371 grid-rounding issue remains separate. Full analytic error/tape theorem outside scope.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/gaussian-chirp-domain-audit"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "14dd937d9e2d3e51092c0c35a8c2c9cdf8ba81f4",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publication and GitHub merge observation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/684.json",
+        "research/community-pilot20-audit/checks/check-684.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 685,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/685",
+      "title": "Conditional κ = 0.001660339298410333: four entrance promotions and 72 cold ends",
+      "contributor": {
+        "id": "MDQ6VXNlcjQ0MDA1Mjc=",
+        "is_bot": false,
+        "login": "chafreaky",
+        "name": "chafreaky"
+      },
+      "draft": false,
+      "starting_head": "5fc2a0c4e10558f09f03a8e42559dcf8e381e57e",
+      "current_head": "5fc2a0c4e10558f09f03a8e42559dcf8e381e57e",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "5fc2a0c4e10558f09f03a8e42559dcf8e381e57e",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Historical four-promotion/72-end candidate 0.001660339298410333. Full Git diff has 682 files, not API list of 100; construction, owner, phase and admission deltas need focused review.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "5fc2a0c4e10558f09f03a8e42559dcf8e381e57e",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Review 72-end and fourth-promotion delta plus literal owner assignment; select exact-head dedicated Linux evidence or run affected stages. Do not accept unrelated inherited green checks.",
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/685.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 686,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/686",
+      "title": "Research: save 108 R420 XORs with restored frame-zero sharing (no new kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjEzMjgyODc=",
+        "is_bot": false,
+        "login": "mikhailramalho",
+        "name": "Mikhail R. Gadelha"
+      },
+      "draft": false,
+      "starting_head": "23dcb610c2b156b76b9d599ea296c3cbde224b2d",
+      "current_head": "23dcb610c2b156b76b9d599ea296c3cbde224b2d",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "23dcb610c2b156b76b9d599ea296c3cbde224b2d",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "108-XOR frame-zero sharing candidate with generalized D interface. Local command reaches C++ check, but this environment lacks Boost multiprecision headers. No negative mathematical finding.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "23dcb610c2b156b76b9d599ea296c3cbde224b2d",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Replay unchanged command in existing Linux/Boost-capable environment; then review generalized D interface and C++ controls. Local failed compilation is an environment limitation.",
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/686.json",
+        "research/community-pilot20-audit/checks/check-686.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 687,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/687",
+      "title": "Scoped negative result: certify one K-triangle relocation neighborhood",
+      "contributor": {
+        "id": "MDQ6VXNlcjI1MjkxMDAz",
+        "is_bot": false,
+        "login": "cbethin",
+        "name": "Charles Bethin"
+      },
+      "draft": false,
+      "starting_head": "82bbb9c3ac34540f196410d137ebc59d9c2c43a9",
+      "current_head": "82bbb9c3ac34540f196410d137ebc59d9c2c43a9",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "82bbb9c3ac34540f196410d137ebc59d9c2c43a9",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Fixed K-triangle relocation domain: 841 distinct relocations, 708 illegal, 133 same-profile. Both exact engines and six controls pass; other orders/promotions/providers remain outside scope.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/k-triangle-relocation"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "82bbb9c3ac34540f196410d137ebc59d9c2c43a9",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publication and GitHub merge observation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/687.json",
+        "research/community-pilot20-audit/checks/check-687.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
       "number": 688,
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/688",
       "title": "Research: compose R420 circuits with 16,704 fewer hosted instructions (no new kappa)",
@@ -40945,6 +41734,54 @@
       ]
     },
     {
+      "number": 689,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/689",
+      "title": "Research: minimize balanced ternary dirty echo calls at fixed scratch",
+      "contributor": {
+        "id": "MDQ6VXNlcjEzNTEzOA==",
+        "is_bot": false,
+        "login": "dillona",
+        "name": "Dillon Amburgey"
+      },
+      "draft": false,
+      "starting_head": "0dedef12f05f9a06faf9d4e1c8b1462c0e3bff3a",
+      "current_head": "0dedef12f05f9a06faf9d4e1c8b1462c0e3bff3a",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "0dedef12f05f9a06faf9d4e1c8b1462c0e3bff3a",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Balanced ternary echo placement: 208→160 calls at 15 factors, same five arrays. Eight-call identity, monotone recurrence/exchange proof and nonlinear restoration replayed. Only pinned fanout-three dependency from #673 is used.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        ".github/workflows",
+        "research/ternary-dirty-composition"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "0dedef12f05f9a06faf9d4e1c8b1462c0e3bff3a",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publication and GitHub merge observation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/689.json",
+        "research/community-pilot20-audit/checks/check-689.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
       "number": 691,
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/691",
       "title": "Research: shorten R420 phase-A quad 13 from 19 to 12 XORs (no new kappa)",
@@ -40995,6 +41832,100 @@
       "current_head_observed_in": "research/community-frontier799-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
         "research/community-frontier799-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 692,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/692",
+      "title": "Independent verification: weighted-stride closures and bilinear dual (no kappa)",
+      "contributor": {
+        "id": "MDQ6VXNlcjg3OTE3ODMz",
+        "is_bot": false,
+        "login": "Ambassators",
+        "name": "Ambassator"
+      },
+      "draft": false,
+      "starting_head": "c5b53a5e80372a1fae9830d8dcf21aaabce3f729",
+      "current_head": "c5b53a5e80372a1fae9830d8dcf21aaabce3f729",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "c5b53a5e80372a1fae9830d8dcf21aaabce3f729",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Independent cycle-local geometric resolvent and bilinear inverse transpose, with varying phases and rounded predecessor comparisons. Finite domain and controls pass; no whole-kernel/tape/compiler proof.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/cyclic-stride-independent"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "c5b53a5e80372a1fae9830d8dcf21aaabce3f729",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publication and GitHub merge observation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/692.json",
+        "research/community-pilot20-audit/checks/check-692.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
+      ]
+    },
+    {
+      "number": 693,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/693",
+      "title": "Research audit: signed block extraction and coefficient-alias controls",
+      "contributor": {
+        "id": "MDQ6VXNlcjE4NjIyMjg4",
+        "is_bot": false,
+        "login": "thakrarsagar",
+        "name": ""
+      },
+      "draft": false,
+      "starting_head": "7d857bb58fb55ada6d05364a4b6f01bba8e2283f",
+      "current_head": "7d857bb58fb55ada6d05364a4b6f01bba8e2283f",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "7d857bb58fb55ada6d05364a4b6f01bba8e2283f",
+          "evidence": "research/community-pilot20-audit/DISPOSITIONS.json",
+          "scope": "Independent signed-block extraction and carry audit. Strict coefficient bounds, convolution and half-radix alias controls pass; forbidden-boundary example is not a counterexample to the retained lemma.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/signed-extraction-audit"
+      ],
+      "github_state": "OPEN",
+      "closure": null,
+      "reviewed_head": "7d857bb58fb55ada6d05364a4b6f01bba8e2283f",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Publication and GitHub merge observation pending.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-pilot20-audit/packets/693.json",
+        "research/community-pilot20-audit/checks/check-693.json"
+      ],
+      "current_head_observed_in": "research/community-pilot20-audit/DISPOSITIONS.json",
+      "reconciliation_evidence": [
+        "research/community-pilot20-audit/DISPOSITIONS.json"
       ]
     },
     {
@@ -50744,6 +51675,6 @@
   "github_dispositions": {
     "CLOSED": 377,
     "MERGED": 287,
-    "OPEN": 97
+    "OPEN": 117
   }
 }
