@@ -63,6 +63,8 @@
   },
   "outcome": "completed",
   "priority_revision": 2,
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1420",
+  "mathematical_commit": "dc6ba012c92470ea830e3b0ff2dab28fbd8126d8",
   "schema_version": 1,
   "scope_change_reason": "The assigned H2/K semantic-D replacement is already proved in PR1194 and independently applied in PR1311. This investigates the adjacent chronological H1/H3/projected-cleanup implication audited in PR1105, extending its three-wire joint-state census to all dimensions and shortest identity loops. It does not repeat the known flaw or claim discovery priority; no new random draw.",
   "scope_status": "changed",

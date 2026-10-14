@@ -119,6 +119,11 @@ not identity loops with prescribed projected effects. PR1256 changes helper
 retirement and final frames, which this witness preserves. PR1333 changes the
 register operation model for a different paid-call bound.
 
+Submitted as [PR1420](https://github.com/CrocSwap/integer-mult-bounds/pull/1420).
+Mathematical implementation commit:
+`dc6ba012c92470ea830e3b0ff2dab28fbd8126d8`; the subsequent submission-link commit
+changes only this README and TASK metadata.
+
 ## Open next questions
 
 * **A frame-aware replacement cleanup contract.** Retain both chronological
