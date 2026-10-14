@@ -2,7 +2,7 @@
 
 Frozen selection: **100 open, non-draft PRs #697–#814**, excluding previously disposed work. Baseline `0a201997`. Full Git diffs and source heads, not the truncated GitHub file list, determine coverage.
 
-**83 ready for scoped incorporation; 0 observed merged; 17 have explicit follow-ups.** No selected κ change. Local cost savings are not summed across incompatible proposals, and the original all-size/compiler/analytic assumptions remain.
+**83 ready for scoped incorporation; 83 observed merged; 17 have explicit follow-ups.** No selected κ change. Local cost savings are not summed across incompatible proposals, and the original all-size/compiler/analytic assumptions remain.
 
 Original author commits, notices, predecessor credits and assistance disclosures are preserved. Companion notes and negative results are legitimate contributions; integration does not promote them to supplier certificates.
 
@@ -108,7 +108,7 @@ Original author commits, notices, predecessor credits and assistance disclosures
 | [#774](https://github.com/CrocSwap/integer-mult-bounds/pull/774) | Constrained forest construction plus Lean proof needs both finite and formal coverage. |
 | [#775](https://github.com/CrocSwap/integer-mult-bounds/pull/775) | Complete 202,800-case fixed-domain replay exceeded the 180-second batch budget. Continue in a bounded dedicated job with exact head/input coverage; no exclusion accepted from a timeout. |
 | [#776](https://github.com/CrocSwap/integer-mult-bounds/pull/776) | Global frame dual certificate needs dedicated coverage review before claiming universal fixed-order exclusion. |
-| [#779](https://github.com/CrocSwap/integer-mult-bounds/pull/779) | Finish fixture/source hydration and the pinned scoped command. Current failure or incomplete execution is not a mathematical rejection; see exact log. |
+| [#779](https://github.com/CrocSwap/integer-mult-bounds/pull/779) | Complete eligibility audit and h23 reference/optimized replays pass, but the broader command exceeded 180 seconds. Finish h25 and remaining receipt comparisons in a dedicated job; no performance ratio independently certified. |
 | [#790](https://github.com/CrocSwap/integer-mult-bounds/pull/790) | Python/native-map controls pass, then C++ compilation fails because Boost multiprecision headers are unavailable. Finish legality/cohort checks in the existing Linux/Boost environment. |
 | [#794](https://github.com/CrocSwap/integer-mult-bounds/pull/794) | Local certificate passes; review the additional hosted replay and cumulative claims before whole-head incorporation. Local semantic D validity alone is not hosted supplier admission. |
 | [#797](https://github.com/CrocSwap/integer-mult-bounds/pull/797) | Production compiler change and regenerated historical certificates require code-diff/regression review. |
@@ -126,8 +126,8 @@ The core changes in #756, #778 and #808 use injective packing/symmetry to preser
 
 Source equality and family grouping avoid repeatedly rebuilding unchanged suppliers. This round does not implement automatic transitive verification reuse. The next fixture improvement is recursive manifest hydration before execution, to avoid late missing-input failures.
 
-The 180-second initial ceiling is a triage budget. A timeout means unfinished execution, never a mathematical exclusion. The two timed-out packages and the Linux/Boost continuation remain open. No full supplier rebuild was initiated. METRICS.json reports measured process time and elapsed time; no measured token-saving claim is made.
+The 180-second initial ceiling is a triage budget. A timeout means unfinished execution, never a mathematical exclusion. The three timed-out packages and the Linux/Boost continuation remain open. No full supplier rebuild was initiated. METRICS.json reports measured process time and elapsed time; no measured token-saving claim is made.
 
 ## Open next questions
 
-Finish the explicit proof/construction/interface holds; resolve #725/#732 shared package naming before combining them; replay native C++ coverage with Boost; finish the two bounded jobs. The standing queue goal is to continue this process in batches of 100 through PR #1600, without reopening unchanged completed dispositions.
+Finish the explicit proof/construction/interface holds; resolve #725/#732 shared package naming before combining them; replay native C++ coverage with Boost; finish the three bounded jobs. The standing queue goal is to continue this process in batches of 100 through PR #1600, without reopening unchanged completed dispositions.

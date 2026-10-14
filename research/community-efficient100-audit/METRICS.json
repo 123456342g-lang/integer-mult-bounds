@@ -1,10 +1,10 @@
 {
   "selected": 100,
   "ready": 83,
-  "merged": 0,
+  "merged": 83,
   "remaining": 17,
-  "elapsed_seconds": 901.7,
-  "scoped_process_seconds": 1453.9,
+  "elapsed_seconds": 1055.8,
+  "retained_receipt_process_seconds": 1633.8,
   "successful_receipts": 86,
   "full_supplier_rebuilds_started": 0,
   "initial_command_budget_seconds": 180,
