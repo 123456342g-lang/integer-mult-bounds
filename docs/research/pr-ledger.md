@@ -9,9 +9,9 @@ The ledger separates historical review from integration. A prior snapshot or a m
 | Disposition | Count |
 |---|---:|
 | incorporated | 478 |
-| partially reviewed | 25 |
+| partially reviewed | 125 |
 | superseded | 1 |
-| unreviewed | 218 |
+| unreviewed | 118 |
 
 The earlier reconciliation closing snapshot had 438 starting PRs still open and 441 total open. These are historical counts, not a live queue measurement. Later dispositions are recorded below.
 
@@ -26,15 +26,15 @@ This frozen round covers #543/#545/#555 and related construction, research and t
 [100-PR historical reconciliation](community-reconciliation100-review.md): exact-head coverage and individual carry-forward tasks; it is not 100 completed mathematical audits.
 [Five early contributions](community-historical-five-review.md): #2/#4/#8/#9/#12 retained with complete historical sources and focused replays.
 [Remaining 92 contributions](community-reconciliation92-review.md): source retention, scoped review and closure receipts; #122 awaits its missing parent circuit/profile.
-[Next 100 contributions, #153–#303](community-reconciliation-next100-review.md): current frozen batch, individual scope and explicit remaining obligations.
+[Previous 100 contributions, #153–#303](community-reconciliation-next100-review.md): individual scope and explicit remaining obligations.
+[Third 100 contributions, #304–#421](community-reconciliation-third100-review.md): constructions, research and verification with source-bound execution.
 
 ## Remaining priorities
 
-1. Follow the new Linux CI for the published #442/#484/#509/#516/#520 batch; the [scoped review](community-formal-20261012-review.md) records completed local checks.
-2. Follow the explicit construction-family dispositions and remaining obligations; do not repeat completed foundation replays without a source/input change.
-3. Review #525’s checkpoint/ceiling and #529/#532’s distinct construction mechanisms; retain parallel credit.
-4. Reconcile #210/#279 updates with their earlier incorporated heads; audit #236’s source-package integration separately from its already published review receipts.
-5. Continue finite-instance connections for formal interfaces; abstract theorem builds do not instantiate all current physical constructions.
+1. Resolve the explicit remaining questions on partially reviewed or changed heads; consult the latest family disposition before repeating a replay.
+2. Continue with a frozen chunk of live, non-draft, unreviewed PRs. Compare current heads with published reviews and exclude submissions awaiting a concrete revision.
+3. Keep source retention, scoped execution, publication and actual GitHub closure separate. Preserve research, verification and parallel contribution credit even when a result is superseded.
+4. Build formal connections to the actual finite constructions; abstract theorem builds alone do not instantiate the selected multiplication algorithm.
 
 ## Starting PR inventory
 
@@ -267,122 +267,122 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#301](https://github.com/CrocSwap/integer-mult-bounds/pull/301) | maximussthegreat | unreviewed | No exact-head review established; inspect contribution and dependencies. |
 | [#302](https://github.com/CrocSwap/integer-mult-bounds/pull/302) | maximussthegreat | unreviewed | No exact-head review established; inspect contribution and dependencies. |
 | [#303](https://github.com/CrocSwap/integer-mult-bounds/pull/303) | rohanarun | incorporated | [record 1](../../research/community-reconciliation-next100-audit/DISPOSITIONS.json) |
-| [#304](https://github.com/CrocSwap/integer-mult-bounds/pull/304) | DreamingOfClouds | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#305](https://github.com/CrocSwap/integer-mult-bounds/pull/305) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#306](https://github.com/CrocSwap/integer-mult-bounds/pull/306) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#307](https://github.com/CrocSwap/integer-mult-bounds/pull/307) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#308](https://github.com/CrocSwap/integer-mult-bounds/pull/308) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#309](https://github.com/CrocSwap/integer-mult-bounds/pull/309) | Dugongue | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#310](https://github.com/CrocSwap/integer-mult-bounds/pull/310) | utcorvusvolat-dotcom | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#311](https://github.com/CrocSwap/integer-mult-bounds/pull/311) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#312](https://github.com/CrocSwap/integer-mult-bounds/pull/312) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#313](https://github.com/CrocSwap/integer-mult-bounds/pull/313) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#314](https://github.com/CrocSwap/integer-mult-bounds/pull/314) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#315](https://github.com/CrocSwap/integer-mult-bounds/pull/315) | DreamingOfClouds | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#316](https://github.com/CrocSwap/integer-mult-bounds/pull/316) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#317](https://github.com/CrocSwap/integer-mult-bounds/pull/317) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#318](https://github.com/CrocSwap/integer-mult-bounds/pull/318) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#319](https://github.com/CrocSwap/integer-mult-bounds/pull/319) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#320](https://github.com/CrocSwap/integer-mult-bounds/pull/320) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#321](https://github.com/CrocSwap/integer-mult-bounds/pull/321) | Dugongue | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#322](https://github.com/CrocSwap/integer-mult-bounds/pull/322) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#323](https://github.com/CrocSwap/integer-mult-bounds/pull/323) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#324](https://github.com/CrocSwap/integer-mult-bounds/pull/324) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#325](https://github.com/CrocSwap/integer-mult-bounds/pull/325) | DreamingOfClouds | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#327](https://github.com/CrocSwap/integer-mult-bounds/pull/327) | DreamingOfClouds | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#328](https://github.com/CrocSwap/integer-mult-bounds/pull/328) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#329](https://github.com/CrocSwap/integer-mult-bounds/pull/329) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#330](https://github.com/CrocSwap/integer-mult-bounds/pull/330) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#331](https://github.com/CrocSwap/integer-mult-bounds/pull/331) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#332](https://github.com/CrocSwap/integer-mult-bounds/pull/332) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#333](https://github.com/CrocSwap/integer-mult-bounds/pull/333) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#334](https://github.com/CrocSwap/integer-mult-bounds/pull/334) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#335](https://github.com/CrocSwap/integer-mult-bounds/pull/335) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#336](https://github.com/CrocSwap/integer-mult-bounds/pull/336) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#337](https://github.com/CrocSwap/integer-mult-bounds/pull/337) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#338](https://github.com/CrocSwap/integer-mult-bounds/pull/338) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#339](https://github.com/CrocSwap/integer-mult-bounds/pull/339) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
+| [#304](https://github.com/CrocSwap/integer-mult-bounds/pull/304) | DreamingOfClouds | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#305](https://github.com/CrocSwap/integer-mult-bounds/pull/305) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#306](https://github.com/CrocSwap/integer-mult-bounds/pull/306) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#307](https://github.com/CrocSwap/integer-mult-bounds/pull/307) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#308](https://github.com/CrocSwap/integer-mult-bounds/pull/308) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#309](https://github.com/CrocSwap/integer-mult-bounds/pull/309) | Dugongue | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#310](https://github.com/CrocSwap/integer-mult-bounds/pull/310) | utcorvusvolat-dotcom | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#311](https://github.com/CrocSwap/integer-mult-bounds/pull/311) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#312](https://github.com/CrocSwap/integer-mult-bounds/pull/312) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#313](https://github.com/CrocSwap/integer-mult-bounds/pull/313) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#314](https://github.com/CrocSwap/integer-mult-bounds/pull/314) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#315](https://github.com/CrocSwap/integer-mult-bounds/pull/315) | DreamingOfClouds | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#316](https://github.com/CrocSwap/integer-mult-bounds/pull/316) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#317](https://github.com/CrocSwap/integer-mult-bounds/pull/317) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#318](https://github.com/CrocSwap/integer-mult-bounds/pull/318) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#319](https://github.com/CrocSwap/integer-mult-bounds/pull/319) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#320](https://github.com/CrocSwap/integer-mult-bounds/pull/320) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#321](https://github.com/CrocSwap/integer-mult-bounds/pull/321) | Dugongue | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#322](https://github.com/CrocSwap/integer-mult-bounds/pull/322) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#323](https://github.com/CrocSwap/integer-mult-bounds/pull/323) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#324](https://github.com/CrocSwap/integer-mult-bounds/pull/324) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#325](https://github.com/CrocSwap/integer-mult-bounds/pull/325) | DreamingOfClouds | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#327](https://github.com/CrocSwap/integer-mult-bounds/pull/327) | DreamingOfClouds | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#328](https://github.com/CrocSwap/integer-mult-bounds/pull/328) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#329](https://github.com/CrocSwap/integer-mult-bounds/pull/329) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#330](https://github.com/CrocSwap/integer-mult-bounds/pull/330) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#331](https://github.com/CrocSwap/integer-mult-bounds/pull/331) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#332](https://github.com/CrocSwap/integer-mult-bounds/pull/332) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#333](https://github.com/CrocSwap/integer-mult-bounds/pull/333) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#334](https://github.com/CrocSwap/integer-mult-bounds/pull/334) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#335](https://github.com/CrocSwap/integer-mult-bounds/pull/335) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#336](https://github.com/CrocSwap/integer-mult-bounds/pull/336) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#337](https://github.com/CrocSwap/integer-mult-bounds/pull/337) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#338](https://github.com/CrocSwap/integer-mult-bounds/pull/338) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#339](https://github.com/CrocSwap/integer-mult-bounds/pull/339) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
 | [#340](https://github.com/CrocSwap/integer-mult-bounds/pull/340) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#341](https://github.com/CrocSwap/integer-mult-bounds/pull/341) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#342](https://github.com/CrocSwap/integer-mult-bounds/pull/342) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#343](https://github.com/CrocSwap/integer-mult-bounds/pull/343) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#344](https://github.com/CrocSwap/integer-mult-bounds/pull/344) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#345](https://github.com/CrocSwap/integer-mult-bounds/pull/345) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#346](https://github.com/CrocSwap/integer-mult-bounds/pull/346) | LJH-217 | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#347](https://github.com/CrocSwap/integer-mult-bounds/pull/347) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#348](https://github.com/CrocSwap/integer-mult-bounds/pull/348) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
+| [#341](https://github.com/CrocSwap/integer-mult-bounds/pull/341) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#342](https://github.com/CrocSwap/integer-mult-bounds/pull/342) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#343](https://github.com/CrocSwap/integer-mult-bounds/pull/343) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#344](https://github.com/CrocSwap/integer-mult-bounds/pull/344) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#345](https://github.com/CrocSwap/integer-mult-bounds/pull/345) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#346](https://github.com/CrocSwap/integer-mult-bounds/pull/346) | LJH-217 | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#347](https://github.com/CrocSwap/integer-mult-bounds/pull/347) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#348](https://github.com/CrocSwap/integer-mult-bounds/pull/348) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
 | [#349](https://github.com/CrocSwap/integer-mult-bounds/pull/349) | erebos-labs | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#350](https://github.com/CrocSwap/integer-mult-bounds/pull/350) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#351](https://github.com/CrocSwap/integer-mult-bounds/pull/351) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#352](https://github.com/CrocSwap/integer-mult-bounds/pull/352) | DaysSky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
+| [#350](https://github.com/CrocSwap/integer-mult-bounds/pull/350) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#351](https://github.com/CrocSwap/integer-mult-bounds/pull/351) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#352](https://github.com/CrocSwap/integer-mult-bounds/pull/352) | DaysSky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
 | [#353](https://github.com/CrocSwap/integer-mult-bounds/pull/353) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#354](https://github.com/CrocSwap/integer-mult-bounds/pull/354) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#355](https://github.com/CrocSwap/integer-mult-bounds/pull/355) | Dugongue | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#356](https://github.com/CrocSwap/integer-mult-bounds/pull/356) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
+| [#354](https://github.com/CrocSwap/integer-mult-bounds/pull/354) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#355](https://github.com/CrocSwap/integer-mult-bounds/pull/355) | Dugongue | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#356](https://github.com/CrocSwap/integer-mult-bounds/pull/356) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
 | [#357](https://github.com/CrocSwap/integer-mult-bounds/pull/357) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#358](https://github.com/CrocSwap/integer-mult-bounds/pull/358) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#359](https://github.com/CrocSwap/integer-mult-bounds/pull/359) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#360](https://github.com/CrocSwap/integer-mult-bounds/pull/360) | Dugongue | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#361](https://github.com/CrocSwap/integer-mult-bounds/pull/361) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#362](https://github.com/CrocSwap/integer-mult-bounds/pull/362) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#363](https://github.com/CrocSwap/integer-mult-bounds/pull/363) | DaysSky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#364](https://github.com/CrocSwap/integer-mult-bounds/pull/364) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#365](https://github.com/CrocSwap/integer-mult-bounds/pull/365) | aliromman | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#366](https://github.com/CrocSwap/integer-mult-bounds/pull/366) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#367](https://github.com/CrocSwap/integer-mult-bounds/pull/367) | amanforindia | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#368](https://github.com/CrocSwap/integer-mult-bounds/pull/368) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
+| [#358](https://github.com/CrocSwap/integer-mult-bounds/pull/358) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#359](https://github.com/CrocSwap/integer-mult-bounds/pull/359) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#360](https://github.com/CrocSwap/integer-mult-bounds/pull/360) | Dugongue | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#361](https://github.com/CrocSwap/integer-mult-bounds/pull/361) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#362](https://github.com/CrocSwap/integer-mult-bounds/pull/362) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#363](https://github.com/CrocSwap/integer-mult-bounds/pull/363) | DaysSky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#364](https://github.com/CrocSwap/integer-mult-bounds/pull/364) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#365](https://github.com/CrocSwap/integer-mult-bounds/pull/365) | aliromman | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#366](https://github.com/CrocSwap/integer-mult-bounds/pull/366) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#367](https://github.com/CrocSwap/integer-mult-bounds/pull/367) | amanforindia | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#368](https://github.com/CrocSwap/integer-mult-bounds/pull/368) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
 | [#369](https://github.com/CrocSwap/integer-mult-bounds/pull/369) | applecrusher | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#370](https://github.com/CrocSwap/integer-mult-bounds/pull/370) | utcorvusvolat-dotcom | unreviewed | No exact-head review established; inspect contribution and dependencies. |
+| [#370](https://github.com/CrocSwap/integer-mult-bounds/pull/370) | utcorvusvolat-dotcom | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
 | [#371](https://github.com/CrocSwap/integer-mult-bounds/pull/371) | artuskg | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#372](https://github.com/CrocSwap/integer-mult-bounds/pull/372) | DesmondForward | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#373](https://github.com/CrocSwap/integer-mult-bounds/pull/373) | DaysSky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#374](https://github.com/CrocSwap/integer-mult-bounds/pull/374) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#375](https://github.com/CrocSwap/integer-mult-bounds/pull/375) | DaysSky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
+| [#372](https://github.com/CrocSwap/integer-mult-bounds/pull/372) | DesmondForward | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#373](https://github.com/CrocSwap/integer-mult-bounds/pull/373) | DaysSky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#374](https://github.com/CrocSwap/integer-mult-bounds/pull/374) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#375](https://github.com/CrocSwap/integer-mult-bounds/pull/375) | DaysSky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
 | [#376](https://github.com/CrocSwap/integer-mult-bounds/pull/376) | applecrusher | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#377](https://github.com/CrocSwap/integer-mult-bounds/pull/377) | jacklightChen | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#378](https://github.com/CrocSwap/integer-mult-bounds/pull/378) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#379](https://github.com/CrocSwap/integer-mult-bounds/pull/379) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#380](https://github.com/CrocSwap/integer-mult-bounds/pull/380) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#381](https://github.com/CrocSwap/integer-mult-bounds/pull/381) | DaysSky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#382](https://github.com/CrocSwap/integer-mult-bounds/pull/382) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#383](https://github.com/CrocSwap/integer-mult-bounds/pull/383) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#384](https://github.com/CrocSwap/integer-mult-bounds/pull/384) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#385](https://github.com/CrocSwap/integer-mult-bounds/pull/385) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#386](https://github.com/CrocSwap/integer-mult-bounds/pull/386) | jacklightChen | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#387](https://github.com/CrocSwap/integer-mult-bounds/pull/387) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#388](https://github.com/CrocSwap/integer-mult-bounds/pull/388) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#389](https://github.com/CrocSwap/integer-mult-bounds/pull/389) | ai-nanachi | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#390](https://github.com/CrocSwap/integer-mult-bounds/pull/390) | Dugongue | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#391](https://github.com/CrocSwap/integer-mult-bounds/pull/391) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#392](https://github.com/CrocSwap/integer-mult-bounds/pull/392) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#394](https://github.com/CrocSwap/integer-mult-bounds/pull/394) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
+| [#377](https://github.com/CrocSwap/integer-mult-bounds/pull/377) | jacklightChen | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#378](https://github.com/CrocSwap/integer-mult-bounds/pull/378) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#379](https://github.com/CrocSwap/integer-mult-bounds/pull/379) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#380](https://github.com/CrocSwap/integer-mult-bounds/pull/380) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#381](https://github.com/CrocSwap/integer-mult-bounds/pull/381) | DaysSky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#382](https://github.com/CrocSwap/integer-mult-bounds/pull/382) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#383](https://github.com/CrocSwap/integer-mult-bounds/pull/383) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#384](https://github.com/CrocSwap/integer-mult-bounds/pull/384) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#385](https://github.com/CrocSwap/integer-mult-bounds/pull/385) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#386](https://github.com/CrocSwap/integer-mult-bounds/pull/386) | jacklightChen | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#387](https://github.com/CrocSwap/integer-mult-bounds/pull/387) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#388](https://github.com/CrocSwap/integer-mult-bounds/pull/388) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#389](https://github.com/CrocSwap/integer-mult-bounds/pull/389) | ai-nanachi | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#390](https://github.com/CrocSwap/integer-mult-bounds/pull/390) | Dugongue | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#391](https://github.com/CrocSwap/integer-mult-bounds/pull/391) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#392](https://github.com/CrocSwap/integer-mult-bounds/pull/392) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#394](https://github.com/CrocSwap/integer-mult-bounds/pull/394) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
 | [#395](https://github.com/CrocSwap/integer-mult-bounds/pull/395) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
 | [#396](https://github.com/CrocSwap/integer-mult-bounds/pull/396) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
 | [#397](https://github.com/CrocSwap/integer-mult-bounds/pull/397) | artuskg | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#398](https://github.com/CrocSwap/integer-mult-bounds/pull/398) | Dugongue | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#399](https://github.com/CrocSwap/integer-mult-bounds/pull/399) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#400](https://github.com/CrocSwap/integer-mult-bounds/pull/400) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#401](https://github.com/CrocSwap/integer-mult-bounds/pull/401) | Dugongue | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#402](https://github.com/CrocSwap/integer-mult-bounds/pull/402) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#403](https://github.com/CrocSwap/integer-mult-bounds/pull/403) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#404](https://github.com/CrocSwap/integer-mult-bounds/pull/404) | Dugongue | unreviewed | No exact-head review established; inspect contribution and dependencies. |
+| [#398](https://github.com/CrocSwap/integer-mult-bounds/pull/398) | Dugongue | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#399](https://github.com/CrocSwap/integer-mult-bounds/pull/399) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#400](https://github.com/CrocSwap/integer-mult-bounds/pull/400) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#401](https://github.com/CrocSwap/integer-mult-bounds/pull/401) | Dugongue | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#402](https://github.com/CrocSwap/integer-mult-bounds/pull/402) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#403](https://github.com/CrocSwap/integer-mult-bounds/pull/403) | rohanarun | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#404](https://github.com/CrocSwap/integer-mult-bounds/pull/404) | Dugongue | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
 | [#405](https://github.com/CrocSwap/integer-mult-bounds/pull/405) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
 | [#406](https://github.com/CrocSwap/integer-mult-bounds/pull/406) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#407](https://github.com/CrocSwap/integer-mult-bounds/pull/407) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#408](https://github.com/CrocSwap/integer-mult-bounds/pull/408) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
+| [#407](https://github.com/CrocSwap/integer-mult-bounds/pull/407) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#408](https://github.com/CrocSwap/integer-mult-bounds/pull/408) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
 | [#409](https://github.com/CrocSwap/integer-mult-bounds/pull/409) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#410](https://github.com/CrocSwap/integer-mult-bounds/pull/410) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#411](https://github.com/CrocSwap/integer-mult-bounds/pull/411) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#412](https://github.com/CrocSwap/integer-mult-bounds/pull/412) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
+| [#410](https://github.com/CrocSwap/integer-mult-bounds/pull/410) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#411](https://github.com/CrocSwap/integer-mult-bounds/pull/411) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#412](https://github.com/CrocSwap/integer-mult-bounds/pull/412) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
 | [#413](https://github.com/CrocSwap/integer-mult-bounds/pull/413) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#414](https://github.com/CrocSwap/integer-mult-bounds/pull/414) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
+| [#414](https://github.com/CrocSwap/integer-mult-bounds/pull/414) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
 | [#415](https://github.com/CrocSwap/integer-mult-bounds/pull/415) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#416](https://github.com/CrocSwap/integer-mult-bounds/pull/416) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#417](https://github.com/CrocSwap/integer-mult-bounds/pull/417) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
+| [#416](https://github.com/CrocSwap/integer-mult-bounds/pull/416) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#417](https://github.com/CrocSwap/integer-mult-bounds/pull/417) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
 | [#418](https://github.com/CrocSwap/integer-mult-bounds/pull/418) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#419](https://github.com/CrocSwap/integer-mult-bounds/pull/419) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#420](https://github.com/CrocSwap/integer-mult-bounds/pull/420) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
-| [#421](https://github.com/CrocSwap/integer-mult-bounds/pull/421) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
+| [#419](https://github.com/CrocSwap/integer-mult-bounds/pull/419) | chafreaky | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#420](https://github.com/CrocSwap/integer-mult-bounds/pull/420) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
+| [#421](https://github.com/CrocSwap/integer-mult-bounds/pull/421) | eumemic | partially reviewed | [record 1](../../research/community-reconciliation-third100-audit/DISPOSITIONS.json) |
 | [#422](https://github.com/CrocSwap/integer-mult-bounds/pull/422) | rohanarun | unreviewed | No exact-head review established; inspect contribution and dependencies. |
 | [#423](https://github.com/CrocSwap/integer-mult-bounds/pull/423) | eumemic | unreviewed | No exact-head review established; inspect contribution and dependencies. |
 | [#424](https://github.com/CrocSwap/integer-mult-bounds/pull/424) | chafreaky | unreviewed | No exact-head review established; inspect contribution and dependencies. |

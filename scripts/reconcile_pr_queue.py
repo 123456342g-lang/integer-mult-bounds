@@ -168,6 +168,7 @@ def build():
         'research/community-historical-five-audit/DISPOSITIONS.json',
         'research/community-reconciliation92-audit/DISPOSITIONS.json',
         'research/community-reconciliation-next100-audit/DISPOSITIONS.json',
+        'research/community-reconciliation-third100-audit/DISPOSITIONS.json',
     ) if (ROOT / p).exists()]
     family_path = family_paths[-1] if family_paths else None
     for family_path in family_paths:
@@ -250,12 +251,11 @@ def build():
     lines += ['', '[100-PR historical reconciliation](community-reconciliation100-review.md): exact-head coverage and individual carry-forward tasks; it is not 100 completed mathematical audits.',
               '[Five early contributions](community-historical-five-review.md): #2/#4/#8/#9/#12 retained with complete historical sources and focused replays.',
               '[Remaining 92 contributions](community-reconciliation92-review.md): source retention, scoped review and closure receipts; #122 awaits its missing parent circuit/profile.',
-              '[Next 100 contributions, #153–#303](community-reconciliation-next100-review.md): current frozen batch, individual scope and explicit remaining obligations.', '', '## Remaining priorities', '',
-              '1. Follow the new Linux CI for the published #442/#484/#509/#516/#520 batch; the [scoped review](community-formal-20261012-review.md) records completed local checks.',
-              '2. Follow the explicit construction-family dispositions and remaining obligations; do not repeat completed foundation replays without a source/input change.',
-              '3. Review #525’s checkpoint/ceiling and #529/#532’s distinct construction mechanisms; retain parallel credit.',
-              '4. Reconcile #210/#279 updates with their earlier incorporated heads; audit #236’s source-package integration separately from its already published review receipts.',
-              '5. Continue finite-instance connections for formal interfaces; abstract theorem builds do not instantiate all current physical constructions.', '',
+              '[Previous 100 contributions, #153–#303](community-reconciliation-next100-review.md): individual scope and explicit remaining obligations.', '[Third 100 contributions, #304–#421](community-reconciliation-third100-review.md): constructions, research and verification with source-bound execution.', '', '## Remaining priorities', '',
+              '1. Resolve the explicit remaining questions on partially reviewed or changed heads; consult the latest family disposition before repeating a replay.',
+              '2. Continue with a frozen chunk of live, non-draft, unreviewed PRs. Compare current heads with published reviews and exclude submissions awaiting a concrete revision.',
+              '3. Keep source retention, scoped execution, publication and actual GitHub closure separate. Preserve research, verification and parallel contribution credit even when a result is superseded.',
+              '4. Build formal connections to the actual finite constructions; abstract theorem builds alone do not instantiate the selected multiplication algorithm.', '',
               '## Starting PR inventory', '',
               'Each evidence link leads to the original scoped assessment. The JSON records exact heads, unresolved questions, integration locations and closure receipts.', '',
               '| PR | Contributor | Disposition | Evidence or remaining question |', '|---|---|---|---|']

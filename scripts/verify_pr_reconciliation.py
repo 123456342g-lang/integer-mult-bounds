@@ -167,7 +167,8 @@ def main():
                         ROOT / 'research/pr-reconciliation100-20261013/DISPOSITIONS.json',
                         ROOT / 'research/community-historical-five-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-reconciliation92-audit/DISPOSITIONS.json',
-                        ROOT / 'research/community-reconciliation-next100-audit/DISPOSITIONS.json'):
+                        ROOT / 'research/community-reconciliation-next100-audit/DISPOSITIONS.json',
+                        ROOT / 'research/community-reconciliation-third100-audit/DISPOSITIONS.json'):
         if not family_path.exists():
             continue
         family = json.loads(family_path.read_text())
@@ -560,6 +561,9 @@ def main():
     reconciliation92 = ROOT / 'research/community-reconciliation92-audit/verify.py'
     if reconciliation92.exists():
         runpy.run_path(str(reconciliation92), run_name='__main__')
+    third100 = ROOT / 'research/community-reconciliation-third100-audit/verify.py'
+    if third100.exists():
+        runpy.run_path(str(third100), run_name='__main__')
     next100 = ROOT / 'research/community-reconciliation-next100-audit/verify.py'
     if next100.exists():
         runpy.run_path(str(next100), run_name='__main__')
