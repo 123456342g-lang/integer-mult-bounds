@@ -46,7 +46,7 @@
   "budget_minutes": 60,
   "stop_rule": "Stop after the finite premises, the written audit and the PR1020 binding; do not extend to other punctures or pairs.",
   "outcome": "completed",
-  "evidence": "verify.py: all finite premises reproduced exactly (label basis, 14,400-entry bilinear identity, minor -256, 511 kernels = 482 rank-8 + 29 rank-7 on 27 lines P u {30}, full Section 5 table, 13 a-perp / 1 b-perp candidates, c dots, 62 witness on 8,836 entries with Section 8 table, 256 seven-sets = structural formula, all 256 classes expanded entrywise at cost 62, own branch-67 witness); PR1020's own decoder_check prices its decoder at 69 and PR1624's witness at 62. Written audit in README finds no gap in Sections 3, 7 and 9.",
+  "evidence": "verify.py: all finite premises reproduced exactly (label basis, 14,400-entry bilinear identity, minor -256, 511 kernels = 482 rank-8 + 29 rank-7 on 27 lines P u {30}, full Section 5 table, 13 a-perp / 1 b-perp candidates, c dots, 62 witness on 8,836 entries with Section 8 table, 256 seven-sets = structural formula, all 256 classes expanded entrywise at cost 62, own branch-67 witness, section 10 complex example over Q(i) at 63 with the real look-alike's supports checked equal); PR1020's own decoder_check prices its decoder at 69 and PR1624's witness at 62. Written audit in README finds no gap in Sections 3, 7 and 9.",
   "author": "JosieElliston (Claude session 15)",
   "ai_assistance": "Claude (Anthropic) in Claude Code, JosieElliston's donated session 15; independent review by OpenAI Codex (read-only).",
   "open_questions": [

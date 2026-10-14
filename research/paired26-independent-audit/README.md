@@ -33,12 +33,14 @@ found.**
 | §9 | `x_j + c` gives the literal partner for all six pairs; the determinant is 1024; exactly 256 independent seven-sets of the 13, equal as a set to the `2^6 + 6·2^5` patterns | 256 |
 | §9, new | **every one** of the 256 classes expanded entrywise: dual built, first column exactly `a`, no residual A column on `c`, all 8,836 entries checked, charges summed | 256 × 62 |
 | §7, new | own Case II witness (second pair `(c, c)`, six generic pairs), built here, not taken from PR1624 | (6,7,9,…,9) = 67 |
+| §10 | isotropic complex shear of the witness over Q(i): designated pair unchanged, `A^T B = 2I`, charges (6,8,9,8,…,8) = 63; the conjugate transpose gives 4−4i at roots (1, 1); the real look-alike has the same 16 separate supports | as stated |
 | binding, new | PR1020 code on its decoder: (6,9,…,9) = 69. On PR1624's witness: (6,8,…,8) = 62. PR1020's root indexing, pairing and puncture equal the spec's. This checker on PR1020's decoder: 69. | 69, 62 |
 
-Seven controls must reject: a wrong dual scale; the §10 real substitute with
-the same separate supports; dropping the unit label; restoring line 0, which
-raises the designated pair above 6; a wrong annihilator; a 61 undercharge;
-and a dependent seven-set.
+Seven controls must reject: a wrong dual scale; the §10 real look-alike,
+whose separate supports are checked equal to the complex example's; dropping
+the unit label; restoring line 0, which raises the designated pair above 6; a
+wrong annihilator fed through the table comparison; a 61 undercharge claim fed
+through the charge comparison; and a dependent seven-set.
 
 PR1624 left the 256 classes unexpanded ("not 256 full entrywise complex
 replays"). Here all 256 are expanded. Its branch-67 witness came from its own
@@ -99,7 +101,7 @@ kappa.
 
 ## Independence and limits
 
-- **Independent of PR1624:** the verifier code, the rank and kernel routines,
+- **Separately implemented from PR1624's checkers:** the verifier code, the rank and kernel routines,
   the expansion of all 256 classes, and the branch-67 witness.
 - **Taken from PR1624:** the spec. That is the root generation rule, P,
   `J_label`, the minor rows, the designated pair, and the §5/§6/§8 tables and
@@ -107,8 +109,10 @@ kappa.
 - **Uses predecessor code on purpose:** the binding stage imports PR1020's
   `verify.py` and `explore.py`. These, and PR1020's certificate, are pinned
   live inputs in SOURCES.json.
-- Author: one Claude session. An independent Codex review of this package
-  is recorded in the PR. This is not human mathematical review, and not a
+- Author: one Claude session. A read-only OpenAI Codex review found no
+  problem in the written mathematics or the main gates. It flagged two
+  controls that were tautological, an unchecked support premise in the §10
+  control, and an overbroad independence claim. All four are fixed. This is not human mathematical review, and not a
   proof-assistant proof.
 - Not checked: PR1624's own certificate bytes, its 14 controls and its
   separate GPT-6 Pro review. None of these is needed for the theorem as
@@ -118,7 +122,7 @@ kappa.
 
 ```sh
 python3.12 scripts/research_package.py --package research/paired26-independent-audit
-python3 -B research/paired26-independent-audit/verify.py   # ~30 s, prints PASS_PAIRED26_INDEPENDENT_AUDIT
+python3.12 -B research/paired26-independent-audit/verify.py   # ~30 s, prints PASS_PAIRED26_INDEPENDENT_AUDIT
 ```
 
 The verifier is stdlib only and works on Python 3.10 or later.

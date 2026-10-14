@@ -341,12 +341,25 @@ def stage_kernels(M, out):
         W = [M.ell[i] for i in M.S(z)]
         ann = [lam for lam in range(1, 512) if all(bin(lam & w).count('1') % 2 == 0 for w in W)]
         need(ann == sorted(lams), 'annihilator by enumeration = kernel route')
-        need((dim, size, ann) == TABLE[j], 'table row for root %d' % j)
-        inventory[j] = [dim, size, ann]
+        inventory[j] = (dim, size, ann)
+    compare_table(inventory, TABLE)
+    M.inventory = inventory
     # every other nonzero normal has d = 9: by (4.1) and the census above.
     out['kernels'] = {'functionals': 511, 'rank8': 482, 'rank7': 29, 'lines': len(lines),
                       'dim7_lines': [j for j in lines if inventory[j][0] == 7]}
     return sorted(lines)
+
+
+def compare_table(inventory, table):
+    """Compare the recomputed reduced-line inventory with the Section 5 table."""
+    need(sorted(inventory) == sorted(table), 'table lines')
+    for j in sorted(table):
+        need(inventory[j] == table[j], 'table row for root %d' % j)
+
+
+def check_claim(terms, claimed):
+    need([t[4] for t in terms] == list(claimed), 'claimed charges')
+    return sum(claimed)
 
 
 def stage_compat(M, lines, out):
@@ -380,8 +393,9 @@ def stage_witness(M, out):
     need([[Bcols[k][r] for k in range(8)] for r in range(8)] == Bd, 'displayed B = chosen roots')
     need(Acols[0] == A0 and Bcols[0] == B0, 'first pair exact')
     terms, zero = check_decoder(M, Acols, Bcols, 'witness62')
-    need([t[4] for t in terms] == [6] + [8] * 7 and sum(t[4] for t in terms) == 62, 'cost 62')
+    need(check_claim(terms, [6] + [8] * 7) == 62, 'cost 62')
     need(terms == WITNESS_TABLE, 'Section 8 term table')
+    M.witness_terms = terms
     need(zero == 4572, 'zero right-hand sides 4572')
     out['witness62'] = {'term_costs': [t[4] for t in terms], 'total': 62, 'entries': 8836,
                         'zero_rhs_entries': zero}
@@ -457,6 +471,53 @@ def stage_branch67(M, out):
     out['branch67_own_witness'] = {'term_costs': best, 'total': sum(best)}
 
 
+def gdot(x, y):
+    """Ordinary (non-conjugating) dot product of Gaussian-rational vectors given as (re, im)."""
+    (xr, xi), (yr, yi) = x, y
+    return (dot(xr, yr) - dot(xi, yi), dot(xr, yi) + dot(xi, yr))
+
+
+def gsupport(M, z):
+    zr, zi = z
+    return [i for i in M.L if dot(M.v[i], zr) != 0 or dot(M.v[i], zi) != 0]
+
+
+def section10_example(M, Acols, Bcols):
+    """Proof section 10: isotropic complex shear of the 62 witness and its real look-alike."""
+    zero = [Q(0)] * 8
+    Ac = [(col, zero) for col in Acols]
+    Bc = [(col, zero) for col in Bcols]
+    Ac[1] = (Acols[1], Acols[2])                       # A1 + i A2
+    Bc[2] = (Bcols[2], [-x for x in Bcols[1]])         # B2 - i B1
+    need(Ac[0] == (A0, zero) and Bc[0] == (B0, zero), 'section 10: designated pair unchanged')
+    need(gdot(Ac[1], Ac[1]) == (0, 0), 'section 10: A column is isotropic')
+    for j in range(8):
+        for k in range(8):
+            need(gdot(Ac[j], Bc[k]) == (2 * (j == k), 0), 'section 10: A^T B = 2I over Q(i)')
+    # square matrices: A^T B = 2I implies A B^T = 2I, so D T^T = 2 R R^T on every entry.
+    costs = []
+    for k in range(8):
+        sa, sb = gsupport(M, Ac[k]), gsupport(M, Bc[k])
+        mask = sum(1 << j for j in sb)
+        costs.append(f2_rank([M.rowbits[i] & mask for i in sa]))
+    need(costs == [6, 8, 9, 8, 8, 8, 8, 8], 'section 10: complex example charges (6,8,9,8,...) = 63')
+    # conjugate transpose gives 4 - 4i at live position (root 1, root 1)
+    Dc = [(dot(M.v[1], z[0]) / 2, dot(M.v[1], z[1]) / 2) for z in Ac]
+    Tc = [(dot(M.v[1], z[0]) / 2, dot(M.v[1], z[1]) / 2) for z in Bc]
+    herm = (sum(d[0] * t[0] + d[1] * t[1] for d, t in zip(Dc, Tc)),
+            sum(d[1] * t[0] - d[0] * t[1] for d, t in zip(Dc, Tc)))
+    need(herm == (4, -4), 'section 10: conjugate transpose gives 4 - 4i at (1, 1)')
+    # real look-alike: same separate supports, broken duality
+    Ar = list(Acols)
+    Br = list(Bcols)
+    Ar[1] = [x + 2 * y for x, y in zip(Acols[1], Acols[2])]
+    Br[2] = [x - 3 * y for x, y in zip(Bcols[2], Bcols[1])]
+    for k in range(8):
+        need(M.S(Ar[k]) == gsupport(M, Ac[k]) and M.S(Br[k]) == gsupport(M, Bc[k]),
+             'section 10: real look-alike has the same separate supports')
+    return costs, Ar, Br
+
+
 def stage_binding(M, Acols, Bcols, out):
     """Run merged PR1020's own charge code on its 69 decoder and on the 62 witness."""
     pins = json.loads((HERE / 'SOURCES.json').read_text(encoding='utf-8'))
@@ -508,19 +569,19 @@ def controls(M, Acols, Bcols):
     halfB = [list(col) for col in Bcols]
     halfB[3] = [x / 2 for x in halfB[3]]
     reject('wrong dual scale', lambda: check_decoder(M, Acols, halfB, 'c1'), 'A^T B = 2I')
-    reject('separate-support real substitute (proof sec. 10)', lambda: check_decoder(
-        M, [Acols[0], [x + 2 * y for x, y in zip(Acols[1], Acols[2])]] + Acols[2:],
-        [Bcols[0], Bcols[1], [x - 3 * y for x, y in zip(Bcols[2], Bcols[1])]] + Bcols[3:], 'c2'),
-        'A^T B = 2I')
+    _, Ar, Br = section10_example(M, Acols, Bcols)  # supports checked equal inside
+    reject('separate-support real look-alike (proof sec. 10)',
+           lambda: check_decoder(M, Ar, Br, 'c2'), 'A^T B = 2I')
     reject('omit unit label', lambda: need(Model(unit_label=False).J == J_LABEL, 'label basis'),
            'label basis')
     reject('25-line puncture (restore line 0)', lambda: need(
         Model(puncture=PUNCTURE[1:]).q(A0, B0) == 6, 'restored'), 'restored')
     bad_table = dict(TABLE)
     bad_table[30] = (8, 33, [13])
-    reject('wrong annihilator', lambda: need(bad_table == TABLE, 'table row'), 'table row')
-    reject('61-unit undercharge', lambda: need(
-        sum(t[4] for t in check_decoder(M, Acols, Bcols, 'c6')[0]) == 61, 'cost 61'), 'cost 61')
+    reject('wrong annihilator in the table', lambda: compare_table(M.inventory, bad_table),
+           'table row for root 30')
+    reject('61-unit undercharge claim', lambda: check_claim(M.witness_terms, [6] + [8] * 6 + [7]),
+           'claimed charges')
     reject('dependent seven-set', lambda: dual_from_B(
         [B0] + [root(M, j) for j in [23, 34, 25, 36, 30, 61, 63]]), 'singular basis')
     return done
@@ -535,6 +596,9 @@ def run():
     Acols, Bcols = stage_witness(M, out)
     stage_classes(M, out)
     stage_branch67(M, out)
+    costs10, _, _ = section10_example(M, Acols, Bcols)
+    out['section10_complex_example'] = {'term_costs': costs10, 'total': sum(costs10),
+                                        'real_lookalike_same_supports': True}
     stage_binding(M, Acols, Bcols, out)
     out['controls'] = controls(M, Acols, Bcols)
     return out
