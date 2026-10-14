@@ -17,15 +17,16 @@ of the largest rank allowed by the outer halving guard, `R = 51` (73² > 2·51²
 | Quantity | Value |
 |---|---|
 | Ceiling for any hosting, owner packing or idle-remainder change of this word | **a < 0.001690054109089** |
-| Implied κ bound (`κ < a/(1+a)` when the complex side binds) | **κ < 0.0016872026453254** |
+| Implied κ bound (`κ < a/(1+a)` when the complex side binds) | **κ < 0.001687202646** |
 | Maximum gain over the selected κ 0.001672660197076918 | **+0.869%** |
 | Selected endpoint / relaxation at the endpoint | below the ceiling; actual moment ≥ relaxation |
-| Previous record #1042 | same local word plus an admissible idle histogram (derived idle `{1:2249, 2:1, 3:400, 7:3, 16:47, 48:4850}` matches its README); endpoint below the same ceiling |
+| Previous record #1042 | same paid local profile plus an admissible idle histogram (derived idle `{1:2249, 2:1, 3:400, 7:3, 16:47, 48:4850}` matches its README); endpoint below the same ceiling |
 
 This updates the fixed-word ceilings computed for earlier words
 ([static44](../static44-packing-ceiling/README.md), PR525, PR643) to the selected hosted T16/T37 line. It
-uses the coverage law instead of a dual certificate. All of #1042→#1094's gain was packing at this
-fixed word, and less than 0.87% of such headroom remains.
+uses the coverage law instead of a dual certificate. At the level of this cost decomposition, #1042→#1094 keeps the local paid profile and changes the
+idle contribution. This arithmetic check does not by itself establish identical circuits or attribute every
+implementation change to packing. Less than 0.87% of packing headroom remains under the stated model.
 
 ### What a local word must pay for the planning target a = 1/99
 
@@ -62,7 +63,7 @@ that omit the costs of realizing each lever.
 
 ## Scope and limits
 
-- The bound holds for one local word (paid profile per call), 112 ports, the nine-stage four-pair
+- The bound holds for one fixed paid local profile (in particular, for a fixed local word), 112 ports, the nine-stage four-pair
   template, the coverage law and the outer halving guard. It allows fractional counts and every repacking,
   without checking physical realizability.
 - It does **not** bound other local words. Many open claims above the selected κ (for example #1148's
