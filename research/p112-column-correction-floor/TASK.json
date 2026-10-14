@@ -78,5 +78,7 @@
       "head": "8d53667d9bb09d9b1ffb0f865b5c8dc230eb02f6",
       "relation": "Concurrent independent arbitrary-nonzero-rectangle compensation bound at pair4,6. This package explicitly proves all28 pairs for one-row/one-column corrections. No pending theorem is imported."
     }
-  }
+  },
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1468",
+  "mathematical_commit": "725cc996905139e6ba81053c78e248eb2e29608f"
 }

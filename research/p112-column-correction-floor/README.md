@@ -79,6 +79,11 @@ example passed. [TASK.json](TASK.json) records the refined scope, and
 records the claim and result. [OVERLAP.json](OVERLAP.json) records current heads
 and search coverage; absence of a match is not a novelty certificate.
 
+Submitted as [PR1468](https://github.com/CrocSwap/integer-mult-bounds/pull/1468).
+Mathematical implementation commit:
+`725cc996905139e6ba81053c78e248eb2e29608f`; the subsequent submission-reference
+commit changes only this README and TASK metadata.
+
 - **commdata2338 / PR1375**, head `4a533aff2a7a87c9b36e077a31774b332a7f64bd`:
   the small-rectangle theorem, five support strata, erasure facts and 24-row
   free-boundary handoff. The new result removes the size cap when the other
