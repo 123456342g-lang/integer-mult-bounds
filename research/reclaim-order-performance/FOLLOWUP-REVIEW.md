@@ -41,7 +41,9 @@ base; it is not the current selected frontier.
 
 ## Fresh execution and retained checks
 
-Both sizes ran once, sequentially, with low scheduling priority.
+Both sizes ran once, sequentially. The request for lower scheduling priority
+failed with `nice: setpriority: Operation not permitted`, so the runs used
+normal priority. This diagnostic is outside the compiler receipts.
 The actual output paths were new files in the maintenance directory.
 The interpreter was Python 3.14.7 on macOS arm64. To reproduce these runs,
 use new output paths such as those below:

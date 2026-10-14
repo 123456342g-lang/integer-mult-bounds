@@ -55,5 +55,11 @@
     ]
   },
   "retained_evidence": "VALIDATION.json and BENCHMARK.json at the reviewed head; no full-suite or timing rerun",
-  "scope": "Same finite words and compiler receipts. No new kappa or complete multiplication theorem."
+  "scope": "Same finite words and compiler receipts. No new kappa or complete multiplication theorem.",
+  "scheduling": {
+    "requested_nice": 15,
+    "request_accepted": false,
+    "diagnostic": "nice: setpriority: Operation not permitted",
+    "execution": "One compilation at a time at normal priority; both completed."
+  }
 }
