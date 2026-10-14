@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "priority_revision": 2,
+  "priority_revision": 3,
   "priority_log": "docs/research/research-priority-log.md",
   "assessed_on": "2026-10-13",
   "status": "Research suggestions, not reservations or assertions that these questions are unclaimed. Check current main and live PRs.",
@@ -88,45 +88,51 @@
       "weight": 20,
       "tasks": [
         {
-          "id": "complex-masked-decoder",
-          "question": "Can one specified masked or overcomplete decoder improve the complete moment budget?",
+          "id": "complex-rank-shape-decoder",
+          "question": "Can a decoder deliver the local paid mass in fewer, larger-rank children (block frame climbs instead of rank-1 to rank-3 steps)?",
           "starting_points": [
+            "research/complex-local-word-ceiling/README.md",
             "research/complex-decoder-field-extension-seed44/README.md",
             "research/complex-frame-pair-decoders/README.md"
           ],
           "methods": [
-            "Synthesize a decoder with exact coefficients and fully priced helper endpoints.",
-            "Bound the best possible budget for a fixed support alphabet before synthesis."
+            "Find one exact small decoding identity whose frame path climbs in blocks, and price its complete per-call profile.",
+            "Bound the best effective child rank achievable for one fixed support alphabet, including copies, frames and restoration."
           ],
-          "acceptance_gate": "Change an assumption of the eight-term all-pairs bound and count all copied information, frames and restoration.",
+          "acceptance_gate": "A per-call local profile, with all copied information, frames and restoration counted, whose ceiling exceeds the selected word's by at least 5%; masked or overcomplete supports must change an assumption of the eight-term all-pairs bound.",
           "first_step": {
             "command": [
               "python3",
               "-B",
-              "research/complex-decoder-field-extension-seed44/verify.py"
+              "research/complex-local-word-ceiling/verify.py"
             ],
-            "expected": "PASS_COMPLEX_DECODER_FIELD_EXTENSION_S44",
-            "inspect": "Locate the excluded classes: masked identities, at least nine terms, and deeper punctures.",
-            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+            "expected": "PASS_COMPLEX_LOCAL_WORD_CEILING",
+            "inspect": "Read the selected word's per-call local profile, its packing ceiling and the lever table; run levers.py for the ideal budget of the lever you target.",
+            "scope": "Positive control and planning budget only; this is not a new construction or full cold replay."
           },
-          "first_experiment": "Choose one finite support alphabet and test exact decoding constraints before building a whole network.",
-          "bottleneck_link": "A cheaper fully realized decoder could increase deficit or lower recursive cost on the binding complex side.",
+          "first_experiment": "Before any synthesis, write the candidate per-call local profile (and centre charge / unpaid coordinates if changed) and screen it with ceiling.ceiling(); reject it if even the ideal ceiling does not beat the selected word's by your stated margin. Ideal budget: rank-16 delivery is 2.31x (levers.py).",
+          "bottleneck_link": "Rank-1 children are about half of recursive cost; the selected word's effective child rank is about 3.9. Larger-rank delivery lowers recursive cost per unit of paid mass.",
           "allowed_variations": [
-            "Select a specific masked or overcomplete family with exact labels and supports."
+            "One masked, overcomplete or block decoder family with exact labels and supports.",
+            "A scoped lower bound on effective rank for one alphabet."
           ],
           "scope_change_triggers": [
-            "Repeating the exact eight-term all-pairs search inside its proved scope."
+            "Repacking idle remainders of an unchanged word (covered by the packing ceiling).",
+            "Repeating the eight-term all-pairs search inside its proved scope."
           ],
           "overlap_terms": [
+            "rank shape",
+            "block climb",
             "masked decoder",
             "overcomplete",
-            "eight-term"
+            "effective rank"
           ]
         },
         {
           "id": "complex-new-helper-inventory",
           "question": "Can a new local cost interface change the deficit-to-recursive-cost ratio beyond current packing?",
           "starting_points": [
+            "research/complex-local-word-ceiling/README.md",
             "research/heterogeneous-owner-assembly/README.md",
             "certificates/selected-result.json"
           ],
@@ -134,19 +140,19 @@
             "Propose a changed helper inventory and derive an optimistic exact moment.",
             "Design a small completed instance and independently verify its endpoint and rank bill."
           ],
-          "acceptance_gate": "A new physically realizable contract, not another mixture already covered by the frozen catalogue.",
+          "acceptance_gate": "A new physically realizable contract outside the frozen catalogue whose per-call profile, screened with ceiling.ceiling(), beats the selected word's packing ceiling; a word with a lower ceiling is only a packing aid and must be labelled so.",
           "first_step": {
             "command": [
               "python3",
               "-B",
-              "scripts/research_baseline.py"
+              "research/complex-local-word-ceiling/verify.py"
             ],
-            "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
-            "inspect": "Read the frozen catalogue bound exclusions and select one genuinely different helper endpoint inventory.",
-            "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+            "expected": "PASS_COMPLEX_LOCAL_WORD_CEILING",
+            "inspect": "Read the selected word's per-call local profile, its packing ceiling and the lever table; run levers.py for the ideal budget of the lever you target.",
+            "scope": "Positive control and planning budget only; this is not a new construction or full cold replay."
           },
-          "first_experiment": "Write the complete optimistic child histogram and reject it immediately if even the relaxation has insufficient headroom.",
-          "bottleneck_link": "Helper inventory changes can improve the moment; repacking a covered cost interface cannot evade its scoped bound.",
+          "first_experiment": "Before any synthesis, write the candidate per-call local profile (and centre charge / unpaid coordinates if changed) and screen it with ceiling.ceiling(); reject it if even the ideal ceiling does not beat the selected word's by your stated margin.",
+          "bottleneck_link": "Packing of the selected word is capped at +0.87% (ceiling model); only a lower local excess spend or a changed coverage law raises the cap.",
           "allowed_variations": [
             "Narrow to one changed boundary or helper type with explicit counts."
           ],
@@ -163,8 +169,86 @@
     },
     {
       "id": "recursive-interfaces",
-      "weight": 15,
+      "weight": 20,
       "tasks": [
+        {
+          "id": "centre-path-sharing",
+          "question": "Can the 64-per-call centre path (eight rank-8 COPY/ERASE totals through the private temporary) be shared across calls or shrunk?",
+          "starting_points": [
+            "research/complex-local-word-ceiling/README.md",
+            "research/split-centres-global/proofs/PR386-BIT-GEOMETRY.txt",
+            "certificates/selected-result.json"
+          ],
+          "methods": [
+            "Derive a fully charged favorable relaxation for sharing one centre path across k calls, including restoration, hosting and precision.",
+            "Prove a lower bound on copied information per call for the selected decoder contract."
+          ],
+          "acceptance_gate": "Show the changed centre charge and copy profile per call with every added restoration or hosting cost charged, and its ceiling via ceiling.ceiling(centre=...).",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "research/complex-local-word-ceiling/verify.py"
+            ],
+            "expected": "PASS_COMPLEX_LOCAL_WORD_CEILING",
+            "inspect": "Read the selected word's per-call local profile, its packing ceiling and the lever table; run levers.py for the ideal budget of the lever you target.",
+            "scope": "Positive control and planning budget only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Write the per-call centre charge and copy children for sharing across k = 2 calls, charge the sharing overhead, and screen it; stop this route if even the ideal sharing gains under 10%. Ideal budgets: free 2.80x, shared by two 1.90x (levers.py).",
+          "bottleneck_link": "The centre path consumes 64 of about 99.6 unpaid coordinates per call, i.e. about 64% of the raw deficit.",
+          "allowed_variations": [
+            "One sharing pattern across a fixed number of calls.",
+            "One reduced copied-total contract for the existing decoder."
+          ],
+          "scope_change_triggers": [
+            "Removing copies without a replacement contract for the decoder's copied totals."
+          ],
+          "overlap_terms": [
+            "centre path",
+            "copied totals",
+            "private temporary",
+            "shared centre",
+            "batching"
+          ]
+        },
+        {
+          "id": "coverage-law-change",
+          "question": "Can a template or call contract leave two or more unpaid coordinates per live family?",
+          "starting_points": [
+            "research/complex-local-word-ceiling/README.md",
+            "research/idle-axis-hosting/PROOF.md",
+            "certificates/selected-result.json"
+          ],
+          "methods": [
+            "State a replacement for the coverage identity (mass = 72W + 64N) and the contract change that realizes it, with its implementation cost.",
+            "Find an obstruction: show which data-endpoint obligation forces exactly one unpaid coordinate in the current template."
+          ],
+          "acceptance_gate": "An explicit replacement identity, verified on a small complete instance with dirty inputs, priced with ceiling.ceiling(unpaid=...).",
+          "first_step": {
+            "command": [
+              "python3",
+              "-B",
+              "research/complex-local-word-ceiling/verify.py"
+            ],
+            "expected": "PASS_COMPLEX_LOCAL_WORD_CEILING",
+            "inspect": "Read the selected word's per-call local profile, its packing ceiling and the lever table; run levers.py for the ideal budget of the lever you target.",
+            "scope": "Positive control and planning budget only; this is not a new construction or full cold replay."
+          },
+          "first_experiment": "Explain where the single unpaid coordinate per family comes from in the hosted template; propose one change and price it. Ideal budget: two unpaid coordinates per family is 3.77x (levers.py).",
+          "bottleneck_link": "The deficit is one coordinate per family minus the centre charge; doubling unpaid coordinates per family scales it directly.",
+          "allowed_variations": [
+            "One template change or one endpoint-contract change."
+          ],
+          "scope_change_triggers": [
+            "Counting a coordinate as unpaid while leaving it unadvanced in the data endpoint."
+          ],
+          "overlap_terms": [
+            "coverage identity",
+            "unpaid coordinate",
+            "deficit law",
+            "W - 64N"
+          ]
+        },
         {
           "id": "persistent-boundary",
           "question": "Can a specified pair of consecutive calls eliminate a restoration that the next call reconstructs?",
@@ -396,7 +480,7 @@
     },
     {
       "id": "verifier-engineering",
-      "weight": 10,
+      "weight": 8,
       "tasks": [
         {
           "id": "replay-runtime",
@@ -554,20 +638,21 @@
     },
     {
       "id": "incumbent-optimization",
-      "weight": 5,
+      "weight": 2,
       "tasks": [
         {
           "id": "selected-packing",
           "question": "Is there a genuinely unsearched, explicitly bounded improvement to the selected packing?",
           "starting_points": [
             "certificates/selected-result.json",
-            "research/heterogeneous-owner-assembly/README.md"
+            "research/heterogeneous-owner-assembly/README.md",
+            "research/complex-local-word-ceiling/README.md"
           ],
           "methods": [
             "Search a named unclaimed canonical candidate domain with a reproducible partition.",
             "Prove a stronger scoped relaxation or exact optimum for one named residual subproblem."
           ],
-          "acceptance_gate": "Check live PR overlap first, price both suppliers and distinguish a search best from an optimum.",
+          "acceptance_gate": "Check live PR overlap first, price both suppliers and distinguish a search best from an optimum. Report the word's packing cap from ceiling.ceiling() and the fraction of it realized; label packing gains as such.",
           "first_step": {
             "command": [
               "python3",

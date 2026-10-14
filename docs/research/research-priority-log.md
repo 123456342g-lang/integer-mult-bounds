@@ -84,6 +84,93 @@ helper failure, the next PR reconciliation, or a new mathematical bottleneck.
 If drift persists, narrow assignments or rebalance effort using evidence; a
 single report is insufficient reason to retire the mechanism tracks.
 
+## Revision 3 — 2026-10-13: aim complex and interface effort at the structural levers
+
+**Exact base and selected source record:** `dadfea6e8a78ff6ba901705f87532a71c6f5bbb8`, unchanged #1094
+record (`certificates/selected-result.json`, κ 0.001672660197076918, complex side binding).
+
+**Evidence links and verification status.** The evidence comes from **open, unreviewed** PRs by the same
+contributor. Their arithmetic is exact and reproducible, but no maintainer has reviewed them yet.
+
+- [#1240](https://github.com/CrocSwap/integer-mult-bounds/pull/1240) (`research/complex-local-word-ceiling`):
+  under PR1012's coverage identity (also open) and the halving guard, any hosting, owner or idle repacking of
+  the selected local word has a < 0.001690054109089, so κ < 0.0016872 (+0.869%). At a = 1/99, the word's
+  excess spend is 20.4 times the per-call budget. `levers.py` gives the one-at-a-time ideal budgets: centre
+  path free 2.80×, shared by two calls 1.90×, rank-16 children 2.31×, two unpaid coordinates per family
+  3.77×, centre free plus rank-16 6.51× (κ cap 0.0109).
+- [#1264](https://github.com/CrocSwap/integer-mult-bounds/pull/1264): 14 of the 30 open claims above the
+  selected κ (pinned by blob) use nine local words. None can pass κ < 0.0016873148 by repacking. The leading
+  #1148 line sits on words whose caps are 0.17–0.21% *below* the selected word's, and leads by packing closer.
+  16 claims could not be screened.
+- The live board shows about 30 near-identical packing claims clustered within 0.2% of the record, and
+  workflow feedback ([#1200](https://github.com/CrocSwap/integer-mult-bounds/discussions/1200)) reports that
+  the generic mechanism cards gave no quantitative target.
+
+**Current bottleneck; what changed.** The binding complex budget is about D/E. D is about 35.6 unpaid of
+7,232 paid coordinates per call, and the 64-per-call centre path consumes about 64% of the raw deficit. E has
+an effective child rank of about 3.9. Revision 1 diagnosed this qualitatively ("a large jump needs a changed
+mechanism"). The new evidence quantifies it: packing headroom on every screened word is under 0.9%, while the
+structural levers are worth integer multiples. It also explains why the queue keeps clustering: the generic
+cards do not say what a mechanism must beat.
+
+**Track/card decisions.**
+
+- *Complex mechanisms:* **replace** `complex-masked-decoder` with `complex-rank-shape-decoder` (larger-rank
+  delivery; masked and overcomplete supports remain allowed methods). **Narrow** `complex-new-helper-inventory`
+  with a ceiling screen. Weight unchanged at 20.
+- *Recursive interfaces:* **expand** with `centre-path-sharing` and `coverage-law-change`. Keep
+  `persistent-boundary` and `connector-alphabet-change`. Weight 15 → 20.
+- *Incumbent optimization:* **narrow**. Claims must report their packing cap and realized fraction. Weight 5 → 2.
+- *Verifier engineering:* **continue** at reduced weight, 10 → 8.
+- Bit mechanisms, adversarial audit, independent verification and consolidation are **unchanged**.
+- `autoresearch.md` asks every new complex κ claim to report its packing cap.
+
+**Old allocation → new allocation:**
+
+| Track | Old | New |
+|---|---:|---:|
+| Bit mechanisms | 20 | 20 |
+| Complex mechanisms | 20 | 20 |
+| Recursive interfaces | 15 | 20 |
+| Adversarial audit | 15 | 15 |
+| Independent verification | 10 | 10 |
+| Verifier engineering | 10 | 8 |
+| Consolidation | 5 | 5 |
+| Incumbent optimization | 5 | 2 |
+
+**Paused scope and evidence that would reopen it.**
+
+- No track is paused. `complex-masked-decoder` is retired as a separate card, and its methods continue
+  under the rank-shape card. Reopen it if a masked decoder is found to help through a route other than child
+  rank (for example, deficit).
+- Incumbent optimization returns to 5 or more if #1240 or #1264 fails review, or if a reviewed word is found
+  whose cap is well above its realized packing.
+
+**Next bounded experiments and stop rules.**
+
+- *Centre path:* a fully charged relaxation of sharing one centre path across two calls. Stop the card if the
+  ideal (1.90×) shrinks below a 10% gain once restoration and hosting are charged.
+- *Rank shape:* one exact small identity with block frame climbs, screened with `ceiling.ceiling()`. Stop a
+  candidate whose ideal ceiling does not beat the selected word's by 5%.
+- *Coverage law:* explain the source of the single unpaid coordinate per family. Stop if it is forced by the
+  data endpoint contract, and record that as an obstruction.
+
+**Uncertainties and useful work preserved.**
+
+- The lever multipliers are one-at-a-time favorable relaxations. They omit the cost of realizing each lever.
+- The ceiling relies on PR1012's coverage identity, which is itself open.
+- If review finds an error in #1240 or #1264, revert to the revision-2 cards.
+- The bit side is unchanged and must advance too before κ > .01. Its levers are not quantified in this revision.
+- Packing results remain valuable as realizability evidence. They are now labelled relative to their cap.
+
+**Next review trigger:**
+
+- review of #1240, #1264 or PR1012;
+- the first fully charged centre-path or rank-shape result, positive or negative;
+- or several sessions on the new cards.
+
+Until then, review roughly daily during the influx.
+
 ## Template for the next decision
 
 ```text
