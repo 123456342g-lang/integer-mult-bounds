@@ -166,7 +166,7 @@ def main():
             'nonempty-blocks' if not ne else 'W' if not W else 'G' if not Gk else 'D'
         ok = reason == expect
         tally[(reason, ok)] = tally.get((reason, ok), 0) + 1
-        if name[:6] != 'random' or not ok:
+        if not name.startswith(('random', 'allframes')) or not ok:
             print(f"{'AGREE' if ok else 'DISAGREE'} {name}: PR1650 {reason}; prose (blocks, W, G, D) = {ne, W, Gk, Dk}")
         if not ok:
             sys.exit(1)
