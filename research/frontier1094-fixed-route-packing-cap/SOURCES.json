@@ -39,6 +39,12 @@
       "sha256": "c5916ff312678f12aba403847643fbbc29f643acec60bdf836fa56cd3e8251fa"
     },
     {
+      "path": "research/complex-t16-rare-pattern-exchanges/data/OWNERS.json.gz",
+      "usage": "input",
+      "git_blob": "d3ba33d7e703a3229d9fb8a360f69d2f318bbb70",
+      "sha256": "87902c528dfab7d503dcf8a784260e3ab6fb7424c418a1820f7261f25be7b6bc"
+    },
+    {
       "path": "research/complex-t16-rare-pattern-exchanges/data/PLAN.json",
       "usage": "input",
       "git_blob": "f1bec76e8e9b7a1f09c1e05cb6cce973b6e59f1b",

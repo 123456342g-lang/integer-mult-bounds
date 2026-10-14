@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Exact fixed-route rank-48 ceiling, independently of predecessor ceiling.py.
 
-Apache-2.0. Josie Elliston, with substantial OpenAI Codex assistance.
+Apache-2.0. Josie Elliston, with substantial AI assistance (OpenAI Codex draft; Claude review and fixes).
 """
 import copy
+import gzip
 import hashlib
 import json
 import sys
@@ -18,6 +19,7 @@ HERE = Path(__file__).resolve().parent
 ROUTE = 'research/direct-delivery504-global/inputs/data-base/work/complex-nine-native/DATA-PHASES.json'
 PLAN = 'research/complex-t16-rare-pattern-exchanges/data/PLAN.json'
 SPEC = 'research/complex-t16-rare-pattern-exchanges/data/SPEC.json'
+OWNERS = 'research/complex-t16-rare-pattern-exchanges/data/OWNERS.json.gz'
 HOSTING_PROOF = 'research/gauge44-slots-t16/hosting/PROOF.md'
 ARCHIVE = 'research/community-frontier1094-audit/selected-replay.tar.gz'
 MEMBER = 'candidate/strict/global/base/work/complex-nine-native/DATA-PHASES.json'
@@ -54,16 +56,19 @@ def sources():
     need(manifest['files'][ROUTE] == sha(route_bytes), 'route not pinned by selected manifest')
     need(manifest['files'][PLAN] == sha((ROOT/PLAN).read_bytes()), 'plan not pinned by selected manifest')
     need(manifest['files'][SPEC] == sha((ROOT/SPEC).read_bytes()), 'spec not pinned by selected manifest')
+    owners_bytes = (ROOT/OWNERS).read_bytes()
+    need(manifest['files'][OWNERS] == sha(owners_bytes), 'owner map not pinned by selected manifest')
     need(manifest['files'][HOSTING_PROOF] == sha((ROOT/HOSTING_PROOF).read_bytes()),
          'parent hosting proof not pinned by selected manifest')
     replay = read('research/community-frontier1094-audit/REPLAY.json')
     spec = read(SPEC)
     need(replay['spec_sha256'] == sha((ROOT/SPEC).read_bytes()), 'replay/spec binding')
     need(spec['data']['plan_sha256'] == sha((ROOT/PLAN).read_bytes()), 'spec/plan binding')
+    need(spec['data']['owners_sha256'] == sha(owners_bytes), 'spec/owner-map binding')
     with tarfile.open(ROOT / ARCHIVE, 'r:gz') as archive:
         member = archive.extractfile(MEMBER)
         need(member is not None and member.read() == route_bytes, 'selected archive route mismatch')
-    return selected, replay, json.loads(route_bytes), read(PLAN)
+    return selected, replay, json.loads(route_bytes), read(PLAN), json.loads(gzip.decompress(owners_bytes))
 
 
 def gf2_rank(vectors):
@@ -94,6 +99,53 @@ def route_ranks(route):
         need(dict(counts) == RANKS, 'route child inventory changed')
         total.update(counts)
     return dict(sorted(total.items()))
+
+
+def hosting(route, plan, owners, replay):
+    """Selected pending-child capacities are the route ranks; hosting is a prefix.
+
+    Every T16 pending-child group g = (owner replica, child, port) takes its
+    capacity C_g from the selected plan's window catalogue. Check C_g against
+    the route child rank, check that each hosted helper lies in its group's
+    window, that hosted offsets tile the prefix [0, U_g) with U_g <= C_g, and
+    that the remainders C_g - U_g reproduce the replay's idle profile.
+    """
+    rank = {(r['port'], i): c['rank'] for r in route['recipes']
+            for i, c in enumerate(r['idle_children'])}
+    windows = {}
+    for key, (capacity, times) in plan['windows'].items():
+        owner, child = map(int, key.split(','))
+        windows[owner, child] = capacity, set(times)
+    lift = plan['replica_lift']['replicas']
+    children = {child for _, child in windows}
+    need(set(windows) == {(o, c) for o in range(lift) for c in children}, 'window catalogue coverage')
+    for (owner, child), (capacity, _) in windows.items():
+        for port in range(route['ports']):
+            need(capacity == rank[port, child], 'window capacity differs from route rank')
+    need(all(rank[port, child] == 0 for port in range(route['ports'])
+             for child in range(len(route['recipes'][0]['idle_children'])) if child not in children),
+         'positive-rank route child missing from windows')
+    need(len(owners) == 144*480, 'selected owner-map size')
+    occupied = {}
+    for item in owners:
+        key = (item['owner_replica'], item['child'], item['port'])
+        need((key[0], key[1]) in windows and 0 <= key[2] < route['ports'], 'owner outside catalogue')
+        need(item['time'] in windows[key[0], key[1]][1], 'hosted call outside window')
+        need(type(item['width']) is int and item['width'] > 0, 'hosted width')
+        occupied.setdefault(key, []).append((item['offset'], item['width']))
+    idle = Counter()
+    for (owner, child), (capacity, _) in windows.items():
+        for port in range(route['ports']):
+            prefix = 0
+            for offset, width in sorted(occupied.get((owner, child, port), [])):
+                need(offset == prefix, 'hosted offsets are not a disjoint prefix')
+                prefix += width
+            need(prefix <= capacity, 'hosted width exceeds child capacity')
+            if capacity > prefix:
+                idle[capacity-prefix] += 1
+    need(dict(idle) == {int(r): n for r, n in replay['idle_remainder_profile'].items()},
+         'capacity minus hosted prefix differs from replay idle profile')
+    return max(c for c, _ in windows.values()), len(windows)*route['ports']
 
 
 def profile(replay, plan):
@@ -200,8 +252,10 @@ def display(x):
     return f'{scaled//10**digits}.{scaled%10**digits:0{digits}d}'
 
 
-def result(selected, replay, route, plan):
+def result(selected, replay, route, plan, owners):
     ranks = route_ranks(route)
+    max_capacity, groups = hosting(route, plan, owners, replay)
+    need(max_capacity == max(ranks) == 48, 'maximal pending-child capacity')
     calls, live, local, mass, idle = profile(replay, plan)
     low, high = bracket(local, calls, live, mass, 48)
     old_low, old_high = bracket(local, calls, live, mass, 51)
@@ -221,6 +275,8 @@ def result(selected, replay, route, plan):
         'scope': 'Selected fixed 112-port data-route children and local word; PR1012 coverage; whole-helper hosting into existing children; retained balanced transfer. Relaxation only, no new kappa.',
         'route_sha256': sha((ROOT/ROUTE).read_bytes()),
         'route_rank_counts': {str(r): n for r, n in ranks.items()},
+        'pending_child_groups': groups,
+        'max_pending_child_capacity': max_capacity,
         'calls': calls, 'live_families': live,
         'local_per_call': {str(r): n for r, n in sorted(local.items())},
         'selected_idle': {str(r): n for r, n in sorted(idle.items())},
@@ -238,41 +294,46 @@ def result(selected, replay, route, plan):
     }
 
 
-def controls(replay, route, plan):
+def rejects(why, function, *args):
+    try:
+        function(*args)
+    except ValueError as exc:
+        need(why in str(exc), f'control rejected for wrong reason: {exc} (wanted {why})')
+    else:
+        raise ValueError('control accepted: ' + why)
+
+
+def controls(replay, route, plan, owners):
     wrong = copy.deepcopy(route)
     wrong['recipes'][0]['idle_children'][0]['rank'] += 1
-    try:
-        route_ranks(wrong)
-    except ValueError as exc:
-        need('rank/axes' in str(exc), 'wrong rank control reason')
-    else:
-        raise ValueError('rank mismatch accepted')
+    rejects('rank/axes', route_ranks, wrong)
     wrong = copy.deepcopy(route)
     child = next(c for c in wrong['recipes'][0]['idle_children'] if c['rank'] == 48)
     child['rank'] = 49
     child['orthogonal_axes'].append(1 << 1024)
-    try:
-        route_ranks(wrong)
-    except ValueError as exc:
-        need('inventory changed' in str(exc), 'rank-49 control rejected for wrong reason')
-    else:
-        raise ValueError('rank-49 route accepted')
-    wrong = copy.deepcopy(replay)
-    wrong['complex_profile']['1'] += 288
-    wrong['complex_profile']['2'] -= 144
-    try:
-        profile(wrong, plan)
-    except ValueError:
-        pass
-    else:
-        raise ValueError('mass-preserving local drift accepted')
+    rejects('inventory changed', route_ranks, wrong)
+    # Mass-preserving local-word drift, applied consistently to plan and replay
+    # so that the plan/replay binding passes and the local-word check must fire.
+    wrong_replay, wrong_plan = copy.deepcopy(replay), copy.deepcopy(plan)
+    for profile_ in (wrong_replay['complex_profile'], wrong_plan['profile']):
+        profile_['1'] += 288
+        profile_['2'] -= 144
+    rejects('local word changed', profile, wrong_replay, wrong_plan)
+    wrong = copy.deepcopy(plan)
+    key = next(k for k, (c, _) in wrong['windows'].items() if c == 48)
+    wrong['windows'][key][0] = 49
+    rejects('window capacity differs', hosting, route, wrong, owners, replay)
+    wrong = copy.deepcopy(owners)
+    item = next(i for i in wrong if i['offset'] > 0)
+    item['offset'] -= 1
+    rejects('disjoint prefix', hosting, route, plan, wrong, replay)
 
 
 def main():
     need(not sys.flags.optimize, 'run without -O')
-    selected, replay, route, plan = sources()
-    controls(replay, route, plan)
-    output = result(selected, replay, route, plan)
+    selected, replay, route, plan, owners = sources()
+    controls(replay, route, plan, owners)
+    output = result(selected, replay, route, plan, owners)
     encoded = (json.dumps(output, indent=2, sort_keys=True)+'\n').encode()
     path = HERE/'RESULT.json'
     if sys.argv[1:] == ['--write']:
@@ -281,7 +342,7 @@ def main():
         need(not sys.argv[1:], 'usage: verify.py [--write]')
         need(path.read_bytes() == encoded, 'RESULT.json differs from exact replay')
     print(output['status'], 'max_idle_rank=48', 'a_upper='+output['a_upper_decimal'],
-          'kappa_cap='+output['kappa_planning_upper_decimal'], 'controls=3')
+          'kappa_cap='+output['kappa_planning_upper_decimal'], 'controls=5')
 
 
 if __name__ == '__main__':

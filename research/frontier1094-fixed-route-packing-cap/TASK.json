@@ -46,11 +46,11 @@
   "scope_change_reason": "The selected-packing card allows an exact relaxation for a named residual problem. This fixes the data-route child inventory and proves a rank-48 cap, narrower than the predecessor rank-51 halving relaxation; it does not search for a new owner map.",
   "bottleneck_link": "The complex supplier binds the selected conditional result. The fixed-route cap leaves at most 0.395178% relative kappa headroom for owner packing of this word under the retained conversion, versus 0.86942% for the generic rank-51 relaxation.",
   "budget_minutes": 225,
-  "stop_rule": "Stop after source-binding the 112 route recipes, exact rank-48 and predecessor rank-51 root brackets, three negative controls, and package replay. Do not search another owner map.",
+  "stop_rule": "Stop after source-binding the 112 route recipes, exact rank-48 and predecessor rank-51 root brackets, five negative controls, and package replay. Do not search another owner map.",
   "outcome": "completed",
-  "evidence": "RESULT.json: all 112 route recipes have maximal child rank 48 (GF(2) rank recomputed); exact root a in (0.001682094870064,0.001682094870065); retained-transfer kappa cap 0.001679270178313; selected fraction of cap 99.606%; three controls. Source/archive/spec/plan chain checked.",
+  "evidence": "RESULT.json: all 112 route recipes have maximal child rank 48 (GF(2) rank recomputed); exact root a in (0.001682094870064,0.001682094870065); retained-transfer kappa cap 0.001679270178313; selected fraction of cap 99.606%; window capacities equal route ranks and selected owner offsets reproduce the replay idle profile; five controls. Source/archive/spec/plan/owner-map chain checked.",
   "author": "Josie Elliston",
-  "ai_assistance": "Substantial OpenAI Codex assistance in task refinement, proof analysis, verifier implementation and documentation. No independent human review.",
+  "ai_assistance": "Substantial AI assistance: OpenAI Codex (offline session 14) for task refinement, proof analysis, verifier implementation and documentation; Claude (Anthropic) for review, source-bound capacity/offset checks, control fixes and publication. No independent human review.",
   "open_questions": [
     {
       "question": "Can the fixed route's per-child capacities and helper widths sharpen the rank-48 mass cap?",

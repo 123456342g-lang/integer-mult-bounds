@@ -19,6 +19,8 @@
     "8": 8
   },
   "max_gain_over_selected_percent_decimal": "0.395177768158804506",
+  "max_pending_child_capacity": 48,
+  "pending_child_groups": 32256,
   "rank51_a_root_bracket": [
     "52814190909/31250000000000",
     "1690054109089/1000000000000000"
