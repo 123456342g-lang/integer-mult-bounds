@@ -58,8 +58,8 @@ python3 research/t74-k554-root-enclosure/extract_inputs.py --check     # optiona
 This checks one number per model and grid, plus the arithmetic that composes the profile. The following are taken as given:
 
 - the global profile and the per-call provider profiles (no replay of words, owners or hosting);
-- the moment model and the native, surcharge-free complex recurrence, from the PR552/PR559 review;
-- the outer reduction from b to κ, the fine source-prime padding and the ε → 1 transfer (see https://github.com/CrocSwap/integer-mult-bounds/pull/1797 for an audit of the PR1786 lemmas on a different supplier);
+- the moment model and the native, surcharge-free complex recurrence, from the review of CrocSwap/integer-mult-bounds#552 and CrocSwap/integer-mult-bounds#559;
+- the outer reduction from b to κ, the fine source-prime padding and the ε → 1 transfer (see https://github.com/CrocSwap/integer-mult-bounds/pull/1797 for an audit of the CrocSwap/integer-mult-bounds#1786 lemmas on a different supplier);
 - all inherited all-size/compiler, realization, hosting, precision/tape, exact-recovery, analytic and bit H1-H5 assumptions.
 
 It is a finite check of recorded endpoints, not a proof of any multiplication theorem.
@@ -68,11 +68,11 @@ It is a finite check of recorded endpoints, not a proof of any multiplication th
 
 The structured list is in [TASK.json](TASK.json).
 
-1. **Outer ledger of https://github.com/CrocSwap/integer-mult-bounds/pull/1928.** Does `outer/LEDGER.json` follow from the endpoint certified here, checked by code that does not import `outer/*.py`? This package certifies b only. A first step is to re-derive the slack list from `outer/RETUNED-SLACKS.md` and the PR1673 note and compare each slack exactly. Nothing blocks it.
+1. **Outer ledger of https://github.com/CrocSwap/integer-mult-bounds/pull/1928.** Does `outer/LEDGER.json` follow from the endpoint certified here, checked by code that does not import `outer/*.py`? This package certifies b only. A first step is to re-derive the slack list from `outer/RETUNED-SLACKS.md` and the CrocSwap/integer-mult-bounds#1673 note and compare each slack exactly. Nothing blocks it.
 2. **Profile against the emitted program.** Does the global profile equal the one emitted by the T74 hosted template and owner map? The seed78 emitted-ledger rebuild could be adapted to the two-provider layout (249 + 417 calls). The PR's template and owner archives are reproduced externally, so a maintainer replay capsule would make this cheap.
 
 ## Credit
 
-Supplier construction: mdumitrean (https://github.com/CrocSwap/integer-mult-bounds/pull/1625, pivot-566 kernel), Jeremy Kothe (https://github.com/CrocSwap/integer-mult-bounds/pull/1672 and the refinement chain to https://github.com/CrocSwap/integer-mult-bounds/pull/1928), Rohan Arun (https://github.com/CrocSwap/integer-mult-bounds/pull/1319, T74 fill) and the lineage credited in those PRs. Outer: Vlado Vojdanovski (https://github.com/CrocSwap/integer-mult-bounds/pull/1673) and chafreaky (https://github.com/CrocSwap/integer-mult-bounds/pull/1786). The moment definitions are from the PR552/PR559 review and `notes/three-stage-cover-assembly.tex`. The audit pattern follows Sagar Thakrar's frontier1094-emitted-ledger-seed78 and the selected-suppliers-de-diagnostic and pr1407-complex-moment-audit-seed39 packages.
+Supplier construction: mdumitrean (https://github.com/CrocSwap/integer-mult-bounds/pull/1625, pivot-566 kernel), Jeremy Kothe (https://github.com/CrocSwap/integer-mult-bounds/pull/1672 and the refinement chain to https://github.com/CrocSwap/integer-mult-bounds/pull/1928), Rohan Arun (https://github.com/CrocSwap/integer-mult-bounds/pull/1319, T74 fill) and the lineage credited in those PRs. Outer: Vlado Vojdanovski (https://github.com/CrocSwap/integer-mult-bounds/pull/1673) and chafreaky (https://github.com/CrocSwap/integer-mult-bounds/pull/1786). The moment definitions are from the review of CrocSwap/integer-mult-bounds#552 and CrocSwap/integer-mult-bounds#559 and `notes/three-stage-cover-assembly.tex`. The audit pattern follows Sagar Thakrar's frontier1094-emitted-ledger-seed78 and the selected-suppliers-de-diagnostic and pr1407-complex-moment-audit-seed39 packages.
 
 Prepared by Aaron Wang, with help from opencode. New material is Apache-2.0.
