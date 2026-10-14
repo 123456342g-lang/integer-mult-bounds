@@ -1,0 +1,2304 @@
+{
+  "scope": "68-PR bounded integration round #1863\u2013#1951. Scoped research incorporation is not full supplier admission; selected frontier unchanged.",
+  "pull_requests": [
+    {
+      "number": 1863,
+      "metadata": {
+        "number": 1863,
+        "title": "Research: shared-core dirty fan-in with rank-one deviations",
+        "author": {
+          "id": "U_kgDOCcbgOg",
+          "is_bot": false,
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "headRefOid": "1fa62d83ab02e21971cc8b9ef524e5a3ea584d58",
+        "isDraft": false
+      },
+      "reviewed_head": "1fa62d83ab02e21971cc8b9ef524e5a3ea584d58",
+      "current_head": "1fa62d83ab02e21971cc8b9ef524e5a3ea584d58",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/common-core-fanin-seed93550f9f"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
+      "closure": null,
+      "scope": "Exact shared-core dirty fan-in identity checked on245 F2 columns and integer fixtures, with rank48 core and three rank1 deviations. The >28 margin is under a declared local tariff charging row gathers as unit operations; no selected source seam, actual recursive/hosting or precision tariff is admitted.",
+      "ready_to_integrate": true,
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1863.json",
+        "research/community-efficient900-audit/checks/check-1863.json"
+      ]
+    },
+    {
+      "number": 1864,
+      "metadata": {
+        "number": 1864,
+        "title": "Selected binding coverage: which check pins each consumed source? (scoped adversarial audit, no new kappa)",
+        "author": {
+          "id": "MDQ6VXNlcjUwMzY2Njc2",
+          "is_bot": false,
+          "login": "navinor",
+          "name": "Aaron Wang"
+        },
+        "headRefOid": "3d54b62bee5e7e2027aaffd9a30c31adc3b84c0a",
+        "isDraft": false
+      },
+      "reviewed_head": "3d54b62bee5e7e2027aaffd9a30c31adc3b84c0a",
+      "current_head": "3d54b62bee5e7e2027aaffd9a30c31adc3b84c0a",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/selected-binding-coverage-seeda342"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
+      "closure": null,
+      "scope": "Pinned20-input binding inventory and seven production-check mutation fixtures distinguish trusted anchors from enforced payload hashes. Consistent manifest/payload mutation passes the current fast checker. Literal-path audit is scoped, not complete dynamic dependency analysis or a mathematical supplier replay.",
+      "ready_to_integrate": true,
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1864.json",
+        "research/community-efficient900-audit/checks/check-1864.json"
+      ]
+    },
+    {
+      "number": 1866,
+      "metadata": {
+        "number": 1866,
+        "title": "Research: exact heterogeneous rank-six block tensor",
+        "author": {
+          "id": "U_kgDOCcbgOg",
+          "is_bot": false,
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "headRefOid": "7d22d1d51eb6c0bc040f8181b6c5f83e051fb234",
+        "isDraft": false
+      },
+      "reviewed_head": "7d22d1d51eb6c0bc040f8181b6c5f83e051fb234",
+      "current_head": "7d22d1d51eb6c0bc040f8181b6c5f83e051fb234",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/complex-mixed-rank6-block-seedc8d6"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
+      "closure": null,
+      "scope": "Six-atom tensor identity and slice-space argument prove exact rank6; interval pricing gives hypothetical135/284 block thresholds. Source-bound phaseA has no direct rank3 climb placement. Dirty updates are algebraic, with no compiled child, full cost or supplier claim.",
+      "ready_to_integrate": true,
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1866.json",
+        "research/community-efficient900-audit/checks/check-1866.json"
+      ]
+    },
+    {
+      "number": 1867,
+      "metadata": {
+        "number": 1867,
+        "title": "Prove H4 block minrank 15 and root-linear COPY floor 52",
+        "author": {
+          "id": "U_kgDOBwp4BA",
+          "is_bot": false,
+          "login": "jmbarrancoml",
+          "name": "Jose Manuel"
+        },
+        "headRefOid": "862173af2784fc53a6c658a8865df4e15a6163b8",
+        "isDraft": false
+      },
+      "reviewed_head": "862173af2784fc53a6c658a8865df4e15a6163b8",
+      "current_head": "862173af2784fc53a6c658a8865df4e15a6163b8",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/h4-root-linear-copy-floor"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
+      "closure": null,
+      "scope": "Exact H4 geometry and5280 support witnesses plus written idempotent/Hadamard arguments prove block fitting rank15k over every field. Arbitrary root-linear factors give COPY>=52; the one-unpaid halving template implies a<.001. External-factor cancellation and changed coverage remain outside scope.",
+      "ready_to_integrate": true,
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1867.json",
+        "research/community-efficient900-audit/checks/check-1867.json"
+      ]
+    },
+    {
+      "number": 1868,
+      "metadata": {
+        "number": 1868,
+        "title": "Research: twisted helper contract absorbs three R439 helper-star restorations into A (10,492 -> 10,489 on PR1188's word; no new kappa)",
+        "author": {
+          "id": "MDQ6VXNlcjE4NjIyMjg4",
+          "is_bot": false,
+          "login": "thakrarsagar",
+          "name": ""
+        },
+        "headRefOid": "6b222d01fee072bcd3a680e6a96ae7d22e13bcac",
+        "isDraft": false
+      },
+      "reviewed_head": "6b222d01fee072bcd3a680e6a96ae7d22e13bcac",
+      "current_head": "6b222d01fee072bcd3a680e6a96ae7d22e13bcac",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1868.json",
+        "research/community-efficient900-audit/checks/check-1868.json"
+      ]
+    },
+    {
+      "number": 1870,
+      "metadata": {
+        "number": 1870,
+        "title": "Research: exact S3 two-target no-sharing census",
+        "author": {
+          "id": "U_kgDOCcbgOg",
+          "is_bot": false,
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "headRefOid": "538d194e69420a6a773612e0b5ad0c94575f8aaa",
+        "isDraft": false
+      },
+      "reviewed_head": "538d194e69420a6a773612e0b5ad0c94575f8aaa",
+      "current_head": "538d194e69420a6a773612e0b5ad0c94575f8aaa",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/bit-s3-two-target-census-seed36501"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
+      "closure": null,
+      "scope": "Complete13664-state radius5 ball and literal replay of every canonical path prove all36 S3 two-target minima equal their separate geodesic bills. Includes scalar GL2 mixing by augmentation normalization; no statement for extra roles or address alphabets.",
+      "ready_to_integrate": true,
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1870.json",
+        "research/community-efficient900-audit/checks/check-1870.json"
+      ]
+    },
+    {
+      "number": 1872,
+      "metadata": {
+        "number": 1872,
+        "title": "Research: reversible shared rank-one helper across three calls",
+        "author": {
+          "id": "U_kgDOCcbgOg",
+          "is_bot": false,
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "headRefOid": "626ce207ec92a76f70a84843fe4ce3c39f67899d",
+        "isDraft": false
+      },
+      "reviewed_head": "626ce207ec92a76f70a84843fe4ce3c39f67899d",
+      "current_head": "626ce207ec92a76f70a84843fe4ce3c39f67899d",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/complex-shared-product-triple-seed5a78"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
+      "closure": null,
+      "scope": "Exact rank4 joint tensor with five compute/cleanup children replaces six separate children in the explicit clean-helper interface. Rational dirty-target/inverse fixtures and764/765/766 favorable profile thresholds pass. Clean helper availability, matching source operands and full interface tariff remain unestablished.",
+      "ready_to_integrate": true,
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1872.json",
+        "research/community-efficient900-audit/checks/check-1872.json"
+      ]
+    },
+    {
+      "number": 1873,
+      "metadata": {
+        "number": 1873,
+        "title": "Research: exact same-call three-role cycle census on selected T16 map",
+        "author": {
+          "id": "U_kgDOCcbgOg",
+          "is_bot": false,
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "headRefOid": "08f1eaf5946f57de0e126e82b5e0432564cca4e0",
+        "isDraft": false
+      },
+      "reviewed_head": "08f1eaf5946f57de0e126e82b5e0432564cca4e0",
+      "current_head": "08f1eaf5946f57de0e126e82b5e0432564cca4e0",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1873.json",
+        "research/community-efficient900-audit/checks/check-1873.json"
+      ]
+    },
+    {
+      "number": 1874,
+      "metadata": {
+        "number": 1874,
+        "title": "Tooling: 2.50x faster complete PR589 hosted audit with exact digest",
+        "author": {
+          "id": "U_kgDOD0goHQ",
+          "is_bot": false,
+          "login": "mtpsl",
+          "name": ""
+        },
+        "headRefOid": "266d01e17f9a2537cb94590193129fc960d01dc4",
+        "isDraft": false
+      },
+      "reviewed_head": "266d01e17f9a2537cb94590193129fc960d01dc4",
+      "current_head": "266d01e17f9a2537cb94590193129fc960d01dc4",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1874.json",
+        "research/community-efficient900-audit/checks/check-1874.json"
+      ]
+    },
+    {
+      "number": 1875,
+      "metadata": {
+        "number": 1875,
+        "title": "Conditional \u03ba = 0.0016797549561255445213356709939207025769983114385025802954603275201628645482603256388263056561\u2026: supplier endpoint recertified to 1e-300 with 1e-310 slacks (+6.56e-91 over PR1839)",
+        "author": {
+          "id": "MDQ6VXNlcjExNjU5ODM5",
+          "is_bot": false,
+          "login": "rohanarun",
+          "name": ""
+        },
+        "headRefOid": "bb40dfc8e155d0b4daad1d910ba3ee751669b52c",
+        "isDraft": false
+      },
+      "reviewed_head": "bb40dfc8e155d0b4daad1d910ba3ee751669b52c",
+      "current_head": "bb40dfc8e155d0b4daad1d910ba3ee751669b52c",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1875.json"
+      ]
+    },
+    {
+      "number": 1876,
+      "metadata": {
+        "number": 1876,
+        "title": "Conditional kappa: verified 400-digit refinement over PR1875 (+6.06686e-301)",
+        "author": {
+          "id": "MDQ6VXNlcjExNjU5ODM5",
+          "is_bot": false,
+          "login": "rohanarun",
+          "name": ""
+        },
+        "headRefOid": "6a442373e6127b7e0985d277726bcfd9a16a1f36",
+        "isDraft": false
+      },
+      "reviewed_head": "6a442373e6127b7e0985d277726bcfd9a16a1f36",
+      "current_head": "6a442373e6127b7e0985d277726bcfd9a16a1f36",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1876.json"
+      ]
+    },
+    {
+      "number": 1877,
+      "metadata": {
+        "number": 1877,
+        "title": "Source-query encoder support tradeoff and fixed-frame obstruction",
+        "author": {
+          "id": "MDQ6VXNlcjQ0MDA1Mjc=",
+          "is_bot": false,
+          "login": "chafreaky",
+          "name": "chafreaky"
+        },
+        "headRefOid": "6d455d2d71eb35ecf8e562711e5f719b994fe3f3",
+        "isDraft": false
+      },
+      "reviewed_head": "6d455d2d71eb35ecf8e562711e5f719b994fe3f3",
+      "current_head": "6d455d2d71eb35ecf8e562711e5f719b994fe3f3",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1877.json",
+        "research/community-efficient900-audit/checks/check-1877.json"
+      ]
+    },
+    {
+      "number": 1878,
+      "metadata": {
+        "number": 1878,
+        "title": "Research: Cartesian source-destination grid cost screen",
+        "author": {
+          "id": "U_kgDOCcbgOg",
+          "is_bot": false,
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "headRefOid": "72804aaceac1a62a1636ee329330a13b9004ac96",
+        "isDraft": false
+      },
+      "reviewed_head": "72804aaceac1a62a1636ee329330a13b9004ac96",
+      "current_head": "72804aaceac1a62a1636ee329330a13b9004ac96",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/complex-cartesian-grid-screen-seed506af"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
+      "closure": null,
+      "scope": "Sparse block-product identity and exact99th-root screen show less than5% local-work reduction for the declared generic width-r child at r<=51,a<=1/99; first qualifying width161. No alternative tensor algorithm or actual selected-grid placement is excluded.",
+      "ready_to_integrate": true,
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1878.json",
+        "research/community-efficient900-audit/checks/check-1878.json"
+      ]
+    },
+    {
+      "number": 1880,
+      "metadata": {
+        "number": 1880,
+        "title": "joint-dual-replay-fast: opt-in adapter removing the joint-dual replay's per-output triple scans (1.74x replay stage, identical checks)",
+        "author": {
+          "id": "MDQ6VXNlcjUwMzY2Njc2",
+          "is_bot": false,
+          "login": "navinor",
+          "name": "Aaron Wang"
+        },
+        "headRefOid": "f4e150e4222ce4b4418e66874c6363c43987c8d1",
+        "isDraft": false
+      },
+      "reviewed_head": "f4e150e4222ce4b4418e66874c6363c43987c8d1",
+      "current_head": "f4e150e4222ce4b4418e66874c6363c43987c8d1",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1880.json"
+      ]
+    },
+    {
+      "number": 1881,
+      "metadata": {
+        "number": 1881,
+        "title": "Research: exact four-call floor for a D8 rotation/inverse pair",
+        "author": {
+          "id": "U_kgDOCcbgOg",
+          "is_bot": false,
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "headRefOid": "5a51deaaab2746d42eddb454bbb968bda3af02cc",
+        "isDraft": false
+      },
+      "reviewed_head": "5a51deaaab2746d42eddb454bbb968bda3af02cc",
+      "current_head": "5a51deaaab2746d42eddb454bbb968bda3af02cc",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/d8-rotation-pair-seedff568"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
+      "closure": null,
+      "scope": "Both rank-one search and independent full group-algebra matrix replay exclude all1885 words through length3; direct D8 inverse-rotation pair attains4. Regular-representation rank bound3 is correctly distinguished from the exhaustive stronger result. Two-role reflection alphabet only.",
+      "ready_to_integrate": true,
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1881.json",
+        "research/community-efficient900-audit/checks/check-1881.json"
+      ]
+    },
+    {
+      "number": 1882,
+      "metadata": {
+        "number": 1882,
+        "title": "Research: dirty auxiliary registers do not save in the two-register m=3 bit model (no new kappa)",
+        "author": {
+          "id": "MDQ6VXNlcjM2MTI4NTc=",
+          "is_bot": false,
+          "login": "waynenilsen",
+          "name": "Wayne Nilsen"
+        },
+        "headRefOid": "a9c146e2919c82065e157b3e9bc050f38ac816db",
+        "isDraft": false
+      },
+      "reviewed_head": "a9c146e2919c82065e157b3e9bc050f38ac816db",
+      "current_head": "a9c146e2919c82065e157b3e9bc050f38ac816db",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1882.json",
+        "research/community-efficient900-audit/checks/check-1882.json"
+      ]
+    },
+    {
+      "number": 1887,
+      "metadata": {
+        "number": 1887,
+        "title": "Research: fixed-port two-projection connector with 10 frame XORs",
+        "author": {
+          "id": "U_kgDOCcbgOg",
+          "is_bot": false,
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "headRefOid": "025d4fcd87f1b6ea01aa1c52721f8f46389aacce",
+        "isDraft": false
+      },
+      "reviewed_head": "025d4fcd87f1b6ea01aa1c52721f8f46389aacce",
+      "current_head": "025d4fcd87f1b6ea01aa1c52721f8f46389aacce",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1887.json",
+        "research/community-efficient900-audit/checks/check-1887.json"
+      ]
+    },
+    {
+      "number": 1888,
+      "metadata": {
+        "number": 1888,
+        "title": "Research: sharp mixed-rank centre-sharing overhead limits",
+        "author": {
+          "id": "MDQ6VXNlcjU2NTI3MTY=",
+          "is_bot": false,
+          "login": "RossRichardson",
+          "name": "Ross Richardson"
+        },
+        "headRefOid": "9c0fd1d20d33353018a508fbc84e4189525c593c",
+        "isDraft": false
+      },
+      "reviewed_head": "9c0fd1d20d33353018a508fbc84e4189525c593c",
+      "current_head": "9c0fd1d20d33353018a508fbc84e4189525c593c",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1888.json",
+        "research/community-efficient900-audit/checks/check-1888.json"
+      ]
+    },
+    {
+      "number": 1889,
+      "metadata": {
+        "number": 1889,
+        "title": "Audit: paired-plane binary factors do not establish the scalar endpoint",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "5f05652c7dc7f51555ddb59b716000199a72c0ff",
+        "isDraft": false
+      },
+      "reviewed_head": "5f05652c7dc7f51555ddb59b716000199a72c0ff",
+      "current_head": "5f05652c7dc7f51555ddb59b716000199a72c0ff",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/paired-plane-scalar-mask-obstruction"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
+      "closure": null,
+      "scope": "All12544 binary identities retained as positive controls;224 scalar columns and explicit coefficient5 witness disprove literal scalar-plane interpretation. Parity forces6608 forbidden cross-entries for every parity-preserving integral lift. Does not refute binary/translation identities or exclude rational/operator-valued replacements.",
+      "ready_to_integrate": true,
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1889.json",
+        "research/community-efficient900-audit/checks/check-1889.json"
+      ]
+    },
+    {
+      "number": 1891,
+      "metadata": {
+        "number": 1891,
+        "title": "Reject noncanonical replay input paths before planning",
+        "author": {
+          "id": "U_kgDOFDLgvw",
+          "is_bot": false,
+          "login": "woklerx",
+          "name": ""
+        },
+        "headRefOid": "8b93e9e1b60dc73768ddf4006fcff67708a5453b",
+        "isDraft": false
+      },
+      "reviewed_head": "8b93e9e1b60dc73768ddf4006fcff67708a5453b",
+      "current_head": "8b93e9e1b60dc73768ddf4006fcff67708a5453b",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1891.json",
+        "research/community-efficient900-audit/checks/check-1891-initial.json"
+      ]
+    },
+    {
+      "number": 1892,
+      "metadata": {
+        "number": 1892,
+        "title": "Independent audit: exact rational shear-orbit interval oracle",
+        "author": {
+          "id": "U_kgDOFDLgvw",
+          "is_bot": false,
+          "login": "woklerx",
+          "name": ""
+        },
+        "headRefOid": "bcc1b9a37460a15fb4aa611957ed9f6842eb6da2",
+        "isDraft": false
+      },
+      "reviewed_head": "bcc1b9a37460a15fb4aa611957ed9f6842eb6da2",
+      "current_head": "bcc1b9a37460a15fb4aa611957ed9f6842eb6da2",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1892.json",
+        "research/community-efficient900-audit/checks/check-1892.json"
+      ]
+    },
+    {
+      "number": 1893,
+      "metadata": {
+        "number": 1893,
+        "title": "Independent audit: reproduce idle stability caps with integer radicals",
+        "author": {
+          "id": "U_kgDOFDLgvw",
+          "is_bot": false,
+          "login": "woklerx",
+          "name": ""
+        },
+        "headRefOid": "86f11f760119c4fb398d3824a3366a2fe81c6595",
+        "isDraft": false
+      },
+      "reviewed_head": "86f11f760119c4fb398d3824a3366a2fe81c6595",
+      "current_head": "86f11f760119c4fb398d3824a3366a2fe81c6595",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1893.json",
+        "research/community-efficient900-audit/checks/check-1893.json"
+      ]
+    },
+    {
+      "number": 1894,
+      "metadata": {
+        "number": 1894,
+        "title": "Independent audit: exhaust nonlinear transcript cuts through five gates",
+        "author": {
+          "id": "U_kgDOFDLgvw",
+          "is_bot": false,
+          "login": "woklerx",
+          "name": ""
+        },
+        "headRefOid": "cd4d55afc5fe55369f08e67558939375ca79745f",
+        "isDraft": false
+      },
+      "reviewed_head": "cd4d55afc5fe55369f08e67558939375ca79745f",
+      "current_head": "cd4d55afc5fe55369f08e67558939375ca79745f",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1894.json",
+        "research/community-efficient900-audit/checks/check-1894.json"
+      ]
+    },
+    {
+      "number": 1895,
+      "metadata": {
+        "number": 1895,
+        "title": "Independent audit: exhaustive full-query support hypotheses",
+        "author": {
+          "id": "U_kgDOFDLgvw",
+          "is_bot": false,
+          "login": "woklerx",
+          "name": ""
+        },
+        "headRefOid": "14cf51a62d64b0e97785c701ee84babfce01e2c5",
+        "isDraft": false
+      },
+      "reviewed_head": "14cf51a62d64b0e97785c701ee84babfce01e2c5",
+      "current_head": "14cf51a62d64b0e97785c701ee84babfce01e2c5",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1895.json",
+        "research/community-efficient900-audit/checks/check-1895.json"
+      ]
+    },
+    {
+      "number": 1897,
+      "metadata": {
+        "number": 1897,
+        "title": "Conditional kappa refinement: 500-digit enclosures and complete native-proof reuse",
+        "author": {
+          "id": "U_kgDOBdOLfA",
+          "is_bot": false,
+          "login": "M6LI",
+          "name": "Muhammed Ali Mehmood"
+        },
+        "headRefOid": "fdf717a838bb3d4c78396474131bd1ab5f18165d",
+        "isDraft": false
+      },
+      "reviewed_head": "fdf717a838bb3d4c78396474131bd1ab5f18165d",
+      "current_head": "fdf717a838bb3d4c78396474131bd1ab5f18165d",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1897.json"
+      ]
+    },
+    {
+      "number": 1898,
+      "metadata": {
+        "number": 1898,
+        "title": "Prove minimum-query endpoint for the mutable-source connector",
+        "author": {
+          "id": "U_kgDOC__Fxw",
+          "is_bot": false,
+          "login": "Arham-Tahir64",
+          "name": ""
+        },
+        "headRefOid": "5eb741129477f627f79ca5dc7d7d9eeabded1bed",
+        "isDraft": false
+      },
+      "reviewed_head": "5eb741129477f627f79ca5dc7d7d9eeabded1bed",
+      "current_head": "5eb741129477f627f79ca5dc7d7d9eeabded1bed",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1898.json",
+        "research/community-efficient900-audit/checks/check-1898.json"
+      ]
+    },
+    {
+      "number": 1900,
+      "metadata": {
+        "number": 1900,
+        "title": "Construction: five plane queries for selected P111 bit decoder (no new kappa)",
+        "author": {
+          "id": "U_kgDOCcbgOg",
+          "is_bot": false,
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "headRefOid": "9a891c9cb25b15f5a189bcad1d022198adeaf885",
+        "isDraft": false
+      },
+      "reviewed_head": "9a891c9cb25b15f5a189bcad1d022198adeaf885",
+      "current_head": "9a891c9cb25b15f5a189bcad1d022198adeaf885",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1900.json",
+        "research/community-efficient900-audit/checks/check-1900.json"
+      ]
+    },
+    {
+      "number": 1902,
+      "metadata": {
+        "number": 1902,
+        "title": "Verification: native replay of PR1868 twisted-helper words (no new kappa)",
+        "author": {
+          "id": "U_kgDOCt6exg",
+          "is_bot": false,
+          "login": "bbMisk",
+          "name": ""
+        },
+        "headRefOid": "ebbeb8be3435f2dbeafceded4e3ddb6d3b6b8ee5",
+        "isDraft": false
+      },
+      "reviewed_head": "ebbeb8be3435f2dbeafceded4e3ddb6d3b6b8ee5",
+      "current_head": "ebbeb8be3435f2dbeafceded4e3ddb6d3b6b8ee5",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1902.json",
+        "research/community-efficient900-audit/checks/check-1902.json"
+      ]
+    },
+    {
+      "number": 1904,
+      "metadata": {
+        "number": 1904,
+        "title": "Conditional \u03ba = 0.00167975495612554452133567099392070257699831143850258029546032752016286454826032563882630565613: recertified 1e-1000 supplier endpoint and 1e-1010 slacks (kappa +8.11857e-401 over PR1876): fine source-prime padding (PR1786) at the free epsilon -> 1 point, with gauge-free interiors and the radix-distributed union schedule on PR1673's capped phase-cell fusion outer, pivot-566+554 T74 supplier",
+        "author": {
+          "id": "U_kgDOEKXqaA",
+          "is_bot": false,
+          "login": "jeremykothe2",
+          "name": ""
+        },
+        "headRefOid": "091ba6e64169230d13285d12563390ea76f44208",
+        "isDraft": false
+      },
+      "reviewed_head": "091ba6e64169230d13285d12563390ea76f44208",
+      "current_head": "091ba6e64169230d13285d12563390ea76f44208",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1904.json"
+      ]
+    },
+    {
+      "number": 1905,
+      "metadata": {
+        "number": 1905,
+        "title": "Conditional \u03ba = 0.001679754956125544521335670993920702576998311438502580295460327520162864548260325638826305656132: recertified 1e-3000 supplier endpoint and 1e-3010 slacks (kappa +2.00336e-500 over PR1897): fine source-prime padding (PR1786) at the free epsilon -> 1 point, with gauge-free interiors and the radix-distributed union schedule on PR1673's capped phase-cell fusion outer, pivot-566+554 T74 supplier",
+        "author": {
+          "id": "U_kgDOEKXqaA",
+          "is_bot": false,
+          "login": "jeremykothe2",
+          "name": ""
+        },
+        "headRefOid": "34bb6fe148cf878b707b5bf22b8a225206780a67",
+        "isDraft": false
+      },
+      "reviewed_head": "34bb6fe148cf878b707b5bf22b8a225206780a67",
+      "current_head": "34bb6fe148cf878b707b5bf22b8a225206780a67",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1905.json"
+      ]
+    },
+    {
+      "number": 1906,
+      "metadata": {
+        "number": 1906,
+        "title": "Prove sharp energy-ball radix for packed HPE equality",
+        "author": {
+          "id": "U_kgDOC__Fxw",
+          "is_bot": false,
+          "login": "Arham-Tahir64",
+          "name": ""
+        },
+        "headRefOid": "788848032c16bbe0a543c1186c6691c66131c090",
+        "isDraft": false
+      },
+      "reviewed_head": "788848032c16bbe0a543c1186c6691c66131c090",
+      "current_head": "788848032c16bbe0a543c1186c6691c66131c090",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1906.json",
+        "research/community-efficient900-audit/checks/check-1906.json"
+      ]
+    },
+    {
+      "number": 1907,
+      "metadata": {
+        "number": 1907,
+        "title": "Add output-anchor variant for shared-product blocks",
+        "author": {
+          "id": "U_kgDOCcbgOg",
+          "is_bot": false,
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "headRefOid": "49b870f7a64f5f414208c3a82d4483b9cc95f5b8",
+        "isDraft": false
+      },
+      "reviewed_head": "49b870f7a64f5f414208c3a82d4483b9cc95f5b8",
+      "current_head": "49b870f7a64f5f414208c3a82d4483b9cc95f5b8",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1907.json",
+        "research/community-efficient900-audit/checks/check-1907.json"
+      ]
+    },
+    {
+      "number": 1908,
+      "metadata": {
+        "number": 1908,
+        "title": "Audit ideal lattice closure across an admitted rounded leaf",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "e54fcebd99d888b6fc4acb20fde81002e3ba024e",
+        "isDraft": false
+      },
+      "reviewed_head": "e54fcebd99d888b6fc4acb20fde81002e3ba024e",
+      "current_head": "e54fcebd99d888b6fc4acb20fde81002e3ba024e",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1908.json",
+        "research/community-efficient900-audit/checks/check-1908.json"
+      ]
+    },
+    {
+      "number": 1909,
+      "metadata": {
+        "number": 1909,
+        "title": "Research: exact COPY112 floor for tetrad-local P112 masked decoders",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "64922f413dc6cb3ae3d843cd53b4aa7d985b55d0",
+        "isDraft": false
+      },
+      "reviewed_head": "64922f413dc6cb3ae3d843cd53b4aa7d985b55d0",
+      "current_head": "64922f413dc6cb3ae3d843cd53b4aa7d985b55d0",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1909.json",
+        "research/community-efficient900-audit/checks/check-1909.json"
+      ]
+    },
+    {
+      "number": 1910,
+      "metadata": {
+        "number": 1910,
+        "title": "Audit selected k8 scalar omission observability",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "7e2aebdf2ae24cc3613731a95d71d2c46ac8173b",
+        "isDraft": false
+      },
+      "reviewed_head": "7e2aebdf2ae24cc3613731a95d71d2c46ac8173b",
+      "current_head": "7e2aebdf2ae24cc3613731a95d71d2c46ac8173b",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1910.json",
+        "research/community-efficient900-audit/checks/check-1910.json"
+      ]
+    },
+    {
+      "number": 1911,
+      "metadata": {
+        "number": 1911,
+        "title": "Research: sharp infinite-dihedral reflection bills with arbitrary dirty registers",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "712593f82739203639d0a169b88c6bcac6f0590c",
+        "isDraft": false
+      },
+      "reviewed_head": "712593f82739203639d0a169b88c6bcac6f0590c",
+      "current_head": "712593f82739203639d0a169b88c6bcac6f0590c",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1911.json",
+        "research/community-efficient900-audit/checks/check-1911.json"
+      ]
+    },
+    {
+      "number": 1912,
+      "metadata": {
+        "number": 1912,
+        "title": "Audit selected generated identities: complete field coverage, no defect found",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "7fa59a6a5bbb22e4ba6c8aabfa171245e1256cc7",
+        "isDraft": false
+      },
+      "reviewed_head": "7fa59a6a5bbb22e4ba6c8aabfa171245e1256cc7",
+      "current_head": "7fa59a6a5bbb22e4ba6c8aabfa171245e1256cc7",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1912.json",
+        "research/community-efficient900-audit/checks/check-1912.json"
+      ]
+    },
+    {
+      "number": 1913,
+      "metadata": {
+        "number": 1913,
+        "title": "Research: exclude two single-donor helper-star absorption corrections under fixed frames",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "6cde2d14f0090f51672feae32a04f3145e70f595",
+        "isDraft": false
+      },
+      "reviewed_head": "6cde2d14f0090f51672feae32a04f3145e70f595",
+      "current_head": "6cde2d14f0090f51672feae32a04f3145e70f595",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1913.json",
+        "research/community-efficient900-audit/checks/check-1913.json"
+      ]
+    },
+    {
+      "number": 1914,
+      "metadata": {
+        "number": 1914,
+        "title": "Independent verification: R480 packing optimum uniformly through a=1/2",
+        "author": {
+          "id": "U_kgDOCt6exg",
+          "is_bot": false,
+          "login": "bbMisk",
+          "name": ""
+        },
+        "headRefOid": "05c3b117e962e6a1ba8fa5c524cd4cfafb3e5c74",
+        "isDraft": false
+      },
+      "reviewed_head": "05c3b117e962e6a1ba8fa5c524cd4cfafb3e5c74",
+      "current_head": "05c3b117e962e6a1ba8fa5c524cd4cfafb3e5c74",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1914.json",
+        "research/community-efficient900-audit/checks/check-1914.json"
+      ]
+    },
+    {
+      "number": 1915,
+      "metadata": {
+        "number": 1915,
+        "title": "Prove generic dirty-connector rigidity under paid invertible frames",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "d30d64fea909219c364b11c2452f2207326e2b1f",
+        "isDraft": false
+      },
+      "reviewed_head": "d30d64fea909219c364b11c2452f2207326e2b1f",
+      "current_head": "d30d64fea909219c364b11c2452f2207326e2b1f",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1915.json",
+        "research/community-efficient900-audit/checks/check-1915.json"
+      ]
+    },
+    {
+      "number": 1917,
+      "metadata": {
+        "number": 1917,
+        "title": "Audit cross-fed connector handoff against a parity-retaining baseline",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "ee4d821c233f1072e99a5557c7001cd1dc20fa11",
+        "isDraft": false
+      },
+      "reviewed_head": "ee4d821c233f1072e99a5557c7001cd1dc20fa11",
+      "current_head": "ee4d821c233f1072e99a5557c7001cd1dc20fa11",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1917.json",
+        "research/community-efficient900-audit/checks/check-1917.json"
+      ]
+    },
+    {
+      "number": 1918,
+      "metadata": {
+        "number": 1918,
+        "title": "Certify composed scalar centre-source rank for a selected call pair",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "cc43a233ad989e717c8d46c6398ee50f97f5c0b9",
+        "isDraft": false
+      },
+      "reviewed_head": "cc43a233ad989e717c8d46c6398ee50f97f5c0b9",
+      "current_head": "cc43a233ad989e717c8d46c6398ee50f97f5c0b9",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1918.json",
+        "research/community-efficient900-audit/checks/check-1918.json"
+      ]
+    },
+    {
+      "number": 1919,
+      "metadata": {
+        "number": 1919,
+        "title": "Research: sharp invocation tariff for rank-bounded UT3 block calls",
+        "author": {
+          "id": "U_kgDOC__Fxw",
+          "is_bot": false,
+          "login": "Arham-Tahir64",
+          "name": ""
+        },
+        "headRefOid": "f5610483cab0b5547be778a4e8983faf78aefa69",
+        "isDraft": false
+      },
+      "reviewed_head": "f5610483cab0b5547be778a4e8983faf78aefa69",
+      "current_head": "f5610483cab0b5547be778a4e8983faf78aefa69",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1919.json"
+      ]
+    },
+    {
+      "number": 1920,
+      "metadata": {
+        "number": 1920,
+        "title": "Research: Clifford reciprocal-basis obstruction and opposite-direction exception",
+        "author": {
+          "id": "U_kgDOC__Fxw",
+          "is_bot": false,
+          "login": "Arham-Tahir64",
+          "name": ""
+        },
+        "headRefOid": "057b214aea45c65926b93ad8b95693c80f0f79c9",
+        "isDraft": false
+      },
+      "reviewed_head": "057b214aea45c65926b93ad8b95693c80f0f79c9",
+      "current_head": "057b214aea45c65926b93ad8b95693c80f0f79c9",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1920.json",
+        "research/community-efficient900-audit/checks/check-1920.json"
+      ]
+    },
+    {
+      "number": 1922,
+      "metadata": {
+        "number": 1922,
+        "title": "Tooling: 3.58\u00d7 faster joint-frame product with identical receipts",
+        "author": {
+          "id": "MDQ6VXNlcjU5MTcxNDAz",
+          "is_bot": false,
+          "login": "VictorLiwentao",
+          "name": "Victor Li"
+        },
+        "headRefOid": "98dd6ef113e1e6a4ca3848b0889cd13b1970fd32",
+        "isDraft": false
+      },
+      "reviewed_head": "98dd6ef113e1e6a4ca3848b0889cd13b1970fd32",
+      "current_head": "98dd6ef113e1e6a4ca3848b0889cd13b1970fd32",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1922.json"
+      ]
+    },
+    {
+      "number": 1923,
+      "metadata": {
+        "number": 1923,
+        "title": "Research: P112 Householder-gauge support-cost census (no new kappa)",
+        "author": {
+          "id": "U_kgDOCcbgOg",
+          "is_bot": false,
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "headRefOid": "0d33d6020aa50d383067510df78dcc0515bba4f4",
+        "isDraft": false
+      },
+      "reviewed_head": "0d33d6020aa50d383067510df78dcc0515bba4f4",
+      "current_head": "0d33d6020aa50d383067510df78dcc0515bba4f4",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1923.json"
+      ]
+    },
+    {
+      "number": 1924,
+      "metadata": {
+        "number": 1924,
+        "title": "Research: sharp clean selector encoding width and volume screen",
+        "author": {
+          "id": "MDQ6VXNlcjI3NTY4NjE3",
+          "is_bot": false,
+          "login": "ToikY",
+          "name": ""
+        },
+        "headRefOid": "0a7c54dd94bce3784b61c4203adfdda98d13d53d",
+        "isDraft": false
+      },
+      "reviewed_head": "0a7c54dd94bce3784b61c4203adfdda98d13d53d",
+      "current_head": "0a7c54dd94bce3784b61c4203adfdda98d13d53d",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1924.json"
+      ]
+    },
+    {
+      "number": 1925,
+      "metadata": {
+        "number": 1925,
+        "title": "Research: Q8 mixed targets retain four-call minimum through one extra role",
+        "author": {
+          "id": "U_kgDOCcbgOg",
+          "is_bot": false,
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "headRefOid": "009ed860f34ed5d7b0d626098ce93c4c2a7eb4df",
+        "isDraft": false
+      },
+      "reviewed_head": "009ed860f34ed5d7b0d626098ce93c4c2a7eb4df",
+      "current_head": "009ed860f34ed5d7b0d626098ce93c4c2a7eb4df",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1925.json"
+      ]
+    },
+    {
+      "number": 1926,
+      "metadata": {
+        "number": 1926,
+        "title": "Preserve diagnostic bytes in unittest benchmark receipt comparisons",
+        "author": {
+          "id": "U_kgDOC__Fxw",
+          "is_bot": false,
+          "login": "Arham-Tahir64",
+          "name": ""
+        },
+        "headRefOid": "387501825842caa3507e34f110b5f9570dc04046",
+        "isDraft": false
+      },
+      "reviewed_head": "387501825842caa3507e34f110b5f9570dc04046",
+      "current_head": "387501825842caa3507e34f110b5f9570dc04046",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1926.json"
+      ]
+    },
+    {
+      "number": 1928,
+      "metadata": {
+        "number": 1928,
+        "title": "Conditional \u03ba = 0.0016797549561255445213356709939207025769983114385025802954603275201628645482603256388263056561328: recertified 1e-10000 supplier endpoint and 1e-10010 slacks (kappa +2.00336e-500 over PR1897): fine source-prime padding (PR1786) at the free epsilon -> 1 point, with gauge-free interiors and the radix-distributed union schedule on PR1673's capped phase-cell fusion outer, pivot-566+554 T74 supplier",
+        "author": {
+          "id": "U_kgDOEKXqaA",
+          "is_bot": false,
+          "login": "jeremykothe2",
+          "name": ""
+        },
+        "headRefOid": "07e4e4231459e36b1055396306dcbd950248df62",
+        "isDraft": false
+      },
+      "reviewed_head": "07e4e4231459e36b1055396306dcbd950248df62",
+      "current_head": "07e4e4231459e36b1055396306dcbd950248df62",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1928.json"
+      ]
+    },
+    {
+      "number": 1930,
+      "metadata": {
+        "number": 1930,
+        "title": "Construction: three-stage persistent prefix shear chain (no new kappa)",
+        "author": {
+          "id": "U_kgDOCcbgOg",
+          "is_bot": false,
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "headRefOid": "11cb2266f7e99279c440a301ea4b862587a9afa2",
+        "isDraft": false
+      },
+      "reviewed_head": "11cb2266f7e99279c440a301ea4b862587a9afa2",
+      "current_head": "11cb2266f7e99279c440a301ea4b862587a9afa2",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1930.json"
+      ]
+    },
+    {
+      "number": 1932,
+      "metadata": {
+        "number": 1932,
+        "title": "Scoped census: late-compensated R439 helper entrances; only #1179's kernel pair survives the carrier-checked class, one triple stays open (no new kappa)",
+        "author": {
+          "id": "MDQ6VXNlcjE4NjIyMjg4",
+          "is_bot": false,
+          "login": "thakrarsagar",
+          "name": ""
+        },
+        "headRefOid": "d5e6ac0e442a1acfd0ac933af90a2adfb3417138",
+        "isDraft": false
+      },
+      "reviewed_head": "d5e6ac0e442a1acfd0ac933af90a2adfb3417138",
+      "current_head": "d5e6ac0e442a1acfd0ac933af90a2adfb3417138",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1932.json"
+      ]
+    },
+    {
+      "number": 1934,
+      "metadata": {
+        "number": 1934,
+        "title": "Independently audit HPE energy-radix full matrices",
+        "author": {
+          "id": "MDQ6VXNlcjU2NTI3MTY=",
+          "is_bot": false,
+          "login": "RossRichardson",
+          "name": "Ross Richardson"
+        },
+        "headRefOid": "a055aaf34b012e04714066aafbfc7057ee1f3e9f",
+        "isDraft": false
+      },
+      "reviewed_head": "a055aaf34b012e04714066aafbfc7057ee1f3e9f",
+      "current_head": "a055aaf34b012e04714066aafbfc7057ee1f3e9f",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1934.json"
+      ]
+    },
+    {
+      "number": 1935,
+      "metadata": {
+        "number": 1935,
+        "title": "Research: sharp eight-call UT4 noncentral pair with arbitrary dirty workspace",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "9bb74ff3597adfe6949d7b988698b06c0c99978b",
+        "isDraft": false
+      },
+      "reviewed_head": "9bb74ff3597adfe6949d7b988698b06c0c99978b",
+      "current_head": "9bb74ff3597adfe6949d7b988698b06c0c99978b",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1935.json"
+      ]
+    },
+    {
+      "number": 1936,
+      "metadata": {
+        "number": 1936,
+        "title": "Audit: P111 Parseval blocks cost 73 in the fixed-block scalar model",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "f7ad7dc0e3a0c16a4f02eb89409b6a81f6bc7834",
+        "isDraft": false
+      },
+      "reviewed_head": "f7ad7dc0e3a0c16a4f02eb89409b6a81f6bc7834",
+      "current_head": "f7ad7dc0e3a0c16a4f02eb89409b6a81f6bc7834",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1936.json"
+      ]
+    },
+    {
+      "number": 1937,
+      "metadata": {
+        "number": 1937,
+        "title": "Research: certify complete multi-donor R439 star absorption linear system and gain-0 chaining (no new kappa)",
+        "author": {
+          "id": "MDQ6VXNlcjUwMzY2Njc2",
+          "is_bot": false,
+          "login": "navinor",
+          "name": "Aaron Wang"
+        },
+        "headRefOid": "379cddb9a2a0e88a99e6dfa1b035da08c4d1c716",
+        "isDraft": false
+      },
+      "reviewed_head": "379cddb9a2a0e88a99e6dfa1b035da08c4d1c716",
+      "current_head": "379cddb9a2a0e88a99e6dfa1b035da08c4d1c716",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1937.json"
+      ]
+    },
+    {
+      "number": 1938,
+      "metadata": {
+        "number": 1938,
+        "title": "Research: COPY84 floor for low-rank matched P112 support frames",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "57b3cfd1f0762a736da55d6b3175a024a743b99a",
+        "isDraft": false
+      },
+      "reviewed_head": "57b3cfd1f0762a736da55d6b3175a024a743b99a",
+      "current_head": "57b3cfd1f0762a736da55d6b3175a024a743b99a",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1938.json"
+      ]
+    },
+    {
+      "number": 1939,
+      "metadata": {
+        "number": 1939,
+        "title": "Tooling: checked marshal copies make the selected final stage's audit sub-stage 2.47x faster (no new kappa)",
+        "author": {
+          "id": "MDQ6VXNlcjY4NTY0NzU0",
+          "is_bot": false,
+          "login": "jackmgaller",
+          "name": ""
+        },
+        "headRefOid": "b1631b1bf950f8da70510057faf55c6ed705c815",
+        "isDraft": false
+      },
+      "reviewed_head": "b1631b1bf950f8da70510057faf55c6ed705c815",
+      "current_head": "b1631b1bf950f8da70510057faf55c6ed705c815",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1939.json"
+      ]
+    },
+    {
+      "number": 1940,
+      "metadata": {
+        "number": 1940,
+        "title": "Research: chronological P104 schedule attains known 32-chain bound",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "a9b7dfe2809092a9a4c90784d12bb60061e995e8",
+        "isDraft": false
+      },
+      "reviewed_head": "a9b7dfe2809092a9a4c90784d12bb60061e995e8",
+      "current_head": "a9b7dfe2809092a9a4c90784d12bb60061e995e8",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1940.json"
+      ]
+    },
+    {
+      "number": 1941,
+      "metadata": {
+        "number": 1941,
+        "title": "Research: sharp even finite-dihedral tariffs with dirty workspace",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "5938ce3e91bbb8b5c2227af7976d444b2fbac7d4",
+        "isDraft": false
+      },
+      "reviewed_head": "5938ce3e91bbb8b5c2227af7976d444b2fbac7d4",
+      "current_head": "5938ce3e91bbb8b5c2227af7976d444b2fbac7d4",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1941.json"
+      ]
+    },
+    {
+      "number": 1942,
+      "metadata": {
+        "number": 1942,
+        "title": "Audit all selected sigma charts against the binary certificate interface",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "c7d8c9febf0fcc52d2002db657165cd206ff9cec",
+        "isDraft": false
+      },
+      "reviewed_head": "c7d8c9febf0fcc52d2002db657165cd206ff9cec",
+      "current_head": "c7d8c9febf0fcc52d2002db657165cd206ff9cec",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1942.json"
+      ]
+    },
+    {
+      "number": 1943,
+      "metadata": {
+        "number": 1943,
+        "title": "Research: two-copy raw-record lifecycle and formal bank boundary",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "60e0d6d37b857a30c2db032255892f7e2f6465ce",
+        "isDraft": false
+      },
+      "reviewed_head": "60e0d6d37b857a30c2db032255892f7e2f6465ce",
+      "current_head": "60e0d6d37b857a30c2db032255892f7e2f6465ce",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1943.json"
+      ]
+    },
+    {
+      "number": 1944,
+      "metadata": {
+        "number": 1944,
+        "title": "Construct shared-product fanout through dirty output anchors",
+        "author": {
+          "id": "U_kgDOCcbgOg",
+          "is_bot": false,
+          "login": "1337isnot1337",
+          "name": "Cinna Davis"
+        },
+        "headRefOid": "11110e70e462f95a3e5adcb1d290cd67cd0807e7",
+        "isDraft": false
+      },
+      "reviewed_head": "11110e70e462f95a3e5adcb1d290cd67cd0807e7",
+      "current_head": "11110e70e462f95a3e5adcb1d290cd67cd0807e7",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1944.json"
+      ]
+    },
+    {
+      "number": 1945,
+      "metadata": {
+        "number": 1945,
+        "title": "Research: exclude 73 map calls with arbitrary connector frames",
+        "author": {
+          "id": "U_kgDOC2orBA",
+          "is_bot": false,
+          "login": "arhamgarg",
+          "name": "Arham Garg"
+        },
+        "headRefOid": "aa0de6522ecb1c22cd2ee435983b24dbd2842551",
+        "isDraft": false
+      },
+      "reviewed_head": "aa0de6522ecb1c22cd2ee435983b24dbd2842551",
+      "current_head": "aa0de6522ecb1c22cd2ee435983b24dbd2842551",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1945.json"
+      ]
+    },
+    {
+      "number": 1946,
+      "metadata": {
+        "number": 1946,
+        "title": "Research: exact heterogeneous Clifford child interface classification",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "e55ff15a61286c5bec781db15118fd7a0144b972",
+        "isDraft": false
+      },
+      "reviewed_head": "e55ff15a61286c5bec781db15118fd7a0144b972",
+      "current_head": "e55ff15a61286c5bec781db15118fd7a0144b972",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1946.json"
+      ]
+    },
+    {
+      "number": 1948,
+      "metadata": {
+        "number": 1948,
+        "title": "Research: four retained contacts obstruct staged R439 helper465 isolation",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "6d4587f91bc345325856d839ad752f5a202a6212",
+        "isDraft": false
+      },
+      "reviewed_head": "6d4587f91bc345325856d839ad752f5a202a6212",
+      "current_head": "6d4587f91bc345325856d839ad752f5a202a6212",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1948.json"
+      ]
+    },
+    {
+      "number": 1949,
+      "metadata": {
+        "number": 1949,
+        "title": "Prove a diagonal-span projection barrier for the PR117 word",
+        "author": {
+          "id": "U_kgDOBwp4BA",
+          "is_bot": false,
+          "login": "jmbarrancoml",
+          "name": "Jose Manuel"
+        },
+        "headRefOid": "be198c23d6b21c67ee9e6714dd04338c5a279cc3",
+        "isDraft": false
+      },
+      "reviewed_head": "be198c23d6b21c67ee9e6714dd04338c5a279cc3",
+      "current_head": "be198c23d6b21c67ee9e6714dd04338c5a279cc3",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1949.json"
+      ]
+    },
+    {
+      "number": 1951,
+      "metadata": {
+        "number": 1951,
+        "title": "Research: exact mixed COPY62 retained-hit obstruction",
+        "author": {
+          "id": "MDQ6VXNlcjcwNjkyOQ==",
+          "is_bot": false,
+          "login": "adamgall",
+          "name": "Adam Gall"
+        },
+        "headRefOid": "5dba7ccd60b2abe16f5931b3754cf02a92e1f511",
+        "isDraft": false
+      },
+      "reviewed_head": "5dba7ccd60b2abe16f5931b3754cf02a92e1f511",
+      "current_head": "5dba7ccd60b2abe16f5931b3754cf02a92e1f511",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "closure": null,
+      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "ready_to_integrate": false,
+      "review_completion": {
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "research/community-efficient900-audit/packets/1951.json"
+      ]
+    }
+  ]
+}

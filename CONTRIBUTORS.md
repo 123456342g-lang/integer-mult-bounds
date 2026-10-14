@@ -710,6 +710,17 @@ The following contributions are retained at their original heads with source not
 
 The six pending contributions are credited in the pilot ledger; pending review is not rejection. Predecessor attribution, including R420, K492, PR628 and PR673 lineage, remains in each package.
 
+## Efficient ninth 68-PR round: #1863–#1951
+
+Original contributor commits and predecessor notices are preserved. These are scoped research and verification contributions, with no selected κ change. See the [review and exact-head evidence](docs/research/community-efficient900-review.md).
+
+- **1337isnot1337** — [#1863](https://github.com/CrocSwap/integer-mult-bounds/pull/1863), [#1866](https://github.com/CrocSwap/integer-mult-bounds/pull/1866), [#1870](https://github.com/CrocSwap/integer-mult-bounds/pull/1870), [#1872](https://github.com/CrocSwap/integer-mult-bounds/pull/1872), [#1878](https://github.com/CrocSwap/integer-mult-bounds/pull/1878), [#1881](https://github.com/CrocSwap/integer-mult-bounds/pull/1881).
+- **navinor** — [#1864](https://github.com/CrocSwap/integer-mult-bounds/pull/1864).
+- **jmbarrancoml** — [#1867](https://github.com/CrocSwap/integer-mult-bounds/pull/1867).
+- **adamgall** — [#1889](https://github.com/CrocSwap/integer-mult-bounds/pull/1889).
+
+Pending contributors and their obligations are listed in the review. A hold is not a rejection.
+
 ## Efficient eighth 100-PR round: #1729–#1862
 
 Original contributor commits and predecessor notices are preserved. These are scoped research and verification contributions, with no selected κ change. See the [review and exact-head evidence](docs/research/community-efficient800-review.md).

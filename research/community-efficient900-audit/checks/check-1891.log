@@ -1,0 +1,14 @@
+['/tmp/pr-efficient200-venv/bin/python', '-B', '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_research_input_paths.py']
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 1.328s
+
+OK
+['/tmp/pr-efficient200-venv/bin/python', '-B', '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_research_replay_selection.py']
+......
+----------------------------------------------------------------------
+Ran 6 tests in 5.986s
+
+OK
+['/tmp/pr-efficient200-venv/bin/python', '-B', '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_research_onboarding.py']
+.......
