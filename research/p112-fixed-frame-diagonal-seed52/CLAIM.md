@@ -25,3 +25,12 @@ This is a support-only necessary-condition audit. A feasible tuple would not sol
 - **Expected artifact:** source-pinned exact enumerator and verifier, complete candidate and Pareto counts, exact feasible tuple or exhaustive negative certificate, mutation controls, scope/assumption statement, and a concise handoff.
 - **Reproducible entry point (planned):** `python3 -I -O -B research/p112-fixed-frame-diagonal-seed52/verify.py`.
 - **Expected finish:** 2026-10-14 01:15 UTC; claim expires 02:05 UTC.
+
+## Completed result
+
+- **PR:** [#1402](https://github.com/CrocSwap/integer-mult-bounds/pull/1402).
+- Exhaustive replay covered all 7,616 rank-seven tagged parent pairs and their 127 nonzero code words each (967,232 cases). The ten fixed frame-mask classes contain 40 exact rank-six support triples, two distinct diagonal masks per class.
+- The union of all 40 masks has size 102/112 and misses live line IDs `18, 47, 53, 62, 88, 92, 96, 100, 112, 117`. Hence every one-per-class selection within this fixed mask family misses these same ten diagonals.
+- The predecessor's frame counts, frame digest, and diagonal multiplicity histogram reproduce exactly. Zero-cut, cross-mask and omitted-diagonal controls pass.
+- Local checks passed under CPython 3.14.7: exact verifier, package metadata/source pins, JSON syntax, and `git diff --check`. CPython 3.12 is not installed locally; the registered manifest is ready for the repository's Python 3.12 workflow.
+- No coefficient feasibility, different-mask cover, physical realization or κ improvement is claimed. Exact next step beyond scope: include all 5,376 maximum-hit frame masks and all their representatives in an exact joint frame-plus-diagonal cover.
