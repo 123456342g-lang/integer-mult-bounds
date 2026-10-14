@@ -2,6 +2,8 @@
 
 **Result type:** exact finite obstruction for one C3 family on the selected word. This does not add a supplier, change the selected construction, or establish a new \(\kappa\).
 
+Review handoff: [PR #1799](https://github.com/CrocSwap/integer-mult-bounds/pull/1799); original research claim: [Discussion #1163](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18921204).
+
 ## Question and scope
 
 On the selected width-73 local word, can three consecutive ADD gates that read the same unchanged source and write three distinct destinations be compressed into one tagged child whose rank is the sum of the three destination-frame climbs? We considered every length-three window wholly inside section A or section B with zero source-frame increment at each gate and at least two positive target climbs. The schedules considered are all non-overlapping subsets of those windows.
