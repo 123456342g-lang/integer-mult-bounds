@@ -60,7 +60,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Whole-head supplier/outer admission remains pending. Review the new W^5 rectangular boundary batching and radix-distributed union schedule against inherited T74 admission, and verify the cited rectangular exponent and precision/tape composition. The claimed 54/53-constraint receipts alone do not discharge those constructions.",
       "closure": null,
       "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
       "ready_to_integrate": false,
@@ -456,7 +456,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "The q=6 full replay passed; q=7 exceeded the extended recorded budget (952.67s total run) before complete output. Finish q=7 and compare the complete trajectory/census to the committed expected result. Timeout is not evidence against the mathematical claim.",
       "closure": null,
       "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
       "ready_to_integrate": false,
@@ -733,7 +733,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Whole-head supplier/outer admission remains pending. New Toeplitz/displacement-rank boundary solve requires a uniform generator-growth, stable-precision and operation-cost audit, alongside the shared radix-union and T74 dependencies. Numerical tau_eff just above2 is not that proof.",
       "closure": null,
       "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
       "ready_to_integrate": false,
@@ -881,7 +881,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Whole-head supplier/outer admission remains pending. Review fractional-shift accretivity, the shallow accretive Toeplitz circuit extension, chirp-only guard and per-visit union tagging, plus structured boundary and T74 admission. These new analytic interfaces are not established by finite symbol/circuit samples.",
       "closure": null,
       "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
       "ready_to_integrate": false,
@@ -1550,7 +1550,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Fine-prime padding/precision transfer and retained supplier need dedicated admission. PR1797 is a scoped inequality audit, not a check of the accretive Toeplitz circuit theorem, cost-row derivations, union layout or all-size compiler. This proposal uses explicit Strassen boundaries rather than depending on PR1758 structured solves; preserve that distinction.",
       "closure": null,
       "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
       "ready_to_integrate": false,
@@ -1663,7 +1663,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "105-digit arithmetic refinement of pending PR1725 k=2 rectangular/radix-union architecture. First admit the parent constructions and T74 supplier, then compare the refined native endpoint and all strict rows at this head. A smaller slack does not remove the parent obligations.",
       "closure": null,
       "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
       "ready_to_integrate": false,
@@ -1859,15 +1859,17 @@
       "current_head": "148762722bb39c7ce2fd3fd0d42ef25d945aae4d",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/eisenstein-phase-cost-screen"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Exact E8 clean-pair census and sharp40-cost witnesses; threshold formula and rational increment/tail closure bound all odd stages in the inherited format. Non-clean copy cost<=31 is necessary there, not a supplier. Fixed complex-only prize excludes changes to the bit side.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -1893,15 +1895,17 @@
       "current_head": "4e8f77031b1a936d6739b2cd84f378dcf1eb5635",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/pr1786-fine-prime-transfer-audit"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Independent nine-row rational accounting, prime-interval substitutions and Neumann identity reviewed as a conditional transfer audit. Decimal Gaussian/alpha fixtures and floating cutoff estimates are numerical evidence, not interval certificates; Toeplitz theorem, layout/cost derivations and supplier admission remain outside scope.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -1968,7 +1972,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Free-epsilon refinement of PR1786 fine-prime padding with PR1758 gauge-free interiors. Requires admission of those written interfaces and T74 supplier before the epsilon=1-2e-64 witness can be selected. Review uniform fixed-parameter asymptotics separately from its exact ledger.",
       "closure": null,
       "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
       "ready_to_integrate": false,
@@ -2402,7 +2406,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "The complete UT4 fifteen-call search exceeded the300-second batch budget. Finish all three split censuses and independently review the seven-middle cross-key/trie completeness and imported every-register compression premise. Keep finite two-role exhaustion separate from the written every-r corollary.",
       "closure": null,
       "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
       "ready_to_integrate": false,
@@ -2515,15 +2519,17 @@
       "current_head": "a986127fa82b680a5bbb29f49fec4c8c3a944bde",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/bit-d16-central-pair-seed1f8b"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Complete F2[D16] rank-one-idempotent alphabet and involutive7/8 meet-in-middle balls certify two-register central target minimum16. Independent tuple-state replay, full formal product and omission controls pass; no address-group-to-supplier implementation is supplied.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -2549,15 +2555,17 @@
       "current_head": "ee736b4b11bbd63b04d94c8edafb3790161ebdea",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/q8-central-commutator-pair"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Complete full-group-algebra BFS through depth3 and independent Hamilton-quaternion witness replay certify all three specified Q8 pair minima4. Free scalar mixing normalization and GL2/GL3 closure checked; inverse labels, more active roles and physical suppliers remain outside this result.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -2583,19 +2591,22 @@
       "current_head": "5577d53f4bc093b5e9e960387ffc5d5bea55ee6f",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/compact-agreement-set-seed29"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Independent whole-slot raw-map census of24074240 states in47cells reproduces11880712 agreements, sufficient guard inclusions and density formula. Reviewer supplement distinguishes actual sign reversal from submitted omitted-unload control; both reject. Repair/tape costs, all-size extension and production-predicate adoption remain open.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1823.json",
+        "research/community-efficient800-audit/checks/check-1823-supplement.json",
         "research/community-efficient800-audit/checks/check-1823.json"
       ]
     },
@@ -2657,15 +2668,17 @@
       "current_head": "d16fb8936795ff101e4d2f63cfdc6a25066ebabf",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/paired-plane-port-matching-seed6c563a"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Exact56-plane matching and binary global factorization checked on all112x112 decoder entries, with28672 Gaussian-dyadic endpoint basis cases and support-pairing invoice126. Two-unpaid-coordinate law and .00343536 projected cap are favorable hypotheses; full hosted multiplicity, routing and both suppliers are unpriced.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -2691,15 +2704,17 @@
       "current_head": "40430c79c39d278616b34ae47819e27ef72a0013",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/c5-paired-frame-seed-d937e545"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Exact C5 whole-register phase recurrence, all3125 five-child paths and35-column integer dirty echoes reproduce560vs800 and1090vs1120 ADD bills. Prefix L1 growth is retained; optimality is scoped to the declared macro alphabet, with no tape/precision/supplier admission.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -2766,7 +2781,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Positive1e-96 slack refinement of pending PR1800. Bind the imported381-file dependency and actual native endpoint/profile/bit endpoint in a complete replay after parent analytic and supplier admission; arithmetic-only mode is insufficient. Preserve its independent refinement credit.",
       "closure": null,
       "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
       "ready_to_integrate": false,
@@ -2798,15 +2813,17 @@
       "current_head": "e150e7ed8fa33f0be769926535eeacd076c6bd13",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/selected-centre-adjacent-pair-seed01fcb1"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "All143 adjacent selected-call pairs bound to actual local programs and global owner charts;81 same-orientation pairs have disjoint target panels but no common centre owner. Six predicate controls pass. Excludes only direct identical-owner reuse, not aliases, transport or changed schedules.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -2833,7 +2850,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "The unified12-stage H6 successor replay passed in136.433s. Whole-head review remains open: audit the universal physical recipe and compositional factor/chronology proofs, successor export/mutation CI gate, and the additional inherited audit/pricing packages in the168-file change. The retained958521600-pair predecessor receipt is not a fresh reviewer replay; full tape/approximate-child admission is explicitly outside this package.",
       "closure": null,
       "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
       "ready_to_integrate": false,
@@ -3024,7 +3041,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Re-certifies supplier endpoint at1e-90 and uses1e-100 slacks on the pending fine-prime/gauge-free/radix-union stack. Check fresh native endpoint acceptance and rejection and composition after parent admission; the tiny gain over PR1828 is not new structural evidence.",
       "closure": null,
       "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
       "ready_to_integrate": false,
