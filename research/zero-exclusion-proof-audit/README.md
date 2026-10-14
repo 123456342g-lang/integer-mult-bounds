@@ -65,7 +65,19 @@ found no mismatch.
 
 [binding_crosscheck.py](binding_crosscheck.py) compares PR1650's `criterion` with a second implementation from
 §3's prose that uses different exact methods: classes by orthogonality, Q-rank of the integer Gram matrix `MᵀM` by
-Bareiss elimination, and BFS. RESULT_PLACEHOLDER
+Bareiss elimination, and BFS. PR1650 stops at its first failing test (support, blocks, (W), (G), (D)); the cross-check
+requires the same first failure, or a pass when all four hold. Results (Python 3.12, 2026-10-14 02:00 EDT,
+PR1650 at `d960f8a2`), all **agree**:
+
+| Run | Cases | Pass | (W) | (G) | blocks | (D) |
+|---|---:|---:|---:|---:|---:|---:|
+| `--samples 1000`: fixtures, 1000 random 5–10-line deletions with a random live pivot, every live frame of five random 7–10-line deletions | 4354 | 4019 | 334 | 0 | 0 | 1 |
+| `--samples 1500 --thin`: fixtures, random 11–40-line deletions | 1503 | 246 | 1252 | 2 | 2 | 1 |
+
+The fixtures are PR1560's positive fixture (passes), its `X_bad` control (fails (W)), and session 13's
+full-family (G)-without-(D) pivot from #1502 (fails (D) in both). Because PR1650 stops at its first failure, this
+compares (G) and (D) verdicts only where every earlier test passed. That is thin for (G) and (D): two and one
+cases.
 
 Part 3 is a same-account check: PR1616/PR1650 were earlier Claude sessions on this account. Parts 1 and 2 do not
 depend on that code.

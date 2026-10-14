@@ -8,7 +8,7 @@ It is compared with PR1650's criterion (head d960f8a2, research/complex-rank8-ri
 script imports from a path given on the command line. PR1650 is not on main, so this script is not part of the
 registered replay; its output is recorded in the README.
 
-    python3 -I -B research/zero-exclusion-proof-audit/binding_crosscheck.py PATH/TO/PR1650/verify.py [--samples N]
+    python3 -I -B research/zero-exclusion-proof-audit/binding_crosscheck.py PATH/TO/PR1650/verify.py [--samples N] [--thin]
 """
 
 import importlib.util
@@ -131,6 +131,8 @@ def load_pr1650(path):
 def main():
     path = sys.argv[1]
     samples = int(sys.argv[sys.argv.index('--samples') + 1]) if '--samples' in sys.argv else 60
+    # --thin: delete 11-40 lines instead of 5-10, so blocks, (G) and (D) also fail (thin live families).
+    sizes = list(range(11, 41)) if '--thin' in sys.argv else [5, 6, 7, 8, 9, 10]
     pr = load_pr1650(path)
     assert pr.LINES == mine.V and pr.G == mine.G, 'line IDs / G disagree'
     frames = mine.all_frames()
@@ -144,14 +146,14 @@ def main():
         ('s13-full-family-g-without-d', (3, 4, 8, 9, 107, 108, 117, 118), (19, 25, 37, 47, 67, 82, 94, 115)),
     ]
     for n in range(samples):
-        size = rng.choice([5, 6, 7, 8, 9, 10])
+        size = rng.choice(sizes)
         X = tuple(sorted(rng.sample(P112, size)))
         live = set(P112) - set(X)
         cand = [S for S in frames if set(S) <= live]
         if cand:
             cases.append((f'random-{n}-P{112 - size}', X, rng.choice(cand)))
     # Every live frame as pivot for a few deletion sets: early frames fail blocks / (W), as in PR1650's tally.
-    for n in range(max(1, samples // 200)):
+    for n in range(max(1, samples // 200) if '--thin' not in sys.argv else 0):
         X = tuple(sorted(rng.sample(P112, 7 + n % 4)))
         live = set(P112) - set(X)
         cases += [(f'allframes-{n}', X, S) for S in frames if set(S) <= live]
