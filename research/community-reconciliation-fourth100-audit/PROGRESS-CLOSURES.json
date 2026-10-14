@@ -1,5 +1,5 @@
 {
-  "observed_at": "2026-10-14T02:51:37.710243+00:00",
+  "observed_at": "2026-10-14T03:04:39.832699+00:00",
   "scope": "Completed subset of the frozen 100; remaining reviews continue.",
   "receipts": [
     {
@@ -1441,6 +1441,186 @@
       },
       "publication_commit": "459f9dbdf41ea86f17fa21a6c71df00010a62c9b",
       "observed_at": "2026-10-14T02:43:32.276599+00:00"
+    },
+    {
+      "number": 478,
+      "status": "closed_after_published_review",
+      "comment": {
+        "created_at": "2026-10-14T02:56:16Z",
+        "id": 6159853294,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/478#issuecomment-6159853294"
+      },
+      "observed": {
+        "closedAt": "2026-10-14T02:56:17Z",
+        "headRefOid": "bea1d52fd330c699903f81612ee58be81697d1eb",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 478,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/478"
+      },
+      "publication_commit": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f",
+      "observed_at": "2026-10-14T02:56:19.501403+00:00"
+    },
+    {
+      "number": 635,
+      "status": "closed_after_published_review",
+      "comment": {
+        "created_at": "2026-10-14T02:56:21Z",
+        "id": 6159854220,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/635#issuecomment-6159854220"
+      },
+      "observed": {
+        "closedAt": "2026-10-14T02:56:22Z",
+        "headRefOid": "a6895a69f8ad98ab45777b03e9e6f48888c39f6f",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 635,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/635"
+      },
+      "publication_commit": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f",
+      "observed_at": "2026-10-14T02:56:24.484035+00:00"
+    },
+    {
+      "number": 637,
+      "status": "closed_after_published_review",
+      "comment": {
+        "created_at": "2026-10-14T02:56:26Z",
+        "id": 6159855150,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/637#issuecomment-6159855150"
+      },
+      "observed": {
+        "closedAt": "2026-10-14T02:56:28Z",
+        "headRefOid": "4edb0dda99c495141cc56ae6e8a74e632a74db8a",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 637,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/637"
+      },
+      "publication_commit": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f",
+      "observed_at": "2026-10-14T02:56:29.195397+00:00"
+    },
+    {
+      "number": 656,
+      "status": "closed_after_published_review",
+      "comment": {
+        "created_at": "2026-10-14T02:56:31Z",
+        "id": 6159855946,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/656#issuecomment-6159855946"
+      },
+      "observed": {
+        "closedAt": "2026-10-14T02:56:32Z",
+        "headRefOid": "0805e78f5fecc700804d4766d7e3e1d7d7e6a2ba",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 656,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/656"
+      },
+      "publication_commit": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f",
+      "observed_at": "2026-10-14T02:56:33.589528+00:00"
+    },
+    {
+      "number": 455,
+      "status": "retained_open",
+      "comment": {
+        "created_at": "2026-10-14T02:58:44Z",
+        "id": 6159880655,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/455#issuecomment-6159880655"
+      },
+      "observed": {
+        "closedAt": null,
+        "headRefOid": "f76fc4e36030d4e00b4cbb83b1dbc661a0974c4e",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 455,
+        "state": "OPEN",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/455"
+      },
+      "publication_commit": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f",
+      "observed_at": "2026-10-14T02:58:45.658084+00:00"
+    },
+    {
+      "number": 461,
+      "status": "retained_open",
+      "comment": {
+        "created_at": "2026-10-14T02:58:47Z",
+        "id": 6159881207,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/461#issuecomment-6159881207"
+      },
+      "observed": {
+        "closedAt": null,
+        "headRefOid": "dc297912ad446779f983818816617c03dfc76e16",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 461,
+        "state": "OPEN",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/461"
+      },
+      "publication_commit": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f",
+      "observed_at": "2026-10-14T02:58:48.445189+00:00"
+    },
+    {
+      "number": 465,
+      "status": "retained_open",
+      "comment": {
+        "created_at": "2026-10-14T02:58:50Z",
+        "id": 6159881744,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/465#issuecomment-6159881744"
+      },
+      "observed": {
+        "closedAt": null,
+        "headRefOid": "22c2a15c232084a31b6c8f0263e2e8ce831047ea",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 465,
+        "state": "OPEN",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/465"
+      },
+      "publication_commit": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f",
+      "observed_at": "2026-10-14T02:58:51.360481+00:00"
+    },
+    {
+      "number": 485,
+      "status": "retained_open",
+      "comment": {
+        "created_at": "2026-10-14T02:58:53Z",
+        "id": 6159882285,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/485#issuecomment-6159882285"
+      },
+      "observed": {
+        "closedAt": null,
+        "headRefOid": "af51ea7ad6570f04c8424be7cc6f4070bfd1e6ff",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 485,
+        "state": "OPEN",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/485"
+      },
+      "publication_commit": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f",
+      "observed_at": "2026-10-14T02:58:54.269973+00:00"
+    },
+    {
+      "number": 499,
+      "status": "retained_open",
+      "comment": {
+        "created_at": "2026-10-14T02:58:56Z",
+        "id": 6159882839,
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/499#issuecomment-6159882839"
+      },
+      "observed": {
+        "closedAt": null,
+        "headRefOid": "0f3e55dbf6b29a28bf462b4b3ec2a3ef06a28f5d",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 499,
+        "state": "OPEN",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/499"
+      },
+      "publication_commit": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f",
+      "observed_at": "2026-10-14T02:58:57.179902+00:00"
     }
   ]
 }

@@ -67,7 +67,7 @@
     "research/community-reconciliation92-audit/DISPOSITIONS.json": "5dafbc374822ed60d67da35fcdb27127c71ad839acec7b68a206c5229d45ba11",
     "research/community-reconciliation-next100-audit/DISPOSITIONS.json": "de8d4f4026b86e5e59d5945d0b865de16c6886aa013451a2e3c117665bd95b51",
     "research/community-reconciliation-third100-audit/DISPOSITIONS.json": "dbd7051bd339005e1bd5c11e296965fda0e267dfc09136d9e4cf0ecb17976b89",
-    "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json": "45c22b5736719fe954a5b2679f1062dc800397c8693de4d261d036efc847bb8e",
+    "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json": "3201b8e60e71422828f987633754183378ac71f333b2be620d55fefc92a15e3f",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -30213,9 +30213,19 @@
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "closedAt": "2026-10-14T02:56:17Z",
+        "headRefOid": "bea1d52fd330c699903f81612ee58be81697d1eb",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 478,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/478",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/478#issuecomment-6159853294",
+        "integration_commit": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f"
+      },
       "current_head_observed_in": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
       "reviewed_head": "bea1d52fd330c699903f81612ee58be81697d1eb",
       "review_completion": {
@@ -30501,15 +30511,15 @@
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/local-483/research/tensor-response-r715/verify.py\", line 16, in <module>\n    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]\n    ~~~~~~~~~^^\n  File \"/tmp/reconciliation-fourth100-20261013/local-483/research/tensor-response-r715/verify.py\", line 15, in integrity\n    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Package manifest mismatch\n",
+      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
       "reviewed_head": "3738c3ce2d04d6a6c6363408ff9402286f592bc7",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
-        "required_execution_complete": false,
-        "published": true
+        "required_execution_complete": true,
+        "published": false
       },
       "verification_evidence": [
         {
@@ -38199,7 +38209,7 @@
       "closure": null,
       "reviewed_head": "dc14a57d17c63b0e427a5623ef23a2459bc196e9",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay is still running; no completed execution is claimed.",
+      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: transfer remain assumptions. No unconditional theorem or full Lean certification.\"\n}\nTraceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/extra-633/research/pr627-independent-audit-20261013/check_native_owners.py\", line 35, in <module>\n    selected = read(a.repository/'research/complex-k492-owner-repair/data/SPEC.json')\n  File \"/tmp/reconciliation-fourth100-20261013/extra-633/research/pr627-independent-audit-20261013/check_native_owners.py\", line 24, in read\n    raw = p.read_bytes()\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py\", line 777, in read_bytes\n    with self.open(mode='rb', buffering=0) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/tmp/reconciliation-fourth100-20261013/extra-633/research/complex-k492-owner-repair/data/SPEC.json'\n",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
@@ -38337,8 +38347,18 @@
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "CLOSED",
+      "closure": {
+        "closedAt": "2026-10-14T02:56:22Z",
+        "headRefOid": "a6895a69f8ad98ab45777b03e9e6f48888c39f6f",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 635,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/635",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/635#issuecomment-6159854220",
+        "integration_commit": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f"
+      },
       "reviewed_head": "a6895a69f8ad98ab45777b03e9e6f48888c39f6f",
       "disposition": "incorporated",
       "unresolved_question": null,
@@ -38479,8 +38499,18 @@
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "CLOSED",
+      "closure": {
+        "closedAt": "2026-10-14T02:56:28Z",
+        "headRefOid": "4edb0dda99c495141cc56ae6e8a74e632a74db8a",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 637,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/637",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/637#issuecomment-6159855150",
+        "integration_commit": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f"
+      },
       "reviewed_head": "4edb0dda99c495141cc56ae6e8a74e632a74db8a",
       "disposition": "incorporated",
       "unresolved_question": null,
@@ -39365,12 +39395,12 @@
       "closure": null,
       "reviewed_head": "df5b9c41fcea749242af886646dfebb9d86319a7",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay is still running; no completed execution is claimed.",
+      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
-        "required_execution_complete": false,
-        "published": true
+        "required_execution_complete": true,
+        "published": false
       },
       "verification_evidence": [
         {
@@ -39675,8 +39705,18 @@
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "CLOSED",
+      "closure": {
+        "closedAt": "2026-10-14T02:56:32Z",
+        "headRefOid": "0805e78f5fecc700804d4766d7e3e1d7d7e6a2ba",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 656,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/656",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/656#issuecomment-6159855946",
+        "integration_commit": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f"
+      },
       "reviewed_head": "0805e78f5fecc700804d4766d7e3e1d7d7e6a2ba",
       "disposition": "incorporated",
       "unresolved_question": null,
@@ -39902,12 +39942,12 @@
       "closure": null,
       "reviewed_head": "4982f0ca66ffe0960b5a6451deb5b66b1039326b",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay is still running; no completed execution is claimed.",
+      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
-        "required_execution_complete": false,
-        "published": true
+        "required_execution_complete": true,
+        "published": false
       },
       "verification_evidence": [
         {
@@ -50592,8 +50632,8 @@
     535
   ],
   "github_dispositions": {
-    "CLOSED": 362,
+    "CLOSED": 366,
     "MERGED": 287,
-    "OPEN": 112
+    "OPEN": 108
   }
 }

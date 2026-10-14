@@ -161,15 +161,6 @@ see also [CONTRIBUTORS.md](../../CONTRIBUTORS.md).
 - **#459:** Required contributed-package replay is still running; no completed execution is claimed.
 - **#461:** The claimed sharper 2*m^3/2^80 exceptional fraction is a GL-cover estimate, while the supplier retains the orthogonal-cover invoice. PR491 explicitly withdraws this probability transfer. Supply a valid bound for the actual cover or revert to the retained bad fraction and reprice; arithmetic alone does not discharge this obligation.
 - **#465:** The improved assembly imports the sharper GL-cover exceptional fraction without establishing it for the charged orthogonal cover. PR491 withdraws that probability transfer and uses a count-only correction. Reprice using a justified bad fraction or prove the missing transfer.
-- **#483:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
-  File "/tmp/reconciliation-fourth100-20261013/local-483/research/tensor-response-r715/verify.py", line 16, in <module>
-    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]
-    ~~~~~~~~~^^
-  File "/tmp/reconciliation-fourth100-20261013/local-483/research/tensor-response-r715/verify.py", line 15, in integrity
-    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: Package manifest mismatch
-
 - **#485:** The exact width rule/pivot ceiling has successful light checks. The actual full Linux job 114567592208 reaches the final discover check but fails: frozen hosting selection differs from recomputed optimum. Correct or explain that frozen selection with a source-bound completed full replay before closing the construction claim.
 - **#492:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
   File "/tmp/reconciliation-fourth100-20261013/local-492/research/tensor-syndrome-portfolio/verify.py", line 16, in <module>
@@ -190,7 +181,21 @@ AssertionError: Package manifest mismatch
 AssertionError: Package manifest mismatch
 
 - **#499:** The proposal prices a cross-copy/cross-family split. PR451 supplies a trace obstruction to treating that split as the present physical operator. Retain the proposed ledger, but supply a realizable operator/interface and its complete charge before accepting the claimed improvement.
-- **#633:** Required contributed-package replay is still running; no completed execution is claimed.
+- **#633:** Required contributed-package replay has not completed successfully. Latest direct evidence: transfer remain assumptions. No unconditional theorem or full Lean certification."
+}
+Traceback (most recent call last):
+  File "/tmp/reconciliation-fourth100-20261013/extra-633/research/pr627-independent-audit-20261013/check_native_owners.py", line 35, in <module>
+    selected = read(a.repository/'research/complex-k492-owner-repair/data/SPEC.json')
+  File "/tmp/reconciliation-fourth100-20261013/extra-633/research/pr627-independent-audit-20261013/check_native_owners.py", line 24, in read
+    raw = p.read_bytes()
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 777, in read_bytes
+    with self.open(mode='rb', buffering=0) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/reconciliation-fourth100-20261013/extra-633/research/complex-k492-owner-repair/data/SPEC.json'
+
 - **#634:** Required contributed-package replay is still running; no completed execution is claimed.
 - **#636:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
   File "/tmp/reconciliation-fourth100-20261013/cold-636/research/combined-cold-ends-20261013/witness635/verify.py", line 39, in <module>
@@ -246,7 +251,5 @@ AssertionError: larger_gain manifest pin
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: larger_gain manifest pin
 
-- **#651:** Required contributed-package replay is still running; no completed execution is claimed.
 - **#658:** Required contributed-package replay is still running; no completed execution is claimed.
-- **#659:** Required contributed-package replay is still running; no completed execution is claimed.
 - **#664:** Required contributed-package replay is still running; no completed execution is claimed.

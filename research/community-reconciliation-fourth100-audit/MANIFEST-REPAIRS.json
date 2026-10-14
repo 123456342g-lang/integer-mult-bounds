@@ -36,6 +36,15 @@
     "repair": "Remove only absent .gitattributes checkout metadata; all present source/data pins exact"
   },
   {
+    "number": 492,
+    "head": "0c9eb6f80cef2e5797e5b7af940f447c0bdf25ad",
+    "manifest_path": "research/tensor-syndrome-portfolio/MANIFEST.json",
+    "original_sha256": "812dc9815a9986e87c40737f24001d0068396c962abccf3cf1973b8fa85f0930",
+    "missing_metadata_hash": "e4743c834e8463aab8324390a67b1b3c7fdfe2e2b553948aaa5e8e98b31b3b8c",
+    "repaired_sha256": "fd52ce402cf7d40f1512babdf82a4ca9ed8fb2b34f7f5575d05b575e33ae5087",
+    "repair": "Remove only absent .gitattributes checkout metadata; all present source/data pins exact"
+  },
+  {
     "number": 505,
     "head": "4ee769c8e28837482272b5f4742497da8e2fc9d4",
     "manifest_path": "research/asynchronous-whole-owners/MANIFEST.json",

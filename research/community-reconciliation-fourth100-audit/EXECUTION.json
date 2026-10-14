@@ -217,6 +217,25 @@
       "retained_log": "logs/pr478-repaired.txt.gz"
     },
     {
+      "number": 483,
+      "head": "3738c3ce2d04d6a6c6363408ff9402286f592bc7",
+      "command": [
+        "/tmp/integer-mult-review-venv/bin/python",
+        "-B",
+        "/tmp/reconciliation-fourth100-20261013/repaired-483/research/tensor-response-r715/verify.py",
+        "/tmp/reconciliation-fourth100-20261013/repaired-483-out"
+      ],
+      "cwd": "/tmp/reconciliation-fourth100-20261013/repaired-483",
+      "exit_code": 0,
+      "seconds": 908.2637281417847,
+      "log": "pr483-repaired.txt",
+      "sha256": "867c9c071242f89e20ae8eaf129a7247342cbda348e42b73a142036005919145",
+      "environment": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+      "scope": "Fresh unmodified contributed package wrapper; inherited cited suppliers and assumptions retain its explicit scope.",
+      "receipt_group": "local-repair",
+      "retained_log": "logs/pr483-repaired.txt.gz"
+    },
+    {
       "number": 505,
       "head": "4ee769c8e28837482272b5f4742497da8e2fc9d4",
       "command": [
@@ -1906,6 +1925,90 @@
       "retained_log": "logs/pr656-gauge.txt.gz"
     },
     {
+      "number": 659,
+      "head": "4982f0ca66ffe0960b5a6451deb5b66b1039326b",
+      "commands": [
+        [
+          "/tmp/integer-mult-review-venv/bin/python",
+          "-B",
+          "/tmp/reconciliation-fourth100-20261013/gauge-659/research/gauge44-notri-layered/verify_manifest.py"
+        ],
+        [
+          "/tmp/integer-mult-review-venv/bin/python",
+          "-B",
+          "/tmp/reconciliation-fourth100-20261013/gauge-659/research/gauge44-notri-layered/construction/reproduce.py",
+          "--main",
+          "/tmp/integer-mult-queue-20261013",
+          "--pr635",
+          "/tmp/reconciliation-fourth100-20261013/cold-635",
+          "--out",
+          "/tmp/reconciliation-fourth100-20261013/gauge-659-out/base",
+          "--until",
+          "word"
+        ],
+        [
+          "/tmp/integer-mult-review-venv/bin/python",
+          "-B",
+          "/tmp/reconciliation-fourth100-20261013/gauge-659/research/gauge44-notri-layered/construction/notri/reproduce_notri.py",
+          "--main",
+          "/tmp/integer-mult-queue-20261013",
+          "--pr635",
+          "/tmp/reconciliation-fourth100-20261013/cold-635",
+          "--word-dir",
+          "/tmp/reconciliation-fourth100-20261013/gauge-659-out/base",
+          "--out",
+          "/tmp/reconciliation-fourth100-20261013/gauge-659-out/notri",
+          "--word-only"
+        ],
+        [
+          "/tmp/integer-mult-review-venv/bin/python",
+          "-B",
+          "/tmp/reconciliation-fourth100-20261013/gauge-659/research/gauge44-notri-layered/construction/layers_np/reproduce_np.py",
+          "--main",
+          "/tmp/integer-mult-queue-20261013",
+          "--pr635",
+          "/tmp/reconciliation-fourth100-20261013/cold-635",
+          "--notri-dir",
+          "/tmp/reconciliation-fourth100-20261013/gauge-659-out/notri",
+          "--hamming",
+          "/tmp/reconciliation-fourth100-20261013/gauge-659-out/base/hamming",
+          "--out",
+          "/tmp/reconciliation-fourth100-20261013/gauge-659-out/np"
+        ],
+        [
+          "/tmp/integer-mult-review-venv/bin/python",
+          "-B",
+          "/tmp/reconciliation-fourth100-20261013/gauge-659/research/gauge44-notri-layered/independent/audit_local.py",
+          "--word",
+          "/tmp/reconciliation-fourth100-20261013/gauge-659-out/np/layers/FULL-WORD.json.gz",
+          "--main",
+          "/tmp/integer-mult-queue-20261013",
+          "--output",
+          "/tmp/reconciliation-fourth100-20261013/gauge-659-out/independent.json"
+        ],
+        [
+          "/tmp/integer-mult-review-venv/bin/python",
+          "-B",
+          "/tmp/reconciliation-fourth100-20261013/gauge-659/research/gauge44-notri-layered/verify_global.py",
+          "--main",
+          "/tmp/integer-mult-queue-20261013",
+          "--local",
+          "/tmp/reconciliation-fourth100-20261013/gauge-659-out/np/local",
+          "--work",
+          "/tmp/reconciliation-fourth100-20261013/gauge-659-out/global"
+        ]
+      ],
+      "cwd": "/tmp/reconciliation-fourth100-20261013/gauge-659",
+      "exit_code": 0,
+      "seconds": 635.6832392215729,
+      "log": "pr659-gauge.txt",
+      "sha256": "830904cd2cc274b428c594d94ba188328f1166c37ea414be5b3a6869694e138a",
+      "environment": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+      "scope": "Fresh reconstructed local phases and complete global admission under source-pinned dependencies; unchanged bit is cited and repriced.",
+      "receipt_group": "gauge",
+      "retained_log": "logs/pr659-gauge.txt.gz"
+    },
+    {
       "number": 521,
       "head": "a190fdb39f31647fc6f651625353710624627348",
       "commands": [
@@ -2179,6 +2282,40 @@
       "scope": "Fresh contributed wrapper; optional steps and inherited cited suppliers are identified in the original log.",
       "receipt_group": "extra",
       "retained_log": "logs/pr515-extra.txt.gz"
+    },
+    {
+      "number": 633,
+      "head": "dc14a57d17c63b0e427a5623ef23a2459bc196e9",
+      "command": [
+        "sh",
+        "/tmp/reconciliation-fourth100-20261013/extra-633/research/pr627-independent-audit-20261013/run_replay.sh",
+        "/tmp/reconciliation-fourth100-20261013/extra-633-out"
+      ],
+      "cwd": "/tmp/reconciliation-fourth100-20261013/extra-633",
+      "exit_code": 1,
+      "seconds": 1665.5001800060272,
+      "log": "pr633-extra.txt",
+      "sha256": "203632f7e8361322faf69c39af2a983232a9271048417d08ec04959e558baa9e",
+      "scope": "Fresh contributed wrapper; optional steps and inherited cited suppliers are identified in the original log.",
+      "receipt_group": "extra",
+      "retained_log": "logs/pr633-extra.txt.gz"
+    },
+    {
+      "number": 651,
+      "head": "df5b9c41fcea749242af886646dfebb9d86319a7",
+      "command": [
+        "sh",
+        "/tmp/reconciliation-fourth100-20261013/extra-651/research/complex-delivery-rigidity/reproduce.sh",
+        "/tmp/reconciliation-fourth100-20261013/extra-651-out"
+      ],
+      "cwd": "/tmp/reconciliation-fourth100-20261013/extra-651",
+      "exit_code": 0,
+      "seconds": 260.2040169239044,
+      "log": "pr651-extra.txt",
+      "sha256": "71404ef6a1fe1c90b241ea661ee5b073c294173637002e20531d62710b06ad37",
+      "scope": "Fresh contributed wrapper; optional steps and inherited cited suppliers are identified in the original log.",
+      "receipt_group": "extra",
+      "retained_log": "logs/pr651-extra.txt.gz"
     },
     {
       "number": 594,

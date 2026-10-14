@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-P=Path('/tmp/reconciliation-fourth100-20261013');groups=['local','local-repair','native','native-repair','inherited-ci','cold-retry','gauge','quick','quick-retry','extra','report','serialization'];passed=set()
+P=Path('/tmp/reconciliation-fourth100-20261013');groups=['local','local-repair','native','native-repair','inherited-ci','cold-retry','gauge','quick','quick-retry','extra','report','serialization','post'];passed=set()
 for group in groups:
  p=P/(group+'-execution.json')
  if p.exists():passed.update(x['number']for x in json.load(open(p))if x['exit_code']==0)

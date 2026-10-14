@@ -3,8 +3,10 @@ from pathlib import Path
 R=Path('/tmp/integer-mult-queue-20261013');A=R/'research/community-reconciliation-fourth100-audit';P=Path('/tmp/reconciliation-fourth100-20261013');repo='CrocSwap/integer-mult-bounds';data=json.load(open(A/'DISPOSITIONS.json'));reviews=json.load(open(A/'REVIEW.json'));pub=json.load(open(A/'PUBLICATION.json'));receipt=P/'closure-receipts.json';receipts=json.load(open(receipt)) if receipt.exists() else [];done={x['number'] for x in receipts};review_url=f'https://github.com/{repo}/blob/{pub["integration_commit"]}/docs/research/community-reconciliation-fourth100-review.md';credits=f'https://github.com/{repo}/blob/{pub["integration_commit"]}/CONTRIBUTORS.md'
 def call(args):return json.loads(subprocess.check_output(['gh',*args],text=True))
 def save():receipt.write_text(json.dumps(receipts,indent=2)+'\n')
+only=next((set(map(int,arg.split('=',1)[1].split(',')))for arg in sys.argv[1:]if arg.startswith('--only=')),None)
 for r in data['pull_requests']:
  n=r['number']
+ if only is not None and n not in only:continue
  if n in done or str(n) in sys.argv[1:]:continue
  if '--completed-only' in sys.argv and not(r['disposition']=='incorporated' and all(r['review_completion'].values())):continue
  current=call(['pr','view',str(n),'--repo',repo,'--json','number,state,isDraft,headRefOid,url,closedAt,mergedAt'])
