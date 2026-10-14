@@ -84,8 +84,7 @@ acceptance check. The certificate is `CERTIFICATE.json`.
 2. For any compatible occurrence, what is the complete copy, frame, precision,
    hosting, and restoration bill? It must be measured before applying the ceiling.
 
-The original narrow coordination claim and handoff are in
-[Discussion #1166](https://github.com/CrocSwap/integer-mult-bounds/discussions/1166#discussioncomment-18923483).
+The original narrow claim is [Discussion #1166 comment 18923483](https://github.com/CrocSwap/integer-mult-bounds/discussions/1166#discussioncomment-18923483); the result handoff is [comment 18923691](https://github.com/CrocSwap/integer-mult-bounds/discussions/1166#discussioncomment-18923691). The focused package PR is [#1866](https://github.com/CrocSwap/integer-mult-bounds/pull/1866).
 
 ## Credit
 

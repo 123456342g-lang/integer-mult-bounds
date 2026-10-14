@@ -191,5 +191,5 @@
     "model_limit": "Moment-only interface tariff. It does not include a source-pinned placement, frames, copies, native precision, hosting or restoration; no supplier or kappa claim."
   },
   "success_evidence": "Exact minimal-rank tensor and dirty-state contract; exact bounded profile thresholds; pinned phase-A necessary-condition scan. Any selected-source placement and full cost accounting remain open.",
-  "coordination": "Claim posted before construction: https://github.com/CrocSwap/integer-mult-bounds/discussions/1166#discussioncomment-18923483. The claim scope was the heterogeneous (3,1,1,1)->6 block; handoff records the phase-A screen and preserves the open placement and interface-cost obligations."
+  "coordination": "Claim: https://github.com/CrocSwap/integer-mult-bounds/discussions/1166#discussioncomment-18923483. Handoff posted at https://github.com/CrocSwap/integer-mult-bounds/discussions/1166#discussioncomment-18923691 with partial result, limits, and scope release. Focused PR: https://github.com/CrocSwap/integer-mult-bounds/pull/1866."
 }
