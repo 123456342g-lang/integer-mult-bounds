@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-10-14T07:33Z",
+  "checked_at_utc": "2026-10-14T07:35Z",
   "seed": "818dbf90f2581f79a4e4150cdd77e415",
   "search_terms": [
     "AGL2 mixed affine target",
@@ -12,16 +12,20 @@
   "methods": {
     "repository_helper": "python3.12 scripts/find_overlap.py ... --refresh --json; discussion snapshot completed pagination",
     "open_pull_requests": "gh api --paginate --method GET repos/CrocSwap/integer-mult-bounds/pulls -f state=open -f per_page=100, retaining titles and full bodies",
-    "discussion_cross_check": "Fetched rendered Discussion #1317 page directly after helper refresh hit the API rate limit"
+    "discussion_cross_check": "Searched GitHub Discussions for repository-scoped AGL2, then fetched the current rendered Discussion #1317 page after helper refresh hit the API rate limit"
   },
   "coverage": {
     "helper_discussion_snapshot_at": "2026-10-14T07:28:35Z",
     "helper_discussion_pagination_complete": true,
     "helper_discussion_records": 351,
-    "direct_open_pr_count": 402,
+    "direct_open_pr_count": 403,
     "direct_open_pr_search_matching_terms": [1711],
     "direct_open_pr_relevant_nearby": [1696, 1711],
-    "direct_discussion_page_rechecked_at": "2026-10-14T07:33Z"
+    "repository_discussion_search": "repo:CrocSwap/integer-mult-bounds AGL2",
+    "repository_discussion_search_results": 1,
+    "repository_discussion_search_result": "Discussion #1317",
+    "direct_discussion_page_rechecked_at": "2026-10-14T07:35Z",
+    "direct_discussion_page_comment_count": 17
   },
   "nearest_work": [
     {

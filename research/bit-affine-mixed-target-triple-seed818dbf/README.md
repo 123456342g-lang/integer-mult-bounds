@@ -126,8 +126,12 @@ was not changed.
 
 ## Overlap and attribution
 
-Overlap was checked against open PRs and fully paginated active Discussion
-claims. Open PR #1711 studies two-register endpoints `diag([h],[h])` and
+The final refresh covered all 403 open PRs and a repository-scoped `AGL2`
+Discussion search, which returned only #1317. The most recent complete
+paginated discussion snapshot had 351 records at 07:28 UTC; a later helper
+refresh hit GitHub's GraphQL rate limit, so I cross-checked the current
+rendered thread and repository search page. Open PR #1711 studies two-register
+endpoints `diag([h],[h])` and
 `diag([h],[h^-1])` with the four-label alphabet `{a,b,t_x,t_y}` (24
 generators). This result instead uses exactly three registers, target tuple
 `(a,b,h)`, and the restricted alphabet `{a,b,t_x}` (84 generators). The
