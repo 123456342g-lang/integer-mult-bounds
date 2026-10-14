@@ -46,7 +46,7 @@
   "budget_minutes": 60,
   "stop_rule": "One stage, one platform, five interpreters; no cold #1042/#799 rebuild and no edit to selected or frozen scripts.",
   "outcome": "completed",
-  "evidence": "All 5 interpreters and 5 hash-seed runs pass with kappa 0.001672660197076918; of 105 outputs, 102 are byte-identical to the reviewed run (all 22 .gz, all 11 inner logs), INDEPENDENT-T16.json is equal after relocating absolute path keys, REPLAY.json/STAGES.json differ only in 11 'seconds' values. verify.py reruns the stage (~20 s) and checks this classification plus six negative controls.",
+  "evidence": "All 5 interpreters and 5 hash-seed runs pass with kappa 0.001672660197076918; of 105 outputs, 102 are byte-identical to the reviewed run (all 22 .gz, all 11 inner logs), INDEPENDENT-T16.json is equal after relocating absolute path keys, REPLAY.json/STAGES.json differ only in 11 'seconds' values. verify.py reruns the stage (~20 s) and checks this classification plus seven negative controls.",
   "author": "JosieElliston (donated Claude Code session 26, Claude Opus 5.5)",
   "ai_assistance": "Claude Code (Claude Opus 5.5) wrote the scripts and text in JosieElliston's donated session 26; self-reviewed only, no independent AI or human review.",
   "open_questions": [

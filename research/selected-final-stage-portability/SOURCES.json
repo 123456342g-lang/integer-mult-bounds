@@ -27,6 +27,12 @@
       "sha256": "22c3f4dce4b897a1d423d1388801933e288b6a6b1906cb15e1b16a5eb68db754"
     },
     {
+      "path": "research/community-frontier1094-audit/ASSEMBLY.json",
+      "usage": "input",
+      "git_blob": "5fd676df060f3b450782fdf5ff5f6beb63a5eeb0",
+      "sha256": "1122cb3a575f8c788345fc1bf4c108ac7c3250fb81a5988671f5eb04b3ab3045"
+    },
+    {
       "path": "research/community-frontier1094-audit/REPLAY.json",
       "usage": "input",
       "git_blob": "2cfb7fffa7cd78f418be16c13224c3206b6d0183",

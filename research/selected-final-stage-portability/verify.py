@@ -16,8 +16,9 @@ strict verifier on Rohan Arun's owner exchanges). This script
    absolute paths, and ``REPLAY.json``/``STAGES.json`` differing only in
    wall-clock ``seconds``;
 5. runs negative controls showing that the comparison flags a changed
-   proof-relevant value, a changed gzip payload, a missing file and an
-   unmapped path, and accepts a re-compressed gzip container.
+   proof-relevant value, a changed inner log digest, a changed gzip payload,
+   a missing file and an unmapped path, and accepts a re-compressed gzip
+   container.
 
 Standard library only; Python 3.10+ (``tarfile`` ``filter=`` needs 3.10.12+ or
 3.11.4+). Prepared with Claude Code (Claude Opus 5.5) for JosieElliston's
@@ -149,6 +150,9 @@ def run(work):
         check(res[name]['cls'] == cls, 'unexpected class for ' + name)
     for name in ('REPLAY.json', 'STAGES.json'):
         check(res[name]['verdict'] == 'volatile' and res[name]['differing'] == 11, name + ' differs beyond seconds')
+    # The #1094 certificate (selected at base 0b1cccf8) is this file's bytes.
+    check((out / 'strict/ASSEMBLY.json').read_bytes() == (A1094 / 'ASSEMBLY.json').read_bytes(),
+          'rerun ASSEMBLY.json differs from the committed #1094 certificate bytes')
     print('PASS comparison', json.dumps(counts(res), sort_keys=True), flush=True)
     # 5. Negative controls on copies of the rerun output.
     controls(ref / 'candidate/strict', out / 'strict', ref_roots, run_roots, work / 'controls')
@@ -183,6 +187,10 @@ def controls(ref, run, ref_roots, run_roots, base):
         j['kappa_decimal'] = j['kappa_decimal'][:-1] + '9'
     variant('kappa-with-seconds', edit_json('REPLAY.json', kappa),
             'REPLAY.json', 'json-diff:proof-relevant-candidate')
+    def log_digest(j):
+        j[0]['log_sha256'] = '0' * 64
+    variant('inner-log-digest', edit_json('STAGES.json', log_digest),
+            'STAGES.json', 'json-diff:proof-relevant-candidate')
     gz = 'global/hosted/GLOBAL-TEMPLATE.json.gz'
 
     def recompress(d):

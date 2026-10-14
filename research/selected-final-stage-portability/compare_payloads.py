@@ -9,8 +9,9 @@ JSON), ``json-diff`` (parsed JSON differs; the differing JSON paths are listed),
 directories are replaced by the same placeholder, in keys and string values),
 ``missing`` / ``extra``. A remaining JSON difference is reported as ``volatile``
 only when every differing leaf is under a key named in VOLATILE_KEYS (wall-clock
-seconds and the digests of logs that print them); everything else is reported
-as ``proof-relevant-candidate`` for a human to inspect.
+``seconds``; a ``--volatile-key`` option adds more, e.g. ``log_sha256`` when the
+logs print timings and are compared as files anyway); everything else is
+reported as ``proof-relevant-candidate`` for a human to inspect.
 
 Standard library only; Python 3.10+. Prepared with Claude Code (Claude Opus 5.5)
 for JosieElliston's donated session 26. Apache-2.0.
@@ -21,7 +22,7 @@ import hashlib
 import json
 from pathlib import Path
 
-VOLATILE_KEYS = frozenset({'seconds', 'log_sha256'})
+VOLATILE_KEYS = {'seconds'}
 
 
 def files(root):
@@ -136,8 +137,11 @@ def main():
                     help='absolute directory used by the reference run, mapped to TOKEN')
     ap.add_argument('--run-root', action='append', default=[], metavar='TOKEN=PREFIX',
                     help='absolute directory used by the compared run, mapped to TOKEN')
+    ap.add_argument('--volatile-key', action='append', default=[],
+                    help='additional JSON key whose differing values are classified volatile')
     ap.add_argument('--out', type=Path)
     a = ap.parse_args()
+    VOLATILE_KEYS.update(a.volatile_key)
     result = compare(a.ref, a.run, roots(a.ref_root), roots(a.run_root))
     counts = {}
     for v in result.values():

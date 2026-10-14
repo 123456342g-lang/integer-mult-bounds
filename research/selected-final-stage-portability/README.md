@@ -39,6 +39,13 @@ hash-seed settings, with kappa `0.001672660197076918` each time. Each rerun's
 | 3.13.15 | random | 17.5 s | 102 / 1 / 2 |
 | 3.14.7 | random, 0, 987654321 | 14.6 s | 102 / 1 / 2 (all three) |
 
+In particular, every rerun's `strict/ASSEMBLY.json` is byte-identical to
+`community-frontier1094-audit/ASSEMBLY.json` (`1122cb3a…`). That file is the
+certificate the selected record pins at base `0b1cccf8`. PR1735 points out that
+`make frontier1094-verify` binds that certificate to the replay only through
+kappa. This rerun closes the gap for the final stage, by bytes, on every
+interpreter tested. `verify.py` checks it explicitly.
+
 So the final stage is deterministic and portable across CPython 3.10–3.14 on
 this platform, down to compressed bytes. "Python 3.12+" in the stage README is
 conservative. The real floor is `tarfile.extractall(filter='data')`, which
@@ -71,6 +78,7 @@ removing the trailing seconds field from each `PASS <stage> <seconds>` line.
    - Each of these must be flagged `proof-relevant-candidate`:
      - a changed proof value (`live` in `INDEPENDENT-T16.json`);
      - a changed kappa in `REPLAY.json`, which also differs in volatile seconds;
+     - a changed inner `log_sha256` in `STAGES.json`;
      - a changed gzip payload;
      - an input path outside the mapped roots.
    - A missing file must be reported `missing`.
@@ -85,7 +93,8 @@ python3 research/selected-final-stage-portability/compare_payloads.py REF_DIR RU
 ```
 
 A JSON difference counts as `volatile` only when every differing leaf sits under
-a key in `VOLATILE_KEYS` (`seconds`, `log_sha256`). Every other difference is
+a key in `VOLATILE_KEYS` (only `seconds` by default; `--volatile-key` adds more,
+for example `log_sha256` when logs print timings). Every other difference is
 reported as `proof-relevant-candidate` for a person to inspect. It does not
 decide which fields are proof-relevant; it lists the paths that differ.
 
