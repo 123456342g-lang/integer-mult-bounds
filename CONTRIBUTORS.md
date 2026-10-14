@@ -714,10 +714,13 @@ The six pending contributions are credited in the pilot ledger; pending review i
 
 Original contributor commits and predecessor notices are preserved. These are scoped research and verification contributions, with no selected κ change. See the [review and exact-head evidence](docs/research/community-efficient900-review.md).
 
-- **1337isnot1337** — [#1863](https://github.com/CrocSwap/integer-mult-bounds/pull/1863), [#1866](https://github.com/CrocSwap/integer-mult-bounds/pull/1866), [#1870](https://github.com/CrocSwap/integer-mult-bounds/pull/1870), [#1872](https://github.com/CrocSwap/integer-mult-bounds/pull/1872), [#1878](https://github.com/CrocSwap/integer-mult-bounds/pull/1878), [#1881](https://github.com/CrocSwap/integer-mult-bounds/pull/1881).
+- **1337isnot1337** — [#1863](https://github.com/CrocSwap/integer-mult-bounds/pull/1863), [#1866](https://github.com/CrocSwap/integer-mult-bounds/pull/1866), [#1870](https://github.com/CrocSwap/integer-mult-bounds/pull/1870), [#1872](https://github.com/CrocSwap/integer-mult-bounds/pull/1872), [#1873](https://github.com/CrocSwap/integer-mult-bounds/pull/1873), [#1878](https://github.com/CrocSwap/integer-mult-bounds/pull/1878), [#1881](https://github.com/CrocSwap/integer-mult-bounds/pull/1881), [#1887](https://github.com/CrocSwap/integer-mult-bounds/pull/1887).
 - **navinor** — [#1864](https://github.com/CrocSwap/integer-mult-bounds/pull/1864).
-- **jmbarrancoml** — [#1867](https://github.com/CrocSwap/integer-mult-bounds/pull/1867).
-- **adamgall** — [#1889](https://github.com/CrocSwap/integer-mult-bounds/pull/1889).
+- **jmbarrancoml** — [#1867](https://github.com/CrocSwap/integer-mult-bounds/pull/1867), [#1949](https://github.com/CrocSwap/integer-mult-bounds/pull/1949).
+- **chafreaky** — [#1877](https://github.com/CrocSwap/integer-mult-bounds/pull/1877).
+- **RossRichardson** — [#1888](https://github.com/CrocSwap/integer-mult-bounds/pull/1888).
+- **adamgall** — [#1889](https://github.com/CrocSwap/integer-mult-bounds/pull/1889), [#1908](https://github.com/CrocSwap/integer-mult-bounds/pull/1908), [#1911](https://github.com/CrocSwap/integer-mult-bounds/pull/1911).
+- **woklerx** — [#1892](https://github.com/CrocSwap/integer-mult-bounds/pull/1892), [#1893](https://github.com/CrocSwap/integer-mult-bounds/pull/1893), [#1894](https://github.com/CrocSwap/integer-mult-bounds/pull/1894), [#1895](https://github.com/CrocSwap/integer-mult-bounds/pull/1895).
 
 Pending contributors and their obligations are listed in the review. A hold is not a rejection.
 

@@ -293,15 +293,17 @@
       "current_head": "08f1eaf5946f57de0e126e82b5e0432564cca4e0",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/selected-t16-three-role-cycle-seedc375"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Complete49408 same-call supported three-owner type patterns reduce to35 histogram transitions:19 ties and16 strict cost increases certified by both exact moment engines. Capacity and selected-map invariants checked, with improving synthetic and overflow controls. Cross-call and longer cycles remain open.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -427,15 +429,18 @@
       "current_head": "6d455d2d71eb35ecf8e562711e5f719b994fe3f3",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        ".github/workflows",
+        "research/sourcecode-commutant"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Field-independent full-query support proof, sharp112-port8+104 example and fixed-read Fourier commutant obstruction reviewed. Exact rank/minor and seven rejecting controls pass. The120 rowwise bill is conditional on its tariff; changed charts, paid transport and other boundary contracts are not excluded.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -514,6 +519,7 @@
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1880.json",
+        "research/community-efficient900-audit/checks/check-1880-fixture.json",
         "research/community-efficient900-audit/checks/check-1880.json"
       ]
     },
@@ -609,15 +615,17 @@
       "current_head": "025d4fcd87f1b6ea01aa1c52721f8f46389aacce",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/two-projection-connector-seed51a5"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Fixed-port two-helper construction uses72 complete map calls,180 inherited rank-one children and10 paid row XORs. Literal dirty-state replay,30240 bounded candidates and fixed-boundary GL2 shortest-path schedule checked. Two-child advantage is conditional on additional helper/frame tariff and selected placement remains open.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -643,15 +651,17 @@
       "current_head": "9c0fd1d20d33353018a508fbc84e4189525c593c",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/centre-sharing-mixed-overhead"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Strict independent radical and log-exp intervals plus concavity prove mixed-overhead mass limits4445/4622 in the stated fixed-profile cap51 relaxation. Sharp649 pure-removal floor excludes arbitrary reblocking; zero-mass reblocking control retained. No physical sharing, all47 outer constraints or supplier admission.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -752,15 +762,17 @@
       "current_head": "bcc1b9a37460a15fb4aa611957ed9f6842eb6da2",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/shear-orbit-interval-audit"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Exact rational endpoint feasibility proof and independent chronological enumeration reproduce1001 half-grid horizons and2268 asymmetric rational windows. Large-offset sharp witness and three controls pass. Per-orbit optima do not establish a compatible global rounder or supplier precision bound.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -786,15 +798,17 @@
       "current_head": "86f11f760119c4fb398d3824a3366a2fe81c6595",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/idle-stability-radical-audit"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Independent outward fixed-point radical arithmetic reproduces18 integer mass caps;1100 integer-partition DP optima and7414 transitions certify the stated relaxed concentration fixtures. Selected invoice is assumed/pinned rather than circuit-rederived; no physical packing or improved supplier admitted.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -820,15 +834,17 @@
       "current_head": "cd4d55afc5fe55369f08e67558939375ca79745f",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/nonlinear-cut-exhaustive-audit"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "All66429 words through depth5 over6 CNOT and3 Toffoli gates yield282 nonlinear permutation words;272172 demanded-class cuts and2177376 full transcripts pass. Includes basis-only trap and omitted-wire control. Finite audit corroborates the credited universal cut proof; it is not a global geometry exclusion.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -854,15 +870,17 @@
       "current_head": "14cf51a62d64b0e97785c701ee84babfce01e2c5",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/source-query-finite-field-audit"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Field-independent endpoint support argument reviewed alongside118944 full-query GF2 cases, missing-premise witnesses and separately exact rational sharp example. J invertibility is retained for the target-rank floor. No finite-field inference about112-port complex frames or native costs.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -1157,15 +1175,17 @@
       "current_head": "e54fcebd99d888b6fc4acb20fde81002e3ba024e",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/rounded-leaf-lattice-closure"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Actual pinned rounded leaf gives39/8-i/16 where the ideal lattice map gives5; a later mixed-precision pair leaves1/8. Independent rational formula,8064 leaf/inverse cases and3600 half-open-cell checks pass. This falsifies ideal-to-actual lattice-closure inference, not the admitted primitive or a selected caller.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -1259,15 +1279,17 @@
       "current_head": "712593f82739203639d0a169b88c6bcac6f0590c",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/infinite-dihedral-register-bound"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Laurent all-minor degree proves separate reflection bills for every register count and formal infinite-dihedral target; direct words attain both. Exact formal/literal replay and144 mixed-projector cases corroborate the proof. Finite cyclic quotient shortcuts and different paid alphabets remain outside this lower bound.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -1577,7 +1599,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1922.json"
+        "research/community-efficient900-audit/packets/1922.json",
+        "research/community-efficient900-audit/checks/check-1922.json"
       ]
     },
     {
@@ -1813,7 +1836,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1932.json"
+        "research/community-efficient900-audit/packets/1932.json",
+        "research/community-efficient900-audit/checks/check-1932.json"
       ]
     },
     {
@@ -2310,19 +2334,22 @@
       "current_head": "be198c23d6b21c67ee9e6714dd04338c5a279cc3",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/diagonal-tensor-projection-barrier"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Reconstructed originalPR117 matching and physical path order yield24 singleton defect counts with minimum5982. Written rank-subadditivity/union-bound argument excludes positive coverage for the stated diagonal-span isometry model, even granting free centres. Source fixture repaired from exact head; changed schedules, off-diagonal projections and selected Clifford frames are outside scope.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1949.json",
+        "research/community-efficient900-audit/checks/check-1949-fixture.json",
         "research/community-efficient900-audit/checks/check-1949.json"
       ]
     },
