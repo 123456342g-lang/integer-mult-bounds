@@ -1,13 +1,13 @@
 # A determinant obstruction for native source-code controllers
 
-**Scoped structural result; no new supplier or kappa.** PR1862 supplies exact
+**Scoped structural result; no new supplier or kappa.** Ali Romman’s [PR #1862](https://github.com/CrocSwap/integer-mult-bounds/pull/1862) supplies exact
 local identity transfers that store an eight-coordinate centre query in
 existing data fields. Its remaining obstacle is a complete controller that
 removes the source code while delivering the required data endpoint. This
 package rules out an unbounded class of proposed controllers, rather than
 searching words only up to a length cutoff.
 
-For one fixed source code, every completed controller built from PR1862's
+For one fixed source code, every completed controller built from [PR #1862](https://github.com/CrocSwap/integer-mult-bounds/pull/1862)'s
 forward/backward transfers, their inverses, and arbitrary invertible scalar
 mixing of whole port banks must have **signed code winding divisible by six**.
 The statement allows any number of data banks and restored dirty auxiliary
@@ -26,12 +26,12 @@ These are controller-interface obstructions. Port-dependent scalar maps,
 physical changes of chart, new clean workspace, and paid repairs remain
 outside the first theorem. The second theorem does not include interleaved
 bank mixing or arbitrary native chart transports. Neither result is a lower
-bound for all multiplication algorithms or a rejection of PR1862's valid
+bound for all multiplication algorithms or a rejection of [PR #1862](https://github.com/CrocSwap/integer-mult-bounds/pull/1862)'s valid
 local construction.
 
 ## The pinned local interface
 
-Write a port bank as an n-vector. PR1862 works over the dyadic coefficient
+Write a port bank as an n-vector. [PR #1862](https://github.com/CrocSwap/integer-mult-bounds/pull/1862) works over the dyadic coefficient
 ring with maps R of size r by n, K of size n by r, and maps P,L satisfying
 
 ```text
@@ -74,7 +74,7 @@ f(t) = (t-1)(t^2-t+1),
 not just a polynomial that happens to annihilate G. Both summands are
 nonzero, and the two factors are coprime. In particular, the algebra Q[G]
 is faithfully represented by `A = Q[t]/(f)` and t has order exactly six.
-The local construction and these identities retain PR1862's attribution.
+The local construction and these identities retain [PR #1862](https://github.com/CrocSwap/integer-mult-bounds/pull/1862)'s attribution.
 
 ## Theorem 1: balance for every word in one fixed chart
 
@@ -158,7 +158,7 @@ The retained four-pair construction starts with F_0 and then uses
 exchange. It therefore contains four B calls and five F calls. Bridges and
 the signed exchange are scalar whole-bank maps; they cannot change w=-1.
 
-Substituting one fixed PR1862 source code into this skeleton cannot give its
+Substituting one fixed [PR #1862](https://github.com/CrocSwap/integer-mult-bounds/pull/1862) source code into this skeleton cannot give its
 required scalar identity, regardless of how its scalar whole-bank controller
 is redesigned. This covers all whole-bank scalar repairs at the same nine
 macro calls, not only the displayed bridge constants. More generally, no
@@ -233,9 +233,9 @@ The predecessor proof and notice are exact text copies under `references/`,
 with their original relative links referring to the pinned upstream package.
 No predecessor executable is imported.
 
-The source-bound verifier reads three pinned members of the selected PR1094
+The source-bound verifier reads three pinned members of the selected [PR #1094](https://github.com/CrocSwap/integer-mult-bounds/pull/1094)
 replay archive. Its local word and program payloads are byte-identical to the
-PR1042 inputs consumed by PR1862. It replays the **112 source columns only**
+[PR #1042](https://github.com/CrocSwap/integer-mult-bounds/pull/1042) inputs consumed by [PR #1862](https://github.com/CrocSwap/integer-mult-bounds/pull/1862). It replays the **112 source columns only**
 up to the forward centre cut, derives R,K,P,L and the 96+16 decomposition,
 and checks `RDK=12I_8` for all four pairs of the actual A/T and swapped T/A
 charts. The retained parent `GLOBAL-TEMPLATE` supplies only the exact
@@ -270,7 +270,7 @@ unchanged.
   six, followed by a typed native-frame replay and full child profile.
   The blocker is useful coordinate progress: cancellation by a true inverse
   can erase the very transformation the supplier needs to perform.
-- **A priced escape through actual chart transport.** PR1862's law
+- **A priced escape through actual chart transport.** [PR #1862](https://github.com/CrocSwap/integer-mult-bounds/pull/1862)'s law
   `R_t(G_t^-1 U G_s)=V_R R_s` is conditional on the selected transport.
   Derive one actual stage transition, including its port-dependent address
   maps, and check full-source restoration as well as query transport.
@@ -304,8 +304,10 @@ inside the excluded odd-call class can remove its determinant obstruction.
   reproving its source-support or native-frame statement.
 - The retained four-pair scalar chain and native geometry come from the
   split-centres/gauge44 construction and its inherited authors. The pinned
-  PR1042/PR1094 lineage retains Jeremy Kothe, Chafik Boukhalfa, Rohan Arun,
-  Hao Yan, icekylinx, NewBArch and the source-specific notices. No historical
+  source lineage includes Jeremy Kothe’s [PR #1042](https://github.com/CrocSwap/integer-mult-bounds/pull/1042)
+  and Rohan Arun’s [PR #1094](https://github.com/CrocSwap/integer-mult-bounds/pull/1094),
+  with Chafik Boukhalfa, Hao Yan, icekylinx, NewBArch and the source-specific
+  notices retaining their attribution. No historical
   construction or selected evidence is modified.
 
 Prepared by David Arias with substantial OpenAI Codex assistance in scoping,
