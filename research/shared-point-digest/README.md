@@ -41,12 +41,13 @@ historical-checker change.
 
 ## Result
 
-On Linux / CPython 3.12.3 (host details in [RESULT.json](RESULT.json)), five
+On Linux / CPython 3.12.3 (Linux-6.12.94+-x86_64-with-glibc2.39), five
 alternating fresh-process pairs timing only `SharedPointCircuit(46).verify`
-(construction excluded; nested `ExclusionCircuit.verify` included) give the
-recorded median before/after wall times. Timing is host-descriptive and is not
-a correctness gate. Every verify receipt matches the baseline checker fieldwise
-(`roles`, `additions`, `merged_additions`, `circuit_sha256`, flags).
+(construction excluded; nested `ExclusionCircuit.verify` included) gave median
+wall time **2.212 → 1.070 seconds (2.07×)**. Timing is host-descriptive and is
+not a correctness gate; all samples and environment pins are in
+[RESULT.json](RESULT.json). Every verify receipt matches the baseline checker
+fieldwise (`roles`, `additions`, `merged_additions`, `circuit_sha256`, flags).
 
 ## Equivalence
 
