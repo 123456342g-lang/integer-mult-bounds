@@ -119,9 +119,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\complex-decoder-scope-map.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-round2-twitter.md",
+        "docs/research/complex-decoder-scope-map.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [],
@@ -168,12 +168,12 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-historical-five-review.md",
-        "docs\\research\\community-reconciliation100-review.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md",
-        "docs\\research\\contributor-announcements.md"
+        "docs/research/community-historical-five-review.md",
+        "docs/research/community-reconciliation100-review.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md",
+        "docs/research/contributor-announcements.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -247,11 +247,11 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation100-review.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md",
-        "docs\\research\\ternary-release.md"
+        "docs/research/community-reconciliation100-review.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md",
+        "docs/research/ternary-release.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -337,11 +337,11 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-historical-five-review.md",
-        "docs\\research\\community-reconciliation100-review.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-historical-five-review.md",
+        "docs/research/community-reconciliation100-review.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -421,9 +421,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -513,9 +513,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\contribution-review.md",
-        "docs\\research\\research-priority-log.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/contribution-review.md",
+        "docs/research/research-priority-log.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -605,14 +605,14 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\batched-review.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md",
-        "docs\\research\\current-status.md",
-        "docs\\research\\result-history.md",
-        "docs\\research\\ternary-release.md",
-        "docs\\research\\ternary-review.md"
+        "docs/research/batched-review.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md",
+        "docs/research/current-status.md",
+        "docs/research/result-history.md",
+        "docs/research/ternary-release.md",
+        "docs/research/ternary-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -702,10 +702,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-historical-five-review.md",
-        "docs\\research\\community-reconciliation100-review.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-historical-five-review.md",
+        "docs/research/community-reconciliation100-review.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -785,10 +785,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-historical-five-review.md",
-        "docs\\research\\community-reconciliation100-review.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-historical-five-review.md",
+        "docs/research/community-reconciliation100-review.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -868,10 +868,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-historical-five-review.md",
-        "docs\\research\\community-reconciliation100-review.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-historical-five-review.md",
+        "docs/research/community-reconciliation100-review.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -951,9 +951,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -1043,10 +1043,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md",
-        "docs\\research\\contributor-announcements.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md",
+        "docs/research/contributor-announcements.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -1136,9 +1136,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -1228,9 +1228,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -1320,9 +1320,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\contribution-review.md",
-        "docs\\research\\contributor-announcements.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/contribution-review.md",
+        "docs/research/contributor-announcements.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -1412,8 +1412,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -1491,8 +1491,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [],
@@ -1539,9 +1539,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -1631,9 +1631,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -1723,10 +1723,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\community-transfer-review.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/community-transfer-review.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -1816,8 +1816,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -1907,9 +1907,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -1999,8 +1999,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -2090,9 +2090,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -2182,9 +2182,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -2274,9 +2274,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -2366,10 +2366,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-final-audit.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-final-audit.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -2459,9 +2459,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -2551,10 +2551,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation100-review.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-reconciliation100-review.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -2644,11 +2644,11 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-final-audit.md",
-        "docs\\research\\community-integration.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contribution-review.md"
+        "docs/research/community-final-audit.md",
+        "docs/research/community-integration.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contribution-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -2738,10 +2738,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-followup-integration.md",
-        "docs\\research\\community-reconciliation100-review.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md"
+        "docs/research/community-followup-integration.md",
+        "docs/research/community-reconciliation100-review.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -2831,9 +2831,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contributor-announcements.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contributor-announcements.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -2923,10 +2923,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation100-review.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contributor-announcements.md"
+        "docs/research/community-reconciliation100-review.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contributor-announcements.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -3016,10 +3016,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation100-review.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\contributor-announcements.md"
+        "docs/research/community-reconciliation100-review.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/contributor-announcements.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -3109,8 +3109,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round3-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round3-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -3200,8 +3200,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round3-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round3-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -3291,7 +3291,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -3381,8 +3381,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round3-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round3-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -3472,8 +3472,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round3-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round3-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -3551,7 +3551,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-round3-review.md"
+        "docs/research/community-round3-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [],
@@ -3598,8 +3598,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round3-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round3-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -3697,9 +3697,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round3-review.md",
-        "docs\\research\\community-round4-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round3-review.md",
+        "docs/research/community-round4-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -3786,9 +3786,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-round3-review.md",
-        "docs\\research\\community-round4-review.md",
-        "docs\\research\\community-round5-review.md"
+        "docs/research/community-round3-review.md",
+        "docs/research/community-round4-review.md",
+        "docs/research/community-round5-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [],
@@ -3835,7 +3835,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -3913,7 +3913,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-round3-review.md"
+        "docs/research/community-round3-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [],
@@ -3960,7 +3960,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -4050,8 +4050,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round3-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round3-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -4141,8 +4141,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round3-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round3-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -4241,8 +4241,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round3-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round3-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -4340,10 +4340,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round3-review.md",
-        "docs\\research\\community-round4-review.md",
-        "docs\\research\\community-round5-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round3-review.md",
+        "docs/research/community-round4-review.md",
+        "docs/research/community-round5-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -4442,10 +4442,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round3-review.md",
-        "docs\\research\\community-round4-review.md",
-        "docs\\research\\community-round5-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round3-review.md",
+        "docs/research/community-round4-review.md",
+        "docs/research/community-round5-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -4543,12 +4543,12 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation100-review.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round3-review.md",
-        "docs\\research\\community-round4-review.md",
-        "docs\\research\\community-round5-review.md",
-        "docs\\research\\community-round7-review.md"
+        "docs/research/community-reconciliation100-review.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round3-review.md",
+        "docs/research/community-round4-review.md",
+        "docs/research/community-round5-review.md",
+        "docs/research/community-round7-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -4638,7 +4638,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -4728,7 +4728,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -4818,7 +4818,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -4908,7 +4908,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -4998,7 +4998,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -5088,7 +5088,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -5180,10 +5180,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation100-review.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round5-review.md",
-        "docs\\research\\community-round7-review.md"
+        "docs/research/community-reconciliation100-review.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round5-review.md",
+        "docs/research/community-round7-review.md"
       ],
       "disposition": "superseded",
       "integration_location": [
@@ -5263,7 +5263,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -5353,7 +5353,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -5443,7 +5443,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -5533,7 +5533,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -5623,7 +5623,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -5727,11 +5727,11 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round5-review.md",
-        "docs\\research\\community-round6-review.md",
-        "docs\\research\\community-round7-review.md",
-        "docs\\research\\current-status.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round5-review.md",
+        "docs/research/community-round6-review.md",
+        "docs/research/community-round7-review.md",
+        "docs/research/current-status.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -5821,7 +5821,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -5899,7 +5899,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-efficient500-review.md"
+        "docs/research/community-efficient500-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [],
@@ -5946,7 +5946,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -6036,7 +6036,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -6126,8 +6126,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-efficient500-review.md",
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-efficient500-review.md",
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -6217,7 +6217,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -6307,7 +6307,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -6397,7 +6397,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -6487,14 +6487,14 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-final-audit.md",
-        "docs\\research\\community-hyperplane599-review.md",
-        "docs\\research\\community-integration.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round2-review.md",
-        "docs\\research\\community-round2-twitter.md",
-        "docs\\research\\current-status.md",
-        "docs\\research\\disjoint-tensor-compression.md"
+        "docs/research/community-final-audit.md",
+        "docs/research/community-hyperplane599-review.md",
+        "docs/research/community-integration.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round2-review.md",
+        "docs/research/community-round2-twitter.md",
+        "docs/research/current-status.md",
+        "docs/research/disjoint-tensor-compression.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -6584,7 +6584,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -6674,7 +6674,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -6764,7 +6764,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -6854,7 +6854,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -6944,8 +6944,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round8-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round8-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -7035,11 +7035,11 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round5-review.md",
-        "docs\\research\\community-round6-review.md",
-        "docs\\research\\community-round7-review.md",
-        "docs\\research\\current-status.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round5-review.md",
+        "docs/research/community-round6-review.md",
+        "docs/research/community-round7-review.md",
+        "docs/research/current-status.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -7129,8 +7129,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round8-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round8-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -7220,7 +7220,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -7310,9 +7310,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round7-morning.md",
-        "docs\\research\\community-round7-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round7-morning.md",
+        "docs/research/community-round7-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [
@@ -7392,8 +7392,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round8-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round8-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -7483,9 +7483,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round7-morning.md",
-        "docs\\research\\community-round7-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round7-morning.md",
+        "docs/research/community-round7-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -7575,9 +7575,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round7-morning.md",
-        "docs\\research\\community-round7-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round7-morning.md",
+        "docs/research/community-round7-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -7733,10 +7733,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round6-review.md",
-        "docs\\research\\community-round7-review.md",
-        "docs\\research\\current-status.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round6-review.md",
+        "docs/research/community-round7-review.md",
+        "docs/research/current-status.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -7826,7 +7826,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -7916,8 +7916,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round5-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round5-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -8007,9 +8007,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round7-morning.md",
-        "docs\\research\\community-round7-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round7-morning.md",
+        "docs/research/community-round7-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -8087,8 +8087,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-round7-morning.md",
-        "docs\\research\\community-round7-review.md"
+        "docs/research/community-round7-morning.md",
+        "docs/research/community-round7-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [],
@@ -8135,8 +8135,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round5-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round5-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -8226,8 +8226,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round5-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round5-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -8317,7 +8317,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -8407,8 +8407,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round5-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round5-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -8498,10 +8498,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round5-review.md",
-        "docs\\research\\community-round7-morning.md",
-        "docs\\research\\community-round7-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round5-review.md",
+        "docs/research/community-round7-morning.md",
+        "docs/research/community-round7-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -8591,9 +8591,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round7-morning.md",
-        "docs\\research\\community-round7-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round7-morning.md",
+        "docs/research/community-round7-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -8683,9 +8683,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round7-morning.md",
-        "docs\\research\\community-round7-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round7-morning.md",
+        "docs/research/community-round7-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -8764,9 +8764,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-efficient600-review.md",
-        "docs\\research\\community-round7-morning.md",
-        "docs\\research\\community-round7-review.md"
+        "docs/research/community-efficient600-review.md",
+        "docs/research/community-round7-morning.md",
+        "docs/research/community-round7-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [],
@@ -8802,7 +8802,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -8897,9 +8897,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation100-review.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round8-review.md"
+        "docs/research/community-reconciliation100-review.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round8-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -8975,7 +8975,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -9054,7 +9054,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -9149,7 +9149,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -9225,7 +9225,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -9304,7 +9304,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -9383,7 +9383,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -9486,7 +9486,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -9569,10 +9569,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-pr279-review.md",
-        "docs\\research\\community-reconciliation-next100-review.md",
-        "docs\\research\\community-round8-review.md",
-        "docs\\research\\current-status.md"
+        "docs/research/community-pr279-review.md",
+        "docs/research/community-reconciliation-next100-review.md",
+        "docs/research/community-round8-review.md",
+        "docs/research/current-status.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -9618,7 +9618,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -9721,7 +9721,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -9824,7 +9824,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -9903,7 +9903,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -9986,8 +9986,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md",
-        "docs\\research\\community-round8-review.md"
+        "docs/research/community-reconciliation-next100-review.md",
+        "docs/research/community-round8-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -10073,7 +10073,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -10149,7 +10149,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -10267,10 +10267,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation100-review.md",
-        "docs\\research\\community-round8-review.md",
-        "docs\\research\\current-status.md",
-        "docs\\research\\research-notes-20261011.md"
+        "docs/research/community-reconciliation100-review.md",
+        "docs/research/community-round8-review.md",
+        "docs/research/current-status.md",
+        "docs/research/research-notes-20261011.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -10332,8 +10332,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round8-review.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round8-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -10410,12 +10410,12 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\assembly-ceiling.md",
-        "docs\\research\\assembly-domain-audit.md",
-        "docs\\research\\community-batch932-review.md",
-        "docs\\research\\community-reconciliation100-review.md",
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round8-review.md"
+        "docs/research/assembly-ceiling.md",
+        "docs/research/assembly-domain-audit.md",
+        "docs/research/community-batch932-review.md",
+        "docs/research/community-reconciliation100-review.md",
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round8-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -10502,9 +10502,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md",
-        "docs\\research\\community-round8-review.md",
-        "docs\\research\\current-status.md"
+        "docs/research/community-reconciliation92-review.md",
+        "docs/research/community-round8-review.md",
+        "docs/research/current-status.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -10597,8 +10597,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md",
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation-next100-review.md",
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -10690,7 +10690,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -10782,9 +10782,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md",
-        "docs\\research\\community-reconciliation100-review.md",
-        "docs\\research\\community-reconciliation92-review.md"
+        "docs/research/community-reconciliation-next100-review.md",
+        "docs/research/community-reconciliation100-review.md",
+        "docs/research/community-reconciliation92-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -10870,7 +10870,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -10959,7 +10959,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -11048,8 +11048,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-pr279-review.md",
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-pr279-review.md",
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -11138,7 +11138,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -11227,7 +11227,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -11316,7 +11316,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -11405,8 +11405,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-pr279-review.md",
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-pr279-review.md",
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -11495,7 +11495,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -11584,8 +11584,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-pr279-review.md",
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-pr279-review.md",
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -11674,7 +11674,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -11763,7 +11763,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -11887,7 +11887,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -11976,7 +11976,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -12065,7 +12065,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -12154,7 +12154,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -12255,10 +12255,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-batch970-interfaces-review.md",
-        "docs\\research\\community-pr210-review.md",
-        "docs\\research\\community-pr279-review.md",
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-batch970-interfaces-review.md",
+        "docs/research/community-pr210-review.md",
+        "docs/research/community-pr279-review.md",
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -12393,7 +12393,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -12482,7 +12482,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -12571,7 +12571,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -12660,7 +12660,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -12749,7 +12749,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -12838,7 +12838,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -12927,7 +12927,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -13016,7 +13016,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -13111,8 +13111,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-efficient300-review.md",
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-efficient300-review.md",
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -13201,7 +13201,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -13290,7 +13290,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -13379,7 +13379,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -13468,7 +13468,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -13557,7 +13557,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -13646,8 +13646,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-pr279-review.md",
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-pr279-review.md",
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -13736,7 +13736,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -13825,9 +13825,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-batch970-review.md",
-        "docs\\research\\community-pr210-review.md",
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-batch970-review.md",
+        "docs/research/community-pr210-review.md",
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -13916,8 +13916,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-pr279-review.md",
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-pr279-review.md",
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -14006,7 +14006,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -14085,7 +14085,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -14164,7 +14164,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -14243,7 +14243,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -14322,8 +14322,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-pr279-review.md",
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-pr279-review.md",
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -14402,7 +14402,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -14481,7 +14481,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -14560,7 +14560,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -14663,7 +14663,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -14742,7 +14742,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -14821,7 +14821,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -14900,7 +14900,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -14979,7 +14979,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -15058,7 +15058,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -15137,7 +15137,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [
@@ -15199,7 +15199,7 @@
       "historical_assessment_heads": [],
       "evidence": [],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "unreviewed",
       "integration_location": [],
@@ -15256,7 +15256,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -15335,7 +15335,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -15414,7 +15414,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -15493,7 +15493,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -15572,7 +15572,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -15651,7 +15651,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -15730,7 +15730,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -15809,7 +15809,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -15888,7 +15888,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -15967,7 +15967,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -16046,7 +16046,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -16125,7 +16125,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -16204,7 +16204,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -16283,7 +16283,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [
@@ -16352,7 +16352,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -16431,7 +16431,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -16532,12 +16532,12 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-batch970-interfaces-review.md",
-        "docs\\research\\community-efficient300-review.md",
-        "docs\\research\\community-frontier741-review.md",
-        "docs\\research\\community-pr279-announcement.md",
-        "docs\\research\\community-pr279-review.md",
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-batch970-interfaces-review.md",
+        "docs/research/community-efficient300-review.md",
+        "docs/research/community-frontier741-review.md",
+        "docs/research/community-pr279-announcement.md",
+        "docs/research/community-pr279-review.md",
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -16627,7 +16627,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -16706,7 +16706,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -16785,7 +16785,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -16864,7 +16864,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [
@@ -16933,7 +16933,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -17012,7 +17012,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -17091,7 +17091,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -17170,7 +17170,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -17249,8 +17249,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md",
-        "docs\\research\\research-notes-20261011.md"
+        "docs/research/community-reconciliation-next100-review.md",
+        "docs/research/research-notes-20261011.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -17329,7 +17329,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -17408,7 +17408,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -17487,7 +17487,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -17566,7 +17566,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -17645,7 +17645,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -17724,7 +17724,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -17803,7 +17803,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -17882,7 +17882,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -17961,7 +17961,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -18040,7 +18040,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -18119,7 +18119,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -18198,7 +18198,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -18325,7 +18325,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-next100-review.md"
+        "docs/research/community-reconciliation-next100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -18404,7 +18404,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -18487,7 +18487,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -18570,7 +18570,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -18653,7 +18653,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -18736,7 +18736,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -18819,7 +18819,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [
@@ -18892,7 +18892,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -18975,7 +18975,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -19058,7 +19058,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -19141,7 +19141,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -19224,7 +19224,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -19307,8 +19307,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-pr531-review.md",
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-pr531-review.md",
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -19391,7 +19391,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -19474,7 +19474,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -19557,7 +19557,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -19640,7 +19640,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -19723,7 +19723,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -19806,7 +19806,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -19889,7 +19889,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -19972,7 +19972,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -20055,7 +20055,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -20138,7 +20138,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -20221,7 +20221,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -20304,7 +20304,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -20387,7 +20387,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -20470,7 +20470,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -20553,7 +20553,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -20636,7 +20636,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -20719,7 +20719,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -20802,7 +20802,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -20885,7 +20885,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -20968,7 +20968,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -21051,7 +21051,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -21134,7 +21134,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -21217,7 +21217,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -21324,7 +21324,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -21407,7 +21407,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -21490,7 +21490,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -21573,7 +21573,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -21656,7 +21656,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -21739,7 +21739,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -21822,7 +21822,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -21905,7 +21905,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -22012,7 +22012,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -22095,7 +22095,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -22178,7 +22178,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -22285,7 +22285,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -22368,7 +22368,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -22451,7 +22451,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -22558,7 +22558,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -22641,7 +22641,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -22724,7 +22724,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -22807,7 +22807,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -22890,7 +22890,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -22973,7 +22973,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -23056,7 +23056,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -23139,7 +23139,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -23222,7 +23222,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -23305,8 +23305,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-batch970-review.md",
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-batch970-review.md",
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -23389,7 +23389,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -23496,8 +23496,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-pr531-review.md",
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-pr531-review.md",
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -23573,7 +23573,7 @@
       "historical_assessment_heads": [],
       "evidence": [],
       "historical_mentions": [
-        "docs\\research\\community-pilot20-review.md"
+        "docs/research/community-pilot20-review.md"
       ],
       "disposition": "unreviewed",
       "integration_location": [],
@@ -23606,7 +23606,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -23689,7 +23689,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -23772,7 +23772,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -23855,7 +23855,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -23962,7 +23962,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -24045,7 +24045,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -24128,7 +24128,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [
@@ -24201,7 +24201,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -24284,8 +24284,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-pr531-review.md",
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-pr531-review.md",
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -24368,7 +24368,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -24451,7 +24451,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -24534,7 +24534,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -24617,7 +24617,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -24700,8 +24700,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-pr531-review.md",
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-pr531-review.md",
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -24784,7 +24784,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -24867,7 +24867,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -24950,7 +24950,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -25033,7 +25033,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -25116,7 +25116,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -25199,7 +25199,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -25282,7 +25282,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -25437,7 +25437,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -25520,7 +25520,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -25603,7 +25603,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -25686,7 +25686,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -25769,7 +25769,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -25852,7 +25852,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -25935,7 +25935,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -26066,7 +26066,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -26149,7 +26149,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -26256,7 +26256,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -26339,7 +26339,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -26422,7 +26422,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -26529,7 +26529,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -26636,7 +26636,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -26719,7 +26719,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -26826,7 +26826,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -26909,7 +26909,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -26992,7 +26992,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-third100-review.md"
+        "docs/research/community-reconciliation-third100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -27099,7 +27099,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -27182,7 +27182,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -27258,8 +27258,8 @@
       "historical_assessment_heads": [],
       "evidence": [],
       "historical_mentions": [
-        "docs\\research\\community-formal-20261012-review.md",
-        "docs\\research\\community-pr531-review.md"
+        "docs/research/community-formal-20261012-review.md",
+        "docs/research/community-pr531-review.md"
       ],
       "disposition": "unreviewed",
       "integration_location": [],
@@ -27292,7 +27292,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -27375,7 +27375,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -27458,7 +27458,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -27613,7 +27613,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -27696,9 +27696,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-formal-20261012-review.md",
-        "docs\\research\\community-pr531-review.md",
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-formal-20261012-review.md",
+        "docs/research/community-pr531-review.md",
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -27774,7 +27774,7 @@
       "historical_assessment_heads": [],
       "evidence": [],
       "historical_mentions": [
-        "docs\\research\\community-efficient400-review.md"
+        "docs/research/community-efficient400-review.md"
       ],
       "disposition": "unreviewed",
       "integration_location": [],
@@ -27807,7 +27807,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -27890,7 +27890,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -27973,7 +27973,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -28056,7 +28056,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -28139,7 +28139,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -28222,7 +28222,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -28305,7 +28305,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -28392,10 +28392,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-efficient400-review.md",
-        "docs\\research\\community-formal-20261012-review.md",
-        "docs\\research\\community-pr531-review.md",
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-efficient400-review.md",
+        "docs/research/community-formal-20261012-review.md",
+        "docs/research/community-pr531-review.md",
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -28444,7 +28444,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -28527,7 +28527,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -28610,8 +28610,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-pr531-review.md",
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-pr531-review.md",
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -28694,8 +28694,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md",
-        "docs\\research\\research-notes-20261011.md"
+        "docs/research/community-reconciliation-fourth100-review.md",
+        "docs/research/research-notes-20261011.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -28795,7 +28795,7 @@
       "historical_assessment_heads": [],
       "evidence": [],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "unreviewed",
       "integration_location": [],
@@ -28852,7 +28852,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -28935,7 +28935,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -29042,7 +29042,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -29125,7 +29125,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [
@@ -29222,7 +29222,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -29305,10 +29305,10 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-family588-review.md",
-        "docs\\research\\community-hyperplane599-review.md",
-        "docs\\research\\community-pr531-review.md",
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-family588-review.md",
+        "docs/research/community-hyperplane599-review.md",
+        "docs/research/community-pr531-review.md",
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -29391,7 +29391,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -29498,7 +29498,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [
@@ -29601,8 +29601,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-family533-review.md",
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-family533-review.md",
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -29710,7 +29710,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [
@@ -29879,7 +29879,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -29962,8 +29962,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-pr531-review.md",
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-pr531-review.md",
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -30094,7 +30094,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -30177,7 +30177,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -30260,7 +30260,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -30343,7 +30343,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -30450,7 +30450,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -30557,7 +30557,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -30644,8 +30644,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-formal-20261012-review.md",
-        "docs\\research\\community-pr531-review.md"
+        "docs/research/community-formal-20261012-review.md",
+        "docs/research/community-pr531-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -30694,8 +30694,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-efficient200-review.md",
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-efficient200-review.md",
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [
@@ -30768,7 +30768,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -30899,7 +30899,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -31006,7 +31006,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -31089,7 +31089,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -31196,7 +31196,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -31272,7 +31272,7 @@
       "historical_assessment_heads": [],
       "evidence": [],
       "historical_mentions": [
-        "docs\\research\\community-pr531-review.md"
+        "docs/research/community-pr531-review.md"
       ],
       "disposition": "unreviewed",
       "integration_location": [],
@@ -31305,7 +31305,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -31388,7 +31388,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [
@@ -31461,7 +31461,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "partially_reviewed",
       "integration_location": [
@@ -31551,7 +31551,7 @@
       "historical_assessment_heads": [],
       "evidence": [],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "unreviewed",
       "integration_location": [],
@@ -31584,7 +31584,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -31667,7 +31667,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-family533-review.md"
+        "docs/research/community-family533-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -31710,7 +31710,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -31793,9 +31793,9 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-formal-20261012-review.md",
-        "docs\\research\\community-pr531-review.md",
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-formal-20261012-review.md",
+        "docs/research/community-pr531-review.md",
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -31878,7 +31878,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -31954,8 +31954,8 @@
       "historical_assessment_heads": [],
       "evidence": [],
       "historical_mentions": [
-        "docs\\research\\community-formal-20261012-review.md",
-        "docs\\research\\community-pr531-review.md"
+        "docs/research/community-formal-20261012-review.md",
+        "docs/research/community-pr531-review.md"
       ],
       "disposition": "unreviewed",
       "integration_location": [],
@@ -31988,7 +31988,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -32075,8 +32075,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-family533-review.md",
-        "docs\\research\\community-formal-20261012-review.md"
+        "docs/research/community-family533-review.md",
+        "docs/research/community-formal-20261012-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -32125,8 +32125,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-family533-review.md",
-        "docs\\research\\current-status.md"
+        "docs/research/community-family533-review.md",
+        "docs/research/current-status.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -32193,8 +32193,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-formal-20261012-review.md",
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-formal-20261012-review.md",
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -32277,7 +32277,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-family533-review.md"
+        "docs/research/community-family533-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -32320,7 +32320,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -32407,8 +32407,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-family533-review.md",
-        "docs\\research\\community-formal-20261012-review.md"
+        "docs/research/community-family533-review.md",
+        "docs/research/community-formal-20261012-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -32457,7 +32457,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -32540,7 +32540,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -32651,8 +32651,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-formal-20261012-review.md",
-        "docs\\research\\community-pr531-review.md"
+        "docs/research/community-formal-20261012-review.md",
+        "docs/research/community-pr531-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -32701,8 +32701,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-batch970-interfaces-review.md",
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-batch970-interfaces-review.md",
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -32785,8 +32785,8 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-pr531-review.md",
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-pr531-review.md",
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -32869,7 +32869,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -33000,7 +33000,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-family533-review.md"
+        "docs/research/community-family533-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -33043,7 +33043,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -33150,7 +33150,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-reconciliation-fourth100-review.md"
+        "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -33233,7 +33233,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-family533-review.md"
+        "docs/research/community-family533-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
@@ -33278,7 +33278,7 @@
         }
       ],
       "historical_mentions": [
-        "docs\\research\\community-family533-review.md"
+        "docs/research/community-family533-review.md"
       ],
       "disposition": "incorporated",
       "integration_location": [
