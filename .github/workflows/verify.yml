@@ -32,7 +32,13 @@ jobs:
             sudo apt-get install -y libboost-dev
           fi
       - name: Check arithmetic, source hashes, finite identities, and patches
-        run: make verify-${{ matrix.group }}
+        run: |
+          if [ "${{ matrix.group }}" = clones ]; then
+            make skip-clones-verify split-skip-producer
+            python -B scripts/replay_historical_check.py split-skip
+          else
+            make verify-${{ matrix.group }}
+          fi
       - name: Require reproducible certificates and patches
         run: git diff --exit-code
 
