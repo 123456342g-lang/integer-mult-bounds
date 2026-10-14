@@ -94,12 +94,19 @@
       "PR1826 head 40430c79c39d278616b34ae47819e27ef72a0013: C5 dirty echo; different object from selected owner schedule.",
       "PR1768 head d504a0d1603340fc4f194d2630dd361a1d3a6b34: heterogeneous Z4 echo composition; no selected call owner census."
     ],
-    "claim_comment": "Discussion #1516 comment 18922503; its question is the selected adjacent pair, and this result resolves the direct-owner case only."
+    "claim_comment": "Discussion #1516 comment 18922503; its question is the selected adjacent pair, and this result resolves the direct-owner case only.",
+    "refresh_note": "A second refresh was started immediately before PR creation but remained paginating remote comments; the completed snapshot listed above is the last complete overlap result."
   },
-  "claim_status": "claim posted to Discussion #1516 comment 18922503; package/PR handoff pending",
+  "claim_status": "Discussion #1516 comment 18922503 updated with scoped result and PR #1829",
   "track": "recursive-interfaces",
   "assignment_seed": "01fcb18657c95161de8ab0f13b632878",
   "catalog_scope_key": "73c0a233e7e1abdccbfe",
   "catalog_sha256": "6686ad58f1fbdbc87134a78901b60fd53a20d3984355e91defbbebc9e9fa8075",
-  "claim_expiry_utc": "2026-10-14T13:11:12Z"
+  "claim_expiry_utc": "2026-10-14T13:11:12Z",
+  "pr": {
+    "number": 1829,
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1829",
+    "head_commit": "34847254",
+    "status": "open; checks not yet inspected"
+  }
 }
