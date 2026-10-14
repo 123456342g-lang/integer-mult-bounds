@@ -25,8 +25,8 @@
     "research/community-reconciliation-next100-audit/DISPOSITIONS.json"
   ],
   "counts": {
-    "incorporated": 381,
-    "partially_reviewed": 122,
+    "incorporated": 478,
+    "partially_reviewed": 25,
     "superseded": 1,
     "unreviewed": 218
   },
@@ -63,7 +63,7 @@
     "research/pr-reconciliation100-20261013/DISPOSITIONS.json": "0351d2dc0ee00543d1218be04db687672f2497b5196b2128caa2a4cc04c4f006",
     "research/community-historical-five-audit/DISPOSITIONS.json": "b2d8bfa841699b8a3140e70cb1cef6b78ef071c44014bd94c9c1787b7e0f1750",
     "research/community-reconciliation92-audit/DISPOSITIONS.json": "5dafbc374822ed60d67da35fcdb27127c71ad839acec7b68a206c5229d45ba11",
-    "research/community-reconciliation-next100-audit/DISPOSITIONS.json": "d7f5198b7caf89f3033e059f94cb726144246867fce36c4f2169e31e4ab50800",
+    "research/community-reconciliation-next100-audit/DISPOSITIONS.json": "5386624092c70cfcf895ac42482acd2871ca49732e8360e9de724a9448070b1b",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -8774,14 +8774,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "4ead11e6e10cc7f13a340563990f50f86cc2668b",
@@ -8789,7 +8789,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -8937,14 +8937,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "6e086603f936dbb95c6d7171132ed943cc024db9",
@@ -8952,7 +8952,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -9006,14 +9006,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "da3385314d935e57f8129c8734c27104b125e572",
@@ -9021,7 +9021,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -9167,14 +9167,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "e1813796ef5c3ca38c5dd7b9e8d81b3908ff5997",
@@ -9182,7 +9182,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -9236,14 +9236,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "4391a60bb26f75ea47a4c55c508c88a036b5a2b8",
@@ -9251,7 +9251,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -9305,14 +9305,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "7518fed2688baf25c7c32bae32674f3334b517da",
@@ -9320,7 +9320,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -9398,14 +9398,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "3540326866af459ef28ee23252e3c54d2ac49017",
@@ -9413,7 +9413,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -9520,14 +9520,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "4895ba1104cedc7908b6d6ba64fdd6290e0ed7ae",
@@ -9535,7 +9535,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -9613,14 +9613,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "89d0c75f8bf97131db21bc610e7546b699afcb9a",
@@ -9628,7 +9628,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -9706,14 +9706,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "55d19073972c9a334203228e3af8f84997a1c2ad",
@@ -9721,7 +9721,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -9775,14 +9775,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "12963ebca6f0be5b28e135bba94cd8f17010cd16",
@@ -9790,7 +9790,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -10011,14 +10011,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "15e21dca486b4deacb07608d65021962e5e6086a",
@@ -10026,7 +10026,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -10722,14 +10722,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "15fa62d52bd7d08f29fd09fffe33dfc7a15ba8a0",
@@ -10737,7 +10737,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -10801,14 +10801,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "ba52fac95ebc7cd25d284888aefee2284b670fd6",
@@ -10816,7 +10816,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -10881,14 +10881,14 @@
         "docs/research/community-pr279-review.md",
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "187e1010ac8b259af8e9b5166f68b64bc27b4b47",
@@ -10896,7 +10896,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -10960,14 +10960,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "a8c87783785be6fe20c4a8bb2ac4b3eec295a179",
@@ -10975,7 +10975,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -11039,14 +11039,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "d3e6b83af33c3aad940e737776937706e25b0b19",
@@ -11054,7 +11054,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -11118,14 +11118,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "5b09c35ee837e0157342a7cd1fbd933467cfe90b",
@@ -11133,7 +11133,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -11198,14 +11198,14 @@
         "docs/research/community-pr279-review.md",
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "8c5e1cf07c23d843642bf2d4c76f882669edc43f",
@@ -11213,7 +11213,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -11277,14 +11277,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "5c1fb8346615968844bc182a5376c399109670ca",
@@ -11292,7 +11292,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -11357,14 +11357,14 @@
         "docs/research/community-pr279-review.md",
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "a1175449f34d39ff933d9d8ab23ced1f32b290ec",
@@ -11372,7 +11372,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -11436,14 +11436,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "b3c128ec4c3a4ac1a095f45a8d86e387bbda05ec",
@@ -11451,7 +11451,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -11515,14 +11515,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "8d8d67bcf69c5ea67d3a29dbc64ba588156d6e8d",
@@ -11530,7 +11530,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -11629,14 +11629,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "525ed356ec4928f4c31c7668ecb547f575278f4e",
@@ -11644,7 +11644,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -11708,14 +11708,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "95c58706ad231d532bd7038308946a0344d08186",
@@ -11723,7 +11723,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -11787,14 +11787,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "cd14825023b75af4f5919a30e5e6d548b6ade5bc",
@@ -11802,7 +11802,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -11866,14 +11866,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "2352ffee98179a14af9059be316fb282711000fe",
@@ -11881,7 +11881,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -11960,14 +11960,14 @@
         "docs/research/community-pr279-review.md",
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "reconciliation_evidence": [
         "research/pr-reconciliation-20261012/content-comparison.json",
@@ -11979,7 +11979,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -12085,14 +12085,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "9b6ad038f8690206c14ed8f28fb90ec6b3a79ae1",
@@ -12100,7 +12100,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -12164,14 +12164,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "0d584fad684b7999ae94edc6a1914901bdc9efa7",
@@ -12179,7 +12179,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -12243,14 +12243,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "1afe68ea9a03e62306796e882acfd4a99f8b3d8c",
@@ -12258,7 +12258,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -12322,14 +12322,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "34abdc58ed77329c8bf9af5634531fc41939ba3c",
@@ -12337,7 +12337,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -12401,14 +12401,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "b739fc226a54a4a507989aa1bef092d491287451",
@@ -12416,7 +12416,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -12480,14 +12480,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "aa947f2f0fb624e17c027a463286b42fc810fdeb",
@@ -12495,7 +12495,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -12559,14 +12559,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "8786fec0148a41409874cad133123da227d93751",
@@ -12574,7 +12574,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -12638,14 +12638,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "a60c9505284908edbac52f7c2f167feca75de546",
@@ -12653,7 +12653,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -12717,14 +12717,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "830971b6b157374ebf941d0ca0b73fd2b956e3e0",
@@ -12732,7 +12732,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -12796,14 +12796,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "7be337efa887c53d167cf8f480b3822ce111d8a3",
@@ -12811,7 +12811,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -12875,14 +12875,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "418bd6a80f3190d1998780a2fb7f66a073367de1",
@@ -12890,7 +12890,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -12954,14 +12954,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "ffa872f4d8ad3e9ab46a7a1a97b02a1250b2c925",
@@ -12969,7 +12969,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -13033,14 +13033,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "cf64f1cb29f7af951db375f460ad683ec6d16419",
@@ -13048,7 +13048,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -13112,14 +13112,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "109a857a329d18ed5552d5573f17ddfa886ae57f",
@@ -13127,7 +13127,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -13192,14 +13192,14 @@
         "docs/research/community-pr279-review.md",
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "af3fe331ca60c936229e060681ffccbc1c208678",
@@ -13207,7 +13207,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -13271,14 +13271,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "63e3e9e2f852c72634d4b09d0bbb8fcf1081481d",
@@ -13286,7 +13286,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -13352,14 +13352,14 @@
         "docs/research/community-pr210-review.md",
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "f825b6fdfd763f189db3aa1c02fdd5d604c85a01",
@@ -13367,7 +13367,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -13432,14 +13432,14 @@
         "docs/research/community-pr279-review.md",
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "a8b0ce212bc9f09353a8161bf8a5cee9cefd600c",
@@ -13447,7 +13447,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -13511,14 +13511,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "1068237fdb977f45e68107d118d0eaf0c7a4b516",
@@ -13526,7 +13526,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -13580,14 +13580,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "33d23ec65a1022ecc10ccefe7fc4b277761e6900",
@@ -13595,7 +13595,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -13649,14 +13649,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "ef47efc3256a57bacf4273c35faf4b5148be5014",
@@ -13664,7 +13664,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -13718,14 +13718,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "ab482ea45dd73f0cb80796641528f0ab930c13b5",
@@ -13733,7 +13733,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -13788,14 +13788,14 @@
         "docs/research/community-pr279-review.md",
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "a568d94f941929232ab393c7d33dc5a30e017892",
@@ -13803,7 +13803,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -13857,14 +13857,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "e347f31c5960323f6dca8bfb5a1f529ebac4537e",
@@ -13872,7 +13872,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -13926,14 +13926,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "e56591cbf0b18b6d0f959f3742c05c7d8cc41f75",
@@ -13941,7 +13941,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -13995,14 +13995,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "96495746c786d6d0339dbb38c7f553d4af3f88ed",
@@ -14010,7 +14010,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -14088,14 +14088,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "2b030c06a811473ae8ed49dce07bc7ea50b72e9e",
@@ -14103,7 +14103,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -14157,14 +14157,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "45121f754db92f91d1e105061125e6b1fa4c2dc0",
@@ -14172,7 +14172,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -14226,14 +14226,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "9ce32efb421132420242cfdb91ddd9eabe2c3795",
@@ -14241,7 +14241,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -14295,14 +14295,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "3ba1c146c523c0305fe5f1a7bc4d3c5aebb9192c",
@@ -14310,7 +14310,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -14364,14 +14364,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "db3f75cdc5f03f3131d48fb220f6bf1958404ff3",
@@ -14379,7 +14379,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -14433,14 +14433,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "cf82ca09322d1327ab887cfd1cce97591b8d3cfa",
@@ -14448,7 +14448,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -14517,7 +14517,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -14621,14 +14621,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "dd3bec29abd124b94e8642d84a3552f2459a3faa",
@@ -14636,7 +14636,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -14690,14 +14690,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "87129308f762f86a9d8e9a60f5d6c8ef23ce1f6e",
@@ -14705,7 +14705,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -14759,14 +14759,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "a64076340dcfd6d77ebe3dc3a1eb30a6a4c74793",
@@ -14774,7 +14774,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -14828,14 +14828,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "fc00fcf07a554ff6847b2a8764ecc26f5a99542a",
@@ -14843,7 +14843,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -14897,14 +14897,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "8cff894317648ae8d4f170b3d33456a76a7822c7",
@@ -14912,7 +14912,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -14966,14 +14966,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "4f849bd0c08787d588d211ef5f5dbe60f32542b2",
@@ -14981,7 +14981,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -15035,14 +15035,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "dbb653bb249e0087f9aa32e77149cc9043ac72c1",
@@ -15050,7 +15050,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -15104,14 +15104,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "d4ca9aacd885375e6b6ce555bfb2d228ca71e1c7",
@@ -15119,7 +15119,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -15173,14 +15173,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "9b48fd73531eaf09ebbbd5acb0f7a3eb338d9a2a",
@@ -15188,7 +15188,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -15242,14 +15242,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "ebc1defe8c13f39f86e5901c3437c1be52886a2b",
@@ -15257,7 +15257,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -15311,14 +15311,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "65768f62d4fde0d1fa7fc84f71678522a84aaa6c",
@@ -15326,7 +15326,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -15380,14 +15380,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "45f13d0568033c3c27a96abc99f65a50a3a9133f",
@@ -15395,7 +15395,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -15449,14 +15449,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "947726d431438fd73ee4c96231eb88aba2692360",
@@ -15464,7 +15464,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -15533,7 +15533,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -15587,14 +15587,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "c2f07d311bfdad0d89bf961e4da133ee97bb78de",
@@ -15602,7 +15602,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -15656,14 +15656,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "8ddcabe87b874c0cb6d7ece0bd58a6f7d969bd3e",
@@ -15671,7 +15671,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -15745,14 +15745,14 @@
         "docs/research/community-pr279-review.md",
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "reconciliation_evidence": [
         "research/pr-reconciliation-20261012/content-comparison.json",
@@ -15764,7 +15764,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -15825,14 +15825,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "f063aab8d6e514188e53db57218515df9cdd186e",
@@ -15840,7 +15840,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -15894,14 +15894,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "7542b215a7ff49d264e2b4691ca7fa9bc3be82d9",
@@ -15909,7 +15909,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -15963,14 +15963,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "841a99b8cf0609ce461b208ed6367463459dd7f5",
@@ -15978,7 +15978,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -16047,7 +16047,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -16101,14 +16101,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "2c991a3ac400057059145c837e8b32bba9128346",
@@ -16116,7 +16116,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -16170,14 +16170,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "b40c1a3d8f40ee3764b9f13fe850f663f2d8c834",
@@ -16185,7 +16185,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -16239,14 +16239,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "13a523a250f471e7cc880e8a24060d654ba9c78b",
@@ -16254,7 +16254,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -16308,14 +16308,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "9f85de891c5eec5de4e33a9185157c9e573bb315",
@@ -16323,7 +16323,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -16378,14 +16378,14 @@
         "docs/research/community-reconciliation-next100-review.md",
         "docs/research/research-notes-20261011.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "475a088b5862f75f0b10596cfd6842d19531a5ec",
@@ -16393,7 +16393,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -16447,14 +16447,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "04e14102a36a33b9f9eef4e4c76119fd6e54b445",
@@ -16462,7 +16462,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -16516,14 +16516,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "739c3bb0ad0596f427e0a72a2ebeca23277217a3",
@@ -16531,7 +16531,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -16585,14 +16585,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "5c296797e06101c74d15b0162dfe372c186ec330",
@@ -16600,7 +16600,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -16654,14 +16654,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "0687febc3a57c580b1b8cbee83a82d0bfb29fcbe",
@@ -16669,7 +16669,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -16723,14 +16723,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "e65a690f87bdade17b361f9c66554861bb85a5c1",
@@ -16738,7 +16738,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -16792,14 +16792,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "55233c38b90edbb0e34ea728b4ed98b366184bb1",
@@ -16807,7 +16807,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -16861,14 +16861,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "a41781bb9bb45c368046e4e387c6ffeb041c8208",
@@ -16876,7 +16876,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -16930,14 +16930,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "b15a33ce4f0e31379be685139f78b9c1e7ffa77b",
@@ -16945,7 +16945,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -16999,14 +16999,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "2006a8f9288fd7222ae3dc3aeb2e817bbb403be0",
@@ -17014,7 +17014,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -17068,14 +17068,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "7e7a6d796bf9dbc51d1d6d0855cc67bcf0668fbe",
@@ -17083,7 +17083,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -17137,14 +17137,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "11b69525c7b2bb116cf29b17f976781003ef33b4",
@@ -17152,7 +17152,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -17206,14 +17206,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "56eb64125a76b3427986f4a3fcfc4b6f4cf55591",
@@ -17221,7 +17221,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -17323,14 +17323,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-next100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-next100-audit/ARCHIVE.json",
         "research/community-reconciliation-next100-audit/REVIEW.json",
         "docs/research/community-reconciliation-next100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish integration and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-next100-audit/DISPOSITIONS.json",
       "reviewed_head": "363134af67f7aa2e0f887e79c6c22963280682d0",
@@ -17338,7 +17338,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
