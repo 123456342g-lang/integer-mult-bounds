@@ -15,7 +15,7 @@ the declared 5% target. The full construction's exponent is unchanged.
 only nested contractions inside each original end. This package removes
 that cap: ends may rotate, enlarge or become FULL, subject only to containing
 the fixed entrance and the unchanged scalar/frame/cleanup contract. The
-larger domain has the same certified ceiling. Its attaining four-end profile
+larger domain has the same certified ceiling bracket. Its attaining four-end profile
 is already known from PR1995; the new result is the complete larger-domain
 bound, not another discovery of that construction.
 
