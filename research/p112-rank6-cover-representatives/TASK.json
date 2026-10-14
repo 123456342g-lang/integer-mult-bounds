@@ -41,7 +41,7 @@
   },
   "scope_status": "refined",
   "actual_scope": "Sharp diagonal cap99 for arbitrary cost<=6 descendants of cost7 C/N parents preserving each term frame-hit set.",
-  "scope_change_reason": "Audit the support-representative gap explicitly left by PR1347 on its ten published frame-hit patterns.",
+  "scope_change_reason": "Audit the support-representative gap left by PR1347. Final overlap refresh found concurrent PR1402's union cap102; retain the additional sharp joint-choice cap99 and credit the overlapping representative census.",
   "bottleneck_link": "Rejects a bill60 candidate before coefficient synthesis and physical realization.",
   "budget_minutes": 60,
   "stop_rule": "Complete967232slice census and exact choice coverage.",
