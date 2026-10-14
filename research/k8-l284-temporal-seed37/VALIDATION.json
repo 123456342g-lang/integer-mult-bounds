@@ -31,6 +31,7 @@
       "stdout": "PASS selected record, exact kappa, original source inventory and proof supplement: 836330098538459/500000000000000000\n"
     }
   ],
+  "coordination_update_url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18911841",
   "environment": {
     "implementation": "CPython",
     "machine": "x86_64",
@@ -54,7 +55,7 @@
   },
   "package_files_sha256": {
     "CERTIFICATE.json": "dc04abb5c463b0065d58c4bf34f9e085927c278a5a7b456eef1451ee528b8d40",
-    "CLAIM.md": "b7d0898da37e98d150c487c99f58d6e0241327c64447284cb100cfaf0585c4a3",
+    "CLAIM.md": "bde46062a0c90b3e2f973e93acdfc4365f9134e64e805e933fdb8974e7d478aa",
     "DEPENDENCIES.json": "8237b08d7679d1d02ff37c22e68d669f462f8216c2e2e825c60a7cb01b2f3c3e",
     "NOTICE.md": "819c3544cfb6740d3b0aa0a65fad919e6b71a4ebd7f782fc37268b34a9a4314a",
     "README.md": "e3e6b1e87663b0a56371cbf3f81d36b0d21824a67fb8f8970e343cede96f9354",
@@ -76,5 +77,7 @@
   },
   "scope": "Exact single-helper temporal-gauge construction for L284 only on the pinned PR1263 word. Complete scalar invoices and 712-column formal replay pass; no global helper optimum or new kappa is claimed.",
   "status": "PASS_SCOPED_TEMPORAL_GAUGE_CONSTRUCTION",
-  "verified_at": "2026-10-14T00:12:52.027557+00:00"
+  "submitted_pr": 1398,
+  "submitted_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1398",
+  "verified_at": "2026-10-14T00:13:48.234244+00:00"
 }
