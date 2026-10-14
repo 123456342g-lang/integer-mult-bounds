@@ -1,6 +1,6 @@
 # Temporal Gaussian gauge claim
 
-Status: active. Complex supplier, OS assignment seed 22.
+Status: completed; claim released. Complex supplier, OS assignment seed 22.
 Base: ef5f39403610d231a0c27e8a6b4f08c10209bcd6.
 Claim recorded 2026-10-14 02:35 UTC; expected finish 03:07 UTC.
 
@@ -28,3 +28,20 @@ PR1490's exact head is unchanged; no external temporal Gaussian claim was
 found. Main advanced to c5108f0f68d482e5712a8e26a5978d47762dfc16; the
 branch was fast-forwarded to it. Both live inputs, the selected record,
 catalogue and applicable instructions are byte-identical to the research base.
+
+Result update, 2026-10-14 03:03 UTC:
+https://github.com/CrocSwap/integer-mult-bounds/pull/1566
+
+The all-schedule inequality is C_G >= (C_0+C_1)/2 + 2M, with M counting
+odd-parity transitions. Each closed odd episode costs four extra primitives.
+The complete k8 pair attains the eight-primitive penalty in both orientations;
+a mixed shared-ADD fixture also passes all 712 complex columns and invoices.
+Registered Python 3.12 and optimized read-only Python 3.11 exports pass,
+including 11 mathematical/source controls and three actual file corruptions.
+All 25 selected tests pass. Initial JSON-key canonicalization was repaired;
+no mathematical acceptance condition changed. No kappa or supplier adoption.
+
+The final 03:01 metadata check covers all 13 PRs updated since 02:54.
+PR1558's signed Gauss normal-form census concerns a different Fourier kernel;
+it does not overlap this Gaussian-unit helper-gauge result. No codex or
+codex-automation label exists in the repository. Hosted CI remains separate.
