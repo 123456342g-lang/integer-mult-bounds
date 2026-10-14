@@ -37,3 +37,22 @@ Open PR bodies and recent discussion claims were inspected immediately before
 this local claim. No pinned sprint issue exists. Existing source packages and
 `upstream/` remain frozen. Prepared for Sagar Thakrar with substantial OpenAI
 Codex assistance; Apache-2.0. One agent, no independent human review.
+
+## Completed result and release
+
+Completed 2026-10-14 00:17 UTC. [PR1400](https://github.com/CrocSwap/integer-mult-bounds/pull/1400).
+Research commit: `731231bb06020788f7769010edbf66e8321aafbb`.
+Twelve admitted shears reduce 11,769 to 11,675 complete ADDs. All 2,499,666
+pair scores and 416 complete trial invoices were checked. The thirteenth
+round's first 32 positive nominees all fail precision, so the declared search
+stops before its 15-step cap. Later nominees remain untested. The accepted
+shears commute; no noncommutative advantage, optimum or new kappa is claimed.
+
+Both Python versions, all 661 dirty columns in both orientations for every
+trial, final geometry/frame/rank checks, source pins, ten rejection controls,
+the neutral pair, and fourteen relevant existing tests pass. Native/hosted
+admission, full supplier invoices, cold replay and human review remain open.
+Final fetch retained the exact base. Final metadata check through PR1399 found
+no matching scope; cheaper PR1122/1188/1208 circuits are explicitly credited.
+No pinned sprint issue existed, so this is the claim's single local result
+update. Scope released. Only one focused PR was submitted.
