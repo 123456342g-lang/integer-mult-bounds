@@ -93,4 +93,3 @@ with separate AI review). Prices and the fixed family are Chafik Boukhalfa's
 sharp T29 profile woklerx's (PR992), and the T16 owner lineage Hao Yan's
 (PR858). This package contributes the complete projection theorem and its
 independent constructive verification. No human peer review is claimed.
-
