@@ -96,4 +96,4 @@ Shared files preserve newer baseline work with explicit resolutions and combined
 
 ## Open next questions
 
-Finish this frozen batch, complete specifically identified admission/environment/coverage follow-ups, and continue the authorized reconciliation through PR #1951. No κ change follows from this review round.
+This frozen round is reconciled: 56 PRs merged and 12 left open with specific follow-ups. Revisit those exact pending obligations or review subsequent revisions separately; do not repeat completed same-head checks. No κ change follows from this review round.
