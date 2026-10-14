@@ -58,6 +58,12 @@ Replace TODOs, implement the verifier and its meaningful controls, then set
 strings. `{python}` selects the active interpreter and `{package}` the package
 directory. They run from the repository root.
 
+The launcher removes inherited `PYTHONOPTIMIZE` from each command's environment.
+Otherwise a caller's shell setting can silently disable a verifier's assertions,
+including assertions in its Python subprocesses. Other environment settings and
+explicit command options remain intact. A manifest can still request `-O` or
+`-OO` for a deliberate control; its author must account for disabled assertions.
+
 ```sh
 python3 scripts/research_package.py --package research/my-experiment --check-only
 python3.12 scripts/research_package.py --package research/my-experiment

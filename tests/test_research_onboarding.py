@@ -223,6 +223,51 @@ class PackageTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "exited 7"):
             package.run_package(self.root, "research/fixture")
 
+    def test_inherited_optimization_cannot_disable_child_checks(self):
+        for value in ("1", "2"):
+            with self.subTest(value=value), patch.dict(os.environ, {"PYTHONOPTIMIZE": value}):
+                with self.assertRaisesRegex(ValueError, "exited 1"):
+                    package.run_command([sys.executable, "-c", 'assert False, "invalid fixture"'], self.root, 5)
+                self.assertEqual(os.environ["PYTHONOPTIMIZE"], value)
+
+    def test_nested_interpreter_and_explicit_options(self):
+        output = self.root / "mode.json"
+        nested = "import json,os,sys; print(json.dumps([sys.flags.optimize, __debug__, os.environ.get('REPLAY_SENTINEL')]))"
+        program = (
+            "import json,subprocess,sys; from pathlib import Path; "
+            f"child = json.loads(subprocess.check_output([sys.executable, '-c', {nested!r}])); "
+            f"Path({str(output)!r}).write_text(json.dumps([sys.flags.optimize, __debug__, child]))"
+        )
+        with patch.dict(os.environ, {"PYTHONOPTIMIZE": "2", "REPLAY_SENTINEL": "preserved"}):
+            for options, mode in (([], 0), (["-O"], 1), (["-OO"], 2)):
+                with self.subTest(options=options):
+                    package.run_command([sys.executable, *options, "-c", program], self.root, 5)
+                    self.assertEqual(json.loads(output.read_text()),
+                                     [mode, mode == 0, [0, True, "preserved"]])
+
+    @unittest.skipUnless(sys.version_info[:2] == (3, 12), "generic replay environment is Python 3.12")
+    def test_cli_replay_cannot_accept_assertion_failure_from_environment(self):
+        self.ready()
+        scripts = self.root / "scripts"
+        scripts.mkdir()
+        runner = scripts / "research_package.py"
+        runner.write_bytes((ROOT / "scripts/research_package.py").read_bytes())
+        verifier = self.target / "verify.py"
+        argv = [sys.executable, "-B", str(runner), "--package", "research/fixture"]
+        for value in ("", "0", "1", "2"):
+            env = dict(os.environ, PYTHONOPTIMIZE=value)
+            with self.subTest(value=value):
+                verifier.write_text('assert False, "invalid fixture"\nprint("INVALID_FIXTURE_ACCEPTED")\n')
+                result = subprocess.run(argv, env=env, capture_output=True, text=True, timeout=10)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn("AssertionError: invalid fixture", result.stderr)
+                self.assertNotIn("PASS_REGISTERED", result.stdout)
+                self.assertNotIn("INVALID_FIXTURE_ACCEPTED", result.stdout)
+                verifier.write_text('assert 6 * 7 == 42\n')
+                result = subprocess.run(argv, env=env, capture_output=True, text=True, timeout=10)
+                self.assertEqual(result.returncode, 0, result.stderr)
+                self.assertIn("PASS_REGISTERED_RESEARCH_PACKAGE research/fixture", result.stdout)
+
 
 class TextEncodingTests(unittest.TestCase):
     SCRIPTS = ("choose_research_task.py", "find_overlap.py", "new_research_package.py",
