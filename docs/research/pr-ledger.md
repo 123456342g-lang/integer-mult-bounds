@@ -8,8 +8,8 @@ The ledger separates historical review from integration. A prior snapshot or a m
 
 | Disposition | Count |
 |---|---:|
-| incorporated | 648 |
-| partially reviewed | 52 |
+| incorporated | 652 |
+| partially reviewed | 48 |
 | superseded | 1 |
 | unreviewed | 60 |
 
@@ -437,7 +437,7 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#474](https://github.com/CrocSwap/integer-mult-bounds/pull/474) | artuskg | unreviewed | No exact-head review established; inspect contribution and dependencies. |
 | [#475](https://github.com/CrocSwap/integer-mult-bounds/pull/475) | chafreaky | incorporated | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
 | [#476](https://github.com/CrocSwap/integer-mult-bounds/pull/476) | Dugongue | incorporated | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
-| [#478](https://github.com/CrocSwap/integer-mult-bounds/pull/478) | Dugongue | partially reviewed | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
+| [#478](https://github.com/CrocSwap/integer-mult-bounds/pull/478) | Dugongue | incorporated | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
 | [#479](https://github.com/CrocSwap/integer-mult-bounds/pull/479) | chafreaky | incorporated | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
 | [#480](https://github.com/CrocSwap/integer-mult-bounds/pull/480) | higherbeing | unreviewed | No exact-head review established; inspect contribution and dependencies. |
 | [#481](https://github.com/CrocSwap/integer-mult-bounds/pull/481) | chafreaky | incorporated | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
@@ -580,9 +580,9 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#632](https://github.com/CrocSwap/integer-mult-bounds/pull/632) | chafreaky | incorporated | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
 | [#633](https://github.com/CrocSwap/integer-mult-bounds/pull/633) | vectorsss | partially reviewed | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
 | [#634](https://github.com/CrocSwap/integer-mult-bounds/pull/634) | ShikeChen01 | partially reviewed | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
-| [#635](https://github.com/CrocSwap/integer-mult-bounds/pull/635) | jeremykothe2 | partially reviewed | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
+| [#635](https://github.com/CrocSwap/integer-mult-bounds/pull/635) | jeremykothe2 | incorporated | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
 | [#636](https://github.com/CrocSwap/integer-mult-bounds/pull/636) | vectorsss | partially reviewed | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
-| [#637](https://github.com/CrocSwap/integer-mult-bounds/pull/637) | jeremykothe2 | partially reviewed | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
+| [#637](https://github.com/CrocSwap/integer-mult-bounds/pull/637) | jeremykothe2 | incorporated | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
 | [#638](https://github.com/CrocSwap/integer-mult-bounds/pull/638) | vectorsss | partially reviewed | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
 | [#639](https://github.com/CrocSwap/integer-mult-bounds/pull/639) | vectorsss | partially reviewed | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
 | [#640](https://github.com/CrocSwap/integer-mult-bounds/pull/640) | vectorsss | partially reviewed | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
@@ -598,7 +598,7 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#652](https://github.com/CrocSwap/integer-mult-bounds/pull/652) | jeremykothe2 | incorporated | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
 | [#653](https://github.com/CrocSwap/integer-mult-bounds/pull/653) | jaymosley07 | incorporated | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
 | [#655](https://github.com/CrocSwap/integer-mult-bounds/pull/655) | jeremykothe2 | incorporated | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
-| [#656](https://github.com/CrocSwap/integer-mult-bounds/pull/656) | jeremykothe2 | partially reviewed | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
+| [#656](https://github.com/CrocSwap/integer-mult-bounds/pull/656) | jeremykothe2 | incorporated | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
 | [#657](https://github.com/CrocSwap/integer-mult-bounds/pull/657) | DaysSky | incorporated | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
 | [#658](https://github.com/CrocSwap/integer-mult-bounds/pull/658) | jeremydiviney | partially reviewed | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |
 | [#659](https://github.com/CrocSwap/integer-mult-bounds/pull/659) | jeremykothe2 | partially reviewed | [record 1](../../research/community-reconciliation-fourth100-audit/DISPOSITIONS.json) |

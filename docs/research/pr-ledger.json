@@ -27,8 +27,8 @@
     "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json"
   ],
   "counts": {
-    "incorporated": 648,
-    "partially_reviewed": 52,
+    "incorporated": 652,
+    "partially_reviewed": 48,
     "superseded": 1,
     "unreviewed": 60
   },
@@ -67,7 +67,7 @@
     "research/community-reconciliation92-audit/DISPOSITIONS.json": "5dafbc374822ed60d67da35fcdb27127c71ad839acec7b68a206c5229d45ba11",
     "research/community-reconciliation-next100-audit/DISPOSITIONS.json": "de8d4f4026b86e5e59d5945d0b865de16c6886aa013451a2e3c117665bd95b51",
     "research/community-reconciliation-third100-audit/DISPOSITIONS.json": "dbd7051bd339005e1bd5c11e296965fda0e267dfc09136d9e4cf0ecb17976b89",
-    "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json": "32420873bcfee2fee6dd0d74435cfe026ad0f97688696e5794120bf2457f4caa",
+    "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json": "45c22b5736719fe954a5b2679f1062dc800397c8693de4d261d036efc847bb8e",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -30207,14 +30207,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-fourth100-audit/ARCHIVE.json",
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
       "reviewed_head": "bea1d52fd330c699903f81612ee58be81697d1eb",
@@ -30222,7 +30222,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -38340,13 +38340,13 @@
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "a6895a69f8ad98ab45777b03e9e6f48888c39f6f",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -38482,13 +38482,13 @@
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "4edb0dda99c495141cc56ae6e8a74e632a74db8a",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -39678,13 +39678,13 @@
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "0805e78f5fecc700804d4766d7e3e1d7d7e6a2ba",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
