@@ -96,11 +96,43 @@ starting points are historical evidence, not promises of unexplored territory.
 
 ## 2. Where effort is most useful
 
-The October 13, 2026 assessment is that many local improvements leave the paid
-recursive profile unchanged, or improve a nonbinding supplier. Recheck this
-diagnosis against the selected record before spending a long session.
+**Priority revision 4 — October 14, 2026.** The selected conditional result remains
+κ = 0.001672660197076918 (#1094). The complex side binds; both suppliers must
+advance for a large jump. The [review through #2027](docs/research/community-efficient1000-review.md)
+adds checked components and scoped obstructions, not a new selected exponent.
+Recheck the selected record and live overlap before starting.
 
-**Revision 3 diagnosis (scoped arithmetic independently replayed for #1240 and #1264).** On the binding complex side, a ≈ D/E:
+**The next priority is to complete or falsify a specific missing interface.**
+Use these bounded entries, and split parallel work by correction/cut, observation,
+or proof obligation rather than by optimizer seed:
+
+| Card | Known starting point | Next decision |
+|---|---|---|
+| `p104-side-correction` | #1991 supplies a native low-rank channel | Can `I-G/2` be executed while its source/target frames are available, with a favorable complete bill? |
+| `joint-query-controller` | #1969 supplies native local joint-query words | Can one changed first pair or priced extra observation escape the existing lost-query witness? |
+| `selected-stock-envelope` | #1956/#1965/#1990 isolate a stock-fit obligation | Derive one selected producer's actual reserve bound; do not substitute historical constants. |
+
+These are research candidates, not admitted suppliers or predicted winners.
+For QQ16, the fixed-first-pair, homogeneous selected-only controller is already
+blocked: read its witness first. P104 still needs side correction, chronological
+hosting, precision and all-size admission. Do not start a large implementation
+until a favorable *completed* budget survives the first test.
+
+**Stop rediscovering covered cases.** #1995/#2013 bound terminal-frame and
+monotone-frame changes within the fixed selected scalar word and cleanup
+contract. #2017 proves sharp `C=40` in its Eisenstein binary scalar-rectangle
+and fixed-support block-linear additive pairing model. #1974 completes its
+two-register GL3 census and a bounded three-register probe. Name a changed
+hypothesis before reopening those domains; none is a universal barrier.
+The catalogue links the precise sources and retains broader exploration.
+
+Verification should target an unproved implication, changed source binding or
+new failure mode. Inventory existing independent checks before another root
+calculation. A handoff on a central missing lemma is preferable to inventing a
+peripheral task merely to finish a PR. Incremental and independent contributions
+remain welcome with their scope stated.
+
+**Retained revision-3 quantitative diagnosis (scoped arithmetic independently replayed for #1240 and #1264).** On the binding complex side, a ≈ D/E:
 
 - **D is small.** Each call has about 99.6 live families. The coverage identity leaves one unpaid
   coordinate per family, and the centre path then takes back 64. Only about 35.6 of 7,232 paid
@@ -149,13 +181,17 @@ valuable even when the other supplier prevents an immediate headline change.
 
 The helper allocates effort as follows. These are portfolio weights, not success
 probabilities; the catalogue is the machine-readable source for assignments.
+Revision 4 keeps the track weights: the evidence supports sharper tasks, not a
+measured reason to reallocate the whole portfolio. Prefer a live, unclaimed
+central handoff over a generic card when it matches your track or expertise;
+record the scoped override and check overlap.
 
 | Track | Share | Useful outcome |
 |---|---:|---|
 | Bit mechanisms (`bit-mechanisms`) | 20% | A changed decoder/frame contract with a full paid budget |
-| Complex mechanisms (`complex-mechanisms`) | 20% | A larger-rank decoder or helper inventory whose screened ceiling beats the selected word's |
-| Recursive interfaces (`recursive-interfaces`) | 20% | A shared or smaller centre path, a changed coverage law, or other real eliminated boundary work |
-| Adversarial audit (`adversarial-audit`) | 15% | A specific missing implication or exact counterexample |
+| Complex mechanisms (`complex-mechanisms`) | 20% | A completed P104 correction or changed decoder with a favorable full bill |
+| Recursive interfaces (`recursive-interfaces`) | 20% | A changed joint-query controller, centre path or coverage law with real eliminated work |
+| Adversarial audit (`adversarial-audit`) | 15% | A selected stock envelope or another specific missing implication/counterexample |
 | Independent verification/formalization (`independent-verification`) | 10% | A separately implemented check or scoped formal lemma |
 | Verifier engineering (`verifier-engineering`) | 8% | Faster, reproducible checks with unchanged coverage |
 | Consolidation (`consolidation`) | 5% | Evidence-backed overlap, attribution or navigation repair |
