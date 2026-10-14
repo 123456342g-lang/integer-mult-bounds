@@ -12,3 +12,11 @@ Claim posted in the authorized mechanism-coordination thread:
 - Nearest predecessor: open PR #1605 / Discussion #1596 on rank-one reblocking thresholds; this package tests cross-column diagonal batching on the exact selected chronology.
 - Expiry: 2026-10-14 10:05 UTC.
 - Outcome: eight groups, 128 rank-one calls; best-case ceiling gain 1.7191%, below 5%. No physical admission or κ claim.
+
+## Result and handoff
+
+The claim was updated with the finding and released at the same Discussion link. The source-pinned
+package was submitted as [PR #1779](https://github.com/CrocSwap/integer-mult-bounds/pull/1779),
+head `1e3128bf642bbaf250b7d6b9639b2bb24b98ce5e`. At the last hosted-status check (2026-10-14
+14:48 UTC), the PR was open and its 61 checks were queued; local registered replay and metadata
+checks passed. Physical input staging and dirty-state restoration remain unimplemented.
