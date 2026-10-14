@@ -158,3 +158,8 @@ follows when the exact child equations hold.
 Prepared for Ali Romman (@aliromman), with substantial OpenAI Codex
 assistance. Apache-2.0. No independent human review or hosted CI success is
 claimed. `VALIDATION.md` gives the local checks and their limits.
+
+## Follow-up review
+
+The [2026-10-14 follow-up](FOLLOWUP-REVIEW.md) records the response to the
+maintainer triage, the fresh checks and the remaining proof boundaries.
