@@ -671,3 +671,8 @@ t37-restoration-deferral-verify:
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-t37-restoration.XXXXXX"); \
 	python3 -B research/t37-restoration-deferral/verify.py --work "$$work/replay" && \
 	python3 -B -m unittest discover -s research/t37-restoration-deferral -p test_package.py
+
+.PHONY: frontier1042-invoice-audit-verify
+frontier1042-invoice-audit-verify:
+	python3 -I -B research/frontier1042-invoice-audit-seed81/verify.py
+	cd research/frontier1042-invoice-audit-seed81 && python3 -B -m unittest test_package -v
