@@ -95,10 +95,15 @@ complex replay; that exact configuration was not run here.
 * Finite replay tooling only. It is not a formal proof, and every inherited assumption
   listed in `certificates/selected-result.json` remains.
 * The output is accepted as an ancestor by the coverage and bindings checks, so it can
-  be passed as `--ancestor` to `verify_frontier799.py`. That path, and the downstream
-  #799 and #942 replays, were **not** run end to end with it; `verify_frontier799.py`
-  would record it as reused ancestry, as for any externally produced ancestor. Nothing
-  here changes what `make frontier1042-verify` (or `frontier942-verify`) runs.
+  be passed as `--ancestor` to `verify_frontier799.py`. That was run once (WSL, default
+  concurrent mode, base `2921874`; the 799 scripts are unchanged on later main):
+  `verify_frontier799.py --work W --ancestor <output>` passed in 203 s with
+  `PASS_REBUILT_PR589_PR799_COMPOSITION`, kappa `1661634653669567/10^18`, and
+  `verify_replay_coverage.py --frontier 799 --ancestor <output>` printed
+  `PASS_COMPLETE_PR799_REPLAY_COVERAGE`. It records the ancestor as reused
+  (`reused_ancestry: true`), as for any externally produced ancestor. The #942 and #1042
+  replays were **not** run with it. Nothing here changes what
+  `make frontier1042-verify` (or `frontier942-verify`) runs.
 * Overlap check at submission: #853 (merged) schedules stages inside `complex741` only and
   does not overlap the bit supplier; no open or merged PR found by search touches
   `verify_frontier741.py` or overlaps `bit589` with `complex741`. The two are
