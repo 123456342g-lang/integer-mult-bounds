@@ -7,7 +7,7 @@ Source identity and triage only; no automatic approval.
 | PR | Author | Full diff files | GitHub list | Packages |
 | --- | --- | ---: | ---: | --- |
 | #2027 | bitplane | 12 | 12 | research/ut4-mixed-root-tariffs (12) |
-| #2026 | antunishdPursuit | 11 | 11 | .github/workflows (3), certificates/rank-product-core.json (1), certificates/stage-pair-audit.json (1), scripts/historical-ci-inputs (4), scripts/replay_historical_check.py (1), tests/test_historical_check.py (1) |
+| #2026 | antunishdPursuit | 15 | 15 | .github/workflows (4), certificates/mixed-point-audit.json (1), certificates/rank-product-core.json (1), certificates/stage-pair-audit.json (1), scripts/historical-ci-inputs (4), scripts/reconcile_pr_queue.py (1), scripts/replay_historical_check.py (1), tests/test_historical_check.py (1), tests/test_pr_reconciliation.py (1) |
 | #2022 | cbethin | 9 | 9 | research/eisenstein-eleven-total-seed22 (9) |
 | #2021 | commdata2338 | 9 | 9 | research/p112-two-column-completion (9) |
 | #2020 | commdata2338 | 8 | 8 | research/partial-observation-boundaries (8) |

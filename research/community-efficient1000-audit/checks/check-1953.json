@@ -1,6 +1,6 @@
 {
   "number": 1953,
-  "head": "4f3bdf7c3bdd7033180c9d8c41245023cc402bc6",
+  "head": "0f26ac2016777224e3c66c8ead77defbf3e526d2",
   "commands": [
     [
       "/tmp/pr-efficient200-venv/bin/python",
@@ -30,7 +30,7 @@
   ],
   "python": "Python 3.12.11",
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
-  "seconds": 12.317,
+  "seconds": 4.494,
   "status": "passed",
   "exit_codes": [
     0,
@@ -499,11 +499,11 @@
     "research/d10-reflection-sharing-seeda3def8/SOURCES.json": "904fcd8f75b27799afbec41406f6abd12906fe962b5e811ea13c9fdc257b500b",
     "research/d10-reflection-sharing-seeda3def8/test_package.py": "6a0f622e32f84d37619a689d4e805099f9cf8e24a1b7f8375c349b01ad9d927f",
     "research/d10-reflection-sharing-seeda3def8/VERIFY.json": "0c2f9a92583fd57024fee8d92d650fdbae1caa7d354613ed7bbb04b702ce0786",
-    "research/d10-reflection-sharing-seeda3def8/TASK.json": "befca859ccd029255c3690067d0b715fbaeefbc3c0f032c4ec3574bb3d7f956e",
+    "research/d10-reflection-sharing-seeda3def8/TASK.json": "d4170a8d7e981f0124adf802bd1f8f57218bfb6ea20d4ab6634b9a08ae2d577d",
     "research/d10-reflection-sharing-seeda3def8/independent.py": "196ccdc5ebc010f0094e74974bd4b768dfb4df36d520fa7bffc6aa6c5aba3bfd",
-    "research/d10-reflection-sharing-seeda3def8/README.md": "a6583617dc1022b269d9ae92b3e394234affec990d12aab25275ae60f36a407f",
+    "research/d10-reflection-sharing-seeda3def8/README.md": "64128696a31889d1d5a271c974f6ebcc917da8e999fbef2773a7f566f9c1d1ba",
     "research/d10-reflection-sharing-seeda3def8/CERTIFICATE.json": "4de85d54c77657c1d37a1acf9863bf7c9e664681a5d3fef0d3d005b52fa672ba",
-    "research/d10-reflection-sharing-seeda3def8/TASK.md": "74446d1be00924d33ef919de6bdef4bee86e078cc319f91f6a78d6ed92e7d4de",
+    "research/d10-reflection-sharing-seeda3def8/TASK.md": "554b4f606ed52cc1bd2fc07e0faee3a05c2e3925b726ab187ad1604af88feecd",
     "research/d10-reflection-sharing-seeda3def8/verify.py": "e5923963994a3de04413501242bbdacf65cd731f984485dd9032227c31d048f1",
     "research/static44-selective/EXPECTED.json": "8f48531cb1ccc6c1fe7c80ba5990f8aea4278dbe9394bcc4d3f471a3e8d75f1c",
     "research/mixed-prefix-fourway/PROOF.md": "347680fcadea598650fa217394dab75b450f85f68e81c34b82031d301c8fce22",
