@@ -73,16 +73,16 @@
   "selected_assembly_certificate": "research/community-frontier1094-audit/ASSEMBLY.json",
   "discussion_claim": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1700",
   "live_overlap_review": {
-    "searched_at_utc": "2026-10-14T08:06:59Z",
+    "searched_at_utc": "2026-10-14T08:11:05Z",
     "open_prs": {
-      "count": 414,
+      "count": 415,
       "complete_pagination": true,
-      "fetched_at_utc": "2026-10-14T08:05:08Z"
+      "fetched_at_utc": "2026-10-14T08:09:10Z"
     },
     "discussions": {
-      "count": 363,
+      "count": 366,
       "complete_pagination": true,
-      "fetched_at_utc": "2026-10-14T08:06:59Z"
+      "fetched_at_utc": "2026-10-14T08:11:05Z"
     },
     "warnings": [],
     "nearest_items": [
@@ -100,11 +100,11 @@
       },
       {
         "id": "Discussion #1715",
-        "scope": "four coordinate-CNOT/SWAP targets and label saturation"
+        "scope": "completed four coordinate-CNOT/SWAP targets and label saturation"
       },
       {
         "id": "Discussion #1727",
-        "scope": "concurrent four-register mixed affine targets with standalone translations; distinct target tuple and address model"
+        "scope": "active concurrent claim; four-register mixed affine targets with standalone translations; different target tuple and address model"
       }
     ],
     "distinction": "Nearby work uses coordinate swaps, a two-target affine pair, a restricted three-register affine triple, or a different mixed affine tuple. This package fixes a rational four-register address list with exactly two independent complete Q/F2 relations and studies a bounded pattern-class screen."
