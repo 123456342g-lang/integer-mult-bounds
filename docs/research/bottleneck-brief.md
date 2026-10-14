@@ -47,6 +47,11 @@ reduces scalar additions but keeps its paid profile and carries an H2/K interfac
 gap. A useful next question is whether one changed helper operation has a valid
 replacement interface. Another addition-count reduction alone does not answer it.
 
+The historical 71-record heterogeneous-owner catalogue excludes the selected k8
+provider. The [source-bound applicability receipt](../../research/selected-k8-catalogue-scope/README.md)
+follows the selected manifest to its exact inventory/profile and records the
+seven-slot change from R480; shared rank mass does not establish catalogue membership.
+
 ## Your first session need not solve the whole construction
 
 Take the card's known-working first command, inspect its named quantity, and run
