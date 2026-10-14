@@ -266,11 +266,17 @@ and 547 discussion records, complete pagination, fetched on 2026-10-14 at
 14:10:13Z and 14:11:43Z. Targeted terms included matched/support frames,
 characteristic lifts, tetrad locality, rank shape, binary rank and symmetric
 factors. This does not search every code diff or establish literature priority.
-The final cached search used the subsequently available 584-PR snapshot
-(14:27:47Z) and the same discussion snapshot. Targeted live reads confirmed
-that PR1909, PR1923 and PR1633 remained open at the exact heads in TASK.json.
-No matched-span obstruction appeared in those bounded searches; that absence
-is not a novelty certificate.
+The final cached search covered 584 PRs (14:27:47Z) and 565 discussion records
+(14:29:09Z), including this claim. Targeted live reads confirmed that PR1909,
+PR1923 and PR1633 remained open at the exact heads in TASK.json.
+The local `complex-parity-frames-seed35` and `parity-edge-compatibility-seed46`
+notes were also read: their characteristic-vector/common-span obstructions
+concern legal separating frames and nested DAG edges, not the P112 masked
+COPY invoice. PR1558's form census verifies Z4 Gauss-kernel normalization,
+not characteristic-zero rank of the odd-vector pairing mask. The underlying
+characteristic-vector linear algebra is standard and is not claimed as new.
+No matched-span COPY obstruction appeared in these bounded searches; that
+absence is not a novelty certificate.
 Coordination:
 https://github.com/CrocSwap/integer-mult-bounds/discussions/1929#discussioncomment-18925923.
 
