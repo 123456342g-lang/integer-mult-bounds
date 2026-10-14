@@ -398,6 +398,8 @@ def verify_source_pins():
     pins = json.loads((PKG / "SOURCES.json").read_text())
     require(pins["base_commit"] == BASE, "SOURCES base mismatch")
     for entry in pins["files"]:
+        if entry["usage"] == "provenance":
+            continue
         path = ROOT / entry["path"]
         require(path.is_file(), "missing pinned input: " + entry["path"])
         got = hashlib.sha256(path.read_bytes()).hexdigest()

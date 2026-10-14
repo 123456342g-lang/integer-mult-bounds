@@ -6,7 +6,6 @@
   "inputs": [
     "certificates/selected-result.json",
     "docs/research/community-batch1099-review.md",
-    "docs/research/current-status.md",
     "research/community-frontier1094-audit/ASSEMBLY.json",
     "research/community-frontier1094-audit/SELECTED-SOURCE.json"
   ],

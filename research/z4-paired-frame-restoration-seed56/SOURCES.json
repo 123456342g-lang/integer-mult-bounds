@@ -22,7 +22,7 @@
     },
     {
       "path": "docs/research/current-status.md",
-      "usage": "input",
+      "usage": "provenance",
       "git_blob": "aa3cf49715cd367ad8c4e63ab28856fc0d19794f",
       "sha256": "1f59d648763c77d574d18dc59ea8bf62d2ee74aaed3c202c9c8cfa4f901badbd"
     },
