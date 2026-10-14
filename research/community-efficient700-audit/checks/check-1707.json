@@ -15,10 +15,11 @@
   ],
   "python": "Python 3.12.11",
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
-  "seconds": 0.087,
-  "status": "failed",
+  "seconds": 0.363,
+  "status": "passed",
   "exit_codes": [
-    1
+    0,
+    0
   ],
   "input_sha256": {
     "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
@@ -582,9 +583,19 @@
     "research/direct-delivery504-global/LOCAL-VALIDATION.json": "e7dcbbe16d3a51288dddcc9022ba852ea6c9d428f8391c72d9b61429168a5561",
     "research/direct-delivery504-global/MANIFEST.json": "c1997405c5c0ccd9bdb0a30b0eb9a5a2dc7dc7ce7b59c6a83a2152b80f6410d1",
     "research/direct-delivery504-global/NOTICE.md": "a92f49c5ced455160fbedcc8954e3c9255e3605e88ad12ae5a84f1c4302986f1",
+    "research/universal-connector-boundary/SOURCES.json": "6c51dd06c73a4e94f28b636b9d07a22b8917baebdbf4a3b85b0f8541ea7dcbfe",
+    "research/universal-connector-boundary/test_package.py": "35ad4900e87cb0d8befe4a38ee0a1e258ac8511c5aa6e2e8ce2ede3be4647014",
+    "research/universal-connector-boundary/EXPECTED.json": "658924c2940cbe193378d5ef09f4d62500fc7b385c16c0ea33846be836c429d2",
+    "research/universal-connector-boundary/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "research/universal-connector-boundary/CLAIM.md": "5b4f1881e46222f18729ed7b25c4331898f5d120a9c69157cbc49bde22df5609",
+    "research/universal-connector-boundary/generate.py": "53d08d6ef0040f446b92b46e2bf97e5ff236254dbf73a6e4b12dce20864f8028",
+    "research/universal-connector-boundary/VALIDATION.md": "08294547a8f0461c4aaeedcfbe0fe8b99cb73ac053bfbb1b573507c4e0dcbb1f",
+    "research/universal-connector-boundary/independent.py": "fb765d0d26e0cdf1d266663fe7068957fcfba77b9bd89396af29966f89f1b6cf",
     "research/universal-connector-boundary/README.md": "23415f7829ab8d80a783142f10f7d31abbce84579362769984680af3df954476",
+    "research/universal-connector-boundary/dense_checks.py": "7a568bca612fede226fc5326492953392d895d04e88fad417119d40d148a9fc6",
     "research/universal-connector-boundary/CERTIFICATE.json": "e733746ba3e5151c829b4e8728bfff5ae3ed24d8d203eb77c735d20758e8266a",
     "research/universal-connector-boundary/verify.py": "e4fa4700f9e1ae6ca09c3c76ebc569e8361b89b699425a67839d999d8812e42d",
+    "research/universal-connector-boundary/NOTICE.md": "1172648a1883827399d5103a9916deaa4314e4ee2c28653c183890f6bd5a7a17",
     "research/e8-complex-gauge-kernel/EXPECTED.json": "de9e2ade14c2f390759230850377d48c28b16a28c955669fa89c535fcc228113",
     "research/complex-double-replica-owners/PROOF.md": "db99599e3966bec253c577c23915e2a2899c4c4e8568044efc11c7918b137bbc",
     "research/complex-double-replica-owners/baseline_coverage.py": "c0cf6bb2035817a09e1abb5dc492d57af79f584bbd0c1cf5fe73ba0f8f604741",
@@ -2654,6 +2665,8 @@
     "research/complex-joint-prefix/data/width7/four/RECIPES.json": "4ee838e1cb9258cd330d73b4c58333d35156cd29e4d7b70e4f543280a317ba53",
     "research/complex-double-replica-owners/data/SPEC.json": "dbf042e7e86b8de90e0eb8df2bcb8ec4a431bdb76a7c6e5cda7e0f8ef5ff09e9",
     "research/subspace16-r420/code/phases_full.py": "a273c325ffd6793d5b63b79a289a9d2bbc9292e6940fb5a926924f3708627af4",
+    "research/universal-connector-boundary/references/PR934-NOTICE.md": "2b085e535c310847dd489ca60e5d12277bdb601aa1af3c731f36eb0275184528",
+    "research/universal-connector-boundary/references/PR934-README.md": "d187dc94bf631bd5b6da2cc1019a2d1ba687b624fdaf32aae05dffc67872509d",
     "research/direct-delivery504-global/proof/DELIVERY-AND-COALESCING.md": "7e719f01416cf312272dfabca8b355d327128859c01d686056e0833e83870bc7",
     "research/direct-delivery504-global/proof/LOCAL-CONSTRUCTION.md": "3b1fc44f6f8290361cb24526cf91c3174c734f5da3cc9fb94559a96168d39e70",
     "research/direct-delivery504-global/proof/GLOBAL-HOSTING.md": "c47b61bf2e998583e4626eec068439600f3464aab2ddbdb0ac044b0136d7b502",
@@ -6022,6 +6035,6 @@
     "research/native-complex-moment552/inputs/PR558-INVOICE.json": "4b6977a049663ab958bd9a48c2864f7a7bddb26aef03e14f3068aede020ef76f",
     "research/native-complex-moment552/inputs/PR552-INVOICE.json": "4ac060dbf2ea2624dd1f4bda23bdb81c0a3013dfe49b77c092b631885529947f"
   },
-  "log_sha256": "c7be84aeb71269549561e4887c3fdd3189423525b9652dc8eb7a65189ef9acfa",
+  "log_sha256": "4c5e7bfd7b6bb8d727d77db98f983c1ae6f936c00aba7a374c20453ab7e437e8",
   "scope": "Pinned scoped package commands and their stated finite/proof-support coverage; not complete multiplication-theorem certification."
 }

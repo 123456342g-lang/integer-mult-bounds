@@ -25,7 +25,7 @@
   ],
   "python": "Python 3.12.11",
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
-  "seconds": 315.938,
+  "seconds": 270.835,
   "status": "failed",
   "exit_codes": [
     0,
@@ -330,6 +330,6 @@
     "research/community-k492-audit/pr622/replay/baseline558/complex-global/base/work/complex-nine-native/DATA-PHASES.json": "c5916ff312678f12aba403847643fbbc29f643acec60bdf836fa56cd3e8251fa",
     "research/e8-bit-p111-tuned/tune/EXPECTED.json": "b9f0e5ca038abe837b0007c8fe006f366a6f02009244ac57705a8a200e2301f4"
   },
-  "log_sha256": "3e1058943eec3eea18d7b5ca798840b1ded238fc0f65e407ab1eff252429e764",
+  "log_sha256": "36e7f4598416a8e4c4b938f45f340f4eb5c640d34bf49cd938c0df257d982a60",
   "scope": "Pinned scoped package commands and their stated finite/proof-support coverage; not complete multiplication-theorem certification."
 }
