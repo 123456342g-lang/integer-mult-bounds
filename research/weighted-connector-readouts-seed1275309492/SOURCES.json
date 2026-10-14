@@ -83,6 +83,11 @@
       "scope": "dyadic BIT outputs share a restored source tour"
     },
     {
+      "pr": 1526,
+      "head": "1fb85dc6813b88483f4f0a359ccd722376acd292",
+      "scope": "signed characteristic-zero 3x3 connector with paid root doubling and halving; price-sensitive but different alphabet, field, and target"
+    },
+    {
       "pr": 1707,
       "head": "3d2e634e046ac4fbf07ddbfb0e59da4cf9907f4e",
       "scope": "common-A readout for identical output maps"
@@ -96,6 +101,16 @@
       "pr": 1739,
       "head": "e33645b34521460bce61f9fb913f98f506d34d4d",
       "scope": "rank-one connector transition across source updates"
+    }
+  ],
+  "nearby_discussions": [
+    {
+      "discussion": 1579,
+      "updated_at": "2026-10-14T03:16:41Z",
+      "claim_expiry": "2026-10-14T05:35:00Z",
+      "title": "Common-B connector: minimum-query endpoint with unequal readout prices",
+      "scope": "all n minimum source-query count and readout bill at that query minimum; explicitly no global unequal-price optimum or optimal XOR count",
+      "distinction": "this package proves one exact n=5 all-mask optimum under nonuniform complete source leaf prices and equal unit target readout prices"
     }
   ],
   "claim": {
