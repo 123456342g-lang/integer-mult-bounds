@@ -169,6 +169,7 @@ def build():
         'research/community-reconciliation92-audit/DISPOSITIONS.json',
         'research/community-reconciliation-next100-audit/DISPOSITIONS.json',
         'research/community-reconciliation-third100-audit/DISPOSITIONS.json',
+        'research/community-reconciliation-fourth100-audit/DISPOSITIONS.json',
     ) if (ROOT / p).exists()]
     family_path = family_paths[-1] if family_paths else None
     for family_path in family_paths:
@@ -251,7 +252,7 @@ def build():
     lines += ['', '[100-PR historical reconciliation](community-reconciliation100-review.md): exact-head coverage and individual carry-forward tasks; it is not 100 completed mathematical audits.',
               '[Five early contributions](community-historical-five-review.md): #2/#4/#8/#9/#12 retained with complete historical sources and focused replays.',
               '[Remaining 92 contributions](community-reconciliation92-review.md): source retention, scoped review and closure receipts; #122 awaits its missing parent circuit/profile.',
-              '[Previous 100 contributions, #153–#303](community-reconciliation-next100-review.md): individual scope and explicit remaining obligations.', '[Third 100 contributions, #304–#421](community-reconciliation-third100-review.md): constructions, research and verification with source-bound execution.', '', '## Remaining priorities', '',
+              '[Previous 100 contributions, #153–#303](community-reconciliation-next100-review.md): individual scope and explicit remaining obligations.', '[Third 100 contributions, #304–#421](community-reconciliation-third100-review.md): constructions, research and verification with source-bound execution.', '[Fourth 100 contributions, #423–#668](community-reconciliation-fourth100-review.md): full-source reconciliation and scoped execution, with blockers retained.', '', '## Remaining priorities', '',
               '1. Resolve the explicit remaining questions on partially reviewed or changed heads; consult the latest family disposition before repeating a replay.',
               '2. Continue with a frozen chunk of live, non-draft, unreviewed PRs. Compare current heads with published reviews and exclude submissions awaiting a concrete revision.',
               '3. Keep source retention, scoped execution, publication and actual GitHub closure separate. Preserve research, verification and parallel contribution credit even when a result is superseded.',

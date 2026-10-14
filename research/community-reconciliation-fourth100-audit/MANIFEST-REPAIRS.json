@@ -1,0 +1,36 @@
+[
+  {
+    "number": 471,
+    "head": "56b3da6aa1295d37ce43f1753479bfe4737b7ac3",
+    "manifest_path": "research/e8-tensor-normalization/MANIFEST.json",
+    "original_sha256": "cf08dd76023789f03c1da4cc13f108068e2b58b6f86461a16eab2a87e5666fc9",
+    "missing_metadata_hash": "e4743c834e8463aab8324390a67b1b3c7fdfe2e2b553948aaa5e8e98b31b3b8c",
+    "repaired_sha256": "d6b43cd97a542498ed07a2b66a3e296ce3372cbbb7418404657e35593a4e5926",
+    "repair": "Remove only absent .gitattributes checkout metadata; all present source/data pins exact"
+  },
+  {
+    "number": 476,
+    "head": "e850569c33ad1d5771e2f8b1c6dfe7a445396167",
+    "manifest_path": "research/tensor-schur-r715/MANIFEST.json",
+    "original_sha256": "1b8c7de9e2fb9293681bde99de5faed9255716d72c5c1f215e874e856e3e6588",
+    "missing_metadata_hash": "e4743c834e8463aab8324390a67b1b3c7fdfe2e2b553948aaa5e8e98b31b3b8c",
+    "repaired_sha256": "0ee17665dcb4997168f3248e59b5008b2c7c10ad4a50cea480be3002d0b56fc8",
+    "repair": "Remove only absent .gitattributes checkout metadata; all present source/data pins exact"
+  },
+  {
+    "number": 505,
+    "head": "4ee769c8e28837482272b5f4742497da8e2fc9d4",
+    "manifest_path": "research/asynchronous-whole-owners/MANIFEST.json",
+    "original_sha256": "8395a05166d83a27ee9dfa4b16a2e63b93668eedf178edd587270c3ffcc6fa97",
+    "repaired_sha256": "f02e5fb02d44d4d88f92b80bc6be1f11160a1bb22d30541964bf63c1f17113be",
+    "repair": "Remove only missing checkout metadata .gitattributes entry; every actual executable/data pin unchanged"
+  },
+  {
+    "number": 508,
+    "head": "3213fc136270ca8372ce9f8fbb828e78ba96cecf",
+    "manifest_path": "research/coordinated-gauge-async/MANIFEST.json",
+    "original_sha256": "ff14217d3d509012e88c0a26d23452b3bd563b3f5f0657328b2652a286ee6008",
+    "repaired_sha256": "ce24c2dceb9f9c893670e8a4e0ab560f77b368f1a9d98cb0796da0eed2762ecc",
+    "repair": "Remove only missing checkout metadata .gitattributes entry; every actual executable/data pin unchanged"
+  }
+]

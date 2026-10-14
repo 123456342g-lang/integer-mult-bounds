@@ -168,7 +168,8 @@ def main():
                         ROOT / 'research/community-historical-five-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-reconciliation92-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-reconciliation-next100-audit/DISPOSITIONS.json',
-                        ROOT / 'research/community-reconciliation-third100-audit/DISPOSITIONS.json'):
+                        ROOT / 'research/community-reconciliation-third100-audit/DISPOSITIONS.json',
+                        ROOT / 'research/community-reconciliation-fourth100-audit/DISPOSITIONS.json'):
         if not family_path.exists():
             continue
         family = json.loads(family_path.read_text())
@@ -303,7 +304,8 @@ def main():
             for decision in decisions:
                 n = decision['number']
                 require(decision['reviewed_head'] == receipt['reviewed_heads'][str(n)], 'Hyperplane reviewed head')
-                check_review_completion(actual[n], decision)
+                # A later exact-head reconciliation can supersede this immutable partial record.
+                check_review_completion(actual[n] if family_decisions[n] == decision else decision, decision)
                 c = coverage[str(n)]
                 require(c['head'] == decision['reviewed_head'] and len(c['files']) == c['changed_files'],
                         'Incomplete hyperplane changed-file inventory')
@@ -564,6 +566,9 @@ def main():
     third100 = ROOT / 'research/community-reconciliation-third100-audit/verify.py'
     if third100.exists():
         runpy.run_path(str(third100), run_name='__main__')
+    fourth100 = ROOT / 'research/community-reconciliation-fourth100-audit/verify.py'
+    if fourth100.exists():
+        runpy.run_path(str(fourth100), run_name='__main__')
     next100 = ROOT / 'research/community-reconciliation-next100-audit/verify.py'
     if next100.exists():
         runpy.run_path(str(next100), run_name='__main__')
