@@ -23,7 +23,7 @@
       "git_blob": "c05fafaa25ba95b2d5af86b1800427198e3d20eb",
       "path": "docs/research/agent-task-catalog.json",
       "sha256": "89b5928bc92c81e2647b6d702a7ad85a6795b8f44e2eb267b2ff3145d8f2b2ce",
-      "usage": "input"
+      "usage": "provenance"
     },
     {
       "git_blob": "6cb6ec061a071a06a2d18cd4dc3e9a2b05d28099",
