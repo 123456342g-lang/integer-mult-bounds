@@ -2,7 +2,7 @@
 
 Frozen selection: **100 open, non-draft PRs #1209–#1343**, excluding prior same-head dispositions. Baseline `a18b4b0136d647529971e9fcb99fa83f5b9a0b81`. Full Git differences determine coverage; GitHub file-list truncation is not used as the inventory.
 
-**40 ready for scoped incorporation; 0 observed merged; 60 explicit follow-ups.** The selected conditional κ remains `836330098538459/500000000000000000`. No incompatible local gains are added together.
+**40 ready for scoped incorporation; 40 observed merged; 60 explicit follow-ups.** The selected conditional κ remains `836330098538459/500000000000000000`. No incompatible local gains are added together.
 
 Original author commits, notices, predecessor attribution and assistance disclosures are retained. Notes, corrections, negative results and verification engineering receive credit alongside constructions. Incorporation accepts the stated research scope; it does not select a new frontier or verify the inherited full multiplication theorem.
 
