@@ -79,6 +79,44 @@ def git_source_rows(root, base, names):
                     process.wait()
 
 
+def git_blobs(root, specs):
+    """Read exact blobs in one Git process, without retaining a cross-call cache.
+
+    NUL-delimited requests preserve spaces/newlines in paths. Each reply's size
+    frames the binary content, so embedded newlines and NUL bytes are harmless.
+    The caller must close this iterator if validation stops before exhaustion.
+    """
+    with subprocess.Popen(["git", "cat-file", "--batch", "-z"], cwd=root,
+                          stdin=subprocess.PIPE, stdout=subprocess.PIPE) as process:
+        try:
+            for spec in specs:
+                require("\0" not in spec, "invalid Git object request")
+                process.stdin.write(spec.encode("utf-8") + b"\0")
+                process.stdin.flush()
+                fields = process.stdout.readline().rstrip(b"\n").split(b" ")
+                require(len(fields) == 3 and re.fullmatch(rb"[0-9a-f]{40,64}", fields[0])
+                        and fields[1] == b"blob" and fields[2].isdigit(),
+                        "missing or non-blob Git source: " + spec)
+                size = int(fields[2])
+                pinned = process.stdout.read(size)
+                require(len(pinned) == size and process.stdout.read(1) == b"\n",
+                        "incomplete Git blob response: " + spec)
+                yield fields[0].decode("ascii"), pinned
+            process.stdin.close()
+            require(process.wait(timeout=90) == 0, "Git source reader failed")
+        finally:
+            # On an early pin/drift failure, EOF releases Git's request loop;
+            # closing stdout also releases a producer with an unread reply.
+            process.stdin.close()
+            process.stdout.close()
+            if process.poll() is None:
+                try:
+                    process.wait(timeout=5)
+                except subprocess.TimeoutExpired:
+                    process.kill()
+                    process.wait()
+
+
 def meaningful(value):
     return isinstance(value, str) and bool(value.strip()) and not re.search(r"\bTODO\b", value, re.I)
 
@@ -146,7 +184,8 @@ def validate(root, package, check_pins=True):
         for name in names:
             p = PurePosixPath(name)
             require(not p.is_absolute() and ".." not in p.parts, "invalid source path")
-        with closing(git_source_rows(root, sources["base_commit"], names)) as objects:
+        specs = [sources["base_commit"] + ":" + name for name in names]
+        with closing(git_blobs(root, specs)) as objects:
             for index, (obj, pinned) in enumerate(objects):
                 row = sources["files"][index]
                 name = row["path"]
