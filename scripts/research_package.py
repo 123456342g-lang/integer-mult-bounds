@@ -4,6 +4,7 @@
 Douglas Colkitt, with OpenAI Codex assistance. Apache-2.0.
 """
 import argparse
+from contextlib import closing
 import hashlib
 import importlib.metadata
 import json
@@ -33,6 +34,38 @@ def relative_file(root, name):
 
 def git(root, *args):
     return subprocess.run(["git", *args], cwd=root, capture_output=True, check=True).stdout
+
+
+def git_blobs(root, specs):
+    """Read exact blobs in one Git process, without retaining a cross-call cache.
+
+    NUL-delimited requests preserve spaces/newlines in paths. Each reply's size
+    frames the binary content, so embedded newlines and NUL bytes are harmless.
+    The caller must close this iterator if validation stops before exhaustion.
+    """
+    with subprocess.Popen(["git", "cat-file", "--batch", "-z"], cwd=root,
+                          stdin=subprocess.PIPE, stdout=subprocess.PIPE) as process:
+        try:
+            for spec in specs:
+                require("\0" not in spec, "invalid Git object request")
+                process.stdin.write(spec.encode("utf-8") + b"\0")
+                process.stdin.flush()
+                fields = process.stdout.readline().rstrip(b"\n").split(b" ")
+                require(len(fields) == 3 and re.fullmatch(rb"[0-9a-f]{40,64}", fields[0])
+                        and fields[1] == b"blob" and fields[2].isdigit(),
+                        "missing or non-blob Git source: " + spec)
+                size = int(fields[2])
+                pinned = process.stdout.read(size)
+                require(len(pinned) == size and process.stdout.read(1) == b"\n",
+                        "incomplete Git blob response: " + spec)
+                yield fields[0].decode("ascii"), pinned
+            process.stdin.close()
+            require(process.wait() == 0, "Git source reader failed")
+        finally:
+            # On an early pin/drift failure, EOF releases Git's request loop;
+            # closing stdout also releases a producer with an unread reply.
+            process.stdin.close()
+            process.stdout.close()
 
 
 def meaningful(value):
@@ -96,19 +129,23 @@ def validate(root, package, check_pins=True):
     require({r["path"] for r in sources["files"] if r["usage"] == "input"} <= set(inputs),
             "all live pinned inputs must be declared CI inputs")
     if check_pins:
+        catalog_name = "docs/research/agent-task-catalog.json"
+        require(catalog_name in {r["path"] for r in sources["files"]}, "pin the originating task catalogue")
         for row in sources["files"]:
             name = row["path"]
             p = PurePosixPath(name)
             require(not p.is_absolute() and ".." not in p.parts, "invalid source path")
-            obj = git(root, "rev-parse", sources["base_commit"] + ":" + name).decode().strip()
-            require(obj == row["git_blob"], "source blob provenance mismatch: " + name)
-            pinned = git(root, "show", sources["base_commit"] + ":" + name)
-            require(hashlib.sha256(pinned).hexdigest() == row["sha256"], "source SHA256 provenance mismatch: " + name)
-            if row["usage"] == "input":
-                require(pinned == relative_file(root, name).read_bytes(), "working source drift: " + name)
-        catalog_name = "docs/research/agent-task-catalog.json"
-        require(catalog_name in {r["path"] for r in sources["files"]}, "pin the originating task catalogue")
-        catalog = json.loads(git(root, "show", sources["base_commit"] + ":" + catalog_name))
+        specs = [sources["base_commit"] + ":" + row["path"] for row in sources["files"]]
+        with closing(git_blobs(root, specs)) as blobs:
+            # Exhaust the reader first so its final Git exit status is checked.
+            for (obj, pinned), row in zip(blobs, sources["files"]):
+                name = row["path"]
+                require(obj == row["git_blob"], "source blob provenance mismatch: " + name)
+                require(hashlib.sha256(pinned).hexdigest() == row["sha256"], "source SHA256 provenance mismatch: " + name)
+                if row["usage"] == "input":
+                    require(pinned == relative_file(root, name).read_bytes(), "working source drift: " + name)
+                if name == catalog_name:
+                    catalog = json.loads(pinned)
         cards = [t for tr in catalog["tracks"] for t in tr["tasks"] if t["id"] == task["task_id"]]
         require(len(cards) == 1 and task["original_card"] == cards[0], "original card does not match pinned catalogue")
     return task, manifest
