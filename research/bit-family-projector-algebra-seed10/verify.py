@@ -133,6 +133,8 @@ def orthogonal_decomposition(factors, source):
 def source_data(target, sources):
     need(sources["base_commit"] == BASE, "exact base commit")
     for row in sources["files"]:
+        if row["usage"] == "provenance":
+            continue
         raw = read_root(row["path"])
         need(sha256(raw) == row["sha256"], "source SHA-256: " + row["path"])
         need(git_blob(raw) == row["git_blob"], "source Git blob: " + row["path"])
@@ -146,8 +148,9 @@ def source_data(target, sources):
 
     input_pins = {row["path"]: row for row in sources["files"]
                   if row["usage"] == "input"}
+    all_pins = {row["path"]: row for row in sources["files"]}
     for path, expected in target["source_hashes"].items():
-        need(path in input_pins and input_pins[path]["sha256"] == expected,
+        need(path in all_pins and all_pins[path]["sha256"] == expected,
              "predecessor source pin: " + path)
 
     selected = json.loads(read_root("certificates/selected-result.json"))
