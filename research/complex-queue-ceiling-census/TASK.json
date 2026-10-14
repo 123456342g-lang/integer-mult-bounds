@@ -2,7 +2,7 @@
   "schema_version": 1,
   "task_id": "complex-new-helper-inventory",
   "priority_revision": 2,
-  "base_commit": "77dc486aafa0ce89c0af8b7bc012adb40a933fda",
+  "base_commit": "826645f6f02dccc49adc701ac3b2eaa218328252",
   "original_card": {
     "id": "complex-new-helper-inventory",
     "question": "Can a new local cost interface change the deficit-to-recursive-cost ratio beyond current packing?",
@@ -62,5 +62,7 @@
       "first_step": "Screen each proposal's per-call profile with ceiling.ceiling() before a full replay.",
       "blocked_by": "Nothing."
     }
-  ]
+  ],
+  "original_base_commit": "77dc486aafa0ce89c0af8b7bc012adb40a933fda",
+  "integration_note": "Rebound to merged PR1240. Its calculator adds optional unpaid=1; the census uses the unchanged default and reproduces the original RESULT.json byte for byte. Original base and changed source pins are retained."
 }

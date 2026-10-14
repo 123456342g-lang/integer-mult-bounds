@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "base_commit": "77dc486aafa0ce89c0af8b7bc012adb40a933fda",
+  "base_commit": "826645f6f02dccc49adc701ac3b2eaa218328252",
   "files": [
     {
       "path": "certificates/selected-result.json",
@@ -17,8 +17,12 @@
     {
       "path": "research/complex-local-word-ceiling/ceiling.py",
       "usage": "input",
-      "git_blob": "2c63fbbeed880c140546c1f98418547ae7650c59",
-      "sha256": "ad075c3b506bfca668577ec78f63679ac783a48fe0fffe28e2340b73ea62de74"
+      "git_blob": "6c0f54527d879396f689523bfde19928a9b6157c",
+      "sha256": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc",
+      "original_git_blob": "2c63fbbeed880c140546c1f98418547ae7650c59",
+      "original_sha256": "ad075c3b506bfca668577ec78f63679ac783a48fe0fffe28e2340b73ea62de74"
     }
-  ]
+  ],
+  "original_base_commit": "77dc486aafa0ce89c0af8b7bc012adb40a933fda",
+  "integration_note": "Rebound to merged PR1240. Its calculator adds optional unpaid=1; the census uses the unchanged default and reproduces the original RESULT.json byte for byte. Original base and changed source pins are retained."
 }

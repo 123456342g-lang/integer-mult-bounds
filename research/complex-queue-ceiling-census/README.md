@@ -19,9 +19,10 @@ reach.
 ## Result
 
 All 14 obey the coverage law at 896/9 live families per call. Every claim's endpoint lies below its own word's
-ceiling. They use **nine distinct local words** in two families.
+ceiling. They have **nine distinct per-call paid rank profiles** in two groups. The W-labels below
+identify profiles, not proven circuit identities.
 
-| Word | Local profile per call | Cap on κ | vs. selected word | Claims (κ, headroom left) |
+| Profile | Local profile per call | Approximate cap on κ | vs. selected word | Claims (κ, headroom left) |
 |---|---|---:|---:|---|
 | W1 | `1:2406 2:432 3:426 4:138 5:84 8:8` | **0.0016873148** | +0.007% | #1124, #1130 (0.0016730, 0.86%) |
 | W4 | `1:2406 2:432 3:424 4:142 5:82 8:8` | 0.0016872744 | +0.004% | #1152 (0.0016743, 0.77%) |
@@ -35,16 +36,17 @@ ceiling. They use **nine distinct local words** in two families.
 
 What this shows:
 
-- **No covered claim, and no repacking of any covered word, can exceed κ < 0.0016873148.** The whole
+- **Within the stated model, every covered profile and any repacking that preserves it satisfies κ < 0.001687314840.** The whole
   covered queue is a packing contest inside a 0.87% band above the selected κ.
 - **The leading claims (#1148 line) sit on *lower*-ceiling words.** Their joint-entrance words move local mass
   from rank 1 to rank 2: 5,590 against 5,584–5,586 per call. That lowers the ideal limit by about 0.17–0.21%.
   They lead because they are packed closer to their limit (0.47–0.52% headroom left, against 0.77–0.86%).
-  Their gains therefore come from realizability, meaning how well helpers fit windows. The paid profile itself
-  did not improve.
-- **For reviewers:** two claims on the same word differ only in packing. A claim on a lower-cap word can never
-  overtake the best packing of a higher-cap word. The largest remaining prize under these words is about 0.7%,
-  for packing W1 or W2 as tightly as the #1148 line packs its own words.
+  This is a comparison of realized profile costs with their relaxations. It does not independently
+  validate helper placement or classify every circuit change; the relaxed paid-profile cap did not improve.
+- **For reviewers:** claims with the same paid profile share this relaxation cap, but may use different
+  circuits. A lower upper bound does not imply a lower attainable optimum. The optimistic headroom from
+  the leading covered claim to the highest cap is about 0.7%; realizing it is an open construction problem,
+  not a consequence of transplanting another word's packing fraction.
 
 ## Not covered
 
@@ -65,12 +67,15 @@ python3 -I -B research/complex-queue-ceiling-census/verify.py            # ~12 s
 python3 -I -B research/complex-queue-ceiling-census/rebind.py --fetch    # network; re-reads every pinned blob
 ```
 
-This package depends on `research/complex-local-word-ceiling/ceiling.py` (#1240) and is stacked on it.
+This package depends on `research/complex-local-word-ceiling/ceiling.py` (#1240). During integration,
+its source binding was updated to merged #1240, whose calculator adds the optional `unpaid=1`
+parameter. The census uses that unchanged default and reproduces its original `RESULT.json`
+byte for byte. `TASK.json` and `SOURCES.json` retain the original base and changed source pins.
 
 ## Open next questions
 
-- **Can a W1/W2-type word be packed as tightly as the #1148 line?** That is the largest remaining packing
-  prize, at most about +0.7%. A first step is to transplant the #1148 line's owner/entrance packing method onto
+- **Can a W1/W2-type word be packed as tightly as the #1148 line?** The highest relaxed cap leaves at most about +0.7% over the leading covered claim;
+  reaching the same fraction of a cap does not itself realize all of that headroom. A first step is to transplant the #1148 line's owner/entrance packing method onto
   W1's helper widths and measure the realized fraction of the cap. The blocker is that the joint-entrance method
   changes the word, so the transplant must keep W1's paid profile.
 - **Which change raises a cap rather than packing toward it?** Only a lower local excess spend (#1240's budget)
