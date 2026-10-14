@@ -25,7 +25,6 @@
   ],
   "inputs": [
     "certificates/selected-result.json",
-    "docs/research/agent-task-catalog.json",
     "docs/research/community-batch1099-review.md",
     "research/community-frontier1042-audit/RESULT.json",
     "research/community-frontier1042-audit/selected-replay.tar.gz",
