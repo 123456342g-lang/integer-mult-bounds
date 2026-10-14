@@ -63,5 +63,6 @@
   "selector_scope_key": "7f5f4426ef796683c485",
   "catalogue_revision": 3,
   "selected_record_sha256": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32",
-  "finished_utc": "2026-10-14T08:25:07Z"
+  "finished_utc": "2026-10-14T08:27:00Z",
+  "pr_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1741"
 }
