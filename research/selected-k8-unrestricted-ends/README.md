@@ -85,7 +85,9 @@ ceiling and lever controls passed. The initial waiver of all affected helper
 climb costs, with released mass recharged, had planning headroom; it was not
 a realized word or a universal lower bound for the final domain.
 [Discussion2000](https://github.com/CrocSwap/integer-mult-bounds/discussions/2000)
-records the claim and outcome. TASK.json retains the original card, sources,
+records the claim and outcome. Published as [PR2013](https://github.com/CrocSwap/integer-mult-bounds/pull/2013);
+mathematical commit `31e788df17a4df614fa5b3605a06d06e60f18bb6`.
+TASK.json retains the original card, sources,
 predecessor heads and overlap coverage. Metadata search is not a novelty
 certificate. The final refresh covered 381 open PRs at 17:00:22 UTC and
 643 Discussions at 17:01:43 UTC on 2026-10-14, with complete pagination.

@@ -446,5 +446,7 @@
       "all-size compiler and precision/tape obligations",
       "outer analytic transfer"
     ]
-  }
+  },
+  "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/2013",
+  "mathematical_head": "31e788df17a4df614fa5b3605a06d06e60f18bb6"
 }
