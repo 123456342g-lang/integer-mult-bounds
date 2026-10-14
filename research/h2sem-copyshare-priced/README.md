@@ -1,6 +1,6 @@
 # Priced H2-sem admission of the PR848 copy-path helper-sharing wraps
 
-**Finite bit construction under a replacement interface; no new κ.** The
+**Priced finite invoice under the H2-sem replacement interface; no new κ.** The
 selected frontier, selected bit supplier and `upstream/` are unchanged. The bit
 side does not bind.
 
