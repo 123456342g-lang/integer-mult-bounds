@@ -40,3 +40,15 @@ novelty. Refresh before submission.
 Prepared for Sricharan Vagvala (@theon199), with substantial OpenAI Codex
 assistance for selection, implementation, analysis, verification and writing.
 No independent human review. Apache-2.0; predecessor notices remain unchanged.
+
+## Done
+
+Result: [PR1426](https://github.com/CrocSwap/integer-mult-bounds/pull/1426),
+implementation commit `50865bdac036f171b191c224e8a1e7f0ccafdadf`.
+Five paired same-input runs per interpreter give 1.45x (Python 3.12) and 1.50x
+(Python 3.14) integer-stage acceleration. Every one of 226,210 kernel returns
+and all four complete receipts agree; the complete historical verifier retains
+all 10+25 original controls. Python 3.12 registered replay and Python 3.14
+optimized full verification pass. Scope released on 2026-10-14 at 00:43 UTC.
+No new kappa, selected-frontier edit, full theorem proof or hosted-CI success
+is claimed. Exact evidence, pins and next question are in the package.
