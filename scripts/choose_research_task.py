@@ -135,7 +135,7 @@ def main():
         try:
             base = subprocess.run(
                 ["git", "rev-parse", "HEAD"], cwd=ROOT, check=True,
-                capture_output=True, text=True,
+                capture_output=True, text=True, encoding="utf-8",
             ).stdout.strip()
         except (OSError, subprocess.CalledProcessError):
             base = None

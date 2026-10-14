@@ -1,6 +1,8 @@
 """Failure controls for overlap coverage, package provenance and bounded replay."""
+import ast
 import importlib.util
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -25,6 +27,14 @@ class OverlapTests(unittest.TestCase):
         self.assertEqual(len(matches), 1)
         self.assertEqual(matches[0]["head"], "a" * 40)
         self.assertEqual(overlap.search(records, ["missing"]), [])
+
+    def test_report_survives_a_cp1252_stdout(self):
+        # Local package READMEs quote kappa; forcing cp1252 reproduces a Windows pipe on any host.
+        env = {**os.environ, "PYTHONIOENCODING": "cp1252", "PYTHONUTF8": "0"}
+        result = subprocess.run([sys.executable, "-B", str(ROOT / "scripts/find_overlap.py"), "κ", "--offline"],
+                                cwd=ROOT, env=env, capture_output=True, timeout=120)
+        self.assertEqual(result.returncode, 0, result.stderr.decode("utf-8", "replace"))
+        self.assertIn(b"\\u03ba", result.stdout)
 
     def test_pr_pagination_normalization(self):
         def row(n):
@@ -98,7 +108,10 @@ class PackageTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
         subprocess.run(["git", "init", "-q", str(self.root)], check=True)
-        for key, value in (("user.name", "Fixture"), ("user.email", "fixture@example.invalid")):
+        # Pin line-ending handling so committed blobs equal working bytes on every host
+        # (Git for Windows defaults to core.autocrlf=true).
+        for key, value in (("user.name", "Fixture"), ("user.email", "fixture@example.invalid"),
+                           ("core.autocrlf", "false")):
             package.git(self.root, "config", key, value)
         (self.root / "docs/research").mkdir(parents=True)
         (self.root / "certificates").mkdir()
@@ -152,6 +165,17 @@ class PackageTests(unittest.TestCase):
         path.write_text(json.dumps(task))
         package.validate(self.root, "research/fixture")
 
+    def test_utf8_metadata_validates_under_any_locale(self):
+        # Byte 0x9d (in U+201D) is undefined in cp1252, the default Windows codec.
+        task, _ = self.ready()
+        task["evidence"] = "Exact κ moment — “priced”"
+        (self.target / "TASK.json").write_text(json.dumps(task, ensure_ascii=False), encoding="utf-8")
+        readme = self.target / "README.md"
+        readme.write_text(readme.read_text(encoding="utf-8") + "\n## Open next questions\n\n“Which κ?”\n",
+                          encoding="utf-8")
+        validated, _ = package.validate(self.root, "research/fixture")
+        self.assertEqual(validated["evidence"], task["evidence"])
+
     def test_live_input_drift_but_provenance_survives_priority_change(self):
         self.ready()
         (self.root / "docs/research/agent-task-catalog.json").write_text('{"new":"priority"}')
@@ -198,6 +222,29 @@ class PackageTests(unittest.TestCase):
         verifier.write_text('raise SystemExit(7)\n')
         with self.assertRaisesRegex(ValueError, "exited 7"):
             package.run_package(self.root, "research/fixture")
+
+
+class TextEncodingTests(unittest.TestCase):
+    SCRIPTS = ("choose_research_task.py", "find_overlap.py", "new_research_package.py",
+               "research_baseline.py", "research_package.py")
+
+    def test_onboarding_text_io_does_not_depend_on_host_locale(self):
+        # A UTF-8 CI host cannot observe locale-codec bugs, so check the calls statically.
+        missing = []
+        for name in self.SCRIPTS:
+            for node in ast.walk(ast.parse((ROOT / "scripts" / name).read_text(encoding="utf-8"))):
+                if not isinstance(node, ast.Call):
+                    continue
+                func = getattr(node.func, "attr", getattr(node.func, "id", None))
+                keywords = {k.arg: k.value for k in node.keywords}
+                mode = keywords.get("mode", node.args[0] if func == "open" and node.args else None)
+                binary = isinstance(mode, ast.Constant) and "b" in str(mode.value)
+                text = any(isinstance(keywords.get(k), ast.Constant) and keywords[k].value is True
+                           for k in ("text", "universal_newlines"))
+                if ((func in ("read_text", "write_text", "open", "NamedTemporaryFile") and not binary
+                        or func in ("run", "Popen", "check_output") and text) and "encoding" not in keywords):
+                    missing.append(f"{name}:{node.lineno}")
+        self.assertEqual(missing, [])
 
 
 class BaselineTests(unittest.TestCase):

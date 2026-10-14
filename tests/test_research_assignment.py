@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SPEC = importlib.util.spec_from_file_location("choose_research_task", ROOT / "scripts/choose_research_task.py")
 assignment = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(assignment)
-CATALOG = json.loads((ROOT / assignment.CATALOG).read_text())
+CATALOG = json.loads((ROOT / assignment.CATALOG).read_text(encoding="utf-8"))
 
 
 class ResearchAssignmentTests(unittest.TestCase):
@@ -21,7 +21,7 @@ class ResearchAssignmentTests(unittest.TestCase):
         assignment.validate_catalog(CATALOG, ROOT)
 
     def test_documented_allocation_matches_catalog(self):
-        guide = (ROOT / "autoresearch.md").read_text()
+        guide = (ROOT / "autoresearch.md").read_text(encoding="utf-8")
         rows = re.findall(r"^\| [^|\n]*\(`([a-z0-9-]+)`\) \| (\d+)% \|", guide, re.MULTILINE)
         self.assertEqual(len(rows), len(CATALOG["tracks"]))
         self.assertEqual(
@@ -97,7 +97,7 @@ class ResearchAssignmentTests(unittest.TestCase):
             cwd=ROOT, capture_output=True, text=True, check=True,
         )
         receipt = json.loads(result.stdout)
-        selected = json.loads((ROOT / "certificates/selected-result.json").read_text())
+        selected = json.loads((ROOT / "certificates/selected-result.json").read_text(encoding="utf-8"))
         self.assertEqual(receipt["selected"]["reproduce"], selected["reproduce"])
         self.assertEqual(receipt["selected"]["review"], selected["review"])
         self.assertEqual(receipt["status"], "SUGGESTIONS_ONLY_NOT_RESERVED")

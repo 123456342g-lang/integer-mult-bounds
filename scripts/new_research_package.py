@@ -95,7 +95,7 @@ New work is Apache-2.0. Disclose substantial AI assistance in TASK.json.
     temporary = Path(tempfile.mkdtemp(prefix=".research-draft-", dir=destination.parent))
     try:
         for name, content in files.items():
-            (temporary / name).write_text(content)
+            (temporary / name).write_text(content, encoding="utf-8", newline="\n")
         # mkdir is the exclusive claim; rename alone can replace an empty
         # directory that another agent created after the initial existence check.
         destination.mkdir()
