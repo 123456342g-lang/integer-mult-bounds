@@ -8,8 +8,8 @@ The ledger separates historical review from integration. A prior snapshot or a m
 
 | Disposition | Count |
 |---|---:|
-| incorporated | 1283 |
-| partially reviewed | 227 |
+| incorporated | 1301 |
+| partially reviewed | 209 |
 | superseded | 1 |
 | unreviewed | 60 |
 
@@ -1593,24 +1593,24 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#1837](https://github.com/CrocSwap/integer-mult-bounds/pull/1837) | navinor | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
 | [#1838](https://github.com/CrocSwap/integer-mult-bounds/pull/1838) | 1337isnot1337 | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
 | [#1839](https://github.com/CrocSwap/integer-mult-bounds/pull/1839) | jeremykothe2 | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1841](https://github.com/CrocSwap/integer-mult-bounds/pull/1841) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1842](https://github.com/CrocSwap/integer-mult-bounds/pull/1842) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1843](https://github.com/CrocSwap/integer-mult-bounds/pull/1843) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1844](https://github.com/CrocSwap/integer-mult-bounds/pull/1844) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1845](https://github.com/CrocSwap/integer-mult-bounds/pull/1845) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1846](https://github.com/CrocSwap/integer-mult-bounds/pull/1846) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1847](https://github.com/CrocSwap/integer-mult-bounds/pull/1847) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1848](https://github.com/CrocSwap/integer-mult-bounds/pull/1848) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1849](https://github.com/CrocSwap/integer-mult-bounds/pull/1849) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1850](https://github.com/CrocSwap/integer-mult-bounds/pull/1850) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1851](https://github.com/CrocSwap/integer-mult-bounds/pull/1851) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1841](https://github.com/CrocSwap/integer-mult-bounds/pull/1841) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1842](https://github.com/CrocSwap/integer-mult-bounds/pull/1842) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1843](https://github.com/CrocSwap/integer-mult-bounds/pull/1843) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1844](https://github.com/CrocSwap/integer-mult-bounds/pull/1844) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1845](https://github.com/CrocSwap/integer-mult-bounds/pull/1845) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1846](https://github.com/CrocSwap/integer-mult-bounds/pull/1846) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1847](https://github.com/CrocSwap/integer-mult-bounds/pull/1847) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1848](https://github.com/CrocSwap/integer-mult-bounds/pull/1848) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1849](https://github.com/CrocSwap/integer-mult-bounds/pull/1849) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1850](https://github.com/CrocSwap/integer-mult-bounds/pull/1850) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1851](https://github.com/CrocSwap/integer-mult-bounds/pull/1851) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
 | [#1852](https://github.com/CrocSwap/integer-mult-bounds/pull/1852) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1853](https://github.com/CrocSwap/integer-mult-bounds/pull/1853) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1854](https://github.com/CrocSwap/integer-mult-bounds/pull/1854) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1855](https://github.com/CrocSwap/integer-mult-bounds/pull/1855) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1856](https://github.com/CrocSwap/integer-mult-bounds/pull/1856) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1857](https://github.com/CrocSwap/integer-mult-bounds/pull/1857) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1858](https://github.com/CrocSwap/integer-mult-bounds/pull/1858) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
-| [#1859](https://github.com/CrocSwap/integer-mult-bounds/pull/1859) | woklerx | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1853](https://github.com/CrocSwap/integer-mult-bounds/pull/1853) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1854](https://github.com/CrocSwap/integer-mult-bounds/pull/1854) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1855](https://github.com/CrocSwap/integer-mult-bounds/pull/1855) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1856](https://github.com/CrocSwap/integer-mult-bounds/pull/1856) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1857](https://github.com/CrocSwap/integer-mult-bounds/pull/1857) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1858](https://github.com/CrocSwap/integer-mult-bounds/pull/1858) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
+| [#1859](https://github.com/CrocSwap/integer-mult-bounds/pull/1859) | woklerx | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
 | [#1861](https://github.com/CrocSwap/integer-mult-bounds/pull/1861) | VictorLiwentao | partially reviewed | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
 | [#1862](https://github.com/CrocSwap/integer-mult-bounds/pull/1862) | aliromman | incorporated | [record 1](../../research/community-efficient800-audit/DISPOSITIONS.json) |
