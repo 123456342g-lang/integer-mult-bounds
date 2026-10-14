@@ -331,20 +331,24 @@
       },
       "reviewed_head": "266d01e17f9a2537cb94590193129fc960d01dc4",
       "current_head": "266d01e17f9a2537cb94590193129fc960d01dc4",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/bit-hosted-digest-fastpath"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "c4e06b3822987b4272c70ff82ae1c84773ee4426",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1874"
+      },
       "scope": "Opt-in fragment serialization hashes every7843392 historical hosted instruction with identical bytes/count and complete audit receipt.120 stream comparisons,10 changed-input controls and16 inherited rejections pass. Invocation-local caching preserves pins; author timings are fixture-specific and no selected driver is replaced.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1874.json",
@@ -1163,15 +1167,17 @@
       "current_head": "788848032c16bbe0a543c1186c6691c66131c090",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/hpe-energy-packed-radix"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Written Gaussian energy-ball proof gives sharp uniform integer radixB>=2R and K+1 bits for validated unitary gates. All3072 scaled rows,5265 ball vectors and source/receipt controls pass. Three retained pairs need10 rather than11/20 bits; Lean formalization and production adoption remain open.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -1315,20 +1321,24 @@
       },
       "reviewed_head": "7e2aebdf2ae24cc3613731a95d71d2c46ac8173b",
       "current_head": "7e2aebdf2ae24cc3613731a95d71d2c46ac8173b",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/selected-k8-omission-observability"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "c4e06b3822987b4272c70ff82ae1c84773ee4426",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1910"
+      },
       "scope": "Independent rational prefix/suffix census covers39338 forward/dual scalar omissions;188 defects evade both data-only and clean-helper shortcuts. Two semantic mutants reject in the unchanged complete704-column auditor. Six tests and caller source trace pass; no current acceptance defect or native/cold theorem replay claimed.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1910.json",
@@ -1391,20 +1401,24 @@
       },
       "reviewed_head": "7fa59a6a5bbb22e4ba6c8aabfa171245e1256cc7",
       "current_head": "7fa59a6a5bbb22e4ba6c8aabfa171245e1256cc7",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/selected-generated-identity-audit"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "c4e06b3822987b4272c70ff82ae1c84773ee4426",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1912"
+      },
       "scope": "Independent encoder and typed-path audit binds939603 retained nodes of seven actual selected local artifacts.155 receipt mutations and181 total controls reject while9 legitimate normalization controls pass. Only root timing is excluded and references are checked then rebound; five tests pass, with no complete caller or supplier admission claim.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1912.json",
@@ -1968,15 +1982,17 @@
       "current_head": "a055aaf34b012e04714066aafbfc7057ee1f3e9f",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/hpe-energy-independent-audit"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Independent closed parser and direct realification check all6291456 entries of six retained matrices, all3072 row energies and1906 row digests. Seven tests include585 small dense words and nonunitary countercontrol. Corroborates1906 without importing its interpreter; no new bound, Lean build or selected supplier replay.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
