@@ -122,7 +122,7 @@
       "limits": "Final pre-submission refresh. The only exact C5 remote match is this task claim in Discussion #1163; no third-party order-five match. Nearby order-four heterogeneous 3+7 and selected T16 helper-reuse claims are different objects. Remote pagination covers open PRs/drafts and Discussion bodies/comments/replies; local search covers package metadata/READMEs and PR ledger, not every code diff."
     }
   ],
-  "publication_status": "Final pre-submission refresh complete with full pagination and no warnings; local package is verified and ready for one focused PR.",
+  "publication_status": "Focused PR #1826 is open from commit 42f8f0ed. Result update posted on original claim in Discussion #1163.",
   "claim": {
     "track": "recursive-interfaces",
     "assignment_seed": "d937e5458b1c6e96dcdfc67cab6201d3",
@@ -143,6 +143,8 @@
       "research/z4-persistent-pair-seed57; its order-five idea was unselected and unconstructed."
     ],
     "deliverable": "Exact source-pinned C5 phase schedule, explicit circuit words, dirty map, complete invoice, coefficient envelope and negative controls; no kappa.",
-    "expected_overlap": "No active order-five match in the complete pre-claim refresh; nearby order-four heterogeneous and selected T16 claims have different boundary objects."
+    "expected_overlap": "No active order-five match in the complete pre-claim refresh; nearby order-four heterogeneous and selected T16 claims have different boundary objects.",
+    "pr_location": "https://github.com/CrocSwap/integer-mult-bounds/pull/1826",
+    "result_update_location": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18922332"
   }
 }
