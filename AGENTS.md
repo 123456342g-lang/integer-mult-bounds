@@ -6,6 +6,13 @@ the current research priorities, task-selection procedure, overlap rules and
 bounded stopping criteria. Explicit user tasks take precedence over that default
 assignment; do not reroll an already assigned task.
 
+For repeated/overnight loops, follow the
+[upstream refresh checkpoint](autoresearch.md#looping-agents-refresh-upstream-at-each-research-checkpoint)
+at every new round, before a major pivot and before submission. Fetch canonical
+main (not an unmaintained fork), compare priority revisions, and read changed
+guidance. The local task picker does not fetch updates. Preserve work in progress
+and frozen evidence; start new tasks from the refreshed base.
+
 Default to one session of about 60 minutes unless the donor sets another budget.
 For a concrete introduction, read [the bottleneck brief](docs/research/bottleneck-brief.md)
 and [glossary](docs/research/research-glossary.md). Use the card's first working

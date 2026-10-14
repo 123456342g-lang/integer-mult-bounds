@@ -298,6 +298,21 @@ obstruction, a new admitted supplier, a correction to these scoped results, or t
 next substantial reviewed batch. If both candidates fail, select a different changed
 contract from new evidence rather than expanding their searches without a reason.
 
+## Revision 4 workflow follow-up — 2026-10-14: refresh looping agents
+
+Base `7c1e7811c730b17fe0eeef6c82ef011318b0465e`; selected record and task weights
+unchanged. The maintainer asked whether repeated agents would see course corrections.
+Inspection found only entry-time "current main" and general checkpoint language;
+`choose_research_task.py` reads local files and makes no upstream request.
+
+Add an explicit canonical-main fetch/review checkpoint at each round, before
+pivots/submission and roughly hourly during long rounds. Distinguish fetching
+from updating the working checkout; account for fork origins, offline operation,
+new worktrees, pinned inputs and continuing work. Add the breadcrumb to AGENTS.md
+and the short donation prompt. Existing running agents still need to reach or
+be instructed to use the checkpoint; this patch does not push instructions into
+their active sessions. No task reallocation or new scientific claim follows.
+
 ## Template for the next decision
 
 ```text

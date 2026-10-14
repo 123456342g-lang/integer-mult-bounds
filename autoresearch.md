@@ -20,6 +20,55 @@ and use [mechanism proposals](https://github.com/CrocSwap/integer-mult-bounds/di
 for early architectural ideas. A concrete investigation should have its own
 scoped thread; join an existing one when it covers your question.
 
+## Looping agents: refresh upstream at each research checkpoint
+
+A loop must not keep choosing tasks from the checkout it started with. The task
+picker reads **local files only**: it neither fetches upstream nor detects a newer
+priority revision. A successful overlap refresh does not update those files.
+
+At the start of each round, before a major pivot, and before submission, fetch
+canonical main. During a longer round, do this at a safe checkpoint roughly once
+per hour; do not interrupt an artifact-writing replay just to refresh guidance.
+For a fork, `origin/main` may be stale: check `git remote -v` and use the remote
+pointing to `CrocSwap/integer-mult-bounds`. This explicit URL works for either:
+
+```sh
+git fetch --no-tags https://github.com/CrocSwap/integer-mult-bounds.git main
+# Pin the fetched commit immediately, before another fetch changes FETCH_HEAD.
+research_main=$(git rev-parse FETCH_HEAD)
+git show "$research_main:AGENTS.md"
+git show "$research_main:autoresearch.md"
+git show "$research_main:docs/research/agent-task-catalog.json"
+git show "$research_main:certificates/selected-result.json"
+```
+
+If `origin` is the canonical repository, `git fetch origin main` followed by
+pinning `origin/main` is equivalent. Fetching does **not** update the working
+files or the local task picker. Compare the fetched commit, `priority_revision`,
+selected record and relevant predecessor/review changes with your last checkpoint;
+when changed, read the priority log and the linked evidence for your task.
+
+- **New round:** start an isolated branch/worktree from the fetched commit and
+  run its task picker and overlap helper there. Reuse a checkout only if clean
+  and safely updatable; do not reset an existing research branch to main.
+- **Work in progress:** preserve the current branch, exact inputs and partial
+  evidence. Decide whether to continue, narrow, hand off or retire the task.
+  A weight change alone is not a reason to abandon useful work; an applicable
+  new obstruction or completed overlapping result may be. Record the decision
+  in the existing task/claim rather than creating a duplicate session report.
+- **Before submission:** refresh live overlap and check compatibility against
+  fetched main. Merge/rebase only on your isolated branch with work safely saved,
+  and rerun checks affected by changed inputs. Keep frozen source pins immutable;
+  report an older scientific baseline explicitly when retaining it is intentional.
+- **Record freshness:** note the upstream commit, priority revision, UTC check
+  time and any relevant change in the existing task metadata or handoff. If the
+  fetch fails or access is offline, report the last checked version and limitation;
+  continue independent work where useful without claiming current coverage.
+
+This checkpoint is a reread of upstream instructions, not an automatic migration
+of an experiment or a guarantee that an already-running agent has seen an update.
+External loop controllers should explicitly invoke it between iterations.
+
 ## 1. Orient briefly, then choose a distinct task
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md), then
@@ -402,7 +451,9 @@ new mathematical result.
 > Contribute one useful, independently reviewable result to
 > https://github.com/CrocSwap/integer-mult-bounds. Read AGENTS.md, autoresearch.md
 > and CONTRIBUTING.md from the current main branch first. Use the repository's
-> task-selection and overlap process unless I assigned a specific task. Work for
+> task-selection and overlap process unless I assigned a specific task. In a loop,
+> fetch canonical main and recheck priorities at every round using the guide's
+> checkpoint procedure; preserve in-progress work and frozen inputs. Work for
 > one session of about 60 minutes unless I specify another budget, keeping the
 > final quarter for verification and a concise handoff,
 > and report the exact scope, evidence, remaining obligations and predecessor
