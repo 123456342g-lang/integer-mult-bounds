@@ -2,7 +2,7 @@
   "schema_version": 1,
   "task_id": "replay-runtime",
   "priority_revision": 3,
-  "base_commit": "0b1cccf86e2f5132ed286a26ef0a681a495740ea",
+  "base_commit": "ec8707299e2f40918f5f96cdab99ee49cdbabcf0",
   "original_card": {
     "id": "replay-runtime",
     "question": "Can one measured replay bottleneck be sped up without dropping coverage?",
@@ -63,5 +63,9 @@
       "first_step": "Measure limb traffic and allocation in the two orientation passes on the pinned words and look for a representation change that still executes every XOR of every basis row.",
       "blocked_by": "The requirement that every basis row of both orientations be executed literally; any shortcut must be justified as an identical check, not a sampled one."
     }
-  ]
+  ],
+  "integration_refresh": {
+    "original_base_commit": "0b1cccf86e2f5132ed286a26ef0a681a495740ea",
+    "reason": "Current SOURCE.json changes only the joint_dual_reclaim_compiler.py hash; every replay/prepare/test/word input consumed here retains its original bytes. Registered replay is revalidated against this baseline."
+  }
 }

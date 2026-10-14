@@ -87,7 +87,7 @@
     "research/community-efficient600-audit/DISPOSITIONS.json": "0b5b7777073b61dcccd09ecfe01d24c0843e8294f0daf1a9f38f5aabdaa2e4f4",
     "research/community-efficient700-audit/DISPOSITIONS.json": "a49662d33eee2d1e1308815314fbe415f91496a8304620664fb991ec47ae4c31",
     "research/community-efficient800-audit/DISPOSITIONS.json": "d97825a16961faa81b42c0a2007bef86c39572172f229a8a903a45664a1c6247",
-    "research/community-efficient900-audit/DISPOSITIONS.json": "2121206517b7d33c218f81ce0a99c330b58404bb8855e36b06bd3f3f1295a8eb",
+    "research/community-efficient900-audit/DISPOSITIONS.json": "9bfbc7f7af2b1da961dd547259e8afa26eba477ed5ee04727fd7cc5cfe41e21b",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec",
     "research/community-efficient300-audit/PARENT-EVIDENCE.json": "8d9e28ec3ece26b91ef5a297092697c341652853164477a4961c992151cec353"
   },
@@ -91827,7 +91827,7 @@
         {
           "head": "bb40dfc8e155d0b4daad1d910ba3ee751669b52c",
           "evidence": "research/community-efficient900-audit/DISPOSITIONS.json",
-          "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+          "scope": "Dependency and claim triage only: 300-digit endpoint and310-digit slacks overlay pinned to1839; author reports two full finite replays. No selected-frontier adoption.",
           "kind": "integration_or_partial_review"
         }
       ],
@@ -91837,7 +91837,7 @@
       "closure": null,
       "reviewed_head": "bb40dfc8e155d0b4daad1d910ba3ee751669b52c",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Review the11-file overlay and its two directed endpoint engines against the exact381-file dependency, then audit unchanged gauge-free/fine-prime/union-schedule all-size interfaces with the earlier T74 holds. Author full replay is retained evidence, not an independent replay in this tranche.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -91871,7 +91871,7 @@
         {
           "head": "6a442373e6127b7e0985d277726bcfd9a16a1f36",
           "evidence": "research/community-efficient900-audit/DISPOSITIONS.json",
-          "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+          "scope": "Dependency and claim triage only: 160/400-digit refinements retain fresh author admission receipts and a separate corrected broad-shift polynomial check. No selected-frontier adoption.",
           "kind": "integration_or_partial_review"
         }
       ],
@@ -91881,7 +91881,7 @@
       "closure": null,
       "reviewed_head": "6a442373e6127b7e0985d277726bcfd9a16a1f36",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Audit both retained packages and the separate broad-shift correction: inherited disabled or-True expression has reported constant/linear sign errors, while the supplemental exact identity is separate from the full release. Resolve the shared1800/1786/1758/1673 proof interfaces before accepting an outer result.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -92018,7 +92018,7 @@
         {
           "head": "f4e150e4222ce4b4418e66874c6363c43987c8d1",
           "evidence": "research/community-efficient900-audit/DISPOSITIONS.json",
-          "scope": "Opt-in containment-mask adapter preserves both frozen full-basis replay orientations and receipts; full historical16-test suite,24 mutation cases, exhaustive small shapes and assertion-disabled entry rejection pass. Missing historical PR58 fixture restored from exact head. Benchmark speedup remains author-measured, not selected-supplier adoption.",
+          "scope": "Opt-in containment-mask adapter preserves both frozen full-basis replay orientations and receipts; full historical16-test suite,24 mutation cases, exhaustive small shapes and assertion-disabled entry rejection pass. Missing historical PR58 fixture restored from exact head. Benchmark speedup remains author-measured, not selected-supplier adoption. Enclosing manifest pin/TASK base refreshed against main after full registered replay; actual replay inputs unchanged.",
           "kind": "integration_or_partial_review"
         }
       ],
@@ -92044,6 +92044,7 @@
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1880.json",
         "research/community-efficient900-audit/checks/check-1880-fixture.json",
+        "research/community-efficient900-audit/checks/check-1880-supplement.json",
         "research/community-efficient900-audit/checks/check-1880.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
@@ -92578,7 +92579,7 @@
         {
           "head": "fdf717a838bb3d4c78396474131bd1ab5f18165d",
           "evidence": "research/community-efficient900-audit/DISPOSITIONS.json",
-          "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+          "scope": "Dependency and claim triage only: 500-digit refinement preserves1800 under parent and adds authenticated native-proof reuse, local/portability certificates and CI. No selected-frontier adoption.",
           "kind": "integration_or_partial_review"
         }
       ],
@@ -92588,7 +92589,7 @@
       "closure": null,
       "reviewed_head": "fdf717a838bb3d4c78396474131bd1ab5f18165d",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Review405-file whole-head provenance, native reuse binding, fixed-point enclosures and new workflow/certificates; reconcile the broad-shift guard correction with the inherited outer. Parent/source agreement and all-size obligations are shared with1800 and are not discharged by extra precision.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -92757,7 +92758,7 @@
         {
           "head": "091ba6e64169230d13285d12563390ea76f44208",
           "evidence": "research/community-efficient900-audit/DISPOSITIONS.json",
-          "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+          "scope": "Dependency and claim triage only: 1000-digit endpoint1010-slack full-package variant uses explicit Strassen boundary, directed fixed-point fine engines and author native reuse. No selected-frontier adoption.",
           "kind": "integration_or_partial_review"
         }
       ],
@@ -92767,7 +92768,7 @@
       "closure": null,
       "reviewed_head": "091ba6e64169230d13285d12563390ea76f44208",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Review the fixed-point engine change, complete manifest/native reuse and outer proof chain; check release prose/parameters agree on the epsilon slack. The retained structured Toeplitz alternative is not the bound used here. Resolve carried-cutoff/label obligations at the exact submitted revision before admission.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -92801,7 +92802,7 @@
         {
           "head": "34bb6fe148cf878b707b5bf22b8a225206780a67",
           "evidence": "research/community-efficient900-audit/DISPOSITIONS.json",
-          "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+          "scope": "Dependency and claim triage only: 3000-digit endpoint3010-slack full-package variant also reports carried bootstrap-cutoff and LemmaG label-stage repairs credited to1956/1964. No selected-frontier adoption.",
           "kind": "integration_or_partial_review"
         }
       ],
@@ -92811,7 +92812,7 @@
       "closure": null,
       "reviewed_head": "34bb6fe148cf878b707b5bf22b8a225206780a67",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Review inherited outer interfaces plus the carried previous-stage constants and new label/adapter checks at this exact head. Confirm the three physical adapter mutants reject and native reuse/manifest bind all inputs. No independent full replay or changed all-size theorem audit has been completed in this tranche.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -92890,21 +92891,23 @@
         {
           "head": "49b870f7a64f5f414208c3a82d4483b9cc95f5b8",
           "evidence": "research/community-efficient900-audit/DISPOSITIONS.json",
-          "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+          "scope": "Zero-output-anchor construction attains bilinear rank q and q child calls, with q-1 paid affine fanouts and dirty other outputs.18720 Boolean cases, symbolic widths2..112 and committed certificate equality pass. Eight112-port blocks and clean selected anchors remain hypothetical; profile ceiling is not a supplier gain.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/complex-output-anchor-shared-product-seedcc5aed"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "49b870f7a64f5f414208c3a82d4483b9cc95f5b8",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Publication and live merge observation pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -93262,21 +93265,23 @@
         {
           "head": "d30d64fea909219c364b11c2452f2207326e2b1f",
           "evidence": "research/community-efficient900-audit/DISPOSITIONS.json",
-          "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+          "scope": "Generic map-independent one-connector phase normalization excludes72 map calls with arbitrary invertible frames and proves74/76 unit-token minima. Full dirty pilot16384cases, phase identities and odd-count restoration control pass. Does not exclude structured map-dependent charts or two connectors.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/connector-frame-rigidity"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "d30d64fea909219c364b11c2452f2207326e2b1f",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Publication and live merge observation pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -93667,7 +93672,7 @@
         {
           "head": "387501825842caa3507e34f110b5f9570dc04046",
           "evidence": "research/community-efficient900-audit/DISPOSITIONS.json",
-          "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+          "scope": "Two actual unittest-capture normalization collisions and stricter byte-preserving final-elapsed comparator reviewed;20 tests including injected benchmark faults pass. Source compatibility with main remains pending because the runner input changed after submission; no full-suite performance claim.",
           "kind": "integration_or_partial_review"
         }
       ],
@@ -93677,7 +93682,7 @@
       "closure": null,
       "reviewed_head": "387501825842caa3507e34f110b5f9570dc04046",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "The20-test collision and adapter suite passes at the submitted head, but live input scripts/run_isolated_tests.py changed on main in the already-integrated1852 assertion/process hardening. Refresh or vendor the exact admitted runner deliberately and replay the adapter against current main; retain both original normalization collision witnesses and strict diagnostic-byte comparison. Do not revert the newer runner or merely weaken its source pin.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -93712,7 +93717,7 @@
         {
           "head": "07e4e4231459e36b1055396306dcbd950248df62",
           "evidence": "research/community-efficient900-audit/DISPOSITIONS.json",
-          "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+          "scope": "Dependency and claim triage only: 10000-digit endpoint10010-slack variant reports539.88-second author release with native cache reuse and carried-cutoff/label repairs. No selected-frontier adoption.",
           "kind": "integration_or_partial_review"
         }
       ],
@@ -93722,7 +93727,7 @@
       "closure": null,
       "reviewed_head": "07e4e4231459e36b1055396306dcbd950248df62",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Review directed-rounding precision/scaling, complete manifest and authenticated native reuse, plus1956 carried-cutoff and1964 label/adapter-stage corrections. Then resolve the shared all-size fine-prime/gauge-free/fusion obligations; tiny fixed slacks and a finite release alone do not certify those implications.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -93756,7 +93761,7 @@
         {
           "head": "11cb2266f7e99279c440a301ea4b862587a9afa2",
           "evidence": "research/community-efficient900-audit/DISPOSITIONS.json",
-          "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+          "scope": "Three-stage sequential shear formula and1048576 finite cases checked. Complete-call3-vs6 comparison is conditional on typed updated-source ports; the concrete scalar arithmetic invoice omits linear-map formation and needs correction before incorporation.",
           "kind": "integration_or_partial_review"
         }
       ],
@@ -93766,7 +93771,7 @@
       "closure": null,
       "reviewed_head": "11cb2266f7e99279c440a301ea4b862587a9afa2",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "The three-shear identity and1048576 finite cases pass, but the claimed complete scalar-XOR bill counts nonzero output rows rather than map evaluation. U:(a,b)->(a+b,b) applied additively to a dirty target requires forming a+b as well as its two target updates; a literal source-preserving CNOT lowering uses3 XORs, not2. Separate target-update counts from total arithmetic, or supply a literal cheaper lowering; refresh30-vs6 totals and retain the valid3-vs6 complete-map-call comparison.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -94341,21 +94346,23 @@
         {
           "head": "aa0de6522ecb1c22cd2ee435983b24dbd2842551",
           "evidence": "research/community-efficient900-audit/DISPOSITIONS.json",
-          "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+          "scope": "Two-case phase-locking proof excludes73 generic map calls, closing1915s precise question;74-call inherited word attains the bound.810810 exceptional-readout and51975 exceptional-source cases, independent dense checks and dirty-word mutation tests pass. Unequal-price optimum and selected implementation remain open.",
           "kind": "integration_or_partial_review"
         }
       ],
       "historical_mentions": [],
-      "integration_location": [],
+      "integration_location": [
+        "research/connector-frame-73-exclusion"
+      ],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "aa0de6522ecb1c22cd2ee435983b24dbd2842551",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Publication and live merge observation pending.",
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [

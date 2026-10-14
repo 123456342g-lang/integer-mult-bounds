@@ -152,3 +152,7 @@ and a BENCHMARK.json with the paired timings above (values vary by machine).
 - Task selection, profiling, the adapter, controls and this write-up were
   prepared by Aaron Wang with help from opencode; substantial AI assistance is
   disclosed in TASK.json. No independent human review is claimed.
+
+## Maintainer integration refresh
+
+The package was recertified against main `ec8707299e2f40918f5f96cdab99ee49cdbabcf0`. The original donor base remains recorded in TASK.json. Only the enclosing `research/joint-dual/SOURCE.json` input pin changed: its reclaim-compiler digest was updated by an earlier integration. This adapter does not invoke that compiler; its frozen replay, prepare, test and word inputs are byte-identical. The registered replay is retained in the ninth-batch integration audit. No frozen source or benchmark claim is rewritten.

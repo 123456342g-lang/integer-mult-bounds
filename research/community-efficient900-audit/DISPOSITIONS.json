@@ -368,9 +368,9 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Review the11-file overlay and its two directed endpoint engines against the exact381-file dependency, then audit unchanged gauge-free/fine-prime/union-schedule all-size interfaces with the earlier T74 holds. Author full replay is retained evidence, not an independent replay in this tranche.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "scope": "Dependency and claim triage only: 300-digit endpoint and310-digit slacks overlay pinned to1839; author reports two full finite replays. No selected-frontier adoption.",
       "ready_to_integrate": false,
       "review_completion": {
         "changed_file_coverage": false,
@@ -401,9 +401,9 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Audit both retained packages and the separate broad-shift correction: inherited disabled or-True expression has reported constant/linear sign errors, while the supplemental exact identity is separate from the full release. Resolve the shared1800/1786/1758/1673 proof interfaces before accepting an outer result.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "scope": "Dependency and claim triage only: 160/400-digit refinements retain fresh author admission receipts and a separate corrected broad-shift polynomial check. No selected-frontier adoption.",
       "ready_to_integrate": false,
       "review_completion": {
         "changed_file_coverage": false,
@@ -523,7 +523,7 @@
         "merge_commit": "b6135f9fe8c0783f22bd87992a080575f2943511",
         "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1880"
       },
-      "scope": "Opt-in containment-mask adapter preserves both frozen full-basis replay orientations and receipts; full historical16-test suite,24 mutation cases, exhaustive small shapes and assertion-disabled entry rejection pass. Missing historical PR58 fixture restored from exact head. Benchmark speedup remains author-measured, not selected-supplier adoption.",
+      "scope": "Opt-in containment-mask adapter preserves both frozen full-basis replay orientations and receipts; full historical16-test suite,24 mutation cases, exhaustive small shapes and assertion-disabled entry rejection pass. Missing historical PR58 fixture restored from exact head. Benchmark speedup remains author-measured, not selected-supplier adoption. Enclosing manifest pin/TASK base refreshed against main after full registered replay; actual replay inputs unchanged.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
@@ -534,6 +534,7 @@
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1880.json",
         "research/community-efficient900-audit/checks/check-1880-fixture.json",
+        "research/community-efficient900-audit/checks/check-1880-supplement.json",
         "research/community-efficient900-audit/checks/check-1880.json"
       ]
     },
@@ -954,9 +955,9 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Review405-file whole-head provenance, native reuse binding, fixed-point enclosures and new workflow/certificates; reconcile the broad-shift guard correction with the inherited outer. Parent/source agreement and all-size obligations are shared with1800 and are not discharged by extra precision.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "scope": "Dependency and claim triage only: 500-digit refinement preserves1800 under parent and adds authenticated native-proof reuse, local/portability certificates and CI. No selected-frontier adoption.",
       "ready_to_integrate": false,
       "review_completion": {
         "changed_file_coverage": false,
@@ -1089,9 +1090,9 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Review the fixed-point engine change, complete manifest/native reuse and outer proof chain; check release prose/parameters agree on the epsilon slack. The retained structured Toeplitz alternative is not the bound used here. Resolve carried-cutoff/label obligations at the exact submitted revision before admission.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "scope": "Dependency and claim triage only: 1000-digit endpoint1010-slack full-package variant uses explicit Strassen boundary, directed fixed-point fine engines and author native reuse. No selected-frontier adoption.",
       "ready_to_integrate": false,
       "review_completion": {
         "changed_file_coverage": false,
@@ -1122,9 +1123,9 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Review inherited outer interfaces plus the carried previous-stage constants and new label/adapter checks at this exact head. Confirm the three physical adapter mutants reject and native reuse/manifest bind all inputs. No independent full replay or changed all-size theorem audit has been completed in this tranche.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "scope": "Dependency and claim triage only: 3000-digit endpoint3010-slack full-package variant also reports carried bootstrap-cutoff and LemmaG label-stage repairs credited to1956/1964. No selected-frontier adoption.",
       "ready_to_integrate": false,
       "review_completion": {
         "changed_file_coverage": false,
@@ -1188,15 +1189,17 @@
       "current_head": "49b870f7a64f5f414208c3a82d4483b9cc95f5b8",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/complex-output-anchor-shared-product-seedcc5aed"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Zero-output-anchor construction attains bilinear rank q and q child calls, with q-1 paid affine fanouts and dirty other outputs.18720 Boolean cases, symbolic widths2..112 and committed certificate equality pass. Eight112-port blocks and clean selected anchors remain hypothetical; profile ceiling is not a supplier gain.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -1472,15 +1475,17 @@
       "current_head": "d30d64fea909219c364b11c2452f2207326e2b1f",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/connector-frame-rigidity"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Generic map-independent one-connector phase normalization excludes72 map calls with arbitrary invertible frames and proves74/76 unit-token minima. Full dirty pilot16384cases, phase identities and odd-count restoration control pass. Does not exclude structured map-dependent charts or two connectors.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -1779,9 +1784,9 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "The20-test collision and adapter suite passes at the submitted head, but live input scripts/run_isolated_tests.py changed on main in the already-integrated1852 assertion/process hardening. Refresh or vendor the exact admitted runner deliberately and replay the adapter against current main; retain both original normalization collision witnesses and strict diagnostic-byte comparison. Do not revert the newer runner or merely weaken its source pin.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "scope": "Two actual unittest-capture normalization collisions and stricter byte-preserving final-elapsed comparator reviewed;20 tests including injected benchmark faults pass. Source compatibility with main remains pending because the runner input changed after submission; no full-suite performance claim.",
       "ready_to_integrate": false,
       "review_completion": {
         "changed_file_coverage": false,
@@ -1813,9 +1818,9 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Review directed-rounding precision/scaling, complete manifest and authenticated native reuse, plus1956 carried-cutoff and1964 label/adapter-stage corrections. Then resolve the shared all-size fine-prime/gauge-free/fusion obligations; tiny fixed slacks and a finite release alone do not certify those implications.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "scope": "Dependency and claim triage only: 10000-digit endpoint10010-slack variant reports539.88-second author release with native cache reuse and carried-cutoff/label repairs. No selected-frontier adoption.",
       "ready_to_integrate": false,
       "review_completion": {
         "changed_file_coverage": false,
@@ -1846,9 +1851,9 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "The three-shear identity and1048576 finite cases pass, but the claimed complete scalar-XOR bill counts nonzero output rows rather than map evaluation. U:(a,b)->(a+b,b) applied additively to a dirty target requires forming a+b as well as its two target updates; a literal source-preserving CNOT lowering uses3 XORs, not2. Separate target-update counts from total arithmetic, or supply a literal cheaper lowering; refresh30-vs6 totals and retain the valid3-vs6 complete-map-call comparison.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
+      "scope": "Three-stage sequential shear formula and1048576 finite cases checked. Complete-call3-vs6 comparison is conditional on typed updated-source ports; the concrete scalar arithmetic invoice omits linear-map formation and needs correction before incorporation.",
       "ready_to_integrate": false,
       "review_completion": {
         "changed_file_coverage": false,
@@ -2287,15 +2292,17 @@
       "current_head": "aa0de6522ecb1c22cd2ee435983b24dbd2842551",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/connector-frame-73-exclusion"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Two-case phase-locking proof excludes73 generic map calls, closing1915s precise question;74-call inherited word attains the bound.810810 exceptional-readout and51975 exceptional-source cases, independent dense checks and dirty-word mutation tests pass. Unequal-price optimum and selected implementation remain open.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
