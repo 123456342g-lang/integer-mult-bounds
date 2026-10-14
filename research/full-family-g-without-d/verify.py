@@ -12,11 +12,13 @@ Checks, for each fixture (deleted set X, pivot frame F), with the family of all 
   1. F is a live frame; nonempty blocks, (W) and (G) hold;
   2. (D) fails: on I_k for one pivot k, the incidence matrix has exact rational rank |I_k| - 8 < |I_k| - 7
      (Fraction elimination), while the seven vectors h_kl are independent and lie in its kernel;
-  3. fixture 1 also carries a sparse integer kernel vector x (entries +-1 on eight lines) with every live
+  3. each fixture carries a sparse integer kernel vector x (entries +-1 on eight lines) with every live
      frame's row orthogonal to x and rank [h; x] = 8, which certifies the rank drop without elimination;
   4. control: restoring any one of the eight deleted lines makes the same pivot pass all four conditions
      (mod-p rank lower bound plus the h_kl kernel upper bound, as in PR1650);
-  5. controls: a mutated certificate is rejected; the pivot-alone sub-family fails (G).
+  5. controls: a mutated certificate is rejected; the pivot-alone sub-family fails (G);
+  6. each certificate is explained: every one of the 2025 E8 frames meets two orthogonal 12-line D4 subsystems
+     Da, Db equally (fixture 1: the coordinate halves), and x is the difference of their live indicator vectors.
 """
 
 import itertools
@@ -89,11 +91,19 @@ FRAMES = frames_inside(range(NL))
 
 # ---------------------------------------------------------------- fixtures (found by deletion walks, see README)
 
+# split = (Da, Db): two disjoint 12-line D4 subsystems, each containing 4 FRAME0 lines. Fixture 1's are the
+# coordinate halves (Da on coordinates 0-3, Db on 4-7); fixture 2's were found as an image of those under the
+# FRAME0 stabiliser (search/mech.py); verify.py checks only the properties it uses.
+# The certificate is x = 1 on the live lines of Da, -1 on the live lines of Db.
 FIXTURES = [
     dict(X=(3, 4, 8, 9, 107, 108, 117, 118), F=(19, 25, 37, 47, 67, 82, 94, 115), k=2,
-         cert={2: -1, 5: -1, 7: -1, 10: -1, 30: 1, 31: 1, 40: 1, 41: 1}),
-    dict(X=(13, 18, 22, 27, 34, 35, 36, 37), F=(17, 25, 38, 52, 61, 75, 98, 116), k=7, cert=None),
+         split=((20, 29, 30, 31, 40, 41, 106, 107, 108, 117, 118, 119), tuple(range(12))),
+         cert={30: 1, 31: 1, 40: 1, 41: 1, 2: -1, 5: -1, 7: -1, 10: -1}),
+    dict(X=(13, 18, 22, 27, 34, 35, 36, 37), F=(17, 25, 38, 52, 61, 75, 98, 116), k=7,
+         split=((0, 1, 34, 35, 36, 37, 106, 111, 112, 113, 114, 119), (6, 11, 12, 13, 18, 19, 20, 21, 22, 27, 28, 29)),
+         cert={111: 1, 112: 1, 113: 1, 114: 1, 12: -1, 19: -1, 21: -1, 28: -1}),
 ]
+
 
 
 # ---------------------------------------------------------------- ranks
@@ -217,14 +227,27 @@ def main():
                 bad.append((kk, len(I), r))
         check(f'{tag}.D-fails', [b[0] for b in bad] == [k] and bad[0][2] == bad[0][1] - 8,
               f'exact rank over Q on I_{k}: {bad[0][2]} = |I_k| - 8 with |I_k| = {bad[0][1]}; other k pass')
-        if fx['cert']:
-            I, rows, h = incidence(F, k, non, live_frames)
-            x = [fx['cert'].get(i, 0) for i in I]
-            check(f'{tag}.certificate', set(fx['cert']) <= set(I) and kernel_ok(rows, [x]) and rank_fraction(h + [x]) == 8,
-                  f'integer kernel vector {fx["cert"]} is orthogonal to every live frame and outside span(h)')
-            y = list(x)
-            y[I.index(next(iter(fx['cert'])))] *= -1
-            check(f'{tag}.control.mutated-certificate', not kernel_ok(rows, [y]))
+        I, rows, h = incidence(F, k, non, live_frames)
+        x = [fx['cert'].get(i, 0) for i in I]
+        check(f'{tag}.certificate', set(fx['cert']) <= set(I) and kernel_ok(rows, [x]) and rank_fraction(h + [x]) == 8,
+              f'integer kernel vector {fx["cert"]} is orthogonal to every live frame and outside span(h)')
+        # Why: every E8 frame meets Da and Db in equally many lines; FRAME0 and X leave 4 live lines in each, all
+        # odd to F[k], so x = 1_(Da live) - 1_(Db live) is orthogonal to every live frame's trace on I_k.
+        Da, Db = (set(d) for d in fx['split'])
+        dead = set(X) | set(FRAME0)
+        check(f'{tag}.balanced-d4', len(Da) == len(Db) == 12 and not Da & Db
+              and len(Da & set(FRAME0)) == len(Db & set(FRAME0)) == 4
+              and all(G[a][b] in (0, 1, -1) for a in Da for b in Da if a != b) and all(G[a][b] == 0 for a in Da for b in Db)
+              and all(len(Da & set(Fr)) == len(Db & set(Fr)) for Fr in FRAMES)
+              and fx['cert'] == {**{i: 1 for i in Da - dead}, **{i: -1 for i in Db - dead}},
+              f'Da, Db orthogonal 12-line systems; all 2025 frames meet them equally; certificate = 1 on Da live '
+              f'{sorted(Da - dead)}, -1 on Db live {sorted(Db - dead)}')
+        if n == 1:
+            check(f'{tag}.coordinate-halves', Da == {i for i, v in enumerate(LINES) if not any(v[4:])}
+                  and Db == {i for i, v in enumerate(LINES) if not any(v[:4])})
+        y = list(x)
+        y[I.index(next(iter(fx['cert'])))] *= -1
+        check(f'{tag}.control.mutated-certificate', not kernel_ok(rows, [y]))
         for x in X:
             Y = tuple(i for i in X if i != x)
             lf, nn, oo = setup(Y, F)
@@ -234,7 +257,7 @@ def main():
         lf, nn, oo = setup(X, F, frames=[F])
         check(f'{tag}.control.pivot-alone-fails-G', not condition_g(nn, oo, lf))
     print('PASS_FULL_FAMILY_G_WITHOUT_D fixtures=2: (W), nonempty blocks and (G) on the full live family do not '
-          'imply (D) (exact), and each counterexample needs all eight deletions')
+          'imply (D) (exact), and restoring any one deleted line makes the same pivot pass')
 
 
 if __name__ == '__main__':
