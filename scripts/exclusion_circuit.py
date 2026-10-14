@@ -98,9 +98,15 @@ class ExclusionCircuit:
                 assert a<node and b<node
                 assert not self.support[a]&self.support[b]
                 assert self.support[node]==self.support[a]|self.support[b]
+        # Leave-two-out expected support equals the full pair mask with every
+        # pair incident to a or b cleared. Equivalent to the historical
+        # genexpr sum(1<<i for i,p in enumerate(inputs) if a not in p and b not in p).
+        full=(1<<len(self.inputs))-1
+        vertex=[0]*self.n
+        for i,(p,q) in enumerate(self.inputs):
+            bit=1<<i;vertex[p]|=bit;vertex[q]|=bit
         for (a,b),node in self.outputs.items():
-            expected=sum(1<<i for i,p in enumerate(self.inputs) if a not in p and b not in p)
-            assert self.support[node]==expected
+            assert self.support[node]==full^(vertex[a]|vertex[b])
         encoded=json.dumps({'inputs':self.inputs,
             'nodes':[(i,self.args[i]) for i in sorted(self.active)],
             'outputs':sorted(self.outputs.items())},separators=(',',':')).encode()
