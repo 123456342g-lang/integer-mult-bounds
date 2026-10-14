@@ -160,5 +160,11 @@
       "Hosted CI success",
       "Independent human or proof-assistant review"
     ]
+  },
+  "publication": {
+    "pr": 1652,
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1652",
+    "math_head": "6b05c428fcfdc5d860c30baa00d3b6fdc41da050",
+    "note": "Subsequent README/TASK publication metadata leaves proof, code, retained inputs and canonical receipt unchanged."
   }
 }

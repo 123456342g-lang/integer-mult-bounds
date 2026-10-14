@@ -132,6 +132,11 @@ This classifies rank profiles, not all attaining factor bases.
 
 ## Assignment and coordination
 
+Published as [PR1652](https://github.com/CrocSwap/integer-mult-bounds/pull/1652).
+The mathematical contribution is commit
+`6b05c428fcfdc5d860c30baa00d3b6fdc41da050`; later publication metadata
+does not change its proof, checkers, sources or receipt.
+
 Single random nonce `c3d61d9333f4d9682ef1c24c486cd260`, complex mechanisms,
 revision-2 `complex-masked-decoder`; no reroll. Both prescribed starting
 checks passed. Work began from current main
