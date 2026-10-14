@@ -100,7 +100,7 @@ The October 13, 2026 assessment is that many local improvements leave the paid
 recursive profile unchanged, or improve a nonbinding supplier. Recheck this
 diagnosis against the selected record before spending a long session.
 
-**Revision 3 diagnosis (pending review of #1240 and #1264).** On the binding complex side, a ≈ D/E:
+**Revision 3 diagnosis (scoped arithmetic independently replayed for #1240 and #1264).** On the binding complex side, a ≈ D/E:
 
 - **D is small.** Each call has about 99.6 live families. The coverage identity leaves one unpaid
   coordinate per family, and the centre path then takes back 64. Only about 35.6 of 7,232 paid
@@ -109,13 +109,13 @@ diagnosis against the selected record before spending a long session.
   about half of the recursive cost.
 
 [The packing ceiling](research/complex-local-word-ceiling/README.md) caps every hosting, owner or
-idle repacking of the selected word at **+0.87%** (κ < 0.0016872). The open-claim census in #1264
-finds no covered claim able to pass κ ≈ 0.0016873 by packing. Its leading claims sit on words with
-*lower* caps than the selected word.
+idle repacking of the selected word at **+0.87%** (κ < 0.001687203). The open-claim census in #1264
+finds no covered claim able to pass κ ≈ 0.0016873 by packing. Its leading claims use paid local profiles with
+*lower* relaxation caps than the selected profile; this does not compare attainable packing optima.
 
 A target-scale gain must change the structure. Ideal one-at-a-time budgets (`levers.py`):
 
-| Lever | Ideal multiplier |
+| Lever | Ideal primitive-saving ceiling multiplier |
 |---|---:|
 | Centre path free | 2.80× |
 | Centre path shared by two calls | 1.90× |
@@ -124,7 +124,9 @@ A target-scale gain must change the structure. Ideal one-at-a-time budgets (`lev
 | Centre free and rank-16 combined | 6.5× (κ cap ≈ 0.0109) |
 
 These are favorable relaxations, not expected gains. Screen any changed local profile with
-`ceiling.ceiling()` before building a network.
+`ceiling.ceiling()` before building a network when its coverage law and halving guard apply.
+For a changed interface outside those hypotheses, state the replacement model and derive its own
+fully charged optimistic moment bound; do not force it into the incumbent calculator.
 
 For a supplier with width `m`, role count `W`, and `n_r` children of rank `r`,
 price the **whole completed construction**, including its additional charges:
@@ -272,9 +274,10 @@ Do not run every historical replay just to change documentation. Do not run
 artifact-regenerating suites concurrently in the same worktree. Cache immutable,
 source-bound evidence only when coverage and invalidation remain explicit.
 
-A new complex κ claim should report its local word's packing cap
-(`research/complex-local-word-ceiling/ceiling.py`) and the fraction of it realized,
-so reviewers can tell a packing gain from a structural gain.
+A new complex κ claim within this model should report its paid local profile's packing cap
+(`research/complex-local-word-ceiling/ceiling.py`) and the fraction of it realized.
+For claims outside the model, state which hypothesis changes and give an appropriate replacement bound.
+Matching rank profiles alone does not establish identical circuits or a purely packing-based implementation change.
 
 Before submission, refresh the overlap check. Keep one focused PR with the task
 card, precise delta, exact heads, commands, evidence, limitations and credit.

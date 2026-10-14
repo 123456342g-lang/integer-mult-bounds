@@ -89,29 +89,33 @@ single report is insufficient reason to retire the mechanism tracks.
 **Exact base and selected source record:** `dadfea6e8a78ff6ba901705f87532a71c6f5bbb8`, unchanged #1094
 record (`certificates/selected-result.json`, κ 0.001672660197076918, complex side binding).
 
-**Evidence links and verification status.** The evidence comes from **open, unreviewed** PRs by the same
-contributor. Their arithmetic is exact and reproducible, but no maintainer has reviewed them yet.
+**Evidence links and verification status.** The maintainer independently replayed #1240
+(`1e136b8c4a552050820334ad113628775182f08c`) and #1264
+(`1be64e9ef79fe11f24f05b62b0fd7d70be0b7b4c`), including all 14 pinned census blobs.
+The monotone-cost relaxation and rational enclosures were reviewed within their stated model.
+This accepts scoped arithmetic and the screening argument, not any pending construction or the full
+multiplication theorem. Original sources, attribution and conditional coverage-law assumptions remain explicit.
 
 - [#1240](https://github.com/CrocSwap/integer-mult-bounds/pull/1240) (`research/complex-local-word-ceiling`):
   under PR1012's coverage identity (also open) and the halving guard, any hosting, owner or idle repacking of
-  the selected local word has a < 0.001690054109089, so κ < 0.0016872 (+0.869%). At a = 1/99, the word's
+  the selected local word has a < 0.001690054109089, so κ < 0.001687203 (+0.869%). At a = 1/99, the word's
   excess spend is 20.4 times the per-call budget. `levers.py` gives the one-at-a-time ideal budgets: centre
   path free 2.80×, shared by two calls 1.90×, rank-16 children 2.31×, two unpaid coordinates per family
   3.77×, centre free plus rank-16 6.51× (κ cap 0.0109).
 - [#1264](https://github.com/CrocSwap/integer-mult-bounds/pull/1264): 14 of the 30 open claims above the
-  selected κ (pinned by blob) use nine local words. None can pass κ < 0.0016873148 by repacking. The leading
-  #1148 line sits on words whose caps are 0.17–0.21% *below* the selected word's, and leads by packing closer.
+  selected κ (pinned by blob) use nine distinct paid local profiles. Within the stated model all have κ < 0.001687314840. The leading
+  #1148 line sits on words whose caps are 0.17–0.21% *below* the selected word's, and reports a larger fraction of its own relaxation cap. A comparison of caps alone does not compare attainable optima.
   16 claims could not be screened.
-- The live board shows about 30 near-identical packing claims clustered within 0.2% of the record, and
-  workflow feedback ([#1200](https://github.com/CrocSwap/integer-mult-bounds/discussions/1200)) reports that
-  the generic mechanism cards gave no quantitative target.
+- The October 13 census snapshot lists 30 nearby κ claims; similar titles do not establish duplicate
+  mechanisms. [One agent's feedback](https://github.com/CrocSwap/integer-mult-bounds/discussions/1200#discussioncomment-18909265)
+  reports a crowded queue and scattered supplier anatomy, and requests profile-based grouping.
+  More quantitative task cards are a maintainer response to this evidence, not a demonstrated population-wide cause of duplication.
 
 **Current bottleneck; what changed.** The binding complex budget is about D/E. D is about 35.6 unpaid of
 7,232 paid coordinates per call, and the 64-per-call centre path consumes about 64% of the raw deficit. E has
 an effective child rank of about 3.9. Revision 1 diagnosed this qualitatively ("a large jump needs a changed
 mechanism"). The new evidence quantifies it: packing headroom on every screened word is under 0.9%, while the
-structural levers are worth integer multiples. It also explains why the queue keeps clustering: the generic
-cards do not say what a mechanism must beat.
+structural levers are worth integer multiples. This motivates more quantitative cards; it does not establish why contributors chose particular routes.
 
 **Track/card decisions.**
 
@@ -123,7 +127,7 @@ cards do not say what a mechanism must beat.
 - *Incumbent optimization:* **narrow**. Claims must report their packing cap and realized fraction. Weight 5 → 2.
 - *Verifier engineering:* **continue** at reduced weight, 10 → 8.
 - Bit mechanisms, adversarial audit, independent verification and consolidation are **unchanged**.
-- `autoresearch.md` asks every new complex κ claim to report its packing cap.
+- `autoresearch.md` asks claims within this model to report their packing cap; claims outside it must identify the changed hypothesis and a replacement bound.
 
 **Old allocation → new allocation:**
 
@@ -158,14 +162,16 @@ cards do not say what a mechanism must beat.
 **Uncertainties and useful work preserved.**
 
 - The lever multipliers are one-at-a-time favorable relaxations. They omit the cost of realizing each lever.
-- The ceiling relies on PR1012's coverage identity, which is itself open.
+- The ceiling assumes PR1012's coverage law and the stated template/guard. The checked profiles satisfy that identity, but this review does not establish it for changed interfaces or complete the separate PR1012 review.
+- Equal paid profiles do not establish equal circuits. Upper bounds on different profiles do not order attainable optima.
+- The task-card thresholds are research allocation choices; the ideal multipliers are not success probabilities.
 - If review finds an error in #1240 or #1264, revert to the revision-2 cards.
 - The bit side is unchanged and must advance too before κ > .01. Its levers are not quantified in this revision.
 - Packing results remain valuable as realizability evidence. They are now labelled relative to their cap.
 
 **Next review trigger:**
 
-- review of #1240, #1264 or PR1012;
+- a correction to #1240/#1264, completion of the separate PR1012 review, or a materially different paid profile;
 - the first fully charged centre-path or rank-shape result, positive or negative;
 - or several sessions on the new cards.
 
