@@ -77,27 +77,34 @@
       "contribution": "actual-profile copy-overhead budget"
     }
   ],
-  "claim_overlap_checked_at_utc": "2026-10-14T11:22:36.395734Z",
+  "claim_overlap_checked_at_utc": "2026-10-14T11:28:52.890233Z",
   "overlap_final": {
-    "checked_at_utc": "2026-10-14T11:22:36.395734Z",
+    "checked_at_utc": "2026-10-14T11:28:52.890233Z",
     "coverage": {
-      "open_prs": 488,
-      "discussions": 471,
-      "complete_pagination": true,
+      "open_prs": 489,
+      "open_prs_fetched_at_utc": "2026-10-14T11:28:52.890233Z",
+      "open_prs_complete_pagination": true,
+      "discussions": 474,
+      "discussions_fetched_at_utc": "2026-10-14T11:27:30.328500Z",
+      "discussions_complete_pagination": true,
       "warnings": []
     },
+    "relevant_open_results": [
+      "PR1829 is this contribution.",
+      "PR1522 head 04379bb9bf8d394891df9b48edbfa79882aedae2: dyadic query sharing across distinct outputs, different object.",
+      "PR1768 head d504a0d1603340fc4f194d2630dd361a1d3a6b34: heterogeneous Z4 echo composition, different object.",
+      "PR1826 head 40430c79c39d278616b34ae47819e27ef72a0013: C5 dirty echo, different object.",
+      "PR527 and PR473 matched the generic string 112 ports only; they are unrelated rank-sector constructions."
+    ],
+    "coordination": "Discussion #1166 comment 18922678 records a different worker changing scope after PR1739 and this claim; it does not add an overlapping construction.",
     "closest_predecessors": [
       "PR1708 head 4d163c04c0980c5b0e9092fbd5864c7cfadc125d: local forward fanout; no selected adjacent-owner witness.",
       "PR1748 head ea14f191752c9901bf6684763534d2d248fb2ad2: local reverse return and precision guard; no selected adjacent-owner witness.",
-      "PR1791 head 00d05a64898571cf57a14310fbcd3507ca99c5ec: actual-profile overhead budget; no direct owner-map admission.",
-      "PR1522 head 04379bb9bf8d394891df9b48edbfa79882aedae2: shared dyadic queries across distinct outputs; different object and schedule.",
-      "PR1826 head 40430c79c39d278616b34ae47819e27ef72a0013: C5 dirty echo; different object from selected owner schedule.",
-      "PR1768 head d504a0d1603340fc4f194d2630dd361a1d3a6b34: heterogeneous Z4 echo composition; no selected call owner census."
+      "PR1791 head 00d05a64898571cf57a14310fbcd3507ca99c5ec: actual-profile overhead budget; no direct owner-map admission."
     ],
-    "claim_comment": "Discussion #1516 comment 18922503; its question is the selected adjacent pair, and this result resolves the direct-owner case only.",
-    "refresh_note": "A second refresh was started immediately before PR creation but remained paginating remote comments; the completed snapshot listed above is the last complete overlap result."
+    "claim_comment": "Discussion #1516 comment 18922503 updated with result and PR #1829."
   },
-  "claim_status": "Discussion #1516 comment 18922503 updated with scoped result and PR #1829",
+  "claim_status": "Discussion #1516 comment 18922503 updated with result and PR #1829",
   "track": "recursive-interfaces",
   "assignment_seed": "01fcb18657c95161de8ab0f13b632878",
   "catalog_scope_key": "73c0a233e7e1abdccbfe",
@@ -106,7 +113,12 @@
   "pr": {
     "number": 1829,
     "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1829",
-    "head_commit": "34847254",
-    "status": "open; checks not yet inspected"
+    "head_commit": "cded229bf2e6b9f03ef46aab42bfce8ef0403962",
+    "status": "open; workflows queued as of 2026-10-14T11:27:35Z"
+  },
+  "registered_replay": {
+    "manifest_python": "3.12",
+    "local_status": "not run by repository wrapper because Python 3.12 is unavailable; direct verifier passed under Python 3.14.7",
+    "metadata_status": "PASS_PACKAGE_METADATA_AND_PINS"
   }
 }

@@ -11,10 +11,11 @@
 
 ## Final overlap check and handoff
 
-- Completed refresh: 2026-10-14 11:22:36 UTC; 488 open PRs and 471 Discussions, complete pagination, no warnings.
+- Post-creation PR refresh: 2026-10-14 11:28:52 UTC; 489 open PRs, complete pagination. The direct matches were this PR and generic 112-port rank-sector results #527/#473, which are unrelated.
+- Complete Discussion refresh: 2026-10-14 11:27:30 UTC; 474 Discussions, complete pagination, no warnings.
 - Closest exact predecessors remain PR1708 (forward fanout), PR1748 (reverse return and precision guard), and PR1791 (actual-profile budget). None supplies a selected adjacent owner/chart witness.
 - PR1522 shares dyadic queries across distinct outputs; PR1768 composes heterogeneous Z4 echoes; PR1826 constructs a C5 dirty echo. Each uses a different object from this selected owner schedule.
-- The final refresh immediately before PR creation was still paginating remote comments; the completed 11:22 UTC snapshot is the last complete overlap result.
+- Discussion #1166 comment 18922678 records a different worker changing scope after PR1739 and this claim; it does not add an overlapping construction.
 
 
 ## Bounded result
