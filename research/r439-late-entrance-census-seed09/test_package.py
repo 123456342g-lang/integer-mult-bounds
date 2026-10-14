@@ -86,6 +86,12 @@ class Census(unittest.TestCase):
         (V0, d), = rel.items()
         self.assertEqual(len(V0), 1)
         self.assertEqual(sorted(map(tuple, d['kernel'])), [(444, 470), (578,)])
+        span = E.Span()
+        for kv in d['kernel']:
+            span.add(cm(kv))
+        for S, _ in E.census(W, K, WF, SUP):            # every LC-fav admission lies in the relaxed kernel
+            self.assertTrue(set(S) <= set(CL['elig'][V0]))
+            self.assertFalse(span.add(cm(S)))
 
     def test_result_records_the_same_census(self):
         self.assertEqual(RESULT['summary']['LC_fav_late'], [[444, 470, 578]])
@@ -95,7 +101,7 @@ class Census(unittest.TestCase):
 
 
 class Controls(unittest.TestCase):
-    def test_pre_a_window_admits_everything(self):
+    def test_sanity_pre_a_window_admits_everything(self):
         allj = [1 << j for j in range(W.R)]
         self.assertEqual(len(E.census(W, K, [list(x) + allj for x in WF], SUP)), len(SUP))
 
@@ -104,7 +110,7 @@ class Controls(unittest.TestCase):
         Kf[1] ^= 1 << (470 - 2 * v)
         self.assertEqual(E.census(W, Kf, WF, [frozenset((444, 470))]), [])
 
-    def test_cleared_K_column_admits_578(self):
+    def test_sanity_cleared_K_column_admits_578(self):
         K0 = [x & ~(1 << (578 - 2 * v)) for x in K]
         self.assertEqual(E.census(W, K0, WF, [frozenset((578,))]), [((578,), 0)])
 
@@ -123,6 +129,10 @@ class Controls(unittest.TestCase):
         S, Wt = V.synthetic(P)
         self.assertEqual((V.canonical_sha(S), V.canonical_sha(Wt)), (V.SYN_SHA, V.WITNESS_SHA))
         wlib.replay(Wt)
+        no_late = copy.deepcopy(Wt)
+        no_late['B'] = S['B']                          # without its three post-scatter reads
+        with self.assertRaises(AssertionError):
+            wlib.replay(no_late)
         bad = copy.deepcopy(Wt)
         bad['C'] = bad['C'][:-1]                       # drop the closing shear: the witness must break
         with self.assertRaises(AssertionError):

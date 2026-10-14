@@ -336,30 +336,40 @@ def relax(word, K, W, elig):
     return out
 
 
-def donors(word, K, W, elig, first_src):
-    """source donors x_s ^= p at the entrance frame (line_s inside V); response K c + 1_{D_S}."""
+def donors(word, K, W, elig):
+    """source donors x_s ^= p at the entrance frame (line_s inside V); response K c + 1_{D_S}.
+    'placeable' counts the donor sets whose span E_min = span(lines of D_S) lies inside every donor's first A frame
+    (each donor must sit at the entrance frame before A without descending)."""
     v = word.v
     lab = {s: rref([word.lines[s]])[0] for s in range(v)}
+    first_src = {}
+    for f, d, ss in word.w['A']:
+        for r in (d, *ss):
+            if r < v and r not in first_src:
+                first_src[r] = rref([word.lines[i] for i in word.w['frames'][f]])[0]
 
     def inside(V, F):
         ann = nullspace(list(F))
         return all(dot(u, a) == 0 for u in V for a in ann)
-    checked, kernel, late = 0, [], []
+    checked, placeable, kernel, late = 0, 0, [], []
     for V, I in elig.items():
         srcs = [s for s in range(v) if inside(lab[s], V)]
         for k in range(1, len(srcs) + 1):
             for DS in itertools.combinations(srcs, k):
                 xs = sum(1 << s for s in DS)
+                emin = rref([word.lines[s] for s in DS])[0]
+                legal = all(inside(emin, first_src[s]) for s in DS)
                 for kk in range(1, len(I) + 1):
                     for J in itertools.combinations(I, kk):
                         checked += 1
+                        placeable += legal
                         cm = sum(1 << (r - 2 * v) for r in J)
                         T = response(K, cm, xs)
                         if not T:
                             kernel.append((DS, J))
                         elif admits(W, T, cm):
                             late.append((DS, J, len(T)))
-    return dict(checked=checked, kernel=kernel, late=late)
+    return dict(checked=checked, placeable=placeable, kernel=kernel, late=late)
 
 
 # ------------------------------------------------------------------------------------------------ A6R (storage relays)

@@ -38,11 +38,11 @@ These are the premises.
   - the endpoint is (x, y, s) ↦ (x, y + x, s) on all 661 columns, and every register reaches its final frame.
 - **P5.** Exactly one helper (p) starts at a nonzero frame.
 
-**Lemma 1 (cone; #1128 PROOF.md §2).** A value at frame U depends only on registers whose frames lay inside U along the dependency path. The scatter's COPY descent is the only exception.
+**Lemma 1 (cone; the dependency-path argument of #1128 PROOF.md §1).** A value at frame U depends only on registers whose frames lay inside U along the dependency path. The scatter's COPY descent is the only exception.
 - So D′ and every register at frame 0 before σ have π_c = 0.
-- So D′'s contributions are pivot-free and x-free, and leave z unchanged.
+- So every contribution of D′ to a helper or a target is x-free and has zero coefficient on the pivot input s_p. (D′ need not restore z; the proof uses only this property, applied to the full pre-A change of coordinates Γ′ = gauge ∘ D′.)
 
-**Lemma 2 (monotone span).** Fix U = t⊥. Let Σ(τ) be the span of the values of the registers whose frame lies in U after τ post-scatter steps. Then Σ(τ′) ⊆ Σ(τ) ⊕ Fresh for τ′ ≥ τ.
+**Lemma 2 (monotone span; the dual of #1128 PROOF.md §2's erasure invariant).** Fix U = t⊥. Let Σ(τ) be the span of the values of the registers whose frame lies in U after τ post-scatter steps. Then Σ(τ′) ⊆ Σ(τ) ⊕ Fresh for τ′ ≥ τ.
 - A step at a frame f ⊆ U only mixes registers that are already in the set.
 - A step at a frame f ⊄ U removes its operands from the set for good, because frames never descend.
 
@@ -50,13 +50,16 @@ These are the premises.
 
 **Theorem.** In LC-fav, if the endpoint holds, then every t ∈ T has some u ∈ W_t with u · c = 1.
 
+**Frames at σ.** A is fixed and E ⊆ V ⊆ F_q for every q ∈ c (E lies inside every first-contact frame of the support, and inside each donor's first A frame). So under the entrance every register reaches σ at its raw frame, and the register sets in Lemma 2 are the same for the raw and the modified word.
+
 **Proof.**
 1. Target t ends at U = t⊥. By Lemma 2, its final value y_t + x_t lies in the span at σ of the modified registers, raw_r(σ) + δ_r. The fresh part is zero, because the final value has no fresh coordinate.
 2. In the same way, the raw end value y_t + x′_t + K_t s′ lies in Σ_raw(σ).
 3. Let Δ be their difference. Then Δ has no x part in the original coordinates, and π_c(Δ) = ρ_t.
-4. Write Δ = Σ (a_r + b_r) raw_r(σ) + Σ a_r δ_r.
+4. Write the modified σ-values as raw_r(σ) + δ_r + σ_r, where δ_r is D′'s contribution and σ_r collects the snapshot terms that P1 lets scatter rows gain (σ_r = 0 for non-targets). Then Δ = Σ (a_r + b_r) raw_r(σ) + Σ a_r δ_r + Σ a_r σ_r.
    - The δ terms carry no x part and no pivot, by Lemma 1.
-   - So u = Σ (a_r + b_r) raw_r(σ) has x(u) = 0 and π_c(u) = ρ_t = 1.
+   - The σ terms are sums of snapshots, which are generators in G_t; fold them into u.
+   - So u = Σ (a_r + b_r) raw_r(σ) + Σ a_r σ_r has x(u) = 0 and π_c(u) = ρ_t = 1, and lies in span G_t.
 5. The term for r = t is raw_t(σ). Modulo y, it is the sum of t's snapshots, so it lies in G_t.
 6. Hence d(u) ∈ W_t and d(u) · c = 1. ∎
 
@@ -71,6 +74,8 @@ So a support is **rejected** in LC-fav if some t ∈ T has W_t ⊆ c⊥. Adding 
 
 Raw gates keep their frames, and actual frames contain the raw frames. So every read needs cur_t ∪ cur_r ⊆ F ⊆ next_t ∩ next_r, computed from the raw frames. The span of every value read this way contains every reachable compensation. This makes A6's REJECT sound for the A6 class.
 
+Both engines sweep insertion points through B only. That is enough: on all five words C is entirely at FULL and touches no target, and no target ends at FULL (the verifier asserts this). A register r not yet raised by C still holds its end-of-B value with next_r = FULL, so a read during C has the same value and legality as a read at τ = |B|. Once r is at FULL it lies outside t⊥ and cannot be read.
+
 A6 is contained in LC-fav, so an LC-fav REJECT is also an A6 REJECT. The verifier checks that every A6 space lies inside the LC-fav space.
 
 **A6R** is A6 plus storage relays, where a target that received inserted reads may itself be read later.
@@ -83,8 +88,8 @@ A6 is contained in LC-fav, so an LC-fav REJECT is also an A6 REJECT. The verifie
 ## What the classes exclude
 
 - a changed A, changed pre-scatter frame paths, or gates and wires before σ;
-- targets leaving frame 0 early (a t⊥ window before the scatter would admit 146 single helpers);
-- a new or changed COPY;
+- targets leaving frame 0 before the scatter;
+- a new or changed COPY, and scatter changes beyond added snapshot terms;
 - gauge shears after A, or at more than one frame (the #1253 out-of-scope list);
 - source-dependent basis changes other than the donor shear;
 - several simultaneous entrances (see below);
@@ -99,6 +104,6 @@ LC-fav admits the triple {444, 470, 578}, but that is not a construction.
 - Under A6R (storage relays, restoration ignored) all 8 are coverable.
 - If only targets in T may store content, just 4 of the 8 are coverable.
 
-So any realisation must park x₇₇-carrying content in a target outside T, and that target must later cancel what it holds. The triple is therefore **OPEN**, and this package hands it on.
+So, within A6R (B ++ C fixed, insertion-only target reads), covering all 8 targets needs storage relays outside T, which must later be restored. The broader class LC-fav also allows a rewritten B or C and fresh restored registers, which A6R does not model. The triple is therefore **OPEN**, and this package hands it on.
 
 A positive answer would at most save the pivot's first climb, i.e. the local −H1 (−H2 + H1 for p = 578). Width-8 hosting cancels it with +H1 (#1179, #1253), and the bit side does not bind. So no κ follows either way.

@@ -21,7 +21,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 600,
-      "checks": "Byte binding of the PR589 word and the four merged star words, #1253's certificate and the replay library; per word: raw replay and K, first contacts, closure L (366 classes, equal to #1253's certificate), 4,954 supports; per-target dirt-only spaces in LC-fav (necessary test), the scout's strict class and A6, census of every support, linear relaxation per class, 5,212 source-donor entrances; Engine 2 (no shared code) reproduces K, the closure and every LC-fav and A6 space and verdict; A6R for the triple; controls (pre-A window, kernel pair, synthetic word with a replayed witness and a failing negative, K/frame mutations, frame closure); all five words identical; RESULT.json byte-identical."
+      "checks": "Byte binding of the PR589 word and the four merged star words, #1253's certificate and the replay library; per word: raw replay and K, first contacts, closure L (366 classes, equal to #1253's certificate), 4,954 supports; per-target dirt-only spaces in LC-fav (necessary test), the scout's strict class and A6, census of every support, linear relaxation per class, 5,212 source-donor entrances; Engine 2 (no shared code) reproduces K, the closure and every LC-fav and A6 space and support verdict; C reduces to the end of B; the relaxation contains every admission; A6R for the triple; controls (synthetic word with a replayed late witness that fails without its late reads, K/frame mutations, frame closure, flipped byte; census sanity checks); all five words identical; RESULT.json byte-identical."
     },
     {
       "argv": [

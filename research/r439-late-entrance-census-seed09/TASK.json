@@ -40,21 +40,21 @@
     ]
   },
   "scope_status": "refined",
-  "actual_scope": "One boundary implication of the inherited H2/K interface, tested exactly: can a common-frame helper entrance (#1253's 366 classes, all 4,954 supports, plus source donors) be compensated after the scatter instead of by a frame-0 prefix? Census on the selected PR589 word and the four merged star words (PR1062/1122/1188/1208), in a sound necessary class (LC-fav), a corrected strict class (A6) and A6 with storage relays (A6R).",
-  "scope_change_reason": "The card asks for a replacement H2/K interface and a falsification on dirty inputs or chronological cuts. Rather than proposing a new contract, this tests the late-compensation relaxation of the zero-start rule that #1128 (PROOF section 4) and #1179 leave open by name, on fixed A and scatter, one entrance at a time.",
-  "bottleneck_link": "Scoped negative result on the nonbinding bit side; no kappa. It shows that moving the zero-start helper rule's compensation after the scatter buys no new entrance except one open triple, and gives the reason: after the scatter each target's dirt-only reachable space has dimension at most 5. A positive entrance would only save the pivot's first climb (-H1), which width-8 hosting cancels (#1179, #1253).",
+  "actual_scope": "One boundary implication of the inherited H2/K interface, tested exactly: can a common-frame helper entrance (#1253's 366 classes, all 4,954 supports, plus source donors) be compensated after the scatter instead of by a frame-0 prefix? Census on the selected PR589 word and the four merged star words (PR1062/1122/1188/1208), in a sound necessary class (LC-fav), the carrier-checked class A6 and A6 with storage relays (A6R).",
+  "scope_change_reason": "The card asks for a replacement H2/K interface and a falsification on dirty inputs or chronological cuts. Rather than proposing a new contract, this narrows the late-compensation relaxation of the zero-start rule that #1128 (PROOF section 4) and #1179 leave open by name, to compensation after the scatter on fixed A and scatter, one entrance at a time.",
+  "bottleneck_link": "Scoped negative result on the nonbinding bit side; no kappa. Moving the zero-start rule's compensation after the scatter admits no new entrance in the carrier-checked class A6 and, in the sound class LC-fav, only one open triple. Reason: every dirt-only space W_t is a coordinate subspace of at most 5 helpers (4 in A6), so only 98 (47) of 18,085 K incidences can be repaired late. A positive entrance would only save the pivot's first climb (-H1), which width-8 hosting cancels (#1179, #1253).",
   "budget_minutes": 210,
-  "stop_rule": "Stop once every support of #1253's closure and every source donor is decided in LC-fav and A6 on all five words by two engines, the only LC-fav survivor is classified under A6R, and controls confirm both directions; do not build a witness for an A6R-only survivor beyond reporting it as an open handoff.",
+  "stop_rule": "Stop once every support of #1253's closure and every enumerated source donor is decided in LC-fav and A6 on all five words (support verdicts by two engines, donors and the relaxation by engine 1), the only LC-fav survivor is classified under A6R, and controls confirm both directions; report an A6R-only survivor as an open handoff.",
   "outcome": "completed",
-  "evidence": "RESULT.json (identical on all five words): 4,954 supports. LC-fav admits only the #1179 kernel pair 444+470 (T empty) and the triple 444+470+578 (T = 8 targets); no single helper, no new pair, 0 of 5,212 source donors. A6 admits only the kernel pair. Relaxation: one nonzero class (the label line of frame 79) with kernel {444+470, 578} in LC-fav and {444+470} in A6. dim W_t <= 5 (LC-fav), <= 4 (A6); covered K incidences 98 and 47 of 18,085. Triple: A6 covers 150 and 197; A6R(T only) 150, 153, 192, 197; A6R all 8, so it is OPEN. Engine 2 agrees on K, the closure (= #1253's certificate) and every space and verdict. Controls: pre-A window admits 4,954/4,954; synthetic word admits 444+470 late at target 150 and its built witness replays (wlib), a negative fails at register 150; K-bit flip, cleared K column and a relaxed carrier frame flip verdicts. 20 tests pass.",
+  "evidence": "RESULT.json (identical on all five words): 4,954 supports. LC-fav admits only the #1179 kernel pair 444+470 (T empty) and the triple 444+470+578 (T = 8 targets); no single helper, no new pair, 0 of 5,212 enumerated (5,059 placeable) source donors. A6 admits only the kernel pair. Relaxation: one nonzero class (frame 79's line) with kernel {444+470, 578} (LC-fav) and {444+470} (A6), containing every admission. Every W_t is a coordinate subspace, dim <= 5 (LC-fav) and <= 4 (A6); covered K incidences 98 and 47 of 18,085. Triple: A6 covers 150 and 197; A6R(T only) 150, 153, 192, 197; A6R all 8, so it is OPEN. Engine 2 agrees on K, the closure (= #1253's certificate), every W_t and every support verdict. Controls: synthetic word admits 444+470 late at target 150 and its witness replays (and fails without its late reads; it equals #1179's entrance after B); K-bit flip and a relaxed carrier frame flip verdicts; flipped byte rejected; C reduces to the end of B. 20 tests pass.",
   "author": "Sagar Thakrar (thakrarsagar)",
-  "ai_assistance": "Substantial: Claude (Anthropic) via Claude Code. Parallel read-only scout and judge subagents selected the question (both judges ranked it first); reader subagents and a synthesizer audited the scout's criterion (finding the triple the scout missed and the carrier gap in its strict class) and specified the classes; both engines, the proof note and the controls were then written fresh.",
+  "ai_assistance": "Substantial: Claude (Anthropic) via Claude Code. Parallel read-only scout and judge subagents selected the question (both judges ranked it first); reader subagents and a synthesizer audited the scout's criterion (finding the triple the scout missed and the carrier gap in its strict class) and specified the classes; both engines, the proof note and the controls were then written fresh. A post-PR adversarial review corrected the witness description, the scope of the open triple, the citations and the controls (second commit).",
   "open_questions": [
     {
-      "question": "Can the triple 444+470+578 be realised as a late-compensated entrance with storage relays?",
-      "why_it_matters": "It is the only support that survives the sound LC-fav test; A6R covers all 8 of its targets only through relays outside T that must later cancel their x77 content.",
-      "first_step": "Instrument census.a6r_coverable to record which relay reads cover each of the 8 targets, build a candidate word from those reads, and test it with wlib.replay and the #1179 literal stream checks.",
-      "blocked_by": "Restoring the relay targets' x77 content, which A6R ignores."
+      "question": "Can the triple 444+470+578 be realised in LC-fav?",
+      "why_it_matters": "It is the only support surviving the sound test; within A6R its 8 targets are covered only through relays outside T, while a rewritten B reading 470 and source 77 directly is not excluded.",
+      "first_step": "Record the reads A6R uses per target, build a candidate (relays first, then a rewritten B reading 77 directly) and test it with wlib.replay and #1179's literal stream checks.",
+      "blocked_by": "Restoring the relay targets, or a legal rewritten B."
     },
     {
       "question": "Do two or more simultaneous entrances admit late compensation where single ones do not?",
@@ -63,10 +63,10 @@
       "blocked_by": "None."
     },
     {
-      "question": "Does a changed scatter (or COPY placement) enlarge the dirt-only spaces enough to admit a late single entrance?",
-      "why_it_matters": "Both A and the scatter are fixed here; the dim W_t <= 5 bound is a property of this scatter.",
-      "first_step": "Recompute W_t with snapshot terms added to scatter rows, which the class already allows, then with one retained total moved.",
-      "blocked_by": "A new COPY changes the paid copy charge; price it with the #1128 section 5 argument first."
+      "question": "Does a different scatter enlarge W_t enough to admit a late single entrance?",
+      "why_it_matters": "The coordinate W_t of at most 5 helpers is a property of this scatter; added snapshot terms are already inside the class and change nothing.",
+      "first_step": "Move one retained total to another helper and recompute W_t.",
+      "blocked_by": "Pricing the changed COPY with #1128 section 5's argument."
     }
   ]
 }

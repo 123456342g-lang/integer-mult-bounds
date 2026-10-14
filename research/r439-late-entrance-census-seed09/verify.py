@@ -19,8 +19,9 @@ compensated after the scatter instead:
      (also equal to #1253's certificate), W_t for LC-fav (kernel method) and A6 (per-pair change points); exact
      agreement of every W_t and every verdict;
   R  A6R (A6 plus frame-tagged storage relays, restoration ignored) for the only late LC-fav survivor;
-  C  controls: pre-A window, the #1179 kernel pair, a synthetic word with a built and replayed late witness,
-     K / frame mutations that flip verdicts, frame closure, corrupted bytes.
+  C  controls: a synthetic word whose built late witness replays (and fails without its late reads), K / frame
+     mutations that flip verdicts, frame closure, a flipped byte; plus sanity checks of the census (pre-A window,
+     the #1179 kernel pair, a cleared K column) and of the relaxation (a superset of every admission).
 
 Expected last line: PASS_R439_LATE_ENTRANCE_CENSUS
 """
@@ -111,6 +112,11 @@ def analyse(name, w, cert_classes, run_a6r=True):
     first = W.first_contact()
     cl = E.closure(W, first)
     sup = E.supports(cl['elig'])
+    full = next(i for i, f in enumerate(w['frames']) if len(f) == W.v)
+    # A6 inserts reads anywhere in B ++ C; the sweeps stop at the end of B. C is entirely at FULL and touches no target,
+    # and no target ends at FULL, so a read during C sees the end-of-B value and the same legality as at tau = |B|.
+    need(all(g[0] == full for g in w['C']) and not any(W.v <= r < 2 * W.v for g in w['C'] for r in (g[1], *g[2]))
+         and all(w['final'][W.v + t] != full for t in range(W.v)), 'E1 reads during C reduce to the end of B')
     Wf, Wfs = E.W_fav(W, st), E.W_sweep(W, st, 'fav')
     Wstrict, Wa = E.W_sweep(W, st, 'strict'), E.W_sweep(W, st, 'A6')
     need(all(E.canonical(a) == E.canonical(b) for a, b in zip(Wf, Wfs)), 'E1 LC-fav at sigma = union over the sweep')
@@ -120,13 +126,27 @@ def analyse(name, w, cert_classes, run_a6r=True):
     res = {}
     for cls, X in (('LC_fav', Wf), ('strict_proto', Wstrict), ('A6', Wa)):
         adm = E.census(W, K, X, sup)
-        res[cls] = dict(admitted=[[list(s), nT] for s, nT in adm], covered_K_incidences=E.coverage(W, K, X), dim_W=E.dims(X))
+        coord = all(all(bin(u).count('1') == 1 for u in E.canonical(x)) for x in X)
+        res[cls] = dict(admitted=[[list(s), nT] for s, nT in adm], covered_K_incidences=E.coverage(W, K, X), dim_W=E.dims(X),
+                        coordinate_subspaces=coord)
     for cls, X in (('LC_fav', Wf), ('A6', Wa)):
         rel = E.relax(W, K, X, cl['elig'])
         res[cls]['relax366'] = [dict(dim_V=len(V), kernel=regs(d['kernel']), rows_kept=d['rows_kept']) for V, d in
                                 sorted(rel.items(), key=lambda kv: (len(kv[0]), kv[0]))]
-        don = E.donors(W, K, X, cl['elig'], None)
-        res[cls]['source_donors'] = dict(checked=don['checked'], kernel=len(don['kernel']), late=len(don['late']))
+        # the relaxation is a superset: every admitted support lies in the relaxed kernel of some class containing it
+        for S, _ in E.census(W, K, X, sup):
+            cmS = sum(1 << (r - 2 * W.v) for r in S)
+            ok = False
+            for V, I in cl['elig'].items():
+                if set(S) <= set(I) and V in rel:
+                    span = E.Span()
+                    for kv in rel[V]['kernel']:
+                        span.add(sum(1 << (r - 2 * W.v) for r in kv))
+                    ok = ok or not span.add(cmS)
+            need(ok, 'E1 relaxation contains every admitted support: ' + cls)
+        don = E.donors(W, K, X, cl['elig'])
+        res[cls]['source_donors'] = dict(enumerated=don['checked'], placeable=don['placeable'], kernel=len(don['kernel']),
+                                         late=len(don['late']))
     # Engine 2
     rep = F.replay_sets(w)
     geo = F.Geometry(w)
@@ -196,16 +216,23 @@ def controls(P, ctx, wlib):
     pre = [list(x) + allj for x in Wf]
     n_pre = len(E.census(W, K, pre, sup))
     need(n_pre == len(sup), 'C pre-A window admits every support')
-    out['pre_A_window'] = 'admits %d/%d supports' % (n_pre, len(sup))
+    out['sanity_pre_A_window'] = 'with every unit vector added to every W_t, %d/%d supports are admitted' % (n_pre, len(sup))
     # (b) the #1179 kernel pair: T empty, admitted by every class
     cm = sum(1 << (r - 2 * v) for r in KERNEL_PAIR)
     need(not E.response(K, cm), 'C kernel pair has T empty')
-    out['kernel_pair'] = '444+470: K e_J = 0 (the #1179 entrance), admitted in every class'
+    out['sanity_kernel_pair'] = '444+470: K e_J = 0 (the #1179 entrance), so admitted in every class'
     # (c) synthetic word with a built witness
     S, Wt = synthetic(P)
     need(canonical_sha(S) == SYN_SHA and canonical_sha(Wt) == WITNESS_SHA, 'C synthetic words reproduce their digests')
     wlib.replay(S)
     wlib.replay(Wt)
+    late_only = copy.deepcopy(Wt)
+    late_only['B'] = S['B']                          # the witness without its three post-scatter reads
+    try:
+        wlib.replay(late_only)
+        need(False, 'C witness without its late reads must fail replay')
+    except AssertionError as exc:
+        need(exc.args and exc.args[0] == 150, 'C witness without its late reads fails at register 150')
     Sneg = copy.deepcopy(S)
     Sneg['D'] = P['D']
     try:
@@ -225,19 +252,22 @@ def controls(P, ctx, wlib):
     out['synthetic'] = dict(word_sha256=SYN_SHA, witness_sha256=WITNESS_SHA, kernel_pair_T=T_syn,
                             admitted_LC_fav=[[list(s), nT] for s, nT in syn_fav], admitted_A6=[[list(s), nT] for s, nT in syn_a6],
                             witness_replay='PASS', witness_paid=wlib.paid(Wt), synthetic_paid=wlib.paid(S),
-                            negative='W_syn with the unedited D fails replay at register 150')
+                            witness_without_late_reads='fails replay at register 150',
+                            negative='W_syn with the unedited D fails replay at register 150',
+                            note='the late reads undo W_syn\'s own moved compensation, so after B the witness carries the same '
+                                 'values as #1179\'s prefix entrance on PR589: a realisable late entrance, not a new construction')
     # (d) mutations flip verdicts
     Kf = list(K)
     Kf[1] ^= 1 << (470 - 2 * v)
     need(not any(s == KERNEL_PAIR for s, _ in E.census(W, Kf, Wf, [frozenset(KERNEL_PAIR)])), 'C flipped K bit rejects 444+470')
     K0 = [x & ~(1 << (578 - 2 * v)) for x in K]
-    need(((578,), 0) in E.census(W, K0, Wf, [frozenset((578,))]), 'C zero K column admits 578')
+    need(((578,), 0) in E.census(W, K0, Wf, [frozenset((578,))]), 'C zero K column admits 578 (sanity: T empty)')
     full = next(i for i, f in enumerate(P['frames']) if len(f) == v)
     Wrel = E.W_sweep(W, st, 'A6', next_override={77: full})
     trip = E.census(W, K, Wrel, [frozenset(TRIPLE)])
     need(trip == [(TRIPLE, 8)], 'C relaxing next_77 to FULL admits the triple in A6')
     out['mutations'] = dict(flip_K_bit='444+470 rejected after flipping K[target 112, helper 470]',
-                            zero_K_column='578 admitted (T empty) after clearing column 578',
+                            sanity_zero_K_column='578 admitted (T empty) after clearing column 578',
                             relax_next_77='444+470+578 admitted by A6 when register 77 may be read at FULL')
     # (e) closure: dropping a label from a closed frame breaks closure
     bad = copy.deepcopy(P)
@@ -245,6 +275,15 @@ def controls(P, ctx, wlib):
     bad['frames'][f] = bad['frames'][f][1:]
     need(F.Geometry(bad).closed(f, v) != bad['frames'][f], 'C a frame with a dropped label is not closed')
     out['frame_closure'] = 'all frames closed (label inclusion = rational containment); a dropped label is detected'
+    path, digest = WORDS['PR589']
+    raw = bytearray((ROOT / path).read_bytes())
+    raw[100] ^= 1
+    try:
+        load_word(path, digest, bytes(raw))
+        need(False, 'C a flipped word byte must be rejected')
+    except Reject as exc:
+        need(str(exc).startswith('B word digest'), 'C a flipped word byte is rejected by its digest')
+    out['flipped_byte'] = 'rejected by the word digest'
     return out
 
 

@@ -4,14 +4,15 @@
   "sha256": "f08b9de12089687fe6c0c6b2eb985d0e6a883b72fa4f08ded11d34d875f48909"
  },
  "controls": {
+  "flipped_byte": "rejected by the word digest",
   "frame_closure": "all frames closed (label inclusion = rational containment); a dropped label is detected",
-  "kernel_pair": "444+470: K e_J = 0 (the #1179 entrance), admitted in every class",
   "mutations": {
    "flip_K_bit": "444+470 rejected after flipping K[target 112, helper 470]",
    "relax_next_77": "444+470+578 admitted by A6 when register 77 may be read at FULL",
-   "zero_K_column": "578 admitted (T empty) after clearing column 578"
+   "sanity_zero_K_column": "578 admitted (T empty) after clearing column 578"
   },
-  "pre_A_window": "admits 4954/4954 supports",
+  "sanity_kernel_pair": "444+470: K e_J = 0 (the #1179 entrance), so admitted in every class",
+  "sanity_pre_A_window": "with every unit vector added to every W_t, 4954/4954 supports are admitted",
   "synthetic": {
    "admitted_A6": [
     [
@@ -43,6 +44,7 @@
     150
    ],
    "negative": "W_syn with the unedited D fails replay at register 150",
+   "note": "the late reads undo W_syn's own moved compensation, so after B the witness carries the same values as #1179's prefix entrance on PR589: a realisable late entrance, not a new construction",
    "synthetic_paid": {
     "1": 1323,
     "2": 1344,
@@ -63,6 +65,7 @@
    },
    "witness_replay": "PASS",
    "witness_sha256": "cf7aa7a94141fd18623e0ce489f67d86c725f17ec0856bbc23b4700d66c5d00a",
+   "witness_without_late_reads": "fails replay at register 150",
    "word_sha256": "a33bf677cb43b26f27e18bf29b5618ded5a17d04987ddb71d8ce4f2de4401ea1"
   }
  },
@@ -124,6 +127,7 @@
        0
       ]
      ],
+     "coordinate_subspaces": true,
      "covered_K_incidences": 47,
      "dim_W": {
       "0": 50,
@@ -145,9 +149,10 @@
       }
      ],
      "source_donors": {
-      "checked": 5212,
+      "enumerated": 5212,
       "kernel": 0,
-      "late": 0
+      "late": 0,
+      "placeable": 5059
      }
     },
     "LC_fav": {
@@ -168,6 +173,7 @@
        8
       ]
      ],
+     "coordinate_subspaces": true,
      "covered_K_incidences": 98,
      "dim_W": {
       "0": 15,
@@ -193,9 +199,10 @@
       }
      ],
      "source_donors": {
-      "checked": 5212,
+      "enumerated": 5212,
       "kernel": 0,
-      "late": 0
+      "late": 0,
+      "placeable": 5059
      }
     },
     "strict_proto": {
@@ -216,6 +223,7 @@
        8
       ]
      ],
+     "coordinate_subspaces": true,
      "covered_K_incidences": 98,
      "dim_W": {
       "0": 15,
@@ -293,6 +301,7 @@
        0
       ]
      ],
+     "coordinate_subspaces": true,
      "covered_K_incidences": 47,
      "dim_W": {
       "0": 50,
@@ -314,9 +323,10 @@
       }
      ],
      "source_donors": {
-      "checked": 5212,
+      "enumerated": 5212,
       "kernel": 0,
-      "late": 0
+      "late": 0,
+      "placeable": 5059
      }
     },
     "LC_fav": {
@@ -337,6 +347,7 @@
        8
       ]
      ],
+     "coordinate_subspaces": true,
      "covered_K_incidences": 98,
      "dim_W": {
       "0": 15,
@@ -362,9 +373,10 @@
       }
      ],
      "source_donors": {
-      "checked": 5212,
+      "enumerated": 5212,
       "kernel": 0,
-      "late": 0
+      "late": 0,
+      "placeable": 5059
      }
     },
     "strict_proto": {
@@ -385,6 +397,7 @@
        8
       ]
      ],
+     "coordinate_subspaces": true,
      "covered_K_incidences": 98,
      "dim_W": {
       "0": 15,
@@ -462,6 +475,7 @@
        0
       ]
      ],
+     "coordinate_subspaces": true,
      "covered_K_incidences": 47,
      "dim_W": {
       "0": 50,
@@ -483,9 +497,10 @@
       }
      ],
      "source_donors": {
-      "checked": 5212,
+      "enumerated": 5212,
       "kernel": 0,
-      "late": 0
+      "late": 0,
+      "placeable": 5059
      }
     },
     "LC_fav": {
@@ -506,6 +521,7 @@
        8
       ]
      ],
+     "coordinate_subspaces": true,
      "covered_K_incidences": 98,
      "dim_W": {
       "0": 15,
@@ -531,9 +547,10 @@
       }
      ],
      "source_donors": {
-      "checked": 5212,
+      "enumerated": 5212,
       "kernel": 0,
-      "late": 0
+      "late": 0,
+      "placeable": 5059
      }
     },
     "strict_proto": {
@@ -554,6 +571,7 @@
        8
       ]
      ],
+     "coordinate_subspaces": true,
      "covered_K_incidences": 98,
      "dim_W": {
       "0": 15,
@@ -631,6 +649,7 @@
        0
       ]
      ],
+     "coordinate_subspaces": true,
      "covered_K_incidences": 47,
      "dim_W": {
       "0": 50,
@@ -652,9 +671,10 @@
       }
      ],
      "source_donors": {
-      "checked": 5212,
+      "enumerated": 5212,
       "kernel": 0,
-      "late": 0
+      "late": 0,
+      "placeable": 5059
      }
     },
     "LC_fav": {
@@ -675,6 +695,7 @@
        8
       ]
      ],
+     "coordinate_subspaces": true,
      "covered_K_incidences": 98,
      "dim_W": {
       "0": 15,
@@ -700,9 +721,10 @@
       }
      ],
      "source_donors": {
-      "checked": 5212,
+      "enumerated": 5212,
       "kernel": 0,
-      "late": 0
+      "late": 0,
+      "placeable": 5059
      }
     },
     "strict_proto": {
@@ -723,6 +745,7 @@
        8
       ]
      ],
+     "coordinate_subspaces": true,
      "covered_K_incidences": 98,
      "dim_W": {
       "0": 15,
@@ -800,6 +823,7 @@
        0
       ]
      ],
+     "coordinate_subspaces": true,
      "covered_K_incidences": 47,
      "dim_W": {
       "0": 50,
@@ -821,9 +845,10 @@
       }
      ],
      "source_donors": {
-      "checked": 5212,
+      "enumerated": 5212,
       "kernel": 0,
-      "late": 0
+      "late": 0,
+      "placeable": 5059
      }
     },
     "LC_fav": {
@@ -844,6 +869,7 @@
        8
       ]
      ],
+     "coordinate_subspaces": true,
      "covered_K_incidences": 98,
      "dim_W": {
       "0": 15,
@@ -869,9 +895,10 @@
       }
      ],
      "source_donors": {
-      "checked": 5212,
+      "enumerated": 5212,
       "kernel": 0,
-      "late": 0
+      "late": 0,
+      "placeable": 5059
      }
     },
     "strict_proto": {
@@ -892,6 +919,7 @@
        8
       ]
      ],
+     "coordinate_subspaces": true,
      "covered_K_incidences": 98,
      "dim_W": {
       "0": 15,
