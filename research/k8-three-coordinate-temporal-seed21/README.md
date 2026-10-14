@@ -50,6 +50,8 @@ The search stops after exhaustive exact coverage of the fixed 729-state box for 
 
 The source word and lowerer come from the retained PR1042/PR1094 lineage. The two-coordinate control and event-level gauge method build on Sagar Thakrar's PR1380 and PR1259; Philipp / mightyOil's PR1263 is the later static-gauge comparator. PR1322's common-shift triple census is related but studies a different schedule family. Full ancestry and exact heads are recorded in `SOURCES.json`.
 
+Final overlap refresh at 2026-10-14 00:08:38 UTC: PR1388 (head `3545a0268b049c6bae5a751c2eb9189187aed469`) composes L348/L359 on the later PR1263 static word; PR1385 (head `be95b8063b03f9cf511dbc3d7eb8437ce1e647e5`) optimizes L259 on that word; and discussion claim [#18911723](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18911723) proposes composing L248/L253/L259 on that word. Claim [#18911678](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18911678) covers L284 on the same later word. These use a different background and coordinates from this PR1094 original-word L225/L350/L367 schedule.
+
 Prepared by Cinna Davis / @1337isnot1337 with substantial OpenAI Codex assistance in task selection, exact optimization, implementation, verification and writing. No independent human review is claimed. The new package is Apache-2.0.
 
 ## Open next questions

@@ -25,6 +25,7 @@
       "status": "not selected"
     }
   ],
+  "coordination_claim": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18911637",
   "evidence": "The exact DP saves 384 real / 768 complex primitives per orientation on the pinned original word; the full invoice is 148234 forward and 148250 backward. The PR1380 pair control is independently recovered at -237 real per orientation. All 712 columns, literal lowerer checks, paid profiles, frame endpoints and negative controls pass.",
   "open_questions": [
     {
@@ -77,6 +78,37 @@
     ]
   },
   "outcome": "completed",
+  "post_claim_overlap_refresh": {
+    "checked_at_utc": "2026-10-14 00:08:38",
+    "conclusion": "No overlapping claim for the exact L225/L350/L367 triple on the original PR1094 word. PR1380 is explicitly credited as the pairwise predecessor and its exact pair certificate is used as a positive control.",
+    "open_prs": [
+      {
+        "head": "c2bc6848cffb2e2203095d4c4bbc45b0848c22e7",
+        "pr": 1380,
+        "scope": "L225/L350 pairwise shared-ADD schedule on the original PR1094 word; direct predecessor control."
+      },
+      {
+        "head": "be95b8063b03f9cf511dbc3d7eb8437ce1e647e5",
+        "pr": 1385,
+        "scope": "single L259 temporal gauge on the PR1263 static word; distinct source word and coordinate."
+      },
+      {
+        "head": "3545a0268b049c6bae5a751c2eb9189187aed469",
+        "pr": 1388,
+        "scope": "L348/L359 pair composition on the PR1263 static word; distinct word and coordinates."
+      }
+    ],
+    "recent_claims": [
+      {
+        "scope": "compose L248/L253/L259 on the PR1263 static word; distinct word and coordinate set.",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18911723"
+      },
+      {
+        "scope": "single L284 temporal gauge on the PR1263 static word; distinct word and coordinate.",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18911678"
+      }
+    ]
+  },
   "schema_version": 1,
   "scope_change_reason": "The catalogue card asks for a new helper inventory, while the current helper-inventory/decoder lane is already occupied by PR1348, discussion claim 1328, PR1320 and PR1375. I retained the assigned complex-supplier track and chose a narrow higher-order temporal-gauge question on the pinned original k8 word. This is an explicit scope change; the package does not claim to meet the catalogue card\u2019s new-inventory acceptance gate.",
   "scope_status": "changed",
