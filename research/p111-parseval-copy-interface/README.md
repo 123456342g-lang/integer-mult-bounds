@@ -200,8 +200,12 @@ review is claimed.
 - Cinna Davis / 1337isnot1337's PR1900 supplies the valid Parseval construction
   and the audited copy claim. Exact head, Git blobs, constants and scope are
   in [SOURCE-CLAIM.json](SOURCE-CLAIM.json). No predecessor executable is imported.
-- The selected PR589/PR555 word, PR446 pricing premise, P111 scalar-copy
-  certificate, and bit orthogonal-pair decoder proof retain their attribution.
+- The selected PR589/PR555 word, DreamingOfClouds' PR446 pricing premise,
+  and bit orthogonal-pair decoder proof retain their attribution. The
+  P111 scalar-copy certificate was prepared with Codex at Russell Seligmann's
+  request; Joel Pulikkan / GamingPuzzled's PR620 supplied the earlier cost-63
+  experiments and cost classification. Their global scalar optimum is not
+  claimed as new here; see the predecessor's [NOTICE](../p111-copy-rank-certificate/NOTICE.md).
   ctoth's Discussion1587 establishes the plane-port endpoint question.
   Douglas Colkitt's ceiling engine, prepared with Claude assistance, is reused
   unchanged. PR1889's complex scalar-lift audit is distinct and not reused.
