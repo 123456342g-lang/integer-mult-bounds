@@ -42,13 +42,13 @@
     ]
   },
   "scope_status": "changed",
-  "actual_scope": "Source-pinned induced Petersen-plus-four-isolates certificate: block fitting rank at least 9d over every field, equality in characteristic two, and exact nonlinear zero-error binary broadcast length 9d for every positive block size d.",
+  "actual_scope": "Source-pinned induced Petersen-plus-four-isolates certificates for both selected P111 and pinned P112: block fitting rank at least 9d over every field, equality in characteristic two, and exact nonlinear zero-error binary broadcast length 9d for every positive block size d.",
   "scope_change_reason": "The helper-inventory investigation raised a necessary rank-eight label premise. This side result isolates the obstruction, strengthens it to all block sizes and binary nonlinear coding, and identifies its known Petersen-theorem basis; it supplies no new helper inventory.",
   "bottleneck_link": "Closes below-nine fitting compression of this exact graph over every field and binary nonlinear broadcast compression at every block size. A positive supplier must change the graph/constraints or save other paid work; no kappa improvement follows.",
   "budget_minutes": 75,
-  "stop_rule": "Finish this side result after source-pinned embedding, exact rational dual, independent characteristic-two proof, registered replays, and explicit prior-art/scope checks.",
+  "stop_rule": "Finish this side result after source-pinned embedding, exact rational dual, independent characteristic-two proof, registered replays, and explicit prior-art/scope checks. Include the directly checked selected-P111 reflection corollary.",
   "outcome": "completed",
-  "evidence": "Four eight-cliques on 14 vertices have odd incidence at a four-clique, proving 4d<=4(r-8d) in characteristic two. The induced usual fitting graph is four isolates plus Petersen. A 113-term exact rational certificate proves the known Petersen bound five and extends the full lower bound to all fields and nonlinear zero-error codes. Independent standard-library replays check all 2912 required-zero pairs, 12544 binary Gram entries, all 1024 dual coefficients, a matching positive fixture, and 15 corruption controls.",
+  "evidence": "Four eight-cliques on 14 vertices have odd incidence at a four-clique, proving 4d<=4(r-8d) in characteristic two. The induced usual fitting graph is four isolates plus Petersen. A 113-term exact rational certificate proves the known Petersen bound five and extends the full lower bound to all fields and nonlinear zero-error codes. Independent standard-library replays check all 2912 required-zero pairs, 12544 binary Gram entries, all 1024 dual coefficients, a matching positive fixture, and 15 corruption controls. A separate checker proves the selected P111 corollary by an exact coordinate reflection of the fourteen-vertex witness, verifies all 2,870 required-zero pairs and 12,321 binary Gram entries, and rejects six further corruptions. The nonlinear reduction fixes 97 outside messages for P111.",
   "author": "Thiago, with OpenAI GPT-6 Astra and Codex assistance",
   "ai_assistance": "Substantial OpenAI GPT-6 Astra and Codex assistance was used for mathematical exploration, independent checking, literature search, implementation and packaging.",
   "open_questions": [
@@ -61,17 +61,17 @@
   ],
   "coordination": {
     "discussion": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1713",
-    "overlap_checked_at": "2026-10-14T09:32:07.988435+00:00",
+    "overlap_checked_at": "2026-10-14T10:16:32.419039+00:00",
     "coverage": {
       "open_prs": {
-        "fetched_at": "2026-10-14T09:30:20.286086+00:00",
+        "fetched_at": "2026-10-14T10:14:58.185262+00:00",
         "complete_pagination": true,
-        "records": 442
+        "records": 460
       },
       "discussions": {
-        "fetched_at": "2026-10-14T09:32:07.925671+00:00",
+        "fetched_at": "2026-10-14T10:16:32.336110+00:00",
         "complete_pagination": true,
-        "records": 409
+        "records": 435
       }
     },
     "nearest_overlap": {

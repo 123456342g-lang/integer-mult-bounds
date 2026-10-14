@@ -19,6 +19,12 @@
       "usage": "input",
       "git_blob": "9efe30ee107b9c67f15f1c726e1a1cb5cef03929",
       "sha256": "327d2a868043e846381aa58a33053c24425e8cad522ff401b10ec8af1d649a3f"
+    },
+    {
+      "path": "research/e8-bit-p111-tuned/tune/bitE8mut-p111-tuned.json.gz",
+      "usage": "input",
+      "git_blob": "85a4499bf9e4911a705d50567a2c2ef6cf23739a",
+      "sha256": "e3e301e62bc2b41dbf1ceac0acf3d35824ebeab1848c5a2142d4577b109da52f"
     }
   ]
 }

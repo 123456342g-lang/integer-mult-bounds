@@ -4,7 +4,8 @@
   "python": "3.12",
   "requirements": [],
   "inputs": [
-    "research/direct-delivery504-global/inputs/hamming/PROTOTYPE.json"
+    "research/direct-delivery504-global/inputs/hamming/PROTOTYPE.json",
+    "research/e8-bit-p111-tuned/tune/bitE8mut-p111-tuned.json.gz"
   ],
   "commands": [
     {
@@ -28,6 +29,17 @@
       ],
       "timeout_seconds": 30,
       "checks": "Reconstruct 113 valid Petersen Shannon/rank constraint expressions; verify all 1024 rational coefficient sums equal F(empty)-5, five corruption controls, and a perfect-matching positive fixture against all elementary constraints. No LP solver is used."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "-O",
+        "{package}/p111_corollary.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Selected P111 source pin, exact reflected fourteen-vertex embedding and clique certificate, all 2,870 required-zero pairs and 12,321 binary Gram entries, exact rank-nine upper bound and six corruption controls; inherits the documented universal Petersen rank/entropy reduction."
     }
   ]
 }

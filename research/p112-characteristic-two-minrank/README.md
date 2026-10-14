@@ -1,10 +1,15 @@
-# P112 block-rank and binary broadcast certificates
+# P111 and P112 block-rank and binary broadcast certificates
 
-For the pinned 112-port graph, every fitting matrix with invertible d-by-d
+For both the selected 111-port graph and the pinned 112-port graph, every
+fitting matrix with invertible d-by-d
 diagonal blocks has rank at least **9d over every field**, for every positive
 integer d. The existing binary labels attain 9d over every characteristic-two
 field. In the corresponding side-information graph, even nonlinear zero-error
 codes for d-bit messages require exactly **9d broadcast bits**.
+
+The selected P111 corollary is checked directly against the PR589 native-word
+input. It does not assume that P111 is a subset of this particular P112:
+a coordinate reflection places the same 14-vertex witness inside P111.
 
 A source-pinned induced graph on 14 vertices certifies these statements: in the
 usual fitting/side-information convention it is four isolated vertices disjoint
@@ -69,6 +74,34 @@ The checker verifies every pair: two of these vertices are adjacent in R
 exactly when their subsets intersect. Consequently the induced graph in G is
 four isolated vertices plus the Petersen graph, whose edges join disjoint
 two-subsets. This is an explicit isomorphism, not a degree-sequence inference.
+
+## Corollary for the selected P111 supplier
+
+The current bit supplier uses the 111 labels in
+[bitE8mut-p111-tuned.json.gz](../e8-bit-p111-tuned/tune/bitE8mut-p111-tuned.json.gz),
+SHA256 e3e301e62bc2b41dbf1ceac0acf3d35824ebeab1848c5a2142d4577b109da52f.
+Negate coordinate 1 (zero-based) of each of the fourteen P112 witness roots.
+Up to the sign of a root line, the resulting P111 indices are:
+
+~~~text
+P112:   2  10  16  32  34  57  68  70  78  84 100 102 108 110
+P111:  12  16  26  38  40  63  69  71  74  84  99  97 107 109
+~~~
+
+[p111_corollary.py](p111_corollary.py) reads both pinned inputs without importing
+another verifier. It checks the reflection, every induced pair, the four
+eight-cliques and odd-incidence four-clique directly. The same all-field rank
+proof and nonlinear entropy proof therefore apply; the latter fixes 97
+outside messages instead of 98. Matching the P111 root lines to the inherited
+full 120-label binary construction verifies all 12,321 Gram entries, all
+2,870 required-zero pairs, and exact rank nine. Thus both full graphs have
+block rank exactly 9d in characteristic two and binary broadcast length
+exactly 9d for every positive d. Only their all-field lower bound is asserted.
+
+Six corruption controls and the finite source-bound receipt are recorded in
+[P111-VERIFIED.json](P111-VERIFIED.json). This rules out below-nine fitting or
+broadcast compression for the selected label graph, but gives no lower bound
+on its complete paid supplier cost and no new native circuit.
 
 ## Short proof in characteristic two
 
@@ -198,10 +231,11 @@ python3.12 scripts/research_package.py --package research/p112-characteristic-tw
 python3.12 scripts/research_package.py --package research/p112-characteristic-two-minrank
 ~~~
 
-The registered replay runs both verifiers with -I -B -O. Explicit exceptions
+The registered replay runs all three verifiers with -I -B -O. Explicit exceptions
 keep acceptance checks active with assertions disabled. The deterministic
 receipts are [VERIFIED.json](VERIFIED.json) and
-[PETERSEN-VERIFIED.json](PETERSEN-VERIFIED.json).
+[PETERSEN-VERIFIED.json](PETERSEN-VERIFIED.json), and
+[P111-VERIFIED.json](P111-VERIFIED.json).
 
 The graph verifier imports no producer, search program or other verifier.
 It checks the source hash and indexing, all 2,912 required-zero pairs, all
@@ -211,6 +245,8 @@ The separate dual verifier checks all 1,024 rational coefficient sums and
 rejects five corruptions, including a negative inequality multiplier and
 an invalid decoding condition. Its perfect-matching positive fixture checks
 all 21,760 elementary inequalities and all 640 decoding equalities.
+The P111 checker independently checks its new input and reflected embedding,
+the full binary Gram matrix, and six further corruption controls.
 
 The reductions from rank and entropy to these finite certificates are the
 proofs above. No formal proof assistant, full supplier replay or selected
@@ -220,7 +256,7 @@ frontier replay is claimed.
 
 [Discussion 1713](https://github.com/CrocSwap/integer-mult-bounds/discussions/1713)
 records the scoped result. The complete remote overlap refresh on
-2026-10-14 at 09:32 UTC covered 442 open PRs and 409 Discussions, including
+2026-10-14 at 10:16 UTC covered 460 open PRs and 435 Discussions, including
 comments and replies. Sparse-checkout local coverage was limited.
 [PR1471](https://github.com/CrocSwap/integer-mult-bounds/pull/1471), head
 3695ad16e7bc4c0f6248a9e5a64fc069fa096733, audits odd-characteristic portability
@@ -235,7 +271,7 @@ Leung, Laura Mancinska, William Matthews, Maris Ozols and Aidan Roy,
 [Entanglement can increase asymptotic rates of zero-error classical communication over classical channels](https://arxiv.org/abs/1009.1195),
 Theorem 9 and section 4, explain the symplectic construction and E8 embedding,
 crediting Peeters for the symplectic-graph result. The contribution here is
-the pinned P112 embedding, the four-clique certificate, and independent exact
+the pinned P112 and selected P111 embeddings, the four-clique certificate, and independent exact
 checks of the resulting scoped obstructions; no literature-wide novelty claim
 for the underlying parameters is asserted.
 
@@ -245,6 +281,12 @@ prepared with OpenAI GPT-6 Astra assistance. Its Hamming/root inputs descend
 from the PR523/514/507/425/433 lineage credited in that package's
 [NOTICE.md](../direct-delivery504-global/NOTICE.md). Inputs are referenced
 without modification or re-vendoring.
+
+The selected P111 input is the unchanged PR589 tuned word, built on eumemic's
+PR555 word and the PR543/545 lineage, with substantial Anthropic Claude assistance credited in
+[e8-bit-p111-tuned](../e8-bit-p111-tuned/README.md). Its native construction is
+used only as a source of the exact live root labels here; its authors retain
+credit for the word and its supplier results.
 
 Prepared for Thiago with substantial OpenAI GPT-6 Astra and Codex assistance
 for exploration, proof review, independent checking and packaging. New work
