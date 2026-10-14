@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "python": "3.12",
+  "requirements": [],
+  "inputs": [
+    "research/direct-delivery504-global/inputs/hamming/PROTOTYPE.json"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "-O",
+        "{package}/verify.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Pinned P112 input, six-clique scalar-rank certificate, all required zeros, full binary Gram matrix and rank-nine upper bounds, seven corruption controls. The general-field and block-rank arguments are human proofs in README."
+    }
+  ]
+}

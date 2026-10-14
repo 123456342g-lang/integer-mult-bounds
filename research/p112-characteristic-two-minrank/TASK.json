@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "task_id": "complex-new-helper-inventory",
+  "priority_revision": 3,
+  "base_commit": "0b1cccf86e2f5132ed286a26ef0a681a495740ea",
+  "original_card": {
+    "id": "complex-new-helper-inventory",
+    "question": "Can a new local cost interface change the deficit-to-recursive-cost ratio beyond current packing?",
+    "starting_points": [
+      "research/complex-local-word-ceiling/README.md",
+      "research/heterogeneous-owner-assembly/README.md",
+      "certificates/selected-result.json"
+    ],
+    "methods": [
+      "Propose a changed helper inventory and derive an optimistic exact moment.",
+      "Design a small completed instance and independently verify its endpoint and rank bill."
+    ],
+    "acceptance_gate": "A new physically realizable contract outside the frozen catalogue whose per-call profile, screened with ceiling.ceiling(), beats the selected word's packing ceiling; a lower cap does not establish identical circuitry or order attainable optima, and is insufficient to pass the stronger-budget target under this model.",
+    "first_step": {
+      "command": [
+        "python3",
+        "-B",
+        "research/complex-local-word-ceiling/verify.py"
+      ],
+      "expected": "PASS_COMPLEX_LOCAL_WORD_CEILING",
+      "inspect": "Read the selected word's per-call local profile, its packing ceiling and the lever table; run levers.py for the ideal budget of the lever you target.",
+      "scope": "Positive control and planning budget only; this is not a new construction or full cold replay."
+    },
+    "first_experiment": "Before any synthesis, write the candidate per-call local profile (and centre charge / unpaid coordinates if changed) and screen it with ceiling.ceiling(); reject it if even the ideal ceiling does not beat the selected word's by your stated margin.",
+    "bottleneck_link": "Packing of the selected word is capped at +0.87% (ceiling model); only a lower local excess spend or a changed coverage law raises the cap.",
+    "allowed_variations": [
+      "Narrow to one changed boundary or helper type with explicit counts.",
+      "If the coverage law, template or guard changes, derive an applicable fully charged replacement bound instead of applying the incumbent ceiling outside its scope."
+    ],
+    "scope_change_triggers": [
+      "Mixing only providers already inside the pinned catalogue."
+    ],
+    "overlap_terms": [
+      "helper inventory",
+      "heterogeneous-owner",
+      "mutable leaver"
+    ]
+  },
+  "scope_status": "changed",
+  "actual_scope": "Prove the minimum rank of arbitrary, possibly asymmetric fitting matrices for the pinned P112 required-zero graph over every characteristic-two field, with an explicit small certificate and independent checker.",
+  "scope_change_reason": "The constructive helper-inventory investigation raised a necessary rank-eight label premise. This package isolates its exact obstruction as a side result; it does not supply a changed helper inventory.",
+  "bottleneck_link": "Excludes replacing the fixed P112 nine-coordinate fitting labels by eight coordinates over any characteristic-two extension field, even with different source and target labels. Changed graphs, block interfaces, and complete suppliers require separate work; no kappa improvement follows.",
+  "budget_minutes": 75,
+  "stop_rule": "Stop this side-result investigation after a source-pinned finite certificate, an elementary proof over every characteristic-two field, independent replay and explicit scope/attribution checks.",
+  "outcome": "completed",
+  "evidence": "Six eight-cliques use 17 vertices and have odd incidence exactly at adjacent vertices 0 and 1. The independent standard-library verifier checks all 2912 required-zero pairs, the complete binary Gram matrix, rank-nine upper bounds, the symbolic scalar contradiction and seven corruption controls. README gives the universal proof and a separately reviewed block-rank corollary.",
+  "author": "Thiago, with OpenAI GPT-6 Astra and Codex assistance",
+  "ai_assistance": "Substantial OpenAI GPT-6 Astra and Codex assistance was used for mathematical exploration, independent checking, literature search, implementation and packaging.",
+  "open_questions": [
+    {
+      "question": "Can a changed port graph or genuinely block-valued label interface improve a complete paid supplier budget?",
+      "why_it_matters": "The scalar rank-eight premise for this exact graph is closed. The block corollary gives only normalized rank at least 25/3, not nine, and does not price a supplier.",
+      "first_step": "Write the changed graph or block constraints and derive a complete optimistic paid budget before constructing a circuit.",
+      "blocked_by": "No compatible native word, restoration/phase proof or global owner invoice for such a changed interface is supplied here."
+    }
+  ],
+  "coordination": {
+    "discussion": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1713",
+    "overlap_checked_at": "2026-10-14T08:19:31.840748+00:00",
+    "coverage": {
+      "open_prs": {
+        "fetched_at": "2026-10-14T08:18:08.249593+00:00",
+        "complete_pagination": true,
+        "records": 418
+      },
+      "discussions": {
+        "fetched_at": "2026-10-14T08:19:31.759476+00:00",
+        "complete_pagination": true,
+        "records": 371
+      }
+    },
+    "nearest_overlap": {
+      "pr": 1471,
+      "head": "3695ad16e7bc4c0f6248a9e5a64fc069fa096733",
+      "difference": "PR1471 audits odd-characteristic portability of a pinned P112 tensor argument; this package proves a lower bound for all fitting matrices over every characteristic-two field."
+    }
+  },
+  "prior_art": [
+    {
+      "url": "https://arxiv.org/abs/1009.1195",
+      "description": "Leung, Mancinska, Matthews, Ozols and Roy, Theorem 9 and section 4: known rank-nine symplectic upper construction; graph convention explained in README."
+    }
+  ]
+}
