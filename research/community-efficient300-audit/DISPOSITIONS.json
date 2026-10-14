@@ -1905,20 +1905,24 @@
       },
       "reviewed_head": "99d4f42f7cfe5f60d14316ef18e9455c38eaa290",
       "current_head": "99d4f42f7cfe5f60d14316ef18e9455c38eaa290",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/frontier1042-lec-parallel"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "6a15412cf323b6189bd052230300d41787dfa2f4",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1151"
+      },
       "scope": "Opt-in leaver layer-end parallel control runner; exact mutation coverage and pinned reasons must finish before accepting the claimed complete comparison.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient300-audit/packets/1151.json",

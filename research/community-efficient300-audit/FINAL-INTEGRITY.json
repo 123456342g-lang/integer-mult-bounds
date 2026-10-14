@@ -1,13 +1,13 @@
 {
-  "accepted": 67,
-  "pending": 33,
-  "changed_files_checked": 927,
+  "accepted": 69,
+  "pending": 31,
+  "changed_files_checked": 949,
   "shared_additive_resolutions": [
     {
       "number": 1110,
       "path": "docs/research/pr-ledger.json",
       "source_blob": "9399f89cad023e50d88c3f2ab8cfe7635887dccb",
-      "final_blob": "9e505e91040d4958f0d5ff1442ec7b4599d48acd",
+      "final_blob": "788ac99940bedf717945d0d22a55905daaddbd7c",
       "resolution": {
         "number": 1110,
         "path": "docs/research/pr-ledger.json",
@@ -21,7 +21,7 @@
       "number": 1110,
       "path": "docs/research/pr-ledger.md",
       "source_blob": "28ddf1a46a54e9fdecfaaade5df41ca6e355ccc3",
-      "final_blob": "cee0feeaa9b746e4da0bef5ae6605c8b567e61ea",
+      "final_blob": "0a133afd3afb9449350e66f633a7f6620448b15b",
       "resolution": {
         "number": 1110,
         "path": "docs/research/pr-ledger.md",
@@ -80,7 +80,7 @@
       "number": 1181,
       "path": "CONTRIBUTORS.md",
       "source_blob": "bc782d15a9083d365dd62ddc094683c93e020270",
-      "final_blob": "fca5ff1294fb9560802a7c27fbbdf761a1169f1d",
+      "final_blob": "b880608e3ce2f20c8d74e5632a122cc974671b6a",
       "resolution": {
         "number": 1181,
         "path": "CONTRIBUTORS.md",
@@ -96,7 +96,7 @@
       "number": 1190,
       "path": "docs/research/pr-ledger.md",
       "source_blob": "bb856b2a16e25fed204a733cb9eabc566558a4ba",
-      "final_blob": "cee0feeaa9b746e4da0bef5ae6605c8b567e61ea",
+      "final_blob": "0a133afd3afb9449350e66f633a7f6620448b15b",
       "resolution": {
         "number": 1190,
         "path": "docs/research/pr-ledger.md",
