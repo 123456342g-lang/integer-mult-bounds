@@ -13,12 +13,12 @@
       "research/jp8-direct-small-integers/recheck_fraction.py"
     ]
   ],
-  "status": "budget_deferred",
+  "status": "passed",
   "exit_codes": [
     0,
-    null
+    0
   ],
-  "seconds": 203.18,
+  "seconds": 74.073,
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
   "python": "Python 3.12.11",
   "input_sha256": {
@@ -310,6 +310,6 @@
     "research/community-k492-audit/pr626/replay/mixed-global/base/providers/jp8/SCALAR-FRAME-AUDIT.json": "3ff147ad8378bc356970868c69b422febfcbe018515a2d8de5db59581f1b614e",
     "research/community-k492-audit/pr626/replay/mixed-global/base/providers/jp8/WRAPPER-CHECKS.json": "195b51459f2d42650cc43d251bd9f1a58ad6bd2f27bb6f1bac98c2198ed52ff8"
   },
-  "log_sha256": "2d786a1193d4f27a7d27ce13c321fed871534ac5c913fb5dee5cb06875f7dd85",
+  "log_sha256": "d3bd0403e82e2b0e19572ca6887285897ed43445905dc39353181be11d60d997",
   "scope": "Independent/corruption/native supplements at the declared package scope; no full multiplication theorem verification."
 }

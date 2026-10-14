@@ -12,3 +12,6 @@ Ran 6 tests in 7.140s
 OK
 ['/tmp/pr-efficient200-venv/bin/python', '-B', 'research/jp8-direct-small-integers/recheck_fraction.py']
 PASS_FRACTION_CONTROLS endpoint_mutations=4 prefix_or_cost_mutations=3
+PASS_FRACTION_FORWARD macros=22693 columns=725 saved=2848
+PASS_FRACTION_BACKWARD macros=22693 columns=725 saved=2848
+PASS_JP8_FRACTION_RECHECK all_program_receipt_fields=equal no_new_kappa
