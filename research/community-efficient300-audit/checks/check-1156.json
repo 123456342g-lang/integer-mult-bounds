@@ -9,7 +9,7 @@
   ],
   "python": "Python 3.12.11",
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
-  "seconds": 180.016,
+  "seconds": 900.03,
   "status": "budget_deferred",
   "exit_code": null,
   "input_sha256": {
@@ -646,6 +646,6 @@
     "research/complex-sw4-frame8/construction/layers_p6n/layer_end_controls.py": "fc58c5699ba6191c1163a3041241f6f0b619626c4462cd99bcf88210bac9e81e",
     "research/gauge44-frames-x/construction/layers_p6n/layer_end_controls.py": "fc58c5699ba6191c1163a3041241f6f0b619626c4462cd99bcf88210bac9e81e"
   },
-  "log_sha256": "352763a4eaae7ec7e5b5e2901fd4e9a4d6f29ab504fd1571171b4e0b922470e2",
+  "log_sha256": "f5b66bf5c13212a265f773519e9689dbe705981f8d45646e12bc8902803f4bdc",
   "scope": "Scoped package command only; no full supplier replay or theorem certification. Inputs are an explicit isolated snapshot; this pilot does not automatically reuse these receipts as a complete transitive cache."
 }

@@ -75,7 +75,7 @@
     "research/community-pilot20-audit/DISPOSITIONS.json": "089f96e2b88d09f577041996eba760c7a5972579e890994d4a34fdf4b9712b8d",
     "research/community-efficient100-audit/DISPOSITIONS.json": "4bdfee153177598ddb26a4d6d67085b85b6ea1b73331eab031a56b1725268bc1",
     "research/community-efficient200-audit/DISPOSITIONS.json": "57265559ef6bd7560ecf0ac457937428d1274b86bc4fda49a70af77535824eee",
-    "research/community-efficient300-audit/DISPOSITIONS.json": "b750494cee05777b06db9a495913a070693349cf243afbd37126b842d3018edb",
+    "research/community-efficient300-audit/DISPOSITIONS.json": "b5b1232b5f3580f41947cca4437c7f5726c01daf50a0ad2b9aff8d80db3c5a64",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec",
     "research/community-efficient300-audit/PARENT-EVIDENCE.json": "8d9e28ec3ece26b91ef5a297092697c341652853164477a4961c992151cec353"
   },
@@ -64216,7 +64216,7 @@
         {
           "head": "99d4f42f7cfe5f60d14316ef18e9455c38eaa290",
           "evidence": "research/community-efficient300-audit/DISPOSITIONS.json",
-          "scope": "Opt-in leaver layer-end parallel control runner; exact mutation coverage and pinned reasons must finish before accepting the claimed complete comparison.",
+          "scope": "Opt-in leaver layer-end parallel runner: five chain receipts and the T37 receipt match the pinned archives exactly after the documented path substitution; forged acceptance, wrong rejection reasons, corrupted input and changed-source controls pass. The optional fresh serial timing benchmark was not run.",
           "kind": "integration_or_partial_review"
         }
       ],
@@ -64462,7 +64462,7 @@
       "closure": null,
       "reviewed_head": "3bd6e27188b263a9b3dc1f1f41229c3989c405fd",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation.",
+      "unresolved_question": "Exactness tests passed with both Fraction constructors. The full run completed t37-u8-layer-end, 799-x4-layer-end and 741-p6n-layer-end (96 audits each), but hit the 900-second batch limit before 741-inherited-cold-end and the final EXPECTED comparison completed. Finish and retain the fourth-suite comparison plus the full deterministic-field check; no default checker change is admitted.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -64471,7 +64471,8 @@
       },
       "verification_evidence": [
         "research/community-efficient300-audit/packets/1156.json",
-        "research/community-efficient300-audit/checks/check-1156-initial.json"
+        "research/community-efficient300-audit/checks/check-1156-initial.json",
+        "research/community-efficient300-audit/checks/check-1156.json"
       ],
       "current_head_observed_in": "research/community-efficient300-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -66088,7 +66089,7 @@
       "closure": null,
       "reviewed_head": "4e392e90e3fca8f395e35d6a23644920160a9f0f",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation.",
+      "unresolved_question": "Both native mixed providers, literal owners, strict global invoice/assembly, admission mutations and independent prices passed. The 1200-second run stopped inside the inherited cold PR799/741 ancestry replay (all-native-phase-edges), so no complete admission receipt exists. Finish that ancestry and its source/coverage bindings, then admit the full package; do not infer a selected frontier from the passed local/global stages.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -66097,7 +66098,8 @@
       },
       "verification_evidence": [
         "research/community-efficient300-audit/packets/1193.json",
-        "research/community-efficient300-audit/checks/check-1193-fixture.json"
+        "research/community-efficient300-audit/checks/check-1193-fixture.json",
+        "research/community-efficient300-audit/checks/check-1193.json"
       ],
       "current_head_observed_in": "research/community-efficient300-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [

@@ -1916,7 +1916,7 @@
         "merge_commit": "6a15412cf323b6189bd052230300d41787dfa2f4",
         "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1151"
       },
-      "scope": "Opt-in leaver layer-end parallel control runner; exact mutation coverage and pinned reasons must finish before accepting the claimed complete comparison.",
+      "scope": "Opt-in leaver layer-end parallel runner: five chain receipts and the T37 receipt match the pinned archives exactly after the documented path substitution; forged acceptance, wrong rejection reasons, corrupted input and changed-source controls pass. The optional fresh serial timing benchmark was not run.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
@@ -2089,7 +2089,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation.",
+      "unresolved_question": "Exactness tests passed with both Fraction constructors. The full run completed t37-u8-layer-end, 799-x4-layer-end and 741-p6n-layer-end (96 audits each), but hit the 900-second batch limit before 741-inherited-cold-end and the final EXPECTED comparison completed. Finish and retain the fourth-suite comparison plus the full deterministic-field check; no default checker change is admitted.",
       "closure": null,
       "scope": "Opt-in source-authenticated transport arithmetic/copy adapter; retained exceptions, outputs and complete control-suite coverage are the acceptance boundary.",
       "ready_to_integrate": false,
@@ -2101,7 +2101,8 @@
       },
       "verification_evidence": [
         "research/community-efficient300-audit/packets/1156.json",
-        "research/community-efficient300-audit/checks/check-1156-initial.json"
+        "research/community-efficient300-audit/checks/check-1156-initial.json",
+        "research/community-efficient300-audit/checks/check-1156.json"
       ]
     },
     {
@@ -3352,7 +3353,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Pinned scoped execution is still pending; finish the command and compare the complete receipt before incorporation.",
+      "unresolved_question": "Both native mixed providers, literal owners, strict global invoice/assembly, admission mutations and independent prices passed. The 1200-second run stopped inside the inherited cold PR799/741 ancestry replay (all-native-phase-edges), so no complete admission receipt exists. Finish that ancestry and its source/coverage bindings, then admit the full package; do not infer a selected frontier from the passed local/global stages.",
       "closure": null,
       "scope": "Conditional \u03ba = 0.001675809683500501: mixed T37 allocation with X54 and fusions; overlapping supplier lineage requires complete native and owner admission before incorporation.",
       "ready_to_integrate": false,
@@ -3364,7 +3365,8 @@
       },
       "verification_evidence": [
         "research/community-efficient300-audit/packets/1193.json",
-        "research/community-efficient300-audit/checks/check-1193-fixture.json"
+        "research/community-efficient300-audit/checks/check-1193-fixture.json",
+        "research/community-efficient300-audit/checks/check-1193.json"
       ]
     },
     {
