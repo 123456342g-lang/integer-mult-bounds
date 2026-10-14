@@ -27,8 +27,8 @@
     "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json"
   ],
   "counts": {
-    "incorporated": 644,
-    "partially_reviewed": 56,
+    "incorporated": 648,
+    "partially_reviewed": 52,
     "superseded": 1,
     "unreviewed": 60
   },
@@ -67,7 +67,7 @@
     "research/community-reconciliation92-audit/DISPOSITIONS.json": "5dafbc374822ed60d67da35fcdb27127c71ad839acec7b68a206c5229d45ba11",
     "research/community-reconciliation-next100-audit/DISPOSITIONS.json": "de8d4f4026b86e5e59d5945d0b865de16c6886aa013451a2e3c117665bd95b51",
     "research/community-reconciliation-third100-audit/DISPOSITIONS.json": "dbd7051bd339005e1bd5c11e296965fda0e267dfc09136d9e4cf0ecb17976b89",
-    "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json": "2f9366cc6b0b93a8c4610242323ba7347ce12c3d91d6c88b9e2c318a9b6b1939",
+    "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json": "2a9613d9ff3ff5869d78b3f7f1e4d6c8c54d65f485c6d622319edc1e8308fcb0",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -29179,14 +29179,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-fourth100-audit/ARCHIVE.json",
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Completed direct replay awaits publication before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
       "reviewed_head": "3e89db7725785f8e8e172d04d1d4804f57db72f3",
@@ -29194,7 +29194,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -30114,14 +30114,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-fourth100-audit/ARCHIVE.json",
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Completed direct replay awaits publication before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
       "reviewed_head": "e850569c33ad1d5771e2f8b1c6dfe7a445396167",
@@ -30129,7 +30129,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -32216,14 +32216,14 @@
       "historical_mentions": [
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "integration_location": [
         "research/community-reconciliation-fourth100-audit/ARCHIVE.json",
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Completed direct replay awaits publication before closure.",
+      "unresolved_question": null,
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
       "reviewed_head": "6590606e733768f6a7004b3f55ae35f988ba515f",
@@ -32231,7 +32231,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
@@ -39567,13 +39567,13 @@
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "3e669dc7987cb2295a71664b77e110c0cd979a87",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Completed direct replay awaits publication before closure.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         {
