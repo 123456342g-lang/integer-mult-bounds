@@ -102,6 +102,117 @@ class OverlapTests(unittest.TestCase):
             self.assertEqual(matches[0]["kind"], "local-task")
 
 
+class OverlapPathIndexTests(unittest.TestCase):
+    """Changed-file index for open PRs (discussion 1200 request: search by path)."""
+
+    ROWS = [{"number": 7, "paths": ["docs/research/current-status.md", "README.md"], "truncated": False},
+            {"number": 8, "paths": ["research/lean-external-review/EXPLAINER.md"], "truncated": True}]
+
+    def test_path_report_exact_glob_substring_and_rejection(self):
+        prs = [{"kind": "pr", "number": 7, "title": "T", "body": "b", "url": "u7", "head": "a" * 40,
+                "updated_at": "d", "draft": False, "state": "open"}]
+        exact = overlap.path_report(prs, self.ROWS, ["docs/research/current-status.md"])
+        self.assertEqual([m["number"] for m in exact], [7])
+        self.assertEqual(exact[0]["matched_paths"], ["docs/research/current-status.md"])
+        self.assertFalse(exact[0]["truncated"])
+        # basename substring and fnmatch glob both match
+        self.assertEqual(overlap.path_report(prs, self.ROWS, ["current-status.md"])[0]["number"], 7)
+        globbed = overlap.path_report(prs, self.ROWS, ["docs/*"])
+        self.assertEqual(globbed[0]["matched_paths"], ["docs/research/current-status.md"])
+        # rejection control: no PR changed a matching path
+        self.assertEqual(overlap.path_report(prs, self.ROWS, ["TASK.json"]), [])
+        # PR metadata joined when known (with a URL fallback when the metadata
+        # snapshot is older than the file index), truncation flag preserved
+        unjoined = overlap.path_report([], self.ROWS, ["EXPLAINER.md"])
+        self.assertEqual(unjoined[0]["title"], "")
+        self.assertEqual(unjoined[0]["url"],
+                         "https://github.com/CrocSwap/integer-mult-bounds/pull/8")
+        self.assertTrue(unjoined[0]["truncated"])
+
+    def test_fetch_pr_files_paginates_and_flags_truncation(self):
+        def page(rows, more):
+            return {"repository": {"pullRequests": {
+                "pageInfo": {"hasNextPage": more, "endCursor": "next"},
+                "nodes": [{"number": n, "files": {
+                    "pageInfo": {"hasNextPage": trunc},
+                    "nodes": [{"path": p} for p in paths]}}
+                    for n, paths, trunc in rows]}}}
+        pages = [page([(1, ["a.txt", "b.txt"], False)], True),
+                 page([(2, ["c.txt", "c.txt"], True)], False)]
+        with patch.object(overlap, "graphql", side_effect=pages) as call:
+            rows = overlap.fetch_pr_files()
+        self.assertEqual(call.call_count, 2)
+        self.assertEqual(rows[0], {"number": 1, "paths": ["a.txt", "b.txt"], "truncated": False})
+        self.assertEqual(rows[1], {"number": 2, "paths": ["c.txt"], "truncated": True})
+
+    def test_fetch_pr_files_skips_unavailable_file_lists(self):
+        page = {"repository": {"pullRequests": {
+            "pageInfo": {"hasNextPage": False, "endCursor": None},
+            "nodes": [{"number": 376, "files": None},
+                      {"number": 9, "files": {"pageInfo": {"hasNextPage": False},
+                                              "nodes": [{"path": "ok.md"}, None]}}]}}}
+        with patch.object(overlap, "graphql", return_value=page):
+            rows = overlap.fetch_pr_files()
+        self.assertEqual(rows[0], {"number": 9, "paths": ["ok.md"], "truncated": False})
+        # An unavailable file list is recorded as empty and flagged, never silently trusted.
+        self.assertEqual(rows[1], {"number": 376, "paths": [], "truncated": True})
+
+    def test_fetch_pr_files_retries_transient_page_failures(self):
+        page = {"repository": {"pullRequests": {
+            "pageInfo": {"hasNextPage": False, "endCursor": None},
+            "nodes": [{"number": 1, "files": {"pageInfo": {"hasNextPage": False},
+                                              "nodes": [{"path": "a.md"}]}}]}}}
+        boom = subprocess.CalledProcessError(1, "gh api graphql")
+        with patch.object(overlap, "graphql", side_effect=[boom, boom, page]) as call, \
+             patch.object(overlap.time, "sleep") as slept:
+            rows = overlap.fetch_pr_files()
+        self.assertEqual(rows, [{"number": 1, "paths": ["a.md"], "truncated": False}])
+        self.assertEqual(call.call_count, 3)
+        self.assertEqual(slept.call_count, 2)
+        with patch.object(overlap, "graphql", side_effect=[boom] * 4), \
+             patch.object(overlap.time, "sleep"):
+            with self.assertRaises(subprocess.CalledProcessError):
+                overlap.fetch_pr_files()
+
+    def test_pr_files_fetched_only_when_requested_and_cached(self):
+        rows = [{"number": 3, "paths": ["x.md"], "truncated": False}]
+        with tempfile.TemporaryDirectory() as tmp:
+            cache = Path(tmp) / "cache.json"
+            with patch.object(overlap, "gh_json", return_value=[[]]), \
+                 patch.object(overlap, "fetch_discussions", return_value=[]), \
+                 patch.object(overlap, "fetch_pr_files", return_value=rows) as files_fetch:
+                # Existing invocations pay nothing: pr_files is not fetched or warned about.
+                snapshot, warnings = overlap.remote_snapshot(cache)
+                self.assertFalse(warnings)
+                self.assertNotIn("pr_files", snapshot["sources"])
+                self.assertEqual(files_fetch.call_count, 0)
+                # A path query fetches it once and reuses the cache on the next query.
+                first, warnings = overlap.remote_snapshot(cache, need_files=True)
+                self.assertFalse(warnings)
+                self.assertEqual(first["sources"]["pr_files"]["records"], rows)
+                second, _ = overlap.remote_snapshot(cache, need_files=True)
+                self.assertEqual(files_fetch.call_count, 1)
+                self.assertEqual(second["sources"]["pr_files"]["records"], rows)
+            with patch.object(overlap, "fetch_pr_files", side_effect=AssertionError("offline network request")):
+                _, warnings = overlap.remote_snapshot(cache, offline=True, need_files=True)
+                self.assertTrue(any("pr_files" in w for w in warnings))
+
+    def test_pr_files_refresh_failure_keeps_old_records(self):
+        rows = [{"number": 5, "paths": ["keep.md"], "truncated": False}]
+        with tempfile.TemporaryDirectory() as tmp:
+            cache = Path(tmp) / "cache.json"
+            with patch.object(overlap, "gh_json", return_value=[[]]), \
+                 patch.object(overlap, "fetch_discussions", return_value=[]), \
+                 patch.object(overlap, "fetch_pr_files", return_value=rows):
+                overlap.remote_snapshot(cache, need_files=True)
+            with patch.object(overlap, "gh_json", return_value=[[]]), \
+                 patch.object(overlap, "fetch_discussions", return_value=[]), \
+                 patch.object(overlap, "fetch_pr_files", side_effect=ValueError("API unavailable")):
+                snapshot, warnings = overlap.remote_snapshot(cache, refresh=True, need_files=True)
+            self.assertTrue(any("pr_files" in w and "refresh failed" in w for w in warnings))
+            self.assertEqual(snapshot["sources"]["pr_files"]["records"], rows)
+
+
 class PackageTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
