@@ -167,8 +167,9 @@ Base main: `680967accfd4311f3241dc154e1f434869747b43`. Selector nonce
 `edb6b50cf28c576de3f77fc578cfdfb4`, priority revision 2. The concrete refinement,
 overlap coverage and advisory [claim #1579](https://github.com/CrocSwap/integer-mult-bounds/discussions/1579)
 are recorded in [TASK.json](TASK.json). [SOURCES.json](SOURCES.json) binds the
-main inputs; [PREDECESSORS.json](PREDECESSORS.json) records pending exact heads.
-No pending executable is imported. Selected cold replay, supplier adoption,
+main inputs; [PREDECESSORS.json](PREDECESSORS.json) records exact reference heads
+and their publication status.
+No predecessor executable is imported. Selected cold replay, supplier adoption,
 physical owner/frame/precision/tape admission, outer all-size transfer,
 proof-assistant verification and new moment/kappa are outside this result.
 
@@ -195,3 +196,12 @@ shhxera/CubeJerry's PR889 and Chafik Boukhalfa's PR628 for the retained batching
 and commutator lineage. The classical affine-basis/even-subset argument is not
 claimed as a new general technique. Selected Rohan Arun/Jeremy Kothe
 construction credit and cumulative repository attribution are preserved.
+
+Submission was resumed on main `0b1cccf86e2f5132ed286a26ef0a681a495740ea` after PR1340/1370 were merged
+unchanged. Revision-3 guidance was inspected; AGENTS.md says to retain an
+already assigned task. The mathematical inputs and selected record are
+unchanged. The updated registered replay passes. Final resumption overlap
+covers 542 open PRs and
+528 Discussion/comment/reply records;
+PR1770's read-only unequal source tariff and PR1811's hyperplane families have
+different contracts. Exact scopes and freshness limits are in TASK.json.

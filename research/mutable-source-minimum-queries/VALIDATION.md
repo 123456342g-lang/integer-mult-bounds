@@ -59,7 +59,7 @@ outer all-size compiler or analytic obligations, global unequal-price optimum,
 optimal X count at six Q, Lean or a complete multiplication theorem. No selected
 record, upstream input, frozen archive or existing package is changed.
 
-Submission was fast-forwarded to refreshed main `1f327c6f3e3a35271c5c141d381b540bab8ad005`. The original
+At the initial pre-resumption staging, the branch was fast-forwarded to main `1f327c6f3e3a35271c5c141d381b540bab8ad005`. The original
 guidance, priority catalogue, selected record, replay helper and every consumed
 main input are byte-identical to the assignment base. SOURCES.json retains
 that exact historical assignment, while TASK.json records the submission base.
@@ -71,3 +71,16 @@ warnings describe consuming the separately refreshed live snapshot, and are
 preserved in TASK.json; this is bounded overlap evidence, not proof of novelty.
 
 Generated text uses explicit LF newlines on every platform. The artifact hashes above bind the committed LF bytes; staging and native Git blob checks agree.
+
+After the donor resumed, main had advanced to `0b1cccf86e2f5132ed286a26ef0a681a495740ea`. It was merged
+into this contribution branch without modifying proof inputs. The catalogue
+and autoresearch guidance are revision 3; the existing assigned revision-2
+card is retained per AGENTS.md. The replay helper also changed, so the complete
+registered Python 3.12.14 package replay and selected-record check were rerun
+on the updated base and pass. The PR diff still adds only this package.
+PR1340/1370 are now merged at their exact pinned heads; PR1524 is still open
+and unchanged. Resumed overlap has complete pagination of
+542 open PRs including drafts and
+528 Discussion/comment/reply records,
+plus 873 local notes/ledger records. These observations
+supersede the earlier snapshot for submission; all snapshots remain scoped.

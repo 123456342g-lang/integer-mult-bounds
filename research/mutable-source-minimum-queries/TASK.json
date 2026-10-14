@@ -115,7 +115,7 @@
     "complete_pagination": true,
     "limits": "PR bodies/titles, Discussion bodies/comments/replies, local package notes/ledger; no all-diff or nested-file search and no novelty guarantee. Helper was run offline against the separately refreshed authenticated API snapshot."
   },
-  "submission_base": "1f327c6f3e3a35271c5c141d381b540bab8ad005",
+  "submission_base": "0b1cccf86e2f5132ed286a26ef0a681a495740ea",
   "overlap_final": {
     "searched_at": "2026-10-14T03:33:49.898471+00:00",
     "coverage": {
@@ -180,5 +180,80 @@
       "1370": "8a9b633879b5bfe03400a6c09c31bae7568e6261",
       "1524": "5c1f39788a0fc669b7e37e27785c63e85788c350"
     }
+  },
+  "initial_submission_base": "1f327c6f3e3a35271c5c141d381b540bab8ad005",
+  "resumed_guidance": {
+    "priority_revision": 3,
+    "decision": "Continue the already assigned revision-2 scope per AGENTS.md; no reroll. This is an explicitly scoped abstract boundary result, not an incumbent complex profile or new kappa claim.",
+    "changes": "Catalogue/autoresearch diagnosis and replay helper updated; selected record and all mathematical live inputs unchanged. The updated replay hook is run before publication."
+  },
+  "overlap_resumed": {
+    "searched_at": "2026-10-14T13:27:44.318744+00:00",
+    "coverage": {
+      "open_prs": {
+        "fetched_at": "2026-10-14T13:22:58.980709+00:00",
+        "complete_pagination": true,
+        "records": 542
+      },
+      "discussions": {
+        "fetched_at": "2026-10-14T13:23:59.323639+00:00",
+        "complete_pagination": true,
+        "records": 528
+      }
+    },
+    "local_records": 873,
+    "matches": 44,
+    "terms": [
+      "minimum-query",
+      "minimum queries",
+      "96 readouts",
+      "6 Q",
+      "connector-alphabet-change",
+      "universal connector",
+      "source-toggle",
+      "connector alphabet",
+      "universal-connector-boundary"
+    ],
+    "helper_warnings": [
+      "open_prs: offline; cached data may miss current changes",
+      "discussions: offline; cached data may miss current changes"
+    ],
+    "limits": "Remote PR scope is open PRs including drafts. Closed work is searched through local READMEs, TASK metadata and ledger only. No code diffs or arbitrary package files are searched. Recheck relevant heads before submission.",
+    "related_new_work": [
+      {
+        "pr": 1770,
+        "head": "caae2d1a0b4497fbd5a7cd2d057d9a9b099f8873",
+        "difference": "Read-only connector with unequal source-leaf prices; explicitly distinguishes this expired claim. No mutable-source-X alphabet or all-n minimum-Q/readout endpoint."
+      },
+      {
+        "pr": 1811,
+        "head": "7ac80c37c843cdb48f48772dc46817d5f591fd3e",
+        "difference": "Read-only fixed alphabet and affine parity-hyperplane output subsets, rather than every nonzero mask with temporarily mutable sources."
+      }
+    ],
+    "exact_reference_head_statuses": [
+      {
+        "number": 1340,
+        "state": "closed",
+        "merged": true,
+        "head_sha": "f1dcab36fa63f8226f70dd07e26f44afb9d39b51",
+        "merge_commit_sha": "a5d4f08ac102d1a6da301d89379c75285eca680e"
+      },
+      {
+        "number": 1370,
+        "state": "closed",
+        "merged": true,
+        "head_sha": "8a9b633879b5bfe03400a6c09c31bae7568e6261",
+        "merge_commit_sha": "699fa3cbafefbd7734763fbd66a7391847247025"
+      },
+      {
+        "number": 1524,
+        "state": "open",
+        "merged": false,
+        "head_sha": "5c1f39788a0fc669b7e37e27785c63e85788c350",
+        "merge_commit_sha": "22251bd665e846d469690c6562544ae754fdf2c9"
+      }
+    ],
+    "conclusion": "No exact same endpoint found in the searched records; no novelty guarantee. Both fresh pagination and the helper's offline-cache warning are retained."
   }
 }
