@@ -613,6 +613,8 @@ Selected progression: Jeremy Kothe and Rohan Arun; T16 controller: Hao Yan. Inde
 
 The [92-PR review](docs/research/community-reconciliation92-review.md) records individual contributions, replays, limitations and retained source trees. This includes parallel improvements, formal arithmetic, reproducibility tools and negative research; credit does not imply every historical claim was accepted.
 
+**Divjot Singh Manchanda (@djsmanchanda)** supplied [#99's nondegenerate readout saturation](https://github.com/CrocSwap/integer-mult-bounds/pull/99), retained in **Rohan Arun's [#103 signed/balanced integration](https://github.com/CrocSwap/integer-mult-bounds/pull/103)**. The [source-retention receipt](research/pr99-retention-seed99/README.md) authenticates all 46 original files and reconciles the saved 177,100-singleton profile reduction. This preserves individual mechanism credit without changing historical review dispositions or claiming a fresh physical replay.
+
 - **DaysSky (@DaysSky)**: [#162](https://github.com/CrocSwap/integer-mult-bounds/pull/162).
 - **Dominik Scholz (@DominikScholz)**: [#22](https://github.com/CrocSwap/integer-mult-bounds/pull/22), [#27](https://github.com/CrocSwap/integer-mult-bounds/pull/27), [#33](https://github.com/CrocSwap/integer-mult-bounds/pull/33), [#35](https://github.com/CrocSwap/integer-mult-bounds/pull/35), [#38](https://github.com/CrocSwap/integer-mult-bounds/pull/38), [#63](https://github.com/CrocSwap/integer-mult-bounds/pull/63), [#68](https://github.com/CrocSwap/integer-mult-bounds/pull/68), [#81](https://github.com/CrocSwap/integer-mult-bounds/pull/81).
 - **Joel Pulikkan (@GamingPuzzled)**: [#125](https://github.com/CrocSwap/integer-mult-bounds/pull/125).
