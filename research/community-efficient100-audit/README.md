@@ -2,7 +2,7 @@
 
 Frozen selection: **100 open, non-draft PRs #697–#814**, excluding previously disposed work. Baseline `0a201997`. Full Git diffs and source heads, not the truncated GitHub file list, determine coverage.
 
-**83 ready for scoped incorporation; 83 observed merged; 17 have explicit follow-ups.** No selected κ change. Local cost savings are not summed across incompatible proposals, and the original all-size/compiler/analytic assumptions remain.
+**83 merged to main; 17 remain open with explicit follow-ups.** No selected κ change. Local cost savings are not summed across incompatible proposals, and the original all-size/compiler/analytic assumptions remain.
 
 Original author commits, notices, predecessor credits and assistance disclosures are preserved. Companion notes and negative results are legitimate contributions; integration does not promote them to supplier certificates.
 
@@ -131,3 +131,5 @@ The 180-second initial ceiling is a triage budget. A timeout means unfinished ex
 ## Open next questions
 
 Finish the explicit proof/construction/interface holds; resolve #725/#732 shared package naming before combining them; replay native C++ coverage with Boost; finish the three bounded jobs. The standing queue goal is to continue this process in batches of 100 through PR #1600, without reopening unchanged completed dispositions.
+
+All 100 PRs received a source-bound review/follow-up comment; links are retained in `COMMENT-RECEIPTS.json`. The next queue cursor is recorded separately in `QUEUE-CURSOR.json` and is provisional, not a review.

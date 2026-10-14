@@ -10,5 +10,8 @@
   "initial_command_budget_seconds": 180,
   "primary_check_workers": 4,
   "token_usage": null,
-  "limits": "No matched control batch or token telemetry. Source identity is not an automatic transitive scientific cache; all accepted items have their own scoped evidence."
+  "limits": "No matched control batch or token telemetry. Source identity is not an automatic transitive scientific cache; all accepted items have their own scoped evidence.",
+  "completion_wall_seconds": 1294.6,
+  "published_merge_groups": 5,
+  "scoped_github_comments": 100
 }
