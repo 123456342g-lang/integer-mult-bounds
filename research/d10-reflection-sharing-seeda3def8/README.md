@@ -57,6 +57,7 @@ Expected markers include `PASS_D10_INVERSE_ROTATION_MINIMUM` and `PASS_D10_INDEP
 
 - Accepted cycle seed: `a3def8e7b944810f5d933bfa65cba990`; track `bit-mechanisms`; task `bit-new-register-model`; priority revision 3.
 - Exact base commit: `0b1cccf86e2f5132ed286a26ef0a681a495740ea`.
+- Focused contribution PR: [#1953](https://github.com/CrocSwap/integer-mult-bounds/pull/1953), open at handoff from head `4f3bdf7c` (the package and overlap record are the entire change).
 - Selected record SHA-256: `10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32`.
 - Selected `kappa`: `836330098538459/500000000000000000`; the baseline checker prints `PASS_RESEARCH_BASELINE_BINDINGS_ONLY`, not a cold selected-construction replay.
 - The selected record points to review `docs/research/community-batch1099-review.md`, source manifest `research/community-frontier1094-audit/SELECTED-SOURCE.json`, certificate `research/community-frontier1094-audit/ASSEMBLY.json` (SHA-256 `1122cb3a575f8c788345fc1bf4c108ac7c3250fb81a5988671f5eb04b3ab3045`), and reproduction target `make frontier1094-verify`; these are pinned in `SOURCES.json`.

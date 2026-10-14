@@ -116,7 +116,12 @@
     "certificate_sha256": "1122cb3a575f8c788345fc1bf4c108ac7c3250fb81a5988671f5eb04b3ab3045",
     "reproduce": "make frontier1094-verify"
   },
-  "pull_request": null,
+  "pull_request": {
+    "number": 1953,
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1953",
+    "status": "open",
+    "head": "4f3bdf7c"
+  },
   "external_discussions": [
     {
       "discussion": 1929,
@@ -133,5 +138,14 @@
     "warnings": [],
     "nearest_new_result": "https://github.com/CrocSwap/integer-mult-bounds/pull/1941",
     "distinction": "PR #1941 proves all even rotation orders and explicitly excludes odd periods; this package treats the order-five rotation pair in D10."
+  },
+  "handoff": {
+    "result": "Exact minimum four for the D10 order-five inverse-rotation pair with two paid reflections on three registers.",
+    "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/1953",
+    "remaining_obligations": [
+      "Registered Python 3.12 replay and hosted CI",
+      "No native supplier/compiler or physical interface mapping",
+      "No conditional-moment or kappa consequence"
+    ]
   }
 }
