@@ -82,7 +82,7 @@ refresh was rate-limited, so the cached claim snapshot remains older. Claim
 posting also hit that GraphQL rate limit; the local card and exact refresh
 record are in [CLAIM.md](CLAIM.md).
 
-The result is a **new local mechanism**, not an assembled supplier, a
+Submitted for review in [PR #1717](https://github.com/CrocSwap/integer-mult-bounds/pull/1717), this is a **new local mechanism**, not an assembled supplier, a
 conditional theorem bound, or a change to the selected frontier. It assumes a
 rank-eight child with the additive dirty-target contract and identical source
 inputs across the two outputs. It does not provide an implementation of that
