@@ -121,14 +121,15 @@ package does not claim a new general rank method and imports no predecessor
 code. PR #1705's GL2 coordinate-SWAP targets and PR #1711's AGL2 affine targets
 are also distinct.
 
-The live PR scan used REST at 2026-10-14 08:00 UTC and found no S4
-double-transposition claim. The overlap helper could not refresh its PR cache
-because the installed `gh api` rejects `--slurp`; the fresh Discussion fetch
-was blocked by the GitHub GraphQL rate limit. Its latest complete cached scan
-contained 351 records at 07:28 UTC and showed no S4 `(2,2)` target claim. A
-fresh claim post was unavailable, so the complete local claim is in
-[CLAIM.md](CLAIM.md). It records the exact seed, catalogue revision, base,
-selected-record hash, scope, competitors and expiry.
+The final PR scan used REST at 2026-10-14 08:09 UTC and covered 415 open PRs;
+the only S4 adjacent-transposition match was PR #1720's 4-cycle endpoint, and
+no double-transposition claim appeared. The overlap helper could not refresh
+its own PR cache because the installed `gh api` rejects `--slurp`, so the REST
+census was run directly. A fresh complete Discussion fetch at 08:09 UTC covered
+365 records and showed no S4 `(2,2)` target claim. The completed finding was
+posted to [coordination Discussion #1163](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18919260).
+The full local claim is in [CLAIM.md](CLAIM.md), including the exact seed,
+catalogue revision, base, selected-record hash, scope, competitors and expiry.
 
 This local model is not physically mapped to the selected bit supplier. The
 selected baseline remains complex-primitive-bound; physical address
