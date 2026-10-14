@@ -658,3 +658,31 @@ frontier1094-verify: selected-record-check
 .PHONY: verify-parallel
 verify-parallel:
 	python3 scripts/verify_parallel.py
+
+.PHONY: t21-interface-budget-verify
+t21-interface-budget-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/t21-interface-budget.XXXXXX"); \
+	python3 -B research/t21-interface-budget/verify.py --work "$$work/replay"
+
+
+# Research note: restoration deferral and coverage identity on the selected T37 payload (no new kappa).
+.PHONY: t37-restoration-deferral-verify
+t37-restoration-deferral-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-t37-restoration.XXXXXX"); \
+	python3 -B research/t37-restoration-deferral/verify.py --work "$$work/replay" && \
+	python3 -B -m unittest discover -s research/t37-restoration-deferral -p test_package.py
+
+.PHONY: frontier1042-invoice-audit-verify
+frontier1042-invoice-audit-verify:
+	python3 -I -B research/frontier1042-invoice-audit-seed81/verify.py
+	cd research/frontier1042-invoice-audit-seed81 && python3 -B -m unittest test_package -v
+
+.PHONY: hpe-audit-fast-verify hpe-audit-fast-crosscheck-lec
+hpe-audit-fast-verify:
+	python3 -I -B research/hpe-audit-fast-seed93/verify.py
+	cd research/hpe-audit-fast-seed93 && python3 -B -m unittest test_package -v
+
+# Opt-in, about 2 minutes: all 96 trials of the selected chain's lec-p6n step, each run by both audits.
+hpe-audit-fast-crosscheck-lec:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/hpe-audit-fast.XXXXXX"); \
+	python3 -B research/hpe-audit-fast-seed93/run_lec.py --archived p6n --pins LEC-REASON-PINS-STACK --out "$$work/lec-p6n" --mode crosscheck

@@ -97,9 +97,36 @@ starting points are historical evidence, not promises of unexplored territory.
 ## 2. Where effort is most useful
 
 The October 13, 2026 assessment is that many local improvements leave the paid
-recursive profile unchanged, or improve a nonbinding supplier. Stronger packing
-still helps, but a large jump needs a changed mechanism or interface. Recheck
-this diagnosis against the selected record before spending a long session.
+recursive profile unchanged, or improve a nonbinding supplier. Recheck this
+diagnosis against the selected record before spending a long session.
+
+**Revision 3 diagnosis (scoped arithmetic independently replayed for #1240 and #1264).** On the binding complex side, a ≈ D/E:
+
+- **D is small.** Each call has about 99.6 live families. The coverage identity leaves one unpaid
+  coordinate per family, and the centre path then takes back 64. Only about 35.6 of 7,232 paid
+  coordinates per call remain unpaid.
+- **E comes from small children.** The effective child rank is about 3.9, and rank-1 children are
+  about half of the recursive cost.
+
+[The packing ceiling](research/complex-local-word-ceiling/README.md) caps every hosting, owner or
+idle repacking of the selected word at **+0.87%** (κ < 0.001687203). The open-claim census in #1264
+finds no covered claim able to pass κ ≈ 0.0016873 by packing. Its leading claims use paid local profiles with
+*lower* relaxation caps than the selected profile; this does not compare attainable packing optima.
+
+A target-scale gain must change the structure. Ideal one-at-a-time budgets (`levers.py`):
+
+| Lever | Ideal primitive-saving ceiling multiplier |
+|---|---:|
+| Centre path free | 2.80× |
+| Centre path shared by two calls | 1.90× |
+| Rank-16 local children | 2.31× |
+| Two unpaid coordinates per family | 3.77× |
+| Centre free and rank-16 combined | 6.5× (κ cap ≈ 0.0109) |
+
+These are favorable relaxations, not expected gains. Screen any changed local profile with
+`ceiling.ceiling()` before building a network when its coverage law and halving guard apply.
+For a changed interface outside those hypotheses, state the replacement model and derive its own
+fully charged optimistic moment bound; do not force it into the incumbent calculator.
 
 For a supplier with width `m`, role count `W`, and `n_r` children of rank `r`,
 price the **whole completed construction**, including its additional charges:
@@ -126,13 +153,13 @@ probabilities; the catalogue is the machine-readable source for assignments.
 | Track | Share | Useful outcome |
 |---|---:|---|
 | Bit mechanisms (`bit-mechanisms`) | 20% | A changed decoder/frame contract with a full paid budget |
-| Complex mechanisms (`complex-mechanisms`) | 20% | A new decoding or helper-boundary mechanism |
-| Recursive interfaces (`recursive-interfaces`) | 15% | Real eliminated work across a legal boundary |
+| Complex mechanisms (`complex-mechanisms`) | 20% | A larger-rank decoder or helper inventory whose screened ceiling beats the selected word's |
+| Recursive interfaces (`recursive-interfaces`) | 20% | A shared or smaller centre path, a changed coverage law, or other real eliminated boundary work |
 | Adversarial audit (`adversarial-audit`) | 15% | A specific missing implication or exact counterexample |
 | Independent verification/formalization (`independent-verification`) | 10% | A separately implemented check or scoped formal lemma |
-| Verifier engineering (`verifier-engineering`) | 10% | Faster, reproducible checks with unchanged coverage |
+| Verifier engineering (`verifier-engineering`) | 8% | Faster, reproducible checks with unchanged coverage |
 | Consolidation (`consolidation`) | 5% | Evidence-backed overlap, attribution or navigation repair |
-| Incumbent optimization (`incumbent-optimization`) | 5% | A genuinely new, fully priced incremental improvement |
+| Incumbent optimization (`incumbent-optimization`) | 2% | A genuinely new, fully priced improvement, reported against its packing cap |
 
 Before reopening a negative result, name the hypothesis you change. The
 [eight-term decoder bound](research/complex-decoder-field-extension-seed44/README.md),
@@ -246,6 +273,11 @@ bindings; a local experiment may be submitted as a clearly scoped partial result
 Do not run every historical replay just to change documentation. Do not run
 artifact-regenerating suites concurrently in the same worktree. Cache immutable,
 source-bound evidence only when coverage and invalidation remain explicit.
+
+A new complex κ claim within this model should report its paid local profile's packing cap
+(`research/complex-local-word-ceiling/ceiling.py`) and the fraction of it realized.
+For claims outside the model, state which hypothesis changes and give an appropriate replacement bound.
+Matching rank profiles alone does not establish identical circuits or a purely packing-based implementation change.
 
 Before submission, refresh the overlap check. Keep one focused PR with the task
 card, precise delta, exact heads, commands, evidence, limitations and credit.

@@ -170,6 +170,12 @@ def build():
         'research/community-reconciliation-next100-audit/DISPOSITIONS.json',
         'research/community-reconciliation-third100-audit/DISPOSITIONS.json',
         'research/community-reconciliation-fourth100-audit/DISPOSITIONS.json',
+        'research/community-pilot20-audit/DISPOSITIONS.json',
+        'research/community-efficient100-audit/DISPOSITIONS.json',
+                        'research/community-efficient200-audit/DISPOSITIONS.json',
+        'research/community-efficient300-audit/DISPOSITIONS.json',
+                        'research/community-efficient400-audit/DISPOSITIONS.json',
+        'research/community-efficient500-audit/DISPOSITIONS.json',
     ) if (ROOT / p).exists()]
     family_path = family_paths[-1] if family_paths else None
     for family_path in family_paths:
@@ -211,6 +217,15 @@ def build():
             # Keep the historical evidence without resurrecting its resolved question.
             if not item.get('review_completion', {}).get('required_execution_complete', False):
                 item['unresolved_question'] = companion['remaining']
+    extra_parent_path = 'research/community-efficient300-audit/PARENT-EVIDENCE.json'
+    if (ROOT / extra_parent_path).exists():
+        indexed = {p['number']: p for p in result}
+        for companion in load(extra_parent_path)['pull_requests']:
+            item = indexed[companion['number']]
+            if item['current_head'] != companion['head']:
+                raise ValueError('Independent parent evidence belongs to a different head')
+            item['evidence'].append(dict(head=companion['head'], evidence=extra_parent_path,
+                                        scope=companion['scope'], kind='independent_consolidation'))
     counts = dict(sorted(collections.Counter(p['disposition'] for p in result).items()))
     output = dict(schema_version=1, snapshot='research/pr-reconciliation-20261012/starting-snapshot.json',
                   starting_main=snapshot['published_main'], starting_open_count=len(snapshot['pull_requests']),

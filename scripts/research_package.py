@@ -4,6 +4,7 @@
 Douglas Colkitt, with OpenAI Codex assistance. Apache-2.0.
 """
 import argparse
+from contextlib import closing
 import hashlib
 import importlib.metadata
 import json
@@ -35,6 +36,49 @@ def git(root, *args):
     return subprocess.run(["git", *args], cwd=root, capture_output=True, check=True).stdout
 
 
+def git_source_rows(root, base, names):
+    """Read one pinned object at a time through one Git process; no persistent cache.
+
+    Each request is consumed before the next is sent. This avoids pipe deadlocks
+    and retains the old one-blob memory bound, even for large source archives.
+    Newline paths and non-blob objects retain the legacy Git-show semantics.
+    The caller must close this generator if source validation fails mid-stream.
+    """
+    with subprocess.Popen(["git", "cat-file", "--batch"], cwd=root,
+                          stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                          stderr=subprocess.PIPE) as process:
+        try:
+            for name in names:
+                expression = base + ":" + name
+                if "\n" in expression or "\r" in expression:
+                    yield git(root, "rev-parse", expression).decode().strip(), git(root, "show", expression)
+                    continue
+                process.stdin.write(expression.encode("utf-8") + b"\n")
+                process.stdin.flush()
+                header = process.stdout.readline().rstrip(b"\n").split(b" ")
+                require(len(header) == 3 and re.fullmatch(rb"[0-9a-f]{40,64}", header[0])
+                        and header[2].isdigit(), "missing or invalid Git source: " + name)
+                size = int(header[2])
+                payload = process.stdout.read(size)
+                require(len(payload) == size and process.stdout.read(1) == b"\n",
+                        "truncated Git source: " + name)
+                if header[1] != b"blob":
+                    payload = git(root, "show", expression)
+                yield header[0].decode("ascii"), payload
+            process.stdin.close()
+            code = process.wait(timeout=90)
+            require(code == 0, "Git source reader failed: " + process.stderr.read().decode("utf-8", errors="replace"))
+        finally:
+            if not process.stdin.closed:
+                process.stdin.close()
+            if process.poll() is None:
+                try:
+                    process.wait(timeout=5)
+                except subprocess.TimeoutExpired:
+                    process.kill()
+                    process.wait()
+
+
 def meaningful(value):
     return isinstance(value, str) and bool(value.strip()) and not re.search(r"\bTODO\b", value, re.I)
 
@@ -45,7 +89,7 @@ def validate(root, package, check_pins=True):
             "package must be research/<slug>")
     data = {}
     for name in ("TASK.json", "SOURCES.json", "VERIFY.json"):
-        data[name] = json.loads(relative_file(root, package + "/" + name).read_text())
+        data[name] = json.loads(relative_file(root, package + "/" + name).read_text(encoding="utf-8"))
         require(data[name].get("schema_version") == 1, "unsupported schema: " + name)
     task, sources, manifest = (data[n] for n in ("TASK.json", "SOURCES.json", "VERIFY.json"))
     require(task["scope_status"] in ("unchanged", "refined", "changed"), "declare scope_status")
@@ -64,7 +108,7 @@ def validate(root, package, check_pins=True):
     for question in questions:
         for field in ("question", "why_it_matters", "first_step", "blocked_by"):
             require(meaningful(question.get(field)), "complete next-question field: " + field)
-    readme = relative_file(root, package + "/README.md").read_text()
+    readme = relative_file(root, package + "/README.md").read_text(encoding="utf-8")
     require("## Open next questions" in readme, "README needs Open next questions")
     require(manifest.get("status") == "ready", "VERIFY.json is a draft; complete it before requesting replay")
     require(manifest.get("python") == "3.12", "generic replay currently uses Python 3.12")
@@ -96,31 +140,41 @@ def validate(root, package, check_pins=True):
     require({r["path"] for r in sources["files"] if r["usage"] == "input"} <= set(inputs),
             "all live pinned inputs must be declared CI inputs")
     if check_pins:
-        for row in sources["files"]:
-            name = row["path"]
-            p = PurePosixPath(name)
-            require(not p.is_absolute() and ".." not in p.parts, "invalid source path")
-            obj = git(root, "rev-parse", sources["base_commit"] + ":" + name).decode().strip()
-            require(obj == row["git_blob"], "source blob provenance mismatch: " + name)
-            pinned = git(root, "show", sources["base_commit"] + ":" + name)
-            require(hashlib.sha256(pinned).hexdigest() == row["sha256"], "source SHA256 provenance mismatch: " + name)
-            if row["usage"] == "input":
-                require(pinned == relative_file(root, name).read_bytes(), "working source drift: " + name)
         catalog_name = "docs/research/agent-task-catalog.json"
         require(catalog_name in {r["path"] for r in sources["files"]}, "pin the originating task catalogue")
-        catalog = json.loads(git(root, "show", sources["base_commit"] + ":" + catalog_name))
+        names = [r["path"] for r in sources["files"]]
+        for name in names:
+            p = PurePosixPath(name)
+            require(not p.is_absolute() and ".." not in p.parts, "invalid source path")
+        with closing(git_source_rows(root, sources["base_commit"], names)) as objects:
+            for index, (obj, pinned) in enumerate(objects):
+                row = sources["files"][index]
+                name = row["path"]
+                require(obj == row["git_blob"], "source blob provenance mismatch: " + name)
+                require(hashlib.sha256(pinned).hexdigest() == row["sha256"], "source SHA256 provenance mismatch: " + name)
+                if row["usage"] == "input":
+                    require(pinned == relative_file(root, name).read_bytes(), "working source drift: " + name)
+                if name == catalog_name:
+                    catalog = json.loads(pinned)
         cards = [t for tr in catalog["tracks"] for t in tr["tasks"] if t["id"] == task["task_id"]]
         require(len(cards) == 1 and task["original_card"] == cards[0], "original card does not match pinned catalogue")
     return task, manifest
 
 
 def run_command(argv, cwd, timeout):
+    # Assertion checks must not disappear because of the caller's environment.
+    # Keep explicit manifest options (including deliberate -O controls) intact.
+    env = os.environ.copy()
+    env.pop("PYTHONOPTIMIZE", None)
     # A timeout ends the whole local process group, including child solvers.
-    process = subprocess.Popen(argv, cwd=cwd, start_new_session=True)
+    process = subprocess.Popen(argv, cwd=cwd, env=env, start_new_session=True)
     try:
         code = process.wait(timeout=timeout)
     except subprocess.TimeoutExpired:
-        os.killpg(process.pid, signal.SIGKILL)
+        if hasattr(os, "killpg"):
+            os.killpg(process.pid, signal.SIGKILL)
+        else:  # Windows has no process groups to signal; end the whole child tree instead.
+            subprocess.run(["taskkill", "/F", "/T", "/PID", str(process.pid)], capture_output=True)
         process.wait()
         raise ValueError("verification timed out")
     require(code == 0, f"verification command exited {code}")
@@ -143,14 +197,16 @@ def run_package(root, package, install=False):
 
 def plan(root, changed):
     changed = set(changed)
+    replay_changed = bool(changed.intersection({
+        "scripts/research_package.py", ".github/workflows/research-packages.yml"}))
     packages = []
     for path in sorted((root / "research").glob("*/VERIFY.json")):
         package = path.parent.relative_to(root).as_posix()
-        manifest = json.loads(path.read_text())
+        manifest = json.loads(path.read_text(encoding="utf-8"))
         # Parse only for selection; validate fully in the isolated replay job.
         inputs = manifest.get("inputs", [])
         if (changed.intersection(inputs) or any(p.startswith(package + "/") for p in changed)
-                or "scripts/research_package.py" in changed):
+                or replay_changed):
             packages.append(package)
     return packages
 
@@ -169,12 +225,13 @@ def main():
                 changed = git(ROOT, "ls-files", "-z").decode().split("\0")
             else:
                 base = git(ROOT, "rev-parse", "--verify", args.changed_since + "^{commit}").decode().strip()
-                changed = git(ROOT, "diff", "--name-only", "-z", base, "HEAD").decode().split("\0")
+                # A rename must invalidate both the removed input and its new path.
+                changed = git(ROOT, "diff", "--no-renames", "--name-only", "-z", base, "HEAD").decode().split("\0")
             packages = plan(ROOT, changed)
             matrix = json.dumps({"include": [{"package": p} for p in packages]})
             print(matrix)
             if args.github_output:
-                with args.github_output.open("a") as out:
+                with args.github_output.open("a", encoding="utf-8") as out:
                     out.write(f"matrix={matrix}\ncount={len(packages)}\n")
         elif args.package:
             if args.check_only:

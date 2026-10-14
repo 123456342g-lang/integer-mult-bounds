@@ -58,6 +58,12 @@ Replace TODOs, implement the verifier and its meaningful controls, then set
 strings. `{python}` selects the active interpreter and `{package}` the package
 directory. They run from the repository root.
 
+The launcher removes inherited `PYTHONOPTIMIZE` from each command's environment.
+Otherwise a caller's shell setting can silently disable a verifier's assertions,
+including assertions in its Python subprocesses. Other environment settings and
+explicit command options remain intact. A manifest can still request `-O` or
+`-OO` for a deliberate control; its author must account for disabled assertions.
+
 ```sh
 python3 scripts/research_package.py --package research/my-experiment --check-only
 python3.12 scripts/research_package.py --package research/my-experiment
@@ -76,7 +82,12 @@ Each command has a maximum 600-second timeout and the package total is at most
 bounds limit a verification job, not the mathematical search budget.
 
 The [registered-package workflow](../../.github/workflows/research-packages.yml)
-selects **only opt-in packages** whose directory or declared inputs changed.
+selects **only opt-in packages**, using their directories, declared inputs, and shared replay controls.
+Its planning job runs for pull requests and pushes to `main` without path filters,
+because declared inputs can live anywhere in the repository. Unrelated changes
+produce no replay jobs. Git renames count as removal of the old path and addition
+of the new path, so packages that depend on either path receive a replay.
+Changes to the package runner or this workflow select every registered package.
 Each gets a fresh runner and explicit commands. It does not run every historical
 `verify.py`. New hooks do not replace existing cold-replay obligations, and a
 passing metadata check is not acceptance of a mathematical result.

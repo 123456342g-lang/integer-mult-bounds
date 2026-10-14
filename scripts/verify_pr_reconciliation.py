@@ -169,7 +169,13 @@ def main():
                         ROOT / 'research/community-reconciliation92-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-reconciliation-next100-audit/DISPOSITIONS.json',
                         ROOT / 'research/community-reconciliation-third100-audit/DISPOSITIONS.json',
-                        ROOT / 'research/community-reconciliation-fourth100-audit/DISPOSITIONS.json'):
+                        ROOT / 'research/community-reconciliation-fourth100-audit/DISPOSITIONS.json',
+                        ROOT / 'research/community-pilot20-audit/DISPOSITIONS.json',
+                        ROOT / 'research/community-efficient100-audit/DISPOSITIONS.json',
+                        ROOT / 'research/community-efficient200-audit/DISPOSITIONS.json',
+                        ROOT / 'research/community-efficient300-audit/DISPOSITIONS.json',
+                        ROOT / 'research/community-efficient400-audit/DISPOSITIONS.json',
+                        ROOT / 'research/community-efficient500-audit/DISPOSITIONS.json'):
         if not family_path.exists():
             continue
         family = json.loads(family_path.read_text())

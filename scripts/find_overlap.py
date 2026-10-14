@@ -12,6 +12,7 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import sys
 import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,7 +26,7 @@ def now():
 def gh_json(args, payload=None):
     result = subprocess.run(
         ["gh", "api", *args], input=None if payload is None else json.dumps(payload),
-        text=True, capture_output=True, timeout=90, check=True,
+        text=True, encoding="utf-8", capture_output=True, timeout=90, check=True,
     )
     value = json.loads(result.stdout)
     if isinstance(value, dict) and value.get("errors"):
@@ -100,7 +101,7 @@ def fetch_discussions():
 
 def atomic_json(path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
-    with tempfile.NamedTemporaryFile(mode="w", dir=path.parent, delete=False) as out:
+    with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent, delete=False) as out:
         tmp = Path(out.name)
         json.dump(data, out)
         out.write("\n")
@@ -119,7 +120,7 @@ def error_summary(exc):
 def remote_snapshot(cache, offline=False, refresh=False, max_age=300):
     warnings = []
     try:
-        snapshot = json.loads(cache.read_text())
+        snapshot = json.loads(cache.read_text(encoding="utf-8"))
         if snapshot.get("schema_version") != 1 or snapshot.get("repository") != REPO:
             raise ValueError("cache schema or repository mismatch")
     except (OSError, ValueError):
@@ -212,7 +213,7 @@ def main():
         ap.error("keep the cache outside the repository")
     terms = list(args.terms)
     if args.task:
-        catalog = json.loads((ROOT / "docs/research/agent-task-catalog.json").read_text())
+        catalog = json.loads((ROOT / "docs/research/agent-task-catalog.json").read_text(encoding="utf-8"))
         cards = [t for tr in catalog["tracks"] for t in tr["tasks"] if t["id"] == args.task]
         if not cards:
             ap.error("unknown task")
@@ -238,6 +239,9 @@ def main():
     if args.json_output:
         print(json.dumps(report, indent=2))
     else:
+        # Excerpts quote arbitrary UTF-8; a cp1252 pipe must escape them, not crash.
+        if hasattr(sys.stdout, "reconfigure"):
+            sys.stdout.reconfigure(errors="backslashreplace")
         print(report["status"])
         print("Coverage: " + json.dumps(coverage))
         print(report["limits"])
