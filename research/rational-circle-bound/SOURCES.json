@@ -58,8 +58,8 @@
       "authors": "Anton Baranov and Rachid Zarouf",
       "title": "A model space approach to some classical inequalities for rational functions",
       "url": "https://arxiv.org/abs/1310.1182v1",
-      "locator": "Section 1.2.2, equation (1.3), and bibliography [D], [S]",
-      "use": "Confirms the normalized Dolzhenko-Spijker inequality and classical attribution. Not vendored. The note supplies its own projection proof."
+      "locator": "Section 1.1, p. 1 (degree and normalized measure); Section 1.2.2, p. 3, equation (1.3); bibliography [D], [S]",
+      "use": "Confirms the normalized Dolzhenko-Spijker inequality and classical attribution. Not vendored. The note expands the classical projection derivation, with the original Spijker source identified below."
     },
     {
       "authors": "Yuichi Kanjin and Kunio Sato",
@@ -67,13 +67,17 @@
       "year": 2004,
       "url": "https://files.ele-math.com/articles/mia-07-56.pdf",
       "locator": "Opening statement on page 551",
-      "use": "Confirms the classical Hardy coefficient inequality. Not vendored. The constant four is proved here by factorization and a Schur estimate."
+      "use": "Background attribution only: the opening states the classical Hardy coefficient inequality with an unspecified constant and unnormalized H1 measure. The normalized constant four is proved locally, not imported from this reference."
     },
     {
       "authors": "M. N. Spijker",
       "title": "On a conjecture by LeVeque and Trefethen related to the Kreiss matrix theorem",
       "publication": "BIT 31 (1991), 551-555",
-      "use": "Historical attribution as cited by Baranov-Zarouf; original article not independently retrieved."
+      "use": "Original author-uploaded full text inspected during the PR803 review continuation. Its unnormalized arc-length bound with gamma=1 becomes the local normalized inequality after division by 2 pi. The projection argument follows this proof. Not redistributed.",
+      "doi": "10.1007/BF01933268",
+      "url": "https://www.researchgate.net/publication/227228151_On_a_conjecture_by_LeVeque_and_Trefethen_related_to_the_Kreiss_matrix_theorem",
+      "locator": "p. 552, definition of the rational class and equation (4); pp. 552-554, Lemma 2 and its projection/level-count proof",
+      "accessed_utc": "2026-10-14"
     }
   ],
   "related_work": [
@@ -94,7 +98,9 @@
     },
     {
       "pr": 692,
-      "relation": "Prior finite-geometric weighted-stride resolvent; that standard oracle formula is not new here."
+      "relation": "Prior finite-geometric weighted-stride resolvent; that standard oracle formula is not new here.",
+      "head": "c5b53a5e80372a1fae9830d8dcf21aaabce3f729",
+      "author": "Ryan Pinto (@Ambassators)"
     },
     {
       "pr": 666,
@@ -104,6 +110,12 @@
       "pr": 736,
       "head": "eccc3b74767848eb6746f39412d57df6c9544b5d",
       "relation": "Finite elimination optimization, not an analytic norm bound."
+    },
+    {
+      "pr": 852,
+      "head": "aa26b2ad761aa3bac76670e4749f53d2dafb3fea",
+      "author": "William Lawyer (@WilliamLawyer)",
+      "relation": "Downstream weighted-cycle power audit. It inherits PR803 as an explicit analytic premise, so it does not independently certify this Wiener theorem. No PR852 source is imported."
     }
   ]
 }

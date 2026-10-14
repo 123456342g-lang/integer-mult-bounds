@@ -20,16 +20,22 @@ Root reflection using finite Blaschke products and Hardy's coefficient
 inequality are classical. The rational arc-length inequality is credited
 to **E. P. Dolzhenko** and **M. N. Spijker**, following the historical
 discussion in **Anton Baranov and Rachid Zarouf**, arXiv:1310.1182v1,
-Section 1.2.2. That paper was inspected for the normalized statement and
-attribution. **Yuichi Kanjin and Kunio Sato**, "Hardy's inequality for
+Sections 1.1 and 1.2.2. That paper was inspected for the normalized
+statement and attribution. For the PR803 review continuation, Spijker's
+original BIT 31 (1991), pp. 552-554, equation (4) and Lemma 2, was also
+inspected in the author-uploaded full text linked in SOURCES.json.
+Our projection derivation follows that classical proof, with its level
+polynomial and limit justifications expanded; it is not a new method.
+**Yuichi Kanjin and Kunio Sato**, "Hardy's inequality for
 Jacobi expansions" (2004), opening page, also records the classical Hardy
-coefficient inequality. Neither paper is redistributed. The elementary
+coefficient inequality. None of these papers is redistributed. The elementary
 proofs and nonoptimal constant four are written out for review here.
 No novelty claim is made for those classical tools or their general
 combination in rational function theory.
 
-The finite-geometric inverse is standard. **Joshua Snider / jsnider3**,
-PR692, already uses it for weighted-stride closure and bilinear-dual
+The finite-geometric inverse is standard. **Ryan Pinto / Ambassators**,
+PR692 at `c5b53a5e80372a1fae9830d8dcf21aaabce3f729`, already uses it
+for weighted-stride closure and bilinear-dual
 verification. Our small Gaussian-rational implementation is newly written;
 no PR692 code is consumed. **Chafik Boukhalfa / chafreaky**, PR628, and
 **Charles Bethin / cbethin**, PR764, supply distinct rounded-scan results.
@@ -42,5 +48,10 @@ The underlying kernel and OpenAI exact-DFT preprint provenance remain
 as recorded in the preserved PR621 notice. The selected-result snapshot
 retains the #626/#543 contributor lineage. It is historical context, not
 evidence of a new exponent.
+
+The review continuation corrects the earlier misattribution of PR692 to
+Joshua Snider / jsnider3. Ryan Pinto's authorship is stated in PR692's
+own description. The earlier source-head evidence remains available in
+Git; no vendored source or historical test receipt is altered.
 
 New text and code are Apache-2.0. The unchanged upstream license is included.

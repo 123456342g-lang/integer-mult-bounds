@@ -36,6 +36,18 @@ Romman's PR621 and its comparison with our previous Fourier audit. It
 is not a literature-priority claim, a paid inversion algorithm, a formal
 proof-assistant result, or a new multiplication exponent.
 
+The source and analytic audit responding to the review of commit
+`d213ac12d4a1ab8f717d942e844df318ceb395fb` is in
+[audit/README.md](audit/README.md). It maps each implication to its proof
+and records the limits of that audit separately from finite evidence.
+Throughout, circle integrals use `dt/(2 pi)` unless explicitly unnormalized,
+and the Fourier convention is
+
+\[
+ \widehat f(k)={1\over2\pi}\int_0^{2\pi}f(e^{it})e^{-ikt}\,dt,
+ \qquad \|f\|_W=\sum_{k\in\mathbb Z}|\widehat f(k)|.
+\]
+
 ## 1. A coefficient inequality with an elementary constant
 
 For an analytic function h in a neighborhood of the closed disk, write
@@ -47,9 +59,17 @@ h(z)=sum_{j>=0} h_j z^j. With normalized circle measure, we will use
 
 Here is a proof of this nonoptimal version of Hardy's inequality.
 First the matrix K_{jk}=1/(j+k+1), j,k>=0, has l2 operator norm at most
-4. Set w_j=(j+1/2)^(-1/2) and a=j+1/2. The positive function
-x^(-1/2)/(a+x) is convex on x>0: in the second derivative of the
-product, both second-derivative terms and the cross term are positive.
+4. Set w_j=(j+1/2)^(-1/2) and a=j+1/2. For
+f_a(x)=x^(-1/2)/(a+x), direct differentiation gives
+
+\[
+ f_a''(x)={3\over4x^{5/2}(a+x)}
+        +{1\over x^{3/2}(a+x)^2}
+        +{2\over x^{1/2}(a+x)^3}>0.
+\]
+
+The integral at zero is improper but finite. Jensen's midpoint inequality
+also applies on [0,1] (or by a limit of interior integrals).
 The midpoint inequality on each [k,k+1] therefore gives
 
 \[
@@ -72,9 +92,14 @@ now yields
 
 Suppose initially that h has no zero on the circle and is not identically
 zero. Remove its finitely many disk zeros, with multiplicity, by a finite
-Blaschke product J. Then h/J is analytic and zero-free on the closed
-disk and has an analytic square root v in a neighborhood of that disk.
-Put a=Jv, b=v. These functions satisfy h=ab and
+Blaschke product J. The apparent singularities of h/J at these zeros
+are removable, with
+nonzero limiting values because the multiplicities match. The quotient
+is therefore analytic and zero-free on the closed disk. By compactness,
+it is analytic and zero-free on some disk |z|<1+eta, eta>0; shrink eta
+also to avoid the finitely many poles of J. On that simply connected
+disk it has an analytic logarithm, so v=exp(log(h/J)/2) is an analytic
+square root. Put a=Jv, b=v. These functions satisfy h=ab and
 
 \[
  \|a\|_2^2=\|b\|_2^2=\|h\|_1,
@@ -89,8 +114,12 @@ inequality, (4), and Parseval give
  \le4\|a\|_2\|b\|_2=4\|h\|_1.
 \]
 
-Use finite sums followed by monotone limits, so absolute summability is
-not assumed in advance. The zero function is immediate. For possible
+More explicitly, for each N bound sum_{l=0}^N |h_l|/(l+1) by the
+nonnegative convolution sum over j+k<=N, then by the square truncation
+0<=j,k<=N of (4). Parseval bounds both truncated l2 norms uniformly.
+Let N tend to infinity. This proves the infinite inequality without
+assuming the desired weighted absolute summability in advance.
+The zero function is immediate. For possible
 circle zeros, apply the result to h(rho z) along rho increasing to 1
 and avoiding the finitely many zero radii, then use monotone convergence
 on the coefficients and uniform convergence on the circle. This proves
@@ -105,19 +134,48 @@ circle, put M=max_{|z|=1}|R(z)|. The classical Dolzhenko-Spijker estimate is
  \|R'\|_{L^1(\mathbb T)}\le dM.                 \tag{5}
 \]
 
-A projection proof records why no pole distance is needed. Cancel any
-common factors first, so B has no zeros on the circle. Set
-gamma(t)=R(e^{it}) and x_phi(t)=Re(e^{-i phi} gamma(t)). For any fixed
-phi and real level s, clearing |B(z)|^2 in x_phi(t)=s and multiplying
-by z^d yields a polynomial of degree at most 2d. Conjugated polynomials
-on the circle are evaluated at 1/z. Unless the polynomial is identically
-zero, the level has at most 2d preimages in 0<=t<2pi.
+The following is the projection argument of Spijker's original Lemma 2,
+with the polynomial and normalization made explicit; it is not a new
+proof method. See BIT 31 (1991), pp. 552-554, equation (4) and Lemma 2;
+the original author-uploaded text is linked in SOURCES.json. The same
+normalized statement is Baranov-Zarouf, Section 1.2.2, equation (1.3).
 
-For each phi an identically zero level equation can occur for at most
-one s, which has measure zero. Equivalently, if the projection is
-constant its variation is zero. Split the nonconstant real analytic
-projection into its finitely many monotone intervals. Its total variation
-is the integral of the number of level crossings. Since |x_phi|<=M,
+Cancel any common factors first. Use the reduced degree d, or any larger
+integer degree bound; B has no zero on the circle. For a polynomial A of
+degree at most d define its padded conjugate reciprocal by
+
+\[
+ A^{\#}_d(z)=\sum_{j=0}^d\overline{a_j}z^{d-j},
+ \qquad A^{\#}_d(z)=z^d\overline{A(z)}\quad(|z|=1).
+\]
+
+Define B^{#}_d likewise. Put gamma(t)=R(e^{it}) and
+x_phi(t)=Re(e^{-i phi} gamma(t)). For z=e^{it}, the level equation
+x_phi(t)=s is equivalent to
+
+\[
+ F_{\phi,s}(z)=e^{-i\phi}A(z)B^{\#}_d(z)
+       +e^{i\phi}A^{\#}_d(z)B(z)-2sB(z)B^{\#}_d(z)=0.       \tag{5a}
+\]
+
+Indeed, this is obtained by multiplying the level equation by
+2 z^d |B(z)|^2, which is nonzero on the circle. Every term in (5a)
+has degree at most 2d, also when A or B has degree less than d.
+
+If x_phi is constant its variation is zero. Otherwise F_{phi,s} is a
+nonzero polynomial for every s: an identically zero F would make the
+projection constantly s. It therefore has at most 2d distinct unit-circle
+zeros, hence at most 2d preimages in 0<=t<2pi for every level s.
+
+The projection is real analytic on a neighborhood of the parameter
+circle. Its derivative either vanishes identically (the constant case)
+or has finitely many zeros on a period, by the identity theorem and
+compactness. Split at these zeros and at the period endpoint. On each
+open piece x_phi is strictly monotone, so its variation is the integral
+of the indicator of its image interval. Summing the finitely many
+pieces gives the integral of the number of preimages for almost every
+s; the finitely many endpoint and critical values have measure zero.
+Since |x_phi|<=M,
 
 \[
  \int_0^{2\pi}|x_\phi'(t)|\,dt\le 4dM.
@@ -125,14 +183,18 @@ is the integral of the number of level crossings. Since |x_phi|<=M,
 
 Integrating over 0<=phi<2pi, the integral of
 |Re(e^{-i phi}v)| is 4|v| for every complex v. Hence
-4 int |gamma'| <= 8pi dM. On the circle |gamma'|=|R'|; divide by 2pi
-to obtain (5). The case of a constant R is immediate. This is an
+4 int_0^{2pi} |gamma'| dt <= 8pi dM. Interchanging these
+nonnegative continuous integrands is valid. The chain rule gives
+gamma'(t)=i e^{it} R'(e^{it}), so dividing the last bound by 8pi
+proves ||R'||_1 <= dM with normalized circle measure, as in (5). The
+case of a constant R is immediate. This is an
 elementary proof of a classical result, not a new arc-length theorem.
 
 ## 3. An analytic rational function has a degree-only Wiener penalty
 
 If R is rational of degree at most d and analytic in a neighborhood of
-the closed disk, apply (3) to h=R'. For R(z)=sum r_j z^j,
+the closed disk, then so is h=R'. For R(z)=sum r_j z^j, its derivative
+has coefficients h_j=(j+1)r_{j+1}. Applying (3) therefore gives exactly
 
 \[
  \sum_{j\ge1}|r_j|\le4\|R'\|_1\le4d\|R\|_\infty.
@@ -172,17 +234,52 @@ By (6),
  \|1/Q\|_W\le(1+4n)/\delta,\qquad \|J\|_W\le1+4m.
 \]
 
-On the circle, 1/P=overline(J)/Q. Conjugating the values reverses the
-Fourier indices and conjugates the coefficients, preserving their l1
-norm. The convolution inequality for absolutely summable coefficients
-now gives (1). No roots need be computed to use the worst-case m<=n.
+On the circle, 1/P=overline(J)/Q. Write J(z)=sum_{j>=0} b_j z^j
+and 1/Q(z)=sum_{l>=0} a_l z^l. Both coefficient sequences are in l1
+by (6), and their series converge uniformly on the circle. Thus
+
+\[
+ {1\over P(z)}=\sum_{j,l\ge0}\overline{b_j}a_l z^{l-j},
+ \qquad c_k=\sum_{l-j=k}\overline{b_j}a_l,
+ \qquad \sum_{k\in\mathbb Z}|c_k|
+       \le\left(\sum_j|b_j|\right)\left(\sum_l|a_l|\right).  \tag{7}
+\]
+
+The double absolute sum is finite, which justifies regrouping and
+termwise integration to identify c_k as the Fourier coefficients of
+1/P. This establishes (1), including negative indices; no Fourier
+sampling or limit in the cyclic length is involved. It also agrees
+with the Laurent series on a root-free annulus containing the circle.
+No roots need be computed to use the worst-case m<=n.
 
 ## 5. Operator substitution and the prime-power comparison
 
-Write 1/P(z)=sum_{k in Z} c_k z^k on the circle. Absolute convergence
-and ||U^k||<=1 make sum c_k U^k converge in operator norm. The finite
-polynomial times this series has the coefficients of 1. Substitute U
-to obtain P(U) sum c_k U^k = I in both orders, proving (2).
+Write P(z)=sum_{j=0}^n p_j z^j and use c_k from (7). In the Banach
+algebra of bounded operators, ||U^k||<=1 for every integer k makes
+S=sum_{k in Z} c_k U^k converge absolutely in operator norm, with
+||S||<=sum_k |c_k|. Invertibility of U makes all negative powers defined.
+
+The uniformly convergent circle identity P(z) sum_k c_k z^k=1 gives,
+by termwise Fourier integration,
+
+\[
+ \sum_{j=0}^n p_jc_{q-j}=\begin{cases}1,&q=0,\\0,&q\ne0.\end{cases}
+\]
+
+Moreover sum_{j,k}|p_j c_k| ||U^{j+k}|| is finite. Regrouping the
+operator series by q=j+k is therefore valid and gives P(U)S=I.
+All integer powers of U commute, giving SP(U)=I by the same calculation.
+Thus S is the inverse, proving (2) without assuming invertibility of
+P(U) or diagonalizing it in advance.
+
+A fixed permutation matrix multiplied by a diagonal of unit-modulus
+entries, and its inverse, are infinity-norm isometries. Their integer
+powers have norm one, including zero/noncoprime strides and arbitrary
+coordinate-dependent unit phases. Unit-circle spectrum alone would
+not suffice: U=[[1,25],[0,1]] and P(z)=z-2 have delta=1 and
+||P(U)^{-1}||_infinity=26>25=(1+4)^2. That U violates the power-norm
+hypothesis. The separate weighted-cycle audit PR852 likewise treats
+this hypothesis as essential, not as a consequence of spectral location.
 
 Retain PR621's certified inputs, without changing its nonvanishing proof:
 
@@ -191,6 +288,8 @@ Retain PR621's certified inputs, without changing its nonvanishing proof:
  \quad A=\delta^{-1}=2rnH^{nD-1},\quad X=nH^{nD/2}.
 \]
 
+The inherited PR621 expression is A+(2nH/r)A^2. Since
+(2nH/r)A=4n^2 H^{nD}=4X^2, it equals A(1+4X^2) exactly.
 The three explicit norm overestimates are
 
 | Estimate | Constant | Leading power of H |
@@ -246,12 +345,15 @@ failure modes. The written argument supplies the all-frequency and
 all-length reasoning. Independent human or proof-assistant review remains
 open, as do the repository's full multiplication obligations.
 
-Classical references and repository pins are recorded in SOURCES.json
-and NOTICE.md. The normalized arc-length inequality is explicitly
-stated in Baranov-Zarouf, arXiv:1310.1182v1, Section 1.2.2, equation
-(1.3), with attribution to Dolzhenko and Spijker. Hardy's coefficient
-inequality and finite Blaschke reflection are standard; complete
-nonoptimal arguments are included here to make constants reviewable.
+Classical references and repository pins are recorded in SOURCES.json,
+NOTICE.md, and audit/README.md. Spijker's original equation (4) and
+Lemma 2 use unnormalized arc length; dividing by 2 pi gives (5).
+Baranov-Zarouf, arXiv:1310.1182v1, Section 1.1 and Section 1.2.2,
+equation (1.3), confirm the normalized form and Dolzhenko attribution.
+The opening of Kanjin-Sato records Hardy's coefficient inequality with
+an unspecified constant and unnormalized H1 measure. It is background
+attribution, not a source for our normalized constant four; Section 1
+proves that constant directly. Finite Blaschke reflection is classical.
 
 Prepared for Rafael Guevara (@alephnan) with substantial OpenAI Codex
 assistance. Apache-2.0.

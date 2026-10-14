@@ -1,5 +1,11 @@
 # Validation and limits
 
+The sections below retain the original 2026-10-13 execution record.
+The later PR803 source/analytic review continuation is documented in
+[audit/README.md](audit/README.md), with separate revision checks in
+[audit/VALIDATION.json](audit/VALIDATION.json). The historical receipts
+are unchanged and are not promoted to an analytic-proof certificate.
+
 Executed on Windows 11 (10.0.26300), CPython 3.12.2, 2026-10-13 UTC.
 The detailed interpreter/platform strings and command receipts are in
 `evidence/environment.json`, `evidence/verify.txt`, and

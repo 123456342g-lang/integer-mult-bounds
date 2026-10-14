@@ -30,7 +30,11 @@ change. These are bound sizes, not working precision or measured norms.
 
 ## Review and reproduce
 
-Read `PROOF.md`, then run from the repository root:
+Start with [the source and analytic audit](audit/README.md), which responds
+to the PR803 review at `d213ac12d4a1ab8f717d942e844df318ceb395fb`.
+It records the classical source locators, normalization, all-frequency
+proof steps, and outstanding independent-review obligations. Read
+[PROOF.md](PROOF.md) for the expanded argument, then run from the repository root:
 
 ```sh
 python -B research/rational-circle-bound/verify.py
@@ -57,7 +61,7 @@ The finite coverage is declared, not a proof of the analytic inequalities:
 
 See `VALIDATION.md` for the actual platform, package fault tests, and limits.
 The cyclic oracle is the standard finite-geometric identity, also used by
-Joshua Snider in PR692; it is not a new solver.
+Ryan Pinto (@Ambassators) in PR692; it is not a new solver.
 
 ## Scope and provenance
 
@@ -86,6 +90,14 @@ rounded scans. Their per-factor margins, precision recurrences, and paid
 costs have not been improved merely by proving this operator bound.
 Concurrent PR796 computes nonarchimedean root valuations; it does not
 supply a complex conditioning bound and is distinct from this application.
+
+## Open next questions
+
+- Independent analytic review: check the implication map and source normalization
+  in `audit/README.md` against `PROOF.md`; finite tests cannot settle this.
+- Rounded implementation: determine whether the norm estimate improves a specific
+  precision recurrence, with all preparation, restoration and routing charges.
+  The analytic theorem alone does not provide that implementation.
 
 Prepared for Rafael Guevara (@alephnan) with substantial OpenAI Codex
 assistance. Apache-2.0. See `NOTICE.md`.
