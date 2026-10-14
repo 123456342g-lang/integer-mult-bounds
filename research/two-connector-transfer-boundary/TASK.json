@@ -40,7 +40,14 @@
     ]
   },
   "scope_status": "refined",
-  "actual_scope": "Paid one-way transfer between two dirty root connectors: prove minimum four transfers at two occurrences per B/A for universal five-source masks.",
+  "actual_scope": "Paid one-way transfer between two dirty root connectors with B_j allowed to target either root: prove at least four transfers at two occurrences per B/A for universal five-source masks, without a universal four-transfer sufficiency claim.",
+  "overlap": {
+    "checked_at": "2026-10-14T00:43:50.919596+00:00",
+    "coverage": "791 open PR bodies and 148 Discussion/comment/reply records; complete pagination, no warnings; no PR-comment or complete closed-work scan",
+    "concurrent_claim": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1412",
+    "credit": "Cinna Davis, concurrent second-dirty-root and paid-transfer investigation",
+    "distinction": "Discussion1412 restricts all B_j to one source port and seeks a sharp eight-transfer result. This package permits either B port and proves the weaker four-transfer lower bound in that larger alphabet. No priority claim for the connector mechanism; no five-source sufficiency claim."
+  },
   "scope_change_reason": "Specify the exact additional operation, two-row contract and minimum-incidence domain.",
   "bottleneck_link": "Reject a cheap extra-operation proposal before synthesis; four full-row transfers and an extra hosted row must be priced against the old two-query repair.",
   "budget_minutes": 60,

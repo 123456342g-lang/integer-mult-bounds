@@ -1,9 +1,10 @@
-# Two root connectors need at least four transfers to mix source groups
+# With freely chosen source ports, two root connectors need four transfers
 
 Adding a second arbitrary-dirty connector and a paid one-way XOR transfer does
 not repair the universal five-source obstruction with only two transfers.
-At exactly two calls per source and two per output, **at least four transfers**
-are necessary. Four transfers are sufficient for a mixed two-source output;
+Each B_j may target either root connector. At exactly two calls per source and
+two per output, **at least four transfers** are necessary. Four transfers are
+sufficient for a mixed two-source output;
 this does not assert sufficiency for all 31 five-source masks.
 
 The exact five-source census checks 1,995,840 canonical placements and agrees
@@ -102,11 +103,26 @@ The exact receipt is [EXPECTED.json](EXPECTED.json); exact committed source
 Git blobs and SHA256 hashes are in [SOURCES.json](SOURCES.json). Finite replay
 supports the explicit symbolic proof; it is not a formal proof assistant run.
 
-Overlap search used the shared fully paginated 863-PR/112-discussion snapshot
-of 2026-10-14 00:07 UTC. Exact phrases had no hits; cached offline coverage may
-miss newer work and does not prove novelty. The prior forty contributions were
-checked: port borrowing changes descendant scratch, not this root-transfer
-alphabet. No frozen predecessor or selected record is modified.
+The final overlap refresh completely paginated 791 open PRs and 148 Discussion,
+comment and reply records at 2026-10-14 00:43 UTC. It found Cinna Davis's
+concurrent [Discussion 1412](https://github.com/CrocSwap/integer-mult-bounds/discussions/1412):
+the same second-dirty-root mechanism with every B_j restricted to z0, a paid
+transfer z1 += z0, and arbitrary A readout ports. That claim seeks a sharp
+eight-transfer bound and construction in its restricted-source-port alphabet.
+The present lower bound is weaker (four) but covers the larger alphabet in
+which B_j may target either connector. Relabelling roots changes the transfer
+direction, not this difference in allowed source ports. Neither the announced
+restricted-port result nor this package settles the other's quantified claim.
+We claim no priority for adding a second connector or a paid connector XOR.
+The four-transfer fixture here mixes only two sources; it is not a universal
+five-source construction.
+
+The prior forty contributions were checked. Port borrowing changes descendant
+scratch, and Discussion 1403 changes source toggles to combined DUO calls;
+neither is this freely chosen-source-port contract. The overlap scan reads
+open PR bodies and Discussion records, not PR comments, code diffs or all closed
+work, and is not a novelty certificate. No frozen predecessor or selected
+record is modified.
 
 ## Open next questions
 
@@ -122,5 +138,7 @@ Prepared by woklerx with substantial OpenAI Codex assistance, Apache-2.0.
 Ross Richardson's universal connector theorem and PR934 supply the exact
 query model and five-source obstruction; his NOTICE retains the common-factor
 fanout and dirty-commutator lineage including @shhxera and Chafik Boukhalfa.
+Cinna Davis's concurrent Discussion 1412 is credited for the closely related
+restricted-source-port investigation found in the final overlap refresh.
 No predecessor implementation is imported. No independent human review is
 asserted. The selected community frontier and its attribution are unchanged.
