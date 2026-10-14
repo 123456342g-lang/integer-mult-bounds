@@ -45,3 +45,5 @@ reports the complex primitive as binding.
 
 Full package and deterministic receipt: `README.md`, `TASK.json`,
 `CERTIFICATE.json`, `SOURCES.json`, `VERIFY.json`, and `verify.py`.
+
+SUBMITTED: [PR #1720](https://github.com/CrocSwap/integer-mult-bounds/pull/1720), head `828a1df15d5f5256f80e61c8d22b822846b76ae7`. It is open; no merge or frontier change is claimed.

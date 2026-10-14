@@ -103,5 +103,12 @@
     "certificate_sha256": "1122cb3a575f8c788345fc1bf4c108ac7c3250fb81a5988671f5eb04b3ab3045",
     "reproduce": "make frontier1094-verify"
   },
-  "no_open_questions_reason": "The exact six-call minimum closes the stated S4 target/alphabet. A different S4 target or address group would be a new mechanism and needs a separate cost screen; no narrow next experiment is justified from this bounded result."
+  "no_open_questions_reason": "The exact six-call minimum closes the stated S4 target/alphabet. A different S4 target or address group would be a new mechanism and needs a separate cost screen; no narrow next experiment is justified from this bounded result.",
+  "submission": {
+    "kind": "pull_request",
+    "number": 1720,
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1720",
+    "head_commit": "828a1df15d5f5256f80e61c8d22b822846b76ae7",
+    "status": "open"
+  }
 }

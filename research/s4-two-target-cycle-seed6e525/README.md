@@ -92,7 +92,8 @@ transposition alphabet are distinct from those scopes. A current fresh
 Discussion fetch and new claim post are unavailable:
 GitHub GraphQL reports the account rate limit exceeded, and the installed REST
 API has no create/update endpoint for Discussion comments. This local claim
-card and package are being used while that limitation holds.
+card and package are being used while that limitation holds. The result is
+submitted in [PR #1720](https://github.com/CrocSwap/integer-mult-bounds/pull/1720).
 
 ## Open next questions
 
