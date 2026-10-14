@@ -167,6 +167,7 @@ def build():
         'research/pr-reconciliation100-20261013/DISPOSITIONS.json',
         'research/community-historical-five-audit/DISPOSITIONS.json',
         'research/community-reconciliation92-audit/DISPOSITIONS.json',
+        'research/community-reconciliation-next100-audit/DISPOSITIONS.json',
     ) if (ROOT / p).exists()]
     family_path = family_paths[-1] if family_paths else None
     for family_path in family_paths:
@@ -204,7 +205,10 @@ def build():
             item.setdefault('companion_reviews', []).append(companion)
             item['evidence'].append(dict(head=companion['head'], evidence=companion_path,
                                         scope=companion['scope'], kind='scoped_companion_review'))
-            item['unresolved_question'] = companion['remaining']
+            # A later whole-head review supersedes the old companion's carry-forward.
+            # Keep the historical evidence without resurrecting its resolved question.
+            if not item.get('review_completion', {}).get('required_execution_complete', False):
+                item['unresolved_question'] = companion['remaining']
     counts = dict(sorted(collections.Counter(p['disposition'] for p in result).items()))
     output = dict(schema_version=1, snapshot='research/pr-reconciliation-20261012/starting-snapshot.json',
                   starting_main=snapshot['published_main'], starting_open_count=len(snapshot['pull_requests']),
@@ -245,7 +249,8 @@ def build():
                   'The separate formalization PRs and later arrivals are not approved by this round.']
     lines += ['', '[100-PR historical reconciliation](community-reconciliation100-review.md): exact-head coverage and individual carry-forward tasks; it is not 100 completed mathematical audits.',
               '[Five early contributions](community-historical-five-review.md): #2/#4/#8/#9/#12 retained with complete historical sources and focused replays.',
-              '[Remaining 92 contributions](community-reconciliation92-review.md): source retention, scoped review and closure receipts; #122 awaits its missing parent circuit/profile.', '', '## Remaining priorities', '',
+              '[Remaining 92 contributions](community-reconciliation92-review.md): source retention, scoped review and closure receipts; #122 awaits its missing parent circuit/profile.',
+              '[Next 100 contributions, #153–#303](community-reconciliation-next100-review.md): current frozen batch, individual scope and explicit remaining obligations.', '', '## Remaining priorities', '',
               '1. Follow the new Linux CI for the published #442/#484/#509/#516/#520 batch; the [scoped review](community-formal-20261012-review.md) records completed local checks.',
               '2. Follow the explicit construction-family dispositions and remaining obligations; do not repeat completed foundation replays without a source/input change.',
               '3. Review #525’s checkpoint/ceiling and #529/#532’s distinct construction mechanisms; retain parallel credit.',

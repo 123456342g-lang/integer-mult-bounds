@@ -74,6 +74,25 @@ def check_review_completion(item, decision):
         require(item['integration_location'], 'Incorporated without integration location')
 
 
+def check_companion_review(item, companion, decision=None):
+    """Keep scoped evidence; only a later authoritative whole-head review clears its hold."""
+    require(item['current_head'] == companion['head'] and
+            item.get('companion_reviews') == [companion],
+            'Companion review lost its parent-head binding')
+    flags = (decision or {}).get('review_completion', {})
+    if (decision and decision['reviewed_head'] == companion['head'] and
+            all(flags.get(k, False) for k in ('changed_file_coverage',
+                'scoped_mechanism_review', 'required_execution_complete'))):
+        check_family_decision(item, decision)
+        check_review_completion(item, decision)
+        return
+    require(item['unresolved_question'] == companion['remaining'],
+            'Companion review lost its remaining scope')
+    require(item['disposition'] == 'changed_since_review' and
+            item['closure'] is None and item['github_state'] == 'OPEN',
+            'Companion replay incorrectly promoted whole parent PR')
+
+
 def check_archived_files(root, records):
     """Verify the archived artifacts named by a separately pinned evidence inventory."""
     for record in records:
@@ -147,7 +166,8 @@ def main():
                         ROOT / 'research/community-batch1099-audit/DISPOSITIONS.json',
                         ROOT / 'research/pr-reconciliation100-20261013/DISPOSITIONS.json',
                         ROOT / 'research/community-historical-five-audit/DISPOSITIONS.json',
-                        ROOT / 'research/community-reconciliation92-audit/DISPOSITIONS.json'):
+                        ROOT / 'research/community-reconciliation92-audit/DISPOSITIONS.json',
+                        ROOT / 'research/community-reconciliation-next100-audit/DISPOSITIONS.json'):
         if not family_path.exists():
             continue
         family = json.loads(family_path.read_text())
@@ -474,14 +494,7 @@ def main():
         if companion_path.exists():
             for companion in json.loads(companion_path.read_text())['pull_requests']:
                 item = actual[companion['number']]
-                require(item['current_head'] == companion['head'] and
-                        item.get('companion_reviews') == [companion],
-                        'Companion review lost its parent-head binding')
-                require(item['unresolved_question'] == companion['remaining'],
-                        'Companion review lost its remaining scope')
-                require(item['disposition'] == 'changed_since_review' and
-                        item['closure'] is None and item['github_state'] == 'OPEN',
-                        'Companion replay incorrectly promoted whole parent PR')
+                check_companion_review(item, companion, family_decisions.get(companion['number']))
         print('PASS batch970 batch: reviewed sources, finite replays, scoped claims and closure bindings')
     receipt_path = ROOT / 'docs/research/community-batch1047-integration.json'
     if receipt_path.exists():
@@ -547,6 +560,9 @@ def main():
     reconciliation92 = ROOT / 'research/community-reconciliation92-audit/verify.py'
     if reconciliation92.exists():
         runpy.run_path(str(reconciliation92), run_name='__main__')
+    next100 = ROOT / 'research/community-reconciliation-next100-audit/verify.py'
+    if next100.exists():
+        runpy.run_path(str(next100), run_name='__main__')
     print(f'PASS immutable snapshot plus explicit family rounds: {len(actual)} PRs, attributed heads, evidence pins and unresolved questions')
 
 
