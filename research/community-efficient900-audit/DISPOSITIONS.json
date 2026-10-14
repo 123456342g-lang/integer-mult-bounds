@@ -1857,20 +1857,24 @@
       },
       "reviewed_head": "009ed860f34ed5d7b0d626098ce93c4c2a7eb4df",
       "current_head": "009ed860f34ed5d7b0d626098ce93c4c2a7eb4df",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/q8-mixed-three-register-seedcbd5ebc4"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "1ff5f7bc448445516944f10c8e7834db371103aa",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1925"
+      },
       "scope": "Exact formal F2[Q8] enumeration excludes shortcuts through3calls for36 mixed targets with3/4roles; all attain4. Full-convolution crosschecks and direct/omission controls pass. First-order coefficient argument extends24noncentral cases to arbitrary dirty roles;12central cases remain finite-scope only.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1925.json",
@@ -1996,15 +2000,17 @@
       "current_head": "d5e6ac0e442a1acfd0ac933af90a2adfb3417138",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/r439-late-entrance-census-seed09"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Two independent exact engines reproduce fixed-word closure and late-entrance census across five pinned words. Written cone/span argument supports the stated single-common-frame LC-fav necessary test; A6 excludes late compensation, while storage-relay triple444/470/578 remains OPEN. Source-donor and relay relaxations retain their narrower execution coverage; full661-column synthetic positive and mutation controls pass. No universal entrance obstruction or supplier improvement follows.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -2337,20 +2343,24 @@
       },
       "reviewed_head": "c7d8c9febf0fcc52d2002db657165cd206ff9cec",
       "current_head": "c7d8c9febf0fcc52d2002db657165cd206ff9cec",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/selected-sigma-chart-binding"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "1ff5f7bc448445516944f10c8e7834db371103aa",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1942"
+      },
       "scope": "Independent five-array certificates bind10002 actual73-dimensional charts and all69120 helper occurrences. Exact Gauss-Jordan inverses, source/content/ordered-reference hashes,19 controls and8 test groups pass. Supplies the finite inputs for the credited Lean interface without claiming a Lean execution, physical executor direction or supplier admission.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1942.json",
@@ -2373,20 +2383,24 @@
       },
       "reviewed_head": "60e0d6d37b857a30c2db032255892f7e2f6465ce",
       "current_head": "60e0d6d37b857a30c2db032255892f7e2f6465ce",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/bit-two-copy-bank-boundary"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "1ff5f7bc448445516944f10c8e7834db371103aa",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1943"
+      },
       "scope": "Two explicit raw6 slots preserve credited1704 scatter saving and enforce chronological ERASE equality. Exact rational geometry, signed integer local equality and separate C++5/9/11-stage661-role replay with independent helper banks pass ten controls. Physical simultaneous COPY allocation, hosting and packed precision remain unproved; recursive profile and frontier unchanged.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1943.json",
@@ -2531,15 +2545,17 @@
       "current_head": "6d4587f91bc345325856d839ad752f5a202a6212",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/r439-staged-retirement-boundary"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Exact661-column cut isolation forces dirty465 through four retained contacts into an incompatible final frame, excluding the stated monotone retirement route even with restored auxiliaries. Independent geometry, least-join propagation, four-ADD positive isolation and scalar ghost-word controls pass. Optimistic two-slot moment is a budget only; relaxing contacts, new COPY/descent or physical realization remains outside the exclusion.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -2604,20 +2620,24 @@
       },
       "reviewed_head": "5dba7ccd60b2abe16f5931b3754cf02a92e1f511",
       "current_head": "5dba7ccd60b2abe16f5931b3754cf02a92e1f511",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/p112-rank6-hall-obstruction"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "1ff5f7bc448445516944f10c8e7834db371103aa",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1951"
+      },
       "scope": "Complete967232 maximal slices reduce the fixed mixedCOPY62 retained-hit family to4096 choices:4093miss a diagonal and3fail explicit orthogonal-pair rank cuts. Independent rank elimination,262928cliques,positive coordinate decoder and9 controls pass. Joint-trim domination proof reviewed; otherCOPY62patterns and heuristic solver outcomes remain outside the exclusion.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1951.json",

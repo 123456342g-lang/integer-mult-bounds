@@ -41,6 +41,7 @@
     1923,
     1924,
     1925,
+    1932,
     1934,
     1935,
     1936,
@@ -52,10 +53,11 @@
     1944,
     1945,
     1946,
+    1948,
     1949,
     1951
   ],
-  "unique_inputs": 104,
+  "unique_inputs": 110,
   "mismatches": [],
   "inputs": [
     {
@@ -809,6 +811,48 @@
       "actual": "e50bae87f9bfa2dee515468aeb56d47676410ca3adfdf0e83d11bf0e31fadf2d"
     },
     {
+      "number": 1932,
+      "path": "research/e8-bit-p111-tuned/tune/bitE8mut-p111-tuned.json.gz",
+      "expected": "e3e301e62bc2b41dbf1ceac0acf3d35824ebeab1848c5a2142d4577b109da52f",
+      "actual": "e3e301e62bc2b41dbf1ceac0acf3d35824ebeab1848c5a2142d4577b109da52f"
+    },
+    {
+      "number": 1932,
+      "path": "research/e8-bit-p111-tuned/tune/wlib.py",
+      "expected": "a37fdf3cdf5f62945c2a90193401c0e9edc9dd3cda8d8cb36a3b9c329ebe4dbc",
+      "actual": "a37fdf3cdf5f62945c2a90193401c0e9edc9dd3cda8d8cb36a3b9c329ebe4dbc"
+    },
+    {
+      "number": 1932,
+      "path": "research/r439-abc-semantic-bridge/inputs/candidate.json.gz",
+      "expected": "2b09a7a3851cdf2a7f19350d1555cf75788d001c9507a37e459cd931881ee066",
+      "actual": "2b09a7a3851cdf2a7f19350d1555cf75788d001c9507a37e459cd931881ee066"
+    },
+    {
+      "number": 1932,
+      "path": "research/r439-abc-zrewrite-seed16/CANDIDATE-WORD.json",
+      "expected": "66b34404f39f5f612c2aaadd53ae33eb9f5993ec2065c82e23d7467cce03a226",
+      "actual": "66b34404f39f5f612c2aaadd53ae33eb9f5993ec2065c82e23d7467cce03a226"
+    },
+    {
+      "number": 1932,
+      "path": "research/r439-bsection-stars-seed01/candidate.json.gz",
+      "expected": "b452d2c2b0b2a546d1105b1da9769aa78e5c54d6f00e97b30c77e3f54ce445ee",
+      "actual": "b452d2c2b0b2a546d1105b1da9769aa78e5c54d6f00e97b30c77e3f54ce445ee"
+    },
+    {
+      "number": 1932,
+      "path": "research/r439-gl5-shortest/candidate.json.gz",
+      "expected": "4e7904d01ebdbfc60a26472b4e0d2e813c19c2fe1a4bb8ab390c12746a1da359",
+      "actual": "4e7904d01ebdbfc60a26472b4e0d2e813c19c2fe1a4bb8ab390c12746a1da359"
+    },
+    {
+      "number": 1932,
+      "path": "research/r439-kernel-entrance-closure/CERTIFICATE.json",
+      "expected": "f08b9de12089687fe6c0c6b2eb985d0e6a883b72fa4f08ded11d34d875f48909",
+      "actual": "f08b9de12089687fe6c0c6b2eb985d0e6a883b72fa4f08ded11d34d875f48909"
+    },
+    {
       "number": 1934,
       "path": "research/hyperplane-end-lean/HyperplaneEnd/Clifford.lean",
       "expected": "c0c51407b4fa6ff230a79d5f3b07c83b7d1c4b433ce03513f0c4fb725bf3cbe1",
@@ -1013,6 +1057,30 @@
       "actual": "e50bae87f9bfa2dee515468aeb56d47676410ca3adfdf0e83d11bf0e31fadf2d"
     },
     {
+      "number": 1948,
+      "path": "research/bit-early-retirement-cut/README.md",
+      "expected": "57b952674aefc3fb6287ceaab7c940c100916dba8ba97104e1838c785e3d8e9f",
+      "actual": "57b952674aefc3fb6287ceaab7c940c100916dba8ba97104e1838c785e3d8e9f"
+    },
+    {
+      "number": 1948,
+      "path": "research/e8-bit-p111-tuned/tune/bitE8mut-p111-tuned.json.gz",
+      "expected": "e3e301e62bc2b41dbf1ceac0acf3d35824ebeab1848c5a2142d4577b109da52f",
+      "actual": "e3e301e62bc2b41dbf1ceac0acf3d35824ebeab1848c5a2142d4577b109da52f"
+    },
+    {
+      "number": 1948,
+      "path": "research/e8-bit-carrier-skeleton/code/bit/export_records.py",
+      "expected": "8a5999601f917dbb492bb9ae9a344611f18cc7cedc53dc3c76496a369e530eb3",
+      "actual": "8a5999601f917dbb492bb9ae9a344611f18cc7cedc53dc3c76496a369e530eb3"
+    },
+    {
+      "number": 1948,
+      "path": "research/r439-later-retirement-cuts/README.md",
+      "expected": "807db75512c471253cd2af26839ca9acf70eaa3c7c374118bdd66ac0c413f0ca",
+      "actual": "807db75512c471253cd2af26839ca9acf70eaa3c7c374118bdd66ac0c413f0ca"
+    },
+    {
       "number": 1949,
       "path": "references/three-stage-cover/pr117/dag.json.gz",
       "expected": "3c034d0aae388ef567a454826f4f48b26fd8a94c71e8ffed4835271b349a783b",
@@ -1049,5 +1117,5 @@
       "actual": "b59101564855a89de04f39fd28b0a853aa3c46ce0ce99951d93d7dd018543536"
     }
   ],
-  "main_commit": "5f0c641ea79fb702e9171be836063a70aad462bf"
+  "main_commit": "1ff5f7bc448445516944f10c8e7834db371103aa"
 }
