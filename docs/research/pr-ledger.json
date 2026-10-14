@@ -35,8 +35,8 @@
     "research/community-efficient700-audit/DISPOSITIONS.json"
   ],
   "counts": {
-    "incorporated": 1235,
-    "partially_reviewed": 175,
+    "incorporated": 1236,
+    "partially_reviewed": 174,
     "superseded": 1,
     "unreviewed": 60
   },
@@ -83,7 +83,7 @@
     "research/community-efficient400-audit/DISPOSITIONS.json": "3d6c4ddb87902503a043b8609fd8fdafaa7bdef416cb977f73271542d458b147",
     "research/community-efficient500-audit/DISPOSITIONS.json": "bd5fcd01f868edb2766874b2cd9daaf1d8500e57debe621537760a5906fbb5b3",
     "research/community-efficient600-audit/DISPOSITIONS.json": "0b5b7777073b61dcccd09ecfe01d24c0843e8294f0daf1a9f38f5aabdaa2e4f4",
-    "research/community-efficient700-audit/DISPOSITIONS.json": "828f84fc7130b30863922e5fbe62de4b099c6a14956ed21dbd8d29b45b133594",
+    "research/community-efficient700-audit/DISPOSITIONS.json": "a49662d33eee2d1e1308815314fbe415f91496a8304620664fb991ec47ae4c31",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec",
     "research/community-efficient300-audit/PARENT-EVIDENCE.json": "8d9e28ec3ece26b91ef5a297092697c341652853164477a4961c992151cec353"
   },
@@ -83238,16 +83238,20 @@
       "integration_location": [
         "research/complex-rank8-rigidity-p105"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "47dd299a46592e1af2dffb015bd387823cc00116",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1650"
+      },
       "reviewed_head": "d960f8a276f752934ff37617da99e489ad5e9d5e",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient700-audit/packets/1650.json",
@@ -86340,7 +86344,7 @@
   ],
   "github_dispositions": {
     "CLOSED": 377,
-    "MERGED": 859,
-    "OPEN": 235
+    "MERGED": 860,
+    "OPEN": 234
   }
 }

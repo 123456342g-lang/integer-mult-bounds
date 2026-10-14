@@ -358,10 +358,12 @@
   "p1650": {
     "number": 1650,
     "headRefOid": "d960f8a276f752934ff37617da99e489ad5e9d5e",
-    "state": "OPEN",
+    "state": "MERGED",
     "isDraft": false,
-    "mergedAt": null,
-    "mergeCommit": null
+    "mergedAt": "2026-10-14T16:05:31Z",
+    "mergeCommit": {
+      "oid": "47dd299a46592e1af2dffb015bd387823cc00116"
+    }
   },
   "p1651": {
     "number": 1651,

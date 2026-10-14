@@ -1459,20 +1459,24 @@
       },
       "reviewed_head": "d960f8a276f752934ff37617da99e489ad5e9d5e",
       "current_head": "d960f8a276f752934ff37617da99e489ad5e9d5e",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/complex-rank8-rigidity-p105"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "47dd299a46592e1af2dffb015bd387823cc00116",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1650"
+      },
       "scope": "Exact coverage and pivot-incidence verification for all 242,802 P105 units, with complete four-level transporter coverage and modular lower bounds matched by exact kernels. Inherits PR1560 rigidity and PR1212/F6 floor implications; selected-family shortcut counterexample is separately scoped.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient700-audit/packets/1650.json",
