@@ -135,6 +135,14 @@ No historical source or certificate is modified.
 The selected conditional frontier at this base remains PR942 at
 `1661960547713947/10^18`. Its full cold replay is `make frontier942-verify`.
 
+Publication recheck against main
+`ef5f39403610d231a0c27e8a6b4f08c10209bcd6` on 2026-10-14 found both
+mathematical source files unchanged. At that checkpoint, the selected
+conditional result is PR1094 on PR1087 at `0.001672660197076918`, with
+review `docs/research/community-batch1099-review.md` and cold replay
+`make frontier1094-verify`. This census does not validate that construction;
+the original base and historical context pins above are preserved.
+
 [PR831](https://github.com/CrocSwap/integer-mult-bounds/pull/831), Maximooch,
 head `66c3bc5c2eb5a2c066b1119310b29d26350e1dde`, already checks 452 nonsingular
 alternating refinements in dimensions 2 and 4 as part of an F4 interface
@@ -158,6 +166,20 @@ all-size compiler, precision/tape implementation, or analytic transfer is
 admitted by this census. There is no full multiplication theorem, Lean build,
 speedup claim, or new kappa. Full `make verify`, a cold construction replay,
 and hosted CI are outside this isolated mathematical-test contribution.
+
+## Open next questions
+
+Can the arbitrary-dimension radical support criterion and nonsingular Gauss
+normal form be checked in a proof assistant with an explicit correspondence
+to the credited source statement? This would address the dimension limit of
+the finite evidence here. A feasible first step is to formalize the
+translation identity for `W(s)` along a radical vector and derive the support
+condition `q(u) = 2 s dot u (mod 4)` for every radical vector `u`. Then prove
+the squared-magnitude formula before treating the nonsingular phase factor.
+The blockers are a checked source-to-statement translation and suitable
+finite-field and Gaussian-number library support; no formalization has been
+attempted in this package. This would formalize existing mathematics, not
+establish a new supplier or multiplication theorem.
 
 Prepared for **yssite** with substantial **OpenAI Codex assistance** in research,
 implementation, verification, and writing. No independent human review is
