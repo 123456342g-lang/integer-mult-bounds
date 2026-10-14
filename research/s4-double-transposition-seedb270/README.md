@@ -130,6 +130,7 @@ census was run directly. A fresh complete Discussion fetch at 08:12 UTC covered
 posted to [coordination Discussion #1163](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18919260).
 The full local claim is in [CLAIM.md](CLAIM.md), including the exact seed,
 catalogue revision, base, selected-record hash, scope, competitors and expiry.
+The focused result is submitted as [PR #1734](https://github.com/CrocSwap/integer-mult-bounds/pull/1734).
 
 This local model is not physically mapped to the selected bit supplier. The
 selected baseline remains complex-primitive-bound; physical address

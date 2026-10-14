@@ -52,6 +52,7 @@
   "budget_minutes": 60,
   "stop_rule": "Prove the even-call parity obstruction using the sign determinant over F2[C2], then enumerate the complete radius-three balls from identity and target over all 84 paid involutions. Stop after the exact meet result and direct word; do not widen the group, alphabet, or role count.",
   "outcome": "negative-result",
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1734",
   "evidence": "The direct formal endpoint costs 8 calls. The natural F2^4 permutation representation gives only a 4-call rank floor, while the sign determinant forces even length. Complete exact radius-three balls each contain 237474 formal 3x3 F2[S4] states with layers [1,84,4697,232692], hashes 050e8b23a52a22b845208eb0a241872e53511f7843dbf5c6e42b3eda4bc757ac and caf772096918c6a120a394f7f734667e9bf69d67a871f868d4063a848f87827a, and have empty intersection. Thus no word of length at most 6 exists and the exact minimum is 8 in this model. Eight call-omission controls, altered dirty-role control and all 84 factor involution checks pass. No supplier or kappa claim.",
   "author": "Cinna Davis",
   "ai_assistance": "Substantial OpenAI Codex assistance in scoping, algebraic proof, exact search implementation, verification and writing. No subagents or independent human review.",
