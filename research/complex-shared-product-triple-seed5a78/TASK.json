@@ -71,7 +71,7 @@
   "selected_record_sha256": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32",
   "changed_assumption": "One clean width-one helper may persist across three same-frame output roles, with the common rank-one child evaluated once and its inverse evaluated once for cleanup. The three output roles share the exact same bilinear input pair; private child inputs stay separate.",
   "method_domain": "Exact rational three-output bilinear tensor and forward/inverse helper schedule. Exact profile relaxation for integer s=0..2412 repeated common products per three-call batch and e=0,1,2 extra rank-one-equivalent child charges per batch. One bounded inspection of pinned selected phase A for source fields that identify exact bilinear input pairs; no broad synthesis.",
-  "coordination": "Claim posted at https://github.com/CrocSwap/integer-mult-bounds/discussions/1167#discussioncomment-18923890; final handoff and PR link will be appended at completion.",
+  "coordination": "Claim: https://github.com/CrocSwap/integer-mult-bounds/discussions/1167#discussioncomment-18923890. Handoff posted at https://github.com/CrocSwap/integer-mult-bounds/discussions/1167#discussioncomment-18923996 with result and scope release. Focused PR: https://github.com/CrocSwap/integer-mult-bounds/pull/1872.",
   "overlap": {
     "checked_utc": "2026-10-14T12:38:17Z",
     "tool": "scripts/find_overlap.py --offline --json --limit 25 shared rank-one child across three calls / persistent bilinear helper / triple reuse product / common bilinear factor three call / shared helper inverse cleanup, plus direct live PR and #1166/#1167 comment searches",

@@ -82,8 +82,7 @@ establish a selected-provider triple reuse; no broader source impossibility is
 claimed.
 
 The exact construction, its forward/inverse invoice, and this schema-limited
-observation are in `CERTIFICATE.json`. The scope claim is
-[Discussion #1167 comment 18923890](https://github.com/CrocSwap/integer-mult-bounds/discussions/1167#discussioncomment-18923890).
+observation are in `CERTIFICATE.json`. The scope claim is [Discussion #1167 comment 18923890](https://github.com/CrocSwap/integer-mult-bounds/discussions/1167#discussioncomment-18923890); the result handoff is [comment 18923996](https://github.com/CrocSwap/integer-mult-bounds/discussions/1167#discussioncomment-18923996). The focused package PR is [#1872](https://github.com/CrocSwap/integer-mult-bounds/pull/1872).
 
 ## Reproduce
 
