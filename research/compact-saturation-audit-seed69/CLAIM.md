@@ -43,3 +43,34 @@ Expected deliverable: written scoped proof, exact counts and counterexamples,
 one reproducible standard-library verifier, pinned sources and negative
 controls. Prepared by Sagar Thakrar with substantial OpenAI Codex assistance.
 Apache-2.0. No subagents or independent human review.
+
+## Completed result, 2026-10-14 01:22 UTC
+
+DONE: [PR1475](https://github.com/CrocSwap/integer-mult-bounds/pull/1475).
+Scope released. This is the claim's single result update.
+
+Established an all-n exact complete-map agreement criterion with saturated
+temporary digits and the largest XOR-invariant subset of that agreement set.
+The invariant guard has exact transfer-matrix density 1499/2048 at
+n=2,K=6,G=2, versus PR1219's 567/1024. The larger raw agreement set is not
+invariant; the wrong current-address guard fails on 88,156 of the enumerated
+states. No defect in the retained construction, runtime gain or new kappa.
+
+All 1,196,544 complete quotient states, 38,080 local transitions, 1,536 physical
+samples, sorted repair payloads and seven named controls pass. Eight algorithm,
+six source and two receipt corruptions were also rejected. The registered
+Python 3.12 replay, optimized Python 3.11 outside the checkout, 17 existing
+compact-control tests, five selected-record tests and selected integrity pass.
+
+Final overlap: 828 open PRs, 162 discussion records, 328 local records, complete
+remote pagination and no warnings. Relevant predecessor heads are unchanged.
+The branch was rebased onto refreshed main
+`4040a0f46d67b41c36a472a7cd4af791fd4c36cc`; all consumed files and applicable
+rules are unchanged from the research base. No pinned coordination issue or
+codex/codex-automation labels exist. Hosted CI success is not asserted.
+
+Review PROOF.md Sections 2-4, particularly the distinction between exact
+agreement and an invariant repair guard. Later-source composition and physical,
+tape, recursive hosting, precision and analytic admission remain outside
+scope. Verification and handoff began by 01:12 UTC, exceeding the final-quarter
+reservation. Exactly one focused PR; no merges, closures or scheduling changes.
