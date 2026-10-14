@@ -17,3 +17,8 @@ The context of the selected construction retains Jeremy Kothe's PR799,
 Chafik Boukhalfa's PR741, DreamingOfClouds' PR589, eumemic's PR555 and the
 repository's cumulative contributor lineage. No priority for their results,
 or a new selected kappa, is claimed here.
+
+The final overlap review also credits concurrent work by Philipp / @mightyOil
+(PR1191 and PR1197), @thakrarsagar (PR1327), and the free-rectangle work in
+PR1375, PR1460 and PR1473. Their statements are compared in README.md and
+heads recorded in OVERLAP.json; their implementations are not imported.

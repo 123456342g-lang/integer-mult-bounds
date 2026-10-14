@@ -146,15 +146,52 @@ masked-Walsh form and limits modified readers to two coordinate columns. It
 does not close the general two-total or mixed-beta problem. No worldwide
 priority is claimed for the support-cell method.
 
+Concurrent work checked again on October 14: Philipp / @mightyOil's
+[PR1197](https://github.com/CrocSwap/integer-mult-bounds/pull/1197)
+excludes two-total savings when added-reader **coefficient** supports are
+disjoint, among other cases. Here the two coefficient columns can both use
+`{p,q}`; the disjoint row supports of Z and W do not satisfy that hypothesis.
+This package gives a quantitative result for an explicit subfamily of the
+overlapping-reader case it leaves open. @thakrarsagar's
+[PR1327](https://github.com/CrocSwap/integer-mult-bounds/pull/1327)
+studies two-sided parity lifts; its strengthened floor requires off-root-code
+columns on both factors, whereas all our reader columns remain in col(X).
+These are adjacent obstructions, not dependencies of our proof.
+[PR1191](https://github.com/CrocSwap/integer-mult-bounds/pull/1191)'s one-sided
+mask rigidity reduces masked exactness to all-pairs exactness in its class;
+our identity already holds on all pairs. The free-rectangle mechanisms of
+[PR1375](https://github.com/CrocSwap/integer-mult-bounds/pull/1375),
+[PR1460](https://github.com/CrocSwap/integer-mult-bounds/pull/1460) and
+[PR1473](https://github.com/CrocSwap/integer-mult-bounds/pull/1473) change a
+different factorization. The added evidence here is the all-pair/all-cut
+72/77 certificate, discrete histogram and independent direct-pairing replay;
+no general decoder impossibility or priority over those works is claimed.
+Their exact heads and other inspected contributions are in OVERLAP.json.
+
+## Open next questions
+
+Can compatibility among the four minimizing coefficient choices sharpen the
+continuous 72/77 bounds? A bounded first step is to evaluate the full cost on
+compatible residual/reader support cells for one pair and a minimizing cut.
+The blocker is tracking reader-ratio and residual-value constraints together;
+the current independent-minimum certificate does not assert attainability.
+This would refine the obstruction, not produce a cheaper supplier.
+
+Changing the source masks or allowing dense readers could escape this family.
+A useful first step is to specify one such class outside the pinned concurrent
+obstructions and derive its optimistic complete cost before a new search.
+No claim about that broader class follows from this package.
+
 Exact base: `f567884aeb8851b6e794af1184119a3bfbe1e631`. At that base the selected
 conditional result is #799 with #589/#555, κ=`1661634653669567/10^18`.
 The selected certificate, X4 construction note and maintainer review were read;
 no historical or pending headline was used as the accepted frontier.
 [SOURCES.json](SOURCES.json) pins consumed source bytes and predecessor heads.
-At the pre-submission refresh, main was `ce7ad1b6ab09452c3478723a2e96ed5ff212dc08`
+At the final pre-submission refresh, main was `5e554ff58d01921747d27177045c0061f31e1ad1`
 and selected #1094 at κ=`0.001672660197076918`. The pinned P112 geometry and
 both consumed predecessor heads were unchanged. [OVERLAP.json](OVERLAP.json)
-records the newer P104, bit-puncture, routing and single-lift work inspected.
+records the October 13 and October 14 overlap checks, including the newer
+two-total, parity-lift and free-rectangle work.
 The selected frontier and `upstream/` are unchanged. Inherited all-size,
 compiler, physical/hosting, precision/tape and analytic assumptions remain.
 
