@@ -38,6 +38,10 @@ def late_lift(c,y,t,u,n,K,G):
     return lifted(parity(u1),y,t,n,K,G)
 
 
+def quotient_false_positive(defect, observed_width, target_width):
+    return defect % (1 << observed_width) == 0 and defect % (1 << target_width) != 0
+
+
 def literal(z,y,t,n,K,G,rho,mutate=False):
     # Direct modular packed instructions, separate from the integer lift.
     wm=2**((n+1)*K); tm=2**(n*G)
@@ -85,7 +89,9 @@ def main():
         copies=1 << (width-L)
         ag=copies*sum(v for d,v in hist[key].items() if d % (1 << width)==0)
         require(ag==cell['ag'],'raw agreement mismatch '+str((key,rho)))
-        output.append(dict(n=n,K=K,G=G,rho=rho,order=order,ag=ag,total=cell['total'],orbit_multiplicity=copies))
+        false_positives=sum(v for d,v in hist[key].items() if quotient_false_positive(d,L,width))
+        output.append(dict(n=n,K=K,G=G,rho=rho,order=order,ag=ag,total=cell['total'],orbit_multiplicity=copies,
+                           quotient_only_false_positive_representatives=false_positives))
     # Full direct small cases include every discarded high/low target bit.
     direct=0; mutation=False
     n,K,G=2,3,1
@@ -98,17 +104,27 @@ def main():
             direct+=1
             if not mutation and literal(z,y,t,n,K,G,rho,True)!=actual: mutation=True
     require(mutation,'unload-sign control')
-    # A quotient-only test drops the carry defect and accepts extra states.
-    spurious=0
-    for (n,K,G,order),errors in hist.items():
-        L=(n-1)*K+1
-        spurious+=sum(v for d,v in errors.items() if d and d % (1 << L)==0)
+    # Count per source cell: a nonzero integer defect can still wrap to zero
+    # at that cell's full target modulus, so nonzero alone is not a failure.
+    spurious=sum(cell['quotient_only_false_positive_representatives'] for cell in output)
     require(spurious>0,'missing carry-defect control')
+    # Six representatives have D=128 in this histogram. They are genuine
+    # agreements when rho=2 gives q=7, but false positives when rho=1 gives q=8.
+    require(hist[(2,3,2,'late')][128]==6,'full-modulus regression multiplicity')
+    yy,tt=late_lift(3,11,15,7,2,3,2)
+    ideal=11^packed(digits(3,2,1),3)
+    require((yy,tt,ideal)==(130,15,2),'full-modulus regression witness')
+    require(not quotient_false_positive(yy-ideal,4,7),'valid wrap misclassified')
+    require(quotient_false_positive(yy-ideal,4,8),'nonwrapping defect accepted')
+    actual=literal(3,11 << 2,15,2,3,2,2)
+    actual=literal(2,actual[0],actual[1],2,3,2,2)
+    require(actual==(ideal << 2,15),'literal full-modulus wrap regression')
     result=dict(status='PASS_COMPACT_AGREEMENT_ORBIT_AUDIT',upstream_head=upstream['commit'],
                 cells=output,source_total=sum(x['total'] for x in output),
                 raw_agreements=sum(x['ag'] for x in output),reduced_states=reduced,
-                full_literal_cases=direct,spurious_without_carry_defect=spurious,
-                controls=['unload sign changed','carry defect omitted'],
+                full_literal_cases=direct,quotient_only_false_positive_cell_representatives=spurious,
+                full_modulus_wrap_regression=dict(integer_defect=128,observed_width=4,target_width=7,valid_representatives=6),
+                controls=['unload sign changed','carry defect omitted','nonzero defect valid at full modulus'],
                 scope='Raw agreement counts and universal target-translation lemma only; no new guard or supplier admission.')
     if (P/'EXPECTED.json').exists(): require(json.loads((P/'EXPECTED.json').read_text())==result,'receipt drift')
     print(json.dumps(result,indent=2))

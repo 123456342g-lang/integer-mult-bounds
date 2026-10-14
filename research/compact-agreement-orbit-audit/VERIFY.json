@@ -15,7 +15,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 120,
-      "checks": "47 independent raw counts, full literal quotient equivalence, carry-defect and sign controls"
+      "checks": "47 independent raw counts, full literal quotient equivalence, per-cell carry-defect diagnostics, sign and valid full-modulus wrap controls"
     }
   ]
 }

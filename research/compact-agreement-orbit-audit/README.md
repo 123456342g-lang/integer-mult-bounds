@@ -3,8 +3,11 @@
 An independent integer-lift checker reproduces all **47 raw-agreement counts**
 of Aaron Wang's PR1823 at head `5577d53f4bc093b5e9e960387ffc5d5bea55ee6f`:
 **11,880,712 agreements out of 24,074,240 states**. It evaluates 276,224
-representative states and retains the integer carry defect. Discarding that
-defect would falsely admit 34,574 representative states in the tested domain.
+representative states and retains the integer carry defect. Checking that
+defect only modulo the observed width falsely admits **69,921
+cell-representatives** across the 47 source cells. This diagnostic counts each
+cell separately, so a representative reused at different rho values can
+contribute more than once; the receipt records each cell's count.
 This adds a proved reduction and separate evidence for the census, not a new
 guard or an all-size classification of agreement states.
 
@@ -33,6 +36,13 @@ The unconstrained low target bits supply a further `2^rho` multiplicity if
 counting the full target field rather than PR1823's normalized fiber. The
 integer defect cannot be dropped or checked only modulo `2^L`.
 
+A nonzero integer defect need not be a failure: it can wrap to zero modulo
+`2^q`. In the late `(n,K,G)=(2,3,2)` histogram, six representatives have
+`D=128`. These are valid agreements for `rho=2`, where `q=7`, but false
+positives for `rho=1`, where `q=8`, if only the observed width `L=4` is checked.
+The diagnostic therefore counts exactly those restored-temporary
+representatives with `D=0 mod 2^L` and `D!=0 mod 2^q` for each source cell.
+
 The proof holds for all positive `n,K,G` and `0<=rho<K` where the stated
 packed routine is defined. It does not establish that a new guard admits
 all agreements. Dirty back-field swap restoration and source-control
@@ -50,6 +60,9 @@ The integer-lift engine computes raw-agreement counts for all 47 source cells.
 A separate literal modular engine agrees on 16,384 complete small cases,
 including all high and low target bits. An unload-sign mutation changes the
 literal result, and omitting the carry defect falsely enlarges agreement.
+A full-modulus wrap regression checks the six `D=128` representatives and a
+literal two-pass witness, preventing valid wraparound from being called a
+false positive.
 `UPSTREAM.json` binds the unchanged PR1823 receipt and README by exact commit,
 Git blob and SHA256. `SOURCES.json` binds the semantic note and guard context.
 The sufficient-guard densities and minimal witnesses were not independently
