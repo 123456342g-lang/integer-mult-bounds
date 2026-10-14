@@ -587,17 +587,15 @@
       "current_head": "21046cb8fa0d4f0e9b2f826ba71e01baaf9be02c",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [
-        "research/p120-calibrated-two-target-seed51"
-      ],
-      "unresolved_question": "Publication and live merge observation pending.",
+      "integration_location": [],
+      "unresolved_question": "Head or GitHub state changed after the pinned review. Reconcile the new revision against the recorded head and rerun affected checks before whole-head integration.",
       "closure": null,
       "scope": "Complete fixed-pencil P120 calibrated-row census: all 351 candidate shared-total pairs cancel both required diagonals. Independent P112 positive control passes; no exclusion of other pencils or correction mechanisms.",
-      "ready_to_integrate": true,
+      "ready_to_integrate": false,
       "review_completion": {
-        "changed_file_coverage": true,
-        "scoped_mechanism_review": true,
-        "required_execution_complete": true,
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
         "published": false
       },
       "verification_evidence": [
@@ -948,17 +946,15 @@
       "current_head": "49f112ac76e95415fcea8969de28f74c8928b2b1",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [
-        "research/complex-temporal-gauge-pair-seed26"
-      ],
-      "unresolved_question": "Publication and live merge observation pending.",
+      "integration_location": [],
+      "unresolved_question": "Head or GitHub state changed after the pinned review. Reconcile the new revision against the recorded head and rerun affected checks before whole-head integration.",
       "closure": null,
       "scope": "Exact L248/L253 temporal composition on the pinned static background: disjoint canonical ADD sets justify separability, with complete maps and invoices saving 272 complex primitives per orientation. Fixed-pair optimum only; physical admission and new \u03ba are not claimed.",
-      "ready_to_integrate": true,
+      "ready_to_integrate": false,
       "review_completion": {
-        "changed_file_coverage": true,
-        "scoped_mechanism_review": true,
-        "required_execution_complete": true,
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
         "published": false
       },
       "verification_evidence": [
@@ -1162,7 +1158,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Head or GitHub state changed after the pinned review. Reconcile the new revision against the recorded head and rerun affected checks before whole-head integration.",
       "closure": null,
       "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
       "ready_to_integrate": false,
@@ -1367,7 +1363,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Head or GitHub state changed after the pinned review. Reconcile the new revision against the recorded head and rerun affected checks before whole-head integration.",
       "closure": null,
       "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
       "ready_to_integrate": false,
@@ -1468,7 +1464,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Head or GitHub state changed after the pinned review. Reconcile the new revision against the recorded head and rerun affected checks before whole-head integration.",
       "closure": null,
       "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
       "ready_to_integrate": false,
@@ -1502,7 +1498,7 @@
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Head or GitHub state changed after the pinned review. Reconcile the new revision against the recorded head and rerun affected checks before whole-head integration.",
       "closure": null,
       "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
       "ready_to_integrate": false,

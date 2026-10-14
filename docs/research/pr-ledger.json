@@ -79,7 +79,7 @@
     "research/community-efficient200-audit/DISPOSITIONS.json": "57265559ef6bd7560ecf0ac457937428d1274b86bc4fda49a70af77535824eee",
     "research/community-efficient300-audit/DISPOSITIONS.json": "b5b1232b5f3580f41947cca4437c7f5726c01daf50a0ad2b9aff8d80db3c5a64",
     "research/community-efficient400-audit/DISPOSITIONS.json": "3d6c4ddb87902503a043b8609fd8fdafaa7bdef416cb977f73271542d458b147",
-    "research/community-efficient500-audit/DISPOSITIONS.json": "9ede877aed5822d5251c17da39694b1b894f8619dafe7a48fd9b98deff5d2530",
+    "research/community-efficient500-audit/DISPOSITIONS.json": "ab74d59c1715c90c850d722e0ca8f657da1e38186e2ab106511470f45043d6c6",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec",
     "research/community-efficient300-audit/PARENT-EVIDENCE.json": "8d9e28ec3ece26b91ef5a297092697c341652853164477a4961c992151cec353"
   },
@@ -72489,18 +72489,16 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [
-        "research/p120-calibrated-two-target-seed51"
-      ],
+      "integration_location": [],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "21046cb8fa0d4f0e9b2f826ba71e01baaf9be02c",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "unresolved_question": "Head or GitHub state changed after the pinned review. Reconcile the new revision against the recorded head and rerun affected checks before whole-head integration.",
       "review_completion": {
-        "changed_file_coverage": true,
-        "scoped_mechanism_review": true,
-        "required_execution_complete": true,
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
         "published": false
       },
       "verification_evidence": [
@@ -72960,18 +72958,16 @@
         }
       ],
       "historical_mentions": [],
-      "integration_location": [
-        "research/complex-temporal-gauge-pair-seed26"
-      ],
+      "integration_location": [],
       "github_state": "OPEN",
       "closure": null,
       "reviewed_head": "49f112ac76e95415fcea8969de28f74c8928b2b1",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "unresolved_question": "Head or GitHub state changed after the pinned review. Reconcile the new revision against the recorded head and rerun affected checks before whole-head integration.",
       "review_completion": {
-        "changed_file_coverage": true,
-        "scoped_mechanism_review": true,
-        "required_execution_complete": true,
+        "changed_file_coverage": false,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
         "published": false
       },
       "verification_evidence": [
@@ -73244,7 +73240,7 @@
       "closure": null,
       "reviewed_head": "be95b8063b03f9cf511dbc3d7eb8437ce1e647e5",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Head or GitHub state changed after the pinned review. Reconcile the new revision against the recorded head and rerun affected checks before whole-head integration.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -73515,7 +73511,7 @@
       "closure": null,
       "reviewed_head": "6ce8017e4c27c8b220b6c3a27a53bb18f138212a",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Head or GitHub state changed after the pinned review. Reconcile the new revision against the recorded head and rerun affected checks before whole-head integration.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -73649,7 +73645,7 @@
       "closure": null,
       "reviewed_head": "f7d8c82688ce8746d2355b5f897e1afd3100dd9e",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Head or GitHub state changed after the pinned review. Reconcile the new revision against the recorded head and rerun affected checks before whole-head integration.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -73694,7 +73690,7 @@
       "closure": null,
       "reviewed_head": "29e6cd74aacaad6766267331ad60d34c9f1875fb",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Head or GitHub state changed after the pinned review. Reconcile the new revision against the recorded head and rerun affected checks before whole-head integration.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
