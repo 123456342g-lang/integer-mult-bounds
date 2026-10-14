@@ -66,5 +66,18 @@
   "selected_record_sha256": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32",
   "claim_url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1167#discussioncomment-18923720",
   "finding_url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1167#discussioncomment-18923874",
-  "source_baseline": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY; complex primitive binds; selected kappa unchanged."
+  "source_baseline": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY; complex primitive binds; selected kappa unchanged.",
+  "submission_overlap_refresh": {
+    "checked_at_utc": "2026-10-14T12:33:47Z",
+    "open_prs": {
+      "records": 527,
+      "complete_pagination": true
+    },
+    "discussions": {
+      "records": 506,
+      "complete_pagination": true
+    },
+    "exact_s3_pair_census_matches": 0,
+    "warnings": []
+  }
 }

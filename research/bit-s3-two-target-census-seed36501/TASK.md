@@ -44,9 +44,9 @@ the result is a scoped alternative-model bound, not a selected-profile or
 
 ## Overlap, predecessors and stopping rule
 
-Fresh overlap search at 2026-10-14 12:30 UTC found no exact S3 two-target
-transposition census among 526 completely paginated open PRs and 501 Discussion
-records, and no matching local task/readme/ledger entry. Nearby distinct work:
+Final pre-submission overlap refresh at 2026-10-14 12:33:47 UTC found no exact
+S3 two-target transposition census among 527 completely paginated open PRs and
+506 Discussion records, and no matching local task/readme/ledger entry. Nearby distinct work:
 PR #1822 uses `Q8` central-commutator pairs; PR #1716 uses a restricted `AGL2`
 triple; Discussions #1759 and #1818 use `UT4` and `D16`; PRs #1478/#1573/#1742
 and overlap handoff #1792 already address the D8 third-register question.
