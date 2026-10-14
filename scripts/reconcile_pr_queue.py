@@ -171,6 +171,7 @@ def build():
         'research/community-reconciliation-third100-audit/DISPOSITIONS.json',
         'research/community-reconciliation-fourth100-audit/DISPOSITIONS.json',
         'research/community-pilot20-audit/DISPOSITIONS.json',
+        'research/community-efficient100-audit/DISPOSITIONS.json',
     ) if (ROOT / p).exists()]
     family_path = family_paths[-1] if family_paths else None
     for family_path in family_paths:

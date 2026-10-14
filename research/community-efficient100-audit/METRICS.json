@@ -1,0 +1,14 @@
+{
+  "selected": 100,
+  "ready": 83,
+  "merged": 0,
+  "remaining": 17,
+  "elapsed_seconds": 901.7,
+  "scoped_process_seconds": 1453.9,
+  "successful_receipts": 86,
+  "full_supplier_rebuilds_started": 0,
+  "initial_command_budget_seconds": 180,
+  "primary_check_workers": 4,
+  "token_usage": null,
+  "limits": "No matched control batch or token telemetry. Source identity is not an automatic transitive scientific cache; all accepted items have their own scoped evidence."
+}
