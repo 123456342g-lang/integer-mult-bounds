@@ -2,7 +2,7 @@
 
 Frozen selection: **100 open, non-draft PRs #1729–#1862**, excluding prior same-head dispositions. Baseline `4d3248d6d52f8ddfe612e8508b74a36acb67fbe3`. Complete Git differences determine changed-file coverage.
 
-**39 ready; 39 observed merged; 61 pending.** The selected conditional κ remains `836330098538459/500000000000000000`.
+**47 ready; 39 observed merged; 53 pending.** The selected conditional κ remains `836330098538459/500000000000000000`.
 
 Original author commits, notices, predecessor credit and assistance disclosures are retained. Scoped research incorporation does not admit a new supplier or verify the inherited full multiplication theorem.
 
@@ -48,7 +48,15 @@ Original author commits, notices, predecessor credit and assistance disclosures 
 | [#1790](https://github.com/CrocSwap/integer-mult-bounds/pull/1790) | navinor | Complete compressed census of2388752640 unordered whole-helper pairs uses exact concave fixed-sum ordering. All1150 potentially improving capacity-feasible swaps fail actual strict windows; a legal worsening swap and its detected improving inverse calibrate the test. Neutral paths, larger cycles and changed inventories are outside scope. |
 | [#1791](https://github.com/CrocSwap/integer-mult-bounds/pull/1791) | rtyu193-rgb | Actual selected-profile hypothetical centre-sharing budgets are sharp integer single-rank overhead thresholds, checked by exact moments and outer slacks. k2 can retain the bit-limited3.4536% gain only under the missing shared-caller/native/hosting contract; macro headroom and required bit reductions remain planning figures. |
 | [#1792](https://github.com/CrocSwap/integer-mult-bounds/pull/1792) | JosieElliston | Alias-aware D8/UT3 index preserves earlier1478/1573/1589 priority and supplies independent finite corroboration plus a checked two-representation/rank-nullity proof audit. Registered r2/r3 replay passed; opt-in r4 author receipt is not newly rerun. This prevents rediscovering the already closed all-register central-target case. |
+| [#1793](https://github.com/CrocSwap/integer-mult-bounds/pull/1793) | VictorLiwentao | Ascending pivot scan replaces repeated unused-column sorting without changing the deterministic side routine. Exact predecessor outputs and certificate regeneration agree; combined current-main tests pass. Author speedup ratio is not independently timed. |
 | [#1799](https://github.com/CrocSwap/integer-mult-bounds/pull/1799) | 1337isnot1337 | All32 qualifying consecutive same-source C3 windows of selected A/B word are enumerated. Exact interval scheduling of certified saving upper bounds proves every disjoint schedule misses5% even with free extra interfaces;25-group illustrative profile improves relaxed ceiling0.90655%. No tagged physical child or new kappa admitted. |
+| [#1801](https://github.com/CrocSwap/integer-mult-bounds/pull/1801) | 1337isnot1337 | Exact three-role mixed S4 double-transposition target has minimum6: complete84-factor four-call formal meet, sign parity and group word-length floor exclude shorter lengths. Independent Python reconstruction and C++ search agree; positive4-call different-target control included. No supplier claim. |
+| [#1804](https://github.com/CrocSwap/integer-mult-bounds/pull/1804) | 1337isnot1337 | Full F2[GL3]36-factor radius2/radius3 meet excludes at most5 calls for one fixed two-role target; explicit6-call word attains. Natural displacement rank is only a lower screen. Complete168-element group and separate generic-product controls pass; other targets/extras remain open. |
+| [#1817](https://github.com/CrocSwap/integer-mult-bounds/pull/1817) | JosieElliston | Dependency-respecting local commutation constructs134 disjoint16-way batches versus8 contiguous batches, with unchanged independent local semantics/profile replay. Greedy count is attained locally, not optimal; diagonal child realization and global hosting remain unproved. Relaxed39.5% complex ceiling is not a kappa result. |
+| [#1819](https://github.com/CrocSwap/integer-mult-bounds/pull/1819) | 1337isnot1337 | Explicit neutral then strict whole-helper relocation passes the complete retained69120-role owner audit and exactly changes idle(1,7) to(8,0). Concavity and rational endpoint brackets certify a conditional fixed-word moment improvement. Controller reconstruction, full invoice and supplier/selected admission remain open. |
+| [#1834](https://github.com/CrocSwap/integer-mult-bounds/pull/1834) | navinor | Explicit UTF-8 status reads, AST regression guard and load-bearing cp1252 control preserve research-status tests under legacy locale. Complete declared 44-test replay and combined current-main checks pass; complements earlier onboarding fixes. |
+| [#1852](https://github.com/CrocSwap/integer-mult-bounds/pull/1852) | woklerx | Isolated test children strip inherited PYTHONOPTIMIZE so assert-based checks cannot silently disappear. Outer optimization levels1/2 detect the intentionally failing child; other environment values remain unchanged. Combined tooling checks pass. |
+| [#1862](https://github.com/CrocSwap/integer-mult-bounds/pull/1862) | aliromman | Fixed-chart ordered-ring source code and eight-row identity-target repair: exact forward/adjoint 712-column checks for six words and8192 native Gaussian checks pass. All480 arbitrary helpers restore; eight extra rank-one children and217898 scalar additions are charged. Source transport, global controller/hosting and full supplier admission remain open; no kappa claim. |
 
 ## Remaining review
 
@@ -62,12 +70,9 @@ Original author commits, notices, predecessor credit and assistance disclosures 
 | [#1763](https://github.com/CrocSwap/integer-mult-bounds/pull/1763) | navinor | Written section3 necessary free-layer conditions are false: at r=1 with every N=[1], baba=(ba)^2=ab is an exact formal target but sum_ba=1, so layer_ok_even_target rejects it. Reproduced using submitted formal engine. Remove or repair the layer claim and controls; the independent finite meet minimum may remain valid and should be retained with precise scope. |
 | [#1786](https://github.com/CrocSwap/integer-mult-bounds/pull/1786) | chafreaky | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1789](https://github.com/CrocSwap/integer-mult-bounds/pull/1789) | midhatn | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
-| [#1793](https://github.com/CrocSwap/integer-mult-bounds/pull/1793) | VictorLiwentao | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1794](https://github.com/CrocSwap/integer-mult-bounds/pull/1794) | Maximooch | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1797](https://github.com/CrocSwap/integer-mult-bounds/pull/1797) | JosieElliston | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1800](https://github.com/CrocSwap/integer-mult-bounds/pull/1800) | jeremykothe2 | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
-| [#1801](https://github.com/CrocSwap/integer-mult-bounds/pull/1801) | 1337isnot1337 | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
-| [#1804](https://github.com/CrocSwap/integer-mult-bounds/pull/1804) | 1337isnot1337 | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1805](https://github.com/CrocSwap/integer-mult-bounds/pull/1805) | VictorLiwentao | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1806](https://github.com/CrocSwap/integer-mult-bounds/pull/1806) | mtpsl | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1808](https://github.com/CrocSwap/integer-mult-bounds/pull/1808) | JosieElliston | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
@@ -77,8 +82,6 @@ Original author commits, notices, predecessor credit and assistance disclosures 
 | [#1814](https://github.com/CrocSwap/integer-mult-bounds/pull/1814) | 1337isnot1337 | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1815](https://github.com/CrocSwap/integer-mult-bounds/pull/1815) | jmbarrancoml | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1816](https://github.com/CrocSwap/integer-mult-bounds/pull/1816) | JosieElliston | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
-| [#1817](https://github.com/CrocSwap/integer-mult-bounds/pull/1817) | JosieElliston | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
-| [#1819](https://github.com/CrocSwap/integer-mult-bounds/pull/1819) | 1337isnot1337 | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1821](https://github.com/CrocSwap/integer-mult-bounds/pull/1821) | 1337isnot1337 | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1822](https://github.com/CrocSwap/integer-mult-bounds/pull/1822) | navinor | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1823](https://github.com/CrocSwap/integer-mult-bounds/pull/1823) | navinor | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
@@ -90,7 +93,6 @@ Original author commits, notices, predecessor credit and assistance disclosures 
 | [#1829](https://github.com/CrocSwap/integer-mult-bounds/pull/1829) | 1337isnot1337 | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1830](https://github.com/CrocSwap/integer-mult-bounds/pull/1830) | RossRichardson | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1833](https://github.com/CrocSwap/integer-mult-bounds/pull/1833) | ToikY | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
-| [#1834](https://github.com/CrocSwap/integer-mult-bounds/pull/1834) | navinor | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1837](https://github.com/CrocSwap/integer-mult-bounds/pull/1837) | navinor | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1838](https://github.com/CrocSwap/integer-mult-bounds/pull/1838) | 1337isnot1337 | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1839](https://github.com/CrocSwap/integer-mult-bounds/pull/1839) | jeremykothe2 | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
@@ -105,7 +107,6 @@ Original author commits, notices, predecessor credit and assistance disclosures 
 | [#1849](https://github.com/CrocSwap/integer-mult-bounds/pull/1849) | woklerx | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1850](https://github.com/CrocSwap/integer-mult-bounds/pull/1850) | woklerx | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1851](https://github.com/CrocSwap/integer-mult-bounds/pull/1851) | woklerx | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
-| [#1852](https://github.com/CrocSwap/integer-mult-bounds/pull/1852) | woklerx | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1853](https://github.com/CrocSwap/integer-mult-bounds/pull/1853) | woklerx | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1854](https://github.com/CrocSwap/integer-mult-bounds/pull/1854) | woklerx | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1855](https://github.com/CrocSwap/integer-mult-bounds/pull/1855) | woklerx | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
@@ -114,7 +115,6 @@ Original author commits, notices, predecessor credit and assistance disclosures 
 | [#1858](https://github.com/CrocSwap/integer-mult-bounds/pull/1858) | woklerx | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1859](https://github.com/CrocSwap/integer-mult-bounds/pull/1859) | woklerx | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 | [#1861](https://github.com/CrocSwap/integer-mult-bounds/pull/1861) | VictorLiwentao | Warm-cache input-validation regression: basis((1,)) then basis((1.0,)) accepts the float although the baseline and cold optimized call reject it. Validate row types before cache lookup or use a key preserving row types, add a warm-cache regression test and refresh affected source pins. Positive integer certificate equivalence is retained but insufficient to preserve rejection behavior. |
-| [#1862](https://github.com/CrocSwap/integer-mult-bounds/pull/1862) | aliromman | Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance. |
 
 ## Evidence and limits
 

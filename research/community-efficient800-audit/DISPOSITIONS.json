@@ -1815,19 +1815,25 @@
       "current_head": "7c16aea5074ae673e58bc38c8d99a948e3937853",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "certificates/inplace-side.json",
+        "research/inplace-side-performance",
+        "scripts/experiments",
+        "tests/test_inplace_side_performance.py"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Ascending pivot scan replaces repeated unused-column sorting without changing the deterministic side routine. Exact predecessor outputs and certificate regeneration agree; combined current-main tests pass. Author speedup ratio is not independently timed.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
         "research/community-efficient800-audit/packets/1793.json",
+        "research/community-efficient800-audit/checks/check-1793-supplement.json",
         "research/community-efficient800-audit/checks/check-1793.json"
       ]
     },
@@ -1990,15 +1996,17 @@
       "current_head": "4f734ba1dee6418bb151e3730b9bf50655bd0fde",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/s4-mixed-v4-double-transposition-seed0cdbb4"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Exact three-role mixed S4 double-transposition target has minimum6: complete84-factor four-call formal meet, sign parity and group word-length floor exclude shorter lengths. Independent Python reconstruction and C++ search agree; positive4-call different-target control included. No supplier claim.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -2024,15 +2032,17 @@
       "current_head": "26f5ae8a3eb37c7928f6ff8d2c2afd9ed2607e8e",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/gl3-coordinate-cnot-pair-seed1385e243"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Full F2[GL3]36-factor radius2/radius3 meet excludes at most5 calls for one fixed two-role target; explicit6-call word attains. Natural displacement rank is only a lower screen. Complete168-element group and separate generic-product controls pass; other targets/extras remain open.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -2342,7 +2352,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1816.json"
+        "research/community-efficient800-audit/packets/1816.json",
+        "research/community-efficient800-audit/checks/check-1816.json"
       ]
     },
     {
@@ -2363,15 +2374,17 @@
       "current_head": "ac3a759e874e8e526bc884fc2cb8eb114695b063",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/diagonal-batch-commutation"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Dependency-respecting local commutation constructs134 disjoint16-way batches versus8 contiguous batches, with unchanged independent local semantics/profile replay. Greedy count is attained locally, not optimal; diagonal child realization and global hosting remain unproved. Relaxed39.5% complex ceiling is not a kappa result.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -2397,15 +2410,17 @@
       "current_head": "eb519ed5b0013e03f4d9657730d57acee65cafd4",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/selected-neutral-path-seed893"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Explicit neutral then strict whole-helper relocation passes the complete retained69120-role owner audit and exactly changes idle(1,7) to(8,0). Concavity and rational endpoint brackets certify a conditional fixed-word moment improvement. Controller reconstruction, full invoice and supplier/selected admission remain open.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
@@ -2511,7 +2526,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1823.json"
+        "research/community-efficient800-audit/packets/1823.json",
+        "research/community-efficient800-audit/checks/check-1823.json"
       ]
     },
     {
@@ -2544,7 +2560,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1824.json"
+        "research/community-efficient800-audit/packets/1824.json",
+        "research/community-efficient800-audit/checks/check-1824.json"
       ]
     },
     {
@@ -2645,7 +2662,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1827.json"
+        "research/community-efficient800-audit/packets/1827.json",
+        "research/community-efficient800-audit/checks/check-1827.json"
       ]
     },
     {
@@ -2711,7 +2729,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1829.json"
+        "research/community-efficient800-audit/packets/1829.json",
+        "research/community-efficient800-audit/checks/check-1829.json"
       ]
     },
     {
@@ -2744,7 +2763,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1830.json"
+        "research/community-efficient800-audit/packets/1830.json",
+        "research/community-efficient800-audit/checks/check-1830.json"
       ]
     },
     {
@@ -2777,7 +2797,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1833.json"
+        "research/community-efficient800-audit/packets/1833.json",
+        "research/community-efficient800-audit/checks/check-1833.json"
       ]
     },
     {
@@ -2798,19 +2819,25 @@
       "current_head": "84ca53150d99215bdbe6ca33107bc0c17708ea3e",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/test-suite-locale-reads",
+        "tests/test_research_current_status.py"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Explicit UTF-8 status reads, AST regression guard and load-bearing cp1252 control preserve research-status tests under legacy locale. Complete declared 44-test replay and combined current-main checks pass; complements earlier onboarding fixes.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1834.json"
+        "research/community-efficient800-audit/packets/1834.json",
+        "research/community-efficient800-audit/checks/check-1834-initial.json",
+        "research/community-efficient800-audit/checks/check-1834-supplement.json",
+        "research/community-efficient800-audit/checks/check-1834.json"
       ]
     },
     {
@@ -2843,7 +2870,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1837.json"
+        "research/community-efficient800-audit/packets/1837.json",
+        "research/community-efficient800-audit/checks/check-1837.json"
       ]
     },
     {
@@ -2876,7 +2904,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1838.json"
+        "research/community-efficient800-audit/packets/1838.json",
+        "research/community-efficient800-audit/checks/check-1838.json"
       ]
     },
     {
@@ -2942,7 +2971,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1841.json"
+        "research/community-efficient800-audit/packets/1841.json",
+        "research/community-efficient800-audit/checks/check-1841.json"
       ]
     },
     {
@@ -2975,7 +3005,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1842.json"
+        "research/community-efficient800-audit/packets/1842.json",
+        "research/community-efficient800-audit/checks/check-1842.json"
       ]
     },
     {
@@ -3008,7 +3039,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1843.json"
+        "research/community-efficient800-audit/packets/1843.json",
+        "research/community-efficient800-audit/checks/check-1843.json"
       ]
     },
     {
@@ -3041,7 +3073,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1844.json"
+        "research/community-efficient800-audit/packets/1844.json",
+        "research/community-efficient800-audit/checks/check-1844.json"
       ]
     },
     {
@@ -3074,7 +3107,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1845.json"
+        "research/community-efficient800-audit/packets/1845.json",
+        "research/community-efficient800-audit/checks/check-1845.json"
       ]
     },
     {
@@ -3107,7 +3141,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1846.json"
+        "research/community-efficient800-audit/packets/1846.json",
+        "research/community-efficient800-audit/checks/check-1846.json"
       ]
     },
     {
@@ -3140,7 +3175,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1847.json"
+        "research/community-efficient800-audit/packets/1847.json",
+        "research/community-efficient800-audit/checks/check-1847.json"
       ]
     },
     {
@@ -3173,7 +3209,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1848.json"
+        "research/community-efficient800-audit/packets/1848.json",
+        "research/community-efficient800-audit/checks/check-1848.json"
       ]
     },
     {
@@ -3206,7 +3243,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1849.json"
+        "research/community-efficient800-audit/packets/1849.json",
+        "research/community-efficient800-audit/checks/check-1849.json"
       ]
     },
     {
@@ -3239,7 +3277,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1850.json"
+        "research/community-efficient800-audit/packets/1850.json",
+        "research/community-efficient800-audit/checks/check-1850.json"
       ]
     },
     {
@@ -3272,7 +3311,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1851.json"
+        "research/community-efficient800-audit/packets/1851.json",
+        "research/community-efficient800-audit/checks/check-1851.json"
       ]
     },
     {
@@ -3293,19 +3333,24 @@
       "current_head": "2b7dc6cf68f650dd2cd8898924d31a02f1a6e9c7",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "scripts/run_isolated_tests.py",
+        "tests/test_isolated_test_runner.py"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Isolated test children strip inherited PYTHONOPTIMIZE so assert-based checks cannot silently disappear. Outer optimization levels1/2 detect the intentionally failing child; other environment values remain unchanged. Combined tooling checks pass.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1852.json"
+        "research/community-efficient800-audit/packets/1852.json",
+        "research/community-efficient800-audit/checks/check-1852-supplement.json",
+        "research/community-efficient800-audit/checks/check-1852.json"
       ]
     },
     {
@@ -3338,7 +3383,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1853.json"
+        "research/community-efficient800-audit/packets/1853.json",
+        "research/community-efficient800-audit/checks/check-1853.json"
       ]
     },
     {
@@ -3371,7 +3417,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1854.json"
+        "research/community-efficient800-audit/packets/1854.json",
+        "research/community-efficient800-audit/checks/check-1854.json"
       ]
     },
     {
@@ -3404,7 +3451,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1855.json"
+        "research/community-efficient800-audit/packets/1855.json",
+        "research/community-efficient800-audit/checks/check-1855.json"
       ]
     },
     {
@@ -3437,7 +3485,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1856.json"
+        "research/community-efficient800-audit/packets/1856.json",
+        "research/community-efficient800-audit/checks/check-1856.json"
       ]
     },
     {
@@ -3470,7 +3519,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1857.json"
+        "research/community-efficient800-audit/packets/1857.json",
+        "research/community-efficient800-audit/checks/check-1857.json"
       ]
     },
     {
@@ -3503,7 +3553,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1858.json"
+        "research/community-efficient800-audit/packets/1858.json",
+        "research/community-efficient800-audit/checks/check-1858.json"
       ]
     },
     {
@@ -3536,7 +3587,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1859.json"
+        "research/community-efficient800-audit/packets/1859.json",
+        "research/community-efficient800-audit/checks/check-1859.json"
       ]
     },
     {
@@ -3569,7 +3621,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1861.json"
+        "research/community-efficient800-audit/packets/1861.json",
+        "research/community-efficient800-audit/checks/check-1861.json"
       ]
     },
     {
@@ -3590,19 +3643,23 @@
       "current_head": "bb29ea73ad9be9a0c3d53cdcb1d22b2ee9ffe42f",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "integration_location": [
+        "research/native-source-codes"
+      ],
+      "unresolved_question": "Publication and live merge observation pending.",
       "closure": null,
-      "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
-      "ready_to_integrate": false,
+      "scope": "Fixed-chart ordered-ring source code and eight-row identity-target repair: exact forward/adjoint 712-column checks for six words and8192 native Gaussian checks pass. All480 arbitrary helpers restore; eight extra rank-one children and217898 scalar additions are charged. Source transport, global controller/hosting and full supplier admission remain open; no kappa claim.",
+      "ready_to_integrate": true,
       "review_completion": {
-        "changed_file_coverage": false,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient800-audit/packets/1862.json"
+        "research/community-efficient800-audit/packets/1862.json",
+        "research/community-efficient800-audit/checks/check-1862-initial.json",
+        "research/community-efficient800-audit/checks/check-1862.json"
       ]
     }
   ]
