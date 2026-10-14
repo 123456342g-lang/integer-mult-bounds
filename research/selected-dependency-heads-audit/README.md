@@ -123,9 +123,8 @@ Advisory claim text: [CLAIM.md](CLAIM.md).
 ## Credit and limits
 
 Prepared by Wentao Li ([VictorLiwentao](https://github.com/VictorLiwentao),
-[@Is__Victor](https://x.com/Is__Victor)) with substantial Cursor/Composer AI
-assistance. Not independent human peer review. Apache-2.0. Predecessor authors
-above retain credit for their packages and reviews. Inherited
-all-size/compiler, hosting, precision/tape, analytic and bit H1–H5 obligations
-are untouched. This is not a formal multiplication theorem. Selected frontier
-left unchanged.
+[@Is__Victor](https://x.com/Is__Victor)) with substantial AI assistance.
+Not independent human peer review. Apache-2.0. Predecessor authors above retain
+credit for their packages and reviews. Inherited all-size/compiler, hosting,
+precision/tape, analytic and bit H1–H5 obligations are untouched. This is not a
+formal multiplication theorem. Selected frontier left unchanged.

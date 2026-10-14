@@ -6,8 +6,7 @@ This is a supplemental consistency check. It is not wired into
 authenticate GitHub, prove that a head is the reviewed mathematical source, or
 replace certificate/inventory/supplement checks.
 
-Wentao Li (@VictorLiwentao) with substantial Cursor/Composer AI
-assistance. Apache-2.0.
+Wentao Li (@VictorLiwentao) with substantial AI assistance. Apache-2.0.
 """
 from __future__ import annotations
 

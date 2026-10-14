@@ -51,7 +51,7 @@
   "author": "Wentao Li",
   "github": "VictorLiwentao",
   "email": "wentaol4@illinois.edu",
-  "ai_assistance": "Substantial Cursor/Composer AI assistance for orientation, overlap search, task selection, audit design, verifier/guard implementation, package drafting and verification. Not independent human peer review.",
+  "ai_assistance": "Substantial AI assistance for orientation, overlap search, task selection, audit design, verifier/guard implementation, package drafting and verification. Not independent human peer review.",
   "open_questions": [
     {
       "question": "Should verify_selected_result.py adopt an optional or mandatory dependency-head consistency clause along the lines of guard.py?",

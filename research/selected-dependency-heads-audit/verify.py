@@ -16,8 +16,7 @@ This package does not change the selected frontier or selected scripts, and
 does not run a cold frontier replay. ``guard.py`` is a proposed opt-in check
 only.
 
-Wentao Li (@VictorLiwentao) with substantial Cursor/Composer AI assistance.
-Apache-2.0.
+Wentao Li (@VictorLiwentao) with substantial AI assistance. Apache-2.0.
 """
 from __future__ import annotations
 
