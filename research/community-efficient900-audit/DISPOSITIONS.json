@@ -17,20 +17,24 @@
       },
       "reviewed_head": "1fa62d83ab02e21971cc8b9ef524e5a3ea584d58",
       "current_head": "1fa62d83ab02e21971cc8b9ef524e5a3ea584d58",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/common-core-fanin-seed93550f9f"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1863"
+      },
       "scope": "Exact shared-core dirty fan-in identity checked on245 F2 columns and integer fixtures, with rank48 core and three rank1 deviations. The >28 margin is under a declared local tariff charging row gathers as unit operations; no selected source seam, actual recursive/hosting or precision tariff is admitted.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1863.json",
@@ -53,20 +57,24 @@
       },
       "reviewed_head": "3d54b62bee5e7e2027aaffd9a30c31adc3b84c0a",
       "current_head": "3d54b62bee5e7e2027aaffd9a30c31adc3b84c0a",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/selected-binding-coverage-seeda342"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1864"
+      },
       "scope": "Pinned20-input binding inventory and seven production-check mutation fixtures distinguish trusted anchors from enforced payload hashes. Consistent manifest/payload mutation passes the current fast checker. Literal-path audit is scoped, not complete dynamic dependency analysis or a mathematical supplier replay.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1864.json",
@@ -89,20 +97,24 @@
       },
       "reviewed_head": "7d22d1d51eb6c0bc040f8181b6c5f83e051fb234",
       "current_head": "7d22d1d51eb6c0bc040f8181b6c5f83e051fb234",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/complex-mixed-rank6-block-seedc8d6"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1866"
+      },
       "scope": "Six-atom tensor identity and slice-space argument prove exact rank6; interval pricing gives hypothetical135/284 block thresholds. Source-bound phaseA has no direct rank3 climb placement. Dirty updates are algebraic, with no compiled child, full cost or supplier claim.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1866.json",
@@ -125,20 +137,24 @@
       },
       "reviewed_head": "862173af2784fc53a6c658a8865df4e15a6163b8",
       "current_head": "862173af2784fc53a6c658a8865df4e15a6163b8",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/h4-root-linear-copy-floor"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1867"
+      },
       "scope": "Exact H4 geometry and5280 support witnesses plus written idempotent/Hadamard arguments prove block fitting rank15k over every field. Arbitrary root-linear factors give COPY>=52; the one-unpaid halving template implies a<.001. External-factor cancellation and changed coverage remain outside scope.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1867.json",
@@ -195,20 +211,24 @@
       },
       "reviewed_head": "538d194e69420a6a773612e0b5ad0c94575f8aaa",
       "current_head": "538d194e69420a6a773612e0b5ad0c94575f8aaa",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/bit-s3-two-target-census-seed36501"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1870"
+      },
       "scope": "Complete13664-state radius5 ball and literal replay of every canonical path prove all36 S3 two-target minima equal their separate geodesic bills. Includes scalar GL2 mixing by augmentation normalization; no statement for extra roles or address alphabets.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1870.json",
@@ -231,20 +251,24 @@
       },
       "reviewed_head": "626ce207ec92a76f70a84843fe4ce3c39f67899d",
       "current_head": "626ce207ec92a76f70a84843fe4ce3c39f67899d",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/complex-shared-product-triple-seed5a78"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1872"
+      },
       "scope": "Exact rank4 joint tensor with five compute/cleanup children replaces six separate children in the explicit clean-helper interface. Rational dirty-target/inverse fixtures and764/765/766 favorable profile thresholds pass. Clean helper availability, matching source operands and full interface tariff remain unestablished.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1872.json",
@@ -435,20 +459,24 @@
       },
       "reviewed_head": "72804aaceac1a62a1636ee329330a13b9004ac96",
       "current_head": "72804aaceac1a62a1636ee329330a13b9004ac96",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/complex-cartesian-grid-screen-seed506af"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1878"
+      },
       "scope": "Sparse block-product identity and exact99th-root screen show less than5% local-work reduction for the declared generic width-r child at r<=51,a<=1/99; first qualifying width161. No alternative tensor algorithm or actual selected-grid placement is excluded.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1878.json",
@@ -485,7 +513,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1880.json"
+        "research/community-efficient900-audit/packets/1880.json",
+        "research/community-efficient900-audit/checks/check-1880.json"
       ]
     },
     {
@@ -504,20 +533,24 @@
       },
       "reviewed_head": "5a51deaaab2746d42eddb454bbb968bda3af02cc",
       "current_head": "5a51deaaab2746d42eddb454bbb968bda3af02cc",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/d8-rotation-pair-seedff568"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1881"
+      },
       "scope": "Both rank-one search and independent full group-algebra matrix replay exclude all1885 words through length3; direct D8 inverse-rotation pair attains4. Regular-representation rank bound3 is correctly distinguished from the exhaustive stronger result. Two-role reflection alphabet only.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1881.json",
@@ -642,20 +675,24 @@
       },
       "reviewed_head": "5f05652c7dc7f51555ddb59b716000199a72c0ff",
       "current_head": "5f05652c7dc7f51555ddb59b716000199a72c0ff",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/paired-plane-scalar-mask-obstruction"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1889"
+      },
       "scope": "All12544 binary identities retained as positive controls;224 scalar columns and explicit coefficient5 witness disprove literal scalar-plane interpretation. Parity forces6608 forbidden cross-entries for every parity-preserving integral lift. Does not refute binary/translation identities or exclude rational/operator-valued replacements.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1889.json",
@@ -693,7 +730,8 @@
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1891.json",
-        "research/community-efficient900-audit/checks/check-1891-initial.json"
+        "research/community-efficient900-audit/checks/check-1891-initial.json",
+        "research/community-efficient900-audit/checks/check-1891.json"
       ]
     },
     {
@@ -1471,7 +1509,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1919.json"
+        "research/community-efficient900-audit/packets/1919.json",
+        "research/community-efficient900-audit/checks/check-1919.json"
       ]
     },
     {
@@ -1571,7 +1610,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1923.json"
+        "research/community-efficient900-audit/packets/1923.json",
+        "research/community-efficient900-audit/checks/check-1923.json"
       ]
     },
     {
@@ -1604,7 +1644,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1924.json"
+        "research/community-efficient900-audit/packets/1924.json",
+        "research/community-efficient900-audit/checks/check-1924.json"
       ]
     },
     {
@@ -1637,7 +1678,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1925.json"
+        "research/community-efficient900-audit/packets/1925.json",
+        "research/community-efficient900-audit/checks/check-1925.json"
       ]
     },
     {
@@ -1670,7 +1712,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1926.json"
+        "research/community-efficient900-audit/packets/1926.json",
+        "research/community-efficient900-audit/checks/check-1926.json"
       ]
     },
     {
@@ -1736,7 +1779,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1930.json"
+        "research/community-efficient900-audit/packets/1930.json",
+        "research/community-efficient900-audit/checks/check-1930.json"
       ]
     },
     {
@@ -1802,7 +1846,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1934.json"
+        "research/community-efficient900-audit/packets/1934.json",
+        "research/community-efficient900-audit/checks/check-1934.json"
       ]
     },
     {
@@ -1835,7 +1880,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1935.json"
+        "research/community-efficient900-audit/packets/1935.json",
+        "research/community-efficient900-audit/checks/check-1935.json"
       ]
     },
     {
@@ -1868,7 +1914,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1936.json"
+        "research/community-efficient900-audit/packets/1936.json",
+        "research/community-efficient900-audit/checks/check-1936.json"
       ]
     },
     {
@@ -1901,7 +1948,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1937.json"
+        "research/community-efficient900-audit/packets/1937.json",
+        "research/community-efficient900-audit/checks/check-1937.json"
       ]
     },
     {
@@ -1934,7 +1982,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1938.json"
+        "research/community-efficient900-audit/packets/1938.json",
+        "research/community-efficient900-audit/checks/check-1938.json"
       ]
     },
     {
@@ -1952,11 +2001,11 @@
         "isDraft": false
       },
       "reviewed_head": "b1631b1bf950f8da70510057faf55c6ed705c815",
-      "current_head": "b1631b1bf950f8da70510057faf55c6ed705c815",
+      "current_head": "94998804693d50c5b2d57e923a6781368e7a635e",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Head changed from reviewed b1631b1bf950f8da70510057faf55c6ed705c815 to 94998804693d50c5b2d57e923a6781368e7a635e during this round. Review the revision delta and replay the current head; the initial fixture also lacks the pinned baseline558 canonical word. Old-head execution is not current-head acceptance.",
       "closure": null,
       "scope": "Exact-head metadata and complete changed-file inventory collected; substantive review is in progress.",
       "ready_to_integrate": false,
@@ -1967,7 +2016,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1939.json"
+        "research/community-efficient900-audit/packets/1939.json",
+        "research/community-efficient900-audit/checks/check-1939.json"
       ]
     },
     {
@@ -2000,7 +2050,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1940.json"
+        "research/community-efficient900-audit/packets/1940.json",
+        "research/community-efficient900-audit/checks/check-1940.json"
       ]
     },
     {
@@ -2033,7 +2084,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1941.json"
+        "research/community-efficient900-audit/packets/1941.json",
+        "research/community-efficient900-audit/checks/check-1941.json"
       ]
     },
     {
@@ -2066,7 +2118,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1942.json"
+        "research/community-efficient900-audit/packets/1942.json",
+        "research/community-efficient900-audit/checks/check-1942.json"
       ]
     },
     {
@@ -2099,7 +2152,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1943.json"
+        "research/community-efficient900-audit/packets/1943.json",
+        "research/community-efficient900-audit/checks/check-1943.json"
       ]
     },
     {
@@ -2132,7 +2186,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1944.json"
+        "research/community-efficient900-audit/packets/1944.json",
+        "research/community-efficient900-audit/checks/check-1944.json"
       ]
     },
     {
@@ -2165,7 +2220,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1945.json"
+        "research/community-efficient900-audit/packets/1945.json",
+        "research/community-efficient900-audit/checks/check-1945.json"
       ]
     },
     {
@@ -2198,7 +2254,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1946.json"
+        "research/community-efficient900-audit/packets/1946.json",
+        "research/community-efficient900-audit/checks/check-1946.json"
       ]
     },
     {
@@ -2231,7 +2288,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1948.json"
+        "research/community-efficient900-audit/packets/1948.json",
+        "research/community-efficient900-audit/checks/check-1948.json"
       ]
     },
     {
@@ -2264,7 +2322,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1949.json"
+        "research/community-efficient900-audit/packets/1949.json",
+        "research/community-efficient900-audit/checks/check-1949.json"
       ]
     },
     {
@@ -2297,7 +2356,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1951.json"
+        "research/community-efficient900-audit/packets/1951.json",
+        "research/community-efficient900-audit/checks/check-1951.json"
       ]
     }
   ]

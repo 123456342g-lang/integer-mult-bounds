@@ -1,1 +1,22 @@
 ['/tmp/pr-efficient200-venv/bin/python', '-I', '-B', 'research/joint-frames-cleared-product/verify.py']
+Checked signed side: 4 2 [33, 30]
+Checked signed side: 5 2 [97, 70]
+Checked signed side: 4 4 [22, 20]
+Checked signed side: 5 4 [110, 100]
+Checked signed side: 6 4 [1600, 1080]
+Checked signed side: 8 8 [1764, 1200]
+PASS_JOINT_FRAMES_CLEARED_PRODUCT positive_side_cases=12 random_cases=2500 certs=1 no_new_kappa
+['/tmp/pr-efficient200-venv/bin/python', '-I', '-O', '-B', 'research/joint-frames-cleared-product/verify.py']
+Checked signed side: 4 2 [33, 30]
+Checked signed side: 5 2 [97, 70]
+Checked signed side: 4 4 [22, 20]
+Checked signed side: 5 4 [110, 100]
+Checked signed side: 6 4 [1600, 1080]
+Checked signed side: 8 8 [1764, 1200]
+PASS_JOINT_FRAMES_CLEARED_PRODUCT positive_side_cases=12 random_cases=2500 certs=1 no_new_kappa
+['/tmp/pr-efficient200-venv/bin/python', '-I', '-B', '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_joint_frames*.py', '-v']
+test_boundary_mutations_are_rejected_by_local_scorer (test_joint_frames.JointFrames.test_boundary_mutations_are_rejected_by_local_scorer) ... ok
+test_exact_paired_scalar_map_with_arbitrary_scratch (test_joint_frames.JointFrames.test_exact_paired_scalar_map_with_arbitrary_scratch) ... ok
+test_full_physical_edge_accounting (test_joint_frames.JointFrames.test_full_physical_edge_accounting) ... ok
+test_general_projection_construction_agrees_with_triple_formula (test_joint_frames.JointFrames.test_general_projection_construction_agrees_with_triple_formula) ... ok
+test_general_rational_density_and_central_controls (test_joint_frames.JointFrames.test_general_rational_density_and_central_controls) ... 

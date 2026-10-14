@@ -37,8 +37,8 @@
     "research/community-efficient900-audit/DISPOSITIONS.json"
   ],
   "counts": {
-    "incorporated": 1321,
-    "partially_reviewed": 257,
+    "incorporated": 1330,
+    "partially_reviewed": 248,
     "superseded": 1,
     "unreviewed": 60
   },
@@ -87,7 +87,7 @@
     "research/community-efficient600-audit/DISPOSITIONS.json": "0b5b7777073b61dcccd09ecfe01d24c0843e8294f0daf1a9f38f5aabdaa2e4f4",
     "research/community-efficient700-audit/DISPOSITIONS.json": "a49662d33eee2d1e1308815314fbe415f91496a8304620664fb991ec47ae4c31",
     "research/community-efficient800-audit/DISPOSITIONS.json": "d97825a16961faa81b42c0a2007bef86c39572172f229a8a903a45664a1c6247",
-    "research/community-efficient900-audit/DISPOSITIONS.json": "037791769a29c08a7c3770b44920c982ccd3e243014727938a8ca6d05008f7f2",
+    "research/community-efficient900-audit/DISPOSITIONS.json": "fb534ebd71625e19670f9a5170b29c1b1e879e6701747906396cad8e47abf1d5",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec",
     "research/community-efficient300-audit/PARENT-EVIDENCE.json": "8d9e28ec3ece26b91ef5a297092697c341652853164477a4961c992151cec353"
   },
@@ -91388,16 +91388,20 @@
       "integration_location": [
         "research/common-core-fanin-seed93550f9f"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1863"
+      },
       "reviewed_head": "1fa62d83ab02e21971cc8b9ef524e5a3ea584d58",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1863.json",
@@ -91435,16 +91439,20 @@
       "integration_location": [
         "research/selected-binding-coverage-seeda342"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1864"
+      },
       "reviewed_head": "3d54b62bee5e7e2027aaffd9a30c31adc3b84c0a",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1864.json",
@@ -91482,16 +91490,20 @@
       "integration_location": [
         "research/complex-mixed-rank6-block-seedc8d6"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1866"
+      },
       "reviewed_head": "7d22d1d51eb6c0bc040f8181b6c5f83e051fb234",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1866.json",
@@ -91529,16 +91541,20 @@
       "integration_location": [
         "research/h4-root-linear-copy-floor"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1867"
+      },
       "reviewed_head": "862173af2784fc53a6c658a8865df4e15a6163b8",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1867.json",
@@ -91621,16 +91637,20 @@
       "integration_location": [
         "research/bit-s3-two-target-census-seed36501"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1870"
+      },
       "reviewed_head": "538d194e69420a6a773612e0b5ad0c94575f8aaa",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1870.json",
@@ -91668,16 +91688,20 @@
       "integration_location": [
         "research/complex-shared-product-triple-seed5a78"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1872"
+      },
       "reviewed_head": "626ce207ec92a76f70a84843fe4ce3c39f67899d",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1872.json",
@@ -91938,16 +91962,20 @@
       "integration_location": [
         "research/complex-cartesian-grid-screen-seed506af"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1878"
+      },
       "reviewed_head": "72804aaceac1a62a1636ee329330a13b9004ac96",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1878.json",
@@ -91995,7 +92023,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1880.json"
+        "research/community-efficient900-audit/packets/1880.json",
+        "research/community-efficient900-audit/checks/check-1880.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -92029,16 +92058,20 @@
       "integration_location": [
         "research/d8-rotation-pair-seedff568"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1881"
+      },
       "reviewed_head": "5a51deaaab2746d42eddb454bbb968bda3af02cc",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1881.json",
@@ -92211,16 +92244,20 @@
       "integration_location": [
         "research/paired-plane-scalar-mask-obstruction"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "5e5672c14e1b10ad5131ec54bf62abb330ecb3eb",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1889"
+      },
       "reviewed_head": "5f05652c7dc7f51555ddb59b716000199a72c0ff",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1889.json",
@@ -92269,7 +92306,8 @@
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1891.json",
-        "research/community-efficient900-audit/checks/check-1891-initial.json"
+        "research/community-efficient900-audit/checks/check-1891-initial.json",
+        "research/community-efficient900-audit/checks/check-1891.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -93300,7 +93338,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1919.json"
+        "research/community-efficient900-audit/packets/1919.json",
+        "research/community-efficient900-audit/checks/check-1919.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -93433,7 +93472,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1923.json"
+        "research/community-efficient900-audit/packets/1923.json",
+        "research/community-efficient900-audit/checks/check-1923.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -93477,7 +93517,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1924.json"
+        "research/community-efficient900-audit/packets/1924.json",
+        "research/community-efficient900-audit/checks/check-1924.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -93521,7 +93562,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1925.json"
+        "research/community-efficient900-audit/packets/1925.json",
+        "research/community-efficient900-audit/checks/check-1925.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -93565,7 +93607,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1926.json"
+        "research/community-efficient900-audit/packets/1926.json",
+        "research/community-efficient900-audit/checks/check-1926.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -93653,7 +93696,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1930.json"
+        "research/community-efficient900-audit/packets/1930.json",
+        "research/community-efficient900-audit/checks/check-1930.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -93741,7 +93785,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1934.json"
+        "research/community-efficient900-audit/packets/1934.json",
+        "research/community-efficient900-audit/checks/check-1934.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -93785,7 +93830,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1935.json"
+        "research/community-efficient900-audit/packets/1935.json",
+        "research/community-efficient900-audit/checks/check-1935.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -93829,7 +93875,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1936.json"
+        "research/community-efficient900-audit/packets/1936.json",
+        "research/community-efficient900-audit/checks/check-1936.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -93873,7 +93920,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1937.json"
+        "research/community-efficient900-audit/packets/1937.json",
+        "research/community-efficient900-audit/checks/check-1937.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -93917,7 +93965,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1938.json"
+        "research/community-efficient900-audit/packets/1938.json",
+        "research/community-efficient900-audit/checks/check-1938.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -93936,7 +93985,7 @@
       },
       "draft": false,
       "starting_head": "b1631b1bf950f8da70510057faf55c6ed705c815",
-      "current_head": "b1631b1bf950f8da70510057faf55c6ed705c815",
+      "current_head": "94998804693d50c5b2d57e923a6781368e7a635e",
       "previously_reviewed_heads": [],
       "historical_assessment_heads": [],
       "evidence": [
@@ -93953,7 +94002,7 @@
       "closure": null,
       "reviewed_head": "b1631b1bf950f8da70510057faf55c6ed705c815",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Mechanism/proof and changed-code review remains pending. Recorded execution alone does not establish acceptance.",
+      "unresolved_question": "Head changed from reviewed b1631b1bf950f8da70510057faf55c6ed705c815 to 94998804693d50c5b2d57e923a6781368e7a635e during this round. Review the revision delta and replay the current head; the initial fixture also lacks the pinned baseline558 canonical word. Old-head execution is not current-head acceptance.",
       "review_completion": {
         "changed_file_coverage": false,
         "scoped_mechanism_review": false,
@@ -93961,7 +94010,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1939.json"
+        "research/community-efficient900-audit/packets/1939.json",
+        "research/community-efficient900-audit/checks/check-1939.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -94005,7 +94055,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1940.json"
+        "research/community-efficient900-audit/packets/1940.json",
+        "research/community-efficient900-audit/checks/check-1940.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -94049,7 +94100,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1941.json"
+        "research/community-efficient900-audit/packets/1941.json",
+        "research/community-efficient900-audit/checks/check-1941.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -94093,7 +94145,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1942.json"
+        "research/community-efficient900-audit/packets/1942.json",
+        "research/community-efficient900-audit/checks/check-1942.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -94137,7 +94190,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1943.json"
+        "research/community-efficient900-audit/packets/1943.json",
+        "research/community-efficient900-audit/checks/check-1943.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -94181,7 +94235,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1944.json"
+        "research/community-efficient900-audit/packets/1944.json",
+        "research/community-efficient900-audit/checks/check-1944.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -94225,7 +94280,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1945.json"
+        "research/community-efficient900-audit/packets/1945.json",
+        "research/community-efficient900-audit/checks/check-1945.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -94269,7 +94325,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1946.json"
+        "research/community-efficient900-audit/packets/1946.json",
+        "research/community-efficient900-audit/checks/check-1946.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -94313,7 +94370,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1948.json"
+        "research/community-efficient900-audit/packets/1948.json",
+        "research/community-efficient900-audit/checks/check-1948.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -94357,7 +94415,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1949.json"
+        "research/community-efficient900-audit/packets/1949.json",
+        "research/community-efficient900-audit/checks/check-1949.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -94401,7 +94460,8 @@
         "published": false
       },
       "verification_evidence": [
-        "research/community-efficient900-audit/packets/1951.json"
+        "research/community-efficient900-audit/packets/1951.json",
+        "research/community-efficient900-audit/checks/check-1951.json"
       ],
       "current_head_observed_in": "research/community-efficient900-audit/DISPOSITIONS.json",
       "reconciliation_evidence": [
@@ -94418,7 +94478,7 @@
   ],
   "github_dispositions": {
     "CLOSED": 377,
-    "MERGED": 945,
-    "OPEN": 317
+    "MERGED": 954,
+    "OPEN": 308
   }
 }
