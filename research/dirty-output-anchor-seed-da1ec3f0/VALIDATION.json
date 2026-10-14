@@ -33,6 +33,14 @@
   "limits": [
     "The repository runner requires Python 3.12; only Python 3.14.7 is installed locally.",
     "No selected-provider operand map, row-route invoice, or finite base-case mu/alpha comparison is established.",
-    "No hosted CI result or human review is claimed."
-  ]
+    "Hosted CI on PR #1944 had 61 checks queued at 2026-10-14T14:37:11Z; no completion result is claimed."
+  ],
+  "submission": {
+    "pr": 1944,
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1944",
+    "head": "4e5159867eeb161995bdb3b51dfd184be1ce90cf",
+    "base": "0b1cccf86e2f5132ed286a26ef0a681a495740ea",
+    "state": "OPEN",
+    "mergeable": "MERGEABLE"
+  }
 }

@@ -84,7 +84,7 @@
     }
   ],
   "claim": {
-    "status": "posted; advisory claim",
+    "status": "completed; focused PR #1944 is open",
     "base_commit": "0b1cccf86e2f5132ed286a26ef0a681a495740ea",
     "object": "For q arbitrary-dirty targets A_i, realize A_i ^= p(x,y) ^ t_i with one common and q private complete bilinear child calls, using old/new dirty-anchor compensation.",
     "method": "Two explicit XOR fanout waves around one common child; exact symbolic proof; exhaustive arbitrary child-output values and dirty targets for q<=5; exact cost and moment screens.",
@@ -92,7 +92,9 @@
     "started_utc": "2026-10-14T14:12:26Z",
     "expected_finish_utc": "2026-10-14T14:50:00Z",
     "claim_location": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1167#discussioncomment-18925817",
-    "expiry_utc": "2026-10-14T14:55:00Z"
+    "expiry_utc": "2026-10-14T14:55:00Z",
+    "result_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1944",
+    "result_comment": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1167#discussioncomment-18926225"
   },
   "initial_overlap": {
     "at": "2026-10-14T14:12:28Z",
@@ -117,7 +119,8 @@
   "validation": {
     "local_python": "3.14.7",
     "registered_python": "3.12",
-    "registered_runner": "not available locally; package metadata check and direct replay are recorded separately."
+    "registered_runner": "not available locally; package metadata check and direct replay are recorded separately.",
+    "hosted_checks": "61 queued at 2026-10-14T14:37:11Z; completion not yet observed."
   },
   "final_overlap": {
     "at": "2026-10-14T14:30:50Z",
@@ -164,5 +167,19 @@
     ],
     "limits": "Open PR titles/bodies and Discussion bodies/comments/replies plus top-level local records; no arbitrary code-diff or literature-completeness claim.",
     "manual_claim_check_at": "2026-10-14T14:35:43Z"
+  },
+  "submission": {
+    "pr": 1944,
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1944",
+    "state": "OPEN",
+    "mergeable": "MERGEABLE",
+    "head": "4e5159867eeb161995bdb3b51dfd184be1ce90cf",
+    "base": "0b1cccf86e2f5132ed286a26ef0a681a495740ea",
+    "hosted_checks": {
+      "count": 61,
+      "state": "QUEUED",
+      "observed_utc": "2026-10-14T14:37:11Z"
+    },
+    "discussion_update": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1167#discussioncomment-18926225"
   }
 }
