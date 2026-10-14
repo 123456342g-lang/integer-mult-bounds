@@ -82,7 +82,12 @@ Each command has a maximum 600-second timeout and the package total is at most
 bounds limit a verification job, not the mathematical search budget.
 
 The [registered-package workflow](../../.github/workflows/research-packages.yml)
-selects **only opt-in packages** whose directory or declared inputs changed.
+selects **only opt-in packages**, using their directories, declared inputs, and shared replay controls.
+Its planning job runs for pull requests and pushes to `main` without path filters,
+because declared inputs can live anywhere in the repository. Unrelated changes
+produce no replay jobs. Git renames count as removal of the old path and addition
+of the new path, so packages that depend on either path receive a replay.
+Changes to the package runner or this workflow select every registered package.
 Each gets a fresh runner and explicit commands. It does not run every historical
 `verify.py`. New hooks do not replace existing cold-replay obligations, and a
 passing metadata check is not acceptance of a mathematical result.
