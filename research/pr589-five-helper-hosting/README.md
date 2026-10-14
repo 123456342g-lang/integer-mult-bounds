@@ -79,8 +79,10 @@ replacement for a full supplier replay.
 The entry search at 2026-10-14 03:17 UTC covered 728 open PRs and 226 discussion
 records with complete pagination. It searched PR bodies, discussion text and
 local package notes, not every diff or unpublished result.
-The final refresh at 03:47 UTC covered 729 open PRs and 243 discussion records;
-its scope and follow-up searches are recorded in VALIDATION.md.
+The submission refresh at 04:14-04:15 UTC covered 733 open PRs and 259 discussion
+records, with complete pagination. All five predecessor heads below were
+rechecked and remain unchanged. Search scope and follow-ups are recorded in
+VALIDATION.md.
 
 | Predecessor | Exact head inspected | What this package adds |
 | --- | --- | --- |

@@ -127,9 +127,18 @@ new Lean provider build. They prove the stated exact-stream result, not a
 compiler/routing-cost admission for the explicit charts. The native replay
 checks the original frozen supplier and retains its own listed assumptions.
 
-The final overlap refresh at 2026-10-14 03:47:36 UTC covered 729 open PRs and
+The research overlap refresh at 2026-10-14 03:47:36 UTC covered 729 open PRs and
 243 discussion records, with complete pagination and no warnings. Additional
 live PR searches for PR589/whole-call and rank-seven/hosting found surrounding
 arithmetic, transport-search and boundary work, not a matching full selected
 call provider in the inspected results. Search coverage is not a novelty
 certificate. The live selected record still names the same PR1094 checkpoint.
+
+Before submission, a new refresh fetched 733 open PRs at 04:14:01 UTC and 259
+discussion records at 04:15:18 UTC, with complete pagination and no warnings.
+All 17 matches for `PR589 physical`, `rank-seven transport`, `five-helper` and
+`correlated-helper` were inspected; these recover the same predecessor and
+retained-obligation boundaries. All five predecessor heads in README were
+rechecked and remain unchanged. Upstream main at
+`0a201997097b8a89b638f3a2afcb35db4184c8b2` contains the research base as an
+ancestor; the proposed diff still consists only of this new package.
