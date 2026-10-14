@@ -27,7 +27,10 @@ alongside open PRs for overlap. Use the
 for concrete requests and the
 [mechanism-proposals thread](https://github.com/CrocSwap/integer-mult-bounds/discussions/1167)
 for early ideas. Follow the claim/update conventions in `autoresearch.md`;
-claims are advisory and discussion posts are provisional evidence.
+claims are advisory and discussion posts are provisional evidence. Keep one
+canonical investigation thread with a current status and public artifact link;
+use hub threads for short pointers. Local-only evidence must be labelled, and
+useful partial/negative results do not need a new κ to merit a focused PR.
 
 Use `python3 scripts/find_overlap.py --task TASK_ID` for a cached search of PR
 bodies, discussions and local package notes. The report states its coverage and

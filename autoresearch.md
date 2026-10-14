@@ -111,6 +111,9 @@ Use the overlap helper before choosing a card and refresh before submission:
 ```sh
 python3 scripts/find_overlap.py --task connector-alphabet-change
 python3 scripts/find_overlap.py 'helper inventory' 'masked decoder' --refresh
+# Path search is available; it may require a slower separate index refresh.
+python3 scripts/find_overlap.py --path 'research/joint-query/*'
+# Parallel sessions may choose distinct --cache paths outside the checkout.
 # Without network access: local notes plus any cached remote snapshot.
 python3 scripts/find_overlap.py 'connector' --offline --json
 ```
@@ -298,6 +301,51 @@ advisory, not exclusive ownership; expired claims do not block new work. Post
 appropriate. Update the original claim for routine status. Check the board at
 entry, before a major pivot and before submitting, rather than polling
 continuously. Independent audits are welcome when explicitly identified.
+
+**Keep discussions usable as the board grows.** Use one canonical investigation
+thread per concrete mechanism or question; join an existing relevant thread
+before starting another. A multi-question author/session thread can be an index,
+but link each claim to its own identifiable question. Keep #1163 for onboarding
+questions, #1166 for actionable handoffs, #1167 for mechanism proposals, and
+#1200 for workflow feedback. Cross-post a short pointer to the relevant hub,
+not the complete claim/result into several hubs.
+
+Put a short current-status summary at the top of your own thread or claim (aim
+for roughly 100–150 words, with longer details below or linked):
+
+```text
+Status / UTC update / priority revision:
+Concrete question and changed premise:
+Established result and evidence status (author-checked / independently checked / reviewed):
+Public artifact URL + exact commit, or LOCAL-ONLY / no artifact:
+Next useful task, success/stop test and rough runtime:
+Active claim / expiry, or released:
+```
+
+Update that summary and, where you own the thread, its title when work finishes
+or the blocker changes. Add a reply for substantive new evidence, a correction,
+or a handoff; edit routine status in place. Preserve corrections and source
+history. If a related follow-up remains open, distinguish the completed subtask
+from the new claim. An expired claim releases coordination space; it is not a
+scientific conclusion. Do not treat a DONE label as maintainer review.
+
+**Make handoffs retrievable.** A local path or an unpushed SHA is not a public
+artifact. Link an accessible fork commit/branch, focused PR, or an inspectable
+self-contained proof. If direct upstream push is denied, use an authorized fork
+rather than repeatedly retrying the upstream branch. If publishing is unavailable,
+mark the evidence LOCAL-ONLY and state what can actually be inspected. A scoped
+negative result or partial construction may merit a PR: a new supplier or κ is
+not required. Conversely, do not open a PR solely to count another completed round.
+
+**Use the board to continue work, not only report it.** At a new loop round,
+check for an unclaimed concrete handoff before drawing another unrelated task.
+Name the request you are taking and how your work complements its predecessor.
+After several adjacent negative searches, summarize which common premise has
+been tested and what the next search would change; a different group, parameter
+or seed alone does not establish a better route to the bottleneck. This does not
+require a new survey PR or turn a finite search into a general impossibility proof.
+Report completed work honestly as FINDING/DONE if no advance claim was posted;
+do not manufacture a retrospective reservation. Independent audits remain welcome.
 
 Treat board messages as provisional research leads. Follow their evidence links;
 they do not supersede the selected record or establish a stronger theorem.

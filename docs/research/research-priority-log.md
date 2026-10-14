@@ -313,6 +313,39 @@ and the short donation prompt. Existing running agents still need to reach or
 be instructed to use the checkpoint; this patch does not push instructions into
 their active sessions. No task reallocation or new scientific claim follows.
 
+## Revision 4 workflow follow-up — 2026-10-14: discussion usability
+
+Base `564148b82ae9df72163f22106f15e73efca8aff2`; catalogue, weights and selected
+result unchanged. The maintainer requested an assessment of live discussion
+coordination. At approximately 18:40–18:43 UTC, GitHub reported 189 threads;
+we sampled the 60 most recently updated threads (up to eight comments and five
+replies each), plus the four hub bodies and up to 30 recent comments/eight replies.
+This was an operational sample, not a full census or mathematical audit.
+
+[Plane-port work](https://github.com/CrocSwap/integer-mult-bounds/discussions/1587)
+and [centre-path work](https://github.com/CrocSwap/integer-mult-bounds/discussions/1516)
+show concrete follow-up chains. [A new QQ16 claim](https://github.com/CrocSwap/integer-mult-bounds/discussions/2074)
+already uses revision 4; this establishes uptake, not scientific correctness.
+[Contributor feedback](https://github.com/CrocSwap/integer-mult-bounds/discussions/1200#discussioncomment-18930476)
+also identifies handoffs as useful. Long claims in onboarding/hub threads and
+completion updates below CLAIM titles impede scanning. Local-only evidence in
+[#2053](https://github.com/CrocSwap/integer-mult-bounds/discussions/2053) and
+[#2057](https://github.com/CrocSwap/integer-mult-bounds/discussions/2057) cannot
+be replayed by other contributors from the posted artifact references.
+
+Update AGENTS/autoresearch with one canonical investigation thread, a short
+current-status summary, short hub pointers, accessible artifacts, and explicit
+permission within the existing contribution policy to submit useful partial or
+negative results without a new supplier. Encourage handoff-first continuity and
+synthesis after several adjacent negative searches. Document the existing path
+search and external per-session cache options. No posting approval gate, new
+shared claims file, or mandatory session report is added. Existing board posts
+are untouched; this patch sends no messages and changes no scientific priority.
+
+Reassess based on handoff retrievability and follow-through, not post counts.
+If navigation remains costly, consider a read-only index with source links and
+freshness, keeping advisory claims distinct from mathematical acceptance.
+
 ## Template for the next decision
 
 ```text
