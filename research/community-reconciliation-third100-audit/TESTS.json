@@ -3,5 +3,7 @@
   "exit_code": 0,
   "tests": 32,
   "seconds": 2.329,
-  "scope": "Ledger and historical archive regression suite; no mathematical theorem claim."
+  "scope": "Ledger and historical archive regression suite; no mathematical theorem claim.",
+  "final_recheck_log": "logs/regression-tests.txt.gz",
+  "final_recheck_sha256": "d25705dd154ecdd935e0a60cdbd440c494abab4635388c62428a165717da1981"
 }

@@ -1,0 +1,20 @@
+{
+  "upstream_pull_request": 299,
+  "upstream_head": "7a30fddac2c413c9792a401e50a7e72bfbbb28f9",
+  "upstream_selection_sha256": "798b0ebbefb7913608bc13c181256c028dfa41f9368f1aa56529a66af94e5d94",
+  "predecessor": {
+    "249-states.json": "208cc9aba1401423ca31a3305a2d2bc9e1778d78323c000bed425f0bf21518d4",
+    "frames.json": "be296725b790f821e620d3e0304d12083775b67228ea65413f1eb119e0b3a257",
+    "COHORT249-INITIAL.json": "23ac712cb86f228875aff249959e942a4f369950605e4b2ec439359f47656e1a",
+    "COHORT249-FINAL.json": "7d140c8bee1ebfd6fe3e8e7f01b7f67a419b1403f382648d4923cebfe27bfd59",
+    "COHORT249-FRAMES.json": "f127a2e83f55c150c86b6a511ad406eef46e5949bfd654c871435baf30fe5236",
+    "COHORT249-RECORDS.bin": "119cd2efd0bbdbe01b0e7d7c8dd4d0e5cf66d7249c021743d7dcdc9a82e3c7c4"
+  },
+  "selection_sha256": "63b7b715b3616c5c76c7d99e77d8d4649d5eb327374092e5c687c0871507b912",
+  "expected_output_word_sha256": "c00eb838f0fcb21f5f069426b6503b47b2838d3da8abe42fdc7392f10bf6ac7e",
+  "new_changes": 51,
+  "already_present_public_changes": 61,
+  "inapplicable_deleted_kernel_gate": 1,
+  "predecessor_replay_semantic_sha256": "7ad5dc8fe4a0d415b4a332381f1391c5bdaecd1ae92e95a1bae9b879b8251163",
+  "replay_normalization": "Drop only top-level scope/source_initial_scope prose; normalize inherited_admitted_receipt or inherited_predecessor_receipt to inherited_receipt; bind all remaining fields recursively."
+}

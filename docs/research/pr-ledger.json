@@ -65,7 +65,7 @@
     "research/community-historical-five-audit/DISPOSITIONS.json": "b2d8bfa841699b8a3140e70cb1cef6b78ef071c44014bd94c9c1787b7e0f1750",
     "research/community-reconciliation92-audit/DISPOSITIONS.json": "5dafbc374822ed60d67da35fcdb27127c71ad839acec7b68a206c5229d45ba11",
     "research/community-reconciliation-next100-audit/DISPOSITIONS.json": "de8d4f4026b86e5e59d5945d0b865de16c6886aa013451a2e3c117665bd95b51",
-    "research/community-reconciliation-third100-audit/DISPOSITIONS.json": "8abbc287302640e247eacaf4cba233edc728d297159304297837d1c5cbe35a95",
+    "research/community-reconciliation-third100-audit/DISPOSITIONS.json": "6956faa0bc2c91ad7b29ffad5326b86cecd80caeea4125202fd6f90686d8be1a",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -18722,7 +18722,7 @@
         {
           "head": "aeb4808af1392e565e7071cbeb2c29608201cf24",
           "evidence": "research/community-reconciliation-third100-audit/DISPOSITIONS.json",
-          "scope": "Local dirty-response transport and commuting schedules. The TI package is distinct from its ten unchanged historical packages. Full base, transport, complex-supplier and final native admission are required; source retention alone is not execution.",
+          "scope": "Local dirty-response transport and commuting schedules. The twelve-stage baseline, kernel38/retiming61 and rank-modular159 checks pass, but retiming51 rejects a regenerated predecessor state hash. Binary identity and four CRLF-only differences are established; the remaining state mismatch blocks the full base and TI replay. Keep open; source retention is not completed native admission.",
           "kind": "integration_or_partial_review"
         }
       ],
@@ -18736,7 +18736,7 @@
         "docs/research/community-reconciliation-third100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Required direct replay is unfinished or failed; see EXECUTION.json and original logs. Complete the specific missing check or disclosed repair before closure.",
+      "unresolved_question": "The fresh inherited-base replay stops in retiming51/compose.py on the pinned 249-states.json hash: expected 208cc9aba1401423ca31a3305a2d2bc9e1778d78323c000bed425f0bf21518d4, generated 3348648d9f659ed8c842f9b573ca7da66108a7966268e44d29caebd71bc32781. The binary word matches and four other JSON pins match after LF-to-CRLF conversion; the state-file mismatch survives the tested serialization variants. Supply a portable, source-bound correction and complete the remaining native replay. See PR309-DIAGNOSTIC.json and the retained actual state file; no pin was bypassed.",
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-third100-audit/DISPOSITIONS.json",
       "reviewed_head": "aeb4808af1392e565e7071cbeb2c29608201cf24",

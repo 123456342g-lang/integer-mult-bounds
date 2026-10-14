@@ -1046,6 +1046,700 @@
       "retained_log": "logs/pr391-native.txt.gz"
     },
     {
+      "number": 309,
+      "head": "aeb4808af1392e565e7071cbeb2c29608201cf24",
+      "source_prefix": "research/ti-local-response-schedules",
+      "command": [
+        "/tmp/integer-mult-review-venv/bin/python",
+        "-B",
+        "/tmp/reconciliation-third100-20261013/native-309/research/ti-local-response-schedules/verify.py",
+        "--output",
+        "/tmp/reconciliation-third100-20261013/native-309-out"
+      ],
+      "environment": {
+        "python": "/tmp/integer-mult-review-venv/bin/python",
+        "CPATH": "/tmp/integer-mult-queue-20261013/research/e8-bit-carrier-skeleton/portable-include:/tmp/coordinated-crossover-v2.PSyYno/deps/include"
+      },
+      "exit_code": 1,
+      "seconds": 829.6847987090005,
+      "log": "pr309-native.txt",
+      "log_sha256": "f1e1158615c682462445863f9c96cc2f69b66bf017e3db4434da5aa20cb6baa3",
+      "outputs": [
+        {
+          "path": "logs/full-inherited-base-source.log",
+          "file": "pr309-outputs/logs/full-inherited-base-source.log.gz",
+          "sha256": "fd337d4c3b0a68e8a6062b15f4b1a3eaf733cd47aa6f491aab034551e66b6e01"
+        },
+        {
+          "path": "base-replay/complex-replay/NATIVE.json",
+          "file": "pr309-outputs/base-replay/complex-replay/NATIVE.json.gz",
+          "sha256": "17916719123ca18df883561afc752ba9d9108ff83871c9b38ad8fb5ab7808abb"
+        },
+        {
+          "path": "base-replay/complex-replay/compile.log",
+          "file": "pr309-outputs/base-replay/complex-replay/compile.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/complex-replay/GX.json",
+          "file": "pr309-outputs/base-replay/complex-replay/GX.json.gz",
+          "sha256": "41e022d78dc5395d01fca03b5aee5e60fc05454463de87ed53f8756ff50bda7a"
+        },
+        {
+          "path": "base-replay/complex-replay/CERTIFICATE.json",
+          "file": "pr309-outputs/base-replay/complex-replay/CERTIFICATE.json.gz",
+          "sha256": "4b93d55370e1f2cd2e60c571e3853c384e59dddbd226af76ffdfbfca7eb7d40a"
+        },
+        {
+          "path": "base-replay/complex-replay/native.log",
+          "file": "pr309-outputs/base-replay/complex-replay/native.log.gz",
+          "sha256": "786c7d23328e510dfe2754627c8d4a4ba4841f8e5557e24e892fad400a3ce28f"
+        },
+        {
+          "path": "base-replay/complex-replay/ADMISSION.json",
+          "file": "pr309-outputs/base-replay/complex-replay/ADMISSION.json.gz",
+          "sha256": "742979e6ab8f400318615a8dbf9b78f9aa49627f82c4fa32bd0935d2b7467c6b"
+        },
+        {
+          "path": "base-replay/kernel-source/BINDING.json",
+          "file": "pr309-outputs/base-replay/kernel-source/BINDING.json.gz",
+          "sha256": "69ba489c5a96a040892af78eb3c5469592ac6ed7044e88e388b9df46effe571f"
+        },
+        {
+          "path": "base-replay/kernel-source/MANIFEST.json",
+          "file": "pr309-outputs/base-replay/kernel-source/MANIFEST.json.gz",
+          "sha256": "a297593cd9833b29748185fbfe20e26182998d66dddaa4cf47b3e181b5ff30e2"
+        },
+        {
+          "path": "base-replay/trade/TRADE-RECEIPT.json",
+          "file": "pr309-outputs/base-replay/trade/TRADE-RECEIPT.json.gz",
+          "sha256": "f397185f821dc67f5fd92ac62841903c1a56bd10c3aca6daa00883d7def7f44d"
+        },
+        {
+          "path": "base-replay/trade/SINK8-AUDIT.json",
+          "file": "pr309-outputs/base-replay/trade/SINK8-AUDIT.json.gz",
+          "sha256": "a304f6fcbd58f53f0a7888298eea54b146f473a5ccfe8fc6b75829533f63f529"
+        },
+        {
+          "path": "base-replay/trade/layer-manifest.json",
+          "file": "pr309-outputs/base-replay/trade/layer-manifest.json.gz",
+          "sha256": "f059570c58f7e56a5b3cca8f47c4a2bf2edbbd7c0a4a63ae771aaaf9a36e157a"
+        },
+        {
+          "path": "base-replay/trade/selection1719.json",
+          "file": "pr309-outputs/base-replay/trade/selection1719.json.gz",
+          "sha256": "dcb5d3dc6b56714d817a9264ce334dc2b4783e62af27429c4159e17207874ced"
+        },
+        {
+          "path": "base-replay/trade/sinks8.json",
+          "file": "pr309-outputs/base-replay/trade/sinks8.json.gz",
+          "sha256": "12f4e0a738a83028eb6674d54ed3e99b80a3fb3ed0930c59d3c6fcb88a1f0216"
+        },
+        {
+          "path": "base-replay/trade/LAYER-REVIEW.json",
+          "file": "pr309-outputs/base-replay/trade/LAYER-REVIEW.json.gz",
+          "sha256": "0c1417e932fe5a2d5babde2dae8b37d2b83292c2c002e590faf04a8133e29f6b"
+        },
+        {
+          "path": "base-replay/public-source/requirements.txt",
+          "file": "pr309-outputs/base-replay/public-source/requirements.txt.gz",
+          "sha256": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc"
+        },
+        {
+          "path": "base-replay/public-source/SOURCE.json",
+          "file": "pr309-outputs/base-replay/public-source/SOURCE.json.gz",
+          "sha256": "e43065c15dad1bf1f46de561df0d02fe35e70991028314cb9a7794a566eb6440"
+        },
+        {
+          "path": "base-replay/public-source/sink-selection.json",
+          "file": "pr309-outputs/base-replay/public-source/sink-selection.json.gz",
+          "sha256": "df0fee8c2571851591943f8d0787b6efdac518932faaec0f1b8f916739060eee"
+        },
+        {
+          "path": "base-replay/public-source/kernel-selection.json",
+          "file": "pr309-outputs/base-replay/public-source/kernel-selection.json.gz",
+          "sha256": "3de6647a97efda200269cee06446ee15944b197935b531efde61f4012526cc0d"
+        },
+        {
+          "path": "base-replay/public-source/restore-selection.json",
+          "file": "pr309-outputs/base-replay/public-source/restore-selection.json.gz",
+          "sha256": "567cb0108d15d1802880eb31caec6785268b01a2ecb06c0689d7dd83916d5e32"
+        },
+        {
+          "path": "base-replay/public-source/target-selection.json",
+          "file": "pr309-outputs/base-replay/public-source/target-selection.json.gz",
+          "sha256": "3f700a370847e254d56a387ae73add542403bd8a2fd7352bfd1750eb20c3c3ee"
+        },
+        {
+          "path": "base-replay/public-source/MANIFEST.json",
+          "file": "pr309-outputs/base-replay/public-source/MANIFEST.json.gz",
+          "sha256": "54a8a9c1f1241ed2555232476e5af8e7dc64c8fef5f13e84331981fb93f52ee6"
+        },
+        {
+          "path": "base-replay/public-source/COMPOSITION-SPECIALIZATION.json",
+          "file": "pr309-outputs/base-replay/public-source/COMPOSITION-SPECIALIZATION.json.gz",
+          "sha256": "91f59bb859b7b9666966444f84925a6a27d6062b087796b389352a8984366860"
+        },
+        {
+          "path": "base-replay/posttarget/249-DONOR-OWNERSHIP.json",
+          "file": "pr309-outputs/base-replay/posttarget/249-DONOR-OWNERSHIP.json.gz",
+          "sha256": "aa7fadf1c5a55fef24e600e63f1f17493021bce1ebdfb8ba8927b8ad6ce05adf"
+        },
+        {
+          "path": "base-replay/posttarget/EXPORT-RECEIPT.json",
+          "file": "pr309-outputs/base-replay/posttarget/EXPORT-RECEIPT.json.gz",
+          "sha256": "77f2658937432c61c62758bf0869c5996cdb1a3ed69de2fe20059c4584d36309"
+        },
+        {
+          "path": "base-replay/logs/compile-restore.log",
+          "file": "pr309-outputs/base-replay/logs/compile-restore.log.gz",
+          "sha256": "c38730199c58cf7ff011c4b0587be5ee30eb2e3245527f6d70d439ab21fa8f0c"
+        },
+        {
+          "path": "base-replay/logs/compile-kernel-emit.log",
+          "file": "pr309-outputs/base-replay/logs/compile-kernel-emit.log.gz",
+          "sha256": "0a083626edb30077e11c2edf1ba4429983c938075a93faa65c88cc57c7ba2096"
+        },
+        {
+          "path": "base-replay/logs/compile-frame-descend.log",
+          "file": "pr309-outputs/base-replay/logs/compile-frame-descend.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/compile-source-span.log",
+          "file": "pr309-outputs/base-replay/logs/compile-source-span.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/compile-frame-prime-guard.log",
+          "file": "pr309-outputs/base-replay/logs/compile-frame-prime-guard.log.gz",
+          "sha256": "a0023128b530c4307ed41288b25020d3ff2073e47e4d1fa9d68e83df57ebad23"
+        },
+        {
+          "path": "base-replay/logs/public-twelve-stage-source.log",
+          "file": "pr309-outputs/base-replay/logs/public-twelve-stage-source.log.gz",
+          "sha256": "b72d94e8fd9ef66b3e901925ebd7edcceb1a4a15497c1bbadc2fe3e141a2f7ae"
+        },
+        {
+          "path": "base-replay/logs/complex-source-native.log",
+          "file": "pr309-outputs/base-replay/logs/complex-source-native.log.gz",
+          "sha256": "49580dcbdbf85d619d29ec70af1a5b7243edcc8ea69549b5d5577509ecd33740"
+        },
+        {
+          "path": "base-replay/logs/compile-sink-audit.log",
+          "file": "pr309-outputs/base-replay/logs/compile-sink-audit.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/compile-price-complex.log",
+          "file": "pr309-outputs/base-replay/logs/compile-price-complex.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/joint-kernel-sink-construction.log",
+          "file": "pr309-outputs/base-replay/logs/joint-kernel-sink-construction.log.gz",
+          "sha256": "5e95dc2e2c9a020d6e13b4e0b1dfbdadc3176af9410b9b36b50d56a4038a72ec"
+        },
+        {
+          "path": "base-replay/logs/posttarget-source-export.log",
+          "file": "pr309-outputs/base-replay/logs/posttarget-source-export.log.gz",
+          "sha256": "572350188eea3440e3a94379d9e3c93ca4af45954271d5f95fc1a08edc0040ae"
+        },
+        {
+          "path": "base-replay/logs/kernels38-retiming61-fresh-source-and-controls.log",
+          "file": "pr309-outputs/base-replay/logs/kernels38-retiming61-fresh-source-and-controls.log.gz",
+          "sha256": "e0284fe06057b87505354c06ca4447dd77051cb48eb131c962fd16435d421bb2"
+        },
+        {
+          "path": "base-replay/logs/compile-global.log",
+          "file": "pr309-outputs/base-replay/logs/compile-global.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/compile-layer-review.log",
+          "file": "pr309-outputs/base-replay/logs/compile-layer-review.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/compile-finite.log",
+          "file": "pr309-outputs/base-replay/logs/compile-finite.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/compile-fixed-complex.log",
+          "file": "pr309-outputs/base-replay/logs/compile-fixed-complex.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/compile-export-guard.log",
+          "file": "pr309-outputs/base-replay/logs/compile-export-guard.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/compile-banks.log",
+          "file": "pr309-outputs/base-replay/logs/compile-banks.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/compile-sink-transform.log",
+          "file": "pr309-outputs/base-replay/logs/compile-sink-transform.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/public-replay/geometry.json",
+          "file": "pr309-outputs/base-replay/public-replay/geometry.json.gz",
+          "sha256": "c2d1ce3f5680e93d3dddb7a23d13b2c1f549000f3e20c2dbd6ed97706bb8eba3"
+        },
+        {
+          "path": "base-replay/public-replay/complex.json",
+          "file": "pr309-outputs/base-replay/public-replay/complex.json.gz",
+          "sha256": "0614776f8767c9ee618210b4b87b3f55fa3cc642f9856e1ca0834c1aba4dcd9a"
+        },
+        {
+          "path": "base-replay/public-replay/bit.json",
+          "file": "pr309-outputs/base-replay/public-replay/bit.json.gz",
+          "sha256": "77a2c9246bce1e46bf129cc90267ce939df03dd64d917480e336be6056a42256"
+        },
+        {
+          "path": "base-replay/public-replay/restore.json",
+          "file": "pr309-outputs/base-replay/public-replay/restore.json.gz",
+          "sha256": "0d43cde58908052931d8ca7e04649061d66e6274d75e5d4ff2794960d82f36ad"
+        },
+        {
+          "path": "base-replay/public-replay/target.json",
+          "file": "pr309-outputs/base-replay/public-replay/target.json.gz",
+          "sha256": "67fa47d28b5891afa52dadd6591aea927a7169d96ed4446214cb78d433557f22"
+        },
+        {
+          "path": "base-replay/public-replay/math.json",
+          "file": "pr309-outputs/base-replay/public-replay/math.json.gz",
+          "sha256": "8c80a455b9bfd8068664a8ad34423006f68bb852ea41800ab93edb052d88775e"
+        },
+        {
+          "path": "base-replay/public-replay/parity.json",
+          "file": "pr309-outputs/base-replay/public-replay/parity.json.gz",
+          "sha256": "2fc043b3945722f7bd5c60b36293f247a86bcf2c981efeb2a3a13f8cd5d96e6e"
+        },
+        {
+          "path": "base-replay/public-replay/kernel.json",
+          "file": "pr309-outputs/base-replay/public-replay/kernel.json.gz",
+          "sha256": "afd086059330e13d4756a2e1f18351c6b1ab83613dee1433a4dcb4b63be8e26b"
+        },
+        {
+          "path": "base-replay/public-replay/kernel-entrances.json",
+          "file": "pr309-outputs/base-replay/public-replay/kernel-entrances.json.gz",
+          "sha256": "93cb96b72c51646a95937ea7c6deb46345c6fe41dd532454558acc4d9aa1c0c3"
+        },
+        {
+          "path": "base-replay/public-replay/descent-frame-pairs.json",
+          "file": "pr309-outputs/base-replay/public-replay/descent-frame-pairs.json.gz",
+          "sha256": "75f5038633879f35dfcd88fcae10b9ab2954cbe0d5c16ecf96c12f412567187a"
+        },
+        {
+          "path": "base-replay/public-replay/kernel-initial.json",
+          "file": "pr309-outputs/base-replay/public-replay/kernel-initial.json.gz",
+          "sha256": "68fc9b7771ac32a191dac913ede9a54d98d687de3d6be9d469e2caf166ac3d98"
+        },
+        {
+          "path": "base-replay/public-replay/primes.json",
+          "file": "pr309-outputs/base-replay/public-replay/primes.json.gz",
+          "sha256": "683fb2c0aaa697bc766a2ad6f734420802d7ce32b3e168d58b41879f538da502"
+        },
+        {
+          "path": "base-replay/public-replay/descent-per-role.json",
+          "file": "pr309-outputs/base-replay/public-replay/descent-per-role.json.gz",
+          "sha256": "dc479ee9d46e9ee1aaf010b010a80d587c2c1f57ba5e096051f628fbb591b24e"
+        },
+        {
+          "path": "base-replay/public-replay/finite.json",
+          "file": "pr309-outputs/base-replay/public-replay/finite.json.gz",
+          "sha256": "404557842ef5117d74d6dbb25a63441eb90cf05a265afeeaafca12a84812a505"
+        },
+        {
+          "path": "base-replay/public-replay/certificate.json",
+          "file": "pr309-outputs/base-replay/public-replay/certificate.json.gz",
+          "sha256": "58e2ecc049e1aaa8e57d458b1db68f9ec8e6fa3a632e11930ed8f3590cd45244"
+        },
+        {
+          "path": "base-replay/public-replay/virtual.json",
+          "file": "pr309-outputs/base-replay/public-replay/virtual.json.gz",
+          "sha256": "84f39527f6b52f1a7f34e17b8256734737043883694a9918ae082fc70de1ebc8"
+        },
+        {
+          "path": "base-replay/public-replay/sink.json",
+          "file": "pr309-outputs/base-replay/public-replay/sink.json.gz",
+          "sha256": "1578beacb83fe40a914f195eecb6138d1460a9e6b5d8133e76b39e7bbb5fcb6d"
+        },
+        {
+          "path": "base-replay/public-replay/banks.json",
+          "file": "pr309-outputs/base-replay/public-replay/banks.json.gz",
+          "sha256": "10ba87aa97728490a95032eed97f324741989670b3d1a5b8805f7878e3b119fb"
+        },
+        {
+          "path": "base-replay/public-replay/verification.json",
+          "file": "pr309-outputs/base-replay/public-replay/verification.json.gz",
+          "sha256": "23d25d43e6681e87115de086d18c612595771533879ce325462467066d0328fa"
+        },
+        {
+          "path": "base-replay/public-replay/descent.json",
+          "file": "pr309-outputs/base-replay/public-replay/descent.json.gz",
+          "sha256": "39b71faef169edb7f91c0ec8d02b40e0361d223a95443fbc6eaef945658aef59"
+        },
+        {
+          "path": "base-replay/public-replay/global_result.json",
+          "file": "pr309-outputs/base-replay/public-replay/global_result.json.gz",
+          "sha256": "78bda32808bacb29f3ac73c261875648b94901e40aa1b8119b19dd7449b8bfba"
+        },
+        {
+          "path": "base-replay/public-replay/scalar.json",
+          "file": "pr309-outputs/base-replay/public-replay/scalar.json.gz",
+          "sha256": "cada9be2e99876ed05ee903f9c18939bfa2cb76adaefd7ba928b67cf747f5a7e"
+        },
+        {
+          "path": "base-replay/public-replay/virtual-bit/graph_p12.json",
+          "file": "pr309-outputs/base-replay/public-replay/virtual-bit/graph_p12.json.gz",
+          "sha256": "73814dd03979f08b13cf981a30b56dc9b8127f618162407b815009e44298cb00"
+        },
+        {
+          "path": "base-replay/public-replay/virtual-bit/profile_p12.json",
+          "file": "pr309-outputs/base-replay/public-replay/virtual-bit/profile_p12.json.gz",
+          "sha256": "bcfebb851f1d2e91c604867da2235d83f36f3d591a14d113a4aab734417b3c0b"
+        },
+        {
+          "path": "base-replay/public-replay/virtual-bit/kchron_p12.json",
+          "file": "pr309-outputs/base-replay/public-replay/virtual-bit/kchron_p12.json.gz",
+          "sha256": "e28cd9e9842605af568eea62203a15c48fb08a92e99b38a3480f2fe462d8e1b4"
+        },
+        {
+          "path": "base-replay/round5-source/retiming51/PIN.json",
+          "file": "pr309-outputs/base-replay/round5-source/retiming51/PIN.json.gz",
+          "sha256": "b855cf3191ab130627042d9d0f725e1473b6bab0950ea00303adaeb0a59ea8e3"
+        },
+        {
+          "path": "base-replay/round5-source/retiming51/MANIFEST.json",
+          "file": "pr309-outputs/base-replay/round5-source/retiming51/MANIFEST.json.gz",
+          "sha256": "4cf0f72fce3c456968a6ffa46979a1023afd6c46cc53baad1568d51a54c2b3d3"
+        },
+        {
+          "path": "base-replay/round5-source/kernels159/BINDING.json",
+          "file": "pr309-outputs/base-replay/round5-source/kernels159/BINDING.json.gz",
+          "sha256": "c9b8706bcad5275ddf14ecaa573e30da540e7ee63898dba272d71b13be0f030c"
+        },
+        {
+          "path": "base-replay/round5-source/kernels159/MANIFEST.json",
+          "file": "pr309-outputs/base-replay/round5-source/kernels159/MANIFEST.json.gz",
+          "sha256": "9a8478c05dc614e6121a64b05bdfcfb5bd06473c43d2ea02207940a993008d53"
+        },
+        {
+          "path": "base-replay/round5-source/kernels159/inputs/kernel1.json",
+          "file": "pr309-outputs/base-replay/round5-source/kernels159/inputs/kernel1.json.gz",
+          "sha256": "3c9389d22c9762257d4e5fc3b124fe226a205f0401f6afdabac934a4dacb02d2"
+        },
+        {
+          "path": "base-replay/round5-source/kernels159/inputs/frames1.json",
+          "file": "pr309-outputs/base-replay/round5-source/kernels159/inputs/frames1.json.gz",
+          "sha256": "175235002aae023aa54a1073cde93bb4e213e98077afc56d215bba8fb27537b1"
+        },
+        {
+          "path": "base-replay/round5-source/retiming51/inputs/selection.json",
+          "file": "pr309-outputs/base-replay/round5-source/retiming51/inputs/selection.json.gz",
+          "sha256": "63b7b715b3616c5c76c7d99e77d8d4649d5eb327374092e5c687c0871507b912"
+        },
+        {
+          "path": "base-replay/kernel-replay/predecessor/249-DONOR-OWNERSHIP.json",
+          "file": "pr309-outputs/base-replay/kernel-replay/predecessor/249-DONOR-OWNERSHIP.json.gz",
+          "sha256": "aa7fadf1c5a55fef24e600e63f1f17493021bce1ebdfb8ba8927b8ad6ce05adf"
+        },
+        {
+          "path": "base-replay/kernel-replay/predecessor/frames.json",
+          "file": "pr309-outputs/base-replay/kernel-replay/predecessor/frames.json.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/compile-kernel-prime-guard.log",
+          "file": "pr309-outputs/base-replay/kernel-replay/logs/compile-kernel-prime-guard.log.gz",
+          "sha256": "28fb3ab53ede20603ba83ae5ec5647b16aa6a2b43630ffcd9c6b586eebebbde6"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/compile-frame-emit.log",
+          "file": "pr309-outputs/base-replay/kernel-replay/logs/compile-frame-emit.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/compile-ordered-legality.log",
+          "file": "pr309-outputs/base-replay/kernel-replay/logs/compile-ordered-legality.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/compile-global.log",
+          "file": "pr309-outputs/base-replay/kernel-replay/logs/compile-global.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/compile-layer-review.log",
+          "file": "pr309-outputs/base-replay/kernel-replay/logs/compile-layer-review.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/compile-kernel1-emit.log",
+          "file": "pr309-outputs/base-replay/kernel-replay/logs/compile-kernel1-emit.log.gz",
+          "sha256": "c429a66e0a2f3bb2839dd92baa5a6aee224eeafd473feed3727857509c74046d"
+        },
+        {
+          "path": "base-replay/public-source/expected/kernel-pins.json",
+          "file": "pr309-outputs/base-replay/public-source/expected/kernel-pins.json.gz",
+          "sha256": "430798171b42b5e36cbb62238dbd2a3b050c508d70e6667804016169fcfc6a87"
+        },
+        {
+          "path": "base-replay/public-source/discovery/twin-census.txt",
+          "file": "pr309-outputs/base-replay/public-source/discovery/twin-census.txt.gz",
+          "sha256": "05c46c06565b7938f9c7d70f6ce0cbe87663b850c2232f4e6f00891c418cd6b1"
+        },
+        {
+          "path": "base-replay/public-source/notices/PR230-PROVENANCE.json",
+          "file": "pr309-outputs/base-replay/public-source/notices/PR230-PROVENANCE.json.gz",
+          "sha256": "19957e28a8ad26281bfe8bfaf8ae16191be53e729a8870a6154671b3384959d4"
+        },
+        {
+          "path": "base-replay/public-source/inputs/complex/source-pins.json",
+          "file": "pr309-outputs/base-replay/public-source/inputs/complex/source-pins.json.gz",
+          "sha256": "17b2c01350abc7fdd57a82fbe540488fb253a198d0cf7eb80275baef8864e11d"
+        },
+        {
+          "path": "base-replay/public-source/inputs/complex/retained/FINITE_BRIDGE.txt",
+          "file": "pr309-outputs/base-replay/public-source/inputs/complex/retained/FINITE_BRIDGE.txt.gz",
+          "sha256": "66d8f4ea8752abd89952d6674a636575a0db16e18b1c16e293f48f64242f0c46"
+        },
+        {
+          "path": "base-replay/public-source/gen5bit/selected/bit/graph_p12.json",
+          "file": "pr309-outputs/base-replay/public-source/gen5bit/selected/bit/graph_p12.json.gz",
+          "sha256": "73814dd03979f08b13cf981a30b56dc9b8127f618162407b815009e44298cb00"
+        },
+        {
+          "path": "base-replay/public-source/gen5bit/selected/bit/profile_p12.json",
+          "file": "pr309-outputs/base-replay/public-source/gen5bit/selected/bit/profile_p12.json.gz",
+          "sha256": "bcfebb851f1d2e91c604867da2235d83f36f3d591a14d113a4aab734417b3c0b"
+        },
+        {
+          "path": "base-replay/public-source/gen5bit/selected/bit/kchron_p12.json",
+          "file": "pr309-outputs/base-replay/public-source/gen5bit/selected/bit/kchron_p12.json.gz",
+          "sha256": "e28cd9e9842605af568eea62203a15c48fb08a92e99b38a3480f2fe462d8e1b4"
+        },
+        {
+          "path": "base-replay/public-source/gen5bit/references/pr168-v4/SOURCE.json",
+          "file": "pr309-outputs/base-replay/public-source/gen5bit/references/pr168-v4/SOURCE.json.gz",
+          "sha256": "21a412177c9309d89472aabf4c67618d7a546811f7e68a5904304ae46a98d27c"
+        },
+        {
+          "path": "base-replay/public-source/gen5bit/producer/data/arcs_p12.json",
+          "file": "pr309-outputs/base-replay/public-source/gen5bit/producer/data/arcs_p12.json.gz",
+          "sha256": "26d9b3475f804b354887a9909787121e3eff297bb8334acb5afd317c2606bb13"
+        },
+        {
+          "path": "base-replay/public-source/gen5bit/producer/data/qmod_p12.json",
+          "file": "pr309-outputs/base-replay/public-source/gen5bit/producer/data/qmod_p12.json.gz",
+          "sha256": "41224841fa8ee3d2574dbe2f5e3462fc2cd499f209f04e963c90725d72e024e1"
+        },
+        {
+          "path": "base-replay/public-source/gen5bit/producer/data/local_design_p12.json",
+          "file": "pr309-outputs/base-replay/public-source/gen5bit/producer/data/local_design_p12.json.gz",
+          "sha256": "321f8e355c05858d6b2a2cda9b314642377145dcdd8e5d4d3b1438b2eb501ef6"
+        },
+        {
+          "path": "base-replay/public-source/gen5bit/producer/data/pair_module_p12.json",
+          "file": "pr309-outputs/base-replay/public-source/gen5bit/producer/data/pair_module_p12.json.gz",
+          "sha256": "1180b86c71457066a8c035942acd7dec0694b1efebeb55e2becc9c35de34f2c2"
+        },
+        {
+          "path": "base-replay/public-source/discovery/coll/selA.selection.json",
+          "file": "pr309-outputs/base-replay/public-source/discovery/coll/selA.selection.json.gz",
+          "sha256": "711075b8087c203b96212cbf8a88d516cba5850f470cd011a0e81c091399e491"
+        },
+        {
+          "path": "base-replay/public-source/discovery/coll/selA.txt",
+          "file": "pr309-outputs/base-replay/public-source/discovery/coll/selA.txt.gz",
+          "sha256": "502b6772e07517f61760426a48412c6cca106e914ed2d0be4dd792088cf71d41"
+        },
+        {
+          "path": "base-replay/public-source/discovery/coll/families-alt.txt",
+          "file": "pr309-outputs/base-replay/public-source/discovery/coll/families-alt.txt.gz",
+          "sha256": "0c85e2ca6ad9c8834a7d10f451e39b1ab75ff3f6255828199f9679ab727e4591"
+        },
+        {
+          "path": "base-replay/public-source/discovery/coll/selA.json",
+          "file": "pr309-outputs/base-replay/public-source/discovery/coll/selA.json.gz",
+          "sha256": "16119dc839018cd7369cdebe8618ba56ac9d10838aec135a8519cd09140ecbc1"
+        },
+        {
+          "path": "base-replay/trade/seed/COHORT249-FRAMES.json",
+          "file": "pr309-outputs/base-replay/trade/seed/COHORT249-FRAMES.json.gz",
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "base-replay/trade/seed/COHORT249-INITIAL.json",
+          "file": "pr309-outputs/base-replay/trade/seed/COHORT249-INITIAL.json.gz",
+          "sha256": "6810237ff46bfb061546ae91a293702296c684b5e5063ff1d8092f4e2eb35beb"
+        },
+        {
+          "path": "base-replay/trade/seed/COHORT249-FINAL.json",
+          "file": "pr309-outputs/base-replay/trade/seed/COHORT249-FINAL.json.gz",
+          "sha256": "0f1a45c5f220cb6866c96c06ddbbf841142d676443fbb9a42d375972d37db384"
+        },
+        {
+          "path": "base-replay/trade/seed/COHORT249-SELECTION.json",
+          "file": "pr309-outputs/base-replay/trade/seed/COHORT249-SELECTION.json.gz",
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "path": "base-replay/trade/seed/COHORT249-REPLAY.json",
+          "file": "pr309-outputs/base-replay/trade/seed/COHORT249-REPLAY.json.gz",
+          "sha256": "23e0785514a70022e0a873305047e6695560ca15050c2248d35c93c89cf45f7f"
+        },
+        {
+          "path": "base-replay/trade/sink8/REMOVED-ROLES.json",
+          "file": "pr309-outputs/base-replay/trade/sink8/REMOVED-ROLES.json.gz",
+          "sha256": "0e4439b97746dff22c84f8fdc8355639c607663487cfe7d54abd57d9ffb8cec7"
+        },
+        {
+          "path": "base-replay/trade/sink8/249-DONOR-OWNERSHIP.json",
+          "file": "pr309-outputs/base-replay/trade/sink8/249-DONOR-OWNERSHIP.json.gz",
+          "sha256": "aa7fadf1c5a55fef24e600e63f1f17493021bce1ebdfb8ba8927b8ad6ce05adf"
+        },
+        {
+          "path": "base-replay/trade/sink8/OLD-TO-NEW.json",
+          "file": "pr309-outputs/base-replay/trade/sink8/OLD-TO-NEW.json.gz",
+          "sha256": "5eb71485bc03c24757c13b5949c0730bd35e8738e7d1567ab75c916d4167ada9"
+        },
+        {
+          "path": "base-replay/trade/sink8/selection.json",
+          "file": "pr309-outputs/base-replay/trade/sink8/selection.json.gz",
+          "sha256": "a615e8e3b77614b868d22150b9eefc9ae4dd48b2a21b3840b80db7c957d9730a"
+        },
+        {
+          "path": "base-replay/trade/sink8/receipt.json",
+          "file": "pr309-outputs/base-replay/trade/sink8/receipt.json.gz",
+          "sha256": "6a20e361c17f9a13d04f624fd0a49203907839d50ee7b4762c49628b391c95bf"
+        },
+        {
+          "path": "base-replay/trade/restored/COHORT249-INITIAL.json",
+          "file": "pr309-outputs/base-replay/trade/restored/COHORT249-INITIAL.json.gz",
+          "sha256": "a57302632f74af29611151a43cece21cf4338d3ad854df1e97e6c7975c6815f3"
+        },
+        {
+          "path": "base-replay/trade/restored/CLEANUP.json",
+          "file": "pr309-outputs/base-replay/trade/restored/CLEANUP.json.gz",
+          "sha256": "473382a122153c9a96c07ee9b27292291ed87402310fcf7c92277f5aa7c25497"
+        },
+        {
+          "path": "base-replay/trade/restored/COHORT249-FINAL.json",
+          "file": "pr309-outputs/base-replay/trade/restored/COHORT249-FINAL.json.gz",
+          "sha256": "ce40e1235fd0cfa94910b7d08c2483288ec63663903957cc77f853446d075a5d"
+        },
+        {
+          "path": "base-replay/trade/restored/COHORT249-SELECTION.json",
+          "file": "pr309-outputs/base-replay/trade/restored/COHORT249-SELECTION.json.gz",
+          "sha256": "55f6a7f4e3132e2b473ebf7fe6d8e2a5ce0e0904b26baeb9e012916a1df734d6"
+        },
+        {
+          "path": "base-replay/trade/restored/NEW-FRAMES.json",
+          "file": "pr309-outputs/base-replay/trade/restored/NEW-FRAMES.json.gz",
+          "sha256": "fe230891ce70f9aa44e261882f19729e6ac945347d0c02b9a2feff02beb2bf11"
+        },
+        {
+          "path": "base-replay/trade/restored/COHORT249-REPLAY.json",
+          "file": "pr309-outputs/base-replay/trade/restored/COHORT249-REPLAY.json.gz",
+          "sha256": "f7e2b4792d71a54854785f8590ba6710bef1876012d115f899af17ce71234d88"
+        },
+        {
+          "path": "base-replay/trade/restored-export/249-DONOR-OWNERSHIP.json",
+          "file": "pr309-outputs/base-replay/trade/restored-export/249-DONOR-OWNERSHIP.json.gz",
+          "sha256": "aa7fadf1c5a55fef24e600e63f1f17493021bce1ebdfb8ba8927b8ad6ce05adf"
+        },
+        {
+          "path": "base-replay/trade/final/COHORT249-INITIAL.json",
+          "file": "pr309-outputs/base-replay/trade/final/COHORT249-INITIAL.json.gz",
+          "sha256": "b300cd8f6accc6ca3a615c6a308b2f6cb272198f24edf38ce2ed534cbd9c8056"
+        },
+        {
+          "path": "base-replay/trade/final/249-DONOR-OWNERSHIP.json",
+          "file": "pr309-outputs/base-replay/trade/final/249-DONOR-OWNERSHIP.json.gz",
+          "sha256": "aa7fadf1c5a55fef24e600e63f1f17493021bce1ebdfb8ba8927b8ad6ce05adf"
+        },
+        {
+          "path": "base-replay/trade/final/OLD-TO-NEW.json",
+          "file": "pr309-outputs/base-replay/trade/final/OLD-TO-NEW.json.gz",
+          "sha256": "5eb71485bc03c24757c13b5949c0730bd35e8738e7d1567ab75c916d4167ada9"
+        },
+        {
+          "path": "base-replay/trade/final/COHORT249-FINAL.json",
+          "file": "pr309-outputs/base-replay/trade/final/COHORT249-FINAL.json.gz",
+          "sha256": "3b17454bf4f7cf78e389e97775f40033807986bcca6673199f2a350fd863ed0c"
+        },
+        {
+          "path": "base-replay/trade/final/COHORT249-SELECTION.json",
+          "file": "pr309-outputs/base-replay/trade/final/COHORT249-SELECTION.json.gz",
+          "sha256": "cf9c992ac9953d033a33ef18ebf4589b4ab546b9c93ab3a487e286ec7a6504f5"
+        },
+        {
+          "path": "base-replay/trade/final/COHORT249-REPLAY.json",
+          "file": "pr309-outputs/base-replay/trade/final/COHORT249-REPLAY.json.gz",
+          "sha256": "ceb489566837b8daa588258820f049eb48664f4e6016d169d2cd33c6cf5ce9fc"
+        },
+        {
+          "path": "base-replay/trade/kernel/COHORT249-INITIAL.json",
+          "file": "pr309-outputs/base-replay/trade/kernel/COHORT249-INITIAL.json.gz",
+          "sha256": "598a7d5f5de6eab3aa6088feddb2bd5389d5085e42eb9079c6ee4e2b1a493334"
+        },
+        {
+          "path": "base-replay/trade/kernel/INCREMENTAL-RECEIPT.json",
+          "file": "pr309-outputs/base-replay/trade/kernel/INCREMENTAL-RECEIPT.json.gz",
+          "sha256": "57e2b576effa2e4118d9359cbac6123e7e8dc24686537cb92084afc3f091d268"
+        },
+        {
+          "path": "base-replay/trade/kernel/INCREMENTAL-SELECTED.json",
+          "file": "pr309-outputs/base-replay/trade/kernel/INCREMENTAL-SELECTED.json.gz",
+          "sha256": "0e996601e8c31bb241f6bdc092fe5fce9645c20595efe5c16308b7ce64252647"
+        },
+        {
+          "path": "base-replay/trade/kernel/COHORT249-FINAL.json",
+          "file": "pr309-outputs/base-replay/trade/kernel/COHORT249-FINAL.json.gz",
+          "sha256": "4c0af1e539d366f82db1d74820d9260dc97c0465f7a661e81e674ab0d4adbed3"
+        },
+        {
+          "path": "base-replay/trade/kernel/COHORT249-SELECTION.json",
+          "file": "pr309-outputs/base-replay/trade/kernel/COHORT249-SELECTION.json.gz",
+          "sha256": "badd78823c7831fa8fd5b1423a66a0a374f893fa9e3bc4aeb03485312aa919be"
+        },
+        {
+          "path": "base-replay/trade/kernel/COHORT249-REPLAY.json",
+          "file": "pr309-outputs/base-replay/trade/kernel/COHORT249-REPLAY.json.gz",
+          "sha256": "b20936986897a03122b9ed2965eb7b8453955a108f18c06ba30d085bd53cc8e0"
+        },
+        {
+          "path": "base-replay/kernel-source/inputs/kernel1.json",
+          "file": "pr309-outputs/base-replay/kernel-source/inputs/kernel1.json.gz",
+          "sha256": "417b49f51853e922cc8c1bfd3a3ed52fb1438eaddc610df11388b543d62cc5fb"
+        },
+        {
+          "path": "base-replay/kernel-source/inputs/retiming-frames.json",
+          "file": "pr309-outputs/base-replay/kernel-source/inputs/retiming-frames.json.gz",
+          "sha256": "f462984addb9a3ee46cd52c6e8d5d6eeee22bc8055f02e9953d78162779f2371"
+        },
+        {
+          "path": "base-replay/kernel-source/inputs/retiming61.json",
+          "file": "pr309-outputs/base-replay/kernel-source/inputs/retiming61.json.gz",
+          "sha256": "0373336e7f32254a8755b8850314e7c4752987a7d232d664f73ae4c05aa940c7"
+        },
+        {
+          "path": "base-replay/kernel-source/inputs/frames1.json",
+          "file": "pr309-outputs/base-replay/kernel-source/inputs/frames1.json.gz",
+          "sha256": "7664a9c6692dd8e187db0007a280fff1e7bf4a6e5bd00e0fa9c4343968c07c91"
+        }
+      ],
+      "receipt_group": "native",
+      "retained_log": "logs/pr309-native.txt.gz"
+    },
+    {
       "number": 390,
       "head": "0e790f2dfb64e17bdee154aee151bb0c1dddb28e",
       "source_prefix": "research/e8-prefix-restoration",
@@ -4189,6 +4883,1220 @@
       ],
       "receipt_group": "corrected",
       "retained_log": "logs/pr388-corrected.txt.gz"
+    },
+    {
+      "number": 309,
+      "head": "aeb4808af1392e565e7071cbeb2c29608201cf24",
+      "source_prefix": "research/ti-local-response-schedules",
+      "command": [
+        "/tmp/integer-mult-review-venv/bin/python",
+        "-B",
+        "/tmp/reconciliation-third100-20261013/disk-retry-309/research/ti-local-response-schedules/verify.py",
+        "--output",
+        "/tmp/reconciliation-third100-20261013/disk-retry-309-out"
+      ],
+      "environment": {
+        "python": "/tmp/integer-mult-review-venv/bin/python",
+        "CPATH": "/tmp/integer-mult-queue-20261013/research/e8-bit-carrier-skeleton/portable-include:/tmp/coordinated-crossover-v2.PSyYno/deps/include"
+      },
+      "exit_code": 1,
+      "seconds": 797.840641583025,
+      "log": "pr309-disk-retry.txt",
+      "log_sha256": "abbf341fed3e3976aac9a35e9ba29af370e3f5b61b9363112e3af5d837f07a53",
+      "outputs": [
+        {
+          "path": "logs/full-inherited-base-source.log",
+          "file": "pr309-disk-retry-outputs/logs/full-inherited-base-source.log.gz",
+          "sha256": "8fbc679e82a5d19f3bcd2944ace7471ba7e05d31f3b39f20777efa1d77bbcbbd"
+        },
+        {
+          "path": "base-replay/complex-replay/NATIVE.json",
+          "file": "pr309-disk-retry-outputs/base-replay/complex-replay/NATIVE.json.gz",
+          "sha256": "17916719123ca18df883561afc752ba9d9108ff83871c9b38ad8fb5ab7808abb"
+        },
+        {
+          "path": "base-replay/complex-replay/compile.log",
+          "file": "pr309-disk-retry-outputs/base-replay/complex-replay/compile.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/complex-replay/GX.json",
+          "file": "pr309-disk-retry-outputs/base-replay/complex-replay/GX.json.gz",
+          "sha256": "41e022d78dc5395d01fca03b5aee5e60fc05454463de87ed53f8756ff50bda7a"
+        },
+        {
+          "path": "base-replay/complex-replay/CERTIFICATE.json",
+          "file": "pr309-disk-retry-outputs/base-replay/complex-replay/CERTIFICATE.json.gz",
+          "sha256": "9ad990b60849b3b15353e26b735557ad7817a6c945b62892c12025eda7ecc010"
+        },
+        {
+          "path": "base-replay/complex-replay/native.log",
+          "file": "pr309-disk-retry-outputs/base-replay/complex-replay/native.log.gz",
+          "sha256": "786c7d23328e510dfe2754627c8d4a4ba4841f8e5557e24e892fad400a3ce28f"
+        },
+        {
+          "path": "base-replay/complex-replay/ADMISSION.json",
+          "file": "pr309-disk-retry-outputs/base-replay/complex-replay/ADMISSION.json.gz",
+          "sha256": "742979e6ab8f400318615a8dbf9b78f9aa49627f82c4fa32bd0935d2b7467c6b"
+        },
+        {
+          "path": "base-replay/kernel-source/BINDING.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-source/BINDING.json.gz",
+          "sha256": "69ba489c5a96a040892af78eb3c5469592ac6ed7044e88e388b9df46effe571f"
+        },
+        {
+          "path": "base-replay/kernel-source/MANIFEST.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-source/MANIFEST.json.gz",
+          "sha256": "a297593cd9833b29748185fbfe20e26182998d66dddaa4cf47b3e181b5ff30e2"
+        },
+        {
+          "path": "base-replay/trade/TRADE-RECEIPT.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/TRADE-RECEIPT.json.gz",
+          "sha256": "3174e89402f9360dd030a188f7dac314d78ac8fe29f6aa84b6366eb3b3bfa515"
+        },
+        {
+          "path": "base-replay/trade/SINK8-AUDIT.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/SINK8-AUDIT.json.gz",
+          "sha256": "a304f6fcbd58f53f0a7888298eea54b146f473a5ccfe8fc6b75829533f63f529"
+        },
+        {
+          "path": "base-replay/trade/layer-manifest.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/layer-manifest.json.gz",
+          "sha256": "b17e4b00cf1487b0d659b7cfddead8cbff96e727a78dffb7f235deb6ddf0863e"
+        },
+        {
+          "path": "base-replay/trade/selection1719.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/selection1719.json.gz",
+          "sha256": "dcb5d3dc6b56714d817a9264ce334dc2b4783e62af27429c4159e17207874ced"
+        },
+        {
+          "path": "base-replay/trade/sinks8.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/sinks8.json.gz",
+          "sha256": "12f4e0a738a83028eb6674d54ed3e99b80a3fb3ed0930c59d3c6fcb88a1f0216"
+        },
+        {
+          "path": "base-replay/trade/LAYER-REVIEW.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/LAYER-REVIEW.json.gz",
+          "sha256": "0c1417e932fe5a2d5babde2dae8b37d2b83292c2c002e590faf04a8133e29f6b"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/CERTIFICATE.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/CERTIFICATE.json.gz",
+          "sha256": "f7c865165489b57b0e811e5d9b60eed780f483b6703e6f6df271415965b623bb"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/LAYER1-INPUTS.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/LAYER1-INPUTS.json.gz",
+          "sha256": "7458662e2d444f3fbf034ffc23a9bc0ff27422fcd88de2b70a4a54dab78d9a50"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/FRAMES1.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/FRAMES1.json.gz",
+          "sha256": "d3f41f665b7cd756f60b2c2cf093cb35bd9b5c59d66f0be8c4a0a549137c26e7"
+        },
+        {
+          "path": "base-replay/public-source/requirements.txt",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/requirements.txt.gz",
+          "sha256": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc"
+        },
+        {
+          "path": "base-replay/public-source/SOURCE.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/SOURCE.json.gz",
+          "sha256": "e43065c15dad1bf1f46de561df0d02fe35e70991028314cb9a7794a566eb6440"
+        },
+        {
+          "path": "base-replay/public-source/sink-selection.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/sink-selection.json.gz",
+          "sha256": "df0fee8c2571851591943f8d0787b6efdac518932faaec0f1b8f916739060eee"
+        },
+        {
+          "path": "base-replay/public-source/kernel-selection.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/kernel-selection.json.gz",
+          "sha256": "3de6647a97efda200269cee06446ee15944b197935b531efde61f4012526cc0d"
+        },
+        {
+          "path": "base-replay/public-source/restore-selection.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/restore-selection.json.gz",
+          "sha256": "567cb0108d15d1802880eb31caec6785268b01a2ecb06c0689d7dd83916d5e32"
+        },
+        {
+          "path": "base-replay/public-source/target-selection.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/target-selection.json.gz",
+          "sha256": "3f700a370847e254d56a387ae73add542403bd8a2fd7352bfd1750eb20c3c3ee"
+        },
+        {
+          "path": "base-replay/public-source/MANIFEST.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/MANIFEST.json.gz",
+          "sha256": "54a8a9c1f1241ed2555232476e5af8e7dc64c8fef5f13e84331981fb93f52ee6"
+        },
+        {
+          "path": "base-replay/public-source/COMPOSITION-SPECIALIZATION.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/COMPOSITION-SPECIALIZATION.json.gz",
+          "sha256": "91f59bb859b7b9666966444f84925a6a27d6062b087796b389352a8984366860"
+        },
+        {
+          "path": "base-replay/kernel-replay/RETIMING-FRAMES.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/RETIMING-FRAMES.json.gz",
+          "sha256": "474f59efa24fdadf0ba6a084f321e29b85e0051201435807fcc37602f6dc3410"
+        },
+        {
+          "path": "base-replay/kernel-replay/CERTIFICATE.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/CERTIFICATE.json.gz",
+          "sha256": "16bccfab7d068115cce62b44d900c67e05f0ddb7aa006f052f535bb40dcd012b"
+        },
+        {
+          "path": "base-replay/kernel-replay/LAYER1-INPUTS.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/LAYER1-INPUTS.json.gz",
+          "sha256": "e3eeed40eeb78bf239358cbbb025a3d7700bdca512590c023751ef507f447346"
+        },
+        {
+          "path": "base-replay/kernel-replay/FRAMES1.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/FRAMES1.json.gz",
+          "sha256": "3cb7c5fc38237a7a9b0f64a4606668a0d6ee3e05e00696d6a91822b2d4781da6"
+        },
+        {
+          "path": "base-replay/kernel-replay/FINAL-LAYERS.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/FINAL-LAYERS.json.gz",
+          "sha256": "4092b8eb2d7468d247e8e7cca2e6476091ba225e8abb1375067d604f625dbb4b"
+        },
+        {
+          "path": "base-replay/posttarget/249-DONOR-OWNERSHIP.json",
+          "file": "pr309-disk-retry-outputs/base-replay/posttarget/249-DONOR-OWNERSHIP.json.gz",
+          "sha256": "aa7fadf1c5a55fef24e600e63f1f17493021bce1ebdfb8ba8927b8ad6ce05adf"
+        },
+        {
+          "path": "base-replay/posttarget/EXPORT-RECEIPT.json",
+          "file": "pr309-disk-retry-outputs/base-replay/posttarget/EXPORT-RECEIPT.json.gz",
+          "sha256": "cb7bf78f79a7a4d5dcbbf61e027cfd6734694c64f959719b5dc70a467e14157e"
+        },
+        {
+          "path": "base-replay/logs/compile-restore.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/compile-restore.log.gz",
+          "sha256": "e59ec7a59875c14692fe01409e8d30ad08e6a71adae5553ef779f90f52732f08"
+        },
+        {
+          "path": "base-replay/logs/compile-kernel-emit.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/compile-kernel-emit.log.gz",
+          "sha256": "4a090ff3d934f60138567c6dd103bae9768b801e164f812506e254c5bd94e13e"
+        },
+        {
+          "path": "base-replay/logs/compile-frame-descend.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/compile-frame-descend.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/actual51-source-span-frame-refinement.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/actual51-source-span-frame-refinement.log.gz",
+          "sha256": "175f61f53bc9a33065f5646749f29703088a3899bd2b6ce4f573188ab6c02b38"
+        },
+        {
+          "path": "base-replay/logs/compile-source-span.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/compile-source-span.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/compile-frame-prime-guard.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/compile-frame-prime-guard.log.gz",
+          "sha256": "0a4d0734b0b0a7750d3b53d1beed88cdebde93aaddcb2c411f8c5cbe46f6fd9f"
+        },
+        {
+          "path": "base-replay/logs/public-twelve-stage-source.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/public-twelve-stage-source.log.gz",
+          "sha256": "b9ebec43a13b39b655a2d5ba00d357ab9b340ce850aa83bd0f3ae5429a808972"
+        },
+        {
+          "path": "base-replay/logs/complex-source-native.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/complex-source-native.log.gz",
+          "sha256": "49580dcbdbf85d619d29ec70af1a5b7243edcc8ea69549b5d5577509ecd33740"
+        },
+        {
+          "path": "base-replay/logs/compile-sink-audit.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/compile-sink-audit.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/compile-price-complex.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/compile-price-complex.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/joint-kernel-sink-construction.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/joint-kernel-sink-construction.log.gz",
+          "sha256": "5e95dc2e2c9a020d6e13b4e0b1dfbdadc3176af9410b9b36b50d56a4038a72ec"
+        },
+        {
+          "path": "base-replay/logs/posttarget-source-export.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/posttarget-source-export.log.gz",
+          "sha256": "f554723a7fdf450c793c073e1521e885c54739f1199959b49b5ac13b6e27ee81"
+        },
+        {
+          "path": "base-replay/logs/kernels38-retiming61-fresh-source-and-controls.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/kernels38-retiming61-fresh-source-and-controls.log.gz",
+          "sha256": "75fe3a386ecb2c9ea809078f88c8b37eb22119bb17c56d3162b8da3ec8b398bc"
+        },
+        {
+          "path": "base-replay/logs/compile-global.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/compile-global.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/compile-layer-review.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/compile-layer-review.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/compile-finite.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/compile-finite.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/compile-fixed-complex.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/compile-fixed-complex.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/compile-export-guard.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/compile-export-guard.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/compile-banks.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/compile-banks.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/logs/rank-modular159-fresh-source-and-controls.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/rank-modular159-fresh-source-and-controls.log.gz",
+          "sha256": "d93ab8d26c8be9e0f4f8f96127495fc1987a5727c7e378595511928f063dc8ef"
+        },
+        {
+          "path": "base-replay/logs/compile-sink-transform.log",
+          "file": "pr309-disk-retry-outputs/base-replay/logs/compile-sink-transform.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/public-replay/geometry.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/geometry.json.gz",
+          "sha256": "15e29a2de14665fe2f0d57606eb99715bdd1bd78c00bcc7f3ee017e772857e79"
+        },
+        {
+          "path": "base-replay/public-replay/complex.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/complex.json.gz",
+          "sha256": "0614776f8767c9ee618210b4b87b3f55fa3cc642f9856e1ca0834c1aba4dcd9a"
+        },
+        {
+          "path": "base-replay/public-replay/bit.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/bit.json.gz",
+          "sha256": "114a2c1a77059e94b7618e067770a5053202b839f969047e695077ea213a5bea"
+        },
+        {
+          "path": "base-replay/public-replay/restore.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/restore.json.gz",
+          "sha256": "09e4f222688d28879fd37de51669c5698f2c9de0620d910a9e7b479ddebb04c5"
+        },
+        {
+          "path": "base-replay/public-replay/target.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/target.json.gz",
+          "sha256": "9b01ec9a82e7e7e44690c8558164ea92d91cabda7afb755438c8603be62c6ac3"
+        },
+        {
+          "path": "base-replay/public-replay/math.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/math.json.gz",
+          "sha256": "8c80a455b9bfd8068664a8ad34423006f68bb852ea41800ab93edb052d88775e"
+        },
+        {
+          "path": "base-replay/public-replay/parity.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/parity.json.gz",
+          "sha256": "2fc043b3945722f7bd5c60b36293f247a86bcf2c981efeb2a3a13f8cd5d96e6e"
+        },
+        {
+          "path": "base-replay/public-replay/kernel.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/kernel.json.gz",
+          "sha256": "98bfc5bb4973fb50d023d059d3c560a049a205bcaf7a83811db5ff7642c26ed0"
+        },
+        {
+          "path": "base-replay/public-replay/kernel-entrances.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/kernel-entrances.json.gz",
+          "sha256": "93cb96b72c51646a95937ea7c6deb46345c6fe41dd532454558acc4d9aa1c0c3"
+        },
+        {
+          "path": "base-replay/public-replay/descent-frame-pairs.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/descent-frame-pairs.json.gz",
+          "sha256": "75f5038633879f35dfcd88fcae10b9ab2954cbe0d5c16ecf96c12f412567187a"
+        },
+        {
+          "path": "base-replay/public-replay/kernel-initial.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/kernel-initial.json.gz",
+          "sha256": "68fc9b7771ac32a191dac913ede9a54d98d687de3d6be9d469e2caf166ac3d98"
+        },
+        {
+          "path": "base-replay/public-replay/primes.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/primes.json.gz",
+          "sha256": "de50ded5ccce0d9d9c475276c65f5ea412ffbce920f831417bfa9bac4ed77dfb"
+        },
+        {
+          "path": "base-replay/public-replay/descent-per-role.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/descent-per-role.json.gz",
+          "sha256": "dc479ee9d46e9ee1aaf010b010a80d587c2c1f57ba5e096051f628fbb591b24e"
+        },
+        {
+          "path": "base-replay/public-replay/finite.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/finite.json.gz",
+          "sha256": "404557842ef5117d74d6dbb25a63441eb90cf05a265afeeaafca12a84812a505"
+        },
+        {
+          "path": "base-replay/public-replay/certificate.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/certificate.json.gz",
+          "sha256": "58e2ecc049e1aaa8e57d458b1db68f9ec8e6fa3a632e11930ed8f3590cd45244"
+        },
+        {
+          "path": "base-replay/public-replay/virtual.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/virtual.json.gz",
+          "sha256": "043bba9cf78663c0a8a34b3ae38e80bf9bae513877fb83091f3a972fe01f9492"
+        },
+        {
+          "path": "base-replay/public-replay/sink.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/sink.json.gz",
+          "sha256": "852a9fa59a62618038eb95ea619f47591b75eaf166a71e7e69675e5697d1d392"
+        },
+        {
+          "path": "base-replay/public-replay/banks.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/banks.json.gz",
+          "sha256": "c234fe8e01c6233bc2cc5c17ab44ff5244e8b073adc997f2703392bbc989d395"
+        },
+        {
+          "path": "base-replay/public-replay/verification.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/verification.json.gz",
+          "sha256": "95b2bfbc80dd829bff1ac69c464da5309761d430dff0924421c36e032233389e"
+        },
+        {
+          "path": "base-replay/public-replay/descent.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/descent.json.gz",
+          "sha256": "14da9c2c5c9f4ece4705b11496b4b422e6cd3cf809890806d7b96e8d7d285383"
+        },
+        {
+          "path": "base-replay/public-replay/global_result.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/global_result.json.gz",
+          "sha256": "78bda32808bacb29f3ac73c261875648b94901e40aa1b8119b19dd7449b8bfba"
+        },
+        {
+          "path": "base-replay/public-replay/scalar.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/scalar.json.gz",
+          "sha256": "20f3f0c2a77080e1b0aeb56a9b32428efdae45809a32a16fabfcea90d64a1dc1"
+        },
+        {
+          "path": "base-replay/public-replay/virtual-bit/graph_p12.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/virtual-bit/graph_p12.json.gz",
+          "sha256": "73814dd03979f08b13cf981a30b56dc9b8127f618162407b815009e44298cb00"
+        },
+        {
+          "path": "base-replay/public-replay/virtual-bit/profile_p12.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/virtual-bit/profile_p12.json.gz",
+          "sha256": "bcfebb851f1d2e91c604867da2235d83f36f3d591a14d113a4aab734417b3c0b"
+        },
+        {
+          "path": "base-replay/public-replay/virtual-bit/kchron_p12.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-replay/virtual-bit/kchron_p12.json.gz",
+          "sha256": "e28cd9e9842605af568eea62203a15c48fb08a92e99b38a3480f2fe462d8e1b4"
+        },
+        {
+          "path": "base-replay/round5-source/retiming51/PIN.json",
+          "file": "pr309-disk-retry-outputs/base-replay/round5-source/retiming51/PIN.json.gz",
+          "sha256": "b855cf3191ab130627042d9d0f725e1473b6bab0950ea00303adaeb0a59ea8e3"
+        },
+        {
+          "path": "base-replay/round5-source/retiming51/MANIFEST.json",
+          "file": "pr309-disk-retry-outputs/base-replay/round5-source/retiming51/MANIFEST.json.gz",
+          "sha256": "4cf0f72fce3c456968a6ffa46979a1023afd6c46cc53baad1568d51a54c2b3d3"
+        },
+        {
+          "path": "base-replay/round5-source/kernels159/BINDING.json",
+          "file": "pr309-disk-retry-outputs/base-replay/round5-source/kernels159/BINDING.json.gz",
+          "sha256": "c9b8706bcad5275ddf14ecaa573e30da540e7ee63898dba272d71b13be0f030c"
+        },
+        {
+          "path": "base-replay/round5-source/kernels159/MANIFEST.json",
+          "file": "pr309-disk-retry-outputs/base-replay/round5-source/kernels159/MANIFEST.json.gz",
+          "sha256": "9a8478c05dc614e6121a64b05bdfcfb5bd06473c43d2ea02207940a993008d53"
+        },
+        {
+          "path": "base-replay/round5-source/kernels159/inputs/kernel1.json",
+          "file": "pr309-disk-retry-outputs/base-replay/round5-source/kernels159/inputs/kernel1.json.gz",
+          "sha256": "3c9389d22c9762257d4e5fc3b124fe226a205f0401f6afdabac934a4dacb02d2"
+        },
+        {
+          "path": "base-replay/round5-source/kernels159/inputs/frames1.json",
+          "file": "pr309-disk-retry-outputs/base-replay/round5-source/kernels159/inputs/frames1.json.gz",
+          "sha256": "175235002aae023aa54a1073cde93bb4e213e98077afc56d215bba8fb27537b1"
+        },
+        {
+          "path": "base-replay/round5-source/retiming51/inputs/selection.json",
+          "file": "pr309-disk-retry-outputs/base-replay/round5-source/retiming51/inputs/selection.json.gz",
+          "sha256": "63b7b715b3616c5c76c7d99e77d8d4649d5eb327374092e5c687c0871507b912"
+        },
+        {
+          "path": "base-replay/kernel-replay/predecessor/COHORT249-FRAMES.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/predecessor/COHORT249-FRAMES.json.gz",
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "base-replay/kernel-replay/predecessor/COHORT249-INITIAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/predecessor/COHORT249-INITIAL.json.gz",
+          "sha256": "375e17b87e99621ade0c54347c5acd743275f5328d9598f56e3b1e8a8ac0d292"
+        },
+        {
+          "path": "base-replay/kernel-replay/predecessor/249-DONOR-OWNERSHIP.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/predecessor/249-DONOR-OWNERSHIP.json.gz",
+          "sha256": "aa7fadf1c5a55fef24e600e63f1f17493021bce1ebdfb8ba8927b8ad6ce05adf"
+        },
+        {
+          "path": "base-replay/kernel-replay/predecessor/COHORT249-FINAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/predecessor/COHORT249-FINAL.json.gz",
+          "sha256": "54683fd3e34c1a2cf755930fe3af8be9f8bc50a237ef88ac863887453fcd1f32"
+        },
+        {
+          "path": "base-replay/kernel-replay/predecessor/COHORT249-SELECTION.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/predecessor/COHORT249-SELECTION.json.gz",
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "path": "base-replay/kernel-replay/predecessor/COHORT249-REPLAY.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/predecessor/COHORT249-REPLAY.json.gz",
+          "sha256": "0fbec5cacd6bc49e35dcbb85d0dd119877222f9c7096acd3cb3e323f89f5e2be"
+        },
+        {
+          "path": "base-replay/kernel-replay/controls/oversized1.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/controls/oversized1.json.gz",
+          "sha256": "56903074d7a55e40b345fb6cee12c641db377c4e09270796e9e27ca459a38793"
+        },
+        {
+          "path": "base-replay/kernel-replay/controls/even1.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/controls/even1.json.gz",
+          "sha256": "e70b550a06c2b84d6a80bca1a7b9266687cefda61723898930e07519fac072cb"
+        },
+        {
+          "path": "base-replay/kernel-replay/controls/degenerate-retiming.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/controls/degenerate-retiming.json.gz",
+          "sha256": "7ab4259c2c04c5a7b74f87b3ff40f3b8bd96d5e0e6a1ce4f6411e774067a3490"
+        },
+        {
+          "path": "base-replay/kernel-replay/controls/zero1.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/controls/zero1.json.gz",
+          "sha256": "9480770153eba9fbb44ed7c68a0aa3539e8a6be389c20bacad57c58835e5b5fd"
+        },
+        {
+          "path": "base-replay/kernel-replay/controls/even-F2-1.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/controls/even-F2-1.json.gz",
+          "sha256": "54e362791aca238a68a131c6dfbd867f41c7ae89d7a83a826d749eee8a6ee192"
+        },
+        {
+          "path": "base-replay/kernel-replay/controls/wrong-old-frame.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/controls/wrong-old-frame.json.gz",
+          "sha256": "d0d566ed007e4cbcf7f8cfadfcc3dbef9188fd2406ced93affdc9b92adfb9ee2"
+        },
+        {
+          "path": "base-replay/kernel-replay/controls/protected-retiming.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/controls/protected-retiming.json.gz",
+          "sha256": "ab8d8a1e61bd7dc316ac1a53589c4241f3ddee3dcc379e6b047353765e3f2206"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/retimed-legality.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/retimed-legality.log.gz",
+          "sha256": "9aeeba6f76d3901d99cc36b633d8d78662f4aa4bffbe64a7eb71daaa429b01c8"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/oversized1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/oversized1.log.gz",
+          "sha256": "72a926783d86be0788894035d0741b148713988a14364d87a60a88c3fd866fa0"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/signed-prefix1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/signed-prefix1.log.gz",
+          "sha256": "5c9c86d81696dd529d4e7a37f9ba6744ac81f24c061d9d34538867ffa573d973"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/even-integer-1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/even-integer-1.log.gz",
+          "sha256": "8be5beadb3491a07e92c5d9c86bc35943736eb5d6bc7da518f6f2ab0d88916c6"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/protected-retiming.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/protected-retiming.log.gz",
+          "sha256": "c778fb120e459be6c71a295466c39ed19d62a59ba631612c1f6e1fe603635d3c"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/legality1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/legality1.log.gz",
+          "sha256": "9aeeba6f76d3901d99cc36b633d8d78662f4aa4bffbe64a7eb71daaa429b01c8"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/retiming-prime.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/retiming-prime.log.gz",
+          "sha256": "6d4c2dec6bf28d2bdedd141aa586ac4f2adfe263645b8cda410372d957e42618"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/retimed-global.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/retimed-global.log.gz",
+          "sha256": "424da2404356db654ef878f8528d600b81450b988093e75cad5bc44522c6b58e"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/emit1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/emit1.log.gz",
+          "sha256": "58938a13deff889b40bc65499b2ec15bd9173c1f8ed4cbf511621cc86bec881d"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/compile-kernel-prime-guard.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/compile-kernel-prime-guard.log.gz",
+          "sha256": "5ce724f381c3ba92abbb11cff9c601d25075efb15fa135761d17c09c5272e796"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/global1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/global1.log.gz",
+          "sha256": "6e4b62847b132e8ac427a3a13d72abb3032ce7e0819cba12121af4167d52a1b4"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/even-F2-1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/even-F2-1.log.gz",
+          "sha256": "73493af77069e974b755241ede448696b4743788daaa734387f61f2ecd941a9f"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/compile-frame-emit.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/compile-frame-emit.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/wrong-old-frame.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/wrong-old-frame.log.gz",
+          "sha256": "c778fb120e459be6c71a295466c39ed19d62a59ba631612c1f6e1fe603635d3c"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/prime1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/prime1.log.gz",
+          "sha256": "ef7b54422f3f7b6b50bfc3ab3f9b6e7de51051715ba817fb1a49c4606f806c4c"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/compile-ordered-legality.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/compile-ordered-legality.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/compile-global.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/compile-global.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/compile-layer-review.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/compile-layer-review.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/source-baseline-global.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/source-baseline-global.log.gz",
+          "sha256": "b3042dd61506e67ddb8c044036d63b7fee52614f4e5b9861b24b6442621827f6"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/zero1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/zero1.log.gz",
+          "sha256": "fd67718798b2560135e4f4975442e1da84c571d36437fceb78011da51f726962"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/degenerate-retiming.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/degenerate-retiming.log.gz",
+          "sha256": "64eff0056036bd1d4c979042b4adcab249385b17db99f2208d36b109489f2ce4"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/compile-kernel1-emit.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/compile-kernel1-emit.log.gz",
+          "sha256": "5a8125f7cccfb5cbdfa378b08fbf41c71d542e3b45fa1bc47f47e74d8d663bf1"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/retimed-signed-prefix.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/retimed-signed-prefix.log.gz",
+          "sha256": "5c9c86d81696dd529d4e7a37f9ba6744ac81f24c061d9d34538867ffa573d973"
+        },
+        {
+          "path": "base-replay/kernel-replay/logs/retiming61.log",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/logs/retiming61.log.gz",
+          "sha256": "d7fd4dc3a59ea0b21a47703e1c90b20feda4a3b7a5e0d57a4beec1b7a28f9f2c"
+        },
+        {
+          "path": "base-replay/kernel-replay/final/COHORT249-FRAMES.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/final/COHORT249-FRAMES.json.gz",
+          "sha256": "5838dad96cd1ab606348a84b594ca52da46909f6fb441f5a86d8c85236576199"
+        },
+        {
+          "path": "base-replay/kernel-replay/final/COHORT249-INITIAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/final/COHORT249-INITIAL.json.gz",
+          "sha256": "15c91015f7d0cde9c7bb7d27452b528610779339a5e31a33002464d215b942f0"
+        },
+        {
+          "path": "base-replay/kernel-replay/final/249-DONOR-OWNERSHIP.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/final/249-DONOR-OWNERSHIP.json.gz",
+          "sha256": "aa7fadf1c5a55fef24e600e63f1f17493021bce1ebdfb8ba8927b8ad6ce05adf"
+        },
+        {
+          "path": "base-replay/kernel-replay/final/PRIME.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/final/PRIME.json.gz",
+          "sha256": "2e3f56487b8c7aa06f51298b61cdba8532e2cb9ad080811d0357e5dbb1a7cfa0"
+        },
+        {
+          "path": "base-replay/kernel-replay/final/INCREMENTAL-RECEIPT.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/final/INCREMENTAL-RECEIPT.json.gz",
+          "sha256": "345b0d3182ba089ff5e8151b390783dd1faac791c923567aec9b735897df8b6d"
+        },
+        {
+          "path": "base-replay/kernel-replay/final/LEGALITY.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/final/LEGALITY.json.gz",
+          "sha256": "d96a984d29ecb1cd7138de4e596e01d23e6b5866e971e452be81c097a006f6bb"
+        },
+        {
+          "path": "base-replay/kernel-replay/final/INCREMENTAL-SELECTED.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/final/INCREMENTAL-SELECTED.json.gz",
+          "sha256": "4631c5441756c64da78a4436d000863174ee9b571724fb20c4366cca63b59577"
+        },
+        {
+          "path": "base-replay/kernel-replay/final/COHORT249-FINAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/final/COHORT249-FINAL.json.gz",
+          "sha256": "3b17454bf4f7cf78e389e97775f40033807986bcca6673199f2a350fd863ed0c"
+        },
+        {
+          "path": "base-replay/kernel-replay/final/GLOBAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/final/GLOBAL.json.gz",
+          "sha256": "e6d76fcaad0c897df390b11c4d7fd97327dbaf9fa121d2529bce22b916c610d6"
+        },
+        {
+          "path": "base-replay/kernel-replay/final/COHORT249-SELECTION.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/final/COHORT249-SELECTION.json.gz",
+          "sha256": "ce5698133b6d87ee960ad50a41233e3245c00b48cb2232a735cd01d75514c492"
+        },
+        {
+          "path": "base-replay/kernel-replay/final/LAYERS.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/final/LAYERS.json.gz",
+          "sha256": "3919552ad6e43b2202981d7a68d214eadd2a28514ae42c5f44e635df987a364b"
+        },
+        {
+          "path": "base-replay/kernel-replay/final/COHORT249-REPLAY.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/final/COHORT249-REPLAY.json.gz",
+          "sha256": "8adc2349c1c85dc01580d09e051728b6b1e5e3d2a17472744422068d47ce6053"
+        },
+        {
+          "path": "base-replay/kernel-replay/retimed/COHORT249-FRAMES.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/retimed/COHORT249-FRAMES.json.gz",
+          "sha256": "d5a15b45bc272f1bfb93e6fa889297616cf97bd354003a31c2cec1c6742cefc4"
+        },
+        {
+          "path": "base-replay/kernel-replay/retimed/FROZEN-FRAME-RECEIPT.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/retimed/FROZEN-FRAME-RECEIPT.json.gz",
+          "sha256": "f40522c5db959bd5cbda7a705c3d7fe83a055bc1bfdb7caafc909492ac87b231"
+        },
+        {
+          "path": "base-replay/kernel-replay/retimed/COHORT249-INITIAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/retimed/COHORT249-INITIAL.json.gz",
+          "sha256": "15c91015f7d0cde9c7bb7d27452b528610779339a5e31a33002464d215b942f0"
+        },
+        {
+          "path": "base-replay/kernel-replay/retimed/GLOBAL-SOURCE-BASELINE.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/retimed/GLOBAL-SOURCE-BASELINE.json.gz",
+          "sha256": "58c2b9f8c3c3bf388af01e2c36e869f0d984b3c1581171ef02f33ee1b6109c88"
+        },
+        {
+          "path": "base-replay/kernel-replay/retimed/249-DONOR-OWNERSHIP.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/retimed/249-DONOR-OWNERSHIP.json.gz",
+          "sha256": "aa7fadf1c5a55fef24e600e63f1f17493021bce1ebdfb8ba8927b8ad6ce05adf"
+        },
+        {
+          "path": "base-replay/kernel-replay/retimed/PRIME.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/retimed/PRIME.json.gz",
+          "sha256": "97399120ab756e6e14a3634efe5c56925199511311af9e6b1d4355c24cb9d313"
+        },
+        {
+          "path": "base-replay/kernel-replay/retimed/LEGALITY.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/retimed/LEGALITY.json.gz",
+          "sha256": "e93d0733338cbb9902e1ea554e4d9e6c7daa4913e80de8f804f41960883fa1e3"
+        },
+        {
+          "path": "base-replay/kernel-replay/retimed/BINARY-SELECTION.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/retimed/BINARY-SELECTION.json.gz",
+          "sha256": "a39f170710c92bf957a636f2de3490392dd9af56839033b2b6c51407e97c9c24"
+        },
+        {
+          "path": "base-replay/kernel-replay/retimed/COHORT249-FINAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/retimed/COHORT249-FINAL.json.gz",
+          "sha256": "3b17454bf4f7cf78e389e97775f40033807986bcca6673199f2a350fd863ed0c"
+        },
+        {
+          "path": "base-replay/kernel-replay/retimed/GLOBAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/retimed/GLOBAL.json.gz",
+          "sha256": "07faaed622f51ff3b6bc536b6e33febbdfecd91b8b4db46aaba40e8e3fd26701"
+        },
+        {
+          "path": "base-replay/kernel-replay/retimed/COHORT249-SELECTION.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/retimed/COHORT249-SELECTION.json.gz",
+          "sha256": "ce5698133b6d87ee960ad50a41233e3245c00b48cb2232a735cd01d75514c492"
+        },
+        {
+          "path": "base-replay/kernel-replay/retimed/LAYERS.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/retimed/LAYERS.json.gz",
+          "sha256": "3919552ad6e43b2202981d7a68d214eadd2a28514ae42c5f44e635df987a364b"
+        },
+        {
+          "path": "base-replay/kernel-replay/retimed/COHORT249-REPLAY.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-replay/retimed/COHORT249-REPLAY.json.gz",
+          "sha256": "abe2aa2576a55a0a4c88223da48836b1f18179cb0ddc1b3c54f37239900a75ec"
+        },
+        {
+          "path": "base-replay/public-source/expected/kernel-pins.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/expected/kernel-pins.json.gz",
+          "sha256": "430798171b42b5e36cbb62238dbd2a3b050c508d70e6667804016169fcfc6a87"
+        },
+        {
+          "path": "base-replay/public-source/discovery/twin-census.txt",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/discovery/twin-census.txt.gz",
+          "sha256": "05c46c06565b7938f9c7d70f6ce0cbe87663b850c2232f4e6f00891c418cd6b1"
+        },
+        {
+          "path": "base-replay/public-source/notices/PR230-PROVENANCE.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/notices/PR230-PROVENANCE.json.gz",
+          "sha256": "19957e28a8ad26281bfe8bfaf8ae16191be53e729a8870a6154671b3384959d4"
+        },
+        {
+          "path": "base-replay/public-source/inputs/complex/source-pins.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/inputs/complex/source-pins.json.gz",
+          "sha256": "17b2c01350abc7fdd57a82fbe540488fb253a198d0cf7eb80275baef8864e11d"
+        },
+        {
+          "path": "base-replay/public-source/inputs/complex/retained/FINITE_BRIDGE.txt",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/inputs/complex/retained/FINITE_BRIDGE.txt.gz",
+          "sha256": "66d8f4ea8752abd89952d6674a636575a0db16e18b1c16e293f48f64242f0c46"
+        },
+        {
+          "path": "base-replay/public-source/gen5bit/selected/bit/graph_p12.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/gen5bit/selected/bit/graph_p12.json.gz",
+          "sha256": "73814dd03979f08b13cf981a30b56dc9b8127f618162407b815009e44298cb00"
+        },
+        {
+          "path": "base-replay/public-source/gen5bit/selected/bit/profile_p12.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/gen5bit/selected/bit/profile_p12.json.gz",
+          "sha256": "bcfebb851f1d2e91c604867da2235d83f36f3d591a14d113a4aab734417b3c0b"
+        },
+        {
+          "path": "base-replay/public-source/gen5bit/selected/bit/kchron_p12.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/gen5bit/selected/bit/kchron_p12.json.gz",
+          "sha256": "e28cd9e9842605af568eea62203a15c48fb08a92e99b38a3480f2fe462d8e1b4"
+        },
+        {
+          "path": "base-replay/public-source/gen5bit/references/pr168-v4/SOURCE.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/gen5bit/references/pr168-v4/SOURCE.json.gz",
+          "sha256": "21a412177c9309d89472aabf4c67618d7a546811f7e68a5904304ae46a98d27c"
+        },
+        {
+          "path": "base-replay/public-source/gen5bit/producer/data/arcs_p12.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/gen5bit/producer/data/arcs_p12.json.gz",
+          "sha256": "26d9b3475f804b354887a9909787121e3eff297bb8334acb5afd317c2606bb13"
+        },
+        {
+          "path": "base-replay/public-source/gen5bit/producer/data/qmod_p12.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/gen5bit/producer/data/qmod_p12.json.gz",
+          "sha256": "41224841fa8ee3d2574dbe2f5e3462fc2cd499f209f04e963c90725d72e024e1"
+        },
+        {
+          "path": "base-replay/public-source/gen5bit/producer/data/local_design_p12.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/gen5bit/producer/data/local_design_p12.json.gz",
+          "sha256": "321f8e355c05858d6b2a2cda9b314642377145dcdd8e5d4d3b1438b2eb501ef6"
+        },
+        {
+          "path": "base-replay/public-source/gen5bit/producer/data/pair_module_p12.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/gen5bit/producer/data/pair_module_p12.json.gz",
+          "sha256": "1180b86c71457066a8c035942acd7dec0694b1efebeb55e2becc9c35de34f2c2"
+        },
+        {
+          "path": "base-replay/public-source/discovery/coll/selA.selection.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/discovery/coll/selA.selection.json.gz",
+          "sha256": "711075b8087c203b96212cbf8a88d516cba5850f470cd011a0e81c091399e491"
+        },
+        {
+          "path": "base-replay/public-source/discovery/coll/selA.txt",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/discovery/coll/selA.txt.gz",
+          "sha256": "502b6772e07517f61760426a48412c6cca106e914ed2d0be4dd792088cf71d41"
+        },
+        {
+          "path": "base-replay/public-source/discovery/coll/families-alt.txt",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/discovery/coll/families-alt.txt.gz",
+          "sha256": "0c85e2ca6ad9c8834a7d10f451e39b1ab75ff3f6255828199f9679ab727e4591"
+        },
+        {
+          "path": "base-replay/public-source/discovery/coll/selA.json",
+          "file": "pr309-disk-retry-outputs/base-replay/public-source/discovery/coll/selA.json.gz",
+          "sha256": "16119dc839018cd7369cdebe8618ba56ac9d10838aec135a8519cd09140ecbc1"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/predecessor/COHORT249-FRAMES.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/predecessor/COHORT249-FRAMES.json.gz",
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/predecessor/COHORT249-INITIAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/predecessor/COHORT249-INITIAL.json.gz",
+          "sha256": "2574d034d7c8f014a0d053ad8b6b02031708cd4166a9de92f5cf3cf92a57ef96"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/predecessor/249-DONOR-OWNERSHIP.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/predecessor/249-DONOR-OWNERSHIP.json.gz",
+          "sha256": "aa7fadf1c5a55fef24e600e63f1f17493021bce1ebdfb8ba8927b8ad6ce05adf"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/predecessor/COHORT249-FINAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/predecessor/COHORT249-FINAL.json.gz",
+          "sha256": "54683fd3e34c1a2cf755930fe3af8be9f8bc50a237ef88ac863887453fcd1f32"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/predecessor/COHORT249-SELECTION.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/predecessor/COHORT249-SELECTION.json.gz",
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/predecessor/COHORT249-REPLAY.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/predecessor/COHORT249-REPLAY.json.gz",
+          "sha256": "2201260a22dcd178b514e1e7e43aa874ad22e9958bef9956a55dfcada9f4b7c3"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/controls/oversized1.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/controls/oversized1.json.gz",
+          "sha256": "668c02377f70da4a0e32c74849e673e82c3ca7d802197161522cec1e9739d969"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/controls/even1.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/controls/even1.json.gz",
+          "sha256": "b8f44b498732727a13a6dc3b2faeff6ad484e548e73c2dddf2c29cc192e908fe"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/controls/tiny-states.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/controls/tiny-states.json.gz",
+          "sha256": "255fe81627929ba7572ea8b5af4cdb0d4b434ce84e5656ce14ab8aaf55acd4a6"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/controls/zero1.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/controls/zero1.json.gz",
+          "sha256": "96f71fa45f23cc635089fae1196d5b6577e337908dc08dae715e3039ee8edd15"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/controls/even-F2-1.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/controls/even-F2-1.json.gz",
+          "sha256": "f49adf03b614225b2a346a6972589db3e3af969da696e3f4616e120166c2d553"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/logs/out-of-range.log",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/logs/out-of-range.log.gz",
+          "sha256": "9652165b6123fa52ce5cc3205f06941fd70503e49436fdc4264e0dedd09c7422"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/logs/oversized1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/logs/oversized1.log.gz",
+          "sha256": "72a926783d86be0788894035d0741b148713988a14364d87a60a88c3fd866fa0"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/logs/signed-prefix1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/logs/signed-prefix1.log.gz",
+          "sha256": "5c9c86d81696dd529d4e7a37f9ba6744ac81f24c061d9d34538867ffa573d973"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/logs/even-integer-1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/logs/even-integer-1.log.gz",
+          "sha256": "8be5beadb3491a07e92c5d9c86bc35943736eb5d6bc7da518f6f2ab0d88916c6"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/logs/legality1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/logs/legality1.log.gz",
+          "sha256": "5977447d3b0d52dbe8111fc6b0eba3a1749b5dc9756060aa10292d2f5f17a04a"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/logs/emit1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/logs/emit1.log.gz",
+          "sha256": "46f1372f05dfd87d131e35982fe0df8f0b6b5ee95555f548856fd476e98244d2"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/logs/compile-kernel-prime-guard.log",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/logs/compile-kernel-prime-guard.log.gz",
+          "sha256": "72c893f276f0fdb8e49f36eb2d917388b8ccb2ebe13a95593aee07617bf7ab73"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/logs/global1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/logs/global1.log.gz",
+          "sha256": "a4e41fc3a27598c3f00cae494af509fa3b5cd606dbff44d8d1d4328572f38fc9"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/logs/even-F2-1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/logs/even-F2-1.log.gz",
+          "sha256": "510078838ac1601aea3b4abe639b99b89689ac1a2d0ff589299573b41a3b76ff"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/logs/prime1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/logs/prime1.log.gz",
+          "sha256": "86473d0a3bb3d3569b652eff07fc1f07c7612ce38320be111497fc51b5b9f769"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/logs/compile-ordered-legality.log",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/logs/compile-ordered-legality.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/logs/compile-global.log",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/logs/compile-global.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/logs/compile-layer-review.log",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/logs/compile-layer-review.log.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/logs/zero1.log",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/logs/zero1.log.gz",
+          "sha256": "fd67718798b2560135e4f4975442e1da84c571d36437fceb78011da51f726962"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/logs/compile-kernel1-emit.log",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/logs/compile-kernel1-emit.log.gz",
+          "sha256": "dcfbf74490ed0c8e285fb0fc2e85e2556aa75c81954b6712ea0176672c878495"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/logs/int-min.log",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/logs/int-min.log.gz",
+          "sha256": "59c0dfdb9e8b18d5e5b08a93801bfd738dd795523aedbf1f66b6fc3e102885fb"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/final/COHORT249-FRAMES.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/final/COHORT249-FRAMES.json.gz",
+          "sha256": "8156c826615602747e1f9d86d9163fd30348c964cbf4191ed836da311a905620"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/final/COHORT249-INITIAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/final/COHORT249-INITIAL.json.gz",
+          "sha256": "c37c09ebcb49b75f54e9d903a56cf7ab7c673430892e6919887bc2aa09f0e1a5"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/final/GLOBAL-SOURCE-BASELINE.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/final/GLOBAL-SOURCE-BASELINE.json.gz",
+          "sha256": "8fbb03c2de6e6809b11c37ed57c23e53888f4d2314f3a40009e233b38ad51275"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/final/249-DONOR-OWNERSHIP.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/final/249-DONOR-OWNERSHIP.json.gz",
+          "sha256": "aa7fadf1c5a55fef24e600e63f1f17493021bce1ebdfb8ba8927b8ad6ce05adf"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/final/PRIME.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/final/PRIME.json.gz",
+          "sha256": "d4610a7733c393cbd83816797eb75a3f436a9a89f4148dc5353d7f08aa7b2d6f"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/final/INCREMENTAL-RECEIPT.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/final/INCREMENTAL-RECEIPT.json.gz",
+          "sha256": "b84ca4f6dfe32da72c03045e3acb92c4bcb04b2f1ce69498e44c44080c03aed8"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/final/LEGALITY.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/final/LEGALITY.json.gz",
+          "sha256": "5e32777f8543b5e749b44cfd3dc281f7736ebff38a17a6507731292d699a9e0c"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/final/INCREMENTAL-SELECTED.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/final/INCREMENTAL-SELECTED.json.gz",
+          "sha256": "bd78591d004ac3e5d141506563a8bc3983a4e28fd517f6a94337e25dee801556"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/final/COHORT249-FINAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/final/COHORT249-FINAL.json.gz",
+          "sha256": "3b17454bf4f7cf78e389e97775f40033807986bcca6673199f2a350fd863ed0c"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/final/GLOBAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/final/GLOBAL.json.gz",
+          "sha256": "8fbb03c2de6e6809b11c37ed57c23e53888f4d2314f3a40009e233b38ad51275"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/final/COHORT249-SELECTION.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/final/COHORT249-SELECTION.json.gz",
+          "sha256": "4ae1e15f87303a11db44b6d7e266d31eeb5f43df7f388e40fd467060cc86a99b"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/final/LAYERS.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/final/LAYERS.json.gz",
+          "sha256": "8adabef496ed286e5a4936ae2645a607328843734dc84f805a4f133230086a2f"
+        },
+        {
+          "path": "base-replay/rank-modular-replay/final/COHORT249-REPLAY.json",
+          "file": "pr309-disk-retry-outputs/base-replay/rank-modular-replay/final/COHORT249-REPLAY.json.gz",
+          "sha256": "f2dbe9833ecdf46d01baa5e1c58d1f64bbfcd837e15d01ab3ca9e1737f9a1bbd"
+        },
+        {
+          "path": "base-replay/trade/seed/COHORT249-FRAMES.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/seed/COHORT249-FRAMES.json.gz",
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "base-replay/trade/seed/COHORT249-INITIAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/seed/COHORT249-INITIAL.json.gz",
+          "sha256": "6810237ff46bfb061546ae91a293702296c684b5e5063ff1d8092f4e2eb35beb"
+        },
+        {
+          "path": "base-replay/trade/seed/COHORT249-FINAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/seed/COHORT249-FINAL.json.gz",
+          "sha256": "0f1a45c5f220cb6866c96c06ddbbf841142d676443fbb9a42d375972d37db384"
+        },
+        {
+          "path": "base-replay/trade/seed/COHORT249-SELECTION.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/seed/COHORT249-SELECTION.json.gz",
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "path": "base-replay/trade/seed/COHORT249-REPLAY.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/seed/COHORT249-REPLAY.json.gz",
+          "sha256": "23e0785514a70022e0a873305047e6695560ca15050c2248d35c93c89cf45f7f"
+        },
+        {
+          "path": "base-replay/trade/sink8/REMOVED-ROLES.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/sink8/REMOVED-ROLES.json.gz",
+          "sha256": "0e4439b97746dff22c84f8fdc8355639c607663487cfe7d54abd57d9ffb8cec7"
+        },
+        {
+          "path": "base-replay/trade/sink8/249-DONOR-OWNERSHIP.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/sink8/249-DONOR-OWNERSHIP.json.gz",
+          "sha256": "aa7fadf1c5a55fef24e600e63f1f17493021bce1ebdfb8ba8927b8ad6ce05adf"
+        },
+        {
+          "path": "base-replay/trade/sink8/OLD-TO-NEW.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/sink8/OLD-TO-NEW.json.gz",
+          "sha256": "5eb71485bc03c24757c13b5949c0730bd35e8738e7d1567ab75c916d4167ada9"
+        },
+        {
+          "path": "base-replay/trade/sink8/selection.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/sink8/selection.json.gz",
+          "sha256": "a615e8e3b77614b868d22150b9eefc9ae4dd48b2a21b3840b80db7c957d9730a"
+        },
+        {
+          "path": "base-replay/trade/sink8/receipt.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/sink8/receipt.json.gz",
+          "sha256": "6a20e361c17f9a13d04f624fd0a49203907839d50ee7b4762c49628b391c95bf"
+        },
+        {
+          "path": "base-replay/trade/restored/COHORT249-INITIAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/restored/COHORT249-INITIAL.json.gz",
+          "sha256": "a57302632f74af29611151a43cece21cf4338d3ad854df1e97e6c7975c6815f3"
+        },
+        {
+          "path": "base-replay/trade/restored/CLEANUP.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/restored/CLEANUP.json.gz",
+          "sha256": "473382a122153c9a96c07ee9b27292291ed87402310fcf7c92277f5aa7c25497"
+        },
+        {
+          "path": "base-replay/trade/restored/COHORT249-FINAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/restored/COHORT249-FINAL.json.gz",
+          "sha256": "ce40e1235fd0cfa94910b7d08c2483288ec63663903957cc77f853446d075a5d"
+        },
+        {
+          "path": "base-replay/trade/restored/COHORT249-SELECTION.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/restored/COHORT249-SELECTION.json.gz",
+          "sha256": "55f6a7f4e3132e2b473ebf7fe6d8e2a5ce0e0904b26baeb9e012916a1df734d6"
+        },
+        {
+          "path": "base-replay/trade/restored/NEW-FRAMES.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/restored/NEW-FRAMES.json.gz",
+          "sha256": "fe230891ce70f9aa44e261882f19729e6ac945347d0c02b9a2feff02beb2bf11"
+        },
+        {
+          "path": "base-replay/trade/restored/COHORT249-REPLAY.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/restored/COHORT249-REPLAY.json.gz",
+          "sha256": "f7e2b4792d71a54854785f8590ba6710bef1876012d115f899af17ce71234d88"
+        },
+        {
+          "path": "base-replay/trade/restored-export/249-DONOR-OWNERSHIP.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/restored-export/249-DONOR-OWNERSHIP.json.gz",
+          "sha256": "aa7fadf1c5a55fef24e600e63f1f17493021bce1ebdfb8ba8927b8ad6ce05adf"
+        },
+        {
+          "path": "base-replay/trade/final/COHORT249-INITIAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/final/COHORT249-INITIAL.json.gz",
+          "sha256": "b300cd8f6accc6ca3a615c6a308b2f6cb272198f24edf38ce2ed534cbd9c8056"
+        },
+        {
+          "path": "base-replay/trade/final/249-DONOR-OWNERSHIP.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/final/249-DONOR-OWNERSHIP.json.gz",
+          "sha256": "aa7fadf1c5a55fef24e600e63f1f17493021bce1ebdfb8ba8927b8ad6ce05adf"
+        },
+        {
+          "path": "base-replay/trade/final/OLD-TO-NEW.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/final/OLD-TO-NEW.json.gz",
+          "sha256": "5eb71485bc03c24757c13b5949c0730bd35e8738e7d1567ab75c916d4167ada9"
+        },
+        {
+          "path": "base-replay/trade/final/COHORT249-FINAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/final/COHORT249-FINAL.json.gz",
+          "sha256": "3b17454bf4f7cf78e389e97775f40033807986bcca6673199f2a350fd863ed0c"
+        },
+        {
+          "path": "base-replay/trade/final/COHORT249-SELECTION.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/final/COHORT249-SELECTION.json.gz",
+          "sha256": "cf9c992ac9953d033a33ef18ebf4589b4ab546b9c93ab3a487e286ec7a6504f5"
+        },
+        {
+          "path": "base-replay/trade/final/COHORT249-REPLAY.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/final/COHORT249-REPLAY.json.gz",
+          "sha256": "ceb489566837b8daa588258820f049eb48664f4e6016d169d2cd33c6cf5ce9fc"
+        },
+        {
+          "path": "base-replay/trade/kernel/COHORT249-INITIAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/kernel/COHORT249-INITIAL.json.gz",
+          "sha256": "598a7d5f5de6eab3aa6088feddb2bd5389d5085e42eb9079c6ee4e2b1a493334"
+        },
+        {
+          "path": "base-replay/trade/kernel/INCREMENTAL-RECEIPT.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/kernel/INCREMENTAL-RECEIPT.json.gz",
+          "sha256": "57e2b576effa2e4118d9359cbac6123e7e8dc24686537cb92084afc3f091d268"
+        },
+        {
+          "path": "base-replay/trade/kernel/INCREMENTAL-SELECTED.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/kernel/INCREMENTAL-SELECTED.json.gz",
+          "sha256": "0e996601e8c31bb241f6bdc092fe5fce9645c20595efe5c16308b7ce64252647"
+        },
+        {
+          "path": "base-replay/trade/kernel/COHORT249-FINAL.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/kernel/COHORT249-FINAL.json.gz",
+          "sha256": "4c0af1e539d366f82db1d74820d9260dc97c0465f7a661e81e674ab0d4adbed3"
+        },
+        {
+          "path": "base-replay/trade/kernel/COHORT249-SELECTION.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/kernel/COHORT249-SELECTION.json.gz",
+          "sha256": "badd78823c7831fa8fd5b1423a66a0a374f893fa9e3bc4aeb03485312aa919be"
+        },
+        {
+          "path": "base-replay/trade/kernel/COHORT249-REPLAY.json",
+          "file": "pr309-disk-retry-outputs/base-replay/trade/kernel/COHORT249-REPLAY.json.gz",
+          "sha256": "b20936986897a03122b9ed2965eb7b8453955a108f18c06ba30d085bd53cc8e0"
+        },
+        {
+          "path": "base-replay/kernel-source/inputs/kernel1.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-source/inputs/kernel1.json.gz",
+          "sha256": "417b49f51853e922cc8c1bfd3a3ed52fb1438eaddc610df11388b543d62cc5fb"
+        },
+        {
+          "path": "base-replay/kernel-source/inputs/retiming-frames.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-source/inputs/retiming-frames.json.gz",
+          "sha256": "f462984addb9a3ee46cd52c6e8d5d6eeee22bc8055f02e9953d78162779f2371"
+        },
+        {
+          "path": "base-replay/kernel-source/inputs/retiming61.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-source/inputs/retiming61.json.gz",
+          "sha256": "0373336e7f32254a8755b8850314e7c4752987a7d232d664f73ae4c05aa940c7"
+        },
+        {
+          "path": "base-replay/kernel-source/inputs/frames1.json",
+          "file": "pr309-disk-retry-outputs/base-replay/kernel-source/inputs/frames1.json.gz",
+          "sha256": "7664a9c6692dd8e187db0007a280fff1e7bf4a6e5bd00e0fa9c4343968c07c91"
+        }
+      ],
+      "receipt_group": "disk-retry",
+      "retained_log": "logs/pr309-disk-retry.txt.gz"
     }
   ]
 }

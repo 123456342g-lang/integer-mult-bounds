@@ -29,6 +29,11 @@ adverse controls. PR391 repairs PR388's missing-log manifest and incomplete repl
 source archives and emitted programs are byte-identical, and the fresh complete PR391 run covers
 that candidate. Fresh-copy packaging adapters separately document absent metadata/log entries
 in PR350/355/360 and 104 restored, exactly pinned files in PR390. Original submissions remain intact.
+The first #309 replay stopped on local disk capacity; that failure is retained separately from
+its retry. Filesystem compression of completed temporary outputs checks byte equality and SHA256;
+it changes storage allocation, not the submitted sources or mathematical checks. The retry reaches
+a distinct retiming51 predecessor-pin mismatch. The word matches, four JSON pins are explained
+by CRLF, and the remaining state-file mismatch is retained for correction; #309 remains open.
 
 The E8 branches use different contracts. PR404/408 and successors use native chronological,
 phase/bank and paid-dyadic checks; legacy gx E4/E5 acceptance is not implied. PR407/412/419 provide
@@ -53,7 +58,7 @@ see also [CONTRIBUTORS.md](../../CONTRIBUTORS.md).
 | [#306](https://github.com/CrocSwap/integer-mult-bounds/pull/306) — chafreaky (@chafreaky) | Commuting addition reorders after weighted gen5b kernels. | The exact crossed-interval rule and both scalar orientations are required. Retain the package's complete stage checks and producer regeneration. |
 | [#307](https://github.com/CrocSwap/integer-mult-bounds/pull/307) — rohanarun (@rohanarun) | Fresh kernel packing and second descent on weighted gen5b. | Independent parallel selection improvement, with all downstream restorations and sinks re-derived. Credit the weighted word and earlier kernel mechanisms separately. |
 | [#308](https://github.com/CrocSwap/integer-mult-bounds/pull/308) — rohanarun (@rohanarun) | Composition of fresh weighted selections with reorder stages. | One source-bound stage stack; no arithmetic summing of independent claimed gains. Retain every stage and omission control. |
-| [#309](https://github.com/CrocSwap/integer-mult-bounds/pull/309) — Dugongue (@Dugongue) | Local dirty-response transport and commuting schedules. | The TI package is distinct from its ten unchanged historical packages. Full base, transport, complex-supplier and final native admission are required; source retention alone is not execution. |
+| [#309](https://github.com/CrocSwap/integer-mult-bounds/pull/309) — Dugongue (@Dugongue) | Local dirty-response transport and commuting schedules. | The twelve-stage baseline, kernel38/retiming61 and rank-modular159 checks pass, but retiming51 rejects a regenerated predecessor state hash. Binary identity and four CRLF-only differences are established; the remaining state mismatch blocks the full base and TI replay. Keep open; source retention is not completed native admission. |
 | [#310](https://github.com/CrocSwap/integer-mult-bounds/pull/310) — utcorvusvolat-dotcom (@utcorvusvolat-dotcom) | Design-T w3 bit word with native finite admission. | Source-bound emitted word and full finite checks; inherited compiler, routing, prime and analytic hypotheses remain conditional. |
 | [#311](https://github.com/CrocSwap/integer-mult-bounds/pull/311) — rohanarun (@rohanarun) | Exact target-prefix squares on the w3 word. | The changed package matches the actual Linux checkout; seven unrelated root-wrapper files differ. Finite prefix and native admission are covered, not a whole-theorem proof. |
 | [#312](https://github.com/CrocSwap/integer-mult-bounds/pull/312) — chafreaky (@chafreaky) | Kernel, target, plateau and reorder stages on w3. | The final word and stronger complex supplier are jointly priced. The dedicated full pipeline, not inherited repository jobs, is the execution evidence. |
@@ -151,5 +156,5 @@ see also [CONTRIBUTORS.md](../../CONTRIBUTORS.md).
 
 ## Open next questions
 
-- **#309:** Required direct replay is unfinished or failed; see EXECUTION.json and original logs. Complete the specific missing check or disclosed repair before closure.
+- **#309:** The fresh inherited-base replay stops in retiming51/compose.py on the pinned 249-states.json hash: expected 208cc9aba1401423ca31a3305a2d2bc9e1778d78323c000bed425f0bf21518d4, generated 3348648d9f659ed8c842f9b573ca7da66108a7966268e44d29caebd71bc32781. The binary word matches and four other JSON pins match after LF-to-CRLF conversion; the state-file mismatch survives the tested serialization variants. Supply a portable, source-bound correction and complete the remaining native replay. See PR309-DIAGNOSTIC.json and the retained actual state file; no pin was bypassed.
 - **#379:** The default verifier references five absent historical log/bytecode files and primarily checks stored receipts. Supply a source-complete portable replay of the actual low-read candidate, including its geometry/lowering and seven-stage composition; the bundled baseline replay has a different bit saving. Its own source-bound ancestor receipts remain useful but do not complete this review.
