@@ -280,6 +280,53 @@ def controls(model, report):
         require(all(w[i] == int(i == exceptional) for i in c), 'delta Fourier identity')
         require(w[extra] in (Q(1,2),Q(-1,2)) and w[extra]**2 != w[extra],
                 '4+1 obstruction control')
+    # Actual 13-line 4+1 boundary control, separate from the 12-line control.
+    # These are fixed GLOBAL line labels, not positions or a selected witness.
+    t13, c13, j13 = (2, 5, 30, 41), (22, 27, 34, 37), 23
+    require(f == (2, 5, 8, 9, 30, 41, 108, 117), '13-line pivot convention')
+    supports13, classes13, _ = model.geometry(f)
+    require(tuple(classes13.get((t13, 1), ())) == c13
+            and j13 in classes13.get((t13, 0), ()), '13-line class convention')
+    require(all(supports13[i] == t13 for i in c13+(j13,)), '13-line support convention')
+    require(all(g[i][j13] != 0 for i in c13), '13-line opposite-class orthogonality')
+    live13 = set(f) | set(c13) | {j13}
+    require(len(live13) == 13, '13-line live count')
+    a13 = {i: [0]*8 for i in live13}
+    for i in f:
+        a13[i][f.index(i)] = 4
+    for i,k in zip(c13,t13):
+        a13[i][f.index(k)] = 4
+    a13[j13][f.index(2)] = 4  # Pivot LABEL 2: the first coordinate in f.
+    b13 = {i: list(row) for i,row in a13.items()}
+    check_factors(model,f,live13,a13,b13)
+    # This integer matrix is 4K. Its modular rank gives a characteristic-zero
+    # lower bound; eight-column factorization gives the matching upper bound.
+    order13 = sorted(live13)
+    four_k13 = [[sum(x*y for x,y in zip(a13[i],b13[j])) for j in order13]
+                for i in order13]
+    rank13 = rank_mod(four_k13)
+    require(rank13 == 8, '13-line rank lower bound')
+    zeros_a13 = sum(a13[i][f.index(k)] == 0 for i in c13+(j13,) for k in t13)
+    zeros_b13 = sum(b13[i][f.index(k)] == 0 for i in c13+(j13,) for k in t13)
+    require(zeros_a13 == zeros_b13 == 15, '13-line nongauge support zeros')
+    pi13 = {i: [[Q(a13[i][p]*b13[i][q],16) for q in range(8)]
+                for p in range(8)] for i in live13}
+    require(all(pi13[i][p][q] == 0 for i in live13
+                for p in range(8) for q in range(8) if p != q),
+            '13-line off-diagonal formula with all t=0')
+    p13 = f.index(2)
+    diagonal13 = [pi13[i][p13][p13] for i in c13]
+    require(diagonal13 == [1,0,0,0], '13-line class diagonal projectors')
+    coefficients13 = [sum(diagonal13[r]*g[i][2]*g[i][l]
+                          for r,i in enumerate(c13))/4 for l in t13[1:]]
+    require(coefficients13 == [Q(1,4),Q(1,4),Q(-1,4)], '13-line Hadamard coefficients')
+    require(all(Q(1,4)+sum(x*g[i][2]*g[i][l] for x,l in zip(coefficients13,t13[1:]))
+                == diagonal13[r] for r,i in enumerate(c13)), '13-line class interpolation')
+    predicted13 = Q(1,4)+sum(x*g[j13][2]*g[j13][l]
+                             for x,l in zip(coefficients13,t13[1:]))
+    actual13 = pi13[j13][p13][p13]
+    require(predicted13 == Q(-1,2) and actual13 == 1 and predicted13 != actual13,
+            '13-line shared diagonal mismatch')
     return dict(
         exact_gauge_matrix_entries=len(live)**2,
         perturbed_factor_rejected=perturbation,
@@ -290,7 +337,18 @@ def controls(model, report):
         coverage_control_passed_D_and_G=True,
         local_actual_nongauge_live_count=len(small_live),
         local_actual_nongauge_zero_a_entries=zero_count,
-        local_delta_branches_checked=4)
+        local_delta_branches_checked=4,
+        local_4plus1_actual_nongauge=dict(
+            pivot=list(f), block=list(t13), complete_minus_class=list(c13), extra_line=j13,
+            live_count=len(live13), rank=rank13,
+            diagonal_equations_checked=len(live13),
+            ordered_orthogonal_zero_equations_checked=sum(
+                i != j and g[i][j] == 0 for i in live13 for j in live13),
+            zero_a_support_entries=zeros_a13, zero_b_support_entries=zeros_b13,
+            distinguished_pivot_label=2, class_diagonals=list(map(str,diagonal13)),
+            hadamard_coefficients=list(map(str,coefficients13)),
+            predicted_extra_diagonal=str(predicted13), actual_extra_diagonal=str(actual13),
+            off_diagonal_formula_all_t_zero=True))
 
 
 def parse_ids(text):
@@ -340,7 +398,8 @@ def main():
           f'{report["fully_live_blocks"]} fully live blocks alone do not.')
     print('Positive exact rational reconstruction: 11449 entries. '
           'Four rejection controls and four local delta-branch checks passed.')
-    print('Actual nongauge control: ONLY the restricted 12-line model, not P107.')
+    print('Actual nongauge controls: ONLY the restricted 12- and 13-line models, not P107.')
+    print('13-line boundary: 15 support zeros per factor; predicted Pi_23(2,2)=-1/2, actual=1.')
     print('All-five-set coverage NOT checked. Universal implication: proof.md.')
 
 

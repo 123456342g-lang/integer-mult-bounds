@@ -492,6 +492,52 @@
     "coverage_control_passed_D_and_G": true,
     "local_actual_nongauge_live_count": 12,
     "local_actual_nongauge_zero_a_entries": 12,
-    "local_delta_branches_checked": 4
+    "local_delta_branches_checked": 4,
+    "local_4plus1_actual_nongauge": {
+      "pivot": [
+        2,
+        5,
+        8,
+        9,
+        30,
+        41,
+        108,
+        117
+      ],
+      "block": [
+        2,
+        5,
+        30,
+        41
+      ],
+      "complete_minus_class": [
+        22,
+        27,
+        34,
+        37
+      ],
+      "extra_line": 23,
+      "live_count": 13,
+      "rank": 8,
+      "diagonal_equations_checked": 13,
+      "ordered_orthogonal_zero_equations_checked": 108,
+      "zero_a_support_entries": 15,
+      "zero_b_support_entries": 15,
+      "distinguished_pivot_label": 2,
+      "class_diagonals": [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "hadamard_coefficients": [
+        "1/4",
+        "1/4",
+        "-1/4"
+      ],
+      "predicted_extra_diagonal": "-1/2",
+      "actual_extra_diagonal": "1",
+      "off_diagonal_formula_all_t_zero": true
+    }
   }
 }

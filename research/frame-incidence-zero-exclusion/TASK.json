@@ -46,9 +46,9 @@
   "budget_minutes": 120,
   "stop_rule": "Deliver one explicit structural implication with exact finite premises and meaningful failure controls, or a scoped obstruction. Do not infer universal deletion coverage from sampled fixtures or enlarge per-orbit solver batches. Reserve verification and handoff time.",
   "outcome": "completed",
-  "evidence": "Written projector/frame-incidence proof; self-contained exact regeneration of 120 roots and 2025 frames. Default fixture has 877 live frames, 8 incidence/kernel rank certificates, 28 connected pair graphs and 12 witnessed 4+1 blocks. All 14 blocks are nonempty there. Local Python 3.12.14 normal/optimized replay, alternate fixture, rejected controls, independent certificate regenerations and tampered-certificate rejection pass. See REPLAY.json; no proof-assistant or independent human proof verdict.",
+  "evidence": "Written projector/frame-incidence proof; self-contained exact regeneration of 120 roots and 2025 frames. Default fixture has 877 live frames, 8 incidence/kernel rank certificates, 28 connected pair graphs and 12 witnessed 4+1 blocks. All 14 blocks are nonempty there. Local Python 3.12.14 normal/optimized replay, alternate fixture, rejected controls, independent certificate regenerations and tampered-certificate rejection pass. See REPLAY.json; no proof-assistant or independent human proof verdict. The boundary-only update adds an exact restricted 13-line control and fourteen local expected outcomes, including a saved-prediction tamper and a fixture-assignment mutation rejected under -O even with certificate regeneration.",
   "author": "Andrey Mas",
-  "ai_assistance": "Substantial GPT-6 Pro research through ChatGPT for mathematics and checker authorship. Codex provided source coordination, execution audit, separate local replay and mechanical packaging. Mathematical source and verifier logic preserved; runtime/provenance and attribution prose normalized during packaging.",
+  "ai_assistance": "Substantial GPT-6 Pro research through ChatGPT for mathematics and checker authorship, including the later boundary-only control. Codex provided source coordination, execution audit, separate local replay and mechanical packaging. The original theorem remains unchanged; the supplied replacement verifier and certificate were applied byte-for-byte. Runtime/provenance and attribution prose were normalized during packaging.",
   "open_questions": [
     {
       "question": "Does the coverage-failure deletion X=(3,13,14,22,23) admit a different live pivot satisfying (D), (G), and (W)?",
@@ -73,7 +73,7 @@
     "No all-five-set or orbit coverage.",
     "The alternate deletion (3,4,7,10,12) passes (D),(G),(W) but has an empty block; no gauge-corollary claim for that alternate.",
     "The bad deletion (3,13,14,22,23) fails (W) at pair (2,5) for the displayed pivot, not the original field equations.",
-    "The actual nongauge fixture is restricted to 12 lines, not P107."
+    "The actual nongauge fixtures are restricted to 12 and 13 lines, not P107; the 13-line control demonstrates failure of the shared diagonal formula without the global hypotheses."
   ],
   "current_main_at_publication_base": "2ccf3fb7887d6ba103fb3abd5a62dce992713d9f",
   "complementary_investigation": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1502#discussioncomment-18913583"

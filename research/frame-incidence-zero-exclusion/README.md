@@ -38,7 +38,8 @@ The alternate fixture `X=(3,4,7,10,12)` passes `(D),(G),(W)` but has an empty
 block; **no gauge-corollary claim is made for that alternate**. The control
 `X=(3,13,14,22,23)` passes `(D),(G)` and fails `(W)` at pivot pair `(2,5)`.
 That is failure of a sufficient criterion at one pivot, not an actual nongauge
-P107 matrix. The actual nongauge positive control is restricted to 12 lines.
+P107 matrix. The actual nongauge positive controls are restricted to 12 and 13
+lines; neither is a P107 matrix.
 No supplier, new cost floor, recursive moment, `kappa`, or frontier change is
 claimed. [TASK.json](TASK.json) records the changed masked-decoder assignment.
 
@@ -67,8 +68,12 @@ identities provide matching upper bounds. These are exact rank certificates,
 not finite-field guesses about characteristic-zero solutions.
 
 The default run also checks 11,449 entries of an exact rational gauge example,
-four rejection controls, a genuine restricted 12-line nongauge example and four
-local exceptional diagonal branches. Required guards use explicit exceptions,
+four rejection controls, restricted 12- and 13-line nongauge examples and four
+local exceptional diagonal branches. The 13-line control checks 13 diagonal and
+108 ordered orthogonal-zero equations, rank eight and 15 missing support
+coordinates per factor. Its shared diagonal formula predicts `-1/2` where the
+actual value is `1`, illustrating why the global `(D),(G)` hypotheses are needed.
+Required guards use explicit exceptions,
 including the extra nonempty-block premise for the default gauge corollary.
 Alternate CLI calls check only their selected finite premises, not the default
 controls or that extra corollary premise:
@@ -79,7 +84,7 @@ python3.12 -I -O -B research/frame-incidence-zero-exclusion/verify.py --deleted 
 python3.12 -I -O -B research/frame-incidence-zero-exclusion/verify.py --deleted 3,13,14,22,23
 ```
 
-Local CPython 3.12.14 replay on macOS 26.5.1 arm64 passed the default runs in
+The initial CPython 3.12.14 replay on macOS 26.5.1 arm64 passed the default runs in
 0.583 and 0.622 seconds. Eleven recorded outcomes cover both modes, the alternate
 fixture, coverage failure, deleted-pivot rejection, two certificate regenerations
 and a deliberately tampered incidence rank. Regenerated certificates byte-match
@@ -88,12 +93,25 @@ optimized tamper run rejects `certificate content mismatch`.
 [REPLAY.json](REPLAY.json) records the commands, outcomes and original hashes.
 These local receipts are distinct from the Pro research-session runtime report.
 
-All 352 verifier lines were inspected before execution: standard library only,
+The boundary-control update adds fourteen local expected outcomes under the same
+runtime: seven successes and seven intended rejections. Default normal/optimized
+runs passed in 0.545 and 0.631 seconds; both regenerated certificates byte-match
+the replacement. The new saved-prediction tamper is rejected. Changing the extra
+line's assigned pivot from label 2 to label 5 is rejected at the shared-diagonal
+guard under `-O`, including with `--write-certificate`, without changing the
+certificate. The alternate fixture and earlier rejection guards retain their
+reported behavior. Its receipt is appended to [REPLAY.json](REPLAY.json), keeping
+the initial evidence above.
+
+All 411 verifier lines were inspected before execution: standard library only,
 no network, subprocesses, installation or predecessor imports. Default execution
 writes nothing. `--write-certificate` overwrites the adjacent certificate, so
 regeneration and tamper tests were performed only in separate scratch copies.
-Verifier and certificate bytes are unchanged from the downloaded Pro result;
-only proof runtime/provenance and attribution prose were normalized. No
+The replacement verifier and certificate are byte-identical to the supplied
+GPT-6 Pro boundary update. Applying its diff to PR1560 head
+`5bebfd0066b98fa2353987decc47ff259b3c816a` reproduces those bytes exactly; removing
+only the new control field restores the old certificate. The original theorem
+and its shared-formula clarification remain unchanged. No
 proof-assistant certification or independent human mathematical review is claimed.
 
 A separate GPT-6 Pro review found no proof-level flaw in the transcribed

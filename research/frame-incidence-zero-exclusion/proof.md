@@ -456,7 +456,7 @@ consequence is claimed or rechecked.
 
 ### Tests actually executed
 
-`verify.py` was locally replayed in ordinary and optimized modes with CPython
+The original `verify.py` was locally replayed in ordinary and optimized modes with CPython
 3.12.14 on macOS 26.5.1 arm64, in isolated copies. Default runs passed in 0.583
 and 0.622 seconds. The supplied research-session run log is separate evidence
 and is not used as the local environment record. [REPLAY.json](REPLAY.json)
@@ -466,6 +466,15 @@ the standard library and explicit exceptions, with no required `assert`. Require
 finite checks are recomputed rather than accepted from the JSON file. The latter
 is a compact regression record plus explicit fixture/witness data, not an opaque
 solver proof.
+
+The later 13-line boundary-control update was separately replayed under the same
+local runtime in fourteen expected outcomes. Default normal/optimized runs took
+0.545 and 0.631 seconds; both regenerated certificates match the supplied
+replacement byte for byte. A saved-prediction tamper is rejected, and changing
+the extra line's assigned pivot from label 2 to label 5 fails the shared-diagonal
+guard under `-O`, also with `--write-certificate`, before any certificate write.
+The original receipts are retained and the update receipt is appended in
+[REPLAY.json](REPLAY.json).
 
 The checker regenerates all roots and enumerates all frames by increasing-ID
 orthogonality-clique recursion. At each recursive step, the candidate mask
@@ -506,6 +515,33 @@ This is not a P107 solution and not a counterexample to Theorem 1. It shows that
 one complete class alone does not eliminate the delta branch of Section 4.3.
 The checker also verifies all four choices of the exceptional class row and the
 resulting fifth-row values +1/2 or -1/2, which fail scalar idempotence.
+
+**A complete class plus one line is still insufficient without the global
+hypotheses.** Take
+`F=(2,5,8,9,30,41,108,117)`, `T=(2,5,30,41)`, the complete parity-minus class
+`C=(22,27,34,37)`, and the opposite-class line `j=23`. Assign the four class
+rows, in that order, to the four coordinates of T, in that order, with
+`a_i=b_i=4e_assigned`. Keep `a_f=b_f=4e_f` at pivots and set
+`a_23=b_23=4e_2`, where 2 is the global pivot label, the first coordinate of F.
+On `F union C union {23}`, these are actual rational factors, not Boolean
+supports. The checker verifies all 13 diagonal equations, all 108 ordered
+distinct orthogonal-zero equations, and the pivot and support conditions.
+The factorization gives rank at most eight and the pivot block gives rank
+eight; the checker also verifies an exact modular rank-eight lower bound for
+the integer matrix `4K=AB^T`. Each factor has 15 missing nonpivot support
+coordinates, so this matrix is nongauge.
+
+At pivot label 2, the class projector diagonals are `(1,0,0,0)`. In the
+coordinate order `(5,30,41)`, the Hadamard inversion gives coefficients
+`(1/4,1/4,-1/4)` in the shared diagonal formula, with constant term `1/4`.
+The sign-product triple for line 23 is `(-1,-1,1)`, so that formula predicts
+`Pi_23(2,2)=1/4-1/4-1/4-1/4=-1/2`, whereas its actual value is `1`.
+All off-diagonal projector entries are zero, so the off-diagonal formula
+itself admits all `t=0`. The failure is the shared diagonal formula from
+(D), not the original equations or actual projector idempotence. Thus five
+local lines do not justify replacing the global (D),(G) hypotheses. This
+restricted 13-line solution is neither a P107 matrix nor a counterexample
+to Theorem 1 or its gauge corollary.
 
 No Boolean satisfying pattern is presented as an algebraic solution anywhere in
 this package.
@@ -564,5 +600,7 @@ for mathematical research and checker authorship. Codex coordinated sources,
 audited execution implications, separately replayed the checker and mechanically
 packaged the result. No independent human review or proof-assistant certification
 is claimed. Released under **Apache-2.0**; see the repository [LICENSE](../../LICENSE).
-The mathematical proof and verifier logic were preserved; attribution and local
+The original theorem and its shared-formula clarification were retained. The
+later restricted 13-line control and its prose were supplied by GPT-6 Pro; Codex
+applied the supplied update and replayed it. Attribution and local
 runtime/provenance paragraphs were normalized during packaging.
