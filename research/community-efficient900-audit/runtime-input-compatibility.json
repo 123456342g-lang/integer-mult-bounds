@@ -7,6 +7,7 @@
     1870,
     1872,
     1873,
+    1874,
     1877,
     1878,
     1880,
@@ -23,7 +24,9 @@
     1907,
     1908,
     1909,
+    1910,
     1911,
+    1912,
     1914,
     1915,
     1917,
@@ -36,7 +39,7 @@
     1945,
     1949
   ],
-  "unique_inputs": 55,
+  "unique_inputs": 73,
   "mismatches": [],
   "inputs": [
     {
@@ -170,6 +173,60 @@
       "path": "research/e8-bit-p111-tuned/tune/EXPECTED.json",
       "expected": "b9f0e5ca038abe837b0007c8fe006f366a6f02009244ac57705a8a200e2301f4",
       "actual": "b9f0e5ca038abe837b0007c8fe006f366a6f02009244ac57705a8a200e2301f4"
+    },
+    {
+      "number": 1874,
+      "path": "research/community-hyperplane599-audit/pr589/bit589/records/249-states.json",
+      "expected": "701ca802279b23ba23ffd502935ae9f34a33fc81fdfd266042f3208a2cb16265",
+      "actual": "701ca802279b23ba23ffd502935ae9f34a33fc81fdfd266042f3208a2cb16265"
+    },
+    {
+      "number": 1874,
+      "path": "research/community-hyperplane599-audit/pr589/bit589/records/frames.json",
+      "expected": "d006b3bfe0c04afecfea7aecfa59dfe4298b99501c70da3938e40289bc2f5010",
+      "actual": "d006b3bfe0c04afecfea7aecfa59dfe4298b99501c70da3938e40289bc2f5010"
+    },
+    {
+      "number": 1874,
+      "path": "research/community-hyperplane599-audit/pr589/bit589/v9/hosted/AUDIT.json",
+      "expected": "390bea1d4122597a00ddb14430b61cb2a9b7f0193a3000bd0b9c454d8473aef7",
+      "actual": "390bea1d4122597a00ddb14430b61cb2a9b7f0193a3000bd0b9c454d8473aef7"
+    },
+    {
+      "number": 1874,
+      "path": "research/community-hyperplane599-audit/pr589/bit589/v9/hosted/GLOBAL-TEMPLATE.json.gz",
+      "expected": "0357b7cfbd7c29b4983982baf153c8a9f1e1e412690cd7fa9fc3d23d7963b20f",
+      "actual": "0357b7cfbd7c29b4983982baf153c8a9f1e1e412690cd7fa9fc3d23d7963b20f"
+    },
+    {
+      "number": 1874,
+      "path": "research/community-hyperplane599-audit/pr589/bit589/v9/hosted/GLOBAL.json",
+      "expected": "8de008a7978d4b7189cbec2470443619149a2b7b2f0f862540eeee4b23d3a819",
+      "actual": "8de008a7978d4b7189cbec2470443619149a2b7b2f0f862540eeee4b23d3a819"
+    },
+    {
+      "number": 1874,
+      "path": "research/community-hyperplane599-audit/pr589/bit589/v9/nine/GLOBAL-TEMPLATE.json.gz",
+      "expected": "33c11914420e8812acbd2cf1db300685becc08e8174cbb1d5b20260b9c97af32",
+      "actual": "33c11914420e8812acbd2cf1db300685becc08e8174cbb1d5b20260b9c97af32"
+    },
+    {
+      "number": 1874,
+      "path": "research/community-hyperplane599-audit/pr589/bit589/v9/nine/GLOBAL.json",
+      "expected": "549e3c68718b017b25f3f1237d095eb100d5918ddbe4076d52b11bd87c2f7a62",
+      "actual": "549e3c68718b017b25f3f1237d095eb100d5918ddbe4076d52b11bd87c2f7a62"
+    },
+    {
+      "number": 1874,
+      "path": "research/e8-bit-p111-tuned/code/adapt9p.py",
+      "expected": "14365d0eb8f4a7352edd28816196148fd28d5bbcb36044ebeeb15ca051bca9de",
+      "actual": "14365d0eb8f4a7352edd28816196148fd28d5bbcb36044ebeeb15ca051bca9de"
+    },
+    {
+      "number": 1874,
+      "path": "research/e8-bit-p111-tuned/vendor/pr510/e8-r480-nine-stage/vendor/e8-r715-eleven-stage-whole/code/audit_hosted_k.py",
+      "expected": "57e558c80a2fea6e291587b04afd76dfaee3550729997798b61f33daf90b8ec9",
+      "actual": "57e558c80a2fea6e291587b04afd76dfaee3550729997798b61f33daf90b8ec9"
     },
     {
       "number": 1878,
@@ -394,6 +451,48 @@
       "actual": "6cd0a6df96a418b524623e7e39c863af7709a18c4ded453a6a077bcd5ade92a2"
     },
     {
+      "number": 1910,
+      "path": "research/community-frontier1094-audit/SELECTED-SOURCE.json",
+      "expected": "79b3de5db3dbcb9829789ba58e9e45758926031e2a7d80667a08429d369be53b",
+      "actual": "79b3de5db3dbcb9829789ba58e9e45758926031e2a7d80667a08429d369be53b"
+    },
+    {
+      "number": 1910,
+      "path": "research/gauge44-slots/construction/slots/SLOT-PINS-k8.json",
+      "expected": "55dd229684febecb80638eff9c6b3986623e8539c6c956753b350209c3e0efe2",
+      "actual": "55dd229684febecb80638eff9c6b3986623e8539c6c956753b350209c3e0efe2"
+    },
+    {
+      "number": 1910,
+      "path": "research/gauge44-slots/construction/slots/verify_slots.py",
+      "expected": "bc1c0e3e3d7c81dc1649f5be82cdd2399e543d46c24879cb975877bf9b7957be",
+      "actual": "bc1c0e3e3d7c81dc1649f5be82cdd2399e543d46c24879cb975877bf9b7957be"
+    },
+    {
+      "number": 1910,
+      "path": "research/gauge44-slots/independent/audit_local.py",
+      "expected": "03afcfc9da428b3f6edac81c1fee7f277ab81b64998efae78380b63498dec6cd",
+      "actual": "03afcfc9da428b3f6edac81c1fee7f277ab81b64998efae78380b63498dec6cd"
+    },
+    {
+      "number": 1910,
+      "path": "research/t16-owner-audit-seed67/inputs/k8-seven-slot-word.json.gz",
+      "expected": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "actual": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289"
+    },
+    {
+      "number": 1910,
+      "path": "scripts/verify_frontier1042.py",
+      "expected": "700fdcaeb6e8f57f6e63c71c2dd1652fc5b183e8d706cd092779bdc0d271e854",
+      "actual": "700fdcaeb6e8f57f6e63c71c2dd1652fc5b183e8d706cd092779bdc0d271e854"
+    },
+    {
+      "number": 1910,
+      "path": "scripts/verify_frontier1094.py",
+      "expected": "c7e20f59968ed5736fb859735de4de207de3418083e37012310ebcded946b949",
+      "actual": "c7e20f59968ed5736fb859735de4de207de3418083e37012310ebcded946b949"
+    },
+    {
       "number": 1911,
       "path": "research/binary-affine-register-bound/README.md",
       "expected": "7951868efdf35fdb2aacdd302ca825cbde0586a5fae6df23aee78e29f30c332a",
@@ -410,6 +509,30 @@
       "path": "research/bit-three-register-lower-bound/README.md",
       "expected": "c12b33ef388deece0cbf891505a2ce2c0779a0c3a6cf1f0f7f7039bab59cbebd",
       "actual": "c12b33ef388deece0cbf891505a2ce2c0779a0c3a6cf1f0f7f7039bab59cbebd"
+    },
+    {
+      "number": 1912,
+      "path": "research/community-frontier1042-audit/RESULT.json",
+      "expected": "bf12c6ed3b412539638b76addb40591a631609b2ab9e5ee0db1f6bbe067d0ec0",
+      "actual": "bf12c6ed3b412539638b76addb40591a631609b2ab9e5ee0db1f6bbe067d0ec0"
+    },
+    {
+      "number": 1912,
+      "path": "research/community-frontier1042-audit/selected-replay.tar.gz",
+      "expected": "22c3f4dce4b897a1d423d1388801933e288b6a6b1906cb15e1b16a5eb68db754",
+      "actual": "22c3f4dce4b897a1d423d1388801933e288b6a6b1906cb15e1b16a5eb68db754"
+    },
+    {
+      "number": 1912,
+      "path": "research/community-frontier1094-audit/SELECTED-SOURCE.json",
+      "expected": "79b3de5db3dbcb9829789ba58e9e45758926031e2a7d80667a08429d369be53b",
+      "actual": "79b3de5db3dbcb9829789ba58e9e45758926031e2a7d80667a08429d369be53b"
+    },
+    {
+      "number": 1912,
+      "path": "research/gauge44-slots-t16/code/generated_identity.py",
+      "expected": "c8af22719c0f3097a991a3f6ccac8f090afd2faba554745733d9ea88f2c25708",
+      "actual": "c8af22719c0f3097a991a3f6ccac8f090afd2faba554745733d9ea88f2c25708"
     },
     {
       "number": 1914,
@@ -580,5 +703,5 @@
       "actual": "3c034d0aae388ef567a454826f4f48b26fd8a94c71e8ffed4835271b349a783b"
     }
   ],
-  "main_commit": "ec94fd3d2fcad7ade8e72d6bcd8e223b7fdb3f30"
+  "main_commit": "03052f21727e983b802158c493677e5366ee88ce"
 }
