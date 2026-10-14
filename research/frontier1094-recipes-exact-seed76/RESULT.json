@@ -10,7 +10,7 @@
   "local_programs_gz_sha256": "241fde27d4e43f5a9cb6b128f9f76c5131a53d09f0371676163f914d0b0fef3a",
   "owner_audit_sha256": "30bafff060afcfb3644e951214d66cfaffe58242881c652e28003958b42127cc",
   "recipes_sha256": "d0768f2164d5f64a2fdbec422f1cfde4e400818792f1904ca541958377243731",
-  "record_or_checkpoint": "certificates/selected-result.json or certificates/checkpoints/*.json",
+  "record_or_checkpoint": "certificates/selected-result.json or certificates/checkpoints/frontier1094.json",
   "review_sha256": "cb0e10a8b284f176526c17177e91186ce09aa3e88b4f6acc561051daa072b0d0",
   "slot_pins_sha256": "55dd229684febecb80638eff9c6b3986623e8539c6c956753b350209c3e0efe2",
   "template_sha256": "9c4c51425251389ee9a747c465814cd07c64812c15b7aeef704dad7d65395a74"
@@ -54,7 +54,7 @@
   "comparator": "exact packed Gaussian integers, scaled to a common 2^K",
   "global_phase_included": true,
   "radix_rule": "beta = 2K + 2",
-  "receipts_sha256": "a8f5636e26dcfca16a412afb347fbf276d0a2861c073b2a4f040ad8fa0439b15"
+  "receipts_sha256": "aaf7b41d99e9e5d4123f230ca5d22478a396f8a5c822e51d35e527d750084f34"
  },
  "inventory": {
   "child_ranks": {
@@ -67,9 +67,10 @@
   },
   "descending": 8,
   "frames": 1004,
+  "gate_order_equivalent_adapters": "224 of 224",
   "monomials": 6016,
   "relabel_keys": 2896
  },
- "scope": "RecipesExact for the climb and centre relabels of the selected gauge44 word and Lemma G H6 for its endpoint adapters; no executor bridge, residual wrappers, Lean proof or new kappa",
+ "scope": "Record level: every child record and endpoint adapter of the gauge44 CLIFFORD-RECIPES.json equals T_new T_old^-1 (climb and centre relabels) or satisfies Lemma G H6; not the 36 residual wrapper recipes, the identity adapters, the executor bridge, a Lean proof or a new kappa",
  "status": "PASS_FRONTIER1094_RECIPES_EXACT"
 }

@@ -69,11 +69,27 @@ class Comparator(unittest.TestCase):
         with self.assertRaises(ValueError):
             C.equal(s, 1, s, 1, 3)
 
-    def test_signed_digit_lemma_boundary(self):
-        # beta = 2K + 2 keeps every scaled digit difference below 2^beta: a single C gate on |0> gives
-        # numerators of size 1, and K = 1 needs beta = 4
-        self.assertEqual(C.radix(1), 4)
-        self.assertEqual(C.radix(16), 34)
+    def test_digit_bound_on_the_largest_identities(self):
+        # the lemma behind beta = 2K + 2: after k C gates every numerator component is at most 4^k, so the scaled
+        # digit difference of the two sides is at most 2 * 4^K < 2^(2K+2); check the bound on the K = 16 centre children
+        for key in ((415, 0), (418, 0)):
+            c1, c2 = V.child_circuits(BY_KEY[key], FRAMES)
+            k = C.c_gates(c1)
+            self.assertEqual(k, 16)
+            beta = C.radix(k)
+            biggest = max(max(abs(re), abs(im)) for col in C.columns(C.run(c1, beta), beta).values() for re, im in col.values())
+            self.assertLessEqual(biggest, 4 ** k)
+
+    def test_radix_2k_would_be_unsound(self):
+        # at beta = 2K a digit difference of 4^K is allowed by the bound, and (4^K, -1) packs to zero: a collision
+        K = 3
+        B = 1 << (2 * K)
+        self.assertEqual(4 ** K * B ** 0 + (-1) * B ** 1, 0)
+        self.assertLessEqual(4 ** K, 2 * 4 ** K)
+        # at beta = 2K + 2 the same digits cannot cancel
+        B2 = 1 << C.radix(K)
+        self.assertNotEqual(4 ** K - B2, 0)
+        self.assertLess(2 * 4 ** K, B2)
 
 
 class Semantics(unittest.TestCase):
@@ -165,9 +181,70 @@ class Coverage(unittest.TestCase):
         self.assertTrue(ev['global_phase_included'])
         self.assertEqual(sum(ev['K_histogram'].values()), 2896)
 
-    def test_subset_run_on_two_children_and_one_port(self):
+    def test_subset_counts_one_child_and_one_port(self):
         out = V.evaluate(CHILDREN, ADAPTERS, WORD, subset='pair=0:174,ports=5')
         self.assertEqual((out['children'], out['adapters']), (1, 2))
+
+    def test_evaluator_rejects_a_mutated_child_record(self):
+        bad = [V._mutate(c, ('right', 'linear_Z4'), lambda a: a[:5] + [(a[5] + 2) % 4] + a[6:])
+               if (c['old'], c['new']) == (0, 174) else c for c in CHILDREN]
+        with self.assertRaisesRegex(V.Reject, 'E child 0:174'):
+            V.evaluate(bad, ADAPTERS, WORD, subset='pair=0:174,adapters=none')
+
+    def test_evaluator_rejects_a_mutated_adapter_record(self):
+        bad = [V._mutate(x, ('left', 'phase'), lambda p: (p + 1) % 4) if (x['port'], x['role']) == (3, 'target') else x
+               for x in ADAPTERS]
+        with self.assertRaisesRegex(V.Reject, 'E adapter 3 target'):
+            V.evaluate(CHILDREN, bad, WORD, subset='children=none,ports=3')
+
+    def test_receipts_list_each_selected_pair_once(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / 'r.jsonl'
+            V.evaluate(CHILDREN, ADAPTERS, WORD, subset='dim=1..2,adapters=none', receipts=path)
+            lines = [json.loads(x) for x in path.read_text().splitlines()]
+        pairs = [tuple(pq) for x in lines if x['kind'] == 'children' for pq in x['pairs']]
+        expect = [(c['old'], c['new']) for c in CHILDREN if 1 <= len(FRAMES[c['new']]) <= 2]
+        self.assertEqual(sorted(pairs), sorted(expect))
+        self.assertEqual(len(pairs), len(set(pairs)))
+
+
+class Inventory(unittest.TestCase):
+    def _programs(self, mutate):
+        progs = json.loads(json.dumps(DATA['programs']))
+        mutate(progs)
+        return dict(DATA, programs=progs)
+
+    def test_i5_a_dropped_climb_event_is_rejected(self):
+        def drop(progs):
+            i = next(n for n, e in enumerate(progs['forward']) if e[0] == 'climb')
+            del progs['forward'][i]
+        with self.assertRaisesRegex(V.Reject, 'I5'):
+            V.inventory(self._programs(drop))
+
+    def test_i6_a_moved_adapter_frame_is_rejected(self):
+        def move(progs):
+            i = next(n for n, e in enumerate(progs['forward']) if e[0] == 'adapter' and e[1] == 'old_to_new' and e[2] == 0)
+            progs['forward'][i] = progs['forward'][i][:3] + [progs['forward'][i][3] + 1]
+        with self.assertRaisesRegex(V.Reject, 'I6'):
+            V.inventory(self._programs(move))
+
+    def test_i7_an_asymmetric_q_is_rejected(self):
+        recipes = json.loads(json.dumps(DATA['recipes']))
+        Q = recipes['children'][0]['left']['quadratic_rows']
+        Q[0] ^= 1 << 5                      # Q_05 set without Q_50
+        with self.assertRaisesRegex(V.Reject, 'I7'):
+            V.inventory(dict(DATA, recipes=recipes))
+
+    def test_calibration_runs_and_a_wrong_fixture_pin_is_rejected(self):
+        out = V.calibrate(FRAMES)
+        self.assertEqual(out, RESULT['calibration'])
+        saved = V.CASES['fixtures']['pr702']['sha256']
+        try:
+            V.CASES['fixtures']['pr702']['sha256'] = '0' * 64
+            with self.assertRaisesRegex(V.Reject, 'FX3 #702 EXPECTED pinned'):
+                V.calibrate(FRAMES)
+        finally:
+            V.CASES['fixtures']['pr702']['sha256'] = saved
 
 
 if __name__ == '__main__':

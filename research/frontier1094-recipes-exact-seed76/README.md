@@ -21,12 +21,12 @@ For the selected word, this package checks every stored record on all 512 column
 
 ### What was checked before, and what is new
 
-- **The producer's own check.** `phases_full.py`/`lower_child` checked each recipe with its own tableau plus column 0, using the same code that produced it. Column 0 alone cannot see an input-character error; see control K2.
-- **Seed80 (`research/complex-frame-distance-seed80`).** It checks the ranks of the same 1,004 frames and 2,896 edges, and says explicitly that it makes no phase claim.
-- **Our #1262.** It rebuilt the selected rank ledger independently, without phases.
-- **The Lean files.** `HyperplaneEnd/Exact.lean` proves exactness only for its own literal pairs.
+- **The producer's own check is complete, but not independent.** `phases_full.py`/`lower_child` (icekylinx) asserts two things for each recipe: equality of the signed Z4 Pauli tableau, and of column 0. Together these pin the Clifford operator exactly, global phase included. But that check ran in the producer's own code, on in-memory operators, at generation time.
+- **The Lemma G package's checkers ran on other words.** `e8-lemma-g-lean` (DreamingOfClouds) ran producer-independent, all-512-column checks of these premises on four other words: #484's `lg_instances` I-tr for H2, and `code/check_adapters.py` for #433's data-adapter identities (H6). It did not run them on the selected gauge44 word.
+- **Seed80** (`research/complex-frame-distance-seed80`, woklerx) checks the ranks of the same 1,004 frames and 2,896 edges, and makes no phase claim.
+- **Our #1262** rebuilt the selected rank ledger independently, without phases.
 
-So until now, no implementation independent of the producer had checked these recipes **with phases**. This package does.
+**What is new.** For the **selected** word, the stored, byte-bound `CLIFFORD-RECIPES.json` is now re-decoded and checked against `T_B T_A⁻¹` and H6. The check uses a kernel written from scratch and calibrated against the Lean literals and published digests. It is a second, independent implementation of a check the producer already passed, not the closing of a known gap.
 
 ## Binding ([verify.py](verify.py) `load`, checks B1–B12)
 
@@ -56,7 +56,7 @@ So until now, no implementation independent of the producer had checked these re
   - The 2,896 child records are exactly the word's directed edges, which include both centre directions, sorted.
   - Ranks: 1928 at rank 1, 380 at rank 2, 408 at rank 3, 124 at rank 4, 40 at rank 5 and 16 at rank 8.
   - All spans are nested. The only descending records are the 8 centre reversals `(f, 0)`.
-- **Relabel coverage.** The climb and centre events of **both** emitted orientations (3,486 climbs and 8 centres each) name exactly these 2,896 keys, with matching ranks. So every relabel of the programs has exactly one record.
+- **Relabel coverage.** The climb and centre events of **both** emitted orientations (3,486 climbs and 8 centres each) name exactly these 2,896 keys, with matching ranks. So every climb and centre relabel of the programs has exactly one record.
 - **Adapters.**
   - The 224 endpoint adapters are ordered (port, source/target).
   - Each adapter's `q` is the word's port mask, of weight 3 or 7.
@@ -140,27 +140,33 @@ The full run takes about 33 s of CPU on one core, including calibration and cont
     - the adapter's port mask;
     - the adapter's role.
   - Frame basis: the same span with a different basis is rejected, and the same rows reordered pass (a positive control).
-  - Note on gate order: for adapters 0 and 1, `D(Q, α)` is invariant under the axis swap done by `P`. Evaluating D after P is therefore the same operator there, so that mutation is genuinely equivalent on those two records and is not used.
-- **Comparator controls** (tests K1–K3).
+  - Note on gate order: for **every** endpoint adapter, `q(Gx) = q(x)`. Evaluating D after P is therefore the same operator on all 224 adapters; `verify.py` counts this and records it in RESULT.json. So that mutation is not a control for adapters. The gate order is pinned instead by the children controls and by FX1's comparison with the Lean `Mono.gates` literals.
+- **Comparator controls** (tests K1–K3). These are checks on this package's own comparator, not claims about the producer's check:
   - A projective comparator would accept the global-phase mutant, which equals the true side times i.
-  - A column-0 comparator would accept the input-character mutant on (0,2).
-  - An unsound radix raises an error.
-- **More controls** in [test_package.py](test_package.py) (18 tests):
+  - A column-0-only comparator would accept the input-character mutant on (0,2).
+  - An unsound radix raises an error. The digit bound is also measured on the 16-gate centre children, and a constructed collision shows that β = 2K would be unsound.
+- **More controls** in [test_package.py](test_package.py) (26 tests):
   - a rank off by one is rejected, both by the inventory check and by the evaluator;
   - swapped matrix rows are rejected;
   - an adapter phase change is rejected;
   - in every rank class, the true record passes and its phase mutant is rejected;
   - the decoy recipes and decoy word, one phase digit changed in the recipe bytes, a duplicate JSON key, a flipped archive byte and unsafe archive members are all rejected;
-  - imports are restricted to the standard library.
+  - imports are restricted to the standard library;
+  - a mutated child record and a mutated adapter record passed through `evaluate()` are both rejected, and the receipts list each selected pair exactly once;
+  - a dropped climb event (I5), a moved adapter frame (I6), an asymmetric Q (I7) and a wrong fixture pin (FX3) are all rejected.
 
 ## What this does not show
 
 - **The executor bridge.** The emitted or hosted program applying these records with exactly these semantics, i.e. Lean's arbitrary `rec(A, B)` being the record's circuit operator, is H1 and `check_extended_labels`. It is not checked here.
-- **Residual wrappers and identity adapters.** The 36 residual wrapper recipes (`RESIDUAL-ADAPTERS.json`) and their 480 residual events per orientation, which feed Lemma A, are not checked. Neither are the identity entry and exit adapters (240 + 402 per orientation).
+- **Residual wrappers and identity adapters.** The 36 residual wrapper recipes (`RESIDUAL-ADAPTERS.json`) and their 480 residual events per orientation, which feed Lemma A, are not checked. Neither are the 866 identity adapters per orientation:
+  - 352 entries at frame 0 (240 helper + 112 target);
+  - 514 exits at FULL (402 helper + 112 source).
+
+  So this is a record-level check of `CLIFFORD-RECIPES.json`, not of every relabel in the stream.
 - **Other hypotheses.** Scalar events, hosting and charts (#1255), WellLabelled/hS, the compiler and precision are inherited, unchanged.
 - **For the adapters,** Lemma G treats RecipesExact as definitional under its extended labels, so the substantive statement checked is H6.
 - **No Lean proof** of this instance, and **no new κ**.
-- **The binding** is to the selected capsule's `global/` provider. If the record moves to a checkpoint, the binding accepts a checkpoint record naming the same certificate.
+- **The binding** is to the selected capsule's `global/` provider. Only `certificates/selected-result.json` or `certificates/checkpoints/frontier1094.json` may name the certificate.
 
 ## Reproduce
 
@@ -187,18 +193,20 @@ Standard-library Python 3.10 or later. It was run on Python 3.12.15 and 3.14.8 (
 
 ## Relation to earlier work and credit
 
+- **The Lemma G package** `e8-lemma-g-lean` (DreamingOfClouds, #509 from #484): it states `RecipesExact` and H6. Its I-tr and `check_adapters.py` checked them exhaustively on four other words. #433 (icekylinx) is the source of the data-adapter identities.
+- **`HyperplaneEnd/Clifford.lean` and `Exact.lean`** (jeremykothe2, #593): the gate semantics, the literal pairs and the packed check with its radix 4^(K+1), which is β = 2K + 2. These follow DreamingOfClouds' `adapters_local.py` and the PR #458 wrapper lineage (chafreaky), and were integrated by Douglas R. Colkitt.
+- **The producer:** `phases_full.py` and `clifford_exact.py` (icekylinx), adapting the exact phase lowering of PR425 (jacklightChen).
 - **Seed80** (woklerx): frame ranks with no phase claim. This package adds the phases on the same edges.
-- **#1262** (ours): the independent rank ledger of the same capsule. The binding pattern is reused by copying, not importing.
-- **#1415** (commdata2338): the semantic binding of the three Lean HPE pairs. Its digests calibrate this kernel.
-- **#702** (BigCactusLabs) and **#712** (jsnider3): independent cold-wrapper amplitudes. #702's frame kernels calibrate this kernel.
-- **Open #1697** (navinor): it binds the 511 cold hyperplane operators, with phase. That is a different object; the packed-radix idea is shared.
+- **#1262** (ours): the independent rank ledger of the same capsule. Its binding pattern is reused by copying, not importing.
+- **#1415** (commdata2338) and **#702** (BigCactusLabs): their digests calibrate this kernel. Also related: **#712** (jsnider3).
+- **Open #1697** (navinor): the 511 cold hyperplane operators, with phase. That is a different object.
 - **Open #581** (jamesyc): one historical child, proved in Lean.
-- **Open #1646** (JosieElliston) and our **#1041**: speed engines that reproduce the recipe bytes. They show reproducibility, not semantics.
+- **Re-runs of the producer's own checks:**
+  - open #1646 (JosieElliston), on the #1029 (aliromman) and #662 (cbethin) engines;
+  - `selected-replay-fastpath`.
+
+  These re-execute `lower_child`'s complete tableau and column-0 assertions while reproducing the recipe bytes. That is a semantic check, but not an independent one. Our #1041 is a parallel driver; it reproduced `d0768f21` only within #1646's runs.
 - **#1092** (ToikY): Clifford state reuse.
 - **#1255** (bitplane): the residual-chart phase criterion.
-- **The producer:** `phases_full.py` and `clifford_exact.py` (icekylinx, adapted from PR425).
-- **The Lean sources:**
-  - the Lemma G package `e8-lemma-g-lean` (DreamingOfClouds);
-  - `HyperplaneEnd/Clifford.lean` and `Exact.lean` (DreamingOfClouds, following PR #458 by chafreaky), integrated by Douglas R. Colkitt.
 
 Prepared by Sagar Thakrar (thakrarsagar) with substantial AI assistance from Claude (Anthropic) via Claude Code. Parallel read-only scout and judge subagents selected the question. Reader subagents extracted the specification from the Lean files, the capsule and the producer code (read as specification only), and the kernel and verifier were then written fresh. No claim was posted to Discussions. New material is Apache-2.0.

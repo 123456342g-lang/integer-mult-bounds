@@ -39,7 +39,7 @@
         "test_package.py"
       ],
       "timeout_seconds": 300,
-      "checks": "Standard-library-only imports; projective and column-0 comparators shown to accept phase and input-character errors that the exact comparator rejects; radix guard; 12 semantic controls; rank-class phase mutants; decoy recipes/word, flipped recipe byte, duplicate key, flipped archive byte and unsafe members rejected; coverage."
+      "checks": "Standard-library-only imports; projective and column-0-only comparators shown to accept phase and input-character errors that the exact comparator rejects; radix guard, measured digit bound on the 16-gate identities and a collision at beta = 2K; 12 semantic controls; rank-class phase mutants; mutated child and adapter records rejected by evaluate(); receipts list each pair once; I5/I6/I7 and fixture-pin negatives; decoy recipes/word, flipped recipe byte, duplicate key, flipped archive byte and unsafe members rejected; calibration reproduced."
     }
   ]
 }

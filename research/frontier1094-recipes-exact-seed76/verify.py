@@ -113,7 +113,8 @@ def load(archive_path=None, member_overrides=None, byte_overrides=None):
     # B3 certificate and record
     repo_asm = (ROOT / CASES['certificate']).read_bytes()
     need(repo_asm == got['assembly'] and sha(repo_asm) == CASES['certificate_sha256'], 'B3 certificate')
-    records = [ROOT / CASES['selected_record']] + sorted((ROOT / CASES['checkpoint_dir']).glob('*.json'))
+    # only the selected record, or the frontier1094 checkpoint once the frontier moves on
+    records = [ROOT / CASES['selected_record'], ROOT / CASES['checkpoint_dir'] / 'frontier1094.json']
     named = False
     for f in records:
         try:
@@ -152,7 +153,8 @@ def load(archive_path=None, member_overrides=None, byte_overrides=None):
     need(sha(ss_raw) == ss['sha256'] and find_pin(json.loads((ROOT / arc['pinned_by']).read_text()), ss['path'], ss['sha256']),
          'B8 selected source manifest pinned')
     sp_raw = (ROOT / sp['path']).read_bytes()
-    need(sha(sp_raw) == sp['sha256'] and sp['sha256'] in ss_raw.decode(), 'B8 SLOT-PINS listed in the source manifest')
+    need(sha(sp_raw) == sp['sha256'] and find_pin(strict_loads(ss_raw), sp['path'], sp['sha256']),
+         'B8 SLOT-PINS pinned by path in the source manifest')
     pins = strict_loads(sp_raw)
     need(pins['canonical_sha256'] == sha(word_raw), 'B8 SLOT-PINS word payload digest')     # payload, not gz bytes (B9)
     need(pins['clifford_recipes_sha256'] == sha(got['recipes']), 'B8 SLOT-PINS recipes digest')
@@ -163,7 +165,7 @@ def load(archive_path=None, member_overrides=None, byte_overrides=None):
          and review['canonical_word_sha256'] == sha(got['canonical_word']), 'B10 review binds the same files')
     # B11 canonical encodings
     need(got['recipes'] == canonical_bytes(recipes) and word_raw == canonical_bytes(word), 'B11 canonical encodings')
-    binding = dict(record_or_checkpoint='certificates/selected-result.json or certificates/checkpoints/*.json',
+    binding = dict(record_or_checkpoint='certificates/selected-result.json or certificates/checkpoints/frontier1094.json',
                    certificate=CASES['certificate'], certificate_sha256=sha(repo_asm), archive=arc['path'],
                    archive_sha256=arc['sha256'], template_sha256=asm['template_sha256'],
                    owner_audit_sha256=asm['input_sha256']['owner_audit'],
@@ -545,8 +547,9 @@ def semantic_controls(children, adapters, word):
         if variant == 'fourier_sign':      # C_q sign flip on the adapters (the target then reads T_f C_q^-1 F_9^-1)
             rej += sum(not check_pair(*adapter_circuits(x, word, variant)) for x in sample_a)
             cands = cands + sample_a
-        # gate_order is children only: for adapters 0 and 1 D(Q, a) is invariant under the axis swap done by P,
-        # so evaluating D after P is the same operator there (a true equivalence, not a missed defect)
+        # gate_order is children only: for every endpoint adapter q(Gx) = q(x), so evaluating D after P is the
+        # same operator (counted in gate_order_equivalent_adapters below); the order is pinned by the children
+        # controls and by FX1's comparison with the Lean Mono.gates literals
         need(rej == len(cands), 'C control not rejected: ' + variant)
         out[variant] = 'rejected %d/%d' % (rej, rej)
     for variant in ('port', 'role'):
@@ -566,6 +569,11 @@ def semantic_controls(children, adapters, word):
     need(rej == 2 and passed == 2, 'C frame basis control')
     out['frame_basis'] = 'rejected 2/2; reordered rows pass 2/2'
     return out
+
+
+def gate_order_equivalent_adapters(adapters):
+    """How many endpoint monomials are unchanged when D is evaluated after P (a structural fact, not a control)."""
+    return sum(C.same_operator(C.monomial(x['left']), C.monomial(x['left'], 'PDXPH')) for x in adapters)
 
 
 # ------------------------------------------------------------------------------------------------ main
@@ -591,12 +599,14 @@ def main():
     exp = CASES['expected']
     need(ev['children'] == exp['children'] and ev['adapters'] == exp['adapters'], 'E full coverage')
     ev.pop('cpu_seconds')
+    counts['gate_order_equivalent_adapters'] = '%d of %d' % (gate_order_equivalent_adapters(adapters), len(adapters))
     result = dict(status='PASS_FRONTIER1094_RECIPES_EXACT', binding=binding, inventory=counts, calibration=calibration,
                   controls=controls, evaluation=dict(ev, columns=C.DIM, global_phase_included=True,
                                                      comparator='exact packed Gaussian integers, scaled to a common 2^K',
                                                      radix_rule='beta = 2K + 2'),
-                  scope='RecipesExact for the climb and centre relabels of the selected gauge44 word and Lemma G H6 for its '
-                        'endpoint adapters; no executor bridge, residual wrappers, Lean proof or new kappa')
+                  scope='Record level: every child record and endpoint adapter of the gauge44 CLIFFORD-RECIPES.json equals '
+                        'T_new T_old^-1 (climb and centre relabels) or satisfies Lemma G H6; not the 36 residual wrapper '
+                        'recipes, the identity adapters, the executor bridge, a Lean proof or a new kappa')
     text = json.dumps(result, indent=1, sort_keys=True) + '\n'
     target = HERE / 'RESULT.json'
     if a.write:
