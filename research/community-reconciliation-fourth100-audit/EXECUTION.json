@@ -179,6 +179,25 @@
       "retained_log": "logs/pr471-repaired.txt.gz"
     },
     {
+      "number": 476,
+      "head": "e850569c33ad1d5771e2f8b1c6dfe7a445396167",
+      "command": [
+        "/tmp/integer-mult-review-venv/bin/python",
+        "-B",
+        "/tmp/reconciliation-fourth100-20261013/repaired-476/research/tensor-schur-r715/verify.py",
+        "/tmp/reconciliation-fourth100-20261013/repaired-476-out"
+      ],
+      "cwd": "/tmp/reconciliation-fourth100-20261013/repaired-476",
+      "exit_code": 0,
+      "seconds": 882.5226528644562,
+      "log": "pr476-repaired.txt",
+      "sha256": "99390ff9e07463e3b2f3ec2777adebb8801f5467c796c736a60095739e7c1af2",
+      "environment": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+      "scope": "Fresh unmodified contributed package wrapper; inherited cited suppliers and assumptions retain its explicit scope.",
+      "receipt_group": "local-repair",
+      "retained_log": "logs/pr476-repaired.txt.gz"
+    },
+    {
       "number": 505,
       "head": "4ee769c8e28837482272b5f4742497da8e2fc9d4",
       "command": [
@@ -355,6 +374,25 @@
       "scope": "Fresh unmodified contributed package wrapper; inherited cited suppliers and assumptions retain its explicit scope.",
       "receipt_group": "inherited-ci",
       "retained_log": "logs/pr438-local.txt.gz"
+    },
+    {
+      "number": 457,
+      "head": "3e89db7725785f8e8e172d04d1d4804f57db72f3",
+      "command": [
+        "/tmp/integer-mult-review-venv/bin/python",
+        "-B",
+        "/tmp/reconciliation-fourth100-20261013/local-457/research/r740-hosted-rank151/verify.py",
+        "/tmp/reconciliation-fourth100-20261013/local-457-out"
+      ],
+      "cwd": "/tmp/reconciliation-fourth100-20261013/local-457",
+      "exit_code": 0,
+      "seconds": 2114.8344402313232,
+      "log": "pr457-local.txt",
+      "sha256": "f7a68d15091b2c7c0c3037df2f7c75a452f5ed39350967f3c1ac8b3ad34b2c40",
+      "environment": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+      "scope": "Fresh unmodified contributed package wrapper; inherited cited suppliers and assumptions retain its explicit scope.",
+      "receipt_group": "inherited-ci",
+      "retained_log": "logs/pr457-local.txt.gz"
     },
     {
       "number": 627,
@@ -1569,6 +1607,74 @@
       "retained_log": "logs/pr652-gauge.txt.gz"
     },
     {
+      "number": 655,
+      "head": "3e669dc7987cb2295a71664b77e110c0cd979a87",
+      "commands": [
+        [
+          "/tmp/integer-mult-review-venv/bin/python",
+          "-B",
+          "/tmp/reconciliation-fourth100-20261013/gauge-655/research/gauge44-layered/verify_manifest.py"
+        ],
+        [
+          "/tmp/integer-mult-review-venv/bin/python",
+          "-B",
+          "/tmp/reconciliation-fourth100-20261013/gauge-655/research/gauge44-layered/construction/reproduce.py",
+          "--main",
+          "/tmp/integer-mult-queue-20261013",
+          "--pr635",
+          "/tmp/reconciliation-fourth100-20261013/cold-635",
+          "--out",
+          "/tmp/reconciliation-fourth100-20261013/gauge-655-out/base",
+          "--until",
+          "word"
+        ],
+        [
+          "/tmp/integer-mult-review-venv/bin/python",
+          "-B",
+          "/tmp/reconciliation-fourth100-20261013/gauge-655/research/gauge44-layered/construction/layers/reproduce_layers.py",
+          "--main",
+          "/tmp/integer-mult-queue-20261013",
+          "--pr635",
+          "/tmp/reconciliation-fourth100-20261013/cold-635",
+          "--word-dir",
+          "/tmp/reconciliation-fourth100-20261013/gauge-655-out/base",
+          "--out",
+          "/tmp/reconciliation-fourth100-20261013/gauge-655-out/layered"
+        ],
+        [
+          "/tmp/integer-mult-review-venv/bin/python",
+          "-B",
+          "/tmp/reconciliation-fourth100-20261013/gauge-655/research/gauge44-layered/independent/audit_local.py",
+          "--word",
+          "/tmp/reconciliation-fourth100-20261013/gauge-655-out/layered/layers/FULL-WORD.json.gz",
+          "--main",
+          "/tmp/integer-mult-queue-20261013",
+          "--output",
+          "/tmp/reconciliation-fourth100-20261013/gauge-655-out/independent.json"
+        ],
+        [
+          "/tmp/integer-mult-review-venv/bin/python",
+          "-B",
+          "/tmp/reconciliation-fourth100-20261013/gauge-655/research/gauge44-layered/verify_global.py",
+          "--main",
+          "/tmp/integer-mult-queue-20261013",
+          "--local",
+          "/tmp/reconciliation-fourth100-20261013/gauge-655-out/layered/local",
+          "--work",
+          "/tmp/reconciliation-fourth100-20261013/gauge-655-out/global"
+        ]
+      ],
+      "cwd": "/tmp/reconciliation-fourth100-20261013/gauge-655",
+      "exit_code": 0,
+      "seconds": 651.4686558246613,
+      "log": "pr655-gauge.txt",
+      "sha256": "9872257f6b8da4fcb15a3ff50c4d24c8e5da759bfb02fa2cd77b7cfab30a16c8",
+      "environment": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+      "scope": "Fresh reconstructed local phases and complete global admission under source-pinned dependencies; unchanged bit is cited and repriced.",
+      "receipt_group": "gauge",
+      "retained_log": "logs/pr655-gauge.txt.gz"
+    },
+    {
       "number": 521,
       "head": "a190fdb39f31647fc6f651625353710624627348",
       "commands": [
@@ -1824,6 +1930,24 @@
       "scope": "Fresh unmodified scoped mathematical/tooling checker; no full multiplication theorem claim.",
       "receipt_group": "quick-retry",
       "retained_log": "logs/pr666-quick-retry.txt.gz"
+    },
+    {
+      "number": 515,
+      "head": "6590606e733768f6a7004b3f55ae35f988ba515f",
+      "command": [
+        "/tmp/integer-mult-review-venv/bin/python",
+        "-B",
+        "/tmp/reconciliation-fourth100-20261013/extra-515/research/e8-r685-inline-deletions/verify.py",
+        "/tmp/reconciliation-fourth100-20261013/extra-515-out"
+      ],
+      "cwd": "/tmp/reconciliation-fourth100-20261013/extra-515",
+      "exit_code": 0,
+      "seconds": 1638.3809368610382,
+      "log": "pr515-extra.txt",
+      "sha256": "91cc7b7dbb93e0a170f4d1d842af26019338ffc7f8668d80a1dd8a929f4ea14c",
+      "scope": "Fresh contributed wrapper; optional steps and inherited cited suppliers are identified in the original log.",
+      "receipt_group": "extra",
+      "retained_log": "logs/pr515-extra.txt.gz"
     },
     {
       "number": 594,

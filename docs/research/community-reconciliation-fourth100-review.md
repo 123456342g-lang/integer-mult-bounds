@@ -158,19 +158,9 @@ see also [CONTRIBUTORS.md](../../CONTRIBUTORS.md).
 ## Open next questions
 
 - **#455:** The fresh scientific stages pass. A JSON LF-to-CRLF adapter resolves the bit-template pin and downstream bit audit, but the subsequent complex_template_sha256 remains unmatched: expected 02d4d0031a173664f8adc5bccf0244f8ce349307eac09c0d48a3c8948a7f5b17; regenerated 62d1e17fe80b82691e7cef2b03974a826b513da6af5689eb4c0aac1b38355971. The tested newline and gzip-header/level variants do not explain it. Supply a portable source-bound correction; no expected digest is bypassed.
-- **#457:** Required contributed-package replay is still running; no completed execution is claimed.
 - **#459:** Required contributed-package replay is still running; no completed execution is claimed.
 - **#461:** The claimed sharper 2*m^3/2^80 exceptional fraction is a GL-cover estimate, while the supplier retains the orthogonal-cover invoice. PR491 explicitly withdraws this probability transfer. Supply a valid bound for the actual cover or revert to the retained bad fraction and reprice; arithmetic alone does not discharge this obligation.
 - **#465:** The improved assembly imports the sharper GL-cover exceptional fraction without establishing it for the charged orthogonal cover. PR491 withdraws that probability transfer and uses a count-only correction. Reprice using a justified bad fraction or prove the missing transfer.
-- **#476:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
-  File "/tmp/reconciliation-fourth100-20261013/local-476/research/tensor-schur-r715/verify.py", line 15, in <module>
-    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]
-    ~~~~~~~~~^^
-  File "/tmp/reconciliation-fourth100-20261013/local-476/research/tensor-schur-r715/verify.py", line 14, in integrity
-    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: Package manifest mismatch
-
 - **#478:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
   File "/tmp/reconciliation-fourth100-20261013/local-478/research/tensor-r715-next/verify.py", line 16, in <module>
     integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]
@@ -209,7 +199,6 @@ AssertionError: Package manifest mismatch
 AssertionError: Package manifest mismatch
 
 - **#499:** The proposal prices a cross-copy/cross-family split. PR451 supplies a trace obstruction to treating that split as the present physical operator. Retain the proposed ledger, but supply a realizable operator/interface and its complete charge before accepting the claimed improvement.
-- **#515:** Required contributed-package replay is still running; no completed execution is claimed.
 - **#633:** Required contributed-package replay is still running; no completed execution is claimed.
 - **#634:** Required contributed-package replay is still running; no completed execution is claimed.
 - **#635:** Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):
@@ -279,7 +268,6 @@ AssertionError: larger_gain manifest pin
 AssertionError: larger_gain manifest pin
 
 - **#651:** Required contributed-package replay is still running; no completed execution is claimed.
-- **#655:** Required contributed-package replay is still running; no completed execution is claimed.
 - **#656:** Required contributed-package replay is still running; no completed execution is claimed.
 - **#658:** Required contributed-package replay is still running; no completed execution is claimed.
 - **#659:** Required contributed-package replay is still running; no completed execution is claimed.

@@ -58,7 +58,7 @@
   "435": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      16
+      17
     ],
     "ci_jobs": [],
     "remaining": null
@@ -82,7 +82,7 @@
   "438": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      17
+      18
     ],
     "ci_jobs": [],
     "remaining": null
@@ -174,10 +174,12 @@
     "remaining": "The fresh scientific stages pass. A JSON LF-to-CRLF adapter resolves the bit-template pin and downstream bit audit, but the subsequent complex_template_sha256 remains unmatched: expected 02d4d0031a173664f8adc5bccf0244f8ce349307eac09c0d48a3c8948a7f5b17; regenerated 62d1e17fe80b82691e7cef2b03974a826b513da6af5689eb4c0aac1b38355971. The tested newline and gzip-header/level variants do not explain it. Supply a portable source-bound correction; no expected digest is bypassed."
   },
   "457": {
-    "mode": "incomplete; retained diagnostics",
-    "fresh_receipt_indices": [],
+    "mode": "fresh scoped replay or report check",
+    "fresh_receipt_indices": [
+      19
+    ],
     "ci_jobs": [],
-    "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+    "remaining": null
   },
   "458": {
     "mode": "source-bound historical Linux CI",
@@ -238,10 +240,12 @@
     "remaining": null
   },
   "476": {
-    "mode": "incomplete; retained diagnostics",
-    "fresh_receipt_indices": [],
+    "mode": "fresh scoped replay or report check",
+    "fresh_receipt_indices": [
+      9
+    ],
     "ci_jobs": [],
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/local-476/research/tensor-schur-r715/verify.py\", line 15, in <module>\n    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]\n    ~~~~~~~~~^^\n  File \"/tmp/reconciliation-fourth100-20261013/local-476/research/tensor-schur-r715/verify.py\", line 14, in integrity\n    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Package manifest mismatch\n"
+    "remaining": null
   },
   "478": {
     "mode": "incomplete; retained diagnostics",
@@ -355,7 +359,7 @@
   "505": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      50
+      54
     ],
     "ci_jobs": [],
     "remaining": null
@@ -371,7 +375,7 @@
   "508": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      15
+      16
     ],
     "ci_jobs": [],
     "remaining": null
@@ -385,10 +389,12 @@
     "remaining": null
   },
   "515": {
-    "mode": "incomplete; retained diagnostics",
-    "fresh_receipt_indices": [],
+    "mode": "fresh scoped replay or report check",
+    "fresh_receipt_indices": [
+      50
+    ],
     "ci_jobs": [],
-    "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+    "remaining": null
   },
   "517": {
     "mode": "source-bound historical Linux CI",
@@ -401,7 +407,7 @@
   "518": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      11
+      12
     ],
     "ci_jobs": [],
     "remaining": null
@@ -409,7 +415,7 @@
   "521": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      36
+      39
     ],
     "ci_jobs": [],
     "remaining": null
@@ -417,7 +423,7 @@
   "522": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      12
+      13
     ],
     "ci_jobs": [],
     "remaining": null
@@ -441,7 +447,7 @@
   "532": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      13
+      14
     ],
     "ci_jobs": [],
     "remaining": null
@@ -457,7 +463,7 @@
   "594": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      47
+      51
     ],
     "ci_jobs": [],
     "remaining": null
@@ -465,7 +471,7 @@
   "611": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      48
+      52
     ],
     "ci_jobs": [],
     "remaining": null
@@ -473,7 +479,7 @@
   "627": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      32
+      34
     ],
     "ci_jobs": [],
     "remaining": null
@@ -489,7 +495,7 @@
   "629": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      31
+      33
     ],
     "ci_jobs": [],
     "remaining": null
@@ -497,7 +503,7 @@
   "630": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      37
+      40
     ],
     "ci_jobs": [],
     "remaining": null
@@ -505,7 +511,7 @@
   "631": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      38
+      41
     ],
     "ci_jobs": [],
     "remaining": null
@@ -607,7 +613,7 @@
   "648": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      33
+      35
     ],
     "ci_jobs": [],
     "remaining": null
@@ -615,7 +621,7 @@
   "649": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      34
+      36
     ],
     "ci_jobs": [],
     "remaining": null
@@ -629,7 +635,7 @@
   "652": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      35
+      37
     ],
     "ci_jobs": [],
     "remaining": null
@@ -643,10 +649,12 @@
     "remaining": null
   },
   "655": {
-    "mode": "incomplete; retained diagnostics",
-    "fresh_receipt_indices": [],
+    "mode": "fresh scoped replay or report check",
+    "fresh_receipt_indices": [
+      38
+    ],
     "ci_jobs": [],
-    "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+    "remaining": null
   },
   "656": {
     "mode": "incomplete; retained diagnostics",
@@ -685,7 +693,7 @@
   "661": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      44
+      47
     ],
     "ci_jobs": [],
     "remaining": null
@@ -693,7 +701,7 @@
   "663": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      40
+      43
     ],
     "ci_jobs": [],
     "remaining": null
@@ -707,7 +715,7 @@
   "665": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      45
+      48
     ],
     "ci_jobs": [],
     "remaining": null
@@ -715,7 +723,7 @@
   "666": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      46
+      49
     ],
     "ci_jobs": [],
     "remaining": null
@@ -723,7 +731,7 @@
   "667": {
     "mode": "fresh scoped replay or report check",
     "fresh_receipt_indices": [
-      43
+      46
     ],
     "ci_jobs": [],
     "remaining": null

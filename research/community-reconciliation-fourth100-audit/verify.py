@@ -172,6 +172,14 @@ def main():
             if decision['review_completion']['published']:
                 require(decision['publication']['integration_commit']==publication['integration_commit'],
                         'Published integration differs')
+    if (HERE/'PROGRESS-CLOSURES.json').exists():
+        seen=set()
+        for receipt in load('PROGRESS-CLOSURES.json')['receipts']:
+            n=receipt['number'];require(n in decisions and n not in seen,'Invalid progress subset');seen.add(n)
+            d=decisions[n];o=receipt['observed']
+            require(o['headRefOid']==d['current_head'] and o['state']==d['github_state'],'Progress outcome differs from ledger')
+            if receipt['status']=='closed_after_published_review':
+                require(o['state']=='CLOSED' and all(d['review_completion'].values()) and d['closure']['comment_url']==receipt['comment']['url'],'Unsupported progress closure')
     if (HERE/'CLOSURE-RECEIPTS.json').exists():
         receipts=load('CLOSURE-RECEIPTS.json')
         require(len(receipts)==100 and {r['number'] for r in receipts}==set(decisions), 'Incomplete closure reconciliation')

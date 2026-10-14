@@ -159,7 +159,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        16
+        17
       ],
       "ci_jobs": [],
       "remaining": null
@@ -222,7 +222,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        17
+        18
       ],
       "ci_jobs": [],
       "remaining": null
@@ -470,13 +470,15 @@
     "mechanism": "Larger rank151 kernel on dual eleven-stage hosting.",
     "scope_and_limits": "All 65120 helper occurrences require a new legal allocation. Inherited rank149 CI does not execute this changed rank151 package.",
     "evidence": {
-      "mode": "incomplete; retained diagnostics",
-      "fresh_receipt_indices": [],
+      "mode": "fresh scoped replay or report check",
+      "fresh_receipt_indices": [
+        19
+      ],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+      "remaining": null
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+    "remaining": null
   },
   "458": {
     "head": "44e9eae8287951c1e6dbbd3c553f5743fe2240b0",
@@ -651,13 +653,15 @@
     "mechanism": "Two-layer reversible target-interval factoring.",
     "scope_and_limits": "Intermediate reads, frames, correction terms and inverse cleanup are checked on one word. The identity alone does not establish legal physical execution.",
     "evidence": {
-      "mode": "incomplete; retained diagnostics",
-      "fresh_receipt_indices": [],
+      "mode": "fresh scoped replay or report check",
+      "fresh_receipt_indices": [
+        9
+      ],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/local-476/research/tensor-schur-r715/verify.py\", line 15, in <module>\n    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]\n    ~~~~~~~~~^^\n  File \"/tmp/reconciliation-fourth100-20261013/local-476/research/tensor-schur-r715/verify.py\", line 14, in integrity\n    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Package manifest mismatch\n"
+      "remaining": null
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/local-476/research/tensor-schur-r715/verify.py\", line 15, in <module>\n    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]\n    ~~~~~~~~~^^\n  File \"/tmp/reconciliation-fourth100-20261013/local-476/research/tensor-schur-r715/verify.py\", line 14, in integrity\n    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Package manifest mismatch\n"
+    "remaining": null
   },
   "478": {
     "head": "bea1d52fd330c699903f81612ee58be81697d1eb",
@@ -976,7 +980,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        50
+        54
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1018,7 +1022,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        15
+        16
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1058,13 +1062,15 @@
     "mechanism": "R685 bit word through inlining and copy deletion.",
     "scope_and_limits": "Supplier and method improvement in the R687 lineage, not a new complex-side or final-frontier claim. Inherited workflows must not be mistaken for replay of the new inline-deletion package.",
     "evidence": {
-      "mode": "incomplete; retained diagnostics",
-      "fresh_receipt_indices": [],
+      "mode": "fresh scoped replay or report check",
+      "fresh_receipt_indices": [
+        50
+      ],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+      "remaining": null
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+    "remaining": null
   },
   "517": {
     "head": "65518fcff5a7bd490365273ae5469a82aac14853",
@@ -1100,7 +1106,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        11
+        12
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1121,7 +1127,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        36
+        39
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1142,7 +1148,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        12
+        13
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1205,7 +1211,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        13
+        14
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1247,7 +1253,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        47
+        51
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1268,7 +1274,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        48
+        52
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1289,7 +1295,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        32
+        34
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1331,7 +1337,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        31
+        33
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1352,7 +1358,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        37
+        40
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1373,7 +1379,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        38
+        41
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1683,7 +1689,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        33
+        35
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1704,7 +1710,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        34
+        36
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1744,7 +1750,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        35
+        37
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1784,13 +1790,15 @@
     "mechanism": "Layered pivot swaps, entering ends and cold ends on Gauge44.",
     "scope_and_limits": "Changed typed construction and spot-width rules require the pinned layer-end and pivot controls. Complete dirty restoration and fresh global admission retain the inherited interfaces.",
     "evidence": {
-      "mode": "incomplete; retained diagnostics",
-      "fresh_receipt_indices": [],
+      "mode": "fresh scoped replay or report check",
+      "fresh_receipt_indices": [
+        38
+      ],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+      "remaining": null
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+    "remaining": null
   },
   "656": {
     "head": "0805e78f5fecc700804d4766d7e3e1d7d7e6a2ba",
@@ -1904,7 +1912,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        44
+        47
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1925,7 +1933,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        40
+        43
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1965,7 +1973,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        45
+        48
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1986,7 +1994,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        46
+        49
       ],
       "ci_jobs": [],
       "remaining": null
@@ -2007,7 +2015,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        43
+        46
       ],
       "ci_jobs": [],
       "remaining": null
