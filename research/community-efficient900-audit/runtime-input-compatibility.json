@@ -13,6 +13,7 @@
     1878,
     1880,
     1881,
+    1882,
     1887,
     1888,
     1889,
@@ -30,20 +31,25 @@
     1910,
     1911,
     1912,
+    1913,
     1914,
     1915,
     1917,
     1918,
     1919,
+    1920,
+    1924,
     1934,
     1935,
     1938,
+    1940,
     1941,
     1944,
     1945,
+    1946,
     1949
   ],
-  "unique_inputs": 89,
+  "unique_inputs": 99,
   "mismatches": [],
   "inputs": [
     {
@@ -653,6 +659,18 @@
       "actual": "c8af22719c0f3097a991a3f6ccac8f090afd2faba554745733d9ea88f2c25708"
     },
     {
+      "number": 1913,
+      "path": "research/e8-bit-p111-tuned/code/xcheck_p.py",
+      "expected": "af3decc877e27c00001cf56f50c6c09566e8e101297ab34c7860aed96a06d80e",
+      "actual": "af3decc877e27c00001cf56f50c6c09566e8e101297ab34c7860aed96a06d80e"
+    },
+    {
+      "number": 1913,
+      "path": "research/r439-bsection-stars-seed01/candidate.json.gz",
+      "expected": "b452d2c2b0b2a546d1105b1da9769aa78e5c54d6f00e97b30c77e3f54ce445ee",
+      "actual": "b452d2c2b0b2a546d1105b1da9769aa78e5c54d6f00e97b30c77e3f54ce445ee"
+    },
+    {
       "number": 1914,
       "path": "research/community-frontier1094-audit/ASSEMBLY.json",
       "expected": "1122cb3a575f8c788345fc1bf4c108ac7c3250fb81a5988671f5eb04b3ab3045",
@@ -743,6 +761,36 @@
       "actual": "f1da80610bf33c58527f18ad63b4350d0b864e1d4486141ee17ac9bed4d529d6"
     },
     {
+      "number": 1920,
+      "path": "research/complex-multicold/vendor/pr558/vendor/pr552/complex-global/vendor531/vendor/clifford/clifford_exact.py",
+      "expected": "2982ead07721e83358dc67c6f49c2b4c16a236a6bebdfd72f58221be1f5d0962",
+      "actual": "2982ead07721e83358dc67c6f49c2b4c16a236a6bebdfd72f58221be1f5d0962"
+    },
+    {
+      "number": 1920,
+      "path": "research/selector-batching/README.md",
+      "expected": "e50bae87f9bfa2dee515468aeb56d47676410ca3adfdf0e83d11bf0e31fadf2d",
+      "actual": "e50bae87f9bfa2dee515468aeb56d47676410ca3adfdf0e83d11bf0e31fadf2d"
+    },
+    {
+      "number": 1924,
+      "path": "docs/research/agent-task-catalog.json",
+      "expected": "6686ad58f1fbdbc87134a78901b60fd53a20d3984355e91defbbebc9e9fa8075",
+      "actual": "6686ad58f1fbdbc87134a78901b60fd53a20d3984355e91defbbebc9e9fa8075"
+    },
+    {
+      "number": 1924,
+      "path": "certificates/selected-result.json",
+      "expected": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32",
+      "actual": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32"
+    },
+    {
+      "number": 1924,
+      "path": "research/selector-batching/README.md",
+      "expected": "e50bae87f9bfa2dee515468aeb56d47676410ca3adfdf0e83d11bf0e31fadf2d",
+      "actual": "e50bae87f9bfa2dee515468aeb56d47676410ca3adfdf0e83d11bf0e31fadf2d"
+    },
+    {
       "number": 1934,
       "path": "research/hyperplane-end-lean/HyperplaneEnd/Clifford.lean",
       "expected": "c0c51407b4fa6ff230a79d5f3b07c83b7d1c4b433ce03513f0c4fb725bf3cbe1",
@@ -777,6 +825,36 @@
       "path": "research/p112-single-lift/geometry.py",
       "expected": "3857c11ec731a602b8059d85d58fbb3b641bab687bb33016a0e54f7567752c8a",
       "actual": "3857c11ec731a602b8059d85d58fbb3b641bab687bb33016a0e54f7567752c8a"
+    },
+    {
+      "number": 1940,
+      "path": "research/biframe-decoder-ladder/README.md",
+      "expected": "95b71fb2e519e258811882d8d06359090da7a697aa77ba4c326c25a66d00bd36",
+      "actual": "95b71fb2e519e258811882d8d06359090da7a697aa77ba4c326c25a66d00bd36"
+    },
+    {
+      "number": 1940,
+      "path": "research/biframe-decoder-ladder/RESULTS.json",
+      "expected": "516c06f6ec3cb84be588c546108de897650288576dd5fbf5fe44b9c5546ad8a4",
+      "actual": "516c06f6ec3cb84be588c546108de897650288576dd5fbf5fe44b9c5546ad8a4"
+    },
+    {
+      "number": 1940,
+      "path": "research/p104-asynchronous-carrier-bound/README.md",
+      "expected": "b65ebf972b24109ce40b36b92d372434c4a6ff0d07a1d464b2a36032536e7fef",
+      "actual": "b65ebf972b24109ce40b36b92d372434c4a6ff0d07a1d464b2a36032536e7fef"
+    },
+    {
+      "number": 1940,
+      "path": "research/p104-asynchronous-carrier-bound/PROOF.md",
+      "expected": "63a915d06981eb6d85af8ff594de57bc86d2fabfa8b40563927ae67f75e4a355",
+      "actual": "63a915d06981eb6d85af8ff594de57bc86d2fabfa8b40563927ae67f75e4a355"
+    },
+    {
+      "number": 1940,
+      "path": "research/complex-local-word-ceiling/ceiling.py",
+      "expected": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc",
+      "actual": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc"
     },
     {
       "number": 1941,
@@ -827,11 +905,41 @@
       "actual": "23415f7829ab8d80a783142f10f7d31abbce84579362769984680af3df954476"
     },
     {
+      "number": 1946,
+      "path": "notes/general-clifford-frames.tex",
+      "expected": "c9bb9655b594583c6b4bab8cb485233f1d1e588f83858cf1e4c3530cee8fed54",
+      "actual": "c9bb9655b594583c6b4bab8cb485233f1d1e588f83858cf1e4c3530cee8fed54"
+    },
+    {
+      "number": 1946,
+      "path": "research/complex-local-word-ceiling/ceiling.py",
+      "expected": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc",
+      "actual": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc"
+    },
+    {
+      "number": 1946,
+      "path": "research/r480-owner-optimum/inputs/local/CANONICAL-WORD.json.gz",
+      "expected": "16bc0ebb04b4be6c0ade74badc6a0c0cdba4215eda86e4ff9f13abf8ecebd219",
+      "actual": "16bc0ebb04b4be6c0ade74badc6a0c0cdba4215eda86e4ff9f13abf8ecebd219"
+    },
+    {
+      "number": 1946,
+      "path": "research/r480-owner-optimum/inputs/local/LOCAL-PROGRAMS.json.gz",
+      "expected": "241fde27d4e43f5a9cb6b128f9f76c5131a53d09f0371676163f914d0b0fef3a",
+      "actual": "241fde27d4e43f5a9cb6b128f9f76c5131a53d09f0371676163f914d0b0fef3a"
+    },
+    {
+      "number": 1946,
+      "path": "research/selector-batching/README.md",
+      "expected": "e50bae87f9bfa2dee515468aeb56d47676410ca3adfdf0e83d11bf0e31fadf2d",
+      "actual": "e50bae87f9bfa2dee515468aeb56d47676410ca3adfdf0e83d11bf0e31fadf2d"
+    },
+    {
       "number": 1949,
       "path": "references/three-stage-cover/pr117/dag.json.gz",
       "expected": "3c034d0aae388ef567a454826f4f48b26fd8a94c71e8ffed4835271b349a783b",
       "actual": "3c034d0aae388ef567a454826f4f48b26fd8a94c71e8ffed4835271b349a783b"
     }
   ],
-  "main_commit": "b5d138e63a10da21cc625088d1d953f962f05a8f"
+  "main_commit": "8e65b2e0e1f6352a21bb136f09b35702f9a3ccba"
 }
