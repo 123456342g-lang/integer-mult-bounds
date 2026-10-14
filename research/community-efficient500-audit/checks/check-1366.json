@@ -1,6 +1,6 @@
 {
   "number": 1366,
-  "head": "21046cb8fa0d4f0e9b2f826ba71e01baaf9be02c",
+  "head": "73a5be9ac66738c6ca056f2fc498b671eaba3764",
   "commands": [
     [
       "/tmp/pr-efficient200-venv/bin/python",
@@ -12,7 +12,7 @@
   ],
   "python": "Python 3.12.11",
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
-  "seconds": 3.672,
+  "seconds": 2.655,
   "status": "passed",
   "exit_codes": [
     0
@@ -487,7 +487,7 @@
     "research/p120-calibrated-two-target-seed51/SOURCES.json": "886b5919de6e473e89a2e2350bb7249253e8a0f8ae693de2bc9e3360f93b5add",
     "research/p120-calibrated-two-target-seed51/PROOF.md": "c402c0aa6c4ac7bb999fdca7e36503d2b6bffa0233ea45ebf6f6a40a1587f03e",
     "research/p120-calibrated-two-target-seed51/certificate.tsv": "61f903f72551d3aa8f70bc5774ee28d163fd72ca09a430e7403008ba269f2494",
-    "research/p120-calibrated-two-target-seed51/VERIFY.json": "18f8a66f0bd2d85a9bd6c643612cc5310fa44e5f9af427b0e96b9ac8f342eb42",
+    "research/p120-calibrated-two-target-seed51/VERIFY.json": "6562283e8862c05bf62b54f730cd775515d38c99fadd8874ab26ce7196cd050f",
     "research/p120-calibrated-two-target-seed51/TASK.json": "ec0fae7b1acdcd7df3f1853404378f80f188a691947eed0d86d20432a42fdc47",
     "research/p120-calibrated-two-target-seed51/README.md": "e7142e1dfc1228c69b09f3d2da482150da4416e9e87d39fbb25e4949659c6399",
     "research/p120-calibrated-two-target-seed51/verify.py": "0fb432d3e8fc80afe209dbfd6a74f007f8ad3f82b0d5acfb75dd1076f92b0d03",

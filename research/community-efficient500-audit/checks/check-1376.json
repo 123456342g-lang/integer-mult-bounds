@@ -1,6 +1,6 @@
 {
   "number": 1376,
-  "head": "49f112ac76e95415fcea8969de28f74c8928b2b1",
+  "head": "1a53f810cd6a426b5f4dff223adc4de7d00c0cd5",
   "commands": [
     [
       "/tmp/pr-efficient200-venv/bin/python",
@@ -19,7 +19,7 @@
   ],
   "python": "Python 3.12.11",
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
-  "seconds": 9.515,
+  "seconds": 7.311,
   "status": "passed",
   "exit_codes": [
     0,
@@ -781,7 +781,7 @@
     "research/complex-571-hpeq5/README.md": "4000b37f6c07c09d971dc4010ceb137c13340f3a8809d3272046ccaf746c3e2b",
     "research/complex-temporal-gauge-pair-seed26/SOURCES.json": "c47de9f0a028748e6984e4e938adcad40b03afaaad890e3a9d3810e6b39887f8",
     "research/complex-temporal-gauge-pair-seed26/test_package.py": "b1ac7065ba4ed4f8bd97baa0444812f030d9ab23ef65d7cefec9669fb6aa292d",
-    "research/complex-temporal-gauge-pair-seed26/VERIFY.json": "4445727ee5218ba9cf9585903e51d0a215268ba754e0f80b285275b8c49b2bdd",
+    "research/complex-temporal-gauge-pair-seed26/VERIFY.json": "084c6c966a5f85f6cff70bface5e4ece67f9529d4a3a2c2f73a473142c9b8049",
     "research/complex-temporal-gauge-pair-seed26/RESULT.json": "b61661c56202657af3373a128b43499c62a8e868a4df0402a28be490e3c998f5",
     "research/complex-temporal-gauge-pair-seed26/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
     "research/complex-temporal-gauge-pair-seed26/TASK.json": "445d4444647d4b0f81cad012919cdaf0eb1d27622056c03bad1d24952571fdcb",

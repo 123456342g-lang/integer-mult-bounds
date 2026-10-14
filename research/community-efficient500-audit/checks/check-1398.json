@@ -1,6 +1,6 @@
 {
   "number": 1398,
-  "head": "29e6cd74aacaad6766267331ad60d34c9f1875fb",
+  "head": "ed505ea5bb143c6aeea7888833b1ac33c6bcada1",
   "commands": [
     [
       "/tmp/pr-efficient200-venv/bin/python",
@@ -19,7 +19,7 @@
   ],
   "python": "Python 3.12.11",
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
-  "seconds": 12.0,
+  "seconds": 6.077,
   "status": "passed",
   "exit_codes": [
     0,
@@ -631,7 +631,7 @@
     "research/k8-l284-temporal-seed37/DEPENDENCIES.json": "8237b08d7679d1d02ff37c22e68d669f462f8216c2e2e825c60a7cb01b2f3c3e",
     "research/k8-l284-temporal-seed37/temporal.py": "6b14c7bcb58ab963c5eed044f3050a95a4fd9e825bf1b8e51227fb1f43d82b4d",
     "research/k8-l284-temporal-seed37/test_package.py": "57f1d017d5ebac05fc8855b775b13f39ec16dfc201ea9dccdcc20e9b0b8f05c2",
-    "research/k8-l284-temporal-seed37/VERIFY.json": "86bc4385998da9db802f9325510292d1af4cc454337259e8fe0432b35f99db28",
+    "research/k8-l284-temporal-seed37/VERIFY.json": "47bf0277742ba8b0eaf12b8b22d604f6749c0c3b1af227119eb5d41fd71048ef",
     "research/k8-l284-temporal-seed37/CLAIM.md": "bde46062a0c90b3e2f973e93acdfc4365f9134e64e805e933fdb8974e7d478aa",
     "research/k8-l284-temporal-seed37/TASK.json": "2466da351330adc2ed9d516c78bb0bfa2f804aef5e7a8350041368d74264f09d",
     "research/k8-l284-temporal-seed37/README.md": "e3e6b1e87663b0a56371cbf3f81d36b0d21824a67fb8f8970e343cede96f9354",

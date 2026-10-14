@@ -1,6 +1,6 @@
 {
   "number": 1397,
-  "head": "f7d8c82688ce8746d2355b5f897e1afd3100dd9e",
+  "head": "ccfc3b7751d051d94287885c30b8c2c77477a17c",
   "commands": [
     [
       "/tmp/pr-efficient200-venv/bin/python",
@@ -19,7 +19,7 @@
   ],
   "python": "Python 3.12.11",
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
-  "seconds": 11.697,
+  "seconds": 6.38,
   "status": "passed",
   "exit_codes": [
     0,
@@ -612,7 +612,7 @@
     "research/complex-mixed-coldkernel/NOTICE.md": "180802791d3547d511a7af8bc4f800640abd72636d50631d2e61b35cfa17627d",
     "research/k8-three-coordinate-temporal-seed21/SOURCES.json": "a4048302efbf1d447c866d973b7c8e86e4ee1a1a0f9c3f12feb6254eef1debc4",
     "research/k8-three-coordinate-temporal-seed21/test_package.py": "5f3539bdf828afbbf1cae57f1450186eb92d7bee38e8eb6c3a4dc467f664cdc0",
-    "research/k8-three-coordinate-temporal-seed21/VERIFY.json": "ad2ae57f1cb94f3befba63422a5aa0cfb78a3a42f096253541be072f41b8399f",
+    "research/k8-three-coordinate-temporal-seed21/VERIFY.json": "91ede0b376a67b864e5df6652d10816085a47e8d57ad34a930edac73fa97ea6b",
     "research/k8-three-coordinate-temporal-seed21/RESULT.json": "19bc0a0dfbcdfc46ae5803b3a4f9c25421d8f8f31f683632c2d01fc28a8d914e",
     "research/k8-three-coordinate-temporal-seed21/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
     "research/k8-three-coordinate-temporal-seed21/TASK.json": "7b2fcf5a6e417ebac4b4583cd9cfb47c977f71e239ec3575653dca6836789af3",
@@ -6037,6 +6037,6 @@
     "research/native-complex-moment552/inputs/PR558-INVOICE.json": "4b6977a049663ab958bd9a48c2864f7a7bddb26aef03e14f3068aede020ef76f",
     "research/native-complex-moment552/inputs/PR552-INVOICE.json": "4ac060dbf2ea2624dd1f4bda23bdb81c0a3013dfe49b77c092b631885529947f"
   },
-  "log_sha256": "6d84b8e21f6dc8076bbe1a40015bc15a7821b387cdcd5d3798f9311d519cec77",
+  "log_sha256": "8f470b1f5724bad5b2045947ae12a09aacc4b580c68eaf5c1f597996188ae7ef",
   "scope": "Pinned scoped package commands and their stated finite/proof-support coverage; not complete multiplication-theorem certification."
 }

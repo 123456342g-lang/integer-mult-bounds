@@ -40,3 +40,6 @@ checked 96 of 256 exact local words
 checked 128 of 256 exact local words
 checked 160 of 256 exact local words
 checked 192 of 256 exact local words
+checked 224 of 256 exact local words
+checked 256 of 256 exact local words
+PASS_TWO_ACCUMULATOR_SAVED_ARM_FAMILY

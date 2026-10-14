@@ -1,6 +1,6 @@
 {
   "number": 1391,
-  "head": "6ce8017e4c27c8b220b6c3a27a53bb18f138212a",
+  "head": "bc52eec9717baf36ec58d40d0653445e078a04da",
   "commands": [
     [
       "/tmp/pr-efficient200-venv/bin/python",
@@ -12,7 +12,7 @@
   ],
   "python": "Python 3.12.11",
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
-  "seconds": 1.104,
+  "seconds": 0.654,
   "status": "passed",
   "exit_codes": [
     0
@@ -478,14 +478,14 @@
     "research/mixed-prefix-fourway/MANIFEST.json": "6a804eb28134da69813960e231ae9609d6786b3452d46f8936d03766a2dc2407",
     "research/mixed-prefix-fourway/verify.py": "a5f5623fefca3ee601e2e195f8e2ba1df077db81de1bf254531a2b32bb7e5cb3",
     "research/mixed-prefix-fourway/NOTICE.md": "36556c5faf7d760e21b23e3be1536aeaae7404e81e04b09db88ed8e4218c4a28",
-    "research/z4-paired-frame-restoration-seed56/SOURCES.json": "9356f83ab2f053c452f922de3a1cd4286563e60ada2a7bc61b6b21530ff39c21",
-    "research/z4-paired-frame-restoration-seed56/VERIFY.json": "fa4b8d192f5f80282a983bea880235243b2f7023553356eddc76ae636535ee7e",
+    "research/z4-paired-frame-restoration-seed56/SOURCES.json": "314e0b285b7f39d96d05efb91b1be50af46e9076240bb6548524774943f26faa",
+    "research/z4-paired-frame-restoration-seed56/VERIFY.json": "54cb99d0353a5ddd139eede1a8d3bf7fdbef07aa9c2bba64cd4048f94e7a8675",
     "research/z4-paired-frame-restoration-seed56/CLAIM.md": "29103cf14cb1eeb7191252c31b2d8d90578f268a84e23163731bea462de00654",
     "research/z4-paired-frame-restoration-seed56/TASK.json": "3345ddabfc76df67deabb9f01c7776d5732192ee5364f285145af05b4ab96769",
     "research/z4-paired-frame-restoration-seed56/README.md": "401c07ebffcb007b59a8fb0f08c2505f6eb28af2c5d72efe04389c09a69f8b89",
     "research/z4-paired-frame-restoration-seed56/PREDECESSORS.json": "de9072b66750eee07a67f08798a2b21c0be5b491336d0003d6f596181941b82c",
     "research/z4-paired-frame-restoration-seed56/CERTIFICATE.json": "2a6ac306ddc6f58514b89f680d8ff3027b4195e2754574f8f04ac1f17785c9d3",
-    "research/z4-paired-frame-restoration-seed56/verify.py": "c3d8e76dad9b3cc159affa5e56dbf73612eab0c0ce4a4464f523d4cf47669c05",
+    "research/z4-paired-frame-restoration-seed56/verify.py": "c4c2647b057cbf9d6f86e25173789dd764a5a7076160a1b9d39413dfe16ec9c8",
     "research/gauge44-slots-t16/SOURCES.json": "abb903d9b46388f99325a3939eb68171ac163c66b4b62b7961ea46daa20a88f0",
     "research/gauge44-slots-t16/PROOF-NOTE-SW4.md": "d7bb225f1a7f9fd363e819a67e92a5fe14c0942f6c3616d73609cc48042daf3d",
     "research/gauge44-slots-t16/PROOF-NOTE-BIT.md": "dd771adb12f6f0bef0e2931c28b21b243b04d5f512370cbad1207275c342aaf7",
