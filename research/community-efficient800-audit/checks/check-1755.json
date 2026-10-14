@@ -18,10 +18,11 @@
   ],
   "python": "Python 3.12.11",
   "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
-  "seconds": 300.019,
-  "status": "budget_deferred",
+  "seconds": 833.107,
+  "status": "passed",
   "exit_codes": [
-    null
+    0,
+    0
   ],
   "input_sha256": {
     "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
@@ -314,6 +315,6 @@
     "research/four-swap-balanced-j3-layer/TASK-CARD.md": "52ba25a051f5ab3c8965d5f62ce3836ac62167bf79d7235dc0bbdf891932d7b0",
     "research/four-swap-balanced-j3-layer/verify.py": "7681e927e5693d0125883b2c10dcdcae6345f371b3489c96c12a6198ed77e30c"
   },
-  "log_sha256": "aaed66afd7d1ba3cf4b68b077442ae729633ac5b5243bbbbb2f623f21e18645a",
+  "log_sha256": "274c34735529dd8e6b4247b4c4434d1c01ad3089acd1b0c5c5c8419cb53fc0cc",
   "scope": "Pinned scoped package commands and their stated finite/proof-support coverage; not complete multiplication-theorem certification."
 }
