@@ -107,17 +107,17 @@
   "claim_status": "Posted as Discussion #1759 at 2026-10-14T09:02:54Z; finding update with the PR link will follow after submission. Claim expiry is 2026-10-14T10:30:00Z.",
   "claim_url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1759",
   "overlap": {
-    "searched_at": "2026-10-14T09:02:07Z",
+    "searched_at": "2026-10-14T09:05:53Z",
     "coverage": {
       "open_prs": {
-        "fetched_at": "2026-10-14T09:00:49Z",
+        "fetched_at": "2026-10-14T09:04:32Z",
         "complete_pagination": true,
         "records": 434
       },
       "discussions": {
-        "fetched_at": "2026-10-14T09:02:07Z",
+        "fetched_at": "2026-10-14T09:05:52Z",
         "complete_pagination": true,
-        "records": 391
+        "records": 392
       }
     },
     "nearest_open_prs": {
@@ -128,7 +128,8 @@
     "active_discussions_checked": {
       "1738": "UT3 third dirty register for D8 central commutator; updated 2026-10-14T08:27:41Z",
       "1740": "S4 four-register sharing for noncommuting 3-cycles; updated 2026-10-14T08:26:56Z",
-      "1743": "R439 compensated terminal helper-star deferral; updated 2026-10-14T08:28:17Z"
+      "1743": "R439 compensated terminal helper-star deferral; updated 2026-10-14T08:28:17Z",
+      "1759": "This run's bounded UT4 noncentral root-pair claim; posted 2026-10-14T09:02:54Z"
     },
     "warnings": [],
     "limits": "Search covered PR bodies and indexed Discussions plus direct relevant pages and local research notes. It did not inspect every code diff and is not a proof of novelty."

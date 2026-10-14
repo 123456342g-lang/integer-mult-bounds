@@ -63,7 +63,7 @@ was refreshed at 08:41 UTC, and the direct #1738/#1740 pages were checked.
 
 A GitHub claim could not be posted during the first rate-limit window, so the
 local card was used while the search continued. After the API reset, the
-refreshed overlap scan covered 434 open PRs and 391 Discussions with no
+refreshed overlap scan covered 434 open PRs and 392 Discussions with no
 warnings, and the claim was posted as Discussion #1759 at 09:02:54 UTC. Its
 expiry is 10:30 UTC; update it with the completed result and PR link.
 

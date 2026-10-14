@@ -107,7 +107,7 @@ central targets. Active Discussion #1738 concerns a three-register UT3
 central pair; #1740 concerns an S4 pair; #1743 concerns helper-star costs.
 These are nearby search families, not the target and endpoint proved here.
 
-The live overlap refresh paginated all 434 open PRs and all 391 Discussions
+The live overlap refresh paginated all 434 open PRs and all 392 Discussions
 with no warnings. Direct checks of active claims #1738, #1740, and #1743 found
 different groups, targets, and mechanisms. The claim was kept local during
 the initial GraphQL rate limit, then posted after reset as
