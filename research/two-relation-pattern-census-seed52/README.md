@@ -155,7 +155,10 @@ All external source hashes and Git blobs are listed in
 ## Live overlap and distinction
 
 The live claim is [Discussion #1700](https://github.com/CrocSwap/integer-mult-bounds/discussions/1700)
-and expires at 2026-10-14 09:15 UTC. The final pre-submission overlap refresh
+and expires at 2026-10-14 09:15 UTC. The scoped negative-result package is
+submitted in [PR #1733](https://github.com/CrocSwap/integer-mult-bounds/pull/1733)
+(open at commit `50e2fb45991a810528677e3ea8100c76a2a23acc`). The final
+pre-submission overlap refresh
 completed at 2026-10-14 08:11:05 UTC: 415 open PRs fetched at 08:09:10 and
 366 Discussions fetched at 08:11:05, with complete pagination and no warnings. The nearest
 open PRs are [#1705](https://github.com/CrocSwap/integer-mult-bounds/pull/1705),

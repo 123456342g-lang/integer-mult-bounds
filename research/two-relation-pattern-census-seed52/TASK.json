@@ -109,5 +109,7 @@
     ],
     "distinction": "Nearby work uses coordinate swaps, a two-target affine pair, a restricted three-register affine triple, or a different mixed affine tuple. This package fixes a rational four-register address list with exactly two independent complete Q/F2 relations and studies a bounded pattern-class screen."
   },
-  "claim_expires_at_utc": "2026-10-14T09:15:00Z"
+  "claim_expires_at_utc": "2026-10-14T09:15:00Z",
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1733",
+  "submission_status": "open"
 }
