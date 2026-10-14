@@ -55,7 +55,8 @@ Length 11 is needed only for the four cost-12 pairs. Such a word is
 ball. If C is shorter, the word has length at most 10 and is already covered.
 The engine streams all 562,639,176 images `h C`. It looks up their key among the
 radius-5 groups and searches each group for the anchors this target requires.
-No image matches.
+Of the 1,169,568 anchor hits, none is for a cost-12 target. All of them are
+for the 96 cost-11 control targets described below.
 
 ## Evidence and controls
 

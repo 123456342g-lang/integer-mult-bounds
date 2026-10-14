@@ -28,6 +28,17 @@ ROOT = HERE.parents[1]
 SEED18 = ROOT / "research" / "bit-gl3-mixed-targets-seed18" / "CERTIFICATE.json"
 ID3 = 0b100010001
 LABELS = [(0, 1), (0, 2), (1, 0), (1, 2), (2, 0), (2, 1)]
+RECEIPT = {  # complete engine receipt; --full recomputes every entry
+    "address_layers": [1, 6, 24, 51, 60, 24, 2],
+    "ball4_layers": [1, 36, 996, 25518, 636945], "ball4_states": 663496,
+    "raw_layer5_images": 22930020, "records_before_dedupe": 22188112,
+    "layer5_distinct": 15628866, "ball5_states": 16292362,
+    "key_buckets": 3137495, "key_buckets_meeting_ball4": 133207, "largest_bucket": 5011,
+    "ordered_pairs": 1119282418, "radius4_table_mismatches": 0,
+    "pairs_direct_le9": 27308, "pairs_direct_ge10": 916,
+    "l11_targets": 100, "l11_images": 562639176,
+    "l11_images_meeting_ball5_keys": 282223416, "l11_hits": 1169568,
+}
 
 
 def require(ok, message):
@@ -154,6 +165,10 @@ def quick(result):
     require(rec["ball4_states"] == cert["formal"]["states"] == 663496, "ball-4 states")
     require(rec["key_buckets_meeting_ball4"] == cert["formal"]["cosets"] == 133207, "ball-4 cosets")
     require(rec["radius4_table_mismatches"] == 0, "radius-4 join reproduces seed18's table")
+    require(rec == RECEIPT, "recorded engine receipt")
+    require(sorted(result["histogram"]) == [[10, 10, 816], [11, 11, 96], [12, 11, 4]],
+            "recorded radius-5 histogram")
+    require(len(result["pairs"]) == 916 and len(result["l11"]) == 100, "no duplicate rows")
     cov = cert["completed_coverage"]
     require(cov["remaining_direct_cost_10_to_12"] == 916 and cov["remaining_lower_bound"] == 9,
             "seed18 open pairs and lower bound")
