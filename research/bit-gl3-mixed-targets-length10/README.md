@@ -58,6 +58,22 @@ radius-5 groups and searches each group for the anchors this target requires.
 Of the 1,169,568 anchor hits, none is for a cost-12 target. All of them are
 for the 96 cost-11 control targets described below.
 
+## Bounded probe: one extra dirty register (lengths at most 7)
+
+`engine3.cpp` takes a first step on the next question. It adds one third
+scalar register with arbitrary input. That register must be restored, or in a
+second count may end at any monomial `[c]`. On three registers there are 28
+binary rank-one idempotents, so there are 168 paid involutions, and free
+GL_3(F2) mixing is normalized as before. The radius-3 ball has layers
+1, 168, 21,882 and 2,683,740 (2,705,791 states). A ball-3 x ball-3 key join plus
+450,868,320 streamed distance-4 images covers every word of length at most 7.
+**No ordered pair (a,b) gets a word shorter than d(a)+d(b), restored or not.**
+Every direct word of length at most 7 is found, which is the positive control.
+So the extra dirty register gives no saving for the 24,224 pairs with direct
+cost at most 8, and every pair with direct cost at least 9 still needs at least
+8 calls. Lengths 8 to 12 with a third register are not covered: a stored
+radius-4 layer would be hundreds of millions of 216-byte states.
+
 ## Evidence and controls
 
 - **Reproduces seed18.** Radius-4 layers 1, 36, 996, 25,518, 636,945 (663,496
@@ -90,6 +106,7 @@ output.
 ```sh
 python3 -I -B research/bit-gl3-mixed-targets-length10/verify.py          # quick, < 1 s
 python3 -I -B research/bit-gl3-mixed-targets-length10/verify.py --full   # compiles engine.cpp
+python3 -I -B research/bit-gl3-mixed-targets-length10/verify.py --three  # third-register probe, ~35 s, 2.3 GB
 python3 scripts/research_package.py --package research/bit-gl3-mixed-targets-length10 --check-only
 ```
 
@@ -101,21 +118,23 @@ complete parsed output must equal `RESULT.json`. Expected:
 ## Limits
 
 This is a finite certificate for exactly two scalar registers, this 36-call
-alphabet and these targets. It covers no extra or dirty auxiliary registers,
+alphabet and these targets. Apart from the length-at-most-7 probe above, it
+covers no extra or dirty auxiliary registers,
 other address labels, physical source/compiler/hosting/precision admission, or
 transfer to the rational-frame bit supplier. No kappa or selected-record change
-is claimed. The lower bound is a computer search by one engine. Seed18's
+is claimed. The lower bounds are computer searches by one engine each. Seed18's
 independent replay corroborates only its radius-4 part, and no second
 implementation of the radius-5 join exists yet. No dedicated CI workflow is
 added; the registered quick command does not compile C++.
 
 ## Open next questions
 
-1. **Does one restored dirty third register change any of these minima?** With
-   28 rank-one idempotents on three registers there are 168 generators. A
-   radius-4 ball is likely tens of millions of states or more, so the first step is a radius-3/radius-4
-   key join restricted to cost-6 to cost-8 targets. Memory is the blocker for a
-   naive ball.
+1. **Does one dirty third register save anything at length 8 or more?** The
+   probe above excludes savings through length 7, which settles all pairs with
+   direct cost at most 8. Length 8 needs a 4+4 join. The first step is to store
+   only 64-bit key digests and anchors of the distance-4 layer as a candidate
+   filter and recheck any match exactly. Memory is the blocker: the layer is
+   hundreds of millions of states.
 2. **Is there a written invariant that proves `min = d(a)+d(b)` for all pairs?**
    This would replace the search and might extend to GL_n(F2). A first step is
    to test whether some quotient of R separates the two rows' label counts.

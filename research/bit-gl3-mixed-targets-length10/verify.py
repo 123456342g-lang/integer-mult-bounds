@@ -246,6 +246,39 @@ def full(result):
     require(fresh == result, "fresh engine output differs from RESULT.json")
 
 
+RECEIPT3 = {  # bounded third-register probe (engine3.cpp), lengths <= 7
+    "ball3_layers": [1, 168, 21882, 2683740], "ball3_states": 2705791,
+    "ball3_buckets": 1629130, "layer4_images": 450868320,
+    "saving_restored": 0, "saving_any_third": 0, "direct_le7_not_found": 0,
+}
+DIRECT_HISTOGRAM = {0: 1, 1: 12, 2: 84, 3: 390, 4: 1308, 5: 3216, 6: 5773, 7: 7296,
+                    8: 6144, 9: 3084, 10: 816, 11: 96, 12: 4}
+
+
+def three(compiler):
+    """Recompute the third-register probe and check it against RECEIPT3."""
+    with tempfile.TemporaryDirectory() as tmp:
+        exe = Path(tmp) / "engine3"
+        subprocess.run([compiler, "-std=c++17", "-O2", "-Wall", "-Wextra", "-Werror", "-pthread",
+                        str(HERE / "engine3.cpp"), "-o", str(exe)], check=True, timeout=300)
+        run = subprocess.run([str(exe), str(max(1, os.cpu_count() or 1))], capture_output=True,
+                             text=True, check=True, timeout=1800)
+    receipt, hist = {}, {"hist_restored": {}, "hist_any_third": {}}
+    for line in run.stdout.splitlines():
+        f = line.split()
+        if not f or f[0] == "DONE":
+            continue
+        if f[0] in hist:
+            hist[f[0]][int(f[2])] = (int(f[4]), int(f[6]))
+        else:
+            receipt[f[0]] = [int(x) for x in f[1:]] if len(f) > 2 else int(f[1])
+    require(receipt == RECEIPT3, "third-register receipt")
+    for name, rows in hist.items():
+        # 99 = no word of length <= 7; every direct word of length <= 7 is found
+        expected = {d: (d if d <= 7 else 99, n) for d, n in DIRECT_HISTOGRAM.items()}
+        require(rows == expected, f"third-register histogram {name}")
+
+
 def main():
     result = json.loads((HERE / "RESULT.json").read_text())
     checked, rejected = quick(result)
@@ -253,6 +286,11 @@ def main():
     if "--full" in sys.argv[1:]:
         full(result)
         mode = "full"
+    if "--three" in sys.argv[1:]:
+        compiler = shutil.which("c++") or shutil.which("clang++") or shutil.which("g++")
+        require(compiler is not None, "--three needs a C++17 compiler")
+        three(compiler)
+        mode += "+three"
     print(f"PASS_GL3_MIXED_TARGETS_LENGTH10 mode={mode} open_pairs=916 exact=916 "
           f"min_equals_direct=all formal_words={checked} tamper_rejected={rejected}")
 

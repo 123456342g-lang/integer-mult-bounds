@@ -46,15 +46,15 @@
   "budget_minutes": 60,
   "stop_rule": "Radius-5 join (all words of length <= 10) plus the length-11 stage only for the pairs still undecided; stop when every open pair is exact or the engine exceeds about 3 GB / 10 minutes.",
   "outcome": "negative-result",
-  "evidence": "engine.cpp: radius-4 ball reproduces seed18 (663,496 states, 133,207 cosets, table min(9,d(a)+d(b))); radius-5 ball 16,292,362 states, 1,119,282,418 ordered join pairs: 816 direct-10 pairs have min 10, 96 direct-11 and 4 direct-12 pairs have no word <= 10; length-11 stage (562,639,176 images) finds all 96 direct-11 controls and nothing for the 4 direct-12 pairs. verify.py checks all 916 recorded/direct words formally (stdlib) and reruns the engine with --full.",
+  "evidence": "engine.cpp: radius-4 ball reproduces seed18 (663,496 states, 133,207 cosets, table min(9,d(a)+d(b))); radius-5 ball 16,292,362 states, 1,119,282,418 ordered join pairs: 816 direct-10 pairs have min 10, 96 direct-11 and 4 direct-12 pairs have no word <= 10; length-11 stage (562,639,176 images) finds all 96 direct-11 controls and nothing for the 4 direct-12 pairs. verify.py checks all 916 recorded/direct words formally (stdlib) and reruns the engine with --full. engine3.cpp (one extra dirty register, 168 generators): radius-3 ball 2,705,791 states, 450,868,320 streamed distance-4 images; no pair has a word of length <= 7 shorter than d(a)+d(b), restored or ending at any monomial; all direct words of length <= 7 found.",
   "author": "Josie Elliston (with Claude Code)",
   "ai_assistance": "Substantial: Claude (Anthropic) via Claude Code wrote the engine, verifier and README; no independent human review.",
   "open_questions": [
     {
-      "question": "Does one restored dirty third register lower any minimum diag([a],[b],1) below d(a)+d(b)?",
-      "why_it_matters": "Extra dirty roles are the natural next relaxation; a saving would be the first sharing of heterogeneous targets in this alphabet.",
-      "first_step": "Radius-3/radius-4 key join over the 168 generators (28 idempotents x 6 labels), restricted to cost 6..8 targets.",
-      "blocked_by": "Memory: the three-register radius-4 ball is likely tens of millions of states or more."
+      "question": "Does one dirty third register (restored or ending at any monomial) save any paid call at word length 8 or more?",
+      "why_it_matters": "engine3.cpp excludes savings through length 7 (all pairs with direct cost <= 8); a saving at length >= 8 would be the first sharing of heterogeneous targets in this alphabet.",
+      "first_step": "4+4 join using 64-bit digests plus anchors of the distance-4 layer as a filter, with exact recheck of every candidate.",
+      "blocked_by": "Memory: the three-register distance-4 layer has hundreds of millions of 216-byte states."
     },
     {
       "question": "Is there a written invariant proving min = d(a)+d(b) for all pairs, possibly for GL_n(F2)?",

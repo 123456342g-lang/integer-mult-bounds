@@ -24,6 +24,7 @@
   ],
   "full_replay": {
     "command": "python3 -I -B research/bit-gl3-mixed-targets-length10/verify.py --full",
-    "requires": "Python >= 3.10, C++17 compiler, about 3 GB RAM; 65 s on 10 cores, 116 s with 4 threads (macOS, Apple clang)"
+    "requires": "Python >= 3.10, C++17 compiler, about 3 GB RAM; 65 s on 10 cores, 116 s with 4 threads (macOS, Apple clang)",
+    "three_register_probe": "python3 -I -B research/bit-gl3-mixed-targets-length10/verify.py --three (C++17, ~2.3 GB RAM, 35 s on 10 cores)"
   }
 }
