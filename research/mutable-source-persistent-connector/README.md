@@ -66,6 +66,15 @@ the same typed identity gives 2 c_B+2 sum_i c_Ai+sum_t(c_Ct+c_BCt), plus actual
 admission, preparation and dispatch. This is a chain cost, not a new all-size
 contracting recurrence. No selected owner schedule satisfying it is supplied.
 
+For the k-call formula, first apply y_i += A_i z_initial to every output while
+the connector is closed, then open it once. Complete each output with its second
+read when its source version is current, apply the coherence correction after
+each source mutation, and close the connector after the final output. Thus
+future outputs receive early dirty prewrites. This is permitted by the stated
+observation-only contract; the formula does not apply to a stricter contract
+forbidding output writes before that output's request interval. The explicit
+two-call pilot above needs no early write to the second output.
+
 In the literal pilot (rows are binary bitmasks),
 B=(3,6,7), C=(1,0,0), A1=(2,4,1), A2=(3,2,4), BC=(1,0,1).
 B has rank3, C and BC rank1. Every matrix entry1 becomes one source-to-target
