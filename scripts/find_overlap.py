@@ -7,12 +7,14 @@ with OpenAI Codex assistance. Apache-2.0.
 """
 import argparse
 from datetime import datetime, timezone
+import fnmatch
 import hashlib
 import json
 import os
 from pathlib import Path
 import subprocess
 import tempfile
+import time
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = "CrocSwap/integer-mult-bounds"
@@ -43,6 +45,68 @@ def pull_records(pages):
              "head": pr["head"]["sha"], "updated_at": pr["updated_at"],
              "draft": pr.get("draft", False), "state": pr["state"]}
             for page in pages for pr in page]
+
+
+def fetch_pr_files():
+    """Changed file paths per open PR, so overlap can be searched by path.
+
+    GitHub reports at most 100 changed files per page; a PR beyond that is
+    flagged truncated. This is a file inventory, not a search of diff contents.
+    """
+    rows = []
+    cursor = None
+    while True:
+        # ponytail: 10 PRs per page (25x100-node pages exceed GitHub's ~10 s
+        # gateway limit and 502; 10x100 stays under it). A full index refresh is
+        # ~74 pages and only path queries pay it. Each page gets four attempts.
+        result = None
+        for attempt in range(4):
+            try:
+                result = graphql('''query($cursor:String) {
+          repository(owner:"CrocSwap",name:"integer-mult-bounds") {
+            pullRequests(first:10,states:OPEN,after:$cursor) {
+              pageInfo {hasNextPage endCursor}
+              nodes {number files(first:100) {
+                pageInfo {hasNextPage}
+                nodes {path}
+              }}
+            }
+          }
+        }''', {"cursor": cursor})["repository"]["pullRequests"]
+                break
+            except subprocess.SubprocessError:
+                if attempt == 3:
+                    raise
+                time.sleep(1 + attempt)
+        for pull in result["nodes"]:
+            # PR 376 (and similar) report no file list; record it as empty and
+            # flagged so path search never silently trusts missing data.
+            connection = pull.get("files") or {"pageInfo": {"hasNextPage": True}, "nodes": []}
+            rows.append({"number": pull["number"],
+                         "paths": sorted({node["path"] for node in connection["nodes"] if node}),
+                         "truncated": bool(connection["pageInfo"]["hasNextPage"])})
+        if not result["pageInfo"]["hasNextPage"]:
+            return sorted(rows, key=lambda row: row["number"])
+        cursor = result["pageInfo"]["endCursor"]
+
+
+def path_report(pr_records, file_rows, patterns):
+    """Open-PR entries whose changed files match any pattern (fnmatch or substring)."""
+    pulls = {record["number"]: record for record in pr_records if record.get("kind") == "pr"}
+    matches = []
+    for row in sorted(file_rows, key=lambda item: -item["number"]):
+        matched = [path for path in row["paths"]
+                   if any(fnmatch.fnmatch(path, pattern) or pattern in path for pattern in patterns)]
+        if not matched:
+            continue
+        pull = pulls.get(row["number"], {})
+        matches.append({"kind": "pr", "number": row["number"], "title": pull.get("title", ""),
+                        "url": pull.get("url") or f"https://github.com/{REPO}/pull/{row['number']}",
+                        "head": pull.get("head"),
+                        "updated_at": pull.get("updated_at"), "draft": pull.get("draft", False),
+                        "matched_paths": matched, "changed_paths": len(row["paths"]),
+                        "truncated": row.get("truncated", False)})
+    return matches
 
 
 def fetch_discussions():
@@ -116,7 +180,7 @@ def error_summary(exc):
     return str(exc)[:700]
 
 
-def remote_snapshot(cache, offline=False, refresh=False, max_age=300):
+def remote_snapshot(cache, offline=False, refresh=False, max_age=300, need_files=False):
     warnings = []
     try:
         snapshot = json.loads(cache.read_text())
@@ -125,11 +189,13 @@ def remote_snapshot(cache, offline=False, refresh=False, max_age=300):
     except (OSError, ValueError):
         snapshot = {"schema_version": 1, "repository": REPO, "sources": {}}
     sources = snapshot.setdefault("sources", {})
-    for name, fetch in (
-        ("open_prs", lambda: pull_records(gh_json([
-            "--paginate", "--slurp", f"repos/{REPO}/pulls?state=open&per_page=100&sort=updated&direction=desc"]))),
-        ("discussions", fetch_discussions),
-    ):
+    fetches = [("open_prs", lambda: pull_records(gh_json([
+        "--paginate", "--slurp", f"repos/{REPO}/pulls?state=open&per_page=100&sort=updated&direction=desc"]))),
+        ("discussions", fetch_discussions)]
+    if need_files:
+        # Only path queries pay for the changed-file index; body searches stay as they were.
+        fetches.append(("pr_files", fetch_pr_files))
+    for name, fetch in fetches:
         cached = sources.get(name)
         age = None
         if cached:
@@ -198,6 +264,8 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("terms", nargs="*", help="literal case-insensitive terms; quote multiword phrases")
     ap.add_argument("--task", help="add the named catalogue card's overlap terms")
+    ap.add_argument("--path", action="append", default=[], metavar="PATTERN",
+                    help="match open PRs by changed file path (fnmatch pattern or substring); repeatable")
     ap.add_argument("--offline", action="store_true")
     ap.add_argument("--refresh", action="store_true")
     ap.add_argument("--max-age", type=int, default=300, help="remote cache lifetime in seconds")
@@ -218,10 +286,12 @@ def main():
             ap.error("unknown task")
         terms.extend([args.task, *cards[0].get("overlap_terms", [])])
         terms.extend(Path(p).parent.name for p in cards[0]["starting_points"] if p.startswith("research/"))
-    if not any(t.strip() for t in terms):
-        ap.error("provide terms or --task")
+    if not any(t.strip() for t in terms) and not args.path:
+        ap.error("provide terms, --task or --path")
+    patterns = [p.strip() for p in args.path if p.strip()]
     local = local_records(ROOT)
-    snapshot, warnings = remote_snapshot(args.cache, args.offline, args.refresh, args.max_age)
+    snapshot, warnings = remote_snapshot(args.cache, args.offline, args.refresh, args.max_age,
+                                         need_files=bool(patterns))
     records = list(local)
     coverage = {}
     for name in ("open_prs", "discussions"):
@@ -230,17 +300,40 @@ def main():
         if source:
             records.extend(source["records"])
             coverage[name]["records"] = len(source["records"])
-    matches = search(records, terms, args.all_terms)
+    path_matches = []
+    if patterns:
+        source = snapshot["sources"].get("pr_files")
+        coverage["pr_files"] = {k: source[k] for k in ("fetched_at", "complete_pagination")} if source else None
+        if source:
+            coverage["pr_files"]["records"] = len(source["records"])
+            pulls = snapshot["sources"].get("open_prs", {"records": []})["records"]
+            path_matches = path_report(pulls, source["records"], patterns)
+    matches = search(records, terms, args.all_terms) if any(t.strip() for t in terms) else []
+    if patterns and matches:
+        # With both axes given, a record must match at least one term and one path.
+        hits = {m["number"]: m["matched_paths"] for m in path_matches}
+        matches = [dict(m, matched_paths=hits[m.get("number")]) for m in matches
+                   if m.get("kind") == "pr" and m.get("number") in hits]
+    if patterns and not any(t.strip() for t in terms):
+        matches = []
     report = {"status": "POSSIBLE_OVERLAP_NOT_A_NOVELTY_CERTIFICATE", "searched_at": now(),
               "terms": terms, "coverage": coverage, "local_records": len(local), "warnings": warnings,
               "limits": "Remote PR scope is open PRs including drafts. Closed work is searched through local READMEs, TASK metadata and ledger only. No code diffs or arbitrary package files are searched. Recheck relevant heads before submission.",
               "matches_total": len(matches), "matches": matches[:args.limit]}
+    if patterns:
+        report["path_patterns"] = patterns
+        report["path_limits"] = ("Path matching covers the changed file paths GitHub reports for open PRs, "
+                                 "not diff contents; PRs beyond 100 changed files are flagged truncated.")
+        report["path_matches_total"] = len(path_matches)
+        report["path_matches"] = path_matches[:args.limit]
     if args.json_output:
         print(json.dumps(report, indent=2))
     else:
         print(report["status"])
         print("Coverage: " + json.dumps(coverage))
         print(report["limits"])
+        if patterns:
+            print(report["path_limits"])
         for warning in warnings:
             print("WARNING: " + warning)
         print(f"{len(matches)} possible matches; showing {min(args.limit, len(matches))}")
@@ -249,6 +342,15 @@ def main():
             if match.get("head"):
                 print("Head: " + match["head"])
             print(match["excerpt"])
+        if patterns:
+            print(f"\n{len(path_matches)} open PRs match paths {patterns}; "
+                  f"showing {min(args.limit, len(path_matches))}")
+            for match in path_matches[:args.limit]:
+                flags = " (file list truncated)" if match["truncated"] else ""
+                print(f"\n[pr {match['number']}] {match['title']}{flags}\n{match['url']}")
+                if match.get("head"):
+                    print("Head: " + match["head"])
+                print("Matched paths: " + ", ".join(match["matched_paths"]))
 
 
 if __name__ == "__main__":
