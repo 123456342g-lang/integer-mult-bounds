@@ -22,3 +22,9 @@ No pinned coordination issue was returned by the live GraphQL query. No reservat
 Selected context: PR1094, conditional kappa 836330098538459/500000000000000000, selected review docs/research/community-batch1099-review.md, source manifest research/community-frontier1094-audit/SELECTED-SOURCE.json. Main changed during orientation; selected record unchanged. Existing construction/compiler/hosting/precision/analytic obligations remain outside this side problem.
 
 Prepared for Ross Richardson with substantial OpenAI Codex assistance; no independent human review claimed. New work Apache-2.0.
+
+## Result — claim complete
+
+[PR1651](https://github.com/CrocSwap/integer-mult-bounds/pull/1651) submits one completed construction: four paid one-way transfers, twelve child queries, both dirty roots restored. Four is minimal at twelve signed queries for arbitrary fixed one-way shear coefficients over Q or C. The complete matched dense invoice improves, with no selected-supplier or kappa claim. The original mathematical package commit is `8450afe561333aa6ee1bb9108c3e4f854eaf19c1`.
+
+Python 3.12 registered replay, ordinary/optimized checks, independent matrix/tape checks, corruption/relocation tests, clean committed export, exact discovery replay and selected-record integrity pass locally. Hosted checks were queued on submission, not passed. The preceding scope is released. No pinned coordination issue existed, so this is the single local claim-result update.
