@@ -37,8 +37,8 @@
     "research/community-efficient900-audit/DISPOSITIONS.json"
   ],
   "counts": {
-    "incorporated": 1343,
-    "partially_reviewed": 235,
+    "incorporated": 1346,
+    "partially_reviewed": 232,
     "superseded": 1,
     "unreviewed": 60
   },
@@ -87,7 +87,7 @@
     "research/community-efficient600-audit/DISPOSITIONS.json": "0b5b7777073b61dcccd09ecfe01d24c0843e8294f0daf1a9f38f5aabdaa2e4f4",
     "research/community-efficient700-audit/DISPOSITIONS.json": "a49662d33eee2d1e1308815314fbe415f91496a8304620664fb991ec47ae4c31",
     "research/community-efficient800-audit/DISPOSITIONS.json": "d97825a16961faa81b42c0a2007bef86c39572172f229a8a903a45664a1c6247",
-    "research/community-efficient900-audit/DISPOSITIONS.json": "9bfbc7f7af2b1da961dd547259e8afa26eba477ed5ee04727fd7cc5cfe41e21b",
+    "research/community-efficient900-audit/DISPOSITIONS.json": "9b5a88b9932a06d397a9222ef5fcd6c5893af3b6a30b634bceb324e5f7ce0a3d",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec",
     "research/community-efficient300-audit/PARENT-EVIDENCE.json": "8d9e28ec3ece26b91ef5a297092697c341652853164477a4961c992151cec353"
   },
@@ -92899,16 +92899,20 @@
       "integration_location": [
         "research/complex-output-anchor-shared-product-seedcc5aed"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "178a293edbd162fe3ce13e81a97af921366bd100",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1907"
+      },
       "reviewed_head": "49b870f7a64f5f414208c3a82d4483b9cc95f5b8",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1907.json",
@@ -93273,16 +93277,20 @@
       "integration_location": [
         "research/connector-frame-rigidity"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "178a293edbd162fe3ce13e81a97af921366bd100",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1915"
+      },
       "reviewed_head": "d30d64fea909219c364b11c2452f2207326e2b1f",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1915.json",
@@ -94354,16 +94362,20 @@
       "integration_location": [
         "research/connector-frame-73-exclusion"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "178a293edbd162fe3ce13e81a97af921366bd100",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1945"
+      },
       "reviewed_head": "aa0de6522ecb1c22cd2ee435983b24dbd2842551",
-      "disposition": "partially_reviewed",
-      "unresolved_question": "Publication and live merge observation pending.",
+      "disposition": "incorporated",
+      "unresolved_question": null,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1945.json",
@@ -94571,7 +94583,7 @@
   ],
   "github_dispositions": {
     "CLOSED": 377,
-    "MERGED": 967,
-    "OPEN": 295
+    "MERGED": 970,
+    "OPEN": 292
   }
 }

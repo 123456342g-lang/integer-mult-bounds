@@ -1187,20 +1187,24 @@
       },
       "reviewed_head": "49b870f7a64f5f414208c3a82d4483b9cc95f5b8",
       "current_head": "49b870f7a64f5f414208c3a82d4483b9cc95f5b8",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/complex-output-anchor-shared-product-seedcc5aed"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "178a293edbd162fe3ce13e81a97af921366bd100",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1907"
+      },
       "scope": "Zero-output-anchor construction attains bilinear rank q and q child calls, with q-1 paid affine fanouts and dirty other outputs.18720 Boolean cases, symbolic widths2..112 and committed certificate equality pass. Eight112-port blocks and clean selected anchors remain hypothetical; profile ceiling is not a supplier gain.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1907.json",
@@ -1473,20 +1477,24 @@
       },
       "reviewed_head": "d30d64fea909219c364b11c2452f2207326e2b1f",
       "current_head": "d30d64fea909219c364b11c2452f2207326e2b1f",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/connector-frame-rigidity"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "178a293edbd162fe3ce13e81a97af921366bd100",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1915"
+      },
       "scope": "Generic map-independent one-connector phase normalization excludes72 map calls with arbitrary invertible frames and proves74/76 unit-token minima. Full dirty pilot16384cases, phase identities and odd-count restoration control pass. Does not exclude structured map-dependent charts or two connectors.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1915.json",
@@ -2290,20 +2298,24 @@
       },
       "reviewed_head": "aa0de6522ecb1c22cd2ee435983b24dbd2842551",
       "current_head": "aa0de6522ecb1c22cd2ee435983b24dbd2842551",
-      "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "disposition": "incorporated",
+      "github_state": "MERGED",
       "integration_location": [
         "research/connector-frame-73-exclusion"
       ],
-      "unresolved_question": "Publication and live merge observation pending.",
-      "closure": null,
+      "unresolved_question": null,
+      "closure": {
+        "kind": "merged",
+        "merge_commit": "178a293edbd162fe3ce13e81a97af921366bd100",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1945"
+      },
       "scope": "Two-case phase-locking proof excludes73 generic map calls, closing1915s precise question;74-call inherited word attains the bound.810810 exceptional-readout and51975 exceptional-source cases, independent dense checks and dirty-word mutation tests pass. Unequal-price optimum and selected implementation remain open.",
       "ready_to_integrate": true,
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
         "required_execution_complete": true,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "research/community-efficient900-audit/packets/1945.json",
