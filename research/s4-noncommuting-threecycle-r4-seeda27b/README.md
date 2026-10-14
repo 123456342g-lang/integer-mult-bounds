@@ -97,7 +97,14 @@ predecessor. Current related work at the final overlap refresh included PR
 #1720 (two identical 4-cycle targets at three roles) and PR #1734 (two
 identical double-transposition targets at three roles); this package changes
 both the target pair and register count. PR #1705 uses a different
-`F2[GL2(F2)]` address alphabet. The scoped coordination claim is
+`F2[GL2(F2)]` address alphabet. The live pre-submit refresh also found
+[PR #1742](https://github.com/CrocSwap/integer-mult-bounds/pull/1742), which
+settles a three-role \(UT_3(\mathbb F_2)\) D8 central-commutator target with
+labels \(x,y\) and a seven-call lower-bound search. That result has a
+different address group, alphabet, target pair, register count, and baseline;
+this package searches four roles over \(S_4\), with three adjacent
+transpositions and distinct noncommuting 3-cycle targets. The scoped
+coordination claim is
 [Discussion #1740](https://github.com/CrocSwap/integer-mult-bounds/discussions/1740).
 
 Run the exact finite search directly:

@@ -100,19 +100,25 @@
       "pr": 1705,
       "head": "ad6b7d641b3e8576a95add7981fa75b6a8278fbc",
       "relation": "four roles but a distinct F2[GL2(F2)] coordinate-SWAP alphabet"
+    },
+    {
+      "pr": 1742,
+      "head": "679f3624a0a41ed14942825dd7f413132412d1e3",
+      "relation": "distinct adjacent nonabelian scope: three-role UT3(F2) D8 central-commutator pair, labels {x,y}, direct length 8; current four-role S4 pair family has length 4 and a three-call exclusion"
     }
   ],
   "overlap": {
     "open_pr_count": 424,
-    "open_pr_refresh_utc": "2026-10-14T08:30:00Z",
-    "discussion_record_count": 380,
-    "discussion_refresh_utc": "2026-10-14T08:30:54Z",
-    "helper_search_utc": "2026-10-14T08:31:22Z",
+    "open_pr_refresh_utc": "2026-10-14T08:37:00Z",
+    "discussion_record_count": 383,
+    "discussion_refresh_utc": "2026-10-14T08:33:44Z",
+    "helper_search_utc": "2026-10-14T08:34:00Z",
     "matching_discussions": [
-      "#1740, this claim; #1740 scope-update comment 18919560"
+      "#1740, this claim; #1740 scope-update comment 18919560; #1740 D8/UT3 comparison comment 18919679"
     ],
-    "other_matching_claims": "none found in the complete current 380-record discussion snapshot",
-    "notes": "PR #1720 and #1734 are adjacent same-alphabet work but have three roles and different repeated target classes; PR #1705 uses another address group. Fresh REST found 424 open PRs; the three listed predecessor heads were unchanged."
+    "nearest_structural_discussion": "#1738, completed by PR #1742; D8/UT3 third dirty role, distinct group/alphabet/target/rank",
+    "other_exact_s4_four_role_claims": "none found in the complete current 383-record discussion snapshot",
+    "notes": "PR #1720 and #1734 use the same S4 alphabet at three roles with different repeated targets. PR #1742 is a recent structural neighbor but uses UT3(F2), two labels, a third role, and an eight-call central-commutator target. PR #1705 uses another address group. The 08:33 snapshot preceded the last comparison comment on this own claim; no external scope or search changed after refresh."
   },
   "local_claim": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1740; expires 2026-10-14T10:23:00Z",
   "validation": {

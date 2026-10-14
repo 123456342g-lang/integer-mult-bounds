@@ -32,8 +32,9 @@ Optimistically price every paid transposition call at one and scalar mixing, reg
 - PR #1720, head `edb4a289a5f32c8209140144e384dcd3fa8cbfd1`: two identical 4-cycle targets at three roles.
 - PR #1734, head `48855b620b23af3a7fe87d53bde05cd2211342c8`: two identical double-transposition targets at three roles.
 - PR #1705, head `ad6b7d641b3e8576a95add7981fa75b6a8278fbc`: four coordinate-SWAP targets over a different `F2[GL2(F2)]` alphabet at four registers.
+- PR #1742, head `679f3624a0a41ed14942825dd7f413132412d1e3`: three-role `UT3(F2)` D8 central-commutator pair with labels `{x,y}` and a seven-call lower-bound search; the group, alphabet, target, role count, and call floor differ from this four-role S4 family.
 
-The final REST refresh at 08:30 UTC covered 424 open PRs. The complete Discussions overlap snapshot covered 380 records at 08:30:54 UTC; the only matching thread is this claim, #1740, including its scope-update comment. The S4 predecessor PRs above are related but use different targets and only three roles. The initial focused target was `diag([s1*s2],[s2*s3],[e],[e])`; the exact radius-three search was then extended over the full eight-pair family without changing the alphabet or method.
+The pre-submit REST refresh at 08:37 UTC covered 424 open PRs. The complete Discussions overlap snapshot covered 383 records at 08:33:44 UTC; this claim and its two update comments are the only exact S4 four-role matches. Discussion #1738 / PR #1742 is a structurally related D8 third-role result with a distinct group, target, alphabet, and search depth. The S4 predecessor PRs above are related but use different targets and only three roles. The initial focused target was `diag([s1*s2],[s2*s3],[e],[e])`; the exact radius-three search was then extended over the full eight-pair family without changing the alphabet or method.
 
 ## Expected handoff
 
