@@ -1,5 +1,7 @@
 # The two-register D16 central pair requires 16 paid calls
 
+Review: [PR #1821](https://github.com/CrocSwap/integer-mult-bounds/pull/1821). Coordination handoff: [Discussion #1818](https://github.com/CrocSwap/integer-mult-bounds/discussions/1818).
+
 ## Result and exact model
 
 Let

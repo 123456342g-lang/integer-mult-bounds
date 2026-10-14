@@ -80,5 +80,7 @@
     "supplier_mapping": "not established; no kappa claim"
   },
   "overlap_snapshot": "research/bit-d16-central-pair-seed1f8b/OVERLAP.json",
-  "final_overlap_refreshed_at": "2026-10-14T10:51:15Z"
+  "final_overlap_refreshed_at": "2026-10-14T10:51:15Z",
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/1821",
+  "discussion_handoff": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1818#discussioncomment-18922194"
 }
