@@ -63,6 +63,12 @@ clears exactly those incident pairs and equals the genexpr. A mutant that uses
 rejected by the package controls. Support and topology checks remain the
 historical `assert` gates.
 
+## Companion rewrite
+
+The sibling reverse-frame genexpr in `ExclusionCircuit.verify_embedding` is
+rewritten in the same production file and packaged as
+`research/exclusion-embedding-masks/` (same four certificate pins, one re-hash).
+
 ## Open next questions
 
 1. **Question:** Should `research/bit-compression-provenance` and other packages
@@ -75,13 +81,7 @@ historical `assert` gates.
    **Blocked by:** Pin repair outside the four binding certificates is outside
    this tooling change.
 
-2. **Question:** Is `ExclusionCircuit.verify_embedding`'s reverse-frame
-   expected-support sum worth a separate identical-receipt rewrite?
-   **Why it matters:** It is a different object from the `verify` leave-two-out
-   path measured here.
-   **First step:** Profile `ExclusionCircuit(45).verify_embedding` alone and
-   prototype a closed-form reverse mask if one matches the historical bits.
-   **Blocked by:** Out of this session’s stop rule.
+2. **Answered in-tree:** `ExclusionCircuit.verify_embedding` reverse-frame closed form lands in the same production file as `research/exclusion-embedding-masks/` (identical receipts; one re-pin).
 
 ## Overlap and credit
 
