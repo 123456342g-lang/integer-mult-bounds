@@ -17,7 +17,6 @@
     }
   ],
   "inputs": [
-    "docs/research/agent-task-catalog.json",
     "research/format-limits/scripts/c6_asym.py",
     "research/format-limits/scripts/e8units.py",
     "research/p120-calibrated-two-target-seed51/certificate.tsv"
