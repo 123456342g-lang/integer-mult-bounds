@@ -128,4 +128,4 @@ Shared metadata appends are reconciled explicitly rather than replacing the curr
 
 ## Open next questions
 
-Complete overlapping supplier admissions and reconcile their historical versions; finish timed-out exact domains and correct the specific missing-source, stale-pin and overbroad-claim findings. Continue the authorized queue reconciliation in batches of 100 through #1600. No new κ is announced by this round.
+Complete the pending PR1319 family admission, the dedicated Lean review and the full two-transport census; correct the specific threshold, proof-factor and overbroad-claim findings. Continue the authorized queue reconciliation in batches of 100 through #1600. No new κ is announced by this round.
