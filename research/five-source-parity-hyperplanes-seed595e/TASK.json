@@ -99,7 +99,9 @@
       "PR1531": "two-source toggle DUO source connector alphabet extension",
       "Discussion1579": "common-B all-mask endpoint with unequal readout prices"
     },
-    "overlap_status": "Final selected-scope refresh completed all PR and Discussion pagination, 460 open PRs and 434 Discussions, with no exact parity-hyperplane family match. Query terms and warning-free result are recorded below."
+    "overlap_status": "Final selected-scope refresh completed all PR and Discussion pagination, 460 open PRs and 434 Discussions, with no exact parity-hyperplane family match. Query terms and warning-free result are recorded below.",
+    "result_update_location": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18921770",
+    "pr_location": "https://github.com/CrocSwap/integer-mult-bounds/pull/1811"
   },
   "overlap_checks": [
     {
@@ -160,5 +162,5 @@
     "reproduce": "make frontier1094-verify",
     "baseline_status": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY"
   },
-  "publication_status": "Final pre-submission overlap refreshed with complete pagination; only this task claim and local package matched. Focused PR creation and claim result update are pending."
+  "publication_status": "Focused PR #1811 opened from commit 419b3775; status OPEN at handoff. Result update posted as a reply to the original claim in Discussion #1163."
 }

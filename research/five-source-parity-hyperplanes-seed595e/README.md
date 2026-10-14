@@ -89,8 +89,12 @@ The selector's centre-path-sharing suggestion was not chosen because of the
 active work in Discussion #1516 and PR1708/PR1748. Persistent-boundary work was
 not chosen because of current claims and PRs including #1163 and #1776. The
 connector-alphabet suggestion was refined because the source-side alphabet
-extensions are already crowded. The exact claim is in
-[Discussion #1163](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18921524).
+extensions are already crowded. The original claim is in
+[Discussion #1163](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18921524);
+the result update is
+[here](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163#discussioncomment-18921770).
+The focused package is under review in
+[PR #1811](https://github.com/CrocSwap/integer-mult-bounds/pull/1811).
 
 Prepared by Cinna Davis with substantial OpenAI Codex assistance in scope
 selection, derivation, implementation, checking and writing. This is not
