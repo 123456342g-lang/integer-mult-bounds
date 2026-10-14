@@ -81,6 +81,20 @@
       "head": "538d194e69420a6a773612e0b5ad0c94575f8aaa",
       "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1870",
       "use": "Exact S3 target-pair census; group and target are different."
+    },
+    {
+      "pr": 1941,
+      "head": "5938ce3e91bbb8b5c2227af7976d444b2fbac7d4",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1941",
+      "use": "Sharp finite-dihedral tariff for all even rotation orders; explicitly leaves odd periods out, so it does not cover D10 with rotation order five."
+    }
+  ],
+  "external_discussions": [
+    {
+      "discussion": 1929,
+      "comment": 18925900,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1929#discussioncomment-18925900",
+      "use": "Original claim for PR #1941 covers finite dihedral groups with even rotation order; this package fixes odd rotation order five and the noncentral inverse-rotation endpoint."
     }
   ]
 }
