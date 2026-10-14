@@ -20,7 +20,6 @@ def need(ok, message):
 
 
 def run(args, cwd, expect_ok):
-    import os
     env = {k: v for k, v in os.environ.items() if k != "PYTHONOPTIMIZE"}
     proc = subprocess.run(args, cwd=cwd, capture_output=True, text=True, env=env)
     ok = proc.returncode == 0 and "PASS_H2SEM_COPYSHARE_PRICED" in proc.stdout
