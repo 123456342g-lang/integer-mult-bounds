@@ -67,7 +67,7 @@
     "research/community-reconciliation92-audit/DISPOSITIONS.json": "5dafbc374822ed60d67da35fcdb27127c71ad839acec7b68a206c5229d45ba11",
     "research/community-reconciliation-next100-audit/DISPOSITIONS.json": "de8d4f4026b86e5e59d5945d0b865de16c6886aa013451a2e3c117665bd95b51",
     "research/community-reconciliation-third100-audit/DISPOSITIONS.json": "dbd7051bd339005e1bd5c11e296965fda0e267dfc09136d9e4cf0ecb17976b89",
-    "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json": "2a9613d9ff3ff5869d78b3f7f1e4d6c8c54d65f485c6d622319edc1e8308fcb0",
+    "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json": "32420873bcfee2fee6dd0d74435cfe026ad0f97688696e5794120bf2457f4caa",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec"
   },
   "scope": "Reconciliation index, not blanket mathematical verification. Partial includes triage or scoped checks; mentions alone are not review. Integrated archives are distinguished from active implementations. No automatic closures.",
@@ -29185,9 +29185,19 @@
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "closedAt": "2026-10-14T02:43:14Z",
+        "headRefOid": "3e89db7725785f8e8e172d04d1d4804f57db72f3",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 457,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/457",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/457#issuecomment-6159706225",
+        "integration_commit": "459f9dbdf41ea86f17fa21a6c71df00010a62c9b"
+      },
       "current_head_observed_in": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
       "reviewed_head": "3e89db7725785f8e8e172d04d1d4804f57db72f3",
       "review_completion": {
@@ -30120,9 +30130,19 @@
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "closedAt": "2026-10-14T02:43:20Z",
+        "headRefOid": "e850569c33ad1d5771e2f8b1c6dfe7a445396167",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 476,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/476",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/476#issuecomment-6159707253",
+        "integration_commit": "459f9dbdf41ea86f17fa21a6c71df00010a62c9b"
+      },
       "current_head_observed_in": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
       "reviewed_head": "e850569c33ad1d5771e2f8b1c6dfe7a445396167",
       "review_completion": {
@@ -30194,15 +30214,15 @@
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
       "github_state": "OPEN",
-      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/local-478/research/tensor-r715-next/verify.py\", line 16, in <module>\n    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]\n    ~~~~~~~~~^^\n  File \"/tmp/reconciliation-fourth100-20261013/local-478/research/tensor-r715-next/verify.py\", line 15, in integrity\n    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Package manifest mismatch\n",
+      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
       "closure": null,
       "current_head_observed_in": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
       "reviewed_head": "bea1d52fd330c699903f81612ee58be81697d1eb",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
-        "required_execution_complete": false,
-        "published": true
+        "required_execution_complete": true,
+        "published": false
       },
       "verification_evidence": [
         {
@@ -32222,9 +32242,19 @@
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "unresolved_question": null,
-      "closure": null,
+      "closure": {
+        "closedAt": "2026-10-14T02:43:26Z",
+        "headRefOid": "6590606e733768f6a7004b3f55ae35f988ba515f",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 515,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/515",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/515#issuecomment-6159708411",
+        "integration_commit": "459f9dbdf41ea86f17fa21a6c71df00010a62c9b"
+      },
       "current_head_observed_in": "research/community-reconciliation-fourth100-audit/DISPOSITIONS.json",
       "reviewed_head": "6590606e733768f6a7004b3f55ae35f988ba515f",
       "review_completion": {
@@ -38311,12 +38341,12 @@
       "closure": null,
       "reviewed_head": "a6895a69f8ad98ab45777b03e9e6f48888c39f6f",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-635/research/complex-571-cold14-st2/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n",
+      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
-        "required_execution_complete": false,
-        "published": true
+        "required_execution_complete": true,
+        "published": false
       },
       "verification_evidence": [
         {
@@ -38453,12 +38483,12 @@
       "closure": null,
       "reviewed_head": "4edb0dda99c495141cc56ae6e8a74e632a74db8a",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-637/research/complex-571-cold14-st2u4/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n",
+      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
-        "required_execution_complete": false,
-        "published": true
+        "required_execution_complete": true,
+        "published": false
       },
       "verification_evidence": [
         {
@@ -39564,8 +39594,18 @@
         "research/community-reconciliation-fourth100-audit/REVIEW.json",
         "docs/research/community-reconciliation-fourth100-review.md"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "CLOSED",
+      "closure": {
+        "closedAt": "2026-10-14T02:43:31Z",
+        "headRefOid": "3e669dc7987cb2295a71664b77e110c0cd979a87",
+        "isDraft": false,
+        "mergedAt": null,
+        "number": 655,
+        "state": "CLOSED",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/655",
+        "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/655#issuecomment-6159709356",
+        "integration_commit": "459f9dbdf41ea86f17fa21a6c71df00010a62c9b"
+      },
       "reviewed_head": "3e669dc7987cb2295a71664b77e110c0cd979a87",
       "disposition": "incorporated",
       "unresolved_question": null,
@@ -39639,12 +39679,12 @@
       "closure": null,
       "reviewed_head": "0805e78f5fecc700804d4766d7e3e1d7d7e6a2ba",
       "disposition": "partially_reviewed",
-      "unresolved_question": "Required contributed-package replay is still running; no completed execution is claimed.",
+      "unresolved_question": "Review ready; publish review and source-retention tag before closure.",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
-        "required_execution_complete": false,
-        "published": true
+        "required_execution_complete": true,
+        "published": false
       },
       "verification_evidence": [
         {
@@ -50552,8 +50592,8 @@
     535
   ],
   "github_dispositions": {
-    "CLOSED": 358,
+    "CLOSED": 362,
     "MERGED": 287,
-    "OPEN": 116
+    "OPEN": 112
   }
 }

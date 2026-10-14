@@ -198,6 +198,25 @@
       "retained_log": "logs/pr476-repaired.txt.gz"
     },
     {
+      "number": 478,
+      "head": "bea1d52fd330c699903f81612ee58be81697d1eb",
+      "command": [
+        "/tmp/integer-mult-review-venv/bin/python",
+        "-B",
+        "/tmp/reconciliation-fourth100-20261013/repaired-478/research/tensor-r715-next/verify.py",
+        "/tmp/reconciliation-fourth100-20261013/repaired-478-out"
+      ],
+      "cwd": "/tmp/reconciliation-fourth100-20261013/repaired-478",
+      "exit_code": 0,
+      "seconds": 823.3853130340576,
+      "log": "pr478-repaired.txt",
+      "sha256": "d10eef755d218c0c7e789727d565194a1a1894a2a9a3f61c3f4858cb72769939",
+      "environment": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+      "scope": "Fresh unmodified contributed package wrapper; inherited cited suppliers and assumptions retain its explicit scope.",
+      "receipt_group": "local-repair",
+      "retained_log": "logs/pr478-repaired.txt.gz"
+    },
+    {
       "number": 505,
       "head": "4ee769c8e28837482272b5f4742497da8e2fc9d4",
       "command": [
@@ -1475,6 +1494,150 @@
       "retained_log": "logs/pr627-cold-retry.txt.gz"
     },
     {
+      "number": 635,
+      "head": "a6895a69f8ad98ab45777b03e9e6f48888c39f6f",
+      "command": [
+        "/tmp/integer-mult-review-venv/bin/python",
+        "-B",
+        "/tmp/reconciliation-fourth100-20261013/cold-retry-635/research/complex-571-cold14-st2/verify.py",
+        "--work",
+        "/tmp/reconciliation-fourth100-20261013/cold-retry-635-out",
+        "--jobs",
+        "2",
+        "--source",
+        "multicold=/tmp/reconciliation-fourth100-20261013/cold-deps/multicold/research/complex-multicold",
+        "--source",
+        "structural_gain=/tmp/reconciliation-fourth100-20261013/cold-deps/structural_gain/research/structural-gain",
+        "--source",
+        "larger_gain=/tmp/reconciliation-fourth100-20261013/cold-deps/larger_gain/research/larger-gain",
+        "--source",
+        "joint_prefix=/tmp/reconciliation-fourth100-20261013/cold-deps/joint_prefix/research/complex-joint-prefix",
+        "--source",
+        "frame_coalescing=/tmp/reconciliation-fourth100-20261013/cold-deps/frame_coalescing/research/kernel-frame-coalescing",
+        "--source",
+        "direct_delivery=/tmp/reconciliation-fourth100-20261013/cold-deps/direct_delivery/research/direct-delivery504-global"
+      ],
+      "dependencies": [
+        {
+          "name": "multicold",
+          "path": "/tmp/reconciliation-fourth100-20261013/cold-deps/multicold/research/complex-multicold",
+          "expected_manifest": "328ce8023d33deb308b0f1ae2320424050f836d791cf60a613ae8408e7d6f3ab",
+          "actual_manifest": "328ce8023d33deb308b0f1ae2320424050f836d791cf60a613ae8408e7d6f3ab"
+        },
+        {
+          "name": "structural_gain",
+          "path": "/tmp/reconciliation-fourth100-20261013/cold-deps/structural_gain/research/structural-gain",
+          "expected_manifest": "eb0499a927665a48a25355075dcb7dc76d0fc43c67ea6d311d9e0242b6d4a25d",
+          "actual_manifest": "eb0499a927665a48a25355075dcb7dc76d0fc43c67ea6d311d9e0242b6d4a25d"
+        },
+        {
+          "name": "larger_gain",
+          "path": "/tmp/reconciliation-fourth100-20261013/cold-deps/larger_gain/research/larger-gain",
+          "expected_manifest": "54d67f45ad520f4a134e069336bd0ff639aaeada28d13539298e4f2655c9692d",
+          "actual_manifest": "54d67f45ad520f4a134e069336bd0ff639aaeada28d13539298e4f2655c9692d"
+        },
+        {
+          "name": "joint_prefix",
+          "path": "/tmp/reconciliation-fourth100-20261013/cold-deps/joint_prefix/research/complex-joint-prefix",
+          "expected_manifest": "fd30701bd9bd652985db18fa95bee08a34615ef417a2feb2f55efd60a0b5d665",
+          "actual_manifest": "fd30701bd9bd652985db18fa95bee08a34615ef417a2feb2f55efd60a0b5d665"
+        },
+        {
+          "name": "frame_coalescing",
+          "path": "/tmp/reconciliation-fourth100-20261013/cold-deps/frame_coalescing/research/kernel-frame-coalescing",
+          "expected_manifest": "f336fd702c54422d79c1b9ba7d8699ae6c99518f66a5b5bbc5f3be331fa1fadd",
+          "actual_manifest": "f336fd702c54422d79c1b9ba7d8699ae6c99518f66a5b5bbc5f3be331fa1fadd"
+        },
+        {
+          "name": "direct_delivery",
+          "path": "/tmp/reconciliation-fourth100-20261013/cold-deps/direct_delivery/research/direct-delivery504-global",
+          "expected_manifest": "c1997405c5c0ccd9bdb0a30b0eb9a5a2dc7dc7ce7b59c6a83a2152b80f6410d1",
+          "actual_manifest": "c1997405c5c0ccd9bdb0a30b0eb9a5a2dc7dc7ce7b59c6a83a2152b80f6410d1"
+        }
+      ],
+      "cwd": "/tmp/reconciliation-fourth100-20261013/cold-retry-635",
+      "exit_code": 0,
+      "seconds": 1620.188843011856,
+      "log": "pr635-cold-retry.txt",
+      "sha256": "6a2556523467c0f8ca4b4ce2498a34f7ee4639492859ac338313ec377691b1f4",
+      "environment": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+      "scope": "Fresh full spec-driven replay with exact pinned source dependencies; cited bit primitive remains as stated.",
+      "receipt_group": "cold-retry",
+      "retained_log": "logs/pr635-cold-retry.txt.gz"
+    },
+    {
+      "number": 637,
+      "head": "4edb0dda99c495141cc56ae6e8a74e632a74db8a",
+      "command": [
+        "/tmp/integer-mult-review-venv/bin/python",
+        "-B",
+        "/tmp/reconciliation-fourth100-20261013/cold-retry-637/research/complex-571-cold14-st2u4/verify.py",
+        "--work",
+        "/tmp/reconciliation-fourth100-20261013/cold-retry-637-out",
+        "--jobs",
+        "2",
+        "--source",
+        "multicold=/tmp/reconciliation-fourth100-20261013/cold-deps/multicold/research/complex-multicold",
+        "--source",
+        "structural_gain=/tmp/reconciliation-fourth100-20261013/cold-deps/structural_gain/research/structural-gain",
+        "--source",
+        "larger_gain=/tmp/reconciliation-fourth100-20261013/cold-deps/larger_gain/research/larger-gain",
+        "--source",
+        "joint_prefix=/tmp/reconciliation-fourth100-20261013/cold-deps/joint_prefix/research/complex-joint-prefix",
+        "--source",
+        "frame_coalescing=/tmp/reconciliation-fourth100-20261013/cold-deps/frame_coalescing/research/kernel-frame-coalescing",
+        "--source",
+        "direct_delivery=/tmp/reconciliation-fourth100-20261013/cold-deps/direct_delivery/research/direct-delivery504-global"
+      ],
+      "dependencies": [
+        {
+          "name": "multicold",
+          "path": "/tmp/reconciliation-fourth100-20261013/cold-deps/multicold/research/complex-multicold",
+          "expected_manifest": "328ce8023d33deb308b0f1ae2320424050f836d791cf60a613ae8408e7d6f3ab",
+          "actual_manifest": "328ce8023d33deb308b0f1ae2320424050f836d791cf60a613ae8408e7d6f3ab"
+        },
+        {
+          "name": "structural_gain",
+          "path": "/tmp/reconciliation-fourth100-20261013/cold-deps/structural_gain/research/structural-gain",
+          "expected_manifest": "eb0499a927665a48a25355075dcb7dc76d0fc43c67ea6d311d9e0242b6d4a25d",
+          "actual_manifest": "eb0499a927665a48a25355075dcb7dc76d0fc43c67ea6d311d9e0242b6d4a25d"
+        },
+        {
+          "name": "larger_gain",
+          "path": "/tmp/reconciliation-fourth100-20261013/cold-deps/larger_gain/research/larger-gain",
+          "expected_manifest": "54d67f45ad520f4a134e069336bd0ff639aaeada28d13539298e4f2655c9692d",
+          "actual_manifest": "54d67f45ad520f4a134e069336bd0ff639aaeada28d13539298e4f2655c9692d"
+        },
+        {
+          "name": "joint_prefix",
+          "path": "/tmp/reconciliation-fourth100-20261013/cold-deps/joint_prefix/research/complex-joint-prefix",
+          "expected_manifest": "fd30701bd9bd652985db18fa95bee08a34615ef417a2feb2f55efd60a0b5d665",
+          "actual_manifest": "fd30701bd9bd652985db18fa95bee08a34615ef417a2feb2f55efd60a0b5d665"
+        },
+        {
+          "name": "frame_coalescing",
+          "path": "/tmp/reconciliation-fourth100-20261013/cold-deps/frame_coalescing/research/kernel-frame-coalescing",
+          "expected_manifest": "f336fd702c54422d79c1b9ba7d8699ae6c99518f66a5b5bbc5f3be331fa1fadd",
+          "actual_manifest": "f336fd702c54422d79c1b9ba7d8699ae6c99518f66a5b5bbc5f3be331fa1fadd"
+        },
+        {
+          "name": "direct_delivery",
+          "path": "/tmp/reconciliation-fourth100-20261013/cold-deps/direct_delivery/research/direct-delivery504-global",
+          "expected_manifest": "c1997405c5c0ccd9bdb0a30b0eb9a5a2dc7dc7ce7b59c6a83a2152b80f6410d1",
+          "actual_manifest": "c1997405c5c0ccd9bdb0a30b0eb9a5a2dc7dc7ce7b59c6a83a2152b80f6410d1"
+        }
+      ],
+      "cwd": "/tmp/reconciliation-fourth100-20261013/cold-retry-637",
+      "exit_code": 0,
+      "seconds": 1334.1109519004822,
+      "log": "pr637-cold-retry.txt",
+      "sha256": "11cdf33673340d673660df4f682870315cf6e1b1a1d88e72dc277871a898388c",
+      "environment": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+      "scope": "Fresh full spec-driven replay with exact pinned source dependencies; cited bit primitive remains as stated.",
+      "receipt_group": "cold-retry",
+      "retained_log": "logs/pr637-cold-retry.txt.gz"
+    },
+    {
       "number": 648,
       "head": "52b3fc87653a19a024d74144f6c4dc453ffd69cb",
       "commands": [
@@ -1673,6 +1836,74 @@
       "scope": "Fresh reconstructed local phases and complete global admission under source-pinned dependencies; unchanged bit is cited and repriced.",
       "receipt_group": "gauge",
       "retained_log": "logs/pr655-gauge.txt.gz"
+    },
+    {
+      "number": 656,
+      "head": "0805e78f5fecc700804d4766d7e3e1d7d7e6a2ba",
+      "commands": [
+        [
+          "/tmp/integer-mult-review-venv/bin/python",
+          "-B",
+          "/tmp/reconciliation-fourth100-20261013/gauge-656/research/gauge44-layered-b/verify_manifest.py"
+        ],
+        [
+          "/tmp/integer-mult-review-venv/bin/python",
+          "-B",
+          "/tmp/reconciliation-fourth100-20261013/gauge-656/research/gauge44-layered-b/construction/reproduce.py",
+          "--main",
+          "/tmp/integer-mult-queue-20261013",
+          "--pr635",
+          "/tmp/reconciliation-fourth100-20261013/cold-635",
+          "--out",
+          "/tmp/reconciliation-fourth100-20261013/gauge-656-out/base",
+          "--until",
+          "word"
+        ],
+        [
+          "/tmp/integer-mult-review-venv/bin/python",
+          "-B",
+          "/tmp/reconciliation-fourth100-20261013/gauge-656/research/gauge44-layered-b/construction/layers/reproduce_layers.py",
+          "--main",
+          "/tmp/integer-mult-queue-20261013",
+          "--pr635",
+          "/tmp/reconciliation-fourth100-20261013/cold-635",
+          "--word-dir",
+          "/tmp/reconciliation-fourth100-20261013/gauge-656-out/base",
+          "--out",
+          "/tmp/reconciliation-fourth100-20261013/gauge-656-out/layered"
+        ],
+        [
+          "/tmp/integer-mult-review-venv/bin/python",
+          "-B",
+          "/tmp/reconciliation-fourth100-20261013/gauge-656/research/gauge44-layered-b/independent/audit_local.py",
+          "--word",
+          "/tmp/reconciliation-fourth100-20261013/gauge-656-out/layered/layers/FULL-WORD.json.gz",
+          "--main",
+          "/tmp/integer-mult-queue-20261013",
+          "--output",
+          "/tmp/reconciliation-fourth100-20261013/gauge-656-out/independent.json"
+        ],
+        [
+          "/tmp/integer-mult-review-venv/bin/python",
+          "-B",
+          "/tmp/reconciliation-fourth100-20261013/gauge-656/research/gauge44-layered-b/verify_global.py",
+          "--main",
+          "/tmp/integer-mult-queue-20261013",
+          "--local",
+          "/tmp/reconciliation-fourth100-20261013/gauge-656-out/layered/local",
+          "--work",
+          "/tmp/reconciliation-fourth100-20261013/gauge-656-out/global"
+        ]
+      ],
+      "cwd": "/tmp/reconciliation-fourth100-20261013/gauge-656",
+      "exit_code": 0,
+      "seconds": 601.1307802200317,
+      "log": "pr656-gauge.txt",
+      "sha256": "2198c9ee4c05032f78f39a6761798c1db15feb84ff23d7d79d69af25b130ad11",
+      "environment": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+      "scope": "Fresh reconstructed local phases and complete global admission under source-pinned dependencies; unchanged bit is cited and repriced.",
+      "receipt_group": "gauge",
+      "retained_log": "logs/pr656-gauge.txt.gz"
     },
     {
       "number": 521,

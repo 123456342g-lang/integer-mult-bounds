@@ -159,7 +159,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        17
+        18
       ],
       "ci_jobs": [],
       "remaining": null
@@ -222,7 +222,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        18
+        19
       ],
       "ci_jobs": [],
       "remaining": null
@@ -472,7 +472,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        19
+        20
       ],
       "ci_jobs": [],
       "remaining": null
@@ -674,13 +674,15 @@
     "mechanism": "Fourteen target factors on the reordered R715 word.",
     "scope_and_limits": "Ranks one and four coalesce into rank five only at certified legal cuts. The unchanged complex component may be reused only with exact implementation/output bindings.",
     "evidence": {
-      "mode": "incomplete; retained diagnostics",
-      "fresh_receipt_indices": [],
+      "mode": "fresh scoped replay or report check",
+      "fresh_receipt_indices": [
+        10
+      ],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/local-478/research/tensor-r715-next/verify.py\", line 16, in <module>\n    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]\n    ~~~~~~~~~^^\n  File \"/tmp/reconciliation-fourth100-20261013/local-478/research/tensor-r715-next/verify.py\", line 15, in integrity\n    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Package manifest mismatch\n"
+      "remaining": null
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/local-478/research/tensor-r715-next/verify.py\", line 16, in <module>\n    integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]\n    ~~~~~~~~~^^\n  File \"/tmp/reconciliation-fourth100-20261013/local-478/research/tensor-r715-next/verify.py\", line 15, in integrity\n    assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Package manifest mismatch\n"
+    "remaining": null
   },
   "479": {
     "head": "40dd01058439cdffae3e3b41c4fe52edaccf5f91",
@@ -980,7 +982,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        54
+        58
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1022,7 +1024,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        16
+        17
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1064,7 +1066,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        50
+        54
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1106,7 +1108,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        12
+        13
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1127,7 +1129,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        39
+        43
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1148,7 +1150,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        13
+        14
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1211,7 +1213,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        14
+        15
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1253,7 +1255,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        51
+        55
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1274,7 +1276,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        52
+        56
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1295,7 +1297,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        34
+        35
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1337,7 +1339,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        33
+        34
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1358,7 +1360,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        40
+        44
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1379,7 +1381,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        41
+        45
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1457,13 +1459,15 @@
     "mechanism": "Combination of h4a and two factored cold ends.",
     "scope_and_limits": "The interaction requires re-derived premixes and absorption repairs, not addition of separate savings. Full declarative reconstruction, dirty-state admission and ownership remain required.",
     "evidence": {
-      "mode": "incomplete; retained diagnostics",
-      "fresh_receipt_indices": [],
+      "mode": "fresh scoped replay or report check",
+      "fresh_receipt_indices": [
+        36
+      ],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-635/research/complex-571-cold14-st2/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+      "remaining": null
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-635/research/complex-571-cold14-st2/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+    "remaining": null
   },
   "636": {
     "head": "679621828a85bac68af869fb0e55b54508e6b14b",
@@ -1495,13 +1499,15 @@
     "mechanism": "Four additional premix-only dimension-eight ends.",
     "scope_and_limits": "No forward construction change is needed, but factored accumulators and every distinct terminal frame retain mutation controls. No general optimality claim.",
     "evidence": {
-      "mode": "incomplete; retained diagnostics",
-      "fresh_receipt_indices": [],
+      "mode": "fresh scoped replay or report check",
+      "fresh_receipt_indices": [
+        37
+      ],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-637/research/complex-571-cold14-st2u4/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+      "remaining": null
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay has not completed successfully. Latest direct evidence: Traceback (most recent call last):\n  File \"/tmp/reconciliation-fourth100-20261013/cold-637/research/complex-571-cold14-st2u4/verify.py\", line 39, in <module>\n    assert sha(root/'MANIFEST.json')==src['manifest_sha256'],name+' manifest pin'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: larger_gain manifest pin\n"
+    "remaining": null
   },
   "638": {
     "head": "a77f4a358b5129cda3e510a11a7f9a818aba5274",
@@ -1689,7 +1695,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        35
+        38
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1710,7 +1716,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        36
+        39
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1750,7 +1756,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        37
+        40
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1792,7 +1798,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        38
+        41
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1811,13 +1817,15 @@
     "mechanism": "Joint two-call owner map on the layered word.",
     "scope_and_limits": "Every construction/code file remains fixed; new ownership changes the actual moment. Credit the prior joint-call search mechanism and this distinct witness.",
     "evidence": {
-      "mode": "incomplete; retained diagnostics",
-      "fresh_receipt_indices": [],
+      "mode": "fresh scoped replay or report check",
+      "fresh_receipt_indices": [
+        42
+      ],
       "ci_jobs": [],
-      "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+      "remaining": null
     },
     "acceptance": "Historical contribution and scoped research/verification record; no selected-frontier update or full-theorem verification.",
-    "remaining": "Required contributed-package replay is still running; no completed execution is claimed."
+    "remaining": null
   },
   "657": {
     "head": "7bb75c269abeb0d8c850c99c7de3a978019cd7c1",
@@ -1912,7 +1920,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        47
+        51
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1933,7 +1941,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        43
+        47
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1973,7 +1981,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        48
+        52
       ],
       "ci_jobs": [],
       "remaining": null
@@ -1994,7 +2002,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        49
+        53
       ],
       "ci_jobs": [],
       "remaining": null
@@ -2015,7 +2023,7 @@
     "evidence": {
       "mode": "fresh scoped replay or report check",
       "fresh_receipt_indices": [
-        46
+        50
       ],
       "ci_jobs": [],
       "remaining": null

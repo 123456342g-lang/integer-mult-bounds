@@ -120,6 +120,8 @@ def main():
         require(mismatch==[f['path'] for f in row['mismatches']], 'CI source comparison differs')
         require(row['all_submitted_files_match']==(not mismatch), 'CI match status differs')
         require(not row.get('changed_file_mismatches') or row['usage'].startswith('Excluded:'), 'Unreviewed changed-source CI differences')
+        allowed = (n==628 and set(mismatch)=={'docs/research/community-k492-integration.json','docs/research/pr-ledger.json','research/community-k492-audit/DISPOSITIONS.json'}) or (n==660 and set(mismatch)=={'CONTRIBUTING.md'})
+        require(not mismatch or allowed or row['usage'].startswith('Excluded:'), 'Unreviewed CI dependency differences')
     coverage=load('EXECUTION-COVERAGE.json')
     execution=load('EXECUTION.json')['receipts']
     ci_jobs={log['job']:(row,log) for row in load('CI-EVIDENCE.json.gz') for log in row['inspected_logs'] if log['conclusion']=='success'}

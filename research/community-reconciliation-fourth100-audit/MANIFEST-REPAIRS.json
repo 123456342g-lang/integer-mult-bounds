@@ -27,6 +27,15 @@
     "repair": "Remove only absent .gitattributes checkout metadata; all present source/data pins exact"
   },
   {
+    "number": 483,
+    "head": "3738c3ce2d04d6a6c6363408ff9402286f592bc7",
+    "manifest_path": "research/tensor-response-r715/MANIFEST.json",
+    "original_sha256": "5a42227bc1e6f5dd4b41308eda1ff42f7937345d7f05693426d45bc6b5c9608f",
+    "missing_metadata_hash": "e4743c834e8463aab8324390a67b1b3c7fdfe2e2b553948aaa5e8e98b31b3b8c",
+    "repaired_sha256": "eb56621ed3de3f712237a11d05b3dfb87bdaa4cd33428c29eb55203f95d59fcb",
+    "repair": "Remove only absent .gitattributes checkout metadata; all present source/data pins exact"
+  },
+  {
     "number": 505,
     "head": "4ee769c8e28837482272b5f4742497da8e2fc9d4",
     "manifest_path": "research/asynchronous-whole-owners/MANIFEST.json",
