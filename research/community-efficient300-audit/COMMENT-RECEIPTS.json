@@ -684,5 +684,19 @@
     "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1208#issuecomment-6161632535",
     "id": 6161632535,
     "github_state": "MERGED"
+  },
+  {
+    "number": 1156,
+    "reviewed_head": "3bd6e27188b263a9b3dc1f1f41229c3989c405fd",
+    "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1156#issuecomment-6161695983",
+    "id": 6161695983,
+    "github_state": "OPEN"
+  },
+  {
+    "number": 1193,
+    "reviewed_head": "4e392e90e3fca8f395e35d6a23644920160a9f0f",
+    "comment_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1193#issuecomment-6161696373",
+    "id": 6161696373,
+    "github_state": "OPEN"
   }
 ]
