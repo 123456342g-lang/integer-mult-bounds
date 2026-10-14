@@ -42,7 +42,7 @@ The certificate records exact source hashes, the rank histogram, the selected re
 
 ## Overlap and provenance
 
-The selector accepted seed `318bd5e5f93c401334e29c6764720302` on `complex-mechanisms`, card `complex-new-helper-inventory`, priority revision 3, base `0b1cccf86e2f5132ed286a26ef0a681a495740ea`; selected-record SHA-256 is `10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32`. The original claim is [Discussion #1762](https://github.com/CrocSwap/integer-mult-bounds/discussions/1762).
+The selector accepted seed `318bd5e5f93c401334e29c6764720302` on `complex-mechanisms`, card `complex-new-helper-inventory`, priority revision 3, base `0b1cccf86e2f5132ed286a26ef0a681a495740ea`; selected-record SHA-256 is `10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32`. The original claim and finding are in [Discussion #1762](https://github.com/CrocSwap/integer-mult-bounds/discussions/1762); the package is submitted as [PR #1772](https://github.com/CrocSwap/integer-mult-bounds/pull/1772).
 
 PR717 supplies the P104 input factorization. Discussion #1622 / PR1633 classifies the algebraic residual-rank budget for all term counts but leaves support/copy-cost construction open. Open PR1726 screens one and two elementary term-basis shears in the original eight-term decoder; this package instead adds a cancelling complex pair and changes the term count to ten. Discussion #1674 changes nested endpoints of the selected k8 word with its scalar gates fixed, a different interface.
 
