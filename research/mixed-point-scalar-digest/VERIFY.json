@@ -23,7 +23,7 @@
         "-B",
         "{package}/verify.py"
       ],
-      "timeout_seconds": 600,
+      "timeout_seconds": 480,
       "checks": "Exact baseline copy of the base-commit audit_mixed_point.py; identical scalar_check receipts on mixed-point full-size and factored circuits plus early-sharing full-size; encoding foil rejects a wrong null spelling while preserving Boolean support checks; mixed-point and early-sharing mathematical payloads match committed certificates."
     },
     {
@@ -34,7 +34,7 @@
         "-B",
         "{package}/verify.py"
       ],
-      "timeout_seconds": 600,
+      "timeout_seconds": 480,
       "checks": "Same equivalence and certificate payload discipline under -O (require() gates, not assert)."
     },
     {
@@ -51,7 +51,7 @@
         "test_mixed_point*.py",
         "-v"
       ],
-      "timeout_seconds": 180,
+      "timeout_seconds": 120,
       "checks": "Existing mixed-point unit tests plus focused scalar-digest package controls."
     }
   ]

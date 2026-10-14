@@ -39,13 +39,14 @@ historical-checker change.
 
 ## Result
 
-On Linux / CPython 3.12 (see [RESULT.json](RESULT.json) for the host pin), five
+On Linux / CPython 3.12.3 (Linux-6.12.94+-x86_64-with-glibc2.39), five
 alternating fresh-process pairs timing only `scalar_check` on the fixed
 mixed-point circuit set (block-only and hybrid `h=50`, then four factored
 rounds; construction excluded from the timed window) gave median wall time
-recorded in RESULT.json. Timing is host-descriptive and is not a correctness
-gate. Every scalar receipt matches the baseline checker fieldwise
-(`roles`, `circuit_sha256`, flags).
+**10.004 → 4.444 seconds (2.25×)**. Timing is host-descriptive and is not a
+correctness gate; all samples and environment pins are in
+[RESULT.json](RESULT.json). Every scalar receipt matches the baseline checker
+fieldwise (`roles`, `circuit_sha256`, flags).
 
 ## Equivalence
 
