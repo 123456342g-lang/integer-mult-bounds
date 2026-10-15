@@ -69,3 +69,9 @@ New research packages should include **Open next questions** and can use the
 Optional workflow feedback goes in the PR or the
 [feedback discussion](https://github.com/CrocSwap/integer-mult-bounds/discussions/1200).
 Link it once; no separate session report is required.
+
+## Cursor Cloud specific instructions
+
+Cloud Agents get Python 3.12 as both `python` and `python3`, `g++`, and Boost headers under `/usr/include`. NumPy, SymPy, and SciPy are installed for the `ubuntu` user from `research/e8-bit-p111-tuned/requirements.txt`, with SymPy held at 1.14.0 by `research/five-stage-gen4-banks/requirements.txt`. Import them through `python3`. The helper scripts in `~/.local/bin` are not on `PATH`.
+
+The cheap selected-record check is `python3 -B scripts/research_baseline.py`. The historical bank replay is `make gen4-bank-verify`. The selected cold replay, `make frontier1094-verify`, is much longer. Lean toolchains for `make formal-*-verify` are not installed.
